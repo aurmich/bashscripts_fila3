@@ -21,7 +21,8 @@ while IFS= read -r line; do
         echo "----------------------------------------"
         echo "📂 Path: $current_path"
         echo "🔗 URL:  $current_url"
-
+        git filter-branch --subdirectory-filter "$current_path" -- --all
+        #git filter-repo --path "$current_path" --invert-paths
         if [[ -d "$current_path" ]]; then
             echo "🔄 Tentativo di aggiornamento del subtree esistente..."
             if ! git subtree pull --prefix="$current_path" "$current_url" "$branch" --squash; then
@@ -36,6 +37,7 @@ while IFS= read -r line; do
 
         echo "⬆️  Pushing delle modifiche locali nel subtree remoto..."
         git subtree push --prefix="$current_path" "$current_url" "$branch"
+
     fi
 done < "$CONFIG_FILE"
 
