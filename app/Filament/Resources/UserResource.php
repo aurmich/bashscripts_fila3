@@ -15,18 +15,8 @@ use Filament\Forms\Components\TextInput;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\HtmlString;
 use Modules\User\Filament\Resources\UserResource\Pages;
-use Modules\User\Filament\Resources\UserResource\RelationManagers;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-
-
-
-
-use Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager;
-
-
-
-
 
 class UserResource extends XotBaseResource
 {
@@ -67,17 +57,6 @@ class UserResource extends XotBaseResource
                 'created_at' => Placeholder::make('created_at')
                     ->content(static fn ($record) => $record->created_at->diffForHumans() ?? new HtmlString('&mdash;')),
             ])->columnSpan(4),
-        ];
-    }
-
-    /**
-     * ---.
-     */
-    public static function getRelations(): array
-    {
-        return [
-            'teams' => RelationManagers\TeamsRelationManager::class,
-            'tenants' => RelationManagers\TenantsRelationManager::class,
         ];
     }
 
