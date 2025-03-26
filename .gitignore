@@ -50,3 +50,4 @@ public_html/vendor/
 /cache/
 *.zip
 *.old
+laravel/Modules/Predict/
