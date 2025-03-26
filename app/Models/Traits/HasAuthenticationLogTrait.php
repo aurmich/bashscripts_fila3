@@ -4,9 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\User\Models\Traits;
 
-use Illuminate\Database\Eloquent\Relations\MorphMany;
-use Illuminate\Database\Eloquent\Relations\MorphOne;
-use Illuminate\Support\Carbon;
+use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Modules\User\Models\AuthenticationLog;
 
 /**
@@ -16,39 +15,30 @@ use Modules\User\Models\AuthenticationLog;
  * It includes methods for retrieving the latest authentication logs, login timestamps, IP addresses,
  * and other related information, including tracking consecutive login days.
  *
- * @property MorphMany<AuthenticationLog, static> $authentications      The authentication logs related to the model.
- * @property MorphOne<AuthenticationLog, static>  $latestAuthentication The most recent authentication log entry.
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\AuthenticationLog> $authentications
  * @property-read string|null $login_at The timestamp of the last login.
  * @property-read string|null $ip_address The IP address of the last login.
- */
-/**
- * @property MorphMany<AuthenticationLog> $authentications
- * @property MorphOne<AuthenticationLog> $latestAuthentication
- * @property \Illuminate\Support\Carbon|null $login_at
- * @property string|null $ip_address
  */
 trait HasAuthenticationLogTrait
 {
     /**
      * Get all of the model's authentication logs.
      *
-     * @return MorphMany<AuthenticationLog, static>
+     * @return HasMany<AuthenticationLog>
      */
-    public function authentications(): MorphMany
+    public function authentications(): HasMany
     {
-        return $this->morphMany(AuthenticationLog::class, 'authenticatable')
-            ->latest('login_at');
+        return $this->hasMany(AuthenticationLog::class);
     }
 
     /**
      * Get the latest authentication attempt for the model.
      *
-     * @return MorphOne<AuthenticationLog, static>
+     * @return AuthenticationLog|null
      */
-    public function latestAuthentication(): MorphOne
+    public function latestAuthentication(): ?AuthenticationLog
     {
-        return $this->morphOne(AuthenticationLog::class, 'authenticatable')
-            ->latestOfMany('login_at');
+        return $this->authentications()->first();
     }
 
     /**
@@ -68,9 +58,8 @@ trait HasAuthenticationLogTrait
      */
     public function lastLoginAt(): ?Carbon
     {
-        /** @var AuthenticationLog|null $auth */
-        $auth = $this->authentications()->first();
-        return $auth->login_at;
+        $latestAuth = $this->latestAuthentication();
+        return $latestAuth ? $latestAuth->login_at : null;
     }
 
     /**
@@ -80,9 +69,8 @@ trait HasAuthenticationLogTrait
      */
     public function lastSuccessfulLoginAt(): ?Carbon
     {
-        /** @var AuthenticationLog|null $auth */
-        $auth = $this->authentications()->where('login_successful', true)->first();
-        return $auth->login_at;
+        $latestAuth = $this->authentications()->first();
+        return $latestAuth ? $latestAuth->login_at : null;
     }
 
     /**
@@ -92,9 +80,8 @@ trait HasAuthenticationLogTrait
      */
     public function lastLoginIp(): ?string
     {
-        /** @var AuthenticationLog|null $auth */
-        $auth = $this->authentications()->first();
-        return $auth->ip_address;
+        $latestAuth = $this->latestAuthentication();
+        return $latestAuth ? $latestAuth->ip_address : null;
     }
 
     /**
@@ -104,9 +91,8 @@ trait HasAuthenticationLogTrait
      */
     public function lastSuccessfulLoginIp(): ?string
     {
-        /** @var AuthenticationLog|null $auth */
-        $auth = $this->authentications()->where('login_successful', true)->first();
-        return $auth->ip_address;
+        $latestAuth = $this->authentications()->first();
+        return $latestAuth ? $latestAuth->ip_address : null;
     }
 
     /**
@@ -116,9 +102,8 @@ trait HasAuthenticationLogTrait
      */
     public function previousLoginAt(): ?Carbon
     {
-        /** @var AuthenticationLog|null $auth */
-        $auth = $this->authentications()->skip(1)->first();
-        return $auth->login_at;
+        $previousAuth = $this->authentications()->skip(1)->first();
+        return $previousAuth ? $previousAuth->login_at : null;
     }
 
     /**
@@ -128,9 +113,8 @@ trait HasAuthenticationLogTrait
      */
     public function previousLoginIp(): ?string
     {
-        /** @var AuthenticationLog|null $auth */
-        $auth = $this->authentications()->skip(1)->first();
-        return $auth->ip_address;
+        $previousAuth = $this->authentications()->skip(1)->first();
+        return $previousAuth ? $previousAuth->ip_address : null;
     }
 
     /**
@@ -155,5 +139,13 @@ trait HasAuthenticationLogTrait
 
             return $days;
         });
+    }
+
+    public function getAuthenticationLogsAttribute(): array
+    {
+        return [
+            'total_attempts' => $this->authentications()->whereDate('login_at', Carbon::today())->count(),
+            'total_failed_attempts' => $this->authentications()->whereDate('login_at', Carbon::today())->where('login_successful', false)->count(),
+        ];
     }
 }

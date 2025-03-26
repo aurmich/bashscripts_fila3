@@ -25,6 +25,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules\Password;
 use Modules\User\Datas\PasswordData;
+use Filament\Forms\Components\TextInput;
 
 /**
  * @property ComponentContainer $form
@@ -89,29 +90,16 @@ class MyProfilePage extends Page implements HasForms
                     ->aside()
                     ->description('Ensure your account is using long, random password to stay secure.')
                     ->schema([
-                        Forms\Components\TextInput::make('Current password')
+                        TextInput::make('current_password')
                             ->password()
                             ->required()
+                            ->placeholder(__('user::fields.current_password.placeholder'))
                             ->currentPassword(),
-                        PasswordData::make()->getPasswordFormComponent()
-                            ->dehydrateStateUsing(fn ($state): string => Hash::make($state))
-                            ->live(debounce: 500)
-                        // ->same('passwordConfirmation')
-                        ,
-                        /*
-                        Forms\Components\TextInput::make('password')
+                        PasswordData::make()->getPasswordFormComponent('new_password'),
+                        TextInput::make('new_password_confirmation')
                             ->password()
-                            ->required()
-                            ->rule(Password::default())
-                            ->autocomplete('new-password')
-                            ->dehydrateStateUsing(fn ($state): string => Hash::make($state))
-                            ->live(debounce: 500)
-                            ->same('passwordConfirmation'),
-                        */
-                        Forms\Components\TextInput::make('passwordConfirmation')
-                            ->password()
-                            ->required()
-                            ->dehydrated(false)
+                            ->placeholder(__('user::fields.confirm_password.placeholder'))
+                            ->rule('required', static fn ($get): bool => (bool) $get('new_password'))
                             ->same('new_password'),
                     ]),
             ])

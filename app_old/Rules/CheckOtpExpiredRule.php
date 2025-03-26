@@ -18,13 +18,13 @@ class CheckOtpExpiredRule implements ValidationRule
      *
      * @param string $attribute L'attributo che viene validato
      * @param string|int $value Il valore dell'attributo
-     * @param \Closure(string): void $fail La closure da chiamare in caso di fallimento
+     * @param \Closure(string, string|null=): \Illuminate\Translation\PotentiallyTranslatedString $fail La closure da chiamare in caso di fallimento
      */
     public function validate(string $attribute, mixed $value, \Closure $fail): void
     {
         $user = Auth::user();
         if ($user === null) {
-            $fail('utente non loggato');
+            $fail('utente non loggato')();
 
             return;
         }
@@ -39,7 +39,7 @@ class CheckOtpExpiredRule implements ValidationRule
 
         // Check if OTP is expired using updated_at
         if (now()->greaterThan($otp_expires_at)) {
-            $fail($this->message());
+            $fail($this->message())();
         }
     }
 
