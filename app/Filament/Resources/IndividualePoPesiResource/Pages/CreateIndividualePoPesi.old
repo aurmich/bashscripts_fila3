@@ -1,0 +1,12 @@
+<?php
+
+namespace Modules\Performance\Filament\Resources\IndividualePoPesiResource\Pages;
+
+use Modules\Performance\Filament\Resources\IndividualePoPesiResource;
+use Filament\Actions;
+use Filament\Resources\Pages\CreateRecord;
+
+class CreateIndividualePoPesi extends CreateRecord
+{
+    protected static string $resource = IndividualePoPesiResource::class;
+}
