@@ -1,0 +1,20 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Modules\Sigma\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Modules\Tenant\Models\Traits\SushiToCsv;
+
+class Webservice extends Model
+{
+    use SushiToCsv;
+
+    protected $fillable = ['name'];
+
+    public function getRows()
+    {
+        return $this->getSushiRows();
+    }
+}
