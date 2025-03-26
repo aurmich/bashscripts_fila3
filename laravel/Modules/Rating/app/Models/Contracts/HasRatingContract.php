@@ -13,7 +13,7 @@ use Modules\Rating\Models\Rating;
 interface HasRatingContract
 {
     /**
-     * @return MorphToMany<Rating, Rating|\Illuminate\Database\Eloquent\Model>
+     * @return MorphToMany<Rating>
      */
     public function ratings(): MorphToMany;
 }

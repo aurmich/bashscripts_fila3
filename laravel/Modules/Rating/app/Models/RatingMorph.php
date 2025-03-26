@@ -60,7 +60,7 @@ use Modules\Xot\Datas\XotData;
  * @method static \Illuminate\Database\Eloquent\Builder|RatingMorph whereValue($value)
  *
  * @property \Illuminate\Database\Eloquent\Model|\Eloquent $model
- * @property \Illuminate\Database\Eloquent\Model|null $profile
+ * @property \Modules\Blog\Models\Profile|null             $profile
  * @property \Modules\Xot\Contracts\UserContract|null      $user
  * @property string                                        $reward
  *

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Rating\Enums;
+namespace Modules\Rating\App\Enums;
 
 enum SupportedLocale: string
 {
@@ -27,25 +27,10 @@ enum SupportedLocale: string
      */
     public static function toArray(): array
     {
-        /** @var array<string, string> $result */
-        $result = array_reduce(
+        return array_reduce(
             self::cases(),
             fn (array $carry, self $locale) => [...$carry, $locale->value => $locale->getLabel()],
             []
         );
-        
-        return $result;
-    }
-    
-    /**
-     * Create from string value.
-     */
-    public static function fromString(string $value): self
-    {
-        return match ($value) {
-            'it' => self::IT,
-            'en' => self::EN,
-            default => self::IT,
-        };
     }
 }
