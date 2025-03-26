@@ -22,6 +22,8 @@ sync_subtree() {
     git subtree pull -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH"  --squash ||
         git subtree pull -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH"   
 
+    find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
+
     git fetch "$REMOTE_REPO" "$REMOTE_BRANCH" --depth=1
     git merge -s subtree FETCH_HEAD  --allow-unrelated-histories
     git subtree push -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH"
