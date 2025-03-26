@@ -1,0 +1,18 @@
+{
+	"folders":
+	[
+		{
+			"path": "C:\\xampp\\htdocs\\lara\\amigos1"
+		}
+	],
+	"settings":
+	{
+		"phpcs":
+		{
+			"phpcs_additional_args":
+			{
+				"--standard": "./laravel"
+			}
+		}
+	}
+}

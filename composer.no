@@ -1,0 +1,29 @@
+{
+    "require": {
+        "doctrine/dbal": "^3.0",
+        "laravel/scout": "^8.6",
+        "laravel/slack-notification-channel": "^2.3",
+        "laravel/socialite": "^5.2",
+        "laravelcollective/html": "^6.2",
+        "mcamara/laravel-localization": "^1.6",
+        "nwidart/laravel-modules": "^8.2",
+        "staudenmeir/eloquent-has-many-deep": "^1.13",
+        "unisharp/laravel-filemanager": "^2.2",
+        "laravel/ui": "^3.2",
+        "livewire/livewire": "^2.4",
+        "cknow/laravel-money": "^6.1",
+        "intervention/image": "^2.5",
+        "intervention/imagecache": "^2.5",
+        "spatie/laravel-cookie-consent": "^2.12",
+        "genealabs/laravel-model-caching": "^0.11.1",
+        "asantibanez/laravel-eloquent-state-machines": "^4.0",
+        "symfony/dom-crawler": "^5.2",
+        "guzzlehttp/guzzle": "^7.2"
+    },
+    "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.5",
+        "barryvdh/laravel-ide-helper": "^2.9",
+        "larastan/larastan": "^0.7.0",
+        "orchestra/testbench": "^6.13"
+    }
+}

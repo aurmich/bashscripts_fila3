@@ -1,0 +1,52 @@
+# 🛠️ Compiled files and binaries
+*.jar
+*.phar
+dump.rdb
+
+# 📝 Temporary and editor files
+*.swp
+*.cache
+*.log
+*.log.*
+.php_cs.cache
+.php-cs-fixer.cache
+.phpintel
+.DS_Store
+.git-rewrite
+*:Zone.Identifier
+
+# 📦 Package management
+node_modules/
+package-lock.json
+*.lock
+
+# 🌍 Laravel specific
+laravel/storage/
+laravel/storage/*
+laravel/storage/cookie.txt
+laravel/composer
+laravel/_ide_helper.php
+laravel/_ide_helper_models.php
+laravel/.php_cs.cache
+laravel/build/
+laravel/database/migrations/
+laravel/vite-module-loader.js
+laravel/stubs/
+
+# 📂 Laravel vendor resources
+laravel/resources/lang/vendor/
+laravel/resources/views/vendor/
+laravel/app/View/Components/vendor/
+
+# 🎨 Public assets and generated files
+public_html/storage/
+public_html/storage/*
+public_html/themes/
+public_html/css/
+public_html/js/
+public_html/vendor/
+
+# 🔄 Misc
+/cache/
+*.zip
+*.old
