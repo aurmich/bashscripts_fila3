@@ -10,5 +10,10 @@ return [
             'Custom 404 Page' => 'docs/custom-404-page',
         ],
     ],
+    'Models' => [
+        'children' => [
+            'CondizioniLavoro' => 'docs/models-condizioni-lavoro',
+        ],
+    ],
     'Jigsaw Docs' => 'https://jigsaw.tighten.co/docs/installation',
 ];

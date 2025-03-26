@@ -1,5 +1,5 @@
 parameters:
-    level: 4
+    level: 7
     paths:
         - app
     excludePaths:
@@ -11,5 +11,11 @@ parameters:
     ignoreErrors:
         - '#Call to static method make\(\) on an unknown class#'
         - '#PHPDoc type array<int, string> of property .* \$fillable is not covariant#'
+        - '#Call to an undefined method [a-zA-Z0-9\\_]+::factory\(\)#'
     bootstrapFiles:
-        - ../../vendor/autoload.php 
+        - ../../vendor/autoload.php
+    checkMissingIterableValueType: true
+    checkGenericClassInNonGenericObjectType: true
+    treatPhpDocTypesAsCertain: true
+    reportUnmatchedIgnoredErrors: true
+    checkModelProperties: true 

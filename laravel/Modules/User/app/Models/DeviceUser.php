@@ -18,17 +18,18 @@ use Modules\Xot\Datas\XotData;
  * @method static \Illuminate\Database\Eloquent\Builder|DeviceUser newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|DeviceUser newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|DeviceUser query()
- * @property string $id
- * @property string $device_id
- * @property string $user_id
+ * @property int $id
+ * @property string $uuid
+ * @property string|null $device_id
+ * @property string|null $user_id
  * @property Carbon|null $login_at
  * @property Carbon|null $logout_at
  * @property string|null $push_notifications_token
  * @property bool|null $push_notifications_enabled
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- * @property string|null $updated_by
  * @property string|null $created_by
+ * @property string|null $updated_by
  * @method static \Illuminate\Database\Eloquent\Builder|DeviceUser whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|DeviceUser whereCreatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|DeviceUser whereDeviceId($value)
@@ -40,6 +41,11 @@ use Modules\Xot\Datas\XotData;
  * @method static \Illuminate\Database\Eloquent\Builder|DeviceUser whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|DeviceUser whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|DeviceUser whereUserId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|DeviceUser whereUuid($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|DeviceUser whereDeletedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|DeviceUser whereDeletedBy($value)
+ * @property Carbon|null $deleted_at
+ * @property string|null $deleted_by
  * @property ProfileContract|null $profile
  * @property UserContract|null $user
  * @property ProfileContract|null $creator
@@ -48,15 +54,21 @@ use Modules\Xot\Datas\XotData;
  */
 class DeviceUser extends BasePivot
 {
+    /** @var string */
+    protected $connection = 'user';
+
     /** @var list<string> */
-    protected $fillable = [
+    public $fillable = [
         'id',
+        'uuid',
         'device_id',
         'user_id',
-        'login_at',
-        'logout_at',
-        'push_notifications_token',
-        'push_notifications_enabled',
+        'created_at',
+        'updated_at',
+        'created_by',
+        'updated_by',
+        'deleted_at',
+        'deleted_by'
     ];
 
     /**
@@ -89,29 +101,24 @@ class DeviceUser extends BasePivot
         return $this->belongsTo($profileClass, 'user_id', 'user_id');
     }
 
-    /** @return array<string, string> */
-    protected function casts(): array
+    /**
+     * Get the attributes that should be cast.
+     *
+     * @return array<string, string>
+     */
+    public function casts(): array
     {
         return [
             'id' => 'string',
             'uuid' => 'string',
-            'user_id' => 'string',
             'device_id' => 'string',
-            // 'id' => 'string',
-            // 'locales' => 'array',
-            'push_notifications_token' => 'string',
-            'push_notifications_enabled' => 'boolean',
-
-            'updated_by' => 'string',
-            'created_by' => 'string',
-            'deleted_by' => 'string',
-
+            'user_id' => 'string',
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
             'deleted_at' => 'datetime',
-
-            'login_at' => 'datetime',
-            'logout_at' => 'datetime',
+            'created_by' => 'string',
+            'updated_by' => 'string',
+            'deleted_by' => 'string'
         ];
     }
 }

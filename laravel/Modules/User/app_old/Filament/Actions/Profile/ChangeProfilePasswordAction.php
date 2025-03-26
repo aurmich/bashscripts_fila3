@@ -32,7 +32,6 @@ class ChangeProfilePasswordAction extends Action
             ->icon('heroicon-o-key')
             ->action(static function (ProfileContract $record, array $data): void {
                 $user = $record->user;
-                $profile_data = Arr::except($record->toArray(), ['id']);
                 if ($user === null) {
                     $user_class = XotData::make()->getUserClass();
                     /** @var \Modules\Xot\Contracts\UserContract */
@@ -40,7 +39,12 @@ class ChangeProfilePasswordAction extends Action
                 }
 
                 if ($user === null) {
-                    $user = $record->user()->create($profile_data);
+                    $user = $record->user()->create([
+                        'name' => $record->name,
+                        'email' => $record->email,
+                        'first_name' => $record->first_name,
+                        'last_name' => $record->last_name,
+                    ]);
                 }
                 // @phpstan-ignore argument.type, method.notFound
                 $user->profile()->save($record);
@@ -50,15 +54,15 @@ class ChangeProfilePasswordAction extends Action
                 Notification::make()->success()->title('Password changed successfully.');
             })
             ->form([
-                /*
-                    TextInput::make('new_password')
-                        ->password()
-                        ->required()
-                        ->rule(Password::default()),
-                    */
-                PasswordData::make()->getPasswordFormComponent(),
+                TextInput::make('current_password')
+                    ->password()
+                    ->required()
+                    ->placeholder(__('user::fields.current_password.placeholder'))
+                    ->currentPassword(),
+                PasswordData::make()->getPasswordFormComponent('new_password'),
                 TextInput::make('new_password_confirmation')
                     ->password()
+                    ->placeholder(__('user::fields.confirm_password.placeholder'))
                     ->rule('required', static fn ($get): bool => (bool) $get('new_password'))
                     ->same('new_password'),
             ]);

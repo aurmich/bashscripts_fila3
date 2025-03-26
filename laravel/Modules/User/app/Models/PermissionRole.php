@@ -32,12 +32,16 @@ use Webmozart\Assert\Assert;
  */
 class PermissionRole extends BasePivot
 {
-    /**
-     * @var list<string>
-     *
-     * @psalm-var list{'permission_id', 'role_id'}
-     */
-    protected $fillable = ['permission_id', 'role_id'];
+    /** @var list<string> */
+    public $fillable = [
+        'id',
+        'permission_id',
+        'role_id',
+        'created_at',
+        'updated_at',
+        'updated_by',
+        'created_by'
+    ];
 
     public function getTable(): string
     {
@@ -46,15 +50,23 @@ class PermissionRole extends BasePivot
         return $table;
     }
 
-    /** @return array<string, string> */
-    protected function casts(): array
+    /**
+     * Get the attributes that should be cast.
+     *
+     * @return array<string, string>
+     */
+    public function casts(): array
     {
-        $parent = parent::casts();
-        $up = [
+        return [
+            'id' => 'string',
             'permission_id' => 'string',
             'role_id' => 'string',
+            'created_at' => 'datetime',
+            'updated_at' => 'datetime',
+            'deleted_at' => 'datetime',
+            'updated_by' => 'string',
+            'created_by' => 'string',
+            'deleted_by' => 'string'
         ];
-
-        return array_merge($parent, $up);
     }
 }

@@ -31,7 +31,7 @@ enum WorkerType: string implements HasColor, HasIcon, HasLabel, Wireable
         return 'fix:'.$tmp;
     }
 
-    public function getColor(): string|array|null
+    public function getColor(): string
     {
         return self::trans($this->value.'.color');
         /*
@@ -43,7 +43,7 @@ enum WorkerType: string implements HasColor, HasIcon, HasLabel, Wireable
         */
     }
 
-    public function getIcon(): ?string
+    public function getIcon(): string
     {
         return self::trans($this->value.'.icon');
         /*
@@ -55,7 +55,7 @@ enum WorkerType: string implements HasColor, HasIcon, HasLabel, Wireable
         */
     }
 
-    public function getLabel(): ?string
+    public function getLabel(): string
     {
         return self::trans($this->value.'.label');
         /*

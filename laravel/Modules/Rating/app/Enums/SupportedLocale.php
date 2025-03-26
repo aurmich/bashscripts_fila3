@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Rating\App\Enums;
+namespace Modules\Rating\Enums;
 
 enum SupportedLocale: string
 {
@@ -32,5 +32,22 @@ enum SupportedLocale: string
             fn (array $carry, self $locale) => [...$carry, $locale->value => $locale->getLabel()],
             []
         );
+    }
+
+    public static function fromString(string $value): self
+    {
+        return match ($value) {
+            'it' => self::IT,
+            'en' => self::EN,
+            default => self::IT,
+        };
+    }
+
+    public function label(): string
+    {
+        return match ($this) {
+            self::IT => 'Italiano',
+            self::EN => 'English',
+        };
     }
 }
