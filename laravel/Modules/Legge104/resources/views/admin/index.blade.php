@@ -1,9 +1,13 @@
 @extends('adm_theme::layouts.app')
-@section('page_heading','quiz')
-@section('content')
-<x-filament::badge> flash-message </x-filament::badge>
+@section('page_heading', 'package sigma')
+@section('section')
+    <x-filament::badge> flash-message </x-filament::badge>
 
 
-<h1>Benvenuto nel programma quiz</h1>
+    Sigma package ..
+    {{ get_class($_panel) }}
+    {{-- @foreach ($_panel->containerActions() as $act)
+        {!!  $act->btnHtml() !!}
+    @endforeach --}}
 
 @endsection

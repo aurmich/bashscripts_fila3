@@ -1,4 +1,5 @@
 /vendor
 *.lock
 /build
+*.exe
 *:Zone.Identifier

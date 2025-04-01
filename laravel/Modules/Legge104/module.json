@@ -1,14 +1,15 @@
 {
-    "name": "Questionari",
-    "alias": "questionari",
+    "name": "Sigma",
+    "alias": "sigma",
     "description": "",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
-        "Modules\\Questionari\\Providers\\QuestionariServiceProvider"
+        "Modules\\Sigma\\Providers\\SigmaServiceProvider",
+        "Modules\\Sigma\\Providers\\Filament\\AdminPanelProvider"
     ],
-    "aliases": {},
+    "aliases": [],
     "files": [],
     "requires": []
 }

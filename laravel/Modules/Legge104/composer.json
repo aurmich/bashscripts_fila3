@@ -1,8 +1,8 @@
 {
-    "name": "laraxot/module_questionari_fila3",
+    "name": "laraxot/module_sigma_fila3",
     "description": "",
     "license": "MIT",
-    "homepage": "https://github.com/laraxot/module_questionari_fila3.git",
+    "homepage": "https://github.com/laraxot/module_sigma_fila3.git",
     "authors": [
         {
             "name": "Marco Sottana",
@@ -29,9 +29,9 @@
     ],
     "autoload": {
         "psr-4": {
-            "Modules\\Questionari\\": "app/",
-            "Modules\\Questionari\\Database\\Factories\\": "database/factories/",
-            "Modules\\Questionari\\Database\\Seeders\\": "database/seeders/"
+            "Modules\\Sigma\\": "app/",
+            "Modules\\Sigma\\Database\\Factories\\": "database/factories/",
+            "Modules\\Sigma\\Database\\Seeders\\": "database/seeders/"
         }
     },
     "scripts": {
@@ -52,8 +52,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Modules\\Questionari\\Providers\\QuestionariServiceProvider",
-                "Modules\\Questionari\\Providers\\Filament\\AdminPanelProvider"
+                "Modules\\Sigma\\Providers\\SigmaServiceProvider",
+                "Modules\\Sigma\\Providers\\Filament\\AdminPanelProvider"
             ],
             "aliases": {}
         }

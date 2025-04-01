@@ -3,5 +3,6 @@
 declare(strict_types=1);
 
 return [
-    'name' => 'Questionari',
+    'name' => 'Sigma',
+    'icon' => 'fas-tower-observation',
 ];
