@@ -1,97 +1,129 @@
 # Best Practices per l'Architettura nel Modulo Performance
 
 ## Overview
-Questo documento descrive le best practices per l'implementazione dell'architettura nel modulo Performance.
+Questo documento descrive le best practices per l'architettura nel modulo Performance.
 
 ## Clean Architecture
 
 ### 1. Domain Layer
 ```php
-// Domain/Performance.php
+/**
+ * Domain Layer per le performance
+ */
+namespace App\Modules\Performance\Domain;
+
+/**
+ * Entity Performance
+ */
 class Performance
 {
-    private float $score;
-    private array $metrics;
-    private DateTimeImmutable $createdAt;
-    
-    public function __construct(
-        float $score,
-        array $metrics,
-        DateTimeImmutable $createdAt
-    ) {
-        $this->validateScore($score);
-        $this->validateMetrics($metrics);
-        
-        $this->score = $score;
+    /**
+     * Create a new performance instance.
+     *
+     * @param  User  $user
+     * @param  array  $metrics
+     * @param  string  $period
+     * @return static
+     */
+    public static function create(User $user, array $metrics, string $period): static
+    {
+        $performance = new static();
+        $performance->user = $user;
+        $performance->metrics = $metrics;
+        $performance->period = $period;
+        $performance->score = PerformanceCalculator::calculate($metrics);
+        $performance->created_at = now();
+
+        return $performance;
+    }
+
+    /**
+     * Update performance metrics.
+     *
+     * @param  array  $metrics
+     * @return void
+     */
+    public function updateMetrics(array $metrics): void
+    {
         $this->metrics = $metrics;
-        $this->createdAt = $createdAt;
-    }
-    
-    private function validateScore(float $score): void
-    {
-        if ($score < 0 || $score > 1) {
-            throw new InvalidArgumentException('Score must be between 0 and 1');
-        }
-    }
-    
-    private function validateMetrics(array $metrics): void
-    {
-        foreach ($metrics as $value) {
-            if ($value < 0 || $value > 1) {
-                throw new InvalidArgumentException('Metrics must be between 0 and 1');
-            }
-        }
+        $this->score = PerformanceCalculator::calculate($metrics);
+        $this->updated_at = now();
     }
 }
 ```
 
 ### 2. Application Layer
 ```php
-// Application/CalculatePerformanceAction.php
+/**
+ * Application Layer per le performance
+ */
+namespace App\Modules\Performance\Application;
+
+/**
+ * Action per calcolare le performance
+ */
 class CalculatePerformanceAction
 {
-    public function __construct(
-        private PerformanceRepository $repository,
-        private PerformanceCalculator $calculator
-    ) {}
-    
-    public function execute(User $user): Performance
+    /**
+     * Execute performance calculation.
+     *
+     * @param  User  $user
+     * @param  array  $metrics
+     * @param  string  $period
+     * @return Performance
+     */
+    public function execute(User $user, array $metrics, string $period): Performance
     {
-        $metrics = $this->calculator->calculate($user);
-        $score = $this->calculator->calculateScore($metrics);
-        
-        $performance = new Performance(
-            $score,
-            $metrics,
-            new DateTimeImmutable()
-        );
-        
-        return $this->repository->save($performance);
+        $performance = Performance::create($user, $metrics, $period);
+        $performance->save();
+
+        event(new PerformanceCalculated($performance));
+
+        return $performance;
     }
 }
 ```
 
 ### 3. Infrastructure Layer
 ```php
-// Infrastructure/PerformanceRepository.php
-class PerformanceRepository implements PerformanceRepositoryInterface
+/**
+ * Infrastructure Layer per le performance
+ */
+namespace App\Modules\Performance\Infrastructure;
+
+/**
+ * Repository per le performance
+ */
+class PerformanceRepository
 {
-    public function __construct(
-        private Performance $model
-    ) {}
-    
-    public function save(Performance $performance): Performance
-    {
-        return $this->model->create([
-            'score' => $performance->getScore(),
-            'metrics' => $performance->getMetrics(),
-            'created_at' => $performance->getCreatedAt()
-        ]);
-    }
-    
+    /**
+     * Find performance by user.
+     *
+     * @param  User  $user
+     * @return Collection
+     */
     public function findByUser(User $user): Collection
     {
-        return $this->model->where('user_id', $user->id)->get();
+        return Performance::query()
+            ->with(['user', 'metrics'])
+            ->where('user_id', $user->id)
+            ->orderBy('created_at', 'desc')
+            ->get();
+    }
+
+    /**
+     * Find performance by period.
+     *
+     * @param  string  $period
+     * @return Collection
+     */
+    public function findByPeriod(string $period): Collection
+    {
+        return Performance::query()
+            ->with(['user', 'metrics'])
+            ->where('period', $period)
+            ->orderBy('created_at', 'desc')
+            ->get();
     }
 }
 ```
@@ -100,85 +132,216 @@ class PerformanceRepository implements PerformanceRepositoryInterface
 
 ### 1. Single Responsibility
 ```php
-// Services/PerformanceCalculator.php
+/**
+ * Calculator per le performance
+ */
 class PerformanceCalculator
 {
-    public function calculate(User $user): array
+    /**
+     * Calculate performance score.
+     *
+     * @param  array  $metrics
+     * @return float
+     */
+    public function calculate(array $metrics): float
     {
-        return [
-            'efficiency' => $this->calculateEfficiency($user),
-            'quality' => $this->calculateQuality($user),
-            'timeliness' => $this->calculateTimeliness($user)
-        ];
+        $total = 0;
+        $count = 0;
+
+        foreach ($metrics as $metric) {
+            $total += $metric->score;
+            $count++;
+        }
+
+        return $count > 0 ? $total / $count : 0;
     }
-    
-    private function calculateEfficiency(User $user): float
+}
+
+/**
+ * Validator per le performance
+ */
+class PerformanceValidator
+{
+    /**
+     * Validate performance metrics.
+     *
+     * @param  array  $metrics
+     * @return bool
+     */
+    public function validate(array $metrics): bool
     {
-        // Calcolo dell'efficienza
+        foreach ($metrics as $metric) {
+            if (!$this->isValidMetric($metric)) {
+                return false;
+            }
+        }
+
+        return true;
     }
-    
-    private function calculateQuality(User $user): float
+
+    /**
+     * Check if metric is valid.
+     *
+     * @param  mixed  $metric
+     * @return bool
+     */
+    private function isValidMetric($metric): bool
     {
-        // Calcolo della qualità
-    }
-    
-    private function calculateTimeliness(User $user): float
-    {
-        // Calcolo della tempestività
+        return is_object($metric) && 
+               method_exists($metric, 'score') && 
+               is_numeric($metric->score);
     }
 }
 ```
 
 ### 2. Open/Closed
 ```php
-// Services/PerformanceStrategy.php
-interface PerformanceStrategy
+/**
+ * Interface per i calculator
+ */
+interface CalculatorInterface
 {
-    public function calculate(User $user): array;
+    /**
+     * Calculate performance score.
+     *
+     * @param  array  $metrics
+     * @return float
+     */
+    public function calculate(array $metrics): float;
 }
 
-class EfficiencyStrategy implements PerformanceStrategy
+/**
+ * Calculator base per le performance
+ */
+abstract class BaseCalculator implements CalculatorInterface
 {
-    public function calculate(User $user): array
+    /**
+     * Calculate performance score.
+     *
+     * @param  array  $metrics
+     * @return float
+     */
+    abstract public function calculate(array $metrics): float;
+
+    /**
+     * Get metric score.
+     *
+     * @param  mixed  $metric
+     * @return float
+     */
+    protected function getMetricScore($metric): float
     {
-        return [
-            'efficiency' => $this->calculateEfficiency($user)
-        ];
+        return is_object($metric) && method_exists($metric, 'score') 
+            ? (float) $metric->score 
+            : 0;
     }
 }
 
-class QualityStrategy implements PerformanceStrategy
+/**
+ * Calculator per le performance
+ */
+class PerformanceCalculator extends BaseCalculator
 {
-    public function calculate(User $user): array
+    /**
+     * Calculate performance score.
+     *
+     * @param  array  $metrics
+     * @return float
+     */
+    public function calculate(array $metrics): float
     {
-        return [
-            'quality' => $this->calculateQuality($user)
-        ];
+        $total = 0;
+        $count = 0;
+
+        foreach ($metrics as $metric) {
+            $total += $this->getMetricScore($metric);
+            $count++;
+        }
+
+        return $count > 0 ? $total / $count : 0;
     }
 }
 ```
 
 ### 3. Liskov Substitution
 ```php
-// Models/Performance.php
-abstract class BasePerformance
+/**
+ * Interface per i repository
+ */
+interface RepositoryInterface
 {
-    abstract public function calculateScore(): float;
+    /**
+     * Find performance by user.
+     *
+     * @param  User  $user
+     * @return Collection
+     */
+    public function findByUser(User $user): Collection;
+
+    /**
+     * Find performance by period.
+     *
+     * @param  string  $period
+     * @return Collection
+     */
+    public function findByPeriod(string $period): Collection;
 }
 
-class UserPerformance extends BasePerformance
+/**
+ * Repository base per le performance
+ */
+abstract class BaseRepository implements RepositoryInterface
 {
-    public function calculateScore(): float
+    /**
+     * Find performance by user.
+     *
+     * @param  User  $user
+     * @return Collection
+     */
+    abstract public function findByUser(User $user): Collection;
+
+    /**
+     * Find performance by period.
+     *
+     * @param  string  $period
+     * @return Collection
+     */
+    abstract public function findByPeriod(string $period): Collection;
+}
+
+/**
+ * Repository per le performance
+ */
+class PerformanceRepository extends BaseRepository
+{
+    /**
+     * Find performance by user.
+     *
+     * @param  User  $user
+     * @return Collection
+     */
+    public function findByUser(User $user): Collection
     {
-        return $this->calculateUserScore();
+        return Performance::query()
+            ->with(['user', 'metrics'])
+            ->where('user_id', $user->id)
+            ->orderBy('created_at', 'desc')
+            ->get();
     }
-}
 
-class TeamPerformance extends BasePerformance
-{
-    public function calculateScore(): float
+    /**
+     * Find performance by period.
+     *
+     * @param  string  $period
+     * @return Collection
+     */
+    public function findByPeriod(string $period): Collection
     {
-        return $this->calculateTeamScore();
+        return Performance::query()
+            ->with(['user', 'metrics'])
+            ->where('period', $period)
+            ->orderBy('created_at', 'desc')
+            ->get();
     }
 }
 ```
@@ -187,57 +350,104 @@ class TeamPerformance extends BasePerformance
 
 ### 1. Repository Pattern
 ```php
-// Repositories/PerformanceRepository.php
-interface PerformanceRepositoryInterface
+/**
+ * Repository per le performance
+ */
+class PerformanceRepository
 {
-    public function save(Performance $performance): Performance;
-    public function findByUser(User $user): Collection;
-    public function findByTeam(Team $team): Collection;
-}
-
-class EloquentPerformanceRepository implements PerformanceRepositoryInterface
-{
-    public function __construct(
-        private Performance $model
-    ) {}
-    
-    public function save(Performance $performance): Performance
-    {
-        return $this->model->create($performance->toArray());
-    }
-    
+    /**
+     * Find performance by user.
+     *
+     * @param  User  $user
+     * @return Collection
+     */
     public function findByUser(User $user): Collection
     {
-        return $this->model->where('user_id', $user->id)->get();
+        return Performance::query()
+            ->with(['user', 'metrics'])
+            ->where('user_id', $user->id)
+            ->orderBy('created_at', 'desc')
+            ->get();
     }
-    
-    public function findByTeam(Team $team): Collection
+
+    /**
+     * Find performance by period.
+     *
+     * @param  string  $period
+     * @return Collection
+     */
+    public function findByPeriod(string $period): Collection
     {
-        return $this->model->where('team_id', $team->id)->get();
+        return Performance::query()
+            ->with(['user', 'metrics'])
+            ->where('period', $period)
+            ->orderBy('created_at', 'desc')
+            ->get();
+    }
+
+    /**
+     * Save performance.
+     *
+     * @param  Performance  $performance
+     * @return bool
+     */
+    public function save(Performance $performance): bool
+    {
+        return $performance->save();
+    }
+
+    /**
+     * Delete performance.
+     *
+     * @param  Performance  $performance
+     * @return bool
+     */
+    public function delete(Performance $performance): bool
+    {
+        return $performance->delete();
     }
 }
 ```
 
 ### 2. Factory Pattern
 ```php
-// Factories/PerformanceFactory.php
+/**
+ * Factory per le performance
+ */
 class PerformanceFactory
 {
-    public function createUserPerformance(User $user): Performance
+    /**
+     * Create performance instance.
+     *
+     * @param  User  $user
+     * @param  array  $metrics
+     * @param  string  $period
+     * @return Performance
+     */
+    public function create(User $user, array $metrics, string $period): Performance
     {
-        return new Performance(
-            $this->calculateScore($user),
-            $this->getMetrics($user),
-            new DateTimeImmutable()
-        );
+        $performance = new Performance();
+        $performance->user = $user;
+        $performance->metrics = $metrics;
+        $performance->period = $period;
+        $performance->score = PerformanceCalculator::calculate($metrics);
+        $performance->created_at = now();
+
+        return $performance;
     }
-    
-    public function createTeamPerformance(Team $team): Performance
+
+    /**
+     * Create performance from array.
+     *
+     * @param  array  $data
+     * @return Performance
+     */
+    public function createFromArray(array $data): Performance
     {
-        return new Performance(
-            $this->calculateTeamScore($team),
-            $this->getTeamMetrics($team),
-            new DateTimeImmutable()
+        return $this->create(
+            $data['user'],
+            $data['metrics'],
+            $data['period']
         );
     }
 }
@@ -245,24 +455,42 @@ class PerformanceFactory
 
 ### 3. Observer Pattern
 ```php
-// Events/PerformanceUpdated.php
-class PerformanceUpdated
+/**
+ * Observer per le performance
+ */
+class PerformanceObserver
 {
-    public function __construct(
-        public readonly Performance $performance
-    ) {}
-}
-
-// Listeners/NotifyPerformanceUpdate.php
-class NotifyPerformanceUpdate
-{
-    public function handle(PerformanceUpdated $event): void
+    /**
+     * Handle performance created event.
+     *
+     * @param  Performance  $performance
+     * @return void
+     */
+    public function created(Performance $performance): void
     {
-        $user = $event->performance->user;
-        
-        Mail::to($user)->send(new PerformanceUpdateMail($event->performance));
-        
-        event(new PerformanceNotificationSent($user));
+        event(new PerformanceCreated($performance));
+    }
+
+    /**
+     * Handle performance updated event.
+     *
+     * @param  Performance  $performance
+     * @return void
+     */
+    public function updated(Performance $performance): void
+    {
+        event(new PerformanceUpdated($performance));
+    }
+
+    /**
+     * Handle performance deleted event.
+     *
+     * @param  Performance  $performance
+     * @return void
+     */
+    public function deleted(Performance $performance): void
+    {
+        event(new PerformanceDeleted($performance));
     }
 }
 ```
@@ -271,49 +499,110 @@ class NotifyPerformanceUpdate
 
 ### 1. Constructor Injection
 ```php
-// Controllers/PerformanceController.php
-class PerformanceController extends Controller
+/**
+ * Service per le performance
+ */
+class PerformanceService
 {
+    /**
+     * Create a new service instance.
+     *
+     * @param  PerformanceRepository  $repository
+     * @param  PerformanceCalculator  $calculator
+     * @param  PerformanceValidator  $validator
+     */
     public function __construct(
-        private CalculatePerformanceAction $calculateAction,
-        private PerformanceRepository $repository
+        private PerformanceRepository $repository,
+        private PerformanceCalculator $calculator,
+        private PerformanceValidator $validator
     ) {}
-    
-    public function store(PerformanceRequest $request)
+
+    /**
+     * Calculate performance.
+     *
+     * @param  User  $user
+     * @param  array  $metrics
+     * @param  string  $period
+     * @return Performance
+     */
+    public function calculate(User $user, array $metrics, string $period): Performance
     {
-        $performance = $this->calculateAction->execute($request->user());
-        
-        return response()->json($performance);
+        if (!$this->validator->validate($metrics)) {
+            throw new InvalidMetricsException();
+        }
+
+        $score = $this->calculator->calculate($metrics);
+        $performance = new Performance($user, $metrics, $period, $score);
+
+        $this->repository->save($performance);
+
+        return $performance;
     }
 }
 ```
 
 ### 2. Method Injection
 ```php
-// Services/PerformanceService.php
-class PerformanceService
+/**
+ * Controller per le performance
+ */
+class PerformanceController extends Controller
 {
-    public function calculate(
-        User $user,
-        PerformanceCalculator $calculator
-    ): Performance {
-        return $calculator->calculate($user);
+    /**
+     * Display performance data.
+     *
+     * @param  PerformanceService  $service
+     * @param  User  $user
+     * @return JsonResponse
+     */
+    public function show(PerformanceService $service, User $user): JsonResponse
+    {
+        $performance = $service->findByUser($user);
+
+        return response()->json($performance);
     }
 }
 ```
 
 ### 3. Property Injection
 ```php
-// Providers/PerformanceServiceProvider.php
-class PerformanceServiceProvider extends ServiceProvider
+/**
+ * Action per le performance
+ */
+class CalculatePerformanceAction
 {
-    public function register(): void
+    /**
+     * Repository per le performance
+     *
+     * @var PerformanceRepository
+     */
+    private PerformanceRepository $repository;
+
+    /**
+     * Set repository.
+     *
+     * @param  PerformanceRepository  $repository
+     * @return void
+     */
+    public function setRepository(PerformanceRepository $repository): void
     {
-        $this->app->singleton(PerformanceRepository::class, function ($app) {
-            return new EloquentPerformanceRepository(
-                $app->make(Performance::class)
-            );
-        });
+        $this->repository = $repository;
+    }
+
+    /**
+     * Execute performance calculation.
+     *
+     * @param  User  $user
+     * @param  array  $metrics
+     * @param  string  $period
+     * @return Performance
+     */
+    public function execute(User $user, array $metrics, string $period): Performance
+    {
+        $performance = Performance::create($user, $metrics, $period);
+        $this->repository->save($performance);
+
+        return $performance;
     }
 }
 ```
@@ -322,59 +611,126 @@ class PerformanceServiceProvider extends ServiceProvider
 
 ### 1. Service Implementation
 ```php
-// Services/PerformanceService.php
+/**
+ * Service per le performance
+ */
 class PerformanceService
 {
+    /**
+     * Create a new service instance.
+     *
+     * @param  PerformanceRepository  $repository
+     * @param  PerformanceCalculator  $calculator
+     * @param  PerformanceValidator  $validator
+     */
     public function __construct(
         private PerformanceRepository $repository,
         private PerformanceCalculator $calculator,
-        private CacheManager $cache
+        private PerformanceValidator $validator
     ) {}
-    
-    public function calculateAndSave(User $user): Performance
+
+    /**
+     * Calculate performance.
+     *
+     * @param  User  $user
+     * @param  array  $metrics
+     * @param  string  $period
+     * @return Performance
+     */
+    public function calculate(User $user, array $metrics, string $period): Performance
     {
-        $performance = $this->calculator->calculate($user);
-        
-        return $this->repository->save($performance);
+        if (!$this->validator->validate($metrics)) {
+            throw new InvalidMetricsException();
+        }
+
+        $score = $this->calculator->calculate($metrics);
+        $performance = new Performance($user, $metrics, $period, $score);
+
+        $this->repository->save($performance);
+
+        return $performance;
     }
-    
-    public function getCachedPerformance(User $user): array
+
+    /**
+     * Find performance by user.
+     *
+     * @param  User  $user
+     * @return Collection
+     */
+    public function findByUser(User $user): Collection
     {
-        return $this->cache->remember(
-            "performance:user:{$user->id}",
-            fn () => $this->repository->findByUser($user)
-        );
+        return $this->repository->findByUser($user);
+    }
+
+    /**
+     * Find performance by period.
+     *
+     * @param  string  $period
+     * @return Collection
+     */
+    public function findByPeriod(string $period): Collection
+    {
+        return $this->repository->findByPeriod($period);
     }
 }
 ```
 
 ### 2. Service Interface
 ```php
-// Contracts/PerformanceServiceInterface.php
+/**
+ * Interface per il service
+ */
 interface PerformanceServiceInterface
 {
-    public function calculateAndSave(User $user): Performance;
-    public function getCachedPerformance(User $user): array;
-    public function updatePerformance(Performance $performance): Performance;
-}
+    /**
+     * Calculate performance.
+     *
+     * @param  User  $user
+     * @param  array  $metrics
+     * @param  string  $period
+     * @return Performance
+     */
+    public function calculate(User $user, array $metrics, string $period): Performance;
 
-class PerformanceService implements PerformanceServiceInterface
-{
-    // Implementazione dei metodi
+    /**
+     * Find performance by user.
+     *
+     * @param  User  $user
+     * @return Collection
+     */
+    public function findByUser(User $user): Collection;
+
+    /**
+     * Find performance by period.
+     *
+     * @param  string  $period
+     * @return Collection
+     */
+    public function findByPeriod(string $period): Collection;
 }
 ```
 
 ### 3. Service Registration
 ```php
-// Providers/PerformanceServiceProvider.php
+/**
+ * Service Provider per le performance
+ */
 class PerformanceServiceProvider extends ServiceProvider
 {
+    /**
+     * Register services.
+     *
+     * @return void
+     */
     public function register(): void
     {
-        $this->app->bind(
-            PerformanceServiceInterface::class,
-            PerformanceService::class
-        );
+        $this->app->singleton(PerformanceServiceInterface::class, function ($app) {
+            return new PerformanceService(
+                $app->make(PerformanceRepository::class),
+                $app->make(PerformanceCalculator::class),
+                $app->make(PerformanceValidator::class)
+            );
+        });
     }
 }
 ```
@@ -383,60 +739,144 @@ class PerformanceServiceProvider extends ServiceProvider
 
 ### 1. DTO Implementation
 ```php
-// Data/PerformanceData.php
+/**
+ * DTO per le performance
+ */
 class PerformanceData extends Data
 {
-    public function __construct(
-        public readonly float $score,
-        public readonly array $metrics,
-        public readonly DateTimeImmutable $createdAt
-    ) {
-        $this->validate();
-    }
-    
-    private function validate(): void
+    /**
+     * Create a new DTO instance.
+     *
+     * @param  User  $user
+     * @param  array  $metrics
+     * @param  string  $period
+     * @return static
+     */
+    public static function fromRequest(User $user, array $metrics, string $period): static
     {
-        if ($this->score < 0 || $this->score > 1) {
-            throw new InvalidArgumentException('Score must be between 0 and 1');
-        }
+        return new static([
+            'user_id' => $user->id,
+            'metrics' => $metrics,
+            'period' => $period,
+            'score' => PerformanceCalculator::calculate($metrics),
+            'created_at' => now()
+        ]);
+    }
+
+    /**
+     * Get validation rules.
+     *
+     * @return array
+     */
+    public static function rules(): array
+    {
+        return [
+            'user_id' => ['required', 'exists:users,id'],
+            'metrics' => ['required', 'array'],
+            'period' => ['required', 'string'],
+            'score' => ['required', 'numeric', 'min:0', 'max:1'],
+            'created_at' => ['required', 'date']
+        ];
     }
 }
 ```
 
 ### 2. DTO Transformation
 ```php
-// Transformers/PerformanceTransformer.php
+/**
+ * Transformer per le performance
+ */
 class PerformanceTransformer
 {
+    /**
+     * Transform performance to DTO.
+     *
+     * @param  Performance  $performance
+     * @return PerformanceData
+     */
     public function transform(Performance $performance): PerformanceData
     {
-        return new PerformanceData(
-            $performance->score,
-            $performance->metrics,
-            $performance->created_at
-        );
+        return PerformanceData::from([
+            'id' => $performance->id,
+            'user_id' => $performance->user_id,
+            'metrics' => $performance->metrics,
+            'period' => $performance->period,
+            'score' => $performance->score,
+            'created_at' => $performance->created_at,
+            'updated_at' => $performance->updated_at
+        ]);
     }
-    
+
+    /**
+     * Transform collection to DTOs.
+     *
+     * @param  Collection  $performances
+     * @return array
+     */
     public function transformCollection(Collection $performances): array
     {
-        return $performances->map(fn ($performance) => 
-            $this->transform($performance)
-        )->toArray();
+        return $performances->map(function ($performance) {
+            return $this->transform($performance);
+        })->toArray();
     }
 }
 ```
 
 ### 3. DTO Usage
 ```php
-// Controllers/PerformanceController.php
+/**
+ * Controller per le performance
+ */
 class PerformanceController extends Controller
 {
-    public function index(PerformanceTransformer $transformer)
+    /**
+     * Create a new controller instance.
+     *
+     * @param  PerformanceService  $service
+     * @param  PerformanceTransformer  $transformer
+     */
+    public function __construct(
+        private PerformanceService $service,
+        private PerformanceTransformer $transformer
+    ) {}
+
+    /**
+     * Display performance data.
+     *
+     * @param  User  $user
+     * @return JsonResponse
+     */
+    public function show(User $user): JsonResponse
     {
-        $performances = Performance::all();
-        
+        $performance = $this->service->findByUser($user);
+        $data = $this->transformer->transform($performance);
+
+        return response()->json($data);
+    }
+
+    /**
+     * Store performance data.
+     *
+     * @param  PerformanceRequest  $request
+     * @return JsonResponse
+     */
+    public function store(PerformanceRequest $request): JsonResponse
+    {
+        $data = PerformanceData::fromRequest(
+            $request->user(),
+            $request->metrics,
+            $request->period
+        );
+
+        $performance = $this->service->calculate(
+            $request->user(),
+            $data->metrics,
+            $data->period
+        );
+
         return response()->json(
-            $transformer->transformCollection($performances)
+            $this->transformer->transform($performance),
+            201
         );
     }
 }
@@ -446,9 +886,9 @@ class PerformanceController extends Controller
 Le best practices per l'architettura nel modulo Performance:
 - Seguono i principi SOLID
 - Implementano Clean Architecture
-- Utilizzano design patterns appropriati
-- Gestiscono le dipendenze correttamente
-- Separano le responsabilità
-- Utilizzano DTO per il trasferimento dei dati
-- Mantengono la coesione del codice
-- Garantiscono la manutenibilità 
+- Utilizzano Design Patterns
+- Gestiscono le dipendenze
+- Implementano il Service Layer
+- Utilizzano Data Transfer Objects
+- Garantiscono la manutenibilità
+- Favoriscono la scalabilità 

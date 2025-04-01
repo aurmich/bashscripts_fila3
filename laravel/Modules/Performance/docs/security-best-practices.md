@@ -1,138 +1,229 @@
 # Best Practices per la Sicurezza nel Modulo Performance
 
 ## Overview
-Questo documento descrive le best practices per l'implementazione della sicurezza nel modulo Performance.
+Questo documento descrive le best practices per la sicurezza nel modulo Performance.
 
-## Autenticazione
+## Authentication
 
-### 1. Middleware di Autenticazione
+### 1. Middleware
 ```php
-// PerformanceController.php
+/**
+ * @property-read int $id
+ * @property-read int $user_id
+ * @property-read float $score
+ * @property-read array $metrics
+ * @property-read string $period
+ * @property-read DateTimeImmutable $created_at
+ * @property-read DateTimeImmutable $updated_at
+ */
 class PerformanceController extends Controller
 {
+    /**
+     * Create a new controller instance.
+     */
     public function __construct()
     {
         $this->middleware('auth');
         $this->middleware('verified');
-    }
-    
-    public function index()
-    {
-        return $this->user->performance;
+        $this->middleware('throttle:60,1');
     }
 }
 ```
 
-### 2. Autenticazione API
+### 2. API Authentication
 ```php
-// PerformanceApiController.php
+/**
+ * @property-read int $id
+ * @property-read int $user_id
+ * @property-read float $score
+ * @property-read array $metrics
+ * @property-read string $period
+ * @property-read DateTimeImmutable $created_at
+ * @property-read DateTimeImmutable $updated_at
+ */
 class PerformanceApiController extends Controller
 {
+    /**
+     * Create a new controller instance.
+     */
     public function __construct()
     {
         $this->middleware('auth:sanctum');
         $this->middleware('throttle:60,1');
     }
-    
-    public function show()
-    {
-        return $this->user->performance;
-    }
 }
 ```
 
-### 3. Autenticazione Multi-Factor
+### 3. MFA Authentication
 ```php
-// PerformanceMfaController.php
+/**
+ * @property-read int $id
+ * @property-read int $user_id
+ * @property-read float $score
+ * @property-read array $metrics
+ * @property-read string $period
+ * @property-read DateTimeImmutable $created_at
+ * @property-read DateTimeImmutable $updated_at
+ */
 class PerformanceMfaController extends Controller
 {
+    /**
+     * Create a new controller instance.
+     */
     public function __construct()
     {
         $this->middleware('auth');
         $this->middleware('mfa');
-    }
-    
-    public function show()
-    {
-        return $this->user->performance;
+        $this->middleware('throttle:60,1');
     }
 }
 ```
 
-## Autorizzazione
+## Authorization
 
-### 1. Policy
+### 1. Policies
 ```php
-// PerformancePolicy.php
+/**
+ * Policy per le performance
+ */
 class PerformancePolicy
 {
+    /**
+     * Determine if the user can view the performance.
+     */
     public function view(User $user, Performance $performance): bool
     {
-        return $user->id === $performance->user_id ||
-               $user->hasRole('manager');
+        return $user->id === $performance->user_id || $user->isAdmin();
     }
-    
+
+    /**
+     * Determine if the user can create performance.
+     */
+    public function create(User $user): bool
+    {
+        return $user->isActive();
+    }
+
+    /**
+     * Determine if the user can update the performance.
+     */
     public function update(User $user, Performance $performance): bool
     {
-        return $user->hasRole('manager') ||
-               $user->hasRole('admin');
+        return $user->id === $performance->user_id || $user->isAdmin();
+    }
+
+    /**
+     * Determine if the user can delete the performance.
+     */
+    public function delete(User $user, Performance $performance): bool
+    {
+        return $user->isAdmin();
     }
 }
 ```
 
-### 2. Gate
+### 2. Gates
 ```php
-// PerformanceGate.php
+/**
+ * Gates per le performance
+ */
 class PerformanceGate
 {
+    /**
+     * Register the performance gates.
+     */
     public function boot(): void
     {
         Gate::define('view-performance', function (User $user, Performance $performance) {
-            return $user->id === $performance->user_id ||
-                   $user->hasRole('manager');
+            return $user->id === $performance->user_id || $user->isAdmin();
         });
-        
+
+        Gate::define('create-performance', function (User $user) {
+            return $user->isActive();
+        });
+
         Gate::define('update-performance', function (User $user, Performance $performance) {
-            return $user->hasRole('manager') ||
-                   $user->hasRole('admin');
+            return $user->id === $performance->user_id || $user->isAdmin();
+        });
+
+        Gate::define('delete-performance', function (User $user, Performance $performance) {
+            return $user->isAdmin();
         });
     }
 }
 ```
 
-### 3. Permessi
+### 3. Permissions
 ```php
-// PerformancePermission.php
+/**
+ * Permessi per le performance
+ */
 class PerformancePermission
 {
+    /**
+     * Register the performance permissions.
+     */
     public function boot(): void
     {
         Permission::create(['name' => 'view-performance']);
+        Permission::create(['name' => 'create-performance']);
         Permission::create(['name' => 'update-performance']);
         Permission::create(['name' => 'delete-performance']);
-        
-        Role::findByName('manager')->givePermissionTo([
-            'view-performance',
-            'update-performance'
-        ]);
+
+        Role::create(['name' => 'admin'])
+            ->givePermissionTo([
+                'view-performance',
+                'create-performance',
+                'update-performance',
+                'delete-performance'
+            ]);
+
+        Role::create(['name' => 'user'])
+            ->givePermissionTo([
+                'view-performance',
+                'create-performance',
+                'update-performance'
+            ]);
     }
 }
 ```
 
-## Validazione
+## Validation
 
 ### 1. Request Validation
 ```php
-// PerformanceRequest.php
+/**
+ * @property-read int $user_id
+ * @property-read array $metrics
+ * @property-read string $period
+ */
 class PerformanceRequest extends FormRequest
 {
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array<string, array<int, mixed>>
+     */
     public function rules(): array
     {
         return [
-            'score' => ['required', 'numeric', 'min:0', 'max:1'],
-            'metrics' => ['required', 'array'],
+            'user_id' => ['required', 'integer', 'exists:users,id'],
+            'metrics' => [
+                'required',
+                'array',
+                'min:3',
+                'max:3',
+                function ($attribute, $value, $fail) {
+                    $required = ['efficiency', 'quality', 'timeliness'];
+                    if (count(array_intersect(array_keys($value), $required)) !== 3) {
+                        $fail('Le metriche devono includere: ' . implode(', ', $required));
+                    }
+                }
+            ],
             'metrics.efficiency' => ['required', 'numeric', 'min:0', 'max:1'],
-            'metrics.quality' => ['required', 'numeric', 'min:0', 'max:1']
+            'metrics.quality' => ['required', 'numeric', 'min:0', 'max:1'],
+            'metrics.timeliness' => ['required', 'numeric', 'min:0', 'max:1'],
+            'period' => ['required', 'string', 'in:daily,weekly,monthly']
         ];
     }
 }
@@ -140,211 +231,241 @@ class PerformanceRequest extends FormRequest
 
 ### 2. Model Validation
 ```php
-// Performance.php
+/**
+ * @property-read int $id
+ * @property-read int $user_id
+ * @property-read float $score
+ * @property-read array $metrics
+ * @property-read string $period
+ * @property-read DateTimeImmutable $created_at
+ * @property-read DateTimeImmutable $updated_at
+ */
 class Performance extends Model
 {
-    protected $casts = [
-        'score' => 'float',
-        'metrics' => 'array'
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<string>
+     */
+    protected $fillable = [
+        'user_id',
+        'score',
+        'metrics',
+        'period'
     ];
-    
-    protected $rules = [
-        'score' => 'required|numeric|min:0|max:1',
-        'metrics' => 'required|array'
+
+    /**
+     * The attributes that should be cast.
+     *
+     * @var array<string, string>
+     */
+    protected $casts = [
+        'metrics' => 'array',
+        'score' => 'float',
+        'created_at' => 'datetime',
+        'updated_at' => 'datetime'
+    ];
+
+    /**
+     * The attributes that should be hidden for serialization.
+     *
+     * @var array<int, string>
+     */
+    protected $hidden = [
+        'user_id'
     ];
 }
 ```
 
 ### 3. Custom Validation
 ```php
-// PerformanceValidator.php
+/**
+ * Validazione per le performance
+ */
 class PerformanceValidator
 {
-    public function validate(Performance $performance): bool
+    /**
+     * Validate the performance data.
+     *
+     * @param  array  $data
+     * @return bool
+     * @throws ValidationException
+     */
+    public function validate(array $data): bool
     {
-        return $this->validateScore($performance->score) &&
-               $this->validateMetrics($performance->metrics);
-    }
-    
-    private function validateScore(float $score): bool
-    {
-        return $score >= 0 && $score <= 1;
-    }
-    
-    private function validateMetrics(array $metrics): bool
-    {
-        return isset($metrics['efficiency']) &&
-               isset($metrics['quality']) &&
-               $metrics['efficiency'] >= 0 &&
-               $metrics['efficiency'] <= 1 &&
-               $metrics['quality'] >= 0 &&
-               $metrics['quality'] <= 1;
+        $validator = Validator::make(
+            $data,
+            Performance::rules(),
+            Performance::messages()
+        );
+
+        if ($validator->fails()) {
+            throw new ValidationException($validator);
+        }
+
+        return true;
     }
 }
 ```
 
-## Sanitizzazione
+## Sanitization
 
 ### 1. Input Sanitization
 ```php
-// PerformanceSanitizer.php
+/**
+ * Sanitizzazione per le performance
+ */
 class PerformanceSanitizer
 {
+    /**
+     * Sanitize the input data.
+     *
+     * @param  array  $data
+     * @return array
+     */
     public function sanitize(array $data): array
     {
         return [
-            'score' => $this->sanitizeScore($data['score']),
-            'metrics' => $this->sanitizeMetrics($data['metrics']),
-            'notes' => $this->sanitizeNotes($data['notes'] ?? '')
+            'user_id' => (int) $data['user_id'],
+            'metrics' => array_map('floatval', $data['metrics']),
+            'period' => strtolower(trim($data['period']))
         ];
-    }
-    
-    private function sanitizeScore($score): float
-    {
-        return (float) filter_var($score, FILTER_SANITIZE_NUMBER_FLOAT);
-    }
-    
-    private function sanitizeMetrics(array $metrics): array
-    {
-        return array_map(function ($value) {
-            return (float) filter_var($value, FILTER_SANITIZE_NUMBER_FLOAT);
-        }, $metrics);
-    }
-    
-    private function sanitizeNotes(string $notes): string
-    {
-        return htmlspecialchars(strip_tags($notes));
     }
 }
 ```
 
 ### 2. Output Sanitization
 ```php
-// PerformancePresenter.php
+/**
+ * Presentazione per le performance
+ */
 class PerformancePresenter
 {
+    /**
+     * Present the performance data.
+     *
+     * @param  Performance  $performance
+     * @return array
+     */
     public function present(Performance $performance): array
     {
         return [
             'id' => $performance->id,
-            'score' => $this->formatScore($performance->score),
-            'metrics' => $this->formatMetrics($performance->metrics),
-            'notes' => $this->formatNotes($performance->notes)
+            'score' => round($performance->score, 2),
+            'metrics' => array_map(function ($value) {
+                return round($value, 2);
+            }, $performance->metrics),
+            'period' => $performance->period,
+            'created_at' => $performance->created_at->format('Y-m-d H:i:s'),
+            'updated_at' => $performance->updated_at->format('Y-m-d H:i:s')
         ];
-    }
-    
-    private function formatScore(float $score): string
-    {
-        return number_format($score * 100, 2) . '%';
-    }
-    
-    private function formatMetrics(array $metrics): array
-    {
-        return array_map(function ($value) {
-            return number_format($value * 100, 2) . '%';
-        }, $metrics);
-    }
-    
-    private function formatNotes(string $notes): string
-    {
-        return nl2br(htmlspecialchars($notes));
     }
 }
 ```
 
 ### 3. Data Sanitization
 ```php
-// PerformanceData.php
+/**
+ * DTO per le performance
+ */
 class PerformanceData extends Data
 {
-    public function __construct(
-        public readonly float $score,
-        public readonly array $metrics,
-        public readonly ?string $notes = null
-    ) {
-        $this->validate();
-    }
-    
-    private function validate(): void
+    /**
+     * Create a new data instance.
+     *
+     * @param  array  $data
+     * @return static
+     */
+    public static function from(array $data): static
     {
-        if ($this->score < 0 || $this->score > 1) {
-            throw new InvalidArgumentException('Score must be between 0 and 1');
-        }
-        
-        foreach ($this->metrics as $value) {
-            if ($value < 0 || $value > 1) {
-                throw new InvalidArgumentException('Metrics must be between 0 and 1');
-            }
-        }
+        return new static(
+            user_id: (int) $data['user_id'],
+            metrics: array_map('floatval', $data['metrics']),
+            period: strtolower(trim($data['period']))
+        );
     }
 }
 ```
 
-## Protezione
+## Protection
 
 ### 1. CSRF Protection
 ```php
-// PerformanceController.php
+/**
+ * @property-read int $id
+ * @property-read int $user_id
+ * @property-read float $score
+ * @property-read array $metrics
+ * @property-read string $period
+ * @property-read DateTimeImmutable $created_at
+ * @property-read DateTimeImmutable $updated_at
+ */
 class PerformanceController extends Controller
 {
+    /**
+     * Create a new controller instance.
+     */
     public function __construct()
     {
         $this->middleware('csrf');
-    }
-    
-    public function store(PerformanceRequest $request)
-    {
-        $performance = Performance::create($request->validated());
-        
-        return redirect()->route('performance.show', $performance);
     }
 }
 ```
 
 ### 2. XSS Protection
 ```php
-// PerformanceView.php
+/**
+ * View per le performance
+ */
 class PerformanceView extends View
 {
+    /**
+     * Render the view.
+     *
+     * @return string
+     */
     public function render(): string
     {
-        return view('performance.show', [
+        return view('performance::show', [
             'performance' => $this->performance,
-            'metrics' => $this->sanitizeMetrics($this->performance->metrics),
-            'notes' => $this->sanitizeNotes($this->performance->notes)
+            'metrics' => $this->sanitizeMetrics($this->performance->metrics)
         ]);
     }
-    
+
+    /**
+     * Sanitize the metrics.
+     *
+     * @param  array  $metrics
+     * @return array
+     */
     private function sanitizeMetrics(array $metrics): array
     {
         return array_map(function ($value) {
-            return htmlspecialchars($value);
+            return htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
         }, $metrics);
-    }
-    
-    private function sanitizeNotes(string $notes): string
-    {
-        return htmlspecialchars($notes);
     }
 }
 ```
 
 ### 3. SQL Injection Protection
 ```php
-// PerformanceRepository.php
+/**
+ * Repository per le performance
+ */
 class PerformanceRepository
 {
+    /**
+     * Find performance by user.
+     *
+     * @param  User  $user
+     * @return Collection
+     */
     public function findByUser(User $user): Collection
     {
         return Performance::query()
             ->where('user_id', $user->id)
             ->orderBy('created_at', 'desc')
             ->get();
-    }
-    
-    public function update(Performance $performance, array $data): bool
-    {
-        return $performance->update($data);
     }
 }
 ```
@@ -353,25 +474,25 @@ class PerformanceRepository
 
 ### 1. Security Logging
 ```php
-// PerformanceSecurityLogger.php
+/**
+ * Logger di sicurezza per le performance
+ */
 class PerformanceSecurityLogger
 {
-    public function logAccess(User $user, Performance $performance): void
+    /**
+     * Log security event.
+     *
+     * @param  string  $event
+     * @param  array  $data
+     * @return void
+     */
+    public function log(string $event, array $data): void
     {
-        Log::channel('security')->info('Performance access', [
-            'user_id' => $user->id,
-            'performance_id' => $performance->id,
-            'ip_address' => request()->ip(),
-            'user_agent' => request()->userAgent()
-        ]);
-    }
-    
-    public function logUpdate(User $user, Performance $performance): void
-    {
-        Log::channel('security')->info('Performance update', [
-            'user_id' => $user->id,
-            'performance_id' => $performance->id,
-            'changes' => $performance->getChanges()
+        Log::channel('security')->info($event, [
+            'user_id' => auth()->id(),
+            'ip' => request()->ip(),
+            'user_agent' => request()->userAgent(),
+            'data' => $data
         ]);
     }
 }
@@ -379,15 +500,24 @@ class PerformanceSecurityLogger
 
 ### 2. Audit Logging
 ```php
-// PerformanceAuditLogger.php
+/**
+ * Logger di audit per le performance
+ */
 class PerformanceAuditLogger
 {
-    public function logAction(User $user, string $action, Performance $performance): void
+    /**
+     * Log audit event.
+     *
+     * @param  string  $event
+     * @param  array  $data
+     * @return void
+     */
+    public function log(string $event, array $data): void
     {
-        Log::channel('audit')->info('Performance action', [
-            'user_id' => $user->id,
-            'action' => $action,
-            'performance_id' => $performance->id,
+        Log::channel('audit')->info($event, [
+            'user_id' => auth()->id(),
+            'action' => $event,
+            'data' => $data,
             'timestamp' => now()
         ]);
     }
@@ -396,15 +526,25 @@ class PerformanceAuditLogger
 
 ### 3. Error Logging
 ```php
-// PerformanceErrorLogger.php
+/**
+ * Logger di errori per le performance
+ */
 class PerformanceErrorLogger
 {
-    public function logError(Throwable $error, ?User $user = null): void
+    /**
+     * Log error event.
+     *
+     * @param  Exception  $exception
+     * @param  array  $data
+     * @return void
+     */
+    public function log(Exception $exception, array $data): void
     {
-        Log::channel('error')->error('Performance error', [
-            'error' => $error->getMessage(),
-            'user_id' => $user?->id,
-            'trace' => $error->getTraceAsString()
+        Log::channel('error')->error($exception->getMessage(), [
+            'user_id' => auth()->id(),
+            'exception' => $exception,
+            'data' => $data,
+            'trace' => $exception->getTraceAsString()
         ]);
     }
 }
@@ -412,11 +552,11 @@ class PerformanceErrorLogger
 
 ## Conclusioni
 Le best practices per la sicurezza nel modulo Performance:
-- Implementano autenticazione robusta
-- Utilizzano autorizzazione basata su ruoli e permessi
-- Validano e sanitizzano tutti gli input
-- Proteggono contro CSRF e XSS
-- Preveniscono SQL injection
+- Implementano l'autenticazione
+- Implementano l'autorizzazione
+- Validano i dati
+- Sanitizzano input/output
+- Proteggono da vulnerabilità
 - Loggano eventi di sicurezza
-- Mantengono audit trail
-- Gestiscono correttamente gli errori 
+- Loggano eventi di audit
+- Loggano errori 

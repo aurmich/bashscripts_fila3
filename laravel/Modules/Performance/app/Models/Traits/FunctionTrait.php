@@ -5,13 +5,26 @@ declare(strict_types=1);
 namespace Modules\Performance\Models\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Str;
 use Modules\Performance\Actions\TrovaEsclusiAction;
+use Modules\Performance\Enums\WorkerType;
 use Modules\Performance\Models\CriteriEsclusione;
 use Modules\Performance\Models\CriteriOption;
+use Modules\Performance\Models\IndividualePesi;
+use Modules\Performance\Models\IndividualePoPesi;
+use function Safe\date;
 
 /**
- * @template TModel of \Illuminate\Database\Eloquent\Model
+ * @template TModel of Model
+ * 
+ * @property-read int|null $anno
+ * @property-read string|WorkerType|null $type
+ * @property-read Collection<int, Model> $codiciAssenze
+ * @property-read Collection<int, Model> $options
+ * @property-read Collection<int, Model> $criteriValutazione
  */
 trait FunctionTrait
 {
@@ -66,18 +79,30 @@ trait FunctionTrait
      * @param int $year
      * @return array<int, array<string, mixed>>
      */
+    /**
+     * @param int $year
+     * @return array<int, array<string, mixed>>
+     */
     public function criteriOptionsYear(int $year): array
     {
         if (isset(static::$cached_criteri_options[$year])) {
             return static::$cached_criteri_options[$year];
         }
 
-        $options = CriteriOption::where('anno', $year)->get();
-        static::$cached_criteri_options[$year] = $options->toArray();
+        $options = CriteriOption::where('anno', $year)
+            ->get()
+            ->values() // Forza indici numerici sequenziali
+            ->toArray();
+        
+        static::$cached_criteri_options[$year] = $options;
 
         return static::$cached_criteri_options[$year];
     }
 
+    /**
+     * @param int $year
+     * @return array<int, array<string, mixed>>
+     */
     /**
      * @param int $year
      * @return array<int, array<string, mixed>>
@@ -88,8 +113,12 @@ trait FunctionTrait
             return static::$cached_criteri_esclusione[$year];
         }
 
-        $esclusioni = CriteriEsclusione::where('anno', $year)->get();
-        static::$cached_criteri_esclusione[$year] = $esclusioni->toArray();
+        $esclusioni = CriteriEsclusione::where('anno', $year)
+            ->get()
+            ->values() // Forza indici numerici sequenziali
+            ->toArray();
+        
+        static::$cached_criteri_esclusione[$year] = $esclusioni;
 
         return static::$cached_criteri_esclusione[$year];
     }
@@ -178,17 +207,26 @@ trait FunctionTrait
         $this->attributes[$name] = $value;
     }
 
+    /**
+     * @param string $name
+     * @return string
+     */
     public function option(string $name): string
     {
         $option = $this->options->firstWhere('name', $name);
-        if (! \is_object($option)) {
-            return '<h3 style="color:red">andare su options e popolare:
-            <ul>
-            <li>option_type ['.$this->getType().']</li>
-            <li>name ['.$name.']</li>
-            <li>year ['.$this->anno.']</li>
-            </ul>
-            </h3>';
+        if (! $option instanceof Model) {
+            return sprintf(
+                '<h3 style="color:red">andare su options e popolare:
+                <ul>
+                <li>option_type [%s]</li>
+                <li>name [%s]</li>
+                <li>year [%s]</li>
+                </ul>
+                </h3>',
+                $this->getType(),
+                $name,
+                (string)$this->anno
+            );
         }
         if (strlen((string) $option->value)) {
             return $option->value;
@@ -197,19 +235,30 @@ trait FunctionTrait
         return $option->txt;
     }
 
+    /**
+     * @return string
+     */
     protected function getType(): string
     {
-        return $this->type ?? '';
+        return $this->type instanceof WorkerType 
+            ? $this->type->value 
+            : (string)($this->type ?? '');
     }
 
+    /**
+     * @return bool
+     */
     public function isPo(): bool
     {
-        return $this->posfun >= 100;
+        return (int)($this->posfun ?? 0) >= 100;
     }
 
+    /**
+     * @return bool
+     */
     public function isRegionale(): bool
     {
-        return $this->disci1 === 203;
+        return (int)($this->disci1 ?? 0) === 203;
     }
 
     /**
@@ -227,16 +276,13 @@ trait FunctionTrait
         return $query;
     }
 
+    /**
+     * @return bool
+     */
     public function canSendEmail(): bool
     {
-        if ($this->ha_diritto == 0) {
-            return false;
-        }
-        if ($this->totale_punteggio <= 1) {
-            return false;
-        }
-
-        return true;
+        return (int)($this->ha_diritto ?? 0) !== 0 
+            && (float)($this->totale_punteggio ?? 0) > 1;
     }
 
     /**
