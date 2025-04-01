@@ -1,8 +1,8 @@
 {
-    "name": "laraxot/module_legge109_fila3",
+    "name": "laraxot/module_mensa_fila3",
     "description": "",
     "license": "MIT",
-    "homepage": "https://github.com/laraxot/module_legge109_fila3.git",
+    "homepage": "https://github.com/laraxot/module_mensa_fila3.git",
     "authors": [
         {
             "name": "Marco Sottana",
@@ -29,9 +29,9 @@
     ],
     "autoload": {
         "psr-4": {
-            "Modules\\Legge109\\": "app/",
-            "Modules\\Legge109\\Database\\Factories\\": "database/factories/",
-            "Modules\\Legge109\\Database\\Seeders\\": "database/seeders/"
+            "Modules\\Mensa\\": "app/",
+            "Modules\\Mensa\\Database\\Factories\\": "database/factories/",
+            "Modules\\Mensa\\Database\\Seeders\\": "database/seeders/"
         }
     },
     "scripts": {
@@ -52,8 +52,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Modules\\Legge109\\Providers\\Legge109ServiceProvider",
-                "Modules\\Legge109\\Providers\\Filament\\AdminPanelProvider"
+                "Modules\\Mensa\\Providers\\MensaServiceProvider",
+                "Modules\\Mensa\\Providers\\Filament\\AdminPanelProvider"
             ],
             "aliases": {}
         }

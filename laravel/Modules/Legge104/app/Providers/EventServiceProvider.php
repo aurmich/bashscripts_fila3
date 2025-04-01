@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Legge109\Providers;
+namespace Modules\Mensa\Providers;
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as BaseEventServiceProvider;
 

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Modules\Legge109\Database\Seeders;
+namespace Modules\Mensa\Database\Seeders;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
 
-class Legge109DatabaseSeeder extends Seeder
+class MensaDatabaseSeeder extends Seeder
 {
     /**
      * Run the database seeds.
