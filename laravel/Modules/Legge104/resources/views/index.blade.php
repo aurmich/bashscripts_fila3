@@ -1,9 +1,9 @@
-@extends('prenotazioni::layouts.master')
+@extends('presenzeassenze::layouts.master')
 
 @section('content')
     <h1>Hello World</h1>
 
     <p>
-        This view is loaded from module: {!! config('prenotazioni.name') !!}
+        This view is loaded from module: {!! config('presenzeassenze.name') !!}
     </p>
 @stop

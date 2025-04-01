@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Modules\Prenotazioni\Database\Seeders;
+namespace Modules\PresenzeAssenze\Database\Seeders;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
 
-class PrenotazioniDatabaseSeeder extends Seeder
+class PresenzeAssenzeDatabaseSeeder extends Seeder
 {
     /**
      * Run the database seeds.
