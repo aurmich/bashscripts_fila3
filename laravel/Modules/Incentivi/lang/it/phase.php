@@ -1,6 +1,4 @@
-<?php
-
-return array (
+<?php return array (
   'navigation' => 
   array (
     'name' => 'Fase',
@@ -87,13 +85,9 @@ return array (
     array (
       'label' => 'is_active',
     ),
-    'message' => 
-    array (
-      'label' => 'message',
-    ),
   ),
   'model' => 
   array (
     'label' => 'phase.model',
   ),
-);
+);
