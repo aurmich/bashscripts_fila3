@@ -1,16 +1,17 @@
 {
-    "name": "Lang",
-    "alias": "Lang",
-    "description": "label language",
+    "name": "User",
+    "alias": "user",
+    "description": "",
     "keywords": [],
-    "active": 1,
-    "priority": 4,
-    "order": 5,
+    "priority": 0,
     "providers": [
-        "Modules\\Lang\\Providers\\LangServiceProvider",
-        "Modules\\Lang\\Providers\\Filament\\AdminPanelProvider"
+        "Modules\\User\\Providers\\UserServiceProvider",
+        "Modules\\User\\Providers\\Filament\\AdminPanelProvider"
     ],
-    "aliases": [],
-    "files": [],
-    "requires": []
+    "migration": {
+        "seeds": [
+            "Modules\\User\\Database\\Seeders\\RolesSeeder"
+        ]
+    },
+    "files": []
 }

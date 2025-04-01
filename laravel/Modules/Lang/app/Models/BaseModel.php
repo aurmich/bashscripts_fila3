@@ -2,15 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Modules\Lang\Models;
+namespace Modules\User\Models;
 
-// use GeneaLabs\LaravelModelCaching\Traits\Cachable;
-// use Laravel\Scout\Searchable;
-// ---------- traits
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Modules\Xot\Actions\Factory\GetFactoryAction;
+use Modules\Xot\Models\Traits\RelationX;
 use Modules\Xot\Traits\Updater;
 
 /**
@@ -19,15 +16,13 @@ use Modules\Xot\Traits\Updater;
 abstract class BaseModel extends Model
 {
     use HasFactory;
-
-    // use Searchable;
-    // use Cachable;
+    use RelationX;
     use Updater;
 
     /**
      * Indicates whether attributes are snake cased on arrays.
      *
-     * @see  https://laravel-news.com/6-eloquent-secrets
+     * @see https://laravel-news.com/6-eloquent-secrets
      *
      * @var bool
      */
@@ -43,10 +38,10 @@ abstract class BaseModel extends Model
     protected $perPage = 30;
 
     /** @var string */
-    protected $connection = 'lang';
+    protected $connection = 'user';
 
     /** @var list<string> */
-    protected $fillable = ['id'];
+    protected $appends = [];
 
     /** @var string */
     protected $primaryKey = 'id';
@@ -60,21 +55,33 @@ abstract class BaseModel extends Model
     ];
 
     /**
+     * @see vendor/ laravel / framework / src / Illuminate / Database / Eloquent / Factories / HasFactory.php
      * Create a new factory instance for the model.
      *
-     * @return Factory
+     * @return Factory<static>
      */
     protected static function newFactory()
     {
-        return app(GetFactoryAction::class)->execute(static::class);
+        return app(\Modules\Xot\Actions\Factory\GetFactoryAction::class)->execute(static::class);
     }
 
-    /**
-     * @return array<string, string> */
+    /** @return array<string, string> */
     protected function casts(): array
     {
         return [
             'id' => 'string',
-            'uuid' => 'string', 'published_at' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime'];
+            'uuid' => 'string',
+
+            'published_at' => 'datetime',
+            'verified_at' => 'datetime',
+
+            'created_at' => 'datetime',
+            'updated_at' => 'datetime',
+            'deleted_at' => 'datetime',
+
+            'updated_by' => 'string',
+            'created_by' => 'string',
+            'deleted_by' => 'string',
+        ];
     }
 }

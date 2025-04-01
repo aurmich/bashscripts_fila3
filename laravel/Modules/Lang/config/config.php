@@ -3,18 +3,18 @@
 declare(strict_types=1);
 
 return [
-    'name' => 'Lang',
-    'description' => 'Modulo per la gestione delle traduzioni e localizzazioni',
-    'icon' => 'heroicon-o-language',
+    'name' => 'User',
+    'description' => 'Modulo per la gestione degli utenti e autorizzazioni',
+    'icon' => 'heroicon-o-users',
     'navigation' => [
         'enabled' => true,
-        'sort' => 50,
+        'sort' => 100,
     ],
     'routes' => [
         'enabled' => true,
         'middleware' => ['web', 'auth'],
     ],
     'providers' => [
-        'Modules\\Lang\\Providers\\LangServiceProvider',
+        'Modules\\User\\Providers\\UserServiceProvider',
     ],
 ];

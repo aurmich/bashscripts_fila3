@@ -6,22 +6,21 @@
      stroke-width="1.5"
      aria-hidden="true" 
      role="img">
-    <!-- Globo -->
-    <circle cx="12" cy="12" r="8" />
+    <!-- Utente principale -->
+    <circle cx="12" cy="8" r="3" />
     <path stroke-linecap="round" 
           stroke-linejoin="round" 
-          d="M4 12h16M12 4v16" />
+          d="M12 11c-3.5 0-6 2-6 5v2h12v-2c0-3-2.5-5-6-5z" />
     
-    <!-- Linee curve per rappresentare i meridiani -->
+    <!-- Utente a sinistra -->
+    <circle cx="6" cy="6" r="2" />
     <path stroke-linecap="round" 
           stroke-linejoin="round" 
-          d="M7 6.5C9 8.5 15 8.5 17 6.5" />
+          d="M4 14c-.5-1.5-1-2-2-2" />
+    
+    <!-- Utente a destra -->
+    <circle cx="18" cy="6" r="2" />
     <path stroke-linecap="round" 
           stroke-linejoin="round" 
-          d="M7 17.5C9 15.5 15 15.5 17 17.5" />
-          
-    <!-- Simbolo di traduzione -->
-    <path stroke-linecap="round" 
-          stroke-linejoin="round" 
-          d="M16 8l1.5 1.5L16 11" />
+          d="M20 14c.5-1.5 1-2 2-2" />
 </svg> 
