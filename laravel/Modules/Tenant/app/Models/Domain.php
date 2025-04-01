@@ -7,7 +7,6 @@ namespace Modules\Tenant\Models;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Tenant\Actions\Domains\GetDomainsArrayAction;
 use Sushi\Sushi;
-use Modules\Xot\Contracts\ProfileContract;
 
 /**
  * 
@@ -19,8 +18,8 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static \Illuminate\Database\Eloquent\Builder|Domain query()
  * @method static \Illuminate\Database\Eloquent\Builder|Domain whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Domain whereName($value)
- * @property-read ProfileContract|null $creator
- * @property-read ProfileContract|null $updater
+ * @property-read \Modules\Broker\Models\Profile|null $creator
+ * @property-read \Modules\Broker\Models\Profile|null $updater
  * @method static \Modules\Tenant\Database\Factories\DomainFactory factory($count = null, $state = [])
  * @mixin \Eloquent
  */
