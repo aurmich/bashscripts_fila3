@@ -5,21 +5,21 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'group' => [
-            'sistema' => [
-                'label' => 'Sistema',
-                'description' => 'Funzionalità di sistema',
+            'documenti' => [
+                'label' => 'Documenti',
+                'description' => 'Gestione documenti e certificazioni',
             ],
         ],
-        'badge' => [
-            'label' => 'Badge',
-            'plural' => 'Badges',
-            'icon' => 'badge-identification', 
+        'certfisc' => [
+            'label' => 'Certificazione Fiscale',
+            'plural' => 'Certificazioni Fiscali',
+            'icon' => 'certfisc-document',
         ],
     ],
     'resources' => [
-        'badge' => [
-            'label' => 'Badge',
-            'plural_label' => 'Badges',
+        'certfisc' => [
+            'label' => 'Certificazione Fiscale',
+            'plural_label' => 'Certificazioni Fiscali',
         ],
     ],
 ];

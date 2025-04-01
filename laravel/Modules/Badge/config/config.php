@@ -3,6 +3,6 @@
 declare(strict_types=1);
 
 return [
-    'name' => 'Badge',
-    'icon' => 'fas-id-badge',
+    'name' => 'CertFisc',
+    'icon' => 'heroicon-o-archive-box-arrow-down',
 ];

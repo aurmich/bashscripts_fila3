@@ -1,8 +1,8 @@
 {
-    "name": "laraxot/module_badge_fila3",
+    "name": "laraxot/module_certfisc_fila3",
     "description": "",
     "license": "MIT",
-    "homepage": "https://github.com/laraxot/module_badge_fila3.git",
+    "homepage": "https://github.com/laraxot/module_certfisc_fila3.git",
     "authors": [
         {
             "name": "Marco Sottana",
@@ -29,9 +29,9 @@
     ],
     "autoload": {
         "psr-4": {
-            "Modules\\Badge\\": "app/",
-            "Modules\\Badge\\Database\\Factories\\": "database/factories/",
-            "Modules\\Badge\\Database\\Seeders\\": "database/seeders/"
+            "Modules\\CertFisc\\": "app/",
+            "Modules\\CertFisc\\Database\\Factories\\": "database/factories/",
+            "Modules\\CertFisc\\Database\\Seeders\\": "database/seeders/"
         }
     },
     "scripts": {
@@ -52,8 +52,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Modules\\Badge\\Providers\\BadgeServiceProvider",
-                "Modules\\Badge\\Providers\\Filament\\AdminPanelProvider"
+                "Modules\\CertFisc\\Providers\\CertFiscServiceProvider",
+                "Modules\\CertFisc\\Providers\\Filament\\AdminPanelProvider"
             ],
             "aliases": {}
         }

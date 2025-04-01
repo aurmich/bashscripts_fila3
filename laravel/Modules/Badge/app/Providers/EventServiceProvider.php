@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Badge\Providers;
+namespace Modules\CertFisc\Providers;
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as BaseEventServiceProvider;
 

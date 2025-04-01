@@ -1,9 +1,9 @@
-@extends('badge::layouts.master')
+@extends('certfisc::layouts.master')
 
 @section('content')
     <h1>Hello World</h1>
 
     <p>
-        This view is loaded from module: {!! config('badge.name') !!}
+        This view is loaded from module: {!! config('certfisc.name') !!}
     </p>
 @stop

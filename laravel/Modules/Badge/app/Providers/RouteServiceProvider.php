@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Badge\Providers;
+namespace Modules\CertFisc\Providers;
 
 // --- bases ---
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
@@ -12,11 +12,11 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
     /**
      * The module namespace to assume when generating URLs to actions.
      */
-    protected string $moduleNamespace = 'Modules\Badge\Http\Controllers';
+    protected string $moduleNamespace = 'Modules\CertFisc\Http\Controllers';
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
 
-    public string $name = 'Badge';
+    public string $name = 'CertFisc';
 }
