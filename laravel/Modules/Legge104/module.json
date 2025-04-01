@@ -1,15 +1,14 @@
 {
-    "name": "Sigma",
-    "alias": "sigma",
+    "name": "Sindacati",
+    "alias": "sindacati",
     "description": "",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
-        "Modules\\Sigma\\Providers\\SigmaServiceProvider",
-        "Modules\\Sigma\\Providers\\Filament\\AdminPanelProvider"
+        "Modules\\Sindacati\\Providers\\SindacatiServiceProvider"
     ],
-    "aliases": [],
+    "aliases": {},
     "files": [],
     "requires": []
 }

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Sigma\Providers;
+namespace Modules\Sindacati\Providers;
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as BaseEventServiceProvider;
 

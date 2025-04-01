@@ -1,13 +1,13 @@
 @extends('adm_theme::layouts.app')
-@section('page_heading', 'package sigma')
-@section('section')
-    <x-filament::badge> flash-message </x-filament::badge>
+@section('page_heading','Sindacati')
+@section('content')
+<x-filament::badge> flash-message </x-filament::badge>
 
 
-    Sigma package ..
-    {{ get_class($_panel) }}
-    {{-- @foreach ($_panel->containerActions() as $act)
-        {!!  $act->btnHtml() !!}
-    @endforeach --}}
-
+<h1>Benvenuto nel programma Sindacati</h1>
+@userLevel(3)
+	livello >=3
+@else
+	livello <3
+@endif
 @endsection

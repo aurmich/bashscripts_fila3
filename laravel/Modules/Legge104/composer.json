@@ -1,8 +1,8 @@
 {
-    "name": "laraxot/module_sigma_fila3",
+    "name": "laraxot/module_sindacati_fila3",
     "description": "",
     "license": "MIT",
-    "homepage": "https://github.com/laraxot/module_sigma_fila3.git",
+    "homepage": "https://github.com/laraxot/module_sindacati_fila3.git",
     "authors": [
         {
             "name": "Marco Sottana",
@@ -29,9 +29,9 @@
     ],
     "autoload": {
         "psr-4": {
-            "Modules\\Sigma\\": "app/",
-            "Modules\\Sigma\\Database\\Factories\\": "database/factories/",
-            "Modules\\Sigma\\Database\\Seeders\\": "database/seeders/"
+            "Modules\\Sindacati\\": "app/",
+            "Modules\\Sindacati\\Database\\Factories\\": "database/factories/",
+            "Modules\\Sindacati\\Database\\Seeders\\": "database/seeders/"
         }
     },
     "scripts": {
@@ -52,8 +52,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Modules\\Sigma\\Providers\\SigmaServiceProvider",
-                "Modules\\Sigma\\Providers\\Filament\\AdminPanelProvider"
+                "Modules\\Sindacati\\Providers\\SindacatiServiceProvider",
+                "Modules\\Sindacati\\Providers\\Filament\\AdminPanelProvider"
             ],
             "aliases": {}
         }
