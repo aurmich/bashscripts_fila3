@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Modules\CertFisc\Database\Seeders;
+namespace Modules\ContoAnnuale\Database\Seeders;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
 
-class CertFiscDatabaseSeeder extends Seeder
+class ContoAnnualeDatabaseSeeder extends Seeder
 {
     /**
      * Run the database seeds.

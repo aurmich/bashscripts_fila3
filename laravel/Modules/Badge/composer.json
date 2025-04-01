@@ -1,8 +1,8 @@
 {
-    "name": "laraxot/module_certfisc_fila3",
+    "name": "laraxot/module_contoannuale_fila3",
     "description": "",
     "license": "MIT",
-    "homepage": "https://github.com/laraxot/module_certfisc_fila3.git",
+    "homepage": "https://github.com/laraxot/module_contoannuale_fila3.git",
     "authors": [
         {
             "name": "Marco Sottana",
@@ -29,9 +29,9 @@
     ],
     "autoload": {
         "psr-4": {
-            "Modules\\CertFisc\\": "app/",
-            "Modules\\CertFisc\\Database\\Factories\\": "database/factories/",
-            "Modules\\CertFisc\\Database\\Seeders\\": "database/seeders/"
+            "Modules\\ContoAnnuale\\": "app/",
+            "Modules\\ContoAnnuale\\Database\\Factories\\": "database/factories/",
+            "Modules\\ContoAnnuale\\Database\\Seeders\\": "database/seeders/"
         }
     },
     "scripts": {
@@ -52,8 +52,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Modules\\CertFisc\\Providers\\CertFiscServiceProvider",
-                "Modules\\CertFisc\\Providers\\Filament\\AdminPanelProvider"
+                "Modules\\ContoAnnuale\\Providers\\ContoAnnualeServiceProvider",
+                "Modules\\ContoAnnuale\\Providers\\Filament\\AdminPanelProvider"
             ],
             "aliases": {}
         }

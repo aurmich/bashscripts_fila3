@@ -1,12 +1,12 @@
 {
-    "name": "CertFisc",
-    "alias": "certfisc",
+    "name": "ContoAnnuale",
+    "alias": "contoannuale",
     "description": "",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
-        "Modules\\CertFisc\\Providers\\CertFiscServiceProvider"
+        "Modules\\ContoAnnuale\\Providers\\ContoAnnualeServiceProvider"
     ],
     "aliases": {},
     "files": [],

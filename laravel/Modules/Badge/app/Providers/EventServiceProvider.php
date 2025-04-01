@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\CertFisc\Providers;
+namespace Modules\ContoAnnuale\Providers;
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as BaseEventServiceProvider;
 

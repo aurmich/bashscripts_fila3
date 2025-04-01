@@ -3,6 +3,6 @@
 declare(strict_types=1);
 
 return [
-    'name' => 'CertFisc',
-    'icon' => 'heroicon-o-archive-box-arrow-down',
+    'name' => 'ContoAnnuale',
+    'icon' => 'heroicon-o-calendar',
 ];
