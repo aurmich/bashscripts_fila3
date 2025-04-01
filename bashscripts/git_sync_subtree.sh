@@ -19,7 +19,7 @@ die() {
 
 # Sync subtree
 sync_subtree() {
-    git add -A
+    git add .
     git commit -am "."
     git push -u origin "$REMOTE_BRANCH"
     
