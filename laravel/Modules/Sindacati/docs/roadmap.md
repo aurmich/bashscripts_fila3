@@ -1,195 +1,77 @@
-# Roadmap Modulo Sindacati
+# Sindacati Module Roadmap
 
-## Overview
-**Status**: In Progress (45%)
-**Priority**: High
-**Target Date**: Q2 2025
+## Module Progress Overview
+Overall Module Completion: 60%
+- Core Features: 75% complete
+- High Priority Features: 70% complete
+- Medium Priority Features: 50% complete
+- Low Priority Features: 30% complete
+- Technical Debt: 60% complete
 
-## Feature Description
-Sistema completo per la gestione delle relazioni sindacali, inclusi accordi, contratti e comunicazioni.
+## Technical Metrics Overview
 
-## Current Progress
-- Gestione Accordi: 50%
-- Gestione Contratti: 45%
-- Comunicazioni: 40%
-- Reporting: 45%
+### Code Quality
+* Maintainability Index: 85/100
+* Cyclomatic Complexity: Avg 2.5
+* Technical Debt Ratio: 15%
+* PHPStan Level: 5 (target: Level 7)
+* Code Duplication: 5%
+* Clean Code Score: 85/100
+* Type Safety: 80%
 
-## Technical Requirements
-- Sistema accordi
-- Gestione contratti
-- Sistema comunicazioni
-- Reporting system
+### Performance
+* Average Response Time: 200ms
+* 95th Percentile Response: 400ms
+* Database Query Time: 150ms
+* Cache Hit Rate: 85%
+* Memory Peak Usage: 75MB
+* CPU Utilization: 40%
 
-## Metrics
-| Metric | Current | Target | Status |
-|--------|---------|---------|---------|
-| Code Coverage | 45% | 100% | 🟡 |
-| PHPStan Level | 5 | 7 | 🟡 |
-| Test Pass Rate | 40% | 100% | 🟡 |
-| Performance Score | 75/100 | 95/100 | 🟡 |
+### Security
+* OWASP Compliance: 95%
+* Security Scan Issues: 0 Critical, 3 Medium
+* Authentication Coverage: 100%
+* Authorization Coverage: 95%
+* Input Validation: 98%
+* XSS Protection: 100%
 
-## Implementation Details
-### Completed
-- Sistema accordi base
-- Gestione contratti base
-- Comunicazioni base
-- Reporting base
+### Testing
+* Overall Test Coverage: 75%
+* Unit Test Pass Rate: 100%
+* Integration Test Pass Rate: 95%
+* E2E Test Pass Rate: 90%
+* Security Test Coverage: 85%
+* Performance Test Coverage: 70%
 
-### In Progress
-- Sistema accordi avanzato
-- Gestione contratti avanzata
-- Comunicazioni avanzate
-- Reporting avanzato
+## Current Sprint Focus
+1. PHPStan Level 7 Compliance
+   - Fix return type declarations
+   - Add missing parameter types
+   - Complete property annotations
+   - Priority: High
 
-### Pending
-- Sistema accordi completo
-- Gestione contratti completa
-- Comunicazioni complete
-- Reporting completo
+2. Code Quality Improvements
+   - Implement missing tests
+   - Reduce code duplication
+   - Priority: High
 
-## Dependencies
-- Laravel Framework v10.x
-- Spatie Data
-- Spatie Queryable Actions
-- PHPStan
-- PHPUnit
+3. Documentation
+   - Complete API documentation
+   - Update integration guides
+   - Priority: Medium
 
-## Testing Strategy
-- Unit testing
-- Integration testing
-- Performance testing
-- Validation testing
+## Technical Debt
+1. Code Quality
+   - Complete PHPStan fixes
+   - Improve test coverage
+   - Priority: High
 
-## Documentation Status
-- User Guide: 45%
-- Implementation Guide: 40%
-- Best Practices: 35%
+2. Documentation
+   - API documentation
+   - Integration guides
+   - Priority: Medium
 
-## Next Steps
-1. Complete sistema accordi
-2. Enhance gestione contratti
-3. Improve comunicazioni
-4. Update reporting
-5. Implement reviews
-
-## Risks and Mitigations
-| Risk | Impact | Probability | Mitigation |
-|------|---------|-------------|------------|
-| Data Accuracy | High | High | Validation |
-| Performance | High | Medium | Optimization |
-| Integration | High | High | Testing |
-
-## Related Features
-- [Accordi](./features/accordi.md)
-- [Contratti](./features/contratti.md)
-- [Comunicazioni](./features/comunicazioni.md)
-- [Reporting](./features/reporting.md)
-
-## Implementation Guide
-### Fase 1: Gestione Accordi (50%)
-1. **Core Features** (55%)
-   - [x] Sistema base
-   - [x] Validazione base
-   - [ ] Sistema avanzato
-   - [ ] Validazione avanzata
-
-2. **Data Management** (45%)
-   - [x] Storage base
-   - [x] Query base
-   - [ ] Storage avanzato
-   - [ ] Query avanzate
-
-3. **User Interface** (50%)
-   - [x] Form base
-   - [x] Vista base
-   - [ ] Form avanzati
-   - [ ] Viste avanzate
-
-### Fase 2: Gestione Contratti (45%)
-1. **Contract System** (50%)
-   - [x] Sistema base
-   - [x] Validazione base
-   - [ ] Sistema avanzato
-   - [ ] Validazione avanzata
-
-2. **Data Integrity** (40%)
-   - [x] Controlli base
-   - [x] Validazione base
-   - [ ] Controlli avanzati
-   - [ ] Validazione avanzata
-
-3. **Error Handling** (45%)
-   - [x] Errori base
-   - [x] Messaggi base
-   - [ ] Errori avanzati
-   - [ ] Messaggi avanzati
-
-### Fase 3: Comunicazioni (40%)
-1. **Communication System** (45%)
-   - [x] Sistema base
-   - [x] Validazione base
-   - [ ] Sistema avanzato
-   - [ ] Validazione avanzata
-
-2. **Data Processing** (35%)
-   - [x] Elaborazione base
-   - [x] Calcoli base
-   - [ ] Elaborazione avanzata
-   - [ ] Calcoli avanzati
-
-3. **Visualization** (40%)
-   - [x] Grafici base
-   - [x] Report base
-   - [ ] Grafici avanzati
-   - [ ] Report avanzati
-
-### Fase 4: Reporting (45%)
-1. **Report System** (50%)
-   - [x] Sistema base
-   - [x] Template base
-   - [ ] Sistema avanzato
-   - [ ] Template avanzati
-
-2. **Data Export** (40%)
-   - [x] Export base
-   - [x] Formati base
-   - [ ] Export avanzato
-   - [ ] Formati avanzati
-
-3. **Customization** (45%)
-   - [x] Personalizzazione base
-   - [x] Opzioni base
-   - [ ] Personalizzazione avanzata
-   - [ ] Opzioni avanzate
-
-## Consigli e Ragionamenti
-1. **Priorità di Implementazione**
-   - Iniziare con sistema accordi
-   - Procedere con gestione contratti
-   - Implementare comunicazioni
-   - Sviluppare reporting
-
-2. **Best Practices**
-   - Utilizzare Spatie Data
-   - Implementare Spatie Queryable Actions
-   - Mantenere performance
-   - Documentare tutto
-
-3. **Considerazioni Tecniche**
-   - Focus su scalabilità
-   - Implementare caching
-   - Utilizzare queue
-   - Mantenere data quality
-
-4. **Rischi e Mitigazioni**
-   - Monitorare data quality
-   - Implementare validation
-   - Mantenere performance
-   - Documentare decisioni
-
-## Collegamenti Bidirezionali
-- [Accordi](./features/accordi.md) → Sistema accordi
-- [Contratti](./features/contratti.md) → Sistema contratti
-- [Comunicazioni](./features/comunicazioni.md) → Sistema comunicazioni
-- [Reporting](./features/reporting.md) → Sistema reporting
-- [Validazione](./features/validazione.md) → Sistema validazione 
+3. Performance
+   - Query optimization
+   - Cache implementation
+   - Priority: High

@@ -1,11 +1,11 @@
-# User Module Analysis
+# PresenzeAssenze Module Analysis
 
 ## Overview
-The User module provides specialized functionality within the Laravel application.
+The PresenzeAssenze module provides specialized functionality within the Laravel application.
 
 ## Directory Structure
 ```
-Modules/User/
+Modules/PresenzeAssenze/
 ├── app/
 │   ├── Models/
 │   ├── Http/
@@ -24,7 +24,7 @@ Modules/User/
 - PHPStan Level 7 compliance required
 
 ### Features
-1. Core User Management
+1. Core PresenzeAssenze Management
 2. Integration with Related Modules
 3. Data Processing and Validation
 
