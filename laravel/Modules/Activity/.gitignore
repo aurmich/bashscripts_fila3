@@ -45,9 +45,6 @@ Homestead.json
 .git-blame-ignore-revs
 .git-rewrite/
 
-# Documentation
-/docs/
-/docs/cache/
 
 # Ignored temporary files
 *.tmp
