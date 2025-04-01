@@ -3,6 +3,7 @@
 
 me=$( readlink -f -- "$0")
 script_dir=$(dirname "$me")
+CUSTOM_ORG="$1"
 
 # Script per sincronizzare git subtree con ottimizzazione della history
 CONFIG_FILE="gitmodules.ini"
@@ -44,9 +45,21 @@ while IFS= read -r line; do
         current_path="${BASH_REMATCH[1]}"
     elif [[ "$line" =~ ^url\ *=\ *(.+)$ && -n "$current_path" ]]; then
         current_url="${BASH_REMATCH[1]}"
+
+         # Modifica l'organizzazione nell'URL se CUSTOM_ORG è fornito
+        if [[ -n "$CUSTOM_ORG" && "$current_url" =~ git@github.com:([^/]+)/(.+)$ ]]; then
+            # Estrae la parte originale dell'organizzazione e il repository
+            original_org="${BASH_REMATCH[1]}"
+            repo_name="${BASH_REMATCH[2]}"
+            
+            # Sostituisce l'organizzazione con quella personalizzata
+            current_url="git@github.com:${CUSTOM_ORG}/${repo_name}"
+            #log "🔄 URL modificato: $current_url (org originale: $original_org → $CUSTOM_ORG)"
+        fi
         
         # Chiamata esterna allo script di sincronizzazione
-        log "🔄 Sincronizzazione modulo: $current_path"
+        log "🔄 Sincronizzazione modulo: $current_path   [$current_url]"
+        
         if ! "$script_dir/git_sync_subtree.sh" "$current_path" "$current_url" ; then
             log "⚠️ Sincronizzazione fallita per $current_path."
         fi
