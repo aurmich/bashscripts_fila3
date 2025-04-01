@@ -1,12 +1,12 @@
 {
-    "name": "Mensa",
-    "alias": "mensa",
+    "name": "Prenotazioni",
+    "alias": "prenotazioni",
     "description": "",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
-        "Modules\\Mensa\\Providers\\MensaServiceProvider"
+        "Modules\\Prenotazioni\\Providers\\PrenotazioniServiceProvider"
     ],
     "aliases": {},
     "files": [],

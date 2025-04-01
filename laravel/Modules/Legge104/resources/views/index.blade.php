@@ -1,9 +1,9 @@
-@extends('mensa::layouts.master')
+@extends('prenotazioni::layouts.master')
 
 @section('content')
     <h1>Hello World</h1>
 
     <p>
-        This view is loaded from module: {!! config('mensa.name') !!}
+        This view is loaded from module: {!! config('prenotazioni.name') !!}
     </p>
 @stop

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Mensa\Models;
+namespace Modules\Prenotazioni\Models;
 
 use GeneaLabs\LaravelModelCaching\Traits\Cachable;
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -23,10 +23,10 @@ abstract class BaseModel extends Model
     // use Cachable;
     use Updater;
 
-    protected $connection = 'mensa'; // this will use the specified database connection
+    protected $connection = 'prenotazioni';
 
     /**
-     * @var list<string>
+     * @var string[]
      */
     protected $fillable = ['id'];
 
@@ -46,7 +46,7 @@ abstract class BaseModel extends Model
     public $incrementing = true;
 
     /**
-     * @var list<string>
+     * @var array<int, string>
      */
     protected $hidden = [
         // 'password'

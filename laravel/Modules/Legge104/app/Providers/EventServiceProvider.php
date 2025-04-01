@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Mensa\Providers;
+namespace Modules\Prenotazioni\Providers;
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as BaseEventServiceProvider;
 

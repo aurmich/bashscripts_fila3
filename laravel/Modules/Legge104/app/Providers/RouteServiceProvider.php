@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Mensa\Providers;
+namespace Modules\Prenotazioni\Providers;
 
 // --- bases ---
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
@@ -12,9 +12,9 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
     /**
      * The module namespace to assume when generating URLs to actions.
      */
-    protected string $moduleNamespace = 'Modules\Mensa\Http\Controllers';
+    protected string $moduleNamespace = 'Modules\Prenotazioni\Http\Controllers';
 
-    public string $name = 'Mensa';
+    public string $name = 'Prenotazioni';
 
     protected string $module_dir = __DIR__;
 
