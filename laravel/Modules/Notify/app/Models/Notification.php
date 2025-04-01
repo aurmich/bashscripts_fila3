@@ -41,35 +41,13 @@ use Modules\Xot\Models\BaseModel;
  */
 class Notification extends BaseModel
 {
-    /** @var list<string> */
-    public $fillable = [
-        'id',
+    protected $fillable = [
+        'message',
         'type',
-        'notifiable_type',
-        'notifiable_id',
-        'data',
         'read_at',
-        'created_at',
-        'updated_at',
-        'updated_by',
-        'created_by',
-        'deleted_at',
-        'deleted_by'
     ];
 
-    /**
-     * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
-     */
-    public function casts(): array
-    {
-        return [
-            'id' => 'string',
-            'read_at' => 'datetime',
-            'created_at' => 'datetime',
-            'updated_at' => 'datetime',
-            'deleted_at' => 'datetime',
-        ];
-    }
+    protected $casts = [
+        'read_at' => 'datetime',
+    ];
 }
