@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Modules\ContoAnnuale\Providers;
+namespace Modules\Europa\Providers;
 
 use Modules\Xot\Providers\XotBaseServiceProvider;
 
-class ContoAnnualeServiceProvider extends XotBaseServiceProvider
+class EuropaServiceProvider extends XotBaseServiceProvider
 {
     public string $module_dir = __DIR__;
 
     public string $module_ns = __NAMESPACE__;
 
-    public string $name = 'ContoAnnuale';
+    public string $name = 'Europa';
 }

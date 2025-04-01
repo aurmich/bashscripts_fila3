@@ -1,8 +1,8 @@
 {
-    "name": "laraxot/module_contoannuale_fila3",
+    "name": "provtv/module_europa_fila3",
     "description": "",
     "license": "MIT",
-    "homepage": "https://github.com/laraxot/module_contoannuale_fila3.git",
+    "homepage": "https://github.com/provtv/module_europa_fila3.git",
     "authors": [
         {
             "name": "Marco Sottana",
@@ -29,9 +29,9 @@
     ],
     "autoload": {
         "psr-4": {
-            "Modules\\ContoAnnuale\\": "app/",
-            "Modules\\ContoAnnuale\\Database\\Factories\\": "database/factories/",
-            "Modules\\ContoAnnuale\\Database\\Seeders\\": "database/seeders/"
+            "Modules\\Europa\\": "app/",
+            "Modules\\Europa\\Database\\Factories\\": "database/factories/",
+            "Modules\\Europa\\Database\\Seeders\\": "database/seeders/"
         }
     },
     "scripts": {
@@ -52,8 +52,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Modules\\ContoAnnuale\\Providers\\ContoAnnualeServiceProvider",
-                "Modules\\ContoAnnuale\\Providers\\Filament\\AdminPanelProvider"
+                "Modules\\Europa\\Providers\\EuropaServiceProvider",
+                "Modules\\Europa\\Providers\\Filament\\AdminPanelProvider"
             ],
             "aliases": {}
         }

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Modules\ContoAnnuale\Database\Seeders;
+namespace Modules\Europa\Database\Seeders;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
 
-class ContoAnnualeDatabaseSeeder extends Seeder
+class EuropaDatabaseSeeder extends Seeder
 {
     /**
      * Run the database seeds.

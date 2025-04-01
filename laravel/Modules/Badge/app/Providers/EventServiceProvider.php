@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\ContoAnnuale\Providers;
+namespace Modules\Europa\Providers;
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as BaseEventServiceProvider;
 

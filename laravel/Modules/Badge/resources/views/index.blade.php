@@ -1,9 +1,9 @@
-@extends('contoannuale::layouts.master')
+@extends('europa::layouts.master')
 
 @section('content')
     <h1>Hello World</h1>
 
     <p>
-        This view is loaded from module: {!! config('contoannuale.name') !!}
+        This view is loaded from module: {!! config('europa.name') !!}
     </p>
 @stop
