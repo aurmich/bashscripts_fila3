@@ -1,4 +1,6 @@
-<?php return array (
+<?php
+
+return array (
   'navigation' => 
   array (
     'name' => 'Criteri di Valutazione',
@@ -86,6 +88,74 @@
     array (
       'label' => 'created_at',
     ),
+    'post_type' => 
+    array (
+      'label' => 'post_type',
+    ),
+    'anno' => 
+    array (
+      'label' => 'anno',
+    ),
+    'applyFilters' => 
+    array (
+      'label' => 'applyFilters',
+    ),
+    'toggleColumns' => 
+    array (
+      'label' => 'toggleColumns',
+    ),
+    'id_padre' => 
+    array (
+      'label' => 'id_padre',
+    ),
+    'nome' => 
+    array (
+      'label' => 'nome',
+    ),
+    'label' => 
+    array (
+      'label' => 'label',
+    ),
+    'descr' => 
+    array (
+      'label' => 'descr',
+    ),
+    'posizione' => 
+    array (
+      'label' => 'posizione',
+    ),
+    'create' => 
+    array (
+      'label' => 'create',
+    ),
+    'view' => 
+    array (
+      'label' => 'view',
+    ),
+    'edit' => 
+    array (
+      'label' => 'edit',
+    ),
+    'delete' => 
+    array (
+      'label' => 'delete',
+    ),
+    'value' => 
+    array (
+      'label' => 'value',
+    ),
+    'openFilters' => 
+    array (
+      'label' => 'openFilters',
+    ),
+    'resetFilters' => 
+    array (
+      'label' => 'resetFilters',
+    ),
+    'reorderRecords' => 
+    array (
+      'label' => 'reorderRecords',
+    ),
   ),
   'actions' => 
   array (
@@ -169,4 +239,8 @@
       'error' => 'Errore durante l\'eliminazione',
     ),
   ),
-);
+  'model' => 
+  array (
+    'label' => 'criteri valutazione.model',
+  ),
+);

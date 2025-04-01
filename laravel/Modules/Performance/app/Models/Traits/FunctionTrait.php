@@ -76,10 +76,8 @@ trait FunctionTrait
     }
 
     /**
-     * @param int $year
-     * @return array<int, array<string, mixed>>
-     */
-    /**
+     * Get criteri options for a specific year.
+     *
      * @param int $year
      * @return array<int, array<string, mixed>>
      */
@@ -91,19 +89,17 @@ trait FunctionTrait
 
         $options = CriteriOption::where('anno', $year)
             ->get()
-            ->values() // Forza indici numerici sequenziali
+            ->values() // Force sequential numeric indices
             ->toArray();
         
-        static::$cached_criteri_options[$year] = $options;
+        static::$cached_criteri_options[$year] = array_values($options);
 
         return static::$cached_criteri_options[$year];
     }
 
     /**
-     * @param int $year
-     * @return array<int, array<string, mixed>>
-     */
-    /**
+     * Get criteri esclusione for a specific year.
+     *
      * @param int $year
      * @return array<int, array<string, mixed>>
      */
@@ -115,10 +111,10 @@ trait FunctionTrait
 
         $esclusioni = CriteriEsclusione::where('anno', $year)
             ->get()
-            ->values() // Forza indici numerici sequenziali
+            ->values() // Force sequential numeric indices
             ->toArray();
         
-        static::$cached_criteri_esclusione[$year] = $esclusioni;
+        static::$cached_criteri_esclusione[$year] = array_values($esclusioni);
 
         return static::$cached_criteri_esclusione[$year];
     }

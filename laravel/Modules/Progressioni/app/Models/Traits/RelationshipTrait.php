@@ -60,7 +60,7 @@ trait RelationshipTrait
         return $this->hasMany(CriteriEsclusione::class, 'anno', 'anno');
     }
 
-    public function criteriValutazione(): HasMany
+    public function criteriValutazioneOld(): HasMany
     {
         return $this->hasMany(CriteriValutazione::class, 'anno', 'anno')
             ->where('post_type', $this->type)
@@ -144,22 +144,11 @@ trait RelationshipTrait
         */
     }
 
-    /*
-    public function myLogs(): HasMany {
-       return $this->hasMany(MyLog::class, 'id_tbl', 'id')
-           ->where('tbl', $this->getTable());
-    }
-    */
-
-    public function myLogs(): MorphMany
-    {
-        return $this->morphMany(MyLog::class, 'model');
-    }
+   
 
     public function mailInviate(): HasMany
     {
-        return $this->hasMany(MyLog::class, 'id_tbl', 'id')
-            ->where('tbl', $this->getTable())
+        return $this->myLogs()
             ->where('note', 'sendMail');
     }
 

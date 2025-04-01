@@ -9,11 +9,17 @@ use Filament\Tables\Actions;
 use Modules\Performance\Filament\Resources\IndividualeCatCoeffResource;
 use Modules\Ptv\Filament\Actions\Header\CopyFromLastYearAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+use function Safe\date;
 
 class ListIndividualeCatCoeffs extends XotBaseListRecords
 {
     protected static string $resource = IndividualeCatCoeffResource::class;
 
+    /**
+     * Get the list table columns.
+     *
+     * @return array<string, Columns\TextColumn>
+     */
     public function getListTableColumns(): array
     {
         return [
@@ -51,6 +57,11 @@ class ListIndividualeCatCoeffs extends XotBaseListRecords
         ];
     }
 
+    /**
+     * Get the table filters.
+     *
+     * @return array<string, Filters\SelectFilter>
+     */
     public function getTableFilters(): array
     {
         return [
@@ -70,6 +81,11 @@ class ListIndividualeCatCoeffs extends XotBaseListRecords
         ];
     }
 
+    /**
+     * Get the table actions.
+     *
+     * @return array<string, Actions\Action>
+     */
     public function getTableActions(): array
     {
         return [
@@ -78,6 +94,11 @@ class ListIndividualeCatCoeffs extends XotBaseListRecords
         ];
     }
 
+    /**
+     * Get the table bulk actions.
+     *
+     * @return array<string, Actions\DeleteBulkAction>
+     */
     public function getTableBulkActions(): array
     {
         return [
@@ -85,11 +106,16 @@ class ListIndividualeCatCoeffs extends XotBaseListRecords
         ];
     }
 
+    /**
+     * Get the header actions for the list page.
+     *
+     * @return array<int, \Filament\Actions\Action>
+     */
     protected function getHeaderActions(): array
     {
         return [
-            'create' => CreateAction::make(),
-            'copy' => CopyFromLastYearAction::make(),
+            CreateAction::make(),
+            CopyFromLastYearAction::make(),
         ];
     }
 }

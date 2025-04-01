@@ -1,11 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Modules\Performance\Filament\Resources\OrganizzativaTotStabiResource\Pages;
 
 use Filament\Actions\CreateAction;
 use Filament\Tables\Columns;
-use Filament\Tables\Filters;
-use Filament\Tables\Actions;
 use Modules\Performance\Filament\Resources\OrganizzativaTotStabiResource;
 use Modules\Ptv\Filament\Actions\Header\CopyFromLastYearAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -25,21 +25,41 @@ class ListOrganizzativaTotStabis extends XotBaseListRecords
     public function getListTableColumns(): array
     {
         return [
-            'name' => Columns\TextColumn::make('name')
-                ->label('Nome')
-                ->searchable()
+            'stabi' => Columns\TextColumn::make('stabi')
+                ->label('Stabilimento')
+                ->numeric()
                 ->sortable(),
-            'field_name' => Columns\TextColumn::make('field_name')
-                ->label('Campo')
-                ->searchable()
+            'tot_budget_assegnato' => Columns\TextColumn::make('tot_budget_assegnato')
+                ->label('Budget Assegnato')
+                ->numeric()
                 ->sortable(),
-            'op' => Columns\TextColumn::make('op')
-                ->label('Operatore')
-                ->searchable()
+            'tot_budget_assegnato_min_punteggio' => Columns\TextColumn::make('tot_budget_assegnato_min_punteggio')
+                ->label('Budget Min Punteggio')
+                ->numeric()
                 ->sortable(),
-            'value' => Columns\TextColumn::make('value')
-                ->label('Valore')
-                ->searchable()
+            'tot_quota_effettiva' => Columns\TextColumn::make('tot_quota_effettiva')
+                ->label('Quota Effettiva')
+                ->numeric()
+                ->sortable(),
+            'tot_quota_effettiva_min_punteggio' => Columns\TextColumn::make('tot_quota_effettiva_min_punteggio')
+                ->label('Quota Min Punteggio')
+                ->numeric()
+                ->sortable(),
+            'tot_resti' => Columns\TextColumn::make('tot_resti')
+                ->label('Resti')
+                ->numeric()
+                ->sortable(),
+            'tot_resti_min_punteggio' => Columns\TextColumn::make('tot_resti_min_punteggio')
+                ->label('Resti Min Punteggio')
+                ->numeric()
+                ->sortable(),
+            'delta' => Columns\TextColumn::make('delta')
+                ->label('Delta')
+                ->numeric()
+                ->sortable(),
+            'delta_min_punteggio' => Columns\TextColumn::make('delta_min_punteggio')
+                ->label('Delta Min Punteggio')
+                ->numeric()
                 ->sortable(),
             'anno' => Columns\TextColumn::make('anno')
                 ->label('Anno')

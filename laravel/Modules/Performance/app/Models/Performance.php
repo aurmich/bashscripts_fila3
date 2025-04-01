@@ -6,32 +6,33 @@ namespace Modules\Performance\Models;
 
 // ---------- models -------
 // ----------traits ---
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
-use Modules\Performance\Models\Traits\FunctionTrait;
-use Modules\Performance\Models\Traits\MutatorTrait;
-use Modules\Performance\Models\Traits\RelationshipTrait;
+use Modules\Sigma\Models\Anag;
+use Modules\Xot\Traits\Updater;
 use Modules\Sigma\Models\Ana02f;
 use Modules\Sigma\Models\Ana10f;
-use Modules\Sigma\Models\Anag;
 use Modules\Sigma\Models\Asz00f;
-use Modules\Sigma\Models\Asz00k1;
 use Modules\Sigma\Models\Qua00f;
 use Modules\Sigma\Models\Qua03f;
 use Modules\Sigma\Models\Rep00f;
 use Modules\Sigma\Models\Repart;
 use Modules\Sigma\Models\Sto00f;
 use Modules\Sigma\Models\Tqu00f;
-use Modules\Sigma\Models\Traits\Mutators\EnteMatrDateRangeMutator;
+use Modules\Sigma\Models\Asz00k1;
+use Modules\Sigma\Models\Wstr01lx;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Collection;
 use Modules\Sigma\Models\Traits\SchedaTrait;
+use Modules\Sigma\Models\Traits\SigmaModelTrait;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Modules\Performance\Models\Traits\MutatorTrait;
+use Modules\Performance\Models\Traits\FunctionTrait;
 // ---- services ---
 // passare ad arrayservice
-use Modules\Sigma\Models\Traits\SigmaModelTrait;
-use Modules\Sigma\Models\Wstr01lx;
-use Modules\Xot\Traits\Updater;
+use Modules\Ptv\Models\Traits\HasCriteriValutazione;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Modules\Performance\Models\Traits\RelationshipTrait;
+use Modules\Sigma\Models\Traits\Mutators\EnteMatrDateRangeMutator;
 
 // ------ ext models---
 /**
@@ -260,6 +261,7 @@ class Performance extends BaseModel
     use SchedaTrait;
     use SigmaModelTrait;
     use EnteMatrDateRangeMutator;
+    use HasCriteriValutazione;
 
     /** @var string */
     protected $table = 'performance';
@@ -546,14 +548,7 @@ class Performance extends BaseModel
         return $this->hasMany(CriteriOption::class);
     }
 
-    /**
-     * Relazione con i criteri di valutazione
-     * @return HasMany<CriteriValutazione, Performance>
-     */
-    public function criteriValutazione(): HasMany
-    {
-        return $this->hasMany(CriteriValutazione::class);
-    }
+
 
     /**
      * Relazione con le mail inviate
@@ -564,14 +559,7 @@ class Performance extends BaseModel
         return $this->hasMany(MyLog::class);
     }
 
-    /**
-     * Relazione con i log
-     * @return HasMany<MyLog, Performance>
-     */
-    public function myLogs(): HasMany
-    {
-        return $this->hasMany(MyLog::class);
-    }
+    
 
     /**
      * Relazione con le opzioni

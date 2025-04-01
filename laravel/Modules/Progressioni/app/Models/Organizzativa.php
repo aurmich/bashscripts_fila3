@@ -5,29 +5,30 @@ declare(strict_types=1);
 namespace Modules\Performance\Models;
 
 // --- traits ---
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
-use Modules\Performance\Models\Traits\FunctionTrait;
-use Modules\Performance\Models\Traits\MutatorTrait;
-use Modules\Performance\Models\Traits\RelationshipTrait;
+use Modules\Sigma\Models\Anag;
+use Modules\Xot\Traits\Updater;
 use Modules\Sigma\Models\Ana02f;
 use Modules\Sigma\Models\Ana10f;
-use Modules\Sigma\Models\Anag;
 use Modules\Sigma\Models\Asz00f;
-use Modules\Sigma\Models\Asz00k1;
 use Modules\Sigma\Models\Qua00f;
 use Modules\Sigma\Models\Qua03f;
 use Modules\Sigma\Models\Rep00f;
 use Modules\Sigma\Models\Repart;
 use Modules\Sigma\Models\Sto00f;
 use Modules\Sigma\Models\Tqu00f;
+use Modules\Sigma\Models\Asz00k1;
+use Modules\Sigma\Models\Wstr01lx;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Collection;
 use Modules\Sigma\Models\Traits\SchedaTrait;
 use Modules\Sigma\Models\Traits\SigmaModelTrait;
-use Modules\Sigma\Models\Wstr01lx;
-use Modules\Xot\Traits\Updater;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Modules\Performance\Models\Traits\MutatorTrait;
+use Modules\Performance\Models\Traits\FunctionTrait;
+use Modules\Ptv\Models\Traits\HasCriteriValutazione;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Modules\Performance\Models\Traits\RelationshipTrait;
 
 /**
  * Modules\Performance\Models\Organizzativa.
@@ -295,6 +296,7 @@ class Organizzativa extends BaseModel
     use SchedaTrait;
     use SigmaModelTrait;
     use Updater;
+    use HasCriteriValutazione;
 
     public string $from_field = 'dal';
 
@@ -472,13 +474,6 @@ class Organizzativa extends BaseModel
         return $this->hasMany(CriteriOption::class, 'anno', 'anno');
     }
 
-    /**
-     * @return HasMany<CriteriValutazione, Organizzativa>
-     */
-    public function criteriValutazione(): HasMany
-    {
-        return $this->hasMany(CriteriValutazione::class, 'anno', 'anno');
-    }
 
     /**
      * @return HasMany<MyLog, Organizzativa>
@@ -489,15 +484,7 @@ class Organizzativa extends BaseModel
             ->where('tbl', $this->getTable());
     }
 
-    /**
-     * @return HasMany<MyLog, Organizzativa>
-     */
-    public function myLogs(): HasMany
-    {
-        return $this->hasMany(MyLog::class, 'id_tbl', 'id')
-            ->where('tbl', $this->getTable());
-    }
-
+  
     /**
      * @return HasMany<Option, Organizzativa>
      */

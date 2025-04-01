@@ -7,6 +7,7 @@ use Filament\Tables\Columns;
 use Filament\Tables\Filters;
 use Modules\Performance\Filament\Resources\CriteriOptionResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+use function Safe\date;
 
 class ListCriteriOptions extends XotBaseListRecords
 {
@@ -57,11 +58,16 @@ class ListCriteriOptions extends XotBaseListRecords
         ];
     }
 
+    /**
+     * Get the header actions for the list page.
+     *
+     * @return array<int, \Filament\Actions\Action>
+     */
     protected function getHeaderActions(): array
     {
         return [
-            'create' => Actions\CreateAction::make(),
-            'copy' => \Modules\Ptv\Filament\Actions\Header\CopyFromLastYearAction::make(),
+            Actions\CreateAction::make(),
+            \Modules\Ptv\Filament\Actions\Header\CopyFromLastYearAction::make(),
         ];
     }
 }

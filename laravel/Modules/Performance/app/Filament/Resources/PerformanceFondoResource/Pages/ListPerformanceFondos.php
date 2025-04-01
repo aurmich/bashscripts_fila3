@@ -18,33 +18,30 @@ class ListPerformanceFondos extends XotBaseListRecords
     {
         return [
             'create' => CreateAction::make(),
-            'copy' => CopyFromLastYearAction::make(),
+            'copy_from_last_year' => CopyFromLastYearAction::make(),
         ];
     }
 
     public function getListTableColumns(): array
     {
         return [
-            'name' => Columns\TextColumn::make('name')
-                ->label('Nome')
-                ->searchable()
+            'quota_individuale' => Columns\TextColumn::make('quota_individuale')
+                ->label('Quota Individuale')
+                ->numeric()
                 ->sortable(),
-            'field_name' => Columns\TextColumn::make('field_name')
-                ->label('Campo')
-                ->searchable()
-                ->sortable(),
-            'op' => Columns\TextColumn::make('op')
-                ->label('Operatore')
-                ->searchable()
-                ->sortable(),
-            'value' => Columns\TextColumn::make('value')
-                ->label('Valore')
-                ->searchable()
+            'quota_organizzativa' => Columns\TextColumn::make('quota_organizzativa')
+                ->label('Quota Organizzativa')
+                ->numeric()
                 ->sortable(),
             'anno' => Columns\TextColumn::make('anno')
                 ->label('Anno')
                 ->numeric()
                 ->sortable(),
+            'note' => Columns\TextColumn::make('note')
+                ->label('Note')
+                ->searchable()
+                ->sortable()
+                ->wrap(),
             'created_at' => Columns\TextColumn::make('created_at')
                 ->label('Data Creazione')
                 ->dateTime()
@@ -53,6 +50,16 @@ class ListPerformanceFondos extends XotBaseListRecords
             'updated_at' => Columns\TextColumn::make('updated_at')
                 ->label('Ultima Modifica')
                 ->dateTime()
+                ->sortable()
+                ->toggleable(isToggledHiddenByDefault: true),
+            'created_by' => Columns\TextColumn::make('created_by')
+                ->label('Creato da')
+                ->searchable()
+                ->sortable()
+                ->toggleable(isToggledHiddenByDefault: true),
+            'updated_by' => Columns\TextColumn::make('updated_by')
+                ->label('Modificato da')
+                ->searchable()
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true),
         ];

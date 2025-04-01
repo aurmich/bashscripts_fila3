@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Modules\Performance\Filament\Resources\IndividualeAdmResource\Pages;
 
 use Filament\Actions\CreateAction;
@@ -9,11 +11,15 @@ use Filament\Tables\Actions;
 use Modules\Performance\Filament\Resources\IndividualeAdmResource;
 use Modules\Ptv\Filament\Actions\Header\CopyFromLastYearAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+use function Safe\date;
 
 class ListIndividualeAdms extends XotBaseListRecords
 {
     protected static string $resource = IndividualeAdmResource::class;
 
+    /**
+     * @return array<string, Columns\TextColumn>
+     */
     public function getListTableColumns(): array
     {
         return [
@@ -56,6 +62,9 @@ class ListIndividualeAdms extends XotBaseListRecords
         ];
     }
 
+    /**
+     * @return array<string, Filters\SelectFilter>
+     */
     public function getTableFilters(): array
     {
         return [
@@ -84,14 +93,9 @@ class ListIndividualeAdms extends XotBaseListRecords
         ];
     }
 
-    public function getTableActions(): array
-    {
-        return [
-            'edit' => Actions\EditAction::make(),
-            'delete' => Actions\DeleteAction::make(),
-        ];
-    }
-
+    /**
+     * @return array<string, Actions\DeleteBulkAction>
+     */
     public function getTableBulkActions(): array
     {
         return [
@@ -99,19 +103,16 @@ class ListIndividualeAdms extends XotBaseListRecords
         ];
     }
 
-    public function getTableHeaderActions(): array
-    {
-        return [
-            'create' => Actions\CreateAction::make(),
-            'copy' => \Modules\Ptv\Filament\Actions\Header\CopyFromLastYearAction::make(),
-        ];
-    }
-
+    /**
+     * Get the header actions for the list page.
+     *
+     * @return array<int, \Filament\Actions\Action>
+     */
     protected function getHeaderActions(): array
     {
         return [
-            'create' => CreateAction::make(),
-            'copy' => CopyFromLastYearAction::make(),
+            CreateAction::make(),
+            CopyFromLastYearAction::make(),
         ];
     }
 }

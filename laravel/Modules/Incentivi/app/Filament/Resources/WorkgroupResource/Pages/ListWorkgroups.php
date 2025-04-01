@@ -51,7 +51,7 @@ class ListWorkgroups extends XotBaseListRecords
     public function getTableActions(): array
     {
         $parentActions = parent::getTableActions();
-        
+
         return [
             ...$parentActions,
             'replicate' => Tables\Actions\ReplicateAction::make()

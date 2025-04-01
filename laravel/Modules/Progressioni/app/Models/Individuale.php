@@ -424,13 +424,7 @@ class Individuale extends BaseIndividualeModel
         return $this->hasMany(CriteriOption::class, 'individuale_id');
     }
 
-    /**
-     * @return HasMany<CriteriValutazione>
-     */
-    public function criteriValutazione(): HasMany
-    {
-        return $this->hasMany(CriteriValutazione::class, 'individuale_id');
-    }
+   
 
     /**
      * @return HasMany<MyLog>
@@ -440,14 +434,7 @@ class Individuale extends BaseIndividualeModel
         return $this->hasMany(MyLog::class, 'individuale_id');
     }
 
-    /**
-     * @return HasMany<MyLog>
-     */
-    public function myLogs(): HasMany
-    {
-        return $this->hasMany(MyLog::class, 'individuale_id');
-    }
-
+   
     /**
      * @return HasMany<Option>
      */

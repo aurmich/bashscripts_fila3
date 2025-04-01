@@ -78,6 +78,10 @@ return array (
     array (
       'label' => 'openFilters',
     ),
+    'message' => 
+    array (
+      'label' => 'message',
+    ),
   ),
   'actions' => 
   array (
@@ -163,5 +167,9 @@ return array (
     'label' => 'Performance',
     'icon' => 'performance-chart',
     'sort' => 50,
+  ),
+  'model' => 
+  array (
+    'label' => 'performance.model',
   ),
 );

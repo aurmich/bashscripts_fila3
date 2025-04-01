@@ -9,6 +9,7 @@ use Filament\Tables\Actions;
 use Modules\Performance\Filament\Resources\CriteriMaggiorazioneResource;
 use Modules\Ptv\Filament\Actions\Header\CopyFromLastYearAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+use function Safe\date;
 
 class ListCriteriMaggioraziones extends XotBaseListRecords
 {
@@ -47,9 +48,8 @@ class ListCriteriMaggioraziones extends XotBaseListRecords
     {
         return [
             'anno' => Filters\SelectFilter::make('anno')
-                ->label('Anno')
                 ->options(function () {
-                    $currentYear = date('Y');
+                    $currentYear = (int) date('Y');
 
                     return [
                         $currentYear => $currentYear,
@@ -60,6 +60,9 @@ class ListCriteriMaggioraziones extends XotBaseListRecords
         ];
     }
 
+    /**
+     * @return array<string, \Filament\Tables\Actions\Action>
+     */
     public function getTableActions(): array
     {
         return [
@@ -68,6 +71,9 @@ class ListCriteriMaggioraziones extends XotBaseListRecords
         ];
     }
 
+    /**
+     * @return array<string, \Filament\Tables\Actions\BulkAction>
+     */
     public function getTableBulkActions(): array
     {
         return [
@@ -75,6 +81,9 @@ class ListCriteriMaggioraziones extends XotBaseListRecords
         ];
     }
 
+    /**
+     * @return array<string, \Filament\Actions\Action>
+     */
     public function getTableHeaderActions(): array
     {
         return [
@@ -83,11 +92,16 @@ class ListCriteriMaggioraziones extends XotBaseListRecords
         ];
     }
 
+    /**
+     * Get the header actions for the list page.
+     *
+     * @return array<int, \Filament\Actions\Action>
+     */
     protected function getHeaderActions(): array
     {
         return [
-            'create' => CreateAction::make(),
-            'copy' => CopyFromLastYearAction::make(),
+            CreateAction::make(),
+            CopyFromLastYearAction::make(),
         ];
     }
 }

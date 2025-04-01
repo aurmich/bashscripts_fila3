@@ -1,4 +1,6 @@
-<?php return array (
+<?php
+
+return array (
   'table' => 
   array (
     'heading' => 'Attività',
@@ -71,6 +73,26 @@
     array (
       'label' => 'applyFilters',
     ),
+    'openFilters' => 
+    array (
+      'label' => 'openFilters',
+    ),
+    'delete' => 
+    array (
+      'label' => 'delete',
+    ),
+    'edit' => 
+    array (
+      'label' => 'edit',
+    ),
+    'view' => 
+    array (
+      'label' => 'view',
+    ),
+    'create' => 
+    array (
+      'label' => 'create',
+    ),
   ),
   'navigation' => 
   array (
@@ -79,4 +101,8 @@
     'icon' => 'incentivi-activity',
     'sort' => 4,
   ),
-);
+  'model' => 
+  array (
+    'label' => 'activity.model',
+  ),
+);

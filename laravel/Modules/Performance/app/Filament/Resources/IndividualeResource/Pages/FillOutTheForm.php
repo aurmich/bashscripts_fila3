@@ -30,12 +30,14 @@ class FillOutTheForm extends Page
 
     public string $previousUrl = '#';
 
-    public array $data;
+    /** @var array<string, mixed> */
+    public array $data = [];
 
     public float $totale = 0;
 
     public bool $excellence = false;
 
+    /** @var array<string, string> */
     protected array $rules = [
         'data.risultati_ottenuti' => 'required|numeric|min:0|max:4',
         'data.qualita_prestazione' => 'required|numeric|min:0|max:4',
@@ -71,6 +73,9 @@ class FillOutTheForm extends Page
         $this->previousUrl = url()->previous();
     }
 
+    /**
+     * @return array<string, mixed>
+     */
     protected function getViewData(): array
     {
         /*

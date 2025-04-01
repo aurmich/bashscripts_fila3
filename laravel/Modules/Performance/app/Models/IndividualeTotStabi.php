@@ -131,7 +131,8 @@ class IndividualeTotStabi extends BaseModel
      */
     public function getNDirittoAttribute(): int
     {
-        return $this->schede->where('ha_diritto', 1)->count();
+        return 0;
+        //return $this->schede->where('ha_diritto', 1)->count();
     }
 
     /**

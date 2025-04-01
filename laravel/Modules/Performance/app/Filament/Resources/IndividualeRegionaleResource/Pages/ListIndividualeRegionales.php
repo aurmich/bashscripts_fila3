@@ -13,30 +13,21 @@ use Modules\Ptv\Filament\Actions\Table\FillOutTheFormAction;
 use Modules\Ptv\Filament\Filters\StabiReparAnnoHaDirittoFilter;
 use Modules\Xot\Filament\Actions\Header\ExportXlsAction;
 use Modules\Xot\Filament\Actions\Table\PdfAction;
+use function Safe\date;
 
 class ListIndividualeRegionales extends ListIndividuales
 {
     protected static string $resource = IndividualeRegionaleResource::class;
 
+    /**
+     * @return array<string, ExportXlsAction|null>
+     */
     protected function getHeaderActions(): array
     {
         return [
             // Actions\CreateAction::make(),
             // \Modules\Ptv\Filament\Actions\Header\CopyFromLastYearAction::make(),
             ExportXlsAction::make('export-xls'),
-        ];
-    }
-
-    public function getTableActions(): array
-    {
-        return [
-            FillOutTheFormAction::make('compila')
-                ->visible(fn ($record) => $record->ha_diritto),
-            PdfAction::make('pdf')
-                ->visible(fn ($record) => $record->ha_diritto),
-
-            // EditAction::make(),
-            // Tables\Actions\EditAction::make(),
         ];
     }
 
@@ -47,6 +38,9 @@ class ListIndividualeRegionales extends ListIndividuales
         return $table->filtersFormColumns(1);
     }
 
+    /**
+     * @return array<string, StabiReparAnnoHaDirittoFilter|null>
+     */
     public function getTableFilters(): array
     {
         return [
