@@ -2,16 +2,19 @@
 
 declare(strict_types=1);
 
-namespace Modules\PresenzeAssenze\Providers;
+namespace Modules\Questionari\Providers;
 
 // --- bases ---
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
-    public string $name = 'PresenzeAssenze';
+    /**
+     * The module namespace to assume when generating URLs to actions.
+     */
+    protected string $moduleNamespace = 'Modules\Questionari\Http\Controllers';
 
-    protected string $moduleNamespace = 'Modules\PresenzeAssenze\Http\Controllers';
+    public string $name = 'Questionari';
 
     protected string $module_dir = __DIR__;
 

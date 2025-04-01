@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\PresenzeAssenze\Providers;
+namespace Modules\Questionari\Providers;
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as BaseEventServiceProvider;
 

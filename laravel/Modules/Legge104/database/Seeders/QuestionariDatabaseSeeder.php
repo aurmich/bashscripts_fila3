@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Modules\PresenzeAssenze\Database\Seeders;
+namespace Modules\Questionari\Database\Seeders;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
 
-class PresenzeAssenzeDatabaseSeeder extends Seeder
+class QuestionariDatabaseSeeder extends Seeder
 {
     /**
      * Run the database seeds.

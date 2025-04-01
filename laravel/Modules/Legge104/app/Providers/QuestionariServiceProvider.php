@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Modules\PresenzeAssenze\Providers;
+namespace Modules\Questionari\Providers;
 
 use Modules\Xot\Providers\XotBaseServiceProvider;
 
-class PresenzeAssenzeServiceProvider extends XotBaseServiceProvider
+class QuestionariServiceProvider extends XotBaseServiceProvider
 {
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
 
-    public string $name = 'PresenzeAssenze';
+    public string $name = 'Questionari';
 }

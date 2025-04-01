@@ -1,12 +1,12 @@
 {
-    "name": "PresenzeAssenze",
-    "alias": "presenzeassenze",
+    "name": "Questionari",
+    "alias": "questionari",
     "description": "",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
-        "Modules\\PresenzeAssenze\\Providers\\PresenzeAssenzeServiceProvider"
+        "Modules\\Questionari\\Providers\\QuestionariServiceProvider"
     ],
     "aliases": {},
     "files": [],

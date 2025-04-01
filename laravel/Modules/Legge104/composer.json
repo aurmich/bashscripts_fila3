@@ -1,8 +1,8 @@
 {
-    "name": "laraxot/module_presenzeassenze_fila3",
+    "name": "laraxot/module_questionari_fila3",
     "description": "",
     "license": "MIT",
-    "homepage": "https://github.com/laraxot/module_presenzeassenze_fila3.git",
+    "homepage": "https://github.com/laraxot/module_questionari_fila3.git",
     "authors": [
         {
             "name": "Marco Sottana",
@@ -29,9 +29,9 @@
     ],
     "autoload": {
         "psr-4": {
-            "Modules\\PresenzeAssenze\\": "app/",
-            "Modules\\PresenzeAssenze\\Database\\Factories\\": "database/factories/",
-            "Modules\\PresenzeAssenze\\Database\\Seeders\\": "database/seeders/"
+            "Modules\\Questionari\\": "app/",
+            "Modules\\Questionari\\Database\\Factories\\": "database/factories/",
+            "Modules\\Questionari\\Database\\Seeders\\": "database/seeders/"
         }
     },
     "scripts": {
@@ -52,8 +52,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Modules\\PresenzeAssenze\\Providers\\PresenzeAssenzeServiceProvider",
-                "Modules\\PresenzeAssenze\\Providers\\Filament\\AdminPanelProvider"
+                "Modules\\Questionari\\Providers\\QuestionariServiceProvider",
+                "Modules\\Questionari\\Providers\\Filament\\AdminPanelProvider"
             ],
             "aliases": {}
         }
