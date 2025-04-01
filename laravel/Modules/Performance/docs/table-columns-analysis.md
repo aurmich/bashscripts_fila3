@@ -535,3 +535,34 @@ Non sono necessarie correzioni al metodo `getListTableColumns` in nessuna delle 
 - I campi `created_by` e `updated_by` sono gestiti automaticamente
 - Il campo `data` contiene dati serializzati
 - I campi timestamp sono gestiti come Carbon
+
+## Best Practices per le Azioni Bulk della Tabella
+
+### Azioni Bulk Standard
+- Non è necessario definire il metodo `getTableBulkActions()` quando contiene solo l'azione standard di eliminazione
+- L'azione di eliminazione bulk è già gestita automaticamente dalla classe padre `XotBaseListRecords`
+- Il metodo `getTableBulkActions()` deve essere definito solo quando:
+  - Si aggiungono azioni bulk personalizzate
+  - Si modificano le azioni bulk standard
+  - Si rimuovono azioni bulk standard
+
+### Esempio di Implementazione
+```php
+// ❌ Non necessario - contiene solo azione standard di eliminazione
+public function getTableBulkActions(): array
+{
+    return [
+        Actions\DeleteBulkAction::make(),
+    ];
+}
+
+// ✅ Necessario - contiene azioni bulk personalizzate
+public function getTableBulkActions(): array
+{
+    return [
+        'custom' => Actions\BulkAction::make('custom')
+            ->action(fn () => // ...),
+        'delete' => Actions\DeleteBulkAction::make(),
+    ];
+}
+```
