@@ -20,6 +20,9 @@ die() {
 
 # Sync subtree
 sync_subtree() {
+    git config core.ignorecase false
+    git config core.fileMode false
+
     git add .
     git commit -am "."
     git push -u origin "$REMOTE_BRANCH"
