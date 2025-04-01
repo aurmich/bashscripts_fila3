@@ -2,42 +2,30 @@
 
 declare(strict_types=1);
 
-namespace Modules\User\Providers;
+namespace Modules\Lang\Providers;
 
-use Illuminate\Auth\Events\Failed;
-use Illuminate\Auth\Events\Login;
-use Illuminate\Auth\Events\Logout;
-use Illuminate\Auth\Events\OtherDeviceLogout;
-use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
-use Modules\User\Listeners\FailedLoginListener;
-use Modules\User\Listeners\LoginListener;
-use Modules\User\Listeners\LogoutListener;
-use Modules\User\Listeners\OtherDeviceLogoutListener;
-use SocialiteProviders\Auth0\Auth0ExtendSocialite;
-use SocialiteProviders\Manager\SocialiteWasCalled;
+use Illuminate\Foundation\Support\Providers\EventServiceProvider as BaseEventServiceProvider;
 
-class EventServiceProvider extends ServiceProvider
+class EventServiceProvider extends BaseEventServiceProvider
 {
     /**
-     * The event to listener mappings for the application.
+     * The event handler mappings for the application.
      *
-     * @var array<class-string, array<int, class-string>>
+     * @var array<string, array<int, string>>
      */
-    protected $listen = [
-        SocialiteWasCalled::class => [
-            Auth0ExtendSocialite::class,
-        ],
-        Login::class => [
-            LoginListener::class,
-        ],
-        Logout::class => [
-            LogoutListener::class,
-        ],
-        Failed::class => [
-            FailedLoginListener::class,
-        ],
-        OtherDeviceLogout::class => [
-            OtherDeviceLogoutListener::class,
-        ],
-    ];
+    protected $listen = [];
+
+    /**
+     * Indicates if events should be discovered.
+     *
+     * @var bool
+     */
+    protected static $shouldDiscoverEvents = true;
+
+    /**
+     * Configure the proper event listeners for email verification.
+     */
+    protected function configureEmailVerification(): void
+    {
+    }
 }

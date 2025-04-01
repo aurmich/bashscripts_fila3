@@ -9,30 +9,27 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Traits\Updater;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Validation\Rule;
 
 /**
- * @property int $id
- * @property int|null $stabi
- * @property string|null $tot_budget_assegnato
- * @property string|null $tot_budget_assegnato_min_punteggio
- * @property string|null $tot_quota_effettiva
- * @property string|null $tot_quota_effettiva_min_punteggio
- * @property string|null $tot_resti
- * @property string|null $tot_resti_min_punteggio
- * @property string|null $delta
- * @property string|null $delta_min_punteggio
- * @property int|null $anno
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property string|null $created_by
- * @property string|null $updated_by
- * @property-read int $n_diritto
- * @property-read float $n_diritto_excellence
- * @property-read Collection<int, Individuale> $schede
- * @property-read int|null $schede_count
+ * @property int                          $id
+ * @property int|null                     $stabi
+ * @property string|null                  $tot_budget_assegnato
+ * @property string|null                  $tot_budget_assegnato_min_punteggio
+ * @property string|null                  $tot_quota_effettiva
+ * @property string|null                  $tot_quota_effettiva_min_punteggio
+ * @property string|null                  $tot_resti
+ * @property string|null                  $tot_resti_min_punteggio
+ * @property string|null                  $delta
+ * @property string|null                  $delta_min_punteggio
+ * @property int|null                     $anno
+ * @property Carbon|null                  $created_at
+ * @property Carbon|null                  $updated_at
+ * @property string|null                  $created_by
+ * @property string|null                  $updated_by
+ * @property int                          $n_diritto
+ * @property float                        $n_diritto_excellence
+ * @property Collection<int, Individuale> $schede
+ * @property int|null                     $schede_count
  *
  * @method static Builder|IndividualeTotStabi newModelQuery()
  * @method static Builder|IndividualeTotStabi newQuery()
@@ -57,7 +54,7 @@ use Illuminate\Validation\Rule;
  *
  * @mixin Model
  */
-class IndividualeTotStabi extends Model
+class IndividualeTotStabi extends BaseModel
 {
     use Updater;
 
@@ -119,7 +116,8 @@ class IndividualeTotStabi extends Model
     }
 
     /**
-     * Relazione con le schede individuali dello stesso stabilimento e anno
+     * Relazione con le schede individuali dello stesso stabilimento e anno.
+     *
      * @return HasMany<Individuale, IndividualeTotStabi>
      */
     public function schede(): HasMany
@@ -129,7 +127,7 @@ class IndividualeTotStabi extends Model
     }
 
     /**
-     * Calcola il numero di dipendenti con diritto alla valutazione
+     * Calcola il numero di dipendenti con diritto alla valutazione.
      */
     public function getNDirittoAttribute(): int
     {
@@ -138,7 +136,7 @@ class IndividualeTotStabi extends Model
 
     /**
      * Calcola il numero di dipendenti con diritto all'excellence
-     * (arrotondato per eccesso alla decina)
+     * (arrotondato per eccesso alla decina).
      */
     public function getNDirittoExcellenceAttribute(): float
     {

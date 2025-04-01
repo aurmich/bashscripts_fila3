@@ -1,21 +1,22 @@
-https://packagist.org/packages/althinect/filament-spatie-roles-permissions
+///---
+https://freek.dev/593-a-laravel-package-to-store-language-lines-in-the-database
+https://github.com/spatie/laravel-translation-loader
+//----
+
+https://github.com/statikbe/laravel-filament-chained-translation-manager
+
+-----------------
+
+https://github.com/barryvdh/laravel-translation-manager
 
 
-https://github.com/chiiya/filament-access-control
+---
 
+https://github.com/tanmuhittin/laravel-google-translate
 
-use Filament\Facades\Filament;
-return Filament::auth()->user()->can(static::getPermissionName());
+----
 
+https://github.com/Astrotomic/laravel-translatable
 
+https://github.com/dimsav/laravel-translatable#step-1-install-package
 
-https://github.com/ryangjchandler/filament-user-resource/blob/main/src/resources/UserResource.php
-
-
-
-Easily Add Face Authentication to Your Laravel Applications
-https://codebrisk.com/blog/easily-add-face-authentication-to-your-laravel-applications
-
-
------ molti pacchetti interessanti --
-https://codebrisk.com/blog/categories/laravel-packages

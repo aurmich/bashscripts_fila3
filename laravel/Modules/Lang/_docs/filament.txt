@@ -1,6 +1,6 @@
-https://github.com/Althinect/filament-spatie-roles-permissions
-https://github.com/ryangjchandler/filament-profile
+https://github.com/statikbe/laravel-filament-chained-translation-manager
 
-https://github.com/andrewdwallo/filament-companies
+https://filamentphp.com/plugins/34ml-translatable-field
+
 
 

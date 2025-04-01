@@ -1,10 +1,13 @@
+const dotenvExpand = require('dotenv-expand');
+dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/ }));
+
 const mix = require('laravel-mix');
 require('laravel-mix-merge-manifest');
 
 mix.setPublicPath('../../public').mergeManifest();
 
-mix.js(__dirname + '/resources/assets/js/app.js', 'js/blog.js')
-    .sass(__dirname + '/resources/assets/sass/app.scss', 'css/blog.css');
+mix.js(__dirname + '/resources/assets/js/app.js', 'js/lang.js')
+    .sass(__dirname + '/resources/assets/sass/app.scss', 'css/lang.css');
 
 if (mix.inProduction()) {
     mix.version();
