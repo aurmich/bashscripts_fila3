@@ -2,18 +2,21 @@
 
 declare(strict_types=1);
 
-namespace Modules\Progressioni\Providers;
+namespace Modules\Performance\Providers;
 
 // --- bases ---
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
-    public string $name = 'Progressioni';
-
-    protected string $moduleNamespace = 'Modules\Progressioni\Http\Controllers';
+    /**
+     * The module namespace to assume when generating URLs to actions.
+     */
+    protected string $moduleNamespace = 'Modules\Performance\Http\Controllers';
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
+
+    public string $name = 'Performance';
 }

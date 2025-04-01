@@ -2,34 +2,31 @@
 
 declare(strict_types=1);
 
-namespace Modules\Progressioni\Models;
+namespace Modules\Performance\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
+use Modules\Xot\Traits\Updater;
 
 /**
- * Modules\Progressioni\Models\MyLog.
+ * Modules\Performance\Models\MyLog.
  *
  * @property int $id
  * @property int|null $id_tbl
  * @property string|null $tbl
  * @property int|null $id_approvaz
  * @property string|null $note
- * @property string|null $obj
- * @property string|null $act
  * @property array|null $data
  * @property string|null $datemod
  * @property string|null $handle
- * @property string|null $created_by
- * @property string|null $updated_by
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
+ * @property string|null $created_by
+ * @property string|null $updated_by
  *
- * @method static \Modules\Ptv\Database\Factories\MyLogFactory factory($count = null, $state = [])
  * @method static Builder|MyLog newModelQuery()
  * @method static Builder|MyLog newQuery()
  * @method static Builder|MyLog query()
- * @method static Builder|MyLog whereAct($value)
  * @method static Builder|MyLog whereCreatedAt($value)
  * @method static Builder|MyLog whereCreatedBy($value)
  * @method static Builder|MyLog whereData($value)
@@ -39,14 +36,50 @@ use Illuminate\Support\Carbon;
  * @method static Builder|MyLog whereIdApprovaz($value)
  * @method static Builder|MyLog whereIdTbl($value)
  * @method static Builder|MyLog whereNote($value)
- * @method static Builder|MyLog whereObj($value)
  * @method static Builder|MyLog whereTbl($value)
  * @method static Builder|MyLog whereUpdatedAt($value)
  * @method static Builder|MyLog whereUpdatedBy($value)
  *
  * @mixin \Eloquent
  */
-class MyLog extends \Modules\Ptv\Models\MyLog
+class MyLog extends BaseModel
 {
-    protected $connection = 'progressione'; // this will use the specified database connection
+    protected $fillable = [
+        'id',
+        'id_tbl',
+        'tbl',
+        'id_approvaz',
+        'note',
+        'data',
+        'datemod',
+        'handle',
+        'act',
+        'model_id',
+        'model_type',
+    ];
+
+    protected $table = 'mylog';
+
+    // use Updater;
+
+    // protected $connection = 'performance'; // this will use the specified database connection
+    // public $timestamps= false;
+    /*
+    protected $dates = [
+        'created_at',
+        'updated_at',
+    ];
+    */
+
+    protected $casts = [
+        'data' => 'array',
+    ];
+
+    public function _data()
+    {
+        // echo '<pre>';print_r($obj);echo '</pre>';die();
+        return unserialize($this->data);
+    }
+
+    // -------------------------------------------------
 }

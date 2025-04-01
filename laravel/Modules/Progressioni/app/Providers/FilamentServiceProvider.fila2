@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Progressioni\Providers;
+namespace Modules\Performance\Providers;
 
 use Blade;
 use Filament\Facades\Filament;
@@ -10,12 +10,13 @@ use Savannabits\FilamentModules\ContextServiceProvider;
 class FilamentServiceProvider extends ContextServiceProvider
 {
     public $app;
-    public static string $name = 'progressioni-filament';
+    public static string $name = 'performance-filament';
     
-    public static string $module = 'Progressioni';
+    public static string $module = 'Performance';
 
     public function packageRegistered(): void
     {
+        //dddx('e');// 1
         $this->app->booting(function (): void {
             $this->registerConfigs();
         });
@@ -32,16 +33,16 @@ class FilamentServiceProvider extends ContextServiceProvider
     {
         Filament::serving(static function () : void {
             Filament::forContext('filament', static function () : void {
-                Filament::registerNavigationItems([
-                    NavigationItem::make(static::$module)
+                $items=[];
+                $items[]=NavigationItem::make(static::$module)
                         ->label(static::$module.' ')
                         ->url(route(static::$name.'.pages.dashboard'))
-                        ->icon('heroicon-o-sparkles')
-                        ->group('Modules')
-                ]);
+                        ->icon('heroicon-o-arrow-trending-up')
+                        ->group('Modules');
+                Filament::registerNavigationItems($items);
             });
             Filament::forContext(static::$name, static function () : void {
-                Filament::registerRenderHook('sidebar.start',static fn(): string => Blade::render('<div class="p-2 px-6 bg-primary-100 font-black w-full">'.static::$module.' Module</div>'));
+                Filament::registerRenderHook('sidebar.start',static fn(): string => Blade::render('<div class="p-2 px-6 bg-primary-100 font-black w-full">'.static::$module.' </div>'));
             });
         });
     }

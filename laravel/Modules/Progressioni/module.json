@@ -1,15 +1,15 @@
 {
-    "name": "Progressioni",
-    "alias": "progressioni",
+    "name": "Performance",
+    "alias": "performance",
     "description": "",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
-        "Modules\\Progressioni\\Providers\\ProgressioniServiceProvider",
-        "Modules\\Progressioni\\Providers\\Filament\\AdminPanelProvider"
+        "Modules\\Performance\\Providers\\PerformanceServiceProvider",
+        "Modules\\Performance\\Providers\\Filament\\AdminPanelProvider"
     ],
-    "aliases": [],
+    "aliases": {},
     "files": [],
     "requires": []
 }

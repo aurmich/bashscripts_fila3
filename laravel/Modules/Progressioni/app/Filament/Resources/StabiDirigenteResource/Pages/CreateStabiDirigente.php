@@ -1,13 +1,11 @@
 <?php
 
-declare(strict_types=1);
+namespace Modules\Performance\Filament\Resources\StabiDirigenteResource\Pages;
 
-namespace Modules\Progressioni\Filament\Resources\StabiDirigenteResource\Pages;
+use Filament\Resources\Pages\CreateRecord;
+use Modules\Performance\Filament\Resources\StabiDirigenteResource;
 
-use Modules\Progressioni\Filament\Resources\StabiDirigenteResource;
-use Modules\Ptv\Filament\Resources\StabiDirigenteResource\Pages\CreateStabiDirigente as PtvCreateStabiDirigente;
-
-class CreateStabiDirigente extends PtvCreateStabiDirigente
+class CreateStabiDirigente extends CreateRecord
 {
     protected static string $resource = StabiDirigenteResource::class;
 }

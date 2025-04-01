@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Modules\Progressioni\Services;
+namespace Modules\Performance\Services;
 
-use Modules\Progressioni\Models\CriteriValutazione;
+use Modules\Performance\Models\CriteriValutazione;
 use Request;
 
 class CriteriValutazioneService
@@ -14,22 +14,41 @@ class CriteriValutazioneService
      */
     public static function getFieldsYear(int $year, bool $is_po = false): array
     {
-        $year = Request::input('year', 0);
-        if (is_string($year)) {
-            $year = intval($year);
-        }
+        $year = (int) Request::input('year');
+        $po_str = $is_po ? 'PO' : '';
         $criteri = CriteriValutazione::where('anno', $year)
-            // ->where('descr', $po_str)
+            ->where('descr', $po_str)
             ->get();
 
         $data = [];
         foreach ($criteri as $v) {
             $tmp = (object) [
-                // 'type' => 'Decimal',
-                'type' => 'String',
-                'name' => $v->name,
+                'type' => 'Decimal',
+                'name' => $v->nome,
                 'label' => $v->label,
-                // 'rules' => 'required|numeric|min:0|max:4',
+                'rules' => 'required|numeric|min:0|max:4',
+            ];
+            $data[] = $tmp;
+        }
+
+        return $data;
+    }
+
+    public static function getFieldsYearPostType(int $year, string $post_type): array
+    {
+        // $year = (int)\Request::input('year');
+
+        $criteri = CriteriValutazione::where('anno', $year)
+            ->where('post_type', $post_type)
+            ->get();
+
+        $data = [];
+        foreach ($criteri as $v) {
+            $tmp = (object) [
+                'type' => 'Decimal',
+                'name' => $v->nome,
+                'label' => $v->label,
+                'rules' => 'required|numeric|min:0|max:4',
             ];
             $data[] = $tmp;
         }

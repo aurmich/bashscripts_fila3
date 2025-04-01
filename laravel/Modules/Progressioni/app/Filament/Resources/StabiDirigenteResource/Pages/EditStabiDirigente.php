@@ -1,13 +1,19 @@
 <?php
 
-declare(strict_types=1);
+namespace Modules\Performance\Filament\Resources\StabiDirigenteResource\Pages;
 
-namespace Modules\Progressioni\Filament\Resources\StabiDirigenteResource\Pages;
+use Filament\Actions;
+use Filament\Resources\Pages\EditRecord;
+use Modules\Performance\Filament\Resources\StabiDirigenteResource;
 
-use Modules\Progressioni\Filament\Resources\StabiDirigenteResource;
-use Modules\Ptv\Filament\Resources\StabiDirigenteResource\Pages\EditStabiDirigente as PtvEditStabiDirigente;
-
-class EditStabiDirigente extends PtvEditStabiDirigente
+class EditStabiDirigente extends \Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord
 {
     protected static string $resource = StabiDirigenteResource::class;
+
+    protected function getHeaderActions(): array
+    {
+        return [
+            Actions\DeleteAction::make(),
+        ];
+    }
 }

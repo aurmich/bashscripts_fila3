@@ -1,8 +1,8 @@
 {
-    "name": "laraxot/module_progressioni_fila3",
+    "name": "laraxot/module_performance_fila3",
     "description": "",
     "license": "MIT",
-    "homepage": "https://github.com/laraxot/module_progressioni_fila3.git",
+    "homepage": "https://github.com/laraxot/module_performance_fila3.git",
     "authors": [
         {
             "name": "Marco Sottana",
@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "spatie/laravel-sluggable": "*"
+        "php": "^8.2"
     },
     "require-dev": {},
     "repositories": [
@@ -29,9 +29,9 @@
     ],
     "autoload": {
         "psr-4": {
-            "Modules\\Progressioni\\": "app/",
-            "Modules\\Progressioni\\Database\\Factories\\": "database/factories/",
-            "Modules\\Progressioni\\Database\\Seeders\\": "database/seeders/"
+            "Modules\\Performance\\": "app/",
+            "Modules\\Performance\\Database\\Factories\\": "database/factories/",
+            "Modules\\Performance\\Database\\Seeders\\": "database/seeders/"
         }
     },
     "scripts": {
@@ -52,8 +52,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Modules\\Progressioni\\Providers\\ProgressioniServiceProvider",
-                "Modules\\Progressioni\\Providers\\Filament\\AdminPanelProvider"
+                "Modules\\Performance\\Providers\\PerformanceServiceProvider",
+                "Modules\\Performance\\Providers\\Filament\\AdminPanelProvider"
             ],
             "aliases": {}
         }

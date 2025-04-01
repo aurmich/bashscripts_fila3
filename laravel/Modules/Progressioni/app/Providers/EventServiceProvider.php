@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Progressioni\Providers;
+namespace Modules\Performance\Providers;
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as BaseEventServiceProvider;
 

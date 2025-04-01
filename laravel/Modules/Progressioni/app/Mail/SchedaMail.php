@@ -1,6 +1,8 @@
 <?php
 
-namespace Modules\Progressioni\Mail;
+declare(strict_types=1);
+
+namespace Modules\Performance\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
@@ -9,21 +11,21 @@ use Illuminate\Mail\Mailables\Attachment;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
-use Modules\Progressioni\Actions\MakePdfByRecord;
-use Modules\Progressioni\Models\Progressioni;
-use Modules\Progressioni\Models\Schede as Scheda;
+use Modules\Performance\Actions\MakePdfByRecord;
+use Modules\Performance\Models\Individuale as Scheda;
+use Modules\Xot\Actions\Export\PdfByModelAction;
 
 class SchedaMail extends Mailable
 {
     use Queueable;
     use SerializesModels;
 
-    public Scheda|Progressioni $scheda;
+    public Scheda $scheda;
 
     /**
      * Create a new message instance.
      */
-    public function __construct(Scheda|Progressioni $scheda)
+    public function __construct(Scheda $scheda)
     {
         $this->scheda = $scheda;
     }
@@ -38,7 +40,7 @@ class SchedaMail extends Mailable
             // replyTo: [
             //    new Address('taylor@example.com', 'Taylor Otwell'),
             // ],
-            subject: strip_tags($this->scheda->msg('mail_oggetto')),
+            subject: strip_tags($this->scheda->option('mail_oggetto')),
         );
     }
 
@@ -48,10 +50,10 @@ class SchedaMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'progressioni::emails.scheda',
+            view: 'performance::emails.scheda',
             with: [
                 'row' => $this->scheda,
-                'html' => $this->scheda->msg('mail_testo'),
+                'html' => $this->scheda->option('mail_testo'),
             ],
             // html: 'testo email',
             // text: 'testo email 1',
@@ -65,7 +67,8 @@ class SchedaMail extends Mailable
      */
     public function attachments(): array
     {
-        $path = app(MakePdfByRecord::class)->execute(record: $this->scheda, out: 'path');
+        // $path = app(MakePdfByRecord::class)->execute(record: $this->scheda, out: 'path');
+        $path = app(PdfByModelAction::class)->execute(model: $this->scheda, out: 'path');
 
         return [
             Attachment::fromPath($path)
@@ -77,7 +80,6 @@ class SchedaMail extends Mailable
                 'Scheda.pdf')
                 ->withMime('application/pdf'),
             */
-
         ];
     }
 }

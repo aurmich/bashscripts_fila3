@@ -2,96 +2,122 @@
 
 declare(strict_types=1);
 
-namespace Modules\Progressioni\Models;
+namespace Modules\Performance\Models;
 
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
-use Modules\Ptv\Models\StabiDirigente as PtvStabiDirigenteModel;
 use Modules\Sigma\Models\Repart;
 
+// use Modules\Xot\Traits\Updater;
 /**
- * Modules\Progressioni\Models\StabiDirigente.
+ * Modules\Performance\Models\StabiDirigente.
  *
  * @property int $id
  * @property int|null $stabi
  * @property int|null $repar
  * @property string|null $nome_stabi
- * @property string|null $stabi_txt
- * @property string|null $repar_txt
  * @property int|null $ente
  * @property int|null $matr
- * @property int|null $anno
  * @property string|null $nome_diri
- * @property string|null $nome_diri_plus
- * @property string|null $budget
- * @property int|null $valutatore_id
+ * @property string|null $anno
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- * @property string|null $updated_by
  * @property string|null $created_by
- * @property string|null $deleted_at
- * @property string|null $deleted_by
- * @property string|null $deleted_ip
- * @property string|null $created_ip
- * @property string|null $updated_ip
- * @property-read Collection<int, \Modules\Progressioni\Models\Schede> $benificiariProgressione
- * @property-read int|null $benificiari_progressione_count
- * @property-read Repart|null $repart
- * @property-read Collection<int, \Modules\Progressioni\Models\Schede> $schede
- * @property-read int|null $schede_count
+ * @property string|null $updated_by
+ * @property int|null $n_diritto_excellence
  *
- * @method static \Modules\Progressioni\Database\Factories\StabiDirigenteFactory factory($count = null, $state = [])
  * @method static Builder|StabiDirigente newModelQuery()
  * @method static Builder|StabiDirigente newQuery()
  * @method static Builder|StabiDirigente query()
  * @method static Builder|StabiDirigente whereAnno($value)
- * @method static Builder|StabiDirigente whereBudget($value)
  * @method static Builder|StabiDirigente whereCreatedAt($value)
  * @method static Builder|StabiDirigente whereCreatedBy($value)
- * @method static Builder|StabiDirigente whereCreatedIp($value)
- * @method static Builder|StabiDirigente whereDeletedAt($value)
- * @method static Builder|StabiDirigente whereDeletedBy($value)
- * @method static Builder|StabiDirigente whereDeletedIp($value)
  * @method static Builder|StabiDirigente whereEnte($value)
  * @method static Builder|StabiDirigente whereId($value)
  * @method static Builder|StabiDirigente whereMatr($value)
+ * @method static Builder|StabiDirigente whereNDirittoExcellence($value)
  * @method static Builder|StabiDirigente whereNomeDiri($value)
- * @method static Builder|StabiDirigente whereNomeDiriPlus($value)
  * @method static Builder|StabiDirigente whereNomeStabi($value)
  * @method static Builder|StabiDirigente whereRepar($value)
- * @method static Builder|StabiDirigente whereReparTxt($value)
  * @method static Builder|StabiDirigente whereStabi($value)
- * @method static Builder|StabiDirigente whereStabiTxt($value)
  * @method static Builder|StabiDirigente whereUpdatedAt($value)
  * @method static Builder|StabiDirigente whereUpdatedBy($value)
- * @method static Builder|StabiDirigente whereUpdatedIp($value)
- * @method static Builder|StabiDirigente whereValutatoreId($value)
  *
  * @mixin \Eloquent
  */
-class StabiDirigente extends PtvStabiDirigenteModel
+class StabiDirigente extends BaseModel
 {
-    protected $connection = 'progressione'; // this will use the specified database connection
+    /*
+    use Updater;
+    protected $connection = 'performance'; // this will use the specified database connection
+    protected $dates = [
+        'created_at',
+        'updated_at',
+        //'deleted_at',
+    ];
 
-    public function budgetAssegnato(): float
+    */
+    protected $table = 'stabi_dirigente';
+
+    protected $fillable = [
+        'id', 'stabi', 'repar', 'nome_stabi',
+        'ente', 'matr', 'nome_diri', 'anno',
+        'n_diritto_excellence',
+    ];
+
+    // public $timestamps= false;
+    /*
+    public static function filter($params)
     {
-        $beneficiari = $this->benificiariProgressione;
-        // $res = $beneficiari->sum('costo_fascia_up');
-        $res = $beneficiari->sum(static fn ($item): int|float => $item->costo_fascia_up * $item->ptime);
-
-        return (float) $res;
+        $rows = new self();
+        extract($params);
+        //echo '<pre>';print_r($params);echo '</pre>';
+        return $rows;
     }
+    */
+    // end search
+    // -------------------------
+    //
+    // ---- mutators ----
+    /*
+    public function getNomeDiriAttribute($value) {
+        if (null !== $value) {
+            return $value;
+        }
+        $row = StabiDirigente::where('stabi', $this->stabi)
+            ->where('repar', $this->repar)
+            ->first();
 
-    public function schede(): HasMany
-    {
-        return $this->hasMany(Schede::class, 'valutatore_id', 'id');
+        if (is_object($row)) {
+            $value = $row->nome_diri;
+            $this->nome_diri = $value;
+            $this->save();
+        }
+
+        return $value;
     }
-
-    public function benificiariProgressione(): HasMany
+    */
+    public function getNomeStabiAttribute($value)
     {
-        return $this->schede()
-            ->where('benificiario_progressione', 1);
+        if ($value !== null) {
+            return $value;
+        }
+
+        $stabi = Repart::where('stabi', $this->stabi)
+            ->where('repar', 0)
+            ->where('ente', 90)
+            ->first();
+
+        $repart = Repart::where('stabi', $this->stabi)
+            ->where('repar', $this->repar)
+            ->where('ente', 90)
+            ->first();
+        if (\is_object($stabi) && \is_object($repart)) {
+            $value = $stabi->dest1.' '.$stabi->dest2.' - '.$repart->dest1.' '.$repart->dest2;
+            $this->nome_stabi = $value;
+            $this->save();
+        }
+
+        return $value;
     }
 }

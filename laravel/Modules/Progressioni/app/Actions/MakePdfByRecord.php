@@ -2,10 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Modules\Progressioni\Actions;
+namespace Modules\Performance\Actions;
 
-use Modules\Progressioni\Models\Progressioni;
-use Modules\Progressioni\Models\Schede as Scheda;
+use Exception;
+use Modules\Performance\Models\Individuale as Scheda;
+use Modules\Performance\Models\Valutatore;
 use Spatie\QueueableAction\QueueableAction;
 
 class MakePdfByRecord
@@ -13,13 +14,21 @@ class MakePdfByRecord
     use QueueableAction;
 
     /**
-     * Undocumented function.
+     * Generate PDF for a performance record.
+     *
+     * @param Scheda $record The performance record
+     * @param string $out Output type ('download' or other)
+     * @return mixed The PDF output
+     * @throws Exception If valutatore relation is not loaded
      */
-    public function execute(Scheda|Progressioni $record, string $out = 'download')
+    public function execute(Scheda $record, string $out = 'download')
     {
-        $view = 'progressioni::actions.make-pdf-by-record';
+        $view = 'performance::actions.make-pdf-by-record';
 
         $valutatore = $record->valutatore;
+        if (!$valutatore instanceof Valutatore) {
+            throw new Exception('Valutatore relation not loaded or invalid');
+        }
         $view_params = [
             'view' => $view,
             'row' => $record,

@@ -3,8 +3,8 @@ require('laravel-mix-merge-manifest');
 
 mix.setPublicPath('../../public').mergeManifest();
 
-mix.js(__dirname + '/resources/assets/js/app.js', 'js/progressioni.js')
-    .sass( __dirname + '/resources/assets/sass/app.scss', 'css/progressioni.css');
+mix.js(__dirname + '/resources/assets/js/app.js', 'js/performance.js')
+    .sass( __dirname + '/resources/assets/sass/app.scss', 'css/performance.css');
 
 if (mix.inProduction()) {
     mix.version();

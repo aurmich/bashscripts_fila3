@@ -1,10 +1,10 @@
 <?php
 
-namespace Modules\Progressioni\Filament\Resources\MyLogResource\Pages;
+namespace Modules\Performance\Filament\Resources\MyLogResource\Pages;
 
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
-use Modules\Progressioni\Filament\Resources\MyLogResource;
+use Modules\Performance\Filament\Resources\MyLogResource;
 
 class EditMyLog extends \Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord
 {

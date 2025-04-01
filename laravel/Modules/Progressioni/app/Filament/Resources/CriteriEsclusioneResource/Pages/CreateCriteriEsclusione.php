@@ -1,9 +1,9 @@
 <?php
 
-namespace Modules\Progressioni\Filament\Resources\CriteriEsclusioneResource\Pages;
+namespace Modules\Performance\Filament\Resources\CriteriEsclusioneResource\Pages;
 
 use Filament\Resources\Pages\CreateRecord;
-use Modules\Progressioni\Filament\Resources\CriteriEsclusioneResource;
+use Modules\Performance\Filament\Resources\CriteriEsclusioneResource;
 
 class CreateCriteriEsclusione extends CreateRecord
 {

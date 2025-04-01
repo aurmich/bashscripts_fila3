@@ -1,14 +1,26 @@
 <?php
 
-declare(strict_types=1);
+namespace Modules\Performance\Filament\Pages;
 
-namespace Modules\Progressioni\Filament\Pages;
+use Filament\Pages\Dashboard as BaseDashBoard;
+use Illuminate\Support\Facades\Auth;
 
-use Filament\Pages\Page;
-
-class Dashboard extends Page
+class Dashboard extends BaseDashboard
 {
-    protected static ?string $navigationIcon = 'heroicon-o-home';
+    /*
+    public function __construct(){
+        $user=Auth::user();
+        if($user==null){
+            abort(403);
+        }
 
-    protected static string $view = 'progressioni::filament.pages.dashboard';
+        $name=static::getName();//"getName" => "modules.performance.filament.pages.dashboard"
+        $module=collect(explode('.',(string) $name))->get(1);
+        if(!$user->hasModule($module)){
+            abort(403);
+        }
+
+
+    }
+    */
 }

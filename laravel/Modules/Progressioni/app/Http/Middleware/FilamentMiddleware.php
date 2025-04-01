@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Progressioni\Http\Middleware;
+namespace Modules\Performance\Http\Middleware;
 
 use Exception;
 use Filament\Models\Contracts\FilamentUser;
@@ -10,7 +10,7 @@ use Str;
 
 class FilamentMiddleware extends Middleware
 {
-    public static string $module = 'Progressioni';
+    public static string $module = 'Performance';
 
     public static string $context = 'filament';
 

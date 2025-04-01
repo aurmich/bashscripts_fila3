@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Modules\Progressioni\Filament\Actions\Bulk;
+namespace Modules\Performance\Filament\Actions\Bulk;
 
 use Filament\Tables\Actions\BulkAction;
 use Illuminate\Database\Eloquent\Collection;
-use Modules\Progressioni\Mail\SchedaMail;
+use Modules\Performance\Mail\SchedaMail;
 use Modules\Xot\Actions\Mail\SendMailByRecordsAction;
 
 class SendMailBulkAction extends BulkAction

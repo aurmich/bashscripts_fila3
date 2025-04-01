@@ -2,10 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Modules\Progressioni\Actions;
+namespace Modules\Performance\Actions;
 
-use Modules\Progressioni\Models\Progressioni;
-use Modules\Progressioni\Models\Schede;
+use Modules\Performance\Models\Individuale as Scheda;
 use Spatie\QueueableAction\QueueableAction;
 
 class ShowMailSendedAt
@@ -15,16 +14,12 @@ class ShowMailSendedAt
     /**
      * Undocumented function.
      */
-    public function execute(Schede|Progressioni $model): string
+    public function execute(Scheda $model): string
     {
-        $a = Schede::firstWhere(['id' => $model->getKey()]);
-        $b = Progressioni::firstWhere(['id' => $model->getKey()]);
+        $a = Scheda::firstWhere(['id' => $model->getKey()]);
 
         $html = '';
         foreach ($a->myLogs()->where('act', 'sendMail')->get() as $row) {
-            $html .= '<br/>'.$row->updated_at;
-        }
-        foreach ($b->myLogs()->where('act', 'sendMail')->get() as $row) {
             $html .= '<br/>'.$row->updated_at;
         }
 

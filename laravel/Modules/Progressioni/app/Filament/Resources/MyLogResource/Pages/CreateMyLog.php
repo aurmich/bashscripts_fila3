@@ -1,9 +1,9 @@
 <?php
 
-namespace Modules\Progressioni\Filament\Resources\MyLogResource\Pages;
+namespace Modules\Performance\Filament\Resources\MyLogResource\Pages;
 
 use Filament\Resources\Pages\CreateRecord;
-use Modules\Progressioni\Filament\Resources\MyLogResource;
+use Modules\Performance\Filament\Resources\MyLogResource;
 
 class CreateMyLog extends CreateRecord
 {

@@ -4,16 +4,16 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Module Progressioni</title>
+        <title>Module Performance</title>
 
        {{-- Laravel Mix - CSS File --}}
-       {{-- <link rel="stylesheet" href="{{ mix('css/progressioni.css') }}"> --}}
+       {{-- <link rel="stylesheet" href="{{ mix('css/performance.css') }}"> --}}
 
     </head>
     <body>
         @yield('content')
 
         {{-- Laravel Mix - JS File --}}
-        {{-- <script src="{{ mix('js/progressioni.js') }}"></script> --}}
+        {{-- <script src="{{ mix('js/performance.js') }}"></script> --}}
     </body>
 </html>
