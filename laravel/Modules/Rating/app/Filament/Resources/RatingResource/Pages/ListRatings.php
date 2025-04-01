@@ -4,51 +4,92 @@ declare(strict_types=1);
 
 namespace Modules\Rating\Filament\Resources\RatingResource\Pages;
 
-use Filament\Actions\CreateAction;
-use Filament\Resources\Pages\ListRecords;
+use Filament\Tables\Actions\DeleteAction;
 use Filament\Tables\Actions\DeleteBulkAction;
+use Filament\Tables\Actions\EditAction;
+use Filament\Tables\Actions\ViewAction;
+use Filament\Tables\Columns\IconColumn;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Enums\ActionsPosition;
+use Filament\Tables\Enums\FiltersLayout;
+use Filament\Tables\Table;
 use Modules\Rating\Filament\Resources\RatingResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
-class ListRatings extends ListRecords
+class ListRatings extends XotBaseListRecords
 {
     protected static string $resource = RatingResource::class;
 
-    protected function getHeaderActions(): array
+    public function getListTableColumns(): array
     {
         return [
-            CreateAction::make(),
+            'id' => TextColumn::make('id')
+                ->sortable()
+                ->searchable(),
+            'title' => TextColumn::make('title')
+                ->sortable()
+                ->searchable(),
+            'rule' => TextColumn::make('rule')
+                ->badge(),
+            'is_disabled' => IconColumn::make('is_disabled')
+                ->boolean(),
+            'is_readonly' => IconColumn::make('is_readonly')
+                ->boolean(),
+        ];
+
+        // TextColumn::make('extra_attributes.type'),
+        // TextColumn::make('extra_attributes.anno'),
+
+        // TextColumn::make('is_readonly'),
+        // TextColumn::make('is_disabled'),
+        // ToggleColumn::make('is_readonly'),
+
+        // TextColumn::make('color'),
+    }
+
+    public function getTableFilters(): array
+    {
+        return [
         ];
     }
 
-    protected function getTableBulkActions(): array
+    public function getTableActions(): array
     {
         return [
-            DeleteBulkAction::make(),
+            'view' => ViewAction::make()
+                ->label(''),
+            'edit' => EditAction::make()
+                ->label(''),
+            'delete' => DeleteAction::make()
+                ->label('')
+                ->requiresConfirmation(),
         ];
     }
 
-    /**
-     * Ottiene le colonne della tabella.
-     *
-     * @return array<\Filament\Tables\Columns\Column>
-     */
-    protected function getTableColumns(): array
-    {
-        return static::getResource()::getTableColumns();
-    }
-
-    /**
-     * Configura le opzioni aggiuntive della tabella.
-     *
-     * @return array<string, mixed>
-     */
-    protected function getTableConfiguration(): array
+    public function getTableBulkActions(): array
     {
         return [
-            'defaultSort' => 'created_at',
-            'defaultSortDirection' => 'desc',
-            'paginated' => true,
-            'recordsPerPage' => 25,
+            'delete' => DeleteBulkAction::make(),
         ];
+    }
+
+    public function table(Table $table): Table
+    {
+        return $table
+            // ->columns($this->getTableColumns())
+            ->columns($this->layoutView->getTableColumns())
+            ->contentGrid($this->layoutView->getTableContentGrid())
+            ->headerActions($this->getTableHeaderActions())
+
+            ->filters($this->getTableFilters())
+            ->filtersLayout(FiltersLayout::AboveContent)
+            ->persistFiltersInSession()
+            ->actions($this->getTableActions())
+            ->bulkActions($this->getTableBulkActions())
+            ->actionsPosition(ActionsPosition::BeforeColumns)
+            ->defaultSort(
+                column: 'created_at',
+                direction: 'DESC',
+            );
     }
 }

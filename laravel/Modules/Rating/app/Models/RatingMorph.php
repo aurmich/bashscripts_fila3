@@ -8,7 +8,6 @@ use Eloquent;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Modules\Xot\Datas\XotData;
-use Modules\Xot\Contracts\ProfileContract;
 
 /**
  * Modules\Rating\Models\RatingMorph.
@@ -61,7 +60,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static \Illuminate\Database\Eloquent\Builder|RatingMorph whereValue($value)
  *
  * @property \Illuminate\Database\Eloquent\Model|\Eloquent $model
- * @property ProfileContract|null                          $profile
+ * @property \Illuminate\Database\Eloquent\Model|null $profile
  * @property \Modules\Xot\Contracts\UserContract|null      $user
  * @property string                                        $reward
  *

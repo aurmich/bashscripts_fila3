@@ -27,27 +27,25 @@ enum SupportedLocale: string
      */
     public static function toArray(): array
     {
-        return array_reduce(
+        /** @var array<string, string> $result */
+        $result = array_reduce(
             self::cases(),
             fn (array $carry, self $locale) => [...$carry, $locale->value => $locale->getLabel()],
             []
         );
+        
+        return $result;
     }
-
+    
+    /**
+     * Create from string value.
+     */
     public static function fromString(string $value): self
     {
         return match ($value) {
             'it' => self::IT,
             'en' => self::EN,
             default => self::IT,
-        };
-    }
-
-    public function label(): string
-    {
-        return match ($this) {
-            self::IT => 'Italiano',
-            self::EN => 'English',
         };
     }
 }

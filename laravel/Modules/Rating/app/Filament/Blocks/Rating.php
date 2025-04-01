@@ -16,6 +16,7 @@ use Modules\Rating\Datas\RatingData;
 use Modules\Rating\Enums\SupportedLocale;
 use Modules\UI\Filament\Forms\Components\RadioImage;
 use Modules\Xot\Actions\Filament\Block\GetViewBlocksOptionsByTypeAction;
+use Webmozart\Assert\Assert;
 
 class Rating extends Block
 {
@@ -26,6 +27,8 @@ class Rating extends Block
      */
     public static function create(): Block
     {
+        // Ensure we're passing a string to make()
+        Assert::stringNotEmpty(static::BLOCK_TYPE, 'Block type must be a non-empty string');
         return parent::make(static::BLOCK_TYPE)
             ->schema([
                 TextInput::make('title')
@@ -43,7 +46,7 @@ class Rating extends Block
                 $locale = App::getLocale();
                 $supportedLocale = SupportedLocale::fromString($locale);
 
-                return sprintf('Rating (%s)', $supportedLocale->label());
+                return sprintf('Rating (%s)', $supportedLocale->getLabel());
             });
     }
 
@@ -67,13 +70,15 @@ class Rating extends Block
         string $context = 'form',
         ?array $options = null,
     ): Block {
+        // Ensure we're passing a string to execute()
+        Assert::stringNotEmpty(static::BLOCK_TYPE, 'Block type must be a non-empty string');
         $blockOptions = $options ?? app(GetViewBlocksOptionsByTypeAction::class)
             ->execute(static::BLOCK_TYPE, true);
 
         return Block::make($name)
             ->schema([
                 RadioImage::make('view')
-                    ->options($blockOptions),
+                    ->options(is_array($blockOptions) ? array_map(fn($value) => is_scalar($value) ? (string)$value : '', $blockOptions) : []),
 
                 Repeater::make('ratings')
                     ->visible(fn (Get $get): bool => $get('locale') === App::getLocale())
