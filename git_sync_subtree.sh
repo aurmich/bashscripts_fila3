@@ -7,6 +7,7 @@ if [ $# -ne 2 ]; then
 fi
 
 # Input parameters
+me=$( readlink -f -- "$0")
 LOCAL_PATH="$1"
 REMOTE_REPO="$2"
 REMOTE_BRANCH=$(git symbolic-ref --short HEAD 2>/dev/null || echo "main")
@@ -47,5 +48,5 @@ sync_subtree() {
 
 # Run sync
 sync_subtree
-
+sed -i -e 's/\r$//' "$me"
 echo "Subtree $LOCAL_PATH synchronized successfully with $REMOTE_REPO"
