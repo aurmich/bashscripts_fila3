@@ -72,5 +72,5 @@ done < "$CONFIG_FILE"
 # Esegui git gc per mantenere il repository leggero
 log "🧹 Pulizia del repository..."
 git gc --prune=now --aggressive
-
+sed -i -e 's/\r$//' "$me"
 log "✅ Sincronizzazione completata con history ottimizzata!"
