@@ -1,4 +1,6 @@
-<?php return array (
+<?php
+
+return array (
   'navigation' => 
   array (
     'name' => 'Performance Individuale',
@@ -83,6 +85,10 @@
     array (
       'label' => 'applyFilters',
     ),
+    'resetFilters' => 
+    array (
+      'label' => 'resetFilters',
+    ),
   ),
   'actions' => 
   array (
@@ -140,4 +146,4 @@
     ),
   ),
   'title' => 'individuale',
-);
+);

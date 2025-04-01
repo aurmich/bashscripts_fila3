@@ -19,6 +19,10 @@ die() {
 
 # Sync subtree
 sync_subtree() {
+    git add -A
+    git commit -am "."
+    git push -u origin "$REMOTE_BRANCH"
+    
     git subtree pull -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH"  --squash ||
         git subtree pull -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH"   
 
