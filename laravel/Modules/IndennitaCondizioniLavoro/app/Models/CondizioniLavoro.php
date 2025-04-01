@@ -9,7 +9,6 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Relations\HasOne;
 use Modules\IndennitaCondizioniLavoro\Models\Traits\MutatorTrait;
 use Modules\IndennitaCondizioniLavoro\Models\Traits\RelationshipTrait;
 use Modules\Sigma\Models\Ana02f;
@@ -22,7 +21,6 @@ use Modules\Sigma\Models\Qua03f;
 use Modules\Sigma\Models\Rep00f;
 use Modules\Sigma\Models\Repart;
 use Modules\Sigma\Models\Sto00f;
-use Modules\IndennitaCondizioniLavoro\Models\StabiDirigente;
 use Modules\Sigma\Models\Traits\Mutators\EnteMatrAnnoMutator;
 use Modules\Sigma\Models\Traits\Mutators\EnteMatrDateRangeMutator;
 use Modules\Sigma\Models\Traits\Mutators\EnteMatrMutator;
@@ -33,9 +31,7 @@ use Modules\Sigma\Models\Traits\SigmaModelTrait;
 use Modules\Sigma\Models\Wstr01lx;
 
 /**
- * Class CondizioniLavoro
- *
- * @package Modules\IndennitaCondizioniLavoro\Models
+ * Modules\IndennitaCondizioniLavoro\Models\CondizioniLavoro.
  *
  * @property int                                                                               $id
  * @property int|null                                                                          $ente
@@ -182,39 +178,42 @@ use Modules\Sigma\Models\Wstr01lx;
  *
  * @mixin \Eloquent
  */
-final class CondizioniLavoro extends BaseModel
+class CondizioniLavoro extends BaseModel
 {
     use MutatorTrait;
     use RelationshipTrait;
     use SigmaModelTrait;
+
     use EnteMatrMutator;
+    // use EnteMatrRelationship;
+    // use EnteMatrDateRangeRelationship;
+    // use EnteMatrDateRangeMutator;
+    // use EnteMatrAnnoRelationship;
+    // use EnteMatrAnnoMutator;
 
     protected $table = 'condizioni_lavoro';
 
-    /** @var list<string> */
-    protected $fillable = [
-        'ente', 'matr', 'cognome', 'nome', 'email',
-        'stabi', 'stabi_txt', 'repar', 'repar_txt',
-        'propro', 'posfun', 'categoria_eco',
-        'gg_presenza_anno', 'gg_assenza_anno', 'gg_trasferte_anno',
-        'anno', 'quadrimestre', 'dal', 'al',
-        'valutatore_id', 'tot', 'tot_x_ptime',
-        'trimestre', 'rep2kd', 'rep2ka', 'qua2kd', 'qua2ka',
-        'gg_presenza_periodo',
-        'tot_presenza_periodo_plus_no_timbr'
-    ];
+    protected $fillable =
+        [
+            'ente', 'matr', 'cognome', 'nome', 'email',
+            'stabi', 'stabi_txt', 'repar', 'repar_txt',
+            'propro', 'posfun', 'categoria_eco',
+            'gg_presenza_anno', 'gg_assenza_anno', 'gg_trasferte_anno',
+            'anno', 'trimestre', 'quadrimestre', 'dal', 'al',
+            'rep2kd', 'rep2ka', 'qua2kd', 'qua2ka',
+            'gg_presenza_periodo',
+            'tot_presenza_periodo_plus_no_timbr',
+            'valutatore_id',
+        ];
 
+    protected $casts = ['dal' => 'datetime', 'al' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime'];
 
     // ------ relationship ----------
-    /**
-     * Get the indennita tipo relationship.
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\HasManyThrough
-     */
-    public function indennitaTipo()
-    {
-        return $this->hasManyThrough(IndennitaTipo::class, CondizioniLavoroIndennitaTipoDettaglioPivot::class);
+    /* WIP
+    public function indennitaTipo() {
+    return $this->hasManyThrough(IndennitaTipo::class, CondizioniLavoroIndennitaTipoDettaglioPivot::class);
     }
+    */
 
     public function tipoDettaglio(): BelongsToMany
     {
@@ -276,11 +275,10 @@ final class CondizioniLavoro extends BaseModel
         return $tot * $ptime;
     }
 
-    public function reparts(): HasOne
+    public function reparts(): HasMany
     {
-        return $this->hasOne(Repart::class, 'stabi', 'stabi')
-            ->where('ente', $this->ente)
-            ->where('repar', $this->repar);
+        return $this->hasMany(Repart::class, 'stabi', 'stabi')
+            ->where('ente', $this->ente);
     }
 
     public function getReparTxtAttribute(?string $value): ?string
@@ -460,7 +458,7 @@ final class CondizioniLavoro extends BaseModel
 
     // --------- function -----------
 
-    public static function populate(array $params): bool
+    public static function populate(array $params): void
     {
         // $params=array_merge(getRouteParameters(),$params);
         $anno = 0;
@@ -475,7 +473,7 @@ final class CondizioniLavoro extends BaseModel
     	)';
         $rows0 = Rep00f::where('repst1', $stabi)->where('repre1', $repar)->whereRaw($sql)->whereRaw('repann=""');
         foreach ($rows0->get() as $row) {
-            $rep2kd = \is_object($row->rep2kd) ? $row->rep2kd->format('Ymd') : $row->rep2kd;
+            $rep2kd = $row->rep2kd->format('Ymd');
             $rep2ka = (\is_object($row->rep2ka)) ? $row->rep2ka->format('Ymd') : $row->rep2ka;
             $parz = ['ente' => $row->ente,
                 'matr' => $row->matr,
@@ -517,12 +515,9 @@ final class CondizioniLavoro extends BaseModel
                 $qua00f = $obj->anag->qua00f()->select('propro', 'posfun', 'posiz')->distinct()->whereRaw($sql);
                 // echo '<br/>'.$qua00f->count().' - '.$qua00f->first()->propro.'  - '.$qua00f->first()->posfun;
                 if (1 === $qua00f->get()->count()) {
-                    $first = $qua00f->first();
-                    if ($first) {
-                        $obj->propro = $first->propro;
-                        $obj->posfun = $first->posfun;
-                        $obj->posiz = $first->posiz;
-                    }
+                    $obj->propro = $qua00f->first()->propro;
+                    $obj->posfun = $qua00f->first()->posfun;
+                    $obj->posiz = $qua00f->first()->posiz;
                 } else {
                     echo '<br/>$qua00f->count() : '.$qua00f->count();
                     echo '<br/>ente :'.$obj->ente;
@@ -536,59 +531,68 @@ final class CondizioniLavoro extends BaseModel
                     // foreach($qua00f as $v_qua00f){
                     // dd(Carbon::parse($qua00f[0]->qua2kd));
                     $al_old = $obj->al;
-                    if (isset($qua00f[0])) {
-                        $obj->al = Carbon::parse($qua00f[0]->qua2kd);
-                        $obj->save();
+                    $obj->al = Carbon::parse($qua00f[0]->qua2kd);
+                    $obj->save();
 
-                        if (isset($qua00f[1])) {
-                            $obj1 = $obj->replicate();
-                            $obj1->dal = Carbon::parse($qua00f[1]->qua2kd);
-                            $obj1->al = 0 !== $qua00f[1]->qua2ka ? Carbon::parse($qua00f[1]->qua2ka) : $al_old;
-                            
-                            $obj1->id = null;
-                            $obj1->save();
-                        }
-                    }
+                    $obj1 = $obj->replicate();
+                    $obj1->dal = Carbon::parse($qua00f[1]->qua2kd);
+                    $obj1->al = 0 !== $qua00f[1]->qua2ka ? Carbon::parse($qua00f[1]->qua2ka) : $al_old;
+                    $obj1->id = null;
+                    $obj1->save();
                 }
             }
 
             $obj->save();
-            return true;
+            // dd($obj);
+            // echo '<br/><pre>['.$obj->id.']</pre>';
         }
 
-        return false;
+        // dd('['.__LINE__.']['.__FILE__.']');
+        $obj = new self();
+        $table = $obj->getTable();
+        $conn = $obj->getConnection();
+        $where = $table.'.anno="'.$anno.'" ';
+        // Anag::massUpdateCognomeNome(['conn' => $conn, 'table' => $table, 'where' => $where]);
+        // Anag::massUpdateCategoriaEco(['conn' => $conn, 'table' => $table, 'where' => $where]);
+        // Anag::massUpdatePosizTxt(['conn' => $conn, 'table' => $table, 'where' => $where]);
+        // Anag::massUpdateStabiTxtReparTxt(['conn' => $conn, 'table' => $table, 'where' => $where]);
     }
 
+    // end function
+
     /**
-     * Get the valutatore_id attribute.
-     *
-     * @param int|null $value
-     * @return int|null
+     * Undocumented function.
      */
     public function getValutatoreIdAttribute(?int $value): ?int
     {
         if ($value > 100) {
+            // dddx($value);
+
             return $value;
         }
 
-        $stabiDirigente = $this->stabiDirigente;
-        if (! $stabiDirigente) {
+        // dddx($this->attributes['valutatore_id']);
+
+        $stabi_diri = $this->stabiDirigente;
+        if (! \is_object($stabi_diri)) {
             return $value;
         }
 
-        $valutatore = $stabiDirigente->valutatore_id;
-        if ($valutatore !== null) {
-            $this->valutatore_id = $valutatore;
+        $valutatore_id = $stabi_diri->valutatore_id;
+        if (null !== $valutatore_id) {
+            $this->valutatore_id = $valutatore_id;
             $this->save();
-            return (int) $valutatore;
+
+            return (int) $valutatore_id;
         }
 
-        $stabi = StabiDirigente::firstOrCreate([
-            'anno' => $this->anno,
-            'stabi' => $this->stabi,
-            'repar' => 0,
-        ]);
-
+        $stabi = StabiDirigente::firstOrCreate(
+            [
+                'anno' => $this->anno,
+                'stabi' => $this->stabi,
+                'repar' => 0,
+            ]
+        );
         if (null === $stabi->valutatore_id) {
             $stabi->valutatore_id = $stabi->id;
             $stabi->save();
@@ -597,22 +601,19 @@ final class CondizioniLavoro extends BaseModel
         $this->valutatore_id = $stabi->valutatore_id;
         $this->save();
 
-        return (int) $stabi->valutatore_id;
+        return (int) $valutatore_id;
     }
 
-    /**
-     * Get the next quadrimestre conditions.
-     *
-     * @return static|null
-     */
-    public function getNextQuadrimestre(): ?self
+    public function getNextQuadrimestre(): ?CondizioniLavoro
     {
-        return static::firstWhere([
+        $where = [
             'quadrimestre' => $this->quadrimestre + 1,
             'anno' => $this->anno,
             'ente' => $this->ente,
             'matr' => $this->matr,
             'valutatore_id' => $this->valutatore_id,
-        ]);
+        ];
+
+        return CondizioniLavoro::firstWhere($where);
     }
-}
+}// end class

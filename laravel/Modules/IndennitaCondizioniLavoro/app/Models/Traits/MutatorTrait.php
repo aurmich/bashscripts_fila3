@@ -35,7 +35,7 @@ trait MutatorTrait
         return 'al';
     }
 
-    public function getDalAttribute(?string $value): ?\Carbon\Carbon
+    public function getDalAttribute($value)
     {
         // if(is_object($value)) return $value;
         // if($value!=null) return Carbon::parse($value);
@@ -47,7 +47,7 @@ trait MutatorTrait
         return $value;
     }
 
-    public function getAlAttribute(?string $value): ?\Carbon\Carbon
+    public function getAlAttribute($value)
     {
         // if(is_object($value)) return $value;
         // if($value!=null) return Carbon::parse($value);
