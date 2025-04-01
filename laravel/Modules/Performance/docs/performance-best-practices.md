@@ -1,36 +1,88 @@
 # Best Practices per le Performance nel Modulo Performance
 
 ## Overview
-Questo documento descrive le best practices per l'ottimizzazione delle performance nel modulo Performance.
+Questo documento descrive le best practices per le performance nel modulo Performance.
 
 ## Query Optimization
 
 ### 1. Eager Loading
 ```php
-// PerformanceController.php
-class PerformanceController extends Controller
+/**
+ * Repository per le performance
+ */
+class PerformanceRepository
 {
-    public function index()
+    /**
+     * Find performance by user with relations.
+     *
+     * @param  User  $user
+     * @return Collection
+     */
+    public function findByUser(User $user): Collection
     {
-        return Performance::with(['user', 'metrics', 'reviews'])
-            ->latest()
-            ->paginate(20);
+        return Performance::query()
+            ->with(['user', 'metrics'])
+            ->where('user_id', $user->id)
+            ->orderBy('created_at', 'desc')
+            ->get();
+    }
+
+    /**
+     * Find performance by period with relations.
+     *
+     * @param  string  $period
+     * @return Collection
+     */
+    public function findByPeriod(string $period): Collection
+    {
+        return Performance::query()
+            ->with(['user', 'metrics'])
+            ->where('period', $period)
+            ->orderBy('created_at', 'desc')
+            ->get();
     }
 }
 ```
 
 ### 2. Query Caching
 ```php
-// PerformanceRepository.php
+/**
+ * Repository per le performance
+ */
 class PerformanceRepository
 {
-    public function getTopPerformers(): Collection
+    /**
+     * Find performance by user with cache.
+     *
+     * @param  User  $user
+     * @return Collection
+     */
+    public function findByUser(User $user): Collection
     {
-        return Cache::tags(['performance', 'top'])
-            ->remember('top_performers', now()->addMinutes(30), function () {
-                return Performance::with('user')
-                    ->orderBy('score', 'desc')
-                    ->take(10)
+        return Cache::tags(['performance', 'user:' . $user->id])
+            ->remember('performance.user:' . $user->id, 3600, function () use ($user) {
+                return Performance::query()
+                    ->with(['user', 'metrics'])
+                    ->where('user_id', $user->id)
+                    ->orderBy('created_at', 'desc')
+                    ->get();
+            });
+    }
+
+    /**
+     * Find performance by period with cache.
+     *
+     * @param  string  $period
+     * @return Collection
+     */
+    public function findByPeriod(string $period): Collection
+    {
+        return Cache::tags(['performance', 'period:' . $period])
+            ->remember('performance.period:' . $period, 1800, function () use ($period) {
+                return Performance::query()
+                    ->with(['user', 'metrics'])
+                    ->where('period', $period)
+                    ->orderBy('created_at', 'desc')
                     ->get();
             });
     }
@@ -39,16 +91,42 @@ class PerformanceRepository
 
 ### 3. Query Chunking
 ```php
-// PerformanceProcessor.php
-class PerformanceProcessor
+/**
+ * Repository per le performance
+ */
+class PerformanceRepository
 {
-    public function processAll(): void
+    /**
+     * Process performance data in chunks.
+     *
+     * @param  Closure  $callback
+     * @return void
+     */
+    public function processInChunks(Closure $callback): void
     {
-        Performance::chunk(100, function ($performances) {
-            foreach ($performances as $performance) {
-                $this->process($performance);
-            }
-        });
+        Performance::query()
+            ->orderBy('id')
+            ->chunk(100, function ($performances) use ($callback) {
+                foreach ($performances as $performance) {
+                    $callback($performance);
+                }
+            });
+    }
+
+    /**
+     * Process performance data in chunks with cursor.
+     *
+     * @param  Closure  $callback
+     * @return void
+     */
+    public function processInChunksWithCursor(Closure $callback): void
+    {
+        Performance::query()
+            ->orderBy('id')
+            ->cursor()
+            ->each(function ($performance) use ($callback) {
+                $callback($performance);
+            });
     }
 }
 ```
@@ -57,57 +135,111 @@ class PerformanceProcessor
 
 ### 1. Cache Tags
 ```php
-// PerformanceCache.php
-class PerformanceCache
+/**
+ * Repository per le performance
+ */
+class PerformanceRepository
 {
-    public function get(User $user): array
+    /**
+     * Find performance by user with cache tags.
+     *
+     * @param  User  $user
+     * @return Collection
+     */
+    public function findByUser(User $user): Collection
     {
-        $key = "performance:user:{$user->id}";
-        
-        return Cache::tags(['performance', 'user'])
-            ->remember($key, now()->addHours(1), function () use ($user) {
-                return $this->calculatePerformance($user);
+        return Cache::tags(['performance', 'user:' . $user->id])
+            ->remember('performance.user:' . $user->id, 3600, function () use ($user) {
+                return Performance::query()
+                    ->with(['user', 'metrics'])
+                    ->where('user_id', $user->id)
+                    ->orderBy('created_at', 'desc')
+                    ->get();
             });
     }
-    
-    public function invalidate(User $user): void
+
+    /**
+     * Invalidate user performance cache.
+     *
+     * @param  User  $user
+     * @return void
+     */
+    public function invalidateUserCache(User $user): void
     {
-        Cache::tags(['performance', 'user'])
-            ->forget("performance:user:{$user->id}");
+        Cache::tags(['performance', 'user:' . $user->id])->flush();
     }
 }
 ```
 
 ### 2. Cache Duration
 ```php
-// CacheDurationManager.php
-class CacheDurationManager
+/**
+ * Repository per le performance
+ */
+class PerformanceRepository
 {
-    private const SHORT_TERM = 15; // minutes
-    private const MEDIUM_TERM = 60; // minutes
-    private const LONG_TERM = 1440; // minutes (24 hours)
-    
-    public function getShortTermData(): array
+    /**
+     * Cache durations.
+     *
+     * @var array<string, int>
+     */
+    private const CACHE_DURATIONS = [
+        'short' => 300,    // 5 minutes
+        'medium' => 1800,  // 30 minutes
+        'long' => 7200     // 2 hours
+    ];
+
+    /**
+     * Find performance by user with short cache.
+     *
+     * @param  User  $user
+     * @return Collection
+     */
+    public function findByUserShort(User $user): Collection
     {
-        return Cache::tags(['performance', 'short'])
-            ->remember('short_term_data', now()->addMinutes(self::SHORT_TERM), function () {
-                return $this->fetchData();
+        return Cache::tags(['performance', 'user:' . $user->id])
+            ->remember('performance.user:' . $user->id, self::CACHE_DURATIONS['short'], function () use ($user) {
+                return Performance::query()
+                    ->with(['user', 'metrics'])
+                    ->where('user_id', $user->id)
+                    ->orderBy('created_at', 'desc')
+                    ->get();
             });
     }
-    
-    public function getMediumTermData(): array
+
+    /**
+     * Find performance by user with medium cache.
+     *
+     * @param  User  $user
+     * @return Collection
+     */
+    public function findByUserMedium(User $user): Collection
     {
-        return Cache::tags(['performance', 'medium'])
-            ->remember('medium_term_data', now()->addMinutes(self::MEDIUM_TERM), function () {
-                return $this->fetchData();
+        return Cache::tags(['performance', 'user:' . $user->id])
+            ->remember('performance.user:' . $user->id, self::CACHE_DURATIONS['medium'], function () use ($user) {
+                return Performance::query()
+                    ->with(['user', 'metrics'])
+                    ->where('user_id', $user->id)
+                    ->orderBy('created_at', 'desc')
+                    ->get();
             });
     }
-    
-    public function getLongTermData(): array
+
+    /**
+     * Find performance by user with long cache.
+     *
+     * @param  User  $user
+     * @return Collection
+     */
+    public function findByUserLong(User $user): Collection
     {
-        return Cache::tags(['performance', 'long'])
-            ->remember('long_term_data', now()->addMinutes(self::LONG_TERM), function () {
-                return $this->fetchData();
+        return Cache::tags(['performance', 'user:' . $user->id])
+            ->remember('performance.user:' . $user->id, self::CACHE_DURATIONS['long'], function () use ($user) {
+                return Performance::query()
+                    ->with(['user', 'metrics'])
+                    ->where('user_id', $user->id)
+                    ->orderBy('created_at', 'desc')
+                    ->get();
             });
     }
 }
@@ -115,21 +247,28 @@ class CacheDurationManager
 
 ### 3. Cache Invalidation
 ```php
-// CacheInvalidator.php
-class CacheInvalidator
+/**
+ * Repository per le performance
+ */
+class PerformanceRepository
 {
-    public function invalidateUserCache(User $user): void
+    /**
+     * Invalidate performance cache.
+     *
+     * @param  Performance  $performance
+     * @return void
+     */
+    public function invalidateCache(Performance $performance): void
     {
-        Cache::tags(['user', 'performance'])
-            ->forget("user:{$user->id}:performance");
+        Cache::tags(['performance', 'user:' . $performance->user_id])->flush();
+        Cache::tags(['performance', 'period:' . $performance->period])->flush();
     }
-    
-    public function invalidateTeamCache(Team $team): void
-    {
-        Cache::tags(['team', 'performance'])
-            ->forget("team:{$team->id}:performance");
-    }
-    
+
+    /**
+     * Invalidate all performance cache.
+     *
+     * @return void
+     */
     public function invalidateAllCache(): void
     {
         Cache::tags(['performance'])->flush();
@@ -141,36 +280,32 @@ class CacheInvalidator
 
 ### 1. Memory Management
 ```php
-// MemoryManager.php
-class MemoryManager
+/**
+ * Repository per le performance
+ */
+class PerformanceRepository
 {
-    public function processLargeDataset(): void
+    /**
+     * Process performance data with memory optimization.
+     *
+     * @param  Closure  $callback
+     * @return void
+     */
+    public function processWithMemoryOptimization(Closure $callback): void
     {
-        $this->startMemoryTracking();
-        
+        $memoryLimit = ini_get('memory_limit');
+        ini_set('memory_limit', '512M');
+
         try {
-            $this->processData();
+            Performance::query()
+                ->orderBy('id')
+                ->chunk(100, function ($performances) use ($callback) {
+                    foreach ($performances as $performance) {
+                        $callback($performance);
+                    }
+                });
         } finally {
-            $this->cleanup();
-        }
-    }
-    
-    private function startMemoryTracking(): void
-    {
-        $this->initialMemory = memory_get_usage();
-    }
-    
-    private function cleanup(): void
-    {
-        gc_collect_cycles();
-        
-        $finalMemory = memory_get_usage();
-        $memoryUsed = $finalMemory - $this->initialMemory;
-        
-        if ($memoryUsed > 50 * 1024 * 1024) { // 50MB
-            Log::warning('High memory usage detected', [
-                'memory_used' => $memoryUsed
-            ]);
+            ini_set('memory_limit', $memoryLimit);
         }
     }
 }
@@ -178,54 +313,56 @@ class MemoryManager
 
 ### 2. Database Optimization
 ```php
-// DatabaseOptimizer.php
-class DatabaseOptimizer
+/**
+ * Repository per le performance
+ */
+class PerformanceRepository
 {
-    public function optimize(): void
+    /**
+     * Optimize performance table.
+     *
+     * @return void
+     */
+    public function optimizeTable(): void
     {
-        DB::statement('ANALYZE TABLE performances');
         DB::statement('OPTIMIZE TABLE performances');
-        
-        $this->updateIndexes();
-        $this->cleanupOldData();
+        DB::statement('ANALYZE TABLE performances');
     }
-    
-    private function updateIndexes(): void
+
+    /**
+     * Rebuild performance indexes.
+     *
+     * @return void
+     */
+    public function rebuildIndexes(): void
     {
-        Schema::table('performances', function (Blueprint $table) {
-            $table->index(['user_id', 'created_at']);
-            $table->index(['score', 'created_at']);
-        });
-    }
-    
-    private function cleanupOldData(): void
-    {
-        Performance::where('created_at', '<', now()->subYear())
-            ->delete();
+        DB::statement('ALTER TABLE performances ENGINE = InnoDB');
     }
 }
 ```
 
 ### 3. Queue Management
 ```php
-// QueueManager.php
-class QueueManager
+/**
+ * Repository per le performance
+ */
+class PerformanceRepository
 {
-    public function dispatchJob(Performance $performance): void
+    /**
+     * Process performance data in queue.
+     *
+     * @param  Closure  $callback
+     * @return void
+     */
+    public function processInQueue(Closure $callback): void
     {
-        ProcessPerformance::dispatch($performance)
-            ->onQueue('performance')
-            ->delay(now()->addSeconds(5));
-    }
-    
-    public function handleFailedJob(FailedJob $job): void
-    {
-        Log::error('Performance job failed', [
-            'job_id' => $job->id,
-            'error' => $job->exception
-        ]);
-        
-        $this->retryJob($job);
+        Performance::query()
+            ->orderBy('id')
+            ->chunk(100, function ($performances) use ($callback) {
+                foreach ($performances as $performance) {
+                    ProcessPerformanceJob::dispatch($performance, $callback);
+                }
+            });
     }
 }
 ```
@@ -234,68 +371,87 @@ class QueueManager
 
 ### 1. Response Caching
 ```php
-// ResponseCache.php
-class ResponseCache
+/**
+ * Controller per le performance
+ */
+class PerformanceController extends Controller
 {
-    public function getResponse(string $key): Response
+    /**
+     * Display performance data.
+     *
+     * @param  User  $user
+     * @return JsonResponse
+     */
+    public function show(User $user): JsonResponse
     {
-        return Cache::tags(['response', 'performance'])
-            ->remember($key, now()->addMinutes(30), function () {
-                return $this->generateResponse();
+        $performance = Cache::tags(['performance', 'user:' . $user->id])
+            ->remember('performance.user:' . $user->id, 3600, function () use ($user) {
+                return Performance::query()
+                    ->with(['user', 'metrics'])
+                    ->where('user_id', $user->id)
+                    ->orderBy('created_at', 'desc')
+                    ->first();
             });
-    }
-    
-    private function generateResponse(): Response
-    {
-        return response()->json([
-            'data' => $this->getData(),
-            'meta' => $this->getMeta()
-        ]);
+
+        return response()->json($performance);
     }
 }
 ```
 
 ### 2. Response Compression
 ```php
-// ResponseCompressor.php
-class ResponseCompressor
+/**
+ * Controller per le performance
+ */
+class PerformanceController extends Controller
 {
-    public function compress(Response $response): Response
+    /**
+     * Create a new controller instance.
+     */
+    public function __construct()
     {
-        if ($this->shouldCompress($response)) {
-            $response->setContent(gzencode($response->getContent()));
-            $response->headers->set('Content-Encoding', 'gzip');
-        }
-        
-        return $response;
+        $this->middleware('gzip');
     }
-    
-    private function shouldCompress(Response $response): bool
+
+    /**
+     * Display performance data.
+     *
+     * @param  User  $user
+     * @return JsonResponse
+     */
+    public function show(User $user): JsonResponse
     {
-        return $response->headers->get('Content-Type') === 'application/json' &&
-               strlen($response->getContent()) > 1024;
+        $performance = Performance::query()
+            ->with(['user', 'metrics'])
+            ->where('user_id', $user->id)
+            ->orderBy('created_at', 'desc')
+            ->first();
+
+        return response()->json($performance);
     }
 }
 ```
 
 ### 3. Response Pagination
 ```php
-// ResponsePaginator.php
-class ResponsePaginator
+/**
+ * Controller per le performance
+ */
+class PerformanceController extends Controller
 {
-    public function paginate(Collection $items, int $perPage = 20): array
+    /**
+     * Display performance list.
+     *
+     * @return JsonResponse
+     */
+    public function index(): JsonResponse
     {
-        $page = request()->get('page', 1);
-        $items = $items->forPage($page, $perPage);
-        
-        return [
-            'data' => $items,
-            'meta' => [
-                'current_page' => $page,
-                'per_page' => $perPage,
-                'total' => $items->count()
-            ]
-        ];
+        $performances = Performance::query()
+            ->with(['user', 'metrics'])
+            ->orderBy('created_at', 'desc')
+            ->paginate(15);
+
+        return response()->json($performances);
     }
 }
 ```
@@ -304,131 +460,84 @@ class ResponsePaginator
 
 ### 1. Performance Monitoring
 ```php
-// PerformanceMonitor.php
+/**
+ * Monitor per le performance
+ */
 class PerformanceMonitor
 {
-    public function monitor(): void
-    {
-        $this->monitorQueries();
-        $this->monitorMemory();
-        $this->monitorResponseTime();
-    }
-    
-    private function monitorQueries(): void
-    {
-        DB::listen(function ($query) {
-            if ($query->time > 100) { // 100ms
-                Log::warning('Slow query detected', [
-                    'sql' => $query->sql,
-                    'time' => $query->time
-                ]);
-            }
-        });
-    }
-    
-    private function monitorMemory(): void
-    {
-        $memory = memory_get_usage(true);
-        if ($memory > 100 * 1024 * 1024) { // 100MB
-            Log::warning('High memory usage', [
-                'memory' => $memory
-            ]);
-        }
-    }
-    
-    private function monitorResponseTime(): void
+    /**
+     * Monitor performance calculation.
+     *
+     * @param  Closure  $callback
+     * @return mixed
+     */
+    public function monitor(Closure $callback)
     {
         $start = microtime(true);
-        
-        $this->handleRequest();
-        
-        $duration = microtime(true) - $start;
-        if ($duration > 1) { // 1 second
-            Log::warning('Slow response time', [
-                'duration' => $duration
+        $memory = memory_get_usage();
+
+        try {
+            $result = $callback();
+        } finally {
+            $duration = microtime(true) - $start;
+            $memoryUsed = memory_get_usage() - $memory;
+
+            Log::info('Performance calculation', [
+                'duration' => $duration,
+                'memory' => $memoryUsed
             ]);
         }
+
+        return $result;
     }
 }
 ```
 
 ### 2. Resource Monitoring
 ```php
-// ResourceMonitor.php
+/**
+ * Monitor per le risorse
+ */
 class ResourceMonitor
 {
-    public function monitor(): void
+    /**
+     * Monitor resource usage.
+     *
+     * @return array
+     */
+    public function monitor(): array
     {
-        $this->monitorDatabase();
-        $this->monitorCache();
-        $this->monitorQueue();
-    }
-    
-    private function monitorDatabase(): void
-    {
-        $connections = DB::getConnections();
-        foreach ($connections as $connection) {
-            if ($connection->getPdo()->inTransaction()) {
-                Log::warning('Long running transaction detected', [
-                    'connection' => $connection->getName()
-                ]);
-            }
-        }
-    }
-    
-    private function monitorCache(): void
-    {
-        $stats = Cache::tags(['performance'])->getStats();
-        if ($stats['hits'] < $stats['misses'] * 0.5) {
-            Log::warning('Low cache hit rate', [
-                'hits' => $stats['hits'],
-                'misses' => $stats['misses']
-            ]);
-        }
-    }
-    
-    private function monitorQueue(): void
-    {
-        $failed = Queue::failed();
-        if ($failed > 100) {
-            Log::warning('High queue failure rate', [
-                'failed' => $failed
-            ]);
-        }
+        return [
+            'memory' => memory_get_usage(true),
+            'peak_memory' => memory_get_peak_usage(true),
+            'cpu' => sys_getloadavg(),
+            'disk' => disk_free_space('/')
+        ];
     }
 }
 ```
 
 ### 3. Alert Monitoring
 ```php
-// AlertMonitor.php
+/**
+ * Monitor per gli alert
+ */
 class AlertMonitor
 {
-    public function check(): void
+    /**
+     * Monitor performance alerts.
+     *
+     * @param  float  $threshold
+     * @return void
+     */
+    public function monitor(float $threshold): void
     {
-        $this->checkPerformance();
-        $this->checkResources();
-        $this->checkErrors();
-    }
-    
-    private function checkPerformance(): void
-    {
-        if ($this->isPerformanceDegraded()) {
-            event(new PerformanceAlert());
-        }
-    }
-    
-    private function checkResources(): void
-    {
-        if ($this->areResourcesExhausted()) {
-            event(new ResourceAlert());
-        }
-    }
-    
-    private function checkErrors(): void
-    {
-        if ($this->hasErrorRateIncreased()) {
-            event(new ErrorAlert());
+        $performances = Performance::query()
+            ->where('score', '<', $threshold)
+            ->get();
+
+        foreach ($performances as $performance) {
+            SendLowPerformanceAlert::dispatch($performance);
         }
     }
 }
@@ -436,11 +545,11 @@ class AlertMonitor
 
 ## Conclusioni
 Le best practices per le performance nel modulo Performance:
-- Ottimizzano le query del database
-- Gestiscono efficientemente la cache
-- Ottimizzano l'uso delle risorse
-- Migliorano i tempi di risposta
+- Ottimizzano le query
+- Gestiscono la cache
+- Ottimizzano le risorse
+- Ottimizzano le risposte
 - Monitorano le performance
-- Gestiscono gli alert
-- Mantengono la scalabilità
-- Garantiscono la stabilità 
+- Monitorano le risorse
+- Monitorano gli alert
+- Garantiscono l'efficienza 
