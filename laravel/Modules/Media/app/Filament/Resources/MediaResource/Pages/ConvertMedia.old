@@ -4,11 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Media\Filament\Resources\MediaResource\Pages;
 
-use Filament\Resources\Pages\CreateRecord;
 use Modules\Media\Filament\Resources\MediaResource;
-use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
+use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
-class CreateMedia extends XotBaseCreateRecord
+class ConvertMedia extends \Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord
 {
     protected static string $resource = MediaResource::class;
 }
