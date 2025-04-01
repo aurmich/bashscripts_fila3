@@ -1,12 +1,12 @@
 {
-    "name": "Legge104",
-    "alias": "legge104",
+    "name": "Legge109",
+    "alias": "legge109",
     "description": "",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
-        "Modules\\Legge104\\Providers\\Legge104ServiceProvider"
+        "Modules\\Legge109\\Providers\\Legge109ServiceProvider"
     ],
     "aliases": {},
     "files": [],

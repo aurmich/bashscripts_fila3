@@ -1,8 +1,8 @@
 {
-    "name": "laraxot/module_legge104_fila3",
+    "name": "laraxot/module_legge109_fila3",
     "description": "",
     "license": "MIT",
-    "homepage": "https://github.com/laraxot/module_legge104_fila3.git",
+    "homepage": "https://github.com/laraxot/module_legge109_fila3.git",
     "authors": [
         {
             "name": "Marco Sottana",
@@ -29,9 +29,9 @@
     ],
     "autoload": {
         "psr-4": {
-            "Modules\\Legge104\\": "app/",
-            "Modules\\Legge104\\Database\\Factories\\": "database/factories/",
-            "Modules\\Legge104\\Database\\Seeders\\": "database/seeders/"
+            "Modules\\Legge109\\": "app/",
+            "Modules\\Legge109\\Database\\Factories\\": "database/factories/",
+            "Modules\\Legge109\\Database\\Seeders\\": "database/seeders/"
         }
     },
     "scripts": {
@@ -52,8 +52,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Modules\\Legge104\\Providers\\Legge104ServiceProvider",
-                "Modules\\Legge104\\Providers\\Filament\\AdminPanelProvider"
+                "Modules\\Legge109\\Providers\\Legge109ServiceProvider",
+                "Modules\\Legge109\\Providers\\Filament\\AdminPanelProvider"
             ],
             "aliases": {}
         }

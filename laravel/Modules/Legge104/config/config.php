@@ -3,6 +3,6 @@
 declare(strict_types=1);
 
 return [
-    'name' => 'Legge104',
+    'name' => 'Legge109',
     'icon' => 'fas-wheelchair-move',
 ];
