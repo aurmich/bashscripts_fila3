@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Modules\Europa\Database\Seeders;
+namespace Modules\Inail\Database\Seeders;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
 
-class EuropaDatabaseSeeder extends Seeder
+class InailDatabaseSeeder extends Seeder
 {
     /**
      * Run the database seeds.

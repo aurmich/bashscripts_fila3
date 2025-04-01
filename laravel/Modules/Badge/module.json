@@ -1,12 +1,12 @@
 {
-    "name": "Europa",
-    "alias": "europa",
+    "name": "Inail",
+    "alias": "inail",
     "description": "",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
-        "Modules\\Europa\\Providers\\EuropaServiceProvider"
+        "Modules\\Inail\\Providers\\InailServiceProvider"
     ],
     "aliases": {},
     "files": [],

@@ -3,5 +3,6 @@
 declare(strict_types=1);
 
 return [
-    'name' => 'Europa',
+    'name' => 'Inail',
+    'icon' => 'heroicon-o-exclamation-triangle',
 ];

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Europa\Providers;
+namespace Modules\Inail\Providers;
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as BaseEventServiceProvider;
 

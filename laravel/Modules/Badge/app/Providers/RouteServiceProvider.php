@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Europa\Providers;
+namespace Modules\Inail\Providers;
 
 // --- bases ---
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
@@ -12,9 +12,9 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
     /**
      * The module namespace to assume when generating URLs to actions.
      */
-    protected string $moduleNamespace = 'Modules\Europa\Http\Controllers';
+    protected string $moduleNamespace = 'Modules\Inail\Http\Controllers';
 
-    public string $name = 'Europa';
+    public string $name = 'Inail';
 
     protected string $module_dir = __DIR__;
 
