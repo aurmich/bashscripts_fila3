@@ -26,7 +26,7 @@ while IFS= read -r line; do
 
         git rm --cached -rf "$current_path"
         rm -rf "$current_path"
-        git add -A
+        git add -A 
         git commit -am "."
         echo "➕ Aggiunta del subtree..."
         git subtree add --prefix="$current_path" "$current_url" "$branch" --squash
@@ -40,7 +40,9 @@ while IFS= read -r line; do
 
         echo "⬆️  Pushing delle modifiche locali nel subtree remoto..."
         git subtree push --prefix="$current_path" "$current_url" "$branch"
+
     fi
 done < "$CONFIG_FILE"
+
 
 echo "✅ Tutti i git subtree sono stati inizializzati con successo!!!"

@@ -9,15 +9,11 @@ me=$( readlink -f -- "$0";)
 branch=$1
 where=$(pwd)
 
-
-
-
 git submodule update --progress --init --recursive --force --merge --rebase --remote
 git submodule foreach "$me" "$branch"
 find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
-#delete old branches
+#old branches
 #git push origin --delete cs0.2.03
-
 
 git config core.fileMode false
 git config advice.submoduleMergeConflict false
