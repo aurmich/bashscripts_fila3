@@ -25,8 +25,8 @@
 
 3. Problemi di tipo:
    - Parametro `$role` in `hasRole()` senza tipo specificato
-   - Parametro `$related` in `belongsToMany()` richiede `class-string<Model>`
-   - Tipo template `TRelatedModel` non risolto in `belongsToMany()`
+   - Parametro `$related` in `belongsToManyX()` richiede `class-string<Model>`
+   - Tipo template `TRelatedModel` non risolto in `belongsToManyX()`
 
 ### Soluzioni Proposte
 
@@ -50,18 +50,10 @@
 
    public function teams(): BelongsToMany
    {
-       return $this->belongsToMany(Team::class);
+       return $this->belongsToManyX(Team::class);
    }
    ```
 
-3. Correggere i tipi:
-   ```php
-   public function belongsToMany($related, $table = null, $foreignPivotKey = null, $relatedPivotKey = null): BelongsToMany
-   {
-       /** @var class-string<Model> $related */
-       return parent::belongsToMany($related, $table, $foreignPivotKey, $relatedPivotKey);
-   }
-   ```
 
 ### Altri File
 
