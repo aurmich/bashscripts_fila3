@@ -149,4 +149,12 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
             'extra' => SchemalessAttributes::class,
         ];
     }
+
+    /**
+     * Get the user's preferred locale.
+     */
+    public function preferredLocale(): string
+    {
+        return $this->locale ?? config('app.locale', 'en');
+    }
 }

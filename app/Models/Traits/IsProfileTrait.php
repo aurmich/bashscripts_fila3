@@ -23,16 +23,13 @@ trait IsProfileTrait
     use InteractsWithMedia;
 
     /**
-     * Relazione con l'utente a cui appartiene il profilo.
+     * Get the user that owns the profile.
      *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Illuminate\Database\Eloquent\Model&\Modules\Xot\Contracts\UserContract, static>
+     * @return BelongsTo<\Illuminate\Database\Eloquent\Model&\Modules\Xot\Contracts\UserContract, static>
      */
     public function user(): BelongsTo
     {
-        /** @var class-string<\Illuminate\Database\Eloquent\Model&\Modules\Xot\Contracts\UserContract> $userClass */
-        $userClass = XotData::make()->getUserClass();
-
-        return $this->belongsTo($userClass);
+        return $this->belongsTo(config('auth.providers.users.model'));
     }
 
     // ---- mutators
@@ -146,23 +143,23 @@ trait IsProfileTrait
     }
 
     /**
-     * Relazione con gli utenti di dispositivi mobili.
+     * Get all of the mobile device users for the profile.
      *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany<DeviceUser, static>
+     * @return HasMany<DeviceUser, static>
      */
     public function mobileDeviceUsers(): HasMany
     {
-        return $this->hasMany(DeviceUser::class, 'profile_id')->where('type', 'mobile');
+        return $this->hasMany(DeviceUser::class);
     }
 
     /**
-     * Relazione con gli utenti di dispositivi generici.
+     * Get all of the device users for the profile.
      *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany<DeviceUser, static>
+     * @return HasMany<DeviceUser, static>
      */
     public function deviceUsers(): HasMany
     {
-        return $this->hasMany(DeviceUser::class, 'profile_id');
+        return $this->hasMany(DeviceUser::class);
     }
 
     /**
@@ -219,5 +216,13 @@ trait IsProfileTrait
                 return $value;
             }
         );
+    }
+
+    /**
+     * Get the user's preferred locale.
+     */
+    public function preferredLocale(): string
+    {
+        return $this->locale ?? config('app.locale', 'en');
     }
 }
