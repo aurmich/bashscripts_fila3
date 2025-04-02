@@ -1,5 +1,33 @@
 # Traduzioni
 
+## Sintassi Array
+
+Per le traduzioni, utilizzare **sempre** la sintassi breve degli array PHP:
+
+```php
+// ✅ CORRETTO - Short array syntax
+return [
+    'navigation' => [
+        'name' => 'Nome',
+        'group' => [
+            'name' => 'Gruppo',
+            'description' => 'Descrizione'
+        ]
+    ]
+];
+
+// ❌ ERRATO - Long array syntax
+return array(
+    'navigation' => array(
+        'name' => 'Nome',
+        'group' => array(
+            'name' => 'Gruppo',
+            'description' => 'Descrizione'
+        )
+    )
+);
+```
+
 ## Gruppi di Menu
 
 ### Schede
@@ -46,28 +74,55 @@ Il gruppo "Schede" contiene tutte le schede di valutazione del sistema:
 ### Campi Comuni
 Tutte le schede condividono i seguenti campi comuni:
 
-- `periodo`: Periodo di valutazione
-- `risultati_ottenuti`: Valutazione dei risultati raggiunti
-- `qualita_prestazione`: Valutazione della qualità del lavoro
-- `arricchimento_professionale`: Valutazione della crescita professionale
-- `impegno`: Valutazione dell'impegno profuso
-- `esperienza_acquisita`: Valutazione dell'esperienza maturata
+```php
+'fields' => [
+    'periodo' => [
+        'label' => 'Periodo',
+        'placeholder' => 'Seleziona il periodo',
+        'help' => 'Periodo di valutazione'
+    ],
+    'risultati_ottenuti' => [
+        'label' => 'Risultati Ottenuti',
+        'placeholder' => 'Valuta i risultati',
+        'help' => 'Valutazione dei risultati raggiunti'
+    ],
+    'qualita_prestazione' => [
+        'label' => 'Qualità della Prestazione',
+        'placeholder' => 'Valuta la qualità',
+        'help' => 'Valutazione della qualità del lavoro'
+    ],
+    'arricchimento_professionale' => [
+        'label' => 'Arricchimento Professionale',
+        'placeholder' => 'Valuta l\'arricchimento',
+        'help' => 'Valutazione della crescita professionale'
+    ],
+    'impegno' => [
+        'label' => 'Impegno',
+        'placeholder' => 'Valuta l\'impegno',
+        'help' => 'Valutazione dell\'impegno profuso'
+    ],
+    'esperienza_acquisita' => [
+        'label' => 'Esperienza Acquisita',
+        'placeholder' => 'Valuta l\'esperienza',
+        'help' => 'Valutazione dell\'esperienza maturata'
+    ]
+]
+```
 
 ### Messaggi
 Tutte le schede condividono i seguenti messaggi di sistema:
 
-- Successo:
-  - `created`: Scheda creata con successo
-  - `updated`: Scheda aggiornata con successo
-  - `deleted`: Scheda eliminata con successo
-
-- Errori:
-  - `created`: Errore durante la creazione della scheda
-  - `updated`: Errore durante l'aggiornamento della scheda
-  - `deleted`: Errore durante l'eliminazione della scheda
-
-## Sintassi Array
-
-Per le traduzioni, utilizzare sempre la sintassi breve degli array PHP:
-
+```php
+'messages' => [
+    'success' => [
+        'created' => 'Scheda creata con successo',
+        'updated' => 'Scheda aggiornata con successo',
+        'deleted' => 'Scheda eliminata con successo'
+    ],
+    'error' => [
+        'created' => 'Errore durante la creazione della scheda',
+        'updated' => 'Errore durante l\'aggiornamento della scheda',
+        'deleted' => 'Errore durante l\'eliminazione della scheda'
+    ]
+]
 ```

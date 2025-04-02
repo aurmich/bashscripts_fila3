@@ -24,6 +24,10 @@ class IndividualeResource extends XotBaseResource
 {
     protected static ?string $model = Individuale::class;
 
+    public static function getNavigationBadge(): ?string
+    {
+        return null;
+    }
     
     public static function getFormSchema(): array
     {
@@ -82,61 +86,10 @@ class IndividualeResource extends XotBaseResource
         ];
     }
 
-    public static function getListTableColumns(): array
-    {
-        return [
-            'id' => Tables\Columns\TextColumn::make('id')
-                ->sortable(),
-            'ha_diritto' => Tables\Columns\ToggleColumn::make('ha_diritto')
-                ->sortable(),
-            'motivo' => Tables\Columns\TextColumn::make('motivo')
-                ->searchable(),
-            'matr' => Tables\Columns\TextColumn::make('matr')
-                ->searchable(),
-            'cognome' => Tables\Columns\TextColumn::make('cognome')
-                ->searchable(),
-            'nome' => Tables\Columns\TextColumn::make('nome')
-                ->searchable(),
-            'email' => Tables\Columns\TextColumn::make('email')
-                ->searchable(),
-            'stabi' => Tables\Columns\TextColumn::make('stabi')
-                ->sortable(),
-            'stabi_txt' => Tables\Columns\TextColumn::make('stabi_txt')
-                ->searchable(),
-            'repar' => Tables\Columns\TextColumn::make('repar')
-                ->sortable(),
-            'repar_txt' => Tables\Columns\TextColumn::make('repar_txt')
-                ->searchable(),
-            'anno' => Tables\Columns\TextColumn::make('anno')
-                ->sortable(),
-        ];
-    }
+    
 
-    public static function getTableFilters(): array
-    {
-        return [
-            'anno' => app(\Modules\Xot\Actions\Filament\Filter\GetYearFilter::class)
-                ->execute('anno', intval(date('Y')) - 3, intval(date('Y'))),
-        ];
-    }
 
-    public static function getTableActions(): array
-    {
-        return [
-            'edit' => Tables\Actions\EditAction::make(),
-            'fill' => Tables\Actions\Action::make('fill')
-                ->label('Compila')
-                ->url(fn ($record) => Pages\FillOutTheForm::getUrl(['record' => $record])),
-        ];
-    }
-
-    public static function getTableBulkActions(): array
-    {
-        return [
-            'delete' => Tables\Actions\DeleteBulkAction::make(),
-        ];
-    }
-
+    
     
 
     

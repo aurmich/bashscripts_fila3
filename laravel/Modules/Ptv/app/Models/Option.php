@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Modules\Performance\Models;
+namespace Modules\Ptv\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
-use Modules\Performance\Enums\WorkerType;
+use Modules\Ptv\Enums\WorkerType;
 use Spatie\EloquentSortable\SortableTrait;
-use Modules\Ptv\Models\Option as PtvOption;
+
 /**
  * Modules\Performance\Models\Option.
  *
@@ -51,7 +51,54 @@ use Modules\Ptv\Models\Option as PtvOption;
  *
  * @mixin \Eloquent
  */
-class Option extends PtvOption
+class Option extends BaseModel
 {
-    protected $connection = 'performance';
+    use SortableTrait;
+
+    /** @var array<string, string|bool> */
+    public $sortable = [
+        'order_column_name' => 'pos',
+        'sort_when_creating' => true,
+    ];
+
+    /** @var array<int, string> */
+    protected $fillable = [
+        'id',
+        'option_type', 'option_id',
+        'name', 'value', 'year', 'txt', 'txt1',
+        'parent_id', 'pos',
+    ];
+
+    /** @return array<string, string>  */
+    public function casts(): array
+    {
+        return [
+            'option_type' => WorkerType::class,
+        ];
+    }
+
+    public function attr($name): string
+    {
+        return 'preso';
+    }
+
+    public function sons(): HasMany
+    {
+        return $this->hasMany(self::class, 'parent_id', 'id');
+    }
+
+    public function fillSons(): HasMany
+    {
+        $sons = $this->sons();
+        if ($sons->count() == 0) {
+            $pres = self::where('name', $this->name)->where('txt', $this->txt)->where('year', $this->year - 1)->first();
+            if (is_iterable($pres?->sons)) {
+                foreach ($pres->sons as $son) {
+                    self::where('name', $son->name)->where('txt', $son->txt)->where('year', $this->year)->update(['parent_id' => $this->id]);
+                }
+            }
+        }
+
+        return $sons;
+    }
 }

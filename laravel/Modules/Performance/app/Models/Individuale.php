@@ -396,13 +396,7 @@ class Individuale extends BaseIndividualeModel
         return $this->hasMany(self::class, 'individuale_id');
     }
 
-    /**
-     * @return HasMany<IndividualeAssenze>
-     */
-    public function codiciAssenze(): HasMany
-    {
-        return $this->hasMany(IndividualeAssenze::class, 'individuale_id');
-    }
+   
 
     /**
      * @return HasMany<CriteriEsclusione>
@@ -438,16 +432,8 @@ class Individuale extends BaseIndividualeModel
         return $this->hasMany(MyLog::class, 'individuale_id');
     }
 
+  
    
-
-    /**
-     * @return HasMany<Option>
-     */
-    public function options(): HasMany
-    {
-        return $this->hasMany(Option::class, 'individuale_id');
-    }
-
     /**
      * @return HasMany<Individuale>
      */

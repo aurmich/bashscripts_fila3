@@ -30,7 +30,7 @@ trait MutatorTrait
         $value = $this->asz00k1()
             ->whereIn('aszcod', $lista_tipo_codice_assenze)
             ->selectRaw('COALESCE(sum(aszdur),0) as aszdur_sum')
-            ->whereBetween('aszdat', [$date_min, $date_max])
+            ->whereBetween('asz2kd', [$date_min, $date_max])
         // ->withDays($date_min, $date_max)
             ->where('aszumi', 'G')
             ->first();
@@ -64,7 +64,7 @@ trait MutatorTrait
         $value = $this->asz00k1()
             ->whereIn('aszcod', $lista_tipo_codice_assenze)
             ->selectRaw('sum('.$aszdur.') as aszdur_sum')
-            ->whereBetween('aszdat', [$date_min, $date_max])
+            ->whereBetween('asz2kd', [$date_min, $date_max])
         // ->withDays($date_min, $date_max)
             ->where('aszumi', 'O')
             ->first();

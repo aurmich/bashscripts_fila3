@@ -9,6 +9,7 @@ use Filament\Actions;
 use function Safe\date;
 use Filament\Tables\Table;
 use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Notifications\Notification;
 use Filament\Tables\Enums\FiltersLayout;
@@ -18,18 +19,19 @@ use Modules\Performance\Enums\WorkerType;
 use Filament\Tables\Enums\ActionsPosition;
 use Modules\Performance\Models\Individuale;
 use Modules\Performance\Models\Organizzativa;
+use Modules\Ptv\Filament\Columns\PeriodoColumn;
+use Modules\Ptv\Filament\Columns\RepartoColumn;
 use Modules\Performance\Actions\ShowMailSendedAt;
+use Modules\Ptv\Filament\Columns\QualificaColumn;
 use Modules\Ptv\Filament\Columns\LavoratoreColumn;
+
 use Modules\UI\Filament\Tables\Columns\GroupColumn;
 use Modules\Xot\Filament\Actions\Header\ExportXlsAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Modules\Performance\Filament\Resources\IndividualeResource;
-
 use Modules\Performance\Filament\Actions\Bulk\SendMailBulkAction;
 use Modules\Ptv\Filament\Resources\ReportResource\Widgets\FirmaStabiReparWidget;
-use Modules\Ptv\Filament\Columns\QualificaColumn;
-use Modules\Ptv\Filament\Columns\RepartoColumn;
-use Modules\Ptv\Filament\Columns\PeriodoColumn;
+use Modules\Performance\Filament\Resources\IndividualeResource\Pages\FillOutTheForm;
 
 /**
  * ---.
@@ -51,48 +53,22 @@ class ListIndividuales extends XotBaseListRecords
         return static::trans('navigation.plural');
     }
 
-    /**
-     * @return array<string, TextColumn|ToggleColumn>
-     */
-    public function getListTableColumnsOLD(): array
+   
+   
+
+    public  function getTableActions(): array
     {
+
+        $myclass=(static::class);
+        $fill_class=Str::of($myclass)
+            ->before('\Pages\\')
+            ->append('\Pages\FillOutTheForm')
+            ->toString();
         return [
-            'id' => Tables\Columns\TextColumn::make('id')
-                ->sortable(),
-            'ha_diritto' => Tables\Columns\ToggleColumn::make('ha_diritto')
-                ->sortable(),
-            'motivo' => Tables\Columns\TextColumn::make('motivo')
-                ->wrap()
-                ->searchable(),
-            'matr' => Tables\Columns\TextColumn::make('matr')
-                ->sortable()
-                ->searchable(),
-            'cognome' => Tables\Columns\TextColumn::make('cognome')
-                ->sortable()
-                ->searchable(),
-            'nome' => Tables\Columns\TextColumn::make('nome')
-                ->sortable()
-                ->searchable(),
-            'email' => Tables\Columns\TextColumn::make('email')
-                ->sortable()
-                ->searchable(),
-            'stabi' => Tables\Columns\TextColumn::make('stabi')
-                ->sortable()
-                ->searchable(),
-            'repar' => Tables\Columns\TextColumn::make('repar')
-                ->sortable()
-                ->searchable(),
-            'anno' => Tables\Columns\TextColumn::make('anno')
-                ->sortable()
-                ->searchable(),
-            'created_at' => Tables\Columns\TextColumn::make('created_at')
-                ->dateTime()
-                ->sortable()
-                ->toggleable(isToggledHiddenByDefault: true),
-            'updated_at' => Tables\Columns\TextColumn::make('updated_at')
-                ->dateTime()
-                ->sortable()
-                ->toggleable(isToggledHiddenByDefault: true),
+            ...parent::getTableActions(),
+            'fill' => Tables\Actions\Action::make('fill')
+                ->label('Compila')
+                ->url(fn ($record) => $fill_class::getUrl(['record' => $record])),
         ];
     }
 
@@ -162,6 +138,8 @@ class ListIndividuales extends XotBaseListRecords
     public function getTableFilters(): array
     {
         return [
+            'anno' => app(\Modules\Xot\Actions\Filament\Filter\GetYearFilter::class)
+                ->execute('anno', intval(date('Y')) - 3, intval(date('Y'))),
             /*
             'anno' => SelectFilter::make('anno')
                 ->options(Arr::pluck(Individuale::select('anno')->distinct()->get(), 'anno', 'anno')),

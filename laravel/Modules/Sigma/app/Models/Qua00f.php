@@ -257,7 +257,7 @@ class Qua00f extends Model
         return $query->where('ente', $ente)->whereRaw('quaann=""')->ofYear($year);
     }
 
-    public function scopeWithDays(Builder $query, int $date_min, int $date_max): \Illuminate\Database\Query\Builder
+    public function scopeWithDays(Builder $query, int $date_min, int $date_max): Builder
     {
         $days = 'greatest(datediff(if(qua2ka=0 or qua2ka>'.$date_max.','.$date_max.',qua2ka),if(qua2kd<'.$date_min.','.$date_min.',qua2kd))+1,0) ';
 

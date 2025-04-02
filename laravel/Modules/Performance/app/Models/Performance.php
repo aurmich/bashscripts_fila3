@@ -512,15 +512,7 @@ class Performance extends BaseModel
         return $this->hasMany(Individuale::class);
     }
 
-    /**
-     * Relazione con i codici assenze
-     * @return HasMany<IndividualeAssenze, Performance>
-     */
-    public function codiciAssenze(): HasMany
-    {
-        return $this->hasMany(IndividualeAssenze::class);
-    }
-
+   
     /**
      * Relazione con i criteri di esclusione
      * @return HasMany<CriteriEsclusione, Performance>
