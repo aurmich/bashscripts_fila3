@@ -14,7 +14,7 @@ use Filament\Forms\Components\Textarea;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
 use Filament\Tables\Filters\SelectFilter;
-use Modules\Performance\Enums\WorkerType;
+use Modules\Ptv\Enums\WorkerType;
 use Filament\Tables\Filters\TernaryFilter;
 use Modules\Performance\Models\Organizzativa;
 use Modules\Ptv\Filament\Columns\PeriodoColumn;
@@ -41,32 +41,12 @@ class ListOrganizzativas extends XotBaseListRecords
         return [
             'type' => Tables\Columns\TextColumn::make('type')
                 ->searchable(),
-                /*
-            'matr' => Tables\Columns\TextColumn::make('matr')
-                ->searchable()
-                ->toggleable(isToggledHiddenByDefault: true),
-            'cognome' => Tables\Columns\TextColumn::make('cognome')
-                ->searchable()
-                ->toggleable(isToggledHiddenByDefault: true),
-            'nome' => Tables\Columns\TextColumn::make('nome')
-                ->searchable()
-                ->toggleable(isToggledHiddenByDefault: true),
-            'email' => Tables\Columns\TextColumn::make('email')
-                ->searchable()
-                ->toggleable(isToggledHiddenByDefault: true),
-                */
+                
             'ha_diritto' => Tables\Columns\ToggleColumn::make('ha_diritto')
                 ->searchable(),
             'motivo' => Tables\Columns\TextColumn::make('motivo')
                 ->searchable(),
-                /*
-            'lavoratore_group' => GroupColumn::make('lavoratore')->schema([
-                'matr' => Tables\Columns\TextColumn::make('matr')->searchable(),
-                'cognome' => Tables\Columns\TextColumn::make('cognome')->searchable(),
-                'nome' => Tables\Columns\TextColumn::make('nome'),
-                'email' => Tables\Columns\TextColumn::make('email'),
-            ]),
-            */
+               
             LavoratoreColumn::make('lavoratore'),
             'info_group' => GroupColumn::make('info')->schema([
                 'perc_parttimepond_dalal' => Tables\Columns\TextColumn::make('perc_parttimepond_dalal'),
@@ -80,28 +60,7 @@ class ListOrganizzativas extends XotBaseListRecords
                 'resti_pond' => Tables\Columns\TextColumn::make('resti_pond'),
                 'importo_totale' => Tables\Columns\TextColumn::make('importo_totale'),
             ]),
-            /*
-            'qua_group' => GroupColumn::make('qua')->schema([
-                'propro' => Tables\Columns\TextColumn::make('propro'),
-                'posfun' => Tables\Columns\TextColumn::make('posfun'),
-                'categoria_eco' => Tables\Columns\TextColumn::make('categoria_eco'),
-                'posiz' => Tables\Columns\TextColumn::make('posiz'),
-                'posiz_txt' => Tables\Columns\TextColumn::make('posiz_txt'),
-                'disci1' => Tables\Columns\TextColumn::make('disci1'),
-                'disci1_txt' => Tables\Columns\TextColumn::make('disci1_txt'),
-            ]),
-            'rep_group' => GroupColumn::make('rep')->schema([
-                'stabi' => Tables\Columns\TextColumn::make('stabi'),
-                'stabi_txt' => Tables\Columns\TextColumn::make('stabi_txt'),
-                'repar' => Tables\Columns\TextColumn::make('repar'),
-                'repar_txt' => Tables\Columns\TextColumn::make('repar_txt'),
-            ]),
-            'periodo_group' => GroupColumn::make('periodo')->schema([
-                'dal' => Tables\Columns\TextColumn::make('dal'),
-                'al' => Tables\Columns\TextColumn::make('al'),
-                'anno' => Tables\Columns\TextColumn::make('anno'),
-            ]),
-            */
+            
             QualificaColumn::make('qualifica'),
             RepartoColumn::make('reparto'),
             PeriodoColumn::make('periodo'),
@@ -118,17 +77,6 @@ class ListOrganizzativas extends XotBaseListRecords
         ];
     }
 
-    public  function getTableActions(): array
-    {
-        return [
-            'edit' => Tables\Actions\EditAction::make()
-                ->label('')
-                ->tooltip('Modifica'),
-            'view' => Tables\Actions\ViewAction::make()
-                ->label('')
-                ->tooltip('Vedi'),
-        ];
-    }
 
   
 
@@ -141,6 +89,7 @@ class ListOrganizzativas extends XotBaseListRecords
             Actions\CreateAction::make(),
             \Modules\Ptv\Filament\Actions\Header\CopyFromLastYearAction::make(),
             \Modules\Ptv\Filament\Actions\Header\PopulateYearAction::make(),
+            \Modules\Ptv\Filament\Actions\Header\TrovaEsclusiAction::make(),
             ExportXlsAction::make(),
         ];
     }

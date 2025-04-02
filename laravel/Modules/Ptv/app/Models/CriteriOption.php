@@ -2,12 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Modules\Performance\Models;
+namespace Modules\Ptv\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Traits\Updater;
-use Modules\Ptv\Models\CriteriOption as PtvCriteriOption;
 
 /**
  * Modules\Performance\Models\CriteriOption.
@@ -35,7 +34,20 @@ use Modules\Ptv\Models\CriteriOption as PtvCriteriOption;
  *
  * @mixin \Eloquent
  */
-class CriteriOption extends PtvCriteriOption
+class CriteriOption extends BaseModel
 {
-    protected $connection = 'performance';
+    protected $fillable = ['id', 'name', 'value', 'anno'];
+
+    protected $table = 'criteri_options';
+
+    // use Updater;
+    // protected $connection = 'performance'; // this will use the specified database connection
+    // public $timestamps    = true;
+    // protected $dates      = [
+    //    'created_at',
+    //    'updated_at',
+    // ];
+
+    // end search
+    // -------------------------
 } // end class

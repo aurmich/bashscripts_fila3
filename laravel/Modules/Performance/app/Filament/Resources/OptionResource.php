@@ -9,7 +9,7 @@ use Filament\Forms\Form;
 use Filament\Tables;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
-use Modules\Performance\Enums\WorkerType;
+use Modules\Ptv\Enums\WorkerType;
 use Modules\Performance\Filament\Resources\OptionResource\Pages;
 use Modules\Performance\Models\Option;
 use Modules\Xot\Filament\Resources\XotBaseResource;

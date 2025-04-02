@@ -18,4 +18,9 @@ return [
         'icon' => 'heroicon-o-user',
         'color' => 'info',
     ],
+    'dirigente' => [
+        'label' => 'Dirigente',
+        'icon' => 'heroicon-o-user',
+        'color' => 'info',
+    ],
 ];

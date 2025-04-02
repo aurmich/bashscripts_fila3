@@ -7,7 +7,7 @@ namespace Modules\Performance\Filament\Resources;
 use Filament\Forms;
 use Filament\Tables;
 use Filament\Tables\Filters\SelectFilter;
-use Modules\Performance\Enums\WorkerType;
+use Modules\Ptv\Enums\WorkerType;
 use Modules\Performance\Filament\Resources\IndividualePesiResource\Pages;
 use Modules\Performance\Models\IndividualePesi;
 use Modules\Xot\Filament\Resources\XotBaseResource;

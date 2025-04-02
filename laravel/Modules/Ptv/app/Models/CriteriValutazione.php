@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Modules\Performance\Models;
+namespace Modules\Ptv\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Modules\Ptv\Enums\WorkerType;
 use Modules\Xot\Traits\Updater;
 use Spatie\EloquentSortable\SortableTrait;
-use Modules\Ptv\Models\CriteriValutazione as PtvCriteriValutazione;
+
 /**
  * Modules\Performance\Models\CriteriValutazione.
  *
@@ -44,8 +44,35 @@ use Modules\Ptv\Models\CriteriValutazione as PtvCriteriValutazione;
  *
  * @mixin \Eloquent
  */
-class CriteriValutazione extends PtvCriteriValutazione
+class CriteriValutazione extends BaseModel
 {
-    protected $connection = 'performance';
-    
+    use SortableTrait;
+
+    /** @var array<string, string|bool> */
+    public $sortable = [
+        'order_column_name' => 'posizione',
+        'sort_when_creating' => true,
+    ];
+
+    protected $fillable = ['id', 'id_padre', 'nome', 'label', 'descr', 'posizione', 'anno'];
+
+    protected $table = 'criteri_valutazione';
+
+    // use Updater;
+    // protected $connection = 'performance'; // this will use the specified database connection
+    // public $timestamps= false;
+    /*
+    protected $dates = [
+        'created_at',
+        'updated_at',
+        ];
+    */
+
+    /** @return array<string, string>  */
+    public function casts(): array
+    {
+        return [
+            'post_type' => WorkerType::class,
+        ];
+    }
 }

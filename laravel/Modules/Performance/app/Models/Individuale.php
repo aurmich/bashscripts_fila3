@@ -386,6 +386,7 @@ class Individuale extends BaseIndividualeModel
     protected array $childTypes = [
         'po' => IndividualePo::class,
         'dip' => IndividualeDip::class,
+        'regionale' => IndividualeRegionale::class,
     ];
 
     /**

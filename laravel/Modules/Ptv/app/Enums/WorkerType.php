@@ -18,7 +18,8 @@ enum WorkerType: string implements HasColor, HasIcon, HasLabel, Wireable
     case Dip = 'dip';
     case Regionale = 'regionale';
     case Po = 'po';
-
+    case Dirigente = 'dirigente';
+    
     public static function trans(string $key): string
     {
         $transKey = app(GetTransKeyAction::class)->execute(self::class);

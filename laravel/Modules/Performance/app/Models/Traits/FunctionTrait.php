@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Str;
 use Modules\Performance\Actions\TrovaEsclusiAction;
-use Modules\Performance\Enums\WorkerType;
+use Modules\Ptv\Enums\WorkerType;
 use Modules\Performance\Models\CriteriEsclusione;
 use Modules\Performance\Models\CriteriOption;
 use Modules\Performance\Models\IndividualePesi;
@@ -255,6 +255,15 @@ trait FunctionTrait
     public function isRegionale(): bool
     {
         return (int)($this->disci1 ?? 0) === 203;
+    }
+
+    public function isDirigente(): bool
+    { 
+        if($this->propro === null){
+            return false;
+        }
+       
+        return in_array($this->propro,[729,750,751]);
     }
 
     /**

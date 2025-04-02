@@ -1,4 +1,6 @@
-<?php return array (
+<?php
+
+return array (
   'navigation' => 
   array (
     'name' => 'Assenza Individuale',
@@ -187,6 +189,18 @@
     array (
       'label' => 'view',
     ),
+    'deleted_by' => 
+    array (
+      'label' => 'deleted_by',
+    ),
+    'updated_by' => 
+    array (
+      'label' => 'updated_by',
+    ),
+    'created_by' => 
+    array (
+      'label' => 'created_by',
+    ),
   ),
   'actions' => 
   array (
@@ -267,4 +281,4 @@
   array (
     'label' => 'individuale assenze.model',
   ),
-);
+);

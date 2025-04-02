@@ -7,7 +7,7 @@ return array (
     'plural' => 'Criteri di Valutazione',
     'group' => 
     array (
-      'name' => 'Valutazione & KPI',
+      'name' => 'Criteri',
       'description' => 'Gestione dei criteri di valutazione',
     ),
     'label' => 'Criteri di Valutazione',
@@ -112,6 +112,50 @@ return array (
     array (
       'label' => 'value',
     ),
+    'delete' => 
+    array (
+      'label' => 'delete',
+    ),
+    'id_padre' => 
+    array (
+      'label' => 'id_padre',
+    ),
+    'nome' => 
+    array (
+      'label' => 'nome',
+    ),
+    'label' => 
+    array (
+      'label' => 'label',
+    ),
+    'descr' => 
+    array (
+      'label' => 'descr',
+    ),
+    'post_type' => 
+    array (
+      'label' => 'post_type',
+    ),
+    'posizione' => 
+    array (
+      'label' => 'posizione',
+    ),
+    'anno' => 
+    array (
+      'label' => 'anno',
+    ),
+    'create' => 
+    array (
+      'label' => 'create',
+    ),
+    'view' => 
+    array (
+      'label' => 'view',
+    ),
+    'edit' => 
+    array (
+      'label' => 'edit',
+    ),
   ),
   'actions' => 
   array (
@@ -194,5 +238,9 @@ return array (
       'success' => 'Criterio eliminato con successo',
       'error' => 'Errore durante l\'eliminazione',
     ),
+  ),
+  'model' => 
+  array (
+    'label' => 'criteri valutazione.model',
   ),
 );

@@ -11,7 +11,7 @@ use Filament\Forms\Components\Toggle;
 use Filament\Tables;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Filters\TernaryFilter;
-use Modules\Performance\Enums\WorkerType;
+use Modules\Ptv\Enums\WorkerType;
 use Modules\Performance\Filament\Resources\OrganizzativaResource\Pages;
 use Modules\Performance\Models\Organizzativa;
 use Modules\UI\Filament\Tables\Columns\GroupColumn;

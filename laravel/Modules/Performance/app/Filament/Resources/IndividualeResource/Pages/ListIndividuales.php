@@ -15,7 +15,7 @@ use Filament\Notifications\Notification;
 use Filament\Tables\Enums\FiltersLayout;
 use Filament\Tables\Columns\ToggleColumn;
 use Filament\Tables\Filters\SelectFilter;
-use Modules\Performance\Enums\WorkerType;
+use Modules\Ptv\Enums\WorkerType;
 use Filament\Tables\Enums\ActionsPosition;
 use Modules\Performance\Models\Individuale;
 use Modules\Performance\Models\Organizzativa;

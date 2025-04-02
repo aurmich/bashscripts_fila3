@@ -7,7 +7,7 @@ return array (
     'plural' => 'Opzioni Criteri',
     'group' => 
     array (
-      'name' => 'Valutazione & KPI',
+      'name' => 'Criteri',
       'description' => 'Gestione delle opzioni dei criteri',
     ),
     'label' => 'Opzioni Criteri',
@@ -76,6 +76,46 @@ return array (
     array (
       'label' => 'toggleColumns',
     ),
+    'reorderRecords' => 
+    array (
+      'label' => 'reorderRecords',
+    ),
+    'resetFilters' => 
+    array (
+      'label' => 'resetFilters',
+    ),
+    'openFilters' => 
+    array (
+      'label' => 'openFilters',
+    ),
+    'value' => 
+    array (
+      'label' => 'value',
+    ),
+    'created_at' => 
+    array (
+      'label' => 'created_at',
+    ),
+    'delete' => 
+    array (
+      'label' => 'delete',
+    ),
+    'edit' => 
+    array (
+      'label' => 'edit',
+    ),
+    'view' => 
+    array (
+      'label' => 'view',
+    ),
+    'create' => 
+    array (
+      'label' => 'create',
+    ),
+    'anno' => 
+    array (
+      'label' => 'anno',
+    ),
   ),
   'actions' => 
   array (
@@ -108,5 +148,9 @@ return array (
         ),
       ),
     ),
+  ),
+  'model' => 
+  array (
+    'label' => 'criteri option.model',
   ),
 );
