@@ -9,21 +9,51 @@ use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Contracts\UserContract;
 
 /**
- * Modules\User\Models\Tenant.
+ * Class Tenant.
+ *
+ * @property int $id
+ * @property string $name
+ * @property string|null $domain
+ * @property array|null $settings
+ * @property \Carbon\Carbon|null $created_at
+ * @property \Carbon\Carbon|null $updated_at
+ * @property string|null $created_by
+ * @property string|null $updated_by
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\User> $members
+ * @property-read int|null $members_count
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
+ * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
+ * @property-read int|null $media_count
+ * @property-read \Modules\User\Models\TenantUser $pivot
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\User> $users
+ * @property-read int|null $users_count
  *
  * @method static \Modules\User\Database\Factories\TenantFactory factory($count = null, $state = [])
- * @method static \Illuminate\Database\Eloquent\Builder|Tenant newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Tenant newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Tenant query()
- * @property EloquentCollection<int, Model&UserContract> $members
- * @property int|null $members_count
- * @property \Modules\Xot\Contracts\ProfileContract|null $creator
- * @property \Modules\Xot\Contracts\ProfileContract|null $updater
- * @property \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
- * @property int|null $media_count
- * @property TenantUser $pivot
- * @property EloquentCollection<int, User> $users
- * @property int|null $users_count
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Tenant newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Tenant newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Tenant query()
+ *
  * @mixin \Eloquent
  */
-class Tenant extends BaseTenant {}
+class Tenant extends BaseTenant
+{
+    /** @var list<string> */
+    protected $fillable = [
+        'name',
+        'domain',
+        'settings',
+    ];
+
+    /**
+     * Get the attributes that should be cast.
+     *
+     * @return array<string, string>
+     */
+    protected function casts(): array
+    {
+        return [
+            'settings' => 'array',
+        ];
+    }
+}

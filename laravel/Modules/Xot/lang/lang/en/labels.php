@@ -65,7 +65,6 @@ return [
                     'subscribe_ip' => 'Subscriber Ip',
                     'created_at' => 'Created At',
                     'status' => 'Status',
-                    'customer_id' => 'Customer Id',
                     'total_price' => 'Total Price',
                 ],
                 'management' => 'Subscriber Management',

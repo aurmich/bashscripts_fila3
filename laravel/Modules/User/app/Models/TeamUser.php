@@ -21,7 +21,6 @@ use Illuminate\Support\Carbon;
  * @property Carbon|null $updated_at
  * @property string|null $created_by
  * @property string|null $updated_by
- * @property string|null $customer_id
  * @method static \Illuminate\Database\Eloquent\Builder|TeamUser whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|TeamUser whereCreatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|TeamUser whereCustomerId($value)
@@ -52,7 +51,6 @@ class TeamUser extends BasePivot
         'team_id',
         'user_id',
         'role',
-        'customer_id',
         'created_at',
         'updated_at',
         'created_by',
@@ -74,7 +72,6 @@ class TeamUser extends BasePivot
             'team_id' => 'string',
             'user_id' => 'string',
             'role' => 'string',
-            'customer_id' => 'string',
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
             'deleted_at' => 'datetime',

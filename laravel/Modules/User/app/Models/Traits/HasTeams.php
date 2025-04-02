@@ -43,7 +43,7 @@ trait HasTeams
     /**
      * Get the current team of the user's context.
      * 
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Modules\User\Contracts\TeamContract, static>
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Modules\User\Models\Team, static>
      */
     public function currentTeam(): BelongsTo
     {
@@ -67,7 +67,7 @@ trait HasTeams
     /**
      * Get all of the teams the user owns.
      * 
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Modules\User\Contracts\TeamContract>
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Modules\User\Models\Team, static>
      */
     public function ownedTeams(): HasMany
     {
@@ -79,7 +79,7 @@ trait HasTeams
     /**
      * Get all of the teams the user belongs to.
      * 
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany<\Modules\User\Contracts\TeamContract>
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany<\Modules\User\Models\Team, static>
      */
     public function teams(): BelongsToMany
     {
@@ -243,7 +243,7 @@ trait HasTeams
         }
     }
 
-    public function addTeamMember(TeamContract $team, string $email, string $role = null): void
+    public function addTeamMember(TeamContract $team, string $email, ?string $role = null): void
     {
         if ($this->canAddTeamMembers($team)) {
             /** @var class-string<Model&UserContract> $userClass */
@@ -273,19 +273,6 @@ trait HasTeams
         }
     }
 
-    public function teams(): BelongsToMany
-    {
-        return $this->belongsToManyX(Team::class, 'team_user');
-    }
-
-   
-
-    public function personalTeam(): ?Team
-    {
-        /** @var Team|null */
-        return $this->ownedTeams()->first();
-    }
-
     public function switchTeam(\Modules\User\Contracts\TeamContract $team): bool
     {
         if (! $this->belongsToTeam($team)) {
@@ -298,22 +285,22 @@ trait HasTeams
         return true;
     }
 
- 
-
     public function belongsToTeam(\Modules\User\Contracts\TeamContract $team): bool
     {
-        return $this->teams()->where('team_id', $team->id)->exists();
+        return $this->teams()->get()->contains('id', $team->id);
     }
 
     public function ownsTeam(\Modules\User\Contracts\TeamContract $team): bool
     {
-        return $this->ownedTeams()->where('id', $team->id)->exists();
+        return $this->ownedTeams()->get()->contains('id', $team->id);
     }
 
     public function teamRole(\Modules\User\Contracts\TeamContract $team): ?Role
     {
         /** @var \Illuminate\Database\Eloquent\Model|\Illuminate\Database\Eloquent\Relations\Pivot|null $teamUser */
-        $teamUser = $this->teams()->where('team_id', $team->id)->first();
+        $teamUser = $this->teams()->get()->first(function ($t) use ($team) {
+            return $t->id === $team->id;
+        });
         if ($teamUser && method_exists($teamUser, 'getPivot') && $teamUser->getPivot() !== null && isset($teamUser->pivot->role)) {
             return $teamUser->pivot->role;
         }
@@ -335,16 +322,6 @@ trait HasTeams
         return $this->ownsTeam($team) || $this->teamRole($team)->name === $role;
     }
 
-    public function canManageTeam(TeamContract $team): bool
-    {
-        return $this->ownsTeam($team);
-    }
-
-    public function canDeleteTeam(TeamContract $team): bool
-    {
-        return $this->ownsTeam($team);
-    }
-
     public function canLeaveTeam(TeamContract $team): bool
     {
         return $this->belongsToTeam($team) && ! $this->ownsTeam($team);
@@ -363,11 +340,6 @@ trait HasTeams
     public function canUpdateTeamMember(TeamContract $team, UserContract $user): bool
     {
         return $this->ownsTeam($team) || $this->hasTeamPermission($team, 'update team member');
-    }
-
-    public function canUpdateTeam(TeamContract $team): bool
-    {
-        return $this->ownsTeam($team) || $this->hasTeamPermission($team, 'update team');
     }
 
     public function canViewTeam(TeamContract $team): bool
