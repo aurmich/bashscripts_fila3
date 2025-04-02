@@ -42,7 +42,9 @@ class DeviceProfile extends BaseModel
     ];
 
     /**
-     * @return BelongsTo<Device, DeviceProfile>
+     * Get the device that owns the device profile.
+     *
+     * @return BelongsTo<Device, static>
      */
     public function device(): BelongsTo
     {
@@ -51,8 +53,8 @@ class DeviceProfile extends BaseModel
 
     /**
      * Get the profile that owns the device profile.
-     * 
-     * @return BelongsTo<Profile, DeviceProfile>
+     *
+     * @return BelongsTo<Profile, static>
      */
     public function profile(): BelongsTo
     {
@@ -61,29 +63,31 @@ class DeviceProfile extends BaseModel
 
     /**
      * Get the user that owns the device profile.
-     * 
-     * @return BelongsTo<Profile, DeviceProfile>
+     *
+     * @return BelongsTo<Profile, static>
      */
     public function user(): BelongsTo
     {
-        return $this->belongsTo(Profile::class, 'user_id');
+        return $this->belongsTo(Profile::class);
     }
 
     /**
-     * Get the creator of the device profile.
-     * 
-     * @return BelongsTo<Profile, DeviceProfile>
+     * Get the creator of the model.
+     *
+     * @return BelongsTo<\Illuminate\Database\Eloquent\Model&\Modules\Xot\Contracts\ProfileContract, static>
      */
     public function creator(): BelongsTo
     {
-        return $this->belongsTo(Profile::class, 'creator_id');
+        return $this->belongsTo(Profile::class, 'created_by');
     }
 
     /**
-     * @return BelongsTo<Profile, DeviceProfile>
+     * Get the updater of the model.
+     *
+     * @return BelongsTo<\Illuminate\Database\Eloquent\Model&\Modules\Xot\Contracts\ProfileContract, static>
      */
     public function updater(): BelongsTo
     {
-        return $this->belongsTo(Profile::class, 'updater_id');
+        return $this->belongsTo(Profile::class, 'updated_by');
     }
 }

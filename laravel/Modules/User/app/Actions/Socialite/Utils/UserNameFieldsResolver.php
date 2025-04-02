@@ -23,8 +23,8 @@ final class UserNameFieldsResolver
     public function __construct(User $user)
     {
         $this->name = $this->resolveName($user);
-        $this->first_name = $this->resolveName($user);
-        $this->last_name = $this->resolveSurname($user);
+        $this->first_name = $this->resolveFirstName($user);
+        $this->last_name = $this->resolveLastName($user);
     }
 
     public static function make(User $user): self
@@ -32,60 +32,48 @@ final class UserNameFieldsResolver
         return new self($user);
     }
 
-    private function resolveName(User $idpUser): string
+    /**
+     * Execute the action.
+     *
+     * @param \Laravel\Socialite\Contracts\User $socialiteUser
+     *
+     * @return array{name: string, first_name: string, last_name: string}
+     */
+    public function execute($socialiteUser): array
     {
-        return $this->resolveNameFields($idpUser, self::NAME_SEARCH);
-    }
+        $name = $this->resolveName($socialiteUser);
+        $firstName = $this->resolveFirstName($socialiteUser);
+        $lastName = $this->resolveLastName($socialiteUser);
 
-    private function resolveSurname(User $idpUser): string
-    {
-        return $this->resolveNameFields($idpUser, self::SURNAME_SEARCH);
+        return [
+            'name' => $name,
+            'first_name' => $firstName,
+            'last_name' => $lastName,
+        ];
     }
 
     /**
-     * @param  string $searchMethod  use self constants (NAME_SEARCH, SURNAME_SEARCH)
+     * Resolve the user's full name.
      */
-    private function resolveNameFields(User $idpUser, string $searchMethod): string
+    private function resolveName($socialiteUser): string
     {
-        // Silly way: trying to split name field on first blank space
-        // occurrence. If we're lucky, this will be enough.
+        return (string) ($socialiteUser->getName() ?? '');
+    }
 
-        $nameSection = $this->resolveNameFieldByNameAttributeAnalysis(is_string($idpUser) ? $idpUser : (string) $idpUser->getName(), $searchMethod);
+    /**
+     * Resolve the user's first name.
+     */
+    private function resolveFirstName($socialiteUser): string
+    {
+        return (string) ($socialiteUser->user['given_name'] ?? '');
+    }
 
-        if ($nameSection->isNotEmpty()) {
-            return is_string($nameSection) ? $nameSection : (string) $nameSection;
-        }
-
-        // If the section was empty, try the "hard way"
-        // by analyzing raw user data
-        $nameField = method_exists($idpUser, 'getRaw')
-            ? ($idpUser->getRaw()['name'] ?? '')
-            : '';
-        $nameSection = $this->resolveNameFieldByNameAttributeAnalysis(is_string($nameField) ? $nameField : (string) $nameField, $searchMethod);
-        if (! $nameSection->isNotEmpty()) {
-            // If both sections were empty, try the "hardest way"
-            // by analyzing email address
-            return Str::of(is_string($idpUser) ? $idpUser : (string) $idpUser->getEmail())
-                ->trim()
-                ->before('@')
-                ->$searchMethod('.') // If no point is available, the whole string should be returned
-                ->trim()
-                ->title()
-                ->toString();
-        }
-        if (filter_var(is_string($nameSection) ? $nameSection : (string) $nameSection, FILTER_VALIDATE_EMAIL)) {
-            // If both sections were empty, try the "hardest way"
-            // by analyzing email address
-            return Str::of(is_string($idpUser) ? $idpUser : (string) $idpUser->getEmail())
-                ->trim()
-                ->before('@')
-                ->$searchMethod('.') // If no point is available, the whole string should be returned
-                ->trim()
-                ->title()
-                ->toString();
-        }
-
-        return is_string($nameSection) ? $nameSection : (string) $nameSection;
+    /**
+     * Resolve the user's last name.
+     */
+    private function resolveLastName($socialiteUser): string
+    {
+        return (string) ($socialiteUser->user['family_name'] ?? '');
     }
 
     private function resolveNameFieldByNameAttributeAnalysis(string $nameField, string $searchMethod): Stringable

@@ -77,4 +77,21 @@ final class EmailDomainAnalyzer
             : $domain;
             */
     }
+
+    /**
+     * Execute the action.
+     */
+    public function execute(string $email): string
+    {
+        return $this->extractDomain($email);
+    }
+
+    /**
+     * Extract the domain from an email address.
+     */
+    private function extractDomain(string $email): string
+    {
+        $parts = explode('@', $email);
+        return end($parts) ?: '';
+    }
 }

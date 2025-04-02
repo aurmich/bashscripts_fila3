@@ -230,9 +230,14 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
         return $this->teams()->count();
     }
 
-    public function user(): UserContract
+    /**
+     * Get the user instance.
+     *
+     * @return \Modules\Xot\Contracts\UserContract
+     */
+    public function user(): \Modules\Xot\Contracts\UserContract
     {
-        return $this;
+        return $this->user ?? $this;
     }
 
     public function devices(): BelongsToMany

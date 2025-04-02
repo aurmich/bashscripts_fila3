@@ -41,18 +41,14 @@ trait HasTeams
     }
 
     /**
-     * Get the current team of the user's context.
-     * 
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Modules\User\Models\Team, static>
+     * Get the current team of the user's.
+     *
+     * @return BelongsTo<Team, static>
      */
     public function currentTeam(): BelongsTo
     {
-        /** @var class-string<Team> $teamClass */
-        $teamClass = XotData::make()->getTeamClass();
-        return $this->belongsTo($teamClass, 'current_team_id');
+        return $this->belongsTo(Team::class, 'current_team_id');
     }
-
-    
 
     /**
      * Get all of the teams the user owns or belongs to.
@@ -66,14 +62,12 @@ trait HasTeams
 
     /**
      * Get all of the teams the user owns.
-     * 
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Modules\User\Models\Team, static>
+     *
+     * @return HasMany<Team, static>
      */
     public function ownedTeams(): HasMany
     {
-        /** @var class-string<Team> $teamClass */
-        $teamClass = XotData::make()->getTeamClass();
-        return $this->hasMany($teamClass, 'user_id');
+        return $this->hasMany(Team::class);
     }
 
     /**
@@ -105,13 +99,6 @@ trait HasTeams
 
         return $personalTeam;
     }
-
-   
-   
-
- 
-
-    
 
     /**
      * Invite a user to a team.
@@ -218,18 +205,15 @@ trait HasTeams
         return $this->ownsTeam($team) || $this->hasTeamPermission($team, 'update_team');
     }
 
-    public function createTeam(array $input): Team
+    /**
+     * Create a new team for the user.
+     */
+    public function createTeam(string $name): Team
     {
-        /** @var class-string<Team> $teamClass */
-        $teamClass = XotData::make()->getTeamClass();
-
-        /** @var TeamContract $team */
-        $team = $this->ownedTeams()->create([
-            'name' => $input['name'],
-            'personal_team' => $input['personal_team'] ?? false,
-        ]);
-
-        $this->switchTeam($team);
+        $team = new Team();
+        $team->name = $name;
+        $team->user_id = $this->id;
+        $team->save();
 
         return $team;
     }
