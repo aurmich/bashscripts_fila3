@@ -78,6 +78,7 @@ class ListIndividualePos extends XotBaseListRecords
      */
     public function getTableFilters(): array
     {
+        /*
         return [
             'anno' => SelectFilter::make('anno')
                 ->options(Arr::pluck(IndividualePo::select('anno')->distinct()->get(), 'anno', 'anno')),
@@ -86,15 +87,8 @@ class ListIndividualePos extends XotBaseListRecords
             'repar' => SelectFilter::make('repar')
                 ->options(Arr::pluck(IndividualePo::select('repar')->distinct()->get(), 'repar', 'repar')),
         ];
+        */
     }
 
-    /**
-     * @return array<string, Actions\DeleteBulkAction>
-     */
-    public function getTableBulkActions(): array
-    {
-        return [
-            Actions\DeleteBulkAction::make(),
-        ];
-    }
+   
 }

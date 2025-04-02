@@ -4,15 +4,15 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-        'name' => 'Performance Dipendenti',
-        'plural' => 'Performance Dipendenti',
+        'name' => 'Schede Dipendenti',
+        'plural' => 'Schede Dipendenti',
         'group' => [
-            'name' => 'Valutazione & KPI',
-            'description' => 'Gestione delle performance dei dipendenti',
+            'name' => 'Schede',
+            'description' => 'Gestione delle schede di valutazione dei dipendenti',
         ],
-        'label' => 'Performance Dipendenti',
-        'sort' => 59,
-        'icon' => 'employee-performance',
+        'label' => 'Schede Dipendenti',
+        'sort' => 31,
+        'icon' => 'employee-document',
     ],
     'fields' => [
         'dipendente' => [

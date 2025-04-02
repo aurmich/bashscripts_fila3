@@ -222,7 +222,7 @@ class CondizioniLavoro extends BaseModel
         $cross = 'condizioni_lavoro_x_indennita_tipo_dettaglio';
         $pivot_fields = ['gg'];
 
-        return $this->belongsToMany(IndennitaTipoDettaglio::class, $cross)
+        return $this->belongsToManyX(IndennitaTipoDettaglio::class, $cross)
             ->using(CondizioniLavoroIndennitaTipoDettaglioPivot::class)
             ->withPivot($pivot_fields);
         // */
@@ -234,7 +234,7 @@ class CondizioniLavoro extends BaseModel
         $cross = 'condizioni_lavoro_x_indennita_tipo_dettaglio';
         $pivot_fields = 'gg';
 
-        return $this->belongsToMany(IndennitaTipoDettaglio::class, $cross)
+        return $this->belongsToManyX(IndennitaTipoDettaglio::class, $cross)
             ->using(CondizioniLavoroIndennitaTipoDettaglioPivot::class)
             ->withPivot($pivot_fields);
     }

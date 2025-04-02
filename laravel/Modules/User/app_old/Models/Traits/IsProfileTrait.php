@@ -128,7 +128,7 @@ trait IsProfileTrait
      */
     public function mobileDevices(): BelongsToMany
     {
-        return $this->belongsToMany(Device::class, 'mobile_device_users', 'profile_id', 'device_id')
+        return $this->belongsToManyX(Device::class, 'mobile_device_users', 'profile_id', 'device_id')
             ->withPivot('token')
             ->withTimestamps();
     }
@@ -140,7 +140,7 @@ trait IsProfileTrait
      */
     public function devices(): BelongsToMany
     {
-        return $this->belongsToMany(Device::class, 'device_users', 'profile_id', 'device_id')
+        return $this->belongsToManyX(Device::class, 'device_users', 'profile_id', 'device_id')
             ->withPivot('token')
             ->withTimestamps();
     }
@@ -188,7 +188,7 @@ trait IsProfileTrait
      */
     public function teams(): BelongsToMany
     {
-        return $this->belongsToMany(XotData::make()->getTeamClass());
+        return $this->belongsToManyX(XotData::make()->getTeamClass());
     }
 
     /**

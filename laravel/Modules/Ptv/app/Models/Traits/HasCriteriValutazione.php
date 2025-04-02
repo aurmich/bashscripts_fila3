@@ -4,15 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\Ptv\Models\Traits;
 
-use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Support\Str;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 /*
  * Undocumented trait.
  */
 trait HasCriteriValutazione
 {
-    public function criteriValutazione(): MorphMany
+    public function criteriValutazione(): HasMany
     {
         $myclass = static::class;
         $class = Str::of($myclass)

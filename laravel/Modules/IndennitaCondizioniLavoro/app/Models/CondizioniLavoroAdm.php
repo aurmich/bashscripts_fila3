@@ -151,7 +151,7 @@ class CondizioniLavoroAdm extends CondizioniLavoro
         $relatedKey = null;
         $relation = null;
 
-        return $this->belongsToMany(IndennitaTipoDettaglio::class, $cross, $foreignPivotKey, $relatedPivotKey, $parentKey, $relatedKey, $relation)
+        return $this->belongsToManyX(IndennitaTipoDettaglio::class, $cross, $foreignPivotKey, $relatedPivotKey, $parentKey, $relatedKey, $relation)
             ->using(CondizioniLavoroIndennitaTipoDettaglioPivot::class)
             ->withPivot($pivot_fields);
     }

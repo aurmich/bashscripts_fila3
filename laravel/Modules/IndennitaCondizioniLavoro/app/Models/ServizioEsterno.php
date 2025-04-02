@@ -199,7 +199,7 @@ class ServizioEsterno extends BaseModel
         $cross = 'servizio_esterno_x_indennita_tipo_dettaglio';
         $pivot_fields = 'gg';
 
-        return $this->belongsToMany(IndennitaTipoDettaglio::class, $cross)
+        return $this->belongsToManyX(IndennitaTipoDettaglio::class, $cross)
             ->using(ServizioEsternoIndennitaTipoDettaglioPivot::class)
             ->withPivot($pivot_fields);
     }
@@ -210,7 +210,7 @@ class ServizioEsterno extends BaseModel
         $cross = 'servizio_esterno_x_indennita_tipo_dettaglio';
         $pivot_fields = ['gg'];
 
-        return $this->belongsToMany(IndennitaTipoDettaglio::class, $cross)
+        return $this->belongsToManyX(IndennitaTipoDettaglio::class, $cross)
             ->using(ServizioEsternoIndennitaTipoDettaglioPivot::class)
             ->withPivot($pivot_fields);
     }

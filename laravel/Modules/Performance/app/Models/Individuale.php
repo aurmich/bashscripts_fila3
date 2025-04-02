@@ -498,9 +498,10 @@ class Individuale extends BaseIndividualeModel
         return $this->belongsTo(Valutatore::class, ['ente', 'matr'], ['ente', 'matr']);
     }
 
-    /**
+    /*
      * @return Builder<self>
      */
+    /*
     public function filter(array $input = []): Builder
     {
         $query = static::query();
@@ -827,4 +828,5 @@ class Individuale extends BaseIndividualeModel
 
         return $query;
     }
+    */
 }

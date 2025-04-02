@@ -123,6 +123,42 @@ return array (
     array (
       'label' => 'al',
     ),
+    'dal' => 
+    array (
+      'label' => 'dal',
+    ),
+    'repar_txt' => 
+    array (
+      'label' => 'repar_txt',
+    ),
+    'repar' => 
+    array (
+      'label' => 'repar',
+    ),
+    'stabi_txt' => 
+    array (
+      'label' => 'stabi_txt',
+    ),
+    'stabi' => 
+    array (
+      'label' => 'stabi',
+    ),
+    'disci1_txt' => 
+    array (
+      'label' => 'disci1_txt',
+    ),
+    'applyFilters' => 
+    array (
+      'label' => 'applyFilters',
+    ),
+    'toggleColumns' => 
+    array (
+      'label' => 'toggleColumns',
+    ),
+    'disci1' => 
+    array (
+      'label' => 'disci1',
+    ),
   ),
   'actions' => 
   array (
