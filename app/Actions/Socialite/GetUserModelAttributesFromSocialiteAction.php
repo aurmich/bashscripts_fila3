@@ -28,11 +28,33 @@ class GetUserModelAttributesFromSocialiteAction
         $this->name = $nameFieldsResolver->name;
         $this->first_name = $nameFieldsResolver->name;
         $this->last_name = $nameFieldsResolver->last_name;
-        $this->email = is_string($this) ? $this : (string) $this->oauthUser->getEmail();
+        $this->email = $this->oauthUser->getEmail();
     }
 
     public function getProvider(): string
     {
         return $this->provider;
+    }
+
+    /**
+     * Execute the action.
+     *
+     * @param \Laravel\Socialite\Contracts\User $socialiteUser
+     * @param string $provider
+     *
+     * @return array<string, mixed>
+     */
+    public function execute($socialiteUser, string $provider): array
+    {
+        $nameFields = app(UserNameFieldsResolver::class)->execute($socialiteUser);
+
+        return [
+            'name' => $nameFields['name'],
+            'first_name' => $nameFields['first_name'],
+            'last_name' => $nameFields['last_name'],
+            'email' => $socialiteUser->getEmail(),
+            'provider' => $provider,
+            'provider_id' => (string) $socialiteUser->getId(),
+        ];
     }
 }
