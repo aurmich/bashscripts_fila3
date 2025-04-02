@@ -1,4 +1,6 @@
-<?php return array (
+<?php
+
+return array (
   'navigation' => 
   array (
     'name' => 'Liquidazione',
@@ -131,6 +133,10 @@
         'label' => 'project.nome',
       ),
     ),
+    'denominazione' => 
+    array (
+      'label' => 'denominazione',
+    ),
   ),
   'actions' => 
   array (
@@ -213,4 +219,4 @@
       'approval_required' => 'Richiesta approvazione superiore',
     ),
   ),
-);
+);
