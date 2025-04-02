@@ -52,3 +52,4 @@ public_html/vendor/
 *.old
 laravel/Modules/Predict/
 *.old
+public_html/plugins/
