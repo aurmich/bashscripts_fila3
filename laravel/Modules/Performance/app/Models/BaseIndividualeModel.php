@@ -21,7 +21,7 @@ use Modules\Sigma\Models\Asz00k1;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Ptv\Models\Traits\HasMyLogs;
 use Illuminate\Database\Eloquent\Builder;
-use Modules\Performance\Enums\WorkerType;
+use Modules\Ptv\Enums\WorkerType;
 use Illuminate\Database\Eloquent\Collection;
 use Modules\Sigma\Models\Traits\SchedaTrait;
 use Modules\Sigma\Models\Traits\SigmaModelTrait;

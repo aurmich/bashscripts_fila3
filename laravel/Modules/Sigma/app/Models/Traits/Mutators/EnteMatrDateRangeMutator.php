@@ -98,6 +98,7 @@ trait EnteMatrDateRangeMutator
 
     public function getGgPresenzaDalalAttribute($value)
     {
+        
         if ($value !== null) {
             return $value;
         }

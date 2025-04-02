@@ -15,10 +15,11 @@ trait MutatorTrait
     public function getGgAssenzaDalalAttribute(?int $value): ?int
     {
         if ($value !== null) {
-            return $value;
+           return $value;
         }
 
         $lista_tipo_codice_assenze = $this->listaTipoCodiceAssenze();
+        
 
         $date_min = $this->dal;
         $date_max = $this->al;
@@ -152,4 +153,90 @@ trait MutatorTrait
 
         return $value;
     }
+
+     public function getGgPresenzaAnnoAttribute(?int $value): ?int
+    {
+        if ($value !== null && ! request()->input('refresh', false)) {
+            return $value;
+        }
+
+       
+        $anno = $this->anno;
+        $dal = $anno * 10000 + 101;
+        $al = $anno * 10000 + 1231;
+        $parz = [
+            'date_min' => $dal,
+            'date_max' => $al,
+        ];
+        $anag = $this->anag;
+        if ($anag === null) {
+            return null;
+        }
+
+        $value = $anag->ggInSedeTot($parz);
+        $this->gg_presenza_anno = $value;
+        $this->save();
+
+        return $value;
+    }
+
+    public function getGgAssenzaAnnoAttribute(?int $value): ?int 
+    {
+        if ($value !== null && ! request()->input('refresh', 0)) {
+            return $value;
+        }
+        if ($this->matr == null) {
+            return null;
+        }
+        if ($this->qua2kd == null) {
+            return null;
+        }
+
+        // dddx($this->anno);
+        // dddx($this->criteriEsclusione->pluck('value', 'name')['data_presenza_al']);
+        // $data_presenza_al = ($this->criteriEsclusione->data_presenza_al);
+        // $anno = $data_presenza_al->year;
+        $anno = $this->anno;
+        $dal = $anno * 10000 + 101;
+        $al = $anno * 10000 + 1231;
+        $value = $this->anag?->ggAssenzaInSedeTot(
+            [
+                'date_min' => $dal,
+                'date_max' => $al,
+            ]
+        );
+        $this->gg_assenza_anno = $value;
+        $this->save();
+
+        return $value;
+    }
+
+    public function getTypeAttribute(?string $value): ?string
+    {
+         if ($value !== null && ! request()->input('refresh', 0)) {
+            return $value;
+            //$value=null; // per forzare il refresh
+        }
+       
+        if($value==null && $this->isRegionale()){
+            $value = 'regionale';
+        }
+        
+        if($value==null && $this->isDirigente()){
+            
+            $value = 'dirigente';
+        }
+        if($value==null && $this->isPo()){
+            $value = 'po';
+        }
+        if($value==null){
+            $value = 'dip';
+        }
+        $this->type = $value;
+        $this->save();
+
+        return $value;
+        
+    }
+
 }
