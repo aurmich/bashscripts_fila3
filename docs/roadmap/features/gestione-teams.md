@@ -29,7 +29,7 @@ trait HasTeams
      */
     public function teams(): BelongsToMany
     {
-        return $this->belongsToMany(Team::class)
+        return $this->belongsToManyX(Team::class)
             ->withTimestamps()
             ->withPivot(['role']);
     }
