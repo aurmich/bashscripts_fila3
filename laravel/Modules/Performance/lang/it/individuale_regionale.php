@@ -12,7 +12,7 @@ return [
         ],
         'label' => 'Schede Regionali',
         'sort' => 33,
-        'icon' => 'region-document',
+        'icon' => 'performance-region-document',
     ],
     'fields' => [
         'regione' => [

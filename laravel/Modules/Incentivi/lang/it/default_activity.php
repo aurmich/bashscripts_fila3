@@ -63,5 +63,9 @@ return array (
     array (
       'label' => 'resetFilters',
     ),
+    'applyFilters' => 
+    array (
+      'label' => 'applyFilters',
+    ),
   ),
 );
