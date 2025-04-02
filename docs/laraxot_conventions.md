@@ -416,4 +416,228 @@ protected static function newFactory(): Factory
 {
     return UserFactory::new();
 }
+```
+
+## Gestione dei Tipi e Controlli di Tipo
+
+### Controlli di Tipo Ridondanti
+
+Evitare controlli di tipo ridondanti che PHPStan può rilevare come sempre veri o sempre falsi:
+
+```php
+// ❌ ERRATO: Il controllo è ridondante
+if (is_string($stringVariable)) {
+    // $stringVariable è già dichiarata come string
+}
+
+// ✅ CORRETTO: Usa il tipo corretto fin dall'inizio
+function processString(string $value): void {
+    // Il tipo è già garantito
+}
+```
+
+### Controlli di Istanza
+
+Evitare controlli di istanza ridondanti:
+
+```php
+// ❌ ERRATO: Il controllo è sempre vero
+if ($user instanceof UserContract && $user instanceof UserContract) {
+    // Doppio controllo inutile
+}
+
+// ✅ CORRETTO: Controllo singolo quando necessario
+if ($user instanceof UserContract) {
+    // Procedi con la logica
+}
+```
+
+### Tipi di Ritorno nelle Relazioni
+
+Quando si definiscono relazioni, usare `static` invece di `$this` per il tipo di ritorno:
+
+```php
+// ❌ ERRATO: Uso di $this
+/**
+ * @return BelongsTo<Profile, $this>
+ */
+public function profile(): BelongsTo
+{
+    return $this->belongsTo(Profile::class);
+}
+
+// ✅ CORRETTO: Uso di static
+/**
+ * @return BelongsTo<Profile, static>
+ */
+public function profile(): BelongsTo
+{
+    return $this->belongsTo(Profile::class);
+}
+```
+
+### Tipi Nullable e Controlli
+
+Quando si lavora con tipi nullable, essere espliciti nei controlli:
+
+```php
+// ❌ ERRATO: Controllo implicito
+public function processValue($value): string
+{
+    if ($value) {
+        return $value;
+    }
+    return '';
+}
+
+// ✅ CORRETTO: Controllo esplicito
+public function processValue(?string $value): string
+{
+    if ($value !== null) {
+        return $value;
+    }
+    return '';
+}
+```
+
+### Funzioni di Callback e Tipi di Ritorno
+
+Quando si usano funzioni di callback, specificare sempre i tipi di ritorno:
+
+```php
+// ❌ ERRATO: Tipo di ritorno non specificato
+$collection->map(function ($item) {
+    return $item->value;
+});
+
+// ✅ CORRETTO: Tipo di ritorno specificato
+$collection->map(function ($item): string {
+    return $item->value;
+});
+```
+
+### Gestione dei Contratti e Implementazioni
+
+Quando si implementa un'interfaccia, assicurarsi che i tipi di ritorno siano compatibili:
+
+```php
+// ❌ ERRATO: Tipo di ritorno incompatibile
+public function user(): UserContract
+{
+    return $this;  // Ritorna $this invece del tipo corretto
+}
+
+// ✅ CORRETTO: Tipo di ritorno compatibile
+public function user(): UserContract
+{
+    return $this->user;  // Ritorna un'istanza di UserContract
+}
+```
+
+## Controlli di Tipo e Validazioni
+
+### Controlli di Tipo con is_string()
+
+Evitare l'uso di `is_string()` su tipi che non possono essere stringhe:
+
+```php
+// ❌ ERRATO: L'oggetto non può mai essere una stringa
+if (is_string($user)) {
+    // Questo codice non verrà mai eseguito
+}
+
+// ✅ CORRETTO: Controllo il valore di una proprietà che potrebbe essere una stringa
+if (is_string($user->name)) {
+    // Procedi con la logica
+}
+```
+
+### Controlli di Istanza Ridondanti
+
+Evitare controlli di istanza ridondanti o impossibili:
+
+```php
+// ❌ ERRATO: Controllo ridondante
+if ($user instanceof UserContract && $user instanceof UserContract) {
+    // Doppio controllo inutile
+}
+
+// ❌ ERRATO: Controllo impossibile
+if ($stringValue instanceof string) {
+    // I tipi primitivi non possono essere usati con instanceof
+}
+
+// ✅ CORRETTO: Controllo singolo quando necessario
+if ($user instanceof UserContract) {
+    // Procedi con la logica
+}
+```
+
+### Tipi di Ritorno nelle Relazioni Eloquent
+
+Quando si definiscono relazioni Eloquent, usare sempre `static` invece di `$this` per il tipo di ritorno:
+
+```php
+// ❌ ERRATO: Uso di $this nel tipo di ritorno
+/**
+ * @return BelongsTo<Profile, $this>
+ */
+public function profile(): BelongsTo
+{
+    return $this->belongsTo(Profile::class);
+}
+
+// ✅ CORRETTO: Uso di static nel tipo di ritorno
+/**
+ * @return BelongsTo<Profile, static>
+ */
+public function profile(): BelongsTo
+{
+    return $this->belongsTo(Profile::class);
+}
+```
+
+### Tipi di Ritorno Compatibili
+
+Quando si estende una classe o si implementa un'interfaccia, assicurarsi che i tipi di ritorno siano compatibili:
+
+```php
+// ❌ ERRATO: Tipo di ritorno incompatibile
+class Profile extends BaseModel
+{
+    public function creator(): BelongsTo
+    {
+        return $this->belongsTo(User::class);  // Tipo incompatibile con il metodo padre
+    }
+}
+
+// ✅ CORRETTO: Tipo di ritorno compatibile
+class Profile extends BaseModel
+{
+    /**
+     * @return BelongsTo<\Illuminate\Database\Eloquent\Model&\Modules\Xot\Contracts\ProfileContract, static>
+     */
+    public function creator(): BelongsTo
+    {
+        return $this->belongsTo(User::class);  // Tipo compatibile con il metodo padre
+    }
+}
+```
+
+### Tipi Nullable e Controlli
+
+Quando si lavora con tipi nullable, essere espliciti nei controlli:
+
+```php
+// ❌ ERRATO: Controllo implicito
+public function processValue($value): string
+{
+    return $value ?? '';  // Non è chiaro il tipo di $value
+}
+
+// ✅ CORRETTO: Tipo e controllo espliciti
+public function processValue(?string $value): string
+{
+    return $value ?? '';  // È chiaro che $value è una stringa nullable
+}
 ``` 

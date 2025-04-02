@@ -31,38 +31,27 @@ class SetCurrentTeamCommand extends Command
     /**
      * Execute the console command.
      */
-    public function handle(): void
+    public function handle(): int
     {
-        $email = text('email ?');
+        $user = auth()->user();
 
-        $xot = XotData::make();
-        $user = $xot->getUserByEmail($email);
-
-        if (!$user instanceof UserContract) {
-            $this->error('User not found!');
-            return;
+        if (! $user instanceof UserContract) {
+            $this->error('User not found or not authenticated.');
+            return self::FAILURE;
         }
 
-        $teamClass = $xot->getTeamClass();
-        if (!class_exists($teamClass)) {
-            $this->error('Team class not found!');
-            return;
+        $teamId = $this->argument('team_id');
+        $team = $user->ownedTeams()->find($teamId);
+
+        if (! $team) {
+            $this->error('Team not found or not owned by user.');
+            return self::FAILURE;
         }
 
-        /** @var array<int|string, string> */
-        $opts = $teamClass::pluck('name', 'id')->toArray();
+        $user->switchTeam($team);
+        $this->info('Current team switched successfully.');
 
-        $team_id = select(
-            label: 'What team?',
-            options: $opts,
-            required: true,
-            scroll: 10,
-        );
-
-        $user->current_team_id = (int) $team_id;
-        $user->save();
-
-        $this->info('OK');
+        return self::SUCCESS;
     }
 
     /**

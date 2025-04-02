@@ -20,36 +20,20 @@ class GetCurrentDeviceAction
     /**
      * Execute the action.
      */
-    public function execute(?string $mobile_id = null): Device
+    public function execute(): ?Device
     {
-        $agent = new Agent;
-
-        $data = [
-            'device' => $agent->device(),
-            'platform' => $agent->platform(),
-            'browser' => $agent->browser(),
-            // 'version' => $agent->version($agent->browser()),
-            'is_desktop' => $agent->isDesktop(),
-            'is_mobile' => $agent->isMobile(),
-            'is_tablet' => $agent->isTablet(),
-            'is_phone' => $agent->isPhone(),
-            'is_robot' => $agent->isRobot(),
-            // 'robot' => $agent->robot(),
-        ];
-        $up = [
-            'version' => $agent->version(is_string($agent) ? $agent : (string) $agent->browser()),
-            'robot' => $agent->robot(),
-        ];
-        if ($mobile_id !== null) {
-            $device = Device::firstOrCreate(['mobile_id' => $mobile_id]);
-            $device->update([...$data, ...$up]);
-
-            return $device;
+        $agent = new Agent();
+        $deviceType = $agent->device();
+        
+        if ($deviceType === false || $deviceType === null) {
+            return null;
         }
 
-        $device = Device::firstOrCreate($data);
-        $device->update($up);
-
-        return $device;
+        return Device::firstOrCreate([
+            'name' => $deviceType,
+            'type' => $agent->deviceType(),
+            'platform' => $agent->platform(),
+            'browser' => $agent->browser(),
+        ]);
     }
 }
