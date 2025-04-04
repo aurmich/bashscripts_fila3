@@ -290,23 +290,29 @@ trait HasXotTable
     public function getTableActions(): array
     {
         $actions = [];
-
-        if ($this->shouldShowViewAction()) {
+        $resource = $this->getResource();
+        
+        if (method_exists($resource, 'canView')) {
             $actions['view'] = Tables\Actions\ViewAction::make()
                 ->iconButton()
-                ->tooltip(__('user::actions.view'));
+                ->tooltip(__('user::actions.view'))
+                ->visible(fn (Model $record): bool => $resource::canView($record));
         }
 
-        if ($this->shouldShowEditAction()) {
+        if (method_exists($resource, 'canEdit')) {
             $actions['edit'] = Tables\Actions\EditAction::make()
                 ->iconButton()
-                ->tooltip(__('user::actions.edit'));
+                ->tooltip(__('user::actions.edit'))
+                ->visible(fn (Model $record): bool => $resource::canEdit($record));
         }
-
-        $actions['delete'] = Tables\Actions\DeleteAction::make()
-            ->iconButton()
-            ->tooltip(__('user::actions.delete'));
-
+        
+        if (method_exists($resource, 'canDelete')) {
+            $actions['delete'] = Tables\Actions\DeleteAction::make()
+                ->iconButton()
+                ->tooltip(__('user::actions.delete'))
+                ->visible(fn (Model $record): bool => $resource::canDelete($record));
+        }
+        
         if ($this->shouldShowReplicateAction()) {
             $actions['replicate'] = Tables\Actions\ReplicateAction::make()
                 ->iconButton()

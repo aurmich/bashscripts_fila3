@@ -100,10 +100,10 @@ class ManageProjectActivities extends XotBaseManageRelatedRecords
         ];
     }
 
-    public function getTableHeaderActions(): array
-    {
-        return [];
-    }
+    // public function getTableHeaderActions(): array
+    // {
+    //     return [];
+    // }
 
     // public function table2(Table $table): Table
     // {

@@ -105,6 +105,33 @@ Tutte le schede condividono i seguenti campi comuni:
         'label' => 'Esperienza Acquisita',
         'placeholder' => 'Valuta l\'esperienza',
         'help' => 'Valutazione dell\'esperienza maturata'
+    ],
+    'ha_diritto' => [
+        'label' => 'Ha Diritto',
+        'placeholder' => 'Indica se ha diritto alla valutazione',
+        'help' => 'Stato del diritto alla valutazione'
+    ],
+    'motivo' => [
+        'label' => 'Motivo',
+        'placeholder' => 'Specifica il motivo',
+        'help' => 'Motivazione della valutazione'
+    ],
+    'mail_sended_at' => [
+        'label' => 'Data Invio Mail',
+        'placeholder' => 'Data di invio della mail',
+        'help' => 'Data in cui è stata inviata la mail di notifica'
+    ]
+]
+```
+
+### Azioni
+Tutte le schede condividono le seguenti azioni:
+
+```php
+'actions' => [
+    'copy_from_organizzativa' => [
+        'label' => 'Copia da Organizzativa',
+        'help' => 'Copia i dati dalla scheda organizzativa'
     ]
 ]
 ```

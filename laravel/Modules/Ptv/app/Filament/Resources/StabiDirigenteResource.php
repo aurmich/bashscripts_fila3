@@ -78,18 +78,5 @@ class StabiDirigenteResource extends XotBaseResource
     }
     */
 
-    public static function getRelations(): array
-    {
-        return [
-        ];
-    }
-
-    public static function getPages(): array
-    {
-        return [
-            'index' => Pages\ListStabiDirigentes::route('/'),
-            'create' => Pages\CreateStabiDirigente::route('/create'),
-            'edit' => Pages\EditStabiDirigente::route('/{record}/edit'),
-        ];
-    }
+    
 }

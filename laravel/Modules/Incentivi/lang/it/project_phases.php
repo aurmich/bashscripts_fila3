@@ -1,4 +1,6 @@
-<?php return array (
+<?php
+
+return array (
   'navigation' => 
   array (
     'name' => 'Fase Progetto',
@@ -162,6 +164,10 @@
     array (
       'label' => 'handleSettlement',
     ),
+    'create' => 
+    array (
+      'label' => 'create',
+    ),
   ),
   'actions' => 
   array (
@@ -240,4 +246,4 @@
     ),
   ),
   'title' => 'project phases',
-);
+);

@@ -29,7 +29,7 @@ class ListStabiDirigentes extends PtvListStabiDirigentes
     //        CreateAction::make(),
     //    ];
     // }
-
+    /*
     protected function getHeaderActions(): array
     {
         return [
@@ -106,14 +106,7 @@ class ListStabiDirigentes extends PtvListStabiDirigentes
 
 
         foreach($rows as $row){
-           /*
-            $valutatore=StabiDirigente::where('anno',$anno)
-                ->whereRaw('valutatore_id = id')
-                ->where('email',$row['testo'])
-                ->first();
-
-            dddx($valutatore);
-            */
+          
             $email=trim($row['testo']);
 
             $ana02f=Ana02f::where('emaind',$email)->first();
@@ -174,5 +167,7 @@ class ListStabiDirigentes extends PtvListStabiDirigentes
 
 
         }
+        
     }
+    */
 }

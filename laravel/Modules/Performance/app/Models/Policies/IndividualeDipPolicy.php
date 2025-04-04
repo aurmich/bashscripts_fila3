@@ -4,10 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Performance\Models\Policies;
 
-use Illuminate\Auth\Access\HandlesAuthorization;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Contracts\UserContract;
+use Modules\Performance\Models\IndividualeDip as MyModel;
 use Modules\Xot\Models\Policies\XotBasePolicy;
+use Illuminate\Auth\Access\HandlesAuthorization;
+
 
 class IndividualeDipPolicy extends XotBasePolicy
 {
@@ -27,48 +29,63 @@ class IndividualeDipPolicy extends XotBasePolicy
         return true;
     }
 
-    public function index(?UserContract $userContract, Model $model): bool
+    public function index(?UserContract $userContract, MyModel $model): bool
     {
         return true;
     }
 
-    public function edit(UserContract $userContract, Model $model): bool
+    public function edit(UserContract $userContract, MyModel $model): bool
     {
         return false;
     }
 
-    public function update(UserContract $userContract, Model $model): bool
+    public function update(UserContract $userContract, MyModel $model): bool
     {
         return false;
     }
 
-    public function show(?UserContract $userContract, Model $model): bool
+    public function create(UserContract $userContract): bool
+    {
+        return false;
+    }
+
+    public function show(?UserContract $userContract, MyModel $model): bool
     {
         return true;
     }
+    
+    public function delete(?UserContract $userContract, MyModel $model): bool
+    {
+        return false;
+    }
 
-    public function compila(UserContract $userContract, Model $model): bool
+    public function view(?UserContract $userContract, MyModel $model): bool
+    {
+        return false;
+    }
+
+    public function compila(UserContract $userContract, MyModel $model): bool
     {
         return (bool) $model->getAttributeValue('ha_diritto');
         // return true;
     }
 
-    public function individualePdf(UserContract $userContract, Model $model): bool
+    public function individualePdf(UserContract $userContract, MyModel $model): bool
     {
         return $model->getAttributeValue('ha_diritto');
     }
 
-    public function xlsIndividualeStabiRepar(UserContract $userContract, Model $model): bool
+    public function xlsIndividualeStabiRepar(UserContract $userContract, MyModel $model): bool
     {
         return true;
     }
 
-    public function pdfIndividualeStabiRepar(UserContract $userContract, Model $model): bool
+    public function pdfIndividualeStabiRepar(UserContract $userContract, MyModel $model): bool
     {
         return true;
     }
 
-    public function massMail(UserContract $userContract, Model $model): bool
+    public function massMail(UserContract $userContract, MyModel $model): bool
     {
         return true;
     }

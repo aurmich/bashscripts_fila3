@@ -502,37 +502,6 @@ class Organizzativa extends BaseModel
             ->where('id', '!=', $this->id);
     }
 
-    /**
-     * @return BelongsTo<IndividualePesi, self>
-     */
-    public function peso(): BelongsTo
-    {
-        return $this->belongsTo(IndividualePesi::class, 'organizzativa_id');
-    }
-
-    /**
-     * @return BelongsTo<IndividualePoPesi, self>
-     */
-    public function pesoPo(): BelongsTo
-    {
-        return $this->belongsTo(IndividualePoPesi::class, 'organizzativa_id');
-    }
-
-    /**
-     * @return BelongsTo<StabiDirigente, self>
-     */
-    public function stabiDirigente(): BelongsTo
-    {
-        return $this->belongsTo(StabiDirigente::class, 'organizzativa_id');
-    }
-
-    /**
-     * @return BelongsTo<IndividualeTotStabi, self>
-     */
-    public function totStabi(): BelongsTo
-    {
-        return $this->belongsTo(IndividualeTotStabi::class, 'organizzativa_id');
-    }
 
     /**
      * @param array<string, mixed> $input

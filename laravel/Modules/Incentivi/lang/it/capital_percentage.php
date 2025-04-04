@@ -1,4 +1,6 @@
-<?php return array (
+<?php
+
+return array (
   'navigation' => 
   array (
     'name' => 'Percentuale Fondo',
@@ -41,6 +43,30 @@
     array (
       'label' => 'toggleColumns',
     ),
+    'reorderRecords' => 
+    array (
+      'label' => 'reorderRecords',
+    ),
+    'resetFilters' => 
+    array (
+      'label' => 'resetFilters',
+    ),
+    'applyFilters' => 
+    array (
+      'label' => 'applyFilters',
+    ),
+    'openFilters' => 
+    array (
+      'label' => 'openFilters',
+    ),
+    'delete' => 
+    array (
+      'label' => 'delete',
+    ),
+    'edit' => 
+    array (
+      'label' => 'edit',
+    ),
   ),
   'actions' => 
   array (
@@ -53,4 +79,4 @@
       'label' => 'Crea Nuova Percentuale',
     ),
   ),
-);
+);

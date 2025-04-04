@@ -45,5 +45,6 @@ class CopyFromLastYearAction extends Action
                     ->success()
                     ->send();
             });
+        $this->visible(fn ($livewire): bool => $livewire->getResource()::can('create'));
     }
 }

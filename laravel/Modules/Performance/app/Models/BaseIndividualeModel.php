@@ -294,35 +294,7 @@ abstract class BaseIndividualeModel extends Model
             ->where('anno', $this->anno);
     }
 
-    /**
-     * @return BelongsTo<IndividualePesi, self>
-     */
-    public function peso(): BelongsTo
-    {
-        return $this->belongsTo(IndividualePesi::class, 'matr', 'matr')
-            ->where('ente', $this->ente)
-            ->where('anno', $this->anno);
-    }
-
-    /**
-     * @return BelongsTo<IndividualePoPesi, self>
-     */
-    public function pesoPo(): BelongsTo
-    {
-        return $this->belongsTo(IndividualePoPesi::class, 'matr', 'matr')
-            ->where('ente', $this->ente)
-            ->where('anno', $this->anno);
-    }
-
-    /**
-     * @return BelongsTo<StabiDirigente, self>
-     */
-    public function stabiDirigente(): BelongsTo
-    {
-        return $this->belongsTo(StabiDirigente::class, 'stabi', 'stabi')
-            ->where('ente', $this->ente)
-            ->where('anno', $this->anno);
-    }
+   
 
     /**
      * @return BelongsTo<IndividualeTotStabi, self>

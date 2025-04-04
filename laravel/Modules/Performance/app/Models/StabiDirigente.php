@@ -7,6 +7,7 @@ namespace Modules\Performance\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Modules\Sigma\Models\Repart;
+use Modules\Ptv\Models\StabiDirigente as PtvStabiDirigente;
 
 // use Modules\Xot\Traits\Updater;
 /**
@@ -45,8 +46,10 @@ use Modules\Sigma\Models\Repart;
  *
  * @mixin \Eloquent
  */
-class StabiDirigente extends BaseModel
+class StabiDirigente extends PtvStabiDirigente
 {
+    protected $connection = 'performance'; 
+    
     /*
     use Updater;
     protected $connection = 'performance'; // this will use the specified database connection
@@ -57,6 +60,7 @@ class StabiDirigente extends BaseModel
     ];
 
     */
+    /*
     protected $table = 'stabi_dirigente';
 
     protected $fillable = [
@@ -64,6 +68,7 @@ class StabiDirigente extends BaseModel
         'ente', 'matr', 'nome_diri', 'anno',
         'n_diritto_excellence',
     ];
+    */
 
     // public $timestamps= false;
     /*
@@ -97,6 +102,7 @@ class StabiDirigente extends BaseModel
         return $value;
     }
     */
+    /*
     public function getNomeStabiAttribute($value)
     {
         if ($value !== null) {
@@ -120,4 +126,5 @@ class StabiDirigente extends BaseModel
 
         return $value;
     }
+        */
 }

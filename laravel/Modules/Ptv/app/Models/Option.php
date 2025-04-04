@@ -84,7 +84,7 @@ class Option extends BaseModel
 
     public function sons(): HasMany
     {
-        return $this->hasMany(self::class, 'parent_id', 'id');
+        return $this->hasMany(static::class, 'parent_id', 'id');
     }
 
     public function fillSons(): HasMany

@@ -41,38 +41,10 @@ return array (
         'annuale' => 'Annuale',
       ),
     ),
-    'risultati_ottenuti' => 
-    array (
-      'label' => 'Risultati Ottenuti',
-      'placeholder' => 'Valuta i risultati',
-      'help' => 'Valutazione dei risultati raggiunti',
-      'scale' => 
-      array (
-        1 => 'Insufficiente',
-        2 => 'Sufficiente',
-        3 => 'Buono',
-        4 => 'Ottimo',
-        5 => 'Eccellente',
-      ),
-    ),
-    'qualita_prestazione' => 
-    array (
-      'label' => 'Qualità della Prestazione',
-      'placeholder' => 'Valuta la qualità',
-      'help' => 'Valutazione della qualità del lavoro',
-    ),
-    'arricchimento_professionale' => 
-    array (
-      'label' => 'Crescita Professionale',
-      'placeholder' => 'Valuta la crescita',
-      'help' => 'Valutazione dello sviluppo professionale',
-    ),
-    'impegno' => 
-    array (
-      'label' => 'Impegno',
-      'placeholder' => 'Valuta l\'impegno',
-      'help' => 'Valutazione dell\'impegno dimostrato',
-    ),
+    'risultati_ottenuti' => 'Contributo al conseguimento degli obiettivi',
+    'qualita_prestazione' => 'Rapporto con l\'utenza interna ed esterna',
+    'arricchimento_professionale' => 'Proposte di azioni migliorative',
+    'impegno' => 'Clima sociale interno',
     'note' => 
     array (
       'label' => 'Note',
@@ -217,8 +189,10 @@ return array (
     ),
     'fill' => 
     array (
-      'label' => 'fill',
+      'label' => 'compila',
+      'icon' => 'performance-region-document',
     ),
+    'esperienza_acquisita' => 'Gestione delle risorse',
   ),
   'actions' => 
   array (
@@ -262,5 +236,9 @@ return array (
       'approved' => 'Approvata',
       'rejected' => 'Rifiutata',
     ),
+  ),
+  'model' => 
+  array (
+    'label' => 'individuale dip.model',
   ),
 );

@@ -83,6 +83,35 @@ trait MutatorTrait
         return $float_value;
     }
 
+    public function getTotalePunteggio(): ?float
+    {
+        if ($this->getKey() == null) {
+            return null;
+        }
+
+        
+        $value = 0;
+        $criteri_valutazione=$this->criteriValutazione->where('post_type',$this->type);
+        $tmp=[];
+        foreach ($criteri_valutazione as $v) {
+            $val = $this->{$v->nome};
+            $peso = $this->getPeso((string) $v->nome);
+
+            $value += $val * $peso / 4;
+            $tmp[]=[
+                'nome'=>$v->nome,
+                'val'=>$val,
+                'peso'=>$peso,
+                'value'=>$value,
+            ];
+        }
+        dddx($value);
+        
+
+        return $value;
+    }
+
+
     public function getTotalePunteggioAttribute(?float $value): ?float
     {
         if ($this->getKey() == null) {
@@ -92,15 +121,23 @@ trait MutatorTrait
         if ($value !== null && $value >= 1) {
             return $value;
         }
-
+        
         $value = 0;
-
-        foreach ($this->criteriValutazione as $v) {
+        $criteri_valutazione=$this->criteriValutazione->where('post_type',$this->type);
+        $tmp=[];
+        foreach ($criteri_valutazione as $v) {
             $val = $this->{$v->nome};
             $peso = $this->getPeso((string) $v->nome);
 
             $value += $val * $peso / 4;
+            $tmp[]=[
+                'nome'=>$v->nome,
+                'val'=>$val,
+                'peso'=>$peso,
+                'value'=>$value,
+            ];
         }
+        
         if ($value <= 0.001 && $this->ha_diritto > 0) {
             $where = [
                 'ente' => $this->ente,
@@ -112,7 +149,7 @@ trait MutatorTrait
                 ->first();
             if ($row !== null) {
                 $up = [];
-                foreach ($this->criteriValutazione as $v) {
+                foreach ($criteri_valutazione as $v) {
                     $up[$v->nome] = $row->{$v->nome};
                 }
                 $this->update($up);

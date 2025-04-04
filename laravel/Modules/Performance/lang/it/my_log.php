@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 return array (
   'navigation' => 
   array (
@@ -50,6 +51,10 @@ return array (
       'label' => 'Utente',
       'placeholder' => 'Seleziona l\'utente',
       'help' => 'Utente associato al log',
+    ),
+    'applyFilters' => 
+    array (
+      'label' => 'applyFilters',
     ),
   ),
 );

@@ -1,4 +1,6 @@
-<?php return array (
+<?php
+
+return array (
   'navigation' => 
   array (
     'name' => 'Attività Progetto',
@@ -176,6 +178,10 @@
         'label' => 'employees.full_name',
       ),
     ),
+    'create' => 
+    array (
+      'label' => 'create',
+    ),
   ),
   'actions' => 
   array (
@@ -259,4 +265,4 @@
     ),
   ),
   'title' => 'project activities',
-);
+);

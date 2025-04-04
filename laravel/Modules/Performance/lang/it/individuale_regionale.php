@@ -119,6 +119,26 @@ return array (
     array (
       'label' => 'applyFilters',
     ),
+    'toggleColumns' => 
+    array (
+      'label' => 'toggleColumns',
+    ),
+    'reorderRecords' => 
+    array (
+      'label' => 'reorderRecords',
+    ),
+    'resetFilters' => 
+    array (
+      'label' => 'resetFilters',
+    ),
+    'openFilters' => 
+    array (
+      'label' => 'openFilters',
+    ),
+    'value' => 
+    array (
+      'label' => 'value',
+    ),
   ),
   'actions' => 
   array (
@@ -176,5 +196,9 @@ return array (
       'export_ready' => 'Report pronto per il download',
       'comparison_available' => 'Confronto con altre regioni disponibile',
     ),
+  ),
+  'model' => 
+  array (
+    'label' => 'individuale regionale.model',
   ),
 );

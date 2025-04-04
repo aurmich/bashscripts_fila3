@@ -66,6 +66,9 @@ cd /var/www/html/_bases/base_ptvx_fila3/laravel
 - Il rispetto di questa regola è **obbligatorio** per tutti gli sviluppatori.
 - Il codice che non supera PHPStan a livello 9 non deve essere committato.
 - Ricorda di configurare correttamente l'autocompletion in IDE come PHPStorm o VS Code per evitare errori comuni.
+- Utilizza sempre `declare(strict_types=1);` all'inizio di ogni file PHP.
+- Evita l'uso di `mixed` se non strettamente necessario.
+- Utilizza sempre le funzioni sicure di `thecodingmachine/safe` per le funzioni native di PHP.
 
 ## Risoluzione dei Problemi Comuni
 
@@ -86,3 +89,10 @@ $variabile = funzione_che_causa_errore();
 ```
 
 **Attenzione**: Ogni utilizzo di `@phpstan-ignore-next-line` deve essere giustificato con un commento che spieghi perché non è possibile correggere l'errore in modo appropriato. 
+
+## Convenzioni per i Moduli
+
+1. Ogni modulo deve avere la propria documentazione nella cartella `docs` del modulo.
+2. I modelli devono essere tipizzati correttamente con i loro attributi.
+3. Le risorse Filament devono estendere la classe base corretta e implementare tutti i metodi richiesti.
+4. Utilizzare sempre le classi di tipo corrette per i filtri e le azioni. 

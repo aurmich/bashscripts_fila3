@@ -1,4 +1,6 @@
-<?php return array (
+<?php
+
+return array (
   'navigation' => 
   array (
     'name' => 'Dipendente Progetto',
@@ -128,6 +130,26 @@
     array (
       'label' => 'sum_total_row',
     ),
+    'posizione_inail' => 
+    array (
+      'label' => 'posizione_inail',
+    ),
+    'codice_fiscale' => 
+    array (
+      'label' => 'codice_fiscale',
+    ),
+    'nome' => 
+    array (
+      'label' => 'nome',
+    ),
+    'cognome' => 
+    array (
+      'label' => 'cognome',
+    ),
+    'matricola' => 
+    array (
+      'label' => 'matricola',
+    ),
   ),
   'actions' => 
   array (
@@ -206,4 +228,4 @@
     ),
   ),
   'title' => 'project employees',
-);
+);

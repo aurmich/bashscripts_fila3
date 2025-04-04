@@ -16,19 +16,22 @@ use Modules\Performance\Models\Individuale;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 use Filament\Resources\Pages\Concerns\HasRelationManagers;
 use Filament\Resources\Pages\Concerns\InteractsWithRecord;
+use Modules\Xot\Filament\Resources\Pages\XotBaseResourcePage;
 use Modules\Performance\Filament\Resources\IndividualeResource;
 
 /**
  * @property ComponentContainer $form
  * @property Individuale $record
  */
-class FillOutTheForm extends Page
+class FillOutTheForm extends XotBaseResourcePage
 {
+    /*
     use HasRelationManagers;
     use InteractsWithRecord;
     use NavigationLabelTrait;
-
+    */
     public static string $resource = IndividualeResource::class;
+    
 
     public string $previousUrl = '#';
 
@@ -69,6 +72,7 @@ class FillOutTheForm extends Page
             $k = $criterio->nome;
             $this->data[$k] = data_get($this->record, $k, 0);
         }
+       
         $this->excellence = (bool) $this->record->excellence;
         $this->totale = (float) $this->record->totale_punteggio;
         // $this->fillForm();
@@ -97,11 +101,12 @@ class FillOutTheForm extends Page
         */
         // dddx($this->record->options);
         Assert::isInstanceOf($model = $this->record, Individuale::class);
+        $model->options()->where('parent_id',null)->update(['parent_id' => 0]);
         $criteri_options_root = $model->options()
             ->where('parent_id', 0)
             ->where('name', 'criterio')
             ->get();
-
+        
         return [
             'criteri_options_root' => $criteri_options_root,
             'view' => $this->getView(),
@@ -183,11 +188,13 @@ class FillOutTheForm extends Page
     {
         $tot = 0;
 
-        foreach ($this->record->criteriValutazione as $v) {
+        $criteri_valutazione=$this->record->criteriValutazione->where('post_type',$this->record->type);
+        foreach($criteri_valutazione as $v) {
             $value = floatval($this->data[$v->nome]);
             $peso = $this->record->getPeso((string) $v->nome);
             $tot += $peso * $value;
         }
+        
         $tot = $tot / 4;
 
         $this->totale = $tot;

@@ -145,6 +145,7 @@ trait FunctionTrait
 
     public function getPeso(string $name): int
     {
+        
         $peso = $this->peso;
         $field = 'peso_'.$name;
         $value = $peso?->getAttributeValue($field);
@@ -290,19 +291,5 @@ trait FunctionTrait
             && (float)($this->totale_punteggio ?? 0) > 1;
     }
 
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Modules\Performance\Models\IndividualePoPesi, static>
-     */
-    protected function pesoPo()
-    {
-        // ... existing code ...
-    }
-
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Modules\Performance\Models\IndividualePesi, static>
-     */
-    protected function peso()
-    {
-        // ... existing code ...
-    }
+    
 }
