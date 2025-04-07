@@ -48,7 +48,7 @@ push_subtree() {
             git subtree split --prefix="$LOCAL_PATH" -b "$TEMP_BRANCH"
 
             # Then force push that branch
-            git push  "$REMOTE_REPO" "$TEMP_BRANCH":"$REMOTE_BRANCH"
+            git push -f "$REMOTE_REPO" "$TEMP_BRANCH":"$REMOTE_BRANCH"
 
             # Optionally, clean up the temporary branch
             git branch -D "$TEMP_BRANCH"
