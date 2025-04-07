@@ -137,7 +137,7 @@ Questo progetto è sotto licenza MIT - vedi il file [LICENSE](LICENSE) per i det
 
 ## 👥 Autori
 
-- **Michele Aurilio** - *Lavoro Iniziale* - [aurmich](https://github.com/aurmich)
+- **Marco Sottana** - *Lavoro Iniziale* - [aurmich](https://github.com/aurmich)
 
 ## 🙏 Ringraziamenti
 
