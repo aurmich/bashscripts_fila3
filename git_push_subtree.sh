@@ -40,7 +40,7 @@ push_subtree() {
     
     find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
 
-    if(!git subtree push -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH")
+    if(! git subtree push -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH")
     then
         if(! git push  "$REMOTE_REPO" $(git subtree split --prefix="$LOCAL_PATH"):"$REMOTE_BRANCH")
         then
