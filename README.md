@@ -147,8 +147,6 @@ Questo progetto è sotto licenza MIT - vedi il file [LICENSE](LICENSE) per i det
 
 ---
 
-<div align="center">
-  <sub>Built with ❤️ by the OrisBroker Team</sub>
-</div>
+
 
 > **Nota**: Questo README è in continuo aggiornamento. Se trovi errori o hai suggerimenti, apri pure una issue! 
