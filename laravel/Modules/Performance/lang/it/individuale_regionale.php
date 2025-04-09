@@ -139,6 +139,22 @@ return array (
     array (
       'label' => 'value',
     ),
+    'fill' => 
+    array (
+      'label' => 'fill',
+    ),
+    'delete' => 
+    array (
+      'label' => 'delete',
+    ),
+    'edit' => 
+    array (
+      'label' => 'edit',
+    ),
+    'view' => 
+    array (
+      'label' => 'view',
+    ),
   ),
   'actions' => 
   array (
