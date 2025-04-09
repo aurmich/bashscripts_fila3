@@ -7,3 +7,6 @@ git subtree merge --prefix=bashscripts bashscripts-temp
 - fatal: refusing to merge unrelated histories
 git subtree merge --prefix=bashscripts bashscripts-temp --rejoin
 - fatal: refusing to merge unrelated histories
+git merge -s subtree bashscripts-temp --allow-unrelated-histories
+git subtree merge --prefix=bashscripts bashscripts-temp --rejoin
+- Already up to date.
