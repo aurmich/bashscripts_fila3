@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🛠️ Compiled files and binaries
 *.jar
 *.phar
@@ -54,7 +53,6 @@ public_html/vendor/
 laravel/Modules/Predict/
 *.old
 public_html/plugins/
-=======
 /vendor
 *.lock
 /build
@@ -84,4 +82,3 @@ cache/
 build
 *.exe
 *:Zone.Identifier
->>>>>>> temp-branch
