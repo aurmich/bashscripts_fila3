@@ -107,6 +107,26 @@ return array (
     array (
       'label' => 'toggleColumns',
     ),
+    'reorderRecords' => 
+    array (
+      'label' => 'reorderRecords',
+    ),
+    'resetFilters' => 
+    array (
+      'label' => 'resetFilters',
+    ),
+    'openFilters' => 
+    array (
+      'label' => 'openFilters',
+    ),
+    'isActive' => 
+    array (
+      'label' => 'isActive',
+    ),
+    'deactivate' => 
+    array (
+      'label' => 'deactivate',
+    ),
   ),
   'actions' => 
   array (

@@ -82,6 +82,10 @@ return array (
     array (
       'label' => 'personal_team',
     ),
+    'delete' => 
+    array (
+      'label' => 'delete',
+    ),
   ),
   'actions' => 
   array (
@@ -112,5 +116,9 @@ return array (
     array (
       'label' => 'team.plural.model',
     ),
+  ),
+  'model' => 
+  array (
+    'label' => 'team.model',
   ),
 );
