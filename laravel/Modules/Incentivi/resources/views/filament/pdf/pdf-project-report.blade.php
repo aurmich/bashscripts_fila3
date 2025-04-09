@@ -3,7 +3,11 @@
 <head>
     <title>Resoconto Progetto</title>
     {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
-    <link rel="stylesheet" href="{{ $_theme->asset('ptv::dist/assets/app.css') }}">
+    {{-- <link rel="stylesheet" href="{{ $_theme->asset('ptv::dist/assets/app.css') }}"> --}}
+    {{ $_theme->asset('ptv::dist/assets/app.css') }}
+die();
+    <link rel="stylesheet" href="{{ Module::asset('Ptv:resources/dist/assets/app.css') }}">
+    
 </head>
 
 <body>

@@ -1,1 +1,0 @@
-[{"Name":"JSESSIONID","Value":"880994C156634372CC59DAF6950F7720","Domain":"sigtransfer.sigmapaghe.com","Path":"\/","Max-Age":null,"Expires":null,"Secure":false,"Discard":false,"HttpOnly":false}]
