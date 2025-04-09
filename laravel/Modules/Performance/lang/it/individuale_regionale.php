@@ -159,6 +159,99 @@ return array (
     array (
       'label' => 'create',
     ),
+    'anno' => 
+    array (
+      'label' => 'anno',
+    ),
+    'al' => 
+    array (
+      'label' => 'al',
+    ),
+    'dal' => 
+    array (
+      'label' => 'dal',
+    ),
+    'repar_txt' => 
+    array (
+      'label' => 'repar_txt',
+    ),
+    'repar' => 
+    array (
+      'label' => 'repar',
+    ),
+    'stabi_txt' => 
+    array (
+      'label' => 'stabi_txt',
+    ),
+    'stabi' => 
+    array (
+      'label' => 'stabi',
+    ),
+    'posfunval' => 
+    array (
+      'label' => 'posfunval',
+    ),
+    'categoria_ecoval' => 
+    array (
+      'label' => 'categoria_ecoval',
+    ),
+    'ha_diritto' => 
+    array (
+      'label' => 'ha_diritto',
+    ),
+    'motivo' => 
+    array (
+      'label' => 'motivo',
+    ),
+    'mail_sended_at' => 
+    array (
+      'label' => 'mail_sended_at',
+    ),
+    'cognome' => 
+    array (
+      'label' => 'cognome',
+    ),
+    'nome' => 
+    array (
+      'label' => 'nome',
+    ),
+    'matr' => 
+    array (
+      'label' => 'matr',
+    ),
+    'email' => 
+    array (
+      'label' => 'email',
+    ),
+    'totale_punteggio' => 
+    array (
+      'label' => 'totale_punteggio',
+    ),
+    'propro' => 
+    array (
+      'label' => 'propro',
+    ),
+    'posfun' => 
+    array (
+      'label' => 'posfun',
+    ),
+    'categoria_eco' => 
+    array (
+      'label' => 'categoria_eco',
+    ),
+    'hh_assenza_dalal' => 
+    array (
+      'label' => 'hh_assenza_dalal',
+    ),
+    'gg_assenza_dalal' => 
+    array (
+      'label' => 'gg_assenza_dalal',
+    ),
+    'risultati_ottenuti' => 'Conseguimento degli obiettivi',
+    'qualita_prestazione' => 'Monitoraggio delle attività afferenti i processi',
+    'arricchimento_professionale' => 'Attuazione di strategie di miglioramento del "clima lavorativo"',
+    'impegno' => 'Organizzazione della programmazione delle attività',
+    'esperienza_acquisita' => 'Focalizzazione dei processi di comunicazione sulla condivisione dei risultati',
   ),
   'actions' => 
   array (
@@ -179,6 +272,10 @@ return array (
       'label' => 'Confronta Regioni',
       'success' => 'Confronto completato con successo',
       'error' => 'Errore durante il confronto',
+    ),
+    'copy_from_organizzativa' => 
+    array (
+      'label' => 'copy_from_organizzativa',
     ),
   ),
   'messages' => 

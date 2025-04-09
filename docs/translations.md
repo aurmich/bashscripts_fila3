@@ -153,3 +153,96 @@ Tutte le schede condividono i seguenti messaggi di sistema:
     ]
 ]
 ```
+
+## Modulo User
+
+### Struttura Base
+Il modulo User utilizza la seguente struttura per le traduzioni:
+
+```php
+return [
+    'navigation' => [
+        'name' => 'Utenti',
+        'plural' => 'Utenti',
+        'group' => [
+            'name' => 'Gestione Utenti',
+            'description' => 'Gestione degli utenti e dei loro permessi'
+        ],
+        'label' => 'Utenti',
+        'sort' => 26,
+        'icon' => 'user-main'
+    ],
+    'fields' => [
+        // Campi del modulo
+    ],
+    'actions' => [
+        // Azioni disponibili
+    ],
+    'messages' => [
+        // Messaggi di sistema
+    ],
+    'validation' => [
+        // Messaggi di validazione
+    ],
+    'permissions' => [
+        // Permessi
+    ],
+    'model' => [
+        'label' => 'Utente'
+    ]
+];
+```
+
+### Campi Principali
+I campi principali del modulo User includono:
+
+- **Campi di Identità**:
+  - `id`: Identificativo univoco
+  - `name`: Nome utente
+  - `email`: Indirizzo email
+  - `email_verified_at`: Data di verifica email
+
+- **Campi di Sicurezza**:
+  - `password`: Password
+  - `password_confirmation`: Conferma password
+  - `current_password`: Password attuale
+  - `password_expires_at`: Scadenza password
+
+- **Campi di Stato**:
+  - `status`: Stato dell'utente (Attivo/Inattivo/Bloccato)
+  - `verified`: Stato di verifica
+  - `last_login`: Ultimo accesso
+
+### Azioni Disponibili
+Le azioni principali includono:
+- Creazione utente
+- Modifica utente
+- Eliminazione utente
+- Impersonificazione
+- Blocco/Sblocco
+- Invio link reset password
+- Verifica email
+
+### Messaggi di Sistema
+I messaggi di sistema includono notifiche per:
+- Creazione/Modifica/Eliminazione utente
+- Blocco/Sblocco utente
+- Invio link reset password
+- Verifica email
+- Impersonificazione
+
+### Validazione
+Le regole di validazione includono:
+- Unicità email
+- Lunghezza minima password
+- Conferma password
+- Verifica password attuale
+
+### Permessi
+I permessi principali includono:
+- Visualizzazione utenti
+- Creazione utenti
+- Modifica utenti
+- Eliminazione utenti
+- Impersonificazione utenti
+- Gestione ruoli

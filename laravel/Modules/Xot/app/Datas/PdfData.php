@@ -8,13 +8,19 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Datas;
 
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Spatie\LaravelData\Data;
 use Spipu\Html2Pdf\Html2Pdf;
-use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Webmozart\Assert\Assert;
+use Spatie\LaravelPdf\Enums\Unit;
+use Spatie\LaravelPdf\Facades\Pdf;
+use Spatie\LaravelPdf\Enums\Format;
+use Modules\Xot\Enums\PdfEngineEnum;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
+use Spatie\LaravelPdf\Enums\Orientation;
+use Symfony\Component\HttpFoundation\BinaryFileResponse;
+
 
 /**
  * Undocumented class.
@@ -58,6 +64,12 @@ class PdfData extends Data
         */
 
     // public static function make(Model $model = null, string $html = null): self
+
+
+    public PdfEngineEnum $engine = PdfEngineEnum::SPIPU;
+
+    public string $html = '';
+
     public static function make(): self
     {
         return self::from([]);
@@ -79,9 +91,26 @@ class PdfData extends Data
 
     public function fromHtml(string $html): self
     {
-        $html2pdf = new Html2Pdf($this->orientation, $this->format, $this->lang);
-        $html2pdf->writeHTML($html);
-        $html2pdf->output($this->getPath(), $this->dest);
+        switch ($this->engine) {
+            case PdfEngineEnum::SPIPU:
+                dddx('spipu');
+                break;
+            case PdfEngineEnum::SPATIE:
+                Pdf::html($this->html)
+                ->orientation(Orientation::Portrait)
+                ->format(Format::A4)
+                ->margins(10, 10, 20, 0, Unit::Pixel)
+                // ->name(str_slug($project->nome).'-REPORT.pdf')
+                ->save($this->getPath());
+                ;
+                break;
+        }
+        // $html2pdf = new Html2Pdf($this->orientation, $this->format, $this->lang);
+        // $html2pdf->writeHTML($html);
+        // $html2pdf->output($this->getPath(), $this->dest);
+
+        $this->html = $html;
+        // $this->engine->build($this);
 
         return $this;
     }
@@ -110,5 +139,18 @@ class PdfData extends Data
         Assert::notNull($res = Storage::disk($this->disk)->get($this->filename), '['.__LINE__.']['.class_basename($this).']');
 
         return $res;
+    }
+
+    public function view(string $view, array $params=[]): self
+    {
+        $out = view($view, $params);
+        $this->html = $out->render();
+        return $this->fromHtml($this->html);
+    }
+
+    public function setEngine(PdfEngineEnum $engine): self
+    {
+        $this->engine = $engine;
+        return $this;
     }
 }

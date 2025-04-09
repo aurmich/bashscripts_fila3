@@ -9,8 +9,10 @@ declare(strict_types=1);
 namespace Modules\Incentivi\Filament\Resources\ProjectResource\Actions;
 
 use Filament\Actions\Action;
-use Illuminate\Database\Eloquent\Model;
+use Modules\Xot\Datas\PdfData;
+use Modules\Xot\Enums\PdfEngineEnum;
 use Modules\Incentivi\Models\Project;
+use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Export\PdfByHtmlAction_Portrait;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
@@ -50,21 +52,22 @@ class GeneratePDFProjectReportAction extends Action
                     'rup' => $rupActivityEmployee,
                 ];
 
-                $out = view($view, $viewParams);
-                $html = $out->render();
-                $pdfAction = app(PdfByHtmlAction_Portrait::class);
+                return PdfData::make()
+                    ->setEngine(PdfEngineEnum::SPATIE)
+                    ->view($view, $viewParams)
+                    ->download();
 
-                $pdfName = str_slug($project->nome).'-REPORT'.'.pdf';
+                // $pdfName = str_slug($project->nome).'-REPORT'.'.pdf';
 
-                /** @var BinaryFileResponse */
-                $response = $pdfAction->execute(
-                    $html,
-                    $pdfName,
-                    'public',
-                    'download'
-                );
+                // /** @var BinaryFileResponse */
+                // $response = $pdfAction->execute(
+                //     $html,
+                //     $pdfName,
+                //     'public',
+                //     'download'
+                // );
 
-                return $response;
+                // return $response;
             })
             // ->visible(fn (Model $record): bool => $record->getAttribute('stato')->value === 'concluso')
             ;

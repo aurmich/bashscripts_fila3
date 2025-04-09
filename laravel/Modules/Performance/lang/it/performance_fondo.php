@@ -92,6 +92,30 @@ return array (
     array (
       'label' => 'resetFilters',
     ),
+    'applyFilters' => 
+    array (
+      'label' => 'applyFilters',
+    ),
+    'openFilters' => 
+    array (
+      'label' => 'openFilters',
+    ),
+    'updated_by' => 
+    array (
+      'label' => 'updated_by',
+    ),
+    'created_by' => 
+    array (
+      'label' => 'created_by',
+    ),
+    'created_at' => 
+    array (
+      'label' => 'created_at',
+    ),
+    'delete' => 
+    array (
+      'label' => 'delete',
+    ),
   ),
   'actions' => 
   array (
@@ -178,5 +202,9 @@ return array (
       'success' => 'Fondo eliminato con successo',
       'error' => 'Errore durante l\'eliminazione',
     ),
+  ),
+  'model' => 
+  array (
+    'label' => 'performance fondo.model',
   ),
 );
