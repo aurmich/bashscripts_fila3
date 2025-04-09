@@ -155,6 +155,10 @@ return array (
     array (
       'label' => 'view',
     ),
+    'create' => 
+    array (
+      'label' => 'create',
+    ),
   ),
   'actions' => 
   array (
