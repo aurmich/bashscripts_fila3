@@ -2,8 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Modules\Rating\Models;
+namespace Modules\Tenant\Models;
 
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Traits\Updater;
 
@@ -12,12 +14,13 @@ use Modules\Xot\Traits\Updater;
  */
 abstract class BaseModel extends Model
 {
+    use HasFactory;
     use Updater;
 
     /**
      * Indicates whether attributes are snake cased on arrays.
      *
-     * @see  https://laravel-news.com/6-eloquent-secrets
+     * @see https://laravel-news.com/6-eloquent-secrets
      *
      * @var bool
      */
@@ -33,10 +36,10 @@ abstract class BaseModel extends Model
     protected $perPage = 30;
 
     /** @var string */
-    protected $connection = 'rating';
+    protected $connection = 'setting';
 
     /** @var list<string> */
-    protected $fillable = ['id'];
+    protected $appends = [];
 
     /** @var string */
     protected $primaryKey = 'id';
@@ -49,16 +52,33 @@ abstract class BaseModel extends Model
         // 'password'
     ];
 
+    /**
+     * Create a new factory instance for the model.
+     *
+     * @return Factory
+     */
+    protected static function newFactory()
+    {
+        return app(\Modules\Xot\Actions\Factory\GetFactoryAction::class)->execute(static::class);
+    }
+
     /** @return array<string, string> */
     public function casts(): array
     {
         return [
             'id' => 'string',
             'uuid' => 'string',
-            // 'published_at' => 'datetime:Y-m-d', // da verificare
             'published_at' => 'datetime',
+
+            'verified_at' => 'datetime',
+
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
+            'deleted_at' => 'datetime',
+
+            'updated_by' => 'string',
+            'created_by' => 'string',
+            'deleted_by' => 'string',
         ];
     }
 }

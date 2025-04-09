@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Rating\Providers;
+namespace Modules\Tenant\Providers;
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as BaseEventServiceProvider;
 
@@ -25,7 +25,5 @@ class EventServiceProvider extends BaseEventServiceProvider
     /**
      * Configure the proper event listeners for email verification.
      */
-    protected function configureEmailVerification(): void
-    {
-    }
+    protected function configureEmailVerification(): void {}
 }

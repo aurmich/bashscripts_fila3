@@ -1,45 +1,57 @@
 {
-    "name": "laraxot/module_rating_fila3",
-    "description": "",
-    "authors": [{
-        "name": "Marco Sottana",
-        "email": "marco.sottana@gmail.com"
-    }],
+    "name": "laraxot/module_tenant_fila3",
+    "description": "tenant module for software architecture that allows a single instance of a software application to serve multiple tenants",
+    "keywords": [
+        "laraxot",
+        "laravel",
+        "filament",
+        "module_tenant",
+        "Laravel",
+        "Tenant module"
+    ],
+    "homepage": "https://github.com/laraxot/module_tenant_fila3",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marco Xot",
+            "email": "marco.sottana@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {},
+    "require-dev": {},
+    "repositories_comment": [
+        {
+            "type": "path",
+            "url": "../User"
+        },
+        {
+            "type": "path",
+            "url": "../Media"
+        },
+        {
+            "type": "path",
+            "url": "../Xot"
+        }
+    ],
     "extra": {
         "laravel": {
             "providers": [
-                "Modules\\Rating\\Providers\\RatingServiceProvider",
-                "Modules\\Rating\\Providers\\Filament\\AdminPanelProvider"
+                "Modules\\Tenant\\Providers\\TenantServiceProvider",
+                "Modules\\Tenant\\Providers\\Filament\\AdminPanelProvider"
             ],
-            "aliases": {
-
-            }
+            "aliases": {}
         }
     },
     "autoload": {
         "psr-4": {
-            "Modules\\Rating\\": "app/",
-            "Modules\\Rating\\Database\\Factories\\": "database/factories/",
-            "Modules\\Rating\\Database\\Seeders\\": "database/seeders/"
+            "Modules\\Tenant\\": "app/",
+            "Modules\\Tenant\\Database\\Factories\\": "database/factories/",
+            "Modules\\Tenant\\Database\\Seeders\\": "database/seeders/"
         }
     },
-    "require_comment": {
-        "calebporzio/sushi": "^2.4",
-        "illuminate/contracts": "^9.0|^10.0|^11.0",
-        "illuminate/support": "^9.12|^10.0|^11.0",
-        "kalnoy/nestedset": "^6.0",
-        "laraxot/module_xot": "dev-master",
-        "laraxot/module_lang": "dev-master",
-        "livewire/livewire": "^2.10",
-        "phpdocumentor/type-resolver": "^1.5",
-        "spatie/laravel-package-tools": "^1.11.3",
-        "spatie/laravel-sluggable": "^3.4",
-        "spatie/laravel-translatable": "^6.1"
-    },
-    "require-dev_comment": {
-    },
     "scripts": {
-        "post-autoload-dump": [
+        "post-autoload-dump1": [
             "@php vendor/bin/testbench package:discover --ansi"
         ],
         "post-update-cmd": [
@@ -54,7 +66,9 @@
         "sort-packages": true,
         "allow-plugins": {
             "phpstan/extension-installer": true,
-            "pestphp/pest-plugin": true
+            "pestphp/pest-plugin": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "wikimedia/composer-merge-plugin": true
         }
     },
     "minimum-stability": "dev",

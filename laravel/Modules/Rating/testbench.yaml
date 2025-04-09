@@ -1,2 +1,5 @@
 providers:
-  - Modules\Rating\Providers\RatingServiceProvider
+  - Modules\Tenant\Providers\TenantServiceProvider
+  - Modules\Tenant\Providers\Filament\AdminPanelProvider
+  - Nwidart\Modules\LaravelModulesServiceProvider
+

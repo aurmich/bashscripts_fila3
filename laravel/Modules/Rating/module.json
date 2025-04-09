@@ -1,12 +1,14 @@
 {
-    "name": "Rating",
-    "alias": "rating",
+    "name": "Tenant",
+    "alias": "tenant",
     "description": "",
     "keywords": [],
-    "priority": 0,
+    "priority": 2,
+    "active": 1,
+    "order": 2,
     "providers": [
-        "Modules\\Rating\\Providers\\RatingServiceProvider",
-        "Modules\\Rating\\Providers\\Filament\\AdminPanelProvider"
+        "Modules\\Tenant\\Providers\\TenantServiceProvider",
+        "Modules\\Tenant\\Providers\\Filament\\AdminPanelProvider"
     ],
     "aliases": [],
     "files": [],
