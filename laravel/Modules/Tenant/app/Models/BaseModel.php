@@ -2,11 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Modules\Tenant\Models;
+namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Modules\Xot\Models\Traits\RelationX;
 use Modules\Xot\Traits\Updater;
 
 /**
@@ -15,6 +16,7 @@ use Modules\Xot\Traits\Updater;
 abstract class BaseModel extends Model
 {
     use HasFactory;
+    use RelationX;
     use Updater;
 
     /**
@@ -36,7 +38,7 @@ abstract class BaseModel extends Model
     protected $perPage = 30;
 
     /** @var string */
-    protected $connection = 'setting';
+    protected $connection = 'user';
 
     /** @var list<string> */
     protected $appends = [];
@@ -53,9 +55,10 @@ abstract class BaseModel extends Model
     ];
 
     /**
+     * @see vendor/ laravel / framework / src / Illuminate / Database / Eloquent / Factories / HasFactory.php
      * Create a new factory instance for the model.
      *
-     * @return Factory
+     * @return Factory<static>
      */
     protected static function newFactory()
     {
@@ -63,13 +66,13 @@ abstract class BaseModel extends Model
     }
 
     /** @return array<string, string> */
-    public function casts(): array
+    protected function casts(): array
     {
         return [
             'id' => 'string',
             'uuid' => 'string',
-            'published_at' => 'datetime',
 
+            'published_at' => 'datetime',
             'verified_at' => 'datetime',
 
             'created_at' => 'datetime',

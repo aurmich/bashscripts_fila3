@@ -1,55 +1,64 @@
 {
-    "name": "laraxot/module_tenant_fila3",
-    "description": "tenant module for software architecture that allows a single instance of a software application to serve multiple tenants",
+    "name": "laraxot/module_user_fila3",
+    "description": "user module for user management",
     "keywords": [
         "laraxot",
         "laravel",
         "filament",
-        "module_tenant",
+        "module_user",
         "Laravel",
-        "Tenant module"
+        "User module",
+        "Users",
+        "Users management",
+        "Xot"
     ],
-    "homepage": "https://github.com/laraxot/module_tenant_fila3",
+    "homepage": "https://github.com/laraxot/module_user_fila3",
     "license": "MIT",
     "authors": [
         {
-            "name": "Marco Xot",
-            "email": "marco.sottana@gmail.com",
-            "role": "Developer"
-        }
-    ],
-    "require": {},
-    "require-dev": {},
-    "repositories_comment": [
-        {
-            "type": "path",
-            "url": "../User"
-        },
-        {
-            "type": "path",
-            "url": "../Media"
-        },
-        {
-            "type": "path",
-            "url": "../Xot"
+            "name": "Marco Sottana",
+            "email": "marco.sottana@gmail.com"
         }
     ],
     "extra": {
         "laravel": {
             "providers": [
-                "Modules\\Tenant\\Providers\\TenantServiceProvider",
-                "Modules\\Tenant\\Providers\\Filament\\AdminPanelProvider"
+                "Livewire\\LivewireServiceProvider",
+                "Modules\\User\\Providers\\UserServiceProvider",
+                "Modules\\User\\Providers\\Filament\\AdminPanelProvider"
             ],
             "aliases": {}
         }
     },
     "autoload": {
         "psr-4": {
-            "Modules\\Tenant\\": "app/",
-            "Modules\\Tenant\\Database\\Factories\\": "database/factories/",
-            "Modules\\Tenant\\Database\\Seeders\\": "database/seeders/"
+            "Modules\\User\\": "app/",
+            "Modules\\User\\Database\\Factories\\": "database/factories/",
+            "Modules\\User\\Database\\Seeders\\": "database/seeders/"
         }
     },
+    "require": {
+        "flowframe/laravel-trend": "*",
+        "jenssegers/agent": "*",
+        "laravel/passport": "*",
+        "socialiteproviders/auth0": "*",
+        "spatie/laravel-personal-data-export": "*"
+    },
+    "require-dev": {},
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../Xot"
+        },
+        {
+            "type": "path",
+            "url": "../Tenant"
+        },
+        {
+            "type": "path",
+            "url": "../UI"
+        }
+    ],
     "scripts": {
         "post-autoload-dump1": [
             "@php vendor/bin/testbench package:discover --ansi"
@@ -65,7 +74,6 @@
     "config": {
         "sort-packages": true,
         "allow-plugins": {
-            "phpstan/extension-installer": true,
             "pestphp/pest-plugin": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "wikimedia/composer-merge-plugin": true

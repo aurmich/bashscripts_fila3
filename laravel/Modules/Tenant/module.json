@@ -1,16 +1,17 @@
 {
-    "name": "Tenant",
-    "alias": "tenant",
+    "name": "User",
+    "alias": "user",
     "description": "",
     "keywords": [],
-    "priority": 2,
-    "active": 1,
-    "order": 2,
+    "priority": 0,
     "providers": [
-        "Modules\\Tenant\\Providers\\TenantServiceProvider",
-        "Modules\\Tenant\\Providers\\Filament\\AdminPanelProvider"
+        "Modules\\User\\Providers\\UserServiceProvider",
+        "Modules\\User\\Providers\\Filament\\AdminPanelProvider"
     ],
-    "aliases": [],
-    "files": [],
-    "requires": []
+    "migration": {
+        "seeds": [
+            "Modules\\User\\Database\\Seeders\\RolesSeeder"
+        ]
+    },
+    "files": []
 }

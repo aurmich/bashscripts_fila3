@@ -1,5 +1,3 @@
 providers:
-  - Modules\Tenant\Providers\TenantServiceProvider
-  - Modules\Tenant\Providers\Filament\AdminPanelProvider
-  - Nwidart\Modules\LaravelModulesServiceProvider
-
+  - Modules\User\Providers\UserServiceProvider
+  - Modules\User\Providers\Filament\AdminPanelProvider

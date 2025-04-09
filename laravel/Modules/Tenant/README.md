@@ -1,81 +1,163 @@
-# 🌐 Simplify Multi-Tenancy with the Fila3 Tenant Module! 🚀
+# Module User Fila3 🔥 Ultimate User, Roles & Permissions Manager for FilamentPHP 🚀
 
-![GitHub issues](https://img.shields.io/github/issues/laraxot/module_tenant_fila3)
-![GitHub forks](https://img.shields.io/github/forks/laraxot/module_tenant_fila3)
-![GitHub stars](https://img.shields.io/github/stars/laraxot/module_tenant_fila3)
-![License](https://img.shields.io/badge/license-MIT-green)
+[![Latest Release](https://img.shields.io/github/v/release/laraxot/module_user_fila3)](https://github.com/laraxot/module_user_fila3/releases)
+[![Build Status](https://img.shields.io/travis/laraxot/module_user_fila3/master)](https://travis-ci.org/laraxot/module_user_fila3)
+[![Code Coverage](https://img.shields.io/codecov/c/github/laraxot/module_user_fila3)](https://codecov.io/gh/laraxot/module_user_fila3)
+[![License](https://img.shields.io/github/license/laraxot/module_user_fila3)](LICENSE)
 
-Welcome to the **Fila3 Tenant Module**! This powerful multi-tenancy solution is designed to help developers build scalable applications that can serve multiple clients with ease. Streamline your architecture and enhance user experience by managing tenants effortlessly!
+Manage users, roles, and permissions with lightning speed ⚡ through this Laravel module, fully integrated with FilamentPHP. Designed for developers who want **full control** over their user management systems. **Empower your app** with dynamic user access control and module assignments. 🚀
 
-## 📦 What’s Inside?
+### Key Features 🌟
+- **Create Super Admin in Seconds**: Instantly make any user a super admin with `php artisan user:super-admin`. 🛡️
+- **Dynamic Module Assignment**: Control user access to specific modules through `php artisan user:assign-module`. 🎯
+- **Complete Team Management**: Manage teams with simple commands like `php artisan team:create` and `php artisan team:assign-user`. 👥
+- **Permissions that Fit**: Set flexible roles and permissions to fit your app’s unique needs! 🔑
 
-The Fila3 Tenant Module provides a comprehensive suite of features for handling multi-tenancy, including:
+---
 
-- **Tenant Management**: Create, update, and delete tenant profiles with ease.
-- **Isolation**: Ensure data and configurations are securely isolated between tenants.
-- **Flexible Architecture**: Choose between a shared database or separate databases for each tenant.
-- **Dynamic Configuration**: Customize settings for each tenant to suit their unique requirements.
+### Installation Guide 💻
 
-## 🌟 Key Features
+1. **Install the package via Composer:**
+    ```bash
+    composer require laraxot/module_user_fila3
+    ```
 
-- **User Authentication**: Built-in support for tenant-based user authentication.
-- **Role-Based Access Control**: Assign roles and permissions per tenant to maintain security.
-- **Tenant-Specific Routes**: Easily manage routing and access control tailored for each tenant.
-- **Automatic Tenant Switching**: Implement seamless tenant switching based on user context.
-- **Centralized Dashboard**: Monitor all tenants from a single dashboard for administrative ease.
-- **Extensible API**: Integrate with external services and extend functionality effortlessly.
+2. **Run Migrations:**
+    ```bash
+    php artisan module:migrate User
+    ```
 
-## 🚀 Why Choose Fila3 Tenant?
+3. **Publish Config File:**
+    ```bash
+    php artisan vendor:publish --tag="module_user_fila3-config"
+    ```
 
-- **Scalable & Efficient**: Designed for high performance, making it suitable for both small applications and large enterprises.
-- **Developer-Friendly**: Easy to set up and integrate into existing projects.
-- **Community Support**: Engage with an active community of developers ready to help you succeed.
+4. **Create First User:**
+    ```bash
+    php artisan make:filament-user
+    ```
 
-## 🔧 Installation
+---
 
-Getting started with the Fila3 Tenant Module is straightforward! Follow these steps:
+### Supercharged Console Commands 🚀
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/laraxot/module_tenant_fila3.git
+Leverage powerful artisan commands to boost your app’s user management capabilities:
+
+- **Create Super Admin:**
+    ```bash
+    php artisan user:super-admin
+    ```
+    _Transform any user into an all-powerful super admin!_
+
+- **Assign Modules:**
+    ```bash
+    php artisan user:assign-module
+    ```
+    _Dynamically assign or restrict modules for specific users._
+
+- **Manage Teams:**
+    - Create a team:
+        ```bash
+        php artisan team:create
+        ```
+    - Assign a user to a team:
+        ```bash
+        php artisan team:assign-user
+        ```
+
+- **View Available Modules:**
+    ```bash
+    php artisan module:list
+    ```
+    _See all available modules and activate/deactivate them at will._
+
+---
+
+### Configuration 🔧
+
+Easily configure the module in the `module_user_fila3.php` config file to suit your app's specific needs.
+
+### FAQ ❓
+
+- **Q: How do I assign roles?**
+  A: Use the Filament interface or `php artisan user:assign-module` command to assign roles and modules.
+
+- **Q: Can I manage teams?**
+  A: Absolutely! Use `php artisan team:create` to create new teams and `php artisan team:assign-user` to add users.
+
+### Contribute 💪
+
+We 💖 open source! Want to improve this package? Fork the repo and submit a pull request.
+
+---
+
+### Author 👨‍💻
+
+Developed and maintained by [Marco Sottana](https://github.com/marco76tv)  
+📧 Email: marco.sottana@gmail.com
+
+---
+
+### License 📄
+
+This package is open-sourced under the [MIT license](LICENSE).
+
+---
+
+Give your Laravel app the **edge** it deserves with **Module User Fila3**. Try it now! 💥
 
 
-Navigate to the project directory:
-bash
-Copia codice
-cd module_tenant_fila3
-Install dependencies:
-bash
-Copia codice
-npm install
-Configure tenant settings in the config file.
-Launch your application and experience effortless multi-tenancy!
-📜 Usage Examples
-Here are a few snippets to demonstrate how to use the Fila3 Tenant Module in your application:
+# Module users
+Gestione degli utenti, ruoli, permessi tramite l'utilizzo di filament.
 
-Creating a New Tenant
-javascript
-Copia codice
-tenantManager.create({
-  name: "Tenant A",
-  database: "tenant_a_db",
-  settings: { /* tenant-specific settings */ }
-});
-Switching Tenants
-javascript
-Copia codice
-tenantManager.switchTo("Tenant A");
-Retrieving Tenant Information
-javascript
-Copia codice
-const tenantInfo = tenantManager.getCurrentTenant();
-console.log("Current Tenant:", tenantInfo);
-🤝 Contributing
-We welcome contributions! If you have ideas, bug fixes, or enhancements, check out the contributing guidelines to get started.
+## Gestione degli utenti
 
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+![create_user](docs/img/create_user.jpg)
+![set_password](docs/img/set_password.jpg)
 
-👤 Author
-Marco Sottana
-Discover more of my work at marco76tv!
+## Gestione dei ruoli
+![roles list](docs/img/roles_list.JPG)
+
+
+## Aggiungere Modulo nella base del progetto
+Dentro la cartella laravel/Modules
+
+```bash
+git submodule add https://github.com/laraxot/module_user_fila3.git User
+```
+
+## Verificare che il modulo sia attivo
+```bash
+php artisan module:list
+```
+in caso abilitarlo
+```bash
+php artisan module:enable User
+```
+
+## Eseguire le migrazioni
+```bash
+php artisan module:migrate User
+```
+
+## Creare il primo account
+Dalla documentazione di filament utilizziamo:
+```bash
+php artisan make:filament-user
+```
+l'account non potrà visualizzare nulla nella dashboard di amministrazione, in quanto non avrà assegnato nessun ruolo.
+
+## Rendere un account Super Admin
+```bash
+php artisan user:super-admin
+```
+Ora avete il vostro account Super Admin per poter iniziare.
+Esso potrà accedere a tutti i moduli nell'amminstrazione.
+
+## Assegnare un ruolo/modulo
+```bash
+php artisan user:assign-module
+```
+L'account potrà accedere al modulo assegnato.
+
+## [Gestione dei Team](docs/teams.md)

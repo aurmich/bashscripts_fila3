@@ -3,18 +3,18 @@
 declare(strict_types=1);
 
 return [
-    'name' => 'Tenant',
-    'description' => 'Modulo per la gestione multi-tenant dell\'applicazione',
-    'icon' => 'heroicon-o-building-office',
+    'name' => 'User',
+    'description' => 'Modulo per la gestione degli utenti e autorizzazioni',
+    'icon' => 'heroicon-o-users',
     'navigation' => [
         'enabled' => true,
-        'sort' => 80,
+        'sort' => 100,
     ],
     'routes' => [
         'enabled' => true,
         'middleware' => ['web', 'auth'],
     ],
     'providers' => [
-        'Modules\\Tenant\\Providers\\TenantServiceProvider',
+        'Modules\\User\\Providers\\UserServiceProvider',
     ],
 ];
