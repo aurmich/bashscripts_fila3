@@ -4,3 +4,6 @@ git fetch git@github.com:aurmich/bashscripts_fila3.git dev
 git subtree merge --prefix=bashscripts bashscripts-temp --squash
 - Can't squash-merge: 'bashscripts' was never added.
 git subtree merge --prefix=bashscripts bashscripts-temp
+- fatal: refusing to merge unrelated histories
+git subtree merge --prefix=bashscripts bashscripts-temp --rejoin
+- fatal: refusing to merge unrelated histories
