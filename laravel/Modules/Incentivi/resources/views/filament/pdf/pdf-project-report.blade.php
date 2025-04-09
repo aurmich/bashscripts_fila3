@@ -5,7 +5,6 @@
     {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
     {{-- <link rel="stylesheet" href="{{ $_theme->asset('ptv::dist/assets/app.css') }}"> --}}
     <link rel="stylesheet" href="{{ asset('ptv::dist/assets/app.css') }}">
-    
 </head>
 
 <body>
