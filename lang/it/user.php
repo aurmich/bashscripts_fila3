@@ -127,6 +127,10 @@ return array (
     array (
       'label' => 'deactivate',
     ),
+    'delete' => 
+    array (
+      'label' => 'delete',
+    ),
   ),
   'actions' => 
   array (
