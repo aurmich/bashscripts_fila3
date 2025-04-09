@@ -44,10 +44,13 @@ while IFS= read -r line; do
         current_path="${BASH_REMATCH[1]}"
     elif [[ "$line" =~ ^url\ *=\ *(.+)$ && -n "$current_path" ]]; then
         current_url="${BASH_REMATCH[1]}"
+        script="$script_dir/git_push_subtree.sh"
+        chmod +x "$script"
+        sed -i -e 's/\r$//' "$script"
         
         # Chiamata esterna allo script di sincronizzazione
         log "🔄 Sincronizzazione modulo: $current_path"
-        if ! "$script_dir/git_sync_subtree.sh" "$current_path" "$current_url" ; then
+        if ! "$script" "$current_path" "$current_url" ; then
             log "⚠️ Sincronizzazione fallita per $current_path."
         fi
         
