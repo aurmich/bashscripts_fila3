@@ -1,0 +1,3 @@
+git subtree pull -P bashscripts git@github.com:aurmich/bashscripts_fila3.git dev
+git subtree split -P bashscripts -b  bashscripts-temp
+git fetch git@github.com:aurmich/bashscripts_fila3.git dev
