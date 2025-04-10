@@ -21,22 +21,7 @@ die() {
 # Funzione per loggare messaggi
 log() {
     local message="$1"
-<<<<<<< HEAD
-<<<<<<< HEAD
-    echo "$(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$LOG_FILE"
-=======
-<<<<<<< HEAD
     echo "🗓️ $(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$LOG_FILE"
-=======
-    echo "$(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$LOG_FILE"
->>>>>>> 3067e30a78cf264a5c241c6d051c32d744047740
->>>>>>> fcc45bbf3926869b40f96d6a1702010dabb68e8c
-=======
-    echo "🗓️ $(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$LOG_FILE"
-=======
-    echo "$(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$LOG_FILE"
->>>>>>> 3067e30a78cf264a5c241c6d051c32d744047740
->>>>>>> origin/dev
 }
 
 # Funzione per gestire gli errori

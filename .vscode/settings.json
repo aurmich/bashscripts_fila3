@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
 	"editor.formatOnSave": false,
 		"editor.formatOnType": true,
 		"php-cs-fixer.onsave": true,
@@ -34,8 +33,7 @@
     		"**/.git/objects/**": true,
     		"**/.git/subtree-cache/**": true,
     		"**/node_modules/*/**": true
-  		}
-=======
+  		},
 	"editor.formatOnType": true,
 	"php-cs-fixer.onsave": true,
 	"php-cs-fixer.formatHtml": true,
@@ -75,5 +73,4 @@
 	"[vue]": {
 		"editor.defaultFormatter": "octref.vetur"
 	}
->>>>>>> temp-branch
 }
