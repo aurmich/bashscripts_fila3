@@ -8,8 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Models\Policies\XotBasePolicy;
 
-class IndividualeRegionalePolicy extends XotBasePolicy
+class IndividualeRegionalePolicy extends IndividualePolicy
 {
+    /*
     public function viewAny(?UserContract $userContract): bool
     {
         return true;
@@ -54,4 +55,5 @@ class IndividualeRegionalePolicy extends XotBasePolicy
     {
         return true;
     }
+        */
 }

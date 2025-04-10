@@ -55,7 +55,13 @@ class UserResource extends XotBaseResource
             ])->columnSpan(8),
             'section02' => Section::make([
                 'created_at' => Placeholder::make('created_at')
-                    ->content(static fn ($record) => $record->created_at->diffForHumans() ?? new HtmlString('&mdash;')),
+                    ->content(static function ($record) {
+                        if ($record === null || $record->created_at === null) {
+                            return new HtmlString('&mdash;');
+                        }
+                        
+                        return $record->created_at->diffForHumans();
+                    }),
             ])->columnSpan(4),
         ];
     }

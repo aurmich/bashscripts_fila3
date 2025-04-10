@@ -153,6 +153,10 @@ class PasswordData extends Data
      */
     public function getPasswordConfirmationFormComponent(): TextInput
     {
+        if ($this->field_name === null) {
+            throw new \RuntimeException('Il nome del campo password non è stato impostato. Utilizzare setFieldName() prima di chiamare questo metodo.');
+        }
+
         return TextInput::make('password_confirmation')
             ->password()
             ->required()
@@ -169,6 +173,12 @@ class PasswordData extends Data
      */
     public function getPasswordFormComponents(string $field_name): array
     {
+        if (empty($field_name)) {
+            throw new \InvalidArgumentException('Il nome del campo password non può essere vuoto');
+        }
+
+        $this->setFieldName($field_name);
+        
         return [
             $this->getPasswordFormComponent($field_name),
             $this->getPasswordConfirmationFormComponent(),

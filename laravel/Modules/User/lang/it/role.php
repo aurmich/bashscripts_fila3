@@ -16,6 +16,16 @@ return array (
   ),
   'fields' => 
   array (
+    'id' => 
+    array (
+      'label' => 'ID',
+      'tooltip' => 'Identificativo univoco del ruolo',
+    ),
+    'team_id' => 
+    array (
+      'label' => 'ID Team',
+      'tooltip' => 'Identificativo del team associato al ruolo',
+    ),
     'name' => 
     array (
       'label' => 'Nome Ruolo',
@@ -59,23 +69,44 @@ return array (
     ),
     'toggleColumns' => 
     array (
-      'label' => 'toggleColumns',
+      'label' => 'Mostra/Nascondi Colonne',
+      'tooltip' => 'Gestisci la visibilità delle colonne',
     ),
     'reorderRecords' => 
     array (
-      'label' => 'reorderRecords',
+      'label' => 'Riordina Record',
+      'tooltip' => 'Modifica l\'ordine dei record',
     ),
     'resetFilters' => 
     array (
-      'label' => 'resetFilters',
+      'label' => 'Resetta Filtri',
+      'tooltip' => 'Ripristina i filtri predefiniti',
     ),
     'applyFilters' => 
     array (
-      'label' => 'applyFilters',
+      'label' => 'Applica Filtri',
+      'tooltip' => 'Applica i filtri selezionati',
     ),
     'openFilters' => 
     array (
-      'label' => 'openFilters',
+      'label' => 'Apri Filtri',
+      'tooltip' => 'Apri il pannello dei filtri',
+    ),
+    'detach' => 
+    array (
+      'label' => 'detach',
+    ),
+    'edit' => 
+    array (
+      'label' => 'edit',
+    ),
+    'recordId' => 
+    array (
+      'label' => 'recordId',
+    ),
+    'attach' => 
+    array (
+      'label' => 'attach',
     ),
   ),
   'roles' => 
@@ -98,7 +129,7 @@ return array (
     'edit' => 
     array (
       'label' => 'Modifica Ruolo',
-      'tooltip' => 'Clicca per modificare il ruolo selezionato.',
+      'tooltip' => 'Clicca per modificare questo ruolo.',
       'icon' => 'fa fa-edit',
       'color' => 'primary',
     ),
@@ -148,5 +179,22 @@ return array (
     'content' => 'Gestione Contenuti',
     'settings' => 'Impostazioni',
     'reports' => 'Report',
+  ),
+  'validation' => 
+  array (
+    'name_required' => 'Il nome del ruolo è obbligatorio',
+    'name_unique' => 'Questo nome ruolo è già in uso',
+    'permissions_required' => 'Seleziona almeno un permesso',
+  ),
+  'model' => 
+  array (
+    'label' => 'Ruolo',
+  ),
+  'plural' => 
+  array (
+    'model' => 
+    array (
+      'label' => 'role.plural.model',
+    ),
   ),
 );

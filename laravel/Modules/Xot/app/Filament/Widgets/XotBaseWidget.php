@@ -4,21 +4,30 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
-use Filament\Widgets\Widget as FilamentWidget;
+use Filament\Forms;
+use Filament\Forms\Form;
 use Illuminate\Support\Facades\Cache;
+use Filament\Forms\Contracts\HasForms;
 use Filament\Widgets\WidgetConfiguration;
-use Filament\Widgets\Concerns\InteractsWithPageFilters;
+use Filament\Widgets\Widget as FilamentWidget;
 use Modules\Xot\Actions\View\GetViewByClassAction;
+use Filament\Widgets\Concerns\InteractsWithPageTable;
+use Filament\Widgets\Concerns\InteractsWithPageFilters;
+use Filament\Actions\Action;
 
 /**
  * @property bool $shouldRender
  *
  */
-abstract class XotBaseWidget extends FilamentWidget
+abstract class XotBaseWidget extends FilamentWidget implements HasForms
 {
     use InteractsWithPageFilters;
+    //use InteractsWithPageTable;
+    use Forms\Concerns\InteractsWithForms;
+    
     public string $title = '';
     public string $icon = '';
+    protected int|string|array $columnSpan = 'full';
     /**
      * The view that should be rendered for the widget.
      *
@@ -29,13 +38,47 @@ abstract class XotBaseWidget extends FilamentWidget
      * @var view-string
      */
     protected static string $view;
+    
 
+    public array $listener = [
+        'filters-updated' => 'filtersUpdated',
+      
+    ];
 
+    /*
     public function __construct()
     {
         //parent::__construct();//Cannot call constructor
         $view = app(GetViewByClassAction::class)->execute(static::class);
-        static::$view = $view;
+        if(view()->exists($view)){
+            $this->view = $view;
+        }
+    }
+    */
+        
+
+
+    abstract public function getFormSchema(): array;
+
+    final public function form(Form $form): Form
+    {
+        return $form
+            ->schema($this->getFormSchema())
+            ->columns(2)
+            ->statePath('data');
+    }
+
+     protected function getFormActions(): array
+    {
+        return [
+            Action::make('save')
+                ->label(__('filament-panels::resources/pages/edit-record.form.actions.save.label'))
+                ->submit('save'),
+        ];
+    }
+
+    public function save(): void
+    {
 
     }
 }

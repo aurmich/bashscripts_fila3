@@ -25,24 +25,37 @@ use Illuminate\Auth\Events\Verified;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
 use Modules\User\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 
 class EmailVerificationController extends Controller
 {
-    public function __invoke(Request $request): RedirectResponse
+    public function __invoke(string $id, string $hash): RedirectResponse
     {
-        $user = $request->user();
+        $user = Auth::user();
+        if ($user === null) {
+            throw new AuthorizationException;
+        }
 
-        if (! $user) {
-            return redirect()->route('login');
+        if (! hash_equals($id, (string) Auth::id())) {
+            throw new AuthorizationException;
+        }
+
+        if (! hash_equals($hash, sha1($user->getEmailForVerification()))) {
+            throw new AuthorizationException;
         }
 
         if ($user->hasVerifiedEmail()) {
-            return redirect()->intended(config('fortify.home'));
+            return redirect(route('home'));
         }
 
-        $user->sendEmailVerificationNotification();
+        $user->markEmailAsVerified();
 
-        return back()->with('status', 'verification-link-sent');
+        // Verificare che l'utente implementi l'interfaccia MustVerifyEmail
+        if (!($user instanceof \Illuminate\Contracts\Auth\MustVerifyEmail)) {
+            throw new \InvalidArgumentException('L\'utente deve implementare l\'interfaccia MustVerifyEmail');
+        }
+
+        event(new Verified($user));
+
+        return redirect(route('home'));
     }
 }

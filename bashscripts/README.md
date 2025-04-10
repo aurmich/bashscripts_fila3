@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> origin/dev
 <<<<<<< HEAD
 # 🚀 BashScripts Power Tools
 
@@ -157,7 +160,10 @@ Questo progetto è sotto licenza MIT - vedi il file [LICENSE](LICENSE) per i det
 =======
 =======
 >>>>>>> 3067e30a78cf264a5c241c6d051c32d744047740
+<<<<<<< HEAD
 >>>>>>> fcc45bbf3926869b40f96d6a1702010dabb68e8c
+=======
+>>>>>>> origin/dev
 # 🚀 Toolkit di Automazione Git
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com)
@@ -259,11 +265,17 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file `LICENSE` per 
   <sub>Built with ❤️ by the development team</sub>
 <<<<<<< HEAD
 </div> 
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 </div> 
+=======
+>>>>>>> origin/dev
 >>>>>>> origin/dev
 =======
 </div> 
 >>>>>>> 3067e30a78cf264a5c241c6d051c32d744047740
+<<<<<<< HEAD
 >>>>>>> fcc45bbf3926869b40f96d6a1702010dabb68e8c
+=======
+>>>>>>> origin/dev

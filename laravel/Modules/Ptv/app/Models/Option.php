@@ -54,6 +54,7 @@ use Spatie\EloquentSortable\SortableTrait;
 class Option extends BaseModel
 {
     use SortableTrait;
+    use \Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
 
     /** @var array<string, string|bool> */
     public $sortable = [
@@ -84,7 +85,8 @@ class Option extends BaseModel
 
     public function sons(): HasMany
     {
-        return $this->hasMany(static::class, 'parent_id', 'id');
+        //return $this->hasMany(static::class, 'parent_id', 'id');
+        return $this->children();
     }
 
     public function fillSons(): HasMany

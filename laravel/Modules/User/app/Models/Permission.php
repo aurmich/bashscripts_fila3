@@ -60,29 +60,26 @@ class Permission extends SpatiePermission
     protected $keyType = 'string';
 
     /** @var list<string> */
-    public $fillable = [
+    protected $fillable = [
         'id',
         'name',
         'guard_name',
         'created_at',
         'updated_at',
+        'created_by',
         'updated_by',
-        'created_by'
     ];
 
     /** @return array<string, string> */
-    public function casts(): array
+    protected function casts(): array
     {
         return [
             'id' => 'string',
+            'uuid' => 'string',
             'name' => 'string',
             'guard_name' => 'string',
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
-            'deleted_at' => 'datetime',
-            'updated_by' => 'string',
-            'created_by' => 'string',
-            'deleted_by' => 'string'
         ];
     }
 

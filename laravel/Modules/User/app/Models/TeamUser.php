@@ -21,6 +21,7 @@ use Illuminate\Support\Carbon;
  * @property Carbon|null $updated_at
  * @property string|null $created_by
  * @property string|null $updated_by
+ * @property string|null $customer_id
  * @method static \Illuminate\Database\Eloquent\Builder|TeamUser whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|TeamUser whereCreatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|TeamUser whereCustomerId($value)
@@ -41,43 +42,5 @@ use Illuminate\Support\Carbon;
  */
 class TeamUser extends BasePivot
 {
-    /** @var string */
     protected $connection = 'user';
-
-    /** @var list<string> */
-    public $fillable = [
-        'id',
-        'uuid',
-        'team_id',
-        'user_id',
-        'role',
-        'created_at',
-        'updated_at',
-        'created_by',
-        'updated_by',
-        'deleted_at',
-        'deleted_by'
-    ];
-
-    /**
-     * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
-     */
-    public function casts(): array
-    {
-        return [
-            'id' => 'string',
-            'uuid' => 'string',
-            'team_id' => 'string',
-            'user_id' => 'string',
-            'role' => 'string',
-            'created_at' => 'datetime',
-            'updated_at' => 'datetime',
-            'deleted_at' => 'datetime',
-            'created_by' => 'string',
-            'updated_by' => 'string',
-            'deleted_by' => 'string'
-        ];
-    }
 }

@@ -63,8 +63,9 @@ use Modules\Xot\Datas\XotData;
 class Device extends BaseModel
 {
     /** @var list<string> */
-    public $fillable = [
+    protected $fillable = [
         'id',
+        'uuid',
         'mobile_id',
         'languages',
         'device',
@@ -77,11 +78,6 @@ class Device extends BaseModel
         'is_mobile',
         'is_tablet',
         'is_phone',
-        'created_at',
-        'updated_at',
-        'updated_by',
-        'created_by',
-        'uuid'
     ];
 
     /**
@@ -101,29 +97,23 @@ class Device extends BaseModel
      *
      * @return array<string, string>
      */
-    public function casts(): array
+    protected function casts(): array
     {
         return [
             'id' => 'string',
-            'mobile_id' => 'string',
-            'languages' => 'array',
-            'device' => 'string',
-            'platform' => 'string',
-            'browser' => 'string',
-            'version' => 'string',
-            'is_robot' => 'boolean',
-            'robot' => 'string',
-            'is_desktop' => 'boolean',
-            'is_mobile' => 'boolean',
-            'is_tablet' => 'boolean',
-            'is_phone' => 'boolean',
+            'uuid' => 'string',
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
             'deleted_at' => 'datetime',
             'updated_by' => 'string',
             'created_by' => 'string',
             'deleted_by' => 'string',
-            'uuid' => 'string'
+            'languages' => 'array',
+            'is_robot' => 'boolean',
+            'is_desktop' => 'boolean',
+            'is_mobile' => 'boolean',
+            'is_tablet' => 'boolean',
+            'is_phone' => 'boolean',
         ];
     }
 }

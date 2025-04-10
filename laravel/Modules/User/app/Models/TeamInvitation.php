@@ -51,15 +51,9 @@ class TeamInvitation extends BaseModel
     protected $connection = 'user';
 
     /** @var list<string> */
-    public $fillable = [
-        'id',
-        'team_id',
+    protected $fillable = [
         'email',
         'role',
-        'created_at',
-        'updated_at',
-        'updated_by',
-        'created_by'
     ];
 
     /**
@@ -74,26 +68,5 @@ class TeamInvitation extends BaseModel
         $team_class = $xotData->getTeamClass();
 
         return $this->belongsTo($team_class);
-    }
-
-    /**
-     * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
-     */
-    public function casts(): array
-    {
-        return [
-            'id' => 'string',
-            'team_id' => 'string',
-            'email' => 'string',
-            'role' => 'string',
-            'created_at' => 'datetime',
-            'updated_at' => 'datetime',
-            'deleted_at' => 'datetime',
-            'updated_by' => 'string',
-            'created_by' => 'string',
-            'deleted_by' => 'string'
-        ];
     }
 }

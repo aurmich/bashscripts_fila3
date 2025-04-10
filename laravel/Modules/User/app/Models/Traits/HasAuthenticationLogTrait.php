@@ -4,8 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\User\Models\Traits;
 
-use Carbon\Carbon;
-use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
+use Illuminate\Database\Eloquent\Relations\MorphOne;
+use Illuminate\Support\Carbon;
 use Modules\User\Models\AuthenticationLog;
 
 /**
@@ -15,37 +16,39 @@ use Modules\User\Models\AuthenticationLog;
  * It includes methods for retrieving the latest authentication logs, login timestamps, IP addresses,
  * and other related information, including tracking consecutive login days.
  *
- * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\AuthenticationLog> $authentications
+ * @property MorphMany<AuthenticationLog, static> $authentications      The authentication logs related to the model.
+ * @property MorphOne<AuthenticationLog, static>  $latestAuthentication The most recent authentication log entry.
  * @property-read string|null $login_at The timestamp of the last login.
  * @property-read string|null $ip_address The IP address of the last login.
- * @property-read string|null $location The location of the last login.
- * @property-read string|null $user_agent The user agent of the last login.
- * @property-read string|null $device The device of the last login.
- * @property-read string|null $platform The platform of the last login.
- *
- * @method \Illuminate\Database\Eloquent\Relations\HasMany<\Modules\User\Models\AuthenticationLog> authentications()
- * @method \Modules\User\Models\AuthenticationLog|null latestAuthentication()
+ */
+/**
+ * @property MorphMany<AuthenticationLog> $authentications
+ * @property MorphOne<AuthenticationLog> $latestAuthentication
+ * @property \Illuminate\Support\Carbon|null $login_at
+ * @property string|null $ip_address
  */
 trait HasAuthenticationLogTrait
 {
     /**
      * Get all of the model's authentication logs.
      *
-     * @return HasMany<AuthenticationLog>
+     * @return MorphMany<AuthenticationLog, static>
      */
-    public function authentications(): HasMany
+    public function authentications(): MorphMany
     {
-        return $this->hasMany(AuthenticationLog::class);
+        return $this->morphMany(AuthenticationLog::class, 'authenticatable')
+            ->latest('login_at');
     }
 
     /**
      * Get the latest authentication attempt for the model.
      *
-     * @return AuthenticationLog|null
+     * @return MorphOne<AuthenticationLog, static>
      */
-    public function latestAuthentication(): ?AuthenticationLog
+    public function latestAuthentication(): MorphOne
     {
-        return $this->authentications()->latest()->first();
+        return $this->morphOne(AuthenticationLog::class, 'authenticatable')
+            ->latestOfMany('login_at');
     }
 
     /**
@@ -65,8 +68,9 @@ trait HasAuthenticationLogTrait
      */
     public function lastLoginAt(): ?Carbon
     {
-        $latestAuth = $this->latestAuthentication();
-        return $latestAuth?->login_at;
+        /** @var AuthenticationLog|null $auth */
+        $auth = $this->authentications()->first();
+        return $auth !== null ? $auth->login_at : null;
     }
 
     /**
@@ -76,9 +80,9 @@ trait HasAuthenticationLogTrait
      */
     public function lastSuccessfulLoginAt(): ?Carbon
     {
-        /** @var AuthenticationLog|null */
-        $latestAuth = $this->authentications()->where('login_successful', true)->latest()->first();
-        return $latestAuth?->login_at;
+        /** @var AuthenticationLog|null $auth */
+        $auth = $this->authentications()->where('login_successful', true)->first();
+        return $auth !== null ? $auth->login_at : null;
     }
 
     /**
@@ -88,8 +92,9 @@ trait HasAuthenticationLogTrait
      */
     public function lastLoginIp(): ?string
     {
-        $latestAuth = $this->latestAuthentication();
-        return $latestAuth?->ip_address;
+        /** @var AuthenticationLog|null $auth */
+        $auth = $this->authentications()->first();
+        return $auth !== null ? $auth->ip_address : null;
     }
 
     /**
@@ -99,9 +104,9 @@ trait HasAuthenticationLogTrait
      */
     public function lastSuccessfulLoginIp(): ?string
     {
-        /** @var AuthenticationLog|null */
-        $latestAuth = $this->authentications()->where('login_successful', true)->latest()->first();
-        return $latestAuth?->ip_address;
+        /** @var AuthenticationLog|null $auth */
+        $auth = $this->authentications()->where('login_successful', true)->first();
+        return $auth !== null ? $auth->ip_address : null;
     }
 
     /**
@@ -111,9 +116,9 @@ trait HasAuthenticationLogTrait
      */
     public function previousLoginAt(): ?Carbon
     {
-        /** @var AuthenticationLog|null */
-        $previousAuth = $this->authentications()->latest()->skip(1)->first();
-        return $previousAuth?->login_at;
+        /** @var AuthenticationLog|null $auth */
+        $auth = $this->authentications()->skip(1)->first();
+        return $auth !== null ? $auth->login_at : null;
     }
 
     /**
@@ -123,9 +128,9 @@ trait HasAuthenticationLogTrait
      */
     public function previousLoginIp(): ?string
     {
-        /** @var AuthenticationLog|null */
-        $previousAuth = $this->authentications()->latest()->skip(1)->first();
-        return $previousAuth?->ip_address;
+        /** @var AuthenticationLog|null $auth */
+        $auth = $this->authentications()->skip(1)->first();
+        return $auth !== null ? $auth->ip_address : null;
     }
 
     /**
@@ -150,130 +155,5 @@ trait HasAuthenticationLogTrait
 
             return $days;
         });
-    }
-
-    /**
-     * Get the authentication logs attribute.
-     *
-     * @return array<string, int>
-     */
-    public function getAuthenticationLogsAttribute(): array
-    {
-        return [
-            'total_attempts' => $this->authentications()->whereDate('login_at', Carbon::today())->count(),
-            'total_failed_attempts' => $this->authentications()->whereDate('login_at', Carbon::today())->where('login_successful', false)->count(),
-        ];
-    }
-
-    /**
-     * Get the user's last login time.
-     */
-    public function getLastLoginAt(): ?Carbon
-    {
-        $log = $this->latestAuthentication();
-        return $log?->created_at;
-    }
-
-    /**
-     * Get the user's last login IP address.
-     */
-    public function getLastLoginIp(): ?string
-    {
-        $log = $this->latestAuthentication();
-        return $log?->ip_address;
-    }
-
-    /**
-     * Get the user's last login location.
-     *
-     * @return array<string, mixed>|null
-     */
-    public function getLastLoginLocation(): ?array
-    {
-        $log = $this->latestAuthentication();
-        return $log?->location;
-    }
-
-    /**
-     * Get the user's last login user agent.
-     */
-    public function getLastLoginUserAgent(): ?string
-    {
-        $log = $this->latestAuthentication();
-        return $log?->user_agent;
-    }
-
-    /**
-     * Get the user's last login device.
-     */
-    public function getLastLoginDevice(): ?string
-    {
-        $log = $this->latestAuthentication();
-        return $log?->device;
-    }
-
-    /**
-     * Get the user's last login platform.
-     */
-    public function getLastLoginPlatform(): ?string
-    {
-        $log = $this->latestAuthentication();
-        return $log?->platform;
-    }
-
-    /**
-     * Get the user's last login time.
-     */
-    public function getLoginAt(): ?Carbon
-    {
-        $log = $this->latestAuthentication();
-        return $log?->created_at;
-    }
-
-    /**
-     * Get the user's last login IP address.
-     */
-    public function getIpAddress(): ?string
-    {
-        $log = $this->latestAuthentication();
-        return $log?->ip_address;
-    }
-
-    /**
-     * Get the user's last login location.
-     *
-     * @return array<string, mixed>|null
-     */
-    public function getLocation(): ?array
-    {
-        $log = $this->latestAuthentication();
-        return $log?->location;
-    }
-
-    /**
-     * Get the user's last login user agent.
-     */
-    public function getUserAgent(): ?string
-    {
-        $log = $this->latestAuthentication();
-        return $log?->user_agent;
-    }
-
-    /**
-     * Get the user's last login device.
-     */
-    public function getDevice(): ?string
-    {
-        $log = $this->latestAuthentication();
-        return $log?->device;
-    }
-
-    /**
-     * Get the user's last login platform.
-     */
-    public function getPlatform(): ?string
-    {
-        $log = $this->latestAuthentication();
-        return $log?->platform;
     }
 }

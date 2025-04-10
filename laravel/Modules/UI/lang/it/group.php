@@ -23,5 +23,17 @@ return array (
     array (
       'label' => 'info',
     ),
+    'diritto' => 
+    array (
+      'label' => 'diritto',
+    ),
+    'motivo/invio email' => 
+    array (
+      'label' => 'motivo/invio email',
+    ),
+    'motivo/invio_email' => 
+    array (
+      'label' => 'motivo/invio_email',
+    ),
   ),
 );

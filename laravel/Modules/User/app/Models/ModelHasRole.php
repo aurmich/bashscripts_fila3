@@ -44,17 +44,13 @@ class ModelHasRole extends BaseMorphPivot
     protected $table = 'model_has_role';
 
     /** @var list<string> */
-    public $fillable = [
+    protected $fillable = [
         'id',
+        // 'uuid',
         'role_id',
         'model_type',
         'model_id',
         'team_id',
-        'created_at',
-        'updated_at',
-        'updated_by',
-        'created_by',
-        'uuid'
     ];
 
     /**
@@ -71,12 +67,8 @@ class ModelHasRole extends BaseMorphPivot
         }
     }
 
-    /**
-     * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
-     */
-    public function casts(): array
+    /** @return array<string, string> */
+    protected function casts(): array
     {
         return [
             'id' => 'string',
@@ -84,13 +76,15 @@ class ModelHasRole extends BaseMorphPivot
             'model_type' => 'string',
             'model_id' => 'string',
             'team_id' => 'string',
+            // 'uuid' => 'string',
+
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
             'deleted_at' => 'datetime',
+
             'updated_by' => 'string',
             'created_by' => 'string',
             'deleted_by' => 'string',
-            'uuid' => 'string'
         ];
     }
 }
