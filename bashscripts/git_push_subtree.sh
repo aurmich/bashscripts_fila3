@@ -30,6 +30,11 @@ handle_error() {
     exit 1
 }
 
+if(! git ls-remote "$REMOTE_REPO" > /dev/null 2>&1)
+then
+    handle_error "Remote repository $REMOTE_REPO not found"
+fi
+
 # Sync subtree
 push_subtree() {
     find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
@@ -43,21 +48,21 @@ push_subtree() {
 
 
     if(! git subtree push -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH")
-    then
-        if(! git push  "$REMOTE_REPO" $(git subtree split --prefix="$LOCAL_PATH"):"$REMOTE_BRANCH")
-        then
-            # First, split the subtree to a temporary branch
-            git subtree split --prefix="$LOCAL_PATH" -b "$TEMP_BRANCH"
+    #then
+    #    if(! git push  "$REMOTE_REPO" $(git subtree split --prefix="$LOCAL_PATH"):"$REMOTE_BRANCH")
+    #    then
+    #        # First, split the subtree to a temporary branch
+    #        git subtree split --prefix="$LOCAL_PATH" -b "$TEMP_BRANCH"
 
-            # Then force push that branch
-            git push -f "$REMOTE_REPO" "$TEMP_BRANCH":"$REMOTE_BRANCH"
+    #        # Then force push that branch
+    #        git push -f "$REMOTE_REPO" "$TEMP_BRANCH":"$REMOTE_BRANCH"
 
-            # Optionally, clean up the temporary branch
-            git branch -D "$TEMP_BRANCH"
+    #        # Optionally, clean up the temporary branch
+    #        git branch -D "$TEMP_BRANCH"
 
-            git subtree push -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH"
-        fi
-    fi
+    #        git subtree push -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH"
+    #    fi
+    #fi
 
 
     git rebase --rebase-merges --strategy subtree "$REMOTE_BRANCH"
