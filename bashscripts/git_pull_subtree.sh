@@ -54,9 +54,9 @@ pull_subtree() {
             # First, split the subtree to a temporary branch
             git subtree split --prefix="$LOCAL_PATH" -b "$TEMP_BRANCH"
             # Ora fai il merge del branch temporaneo con `git subtree merge`
-            git subtree merge --prefix="$LOCAL_PATH" "$TEMP_BRANCH" || die "Failed to merge subtree"
+            git subtree merge --prefix="$LOCAL_PATH" "$TEMP_BRANCH" || echo "Failed to merge subtree"
             # Pulisci il branch temporaneo
-            git branch -D "$TEMP_BRANCH" || die "Failed to delete temporary branch"
+            git branch -D "$TEMP_BRANCH" || echo "Failed to delete temporary branch"
 
             # Aggiungi il submodule (aggiungiamo il submodule da un repository remoto)
             mv "$LOCAL_PATH" "$LOCAL_PATH_bak" || die "Failed to rename $LOCAL_PATH to $LOCAL_PATH_bak"
