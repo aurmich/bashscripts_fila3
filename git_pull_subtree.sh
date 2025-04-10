@@ -47,8 +47,14 @@ pull_subtree() {
     then
         if(! git subtree pull -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH")    
         then
-            git fetch "$REMOTE_REPO" "$REMOTE_BRANCH" --depth=1
-            git merge -s subtree FETCH_HEAD  --allow-unrelated-histories
+            #git fetch "$REMOTE_REPO" "$REMOTE_BRANCH" --depth=1
+            #git merge -s subtree FETCH_HEAD  --allow-unrelated-histories
+            # First, split the subtree to a temporary branch
+            git subtree split --prefix="$LOCAL_PATH" -b "$TEMP_BRANCH"
+            # Ora fai il merge del branch temporaneo con `git subtree merge`
+            git subtree merge --prefix="$LOCAL_PATH" "$TEMP_BRANCH" || die "Failed to merge subtree"
+            # Pulisci il branch temporaneo
+            git branch -D "$TEMP_BRANCH" || die "Failed to delete temporary branch"
         fi
     fi
 
