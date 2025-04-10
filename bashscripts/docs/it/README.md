@@ -74,10 +74,10 @@ bashscripts/
 
 Per informazioni dettagliate su ogni script, consulta la documentazione specifica:
 
-- [Roadmap del Progetto](docs/roadmap.md)
-- [Documentazione del Progetto](docs/project.md)
-- [Fasi della Roadmap](docs/roadmap/)
-- [Documentazione in Italiano](docs/it/README.md)
+- [Roadmap del Progetto](../roadmap.md)
+- [Documentazione del Progetto](../project.md)
+- [Fasi della Roadmap](../roadmap/)
+- [README in Inglese](../../README.md)
 
 ## ⚠️ Avvertenze
 
