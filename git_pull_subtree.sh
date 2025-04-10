@@ -55,6 +55,21 @@ pull_subtree() {
             git subtree merge --prefix="$LOCAL_PATH" "$TEMP_BRANCH" || die "Failed to merge subtree"
             # Pulisci il branch temporaneo
             git branch -D "$TEMP_BRANCH" || die "Failed to delete temporary branch"
+
+            # Aggiungi il submodule (aggiungiamo il submodule da un repository remoto)
+            mv "$LOCAL_PATH" "$LOCAL_PATH_bak" || die "Failed to rename $LOCAL_PATH to $LOCAL_PATH_bak"
+            git add .
+            git commit -am "Add $LOCAL_PATH_bak"
+            git subtree add --prefix="$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH" --squash
+             # Sincronizza i file dalla cartella di backup
+            rsync -avz "$LOCAL_PATH_bak/" "$LOCAL_PATH" || die "Failed to sync files"
+        
+            # Rimuovi la cartella di backup
+            rm -rf "$LOCAL_PATH_bak" || die "Failed to remove backup folder"
+            # Commit delle modifiche
+            git add . || die "Failed to add changes after submodule sync"
+            git commit -am "Added submodule for $LOCAL_PATH" || die "Failed to commit submodule changes"
+
         fi
     fi
 
