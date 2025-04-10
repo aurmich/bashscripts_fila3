@@ -11,7 +11,7 @@
     @endif
         </td>
         <td>
-            {{ $row->valutatore->nome_diri }}
+            Dirigente: {{ $row->valutatore?->nome_diri }}
         </td>
     </tr>
     </table>

@@ -193,6 +193,10 @@ return array (
       'icon' => 'performance-region-document',
     ),
     'esperienza_acquisita' => 'Gestione delle risorse',
+    'valutatore_id' => 
+    array (
+      'label' => 'valutatore_id',
+    ),
   ),
   'actions' => 
   array (

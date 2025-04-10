@@ -252,6 +252,10 @@ return array (
     'arricchimento_professionale' => 'Attuazione di strategie di miglioramento del "clima lavorativo"',
     'impegno' => 'Organizzazione della programmazione delle attività',
     'esperienza_acquisita' => 'Focalizzazione dei processi di comunicazione sulla condivisione dei risultati',
+    'valutatore_id' => 
+    array (
+      'label' => 'valutatore_id',
+    ),
   ),
   'actions' => 
   array (
