@@ -30,6 +30,11 @@ handle_error() {
     exit 1
 }
 
+if(! git ls-remote "$REMOTE_REPO" > /dev/null 2>&1)
+then
+    handle_error "Remote repository $REMOTE_REPO not found"
+fi
+
 # Sync subtree
 pull_subtree() {
     find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
