@@ -45,8 +45,10 @@ pull_subtree() {
     git fetch "$REMOTE_REPO" "$REMOTE_BRANCH" --depth=1
     if(! git subtree pull -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH"  --squash)
     then
+        echo "------------------------- 1 -------------------------"
         if(! git subtree pull -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH")    
         then
+            echo "------------------------- 2 -------------------------"
             #git fetch "$REMOTE_REPO" "$REMOTE_BRANCH" --depth=1
             #git merge -s subtree FETCH_HEAD  --allow-unrelated-histories
             # First, split the subtree to a temporary branch
