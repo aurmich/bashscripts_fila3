@@ -84,4 +84,4 @@ pull_subtree() {
 # Run sync
 pull_subtree
 
-echo "Subtree $LOCAL_PATH synchronized successfully with $REMOTE_REPO"
+echo "👍Subtree $LOCAL_PATH synchronized successfully with $REMOTE_REPO"
