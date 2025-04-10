@@ -12,12 +12,12 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach (optional($_theme)->lastLoggedUsers(10) as $user)
+                @foreach ($_theme->lastLoggedUsers(10) as $user)
                     <tr>
-                        <td>{{ optional($user)->id }}<br />{{ optional($user)->handle }}</td>
-                        <td>{{ optional($user)->first_name }}<br />{{ optional($user)->last_name }}</td>
-                        <td>{{ optional($user)->last_login_at }}<br />
-                            {{ optional($user)->last_login_ip }}
+                        <td>{{ $user->id }}<br />{{ $user->handle }}</td>
+                        <td>{{ $user->first_name }}<br />{{ $user->last_name }}</td>
+                        <td>{{ $user->last_login_at }}<br />
+                            {{ $user->last_login_ip }}
                         </td>
                     </tr>
                 @endforeach
