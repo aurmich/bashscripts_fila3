@@ -1,0 +1,84 @@
+# 🛠️ Compiled files and binaries
+*.jar
+*.phar
+dump.rdb
+
+# 📝 Temporary and editor files
+*.swp
+*.cache
+*.log
+*.log.*
+.php_cs.cache
+.php-cs-fixer.cache
+.phpintel
+.DS_Store
+.git-rewrite
+*:Zone.Identifier
+
+# 📦 Package management
+node_modules/
+package-lock.json
+*.lock
+
+# 🌍 Laravel specific
+laravel/storage/
+laravel/storage/*
+laravel/storage/cookie.txt
+laravel/composer
+laravel/_ide_helper.php
+laravel/_ide_helper_models.php
+laravel/.php_cs.cache
+laravel/build/
+laravel/database/migrations/
+laravel/vite-module-loader.js
+laravel/stubs/
+
+# 📂 Laravel vendor resources
+laravel/resources/lang/vendor/
+laravel/resources/views/vendor/
+laravel/app/View/Components/vendor/
+
+# 🎨 Public assets and generated files
+public_html/storage/
+public_html/storage/*
+public_html/themes/
+public_html/css/
+public_html/js/
+public_html/vendor/
+
+# 🔄 Misc
+/cache/
+*.zip
+*.old
+laravel/Modules/Predict/
+*.old
+public_html/plugins/
+/vendor
+*.lock
+/build
+*.cache
+*.phar
+.git-blame-ignore-revs
+.git-rewrite
+.php-cs-fixer.cache
+*.phar
+*.cache
+package-lock.json
+.git-rewrite/
+node_modules
+.git-blame-ignore-revs
+.git-blame-ignore-revs
+node_modules
+vendor
+.git-blame-ignore-revs
+build/
+vendor/
+build/
+node_modules
+docs/cache/
+cache/
+.git-blame-ignore-revs
+.php-cs-fixer.cache
+build
+*.exe
+*:Zone.Identifier
