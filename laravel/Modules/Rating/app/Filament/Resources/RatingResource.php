@@ -29,19 +29,6 @@ class RatingResource extends XotBaseResource
     public static function getFormSchema(): array
     {
         return [
-<<<<<<< HEAD
-            'type' => TextInput::make('extra_attributes.type'),
-            'anno' => TextInput::make('extra_attributes.anno'),
-            'title' => TextInput::make('title')->autofocus()->required(),
-            'color' => ColorPicker::make('color'),
-            'rule' => Radio::make('rule')->options(RuleEnum::class),
-            'section' => Section::make()
-                ->schema([
-                    'is_disabled' => Toggle::make('is_disabled'),
-                    'is_readonly' => Toggle::make('is_readonly'),
-                ]),
-            'txt' => RichEditor::make('txt')->columnSpanFull(),
-=======
             TextInput::make('extra_attributes.type'),
             TextInput::make('extra_attributes.anno'),
             TextInput::make('title')->autofocus()->required(),
@@ -53,40 +40,37 @@ class RatingResource extends XotBaseResource
                     Toggle::make('is_readonly'),
                 ]),
             RichEditor::make('txt')->columnSpanFull(),
->>>>>>> origin/dev
         ];
     }
 
-    /*
     public static function table(Table $table): Table
     {
         return $table
             ->columns([
-                TextColumn::make('extra_attributes.type'),
-                TextColumn::make('extra_attributes.anno'),
                 TextColumn::make('title'),
-                TextColumn::make('rule')->badge(),
-                // TextColumn::make('is_readonly'),
-                // TextColumn::make('is_disabled'),
-                // ToggleColumn::make('is_readonly'),
-                IconColumn::make('is_disabled')->boolean(),
-                IconColumn::make('is_readonly')->boolean(),
-                // TextColumn::make('color'),
+                TextColumn::make('type'),
+                TextColumn::make('anno'),
+                ToggleColumn::make('is_disabled'),
+                ToggleColumn::make('is_readonly'),
+                IconColumn::make('color'),
             ])
             ->filters([
+                //
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
             ])
             ->bulkActions([
-                Tables\Actions\DeleteBulkAction::make(),
+                Tables\Actions\BulkActionGroup::make([
+                    Tables\Actions\DeleteBulkAction::make(),
+                ]),
             ]);
     }
-    */
 
     public static function getRelations(): array
     {
         return [
+            //
         ];
     }
 

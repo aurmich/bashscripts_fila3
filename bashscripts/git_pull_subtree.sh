@@ -77,11 +77,7 @@ pull_subtree() {
     fi
 
     
-<<<<<<< HEAD
     git rebase --rebase-merges --strategy subtree "$REMOTE_BRANCH" --autosquash
-=======
-    git rebase --rebase-merges --strategy subtree "$REMOTE_BRANCH"
->>>>>>> origin/dev
     #git rebase --preserve-merges "$REMOTE_BRANCH" 
 }
 
