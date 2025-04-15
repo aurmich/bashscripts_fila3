@@ -213,6 +213,7 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
         return $this->hasOne($profileClass);
     }
 
+<<<<<<< HEAD
     /**
      * Verifica se l'utente ha il ruolo di super-admin.
      *
@@ -224,6 +225,8 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
     }
 
 
+=======
+>>>>>>> origin/dev
     public function canAccessPanel(Panel $panel): bool
     {
         // $panel->default('admin');
@@ -587,9 +590,13 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
     {
         // Se è una stringa semplice, utilizziamo il metodo interno tramite relazione roles
         if (is_string($roles)) {
+<<<<<<< HEAD
             return once(function () use ($roles) {
                 return $this->roles()->where('name', $roles)->exists();
             });
+=======
+            return $this->roles()->where('name', $roles)->exists();
+>>>>>>> origin/dev
         }
 
         // Per gli altri tipi, implementiamo una logica di base

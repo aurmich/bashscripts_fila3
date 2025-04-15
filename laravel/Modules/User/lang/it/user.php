@@ -15,9 +15,12 @@ return [
         'icon' => 'user-main',
     ],
     'fields' => [
+<<<<<<< HEAD
         'id' => [
             'label' => 'ID',
         ],
+=======
+>>>>>>> origin/dev
         'name' => [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il nome',
@@ -82,6 +85,7 @@ return [
         'unverified' => [
             'label' => 'Non Verificato',
         ],
+<<<<<<< HEAD
         'applyFilters' => [
             'label' => 'applyFilters',
         ],
@@ -118,6 +122,8 @@ return [
         'email_verified_at' => [
             'label' => 'Email Verificata il',
         ],
+=======
+>>>>>>> origin/dev
     ],
     'actions' => [
         'create' => 'Crea Utente',
@@ -154,7 +160,10 @@ return [
         'impersonate_users' => 'Impersona utenti',
         'manage_roles' => 'Gestisci ruoli',
     ],
+<<<<<<< HEAD
     'model' => [
         'label' => 'Utente',
     ],
+=======
+>>>>>>> origin/dev
 ];
