@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     'login' => [
         'title' => 'Sign in to your account',
         'subtitle' => 'Enter your credentials to access',
@@ -61,6 +62,8 @@ return [
         'user' => 'We can\'t find a user with that email address.',
     ],
 
+=======
+>>>>>>> origin/dev
     'login-via' => 'Or log in via',
 
     'login-failed' => 'Login failed, please try again.',
