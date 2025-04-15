@@ -1,4 +1,1 @@
-Note: Using configuration file /var/www/html/ptvx/laravel/phpstan.neon.
-  0/46 [░░░░░░░░░░░░░░░░░░░░░░░░░░░░]   0%[1G[2K 20/46 [▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░░░░░░]  43%[1G[2K 40/46 [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░]  86%[1G[2K 46/46 [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓] 100%
-
 {"totals":{"errors":0,"file_errors":1},"files":{"/var/www/html/ptvx/laravel/Modules/Activity/app/Filament/Resources/StoredEventResource/Pages/ListStoredEvents.php":{"errors":1,"messages":[{"message":"Parameter #1 $view of method Filament\\Support\\Components\\ViewComponent::view() expects view-string|null, string given.","line":24,"ignorable":true,"identifier":"argument.type"}]}},"errors":[]}

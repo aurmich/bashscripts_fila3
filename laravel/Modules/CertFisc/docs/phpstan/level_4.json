@@ -1,4 +1,1 @@
-Note: Using configuration file /var/www/html/ptvx/laravel/phpstan.neon.
-  0/10 [░░░░░░░░░░░░░░░░░░░░░░░░░░░░]   0%[1G[2K 10/10 [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓] 100%
-
-{"totals":{"errors":0,"file_errors":0},"files":{},"errors":[]}
+Could not open input file: /var/www/html/ptvx/vendor/bin/phpstan

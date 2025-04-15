@@ -29,7 +29,7 @@ echo "🚀 Inizio analisi PHPStan per il modulo $MODULE_NAME"
 echo "----------------------------------------"
 
 # Controlla se il modulo contiene file PHP
-if [ -z "$(find "$MODULE_DIR" -name "*.php" -type f)" ]; then
+if [ -z "$(find "$MODULE_DIR/app" -name "*.php" -type f)" ]; then
     echo "⚠️  Il modulo $MODULE_NAME non contiene file PHP da analizzare"
     exit 0
 fi
@@ -49,7 +49,8 @@ for level in "${LEVELS[@]}"; do
     ./vendor/bin/phpstan analyse \
         --level="$level" \
         --error-format=json \
-        "Modules/$MODULE_NAME" > "$output_file" 2> "$temp_file"
+        --configuration=phpstan.neon \
+        "Modules/$MODULE_NAME/app" > "$output_file" 2> "$temp_file"
     
     # Verifica il risultato
     if [ -f "$output_file" ] && [ -s "$output_file" ]; then

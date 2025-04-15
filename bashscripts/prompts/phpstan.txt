@@ -1,2 +1,15 @@
 phpstan e' gia' installato dentro la cartella laravel, lo puoi eseguire con ./vendor/bin/phpstan devi analizzare tutte le cartelle che sono dentro laravel/Modules queste cartelle sono moduli in oguno di questi moduli ci deve essere la cartella docs/phpstan e li dentro metti il tuo report di phpstan per quel modulo partendo dal livello max chiamando il file level_<level>.md per facilitarti la cosa puoi fare anche la versione json level_<level>.json, 
-il file json lo puoi generare direttamente da phpstan, hai domande ? 
+il file json lo puoi generare direttamente da phpstan, hai domande ?
+
+
+Analizza tutti i moduli Laravel con PHPStan. Lo script deve:
+Trovare automaticamente la directory laravel nel workspace
+Usare il comando php vendor/bin/phpstan dalla directory laravel
+Non installare PHPStan perché è già presente
+Per ogni modulo:
+Analizzare la directory app
+Salvare i risultati in docs/phpstan/ per ogni livello da 1 a max
+Creare la directory se non esiste
+Verificare i risultati nel file laravel/Modules/*/docs/phpstan/level_*.json
+Gestire eventuali errori e fornire feedback chiari
+Essere riutilizzabile in qualsiasi ambiente con la stessa struttura di directory
