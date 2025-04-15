@@ -22,6 +22,13 @@ class AddressField extends Forms\Components\Field
         parent::setUp();
 
         $this->afterStateHydrated(function (AddressField $component, ?Model $record) {
+<<<<<<< HEAD
+=======
+            if ($record === null) {
+                return;
+            }
+
+>>>>>>> origin/dev
             $data = [
                 'country' => null,
                 'street' => null,
@@ -29,8 +36,19 @@ class AddressField extends Forms\Components\Field
                 'state' => null,
                 'zip' => null,
             ];
+<<<<<<< HEAD
             $address = $record->getRelationValue($this->getRelationship());
             if (null !== $address && is_object($address) && method_exists($address, 'toArray')) {
+=======
+
+            $relationship = $this->getRelationship();
+            if (!$relationship) {
+                return;
+            }
+
+            $address = $record->getRelationValue($relationship);
+            if ($address !== null && is_object($address) && method_exists($address, 'toArray')) {
+>>>>>>> origin/dev
                 $data = $address->toArray();
             }
 
@@ -51,6 +69,7 @@ class AddressField extends Forms\Components\Field
     {
         $state = $this->getState();
         $record = $this->getRecord();
+<<<<<<< HEAD
         $relationship = $record->{$this->getRelationship()}();
 
         if (null === $relationship) {
@@ -60,6 +79,27 @@ class AddressField extends Forms\Components\Field
             $address->update($state);
         } else {
             $relationship->updateOrCreate($state);
+=======
+        
+        if ($record === null) {
+            return;
+        }
+
+        $relationship = $this->getRelationship();
+        if (!$relationship) {
+            return;
+        }
+
+        $relation = $record->{$relationship}();
+        if (!$relation) {
+            return;
+        }
+
+        if ($address = $relation->first()) {
+            $address->update($state);
+        } else {
+            $relation->updateOrCreate($state);
+>>>>>>> origin/dev
         }
 
         $record->touch();
