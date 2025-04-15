@@ -40,7 +40,12 @@ class GetViewByClassAction
                     $prevValueStr = '';
                 } elseif (is_scalar($prevValue)) {
                     // Cast sicuro per valori scalari (int, float, bool)
+<<<<<<< HEAD
                     $prevValueStr = is_string($prevValue) ? $prevValue : (string) $prevValue;
+=======
+                   // $prevValueStr = is_string($prevValue) ? $prevValue : (string) $prevValue;
+                   $prevValueStr = strval( $prevValue);
+>>>>>>> origin/dev
                 }
                 
                 $singular = Str::of($prevValueStr)->singular()->toString();

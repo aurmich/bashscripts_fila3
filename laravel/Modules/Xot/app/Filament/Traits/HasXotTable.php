@@ -14,6 +14,10 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
 use Illuminate\Database\Eloquent\Model;
 use Filament\Notifications\Notification;
+<<<<<<< HEAD
+=======
+use Filament\Tables\Actions\Action;
+>>>>>>> origin/dev
 use Filament\Tables\Actions\ActionGroup;
 use Filament\Tables\Enums\FiltersLayout;
 use Filament\Tables\Columns\Layout\Stack;
@@ -285,11 +289,16 @@ trait HasXotTable
     /**
      * Get table actions.
      *
+<<<<<<< HEAD
      * @return array<string, Action|ActionGroup>
+=======
+     * @return array<string, Tables\Actions\Action|Tables\Actions\ActionGroup>
+>>>>>>> origin/dev
      */
     public function getTableActions(): array
     {
         $actions = [];
+<<<<<<< HEAD
         $resource = $this->getResource();
         
         if (method_exists($resource, 'canView')) {
@@ -313,6 +322,25 @@ trait HasXotTable
                 ->visible(fn (Model $record): bool => $resource::canDelete($record));
         }
         
+=======
+
+        if ($this->shouldShowViewAction()) {
+            $actions['view'] = Tables\Actions\ViewAction::make()
+                ->iconButton()
+                ->tooltip(__('user::actions.view'));
+        }
+
+        if ($this->shouldShowEditAction()) {
+            $actions['edit'] = Tables\Actions\EditAction::make()
+                ->iconButton()
+                ->tooltip(__('user::actions.edit'));
+        }
+
+        $actions['delete'] = Tables\Actions\DeleteAction::make()
+            ->iconButton()
+            ->tooltip(__('user::actions.delete'));
+
+>>>>>>> origin/dev
         if ($this->shouldShowReplicateAction()) {
             $actions['replicate'] = Tables\Actions\ReplicateAction::make()
                 ->iconButton()

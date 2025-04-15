@@ -8,6 +8,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Datas;
 
+<<<<<<< HEAD
 use Illuminate\Support\Str;
 use Spatie\LaravelData\Data;
 use Spipu\Html2Pdf\Html2Pdf;
@@ -21,6 +22,15 @@ use Illuminate\Support\Facades\Storage;
 use Spatie\LaravelPdf\Enums\Orientation;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
+=======
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
+use Spatie\LaravelData\Data;
+use Spipu\Html2Pdf\Html2Pdf;
+use Symfony\Component\HttpFoundation\BinaryFileResponse;
+use Webmozart\Assert\Assert;
+>>>>>>> origin/dev
 
 /**
  * Undocumented class.
@@ -64,12 +74,15 @@ class PdfData extends Data
         */
 
     // public static function make(Model $model = null, string $html = null): self
+<<<<<<< HEAD
 
 
     public PdfEngineEnum $engine = PdfEngineEnum::SPIPU;
 
     public string $html = '';
 
+=======
+>>>>>>> origin/dev
     public static function make(): self
     {
         return self::from([]);
@@ -91,6 +104,7 @@ class PdfData extends Data
 
     public function fromHtml(string $html): self
     {
+<<<<<<< HEAD
         switch ($this->engine) {
             case PdfEngineEnum::SPIPU:
                 dddx('spipu');
@@ -111,6 +125,11 @@ class PdfData extends Data
 
         $this->html = $html;
         // $this->engine->build($this);
+=======
+        $html2pdf = new Html2Pdf($this->orientation, $this->format, $this->lang);
+        $html2pdf->writeHTML($html);
+        $html2pdf->output($this->getPath(), $this->dest);
+>>>>>>> origin/dev
 
         return $this;
     }
@@ -140,6 +159,7 @@ class PdfData extends Data
 
         return $res;
     }
+<<<<<<< HEAD
 
     public function view(string $view, array $params=[]): self
     {
@@ -153,4 +173,6 @@ class PdfData extends Data
         $this->engine = $engine;
         return $this;
     }
+=======
+>>>>>>> origin/dev
 }

@@ -29,8 +29,12 @@ class HandlersRepository
      */
     public function addReporter(callable $reporter): int
     {
+<<<<<<< HEAD
         array_unshift($this->reporters, $reporter);
         return count($this->reporters);
+=======
+        return array_unshift($this->reporters, $reporter);
+>>>>>>> origin/dev
     }
 
     /**
@@ -38,8 +42,12 @@ class HandlersRepository
      */
     public function addRenderer(callable $renderer): int
     {
+<<<<<<< HEAD
         array_unshift($this->renderers, $renderer);
         return count($this->renderers);
+=======
+        return array_unshift($this->renderers, $renderer);
+>>>>>>> origin/dev
     }
 
     /**
@@ -47,8 +55,12 @@ class HandlersRepository
      */
     public function addConsoleRenderer(callable $renderer): int
     {
+<<<<<<< HEAD
         array_unshift($this->consoleRenderers, $renderer);
         return count($this->consoleRenderers);
+=======
+        return array_unshift($this->consoleRenderers, $renderer);
+>>>>>>> origin/dev
     }
 
     /**
@@ -92,6 +104,7 @@ class HandlersRepository
             $reflection = new \ReflectionFunction(\Closure::fromCallable($handler));
         }
 
+<<<<<<< HEAD
         $params = $reflection->getParameters();
         if (empty($params)) {
             return false;
@@ -107,5 +120,12 @@ class HandlersRepository
         }
 
         return is_a($e, $type->getName(), true);
+=======
+        if (! $params = $reflection->getParameters()) {
+            return false;
+        }
+
+        return $params[0]->getClass() instanceof \ReflectionClass ? $params[0]->getClass()->isInstance($e) : true;
+>>>>>>> origin/dev
     }
 }

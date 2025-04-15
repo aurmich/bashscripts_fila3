@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\View\Composers;
 
+<<<<<<< HEAD
 use Illuminate\View\View;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
@@ -14,6 +15,17 @@ use Nwidart\Modules\Facades\Module;
 use Illuminate\Support\Facades\Auth;
 use Modules\Xot\Actions\File\AssetPathAction;
 use Nwidart\Modules\Laravel\Module as LaravelModule;
+=======
+use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Str;
+use Illuminate\View\View;
+use Modules\Xot\Datas\MetatagData;
+use Modules\Xot\Datas\XotData;
+use Nwidart\Modules\Facades\Module;
+use Nwidart\Modules\Laravel\Module as LaravelModule;
+use Webmozart\Assert\Assert;
+>>>>>>> origin/dev
 
 /**
  * Class XotComposer.
@@ -79,11 +91,14 @@ class XotComposer
         return asset(app(\Modules\Xot\Actions\File\AssetAction::class)->execute($str));
     }
 
+<<<<<<< HEAD
     public function path(string $str): string
     {
         return (app(AssetPathAction::class)->execute($str));
     }
 
+=======
+>>>>>>> origin/dev
     public function metatag(string $str): string|bool|null
     {
         $metatag = MetatagData::make();

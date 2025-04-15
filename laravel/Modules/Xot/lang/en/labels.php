@@ -65,6 +65,10 @@ return [
                     'subscribe_ip' => 'Subscriber Ip',
                     'created_at' => 'Created At',
                     'status' => 'Status',
+<<<<<<< HEAD
+=======
+                    'customer_id' => 'Customer Id',
+>>>>>>> origin/dev
                     'total_price' => 'Total Price',
                 ],
                 'management' => 'Subscriber Management',
