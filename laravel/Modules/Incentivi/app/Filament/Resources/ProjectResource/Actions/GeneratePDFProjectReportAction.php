@@ -38,7 +38,13 @@ class GeneratePDFProjectReportAction extends Action
                  * $projet_workgroup = $project->workgroup;
                  * $project_activities = $project->activities;
                  */
-                $view = 'incentivi::filament.pdf.pdf-project-report';
+
+
+                // spatie tailwind
+                // $view = 'incentivi::filament.pdf.pdf-project-report';
+
+                //spipu
+                $view = 'incentivi::filament.pdf.pdf';
 
                 $rupActivity = $project->activities->where('nome', 'Responsabile Unico del Progetto')->first();
                 $rupActivityEmployee = $rupActivity && $rupActivity->employees->first() ?
@@ -53,7 +59,7 @@ class GeneratePDFProjectReportAction extends Action
                 ];
 
                 return PdfData::make()
-                    ->setEngine(PdfEngineEnum::SPATIE)
+                    ->setEngine(PdfEngineEnum::SPIPU)
                     ->view($view, $viewParams)
                     ->download();
 

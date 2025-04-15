@@ -112,8 +112,6 @@ class ProjectResource extends XotBaseResource
                     Forms\Components\Section::make('Importi e percentuali')
                         ->schema([
                             Forms\Components\TextInput::make('importo_totale')
-                                // ->currencyMask(thousandSeparator: ',',decimalSeparator: '.',precision: 2)
-                                // ->gte(20000)
                                 ->required()
                                 ->numeric()
                                 // ->inputMode('decimal')

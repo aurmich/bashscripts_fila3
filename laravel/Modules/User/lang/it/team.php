@@ -82,6 +82,10 @@ return array (
     array (
       'label' => 'personal_team',
     ),
+    'role' => 
+    array (
+      'label' => 'role',
+    ),
   ),
   'actions' => 
   array (
