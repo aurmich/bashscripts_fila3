@@ -30,10 +30,10 @@ return new class extends XotBaseMigration
                 $table->text('oggetto');
                 $table->string('determina');
                 $table->decimal('percentuale_fondo');
-                $table->decimal('importo_totale');
-                $table->decimal('importo_effettivo_fondo');
-                $table->decimal('componente_incentivante');
-                $table->decimal('componente_innovazione');
+                $table->decimal('importo_totale', 10, 3);
+                $table->decimal('importo_effettivo_fondo', 10, 3);
+                $table->decimal('componente_incentivante', 10, 3);
+                $table->decimal('componente_innovazione', 10, 3);
                 $table->string('settore');
                 $table->timestamps();
             });
@@ -47,6 +47,11 @@ return new class extends XotBaseMigration
                 // if (! $this->hasColumn('tipo_liquidazione')) {
                 //     $table->string('tipo_liquidazione');
                 // }
+                
+                $table->decimal('importo_totale', 10, 3)->change();
+                $table->decimal('importo_effettivo_fondo', 10, 3)->change();
+                $table->decimal('componente_incentivante', 10, 3)->change();
+                $table->decimal('componente_innovazione', 10, 3)->change();
                 
                 $this->updateTimestamps($table);
             }

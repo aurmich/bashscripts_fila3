@@ -11,11 +11,14 @@ use Illuminate\Mail\Mailables\Attachment;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
-use Modules\Performance\Actions\MakePdfByRecord;
 use Modules\Performance\Models\Individuale as Scheda;
 use Modules\Xot\Actions\Export\PdfByModelAction;
+use Illuminate\Contracts\Queue\ShouldQueue;
 
-class SchedaMail extends Mailable
+/**
+ * implements ShouldQueue
+ */
+class SchedaMail extends Mailable 
 {
     use Queueable;
     use SerializesModels;
@@ -25,9 +28,10 @@ class SchedaMail extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct(Scheda $scheda)
+    public function __construct(Scheda $record)
     {
-        $this->scheda = $scheda;
+        
+        $this->scheda = $record;
     }
 
     /**
