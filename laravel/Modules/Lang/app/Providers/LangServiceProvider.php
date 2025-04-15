@@ -69,9 +69,6 @@ class LangServiceProvider extends XotBaseServiceProvider
             Assert::isInstanceOf($component, Field::class);
             $validationMessages = __('user::validation');
             if (is_array($validationMessages)) {
-<<<<<<< HEAD
-                $component->validationMessages($validationMessages);
-=======
                 // Convertiamo l'array generico in un array<string, string> per soddisfare il tipo richiesto
                 $typedMessages = [];
                 foreach ($validationMessages as $key => $value) {
@@ -80,7 +77,6 @@ class LangServiceProvider extends XotBaseServiceProvider
                     }
                 }
                 $component->validationMessages($typedMessages);
->>>>>>> origin/dev
             }
 
             return $component;

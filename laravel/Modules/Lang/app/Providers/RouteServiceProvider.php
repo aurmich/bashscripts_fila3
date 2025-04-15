@@ -6,12 +6,9 @@ namespace Modules\Lang\Providers;
 
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
-<<<<<<< HEAD
-=======
 /**
  * Provider per la registrazione delle rotte del modulo Lang.
  */
->>>>>>> origin/dev
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
     /**
@@ -19,14 +16,6 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
      */
     protected string $moduleNamespace = 'Modules\Lang\Http\Controllers';
 
-<<<<<<< HEAD
-    protected string $module_dir = __DIR__;
-
-    protected string $module_ns = __NAMESPACE__;
-
-    public string $name = 'Lang';
-
-=======
     /**
      * The directory of the module.
      */
@@ -45,33 +34,21 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
     /**
      * Bootstrap the module services.
      */
->>>>>>> origin/dev
     public function boot(): void
     {
         parent::boot();
         $this->registerLang();
     }
 
-<<<<<<< HEAD
-=======
     /**
      * Register the module services.
      */
->>>>>>> origin/dev
     public function register(): void
     {
         parent::register();
         // $this->registerLang();
     }
 
-<<<<<<< HEAD
-    public function registerLang(): void
-    {
-        $locales = config('laravellocalization.supportedLocales');
-        if (! \is_array($locales)) {
-            $locales = ['it' => 'it', 'en' => 'en'];
-        }
-=======
     /**
      * Registra le impostazioni di lingua basate sulla configurazione.
      */
@@ -85,7 +62,6 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
         }
 
         /** @var array<string> $langs */
->>>>>>> origin/dev
         $langs = array_keys($locales);
 
         /*
@@ -100,10 +76,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
         }
 
         if (\in_array(request()->segment($n), $langs, false)) {
-<<<<<<< HEAD
-=======
             /** @var string|null $lang */
->>>>>>> origin/dev
             $lang = request()->segment($n);
             if (null !== $lang) {
                 app()->setLocale($lang);

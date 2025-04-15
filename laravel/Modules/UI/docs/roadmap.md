@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # UI Module Roadmap
 
 ## Module Progress Overview
@@ -76,7 +75,6 @@ Overall Module Completion: 60%
    - Query optimization
    - Cache implementation
    - Priority: High
-=======
 # 🗺️ UI Module Roadmap
 
 ## 📊 Progress Overview
@@ -158,4 +156,3 @@ Overall Module Completion: 60%
 5. 🧪 A11y testing suite
 
 [More details in docs/roadmap/weekly/week2.md] 
->>>>>>> origin/dev

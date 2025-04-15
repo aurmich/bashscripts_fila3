@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Modulo Tenant
 
 ## Informazioni Generali
@@ -109,7 +108,6 @@ composer format        # Formatta il codice
 - Formati data/ora per tenant
 
 ## Changelog
-=======
 # Modulo Tenant
 
 ## Informazioni Generali
@@ -220,5 +218,4 @@ composer format        # Formatta il codice
 - Formati data/ora per tenant
 
 ## Changelog
->>>>>>> origin/dev
 Le modifiche vengono tracciate nel repository GitHub. 

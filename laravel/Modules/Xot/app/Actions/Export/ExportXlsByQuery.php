@@ -33,11 +33,7 @@ class ExportXlsByQuery
     ): BinaryFileResponse {
         // Assicuriamo che $fields sia un array di stringhe
         $stringFields = array_map(function ($field) {
-<<<<<<< HEAD
-            return is_string($field) ? $field : (string) $field;
-=======
             return strval($field);
->>>>>>> origin/dev
         }, array_values($fields));
 
         $export = new QueryExport(
@@ -45,11 +41,6 @@ class ExportXlsByQuery
             transKey: null,
             fields: $stringFields
         );
-<<<<<<< HEAD
-        
-=======
-
->>>>>>> origin/dev
         // Note: QueryExport doesn't accept a limit parameter directly
         // If limit is needed, apply it to the query before passing to the exporter
         if ($limit !== null) {

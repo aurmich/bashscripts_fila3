@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Modulo Media
 
 ## Informazioni Generali
@@ -101,7 +100,6 @@ composer format        # Formatta il codice
    - Verificare supporto GD/Imagick
 
 ## Changelog
-=======
 # Modulo Media
 
 ## Informazioni Generali
@@ -204,5 +202,4 @@ composer format        # Formatta il codice
    - Verificare supporto GD/Imagick
 
 ## Changelog
->>>>>>> origin/dev
 Le modifiche vengono tracciate nel repository GitHub. 

@@ -1,10 +1,8 @@
-<<<<<<< HEAD
 # Module Lang
 Modulo dedicato alla gestione delle traduzioni
 
 ## Aggiungere Modulo nella base del progetto
 Dentro la cartella laravel/Modules
-=======
 # 🌐 Lang Module - Gestione Multilingua
 
 [![PHP Version](https://img.shields.io/badge/PHP-8.2+-blue.svg)](https://php.net)
@@ -121,7 +119,6 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file [LICENSE](LICE
 This project is distributed under the MIT license. See the [LICENSE](LICENSE) file for more details.
 
 Este proyecto está distribuido bajo la licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
->>>>>>> origin/dev
 
 ```bash
 git submodule add https://github.com/laraxot/module_lang_fila3.git Lang
@@ -139,8 +136,5 @@ php artisan module:enable Lang
 ## Eseguire le migrazioni
 ```bash
 php artisan module:migrate Lang
-<<<<<<< HEAD
 ```
-=======
 ```
->>>>>>> origin/dev

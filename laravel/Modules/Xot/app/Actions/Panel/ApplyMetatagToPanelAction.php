@@ -18,12 +18,8 @@ class ApplyMetatagToPanelAction
             $metatag = MetatagData::make();
 
             return $panel
-<<<<<<< HEAD
-                //->colors($metatag->getColors())
-=======
                 // @phpstan-ignore argument.type
                 ->colors($metatag->getColors())
->>>>>>> origin/dev
                 ->brandLogo($metatag->getLogoHeader())
                 ->brandName($metatag->title)
                 ->darkModeBrandLogo($metatag->getLogoHeaderDark())

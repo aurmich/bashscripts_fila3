@@ -39,9 +39,6 @@ class Change extends Component
             // @phpstan-ignore staticMethod.notFound
             $url = LaravelLocalization::getLocalizedURL($key, $this->url, [], true);
             if (false !== $url) {
-<<<<<<< HEAD
-                $url = Str::of($url)->replace(url(''), '')->toString();
-=======
                 // Verifichiamo che $url sia una stringa o lo convertiamo in modo sicuro
                 if (! is_string($url)) {
                     // Se non è una stringa, utilizziamo una URL di fallback
@@ -49,7 +46,6 @@ class Change extends Component
                 } else {
                     $url = Str::of($url)->replace(url(''), '')->toString();
                 }
->>>>>>> origin/dev
             }
             $item['url'] = $url;
 

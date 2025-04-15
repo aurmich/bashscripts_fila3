@@ -50,8 +50,6 @@ Il modello `Media.php` contiene diverse proprietà documentate con tipo `mixed`:
 **Soluzione da implementare**:
 1. Specificare tipi più precisi per queste proprietà in base ai valori effettivi che possono assumere
 
-<<<<<<< HEAD
-=======
 ### 4. Errori con le API fluenti di FFMpeg in azioni di conversione video
 
 **Problema**: Le classi `ConvertVideoByMediaConvertAction` e `ConvertVideoByConvertDataAction` presentavano errori PHPStan relativi all'utilizzo dell'API fluente di FFMpeg, in particolare:
@@ -81,7 +79,6 @@ Il modello `Media.php` contiene diverse proprietà documentate con tipo `mixed`:
 
 Questa soluzione mantiene la funzionalità originale migliorando al contempo la chiarezza del codice e la compatibilità con l'analisi statica di PHPStan a livello 10.
 
->>>>>>> origin/dev
 ## Principi Applicati
 
 1. **Uso appropriato di PHPDoc per tipi speciali**: Quando PHP non supporta nativamente un tipo (come `resource`), utilizzare annotazioni PHPDoc per fornire informazioni di tipo a PHPStan.
