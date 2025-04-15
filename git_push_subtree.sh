@@ -1,6 +1,9 @@
 #!/bin/bash
 
+<<<<<<< HEAD
 source ./bashscripts/lib/custom.sh
+=======
+>>>>>>> origin/dev
 # Validate input
 if [ $# -ne 2 ]; then
     echo "Usage: $0 <path> <remote_repo>"
@@ -9,6 +12,7 @@ fi
 
 # Input parameters
 LOCAL_PATH="$1"
+<<<<<<< HEAD
 LOCAL_PATH_bak="$LOCAL_PATH"_bak
 REMOTE_REPO="$2"
 REMOTE_BRANCH=$(git symbolic-ref --short HEAD 2>/dev/null || echo "main")
@@ -21,6 +25,29 @@ echo "  🌐 Branch: $REMOTE_BRANCH"
 echo "  🌐 Temporary branch: $TEMP_BRANCH"
 
 
+=======
+REMOTE_REPO="$2"
+REMOTE_BRANCH=$(git symbolic-ref --short HEAD 2>/dev/null || echo "main")
+TEMP_BRANCH=$(basename "$LOCAL_PATH")-temp
+# Simple error handling function
+die() {
+    echo "$1" >&2
+    exit 1
+}
+
+# Funzione per loggare messaggi
+log() {
+    local message="$1"
+    echo "$(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$LOG_FILE"
+}
+
+# Funzione per gestire gli errori
+handle_error() {
+    local error_message="$1"
+    log "❌ Errore: $error_message"
+    exit 1
+}
+>>>>>>> origin/dev
 
 if(! git ls-remote "$REMOTE_REPO" > /dev/null 2>&1)
 then
@@ -34,13 +61,19 @@ push_subtree() {
     git add -A
     git commit -am "."
     git push -u origin "$REMOTE_BRANCH"
+<<<<<<< HEAD
 
 
+=======
+    
+    
+>>>>>>> origin/dev
     find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
 
 
     if(! git subtree push -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH")
     then
+<<<<<<< HEAD
         log "❌ Failed to push subtree $LOCAL_PATH to $REMOTE_REPO"
         if(! git push  "$REMOTE_REPO" $(git subtree split --prefix="$LOCAL_PATH"):"$REMOTE_BRANCH")
         then
@@ -56,11 +89,22 @@ push_subtree() {
 
     #        # Then force push that branch
         #    git push "$REMOTE_REPO" "$TEMP_BRANCH":"$REMOTE_BRANCH"
+=======
+        handle_error "Failed to push subtree $LOCAL_PATH to $REMOTE_REPO"
+    #    if(! git push  "$REMOTE_REPO" $(git subtree split --prefix="$LOCAL_PATH"):"$REMOTE_BRANCH")
+    #    then
+    #        # First, split the subtree to a temporary branch
+    #        git subtree split --prefix="$LOCAL_PATH" -b "$TEMP_BRANCH"
+
+    #        # Then force push that branch
+    #        git push -f "$REMOTE_REPO" "$TEMP_BRANCH":"$REMOTE_BRANCH"
+>>>>>>> origin/dev
 
     #        # Optionally, clean up the temporary branch
     #        git branch -D "$TEMP_BRANCH"
 
     #        git subtree push -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH"
+<<<<<<< HEAD
 
             #mv "$LOCAL_PATH" "$LOCAL_PATH_bak" || die "Failed to rename $LOCAL_PATH to $LOCAL_PATH_bak"
             #git add .
@@ -80,6 +124,14 @@ push_subtree() {
 
     git rebase --rebase-merges --strategy subtree "$REMOTE_BRANCH" --autosquash
     #git rebase --preserve-merges "$REMOTE_BRANCH"
+=======
+    #    fi
+    fi
+
+
+    git rebase --rebase-merges --strategy subtree "$REMOTE_BRANCH"
+    #git rebase --preserve-merges "$REMOTE_BRANCH" 
+>>>>>>> origin/dev
 }
 
 # Run sync

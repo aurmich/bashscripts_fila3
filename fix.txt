@@ -43,6 +43,7 @@ find . -type f -name "*:Zone.Identifier" -exec rm -f {} +
 
 sudo update-alternatives --config php
 
+<<<<<<< HEAD
 ----
 cd <dir>
 git init
@@ -56,3 +57,25 @@ git add -A
 git commit -am .
 git push -u origin dev
 rm -rf .git
+=======
+
+
+
+
+
+PROBLEMA: accesso cartelle file
+SOLUZIONE: sudo chmod 777 -R .
+
+
+
+PROBLEMA: include(/var/www/html/base_ptv_fila3/laravel/vendor/composer/../../Modules/UI/app/Providers/UIServiceProvider.php): Failed to open stream: No such file or directory
+SOLUZIONE: togliere _old dalle varie cartelle all'interno del modulo
+
+
+
+PROBLEMA: zsh: permission denied: ./bashscripts/git_up_noai.sh (dando comando ./bashscripts/git_up_noai.sh dev)
+SOLUZIONE: > sudo chmod 777 -R .     
+
+
+        
+>>>>>>> origin/dev

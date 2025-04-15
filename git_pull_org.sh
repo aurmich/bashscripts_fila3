@@ -1,7 +1,11 @@
 #!/bin/sh
 
 # Controllo parametri
+<<<<<<< HEAD
 if [ -z "$1" ] || [ -z "$2" ]; then
+=======
+if [ "$#" -ne 2 ]; then
+>>>>>>> origin/dev
     echo "Usage: $0 <organization> <branch>"
     exit 1
 fi
@@ -15,6 +19,7 @@ where=$(pwd)
 echo "-------- START SYNC [$where ($branch) - ORG: $org] ----------"
 
 # 1️⃣ Configurazioni globali per evitare problemi
+<<<<<<< HEAD
 git config core.fileMode false
 git config core.ignorecase false
 git config advice.skippedCherryPicks false
@@ -78,5 +83,13 @@ if ! git rev-parse --abbrev-ref --symbolic-full-name "@{u}" >/dev/null 2>&1; the
     git branch --set-upstream-to=origin/$branch "$branch" || true
     git branch -u origin/$branch || true
 fi
+=======
+git config --global core.fileMode false
+git config --global core.autocrlf input
+
+# 2️⃣ Fetch e Pull
+git fetch origin
+git pull origin "$branch"
+>>>>>>> origin/dev
 
 echo "-------- END SYNC [$where ($branch) - ORG: $org] ----------"
