@@ -16,10 +16,7 @@ use Modules\Rating\Datas\RatingData;
 use Modules\Rating\Enums\SupportedLocale;
 use Modules\UI\Filament\Forms\Components\RadioImage;
 use Modules\Xot\Actions\Filament\Block\GetViewBlocksOptionsByTypeAction;
-<<<<<<< HEAD
 use Webmozart\Assert\Assert;
-=======
->>>>>>> origin/dev
 
 class Rating extends Block
 {
@@ -30,11 +27,8 @@ class Rating extends Block
      */
     public static function create(): Block
     {
-<<<<<<< HEAD
         // Ensure we're passing a string to make()
         Assert::stringNotEmpty(static::BLOCK_TYPE, 'Block type must be a non-empty string');
-=======
->>>>>>> origin/dev
         return parent::make(static::BLOCK_TYPE)
             ->schema([
                 TextInput::make('title')
@@ -52,11 +46,7 @@ class Rating extends Block
                 $locale = App::getLocale();
                 $supportedLocale = SupportedLocale::fromString($locale);
 
-<<<<<<< HEAD
                 return sprintf('Rating (%s)', $supportedLocale->getLabel());
-=======
-                return sprintf('Rating (%s)', $supportedLocale->label());
->>>>>>> origin/dev
             });
     }
 
@@ -80,22 +70,15 @@ class Rating extends Block
         string $context = 'form',
         ?array $options = null,
     ): Block {
-<<<<<<< HEAD
         // Ensure we're passing a string to execute()
         Assert::stringNotEmpty(static::BLOCK_TYPE, 'Block type must be a non-empty string');
-=======
->>>>>>> origin/dev
         $blockOptions = $options ?? app(GetViewBlocksOptionsByTypeAction::class)
             ->execute(static::BLOCK_TYPE, true);
 
         return Block::make($name)
             ->schema([
                 RadioImage::make('view')
-<<<<<<< HEAD
                     ->options(is_array($blockOptions) ? array_map(fn($value) => is_scalar($value) ? (string)$value : '', $blockOptions) : []),
-=======
-                    ->options($blockOptions),
->>>>>>> origin/dev
 
                 Repeater::make('ratings')
                     ->visible(fn (Get $get): bool => $get('locale') === App::getLocale())
