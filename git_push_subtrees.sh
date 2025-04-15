@@ -24,7 +24,11 @@ for ((i=0; i<total; i++)); do
     # Applica riscrittura URL se ORG è passato
     if [ -n "$ORG" ]; then
         url_org=$(rewrite_url "$url" "$ORG")
+<<<<<<< HEAD
         script="$script_dir/git_push_subtree_org.sh" 
+=======
+        script="$script_dir/git_push_subtree_org.sh"
+>>>>>>> origin/dev
         chmod +x "$script"
         sed -i -e 's/\r$//' "$script"
         if ! "$script" "$path" "$url_org" "$BRANCH" ; then

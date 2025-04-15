@@ -26,6 +26,7 @@ for ((i=0; i<total; i++)); do
     url=${submodules_array["url_${i}"]}
     # Applica riscrittura URL se ORG è passato
     if [ -n "$ORG" ]; then
+<<<<<<< HEAD
         url_org=$(rewrite_url "$url" "$ORG")
         script="$script_dir/git_push_subtree_org.sh" 
         chmod +x "$script"
@@ -33,6 +34,9 @@ for ((i=0; i<total; i++)); do
         if ! "$script" "$path" "$url_org" "$BRANCH" ; then
             log "⚠️ Push ORG fallita per $path."
         fi
+=======
+        url=$(rewrite_url "$url" "$ORG")
+>>>>>>> origin/dev
     fi
     echo "---------"
     echo "Submodule $i  📁 Path: $path  🌐 URL: $url"
