@@ -1,0 +1,2 @@
+Note: Using configuration file /var/www/html/ptvx/laravel/phpstan.neon.
+   0/199 [░░░░░░░░░░░░░░░░░░░░░░░░░░░░]   0%
