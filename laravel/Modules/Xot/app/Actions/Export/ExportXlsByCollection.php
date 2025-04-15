@@ -83,10 +83,10 @@ class ExportXlsByCollection
     }
 
     /**
-     * Scrive le righe di dati nel foglio Excel.
+     * Scrive le righe nel foglio di lavoro.
      *
-     * @param \PhpOffice\PhpSpreadsheet\Worksheet\Worksheet $sheet Il foglio Excel
-     * @param Collection $rows Le righe di dati da scrivere
+     * @param \PhpOffice\PhpSpreadsheet\Worksheet\Worksheet $sheet Il foglio di lavoro
+     * @param \Illuminate\Support\Collection $rows I dati da scrivere
      * @param array<string> $fields I campi da utilizzare per le colonne
      */
     protected function writeRows(\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet $sheet, Collection $rows, array $fields): void
@@ -94,7 +94,17 @@ class ExportXlsByCollection
         $row = 2;
         foreach ($rows as $data) {
             foreach ($fields as $col => $field) {
-                $value = $data->get($field) ?? '';
+                $value = '';
+
+                // Verifica che $data supporti il metodo get
+                if (is_object($data) && method_exists($data, 'get')) {
+                    $value = $data->get($field) ?? '';
+                } elseif (is_array($data) || $data instanceof \ArrayAccess) {
+                    $value = $data[$field] ?? '';
+                } elseif (is_object($data) && property_exists($data, $field)) {
+                    $value = $data->{$field} ?? '';
+                }
+
                 $sheet->setCellValueByColumnAndRow($col + 1, $row, $value);
             }
             $row++;

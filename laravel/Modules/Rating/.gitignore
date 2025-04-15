@@ -33,3 +33,7 @@ build/
 node_modules
 docs/cache/
 cache/
+<<<<<<< HEAD
+*:Zone.Identifier
+=======
+>>>>>>> origin/dev

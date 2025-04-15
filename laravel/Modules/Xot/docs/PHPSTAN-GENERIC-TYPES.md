@@ -45,6 +45,7 @@ public function comments(): HasMany
 public function tags(): BelongsToMany
 {
     return $this->belongsToManyX(Tag::class);
+    return $this->belongsToMany(Tag::class);
 }
 ```
 

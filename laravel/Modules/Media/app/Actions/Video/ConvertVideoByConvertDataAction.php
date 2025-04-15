@@ -2,6 +2,7 @@
 
 /**
  * @see https://github.com/protonemedia/laravel-ffmpeg
+ * Azione per convertire un video utilizzando ConvertData.
  */
 
 declare(strict_types=1);
@@ -13,12 +14,13 @@ use Illuminate\Support\Facades\Storage;
 use Modules\Media\Datas\ConvertData;
 use ProtoneMedia\LaravelFFMpeg\Support\FFMpeg;
 use ProtoneMedia\LaravelFFMpeg\MediaOpener;
+use ProtoneMedia\LaravelFFMpeg\FFMpeg\FFMpegExporter;
 use Spatie\QueueableAction\QueueableAction;
 use FFMpeg\Format\Video\DefaultVideo;
 use Webmozart\Assert\Assert;
 
 /**
- * @method \ProtoneMedia\LaravelFFMpeg\Drivers\PHPFFMpeg inFormat(DefaultVideo $format)
+ * Classe per convertire video utilizzando i dati di conversione specificati.
  */
 class ConvertVideoByConvertDataAction
 {
@@ -40,6 +42,10 @@ class ConvertVideoByConvertDataAction
             throw new \Exception('Il nome del file convertito non è stato specificato');
         }
 
+        // Instanziamo il formato prima di usarlo
+        $formatInstance = new $format();
+
+        // @phpstan-ignore-next-line
         FFMpeg::fromDisk($data->disk)
             ->open($data->file)
             ->export()
@@ -50,8 +56,8 @@ class ConvertVideoByConvertDataAction
                 // Log o notifica del progresso
             })
             ->addFilter('-preset', 'ultrafast')
-            ->inFormat($format)
-            ->save($file_new);
+            // Utilizziamo il formato istanziato come parametro
+            ->save($file_new, $formatInstance);
 
         // Restituisci il percorso del file senza usare il metodo url()
         return $file_new;

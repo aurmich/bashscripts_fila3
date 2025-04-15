@@ -172,6 +172,7 @@ protected $middlewareGroups = [
 
 ```php
 namespace Modules\Xot\app\Enums;
+namespace Modules\Xot\Enums;
 
 enum SupportedLocale: string
 {

@@ -4,92 +4,55 @@ declare(strict_types=1);
 
 namespace Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 
-use Filament\Resources\Pages\ListRecords;
+use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Columns\BadgeColumn;
-use Filament\Tables\Filters\SelectFilter;
-use Filament\Tables\Actions\Action;
-use Filament\Tables\Actions\EditAction;
-use Filament\Tables\Actions\DeleteAction;
-use Filament\Tables\Actions\DeleteBulkAction;
-use Filament\Tables\Actions\CreateAction;
+use Filament\Tables\Table;
+use Modules\Setting\Filament\Actions\Table\DatabaseBackupTableAction;
 use Modules\Setting\Filament\Resources\DatabaseConnectionResource;
+use Modules\Xot\Filament\Pages\XotBaseListRecords;
 
-class ListDatabaseConnections extends ListRecords
+class ListDatabaseConnections extends XotBaseListRecords
 {
     protected static string $resource = DatabaseConnectionResource::class;
 
-    public function getListTableColumns(): array
+    public function getTableColumns(): array
     {
         return [
-            'name' => TextColumn::make('name')
-                ->searchable(),
-
-            'driver' => TextColumn::make('driver')
-                ->searchable(),
-
-            'host' => TextColumn::make('host')
-                ->searchable(),
-
-            'database' => TextColumn::make('database')
-                ->searchable(),
-
-            'status' => BadgeColumn::make('status')
-                ->colors([
-                    'danger' => 'inactive',
-                    'warning' => 'testing',
-                    'success' => 'active',
-                ]),
-
-            'created_at' => TextColumn::make('created_at')
-                ->dateTime()
-                ->sortable(),
+            TextColumn::make('name')->searchable()->sortable(),
+            TextColumn::make('driver')->searchable()->sortable(),
+            TextColumn::make('database')->searchable()->sortable(),
         ];
     }
 
     public function getTableFilters(): array
     {
         return [
-            SelectFilter::make('driver')
-                ->options([
-                    'mysql' => 'MySQL',
-                    'pgsql' => 'PostgreSQL',
-                    'sqlite' => 'SQLite',
-                    'sqlsrv' => 'SQL Server',
-                ]),
-
-            SelectFilter::make('status')
-                ->options([
-                    'active' => 'Active',
-                    'inactive' => 'Inactive',
-                    'testing' => 'Testing',
-                ]),
         ];
     }
 
     public function getTableActions(): array
     {
         return [
-            EditAction::make(),
-            DeleteAction::make(),
-            Action::make('test')
-                ->action(fn ($record) => $record->testConnection())
-                ->icon('heroicon-o-check-circle')
-                ->color('success'),
+            // Tables\Actions\EditAction::make(),
+            DatabaseBackupTableAction::make(),
         ];
     }
 
     public function getTableBulkActions(): array
     {
         return [
-            DeleteBulkAction::make(),
+            // Tables\Actions\BulkActionGroup::make([
+            Tables\Actions\DeleteBulkAction::make(),
+            // ]),
         ];
     }
 
-    public function getTableHeaderActions(): array
+    public function table(Table $table): Table
     {
-        return [
-            CreateAction::make(),
-        ];
+        return $table
+            ->columns($this->getTableColumns())
+            ->filters($this->getTableFilters())
+            ->actions($this->getTableActions())
+            ->bulkActions($this->getTableBulkActions());
     }
 }

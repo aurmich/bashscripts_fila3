@@ -25,7 +25,7 @@ trait TransTrait
 
         if (is_string($res)) {
             if ($exceptionIfNotExist && $res === $tmp) {
-                throw new \Exception('['.__LINE__.']['.class_basename(__CLASS__).']');
+                throw new \Exception('[' . __LINE__ . '][' . class_basename(__CLASS__) . ']');
             }
 
             return $res;
@@ -38,7 +38,7 @@ trait TransTrait
             }
         }
 
-        return 'fix:'.$tmp;
+        return 'fix:' . $tmp;
     }
 
     /**
@@ -49,7 +49,7 @@ trait TransTrait
         /** @var string */
         $transKey = app(GetTransKeyAction::class)->execute(static::class);
 
-        $key = $transKey.'.'.$key;
+        $key = $transKey . '.' . $key;
         $key = Str::of($key)->replace('.cluster.pages.', '.')->toString();
         return $key;
     }
@@ -67,7 +67,7 @@ trait TransTrait
         /** @var string */
         $transKey = app(GetTransKeyAction::class)->execute(static::class);
 
-        $key = $transKey.'.'.$key;
+        $key = $transKey . '.' . $key;
         $key = Str::of($key)->replace('.cluster.pages.', '.')->toString();
         return $key;
     }
@@ -78,20 +78,21 @@ trait TransTrait
     public static function transFunc(string $func, bool $exceptionIfNotExist = false): string
     {
         $key = static::getKeyTransFunc($func);
-        
-        /** @var string|array<int|string,mixed>|null $trans */
-        try{
+        /** @var string|array<int|string,mixed>|null */
+        $trans = null;
+
+        try {
             $trans = trans($key);
-        }catch(TypeError $e){
+        } catch (\TypeError $e) {
             dddx([
-                'e'=>$e,
-                'key'=>$key
+                'e' => $e,
+                'key' => $key,
             ]);
         }
 
-        if ($key == $trans) {
+        if ($key === $trans) {
             $group = Str::of($key)->before('.')->toString();
-            $item = Str::of($key)->after($group.'.')->toString();
+            $item = Str::of($key)->after($group . '.')->toString();
             $group_arr = trans($group);
             if (is_array($group_arr)) {
                 $trans = Arr::get($group_arr, $item);
@@ -101,9 +102,6 @@ trait TransTrait
             return strval($trans);
         }
 
-        // if (! is_string($trans) && ! is_numeric($trans) && ! is_array($trans)) {
-        //    return 'fix:'.$key;
-        // }
         if (is_array($trans)) {
             $first = current($trans);
             if (is_string($first) || is_numeric($first)) {
@@ -111,7 +109,7 @@ trait TransTrait
             }
         }
 
-        if (is_string($trans) /* || is_numeric($trans) */) {
+        if (is_string($trans)) {
             if ($trans === $key) {
                 $newTrans = Str::of($key)
                     ->between('::', '.')
@@ -125,7 +123,7 @@ trait TransTrait
             return $trans;
         }
 
-        if (is_null($trans)) {
+        if ($trans === null) {
             $newTrans = Str::of($key)
                 ->between('::', '.')
                 ->replace('_', ' ')
@@ -135,12 +133,7 @@ trait TransTrait
             return $newTrans;
         }
 
-        // $first = current($trans);
-        // if (is_string($first) || is_numeric($first)) {
-        //    return is_string($first) ? $first : (string) $first;
-        // }
-
-        return 'fix:'.$key;
+        return 'fix:' . $key;
     }
 
     protected function transChoice(string $key, int $number, array $replace = []): string

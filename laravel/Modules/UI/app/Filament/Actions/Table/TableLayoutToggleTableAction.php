@@ -2,46 +2,49 @@
 
 declare(strict_types=1);
 
-namespace Modules\UI\Filament\Actions\Table;
+namespace Modules\UI\app\Filament\Actions\Table;
 
+use Filament\Resources\Pages\ListRecords;
 use Filament\Tables\Actions\Action;
 use Illuminate\Support\Facades\Session;
-use Modules\UI\Enums\TableLayoutEnum;
-use Livewire\Component;
-
-interface HasTableLayout
-{
-    public function getLayoutView(): TableLayoutEnum;
-    public function setLayoutView(TableLayoutEnum $layout): void;
-    public function resetTable(): void;
-}
+use Modules\UI\Enums\TableLayout;
+use Modules\UI\app\Traits\TableLayoutTrait;
 
 class TableLayoutToggleTableAction extends Action
 {
+    use TableLayoutTrait;
+
     protected function setUp(): void
     {
         parent::setUp();
 
+        $current = $this->getCurrentLayout();
+
         $this
-            ->name('layout')
-            ->label('Cambia Layout')
-            ->icon('heroicon-o-view-columns')
-            ->action(fn (Component&HasTableLayout $livewire) => $this->toggleLayout($livewire));
+            ->label('Toggle Layout')
+            ->tooltip($current->getLabel())
+            ->color($current->getColor())
+            ->icon($current->getIcon())
+            ->action(fn ($livewire) => $this->toggleLayout($livewire));
     }
 
-    protected function toggleLayout(Component&HasTableLayout $livewire): void
+    /**
+     * @param \Filament\Resources\Pages\ListRecords|null $livewire
+     */
+    protected function toggleLayout($livewire): void
     {
-        $currentLayout = $livewire->getLayoutView();
-        $newLayout = $currentLayout === TableLayoutEnum::GRID ? TableLayoutEnum::LIST : TableLayoutEnum::GRID;
+        $currentLayout = $this->getCurrentLayout();
+        $newLayout = $currentLayout->toggle();
         
-        $livewire->setLayoutView($newLayout);
-        $livewire->dispatch('$refresh');
-        $livewire->dispatch('refreshTable');
-        $livewire->resetTable();
+        $this->setTableLayout($newLayout);
+
+        if ($livewire instanceof ListRecords) {
+            $livewire->dispatch('$refresh');
+        }
     }
 
-    public static function make(?string $name = null): static
+    protected function getCurrentLayout(): TableLayout
     {
-        return parent::make($name ?? 'layout');
+        return $this->getTableLayout();
     }
 }

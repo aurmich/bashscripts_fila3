@@ -4,6 +4,15 @@ declare(strict_types=1);
 
 return [
     'resource' => [
+<<<<<<< HEAD
+        'name' => ['label' => 'Rating'],
+    ],
+    'navigation' => [
+        'name' => ['label' => 'Rating'],
+        'plural' => ['label' => 'Rating'],
+        'group' => [
+            'name' => ['label' => 'Admin'],
+=======
         'name' => 'Rating',
     ],
     'navigation' => [
@@ -11,6 +20,7 @@ return [
         'plural' => 'Rating',
         'group' => [
             'name' => 'Admin',
+>>>>>>> origin/dev
         ],
     ],
     'fields' => [
@@ -83,6 +93,37 @@ return [
     ],
     'actions' => [
         'enable' => [
+<<<<<<< HEAD
+            'cta' => ['label' => 'Attiva'],
+            'label' => ['label' => 'Attiva'],
+        ],
+        'disable' => [
+            'cta' => ['label' => 'Dismetti'],
+            'label' => ['label' => 'Dismetti'],
+        ],
+        'import' => [
+            'row_number' => ['label' => 'Riga :row'],
+            'label' => ['label' => 'Importa'],
+            'fields' => [
+                'import_file' => ['label' => 'Seleziona un file XLS o CSV da caricare'],
+            ],
+        ],
+        'export' => [
+            'filename_prefix' => ['label' => 'Lista asset al'],
+            'label' => ['label' => 'Esporta'],
+            'columns' => [
+                'brand' => ['label' => 'Marca'],
+                'model' => ['label' => 'Modello'],
+                'description' => ['label' => 'Descrizione'],
+                'serial_number' => ['label' => 'Numero di serie'],
+                'inventory_number' => ['label' => 'Codice inventario'],
+                'code' => ['label' => 'Identificativo'],
+                'manufacturing_year' => ['label' => 'Anno di fabbricazione'],
+                'purchase_year' => ['label' => 'Anno di acquisto'],
+                'is_enabled' => ['label' => 'È attivo?'],
+                'asset_type' => ['label' => 'Tipologia'],
+                'parent_inventory_number' => ['label' => 'Codice inventario genitore'],
+=======
             'cta' => 'Attiva',
         ],
         'disable' => [
@@ -108,13 +149,21 @@ return [
                 'is_enabled' => 'È attivo?',
                 'asset_type' => 'Tipologia',
                 'parent_inventory_number' => 'Codice inventario genitore',
+>>>>>>> origin/dev
             ],
         ],
     ],
     'widgets' => [
+<<<<<<< HEAD
+        'child_assets' => ['label' => 'Asset figli'],
+    ],
+    'exceptions' => [
+        'mandatory_data' => ['label' => '{1} Dato obbligatorio non presente|{2} 2 Dati obbligatori non presenti|{3} 3 Dati obbligatori non presenti|[4,*] Vari dati obbligatori non presenti'],
+=======
         'child_assets' => 'Asset figli',
     ],
     'exceptions' => [
         'mandatory_data' => '{1} Dato obbligatorio non presente|{2} 2 Dati obbligatori non presenti|{3} 3 Dati obbligatori non presenti|[4,*] Vari dati obbligatori non presenti',
+>>>>>>> origin/dev
     ],
 ];

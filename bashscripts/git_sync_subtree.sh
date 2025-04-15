@@ -19,35 +19,11 @@ die() {
     exit 1
 }
 
-<<<<<<< HEAD
 # Funzione per loggare messaggi
 log() {
     local message="$1"
-    echo "$(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$LOG_FILE"
+    echo "🗓️ $(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$LOG_FILE"
 }
-=======
-# Sync subtree
-sync_subtree() {
-    git add .
-    git commit -am "."
-    git push -u origin "$REMOTE_BRANCH"
-    
-    git subtree pull -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH"  --squash ||
-        git subtree pull -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH"   
-
-    find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
-
-    git fetch "$REMOTE_REPO" "$REMOTE_BRANCH" --depth=1
-    git merge -s subtree FETCH_HEAD  --allow-unrelated-histories
-    git subtree push -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH"
-
-    git push -f "$REMOTE_REPO" $(git subtree split --prefix="$LOCAL_PATH"):"$REMOTE_BRANCH"
-    # First, split the subtree to a temporary branch
-    git subtree split --prefix="$LOCAL_PATH" -b "$TEMP_BRANCH"
-
-    # Then force push that branch
-    git push -f "$REMOTE_REPO" "$TEMP_BRANCH":"$REMOTE_BRANCH"
->>>>>>> origin/dev
 
 # Funzione per gestire gli errori
 handle_error() {
