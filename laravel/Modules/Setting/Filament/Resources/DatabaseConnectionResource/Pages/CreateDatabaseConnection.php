@@ -10,6 +10,7 @@ use Modules\Setting\Filament\Resources\DatabaseConnectionResource;
 class CreateDatabaseConnection extends CreateRecord
 {
     protected static string $resource = DatabaseConnectionResource::class;
+<<<<<<< HEAD
 
     protected function getRedirectUrl(): string
     {
@@ -24,4 +25,6 @@ class CreateDatabaseConnection extends CreateRecord
             $connection->testConnection();
         }
     }
+=======
+>>>>>>> origin/dev
 }
