@@ -1,0 +1,210 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description: Regole per l'utilizzo di Livewire, Volt e Folio nel progetto
+globs: ["**/*.blade.php", "**/*.php"]
+alwaysApply: true
+---
+
+# Regole per Livewire, Volt e Folio
+
+## Livewire
+
+### Struttura dei Componenti
+- Organizzare i componenti Livewire in namespace appropriati (App\Livewire o Modules\ModuleName\Http\Livewire)
+- Utilizzare il pattern Form Request per la validazione dei dati
+- Implementare azioni come metodi pubblici con tipizzazione completa
+- Utilizzare proprietà pubbliche per i dati che devono essere renderizzati nella vista
+
+### Best Practices
+- Evitare query N+1 utilizzando eager loading per le relazioni
+- Utilizzare la lazy loading per componenti pesanti con `@livewire('component-name', ['param' => $value], key($uniqueKey))`
+- Implementare il lifecycle hook `mount()` per inizializzare i dati
+- Utilizzare eventi per la comunicazione tra componenti
+- Preferire l'approccio "renderless" per componenti di sola logica
+
+### Tipizzazione
+- Utilizzare strict_types=1 in tutti i file PHP
+- Specificare i tipi di ritorno per tutti i metodi pubblici
+- Utilizzare le Livewire Form Classes per gestire la validazione e la logica del form
+- Documentare le proprietà pubbliche con PHPDoc
+
+## Volt
+
+### Struttura dei Componenti
+- Utilizzare la sintassi di classe anonima per componenti semplici
+- Per componenti complessi, preferire l'approccio con classe dedicata in App\Livewire o Modules\ModuleName\Http\Volt
+- Seguire la convenzione di naming `nome-componente.blade.php` per i file di vista
+
+### Best Practices
+- Utilizzare le funzioni helper di Volt come `state()`, `rules()`, `mount()`, `computed()` e `on()`
+- Implementare la validazione con il metodo `rules()`
+- Utilizzare `state()` per dichiarare le proprietà del componente
+- Utilizzare `computed()` per proprietà calcolate
+- Utilizzare `on()` per ascoltare eventi
+
+### Sintassi
+- Utilizzare la direttiva `@volt` per definire componenti inline
+- Chiudere sempre i componenti con `@endvolt`
+- Per componenti di pagina, utilizzare la sintassi:
+  ```php
+  @volt('nome-componente')
+    // Contenuto del componente
+  @endvolt
+  ```
+
+## Folio
+
+### Struttura delle Pagine
+- Organizzare le pagine in directory semantiche sotto `resources/views/pages` o `Themes/ThemeName/resources/views/pages`
+- Utilizzare parametri dinamici con la sintassi `[param].blade.php` per pagine con parametri URL
+- Registrare i percorsi delle pagine in `app/Providers/FolioServiceProvider.php` o nel provider del modulo
+
+### Best Practices
+- Utilizzare le funzioni helper di Folio come `middleware()`, `name()`, `withTrashed()` e `render()`
+- Implementare il middleware appropriato per le pagine che richiedono autenticazione
+- Utilizzare la funzione `name()` per assegnare un nome alla rotta
+- Utilizzare la funzione `render()` per personalizzare il rendering
+
+### Integrazione con Volt
+- Combinare Folio e Volt per creare pagine dinamiche con stato
+- Utilizzare la sintassi:
+  ```php
+  use function Laravel\Folio\{middleware, name};
+  use Livewire\Volt\Component;
+  
+  name('page-name');
+  middleware(['web', 'auth']);
+  
+  @volt('page-component')
+    // Contenuto del componente
+  @endvolt
+  ```
+
+## Regole di Codifica Generali
+
+### Convenzioni di Naming
+- Utilizzare PascalCase per i nomi delle classi dei componenti
+- Utilizzare kebab-case per i nomi dei componenti nelle viste
+- Utilizzare camelCase per i metodi e le proprietà
+
+### Documentazione
+- Documentare tutti i componenti con PHPDoc
+- Includere descrizioni per le proprietà pubbliche
+- Documentare i metodi con parametri e tipi di ritorno
+
+### Testing
+- Scrivere test per tutti i componenti Livewire e Volt
+- Utilizzare `Livewire\Volt\Volt::test()` per testare i componenti Volt
+- Testare gli eventi e le interazioni tra componenti
+
+### Performance
+- Minimizzare il numero di richieste AJAX
+- Utilizzare la direttiva `wire:loading` per indicare lo stato di caricamento
+- Implementare la paginazione per liste lunghe
+---
+description: Regole per l'utilizzo di Livewire, Volt e Folio nel progetto
+globs: ["**/*.blade.php", "**/*.php"]
+alwaysApply: true
+---
+
+# Regole per Livewire, Volt e Folio
+
+## Livewire
+
+### Struttura dei Componenti
+- Organizzare i componenti Livewire in namespace appropriati (App\Livewire o Modules\ModuleName\Http\Livewire)
+- Utilizzare il pattern Form Request per la validazione dei dati
+- Implementare azioni come metodi pubblici con tipizzazione completa
+- Utilizzare proprietà pubbliche per i dati che devono essere renderizzati nella vista
+
+### Best Practices
+- Evitare query N+1 utilizzando eager loading per le relazioni
+- Utilizzare la lazy loading per componenti pesanti con `@livewire('component-name', ['param' => $value], key($uniqueKey))`
+- Implementare il lifecycle hook `mount()` per inizializzare i dati
+- Utilizzare eventi per la comunicazione tra componenti
+- Preferire l'approccio "renderless" per componenti di sola logica
+
+### Tipizzazione
+- Utilizzare strict_types=1 in tutti i file PHP
+- Specificare i tipi di ritorno per tutti i metodi pubblici
+- Utilizzare le Livewire Form Classes per gestire la validazione e la logica del form
+- Documentare le proprietà pubbliche con PHPDoc
+
+## Volt
+
+### Struttura dei Componenti
+- Utilizzare la sintassi di classe anonima per componenti semplici
+- Per componenti complessi, preferire l'approccio con classe dedicata in App\Livewire o Modules\ModuleName\Http\Volt
+- Seguire la convenzione di naming `nome-componente.blade.php` per i file di vista
+
+### Best Practices
+- Utilizzare le funzioni helper di Volt come `state()`, `rules()`, `mount()`, `computed()` e `on()`
+- Implementare la validazione con il metodo `rules()`
+- Utilizzare `state()` per dichiarare le proprietà del componente
+- Utilizzare `computed()` per proprietà calcolate
+- Utilizzare `on()` per ascoltare eventi
+
+### Sintassi
+- Utilizzare la direttiva `@volt` per definire componenti inline
+- Chiudere sempre i componenti con `@endvolt`
+- Per componenti di pagina, utilizzare la sintassi:
+  ```php
+  @volt('nome-componente')
+    // Contenuto del componente
+  @endvolt
+  ```
+
+## Folio
+
+### Struttura delle Pagine
+- Organizzare le pagine in directory semantiche sotto `resources/views/pages` o `Themes/ThemeName/resources/views/pages`
+- Utilizzare parametri dinamici con la sintassi `[param].blade.php` per pagine con parametri URL
+- Registrare i percorsi delle pagine in `app/Providers/FolioServiceProvider.php` o nel provider del modulo
+
+### Best Practices
+- Utilizzare le funzioni helper di Folio come `middleware()`, `name()`, `withTrashed()` e `render()`
+- Implementare il middleware appropriato per le pagine che richiedono autenticazione
+- Utilizzare la funzione `name()` per assegnare un nome alla rotta
+- Utilizzare la funzione `render()` per personalizzare il rendering
+
+### Integrazione con Volt
+- Combinare Folio e Volt per creare pagine dinamiche con stato
+- Utilizzare la sintassi:
+  ```php
+  use function Laravel\Folio\{middleware, name};
+  use Livewire\Volt\Component;
+  
+  name('page-name');
+  middleware(['web', 'auth']);
+  
+  @volt('page-component')
+    // Contenuto del componente
+  @endvolt
+  ```
+
+## Regole di Codifica Generali
+
+### Convenzioni di Naming
+- Utilizzare PascalCase per i nomi delle classi dei componenti
+- Utilizzare kebab-case per i nomi dei componenti nelle viste
+- Utilizzare camelCase per i metodi e le proprietà
+
+### Documentazione
+- Documentare tutti i componenti con PHPDoc
+- Includere descrizioni per le proprietà pubbliche
+- Documentare i metodi con parametri e tipi di ritorno
+
+### Testing
+- Scrivere test per tutti i componenti Livewire e Volt
+- Utilizzare `Livewire\Volt\Volt::test()` per testare i componenti Volt
+- Testare gli eventi e le interazioni tra componenti
+
+### Performance
+- Minimizzare il numero di richieste AJAX
+- Utilizzare la direttiva `wire:loading` per indicare lo stato di caricamento
+- Implementare la paginazione per liste lunghe
+- Utilizzare il polling solo quando necessario

@@ -1,0 +1,152 @@
+---
+description: Regole e best practices per lo sviluppo Laravel nel progetto
+globs: ["**/*.php"]
+alwaysApply: true
+---
+
+# Regole e Best Practices Laravel
+
+## Architettura
+
+### Struttura Modulare
+- Utilizzare l'architettura modulare di Laravel con Modules/
+- Ogni modulo deve avere una struttura coerente (Controllers, Models, Services, etc.)
+- Seguire il pattern Repository per l'accesso ai dati
+- Implementare Service Classes per la logica di business complessa
+- Utilizzare Actions per operazioni atomiche
+
+### Dependency Injection
+- Preferire l'iniezione delle dipendenze alla creazione diretta di oggetti
+- Utilizzare i contratti (interfaces) per il disaccoppiamento
+- Registrare i binding nel Service Provider del modulo
+- Utilizzare il container di Laravel per risolvere le dipendenze
+
+### Service Providers
+- Estendere XotBaseServiceProvider per i Service Provider dei moduli
+- Registrare le route, le view, le migrazioni e le traduzioni nel Service Provider
+- Utilizzare il metodo boot() per registrare i middleware e gli eventi
+- Utilizzare il metodo register() per registrare i binding nel container
+
+## Database
+
+### Modelli
+- Utilizzare Eloquent per l'interazione con il database
+- Implementare le relazioni tra modelli utilizzando i metodi appropriati
+- Utilizzare i trait HasFactory, SoftDeletes, etc. quando necessario
+- Definire le proprietà $fillable e $guarded per la mass assignment protection
+- Utilizzare i mutator e gli accessor per la manipolazione dei dati
+
+### Migrazioni
+- Creare migrazioni atomiche e reversibili
+- Utilizzare i metodi di schema builder per definire le tabelle
+- Aggiungere indici per migliorare le performance
+- Utilizzare le foreign key per mantenere l'integrità referenziale
+- Documentare le modifiche al database
+
+### Query Builder
+- Utilizzare il Query Builder per query complesse
+- Implementare scope locali per query riutilizzabili
+- Utilizzare eager loading per evitare il problema N+1
+- Preferire le query chunk() per elaborare grandi quantità di dati
+- Utilizzare le transazioni per operazioni atomiche
+
+## Routing e Controller
+
+### Routing
+- Organizzare le route in file separati per modulo
+- Utilizzare i route group per applicare middleware e prefissi
+- Nominare le route per facilitare la generazione di URL
+- Utilizzare i resource controller per le operazioni CRUD
+- Implementare API routes per le richieste AJAX
+
+### Controller
+- Seguire il principio di Single Responsibility
+- Utilizzare i Form Request per la validazione
+- Restituire response con codici HTTP appropriati
+- Implementare il pattern PRG (Post/Redirect/Get) per i form
+- Utilizzare i resource controller per le operazioni CRUD
+
+## Validazione
+
+### Form Request
+- Creare Form Request per la validazione dei dati
+- Implementare il metodo rules() per definire le regole di validazione
+- Utilizzare il metodo authorize() per il controllo delle autorizzazioni
+- Personalizzare i messaggi di errore con il metodo messages()
+- Utilizzare le regole di validazione personalizzate quando necessario
+
+### Middleware
+- Creare middleware per la validazione delle richieste
+- Utilizzare i middleware per il controllo delle autorizzazioni
+- Registrare i middleware nel kernel o nel Service Provider
+- Utilizzare i middleware di gruppo per applicare più middleware
+- Implementare middleware globali per funzionalità trasversali
+
+## Sicurezza
+
+### Autenticazione
+- Utilizzare il sistema di autenticazione di Laravel
+- Implementare l'autenticazione a due fattori quando necessario
+- Utilizzare i guard per diversi tipi di utenti
+- Implementare il throttling per prevenire attacchi di forza bruta
+- Utilizzare HTTPS per tutte le richieste
+
+### Autorizzazione
+- Utilizzare le Policy per il controllo delle autorizzazioni
+- Implementare i Gate per autorizzazioni personalizzate
+- Utilizzare il middleware can per proteggere le route
+- Implementare il controllo delle autorizzazioni nelle view
+- Utilizzare i ruoli e i permessi per gestire le autorizzazioni
+
+### CSRF Protection
+- Utilizzare il middleware VerifyCsrfToken per tutte le richieste POST
+- Includere il token CSRF in tutti i form
+- Utilizzare il metodo @csrf nelle view Blade
+- Escludere le route API dal middleware CSRF
+- Implementare il SameSite cookie policy
+
+## Testing
+
+### Unit Testing
+- Scrivere test unitari per tutte le classi
+- Utilizzare i mock per isolare le dipendenze
+- Implementare i test per i casi edge
+- Utilizzare i data provider per testare diversi scenari
+- Mantenere i test indipendenti
+
+### Feature Testing
+- Scrivere test funzionali per le funzionalità end-to-end
+- Utilizzare i factory per generare dati di test
+- Implementare i test per i flussi utente
+- Utilizzare i database in-memory per i test
+- Testare le autorizzazioni e le validazioni
+
+### Browser Testing
+- Utilizzare Laravel Dusk per i test del browser
+- Implementare i test per le interazioni JavaScript
+- Utilizzare gli screenshot per il debugging
+- Testare la responsività su diversi dispositivi
+- Implementare i test per i flussi utente complessi
+
+## Performance
+
+### Caching
+- Utilizzare il sistema di cache di Laravel
+- Implementare il caching per le query frequenti
+- Utilizzare il caching delle view per migliorare le performance
+- Implementare il caching dei dati con TTL appropriati
+- Utilizzare il caching distribuito per applicazioni scalabili
+
+### Queues
+- Utilizzare le code per le operazioni asincrone
+- Implementare i job per le operazioni in background
+- Utilizzare i worker per elaborare le code
+- Implementare il retry per i job falliti
+- Utilizzare i batch per elaborare grandi quantità di dati
+
+### Optimization
+- Utilizzare la compilazione delle view Blade
+- Implementare la minificazione degli asset
+- Utilizzare il lazy loading per le relazioni Eloquent
+- Implementare il caching delle configurazioni
+- Utilizzare il route caching per migliorare le performance
