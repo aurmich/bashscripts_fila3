@@ -111,7 +111,7 @@ php artisan key:generate
 
   APP_NAME=<nome progetto>
 
-  APP_NAME=SaluteOra
+  APP_NAME=
  80ec88ee9 (.)
   APP_ENV=local
   APP_DEBUG=true
