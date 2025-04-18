@@ -8,7 +8,6 @@ use Modules\Blog\Models\Article;
 use Modules\Xot\Actions\GetModelByModelTypeAction;
 use Modules\Xot\Actions\GetModelClassByModelTypeAction;
 use Webmozart\Assert\Assert;
-use Illuminate\Database\Eloquent\Model;
 
 class TranslateContentAction
 {
@@ -17,6 +16,7 @@ class TranslateContentAction
         // dddx([app(GetModelClassByModelTypeAction::class)->execute($model_class), Article::class]);
         // dddx(app($class));
         Assert::isInstanceOf($model = app(GetModelByModelTypeAction::class)->execute($model_class, $article_id), app($class), '['.__LINE__.']['.__FILE__.']');
+        /** @var Article $model */
 
         Assert::isArray($model_contents = $model->toArray(), '['.__LINE__.']['.__FILE__.']');
 
@@ -29,7 +29,6 @@ class TranslateContentAction
                     $model_content[$locale] = $model_content['it'];
                 }
             }
-            // @phpstan-ignore property.notFound
             $model->content_blocks = $model_content;
         }
 
@@ -42,7 +41,6 @@ class TranslateContentAction
                     $model_content[$locale] = $model_content['it'];
                 }
             }
-            // @phpstan-ignore property.notFound
             $model->sidebar_blocks = $model_content;
         }
 
@@ -55,11 +53,9 @@ class TranslateContentAction
                     $model_content[$locale] = $model_content['it'];
                 }
             }
-            // @phpstan-ignore property.notFound
             $model->footer_blocks = $model_content;
         }
 
         $model->update();
     }
-
 }

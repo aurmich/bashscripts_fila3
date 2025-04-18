@@ -16,24 +16,21 @@ class ListCategories extends XotBaseListRecords
     use ListRecords\Concerns\Translatable;
 
     /**
-     * @return array<string, \Filament\Tables\Columns\Column>
+     * @return array<string, mixed>
      */
     public function getListTableColumns(): array
     {
         return [
-            'icon' => Tables\Columns\IconColumn::make('icon')
+            Tables\Columns\IconColumn::make('icon')
                 ->icon(fn ($state) => $state),
-            'title' => Tables\Columns\TextColumn::make('title')
-                ->searchable()
+            Tables\Columns\TextColumn::make('title')->searchable()
                 ->sortable(),
-            'parent' => Tables\Columns\TextColumn::make('parent.title')
-                ->searchable()
+            Tables\Columns\TextColumn::make('parent.title')->searchable()
                 ->sortable(),
             // Tables\Columns\TextColumn::make('updated_at')
             //     ->sortable()
             //     ->dateTime(),
-            'image' => SpatieMediaLibraryImageColumn::make('image')
-                ->collection('category'),
+            SpatieMediaLibraryImageColumn::make('image')->collection('category'),
         ];
     }
 

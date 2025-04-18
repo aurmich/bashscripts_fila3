@@ -16,13 +16,20 @@ use Modules\Xot\Filament\Resources\ModuleResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Nwidart\Modules\Facades\Module;
 
+use Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager;
+
 class ListModules extends XotBaseListRecords
 {
     public TableLayoutEnum $layoutView = TableLayoutEnum::LIST;
 
     protected static string $resource = ModuleResource::class;
 
-   
+    public function getGridTableColumns(): array
+    {
+        return [
+            Stack::make($this->getListTableColumns()),
+        ];
+    }
 
     /**
      * @return array<string, Tables\Columns\Column>
@@ -68,11 +75,11 @@ class ListModules extends XotBaseListRecords
     {
         return [
             ViewAction::make()
-                ->label(''),
+                ,
             EditAction::make()
-                ->label(''),
+                ,
             DeleteAction::make()
-                ->label('')
+                
                 ->requiresConfirmation(),
         ];
     }
@@ -80,7 +87,7 @@ class ListModules extends XotBaseListRecords
     /**
      * @return array<string, Tables\Actions\BulkAction>
      */
-    protected function getTableBulkActions(): array
+    public function getTableBulkActions(): array
     {
         return [
             'delete' => DeleteBulkAction::make(),

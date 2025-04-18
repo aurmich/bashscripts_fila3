@@ -48,17 +48,12 @@ class PasswordExpired extends Page implements HasForms
 
     protected static bool $shouldRegisterNavigation = false;
 
-    public function form(Form $form): Form
+    public function getFormSchema(): array
     {
-        return $form
-            ->schema([
-                $this->getCurrentPasswordFormComponent(),
-                /*
-                $this->getPasswordFormComponent(),
-                $this->getPasswordConfirmationFormComponent(),
-                */
-                ...PasswordData::make()->getPasswordFormComponents('password'),
-            ]);
+        return [
+            $this->getCurrentPasswordFormComponent(),
+            ...PasswordData::make()->getPasswordFormComponents('password'),
+        ];
     }
 
     public function getResetPasswordFormAction(): Action
@@ -123,12 +118,22 @@ class PasswordExpired extends Page implements HasForms
         // get password expiry date and time
         $passwordExpiryDateTime = now()->addDays($pwd->expires_in);
 
+        // Verificare che l'utente esistante e che sia un modello Eloquent
+        if (!($user instanceof \Illuminate\Database\Eloquent\Model)) {
+            throw new \InvalidArgumentException('L\'utente deve essere un modello Eloquent con il metodo update');
+        }
+
         // set password expiry date and time
-        $user = tap($user)->update([
+        $user->update([
             'password_expires_at' => $passwordExpiryDateTime,
             'is_otp' => false,
             'password' => Hash::make($password),
         ]);
+
+        // Verificare che l'utente implementi l'interfaccia UserContract prima di passarlo all'evento
+        if (!$user instanceof \Modules\Xot\Contracts\UserContract) {
+            throw new \InvalidArgumentException('L\'utente deve implementare l\'interfaccia UserContract');
+        }
 
         event(new NewPasswordSet($user));
 
@@ -137,43 +142,18 @@ class PasswordExpired extends Page implements HasForms
             ->success()
             ->send();
 
-        return new PasswordResetResponse;
+        return new PasswordResetResponse();
     }
 
     protected function getCurrentPasswordFormComponent(): Component
     {
         return TextInput::make('current_password')
             ->password()
-            // ->revealable(filament()->arePasswordsRevealable())
             ->revealable()
             ->required()
-            // ->rule(PasswordRule::default())
             ->validationAttribute(static::trans('fields.current_password.validation_attribute'));
     }
 
-    /*
-    protected function getPasswordFormComponent(): Component
-    {
-        return TextInput::make('password')
-            ->password()
-            // ->revealable(filament()->arePasswordsRevealable())
-            ->revealable()
-            ->required()
-            ->rule(PasswordRule::default())
-            ->same('passwordConfirmation')
-            ->validationAttribute(static::trans('fields.password.validation_attribute'));
-    }
-
-    protected function getPasswordConfirmationFormComponent(): Component
-    {
-        return TextInput::make('passwordConfirmation')
-            ->password()
-            // ->revealable(filament()->arePasswordsRevealable())
-            ->revealable()
-            ->required()
-            ->dehydrated(false);
-    }
-    */
     /**
      * @return array<Action|ActionGroup>
      */

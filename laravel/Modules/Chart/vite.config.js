@@ -21,7 +21,7 @@ export default defineConfig({
             buildDirectory: 'assets/chart',
             //buildDirectory: 'build-mymodule',
             input: [
-                //__dirname + '/Resources/assets/sass/app.scss',
+                //__dirname + '/resources/assets/sass/app.scss',
                 __dirname + '/resources/css/app.css',
                 __dirname + '/resources/js/app.js',
                 __dirname + '/resources/js/filament-chart-js-plugins'
@@ -33,6 +33,6 @@ export default defineConfig({
 });
 
 //export const paths = [
-//    'Modules/Quaeris/Resources/assets/sass/app.scss',
-//    'Modules/Quaeris/Resources/assets/js/app.js',
+//    'Modules/Quaeris/resources/assets/sass/app.scss',
+//    'Modules/Quaeris/resources/assets/js/app.js',
 //];

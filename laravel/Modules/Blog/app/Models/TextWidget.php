@@ -52,12 +52,16 @@ use Webmozart\Assert\Assert;
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
  *
- * @mixin \Eloquent
+ * @mixin \Illuminate\Database\Eloquent\Model
  */
 class TextWidget extends BaseModel implements HasMedia
 {
     use InteractsWithMedia;
 
+    /**
+     * Attributi assegnabili in massa (mass assignment).
+     * @var list<string>
+     */
     protected $fillable = [
         'key',
         'image',

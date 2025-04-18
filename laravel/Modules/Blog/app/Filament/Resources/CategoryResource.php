@@ -29,7 +29,7 @@ class CategoryResource extends XotBaseResource
         return ['it', 'en'];
     }
 
-    public static function getFormSchema(): array
+    public static function getFormFields(): array
     {
         return [
             Forms\Components\TextInput::make('title')
@@ -44,7 +44,7 @@ class CategoryResource extends XotBaseResource
                 ->required()
                 ->maxLength(2048),
             Forms\Components\Select::make('parent_id')
-
+                ->label('Categoria Padre')
                 ->options(
                     // Category::where('parent_id', null)->pluck('title', 'id')
                     // Category::tree()->get()->toTree()->pluck('title', 'id')
@@ -73,10 +73,12 @@ class CategoryResource extends XotBaseResource
         ];
     }
 
-    public static function form(Form $form): Form
+    /**
+     * @return array<string|int,\Filament\Forms\Components\Component>
+     */
+    public static function getFormSchema(): array
     {
-        return $form
-            ->schema(static::getFormFields());
+        return static::getFormFields();
     }
 
     public static function getPages(): array

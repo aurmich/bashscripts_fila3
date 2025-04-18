@@ -4,19 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\Geo\Filament\Pages;
 
-use Filament\Pages\Page;
 use Modules\Geo\Filament\Widgets\WebbingbrasilMap as Map;
+use Modules\Xot\Filament\Pages\XotBasePage;
 
-class WebbingbrasilMap extends Page
+class WebbingbrasilMap extends XotBasePage
 {
-    protected static ?string $navigationIcon = 'heroicon-o-document-text';
-
-    protected static string $view = 'geo::filament.pages.webbingbrasil-map';
-
     protected function getHeaderWidgets(): array
     {
         return [
-            // LocationMapTableWidget::class,
             Map::class,
         ];
     }

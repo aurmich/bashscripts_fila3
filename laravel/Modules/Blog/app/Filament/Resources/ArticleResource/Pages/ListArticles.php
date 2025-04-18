@@ -25,6 +25,9 @@ class ListArticles extends XotBaseListRecords
     // protected static string $resource = ArticleResource::class;
 
     /**
+     * @return array<string, mixed>
+     */
+    /**
      * @return array<string, \Filament\Tables\Columns\Column>
      */
     public function getListTableColumns(): array
@@ -35,7 +38,7 @@ class ListArticles extends XotBaseListRecords
                 ->wrap()
                 ->sortable()
                 ->searchable(),
-            'category' => Tables\Columns\TextColumn::make('category.title')
+            'category_title' => Tables\Columns\TextColumn::make('category.title')
                 ->sortable()
                 ->searchable(),
             'published_at' => Tables\Columns\TextColumn::make('published_at')
@@ -44,32 +47,34 @@ class ListArticles extends XotBaseListRecords
             'closed_at' => Tables\Columns\TextColumn::make('closed_at')
                 ->dateTime()
                 ->sortable(),
+            'rewarded_at' => Tables\Columns\TextColumn::make('rewarded_at')
+                ->dateTime()
+                ->sortable(),
             'is_featured' => Tables\Columns\IconColumn::make('is_featured')
                 ->boolean()
                 ->sortable(),
         ];
     }
 
+    /**
+     * @return array<string, \Filament\Tables\Actions\Action|\Filament\Tables\Actions\ActionGroup>
+     */
     public function getTableActions(): array
     {
         return [
-            /*
-            Tables\Actions\ActionGroup::make([
-                ListPreviewAction::make(),
-                Tables\Actions\EditAction::make(),
-                Tables\Actions\DeleteAction::make(),
-            ]),
-            */
-            Tables\Actions\EditAction::make()->label(''),
-            Tables\Actions\ViewAction::make()->label(''),
-            Tables\Actions\DeleteAction::make()->label(''),
+            'edit' => Tables\Actions\EditAction::make()->label(''),
+            'view' => Tables\Actions\ViewAction::make()->label(''),
+            'delete' => Tables\Actions\DeleteAction::make()->label(''),
         ];
     }
 
+    /**
+     * @return array<string, \Filament\Tables\Actions\BulkAction>
+     */
     public function getTableBulkActions(): array
     {
         return [
-            Tables\Actions\DeleteBulkAction::make(),
+            'delete' => Tables\Actions\DeleteBulkAction::make(),
         ];
     }
 

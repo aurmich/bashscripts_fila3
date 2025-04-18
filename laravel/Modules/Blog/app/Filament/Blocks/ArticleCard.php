@@ -4,27 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\Blog\Filament\Blocks;
 
-use Modules\Blog\Models\Article;
+use Filament\Forms\Components\Builder\Block;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\Builder\Block;
-use Modules\Xot\Filament\Blocks\XotBaseBlock;
+use Modules\Blog\Models\Article;
 
-class ArticleCard // extends XotBaseBlock
+class ArticleCard
 {
-
-    
-    // public static function getBlockSchema(): array
-    // {
-    //     return [
-    //         Select::make('article_id')
-    //             ->options(Article::published()->orderBy('title')->pluck('title', 'id'))
-    //             ->required(),
-
-    //         TextInput::make('text')
-    //     ];
-    // }
-
     public static function make(
         string $name = 'article_card',
         string $context = 'form',
@@ -32,13 +18,14 @@ class ArticleCard // extends XotBaseBlock
         return Block::make($name)
             ->schema([
                 Select::make('article_id')
-
+                    ->label('Article')
                     ->options(Article::published()->orderBy('title')->pluck('title', 'id'))
                     ->required(),
 
-                TextInput::make('text'),
+                TextInput::make('text')
+                    ->label('Link text (optional)'),
             ])
-
+            ->label('Link to article')
             ->columns('form' === $context ? 2 : 1);
     }
 }

@@ -10,11 +10,9 @@ namespace Modules\Job\Filament\Resources\JobBatchResource\Pages;
 
 use Filament\Actions\Action;
 use Filament\Notifications\Notification;
+use Filament\Tables;
 use Filament\Tables\Actions\DeleteBulkAction;
 use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Enums\ActionsPosition;
-use Filament\Tables\Enums\FiltersLayout;
-use Filament\Tables\Table;
 use Illuminate\Support\Facades\Artisan;
 use Modules\Job\Filament\Resources\JobBatchResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -24,59 +22,76 @@ class ListJobBatches extends XotBaseListRecords
 {
     protected static string $resource = JobBatchResource::class;
 
+    /**
+     * @return array<string, Tables\Columns\Column>
+     */
     public function getListTableColumns(): array
     {
         Assert::string($date_format = config('app.date_format'), '['.__LINE__.']['.class_basename(__CLASS__).']');
 
         return [
-            TextColumn::make('id')
+            'id' => TextColumn::make('id')
                 ->searchable()
                 ->sortable()
                 ->copyable(),
-            TextColumn::make('name')
+            'name' => TextColumn::make('name')
                 ->searchable()
                 ->sortable()
                 ->wrap(),
-            TextColumn::make('total_jobs')
+            'total_jobs' => TextColumn::make('total_jobs')
                 ->numeric()
                 ->sortable(),
-            TextColumn::make('pending_jobs')
+            'pending_jobs' => TextColumn::make('pending_jobs')
                 ->numeric()
                 ->sortable(),
-            TextColumn::make('failed_jobs')
+            'failed_jobs' => TextColumn::make('failed_jobs')
                 ->numeric()
                 ->sortable(),
-            TextColumn::make('progress')
-                ->formatStateUsing(fn ($record) => $record->progress() . '%')
+            'progress' => TextColumn::make('progress')
+                ->formatStateUsing(fn ($record) => $record->progress().'%')
                 ->sortable(),
-            TextColumn::make('failed_job_ids')
+            'failed_job_ids' => TextColumn::make('failed_job_ids')
                 ->wrap()
+                ->searchable()
                 ->limit(50),
-            TextColumn::make('created_at')
+            'options' => TextColumn::make('options')
+                ->wrap()
+                ->searchable(),
+            'cancelled_at' => TextColumn::make('cancelled_at')
                 ->dateTime($date_format)
                 ->sortable(),
-            TextColumn::make('cancelled_at')
+            'created_at' => TextColumn::make('created_at')
                 ->dateTime($date_format)
-                ->sortable(),
-            TextColumn::make('finished_at')
+                ->sortable()
+                ->toggleable(isToggledHiddenByDefault: true),
+            'finished_at' => TextColumn::make('finished_at')
                 ->dateTime($date_format)
-                ->sortable(),
+                ->sortable()
+                ->toggleable(isToggledHiddenByDefault: true),
         ];
     }
 
+    /**
+     * @return array<string, Tables\Actions\Action|Tables\Actions\ActionGroup>
+     */
     public function getTableActions(): array
     {
-        return [
-        ];
+        return [];
     }
 
+    /**
+     * @return array<string, Tables\Actions\BulkAction>
+     */
     public function getTableBulkActions(): array
     {
         return [
-            DeleteBulkAction::make(),
+            'delete' => DeleteBulkAction::make(),
         ];
     }
 
+    /**
+     * @return array<Action>
+     */
     protected function getHeaderActions(): array
     {
         return [

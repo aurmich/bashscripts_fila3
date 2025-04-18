@@ -9,9 +9,9 @@ use Illuminate\Support\Carbon;
 /**
  * Modules\Notify\Models\Contact.
  *
- * @property int         $id
- * @property string      $model_type
- * @property string      $model_id
+ * @property int $id
+ * @property string $model_type
+ * @property string $model_id
  * @property string|null $contact_type
  * @property string|null $value
  * @property string|null $user_id
@@ -22,9 +22,9 @@ use Illuminate\Support\Carbon;
  * @property string|null $created_by
  * @property string|null $token
  * @property string|null $sms_sent_at
- * @property int|null    $sms_count
+ * @property int|null $sms_count
  * @property string|null $mail_sent_at
- * @property int|null    $mail_count
+ * @property int|null $mail_count
  * @property string|null $survey_pdf_id
  * @property string|null $token
  * @property string|null $first_name
@@ -46,34 +46,34 @@ use Illuminate\Support\Carbon;
  * @property string|null $usesleft
  * @property string|null $sms_status_code
  * @property string|null $sms_status_txt
- * @property int|null    $duplicate_count
- * @property int|null    $order_column
+ * @property int|null $duplicate_count
+ * @property int|null $order_column
  * @method static \Modules\Notify\Database\Factories\ContactFactory factory($count = null, $state = [])
- * @method static \Illuminate\Database\Eloquent\Builder|Contact     newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Contact     newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Contact     query()
- * @method static \Illuminate\Database\Eloquent\Builder|Contact     whereContactType($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Contact     whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Contact     whereCreatedBy($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Contact     whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Contact     whereModelId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Contact     whereModelType($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Contact     whereLastName($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Contact     whereMailCount($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Contact     whereMailSentAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Contact     whereMobilePhone($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Contact     whereOrderColumn($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Contact     whereSmsCount($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Contact     whereSmsSentAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Contact     whereSmsStatusCode($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Contact     whereSmsStatusTxt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Contact     whereSurveyPdfId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Contact     whereToken($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Contact     whereUpdatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Contact     whereUpdatedBy($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Contact     whereUserId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Contact     whereValue($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Contact     whereVerifiedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Contact newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Contact newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Contact query()
+ * @method static \Illuminate\Database\Eloquent\Builder|Contact whereContactType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Contact whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Contact whereCreatedBy($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Contact whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Contact whereModelId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Contact whereModelType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Contact whereLastName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Contact whereMailCount($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Contact whereMailSentAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Contact whereMobilePhone($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Contact whereOrderColumn($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Contact whereSmsCount($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Contact whereSmsSentAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Contact whereSmsStatusCode($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Contact whereSmsStatusTxt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Contact whereSurveyPdfId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Contact whereToken($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Contact whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Contact whereUpdatedBy($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Contact whereUserId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Contact whereValue($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Contact whereVerifiedAt($value)
  * @mixin Eloquent
  * @property string|null $email
  * @property string|null $mobile_phone
@@ -95,10 +95,10 @@ use Illuminate\Support\Carbon;
  * @method static \Illuminate\Database\Eloquent\Builder|Contact whereEmail($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Contact whereFirstName($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Contact whereUsesleft($value)
- * @property \Modules\Xot\Contracts\ProfileContract|null                                                                                       $creator
- * @property \Modules\Xot\Contracts\ProfileContract|null                                                                                       $updater
+ * @property \Modules\Xot\Contracts\ProfileContract|null $creator
+ * @property \Modules\Xot\Contracts\ProfileContract|null $updater
  * @property \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Spatie\MediaLibrary\MediaCollections\Models\Media> $media
- * @property int|null                                                                                                                          $media_count
+ * @property int|null $media_count
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Contact whereDeletedAt($value)

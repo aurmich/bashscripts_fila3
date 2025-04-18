@@ -7,22 +7,29 @@ namespace Modules\Xot\Actions\Mail;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Mail\Mailable;
 use Illuminate\Support\Facades\Mail;
-use RuntimeException;
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
 
 class SendMailByRecordAction
 {
-    public function execute(Model $model, string $mail_class): void
+    use QueueableAction;
+
+    /**
+     * Invia una mail utilizzando un record come dati.
+     *
+     * @param Model $record Il record da utilizzare come dati per la mail
+     * @param string $mailClass La classe Mailable da utilizzare
+     * @return void
+     */
+    public function execute(Model $record, string $mailClass): void
     {
-        $mailable = new Mailable();
-        $view='pub_theme::mail.record';
-        if(!view()->exists($view)){
-            throw new RuntimeException('view not exists: '.$view);
-        }
-        $view_params=['model' => $model];
-        $mailable->view($view)
-            ->with($view_params);
-        // @phpstan-ignore property.notFound
-        $email=$model->email;
-        Mail::to($email)->send($mailable);
+        Assert::classExists($mailClass);
+        Assert::implementsInterface($mailClass, Mailable::class);
+
+        // Utilizziamo il container per istanziare la classe Mailable
+        // in modo che possa ricevere le dipendenze necessarie
+        /** @var Mailable $mail */
+        $mail = app($mailClass, ['record' => $record]);
+        Mail::send($mail);
     }
 }

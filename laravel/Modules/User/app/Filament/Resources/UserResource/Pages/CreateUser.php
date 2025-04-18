@@ -4,10 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\UserResource\Pages;
 
-use Filament\Resources\Pages\CreateRecord;
 use Modules\User\Filament\Resources\UserResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
 
-class CreateUser extends CreateRecord
+use Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager;
+
+class CreateUser extends \Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord
 {
     // //
     protected static string $resource = UserResource::class;

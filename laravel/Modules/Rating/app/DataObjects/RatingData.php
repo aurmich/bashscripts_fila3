@@ -2,20 +2,25 @@
 
 declare(strict_types=1);
 
-namespace Modules\Rating\App\DataObjects;
+namespace Modules\Rating\DataObjects;
 
 final readonly class RatingData
 {
     /**
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     public static function fromArray(array $data): self
     {
+        $title = is_string($data['title']) ? $data['title'] : (is_scalar($data['title']) ? (string)$data['title'] : '');
+        $score = isset($data['score']) && is_numeric($data['score']) ? (int)$data['score'] : 0;
+        $description = isset($data['description']) ? (is_string($data['description']) ? $data['description'] : null) : null;
+        $userId = isset($data['user_id']) ? (is_string($data['user_id']) ? $data['user_id'] : null) : null;
+        
         return new self(
-            title: $data['title'],
-            score: (int) $data['score'],
-            description: $data['description'] ?? null,
-            userId: $data['user_id'] ?? null
+            title: $title,
+            score: $score,
+            description: $description,
+            userId: $userId
         );
     }
 

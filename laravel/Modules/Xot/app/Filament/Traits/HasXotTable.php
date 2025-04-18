@@ -4,27 +4,27 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Traits;
 
-use Filament\Actions;
-use Filament\Notifications\Notification;
 use Filament\Tables;
+use Filament\Actions;
+use Filament\Tables\Table;
+use Webmozart\Assert\Assert;
+use Modules\UI\Enums\TableLayoutEnum;
+use Filament\Tables\Actions\BulkAction;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Filters\BaseFilter;
+use Illuminate\Database\Eloquent\Model;
+use Filament\Notifications\Notification;
 use Filament\Tables\Actions\Action;
 use Filament\Tables\Actions\ActionGroup;
-use Filament\Tables\Actions\BulkAction;
-use Filament\Tables\Actions\DeleteBulkAction;
-use Filament\Tables\Columns\Layout\Stack;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Enums\ActionsPosition;
 use Filament\Tables\Enums\FiltersLayout;
-use Filament\Tables\Filters\BaseFilter;
-use Filament\Tables\Filters\TernaryFilter;
-use Filament\Tables\Table;
+use Filament\Tables\Columns\Layout\Stack;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Model;
+use Filament\Tables\Enums\ActionsPosition;
+use Filament\Tables\Filters\TernaryFilter;
+use Filament\Tables\Actions\DeleteBulkAction;
 use Illuminate\Database\Eloquent\Relations\Relation;
-use Modules\UI\Enums\TableLayoutEnum;
-use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
 use Modules\Xot\Actions\Model\TableExistsByModelClassActions;
-use Webmozart\Assert\Assert;
+use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
 
 /**
  * Trait HasXotTable.
@@ -50,20 +50,11 @@ trait HasXotTable
      *
      * @return array<string, Action|ActionGroup>
      */
-    protected function getTableHeaderActions(): array
+    public function getTableHeaderActions(): array
     {
         $actions = [];
 
-        $actions['create'] = Tables\Actions\CreateAction::make()
-            ->button()
-            //->color('primary')
-            //->size('md')
-            //->icon('heroicon-o-plus')
-            //->iconPosition('before')
-            ->label('')
-            ->extraAttributes([
-                'class' => 'font-semibold shadow-sm hover:shadow-md transition-all duration-200',
-            ]);
+        $actions['create'] = Tables\Actions\CreateAction::make();
 
         if ($this->shouldShowAssociateAction()) {
             $actions['associate'] = Tables\Actions\AssociateAction::make()
@@ -131,12 +122,12 @@ trait HasXotTable
     /**
      * Get grid table columns.
      *
-     * @return array<string, Tables\Columns\Column|Stack>
+     * @return array<int, Tables\Columns\Column|Stack>
      */
     public function getGridTableColumns(): array
     {
         return [
-            'stack01'=>Stack::make($this->getListTableColumns()),
+            Stack::make($this->getListTableColumns()),
         ];
     }
 
@@ -191,14 +182,27 @@ trait HasXotTable
     }
 
     /**
-     * Configure the table.
+     * Configura una tabella Filament.
+     *
+     * Nota: Questo metodo è stato modificato per risolvere l'errore
+     * "Method Filament\Actions\Action::table does not exist" in Filament 3.
+     * La soluzione verifica l'esistenza dei metodi getTableHeaderActions(),
+     * getTableActions() e getTableBulkActions() prima di chiamarli,
+     * garantendo la compatibilità con diverse versioni di Filament.
+     *
+     * Problema: Il trait chiamava direttamente metodi che potrebbero non esistere
+     * nelle classi che lo utilizzano, causando errori in Filament 3.
+     *
+     * Soluzione: Verifica condizionale dell'esistenza dei metodi prima di chiamarli,
+     * mantenendo la retrocompatibilità e prevenendo errori.
+     *
+     * Ultimo aggiornamento: 10/2023
      */
     public function table(Table $table): Table
     {
         $modelClass = $this->getModelClass();
         if (! app(TableExistsByModelClassActions::class)->execute($modelClass)) {
             $this->notifyTableMissing();
-
             return $this->configureEmptyTable($table);
         }
 
@@ -206,18 +210,31 @@ trait HasXotTable
         $model = app($modelClass);
         Assert::isInstanceOf($model, Model::class);
 
+        // Configurazione base della tabella
         $table = $table
             ->recordTitleAttribute($this->getTableRecordTitleAttribute())
             ->heading($this->getTableHeading())
             ->columns($this->layoutView->getTableColumns())
             ->contentGrid($this->layoutView->getTableContentGrid())
-            ->headerActions($this->getTableHeaderActions())
             ->filters($this->getTableFilters())
             ->filtersLayout(FiltersLayout::AboveContent)
             ->filtersFormColumns($this->getTableFiltersFormColumns())
-            ->persistFiltersInSession()
-            ->actions($this->getTableActions())
-            ->bulkActions($this->getTableBulkActions())
+            ->persistFiltersInSession();
+
+        // Verifica i metodi disponibili prima di chiamarli
+        if (method_exists($this, 'getTableHeaderActions')) {
+            $table = $table->headerActions($this->getTableHeaderActions());
+        }
+
+        if (method_exists($this, 'getTableActions')) {
+            $table = $table->actions($this->getTableActions());
+        }
+
+        if (method_exists($this, 'getTableBulkActions')) {
+            $table = $table->bulkActions($this->getTableBulkActions());
+        }
+
+        $table = $table
             ->actionsPosition(ActionsPosition::BeforeColumns)
             ->emptyStateActions($this->getTableEmptyStateActions())
             ->striped();
@@ -259,9 +276,9 @@ trait HasXotTable
     /**
      * Get table filters.
      *
-     * @return array<string, Tables\Filters\Filter|TernaryFilter|BaseFilter>
+     * @return array<string|int, Tables\Filters\Filter|TernaryFilter|BaseFilter>
      */
-    protected function getTableFilters(): array
+    public function getTableFilters(): array
     {
         return [];
     }
@@ -269,9 +286,9 @@ trait HasXotTable
     /**
      * Get table actions.
      *
-     * @return array<string, Action|ActionGroup>
+     * @return array<string, Tables\Actions\Action|Tables\Actions\ActionGroup>
      */
-    protected function getTableActions(): array
+    public function getTableActions(): array
     {
         $actions = [];
 
@@ -287,26 +304,28 @@ trait HasXotTable
                 ->tooltip(__('user::actions.edit'));
         }
 
+        $actions['delete'] = Tables\Actions\DeleteAction::make()
+            ->iconButton()
+            ->tooltip(__('user::actions.delete'));
+
         if ($this->shouldShowReplicateAction()) {
             $actions['replicate'] = Tables\Actions\ReplicateAction::make()
-                ->label('')
-                ->tooltip(__('user::actions.replicate'))
-                ->iconButton();
+                ->iconButton()
+                ->tooltip(__('user::actions.replicate'));
         }
 
-        if (! $this->shouldShowDetachAction()) {
-            $actions['delete'] = Tables\Actions\DeleteAction::make()
-                ->tooltip(__('user::actions.delete'))
-                ->iconButton();
-        }
-
+        // Check if class has the getRelationship method
         if ($this->shouldShowDetachAction()) {
-            $actions['detach'] = Tables\Actions\DetachAction::make()
-                ->label('')
-                ->tooltip(__('user::actions.detach'))
-                ->icon('heroicon-o-link-slash')
-                ->color('danger')
-                ->requiresConfirmation();
+            if (method_exists($this, 'getRelationship')) {
+                if (method_exists($this->getRelationship(), 'getTable')) {
+                    $pivotClass = $this->getRelationship()->getPivotClass();
+                    if (method_exists($pivotClass, 'getKeyName')) {
+                        $actions['detach'] = Tables\Actions\DetachAction::make()
+                            ->iconButton()
+                            ->tooltip(__('user::actions.detach'));
+                    }
+                }
+            }
         }
 
         return $actions;
@@ -317,12 +336,11 @@ trait HasXotTable
      *
      * @return array<string, BulkAction>
      */
-    protected function getTableBulkActions(): array
+    public function getTableBulkActions(): array
     {
         return [
             'delete' => DeleteBulkAction::make()
                 ->label('')
-                ->tooltip(__('user::actions.delete_selected'))
                 ->icon('heroicon-o-trash')
                 ->color('danger')
                 ->requiresConfirmation(),
@@ -332,9 +350,9 @@ trait HasXotTable
     /**
      * Get model class.
      *
-     * @return class-string<Model>
-     *
      * @throws \Exception Se non viene trovata una classe modello valida
+     *
+     * @return class-string<Model>
      */
     public function getModelClass(): string
     {

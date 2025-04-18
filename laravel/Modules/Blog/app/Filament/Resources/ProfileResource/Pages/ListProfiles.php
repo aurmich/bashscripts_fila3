@@ -29,7 +29,14 @@ class ListProfiles extends UserListProfiles
         return $res;
     }
 
-    protected function getTableActions(): array
+    /**
+     * Sovrascrive la visibilità per rispettare la signature della classe base.
+     * @return array<string, mixed>
+     */
+    /**
+     * @return array<string, mixed>
+     */
+    public function getTableActions(): array
     {
         $res = parent::getTableActions();
 

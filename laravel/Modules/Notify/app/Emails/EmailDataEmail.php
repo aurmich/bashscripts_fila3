@@ -27,11 +27,11 @@ class EmailDataEmail extends Mailable
      */
     public function envelope(): Envelope
     {
-        if (null == $this->email_data->from) {
+        if ($this->email_data->from == null) {
             Assert::string($from = config('mail.from.name', 'Default Sender'));
             $this->email_data->from = $from;
         }
-        if (null == $this->email_data->from_email) {
+        if ($this->email_data->from_email == null) {
             Assert::string($from_email = config('mail.from.address', 'default@example.com'));
             $this->email_data->from_email = $from_email;
         }

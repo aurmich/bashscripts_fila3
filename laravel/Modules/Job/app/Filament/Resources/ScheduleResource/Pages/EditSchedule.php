@@ -4,17 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources\ScheduleResource\Pages;
 
-use Filament\Actions;
 use Filament\Forms\Form;
 use Filament\Notifications\Notification;
-use Filament\Resources\Pages\EditRecord;
 use Illuminate\Support\Collection;
 use Illuminate\Validation\ValidationException;
 use Modules\Job\Filament\Resources\ScheduleResource;
 use Modules\Xot\Filament\Traits\NavigationPageLabelTrait;
 use Webmozart\Assert\Assert;
 
-class EditSchedule extends EditRecord
+class EditSchedule extends \Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord
 {
     use NavigationPageLabelTrait;
 
@@ -33,13 +31,6 @@ class EditSchedule extends EditRecord
     {
         return $form
             ->schema($this->getFormSchema());
-    }
-
-    protected function getHeaderActions(): array
-    {
-        return [
-            Actions\DeleteAction::make(),
-        ];
     }
 
     protected function onValidationError(ValidationException $exception): void

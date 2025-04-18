@@ -6,16 +6,16 @@ namespace Modules\User\Filament\Resources\UserResource\Pages;
 
 use Filament\Tables;
 use Filament\Tables\Actions\Action;
+use Filament\Tables\Actions\ExportBulkAction;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
-use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Query\Builder;
 use Modules\User\Filament\Actions\ChangePasswordAction;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
-use Filament\Tables\Actions\ExportBulkAction;
+use Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager;
 
 class ListUsers extends XotBaseListRecords
 {
@@ -59,7 +59,6 @@ class ListUsers extends XotBaseListRecords
     {
         return [
             ChangePasswordAction::make()
-                ->label('')
                 ->tooltip('Cambio Password')
                 ->iconButton(),
             ...parent::getTableActions(),

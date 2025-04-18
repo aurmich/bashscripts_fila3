@@ -14,6 +14,7 @@ use SocialiteProviders\Manager\SocialiteWasCalled;
 
 class EventServiceProvider extends ServiceProvider
 {
+    public string $name = 'Blog';
     /**
      * The event to listener mappings for the application.
      *

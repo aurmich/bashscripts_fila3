@@ -7,13 +7,11 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\TenantResource\Pages;
 
-use Filament\Tables\Actions\DeleteAction;
-use Filament\Tables\Actions\EditAction;
-use Filament\Tables\Actions\ViewAction;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Support\Str;
 use Modules\User\Filament\Resources\TenantResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+use Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager;
 
 class ListTenants extends XotBaseListRecords
 {
@@ -25,15 +23,18 @@ class ListTenants extends XotBaseListRecords
     public function getListTableColumns(): array
     {
         return [
-            'id'=>TextColumn::make('id')
+            'id' => TextColumn::make('id')
                 ->searchable()
                 ->sortable(),
 
-            'name'=>TextColumn::make('name')
+            'name' => TextColumn::make('name')
                 ->searchable(),
 
-            'slug'=>TextColumn::make('slug')
+            'slug' => TextColumn::make('slug')
                 ->default(function ($record) {
+                    if ($record === null) {
+                        return '';
+                    }
                     $record->generateSlug();
                     $slug = Str::slug($record->name);
                     $record->slug = $slug;
@@ -44,6 +45,4 @@ class ListTenants extends XotBaseListRecords
                 ->sortable(),
         ];
     }
-
-    
 }

@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Geo\Filament\Pages;
 
-use Filament\Pages\Page;
+use Modules\Xot\Filament\Pages\XotBasePage;
 
-class Dashboard extends Page
+class Dashboard extends XotBasePage
 {
     protected static ?string $navigationIcon = 'heroicon-o-home';
 

@@ -43,6 +43,7 @@ class AutoLabelAction
         // @phpstan-ignore function.alreadyNarrowedType
         if (method_exists($component, 'getStatePath')) {
             $statePath = $component->getStatePath();
+
             return $statePath;
         }
 
@@ -50,6 +51,7 @@ class AutoLabelAction
         $reflectionClass = new \ReflectionClass($component);
         if ($reflectionClass->hasProperty('name') && $reflectionClass->getProperty('name')->isPublic()) {
             $property = $reflectionClass->getProperty('name');
+
             Assert::string($value = $property->getValue($component));
             return $value;
         }
@@ -62,7 +64,7 @@ class AutoLabelAction
      * Applica automaticamente le etichette ai componenti Filament.
      *
      * @param Field|Component $component Il componente a cui applicare l'etichetta
-     * 
+     *
      * @return Field|Component Il componente con l'etichetta applicata
      */
     public function execute(Field|Component $component): Field|Component

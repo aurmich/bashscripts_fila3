@@ -4,8 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources\ImportResource\Pages;
 
-use Filament\Actions;
 use Filament\Tables;
+use Filament\Tables\Actions\DeleteBulkAction;
+use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Job\Filament\Resources\ImportResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -14,6 +15,9 @@ class ListImports extends XotBaseListRecords
 {
     protected static string $resource = ImportResource::class;
 
+    /**
+     * @return array<string, Tables\Columns\Column>
+     */
     public function getListTableColumns(): array
     {
         return [
@@ -24,6 +28,9 @@ class ListImports extends XotBaseListRecords
                 ->searchable()
                 ->sortable()
                 ->wrap(),
+            'file_disk' => TextColumn::make('file_disk')
+                ->searchable()
+                ->sortable(),
             'importer' => TextColumn::make('importer')
                 ->searchable()
                 ->sortable(),
@@ -41,30 +48,42 @@ class ListImports extends XotBaseListRecords
                 ->sortable(),
             'created_at' => TextColumn::make('created_at')
                 ->dateTime()
-                ->sortable(),
+                ->sortable()
+                ->toggleable(isToggledHiddenByDefault: true),
             'updated_at' => TextColumn::make('updated_at')
                 ->dateTime()
-                ->sortable(),
+                ->sortable()
+                ->toggleable(isToggledHiddenByDefault: true),
         ];
     }
 
+    /**
+     * @return array<string, Tables\Filters\BaseFilter>
+     */
     public function getTableFilters(): array
     {
         return [
         ];
     }
 
+    /**
+     * @return array<string, Tables\Actions\Action|Tables\Actions\ActionGroup>
+     */
     public function getTableActions(): array
     {
         return [
-            Tables\Actions\EditAction::make(),
+            'edit' => EditAction::make()
+                ,
         ];
     }
 
+    /**
+     * @return array<string, Tables\Actions\BulkAction>
+     */
     public function getTableBulkActions(): array
     {
         return [
-            Tables\Actions\DeleteBulkAction::make(),
+            'delete' => DeleteBulkAction::make(),
         ];
     }
 }

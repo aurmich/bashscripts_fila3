@@ -7,16 +7,6 @@ use Mockery;
 use Filament\Tables\Table;
 use Filament\Tables\Contracts\HasTable;
 use Modules\Xot\Filament\Traits\HasXotTable;
-use Filament\Tables\Filters\Indicator;
-use Filament\Forms\Form;
-use Filament\Forms\Components\Group;
-use Filament\Forms\Concerns\InteractsWithForms;
-use Filament\Forms\Contracts\HasForms;
-use Filament\Tables\Grouping\Group as TableGroup;
-use Illuminate\Contracts\Pagination\CursorPaginator;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Collection;
-use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 
 class HasXotTableTest extends TestCase
 {
@@ -138,112 +128,12 @@ class HasXotTableTest extends TestCase
     }
 }
 
-trait HasTableWithXot
-{
-    use InteractsWithForms;
-    use HasXotTable;
-
-    public ?array $data = [];
-
-    public function mount(): void
-    {
-        $this->form->fill();
-    }
-
-    public function form(Form $form): Form
-    {
-        return $form
-            ->schema([])
-            ->statePath('data');
-    }
-
-    public function getLayoutView(): string
-    {
-        return 'layout.view';
-    }
-
-    public function getTable(): Table
-    {
-        return Mockery::mock(Table::class);
-    }
-
-    public function getTablePage(): int
-    {
-        return 1;
-    }
-
-    public function getTableRecordsPerPage(): int|string|null
-    {
-        return 10;
-    }
-
-    public function getTableSortColumn(): ?string
-    {
-        return null;
-    }
-
-    public function getTableSortDirection(): ?string
-    {
-        return null;
-    }
-
-    public function getTableFilters(): array
-    {
-        return [];
-    }
-
-    public function getTableFiltersForm(): Form
-    {
-        return Form::make([]);
-    }
-
-    public function getTableFilterState(string $name): ?array
-    {
-        return [];
-    }
-
-    public function getTableGrouping(): ?Group
-    {
-        return null;
-    }
-
-    public function getTableSearchIndicator(): Indicator
-    {
-        return new Indicator('search', 'value');
-    }
-
-    public function getTableColumnSearchIndicators(): array
-    {
-        return [];
-    }
-
-    public function getTableColumnToggleForm(): Form
-    {
-        return Form::make([]);
-    }
-
-    public function getTableRecords(): EloquentCollection|CursorPaginator
-    {
-        return new EloquentCollection([]);
-    }
-
-    public function getTableRecord(?string $key): ?Model
-    {
-        return null;
-    }
-
-    public function getTableRecordKey(Model $record): string
-    {
-        return (string) $record->getKey();
-    }
-}
-
 /**
- * Dummy class without the optional methods.
+ * Dummy class that uses HasTable and HasXotTable traits for testing.
  */
-class HasTableWithoutOptionalMethods implements HasTable, HasForms
+class HasTableWithXot implements HasTable
 {
-    use HasTableWithXot;
+    use HasXotTable;
 
     public function getLayoutView(): mixed
     {
@@ -258,7 +148,7 @@ class HasTableWithoutOptionalMethods implements HasTable, HasForms
         return Mockery::mock(Table::class);
     }
 
-    public function getTablePage(): int
+    public function getTablePage(): ?int
     {
         return 1;
     }
@@ -283,24 +173,24 @@ class HasTableWithoutOptionalMethods implements HasTable, HasForms
         return [];
     }
 
-    public function getTableFiltersForm(): Form
-    {
-        return Form::make([]);
-    }
-
-    public function getTableFilterState(string $name): ?array
-    {
-        return [];
-    }
-
-    public function getTableGrouping(): ?Group
+    public function getTableFiltersForm(): mixed
     {
         return null;
     }
 
-    public function getTableSearchIndicator(): Indicator
+    public function getTableFilterState(): array
     {
-        return new Indicator();
+        return [];
+    }
+
+    public function getTableGrouping(): ?string
+    {
+        return null;
+    }
+
+    public function getTableSearchIndicator(): ?string
+    {
+        return null;
     }
 
     public function getTableColumnSearchIndicators(): array
@@ -308,29 +198,277 @@ class HasTableWithoutOptionalMethods implements HasTable, HasForms
         return [];
     }
 
-    public function getTableColumnToggleForm(): Form
-    {
-        return Form::make([]);
-    }
-
-    public function getTableRecords(): EloquentCollection|CursorPaginator
-    {
-        return new EloquentCollection([]);
-    }
-
-    public function getTableRecord(?string $key): ?Model
+    public function getTableColumnToggleForm(): mixed
     {
         return null;
     }
 
-    public function getTableRecordKey(Model $record): string
+    public function getTableRecords(): array
     {
-        return (string) $record->getKey();
+        return [];
     }
 
-    public function getSelectedTableRecords(bool $shouldFetchSelectedRecords = true): EloquentCollection|Collection
+    public function getTableRecord(): mixed
     {
-        return new EloquentCollection([]);
+        return null;
+    }
+
+    public function getTableRecordKey(): mixed
+    {
+        return null;
+    }
+
+    public function getSelectedTableRecords(): array
+    {
+        return [];
+    }
+
+    public function getAllTableRecordsCount(): int
+    {
+        return 0;
+    }
+
+    public function getAllSelectableTableRecordsCount(): int
+    {
+        return 0;
+    }
+
+    public function getAllSelectableTableRecordKeys(): array
+    {
+        return [];
+    }
+
+    public function getTableQueryForExport(): mixed
+    {
+        return null;
+    }
+
+    public function getFilteredTableQuery(): mixed
+    {
+        return null;
+    }
+
+    public function getFilteredSortedTableQuery(): mixed
+    {
+        return null;
+    }
+
+    public function getAllTableSummaryQuery(): mixed
+    {
+        return null;
+    }
+
+    public function getPageTableSummaryQuery(): mixed
+    {
+        return null;
+    }
+
+    public function getMountedTableAction(): ?string
+    {
+        return null;
+    }
+
+    public function getMountedTableActionForm(): mixed
+    {
+        return null;
+    }
+
+    public function getMountedTableActionRecord(): mixed
+    {
+        return null;
+    }
+
+    public function getMountedTableActionRecordKey(): mixed
+    {
+        return null;
+    }
+
+    public function getMountedTableBulkAction(): ?string
+    {
+        return null;
+    }
+
+    public function getMountedTableBulkActionForm(): mixed
+    {
+        return null;
+    }
+
+    public function getActiveTableLocale(): ?string
+    {
+        return null;
+    }
+
+    public function isTableLoaded(): bool
+    {
+        return true;
+    }
+
+    public function isTableReordering(): bool
+    {
+        return false;
+    }
+
+    public function hasTableSearch(): bool
+    {
+        return false;
+    }
+
+    public function isTableColumnToggledHidden(): bool
+    {
+        return false;
+    }
+
+    public function callMountedTableAction(): mixed
+    {
+        return null;
+    }
+
+    public function callTableColumnAction(): mixed
+    {
+        return null;
+    }
+
+    public function deselectAllTableRecords(): void
+    {
+    }
+
+    public function mountTableAction(): void
+    {
+    }
+
+    public function mountTableBulkAction(): void
+    {
+    }
+
+    public function mountedTableActionRecord(): mixed
+    {
+        return null;
+    }
+
+    public function replaceMountedTableAction(): void
+    {
+    }
+
+    public function replaceMountedTableBulkAction(): void
+    {
+    }
+
+    public function resetTableSearch(): void
+    {
+    }
+
+    public function resetTableColumnSearch(): void
+    {
+    }
+
+    public function toggleTableReordering(): void
+    {
+    }
+
+    public function parseTableFilterName(): string
+    {
+        return '';
+    }
+
+    public function makeFilamentTranslatableContentDriver(): mixed
+    {
+        return null;
+    }
+}
+
+/**
+ * Dummy class without the optional methods.
+ */
+class HasTableWithoutOptionalMethods implements HasTable
+{
+    use HasXotTable;
+
+    public function getLayoutView(): mixed
+    {
+        $mock = Mockery::mock();
+        $mock->shouldReceive('getTableColumns')->andReturn([]);
+        $mock->shouldReceive('getTableContentGrid')->andReturn([]);
+        return $mock;
+    }
+
+    public function getTable(): Table
+    {
+        return Mockery::mock(Table::class);
+    }
+
+    public function getTablePage(): ?int
+    {
+        return 1;
+    }
+
+    public function getTableRecordsPerPage(): int
+    {
+        return 10;
+    }
+
+    public function getTableSortColumn(): ?string
+    {
+        return null;
+    }
+
+    public function getTableSortDirection(): ?string
+    {
+        return null;
+    }
+
+    public function getTableFilters(): array
+    {
+        return [];
+    }
+
+    public function getTableFiltersForm(): mixed
+    {
+        return null;
+    }
+
+    public function getTableFilterState(): array
+    {
+        return [];
+    }
+
+    public function getTableGrouping(): ?string
+    {
+        return null;
+    }
+
+    public function getTableSearchIndicator(): ?string
+    {
+        return null;
+    }
+
+    public function getTableColumnSearchIndicators(): array
+    {
+        return [];
+    }
+
+    public function getTableColumnToggleForm(): mixed
+    {
+        return null;
+    }
+
+    public function getTableRecords(): array
+    {
+        return [];
+    }
+
+    public function getTableRecord(): mixed
+    {
+        return null;
+    }
+
+    public function getTableRecordKey(): mixed
+    {
+        return null;
+    }
+
+    public function getSelectedTableRecords(): array
+    {
+        return [];
     }
 
     public function getAllTableRecordsCount(): int

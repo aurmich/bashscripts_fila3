@@ -37,5 +37,8 @@ return [
         'detach' => [
             'label' => 'detach',
         ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
     ],
 ];

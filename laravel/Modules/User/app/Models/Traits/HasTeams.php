@@ -41,6 +41,8 @@ trait HasTeams
 
     /**
      * Get the current team of the user's context.
+     * 
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Modules\User\Contracts\TeamContract, static>
      */
     public function currentTeam(): BelongsTo
     {
@@ -86,6 +88,8 @@ trait HasTeams
 
     /**
      * Get all of the teams the user owns.
+     * 
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Modules\User\Contracts\TeamContract>
      */
     public function ownedTeams(): HasMany
     {
@@ -97,6 +101,9 @@ trait HasTeams
 
     /**
      * Get all of the teams the user belongs to.
+     * 
+     * @return BelongsToMany<\Modules\User\Contracts\TeamContract, static>
+     * @phpstan-return BelongsToMany<\Modules\User\Contracts\TeamContract&\Illuminate\Database\Eloquent\Model, static>
      */
     public function teams(): BelongsToMany
     {
@@ -136,7 +143,7 @@ trait HasTeams
     public function belongsToTeam(?TeamContract $teamContract): bool
     {
         return $teamContract instanceof TeamContract
-            && ($this->ownsTeam($teamContract) || $this->teams->contains(fn ($team) => $team->getKey() === $teamContract->getKey()));
+            && ($this->ownsTeam($teamContract) || $this->teams->contains(fn($team) => $team->getKey() === $teamContract->getKey()));
     }
 
     /**
@@ -184,7 +191,7 @@ trait HasTeams
         return $this->belongsToTeam($teamContract) && optional(FilamentJet::findRole($teamContract->users->where(
             'id',
             $this->id
-        )->first()?->membership?->role))->key === $role;
+        )->first()?->membership->role))->key === $role;
         */
         return $this->belongsToTeam($teamContract) && $this->teamRole($teamContract) !== null;
     }
@@ -198,7 +205,7 @@ trait HasTeams
             return ['*'];
         }
 
-        return (array) $this->teamRole($teamContract)?->permissions;
+        return (array) $this->teamRole($teamContract)->permissions;
     }
 
     /**

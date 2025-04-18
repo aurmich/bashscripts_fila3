@@ -12,10 +12,6 @@ use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
-use Filament\Forms\Form;
-use Filament\Tables\Actions\DeleteBulkAction;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Table;
 use Modules\Job\Filament\Resources\JobManagerResource\Pages;
 use Modules\Job\Filament\Resources\JobManagerResource\Widgets;
 use Modules\Job\Models\JobManager;
@@ -25,33 +21,26 @@ class JobManagerResource extends XotBaseResource
 {
     protected static ?string $model = JobManager::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-play';
-
-    public static function form(Form $form): Form
+    public static function getFormSchema(): array
     {
-        return $form
-            ->schema(
-                [
-                    TextInput::make('job_id')
-                        ->required()
-                        ->maxLength(255),
-                    TextInput::make('name')
-                        ->maxLength(255),
-                    TextInput::make('queue')
-                        ->maxLength(255),
-                    DateTimePicker::make('started_at'),
-                    DateTimePicker::make('finished_at'),
-                    Toggle::make('failed')
-                        ->required(),
-                    TextInput::make('attempt')
-                        ->required(),
-                    Textarea::make('exception_message')
-                        ->maxLength(65535),
-                ]
-            );
+        return [
+            'job_id' => TextInput::make('job_id')
+                ->required()
+                ->maxLength(255),
+            'name' => TextInput::make('name')
+                ->maxLength(255),
+            'queue' => TextInput::make('queue')
+                ->maxLength(255),
+            'started_at' => DateTimePicker::make('started_at'),
+            'finished_at' => DateTimePicker::make('finished_at'),
+            'failed' => Toggle::make('failed')
+                ->required(),
+            'attempt' => TextInput::make('attempt')
+                ->required(),
+            'exception_message' => Textarea::make('exception_message')
+                ->maxLength(65535),
+        ];
     }
-
-
 
     public static function getRelations(): array
     {
@@ -74,6 +63,4 @@ class JobManagerResource extends XotBaseResource
             Widgets\JobStatsOverview::class,
         ];
     }
-
-
 }

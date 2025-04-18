@@ -60,17 +60,28 @@ abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, Tena
             ->saveSlugsTo('slug');
     }
 
+    /**
+     * Ottiene tutti i membri associati al tenant.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany<\Illuminate\Database\Eloquent\Model, \Modules\User\Models\BaseTenant>
+     */
     public function members(): BelongsToMany
     {
+        /** @var class-string<\Illuminate\Database\Eloquent\Model> $user_class */
         $user_class = XotData::make()->getUserClass();
 
         return $this->belongsToManyX($user_class);
     }
 
+    /**
+     * Ottiene tutti gli utenti associati al tenant.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany<\Illuminate\Database\Eloquent\Model, \Modules\User\Models\BaseTenant>
+     */
     public function users(): BelongsToMany
     {
         $xot = XotData::make();
-
+        /** @var class-string<\Illuminate\Database\Eloquent\Model> $userClass */
         $userClass = $xot->getUserClass();
 
         // $this->setConnection('mysql');
@@ -78,6 +89,11 @@ abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, Tena
         // ->as('membership')
     }
 
+    /**
+     * Ottiene l'URL dell'avatar del tenant per Filament.
+     *
+     * @return string|null URL dell'avatar o null se non presente
+     */
     public function getFilamentAvatarUrl(): ?string
     {
         // return $this->avatar_url;

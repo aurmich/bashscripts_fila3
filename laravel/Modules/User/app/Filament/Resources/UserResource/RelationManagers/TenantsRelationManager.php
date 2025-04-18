@@ -28,24 +28,21 @@ class TenantsRelationManager extends XotBaseRelationManager
     /**
      * Set up the form schema for tenant relations.
      *
-     * @param  Form  $form  the form instance for configuration
-     * @return Form configured form instance
+     * @return array<\Filament\Forms\Components\Component>
      */
-    public function form(Form $form): Form
+    public function getFormSchema(): array
     {
-        return $form
-            ->schema([
-                Forms\Components\TextInput::make('name')
-
-                    ->required()
-                    ->maxLength(255),
-            ]);
+        return [
+            Forms\Components\TextInput::make('name')
+                ->required()
+                ->maxLength(255),
+        ];
     }
 
     /**
      * Define table columns for displaying tenant information.
      *
-     * @return array<string, \Filament\Tables\Columns\Column> configured table columns
+     * @return array<string, \Filament\Tables\Columns\Column>
      */
     public function getListTableColumns(): array
     {

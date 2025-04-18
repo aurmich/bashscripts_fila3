@@ -1,60 +1,39 @@
-<?php return array (
-  'resource' => 
-  array (
-    'name' => 'send_email',
-  ),
-  'navigation' => 
-  array (
-    'name' => 'send_email',
-    'plural' => 'send_email',
-    'group' => 
-    array (
-      'name' => 'Invia',
-    ),
-  ),
-  'fields' => 
-  array (
-    'name' => 'Nome Area',
-    'parent' => 'Settore di appartenenza',
-    'parent.name' => 'Settore di appartenenza',
-    'parent_name' => 'Settore di appartenenza',
-    'assets' => 'Quantità di asset',
-    'to' => 
-    array (
-      'label' => 'to',
-    ),
-    'subject' => 
-    array (
-      'label' => 'subject',
-    ),
-    'body_html' => 
-    array (
-      'label' => 'body_html',
-    ),
-  ),
-  'actions' => 
-  array (
-    'import' => 
-    array (
-      'name' => 'Importa da file',
-      'fields' => 
-      array (
-        'import_file' => 'Seleziona un file XLS o CSV da caricare',
-      ),
-    ),
-    'export' => 
-    array (
-      'name' => 'Esporta dati',
-      'filename_prefix' => 'Aree al',
-      'columns' => 
-      array (
-        'name' => 'Nome area',
-        'parent_name' => 'Nome area livello superiore',
-      ),
-    ),
-    'emailFormActions' => 
-    array (
-      'label' => 'emailFormActions',
-    ),
-  ),
-);
+<?php
+
+return [
+    'resource' => [
+        'name' => 'Invio Email',
+    ],
+    'navigation' => [
+        'name' => 'Invio Email',
+        'plural' => 'Invio Email',
+        'group' => [
+            'name' => 'Sistema',
+            'description' => 'Funzionalità per l\'invio di email attraverso il sistema di notifiche',
+        ],
+        'label' => 'Invio Email',
+        'icon' => 'notify-email-animated',
+        'sort' => 49,
+    ],
+    'fields' => [
+        'to' => [
+            'label' => 'Destinatario',
+        ],
+        'subject' => [
+            'label' => 'Oggetto',
+        ],
+        'body_html' => [
+            'label' => 'Contenuto HTML',
+        ],
+    ],
+    'actions' => [
+        'send' => [
+            'label' => 'Invia Email',
+            'success' => 'Email inviata con successo',
+            'error' => 'Errore durante l\'invio dell\'email',
+        ],
+        'preview' => [
+            'label' => 'Anteprima',
+        ],
+    ],
+];

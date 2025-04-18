@@ -19,6 +19,7 @@ use Filament\Tables\Actions\CreateAction;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\Geo\Models\Location;
+use Modules\Geo\Models\Place;
 
 class LocationMapTableWidget extends MapTableWidget
 {
@@ -66,7 +67,7 @@ class LocationMapTableWidget extends MapTableWidget
         return $config;
     }
 
-    protected function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return [
             Forms\Components\Section::make()->schema([
@@ -135,7 +136,7 @@ class LocationMapTableWidget extends MapTableWidget
         ];
     }
 
-    protected function getTableActions(): array
+    public function getTableActions(): array
     {
         return [
             Tables\Actions\ViewAction::make()
@@ -153,27 +154,30 @@ class LocationMapTableWidget extends MapTableWidget
         return [10, 25, 50, 100];
     }
 
-    protected function getData(): array
+    /**
+     * @return array<int, array{location: array{lat: float, lng: float}, label: string, id: int, icon: array{url: string, type: string, scale: array<int, int>}}>
+     */
+    public function getData(): array
     {
         $locations = $this->getRecords();
-
         $data = [];
 
         foreach ($locations as $location) {
-            $data[] = [
-                'location' => [
-                    'lat' => $location->lat ? round(floatval($location->lat), static::$precision ?? 18) : 0,
-                    'lng' => $location->lng ? round(floatval($location->lng), static::$precision ?? 18) : 0,
-                ],
-                'label' => $location->formatted_address,
-                'id' => $location->id,
-                'icon' => [
-                    // 'url' => url('images/dealership.svg'),
-                    'url' => url('images/fire.svg'),
-                    'type' => 'svg',
-                    'scale' => [35, 35],
-                ],
-            ];
+            if ($location->latitude && $location->longitude) {
+                $data[] = [
+                    'location' => [
+                        'lat' => (float) $location->latitude,
+                        'lng' => (float) $location->longitude,
+                    ],
+                    'label' => $location->name,
+                    'id' => $location->id,
+                    'icon' => [
+                        'url' => $this->getMarkerIcon($location),
+                        'type' => 'url',
+                        'scale' => [32, 32],
+                    ],
+                ];
+            }
         }
 
         return $data;
@@ -198,5 +202,21 @@ class LocationMapTableWidget extends MapTableWidget
                 return array_key_exists('model_id', $arguments) ? Location::find($arguments['model_id']) : null;
             })
             ->modalSubmitAction(false);
+    }
+
+    public function getMarkerIcon(Place $place): ?array
+    {
+        $type = $place->placeType->slug ?? 'default';
+        $markerConfig = config("geo.markers.types.{$type}");
+
+        if (! is_array($markerConfig)) {
+            $markerConfig = config('geo.markers.types.default');
+        }
+
+        if (! is_array($markerConfig)) {
+            return null;
+        }
+
+        return $markerConfig['icon'] ?? null;
     }
 }

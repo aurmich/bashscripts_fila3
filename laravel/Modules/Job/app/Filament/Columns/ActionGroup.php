@@ -19,9 +19,10 @@ class ActionGroup extends ActionsActionGroup
 {
     use InteractsWithRecord;
 
-
     public const ICON_BUTTON_VIEW = 'job::components.action-group';
+
     protected string $view = 'job::components.action-group';
+
     public function getActions(): array
     {
         return [];

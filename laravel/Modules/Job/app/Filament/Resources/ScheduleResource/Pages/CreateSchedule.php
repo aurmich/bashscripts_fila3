@@ -6,14 +6,13 @@ namespace Modules\Job\Filament\Resources\ScheduleResource\Pages;
 
 use Filament\Forms\Form;
 use Filament\Notifications\Notification;
-use Filament\Resources\Pages\CreateRecord;
 use Illuminate\Support\Collection;
 use Illuminate\Validation\ValidationException;
 use Modules\Job\Filament\Resources\ScheduleResource;
 use Modules\Xot\Filament\Traits\NavigationPageLabelTrait;
 use Webmozart\Assert\Assert;
 
-class CreateSchedule extends CreateRecord
+class CreateSchedule extends \Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord
 {
     use NavigationPageLabelTrait;
 
@@ -42,8 +41,5 @@ class CreateSchedule extends CreateRecord
             ->send();
     }
 
-    protected function getRedirectUrl(): string
-    {
-        return $this->getResource()::getUrl('index');
-    }
+   
 }

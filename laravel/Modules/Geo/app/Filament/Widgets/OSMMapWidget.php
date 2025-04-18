@@ -4,69 +4,127 @@ declare(strict_types=1);
 
 namespace Modules\Geo\Filament\Widgets;
 
-use Filament\Forms;
-use Illuminate\Support\Str;
-use Webbingbrasil\FilamentMaps\Actions;
-use Webbingbrasil\FilamentMaps\Marker;
+use Filament\Widgets\Widget;
+use Illuminate\Contracts\View\View;
+use Illuminate\Database\Eloquent\Collection;
+use Modules\Geo\Models\Place;
 use Webbingbrasil\FilamentMaps\Widgets\MapWidget;
 
+/**
+ * Widget per visualizzare una mappa OpenStreetMap con le posizioni.
+ */
 class OSMMapWidget extends MapWidget
 {
-    protected int|string|array $columnSpan = 2;
-    // protected static string $view = 'geo::filament.widgets.osm-map';
+    protected static string $view = 'geo::filament.widgets.osm-map-widget';
 
-    protected bool $hasBorder = false;
+    protected int|string|array $columnSpan = 'full';
 
-    public function getMarkers(): array
+    protected function getData(): array
     {
+        /** @var Collection<int, Place> $places */
+        $places = Place::with(['address', 'type'])->get();
+
         return [
-            Marker::make('pos2')
-                ->lat(-15.7942)
-                ->lng(-47.8822)
-                ->tooltip('I am a tooltip')
-                ->popup('Hello Brasilia!'),
+            'markers' => $this->getMarkers(),
+            'center' => $this->getMapCenter($places),
+            'zoom' => $this->getMapZoom($places),
         ];
     }
 
-    public function getActions(): array
+    /**
+     * @return array<int, array{
+     *     position: array{lat: float, lng: float},
+     *     title: string,
+     *     content: string,
+     *     icon?: array{url: string, scaledSize: array{width: int, height: int}}
+     * }>
+     */
+    public function getMarkers(): array
     {
+        /** @var Collection<int, Place> $places */
+        $places = Place::with(['address', 'type'])->get();
+
+        return $places->map(function (Place $place): array {
+            $marker = [
+                'position' => [
+                    'lat' => $place->latitude,
+                    'lng' => $place->longitude,
+                ],
+                'title' => $place->name ?? 'Unnamed Place',
+                'content' => $this->getInfoWindowContent($place),
+            ];
+
+            if ($icon = $this->getMarkerIcon($place)) {
+                $marker['icon'] = $icon;
+            }
+
+            return $marker;
+        })->all();
+    }
+
+    /**
+     * @param  Collection<int, Place>  $places
+     * @return array{lat: float, lng: float}
+     */
+    protected function getMapCenter(Collection $places): array
+    {
+        if ($places->isEmpty()) {
+            return ['lat' => 41.9028, 'lng' => 12.4964]; // Rome, Italy
+        }
+
+        $latitudes = $places->pluck('latitude')->filter(fn ($lat) => is_float($lat));
+        $longitudes = $places->pluck('longitude')->filter(fn ($lng) => is_float($lng));
+
         return [
-            Actions\ZoomAction::make(),
-            Actions\FullpageAction::make(),
-            Actions\FullscreenAction::make(),
-            Actions\Action::make('form')
-            // ->icon('filamentmapsicon-o-arrows-pointing-in')
-            // ->icon('heroicon-o-plus')
-                ->icon('marker-plus')
-                ->form([
-                    Forms\Components\TextInput::make('name')
-                        ->label('Name')
-                        ->required(),
-                    Forms\Components\TextInput::make('lat')
-                        ->label('Latitude')
-                        ->numeric()
-                        ->required(),
-                    Forms\Components\TextInput::make('lng')
-                        ->label('Longitude')
-                        ->numeric()
-                        ->required(),
-                ])
-                ->action(function (array $data, self $livewire) {
-                    $livewire
-                        ->addMarker(
-                            Marker::make(Str::camel($data['name']))
-                                ->lat(floatval($data['lat']))
-                                ->lng(floatval($data['lng']))
-                                ->popup($data['name'])
-                        )
-                        ->centerTo(location: [$data['lat'], $data['lng']], zoom: 13);
-                }),
-            // Actions\CenterMapAction::make()->zoom(2),
-            // Actions\CenterMapAction::make()->centerTo([51.505, -0.09])->zoom(13),
-            Actions\CenterMapAction::make()->centerOnUserPosition()->zoom(13),
-            Actions\Action::make('mode')
-                ->icon('filamentmapsicon-o-square-3-stack-3d')
-                ->callback('setTileLayer(mode === "OpenStreetMap" ? "OpenTopoMap" : "OpenStreetMap")'),
+            'lat' => $latitudes->average() ?? 0.0,
+            'lng' => $longitudes->average() ?? 0.0,
         ];
+    }
+
+    /**
+     * @param  Collection<int, Place>  $places
+     */
+    protected function getMapZoom(Collection $places): int
+    {
+        if ($places->count() <= 1) {
+            return 13;
+        }
+
+        return 10;
+    }
+
+    protected function getInfoWindowContent(Place $place): string
+    {
+        return view('geo::filament.widgets.osm-map-info-window', [
+            'place' => $place,
+        ])->render();
+    }
+
+    /**
+     * @return array{url: string, scaledSize: array{width: int, height: int}}|null
+     */
+    protected function getMarkerIcon(Place $place): ?array
+    {
+        $type = $place->type->slug ?? 'default';
+
+        $iconPath = resource_path("images/markers/{$type}.png");
+        if (! file_exists($iconPath)) {
+            return null;
+        }
+
+        return [
+            'url' => asset("images/markers/{$type}.png"),
+            'scaledSize' => [
+                'width' => 32,
+                'height' => 32,
+            ],
+        ];
+    }
+
+    public function render(): View
+    {
+        return view('geo::filament.widgets.osm-map-widget', [
+            'data' => $this->getData(),
+        ]);
     }
 }

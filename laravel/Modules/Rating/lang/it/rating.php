@@ -5,114 +5,82 @@ declare(strict_types=1);
 return [
     'resource' => [
         'name' => 'Rating',
+        'plural' => 'Ratings',
     ],
     'navigation' => [
         'name' => 'Rating',
-        'plural' => 'Rating',
+        'plural' => 'Ratings',
         'group' => [
             'name' => 'Admin',
         ],
     ],
     'fields' => [
-        'brand' => [
-            'label' => 'Marca',
+        'id' => [
+            'label' => 'ID',
+            'help' => 'Identificativo univoco del rating',
         ],
-        'model' => [
-            'label' => 'Modello',
+        'title' => [
+            'label' => 'Titolo',
+            'help' => 'Titolo del rating',
         ],
         'description' => [
             'label' => 'Descrizione',
-        ],
-        'serial_number' => [
-            'label' => 'Numero di serie',
-        ],
-        'inventory_number' => [
-            'label' => 'Codice inventario',
-        ],
-        'code' => [
-            'label' => 'Identificativo',
-        ],
-        'manufacturing_year' => [
-            'label' => 'Anno di fabbricazione',
-        ],
-        'purchase_year' => [
-            'label' => 'Anno di acquisto',
-        ],
-        'is_enabled' => [
-            'label' => 'È attivo?',
-        ],
-        'asset_type' => [
-            'label' => 'Tipologia',
-        ],
-        'area' => [
-            'label' => 'Area',
-        ],
-        'parent' => [
-            'label' => 'Asset genitore',
-        ],
-        'name' => [
-            'label' => 'Nome',
-        ],
-        'is_disabled' => [
-            'label' => 'is_disabled',
-        ],
-        'is_readonly' => [
-            'label' => 'is_readonly',
-        ],
-        '_tpl' => [
-            'label' => '_tpl',
-        ],
-        'ratings' => [
-            'label' => 'ratings',
-        ],
-        'id' => [
-            'label' => 'id',
-        ],
-        'title' => [
-            'label' => 'title',
-        ],
-        'color' => [
-            'label' => 'color',
+            'help' => 'Descrizione dettagliata',
         ],
         'rating' => [
-            'label' => 'rating',
+            'label' => 'Valutazione',
+            'help' => 'Valore numerico della valutazione',
+        ],
+        'color' => [
+            'label' => 'Colore',
+            'help' => 'Colore associato al rating',
+        ],
+        'is_enabled' => [
+            'label' => 'Attivo',
+            'help' => 'Indica se il rating è attivo',
+        ],
+        'is_disabled' => [
+            'label' => 'Disabilitato',
+            'help' => 'Indica se il rating è disabilitato',
+        ],
+        'is_readonly' => [
+            'label' => 'Sola lettura',
+            'help' => 'Indica se il rating è in sola lettura',
         ],
         'view' => [
-            'label' => 'view',
+            'label' => 'Vista',
+            'help' => 'Template di visualizzazione',
         ],
     ],
     'actions' => [
         'enable' => [
-            'cta' => 'Attiva',
+            'label' => 'Attiva',
+            'help' => 'Attiva il rating',
         ],
         'disable' => [
-            'cta' => 'Dismetti',
+            'label' => 'Disattiva',
+            'help' => 'Disattiva il rating',
         ],
         'import' => [
+            'label' => 'Importa',
+            'help' => 'Importa ratings da file',
             'row_number' => 'Riga :row',
             'fields' => [
                 'import_file' => 'Seleziona un file XLS o CSV da caricare',
             ],
         ],
         'export' => [
-            'filename_prefix' => 'Lista asset al',
-            'columns' => [
-                'brand' => 'Marca',
-                'model' => 'Modello',
-                'description' => 'Descrizione',
-                'serial_number' => 'Numero di serie',
-                'inventory_number' => 'Codice inventario',
-                'code' => 'Identificativo',
-                'manufacturing_year' => 'Anno di fabbricazione',
-                'purchase_year' => 'Anno di acquisto',
-                'is_enabled' => 'È attivo?',
-                'asset_type' => 'Tipologia',
-                'parent_inventory_number' => 'Codice inventario genitore',
-            ],
+            'label' => 'Esporta',
+            'help' => 'Esporta ratings in file',
+            'filename_prefix' => 'Lista ratings al',
         ],
     ],
-    'widgets' => [
-        'child_assets' => 'Asset figli',
+    'messages' => [
+        'created' => 'Rating creato con successo',
+        'updated' => 'Rating aggiornato con successo',
+        'deleted' => 'Rating eliminato con successo',
+        'enabled' => 'Rating attivato con successo',
+        'disabled' => 'Rating disattivato con successo',
     ],
     'exceptions' => [
         'mandatory_data' => '{1} Dato obbligatorio non presente|{2} 2 Dati obbligatori non presenti|{3} 3 Dati obbligatori non presenti|[4,*] Vari dati obbligatori non presenti',

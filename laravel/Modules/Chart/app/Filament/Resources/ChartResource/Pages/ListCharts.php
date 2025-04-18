@@ -19,9 +19,11 @@ use Modules\Chart\Filament\Resources\ChartResource;
 
 class ListCharts extends XotBaseListRecords
 {
+
     public TableLayoutEnum $layoutView = TableLayoutEnum::LIST;
 
     protected static string $resource = ChartResource::class;
+
 
     public function getListTableColumns(): array
     {
@@ -37,4 +39,6 @@ class ListCharts extends XotBaseListRecords
             TextColumn::make('font_size'),
         ];
     }
+
+
 }

@@ -7,8 +7,6 @@ namespace Modules\Comment\Models;
 use Spatie\Comments\Models\Reaction as BaseReaction;
 
 /**
- * 
- *
  * @property int $id
  * @property string|null $commentator_type
  * @property int|null $commentator_id
@@ -22,6 +20,7 @@ use Spatie\Comments\Models\Reaction as BaseReaction;
  * @property string|null $deleted_by
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
+ *
  * @method static \Modules\Comment\Database\Factories\ReactionFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|Reaction newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Reaction newQuery()
@@ -37,10 +36,13 @@ use Spatie\Comments\Models\Reaction as BaseReaction;
  * @method static \Illuminate\Database\Eloquent\Builder|Reaction whereReaction($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Reaction whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Reaction whereUpdatedBy($value)
+ *
  * @property-read \Spatie\Comments\Models\Comment|null $comment
  * @property-read \Illuminate\Database\Eloquent\Model|\Eloquent $commentator
+ *
  * @method static \Spatie\Comments\Models\Collections\ReactionCollection<int, static> all($columns = ['*'])
  * @method static \Spatie\Comments\Models\Collections\ReactionCollection<int, static> get($columns = ['*'])
+ *
  * @mixin \Eloquent
  */
 class Reaction extends BaseReaction

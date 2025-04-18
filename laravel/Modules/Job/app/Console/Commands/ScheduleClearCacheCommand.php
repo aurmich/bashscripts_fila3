@@ -19,19 +19,22 @@ class ScheduleClearCacheCommand extends Command
      * @var string
      */
     protected $signature = 'schedule:clear-cache';
-/**
+
+    /**
      * The console command description.
      *
      * @var string
      */
     protected $description = 'Clears the cache of the scheduler.';
-/**
+
+    /**
      * Execute the console command.
      */
     public function handle(): int
     {
         // (new ScheduleService())->clearCache();  //WIP
         $this->info('Scheduling cache cleared.');
+
         return 0;
     }
 }

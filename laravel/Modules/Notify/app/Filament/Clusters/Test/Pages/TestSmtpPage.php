@@ -31,10 +31,13 @@ class TestSmtpPage extends Page implements HasForms
     use InteractsWithForms;
 
     public ?array $emailData = [];
+
     public ?string $error_message = null;
 
     protected static ?string $navigationIcon = 'heroicon-o-paper-airplane';
+
     protected static string $view = 'notify::filament.pages.send-email';
+
     protected static ?string $cluster = Test::class;
 
     public function mount(): void
@@ -148,6 +151,15 @@ class TestSmtpPage extends Page implements HasForms
     {
         Assert::isArray($mail_config = config('mail'));
         Assert::isArray($smtpConfig = Arr::get($mail_config, 'mailers.smtp'));
-        $this->emailForm->fill($smtpConfig);
+        
+        // Convertiamo l'array generico in un array<string, mixed>
+        $typedConfig = [];
+        foreach ($smtpConfig as $key => $value) {
+            if (is_string($key)) {
+                $typedConfig[$key] = $value;
+            }
+        }
+        
+        $this->emailForm->fill($typedConfig);
     }
 }

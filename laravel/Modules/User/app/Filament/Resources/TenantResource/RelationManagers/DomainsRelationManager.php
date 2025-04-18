@@ -11,24 +11,33 @@ use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Tables;
 use Filament\Tables\Table;
+use Illuminate\Support\Str;
 use Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager;
+
+
+
+
+
+
+
+
 
 class DomainsRelationManager extends XotBaseRelationManager
 {
     protected static string $relationship = 'domains';
 
-    public function form(Form $form): Form
+    /**
+     * @return array<string, \Filament\Forms\Components\Component>
+     */
+    public function getFormSchema(): array
     {
-        return $form
-            ->schema(
-                [
-                    Forms\Components\TextInput::make('domain')
-                        ->required()
-                        ->prefix('http(s)://')
-                        ->suffix('.'.request()->getHost())
-                        ->maxLength(255),
-                ]
-            );
+        return [
+            'domain' => Forms\Components\TextInput::make('domain')
+                ->required()
+                ->prefix('http(s)://')
+                ->suffix('.'.request()->getHost())
+                ->maxLength(255),
+        ];
     }
 
     public function table(Table $table): Table
@@ -38,7 +47,7 @@ class DomainsRelationManager extends XotBaseRelationManager
             ->columns(
                 [
                     Tables\Columns\TextColumn::make('domain'),
-                    Tables\Columns\TextColumn::make('full-domain')->getStateUsing(static fn ($record) => \Str::of($record->domain)->append('.')->append(request()->getHost())),
+                    Tables\Columns\TextColumn::make('full-domain')->getStateUsing(static fn ($record) => Str::of($record->domain)->append('.')->append(request()->getHost())),
                 ]
             )
             ->filters(

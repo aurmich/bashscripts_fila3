@@ -91,4 +91,15 @@ return [
         // Temporary password sent successfully.
         'send_otp_success' => 'Password temporanea inviata con successo.',
     ],
+    'navigation' => [
+        'name' => 'OTP',
+        'plural' => 'OTPs',
+        'group' => [
+            'name' => 'Gestione Utenti',
+            'description' => 'Gestione delle password usa e getta',
+        ],
+        'label' => 'otp',
+        'sort' => 31,
+        'icon' => 'user-user-otp',
+    ],
 ];

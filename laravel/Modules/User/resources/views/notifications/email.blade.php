@@ -1,7 +1,7 @@
 @props([
     'level' => 'success',
 ])
-<x-mail.message>
+<x-mail::message>
     {{-- Greeting --}}
     @if (!empty($greeting))
         # {{ $greeting }}
@@ -54,4 +54,4 @@
             ]) <span class="break-all">[{{ $displayableActionUrl }}]({{ $actionUrl }})</span>
         </x-slot:subcopy>
     @endisset
-</x-mail.message>
+</x-mail::message>

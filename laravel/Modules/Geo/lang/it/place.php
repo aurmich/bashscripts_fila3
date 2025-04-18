@@ -3,18 +3,41 @@
 declare(strict_types=1);
 
 return [
-    'fields' => [
-        'route' => 'Via/Piazza',
-        'street_number' => 'Numero civico',
-        'postal_code' => 'Cap',
-        'locality' => 'Città',
-        'administrative_area_level_2' => 'Provincia',
-        'administrative_area_level_1' => 'Regione',
-        'country' => 'Nazione',
+    'navigation' => [
+        'name' => 'Luoghi',
+        'plural' => 'Luoghi',
+        'group' => [
+            'name' => 'Geo',
+            'description' => 'Gestione dei luoghi e punti di interesse',
+        ],
+        'label' => 'Luoghi',
+        'sort' => 32,
+        'icon' => 'geo-place',
     ],
-    'tab' => [
-        'index' => 'Lista',
-        'create' => 'Aggiungi Luogo',
-        'edit' => 'Modifica Luogo',
+    'fields' => [
+        'name' => 'Nome',
+        'description' => 'Descrizione',
+        'category' => 'Categoria',
+        'location' => 'Località',
+        'rating' => 'Valutazione',
+        'opening_hours' => 'Orari di Apertura',
+        'contact_info' => 'Contatti',
+        'website' => 'Sito Web',
+        'photos' => 'Foto',
+        'amenities' => 'Servizi',
+    ],
+    'categories' => [
+        'restaurant' => 'Ristorante',
+        'hotel' => 'Hotel',
+        'shopping' => 'Shopping',
+        'entertainment' => 'Intrattenimento',
+        'service' => 'Servizi',
+        'culture' => 'Cultura',
+    ],
+    'actions' => [
+        'add_review' => 'Aggiungi Recensione',
+        'upload_photo' => 'Carica Foto',
+        'share' => 'Condividi',
+        'bookmark' => 'Salva',
     ],
 ];

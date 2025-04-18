@@ -1,28 +1,51 @@
-# Analisi PHPStan - Modulo Xot - Livello 5
+# Rapporto PHPStan Livello 5 per il modulo Xot
 
-[⬅️ Torna alla Roadmap del modulo](../roadmap.md)
+Data analisi: 2025-04-15 21:54:17
 
+## Riepilogo
 
-Data analisi: 2025-04-11 13:01:23
+Trovati 4 errori al livello 5.
 
-## Risultato: ERRORI
+## Errori e suggerimenti
 
-Rilevati  errori a livello 5.
+### File: `/var/www/html/saluteora/laravel/Modules/Xot/app/Actions/Export/ExportXlsByView.php`
 
-### Dettaglio errori
-```
-Note: Using configuration file /var/www/html/_bases/base_predict_fila3_mono/laravel/phpstan.neon.
+#### Linea 40: Syntax error, unexpected T_SR on line 40
 
- [ERROR] No files found to analyse.                                             
-```
+**Suggerimento generale**: Rivedi il codice per assicurarti che:
+- Tutte le classi/interfacce utilizzate siano importate correttamente
+- I tipi siano dichiarati e utilizzati in modo coerente
+- Le variabili siano inizializzate prima dell'uso
+- I nomi di metodi e proprietà siano corretti
 
-### Suggerimenti per la risoluzione
+#### Linea 41: Syntax error, unexpected '}' on line 41
 
-### Consigli generali
+**Suggerimento generale**: Rivedi il codice per assicurarti che:
+- Tutte le classi/interfacce utilizzate siano importate correttamente
+- I tipi siano dichiarati e utilizzati in modo coerente
+- Le variabili siano inizializzate prima dell'uso
+- I nomi di metodi e proprietà siano corretti
 
-1. Iniziare risolvendo gli errori più semplici e ripetitivi
-2. Utilizzare `@phpstan-ignore-next-line` solo come ultima risorsa per errori non risolvibili
-3. Considerare l'aggiunta di test unitari per verificare il comportamento corretto
-4. Aggiornare la documentazione del codice con annotazioni PHPDoc complete
-5. Valutare l'utilizzo di classi di tipo dedicate (DTO) per strutture dati complesse
-6. Seguire le linee guida di tipizzazione nel documento 'Regole Windsurf per base_predict_fila3_mono'
+### File: `/var/www/html/saluteora/laravel/Modules/Xot/app/Actions/View/GetViewByClassAction.php`
+
+#### Linea 47: Syntax error, unexpected T_SR on line 47
+
+**Suggerimento generale**: Rivedi il codice per assicurarti che:
+- Tutte le classi/interfacce utilizzate siano importate correttamente
+- I tipi siano dichiarati e utilizzati in modo coerente
+- Le variabili siano inizializzate prima dell'uso
+- I nomi di metodi e proprietà siano corretti
+
+#### Linea 48: Syntax error, unexpected '}' on line 48
+
+**Suggerimento generale**: Rivedi il codice per assicurarti che:
+- Tutte le classi/interfacce utilizzate siano importate correttamente
+- I tipi siano dichiarati e utilizzati in modo coerente
+- Le variabili siano inizializzate prima dell'uso
+- I nomi di metodi e proprietà siano corretti
+
+## Risorse utili
+
+- [Documentazione PHPStan](https://phpstan.org/user-guide/getting-started)
+- [Tipi in PHP](https://www.php.net/manual/en/language.types.declarations.php)
+- [PSR-12: Standard di codifica](https://www.php-fig.org/psr/psr-12/)

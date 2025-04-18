@@ -153,7 +153,7 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
  * @method static \Staudenmeir\LaravelAdjacencyList\Eloquent\Collection<int, static> all($columns = ['*'])
  * @method static \Staudenmeir\LaravelAdjacencyList\Eloquent\Collection<int, static> get($columns = ['*'])
  *
- * @mixin \Eloquent
+ * @mixin \Illuminate\Database\Eloquent\Model
  */
 class Category extends BaseModel
 {
@@ -166,7 +166,10 @@ class Category extends BaseModel
         'description',
     ];
 
-    /** @var list<string> */
+    /**
+     * Attributi assegnabili in massa (mass assignment).
+     * @var list<string>
+     */
     protected $fillable = [
         'title',
         'slug',

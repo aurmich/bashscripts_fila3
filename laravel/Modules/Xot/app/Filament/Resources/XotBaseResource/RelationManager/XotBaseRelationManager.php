@@ -16,7 +16,7 @@ use Modules\Xot\Filament\Traits\HasXotTable;
 use Webmozart\Assert\Assert;
 
 /**
- * @property class-string<XotBaseResource> $resource
+ * @property class-string<\Modules\Xot\Filament\Resources\XotBaseResource> $resource
  */
 abstract class XotBaseRelationManager extends RelationManager
 {
@@ -24,8 +24,10 @@ abstract class XotBaseRelationManager extends RelationManager
 
     protected static string $relationship = '';
 
-    //@var class-string<XotBaseResource> 
-    //protected static string $resource;
+    /**
+     * @var class-string<\Modules\Xot\Filament\Resources\XotBaseResource>
+     */
+    protected static string $resource;
 
     public static function getModuleName(): string
     {
@@ -47,7 +49,7 @@ abstract class XotBaseRelationManager extends RelationManager
         return static::transFunc(__FUNCTION__);
     }
 
-    public function form(Form $form): Form
+    final public function form(Form $form): Form
     {
         return $form
             ->schema($this->getFormSchema());
@@ -56,7 +58,7 @@ abstract class XotBaseRelationManager extends RelationManager
     /**
      * Get form schema.
      *
-     * @return array<string, \Filament\Forms\Components\Component>
+     * @return array<string|int, \Filament\Forms\Components\Component>
      */
     public function getFormSchema(): array
     {
@@ -65,10 +67,23 @@ abstract class XotBaseRelationManager extends RelationManager
 
     public function getListTableColumns(): array
     {
-        $index = Arr::get($this->getResource()::getPages(), 'index');
+        $pages = $this->getResource()::getPages();
+        if (!is_array($pages) || !isset($pages['index'])) {
+            return [];
+        }
+
+        $index = $pages['index'];
+        if (!is_object($index) || !method_exists($index, 'getPage')) {
+            return [];
+        }
+
         $index_page = $index->getPage();
+        if (!is_string($index_page) || !class_exists($index_page)) {
+            return [];
+        }
+
         $columns = app($index_page)->getListTableColumns();
-        
+
         return $columns;
     }
 
@@ -99,34 +114,47 @@ abstract class XotBaseRelationManager extends RelationManager
     //     return [];
     // }
 
+
     /**
      * Get the resource class.
      *
-     * @return class-string<XotBaseResource>
+     * @return class-string<\Modules\Xot\Filament\Resources\XotBaseResource>
      */
     protected function getResource(): string
     {
+        // Get the resource class via parent method first
         try {
-            /** @var class-string<XotBaseResource> $resourceClass */
-            $resourceClass = $this->resource;
-            Assert::isInstanceOf($resourceClass, XotBaseResource::class);
-
-            return $resourceClass;
+            // @phpstan-ignore-next-line
+            $parentResource = parent::getResource();
+            if (is_subclass_of($parentResource, \Modules\Xot\Filament\Resources\XotBaseResource::class)) {
+                /** @var class-string<\Modules\Xot\Filament\Resources\XotBaseResource> $parentResource */
+                return $parentResource;
+            }
         } catch (\Exception $e) {
-            $class = $this::class;
-            $resource_name = Str::of(class_basename($this))
-                ->beforeLast('RelationManager')
-                ->singular()
-                ->append('Resource')
-                ->toString();
-            $ns = Str::of($class)
-                ->before('Resources\\')
-                ->append('Resources\\')
-                ->toString();
-            Assert::classExists($resource_class = $ns.'\\'.$resource_name);
-            Assert::isInstanceOf($resource_class, XotBaseResource::class);
-
-            return $resource_class;
+            // Fallback if parent method fails
         }
+        
+        // Fallback: derive the resource class name from the relation manager name
+        $class = get_class($this);
+        $resource_name = Str::of(class_basename($this))
+            ->beforeLast('RelationManager')
+            ->singular()
+            ->append('Resource')
+            ->toString();
+        $ns = Str::of($class)
+            ->before('Resources\\')
+            ->append('Resources\\')
+            ->toString();
+        $resourceClass = $ns.'\\'.$resource_name;
+        
+        if (!class_exists($resourceClass)) {
+            throw new \Exception("Cannot find resource class {$resourceClass}");
+        }
+        
+        if (!is_subclass_of($resourceClass, \Modules\Xot\Filament\Resources\XotBaseResource::class)) {
+            throw new \Exception("{$resourceClass} must extend XotBaseResource");
+        }
+
+        return $resourceClass;
     }
 }

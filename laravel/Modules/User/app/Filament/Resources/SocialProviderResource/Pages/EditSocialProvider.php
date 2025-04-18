@@ -5,10 +5,18 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\SocialProviderResource\Pages;
 
 use Filament\Actions;
-use Filament\Resources\Pages\EditRecord;
 use Modules\User\Filament\Resources\SocialProviderResource;
 
-class EditSocialProvider extends EditRecord
+
+
+
+use Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager;
+
+
+
+
+
+class EditSocialProvider extends \Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord
 {
     protected static string $resource = SocialProviderResource::class;
 

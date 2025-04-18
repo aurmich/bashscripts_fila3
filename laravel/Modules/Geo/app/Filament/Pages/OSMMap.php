@@ -4,15 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Geo\Filament\Pages;
 
-use Filament\Pages\Page;
 use Modules\Geo\Filament\Widgets;
+use Modules\Xot\Filament\Pages\XotBasePage;
 
-class OSMMap extends Page
+class OSMMap extends XotBasePage
 {
-    protected static ?string $navigationIcon = 'heroicon-o-document-text';
-
-    protected static string $view = 'geo::filament.pages.location-map';
-
     protected function getHeaderWidgets(): array
     {
         return [

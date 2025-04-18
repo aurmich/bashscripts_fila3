@@ -11,6 +11,15 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Modules\User\Filament\Resources\RoleResource;
 
+
+
+
+use Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager;
+
+
+
+
+
 class ManageRolePermissions extends ManageRelatedRecords
 {
     protected static string $resource = RoleResource::class;
@@ -24,15 +33,18 @@ class ManageRolePermissions extends ManageRelatedRecords
         return 'Permissions';
     }
 
-    public function form(Form $form): Form
-    {
-        return $form
-            ->schema([
+    public function getFormSchema(): array
+{
+    
+        
+    return [
+              
                 Forms\Components\TextInput::make('name')
                     ->required()
                     ->maxLength(255),
-            ]);
-    }
+            
+      ];
+}
 
     public function table(Table $table): Table
     {

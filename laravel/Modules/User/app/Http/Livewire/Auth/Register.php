@@ -27,9 +27,10 @@ class Register extends Component
     public string $passwordConfirmation = '';
 
     /**
-     * Execute the action..
+     * Execute the action.
+     *
+     * @return RedirectResponse|\Livewire\Features\SupportRedirects\Redirector
      */
-    // public function register(): \Livewire\Features\SupportRedirects\Redirector
     public function register(): RedirectResponse|\Livewire\Features\SupportRedirects\Redirector
     {
         $messages = __('user::validation');
@@ -54,16 +55,27 @@ class Register extends Component
         return redirect()->intended(route('home'));
     }
 
-    public function render(): \Illuminate\Contracts\View\View|\Illuminate\Contracts\View\Factory
+    /**
+     * Render the component.
+     *
+     * In Livewire components, the render method ultimately returns a view,
+     * but it's processed through Livewire's component system.
+     *
+     * @return mixed
+     */
+    public function render(): mixed
     {
+        // Copy the view templates to the pub_theme location
         app(\Modules\Xot\Actions\File\ViewCopyAction::class)->execute('user::livewire.auth.register', 'pub_theme::livewire.auth.register');
         app(\Modules\Xot\Actions\File\ViewCopyAction::class)->execute('user::layouts.auth', 'pub_theme::layouts.auth');
         app(\Modules\Xot\Actions\File\ViewCopyAction::class)->execute('user::layouts.base', 'pub_theme::layouts.base');
+        
         /**
          * @phpstan-var view-string
          */
         $view = 'pub_theme::livewire.auth.register';
 
+        // Return view with layout - Livewire specific implementation
         return view($view)
             ->extends('pub_theme::layouts.auth');
     }

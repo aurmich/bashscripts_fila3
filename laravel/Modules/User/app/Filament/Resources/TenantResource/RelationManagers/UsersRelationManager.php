@@ -18,11 +18,6 @@ class UsersRelationManager extends XotBaseRelationManager
 
     protected static ?string $recordTitleAttribute = 'name';
 
-    public function form(Form $form): Form
-    {
-        return $form->schema($this->getFormSchema());
-    }
-
     /**
      * @return array<Forms\Components\Component>
      */
@@ -30,23 +25,19 @@ class UsersRelationManager extends XotBaseRelationManager
     {
         return [
             Forms\Components\TextInput::make('name')
-
                 ->required()
                 ->maxLength(255),
 
             Forms\Components\TextInput::make('email')
-
                 ->email()
                 ->required()
                 ->unique(ignoreRecord: true)
                 ->maxLength(255),
 
             Forms\Components\DateTimePicker::make('email_verified_at')
-
                 ->nullable(),
 
             Forms\Components\TextInput::make('password')
-
                 ->password()
                 ->required(fn ($context) => $context === 'create')
                 ->minLength(8)
@@ -55,47 +46,43 @@ class UsersRelationManager extends XotBaseRelationManager
                 ->dehydrateStateUsing(fn ($state) => bcrypt($state)),
 
             Forms\Components\TextInput::make('password_confirmation')
-
                 ->password()
                 ->required(fn ($context) => $context === 'create')
                 ->minLength(8),
         ];
     }
 
+    /**
+     * @return array<string, \Filament\Tables\Columns\Column>
+     */
     public function getListTableColumns(): array
     {
         return [
-            TextColumn::make('id')
-
+            'id' => TextColumn::make('id')
                 ->sortable()
                 ->toggleable(),
 
-            TextColumn::make('name')
-
+            'name' => TextColumn::make('name')
                 ->searchable()
                 ->sortable()
                 ->toggleable(),
 
-            TextColumn::make('email')
-
+            'email' => TextColumn::make('email')
                 ->searchable()
                 ->sortable()
                 ->toggleable(),
 
-            TextColumn::make('email_verified_at')
-
+            'email_verified_at' => TextColumn::make('email_verified_at')
                 ->dateTime()
                 ->sortable()
                 ->toggleable(),
 
-            TextColumn::make('created_at')
-
+            'created_at' => TextColumn::make('created_at')
                 ->dateTime()
                 ->sortable()
                 ->toggleable(),
 
-            TextColumn::make('updated_at')
-
+            'updated_at' => TextColumn::make('updated_at')
                 ->dateTime()
                 ->sortable()
                 ->toggleable(),

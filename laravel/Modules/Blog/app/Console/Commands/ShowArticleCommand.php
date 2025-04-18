@@ -29,36 +29,37 @@ class ShowArticleCommand extends Command
      */
     public function handle(): void
     {
-        $articleId = (string) $this->argument('articleId');
+        $articleIdRaw = $this->argument('articleId');
+        $articleId = is_scalar($articleIdRaw) ? (string)$articleIdRaw : '[ID non valido]';
         Assert::notNull($article = Article::firstWhere(['id' => $articleId]), '['.__LINE__.']['.__FILE__.']');
 
         $ratings = $article->ratings()
             ->where('user_id', null)
-
             ->get();
 
-        $this->info($article->title);
+        $title = is_scalar($article->title) ? (string)$article->title : '[Titolo non valido]';
+        $this->info($title);
         $header = ['id', 'title', 'is_winner', 'count', 'sum', 'avg', 'tot'];
         $rows = [];
         foreach ($ratings as $rating) {
-            $tmp = $article->loadSum(['ratings as value_sum' => static function (\Illuminate\Database\Eloquent\Builder $query) use ($rating): void {
+            $tmp = $article->loadSum(['ratings as value_sum' => static function ($query) use ($rating): void {
                 $query
                     ->where('ratings.id', $rating->id)
                     ->where('rating_morph.user_id', '!=', null);
             }], 'rating_morph.value')
-                ->loadSum(['ratings as value_tot' => static function (\Illuminate\Database\Eloquent\Builder $query) use ($ratings): void {
+                ->loadSum(['ratings as value_tot' => static function ($query) use ($ratings): void {
                     $query
                         ->whereIn('ratings.id', $ratings->modelKeys())
                         ->where('rating_morph.user_id', '!=', null);
                 }], 'rating_morph.value')
             /*
-            ->loadAvg(['ratings as value_avg' => static function (\Illuminate\Database\Eloquent\Builder $query) use ($rating) {
+            ->loadAvg(['ratings as value_avg' => static function ($query) use ($rating) {
                 $query
                     ->where('ratings.id', $rating->id)
                     ->where('rating_morph.user_id', '!=', null);
             }], 'rating_morph.value')
             */
-                ->loadCount(['ratings as value_count' => static function (\Illuminate\Database\Eloquent\Builder $query) use ($rating): void {
+                ->loadCount(['ratings as value_count' => static function ($query) use ($rating): void {
                     $query
                         ->where('ratings.id', $rating->id)
                         ->where('rating_morph.user_id', '!=', null);
@@ -66,13 +67,9 @@ class ShowArticleCommand extends Command
 
             $sum = $tmp->value_sum ?? 0;
             // $avg = $tmp->value_avg;
-            // @phpstan-ignore property.notFound, property.notFound
             $avg = round($tmp->value_sum * 100 / $tmp->value_tot, 2);
-            // @phpstan-ignore property.notFound
             $count = $tmp->value_count;
-            // @phpstan-ignore property.notFound
             $tot = $tmp->value_tot;
-            // @phpstan-ignore property.notFound
             $data = [$rating->id, $rating->title, $rating->pivot->is_winner,  $count, $sum, $avg, $tot];
             $rows[] = $data;
         }

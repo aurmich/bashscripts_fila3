@@ -24,35 +24,28 @@ class ListRatings extends XotBaseListRecords
     {
         return [
             TextColumn::make('id')
-
                 ->sortable()
                 ->searchable(),
+
             TextColumn::make('title')
-
                 ->sortable()
                 ->searchable(),
-            TextColumn::make('rule')
 
+            TextColumn::make('rule')
                 ->badge(),
+
             IconColumn::make('is_disabled')
                 ->boolean(),
+
             IconColumn::make('is_readonly')
                 ->boolean(),
         ];
-
-        // TextColumn::make('extra_attributes.type'),
-        // TextColumn::make('extra_attributes.anno'),
-
-        // TextColumn::make('is_readonly'),
-        // TextColumn::make('is_disabled'),
-        // ToggleColumn::make('is_readonly'),
-
-        // TextColumn::make('color'),
     }
 
     public function getTableFilters(): array
     {
         return [
+            // Implementare i filtri necessari
         ];
     }
 
@@ -61,8 +54,10 @@ class ListRatings extends XotBaseListRecords
         return [
             ViewAction::make()
                 ->label(''),
+
             EditAction::make()
                 ->label(''),
+
             DeleteAction::make()
                 ->label('')
                 ->requiresConfirmation(),
@@ -79,11 +74,9 @@ class ListRatings extends XotBaseListRecords
     public function table(Table $table): Table
     {
         return $table
-            // ->columns($this->getTableColumns())
             ->columns($this->layoutView->getTableColumns())
             ->contentGrid($this->layoutView->getTableContentGrid())
             ->headerActions($this->getTableHeaderActions())
-
             ->filters($this->getTableFilters())
             ->filtersLayout(FiltersLayout::AboveContent)
             ->persistFiltersInSession()

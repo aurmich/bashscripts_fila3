@@ -2,55 +2,46 @@
 
 declare(strict_types=1);
 
-namespace Modules\UI\Filament\Actions\Table;
+namespace Modules\UI\app\Filament\Actions\Table;
 
-use Filament\Resources\Pages\ListRecords;
 use Filament\Tables\Actions\Action;
 use Illuminate\Support\Facades\Session;
 use Modules\UI\Enums\TableLayoutEnum;
+use Livewire\Component;
+
+interface HasTableLayout
+{
+    public function getLayoutView(): TableLayoutEnum;
+    public function setLayoutView(TableLayoutEnum $layout): void;
+    public function resetTable(): void;
+}
 
 class TableLayoutToggleTableAction extends Action
 {
     protected function setUp(): void
     {
         parent::setUp();
-        $current = $this->getCurrentLayout();
-        $this
-            ->name('tableLayoutToggle')
-            ->label('') // Nessuna label, solo tooltip
-            ->tooltip($current->getLabel())
-            ->color($current->getColor()) // Colore basato sulla sessione
-            ->icon($current->getIcon()) // Usa l'icona basata sulla sessione
-            ->action(fn ($livewire) => $this->toggleLayout($livewire)) // Esegui il toggle
 
-            ->requiresConfirmation(false); // Non richiede conferma
+        $this
+            ->name('layout')
+            ->label('Cambia Layout')
+            ->icon('heroicon-o-view-columns')
+            ->action(fn (Component&HasTableLayout $livewire) => $this->toggleLayout($livewire));
     }
 
-    protected function toggleLayout(ListRecords $livewire): void
+    protected function toggleLayout(Component&HasTableLayout $livewire): void
     {
-        $currentLayout = $this->getCurrentLayout();
-        $newLayout = $currentLayout->toggle(); // Esegui il toggle tra GRID e LIST
-        Session::put('table_layout', $newLayout->value); // Salva il layout nella sessione
-        // Aggiorna la vista del layout dinamicamente
-        if (! property_exists($livewire, 'layoutView')) {
-            throw new \Exception('add layoutView to ['.$livewire::class.']');
-        }
-        $livewire->layoutView = $newLayout;
+        $currentLayout = $livewire->getLayoutView();
+        $newLayout = $currentLayout === TableLayoutEnum::GRID ? TableLayoutEnum::LIST : TableLayoutEnum::GRID;
+
+        $livewire->setLayoutView($newLayout);
         $livewire->dispatch('$refresh');
         $livewire->dispatch('refreshTable');
+        $livewire->resetTable();
     }
 
-    protected function getCurrentLayout(): TableLayoutEnum
+    public static function make(?string $name = null): static
     {
-        $layout = Session::get('table_layout', TableLayoutEnum::init()->value); // Recupera il layout dalla sessione
-        if (! is_string($layout)) {
-            return TableLayoutEnum::init();
-        }
-        $res = TableLayoutEnum::TryFrom($layout);
-        if (null !== $res) {
-            return $res;
-        }
-
-        return TableLayoutEnum::init();
+        return parent::make($name ?? 'layout');
     }
 }

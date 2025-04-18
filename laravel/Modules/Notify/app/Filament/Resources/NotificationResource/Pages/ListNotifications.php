@@ -4,19 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\Notify\Filament\Resources\NotificationResource\Pages;
 
-use Filament\Tables\Table;
-use Filament\Actions\CreateAction;
-use Modules\UI\Enums\TableLayoutEnum;
-use Filament\Tables\Actions\EditAction;
+use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Enums\FiltersLayout;
-use Filament\Resources\Pages\ListRecords;
-use Filament\Tables\Enums\ActionsPosition;
-use Modules\Xot\Filament\Traits\TransTrait;
-use Filament\Tables\Actions\DeleteBulkAction;
-use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+use Filament\Tables\Filters\Filter;
+use Filament\Tables\Filters\SelectFilter;
+use Illuminate\Database\Eloquent\Builder;
 use Modules\Notify\Filament\Resources\NotificationResource;
-use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
+use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListNotifications extends XotBaseListRecords
 {
@@ -48,30 +42,27 @@ class ListNotifications extends XotBaseListRecords
         ];
     }
 
-    /**
-     * Undocumented function
-     *
-     * @return array<\Filament\Tables\Actions\Action|\Filament\Tables\Actions\ActionGroup>
-     */
-    public function getTableActions(): array
+    public function getTableFilters(): array
     {
         return [
-            EditAction::make()
-                ->label(''),
-        ];
-    }
-
-    public function getTableBulkActions(): array
-    {
-        return [
-            DeleteBulkAction::make(),
-        ];
-    }
-
-    protected function getHeaderActions(): array
-    {
-        return [
-            CreateAction::make(),
+            'read' => Filter::make('is_read')
+                ->query(function (Builder $query): Builder {
+                    return $query->where('read_at', '!=', null);
+                })
+                ->label('Read'),
+            'unread' => Filter::make('is_unread')
+                ->query(function (Builder $query): Builder {
+                    return $query->whereNull('read_at');
+                })
+                ->label('Unread'),
+            'type' => SelectFilter::make('type')
+                ->options([
+                    'info' => 'Info',
+                    'success' => 'Success',
+                    'warning' => 'Warning',
+                    'error' => 'Error',
+                ])
+                ->multiple(),
         ];
     }
 }

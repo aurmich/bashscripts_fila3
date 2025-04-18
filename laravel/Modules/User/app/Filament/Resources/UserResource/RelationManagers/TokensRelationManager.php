@@ -15,20 +15,28 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager;
 
+
+
+
+
+
+
+
+
 class TokensRelationManager extends XotBaseRelationManager
 {
     protected static string $relationship = 'tokens';
 
-    public function form(Form $form): Form
+    /**
+     * @return array<string, \Filament\Forms\Components\Component>
+     */
+    public function getFormSchema(): array
     {
-        return $form
-            ->schema(
-                [
-                    TextInput::make('name')
-                        ->required()
-                        ->maxLength(255),
-                ]
-            );
+        return [
+            'name' => TextInput::make('name')
+                ->required()
+                ->maxLength(255),
+        ];
     }
 
     public function table(Table $table): Table

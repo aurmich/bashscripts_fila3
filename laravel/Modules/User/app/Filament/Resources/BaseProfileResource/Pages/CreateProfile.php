@@ -4,12 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\BaseProfileResource\Pages;
 
-use Filament\Resources\Pages\CreateRecord;
 use Illuminate\Support\Arr;
 use Modules\User\Filament\Resources\BaseProfileResource;
 use Modules\Xot\Datas\XotData;
+use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
 
-class CreateProfile extends CreateRecord
+use Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager;
+
+class CreateProfile extends \Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord
 {
     protected static string $resource = BaseProfileResource::class;
 

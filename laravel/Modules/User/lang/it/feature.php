@@ -10,10 +10,12 @@ return [
         'name' => 'Feature',
         'plural' => 'Features',
         'group' => [
-            'name' => 'Admin',
+            'name' => 'Gestione Utenti',
+            'description' => 'Gestione delle feature e delle funzionalità',
         ],
         'label' => 'feature',
-        'sort' => 18,
+        'sort' => 75,
+        'icon' => 'user-user-feature',
     ],
     'fields' => [
         'name' => 'Nome',

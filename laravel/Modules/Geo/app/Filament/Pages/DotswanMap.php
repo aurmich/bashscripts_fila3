@@ -5,25 +5,38 @@ declare(strict_types=1);
 namespace Modules\Geo\Filament\Pages;
 
 use Dotswan\MapPicker\Fields\Map;
-use Filament\Forms\Concerns\InteractsWithForms;
-use Filament\Forms\Contracts\HasForms;
 use Filament\Forms\Set;
-use Filament\Pages\Page;
+use Illuminate\Support\Collection;
+use Modules\Geo\Models\Place;
+use Modules\Xot\Filament\Pages\XotBasePage;
 
-class DotswanMap extends Page implements HasForms
+/**
+ * Pagina per visualizzare la mappa dei luoghi.
+ */
+class DotswanMap extends XotBasePage
 {
-    use InteractsWithForms;
-
-    protected static ?string $navigationIcon = 'heroicon-o-document-text';
-
-    protected static string $view = 'geo::filament.pages.dotswan-map';
-
     public array $location;
+
+    /**
+     * @return Collection<int, array{lat: float, lng: float, title: string}>
+     */
+    public function getMapMarkers(): Collection
+    {
+        /** @var Collection<int, Place> $places */
+        $places = Place::query()
+            ->whereNotNull(['latitude', 'longitude'])
+            ->get();
+
+        return $places->map(fn (Place $place): array => [
+            'lat' => (float) $place->latitude,
+            'lng' => (float) $place->longitude,
+            'title' => (string) ($place->getAttribute('name') ?? 'Unnamed Place'),
+        ]);
+    }
 
     protected function getHeaderWidgets(): array
     {
-        return [
-        ];
+        return [];
     }
 
     public function getHeaderWidgetsColumns(): int|array
@@ -31,16 +44,12 @@ class DotswanMap extends Page implements HasForms
         return 1;
     }
 
-    protected function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return [
             Map::make('location')
                 ->label('Location')
                 ->columnSpanFull()
-                // ->default([
-                //     'lat' => 40.4168,
-                //     'lng' => -3.7038
-                // ])
                 ->afterStateUpdated(function (Set $set, ?array $state): void {
                     if (is_array($state)) {
                         $set('latitude', $state['lat']);
@@ -61,14 +70,8 @@ class DotswanMap extends Page implements HasForms
                 ->showZoomControl()
                 ->draggable()
                 ->tilesUrl('https://tile.openstreetmap.de/{z}/{x}/{y}.png')
-                // ->zoom(15)
-                // ->detectRetina()
                 ->showMyLocationButton()
                 ->extraTileControl([]),
-            // ->extraControl([
-            //     'zoomDelta'           => 1,
-            //     'zoomSnap'            => 2,
-            // ])
         ];
     }
 }

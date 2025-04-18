@@ -5,9 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\BaseProfileResource\Pages;
 
 use Filament\Tables;
-use Filament\Tables\Actions\BulkAction;
 use Filament\Tables\Columns\IconColumn;
-use Filament\Tables\Columns\Layout\Stack;
 use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\TernaryFilter;
@@ -16,7 +14,6 @@ use Illuminate\Support\Arr;
 use Modules\User\Filament\Resources\BaseProfileResource;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
-use Filament\Tables\Actions\ExportBulkAction;
 
 /**
  * .
@@ -25,15 +22,13 @@ class ListProfiles extends XotBaseListRecords
 {
     protected static string $resource = BaseProfileResource::class;
 
-    
-
     /**
      * @return array<string, Tables\Columns\Column>
      */
     public function getListTableColumns(): array
     {
         return [
-            'user.name'=>TextColumn::make('user.name')
+            'user.name' => TextColumn::make('user.name')
                 ->sortable()
                 ->searchable()
                 ->default(
@@ -62,23 +57,21 @@ class ListProfiles extends XotBaseListRecords
                         return $user->name;
                     }
                 ),
-            'first_name'=>TextColumn::make('first_name')
+            'first_name' => TextColumn::make('first_name')
                 ->sortable()
                 ->searchable(),
-            'last_name'=>TextColumn::make('last_name')
+            'last_name' => TextColumn::make('last_name')
                 ->sortable()
                 ->searchable(),
-            'email'=>TextColumn::make('email')
+            'email' => TextColumn::make('email')
                 ->sortable()
                 ->searchable(),
-            'is_active'=>IconColumn::make('is_active')
+            'is_active' => IconColumn::make('is_active')
                 ->boolean(),
-            'photo'=>SpatieMediaLibraryImageColumn::make('photo')
+            'photo' => SpatieMediaLibraryImageColumn::make('photo')
                 ->collection('profile'),
         ];
     }
-
-   
 
     /**
      * @return array<string, Tables\Filters\BaseFilter>
@@ -86,7 +79,7 @@ class ListProfiles extends XotBaseListRecords
     public function getTableFilters(): array
     {
         return [
-            'is_active'=>TernaryFilter::make('is_active')
+            'is_active' => TernaryFilter::make('is_active')
                 ->placeholder(static::trans('filters.is_active.all'))
                 ->trueLabel(static::trans('filters.is_active.active'))
                 ->falseLabel(static::trans('filters.is_active.inactive'))
@@ -96,6 +89,4 @@ class ListProfiles extends XotBaseListRecords
                 ),
         ];
     }
-
-   
 }

@@ -7,6 +7,8 @@ namespace Modules\Xot\Filament\Pages;
 use Filament\Pages\Dashboard;
 use Illuminate\Support\Str;
 use Webmozart\Assert\Assert;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Foundation\Auth\User;
 
 /**
  * Class Modules\Xot\Filament\Pages\MainDashboard.
@@ -25,22 +27,24 @@ class MainDashboard extends Dashboard
 
     public function mount(): void
     {
-        Assert::notNull($user = auth()->user(), '['.__LINE__.']['.class_basename($this).']');
+        $user = Auth::user();
+        Assert::notNull($user, '['.__LINE__.']['.class_basename($this).']');
+
         $modules = $user->roles->filter(
             static function ($item) {
                 return Str::endsWith($item->name, '::admin');
             }
         );
 
-        if ($modules->count() === 1) {
-            Assert::notNull($modules->first(), '['.__LINE__.']['.class_basename($this).']');
-            $panel_name = $modules->first()->name;
+        if (1 === $modules->count()) {
+            Assert::notNull($module_first = $modules->first(), '['.__LINE__.']['.class_basename($this).']');
+            $panel_name = $module_first->name;
             $module_name = Str::before($panel_name, '::admin');
             $url = '/'.$module_name.'/admin';
             redirect($url);
         }
 
-        if ($modules->count() === 0) {
+        if (0 === $modules->count()) {
             $url = '/'.app()->getLocale();
             redirect($url);
         }

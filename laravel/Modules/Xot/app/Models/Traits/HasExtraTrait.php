@@ -9,17 +9,18 @@ use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Support\Str;
 use Modules\Xot\Contracts\ExtraContract;
 use Modules\Xot\Models\Extra;
-use Webmozart\Assert\Assert;
 
 use function Safe\json_encode;
+
+use Webmozart\Assert\Assert;
 
 /**
  * Modules\Xot\Models\HasExtraTrait.
  *
  * @property string $currency
- * @property float $price
+ * @property float              $price
  * @property string $price_complete
- * @property int $qty
+ * @property int                $qty
  * @property ExtraContract|null $extra
  */
 trait HasExtraTrait
@@ -48,7 +49,11 @@ trait HasExtraTrait
      */
     public function getExtra(string $name)
     {
-        $value = $this->extra?->extra_attributes->get($name);
+
+        if($this->extra==null){
+            return null;
+        }
+        $value = $this->extra->extra_attributes->get($name);
         if (
             is_array($value) || is_int($value)
             // || is_float($value)
@@ -61,20 +66,21 @@ trait HasExtraTrait
     }
 
     /**
-     * @param  int|float|string|array|bool|null  $value
+     * @param int|float|string|array|bool|null $value
+     *
      * @return void
      */
     public function setExtra(string $name, $value)
     {
         $extra = $this->extra;
-        if ($this->extra === null) {
+        if (null === $this->extra) {
             // $extra = $this->extra()->firstOrCreate([], ['extra_attributes' => []]);
             $extra = $this->extra()
                 ->firstOrCreate([], ['extra_attributes' => json_encode([])]);
             Assert::implementsInterface($extra, ExtraContract::class, '['.__LINE__.']['.class_basename($this).']['.$extra.']');
         }
-
-        $extra?->extra_attributes->set($name, $value);
-        $extra?->save();
+        Assert::notNull($extra);
+        $extra->extra_attributes->set($name, $value);
+        $extra->save();
     }
 }

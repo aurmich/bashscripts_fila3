@@ -5,15 +5,19 @@ declare(strict_types=1);
 namespace Modules\Blog\Actions\ParentChilds;
 
 use Illuminate\Database\Eloquent\Model;
+use Kalnoy\Nestedset\NodeTrait;
 use Spatie\QueueableAction\QueueableAction;
 
 class GetTreeOptions
 {
     use QueueableAction;
 
+    /**
+     * @param \Illuminate\Database\Eloquent\Model&\Kalnoy\Nestedset\NodeTrait $model
+     * @return array
+     */
     public function execute(Model $model): array
     {
-        // @phpstan-ignore staticMethod.notFound
         $models = $model::tree()->get()->toTree();
         $results = [];
         foreach ($models as $mod) {

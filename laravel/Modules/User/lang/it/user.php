@@ -4,50 +4,71 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-        'name' => 'Utente',
+        'name' => 'Utenti',
         'plural' => 'Utenti',
-        'group' => 'Utenti',
-        'label' => 'user',
-        'sort' => 60,
+        'group' => [
+            'name' => 'Gestione Utenti',
+            'description' => 'Gestione degli utenti e dei loro permessi',
+        ],
+        'label' => 'Utenti',
+        'sort' => 26,
+        'icon' => 'user-main',
     ],
     'fields' => [
-        'first_name' => 'Nome',
-        'last_name' => 'Cognome',
         'name' => [
             'label' => 'Nome',
+            'placeholder' => 'Inserisci il nome',
         ],
         'email' => [
             'label' => 'Email',
+            'placeholder' => 'Inserisci l\'email',
+        ],
+        'password' => [
+            'label' => 'Password',
+            'placeholder' => 'Inserisci la password',
+        ],
+        'password_confirmation' => [
+            'label' => 'Conferma Password',
+            'placeholder' => 'Conferma la password',
+        ],
+        'current_password' => [
+            'label' => 'Password Attuale',
+            'placeholder' => 'Inserisci la password attuale',
+        ],
+        'role' => [
+            'label' => 'Ruolo',
+        ],
+        'roles' => [
+            'label' => 'Ruoli',
+        ],
+        'permissions' => [
+            'label' => 'Permessi',
+        ],
+        'status' => [
+            'label' => 'Stato',
+            'options' => [
+                'active' => 'Attivo',
+                'inactive' => 'Inattivo',
+                'blocked' => 'Bloccato',
+            ],
+        ],
+        'last_login' => [
+            'label' => 'Ultimo Accesso',
         ],
         'created_at' => [
-            'label' => 'Data di Creazione',
+            'label' => 'Data Creazione',
         ],
         'updated_at' => [
             'label' => 'Ultima Modifica',
         ],
-        'role' => [
-            'name' => [
-                'label' => 'Ruolo',
-            ],
+        'avatar' => [
+            'label' => 'Avatar',
         ],
-        'active' => 'Attivo',
-        'id' => [
-            'label' => 'ID',
+        'language' => [
+            'label' => 'Lingua',
         ],
-        'password' => 'Password',
-        'password_confirmation' => 'Conferma Password',
-        'email_verified_at' => [
-            'label' => 'Email Verificata',
-        ],
-        'teams' => [
-            'name' => [
-                'label' => 'Nome Team',
-            ],
-        ],
-        'roles' => [
-            'name' => [
-                'label' => 'Nome Ruolo',
-            ],
+        'timezone' => [
+            'label' => 'Fuso Orario',
         ],
         'password_expires_at' => [
             'label' => 'Scadenza Password',
@@ -58,127 +79,40 @@ return [
         'unverified' => [
             'label' => 'Non Verificato',
         ],
-        'deactivate' => [
-            'label' => 'deactivate',
-        ],
-        'changePassword' => [
-            'label' => 'changePassword',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-    ],
-    'filters' => [
-        'active_users' => 'Utenti Attivi',
-        'creation_date' => 'Data di Creazione',
-        'date_from' => 'Dal',
-        'date_to' => 'Al',
-        'verified' => 'Utenti Verificati',
-        'unverified' => 'Utenti Non Verificati',
-    ],
-    'messages' => [
-        'no_records' => 'Nessun utente trovato',
-        'loading' => 'Caricamento utenti...',
-        'search' => 'Cerca utenti...',
     ],
     'actions' => [
-        'toggle_layout' => 'Cambia Layout',
-        'create' => [
-            'label' => 'Crea Utente',
-        ],
+        'create' => 'Crea Utente',
+        'edit' => 'Modifica Utente',
         'delete' => 'Elimina Utente',
-        'associate' => 'Associa Utente',
-        'bulk_delete' => 'Elimina Selezionati',
-        'bulk_detach' => 'Scollega Selezionati',
-        'attach_user' => 'Collega Utente',
-        'associate_user' => 'Associa Utente',
-        'user_actions' => 'Azioni Utente',
-        'view' => 'Visualizza',
-        'edit' => 'Modifica',
-        'detach' => 'Scollega',
-        'row_actions' => 'Azioni',
-        'delete_selected' => 'Elimina Selezionati',
-        'confirm_detach' => 'Sei sicuro di voler scollegare questo utente?',
-        'confirm_delete' => 'Sei sicuro di voler eliminare gli utenti selezionati?',
-        'success_attached' => 'Utente collegato con successo',
-        'success_detached' => 'Utente scollegato con successo',
-        'success_deleted' => 'Utenti eliminati con successo',
-        'import' => [
-            'fields' => [
-                'import_file' => 'Seleziona un file XLS o CSV da caricare',
-            ],
-        ],
-        'export' => [
-            'filename_prefix' => 'Aree al',
-            'columns' => [
-                'name' => 'Nome Area',
-                'parent_name' => 'Nome Area Superiore',
-            ],
-        ],
-        'change_password' => 'Cambia Password',
+        'impersonate' => 'Impersona Utente',
+        'stop_impersonating' => 'Termina Impersonificazione',
+        'block' => 'Blocca',
+        'unblock' => 'Sblocca',
+        'send_reset_link' => 'Invia Link Reset Password',
+        'verify_email' => 'Verifica Email',
     ],
-    'modals' => [
-        'create' => [
-            'heading' => 'Crea Utente',
-            'description' => 'Crea un nuovo utente',
-            'actions' => [
-                'submit' => 'Crea',
-                'cancel' => 'Annulla',
-            ],
-        ],
-        'edit' => [
-            'heading' => 'Modifica Utente',
-            'description' => 'Modifica le informazioni dell’utente',
-            'actions' => [
-                'submit' => 'Salva Modifiche',
-                'cancel' => 'Annulla',
-            ],
-        ],
-        'delete' => [
-            'heading' => 'Elimina Utente',
-            'description' => 'Sei sicuro di voler eliminare questo utente?',
-            'actions' => [
-                'submit' => 'Elimina',
-                'cancel' => 'Annulla',
-            ],
-        ],
-        'associate' => [
-            'heading' => 'Associa Utente',
-            'description' => 'Seleziona un utente da associare',
-            'actions' => [
-                'submit' => 'Associa',
-                'cancel' => 'Annulla',
-            ],
-        ],
-        'detach' => [
-            'heading' => 'Scollega Utente',
-            'description' => 'Sei sicuro di voler scollegare questo utente?',
-            'actions' => [
-                'submit' => 'Scollega',
-                'cancel' => 'Annulla',
-            ],
-        ],
-        'bulk_delete' => [
-            'heading' => 'Elimina Utenti Selezionati',
-            'description' => 'Sei sicuro di voler eliminare gli utenti selezionati?',
-            'actions' => [
-                'submit' => 'Elimina Selezionati',
-                'cancel' => 'Annulla',
-            ],
-        ],
+    'messages' => [
+        'created' => 'Utente creato con successo',
+        'updated' => 'Utente aggiornato con successo',
+        'deleted' => 'Utente eliminato con successo',
+        'blocked' => 'Utente bloccato con successo',
+        'unblocked' => 'Utente sbloccato con successo',
+        'reset_link_sent' => 'Link per il reset della password inviato',
+        'email_verified' => 'Email verificata con successo',
+        'impersonating' => 'Stai impersonando l\'utente :name',
     ],
-    'plural' => [
-        'model' => [
-            'label' => 'Utenti',
-        ],
+    'validation' => [
+        'email_unique' => 'Questa email è già in uso',
+        'password_min' => 'La password deve essere di almeno :min caratteri',
+        'password_confirmed' => 'Le password non coincidono',
+        'current_password' => 'La password attuale non è corretta',
     ],
-    'model' => [
-        'label' => 'Utente',
+    'permissions' => [
+        'view_users' => 'Visualizza utenti',
+        'create_users' => 'Crea utenti',
+        'edit_users' => 'Modifica utenti',
+        'delete_users' => 'Elimina utenti',
+        'impersonate_users' => 'Impersona utenti',
+        'manage_roles' => 'Gestisci ruoli',
     ],
 ];

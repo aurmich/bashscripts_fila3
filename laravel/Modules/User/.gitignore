@@ -26,3 +26,4 @@ cache/
 .php-cs-fixer.cache
 build
 *.exe
+*:Zone.Identifier

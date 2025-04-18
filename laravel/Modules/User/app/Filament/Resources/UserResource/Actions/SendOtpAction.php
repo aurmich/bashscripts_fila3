@@ -7,7 +7,11 @@ namespace Modules\User\Filament\Resources\UserResource\Actions;
 use Filament\Tables\Actions\Action;
 use Modules\User\Actions\Otp\SendOtpByUserAction;
 use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 
+/**
+ * Azione Filament per l'invio di un OTP all'utente.
+ */
 class SendOtpAction extends Action
 {
     protected function setUp(): void
@@ -15,11 +19,15 @@ class SendOtpAction extends Action
         parent::setUp();
 
         $this
-            ->label('')
             ->tooltip(trans('user::otp.actions.send_otp'))
             ->icon('heroicon-o-key')
             ->action(function (User $record) {
-                app(SendOtpByUserAction::class)->execute($record);
+                // Sappiamo già che l'utente implementa UserContract perché il tipo User lo implementa
+                $action = app(SendOtpByUserAction::class);
+                if ($action === null) {
+                    throw new \RuntimeException('Impossibile istanziare SendOtpByUserAction');
+                }
+                $action->execute($record);
             })
             ->requiresConfirmation()
             ->modalHeading(trans('user::otp.actions.send_otp'))

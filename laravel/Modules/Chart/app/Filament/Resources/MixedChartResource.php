@@ -17,6 +17,8 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Chart\Filament\Resources\MixedChartResource\Pages\EditMixedChart;
 use Modules\Chart\Filament\Resources\MixedChartResource\Pages\ListMixedCharts;
 use Modules\Chart\Filament\Resources\MixedChartResource\Pages\CreateMixedChart;
+use Filament\Forms\Components\Select;
+use Modules\Chart\Actions\Chart\GetTypeOptions;
 
 // use Illuminate\Database\Eloquent\Builder;
 // use Illuminate\Database\Eloquent\SoftDeletingScope;
@@ -28,20 +30,7 @@ class MixedChartResource extends XotBaseResource
     public static function getFormSchema(): array
     {
         return [
-            'name' => TextInput::make('name')
-                ->required()
-                ->maxLength(255)
-                ->placeholder('mixed_chart.placeholders.name'),
-
-            'charts' => Select::make('charts')
-                ->multiple()
-                ->relationship('charts', 'name')
-                ->preload()
-                ->placeholder('mixed_chart.placeholders.charts')
+            'type' => Select::make('type')->options(app(GetTypeOptions::class)->execute()),
         ];
     }
-
-
-
-    
 }

@@ -20,33 +20,58 @@ class SocialProviderResource extends XotBaseResource
 {
     protected static ?string $model = SocialProvider::class;
 
+    /**
+     * @return array<string, \Filament\Forms\Components\Component>
+     */
     public static function getFormSchema(): array
     {
         return [
-            TextInput::make('name')
+            'name' => TextInput::make('name')
                 ->required()
                 ->maxLength(255)
                 ->placeholder(static::trans('fields.name.placeholder'))
                 ->helperText(static::trans('fields.name.helper_text')),
 
-            KeyValue::make('scopes')
-                //->placeholder(static::trans('fields.scopes.placeholder'))
+            'scopes' => KeyValue::make('scopes')
+                // ->placeholder(static::trans('fields.scopes.placeholder'))
                 ->helperText(static::trans('fields.scopes.helper_text')),
 
-            KeyValue::make('parameters')
-                //->placeholder(static::trans('fields.parameters.placeholder'))
+            'client_id' => TextInput::make('client_id')
+                ->required()
+                ->maxLength(255)
+                ->placeholder(static::trans('fields.client_id.placeholder'))
+                ->helperText(static::trans('fields.client_id.helper_text')),
+
+            'client_secret' => TextInput::make('client_secret')
+                ->required()
+                ->maxLength(1024)
+                ->placeholder(static::trans('fields.client_secret.placeholder'))
+                ->helperText(static::trans('fields.client_secret.helper_text')),
+
+            'redirect' => TextInput::make('redirect')
+                ->required()
+                ->maxLength(255)
+                ->placeholder(static::trans('fields.redirect.placeholder'))
+                ->helperText(static::trans('fields.redirect.helper_text')),
+
+            'parameters' => KeyValue::make('parameters')
+                // ->placeholder(static::trans('fields.parameters.placeholder'))
                 ->helperText(static::trans('fields.parameters.helper_text')),
 
-            Toggle::make('stateless')
+            'additional_params' => Textarea::make('additional_params'),
+
+            'stateless' => Toggle::make('stateless')
                 ->helperText(static::trans('fields.stateless.helper_text')),
 
-            Toggle::make('active')
+            'active' => Toggle::make('active')
                 ->helperText(static::trans('fields.active.helper_text')),
 
-            Toggle::make('socialite')
+            'socialite' => Toggle::make('socialite')
                 ->helperText(static::trans('fields.socialite.helper_text')),
 
-            Textarea::make('svg')
+            'enabled' => Toggle::make('enabled'),
+
+            'svg' => Textarea::make('svg')
                 ->columnSpanFull()
                 ->placeholder(static::trans('fields.svg.placeholder'))
                 ->helperText(static::trans('fields.svg.helper_text')),

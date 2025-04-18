@@ -8,13 +8,9 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources;
 
-use Filament\Tables\Actions\DeleteAction;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Table;
 use Modules\Job\Filament\Resources\JobBatchResource\Pages\ListJobBatches;
 use Modules\Job\Models\JobBatch;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-use Webmozart\Assert\Assert;
 
 class JobBatchResource extends XotBaseResource
 {
@@ -22,9 +18,34 @@ class JobBatchResource extends XotBaseResource
 
     // protected static ?string $model = JobBatch::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-queue-list';
-
-
+    public static function getFormSchema(): array
+    {
+        return [
+            'id' => \Filament\Forms\Components\TextInput::make('id')
+                ->required()
+                ->maxLength(255),
+            'name' => \Filament\Forms\Components\TextInput::make('name')
+                ->required()
+                ->maxLength(255),
+            'total_jobs' => \Filament\Forms\Components\TextInput::make('total_jobs')
+                ->numeric()
+                ->required(),
+            'pending_jobs' => \Filament\Forms\Components\TextInput::make('pending_jobs')
+                ->numeric()
+                ->required(),
+            'failed_jobs' => \Filament\Forms\Components\TextInput::make('failed_jobs')
+                ->numeric()
+                ->required(),
+            'failed' => \Filament\Forms\Components\Toggle::make('failed')
+                ->required(),
+            'options' => \Filament\Forms\Components\Textarea::make('options')
+                ->maxLength(65535),
+            'created_at' => \Filament\Forms\Components\DateTimePicker::make('created_at')
+                ->required(),
+            'cancelled_at' => \Filament\Forms\Components\DateTimePicker::make('cancelled_at'),
+            'finished_at' => \Filament\Forms\Components\DateTimePicker::make('finished_at'),
+        ];
+    }
 
     public static function getPages(): array
     {
@@ -32,6 +53,4 @@ class JobBatchResource extends XotBaseResource
             'index' => ListJobBatches::route('/'),
         ];
     }
-
-
 }

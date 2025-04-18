@@ -7,10 +7,12 @@ return [
         'name' => 'Dispositivo',
         'plural' => 'Dispositivi',
         'group' => [
-            'name' => 'Admin',
+            'name' => 'Gestione Utenti',
+            'description' => 'Gestione dei dispositivi degli utenti',
         ],
         'label' => 'device',
-        'sort' => 66,
+        'sort' => 20,
+        'icon' => 'user-device',
     ],
     'fields' => [
         'first_name' => 'Nome',
@@ -53,6 +55,15 @@ return [
         ],
         'logout_at' => [
             'label' => 'logout_at',
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
         ],
     ],
     'actions' => [

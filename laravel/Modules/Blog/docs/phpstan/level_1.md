@@ -1,270 +1,161 @@
-# Analisi PHPStan - Modulo Blog - Livello 1
+# Analisi PHPStan Livello 1 - Modulo Blog
 
-[⬅️ Torna alla Roadmap del modulo](../roadmap.md)
+## Stato
+❌ Errori rilevati
 
+## Data Analisi
+Data: 2025-04-16
 
-Data analisi: 2025-04-11 12:58:28
+## Errori Riscontrati
 
-## Risultato: ERRORI
-
-Rilevati 34 errori a livello 1.
-
-### Dettaglio errori
+### 1. Incompatibilità Signature del Metodo
+**File**: `Models/Article.php`
+**Errore**: Incompatibilità nella dichiarazione del metodo `getTranslation`
 ```
-Note: Using configuration file /var/www/html/_bases/base_predict_fila3_mono/laravel/phpstan.neon.
-   0/531 [░░░░░░░░░░░░░░░░░░░░░░░░░░░░]   0%[1G[2K  20/531 [▓░░░░░░░░░░░░░░░░░░░░░░░░░░░]   3%[1G[2K 160/531 [▓▓▓▓▓▓▓▓░░░░░░░░░░░░░░░░░░░░]  30%[1G[2K 180/531 [▓▓▓▓▓▓▓▓▓░░░░░░░░░░░░░░░░░░░]  33%[1G[2K 280/531 [▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░░░░]  52%[1G[2K 300/531 [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░░░]  56%[1G[2K 340/531 [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░]  64%[1G[2K 380/531 [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░]  71%[1G[2K 400/531 [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░]  75%[1G[2K 420/531 [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░]  79%[1G[2K 440/531 [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░]  82%[1G[2K 491/531 [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░]  92%[1G[2K 511/531 [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░]  96%[1G[2K 531/531 [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓] 100%
-
- ------ --------------------------------------------------------------------- 
-  Line   Database/Factories/ContactEntryFactory.php                           
- ------ --------------------------------------------------------------------- 
-  :20    Class Modules\Blog\Models\ContactEntry not found.                    
-         🪪  class.notFound                                                   
-         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
-         ✏️  Database/Factories/ContactEntryFactory.php                       
- ------ --------------------------------------------------------------------- 
-
- ------ ----------------------------------------------------------- 
-  Line   Filament/Fields/ArticleContent.php                         
- ------ ----------------------------------------------------------- 
-  :29    Missing parameter $name (string) in call to static method  
-         Filament\Forms\Components\Builder\Block::make().           
-         🪪  argument.missing                                       
-         ✏️  Filament/Fields/ArticleContent.php                     
-  :29    Unknown parameter $context in call to static method        
-         Filament\Forms\Components\Builder\Block::make().           
-         🪪  argument.unknown                                       
-         ✏️  Filament/Fields/ArticleContent.php                     
- ------ ----------------------------------------------------------- 
-
- ------ ----------------------------------------------------------- 
-  Line   Filament/Fields/ArticleSidebar.php                         
- ------ ----------------------------------------------------------- 
-  :29    Missing parameter $name (string) in call to static method  
-         Filament\Forms\Components\Builder\Block::make().           
-         🪪  argument.missing                                       
-         ✏️  Filament/Fields/ArticleSidebar.php                     
-  :29    Unknown parameter $context in call to static method        
-         Filament\Forms\Components\Builder\Block::make().           
-         🪪  argument.unknown                                       
-         ✏️  Filament/Fields/ArticleSidebar.php                     
- ------ ----------------------------------------------------------- 
-
- ------ ------------------------------------------------------------------------------ 
-  Line   Filament/Resources/ArticleResource.php                                        
- ------ ------------------------------------------------------------------------------ 
-  :22    Non-abstract class Modules\Blog\Filament\Resources\ArticleResource            
-         contains abstract method getFormSchema() from class                           
-         Modules\Xot\Filament\Resources\XotBaseResource.                               
-         ✏️  Filament/Resources/ArticleResource.php                                    
-  :168   Method Modules\Blog\Filament\Resources\ArticleResource::form()                
-         overrides final method                                                        
-         Modules\Xot\Filament\Resources\XotBaseResource::form().                       
-         ✏️  Filament/Resources/ArticleResource.php                                    
-  :183   Call to an undefined static method                                            
-         Modules\Blog\Filament\Resources\ArticleResource\Pages\ListArticles::route().  
-         🪪  staticMethod.notFound                                                     
-         ✏️  Filament/Resources/ArticleResource.php                                    
- ------ ------------------------------------------------------------------------------ 
-
- ------ ---------------------------------------------------------------------------------------------- 
-  Line   Filament/Resources/ArticleResource/Pages/ListArticles.php                                     
- ------ ---------------------------------------------------------------------------------------------- 
-  :21    Class                                                                                         
-         Modules\Blog\Filament\Resources\ArticleResource\Pages\ListArticles                            
-         extends unknown class Modules\Xot\Filament\Pages\XotBaseListRecords.                          
-         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols                           
-         ✏️  Filament/Resources/ArticleResource/Pages/ListArticles.php                                 
-  :126   Access to an undefined property                                                               
-         Modules\Blog\Filament\Resources\ArticleResource\Pages\ListArticles::$layoutView.              
-         🪪  property.notFound                                                                         
-         💡 Learn more:                                                                                
-            https://phpstan.org/blog/solving-phpstan-access-to-undefined-property                      
-         ✏️  Filament/Resources/ArticleResource/Pages/ListArticles.php                                 
-  :127   Access to an undefined property                                                               
-         Modules\Blog\Filament\Resources\ArticleResource\Pages\ListArticles::$layoutView.              
-         🪪  property.notFound                                                                         
-         💡 Learn more:                                                                                
-            https://phpstan.org/blog/solving-phpstan-access-to-undefined-property                      
-         ✏️  Filament/Resources/ArticleResource/Pages/ListArticles.php                                 
-  :128   Call to an undefined method                                                                   
-         Modules\Blog\Filament\Resources\ArticleResource\Pages\ListArticles::getTableHeaderActions().  
-         🪪  method.notFound                                                                           
-         ✏️  Filament/Resources/ArticleResource/Pages/ListArticles.php                                 
- ------ ---------------------------------------------------------------------------------------------- 
-
- ------ ---------------------------------------------------------------------------- 
-  Line   Filament/Resources/BannerResource.php                                       
- ------ ---------------------------------------------------------------------------- 
-  :19    Non-abstract class Modules\Blog\Filament\Resources\BannerResource           
-         contains abstract method getFormSchema() from class                         
-         Modules\Xot\Filament\Resources\XotBaseResource.                             
-         ✏️  Filament/Resources/BannerResource.php                                   
-  :31    Method Modules\Blog\Filament\Resources\BannerResource::form()               
-         overrides final method                                                      
-         Modules\Xot\Filament\Resources\XotBaseResource::form().                     
-         ✏️  Filament/Resources/BannerResource.php                                   
-  :126   Call to an undefined static method                                          
-         Modules\Blog\Filament\Resources\BannerResource\Pages\ListBanners::route().  
-         🪪  staticMethod.notFound                                                   
-         ✏️  Filament/Resources/BannerResource.php                                   
- ------ ---------------------------------------------------------------------------- 
-
- ------ ---------------------------------------------------------------------------- 
-  Line   Filament/Resources/BannerResource/Pages/ListBanners.php                     
- ------ ---------------------------------------------------------------------------- 
-  :21    Class                                                                       
-         Modules\Blog\Filament\Resources\BannerResource\Pages\ListBanners            
-         extends unknown class Modules\Xot\Filament\Pages\XotBaseListRecords.        
-         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols         
-         ✏️  Filament/Resources/BannerResource/Pages/ListBanners.php                 
-  :52    Call to an undefined static method                                          
-         Modules\Blog\Filament\Resources\BannerResource\Pages\ListBanners::trans().  
-         🪪  staticMethod.notFound                                                   
-         ✏️  Filament/Resources/BannerResource/Pages/ListBanners.php                 
-  :56    Call to an undefined static method                                          
-         Modules\Blog\Filament\Resources\BannerResource\Pages\ListBanners::trans().  
-         🪪  staticMethod.notFound                                                   
-         ✏️  Filament/Resources/BannerResource/Pages/ListBanners.php                 
-  :60    Call to an undefined static method                                          
-         Modules\Blog\Filament\Resources\BannerResource\Pages\ListBanners::trans().  
-         🪪  staticMethod.notFound                                                   
-         ✏️  Filament/Resources/BannerResource/Pages/ListBanners.php                 
-  :64    Call to an undefined static method                                          
-         Modules\Blog\Filament\Resources\BannerResource\Pages\ListBanners::trans().  
-         🪪  staticMethod.notFound                                                   
-         ✏️  Filament/Resources/BannerResource/Pages/ListBanners.php                 
- ------ ---------------------------------------------------------------------------- 
-
- ------ --------------------------------------------------------------------------------- 
-  Line   Filament/Resources/CategoryResource.php                                          
- ------ --------------------------------------------------------------------------------- 
-  :17    Non-abstract class Modules\Blog\Filament\Resources\CategoryResource              
-         contains abstract method getFormSchema() from class                              
-         Modules\Xot\Filament\Resources\XotBaseResource.                                  
-         ✏️  Filament/Resources/CategoryResource.php                                      
-  :76    Method Modules\Blog\Filament\Resources\CategoryResource::form()                  
-         overrides final method                                                           
-         Modules\Xot\Filament\Resources\XotBaseResource::form().                          
-         ✏️  Filament/Resources/CategoryResource.php                                      
-  :86    Call to an undefined static method                                               
-         Modules\Blog\Filament\Resources\CategoryResource\Pages\ListCategories::route().  
-         🪪  staticMethod.notFound                                                        
-         ✏️  Filament/Resources/CategoryResource.php                                      
- ------ --------------------------------------------------------------------------------- 
-
- ------ ----------------------------------------------------------------------- 
-  Line   Filament/Resources/CategoryResource/Pages/ListCategories.php           
- ------ ----------------------------------------------------------------------- 
-  :14    Class                                                                  
-         Modules\Blog\Filament\Resources\CategoryResource\Pages\ListCategories  
-         extends unknown class Modules\Xot\Filament\Pages\XotBaseListRecords.   
-         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols    
-         ✏️  Filament/Resources/CategoryResource/Pages/ListCategories.php       
- ------ ----------------------------------------------------------------------- 
-
- ------ --------------------------------------------------------------------------------------- 
-  Line   Filament/Resources/ProfileResource/Pages/ListProfiles.php                              
- ------ --------------------------------------------------------------------------------------- 
-  :32    Protected method                                                                       
-         Modules\Blog\Filament\Resources\ProfileResource\Pages\ListProfiles::getTableActions()  
-         overriding public method                                                               
-         Modules\Xot\Filament\Resources\Pages\XotBaseListRecords::getTableActions()             
-         should also be public.                                                                 
-         ✏️  Filament/Resources/ProfileResource/Pages/ListProfiles.php                          
- ------ --------------------------------------------------------------------------------------- 
-
- ------ ------------------------------------------------------------------------------------ 
-  Line   Filament/Resources/TextWidgetResource.php                                           
- ------ ------------------------------------------------------------------------------------ 
-  :16    Non-abstract class Modules\Blog\Filament\Resources\TextWidgetResource               
-         contains abstract method getFormSchema() from class                                 
-         Modules\Xot\Filament\Resources\XotBaseResource.                                     
-         ✏️  Filament/Resources/TextWidgetResource.php                                       
-  :25    Method Modules\Blog\Filament\Resources\TextWidgetResource::form()                   
-         overrides final method                                                              
-         Modules\Xot\Filament\Resources\XotBaseResource::form().                             
-         ✏️  Filament/Resources/TextWidgetResource.php                                       
-  :84    Call to an undefined static method                                                  
-         Modules\Blog\Filament\Resources\TextWidgetResource\Pages\ListTextWidgets::route().  
-         🪪  staticMethod.notFound                                                           
-         ✏️  Filament/Resources/TextWidgetResource.php                                       
- ------ ------------------------------------------------------------------------------------ 
-
- ------ -------------------------------------------------------------------------- 
-  Line   Filament/Resources/TextWidgetResource/Pages/ListTextWidgets.php           
- ------ -------------------------------------------------------------------------- 
-  :11    Class                                                                     
-         Modules\Blog\Filament\Resources\TextWidgetResource\Pages\ListTextWidgets  
-         extends unknown class Modules\Xot\Filament\Pages\XotBaseListRecords.      
-         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols       
-         ✏️  Filament/Resources/TextWidgetResource/Pages/ListTextWidgets.php       
- ------ -------------------------------------------------------------------------- 
-
- ------ --------------------------------------------------------------------- 
-  Line   Models/Article.php                                                   
- ------ --------------------------------------------------------------------- 
-  :279   Call to static method make() on an unknown class                     
-         Modules\Blog\Models\XotData.                                         
-         🪪  class.notFound                                                   
-         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
-         ✏️  Models/Article.php                                               
- ------ --------------------------------------------------------------------- 
-
- ------ ------------------------------------------------------------------------------ 
-  Line   app/Filament/Resources/ArticleResource.php                                    
- ------ ------------------------------------------------------------------------------ 
-  :187   Call to an undefined static method                                            
-         Modules\Blog\Filament\Resources\ArticleResource\Pages\ListArticles::route().  
-         🪪  staticMethod.notFound                                                     
-         ✏️  app/Filament/Resources/ArticleResource.php                                
- ------ ------------------------------------------------------------------------------ 
-
- ------ ---------------------------------------------------------------------------- 
-  Line   app/Filament/Resources/BannerResource.php                                   
- ------ ---------------------------------------------------------------------------- 
-  :125   Call to an undefined static method                                          
-         Modules\Blog\Filament\Resources\BannerResource\Pages\ListBanners::route().  
-         🪪  staticMethod.notFound                                                   
-         ✏️  app/Filament/Resources/BannerResource.php                               
- ------ ---------------------------------------------------------------------------- 
-
- ------ --------------------------------------------------------------------------------- 
-  Line   app/Filament/Resources/CategoryResource.php                                      
- ------ --------------------------------------------------------------------------------- 
-  :80    Call to an undefined static method                                               
-         Modules\Blog\Filament\Resources\CategoryResource\Pages\ListCategories::route().  
-         🪪  staticMethod.notFound                                                        
-         ✏️  app/Filament/Resources/CategoryResource.php                                  
- ------ --------------------------------------------------------------------------------- 
-
- ------ ------------------------------------------------------------------------------------ 
-  Line   app/Filament/Resources/TextWidgetResource.php                                       
- ------ ------------------------------------------------------------------------------------ 
-  :83    Call to an undefined static method                                                  
-         Modules\Blog\Filament\Resources\TextWidgetResource\Pages\ListTextWidgets::route().  
-         🪪  staticMethod.notFound                                                           
-         ✏️  app/Filament/Resources/TextWidgetResource.php                                   
- ------ ------------------------------------------------------------------------------------ 
-
- [ERROR] Found 34 errors                                                        
+Declaration of Modules\Blog\Models\Article::getTranslation(string $key, string $locale, bool $useFallbackLocale = true): mixed 
+must be compatible with 
+Modules\Lang\Models\Contracts\HasTranslationsContract::getTranslation(string $key, string $locale, bool $useFallbackLocale = true): array|string|int|null
 ```
 
-### Suggerimenti per la risoluzione
+#### Analisi
+- La classe `Article` implementa un'interfaccia che richiede un tipo di ritorno specifico
+- Il metodo attuale restituisce `mixed`
+- L'interfaccia richiede `array|string|int|null`
 
-#### Errori di tipo 'Access to an undefined property'
+#### Soluzione Proposta
+1. Modificare il tipo di ritorno del metodo `getTranslation` in `Article` per corrispondere all'interfaccia
+2. Assicurarsi che il valore restituito sia effettivamente compatibile con i tipi dichiarati
 
-Questi errori indicano l'accesso a proprietà che non esistono nella classe. Per risolvere:
+### 2. Metodo Astratto non Implementato
+**File**: `app/Filament/Resources/ArticleResource.php`
+**Errore**: Classe contiene un metodo astratto e deve quindi essere dichiarata astratta o implementare il metodo mancante
+```
+Class Modules\Blog\Filament\Resources\ArticleResource contains 1 abstract method and must therefore be declared abstract or implement the remaining methods (Modules\Xot\Filament\Resources\XotBaseResource::getFormSchema)
+```
 
-1. Verificare se la proprietà è definita correttamente
-2. Aggiungere la proprietà mancante alla classe
-3. Per proprietà dinamiche, utilizzare `@property` nelle annotazioni PHPDoc
-4. Per modelli Eloquent, usare `@property` per documentare le colonne del database
+#### Analisi
+- La classe `ArticleResource` estende `XotBaseResource` che contiene un metodo astratto `getFormSchema()`
+- Il metodo `getFormSchema()` non è implementato in `ArticleResource`
+- La classe `ArticleResource` ha già un metodo `getFormFields()` che contiene la definizione dei campi del form
 
-### Consigli generali
+#### Soluzione Proposta
+1. Implementare il metodo astratto `getFormSchema()` in `ArticleResource` mantenendo la stessa visibilità (public static) della classe padre
+2. Utilizzare il metodo esistente `getFormFields()` all'interno di `getFormSchema()` per evitare duplicazione di codice
+3. Assicurarsi che il tipo di ritorno sia compatibile con quello richiesto (`array<string|int,\Filament\Forms\Components\Component>`)
 
-1. Iniziare risolvendo gli errori più semplici e ripetitivi
-2. Utilizzare `@phpstan-ignore-next-line` solo come ultima risorsa per errori non risolvibili
-3. Considerare l'aggiunta di test unitari per verificare il comportamento corretto
-4. Aggiornare la documentazione del codice con annotazioni PHPDoc complete
-5. Valutare l'utilizzo di classi di tipo dedicate (DTO) per strutture dati complesse
-6. Seguire le linee guida di tipizzazione nel documento 'Regole Windsurf per base_predict_fila3_mono'
+### 3. Namespace Errato
+**File**: `app/Filament/Resources/ArticleResource/Pages/ListArticles.php`
+**Errore**: Classe non trovata
+```
+Class "Modules\Xot\Filament\Resources\Pages\XotBaseListRecords" not found
+```
+
+#### Analisi
+- La classe `ListArticles` importa `XotBaseListRecords` dal namespace errato `Modules\Xot\Filament\Pages`
+- Il percorso corretto della classe è `Modules\Xot\Filament\Resources\Pages\XotBaseListRecords`
+- Questo causa un errore di autoloading quando PHP cerca di caricare la classe
+
+#### Soluzione Proposta
+1. Correggere l'istruzione `use` nel file `ListArticles.php` per puntare al namespace corretto
+2. Verificare che la classe `XotBaseListRecords` esista effettivamente nel percorso corretto
+
+### 4. Tentativo di Sovrascrivere un Metodo Final
+**File**: `app/Filament/Resources/BannerResource.php`
+**Errore**: Non è possibile sovrascrivere un metodo dichiarato come final
+```
+Cannot override final method Modules\Xot\Filament\Resources\XotBaseResource::form()
+```
+
+#### Analisi
+- La classe `BannerResource` tenta di sovrascrivere il metodo `form()` che è dichiarato come `final` nella classe base `XotBaseResource`
+- Secondo l'architettura del framework LARAXOT, i metodi `form()` nelle classi base sono dichiarati come `final` per garantire un comportamento coerente
+- Invece di sovrascrivere `form()`, le classi derivate devono implementare `getFormSchema()` che viene poi utilizzato dal metodo `form()` della classe base
+
+#### Soluzione Proposta
+1. Rimuovere il metodo `form()` dalla classe `BannerResource`
+2. Implementare il metodo `getFormSchema()` che restituisce lo schema del form
+3. Spostare la logica di definizione dello schema dal metodo `form()` al metodo `getFormSchema()`
+
+### 5. Tentativo di Sovrascrivere un Metodo Final in CategoryResource
+**File**: `app/Filament/Resources/CategoryResource.php`
+**Errore**: Non è possibile sovrascrivere un metodo dichiarato come final
+```
+Cannot override final method Modules\Xot\Filament\Resources\XotBaseResource::form()
+```
+
+#### Analisi
+- La classe `CategoryResource` tenta di sovrascrivere il metodo `form()` che è dichiarato come `final` nella classe base `XotBaseResource`
+- La classe `CategoryResource` ha già un metodo `getFormFields()` che viene utilizzato nel metodo `form()`
+- È necessario rimuovere il metodo `form()` e implementare correttamente `getFormSchema()` che utilizzi `getFormFields()`
+
+#### Soluzione Proposta
+1. Rimuovere il metodo `form()` dalla classe `CategoryResource`
+2. Implementare il metodo `getFormSchema()` che restituisce lo schema del form utilizzando il metodo `getFormFields()` esistente
+
+### 6. Incompatibilità nella Visibilità del Metodo
+**File**: `app/Filament/Resources/ProfileResource/Pages/ListProfiles.php`
+**Errore**: Livello di accesso incompatibile
+```
+Access level to Modules\Blog\Filament\Resources\ProfileResource\Pages\ListProfiles::getTableActions() must be public (as in class Modules\Xot\Filament\Resources\Pages\XotBaseListRecords)
+```
+
+#### Analisi
+- La classe `ListProfiles` sovrascrive il metodo `getTableActions()` con visibilità `protected`
+- Il metodo `getTableActions()` nel trait `HasXotTable` (utilizzato dalla classe base `XotBaseListRecords`) ha visibilità `public`
+- In PHP, non è possibile ridurre la visibilità di un metodo quando lo si sovrascrive in una classe derivata
+
+#### Soluzione Proposta
+1. Modificare la visibilità del metodo `getTableActions()` in `ListProfiles` da `protected` a `public`
+2. Mantenere lo stesso comportamento del metodo
+
+### 7. Tentativo di Sovrascrivere un Metodo Final in TextWidgetResource
+**File**: `app/Filament/Resources/TextWidgetResource.php`
+**Errore**: Non è possibile sovrascrivere un metodo dichiarato come final
+```
+Cannot override final method Modules\Xot\Filament\Resources\XotBaseResource::form()
+```
+
+#### Analisi
+- La classe `TextWidgetResource` tenta di sovrascrivere il metodo `form()` che è dichiarato come `final` nella classe base `XotBaseResource`
+- Come per le altre classi Resource, è necessario utilizzare il metodo `getFormSchema()` invece di sovrascrivere direttamente `form()`
+
+#### Soluzione Proposta
+1. Rimuovere il metodo `form()` dalla classe `TextWidgetResource`
+2. Implementare il metodo `getFormSchema()` che restituisce lo schema del form
+3. Spostare la logica di definizione dello schema dal metodo `form()` al metodo `getFormSchema()`
+
+## Impatto delle Correzioni
+- La correzione garantirà la type safety e la conformità con l'architettura del framework
+- Non dovrebbe influire sulla funzionalità del sito poiché stiamo solo aggiungendo un metodo richiesto che utilizza la logica già esistente
+- Migliorerà la manutenibilità del codice seguendo le convenzioni del framework LARAXOT
+
+## Collegamenti
+- [Documentazione del Modulo](../README.md)
+- [Contratto HasTranslations](../../Lang/docs/contracts/HasTranslationsContract.md)
+- [Best Practices Traduzioni](../../../docs/translations/best-practices.md)
+- [Best Practices Filament](../filament/BEST-PRACTICES.md)
+- [Documentazione XotBaseResource](../../Xot/docs/filament/resources/XotBaseResource.md)
+
+## Errori Riscontrati e Soluzioni
+
+### 1. Problema con Vite Manifest
+**File**: `public_html/assets/chart/manifest.json`
+**Problema**: Manifest di Vite non trovato
+**Soluzione**: Questo errore è relativo all'ambiente di sviluppo e non influisce sull'analisi del codice. Può essere ignorato durante l'analisi PHPStan.
+
+## Best Practices Implementate
+1. Utilizzo di tipi di ritorno espliciti
+2. Gestione corretta delle eccezioni
+3. Utilizzo di classi DTO per il trasferimento dei dati
+4. Implementazione di interfacce per la definizione dei contratti
+5. Utilizzo di Spatie Queueable Actions per le operazioni asincrone
+6. Rispetto delle convenzioni di visibilità dei metodi nelle classi che estendono classi base
+7. Riutilizzo del codice esistente per evitare duplicazioni
+
+## Note Importanti
+- Assicurarsi che tutti i metodi abbiano tipi di ritorno espliciti
+- Utilizzare le classi DTO di Spatie per la gestione dei dati
+- Implementare correttamente le interfacce
+- Documentare i metodi e le loro responsabilità
+- Gestire correttamente le eccezioni
+- Utilizzare Spatie Queueable Actions per le operazioni che richiedono tempo 

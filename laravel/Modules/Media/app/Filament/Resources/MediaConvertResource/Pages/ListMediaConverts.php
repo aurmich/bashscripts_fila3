@@ -5,121 +5,115 @@ declare(strict_types=1);
 namespace Modules\Media\Filament\Resources\MediaConvertResource\Pages;
 
 use Filament\Tables;
-use Filament\Actions;
-use Filament\Tables\Table;
-use Modules\UI\Enums\TableLayoutEnum;
-use Modules\Media\Models\MediaConvert;
+use Filament\Tables\Actions\Action;
+use Filament\Tables\Actions\DeleteBulkAction;
+use Filament\Tables\Actions\EditAction;
+use Filament\Tables\Actions\ViewAction;
 use Filament\Tables\Columns\TextColumn;
-use Filament\Resources\Pages\ListRecords;
-use Filament\Tables\Enums\ActionsPosition;
+use Filament\Tables\Filters\SelectFilter;
 use Modules\Job\Filament\Widgets\ClockWidget;
-use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
-use Modules\Job\Filament\Widgets\QueueListenWidget;
-use Modules\Media\Filament\Resources\MediaConvertResource;
 use Modules\Media\Actions\Video\ConvertVideoByMediaConvertAction;
-use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
+use Modules\Media\Datas\ConvertData;
+use Modules\Media\Filament\Resources\MediaConvertResource;
+use Modules\Media\Models\MediaConvert;
+use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListMediaConverts extends XotBaseListRecords
 {
-
     protected static string $resource = MediaConvertResource::class;
 
-    public function getTableColumns(): array
-    {
-        return [
-            TextColumn::make('id'),
-            TextColumn::make('media.file_name')
-                ->sortable(),
-            TextColumn::make('format'),
-            TextColumn::make('codec_video'),
-            TextColumn::make('codec_audio'),
-            TextColumn::make('preset'),
-            TextColumn::make('bitrate'),
-            TextColumn::make('width'),
-            TextColumn::make('height'),
-            TextColumn::make('threads'),
-            TextColumn::make('speed'),
-            TextColumn::make('percentage'),
-            TextColumn::make('remaining'),
-            TextColumn::make('rate'),
-            TextColumn::make('execution_time'),
-        ];
-    }
-
+    /**
+     * @return array<string, Tables\Columns\Column>
+     */
     public function getListTableColumns(): array
     {
         return [
-            TextColumn::make('id')
+            'id' => TextColumn::make('id')
                 ->sortable(),
-            TextColumn::make('media.file_name')
+            'media.file_name' => TextColumn::make('media.file_name')
                 ->sortable(),
-            TextColumn::make('format')
+            'format' => TextColumn::make('format')
                 ->searchable(),
-            TextColumn::make('codec_video')
+            'codec_video' => TextColumn::make('codec_video')
                 ->searchable(),
-            TextColumn::make('codec_audio')
+            'codec_audio' => TextColumn::make('codec_audio')
                 ->searchable(),
-            TextColumn::make('preset')
+            'preset' => TextColumn::make('preset')
                 ->searchable(),
-            TextColumn::make('bitrate'),
-            TextColumn::make('width')
+            'bitrate' => TextColumn::make('bitrate'),
+            'width' => TextColumn::make('width')
                 ->numeric(),
-            TextColumn::make('height')
+            'height' => TextColumn::make('height')
                 ->numeric(),
-            TextColumn::make('threads')
+            'threads' => TextColumn::make('threads')
                 ->numeric(),
-            TextColumn::make('speed')
+            'speed' => TextColumn::make('speed')
                 ->numeric(),
-            TextColumn::make('percentage')
+            'percentage' => TextColumn::make('percentage')
                 ->numeric(),
-            TextColumn::make('remaining')
+            'remaining' => TextColumn::make('remaining')
                 ->numeric(),
-            TextColumn::make('rate')
+            'rate' => TextColumn::make('rate')
                 ->numeric(),
-            TextColumn::make('execution_time')
+            'execution_time' => TextColumn::make('execution_time')
                 ->numeric(),
         ];
     }
 
+    /**
+     * @return array<string, Tables\Filters\BaseFilter>
+     */
     public function getTableFilters(): array
     {
-        return [];
+        return [
+            'format' => SelectFilter::make('format')
+                ->options(fn () => MediaConvert::distinct()->pluck('format', 'format')->toArray()),
+            'codec_video' => SelectFilter::make('codec_video')
+                ->options(fn () => MediaConvert::distinct()->pluck('codec_video', 'codec_video')->toArray()),
+            'codec_audio' => SelectFilter::make('codec_audio')
+                ->options(fn () => MediaConvert::distinct()->pluck('codec_audio', 'codec_audio')->toArray()),
+        ];
     }
 
+    /**
+     * @return array<string, Tables\Actions\Action|Tables\Actions\ActionGroup>
+     */
     public function getTableActions(): array
     {
         return [
-            Tables\Actions\EditAction::make(),
-            Tables\Actions\Action::make('convert')
+            'view' => ViewAction::make(),
+            'edit' => EditAction::make(),
+            'convert' => Action::make('convert')
                 ->action(function (MediaConvert $record): void {
                     $record->update(['percentage' => 0]);
+                    $data = ConvertData::from([
+                        'file' => $record->file,
+                        'disk' => $record->disk,
+                    ]);
                     app(ConvertVideoByMediaConvertAction::class)
                         ->onQueue()
-                        ->execute($record);
+                        ->execute($data, $record);
                 }),
         ];
     }
 
+    /**
+     * @return array<string, Tables\Actions\BulkAction>
+     */
     public function getTableBulkActions(): array
     {
         return [
-            // Tables\Actions\BulkActionGroup::make([
-            Tables\Actions\DeleteBulkAction::make(),
-            // ]);
+            'delete' => DeleteBulkAction::make(),
         ];
     }
 
-
-
-
-
+    /**
+     * @return array<class-string>
+     */
     protected function getHeaderWidgets(): array
     {
         return [
-            // QueueListenWidget::make(),
-            ClockWidget::make(),
+            ClockWidget::class,
         ];
     }
-
-    
 }

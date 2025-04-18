@@ -5,20 +5,20 @@ declare(strict_types=1);
 namespace Modules\Blog\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Modules\Blog\Models\ContactEntry;
+use Modules\Blog\app\Models\ContactEntry;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\stdClass> // FIXME: ContactEntry non trovato
+ * @phpstan-ignore-next-line
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Modules\Blog\app\Models\ContactEntry>
  */
 class ContactEntryFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
-     * @var class-string<\stdClass>
      * @var class-string<ContactEntry>
      */
-    // protected $model = ContactEntry::class; // FIXME: ContactEntry non trovato
+    protected $model = ContactEntry::class;
 
     /**
      * Define the model's default state.

@@ -9,8 +9,6 @@ use Modules\Xot\Providers\XotBaseServiceProvider;
 class ChartServiceProvider extends XotBaseServiceProvider
 {
     public string $name = 'Chart';
-    
-    public string $module_name = 'chart';
 
     protected string $module_dir = __DIR__;
 

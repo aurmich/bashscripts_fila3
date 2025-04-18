@@ -75,14 +75,17 @@ use Spatie\Translatable\HasTranslations;
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
  *
- * @mixin \Eloquent
+ * @mixin \Illuminate\Database\Eloquent\Model
  */
 class Banner extends BaseModel implements HasMedia
 {
     use InteractsWithMedia;
     // use HasTranslations;
 
-    /** @var list<string> */
+    /**
+     * Attributi assegnabili in massa (mass assignment).
+     * @var list<string>
+     */
     protected $fillable = [
         // "id", //: 40,
         // "desktop_thumbnail",//: "https://My_Company-media-production.s3.amazonaws.com/cache/7a/9c/7a9c8f672e3499d573f24901280952f3.jpg",
@@ -135,9 +138,7 @@ class Banner extends BaseModel implements HasMedia
      */
     public function registerMediaConversions(?Media $media = null): void
     {
-        // @phpstan-ignore method.notFound
         $this->addMediaConversion('cover')
-        // @phpstan-ignore-next-line
             // ->format(Manipulations::FORMAT_WEBP)
             ->width(320)
             ->height(200)

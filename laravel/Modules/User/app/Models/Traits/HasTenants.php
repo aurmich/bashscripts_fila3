@@ -35,6 +35,8 @@ trait HasTenants
 
     /**
      * Get all of the tenants the user belongs to.
+     * 
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany<\Illuminate\Database\Eloquent\Model>
      */
     public function tenants(): BelongsToMany
     {

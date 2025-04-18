@@ -172,15 +172,8 @@ use Webmozart\Assert\Assert;
  *
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
- * @property string|null                                 $type
- * @property float|null                                  $stocks_count
- * @property float|null                                  $stocks_value
  *
- * @method static EloquentBuilder<static>|Article whereStocksCount($value)
- * @method static EloquentBuilder<static>|Article whereStocksValue($value)
- * @method static EloquentBuilder<static>|Article whereType($value)
- *
- * @mixin \Eloquent
+ * @mixin \Illuminate\Database\Eloquent\Model
  */
 class Article extends BaseModel implements Feedable, HasRatingContract, HasTranslationsContract
 {
@@ -198,6 +191,60 @@ class Article extends BaseModel implements Feedable, HasRatingContract, HasTrans
         'footer_blocks',
     ];
 
+    /**
+     * Ottiene la traduzione di un attributo in una specifica lingua.
+     *
+     * @param string $key Il nome dell'attributo da tradurre
+     * @param string $locale Il codice della lingua richiesta
+     * @param bool $useFallbackLocale Se utilizzare o meno la lingua di fallback
+     * 
+     * @return array|string|int|null Il valore tradotto dell'attributo
+     */
+    public function getTranslation(string $key, string $locale, bool $useFallbackLocale = true): array|string|int|null
+    {
+        if (! $this->isTranslatableAttribute($key)) {
+            return $this->getAttribute($key);
+        }
+
+        $translations = $this->getTranslations($key);
+
+        $translation = $translations[$locale] ?? '';
+
+        if ($translation !== '' || ! $useFallbackLocale) {
+            $value = $translation;
+        } else {
+            $value = $translations[config('app.fallback_locale')] ?? '';
+        }
+
+        return match(true) {
+            is_string($value) => $value,
+            is_array($value) => $value,
+            is_int($value) => $value,
+            default => null,
+        };
+    }
+
+    /**
+     * Attributi assegnabili in massa (mass assignment).
+     * @return array<string, string>
+     */
+    protected function casts(): array
+    {
+        return [
+            'id' => 'string',
+            'uuid' => 'string',
+            'published_at' => 'datetime',
+            'created_at' => 'datetime',
+            'updated_at' => 'datetime',
+            'main_image_upload' => 'string',
+            'main_image_url' => 'string',
+        ];
+    }
+
+    /**
+     * Attributi assegnabili in massa (mass assignment).
+     * @var list<string>
+     */
     protected $fillable = [
         'uuid',
         'user_id',
@@ -264,13 +311,24 @@ class Article extends BaseModel implements Feedable, HasRatingContract, HasTrans
     ];
 
     /**
-     * return \Illuminate\Database\Eloquent\Collection<int, Article>.
+     * Restituisce tutti i feed item.
      *
-     * @return \Illuminate\Support\Collection<int, Article>
+     * @return \Illuminate\Database\Eloquent\Collection<int, Article>
      */
-    public static function getAllFeedItems()
+    public static function getAllFeedItems(): \Illuminate\Database\Eloquent\Collection
     {
-        return self::latest()->take(150)->get();
+        return static::latest()->take(150)->get();
+    }
+
+    /**
+     * Wrapper statico per latest() richiesto da PHPStan.
+     * @param string|null $column
+     * @return \Illuminate\Database\Eloquent\Builder|static
+     */
+    public static function latest(?string $column = null): \Illuminate\Database\Eloquent\Builder
+    {
+        $column = $column ?? static::CREATED_AT;
+        return static::query()->latest($column);
     }
 
     public function sluggable(): array

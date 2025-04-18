@@ -3,70 +3,103 @@
 declare(strict_types=1);
 
 return [
-    'account' => 'Account',
-    'profile' => 'Profilo',
-    'my_profile' => 'Il mio profilo',
-    'subheading' => 'Gestisci il tuo profilo.',
+    'navigation' => [
+        'name' => 'Profilo',
+        'plural' => 'Profili',
+        'group' => [
+            'name' => 'Gestione Utenti',
+            'description' => 'Gestione dei profili utente',
+        ],
+        'label' => 'Profilo',
+        'sort' => 73,
+        'icon' => 'user-profile-animated',
+    ],
     'fields' => [
-        'type' => [
-            'label' => 'Tipo',
-            'fields' => [
-                'label' => 'Tipo',
+        'personal_info' => [
+            'label' => 'Informazioni Personali',
+            'first_name' => 'Nome',
+            'last_name' => 'Cognome',
+            'email' => 'Email',
+            'phone' => 'Telefono',
+            'birth_date' => 'Data di Nascita',
+            'gender' => [
+                'label' => 'Genere',
+                'male' => 'Maschio',
+                'female' => 'Femmina',
+                'other' => 'Altro',
             ],
         ],
-        'user' => [
-            'name' => [
-                'label' => 'Nome Utente',
-                'fields' => [
-                    'label' => 'Nome Utente',
-                ],
+        'preferences' => [
+            'label' => 'Preferenze',
+            'language' => 'Lingua',
+            'timezone' => 'Fuso Orario',
+            'notifications' => 'Notifiche',
+            'theme' => [
+                'label' => 'Tema',
+                'light' => 'Chiaro',
+                'dark' => 'Scuro',
+                'system' => 'Sistema',
             ],
         ],
-        'photo' => [
-            'label' => 'Foto',
-            'fields' => [
-                'label' => 'Foto',
-            ],
+        'security' => [
+            'label' => 'Sicurezza',
+            'current_password' => 'Password Attuale',
+            'new_password' => 'Nuova Password',
+            'confirm_password' => 'Conferma Password',
+            'two_factor' => 'Autenticazione a Due Fattori',
+            'recovery_codes' => 'Codici di Recupero',
         ],
         'id' => [
-            'label' => 'id',
+            'label' => 'ID',
         ],
         'ente' => [
-            'label' => 'ente',
+            'label' => 'Ente',
         ],
         'matr' => [
-            'label' => 'matr',
+            'label' => 'Matricola',
         ],
         'first_name' => [
-            'label' => 'first_name',
+            'label' => 'Nome',
             'fields' => [
-                'label' => 'first_name',
+                'label' => 'Nome',
             ],
         ],
         'last_name' => [
-            'label' => 'last_name',
+            'label' => 'Cognome',
             'fields' => [
-                'label' => 'last_name',
+                'label' => 'Cognome',
             ],
         ],
         'email' => [
-            'fields' => 'email',
-            'label' => [
-                'fields' => 'email',
+            'label' => 'Email',
+            'fields' => [
+                'label' => 'Email',
             ],
         ],
         'is_active' => [
-            'fields' => 'is_active',
-            'label' => [
-                'fields' => 'is_active',
+            'label' => 'Attivo',
+            'fields' => [
+                'label' => 'Attivo',
             ],
         ],
         'delete' => [
-            'label' => 'delete',
+            'label' => 'Elimina',
+        ],
+        'toggleColumns' => [
+            'label' => 'Mostra/Nascondi Colonne',
+        ],
+        'reorderRecords' => [
+            'label' => 'Riordina Record',
+        ],
+        'resetFilters' => [
+            'label' => 'Resetta Filtri',
+        ],
+        'applyFilters' => [
+            'label' => 'Applica Filtri',
         ],
     ],
     'personal_info' => [
-        'heading' => 'Informazioni personali',
+        'heading' => 'Informazioni Personali',
         'subheading' => 'Gestisci le tue informazioni personali.',
         'submit' => [
             'label' => 'Aggiorna',

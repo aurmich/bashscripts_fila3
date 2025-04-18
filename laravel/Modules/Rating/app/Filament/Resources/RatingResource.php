@@ -29,17 +29,17 @@ class RatingResource extends XotBaseResource
     public static function getFormSchema(): array
     {
         return [
-            TextInput::make('extra_attributes.type'),
-            TextInput::make('extra_attributes.anno'),
-            TextInput::make('title')->autofocus()->required(),
-            ColorPicker::make('color'),
-            Radio::make('rule')->options(RuleEnum::class),
-            Section::make()
+            'type' => TextInput::make('extra_attributes.type'),
+            'anno' => TextInput::make('extra_attributes.anno'),
+            'title' => TextInput::make('title')->autofocus()->required(),
+            'color' => ColorPicker::make('color'),
+            'rule' => Radio::make('rule')->options(RuleEnum::class),
+            'section' => Section::make()
                 ->schema([
-                    Toggle::make('is_disabled'),
-                    Toggle::make('is_readonly'),
+                    'is_disabled' => Toggle::make('is_disabled'),
+                    'is_readonly' => Toggle::make('is_readonly'),
                 ]),
-            RichEditor::make('txt')->columnSpanFull(),
+            'txt' => RichEditor::make('txt')->columnSpanFull(),
         ];
     }
 

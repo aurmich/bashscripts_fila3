@@ -90,7 +90,7 @@ class NetfunSendAction
         try {
             $response = $client->post($endpoint, ['json' => $body]);
         } catch (ClientException $clientException) {
-            throw new Exception($clientException->getMessage() . '[' . __LINE__ . '][' . class_basename($this) . ']', $clientException->getCode(), $clientException);
+            throw new Exception($clientException->getMessage().'['.__LINE__.']['.class_basename($this).']', $clientException->getCode(), $clientException);
         }
 
         /*

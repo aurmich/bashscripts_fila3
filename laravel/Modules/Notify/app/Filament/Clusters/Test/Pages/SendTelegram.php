@@ -38,9 +38,13 @@ class SendTelegram extends Page implements HasForms
     // use NavigationLabelTrait;
 
     public ?array $emailData = [];
+
     protected static ?string $navigationIcon = 'heroicon-o-paper-airplane';
+
     protected static string $view = 'notify::filament.pages.send-email';
+
     protected static ?string $cluster = Test::class;
+
     public function mount(): void
     {
         $this->fillForms();
@@ -57,15 +61,15 @@ class SendTelegram extends Page implements HasForms
         */
         return $form
             ->schema([
-                    Forms\Components\Section::make()
-                        // ->description('Update your account\'s profile information and email address.')
-                        ->schema([
-                                Forms\Components\TextInput::make('to')
-                                    ->required(),
-                                Forms\Components\RichEditor::make('body')
-                                    ->required(),
-                            ]),
-                ])
+                Forms\Components\Section::make()
+                    // ->description('Update your account\'s profile information and email address.')
+                    ->schema([
+                        Forms\Components\TextInput::make('to')
+                            ->required(),
+                        Forms\Components\RichEditor::make('body')
+                            ->required(),
+                    ]),
+            ])
             ->model($this->getUser())
             ->statePath('emailData');
     }
@@ -74,7 +78,7 @@ class SendTelegram extends Page implements HasForms
     {
         $data = $this->emailForm->getState();
         Assert::string($token = config('services.telegram-bot-api.token'));
-        $url = 'https://api.telegram.org/bot' . $token . '/getMe';
+        $url = 'https://api.telegram.org/bot'.$token.'/getMe';
         Http::get($url);
         // dddx($response->json());
         /*

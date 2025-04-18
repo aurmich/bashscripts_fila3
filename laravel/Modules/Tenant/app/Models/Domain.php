@@ -11,13 +11,16 @@ use Sushi\Sushi;
 /**
  * 
  *
- * @property int|null    $id
+ * @property int|null $id
  * @property string|null $name
  * @method static \Illuminate\Database\Eloquent\Builder|Domain newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Domain newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Domain query()
  * @method static \Illuminate\Database\Eloquent\Builder|Domain whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Domain whereName($value)
+ * @property-read \Modules\Broker\Models\Profile|null $creator
+ * @property-read \Modules\Broker\Models\Profile|null $updater
+ * @method static \Modules\Tenant\Database\Factories\DomainFactory factory($count = null, $state = [])
  * @mixin \Eloquent
  */
 class Domain extends BaseModel

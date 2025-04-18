@@ -4,13 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Blog\Filament\Resources;
 
-use CodeWithDennis\FilamentSelectTree\SelectTree;
 use Filament\Forms;
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Filament\Forms\Components\SpatieTagsInput;
 use Filament\Forms\Form;
-use Filament\Forms\Get;
-use Filament\Forms\Set;
 use Filament\Resources\Concerns\Translatable;
 use Illuminate\Support\Str;
 use Modules\Blog\Filament\Fields\ArticleContent;
@@ -36,7 +33,7 @@ class ArticleResource extends XotBaseResource
         return ['it', 'en'];
     }
 
-    public static function getFormSchema(): array
+    public static function getFormFields(): array
     {
         return [
             Forms\Components\Grid::make()->columns(2)->schema([
@@ -44,7 +41,7 @@ class ArticleResource extends XotBaseResource
                     ->columnSpan(1)
                     ->required()
                     ->lazy()
-                    ->afterStateUpdated(static function (Set $set, Get $get, string $state): void {
+                    ->afterStateUpdated(static function ($set, $get, $state): void {
                         if ($get('slug')) {
                             return;
                         }
@@ -54,12 +51,10 @@ class ArticleResource extends XotBaseResource
                 Forms\Components\TextInput::make('slug')
                     ->columnSpan(1)
                     ->required(),
-                /*
                 Forms\Components\DateTimePicker::make('closed_at')
                     ->columnSpan(1)
                     ->helperText('Determina fino a quando è possibile scommettere')
                     ->required(),
-                */
                 /*
                 Forms\Components\TextInput::make('description')
                     ->columnSpanFull()
@@ -71,18 +66,16 @@ class ArticleResource extends XotBaseResource
                     ->nullable()
                 // ->required()
                 ,
-                /*
                 Forms\Components\DateTimePicker::make('rewarded_at')
                     ->nullable()
                     ->columnSpan(1),
-                */
+
                 /*
                 Forms\Components\Select::make('category_id')
                     ->relationship('category', 'name')
                     ->columnSpan(1)
                     ->required(),
                 */
-                // *
                 Forms\Components\Select::make('category_id')
                             // ->multiple()
                     ->required()
@@ -90,12 +83,6 @@ class ArticleResource extends XotBaseResource
                     // ->relationship('category', 'title')
                     ->options(Category::getTreeCategoryOptions())
                     ->createOptionForm(CategoryResource::getFormFields()),
-                // */
-                /*
-                SelectTree::make('category_id')
-                    ->relationship('category', 'title', 'parent_id')
-                    ->enableBranchNode(),
-                // */
                 // SpatieTagsInput::make('tags'),
                 Forms\Components\Toggle::make('is_featured')
                     ->columnSpanFull()
@@ -105,12 +92,17 @@ class ArticleResource extends XotBaseResource
 
             Forms\Components\Section::make('Article Content')->schema([
                 Forms\Components\Actions::make([
+                    /*
+                    InlinePreviewAction::make()
+                        ->label('Preview Content Blocks')
+                        ->builderName('content_blocks'),
+                    */
                 ])
                     ->columnSpanFull()
                     ->alignRight(),
 
                 ArticleContent::make('content_blocks')
-
+                    ->label('Content')
                     ->required()
                     ->columnSpanFull(),
             ])->collapsible(),
@@ -119,7 +111,7 @@ class ArticleResource extends XotBaseResource
                 Forms\Components\Actions::make([
                     /*
                     InlinePreviewAction::make()
-
+                        ->label('Preview Content Blocks')
                         ->builderName('content_blocks'),
                     */
                 ])
@@ -127,29 +119,33 @@ class ArticleResource extends XotBaseResource
                     ->alignRight(),
 
                 ArticleSidebar::make('sidebar_blocks')
-
+                    ->label('Sidebar')
                     // ->required()
                     ->columnSpanFull(),
             ])->collapsible(),
-            /*
+
             Forms\Components\Section::make('Article Footer')->schema([
                 Forms\Components\Actions::make([
-
+                    /*
+                    InlinePreviewAction::make()
+                        ->label('Open Footer Editor')
+                        ->builderName('footer_blocks'),
+                    */
                 ])
                     ->columnSpanFull()
                     ->alignRight(),
 
                 ArticleFooter::make('footer_blocks')
-
+                    ->label('Footer')
                     ->columnSpanFull(),
             ])->collapsible(),
-            */
-            Forms\Components\TextInput::make('main_image_url')
 
+            Forms\Components\TextInput::make('main_image_url')
+                ->label('Main image URL')
                 ->columnSpanFull(),
 
             // Forms\Components\FileUpload::make('main_image_upload')
-            //
+            //     ->label('Main image upload')
             //     ->columnSpanFull(),
             SpatieMediaLibraryFileUpload::make('main_image_upload')
                 // ->image()
@@ -169,25 +165,11 @@ class ArticleResource extends XotBaseResource
         ];
     }
 
-    // public static function form(Form $form): Form
-    // {
-    //     return $form->schema(static::getFormFields());
-    // }
-
-    public static function getRelations(): array
+    /**
+     * @return array<string|int,\Filament\Forms\Components\Component>
+     */
+    public static function getFormSchema(): array
     {
-        return [
-            // RelationManagers\RatingsRelationManager::class,
-        ];
-    }
-
-    public static function getPages(): array
-    {
-        return [
-            'index' => Pages\ListArticles::route('/'),
-            'create' => Pages\CreateArticle::route('/create'),
-            'edit' => Pages\EditArticle::route('/{record}/edit'),
-            'view' => Pages\ViewArticle::route('/{record}'),
-        ];
+        return static::getFormFields();
     }
 }

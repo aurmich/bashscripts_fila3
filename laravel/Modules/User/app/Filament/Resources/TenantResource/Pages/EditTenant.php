@@ -8,10 +8,18 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\TenantResource\Pages;
 
 use Filament\Actions;
-use Filament\Resources\Pages\EditRecord;
 use Modules\User\Filament\Resources\TenantResource;
 
-class EditTenant extends EditRecord
+
+
+
+use Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager;
+
+
+
+
+
+class EditTenant extends \Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord
 {
     protected static string $resource = TenantResource::class;
 
