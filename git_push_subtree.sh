@@ -38,42 +38,8 @@ push_subtree() {
     find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
 
 
-    if(! git subtree push -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH")
-    then
-        log "❌ Failed to push subtree $LOCAL_PATH to $REMOTE_REPO"
-        if(! git push  "$REMOTE_REPO" $(git subtree split --prefix="$LOCAL_PATH"):"$REMOTE_BRANCH")
-        then
-            log "❌ Failed split  to push subtree $LOCAL_PATH to $REMOTE_REPO"
+    git push "$REMOTE_REPO" $(git commit-tree $(git subtree split --prefix="$LOCAL_PATH" HEAD^{tree}) -m "Unico commit del subtree"):"$REMOTE_BRANCH"
 
-            git subtree split --prefix="$LOCAL_PATH" -b "$TEMP_BRANCH"
-            # Ora fai il merge del branch temporaneo con `git subtree merge`
-            git subtree merge --prefix="$LOCAL_PATH" "$TEMP_BRANCH" || echo "❌ Failed to merge subtree"
-            # Pulisci il branch temporaneo
-            git branch -D "$TEMP_BRANCH" || echo "❌ Failed to delete temporary branch $TEMP_BRANCH"
-    #        # First, split the subtree to a temporary branch
-        #    git subtree split --prefix="$LOCAL_PATH" --rejoin -b "$TEMP_BRANCH"
-
-    #        # Then force push that branch
-        #    git push "$REMOTE_REPO" "$TEMP_BRANCH":"$REMOTE_BRANCH"
-
-    #        # Optionally, clean up the temporary branch
-    #        git branch -D "$TEMP_BRANCH"
-
-    #        git subtree push -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH"
-
-            #mv "$LOCAL_PATH" "$LOCAL_PATH_bak" || die "Failed to rename $LOCAL_PATH to $LOCAL_PATH_bak"
-            #git add .
-            #git commit -am "Add $LOCAL_PATH_bak"
-            #git subtree add --prefix="$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH" --squash
-             # Sincronizza i file dalla cartella di backup
-            #rsync -avz "$LOCAL_PATH_bak/" "$LOCAL_PATH" || die "Failed to sync files"
-            # Rimuovi la cartella di backup
-            #rm -rf "$LOCAL_PATH_bak" || die "Failed to remove backup folder"
-            # Commit delle modifiche
-            #git add . || die "Failed to add changes after submodule sync"
-            #git commit -am "Added submodule for $LOCAL_PATH" || die "Failed to commit submodule changes"
-        fi
-    fi
 
 
     git rebase --rebase-merges --strategy subtree "$REMOTE_BRANCH" --autosquash
