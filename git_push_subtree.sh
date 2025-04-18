@@ -37,9 +37,19 @@ push_subtree() {
 
     find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
 
+    git checkout -b $TEMP_BRANCH
+    git filter-branch --prune-empty --subdirectory-filter "$LOCAL_PATH" HEAD
 
-    #git push "$REMOTE_REPO" $(git commit-tree $(git subtree split --prefix="$LOCAL_PATH" HEAD^{tree}) -m "Unico commit del subtree"):"$REMOTE_BRANCH"
-    git push "$REMOTE_REPO" $(git commit-tree $(git subtree split --prefix="$LOCAL_PATH")^{tree} -m "Unico commit del subtree"):"$REMOTE_BRANCH"
+    # Crea un singolo commit con il contenuto attuale
+    git reset $(git commit-tree HEAD^{tree} -m "Unico commit del subtree")
+
+    # Push al repository remoto
+    git push "$REMOTE_REPO" HEAD:"$REMOTE_BRANCH"
+
+    # Torna al branch originale e rimuovi quello temporaneo
+    git checkout -
+    git branch -D $TEMP_BRANCH
+    
 
 
 
