@@ -45,9 +45,8 @@ push_subtree() {
     #fi
     ############################################
     git subtree split --prefix="$LOCAL_PATH" -b "$TEMP_BRANCH"
-    git subtree merge --prefix="$LOCAL_PATH" "$TEMP_BRANCH" || log "Failed to merge subtree"
-    git push "$REMOTE_REPO"  "$TEMP_BRANCH":"$REMOTE_BRANCH"
-    git branch -D "$TEMP_BRANCH" || log "Failed to delete temporary branch $TEMP_BRANCH"
+    git push "$REMOTE_REPO"  "$TEMP_BRANCH":"$REMOTE_BRANCH" || log "❌ Failed to push subtree"
+    git branch -D "$TEMP_BRANCH" || log "❌ Failed to delete temporary branch $TEMP_BRANCH"
 
 
 
