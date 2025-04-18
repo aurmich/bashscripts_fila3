@@ -35,21 +35,29 @@ push_subtree() {
 
     find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
 
-    ############################################
-    #if(! git subtree push -P "$LOCAL_PATH" "$REMOTE_REPO" "$BRANCH")
-    #then
-    #    log "✅ Subtree $LOCAL_PATH pushed successfully with $REMOTE_REPO"
-    #else
-    #    log "❌ Fallimento push subtree $LOCAL_PATH verso $REMOTE_REPO"
-    #fi
-    ############################################
+    #push_subtree 
+    split_subtree
+    
+    git rebase --rebase-merges --strategy subtree "$BRANCH" --autosquash
+    #git rebase --preserve-merges "$BRANCH"
+}
+
+push_subtree_old() {
+    if(! git subtree push -P "$LOCAL_PATH" "$REMOTE_REPO" "$BRANCH")
+    then
+        log "✅ Subtree $LOCAL_PATH pushed successfully with $REMOTE_REPO"
+    else
+        log "❌ Fallimento push subtree $LOCAL_PATH verso $REMOTE_REPO"
+    fi
+}
+
+
+split_subtree() {
     git fetch "$REMOTE_REPO" "$BRANCH"
     git subtree split --rejoin --prefix="$LOCAL_PATH" -b "$TEMP_BRANCH" || log "❌ Failed to split subtree"
     git push  "$REMOTE_REPO"  "$TEMP_BRANCH":"$BRANCH" || log "❌ Failed to push subtree"
     git branch -D "$TEMP_BRANCH" || log "❌ Failed to delete temporary branch $TEMP_BRANCH"
-
-    git rebase --rebase-merges --strategy subtree "$BRANCH" --autosquash
-    #git rebase --preserve-merges "$BRANCH"
+    log "✅ Subtree $LOCAL_PATH splitted and pushed to $REMOTE_REPO"
 }
 
 # Run sync
