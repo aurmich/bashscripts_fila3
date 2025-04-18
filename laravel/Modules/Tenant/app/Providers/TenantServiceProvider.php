@@ -48,7 +48,7 @@ class TenantServiceProvider extends XotBaseServiceProvider
 
     public function registerDB(): void
     {
-        if (Request::has('act') && Request::input('act') === 'migrate') {
+        if (Request::has('act') && 'migrate' === Request::input('act')) {
             DB::purge('mysql'); // Call to a member function prepare() on null
             DB::reconnect('mysql');
         }
@@ -78,7 +78,7 @@ class TenantServiceProvider extends XotBaseServiceProvider
         // if ($this->app->runningUnitTests()) {
         // if (base_path() !== realpath(__DIR__ . '/../../../')) {
         //     // $this->publishes([
-        //     //    __DIR__ . '/../config/xra.php' => config_path('xra.php'),
+        //     //    __DIR__ . '/../Config/xra.php' => config_path('xra.php'),
         //     // ], 'config');
 
         //     $name = TenantService::getName();

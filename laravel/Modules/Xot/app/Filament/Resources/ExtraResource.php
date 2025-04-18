@@ -9,40 +9,26 @@ use Filament\Forms\Components\TextInput;
 use Modules\Xot\Filament\Resources\ExtraResource\Pages;
 use Modules\Xot\Models\Extra;
 
-
-
-
-use Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager;
-
-
-
-
-
 class ExtraResource extends XotBaseResource
 {
     protected static ?string $model = Extra::class;
 
-    /**
-     * Get the form schema for the resource.
-     * 
-     * @return array<string, \Filament\Forms\Components\Component>
-     */
     public static function getFormSchema(): array
     {
         return [
-            'id' => TextInput::make('id')
+            TextInput::make('id')
                 ->required()
                 ->maxLength(36),
 
-            'post_type' => TextInput::make('post_type')
+            TextInput::make('post_type')
                 ->required()
                 ->maxLength(255),
 
-            'post_id' => TextInput::make('post_id')
+            TextInput::make('post_id')
                 ->required()
                 ->numeric(),
 
-            'value' => KeyValue::make('value')
+            KeyValue::make('value')
                 ->keyLabel('Chiave')
                 ->valueLabel('Valore')
                 ->reorderable()

@@ -22,10 +22,6 @@ class AddressField extends Forms\Components\Field
         parent::setUp();
 
         $this->afterStateHydrated(function (AddressField $component, ?Model $record) {
-            if ($record === null) {
-                return;
-            }
-
             $data = [
                 'country' => null,
                 'street' => null,
@@ -33,14 +29,8 @@ class AddressField extends Forms\Components\Field
                 'state' => null,
                 'zip' => null,
             ];
-
-            $relationship = $this->getRelationship();
-            if (!$relationship) {
-                return;
-            }
-
-            $address = $record->getRelationValue($relationship);
-            if ($address !== null && is_object($address) && method_exists($address, 'toArray')) {
+            $address = $record?->getRelationValue($this->getRelationship());
+            if (null !== $address && is_object($address) && method_exists($address, 'toArray')) {
                 $data = $address->toArray();
             }
 
@@ -61,28 +51,18 @@ class AddressField extends Forms\Components\Field
     {
         $state = $this->getState();
         $record = $this->getRecord();
-        
-        if ($record === null) {
+        $relationship = $record?->{$this->getRelationship()}();
+
+        if (null === $relationship) {
             return;
         }
-
-        $relationship = $this->getRelationship();
-        if (!$relationship) {
-            return;
-        }
-
-        $relation = $record->{$relationship}();
-        if (!$relation) {
-            return;
-        }
-
-        if ($address = $relation->first()) {
+        if ($address = $relationship->first()) {
             $address->update($state);
         } else {
-            $relation->updateOrCreate($state);
+            $relationship->updateOrCreate($state);
         }
 
-        $record->touch();
+        $record?->touch();
     }
 
     public function getChildComponents(): array
@@ -93,7 +73,7 @@ class AddressField extends Forms\Components\Field
                     Forms\Components\Select::make('country')
                         ->searchable(),
                     // ->getSearchResultsUsing(fn (string $query) => Country::where('name', 'like', "%{$query}%")->pluck('name', 'id'))
-                    // ->getOptionLabelUsing(fn ($value): ?string => Country::firstWhere('id', $value)->getAttribute('name')),
+                    // ->getOptionLabelUsing(fn ($value): ?string => Country::firstWhere('id', $value)?->getAttribute('name')),
                 ]),
             Forms\Components\TextInput::make('street')
 

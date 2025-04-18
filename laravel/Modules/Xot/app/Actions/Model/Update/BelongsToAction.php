@@ -11,6 +11,7 @@ use Illuminate\Support\Str;
 use Modules\Xot\Datas\RelationData as RelationDTO;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
+use RuntimeException;
 
 class BelongsToAction
 {
@@ -31,12 +32,11 @@ class BelongsToAction
         }
         */
 
-        if (! Arr::isAssoc($relationDTO->data) && 1 === \count($relationDTO->data)) {
-            $related_id = Arr::first($relationDTO->data);
-            if (null === $related_id) {
+        if (! Arr::isAssoc($relationDTO->data) && \count($relationDTO->data) > 0) {
+            $related_id = $relationDTO->data[0] ?? null;
+            if ($related_id === null) {
                 return;
             }
-            
             $related = $relationDTO->related->find($related_id);
             // Verifica che $related non sia una Collection, ma un singolo modello
             if ($related instanceof \Illuminate\Database\Eloquent\Collection) {
@@ -55,7 +55,7 @@ class BelongsToAction
         if (Arr::isAssoc($relationDTO->data)) {
             $sub = $rows->firstOrCreate();
             // $sub = $rows->first() ?? $rows->getModel();
-            if (null === $sub) {
+            if ($sub === null) {
                 throw new \Exception('['.__LINE__.']['.class_basename($this).']');
             }
 
@@ -77,5 +77,22 @@ class BelongsToAction
         $related = $relationDTO->related->create($data);
         $res = $rows->associate($related);
         $res->save();
+    }
+
+    public function executeWithRelation(Model $model, BelongsTo $relation, array $data): void
+    {
+        if (empty($data)) {
+            return;
+        }
+
+        $relatedModel = $relation->getRelated();
+        $foreignKey = $relation->getForeignKeyName();
+
+        if (!isset($data[$foreignKey])) {
+            throw new RuntimeException("Foreign key [{$foreignKey}] not found in data");
+        }
+
+        $model->setAttribute($foreignKey, $data[$foreignKey]);
+        $model->save();
     }
 }

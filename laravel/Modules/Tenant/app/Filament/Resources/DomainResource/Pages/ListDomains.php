@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Tenant\Filament\Resources\DomainResource\Pages;
 
-use Filament\Tables;
+use Filament\Tables\Columns\TextColumn;
 use Modules\Tenant\Filament\Resources\DomainResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
@@ -15,25 +15,11 @@ class ListDomains extends XotBaseListRecords
     public function getListTableColumns(): array
     {
         return [
-            'id' => Tables\Columns\TextColumn::make('id')
-                ->numeric()
+            TextColumn::make('name')
+                ->searchable()
                 ->sortable()
-                ->searchable(),
-            'domain' => Tables\Columns\TextColumn::make('domain')
-                ->sortable()
-                ->searchable(),
-            'tenant_id' => Tables\Columns\TextColumn::make('tenant_id')
-                ->numeric()
-                ->sortable()
-                ->searchable(),
-            'created_at' => Tables\Columns\TextColumn::make('created_at')
-                ->dateTime()
-                ->sortable()
-                ->toggleable(isToggledHiddenByDefault: true),
-            'updated_at' => Tables\Columns\TextColumn::make('updated_at')
-                ->dateTime()
-                ->sortable()
-                ->toggleable(isToggledHiddenByDefault: true),
+                ->weight('medium')
+                ->alignLeft(),
         ];
     }
 }

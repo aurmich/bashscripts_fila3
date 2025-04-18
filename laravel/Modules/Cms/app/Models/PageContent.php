@@ -5,10 +5,7 @@ declare(strict_types=1);
 namespace Modules\Cms\Models;
 
 use Modules\Tenant\Models\Traits\SushiToJsons;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Modules\Lang\Models\Traits\HasStrictTranslations;
-use Modules\Lang\Models\Contracts\HasTranslationsContract;
+use Spatie\Translatable\HasTranslations;
 
 /**
  * Modules\Cms\Models\PageContent.
@@ -56,9 +53,9 @@ use Modules\Lang\Models\Contracts\HasTranslationsContract;
  *
  * @mixin \Eloquent
  */
-class PageContent extends Model implements HasTranslationsContract
+class PageContent extends BaseModel
 {
-    use HasStrictTranslations;
+    use HasTranslations;
     use SushiToJsons;
 
     /** @var array<int, string> */

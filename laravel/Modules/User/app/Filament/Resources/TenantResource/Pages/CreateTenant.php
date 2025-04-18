@@ -7,11 +7,11 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\TenantResource\Pages;
 
+use Filament\Resources\Pages\CreateRecord;
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Filament\Resources\TenantResource;
-use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
 
-class CreateTenant extends XotBaseCreateRecord
+class CreateTenant extends CreateRecord
 {
     protected static string $resource = TenantResource::class;
 
@@ -34,7 +34,7 @@ class CreateTenant extends XotBaseCreateRecord
     //     $record = new Tenant(collect($data)->except('domain')->toArray());
     //     $record->saveOrFail();
     //     \Log::info('Saving Domains');
-    //     $record = $record::find($record->);
+    //     $record = $record::find($record->id);
     //     $record->domains()->create(['domain' => collect($data)->get('domain')]);
 
     //     return $record;

@@ -11,7 +11,7 @@ class Styles extends Component
     {
         return view('comments::components.styles', [
             'stylesheet' => new HtmlString(
-                \Safe\file_get_contents(__DIR__.'/../../../resources/css/comments.css')
+                file_get_contents(__DIR__.'/../../../resources/css/comments.css')
             ),
         ]);
     }

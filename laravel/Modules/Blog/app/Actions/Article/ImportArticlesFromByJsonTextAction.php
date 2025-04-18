@@ -23,7 +23,7 @@ class ImportArticlesFromByJsonTextAction
     public function execute(string $json_text): Collection
     {
         /** @var array<string,mixed> $data */
-        $data = \Safe\json_decode($json_text, true, 512, JSON_THROW_ON_ERROR);
+        $data = json_decode($json_text, true, 512, JSON_THROW_ON_ERROR);
         Assert::isArray($data);
 
         /** @var Collection<int,Article> */
@@ -82,7 +82,7 @@ class ImportArticlesFromByJsonTextAction
             Assert::isArray($outcome);
             $rating = new Rating();
             $rating->title = (string)($outcome['title'] ?? '');
-            $rating->is_disabled = (bool)($outcome['disabled'] ?? false);
+            $rating->disabled = (bool)($outcome['disabled'] ?? false);
             $rating->save();
         }
     }

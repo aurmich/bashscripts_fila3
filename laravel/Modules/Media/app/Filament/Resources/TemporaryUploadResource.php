@@ -4,14 +4,20 @@ declare(strict_types=1);
 
 namespace Modules\Media\Filament\Resources;
 
-use Filament\Resources\Pages\PageRegistration;
-use Modules\Media\Filament\Resources\TemporaryUploadResource\Pages\CreateTemporaryUpload;
-// use Modules\Media\Filament\Resources\TemporaryUploadResource\RelationManagers;
-use Modules\Media\Filament\Resources\TemporaryUploadResource\Pages\EditTemporaryUpload;
-// use Filament\Forms;
-use Modules\Media\Filament\Resources\TemporaryUploadResource\Pages\ListTemporaryUploads;
+use Filament\Forms\Form;
+use Filament\Tables\Table;
+use Filament\Resources\Resource;
+use Filament\Tables\Actions\EditAction;
 use Modules\Media\Models\TemporaryUpload;
+use Filament\Tables\Actions\BulkActionGroup;
+use Filament\Tables\Actions\DeleteBulkAction;
+use Filament\Resources\Pages\PageRegistration;
+// use Modules\Media\Filament\Resources\TemporaryUploadResource\RelationManagers;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+// use Filament\Forms;
+use Modules\Media\Filament\Resources\TemporaryUploadResource\Pages\EditTemporaryUpload;
+use Modules\Media\Filament\Resources\TemporaryUploadResource\Pages\ListTemporaryUploads;
+use Modules\Media\Filament\Resources\TemporaryUploadResource\Pages\CreateTemporaryUpload;
 
 // use Illuminate\Database\Eloquent\Builder;
 // use Illuminate\Database\Eloquent\SoftDeletingScope;
@@ -20,24 +26,18 @@ class TemporaryUploadResource extends XotBaseResource
 {
     protected static ?string $model = TemporaryUpload::class;
 
-    /**
-     * @return array<string, \Filament\Forms\Components\Component>
-     */
-    public static function getFormSchema(): array
+    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+
+    public static function form(Form $form): Form
     {
-        return [
-            'file' => \Filament\Forms\Components\FileUpload::make('file')
-                ->required()
-                ->preserveFilenames()
-                ->acceptedFileTypes(['image/*', 'application/pdf', 'application/msword'])
-                ->maxSize(10240),
-            'folder' => \Filament\Forms\Components\TextInput::make('folder')
-                ->required()
-                ->maxLength(255),
-            'expires_at' => \Filament\Forms\Components\DateTimePicker::make('expires_at')
-                ->required(),
-        ];
+        return $form
+            ->schema(
+                [
+                ]
+            );
     }
+
+
 
     /**
      * @psalm-return array<never, never>

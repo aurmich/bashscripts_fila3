@@ -14,29 +14,21 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager;
 
-
-
-
-
-
-
-
-
 class RoleRelationManager extends XotBaseRelationManager
 {
     protected static string $relationship = 'roles';
 
     protected static ?string $recordTitleAttribute = 'name';
 
-    /**
-     * @return array<string, \Filament\Forms\Components\Component>
-     */
-    public function getFormSchema(): array
+    public function form(Form $form): Form
     {
-        return [
-            'name' => TextInput::make('name'),
-            'guard_name' => TextInput::make('guard_name'),
-        ];
+        return $form
+            ->schema(
+                [
+                    TextInput::make('name'),
+                    TextInput::make('guard_name'),
+                ]
+            );
     }
 
     public function table(Table $table): Table

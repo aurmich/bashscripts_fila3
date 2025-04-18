@@ -4,16 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\BaseProfileResource\Pages;
 
-use Filament\Actions\DeleteAction;
-use Filament\Actions\EditAction;
+use Filament\Actions;
 use Filament\Infolists\Components;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Infolists\Infolist;
+use Filament\Resources\Pages\ViewRecord;
 use Modules\User\Filament\Resources\BaseProfileResource;
-use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
-use Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager;
 
-class ViewProfile extends \Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord
+class ViewProfile extends ViewRecord
 {
     protected static string $resource = BaseProfileResource::class;
 
@@ -27,27 +25,25 @@ class ViewProfile extends \Modules\Xot\Filament\Resources\Pages\XotBaseViewRecor
     }
     */
 
-    /**
-     * @return array<string, \Filament\Infolists\Components\Component>
-     */
-    public function getInfolistSchema(): array 
+    public function infolist(Infolist $infolist): Infolist
     {
-        return [
-            'profile_info' => Components\Section::make()
-                ->schema([
-                    Components\Split::make([
-                        Components\Grid::make(2)
-                            ->schema([
-                                Components\Group::make([
-                                    TextEntry::make('email'),
-                                    TextEntry::make('first_name'),
-                                    TextEntry::make('last_name'),
-                                    TextEntry::make('created_at')
-                                        ->badge()
-                                        ->date()
-                                        ->color('success'),
-                                ]),
-                                /*
+        return $infolist
+            ->schema([
+                Components\Section::make()
+                    ->schema([
+                        Components\Split::make([
+                            Components\Grid::make(2)
+                                ->schema([
+                                    Components\Group::make([
+                                        TextEntry::make('email'),
+                                        TextEntry::make('first_name'),
+                                        TextEntry::make('last_name'),
+                                        TextEntry::make('created_at')
+                                            ->badge()
+                                            ->date()
+                                            ->color('success'),
+                                    ]),
+                                    /*
                                 Components\Group::make([
                                     Components\TextEntry::make('author.name'),
                                     Components\TextEntry::make('category.name'),
@@ -56,20 +52,20 @@ class ViewProfile extends \Modules\Xot\Filament\Resources\Pages\XotBaseViewRecor
                                         ->getStateUsing(fn () => ['one', 'two', 'three', 'four']),
                                 ]),
                                 */
-                            ]),
-                        Components\ImageEntry::make('image')
-                            ->hiddenLabel()
-                            ->grow(false),
-                    ])->from('lg'),
-                ]),
-            'content' => Components\Section::make('Content')
-                ->schema([
-                    TextEntry::make('content')
-                        ->prose()
-                        ->markdown()
-                        ->hiddenLabel(),
-                ])
-                ->collapsible(),
-        ];
+                                ]),
+                            Components\ImageEntry::make('image')
+                                ->hiddenLabel()
+                                ->grow(false),
+                        ])->from('lg'),
+                    ]),
+                Components\Section::make('Content')
+                    ->schema([
+                        TextEntry::make('content')
+                            ->prose()
+                            ->markdown()
+                            ->hiddenLabel(),
+                    ])
+                    ->collapsible(),
+            ]);
     }
 }

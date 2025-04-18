@@ -1,14 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 return [
     'navigation' => [
         'plural' => 'Domini',
         'group' => [
             'name' => 'Admin',
         ],
-        'label' => 'domain',
-        'sort' => 6,
-        'icon' => 'tenant-domain-animated',
     ],
     'fields' => [
         'domain' => [
@@ -48,12 +47,5 @@ return [
         'set_primary' => 'Imposta come Principale',
         'domain_set_primary' => 'Dominio impostato come principale con successo',
     ],
-    'model' => [
-        'label' => 'domain.model',
-    ],
-    'plural' => [
-        'model' => [
-            'label' => 'domain.plural.model',
-        ],
-    ],
 ];
+

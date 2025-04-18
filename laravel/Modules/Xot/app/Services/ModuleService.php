@@ -28,7 +28,7 @@ class ModuleService
     public static function getInstance(): self
     {
         if (! self::$_instance instanceof self) {
-            self::$_instance = new self();
+            self::$_instance = new self;
         }
 
         return self::$_instance;
@@ -78,31 +78,26 @@ class ModuleService
             $ext = '.php';
             // dddx(['ext' => $file->getExtension(), get_class_methods($file)]);
             if (Str::endsWith($filename, $ext)) {
-                $tmp = new \stdClass();
+                $tmp = new \stdClass;
 
                 $name = mb_substr($filename, 0, -mb_strlen($ext));
 
-                
+                // dddx(['name' => $name, 'name1' => $file->getFilenameWithoutExtension()]);
                 /**
                  * @var class-string
                  */
                 $class = $ns.'\\'.$name;
-                //Strict comparison using === between stdClass and null will always evaluate to false.
-
-                //if ($tmp === null) {
-                //    continue;
-                //}
                 $tmp->class = $class;
+
                 $name = Str::snake($name);
                 $tmp->name = $name;
-
+                // 434    Parameter #1 $argument of class ReflectionClass constructor expects class-string<T of object>|T of object, string given.
                 try {
                     $reflection_class = new \ReflectionClass($tmp->class);
                     if (! $reflection_class->isAbstract()) {
                         $data[$tmp->name] = $tmp->class;
                     }
                 } catch (\Exception) {
-                    // Ignore reflection errors
                 }
             }
         }

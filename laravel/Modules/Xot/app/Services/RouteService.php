@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Services;
 
-use function count;
-
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
+
+use function count;
 
 /**
  * Class RouteService.
@@ -19,35 +19,33 @@ use Illuminate\Support\Str;
 class RouteService
 {
     /**
-     * Verifica se l'utente è in modalità amministrazione.
+     * Summary of inAdmin.
      *
-     * @param array<string,string> $params Parametri aggiuntivi
-     * @return bool True se l'utente è in modalità amministrazione, false altrimenti
+     * @param  array<string,string>  $params
      */
-    public static function inAdmin(array $params = []): bool
+    public static function inAdmin(array $params = []): mixed
     {
-        // Se il parametro in_admin è specificato, lo restituiamo direttamente
         if (isset($params['in_admin'])) {
-            // Convertiamo qualsiasi valore a booleano
-            return (bool) $params['in_admin'];
+            return $params['in_admin'];
         }
 
-        // Se il primo segmento dell'URL è 'admin', siamo in modalità amministrazione
-        if ('admin' === Request::segment(1)) {
+        // dddx(ThemeService::__getStatic('in_admin'));
+        /* Cannot call method get() on mixed
+        if (null !== config()->get('in_admin')) {
+            return config()->get('in_admin');
+        }
+        */
+        if (Request::segment(1) === 'admin') {
             return true;
         }
 
-        // Verifichiamo un caso speciale per le richieste Livewire
         $segments = Request::segments();
-        
-        // Se abbiamo almeno un segmento, è 'livewire' e la sessione 'in_admin' è true
-        return (is_countable($segments) ? \count($segments) : 0) > 0 && 
-               'livewire' === $segments[0] && 
-               session('in_admin', false) === true;
+
+        return (is_countable($segments) ? \count($segments) : 0) > 0 && $segments[0] === 'livewire' && session('in_admin') === true;
     }
 
     /**
-     * @param array<string,string> $params
+     * @param  array<string,string>  $params
      */
     public static function urlAct(array $params): string
     {
@@ -100,7 +98,7 @@ class RouteService
     // se n=0 => 'container0'
     // se n=1 => 'containers.container1'
     /**
-     * @param array<string,string> $params
+     * @param  array<string,string>  $params
      */
     public static function getRoutenameN(array $params): string
     {
@@ -114,7 +112,7 @@ class RouteService
             $tmp[] = 'admin';
         }
 
-        for ($i = 0; $i <= $n; ++$i) {
+        for ($i = 0; $i <= $n; $i++) {
             $tmp[] = 'container'.$i;
         }
 
@@ -153,7 +151,7 @@ class RouteService
             //}
             //return $tmp;
 
-            $container_root = $parents->first()?->row;
+            $container_root = $parents->first()->row;
         }
 
         //$containers_class = self::getContainersClass();
@@ -202,7 +200,7 @@ class RouteService
     }
     */
     /**
-     * @param array<string,string> $params
+     * @param  array<string,string>  $params
      */
     public static function urlLang(array $params = []): string
     {
@@ -278,7 +276,7 @@ class RouteService
     public static function getAct(): string
     {
         $route_action = Route::currentRouteAction();
-        if (null === $route_action) {
+        if ($route_action === null) {
             throw new \Exception('$route_action is null');
         }
 
@@ -304,7 +302,7 @@ class RouteService
     public static function getModuleName(): string
     {
         $route_action = Route::currentRouteAction();
-        if (null === $route_action) {
+        if ($route_action === null) {
             throw new \Exception('$route_action is null');
         }
 
@@ -319,7 +317,7 @@ class RouteService
     public static function getControllerName(): string
     {
         $route_action = Route::currentRouteAction();
-        if (null === $route_action) {
+        if ($route_action === null) {
             throw new \Exception('$route_action is null');
         }
 

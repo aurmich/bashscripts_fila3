@@ -11,16 +11,22 @@ return new class extends XotBaseMigration
 {
     public function up(): void
     {
-        $this->tableCreate( function ($table) {
-            $table->bigIncrements('id');
-            $table->uuid('aggregate_uuid');
-            $table->unsignedInteger('aggregate_version');
-            $table->jsonb('state');
-            $table->index('aggregate_uuid');
-        });
+        // -- CREATE --
+        $this->tableCreate(
+            static function (Blueprint $table): void {
+                $table->bigIncrements('id');
+                $table->uuid('aggregate_uuid');
+                $table->unsignedInteger('aggregate_version');
+                $table->jsonb('state');
 
-        $this->tableUpdate( function ($table) {
-            $this->updateTimestamps($table, false);
-        });
+                $table->index('aggregate_uuid');
+            }
+        );
+        // -- UPDATE --
+        $this->tableUpdate(
+            function (Blueprint $table): void {
+                $this->updateTimestamps($table, false);
+            }
+        );
     }
 };

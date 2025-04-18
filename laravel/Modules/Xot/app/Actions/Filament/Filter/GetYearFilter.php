@@ -17,9 +17,8 @@ class GetYearFilter
     public function execute(string $fieldName, int $from, int $to): SelectFilter
     {
         $opts = [];
-        for ($curr = $from; $curr <= $to; ++$curr) {
-            $currStr = (string) $curr;
-            $opts[$currStr] = $currStr;
+        for ($curr = $from; $curr <= $to; $curr++) {
+            $opts[(string) $curr] = (string) $curr;
         }
 
         return SelectFilter::make($fieldName)

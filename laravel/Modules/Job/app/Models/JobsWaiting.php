@@ -41,4 +41,6 @@ namespace Modules\Job\Models;
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
  * @mixin \Eloquent
  */
-class JobsWaiting extends Job {}
+class JobsWaiting extends Job
+{
+}

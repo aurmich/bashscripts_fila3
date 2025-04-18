@@ -31,14 +31,13 @@ class VideoStream
 
     private ?int $fileModifiedTime = null; // Last modified time of the video file
 
-    /** @var resource|null */
-    private $stream = null; // File stream resource
+    private mixed $stream; // File stream resource
 
     /**
      * Initialize the video stream.
      *
-     * @param  string $disk  The disk storage name
-     * @param  string $path  The path to the video file
+     * @param  string  $disk  The disk storage name
+     * @param  string  $path  The path to the video file
      *
      * @throws Exception If the file does not exist or other errors
      */
@@ -46,20 +45,17 @@ class VideoStream
     {
         $filesystem = Storage::disk($disk);
 
-        if (!$filesystem->exists($path)) {
+        if (! $filesystem->exists($path)) {
             throw new Exception("File does not exist at path: {$path}");
         }
 
-        $mime = $filesystem->mimeType($path);
-        if($mime==false){
-            throw new Exception('Unable to determine MIME type.');
-        }
+        Assert::string($mime = $filesystem->mimeType($path));
         $this->stream = $filesystem->readStream($path);
         $this->mime = $mime;
         $this->fileModifiedTime = $filesystem->lastModified($path);
         $this->size = $filesystem->size($path);
 
-        if (!is_string($this->mime)) {
+        if (! is_string($this->mime)) {
             throw new Exception('Unable to determine MIME type.');
         }
     }
@@ -142,14 +138,10 @@ class VideoStream
         fseek($this->stream, $this->start);
         while (! feof($this->stream) && $this->start <= $this->end) {
             $bytesToRead = min($this->bufferSize, $this->end - $this->start + 1);
-            if ($bytesToRead > 0) {
-                $data = fread($this->stream, $bytesToRead);
-                echo $data;
-                flush();
-                $this->start += $bytesToRead;
-            } else {
-                break; // Evita loop infiniti se $bytesToRead <= 0
-            }
+            $data = fread($this->stream, $bytesToRead);
+            echo $data;
+            flush();
+            $this->start += $bytesToRead;
         }
     }
 

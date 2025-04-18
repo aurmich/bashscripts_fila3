@@ -13,9 +13,8 @@ use Illuminate\Support\HtmlString;
 use Modules\Cms\Filament\Resources\MenuResource\Pages;
 use Modules\Cms\Models\Menu;
 use Modules\UI\Filament\Forms\Components\IconPicker;
-use Modules\Xot\Filament\Resources\XotBaseResource;
 
-class MenuResource extends XotBaseResource
+class MenuResource extends \Modules\Xot\Filament\Resources\XotBaseResource
 {
     protected static ?string $model = Menu::class;
 
@@ -98,12 +97,26 @@ class MenuResource extends XotBaseResource
         ];
     }
 
-    public static function getTableColumns(): array
+    public static function form(Form $form): Form
     {
-        return [
-            // Definisci qui le colonne della tabella
-        ];
+        return $form->schema(static::getFormSchema());
     }
+
+    // public static function table(Table $table): Table
+    // {
+    //     return $table
+    //         ->columns([
+    //             Tables\Columns\TextColumn::make('title'),
+    //         ])
+    //         ->actions([
+    //             Tables\Actions\ActionGroup::make([
+    //                 Tables\Actions\EditAction::make(),
+    //                 Tables\Actions\DeleteAction::make(),
+    //             ]),
+    //         ])
+    //         ->filters([])
+    //         ->bulkActions([]);
+    // }
 
     public static function getRelations(): array
     {

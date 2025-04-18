@@ -6,17 +6,14 @@ namespace Modules\User\Filament\Resources\PermissionResource\Pages;
 
 use Filament\Actions\CreateAction;
 use Filament\Forms\Components\Select;
-use Filament\Tables;
 use Filament\Tables\Actions\BulkAction;
 use Filament\Tables\Actions\DeleteBulkAction;
-use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Collection;
 use Modules\User\Filament\Resources\PermissionResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Webmozart\Assert\Assert;
-
-use Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager;
+use Filament\Tables;
 
 class ListPermissions extends XotBaseListRecords
 {
@@ -28,15 +25,21 @@ class ListPermissions extends XotBaseListRecords
     public function getListTableColumns(): array
     {
         return [
-            'name' => TextColumn::make('name')
+            'id' => Tables\Columns\TextColumn::make('id')
                 ->searchable()
                 ->sortable(),
-            'guard_name' => TextColumn::make('guard_name')
+            'name' => Tables\Columns\TextColumn::make('name')
+                ->searchable()
+                ->sortable()
+                ->wrap(),
+            'guard_name' => Tables\Columns\TextColumn::make('guard_name')
                 ->searchable()
                 ->sortable(),
-            'active' => IconColumn::make('active')
-                ->boolean(),
-            'created_at' => TextColumn::make('created_at')
+            'roles_count' => Tables\Columns\TextColumn::make('roles_count')
+                ->counts('roles')
+                ->numeric()
+                ->sortable(),
+            'created_at' => Tables\Columns\TextColumn::make('created_at')
                 ->dateTime()
                 ->sortable(),
         ];
@@ -78,26 +81,21 @@ class ListPermissions extends XotBaseListRecords
     }
 
     /**
-     * @return array<string, BulkAction>
+     * @return array<string, Tables\Actions\BulkAction>
      */
     public function getTableBulkActions(): array
     {
         Assert::classExists($roleModel = config('permission.models.role'));
 
         return [
-            'delete' => DeleteBulkAction::make(),
-            'attach_role' => BulkAction::make('Attach Role')
+            'delete' => Tables\Actions\DeleteBulkAction::make(),
+            'attach_role' => Tables\Actions\BulkAction::make('Attach Role')
                 ->action(
                     static function (Collection $collection, array $data): void {
                         foreach ($collection as $record) {
-                            // Verifichiamo che $record sia un'istanza di Model prima di procedere
-                            Assert::isInstanceOf($record, \Illuminate\Database\Eloquent\Model::class, '['.__LINE__.']['.__CLASS__.']');
-                            
-                            // Poi verifichiamo che il modello abbia il metodo roles() prima di chiamarlo
-                            if (method_exists($record, 'roles')) {
-                                $record->roles()->sync($data['role']);
-                                $record->save();
-                            }
+                            Assert::isInstanceOf($record, \Modules\Xot\Datas\XotData::make()->getUserClass(), '['.__LINE__.']['.__CLASS__.']');
+                            $record->roles()->sync($data['role']);
+                            $record->save();
                         }
                     }
                 )

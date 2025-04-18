@@ -22,13 +22,9 @@ class QueueListenWidget extends Widget
 {
     /** @var string */
     public $time = '---';
-
     public bool $run = false;
-
     protected static string $view = 'job::filament.widgets.queue-listen';
-
     protected int|string|array $columnSpan = 'full';
-
     public function begin(): void
     {
         $this->beginProcess();
@@ -40,11 +36,11 @@ class QueueListenWidget extends Widget
         $process = Process::path(base_path())
             ->start('php artisan queue:listen');
         while ($process->running()) {
-            // ...
-            $this->stream(to: 'count', content: $this->time, replace: true);
-            // Pause for 1 second between numbers...
+        // ...
+            $this->stream(to: 'count', content: $this->time, replace: true,);
+        // Pause for 1 second between numbers...
             sleep(3);
-            // se no troppe richieste
+        // se no troppe richieste
 
             $this->time .= $process->latestOutput();
         }
@@ -55,7 +51,7 @@ class QueueListenWidget extends Widget
     public function beginStream(): void
     {
         $this->run = ! $this->run;
-        // $output = new BufferedOutput();
+// $output = new BufferedOutput();
         /*
         $output = new class() extends StreamOutput {
             public function __construct()
@@ -81,10 +77,10 @@ class QueueListenWidget extends Widget
         */
         $resource = fopen('php://stdout', 'w');
         if ($resource === false) {
-            throw new Exception('['.__LINE__.']['.class_basename($this).']');
+            throw new Exception('[' . __LINE__ . '][' . class_basename($this) . ']');
         }
         $output = new StreamOutput($resource);
-        // $output = new StreamOutput(fopen('/path/to/output.log', 'a', false));
+// $output = new StreamOutput(fopen('/path/to/output.log', 'a', false));
 
         Artisan::call('route:list', [], $output);
         dddx($output);

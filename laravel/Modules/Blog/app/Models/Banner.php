@@ -23,8 +23,6 @@ use Spatie\Translatable\HasTranslations;
  * @property string|null                     $created_by
  * @property \Illuminate\Support\Carbon|null $deleted_at
  * @property string|null                     $deleted_by
- * @property array|null                      $category_dict
- * @property string|null                     $slug
  *
  * @method static \Modules\Blog\Database\Factories\MenuFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|Menu   newModelQuery()
@@ -82,23 +80,37 @@ use Spatie\Translatable\HasTranslations;
 class Banner extends BaseModel implements HasMedia
 {
     use InteractsWithMedia;
-    use HasTranslations;
+    // use HasTranslations;
 
     /** @var list<string> */
     protected $fillable = [
-        'link',
-        'title',
-        'description',
-        'action_text',
+        // "id", //: 40,
+        // "desktop_thumbnail",//: "https://My_Company-media-production.s3.amazonaws.com/cache/7a/9c/7a9c8f672e3499d573f24901280952f3.jpg",
+        // "mobile_thumbnail",//: "https://My_Company-media-production.s3.amazonaws.com/cache/0d/0c/0d0cf75bd794283b4606e85cc30f0045.jpg",
+        // "desktop_thumbnail_webp",//: "https://My_Company-media-production.s3.amazonaws.com/cache/64/3f/643f313db56c3735d15ae3eb1c27d5ad.webp",
+        // "mobile_thumbnail_webp",//: "https://My_Company-media-production.s3.amazonaws.com/cache/14/8c/148c10ea338dfbe1bbd329e551afbfcf.webp",
+        'link', // : "https://My_Company.com/q/category/99/usa",
+        'title', // : "American Politics",
+        'description', // : "Congress, White House, Elections and more",
+        'action_text', // : "Make Your Forecasts",
         'category_id',
-        'start_date',
-        'end_date',
-        'hot_topic',
-        'open_markets_count',
-        'landing_banner',
+        /*
+        "category",//: 99,
+        "category_dict": {
+            "id": 99,
+            "title": "USA",
+            "slug": "usa",
+            "parent": 98,
+            "in_leaderboard": false,
+            "icon": null
+        },
+        */
+        'start_date', // : null,
+        'end_date', // : null,
+        'hot_topic', // : false,
+        'open_markets_count', // : 119,
+        'landing_banner', // : false
         'pos',
-        'slug',
-        'category_dict',
     ];
 
     /** @var list<string> */
@@ -109,34 +121,14 @@ class Banner extends BaseModel implements HasMedia
         'mobile_thumbnail_webp',
     ];
 
-    /** @var array<int, string> */
-    public $translatable = [
-        'title',
-        'description',
-        'action_text'
-    ];
-
-    /** @var array<string, mixed> */
-    protected $casts = [
-        'id' => 'string',
-        'uuid' => 'string',
-        'desktop_thumbnail' => 'string',
-        'mobile_thumbnail' => 'string',
-        'desktop_thumbnail_webp' => 'string',
-        'mobile_thumbnail_webp' => 'string',
-        'link' => 'string',
-        'title' => 'string',
-        'description' => 'string',
-        'action_text' => 'string',
-        'category_id' => 'string',
-        'category_dict' => 'array',
-        'start_date' => 'datetime',
-        'end_date' => 'datetime',
-        'hot_topic' => 'boolean',
-        'open_markets_count' => 'integer',
-        'landing_banner' => 'boolean',
-        'slug' => 'string',
-    ];
+    // /**
+    //  * @var array<int, string>
+    //  */
+    // public $translatable = [
+    //   'title',
+    //   'short_description',
+    //   'action_text'
+    // ];
 
     /**
      * https://dev.to/npesado/convert-images-to-webp-4i06.
@@ -185,6 +177,40 @@ class Banner extends BaseModel implements HasMedia
         }
 
         return route('category.view', ['lang' => app()->getLocale(), 'slug' => $this->category->slug]);
+    }
+
+    /** @return array<string, string> */
+    protected function casts(): array
+    {
+        return [
+            'id' => 'string',
+            'uuid' => 'string',
+            'desktop_thumbnail' => 'string',
+            'mobile_thumbnail' => 'string',
+            'desktop_thumbnail_webp' => 'string',
+            'mobile_thumbnail_webp' => 'string',
+            'link' => 'string',
+            'title' => 'string',
+            'description' => 'string',
+            'action_text' => 'string',
+            'category_id' => 'string',
+            /*
+        "category",//: 99,
+        "category_dict": {
+            "id": 99,
+            "title": "USA",
+            "slug": "usa",
+            "parent": 98,
+            "in_leaderboard": false,
+            "icon": null
+        },
+        */
+            'start_date' => 'datetime',
+            'end_date' => 'datetime',
+            'hot_topic' => 'boolean',
+            'open_markets_count' => 'integer',
+            'landing_banner' => 'boolean',
+        ];
     }
 }
 

@@ -10,7 +10,6 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
 
 class FakeSeederAction
 {
@@ -23,8 +22,8 @@ class FakeSeederAction
     /**
      * Execute the fake data seeding process.
      *
-     * @param class-string<Model> $modelClass The fully qualified model class name
-     * @param int<1, max>         $qty        Number of records to generate
+     * @param  class-string<Model>  $modelClass  The fully qualified model class name
+     * @param  int<1, max>  $qty  Number of records to generate
      *
      * @throws \InvalidArgumentException When model class is invalid
      */
@@ -63,7 +62,7 @@ class FakeSeederAction
     /**
      * Get the model factory.
      *
-     * @param class-string<Model> $modelClass
+     * @param  class-string<Model>  $modelClass
      *
      * @throws \RuntimeException
      */
@@ -79,8 +78,8 @@ class FakeSeederAction
     /**
      * Send a notification about the seeding completion.
      *
-     * @param class-string<Model> $modelClass
-     * @param int<1, max>         $count
+     * @param  class-string<Model>  $modelClass
+     * @param  int<1, max>  $count
      */
     private function sendNotification(string $modelClass, int $count): void
     {
@@ -91,8 +90,8 @@ class FakeSeederAction
     /**
      * Queue remaining records for processing.
      *
-     * @param class-string<Model> $modelClass
-     * @param int<1, max>         $qty
+     * @param  class-string<Model>  $modelClass
+     * @param  int<1, max>  $qty
      */
     private function queueRemainingRecords(string $modelClass, int $qty): void
     {
@@ -102,15 +101,5 @@ class FakeSeederAction
         app(self::class)
             ->onQueue()
             ->execute($modelClass, $qty - self::MAX_RECORDS);
-    }
-
-    private function getTableName(string $modelClass): string
-    {
-        Assert::classExists($modelClass, 'La classe del modello deve esistere');
-        
-        /** @var \Illuminate\Database\Eloquent\Model */
-        $model = app($modelClass);
-        
-        return $model->getTable();
     }
 }

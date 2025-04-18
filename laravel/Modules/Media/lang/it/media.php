@@ -1,18 +1,17 @@
 <?php
 
+declare(strict_types=1);
+
 return [
+    // 'resources' => 'Risorse',
     'pages' => 'Pagine',
     'widgets' => 'Widgets',
     'navigation' => [
         'name' => 'Media',
         'plural' => 'Media',
         'group' => [
-            'name' => 'Sistema',
-            'description' => 'Gestione dei file multimediali',
+            'name' => '',
         ],
-        'label' => 'media',
-        'sort' => 20,
-        'icon' => 'media-main-animated',
     ],
     'fields' => [
         'name' => 'Nome',

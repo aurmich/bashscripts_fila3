@@ -4,12 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\SocialProviderResource\Pages;
 
+use Filament\Tables\Actions\DeleteBulkAction;
+use Filament\Tables\Actions\EditAction;
+use Filament\Tables\Actions\ViewAction;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Columns\ViewColumn;
 use Modules\User\Filament\Resources\SocialProviderResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
-
-
 
 /**
  * --.
@@ -17,6 +19,8 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 class ListSocialProviders extends XotBaseListRecords
 {
     protected static string $resource = SocialProviderResource::class;
+
+    
 
     public function getListTableColumns(): array
     {
@@ -52,11 +56,13 @@ class ListSocialProviders extends XotBaseListRecords
     public function getTableFilters(): array
     {
         return [
-            'active' => \Filament\Tables\Filters\SelectFilter::make('active')
+            'active'=>\Filament\Tables\Filters\SelectFilter::make('active')
                 ->options([
                     true => 'Active',
                     false => 'Inactive',
                 ]),
         ];
     }
+
+   
 }

@@ -25,7 +25,9 @@ move_config() {
   fi
 }
 
-# Esegui le operazioni per ogni cartella
+
+
+
 move_config "App"
 move_config "Config"
 move_config "Database"

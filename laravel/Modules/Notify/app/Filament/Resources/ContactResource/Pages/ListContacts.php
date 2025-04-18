@@ -4,15 +4,20 @@ declare(strict_types=1);
 
 namespace Modules\Notify\Filament\Resources\ContactResource\Pages;
 
-use Filament\Tables;
-use Filament\Tables\Columns\IconColumn;
+use Filament\Tables\Table;
+use Filament\Actions\CreateAction;
+use Modules\UI\Enums\TableLayoutEnum;
+use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Filters\Filter;
-use Illuminate\Database\Eloquent\Builder;
-use Modules\Notify\Filament\Resources\ContactResource;
+use Filament\Tables\Columns\IconColumn;
+use Filament\Tables\Enums\FiltersLayout;
+use Filament\Resources\Pages\ListRecords;
+use Filament\Tables\Enums\ActionsPosition;
+use Modules\Xot\Filament\Traits\HasXotTable;
+use Filament\Tables\Actions\DeleteBulkAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
-use Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager;
-
+use Modules\Notify\Filament\Resources\ContactResource;
+use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
 
 class ListContacts extends XotBaseListRecords
 {
@@ -47,17 +52,30 @@ class ListContacts extends XotBaseListRecords
         ];
     }
 
-    public function getTableFilters(): array
+    /**
+     * Undocumented function
+     *
+     * @return array<\Filament\Tables\Actions\Action|\Filament\Tables\Actions\ActionGroup>
+     */
+    public function getTableActions(): array
     {
         return [
-            'active' => Filter::make('active')
-                ->query(function (Builder $query): Builder {
-                    return $query->where('active', true);
-                }),
-            'inactive' => Filter::make('inactive')
-                ->query(function (Builder $query): Builder {
-                    return $query->where('active', false);
-                }),
+            EditAction::make()
+                ->label(''),
+        ];
+    }
+
+    public function getTableBulkActions(): array
+    {
+        return [
+            DeleteBulkAction::make(),
+        ];
+    }
+
+    protected function getHeaderActions(): array
+    {
+        return [
+            CreateAction::make(),
         ];
     }
 }

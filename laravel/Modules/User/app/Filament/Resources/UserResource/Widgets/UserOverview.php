@@ -7,15 +7,6 @@ namespace Modules\User\Filament\Resources\UserResource\Widgets;
 use Filament\Widgets\Widget;
 use Illuminate\Database\Eloquent\Model;
 
-
-
-
-use Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager;
-
-
-
-
-
 class UserOverview extends Widget
 {
     public ?Model $record = null;

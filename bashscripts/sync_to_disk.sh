@@ -7,7 +7,7 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
-DISK_NAME=$1
+DISK_NAME="$1"
 TIMESTAMP=$(date +"%Y%m%d-%H%M")  # Formato YYYYMMDD-HHMM
 ARCHIVE_NAME="$(basename "$PWD")_$TIMESTAMP.tar.gz"
 
@@ -17,17 +17,43 @@ DEST_PATH="/mnt/$DISK_NAME/var/www/html/_bases/$ARCHIVE_NAME"
 
 echo "🚀 Avvio sincronizzazione: $PWD → $DEST_PATH"
 
-# 🗑️ Rimuove i file inutili (*:Zone.Identifier)
+# 🧹 Pulizia file temporanei inutili (*:Zone.Identifier)
 echo "🧹 Pulizia file temporanei..."
 find . -type f -name "*:Zone.Identifier" -delete
 
 # 📦 Creazione dell'archivio tar.gz con esclusioni
 echo "📝 Creazione dell'archivio: $TEMP_PATH"
-tar -czf "$TEMP_PATH" --exclude='.git' --exclude='build' --exclude='cache' --exclude='storage' \
-    --exclude='venv' --exclude='node_modules' --exclude='vendor' .
+tar -czf "$TEMP_PATH" \
+    --exclude='.git' \
+    --exclude='build' \
+    --exclude='cache' \
+    --exclude='storage' \
+    --exclude='venv' \
+    --exclude='node_modules' \
+    --exclude='vendor' \
+    --exclude='*.log' \
+    --exclude='*.tmp' \
+    --exclude='*.bak' \
+    --exclude='*.swp' \
+    --exclude='*.DS_Store' \
+    --exclude='public_html' \
+    --exclude='*.phar' \
+    --exclude='img' \
+    --exclude='*.cache' \
+    --exclude='.git-rewrite' \
+    --exclude='svg' \
+    --exclude='package-lock.json' \
+    --exclude='*.lock' \
+    . || { echo "❌ Errore nella creazione dell'archivio"; exit 1; }
 
-# 📂 Copia dell’archivio sul disco
-echo "📁 Copia dell’archivio su: $DEST_PATH"
+# 📁 Copia dell’archivio sul disco
+echo "📤 Trasferimento dell'archivio a $DEST_PATH"
 cp "$TEMP_PATH" "$DEST_PATH" || { echo "❌ Errore durante la copia"; exit 1; }
 
-echo "✅ Sincronizzazione completata con successo!"
+echo "✅ Archivio creato e trasferito con successo: $DEST_PATH"
+
+# 🛠️ Normalizzazione dello script stesso (opzionale)
+me=$(readlink -f -- "$0")
+sed -i -e 's/\r$//' "$me"
+
+echo "✅ Sincronizzazione completata!"

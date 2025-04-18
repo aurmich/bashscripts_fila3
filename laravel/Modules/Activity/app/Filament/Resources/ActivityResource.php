@@ -31,6 +31,7 @@ class ActivityResource extends XotBaseResource
     /**
      * Define the form schema for the Activity resource.
      *
+     * @return array The form schema configuration
      */
     public static function getFormSchema(): array
     {

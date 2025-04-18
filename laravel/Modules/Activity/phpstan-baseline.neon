@@ -1,0 +1,1189 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Call to static method make\(\) on an unknown class Filament\\Forms\\Components\\KeyValue\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Filament/Resources/ActivityResource.php
+
+		-
+			message: '#^Call to static method make\(\) on an unknown class Filament\\Forms\\Components\\TextInput\.$#'
+			identifier: class.notFound
+			count: 7
+			path: app/Filament/Resources/ActivityResource.php
+
+		-
+			message: '#^Method Modules\\Activity\\Filament\\Resources\\ActivityResource\:\:getFormSchema\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Filament/Resources/ActivityResource.php
+
+		-
+			message: '#^Call to static method make\(\) on an unknown class Filament\\Actions\\DeleteAction\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Filament/Resources/ActivityResource/Pages/EditActivity.php
+
+		-
+			message: '#^Method Modules\\Activity\\Filament\\Resources\\ActivityResource\\Pages\\EditActivity\:\:getHeaderActions\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Filament/Resources/ActivityResource/Pages/EditActivity.php
+
+		-
+			message: '#^Call to static method make\(\) on an unknown class Filament\\Tables\\Columns\\TextColumn\.$#'
+			identifier: class.notFound
+			count: 7
+			path: app/Filament/Resources/ActivityResource/Pages/ListActivities.php
+
+		-
+			message: '#^Method Modules\\Activity\\Filament\\Resources\\ActivityResource\\Pages\\ListActivities\:\:getListTableColumns\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Filament/Resources/ActivityResource/Pages/ListActivities.php
+
+		-
+			message: '#^Call to an undefined static method Modules\\Activity\\Filament\\Resources\\SnapshotResource\\Pages\\CreateSnapshot\:\:route\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: app/Filament/Resources/SnapshotResource.php
+
+		-
+			message: '#^Call to an undefined static method Modules\\Activity\\Filament\\Resources\\SnapshotResource\\Pages\\EditSnapshot\:\:route\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: app/Filament/Resources/SnapshotResource.php
+
+		-
+			message: '#^Call to an undefined static method Modules\\Activity\\Filament\\Resources\\SnapshotResource\\Pages\\ListSnapshots\:\:route\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: app/Filament/Resources/SnapshotResource.php
+
+		-
+			message: '#^Call to static method make\(\) on an unknown class Filament\\Forms\\Components\\KeyValue\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Filament/Resources/SnapshotResource.php
+
+		-
+			message: '#^Call to static method make\(\) on an unknown class Filament\\Forms\\Components\\TextInput\.$#'
+			identifier: class.notFound
+			count: 4
+			path: app/Filament/Resources/SnapshotResource.php
+
+		-
+			message: '#^Method Modules\\Activity\\Filament\\Resources\\SnapshotResource\:\:getFormSchema\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Filament/Resources/SnapshotResource.php
+
+		-
+			message: '#^Method Modules\\Activity\\Filament\\Resources\\SnapshotResource\:\:getPages\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Filament/Resources/SnapshotResource.php
+
+		-
+			message: '#^Method Modules\\Activity\\Filament\\Resources\\SnapshotResource\:\:getRelations\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Filament/Resources/SnapshotResource.php
+
+		-
+			message: '#^Call to static method make\(\) on an unknown class Filament\\Tables\\Actions\\DeleteAction\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Filament/Resources/SnapshotResource/Pages/ListSnapshots.php
+
+		-
+			message: '#^Call to static method make\(\) on an unknown class Filament\\Tables\\Actions\\DeleteBulkAction\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Filament/Resources/SnapshotResource/Pages/ListSnapshots.php
+
+		-
+			message: '#^Call to static method make\(\) on an unknown class Filament\\Tables\\Actions\\EditAction\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Filament/Resources/SnapshotResource/Pages/ListSnapshots.php
+
+		-
+			message: '#^Call to static method make\(\) on an unknown class Filament\\Tables\\Actions\\ViewAction\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Filament/Resources/SnapshotResource/Pages/ListSnapshots.php
+
+		-
+			message: '#^Call to static method make\(\) on an unknown class Filament\\Tables\\Columns\\TextColumn\.$#'
+			identifier: class.notFound
+			count: 5
+			path: app/Filament/Resources/SnapshotResource/Pages/ListSnapshots.php
+
+		-
+			message: '#^Call to static method make\(\) on an unknown class Filament\\Tables\\Filters\\SelectFilter\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Filament/Resources/SnapshotResource/Pages/ListSnapshots.php
+
+		-
+			message: '#^Method Modules\\Activity\\Filament\\Resources\\SnapshotResource\\Pages\\ListSnapshots\:\:getListTableColumns\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Filament/Resources/SnapshotResource/Pages/ListSnapshots.php
+
+		-
+			message: '#^Method Modules\\Activity\\Filament\\Resources\\SnapshotResource\\Pages\\ListSnapshots\:\:getTableActions\(\) has invalid return type Filament\\Tables\\Actions\\Action\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Filament/Resources/SnapshotResource/Pages/ListSnapshots.php
+
+		-
+			message: '#^Method Modules\\Activity\\Filament\\Resources\\SnapshotResource\\Pages\\ListSnapshots\:\:getTableActions\(\) has invalid return type Filament\\Tables\\Actions\\ActionGroup\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Filament/Resources/SnapshotResource/Pages/ListSnapshots.php
+
+		-
+			message: '#^Method Modules\\Activity\\Filament\\Resources\\SnapshotResource\\Pages\\ListSnapshots\:\:getTableBulkActions\(\) has invalid return type Filament\\Tables\\Actions\\BulkAction\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Filament/Resources/SnapshotResource/Pages/ListSnapshots.php
+
+		-
+			message: '#^Method Modules\\Activity\\Filament\\Resources\\SnapshotResource\\Pages\\ListSnapshots\:\:getTableFilters\(\) has invalid return type Filament\\Tables\\Filters\\BaseFilter\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Filament/Resources/SnapshotResource/Pages/ListSnapshots.php
+
+		-
+			message: '#^Call to an undefined static method Modules\\Activity\\Filament\\Resources\\StoredEventResource\\Pages\\CreateStoredEvent\:\:route\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: app/Filament/Resources/StoredEventResource.php
+
+		-
+			message: '#^Call to an undefined static method Modules\\Activity\\Filament\\Resources\\StoredEventResource\\Pages\\EditStoredEvent\:\:route\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: app/Filament/Resources/StoredEventResource.php
+
+		-
+			message: '#^Call to an undefined static method Modules\\Activity\\Filament\\Resources\\StoredEventResource\\Pages\\ListStoredEvents\:\:route\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: app/Filament/Resources/StoredEventResource.php
+
+		-
+			message: '#^Call to static method make\(\) on an unknown class Filament\\Forms\\Components\\DateTimePicker\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Filament/Resources/StoredEventResource.php
+
+		-
+			message: '#^Call to static method make\(\) on an unknown class Filament\\Forms\\Components\\KeyValue\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Filament/Resources/StoredEventResource.php
+
+		-
+			message: '#^Call to static method make\(\) on an unknown class Filament\\Forms\\Components\\TextInput\.$#'
+			identifier: class.notFound
+			count: 3
+			path: app/Filament/Resources/StoredEventResource.php
+
+		-
+			message: '#^Call to static method make\(\) on an unknown class Filament\\Forms\\Components\\Textarea\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Filament/Resources/StoredEventResource.php
+
+		-
+			message: '#^Method Modules\\Activity\\Filament\\Resources\\StoredEventResource\:\:getFormSchema\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Filament/Resources/StoredEventResource.php
+
+		-
+			message: '#^Method Modules\\Activity\\Filament\\Resources\\StoredEventResource\:\:getPages\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Filament/Resources/StoredEventResource.php
+
+		-
+			message: '#^Method Modules\\Activity\\Filament\\Resources\\StoredEventResource\:\:getRelations\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Filament/Resources/StoredEventResource.php
+
+		-
+			message: '#^Call to static method make\(\) on an unknown class Filament\\Tables\\Columns\\TextColumn\.$#'
+			identifier: class.notFound
+			count: 2
+			path: app/Filament/Resources/StoredEventResource/Pages/ListStoredEvents.php
+
+		-
+			message: '#^Call to static method make\(\) on an unknown class Filament\\Tables\\Columns\\ViewColumn\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Filament/Resources/StoredEventResource/Pages/ListStoredEvents.php
+
+		-
+			message: '#^Method Modules\\Activity\\Filament\\Resources\\StoredEventResource\\Pages\\ListStoredEvents\:\:getListTableColumns\(\) has invalid return type Filament\\Tables\\Columns\\Column\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Filament/Resources/StoredEventResource/Pages/ListStoredEvents.php
+
+		-
+			message: '#^Parameter \$event of method Modules\\Activity\\Listeners\\LoginListener\:\:handle\(\) has invalid type Illuminate\\Auth\\Events\\Login\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Listeners/LoginListener.php
+
+		-
+			message: '#^Parameter \$event of method Modules\\Activity\\Listeners\\LogoutListener\:\:handle\(\) has invalid type Illuminate\\Auth\\Events\\Logout\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Listeners/LogoutListener.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Activity\:\:causedBy\(\) parameter \#1 \$causer contains unknown class Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Activity\:\:causedBy\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Activity\:\:forBatch\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Activity\:\:forEvent\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Activity\:\:forSubject\(\) parameter \#1 \$subject contains unknown class Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Activity\:\:forSubject\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Activity\:\:hasBatch\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Activity\:\:inLog\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Activity\:\:newModelQuery\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Activity\:\:newQuery\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Activity\:\:query\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Activity\:\:whereBatchUuid\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Activity\:\:whereCauserId\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Activity\:\:whereCauserType\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Activity\:\:whereCreatedAt\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Activity\:\:whereCreatedBy\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Activity\:\:whereDeletedAt\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Activity\:\:whereDeletedBy\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Activity\:\:whereDescription\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Activity\:\:whereEvent\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Activity\:\:whereId\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Activity\:\:whereLogName\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Activity\:\:whereProperties\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Activity\:\:whereSubjectId\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Activity\:\:whereSubjectType\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Activity\:\:whereUpdatedAt\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Activity\:\:whereUpdatedBy\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @mixin contains unknown class Eloquent\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @property for property Modules\\Activity\\Models\\Activity\:\:\$created_at contains unknown class Illuminate\\Support\\Carbon\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @property for property Modules\\Activity\\Models\\Activity\:\:\$properties contains unknown class Illuminate\\Support\\Collection\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @property for property Modules\\Activity\\Models\\Activity\:\:\$updated_at contains unknown class Illuminate\\Support\\Carbon\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @property\-read for property Modules\\Activity\\Models\\Activity\:\:\$causer contains unknown class Eloquent\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @property\-read for property Modules\\Activity\\Models\\Activity\:\:\$causer contains unknown class Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @property\-read for property Modules\\Activity\\Models\\Activity\:\:\$changes contains unknown class Illuminate\\Support\\Collection\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @property\-read for property Modules\\Activity\\Models\\Activity\:\:\$subject contains unknown class Eloquent\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^PHPDoc tag @property\-read for property Modules\\Activity\\Models\\Activity\:\:\$subject contains unknown class Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^Property Modules\\Activity\\Models\\Activity\:\:\$connection has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: app/Models/Activity.php
+
+		-
+			message: '#^Class Modules\\Xot\\Actions\\Factory\\GetFactoryAction not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/BaseModel.php
+
+		-
+			message: '#^Function app not found\.$#'
+			identifier: function.notFound
+			count: 1
+			path: app/Models/BaseModel.php
+
+		-
+			message: '#^Method Modules\\Activity\\Models\\BaseModel\:\:newFactory\(\) has invalid return type Illuminate\\Database\\Eloquent\\Factories\\Factory\.$#'
+			identifier: class.notFound
+			count: 2
+			path: app/Models/BaseModel.php
+
+		-
+			message: '#^Property Modules\\Activity\\Models\\BaseModel\:\:\$connection has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: app/Models/BaseModel.php
+
+		-
+			message: '#^Property Modules\\Activity\\Models\\BaseModel\:\:\$incrementing has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: app/Models/BaseModel.php
+
+		-
+			message: '#^Property Modules\\Activity\\Models\\BaseModel\:\:\$keyType has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: app/Models/BaseModel.php
+
+		-
+			message: '#^Property Modules\\Activity\\Models\\BaseModel\:\:\$perPage has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: app/Models/BaseModel.php
+
+		-
+			message: '#^Property Modules\\Activity\\Models\\BaseModel\:\:\$primaryKey has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: app/Models/BaseModel.php
+
+		-
+			message: '#^Property Modules\\Activity\\Models\\BaseModel\:\:\$timestamps has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: app/Models/BaseModel.php
+
+		-
+			message: '#^Class Modules\\Activity\\Models\\Snapshot has PHPDoc tag @property for property \$state with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Models/Snapshot.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Snapshot\:\:newModelQuery\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Snapshot.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Snapshot\:\:newQuery\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Snapshot.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Snapshot\:\:query\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Snapshot.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Snapshot\:\:uuid\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Snapshot.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Snapshot\:\:whereAggregateUuid\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Snapshot.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Snapshot\:\:whereAggregateVersion\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Snapshot.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Snapshot\:\:whereCreatedAt\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Snapshot.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Snapshot\:\:whereCreatedBy\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Snapshot.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Snapshot\:\:whereId\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Snapshot.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Snapshot\:\:whereState\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Snapshot.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Snapshot\:\:whereUpdatedAt\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Snapshot.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\Snapshot\:\:whereUpdatedBy\(\) return type contains unknown class Illuminate\\Database\\Eloquent\\Builder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Snapshot.php
+
+		-
+			message: '#^PHPDoc tag @mixin contains unknown class Eloquent\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Snapshot.php
+
+		-
+			message: '#^PHPDoc tag @property for property Modules\\Activity\\Models\\Snapshot\:\:\$created_at contains unknown class Illuminate\\Support\\Carbon\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Snapshot.php
+
+		-
+			message: '#^PHPDoc tag @property for property Modules\\Activity\\Models\\Snapshot\:\:\$updated_at contains unknown class Illuminate\\Support\\Carbon\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Snapshot.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\StoredEvent\:\:afterVersion\(\) return type contains unknown class Spatie\\EventSourcing\\StoredEvents\\Models\\EloquentStoredEventQueryBuilder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/StoredEvent.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\StoredEvent\:\:all\(\) return type contains unknown class Spatie\\EventSourcing\\StoredEvents\\Models\\EloquentStoredEvent\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/StoredEvent.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\StoredEvent\:\:all\(\) return type contains unknown class Spatie\\EventSourcing\\StoredEvents\\Models\\EloquentStoredEventCollection\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/StoredEvent.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\StoredEvent\:\:get\(\) return type contains unknown class Spatie\\EventSourcing\\StoredEvents\\Models\\EloquentStoredEvent\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/StoredEvent.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\StoredEvent\:\:get\(\) return type contains unknown class Spatie\\EventSourcing\\StoredEvents\\Models\\EloquentStoredEventCollection\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/StoredEvent.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\StoredEvent\:\:lastEvent\(\) return type contains unknown class Spatie\\EventSourcing\\StoredEvents\\Models\\EloquentStoredEventQueryBuilder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/StoredEvent.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\StoredEvent\:\:newModelQuery\(\) return type contains unknown class Spatie\\EventSourcing\\StoredEvents\\Models\\EloquentStoredEventQueryBuilder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/StoredEvent.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\StoredEvent\:\:newQuery\(\) return type contains unknown class Spatie\\EventSourcing\\StoredEvents\\Models\\EloquentStoredEventQueryBuilder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/StoredEvent.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\StoredEvent\:\:query\(\) return type contains unknown class Spatie\\EventSourcing\\StoredEvents\\Models\\EloquentStoredEventQueryBuilder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/StoredEvent.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\StoredEvent\:\:startingFrom\(\) return type contains unknown class Spatie\\EventSourcing\\StoredEvents\\Models\\EloquentStoredEventQueryBuilder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/StoredEvent.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\StoredEvent\:\:whereAggregateRoot\(\) return type contains unknown class Spatie\\EventSourcing\\StoredEvents\\Models\\EloquentStoredEventQueryBuilder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/StoredEvent.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\StoredEvent\:\:whereAggregateUuid\(\) return type contains unknown class Spatie\\EventSourcing\\StoredEvents\\Models\\EloquentStoredEventQueryBuilder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/StoredEvent.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\StoredEvent\:\:whereAggregateVersion\(\) return type contains unknown class Spatie\\EventSourcing\\StoredEvents\\Models\\EloquentStoredEventQueryBuilder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/StoredEvent.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\StoredEvent\:\:whereCreatedAt\(\) return type contains unknown class Spatie\\EventSourcing\\StoredEvents\\Models\\EloquentStoredEventQueryBuilder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/StoredEvent.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\StoredEvent\:\:whereCreatedBy\(\) return type contains unknown class Spatie\\EventSourcing\\StoredEvents\\Models\\EloquentStoredEventQueryBuilder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/StoredEvent.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\StoredEvent\:\:whereEvent\(\) return type contains unknown class Spatie\\EventSourcing\\StoredEvents\\Models\\EloquentStoredEventQueryBuilder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/StoredEvent.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\StoredEvent\:\:whereEventClass\(\) return type contains unknown class Spatie\\EventSourcing\\StoredEvents\\Models\\EloquentStoredEventQueryBuilder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/StoredEvent.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\StoredEvent\:\:whereEventProperties\(\) return type contains unknown class Spatie\\EventSourcing\\StoredEvents\\Models\\EloquentStoredEventQueryBuilder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/StoredEvent.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\StoredEvent\:\:whereEventVersion\(\) return type contains unknown class Spatie\\EventSourcing\\StoredEvents\\Models\\EloquentStoredEventQueryBuilder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/StoredEvent.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\StoredEvent\:\:whereId\(\) return type contains unknown class Spatie\\EventSourcing\\StoredEvents\\Models\\EloquentStoredEventQueryBuilder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/StoredEvent.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\StoredEvent\:\:whereMetaData\(\) return type contains unknown class Spatie\\EventSourcing\\StoredEvents\\Models\\EloquentStoredEventQueryBuilder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/StoredEvent.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\StoredEvent\:\:wherePropertyIs\(\) return type contains unknown class Spatie\\EventSourcing\\StoredEvents\\Models\\EloquentStoredEventQueryBuilder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/StoredEvent.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\StoredEvent\:\:wherePropertyIsNot\(\) return type contains unknown class Spatie\\EventSourcing\\StoredEvents\\Models\\EloquentStoredEventQueryBuilder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/StoredEvent.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\StoredEvent\:\:whereUpdatedBy\(\) return type contains unknown class Spatie\\EventSourcing\\StoredEvents\\Models\\EloquentStoredEventQueryBuilder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/StoredEvent.php
+
+		-
+			message: '#^PHPDoc tag @method for method Modules\\Activity\\Models\\StoredEvent\:\:withMetaDataAttributes\(\) return type contains unknown class Spatie\\EventSourcing\\StoredEvents\\Models\\EloquentStoredEventQueryBuilder\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/StoredEvent.php
+
+		-
+			message: '#^PHPDoc tag @mixin contains unknown class Eloquent\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/StoredEvent.php
+
+		-
+			message: '#^PHPDoc tag @property for property Modules\\Activity\\Models\\StoredEvent\:\:\$meta_data contains unknown class Spatie\\SchemalessAttributes\\SchemalessAttributes\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/StoredEvent.php
+
+		-
+			message: '#^PHPDoc tag @property\-read for property Modules\\Activity\\Models\\StoredEvent\:\:\$event contains unknown class Spatie\\EventSourcing\\StoredEvents\\ShouldBeStored\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/StoredEvent.php
+
+		-
+			message: '#^Property Modules\\Activity\\Models\\StoredEvent\:\:\$table has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: app/Models/StoredEvent.php
+
+		-
+			message: '#^Modules\\Activity\\Providers\\ActivityServiceProvider\:\:boot\(\) calls parent\:\:boot\(\) but Modules\\Activity\\Providers\\ActivityServiceProvider does not extend any class\.$#'
+			identifier: class.noParent
+			count: 1
+			path: app/Providers/ActivityServiceProvider.php
+
+		-
+			message: '#^Modules\\Activity\\Providers\\ActivityServiceProvider\:\:register\(\) calls parent\:\:register\(\) but Modules\\Activity\\Providers\\ActivityServiceProvider does not extend any class\.$#'
+			identifier: class.noParent
+			count: 1
+			path: app/Providers/ActivityServiceProvider.php
+
+		-
+			message: '#^Class Illuminate\\Auth\\Events\\Login not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Providers/EventServiceProvider.php
+
+		-
+			message: '#^Class Illuminate\\Auth\\Events\\Logout not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Providers/EventServiceProvider.php
+
+		-
+			message: '#^Method Modules\\Activity\\Providers\\Filament\\AdminPanelProvider\:\:panel\(\) has invalid return type Filament\\Panel\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Providers/Filament/AdminPanelProvider.php
+
+		-
+			message: '#^Modules\\Activity\\Providers\\Filament\\AdminPanelProvider\:\:panel\(\) calls parent\:\:panel\(\) but Modules\\Activity\\Providers\\Filament\\AdminPanelProvider does not extend any class\.$#'
+			identifier: class.noParent
+			count: 1
+			path: app/Providers/Filament/AdminPanelProvider.php
+
+		-
+			message: '#^Parameter \$panel of method Modules\\Activity\\Providers\\Filament\\AdminPanelProvider\:\:panel\(\) has invalid type Filament\\Panel\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Providers/Filament/AdminPanelProvider.php
+
+		-
+			message: '#^Call to an undefined method Modules\\Xot\\Database\\Migrations\\XotBaseMigration@anonymous/database/migrations/2023_03_31_103350_create_activity_table\.php\:8\:\:tableCreate\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: database/migrations/2023_03_31_103350_create_activity_table.php
+
+		-
+			message: '#^Call to an undefined method Modules\\Xot\\Database\\Migrations\\XotBaseMigration@anonymous/database/migrations/2023_03_31_103350_create_activity_table\.php\:8\:\:tableUpdate\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: database/migrations/2023_03_31_103350_create_activity_table.php
+
+		-
+			message: '#^Call to an undefined method Modules\\Xot\\Database\\Migrations\\XotBaseMigration@anonymous/database/migrations/2023_03_31_103350_create_activity_table\.php\:8\:\:updateTimestamps\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: database/migrations/2023_03_31_103350_create_activity_table.php
+
+		-
+			message: '#^Call to method bigIncrements\(\) on an unknown class Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 1
+			path: database/migrations/2023_03_31_103350_create_activity_table.php
+
+		-
+			message: '#^Call to method index\(\) on an unknown class Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 1
+			path: database/migrations/2023_03_31_103350_create_activity_table.php
+
+		-
+			message: '#^Call to method json\(\) on an unknown class Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 1
+			path: database/migrations/2023_03_31_103350_create_activity_table.php
+
+		-
+			message: '#^Call to method nullableMorphs\(\) on an unknown class Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 2
+			path: database/migrations/2023_03_31_103350_create_activity_table.php
+
+		-
+			message: '#^Call to method string\(\) on an unknown class Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 2
+			path: database/migrations/2023_03_31_103350_create_activity_table.php
+
+		-
+			message: '#^Call to method text\(\) on an unknown class Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 1
+			path: database/migrations/2023_03_31_103350_create_activity_table.php
+
+		-
+			message: '#^Call to method uuid\(\) on an unknown class Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 1
+			path: database/migrations/2023_03_31_103350_create_activity_table.php
+
+		-
+			message: '#^Parameter \$table of anonymous function has invalid type Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 2
+			path: database/migrations/2023_03_31_103350_create_activity_table.php
+
+		-
+			message: '#^Call to an undefined method Modules\\Xot\\Database\\Migrations\\XotBaseMigration@anonymous/database/migrations/2023_10_30_103350_create_stored_events_table\.php\:8\:\:tableCreate\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: database/migrations/2023_10_30_103350_create_stored_events_table.php
+
+		-
+			message: '#^Call to an undefined method Modules\\Xot\\Database\\Migrations\\XotBaseMigration@anonymous/database/migrations/2023_10_30_103350_create_stored_events_table\.php\:8\:\:tableUpdate\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: database/migrations/2023_10_30_103350_create_stored_events_table.php
+
+		-
+			message: '#^Call to an undefined method Modules\\Xot\\Database\\Migrations\\XotBaseMigration@anonymous/database/migrations/2023_10_30_103350_create_stored_events_table\.php\:8\:\:updateTimestamps\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: database/migrations/2023_10_30_103350_create_stored_events_table.php
+
+		-
+			message: '#^Call to method id\(\) on an unknown class Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 1
+			path: database/migrations/2023_10_30_103350_create_stored_events_table.php
+
+		-
+			message: '#^Call to method index\(\) on an unknown class Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 2
+			path: database/migrations/2023_10_30_103350_create_stored_events_table.php
+
+		-
+			message: '#^Call to method jsonb\(\) on an unknown class Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 2
+			path: database/migrations/2023_10_30_103350_create_stored_events_table.php
+
+		-
+			message: '#^Call to method string\(\) on an unknown class Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 1
+			path: database/migrations/2023_10_30_103350_create_stored_events_table.php
+
+		-
+			message: '#^Call to method timestamp\(\) on an unknown class Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 1
+			path: database/migrations/2023_10_30_103350_create_stored_events_table.php
+
+		-
+			message: '#^Call to method unique\(\) on an unknown class Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 1
+			path: database/migrations/2023_10_30_103350_create_stored_events_table.php
+
+		-
+			message: '#^Call to method unsignedBigInteger\(\) on an unknown class Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 1
+			path: database/migrations/2023_10_30_103350_create_stored_events_table.php
+
+		-
+			message: '#^Call to method unsignedTinyInteger\(\) on an unknown class Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 1
+			path: database/migrations/2023_10_30_103350_create_stored_events_table.php
+
+		-
+			message: '#^Call to method uuid\(\) on an unknown class Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 1
+			path: database/migrations/2023_10_30_103350_create_stored_events_table.php
+
+		-
+			message: '#^Parameter \$table of anonymous function has invalid type Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 2
+			path: database/migrations/2023_10_30_103350_create_stored_events_table.php
+
+		-
+			message: '#^Call to an undefined method Modules\\Xot\\Database\\Migrations\\XotBaseMigration@anonymous/database/migrations/2023_10_31_103350_create_snapshots_table\.php\:10\:\:tableCreate\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: database/migrations/2023_10_31_103350_create_snapshots_table.php
+
+		-
+			message: '#^Call to an undefined method Modules\\Xot\\Database\\Migrations\\XotBaseMigration@anonymous/database/migrations/2023_10_31_103350_create_snapshots_table\.php\:10\:\:tableUpdate\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: database/migrations/2023_10_31_103350_create_snapshots_table.php
+
+		-
+			message: '#^Call to an undefined method Modules\\Xot\\Database\\Migrations\\XotBaseMigration@anonymous/database/migrations/2023_10_31_103350_create_snapshots_table\.php\:10\:\:updateTimestamps\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: database/migrations/2023_10_31_103350_create_snapshots_table.php
+
+		-
+			message: '#^Call to method bigIncrements\(\) on an unknown class Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 1
+			path: database/migrations/2023_10_31_103350_create_snapshots_table.php
+
+		-
+			message: '#^Call to method index\(\) on an unknown class Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 1
+			path: database/migrations/2023_10_31_103350_create_snapshots_table.php
+
+		-
+			message: '#^Call to method jsonb\(\) on an unknown class Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 1
+			path: database/migrations/2023_10_31_103350_create_snapshots_table.php
+
+		-
+			message: '#^Call to method unsignedInteger\(\) on an unknown class Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 1
+			path: database/migrations/2023_10_31_103350_create_snapshots_table.php
+
+		-
+			message: '#^Call to method uuid\(\) on an unknown class Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 1
+			path: database/migrations/2023_10_31_103350_create_snapshots_table.php
+
+		-
+			message: '#^Parameter \$table of anonymous function has invalid type Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 2
+			path: database/migrations/2023_10_31_103350_create_snapshots_table.php
+
+		-
+			message: '#^Call to an undefined method Modules\\Xot\\Database\\Migrations\\XotBaseMigration@anonymous/database/migrations/2024_01_01_000001_create_activity_table\.php\:9\:\:hasColumn\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: database/migrations/2024_01_01_000001_create_activity_table.php
+
+		-
+			message: '#^Call to an undefined method Modules\\Xot\\Database\\Migrations\\XotBaseMigration@anonymous/database/migrations/2024_01_01_000001_create_activity_table\.php\:9\:\:tableCreate\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: database/migrations/2024_01_01_000001_create_activity_table.php
+
+		-
+			message: '#^Call to an undefined method Modules\\Xot\\Database\\Migrations\\XotBaseMigration@anonymous/database/migrations/2024_01_01_000001_create_activity_table\.php\:9\:\:tableUpdate\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: database/migrations/2024_01_01_000001_create_activity_table.php
+
+		-
+			message: '#^Call to an undefined method Modules\\Xot\\Database\\Migrations\\XotBaseMigration@anonymous/database/migrations/2024_01_01_000001_create_activity_table\.php\:9\:\:updateTimestamps\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: database/migrations/2024_01_01_000001_create_activity_table.php
+
+		-
+			message: '#^Call to method bigIncrements\(\) on an unknown class Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 1
+			path: database/migrations/2024_01_01_000001_create_activity_table.php
+
+		-
+			message: '#^Call to method index\(\) on an unknown class Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 1
+			path: database/migrations/2024_01_01_000001_create_activity_table.php
+
+		-
+			message: '#^Call to method json\(\) on an unknown class Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 1
+			path: database/migrations/2024_01_01_000001_create_activity_table.php
+
+		-
+			message: '#^Call to method nullableMorphs\(\) on an unknown class Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 2
+			path: database/migrations/2024_01_01_000001_create_activity_table.php
+
+		-
+			message: '#^Call to method string\(\) on an unknown class Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 3
+			path: database/migrations/2024_01_01_000001_create_activity_table.php
+
+		-
+			message: '#^Call to method text\(\) on an unknown class Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 1
+			path: database/migrations/2024_01_01_000001_create_activity_table.php
+
+		-
+			message: '#^Call to method uuid\(\) on an unknown class Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 1
+			path: database/migrations/2024_01_01_000001_create_activity_table.php
+
+		-
+			message: '#^Parameter \$table of anonymous function has invalid type Illuminate\\Database\\Schema\\Blueprint\.$#'
+			identifier: class.notFound
+			count: 2
+			path: database/migrations/2024_01_01_000001_create_activity_table.php
+
+		-
+			message: '#^Call to static method unguard\(\) on an unknown class Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: class.notFound
+			count: 1
+			path: database/seeders/ActivityDatabaseSeeder.php
+
+		-
+			message: '#^Access to constant LARAVEL_100 on an unknown class RectorLaravel\\Set\\LaravelSetList\.$#'
+			identifier: class.notFound
+			count: 1
+			path: rector.php
+
+		-
+			message: '#^Access to constant UP_TO_PHPUNIT_100 on an unknown class Rector\\PHPUnit\\Set\\PHPUnitLevelSetList\.$#'
+			identifier: class.notFound
+			count: 1
+			path: rector.php
+
+		-
+			message: '#^Access to constant UP_TO_PHP_81 on an unknown class Rector\\Set\\ValueObject\\LevelSetList\.$#'
+			identifier: class.notFound
+			count: 1
+			path: rector.php
+
+		-
+			message: '#^Call to method importNames\(\) on an unknown class Rector\\Config\\RectorConfig\.$#'
+			identifier: class.notFound
+			count: 1
+			path: rector.php
+
+		-
+			message: '#^Call to method paths\(\) on an unknown class Rector\\Config\\RectorConfig\.$#'
+			identifier: class.notFound
+			count: 1
+			path: rector.php
+
+		-
+			message: '#^Call to method rules\(\) on an unknown class Rector\\Config\\RectorConfig\.$#'
+			identifier: class.notFound
+			count: 1
+			path: rector.php
+
+		-
+			message: '#^Call to method sets\(\) on an unknown class Rector\\Config\\RectorConfig\.$#'
+			identifier: class.notFound
+			count: 1
+			path: rector.php
+
+		-
+			message: '#^Call to method skip\(\) on an unknown class Rector\\Config\\RectorConfig\.$#'
+			identifier: class.notFound
+			count: 1
+			path: rector.php
+
+		-
+			message: '#^Class Rector\\TypeDeclaration\\Rector\\ClassMethod\\ReturnTypeFromStrictNativeCallRector not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: rector.php
+
+		-
+			message: '#^Class Rector\\TypeDeclaration\\Rector\\ClassMethod\\ReturnTypeFromStrictScalarReturnExprRector not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: rector.php
+
+		-
+			message: '#^Parameter \$rectorConfig of anonymous function has invalid type Rector\\Config\\RectorConfig\.$#'
+			identifier: class.notFound
+			count: 1
+			path: rector.php
+
+		-
+			message: '#^Call to static method get\(\) on an unknown class Illuminate\\Support\\Facades\\Route\.$#'
+			identifier: class.notFound
+			count: 1
+			path: workbench/routes/web.php
+
+		-
+			message: '#^Function view not found\.$#'
+			identifier: function.notFound
+			count: 1
+			path: workbench/routes/web.php

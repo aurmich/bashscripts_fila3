@@ -10,79 +10,45 @@ use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Str;
 use Modules\Xot\Http\Middleware\SetDefaultLocaleForUrls;
 use Modules\Xot\Http\Middleware\SetDefaultTenantForUrlsMiddleware;
-use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
-use Illuminate\Support\Facades\Route;
 
 // public function boot(\Illuminate\Routing\Router $router)
 
 // --- bases -----
 
-class RouteServiceProvider extends ServiceProvider
+class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
-    /**
-     * The root namespace to assume when generating URLs to actions.
-     */
-    protected string $rootNamespace = 'Modules\Xot\Http\Controllers';
+    public string $name = 'Xot';
 
-    /**
-     * The module namespace to assume when generating URLs to actions.
-     */
     protected string $moduleNamespace = 'Modules\Xot\Http\Controllers';
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
 
-    public string $name = 'Xot';
-
-    /**
-     * Called before routes are registered.
-     * Register any model bindings or pattern based filters.
-     */
     public function boot(): void
     {
         parent::boot();
+        // 36     Cannot access offset 'router' on Illuminate\Contracts\Foundation\Application
+        // $router = $this->app['router'];
         $router = app('router');
+        // dddx([$router, $router1]);
 
         $this->registerLang();
+
         $this->registerRoutePattern($router);
         $this->registerMyMiddleware($router);
-    }
 
-    /**
-     * Define the routes for the application.
-     */
-    public function map(): void
-    {
-        $this->mapApiRoutes();
-        $this->mapWebRoutes();
-    }
-
-    /**
-     * Define the "web" routes for the application.
-     * These routes all receive session state, CSRF protection, etc.
-     */
-    protected function mapWebRoutes(): void
-    {
-        Route::middleware('web')
-            ->namespace($this->moduleNamespace)
-            ->group(base_path('Modules/Xot/routes/web.php'));
-    }
-
-    /**
-     * Define the "api" routes for the application.
-     * These routes are typically stateless.
-     */
-    protected function mapApiRoutes(): void
-    {
-        Route::prefix('api')
-            ->middleware('api')
-            ->namespace($this->moduleNamespace)
-            ->group(base_path('Modules/Xot/routes/api.php'));
+        // $lang = request()->user()?->locale ?? app()->getLocale();
+        // URL::defaults(['locale' => $request->user()?->locale]);
+        // URL::defaults(['lang' => $lang]);
     }
 
     public function registerMyMiddleware(Router $router): void
     {
+        // $router->prependMiddlewareToGroup('web', SetDefaultLocaleForUrls::class);
+        // $router->prependMiddlewareToGroup('api', SetDefaultLocaleForUrls::class);
+        // $router->pushMiddlewareToGroup('web', \Spatie\ResponseCache\Middlewares\CacheResponse::class);
+        // $router->pushMiddlewareToGroup('api', \Spatie\ResponseCache\Middlewares\CacheResponse::class);
         $router->prependMiddlewareToGroup('web', SetDefaultTenantForUrlsMiddleware::class);
         $router->prependMiddlewareToGroup('api', SetDefaultTenantForUrlsMiddleware::class);
     }
@@ -100,7 +66,11 @@ class RouteServiceProvider extends ServiceProvider
             $langs = array_keys($locales);
         }
 
-        if (in_array(request()->segment(1), $langs, false)) {
+        // if (! \is_array($langs)) {
+        //    throw new \Exception('[.__LINE__.]['.class_basename(__CLASS__).']');
+        // }
+
+        if (\in_array(request()->segment(1), $langs, false)) {
             $lang = request()->segment(1);
             if ($lang !== null) {
                 app()->setLocale($lang);
@@ -108,14 +78,17 @@ class RouteServiceProvider extends ServiceProvider
         }
 
         URL::defaults([
+            // 'tenant' => Filament::getTenant(),
             'lang' => $lang,
         ]);
     }
 
     public function registerRoutePattern(Router $router): void
     {
+        // ---------- Lang Route Pattern
         $langs = config('laravellocalization.supportedLocales');
-        if (! is_array($langs)) {
+        if (! \is_array($langs)) {
+            // throw new \Exception('[.__LINE__.]['.class_basename(__CLASS__).']');
             $langs = ['it' => 'it', 'en' => 'en'];
         }
 
@@ -123,17 +96,21 @@ class RouteServiceProvider extends ServiceProvider
         $lang_pattern = '/|'.$lang_pattern.'|/i';
 
         $router->pattern('lang', $lang_pattern);
+        // -------------------------------------------------------------
 
         $models = config('morph_map');
-        if (! is_array($models)) {
+        if (! \is_array($models)) {
+            // throw new Exception('[' . print_r($models, true) . '][' . __LINE__ . '][' . class_basename(__CLASS__) . ']');
             $models = [];
         }
 
         $models_collect = collect(array_keys($models));
         $models_collect->implode('|');
         $models_collect->map(
-            fn ($item) => Str::plural(is_string($item) ? $item : (string) $item)
+            static fn ($item) => Str::plural((string) $item)
         )->implode('|');
+
+        // $router->pattern('container0', $container0_pattern);
     }
 
     // end registerRoutePattern

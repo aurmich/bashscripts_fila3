@@ -9,17 +9,10 @@ use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Relations\HasOne;
-use Illuminate\Database\Eloquent\Relations\MorphMany;
-use Illuminate\Database\Eloquent\Relations\MorphOne;
-use Illuminate\Database\Eloquent\Relations\MorphTo;
-use Illuminate\Database\Eloquent\Relations\MorphToMany;
 use Illuminate\Database\Query\Builder as QueryBuilder;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Modules\Lang\Models\Contracts\HasTranslationsContract;
-use Modules\Lang\Models\Traits\HasStrictTranslations;
 use Modules\Rating\Models\Contracts\HasRatingContract;
 use Modules\Rating\Models\Rating;
 use Modules\Rating\Models\Traits\HasRating;
@@ -30,6 +23,7 @@ use Safe\DateTime;
 use Spatie\Feed\Feedable;
 use Spatie\Feed\FeedItem;
 use Spatie\Tags\HasTags;
+use Spatie\Translatable\HasTranslations;
 use Webmozart\Assert\Assert;
 
 /**
@@ -192,7 +186,7 @@ class Article extends BaseModel implements Feedable, HasRatingContract, HasTrans
 {
     use HasRating;
     use HasTags;
-    use HasStrictTranslations;
+    use HasTranslations;
     use HasChildren;
 
     /** @var array<int, string> */

@@ -10,11 +10,10 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\ColumnData;
-
-use function Safe\ini_set;
-
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
+
+use function Safe\ini_set;
 
 class ImportCsvAction
 {
@@ -23,10 +22,10 @@ class ImportCsvAction
     /**
      * Import a CSV file into a database table.
      *
-     * @param string $disk     the storage disk where the file is located
-     * @param string $filename the name of the file to import
-     * @param string $db       the database connection name
-     * @param string $tbl      the table name where data will be imported
+     * @param  string  $disk  the storage disk where the file is located
+     * @param  string  $filename  the name of the file to import
+     * @param  string  $db  the database connection name
+     * @param  string  $tbl  the table name where data will be imported
      *
      * @throws \Exception
      */
@@ -72,9 +71,8 @@ class ImportCsvAction
     /**
      * Get table columns excluding certain fields.
      *
-     * @param \Illuminate\Database\Schema\Builder $conn
-     *
-     * @return ColumnData[]
+     * @param  \Illuminate\Database\Schema\Builder  $conn
+     * @return array<ColumnData>
      */
     private function getTableColumns($conn, string $tbl): array
     {
@@ -84,31 +82,30 @@ class ImportCsvAction
         return array_map(function (string $column) use ($conn, $tbl) {
             $type = $conn->getColumnType($tbl, $column);
 
-            return new ColumnData(
-                name: $column,
-                type: $type
-            );
+            return ColumnData::from([
+                'name' => $column,
+                'type' => $type
+            ]);
         }, array_diff($columns, $excludedColumns));
     }
 
     /**
      * Prepare fields for the SQL query.
      *
-     * @param ColumnData[] $columns
-     *
-     * @return string[]
+     * @param  array<ColumnData>  $columns
+     * @return array<string>
      */
     private function prepareFields(array $columns): array
     {
         return array_map(function (ColumnData $column) {
-            return 'decimal' === $column->type ? '@'.$column->name : $column->name;
+            return $column->type === 'decimal' ? '@'.$column->name : $column->name;
         }, $columns);
     }
 
     /**
      * Build the SQL query for importing data.
      *
-     * @param ColumnData[] $columns
+     * @param  array<ColumnData>  $columns
      */
     private function buildSql(string $path, string $db, string $tbl, string $fieldsUpList, array $columns): string
     {
@@ -120,7 +117,7 @@ class ImportCsvAction
 
         $sqlReplace = [];
         foreach ($columns as $column) {
-            if ('decimal' === $column->type) {
+            if ($column->type === 'decimal') {
                 $sqlReplace[] = "{$column->name} = REPLACE(@{$column->name}, ',', '.')";
             }
         }
@@ -133,23 +130,13 @@ class ImportCsvAction
     }
 
     /**
-     * Transform columns into ColumnData objects.
-     *
-     * @param string[] $columns
-     *
-     * @return ColumnData[]
-     * @deprecated This method is currently unused but kept for future expansion.
-     * @phpstan-ignore method.unused
+     * @param  array<string>  $columns
+     * @return array<ColumnData>
      */
-    private function transformColumnsToColumnData(array $columns): array
+    public function execute1(array $columns): array
     {
-        return array_map(function ($column): ColumnData {
-            Assert::string($column, 'Column must be a string');
-
-            return new ColumnData(
-                name: $column,
-                type: 'string' // Default type, modify if necessary
-            );
+        return array_map(function (string $column): ColumnData {
+            return ColumnData::from(['name' => $column]);
         }, $columns);
     }
 }

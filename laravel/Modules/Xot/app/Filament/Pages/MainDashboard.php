@@ -32,15 +32,15 @@ class MainDashboard extends Dashboard
             }
         );
 
-        if (1 === $modules->count()) {
-            Assert::notNull($module_first = $modules->first(), '['.__LINE__.']['.class_basename($this).']');
-            $panel_name = $module_first->name;
+        if ($modules->count() === 1) {
+            Assert::notNull($modules->first(), '['.__LINE__.']['.class_basename($this).']');
+            $panel_name = $modules->first()->name;
             $module_name = Str::before($panel_name, '::admin');
             $url = '/'.$module_name.'/admin';
             redirect($url);
         }
 
-        if (0 === $modules->count()) {
+        if ($modules->count() === 0) {
             $url = '/'.app()->getLocale();
             redirect($url);
         }

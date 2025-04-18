@@ -4,66 +4,51 @@ declare(strict_types=1);
 
 namespace Modules\Notify\Filament\Resources\NotifyThemeResource\Pages;
 
-use Filament\Tables\Columns;
-use Filament\Tables\Filters;
-use Modules\Notify\Filament\Resources\NotifyThemeResource;
+use Filament\Tables\Table;
+use Modules\UI\Enums\TableLayoutEnum;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Actions\CreateAction;
+use Filament\Resources\Pages\ListRecords;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
-
-
-
-
-use Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager;
-
-
-
-
+use Modules\Notify\Filament\Resources\NotifyThemeResource;
+use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
 
 class ListNotifyThemes extends XotBaseListRecords
 {
+    
     protected static string $resource = NotifyThemeResource::class;
 
-    public function getListTableColumns(): array
+    
+
+    // protected function getHeaderActions(): array
+    // {
+    //     return [
+    //         CreateAction::make(),
+    //     ];
+    // }
+
+    public function table(Table $table): Table
     {
-        return [
-            'id' => Columns\TextColumn::make('id')
-                ->sortable(),
-            'lang' => Columns\TextColumn::make('lang')
-                ->sortable(),
-            'type' => Columns\TextColumn::make('type')
-                ->sortable(),
-            'post_id' => Columns\TextColumn::make('post_id')
-                ->sortable(),
-            'post_type' => Columns\TextColumn::make('post_type')
-                ->sortable(),
-            'logo_src' => Columns\TextColumn::make('logo_src')
-                ->sortable(),
-            'created_at' => Columns\TextColumn::make('created_at')
-                ->dateTime()
-                ->sortable()
-                ->toggleable(isToggledHiddenByDefault: true),
-            'updated_at' => Columns\TextColumn::make('updated_at')
-                ->dateTime()
-                ->sortable()
-                ->toggleable(isToggledHiddenByDefault: true),
-        ];
+        return $table
+            ->columns($this->getTableColumns())
+            ->filters($this->getTableFilters())
+            ->actions($this->getTableActions())
+            ->bulkActions($this->getTableBulkActions())
+            ->headerActions($this->getTableHeaderActions())
+            // ->defaultSort('pos', 'asc')
+            // ->reorderable('pos')
+            ;
     }
 
-    public function getTableFilters(): array
+    public function getTableColumns(): array
     {
         return [
-            'lang' => Filters\SelectFilter::make('lang')
-                ->options(function (): array {
-                    return NotifyThemeResource::fieldOptions('lang');
-                }),
-            'post_type' => Filters\SelectFilter::make('post_type')
-                ->options(function (): array {
-                    return NotifyThemeResource::fieldOptions('post_type');
-                }),
-            'type' => Filters\SelectFilter::make('type')
-                ->options(function (): array {
-                    return NotifyThemeResource::fieldOptions('type');
-                })
+            TextColumn::make('id')->sortable(),
+            TextColumn::make('lang')->sortable(),
+            TextColumn::make('type')->sortable(),
+            // TextColumn::make('post_id')->sortable(),
+            // TextColumn::make('post_type')->sortable(),
+            TextColumn::make('logo_src')->sortable(),
         ];
     }
-
 }

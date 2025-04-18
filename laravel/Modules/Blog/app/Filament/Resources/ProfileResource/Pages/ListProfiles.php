@@ -29,7 +29,7 @@ class ListProfiles extends UserListProfiles
         return $res;
     }
 
-    public function getTableActions(): array
+    protected function getTableActions(): array
     {
         $res = parent::getTableActions();
 

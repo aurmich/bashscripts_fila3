@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source ./bashscripts/lib/custom.sh
+
 # Validate input
 if [ $# -ne 2 ]; then
     echo "Usage: $0 <path> <remote_repo>"
@@ -10,34 +12,18 @@ fi
 LOCAL_PATH="$1"
 LOCAL_PATH_bak="$LOCAL_PATH"_bak
 REMOTE_REPO="$2"
-REMOTE_BRANCH=$(git symbolic-ref --short HEAD 2>/dev/null || echo "main")
 TEMP_BRANCH=$(basename "$LOCAL_PATH")-temp
-
 
 echo "  📁 Path: $LOCAL_PATH"
 echo "  🌐 URL: $REMOTE_REPO"
-echo "  🌐 Branch: $REMOTE_BRANCH"
-echo "  🌐 Temporary branch: $TEMP_BRANCH"
+echo "  🌿 Branch: $BRANCH"
+echo "  🌿 Temporary branch: $TEMP_BRANCH"
 
 
-# Simple error handling function
-die() {
-    echo "$1" >&2
-    exit 1
-}
-
-# Funzione per loggare messaggi
-log() {
-    local message="$1"
-    echo "🗓️ $(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$LOG_FILE"
-}
-
-# Funzione per gestire gli errori
-handle_error() {
-    local error_message="$1"
-    log "❌ Errore: $error_message"
-    exit 1
-}
+# Verifica se il path esiste
+if [ ! -e "$LOCAL_PATH" ]; then
+    handle_error "Il path $LOCAL_PATH non esiste"
+fi
 
 # Verifica se il path esiste
 if [ ! -e "$LOCAL_PATH" ]; then
@@ -51,54 +37,51 @@ fi
 
 # Sync subtree
 pull_subtree() {
+    # Cross-platform compatibility settings
+    git config core.ignorecase false        # Gestione case-sensitive dei file
+    git config core.fileMode false          # Ignora i permessi dei file
+    git config core.autocrlf false          # Non convertire automaticamente i line endings
+    git config core.eol lf                  # Usa LF come line ending di default
+    git config core.symlinks false          # Gestione symlinks disabilitata per Windows
+    git config core.longpaths true          # Supporto per path lunghi su Windows
+
     find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
     git add -A
     git commit -am "."
-    git push -u origin "$REMOTE_BRANCH"
+    git push -u origin "$BRANCH"
 
-    git config core.ignorecase false
-    git config core.fileMode false
-    
-    git fetch "$REMOTE_REPO" "$REMOTE_BRANCH" --depth=1
-    if(! git subtree pull -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH"  --squash)
+    git fetch "$REMOTE_REPO" "$BRANCH" --depth=1
+    if(! git subtree pull -P "$LOCAL_PATH" "$REMOTE_REPO" "$BRANCH"  --squash)
     then
-        echo "------------------------- 1 -------------------------"
-        if(! git subtree pull -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH")    
+        log "Primo tentativo di subtree pull fallito, provo una strategia alternativa..."
+        if(! git subtree pull -P "$LOCAL_PATH" "$REMOTE_REPO" "$BRANCH")
         then
-            echo "------------------------- 2 -------------------------"
-            #git fetch "$REMOTE_REPO" "$REMOTE_BRANCH" --depth=1
-            #git merge -s subtree FETCH_HEAD  --allow-unrelated-histories
-            # First, split the subtree to a temporary branch
+            log "Secondo tentativo fallito, procedo con split e merge..."
             git subtree split --prefix="$LOCAL_PATH" -b "$TEMP_BRANCH"
-            # Ora fai il merge del branch temporaneo con `git subtree merge`
-            git subtree merge --prefix="$LOCAL_PATH" "$TEMP_BRANCH" || echo "Failed to merge subtree"
-            # Pulisci il branch temporaneo
-            git branch -D "$TEMP_BRANCH" || echo "Failed to delete temporary branch $TEMP_BRANCH"
+            git subtree merge --prefix="$LOCAL_PATH" "$TEMP_BRANCH" || log "Failed to merge subtree"
+            git branch -D "$TEMP_BRANCH" || log "Failed to delete temporary branch $TEMP_BRANCH"
 
-            # Aggiungi il submodule (aggiungiamo il submodule da un repository remoto)
             mv "$LOCAL_PATH" "$LOCAL_PATH_bak" || die "Failed to rename $LOCAL_PATH to $LOCAL_PATH_bak"
             git add .
             git commit -am "Add $LOCAL_PATH_bak"
-            git subtree add --prefix="$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH" --squash
-             # Sincronizza i file dalla cartella di backup
+            git push -u origin "$BRANCH"
+
+            git subtree add --prefix="$LOCAL_PATH" "$REMOTE_REPO" "$BRANCH" --squash
             rsync -avz "$LOCAL_PATH_bak/" "$LOCAL_PATH" || die "Failed to sync files"
-        
-            # Rimuovi la cartella di backup
+
             rm -rf "$LOCAL_PATH_bak" || die "Failed to remove backup folder"
-            # Commit delle modifiche
             git add . || die "Failed to add changes after submodule sync"
             git commit -am "Added submodule for $LOCAL_PATH" || die "Failed to commit submodule changes"
-            git push -u origin "$REMOTE_BRANCH"
-
+            git push -u origin "$BRANCH"
         fi
     fi
 
-    
-    git rebase --rebase-merges --strategy subtree "$REMOTE_BRANCH"
-    #git rebase --preserve-merges "$REMOTE_BRANCH" 
+    # Manutenzione avanzata repository
+    git rebase --rebase-merges --strategy subtree "$BRANCH" --autosquash
+    git_maintenance
 }
 
 # Run sync
 pull_subtree
 
-echo "👍Subtree $LOCAL_PATH synchronized successfully with $REMOTE_REPO"
+log "Subtree $LOCAL_PATH synchronized successfully with $REMOTE_REPO"

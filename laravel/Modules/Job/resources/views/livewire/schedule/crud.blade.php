@@ -47,7 +47,7 @@
                         button-class="uk-button-link"
                     />
                     --}}
-                        <x-filament::button wire:click="executeTask('{{ $task-> }}')">
+                        <x-filament::button wire:click="executeTask('{{ $task->id }}')">
                             <i class="fa-solid fa-play"></i>
                         </x-filament::button>
                     </td>

@@ -31,46 +31,52 @@ class CategoryResource extends XotBaseResource
 
     public static function getFormSchema(): array
     {
-        return static::getFormFields();
+        return [
+            Forms\Components\TextInput::make('title')
+                ->required()
+                ->maxLength(2048)
+                ->reactive()
+                ->unique()
+                ->afterStateUpdated(function (Forms\Set $set, $state): void {
+                    $set('slug', Str::slug($state));
+                }),
+            Forms\Components\TextInput::make('slug')
+                ->required()
+                ->maxLength(2048),
+            Forms\Components\Select::make('parent_id')
+
+                ->options(
+                    // Category::where('parent_id', null)->pluck('title', 'id')
+                    // Category::tree()->get()->toTree()->pluck('title', 'id')
+                    Category::getTreeCategoryOptions()
+                )
+                ->searchable(),
+            Forms\Components\TextInput::make('description')
+                ->maxLength(2048),
+            SpatieMediaLibraryFileUpload::make('image')
+                // ->image()
+                // ->maxSize(5000)
+                // ->multiple()
+                // ->enableReordering()
+                ->enableOpen()
+                ->enableDownload()
+                ->columnSpanFull()
+                ->collection('category')
+                // ->conversion('thumbnail')
+                ->disk('uploads')
+                ->directory('photos'),
+            IconPicker::make('icon')
+                ->helperText('Visualizza le icone disponibili di https://heroicons.com/')
+                ->columnSpanFull()
+            // ->layout(\Guava\FilamentIconPicker\Layout::ON_TOP)
+            ,
+        ];
     }
 
-    public static function getFormFields(): array
+    public static function form(Form $form): Form
     {
-        return [
-            Forms\Components\Grid::make()->columns(2)->schema([
-                Forms\Components\TextInput::make('title')
-                    ->columnSpan(1)
-                    ->required()
-                    ->lazy()
-                    ->afterStateUpdated(static function (Forms\Set $set, Forms\Get $get, string $state): void {
-                        if ($get('slug')) {
-                            return;
-                        }
-                        $set('slug', Str::slug($state));
-                    }),
-
-                Forms\Components\TextInput::make('slug')
-                    ->columnSpan(1)
-                    ->required(),
-
-                Forms\Components\Select::make('parent_id')
-                    ->relationship('parent', 'title')
-                    ->columnSpan(1)
-                    ->nullable(),
-
-                IconPicker::make('icon')
-                    ->columnSpan(1)
-                    ->nullable(),
-
-                SpatieMediaLibraryFileUpload::make('image')
-                    ->openable()
-                    ->downloadable()
-                    ->columnSpanFull()
-                    ->disk('uploads')
-                    ->directory('categories')
-                    ->collection('image'),
-            ]),
-        ];
+        return $form
+            ->schema(static::getFormFields());
     }
 
     public static function getPages(): array

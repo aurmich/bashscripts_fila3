@@ -55,21 +55,15 @@ class HealthPage extends Page
             // Checks\PingCheck::new()->url('https://google.com')->name('Google'),
         ];
         if (class_exists(\Spatie\CpuLoadHealthCheck\CpuLoadCheck::class)) {
-            /** @var \Spatie\CpuLoadHealthCheck\CpuLoadCheck $check */
-            $check = \Spatie\CpuLoadHealthCheck\CpuLoadCheck::new();
-            $checks[] = $check;
+            $checks[] = \Spatie\CpuLoadHealthCheck\CpuLoadCheck::new();
         }
         if (class_exists(\Spatie\SecurityAdvisoriesHealthCheck\SecurityAdvisoriesCheck::class)) {
-            /** @var \Spatie\SecurityAdvisoriesHealthCheck\SecurityAdvisoriesCheck $check */
-            $check = \Spatie\SecurityAdvisoriesHealthCheck\SecurityAdvisoriesCheck::new();
-            $checks[] = $check;
+            $checks[] = \Spatie\SecurityAdvisoriesHealthCheck\SecurityAdvisoriesCheck::new();
         }
         if (class_exists(\Laraxot\SmtpHealthCheck\SmtpCheck::class)) {
-            /** @var \Laraxot\SmtpHealthCheck\SmtpCheck $check */
-            $check = \Laraxot\SmtpHealthCheck\SmtpCheck::new();
-            $checks[] = $check;
+            $checks[] = \Laraxot\SmtpHealthCheck\SmtpCheck::new();
         }
-        /** @var array<\Spatie\Health\Checks\Check> $checks */
+        // @phpstan-ignore argument.type
         Health::checks($checks);
         Artisan::call(RunHealthChecksCommand::class);
         $this->dispatch('refresh-component');
@@ -83,7 +77,7 @@ class HealthPage extends Page
     {
         return [
             Action::make('refresh')
-                
+                ->label('')
                 ->tooltip('refresh')
                 ->icon('heroicon-o-arrow-path')
                 ->button()
@@ -103,7 +97,7 @@ class HealthPage extends Page
         $checkResults = app(ResultStore::class)->latestResults();
 
         return [
-            'lastRanAt' => $checkResults?->finishedAt,
+            'lastRanAt' => new Carbon($checkResults?->finishedAt),
             'checkResults' => $checkResults,
         ];
     }

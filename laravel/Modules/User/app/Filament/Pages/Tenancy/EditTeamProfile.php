@@ -15,15 +15,14 @@ class EditTeamProfile extends EditTenantProfile
         return 'Team profile';
     }
 
-    public function getFormSchema(): array
-{
-    
-        
-    return [
-              
+    public function form(Form $form): Form
+    {
+        return $form
+            ->schema(
+                [
                     TextInput::make('name'),
                     // ...
-                
-      ];
-}
+                ]
+            );
+    }
 }

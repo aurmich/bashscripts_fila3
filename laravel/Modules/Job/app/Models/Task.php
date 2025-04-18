@@ -14,43 +14,44 @@ use Webmozart\Assert\Assert;
 /**
  * Modules\Job\Models\Task.
  *
- * @property string $id
- * @property string $description
- * @property string $command
- * @property string|null $parameters
- * @property string|null $expression
- * @property string $timezone
- * @property int $is_active
- * @property int $dont_overlap
- * @property int $run_in_maintenance
- * @property string|null $notification_email_address
- * @property string|null $notification_phone_number
- * @property string $notification_slack_webhook
- * @property int $auto_cleanup_num
- * @property string|null $auto_cleanup_type
- * @property int $run_on_one_server
- * @property int $run_in_background
- * @property string|null $created_by
- * @property string|null $updated_by
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property Carbon|null $deleted_at
- * @property string|null $deleted_by
- * @property int $order_column
- * @property string $status
- * @property string $priority_id
- *                               property-read \Modules\Xot\Contracts\ProfileContract|null $creator
- * @property \Illuminate\Database\Eloquent\Collection<int, \Modules\Job\Models\Frequency> $frequencies
- * @property int|null $frequencies_count
- * @property bool $activated
- * @property float $average_runtime
- * @property Result|null $last_result
- * @property string $upcoming
+ * @property string                                                                                                        $id
+ * @property string                                                                                                        $description
+ * @property string                                                                                                        $command
+ * @property string|null                                                                                                   $parameters
+ * @property string|null                                                                                                   $expression
+ * @property string                                                                                                        $timezone
+ * @property int                                                                                                           $is_active
+ * @property int                                                                                                           $dont_overlap
+ * @property int                                                                                                           $run_in_maintenance
+ * @property string|null                                                                                                   $notification_email_address
+ * @property string|null                                                                                                   $notification_phone_number
+ * @property string                                                                                                        $notification_slack_webhook
+ * @property int                                                                                                           $auto_cleanup_num
+ * @property string|null                                                                                                   $auto_cleanup_type
+ * @property int                                                                                                           $run_on_one_server
+ * @property int                                                                                                           $run_in_background
+ * @property string|null                                                                                                   $created_by
+ * @property string|null                                                                                                   $updated_by
+ * @property Carbon|null                                                                                                   $created_at
+ * @property Carbon|null                                                                                                   $updated_at
+ * @property Carbon|null                                                                                                   $deleted_at
+ * @property string|null                                                                                                   $deleted_by
+ * @property int                                                                                                           $order_column
+ * @property string                                                                                                        $status
+ * @property string                                                                                                        $priority_id
+ *                                                                                                                                                     property-read \Modules\Xot\Contracts\ProfileContract|null $creator
+ * @property \Illuminate\Database\Eloquent\Collection<int, \Modules\Job\Models\Frequency>                                  $frequencies
+ * @property int|null                                                                                                      $frequencies_count
+ * @property bool                                                                                                          $activated
+ * @property float                                                                                                         $average_runtime
+ * @property Result|null                                                                                                   $last_result
+ * @property string                                                                                                        $upcoming
  * @property \Illuminate\Notifications\DatabaseNotificationCollection<int, \Illuminate\Notifications\DatabaseNotification> $notifications
- * @property int|null $notifications_count
- * @property \Illuminate\Database\Eloquent\Collection<int, \Modules\Job\Models\Result> $results
- * @property int|null $results_count
- * @property \Modules\Xot\Contracts\ProfileContract|null $updater
+ * @property int|null                                                                                                      $notifications_count
+ * @property \Illuminate\Database\Eloquent\Collection<int, \Modules\Job\Models\Result>                                     $results
+ * @property int|null                                                                                                      $results_count
+ * @property \Modules\Xot\Contracts\ProfileContract|null                                                                   $updater
+ *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Task newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Task newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Task query()
@@ -80,7 +81,7 @@ use Webmozart\Assert\Assert;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereTimezone($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereUpdatedBy($value)
- * @property-read \Modules\Broker\Models\Profile|null $creator
+ *
  * @mixin \Eloquent
  */
 class Task extends BaseModel
@@ -90,27 +91,7 @@ class Task extends BaseModel
     use HasFactory;
     use Notifiable;
 
-    /**
-     * Compila i parametri del task per l'esecuzione.
-     *
-     * @param bool $forScheduler Se true, i parametri vengono formattati per lo scheduler
-     * @return array<int, string>|string
-     */
-    public function compileParameters(bool $forScheduler = false): array|string
-    {
-        if (null === $this->parameters) {
-            return [];
-        }
-
-        $parameters = \Safe\json_decode($this->parameters, true);
-        Assert::isArray($parameters);
-
-        if ($forScheduler) {
-            return array_map(fn ($value) => is_bool($value) ? ($value ? '1' : '0') : (string) $value, $parameters);
-        }
-
-        return $parameters;
-    }
+    /** @var list<string> */
     protected $fillable = [
         'id',
         'description',
@@ -184,7 +165,7 @@ class Task extends BaseModel
     public function getLastResultAttribute(): ?Result
     {
         $res = $this->results()->orderBy('id', 'desc')->first();
-        if ($res == null) {
+        if (null == $res) {
             return null;
         }
         Assert::isInstanceOf($res, Result::class);
@@ -232,7 +213,7 @@ class Task extends BaseModel
     public function autoCleanup(): void
     {
         if ($this->auto_cleanup_num > 0) {
-            if ($this->auto_cleanup_type === 'results') {
+            if ('results' === $this->auto_cleanup_type) {
                 $oldest_id = $this->results()
                     ->orderBy('ran_at', 'desc')
                     ->limit($this->auto_cleanup_num)

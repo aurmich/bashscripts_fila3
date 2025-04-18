@@ -22,6 +22,7 @@ class JobsWaitingOverview extends BaseWidget
 {
     use FormatSeconds;
 
+
     protected function getCards(): array
     {
         $jobsWaiting = Job::query()

@@ -10,13 +10,11 @@ use Filament\Resources\Resource as FilamentResource;
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\ModelClass\CountAction;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
-use Webmozart\Assert\Assert;
 
 use function Safe\glob;
 
-/**
- * @method static string getUrl(string $name, array<string, mixed> $parameters = [], bool $isAbsolute = true)
- */
+use Webmozart\Assert\Assert;
+
 abstract class XotBaseResource extends FilamentResource
 {
     use NavigationLabelTrait;
@@ -28,7 +26,7 @@ abstract class XotBaseResource extends FilamentResource
     // protected static ?string $activeNavigationIcon = 'heroicon-s-document-text';
     // protected static bool $shouldRegisterNavigation = false;
     // protected static ?string $navigationGroup = 'Parametri di Sistema';
-    // protected static ?int $navigationSort = null;
+    protected static ?int $navigationSort = null;
 
     protected static SubNavigationPosition $subNavigationPosition = SubNavigationPosition::Top;
 
@@ -61,11 +59,11 @@ abstract class XotBaseResource extends FilamentResource
     }
 
     /**
-     * @return array<string|int,\Filament\Forms\Components\Component>
+     * per rendere obbligatorio questo metodo.
      */
     abstract public static function getFormSchema(): array;
 
-    final public static function form(Form $form): Form
+    public static function form(Form $form): Form
     {
         return $form
             ->schema(static::getFormSchema());
@@ -97,29 +95,15 @@ abstract class XotBaseResource extends FilamentResource
         }
     }
 
-    /**
-     * @return array<string, \Filament\Resources\Pages\PageRegistration>
-     */
     public static function getPages(): array
     {
         $prefix = static::class.'\Pages\\';
         $name = Str::of(class_basename(static::class))->before('Resource')->toString();
-        $plural = Str::of($name)->plural()->toString();
-        $index = Str::of($prefix)->append('List'.$plural)->toString();
+        $index = Str::of($prefix)->append('List'.$name.'s')->toString();
         $create = Str::of($prefix)->append('Create'.$name.'')->toString();
         $edit = Str::of($prefix)->append('Edit'.$name.'')->toString();
         $view = Str::of($prefix)->append('View'.$name.'')->toString();
 
-        /** @var class-string<\Filament\Resources\Pages\Page> $index */
-        $index = $index;
-        /** @var class-string<\Filament\Resources\Pages\Page> $create */
-        $create = $create;
-        /** @var class-string<\Filament\Resources\Pages\Page> $edit */
-        $edit = $edit;
-        /** @var class-string<\Filament\Resources\Pages\Page> $view */
-        $view = $view;
-        
-        /** @var array<string, \Filament\Resources\Pages\PageRegistration> $pages */
         $pages = [
             'index' => $index::route('/'),
             'create' => $create::route('/create'),
@@ -134,15 +118,13 @@ abstract class XotBaseResource extends FilamentResource
         return $pages;
     }
 
-    /**
-     * @return array<class-string<\Filament\Resources\RelationManagers\RelationManager>|\Filament\Resources\RelationManagers\RelationGroup|\Filament\Resources\RelationManagers\RelationManagerConfiguration>
-     */
     public static function getRelations(): array
     {
         $reflector = new \ReflectionClass(static::class);
         $filename = $reflector->getFileName();
-        Assert::string($filename);
-        
+        if (false == $filename) {
+            return [];
+        }
         $path = Str::of($filename)
             ->before('.php')
             ->append(DIRECTORY_SEPARATOR)
@@ -150,23 +132,12 @@ abstract class XotBaseResource extends FilamentResource
             ->toString();
 
         $files = glob($path.DIRECTORY_SEPARATOR.'*RelationManager.php');
-        Assert::isArray($files);
-        
-        /** @var array<class-string<\Filament\Resources\RelationManagers\RelationManager>> $res */
         $res = [];
         foreach ($files as $file) {
-            $className = Str::of($file)
-                ->after('RelationManagers'.DIRECTORY_SEPARATOR)
-                ->before('.php')
-                ->prepend(static::class.'\RelationManagers\\')
-                ->toString();
-            
-            if (class_exists($className)) {
-                Assert::subclassOf($className, \Filament\Resources\RelationManagers\RelationManager::class);
-                $res[] = $className;
-            }
+            $info = pathinfo($file);
+            $res[] = static::class.'\RelationManagers\\'.$info['filename'];
         }
-
+        // @phpstan-ignore return.type
         return $res;
     }
 }

@@ -7,12 +7,13 @@ namespace Modules\Media\Services;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
-use Webmozart\Assert\Assert;
 
 use function Safe\file_put_contents;
 use function Safe\fopen;
 use function Safe\realpath;
 use function Safe\simplexml_load_string;
+
+use Webmozart\Assert\Assert;
 
 /**
  * SubtitleService.
@@ -38,7 +39,7 @@ class SubtitleService
     public static function getInstance(): self
     {
         if (! self::$instance instanceof self) {
-            self::$instance = new self;
+            self::$instance = new self();
         }
 
         return self::$instance;
@@ -125,7 +126,7 @@ class SubtitleService
     }
 
     /**
-     * @return array<int, array<string, float|int|string|mixed>>
+     * @return (float|int|mixed|string)[][]
      *
      * @psalm-return list{0?: array{sentence_i: int<0, max>, item_i: int<0, max>, start: float|int, end: float|int, time: string, text: mixed},...}
      */
@@ -160,10 +161,10 @@ class SubtitleService
                     'text' => $item->__toString(),
                 ];
                 $data[] = $tmp;
-                $item_i++;
+                ++$item_i;
             }
 
-            $sentence_i++;
+            ++$sentence_i;
         }
 
         return $data;
@@ -172,8 +173,8 @@ class SubtitleService
     /**
      * Undocumented function.
      *
-     * @param  string $srtFile
-     * @param  string $webVttFile
+     * @param string $srtFile
+     * @param string $webVttFile
      */
     public function srtToVtt($srtFile, $webVttFile): void
     {
@@ -193,8 +194,8 @@ class SubtitleService
         }
 
         $length = \count($lines);
-        for ($index = 1; $index < $length; $index++) {
-            if ($index === 1 || trim($lines[$index - 2]) === '') {
+        for ($index = 1; $index < $length; ++$index) {
+            if (1 === $index || '' === trim($lines[$index - 2])) {
                 $lines[$index] = str_replace(',', '.', $lines[$index]);
             }
         }

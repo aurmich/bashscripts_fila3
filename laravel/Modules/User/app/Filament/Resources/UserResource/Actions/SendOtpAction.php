@@ -8,15 +8,6 @@ use Filament\Tables\Actions\Action;
 use Modules\User\Actions\Otp\SendOtpByUserAction;
 use Modules\User\Models\User;
 
-
-
-
-use Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager;
-
-
-
-
-
 class SendOtpAction extends Action
 {
     protected function setUp(): void
@@ -24,13 +15,10 @@ class SendOtpAction extends Action
         parent::setUp();
 
         $this
-            
+            ->label('')
             ->tooltip(trans('user::otp.actions.send_otp'))
             ->icon('heroicon-o-key')
             ->action(function (User $record) {
-                if (! $record instanceof \Modules\Xot\Contracts\UserContract) {
-                    throw new \InvalidArgumentException('L\'utente deve implementare l\'interfaccia UserContract');
-                }
                 app(SendOtpByUserAction::class)->execute($record);
             })
             ->requiresConfirmation()

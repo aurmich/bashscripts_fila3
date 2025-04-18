@@ -12,8 +12,6 @@ use Modules\UI\Filament\Blocks\ImagesGallery;
 use Modules\UI\Filament\Blocks\ImageSpatie;
 use Modules\UI\Filament\Blocks\Paragraph;
 use Modules\UI\Filament\Blocks\Title;
-use Filament\Forms\Components\Hidden;
-use Filament\Forms\Components\Forms;
 
 class ArticleSidebar
 {
@@ -23,27 +21,13 @@ class ArticleSidebar
     ): Builder {
         return Builder::make($name)
             ->blocks([
-                Title::make('title')->schema([
-                    Hidden::make('context')->default($context),
-                ]),
-                Paragraph::make('paragraph')->schema([
-                    Hidden::make('context')->default($context),
-                ]),
-                // Image::make('image')->schema([
-                //     Forms\Components\Hidden::make('context')->default($context),
-                // ]),
-                ImageSpatie::make('image')->schema([
-                    Hidden::make('context')->default($context),
-                ]),
-                ImagesGallery::make('gallery')->schema([
-                    Hidden::make('context')->default($context),
-                ]),
-                Rating::make('rating')->schema([
-                    Hidden::make('context')->default($context),
-                ]),
-                Chart::make('chart')->schema([
-                    Hidden::make('context')->default($context),
-                ]),
+                Title::make(context: $context),
+                Paragraph::make(context: $context),
+                // Image::make(context: $context),
+                ImageSpatie::make(context: $context),
+                ImagesGallery::make(context: $context),
+                Rating::make(context: $context),
+                Chart::make(context: $context),
             ])
             ->collapsible();
     }

@@ -6,11 +6,7 @@ namespace Modules\Cms\Models;
 
 use Modules\Tenant\Models\Traits\SushiToJsons;
 use Modules\Xot\Contracts\ProfileContract;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Modules\Lang\Models\Traits\HasStrictTranslations;
-use Modules\Lang\Models\Contracts\HasTranslationsContract;
+use Spatie\Translatable\HasTranslations;
 
 /**
  * Modules\Cms\Models\Page.
@@ -65,9 +61,9 @@ use Modules\Lang\Models\Contracts\HasTranslationsContract;
  *
  * @mixin \Eloquent
  */
-class Page extends Model implements HasTranslationsContract
+class Page extends BaseModel
 {
-    use HasStrictTranslations;
+    use HasTranslations;
     use SushiToJsons;
 
     /** @var array<int, string> */

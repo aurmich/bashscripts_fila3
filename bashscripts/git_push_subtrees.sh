@@ -12,13 +12,22 @@ me=$( readlink -f -- "$0")
 script_dir=$(dirname "$me")
 ORG="$1"
 
+# Esegui backup se richiesto
+backup_disk
+
 total=${submodules_array["total"]}
 for ((i=0; i<total; i++)); do
     path=${submodules_array["path_${i}"]}
     url=${submodules_array["url_${i}"]}
     # Applica riscrittura URL se ORG è passato
     if [ -n "$ORG" ]; then
-        url=$(rewrite_url "$url" "$ORG")
+        url_org=$(rewrite_url "$url" "$ORG")
+        script="$script_dir/git_push_subtree_org.sh" 
+        chmod +x "$script"
+        sed -i -e 's/\r$//' "$script"
+        if ! "$script" "$path" "$url_org" "$BRANCH" ; then
+            log "⚠️ Push ORG fallita per $path."
+        fi
     fi
     echo "---------"
     echo "🔄Submodule $i:"
@@ -27,7 +36,6 @@ for ((i=0; i<total; i++)); do
     script="$script_dir/git_push_subtree.sh"
     chmod +x "$script"
     sed -i -e 's/\r$//' "$script"
-    
     # Chiamata esterna allo script di sincronizzazione
     if ! "$script" "$path" "$url" ; then
         log "⚠️ Push fallita per $path."

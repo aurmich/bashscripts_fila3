@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Traits;
 
-use TypeError;
-use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Xot\Actions\GetTransKeyAction;
@@ -25,7 +23,7 @@ trait TransTrait
 
         if (is_string($res)) {
             if ($exceptionIfNotExist && $res === $tmp) {
-                throw new \Exception('[' . __LINE__ . '][' . class_basename(__CLASS__) . ']');
+                throw new \Exception('['.__LINE__.']['.class_basename(__CLASS__).']');
             }
 
             return $res;
@@ -34,11 +32,11 @@ trait TransTrait
         if (is_array($res)) {
             $first = current($res);
             if (is_string($first) || is_numeric($first)) {
-                return is_string($first) ? $first : (string) $first;
+                return (string) $first;
             }
         }
 
-        return 'fix:' . $tmp;
+        return 'fix:'.$tmp;
     }
 
     /**
@@ -49,9 +47,7 @@ trait TransTrait
         /** @var string */
         $transKey = app(GetTransKeyAction::class)->execute(static::class);
 
-        $key = $transKey . '.' . $key;
-        $key = Str::of($key)->replace('.cluster.pages.', '.')->toString();
-        return $key;
+        return $transKey.'.'.$key;
     }
 
     /**
@@ -67,9 +63,7 @@ trait TransTrait
         /** @var string */
         $transKey = app(GetTransKeyAction::class)->execute(static::class);
 
-        $key = $transKey . '.' . $key;
-        $key = Str::of($key)->replace('.cluster.pages.', '.')->toString();
-        return $key;
+        return $transKey.'.'.$key;
     }
 
     /**
@@ -78,36 +72,11 @@ trait TransTrait
     public static function transFunc(string $func, bool $exceptionIfNotExist = false): string
     {
         $key = static::getKeyTransFunc($func);
-        /** @var string|array<int|string,mixed>|null */
-        $trans = null;
+        /** @var string|array<int|string,mixed>|null $trans */
+        $trans = trans($key);
 
-        try {
-            $trans = trans($key);
-        } catch (\TypeError $e) {
-            dddx([
-                'e' => $e,
-                'key' => $key,
-            ]);
-        }
-
-        if ($key === $trans) {
-            $group = Str::of($key)->before('.')->toString();
-            $item = Str::of($key)->after($group . '.')->toString();
-            $group_arr = trans($group);
-            if (is_array($group_arr)) {
-                $trans = Arr::get($group_arr, $item);
-            }
-        }
-
-        if (is_numeric($trans)) {
-            return strval($trans);
-        }
-
-        if (is_array($trans)) {
-            $first = current($trans);
-            if (is_string($first) || is_numeric($first)) {
-                return is_string($first) ? $first : (string) $first;
-            }
+        if (! is_string($trans) && ! is_array($trans)) {
+            return 'fix:'.$key;
         }
 
         if (is_string($trans)) {
@@ -124,17 +93,12 @@ trait TransTrait
             return $trans;
         }
 
-        if ($trans === null) {
-            $newTrans = Str::of($key)
-                ->between('::', '.')
-                ->replace('_', ' ')
-                ->toString();
-            app(SaveTransAction::class)->execute($key, $newTrans);
-
-            return $newTrans;
+        $first = current($trans);
+        if (is_string($first) || is_numeric($first)) {
+            return (string) $first;
         }
 
-        return 'fix:' . $key;
+        return 'fix:'.$key;
     }
 
     protected function transChoice(string $key, int $number, array $replace = []): string

@@ -6,9 +6,8 @@ namespace Modules\Media\Filament\Resources\MediaResource\Pages;
 
 use Filament\Resources\Pages\CreateRecord;
 use Modules\Media\Filament\Resources\MediaResource;
-use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
 
-class CreateMedia extends \Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord
+class CreateMedia extends CreateRecord
 {
     protected static string $resource = MediaResource::class;
 }

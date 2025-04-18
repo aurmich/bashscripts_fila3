@@ -52,7 +52,7 @@ class RecentLoginsWidget extends BaseWidget
     /**
      * Optionally configure additional table settings.
      */
-    public function getTableActions(): array
+    protected function getTableActions(): array
     {
         return [
         ];

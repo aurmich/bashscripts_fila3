@@ -60,6 +60,3 @@ node_modules
 docs/cache/
 cache/
 *.exe
-
-*:Zone.Identifier
-.php-cs-fixer.cache

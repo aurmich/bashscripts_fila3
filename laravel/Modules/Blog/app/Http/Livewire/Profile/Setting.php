@@ -97,7 +97,7 @@ class Setting extends Component implements HasActions, HasForms
             ->modalSubmitActionLabel('Update email')
             ->modalCancelActionLabel('Cancel')
             ->action(function (array $data): void {
-                // @phpstan-ignore property.notFound
+                // @phpstan-ignore-next-line
                 $verified = $this->model->email === $data['email'] ? $this->model->email_verified_at : null;
 
                 $this->model->update([
@@ -164,9 +164,12 @@ class Setting extends Component implements HasActions, HasForms
                     ->disk('uploads')
                     ->directory('photo_profile')
                     ->statePath('data'),
-                TextInput::make('user_name'),
-                TextInput::make('first_name'),
-                TextInput::make('last_name'),
+                TextInput::make('user_name')
+                    ->label('User Name'),
+                TextInput::make('first_name')
+                    ->label('First Name'),
+                TextInput::make('last_name')
+                    ->label('Last Name'),
             ])
             ->modalHeading('Edit Profile')
             ->closeModalByClickingAway(false)

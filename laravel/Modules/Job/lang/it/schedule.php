@@ -1,109 +1,67 @@
 <?php
 
 return [
+    'pages' => 'Pagine',
+    'widgets' => 'schedule',
     'navigation' => [
         'name' => 'Schedulatore',
         'plural' => 'Schedulatori',
         'group' => [
             'name' => 'Jobs',
-            'description' => 'Gestione dei job schedulati',
+            'description' => 'Gestione dei job schedulati'
         ],
-        'label' => 'Schedulatore',
-        'sort' => 55,
-        'icon' => 'job-schedule-animated',
+        'label' => 'schedulatore'
     ],
-
     'resource' => [
         'single' => 'Schedule',
         'plural' => 'Schedules',
         'navigation' => 'Settings',
         'history' => 'Show run history',
     ],
-
     'fields' => [
-        'name' => [
-            'label' => 'Nome',
-            'tooltip' => 'Inserisci il nome del job programmato',
-            'placeholder' => 'Nome del job',
+        'name' => 'Nome',
+        'guard_name' => 'Guard',
+        'permissions' => 'Permessi',
+        'first_name' => 'Nome',
+        'last_name' => 'Cognome',
+        'select_all' => [
+            'name' => 'Seleziona Tutti',
+            'message' => '',
         ],
-        'guard_name' => [
-            'label' => 'Guard',
-            'tooltip' => 'Seleziona il guardiano per il job',
-            'placeholder' => 'Nome del guardiano',
-        ],
-        'permissions' => [
-            'label' => 'Permessi',
-            'tooltip' => 'Assegna i permessi necessari al job',
-            'placeholder' => 'Permessi',
-        ],
-        'first_name' => [
-            'label' => 'Nome',
-            'tooltip' => 'Nome del responsabile',
-            'placeholder' => 'Nome responsabile',
-        ],
-        'last_name' => [
-            'label' => 'Cognome',
-            'tooltip' => 'Cognome del responsabile',
-            'placeholder' => 'Cognome responsabile',
-        ],
-        'command' => [
-            'label' => 'Command',
-            'tooltip' => 'Inserisci il comando da eseguire',
-            'placeholder' => 'Comando',
-        ],
-        'arguments' => [
-            'label' => 'Arguments',
-            'tooltip' => 'Specificare eventuali argomenti per il comando',
-            'placeholder' => 'Argomenti',
-        ],
-        'options' => [
-            'label' => 'Options',
-            'tooltip' => 'Inserisci eventuali opzioni per il comando',
-            'placeholder' => 'Opzioni',
-        ],
-        'expression' => [
-            'label' => 'Cron Expression',
-            'tooltip' => 'Imposta l\'espressione cron per la pianificazione',
-            'placeholder' => 'Espressione Cron',
-        ],
-        'log_filename' => [
-            'label' => 'Log Filename',
-            'tooltip' => 'Nome del file di log',
-            'placeholder' => 'Log filename',
-        ],
-        'status' => [
-            'label' => 'Status',
-            'tooltip' => 'Stato corrente del job',
-            'placeholder' => 'Stato',
-        ],
-        'actions' => [
-            'label' => 'Actions',
-            'tooltip' => 'Azioni disponibili per il job',
-            'icon' => 'action-icon',  // Example of adding an icon for actions
-            'color' => 'blue',        // You can add color if required for display
-        ],
-        'run_in_background' => [
-            'label' => 'Run in Background',
-            'tooltip' => 'Esegui il job in background',
-            'placeholder' => 'Run in background',
-        ],
-        'created_at' => [
-            'label' => 'Created At',
-            'tooltip' => 'Data di creazione del job',
-            'placeholder' => 'Data creazione',
-        ],
-        'updated_at' => [
-            'label' => 'Updated At',
-            'tooltip' => 'Ultima data di aggiornamento',
-            'placeholder' => 'Data aggiornamento',
-        ],
-        'timezone' => [
-            'label' => 'Fuso Orario',
-            'tooltip' => 'Imposta il fuso orario per il job',
-            'placeholder' => 'Fuso orario',
-        ],
+        'command' => 'Command',
+        'arguments' => 'Arguments',
+        'options' => 'Options',
+        'options_with_value' => 'Options with Value',
+        'expression' => 'Cron Expression',
+        'log_filename' => 'Log filename',
+        'output' => 'Output',
+        'even_in_maintenance_mode' => 'Even in maintenance mode',
+        'without_overlapping' => 'Without overlapping',
+        'on_one_server' => 'Execute scheduling only on one server',
+        'webhook_before' => 'URL Before',
+        'webhook_after' => 'URL After',
+        'email_output' => 'Email for sending output',
+        'sendmail_success' => 'Send email in case of success to execute the command',
+        'sendmail_error' => 'Send email in case of failure to execute the command',
+        'log_success' => 'Write command output into history table in case of success to execute the command',
+        'log_error' => 'Write command output into history table in case of failure to execute the command',
+        'status' => 'Status',
+        'actions' => 'Actions',
+        'data-type' => 'Data type',
+        'run_in_background' => 'Run in background',
+        'created_at' => 'Created At',
+        'updated_at' => 'Updated At',
+        'never' => 'Never',
+        'environments' => 'Environments',
+        'id' => 'ID',
+        'description' => 'Descrizione',
+        'parameters' => 'Parametri',
+        'timezone' => 'Fuso Orario',
+        'last_run' => 'Ultima Esecuzione',
+        'next_run' => 'Prossima Esecuzione',
+        'error' => 'Errore',
+        'run_in_maintenance' => 'Esegui in Manutenzione'
     ],
-
     'messages' => [
         'no-records-found' => 'No records found.',
         'save-success' => 'Data saved successfully.',
@@ -112,75 +70,78 @@ return [
         'select' => 'Select a command',
         'custom' => 'Custom Command',
         'custom-command-here' => 'Custom Command here (e.g. `cat /proc/cpuinfo` or `artisan db:migrate`)',
+        'help-cron-expression' => 'If necessary click here and use a tool to facilitate the creation of the cron expression',
+        'help-log-filename' => 'If log file is set, the log messages from this cron are written to storage/logs/<log filename>.log',
+        'help-type' => 'Multiple :type can be specified separated by commas',
+        'attention-type-function' => 'ATTENTION: parameters of the type \'function\' are executed before the execution of the scheduling and its return is passed as parameter. Use with care, it can break your job',
+        'delete_cronjob' => 'Delete cronjob',
+        'delete_cronjob_confirm' => 'Do you really want to delete the cronjob ":cronjob"?',
+        'no_schedules' => 'Nessuno schedule presente',
+        'schedule_started' => 'Schedule avviato',
+        'schedule_completed' => 'Schedule completato',
+        'schedule_failed' => 'Schedule fallito',
+        'invalid_expression' => 'Espressione cron non valida'
     ],
-
     'status' => [
         'active' => 'Active',
         'inactive' => 'Inactive',
         'trashed' => 'Trashed',
         'running' => 'In Esecuzione',
-        'failed' => 'Fallito',
+        'failed' => 'Fallito'
     ],
-
     'buttons' => [
-        'inactivate' => [
-            'label' => 'Inactivate',
-            'icon' => 'icon-inactivate',  // Example of adding an icon
-            'color' => 'gray',             // Example of adding color
-        ],
-        'activate' => [
-            'label' => 'Activate',
-            'icon' => 'icon-activate',    // Example of adding an icon
-            'color' => 'green',           // Example of adding color
-        ],
-        'history' => [
-            'label' => 'History',
-            'icon' => 'icon-history',     // Example of adding an icon
-            'color' => 'purple',          // Example of adding color
-        ],
+        'inactivate' => 'Inactivate',
+        'activate' => 'Activate',
+        'history' => 'History',
         'run' => [
             'label' => 'Esegui Ora',
             'modal' => [
                 'heading' => 'Esegui Schedule',
-                'description' => 'Vuoi eseguire questo schedule ora?',
+                'description' => 'Vuoi eseguire questo schedule ora?'
             ],
             'messages' => [
-                'success' => 'Schedule eseguito con successo',
-            ],
-            'icon' => 'icon-run',           // Example of adding an icon
-            'color' => 'blue',              // Example of adding color
+                'success' => 'Schedule eseguito con successo'
+            ]
         ],
         'toggle' => [
             'label' => 'Attiva/Disattiva',
             'modal' => [
                 'heading' => 'Modifica Stato',
-                'description' => 'Vuoi modificare lo stato di questo schedule?',
+                'description' => 'Vuoi modificare lo stato di questo schedule?'
             ],
             'messages' => [
-                'success' => 'Stato modificato con successo',
-            ],
-            'icon' => 'icon-toggle',         // Example of adding an icon
-            'color' => 'orange',            // Example of adding color
+                'success' => 'Stato modificato con successo'
+            ]
         ],
         'delete' => [
             'label' => 'Elimina',
             'modal' => [
                 'heading' => 'Elimina Schedule',
-                'description' => 'Sei sicuro di voler eliminare questo schedule?',
+                'description' => 'Sei sicuro di voler eliminare questo schedule?'
             ],
             'messages' => [
-                'success' => 'Schedule eliminato con successo',
-            ],
-            'icon' => 'icon-delete',         // Example of adding an icon
-            'color' => 'red',                // Example of adding color
-        ],
+                'success' => 'Schedule eliminato con successo'
+            ]
+        ]
     ],
-
     'validation' => [
         'cron' => 'The field must be filled in the cron expression format.',
         'regex' => 'The :attribute field must only contain letters, numbers, dashes, and underscores. Comma is also allowed.',
     ],
-
+    'actions' => [
+        'import' => [
+            'fields' => [
+                'import_file' => 'Seleziona un file XLS o CSV da caricare',
+            ],
+        ],
+        'export' => [
+            'filename_prefix' => 'Aree al',
+            'columns' => [
+                'name' => 'Nome area',
+                'parent_name' => 'Nome area livello superiore',
+            ],
+        ]
+    ],
     'frequencies' => [
         'everyMinute' => 'Ogni Minuto',
         'everyFiveMinutes' => 'Ogni 5 Minuti',
@@ -192,9 +153,8 @@ return [
         'weekly' => 'Ogni Settimana',
         'monthly' => 'Ogni Mese',
         'quarterly' => 'Ogni Trimestre',
-        'yearly' => 'Ogni Anno',
+        'yearly' => 'Ogni Anno'
     ],
-
     'days' => [
         'sunday' => 'Domenica',
         'monday' => 'Lunedì',
@@ -202,9 +162,8 @@ return [
         'wednesday' => 'Mercoledì',
         'thursday' => 'Giovedì',
         'friday' => 'Venerdì',
-        'saturday' => 'Sabato',
+        'saturday' => 'Sabato'
     ],
-
     'cron' => [
         'help' => [
             'title' => 'Aiuto Espressioni Cron',
@@ -217,12 +176,8 @@ return [
                 'every_minute' => '* * * * * - Ogni minuto',
                 'every_hour' => '0 * * * * - Ogni ora',
                 'every_day' => '0 0 * * * - Ogni giorno a mezzanotte',
-                'every_monday' => '0 0 * * 1 - Ogni lunedì a mezzanotte',
-            ],
-        ],
-    ],
-
-    'model' => [
-        'label' => 'schedule.model',
-    ],
+                'every_monday' => '0 0 * * 1 - Ogni lunedì a mezzanotte'
+            ]
+        ]
+    ]
 ];

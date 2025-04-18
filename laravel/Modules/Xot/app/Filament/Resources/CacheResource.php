@@ -8,7 +8,6 @@ use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\TextInput;
 use Modules\Xot\Filament\Resources\CacheResource\Pages;
 use Modules\Xot\Models\Cache;
-use Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager;
 
 class CacheResource extends XotBaseResource
 {
@@ -17,15 +16,15 @@ class CacheResource extends XotBaseResource
     public static function getFormSchema(): array
     {
         return [
-            'key' => TextInput::make('key')
+            TextInput::make('key')
                 ->required()
                 ->maxLength(255),
 
-            'expiration' => TextInput::make('expiration')
+            TextInput::make('expiration')
                 ->required()
                 ->numeric(),
 
-            'value' => KeyValue::make('value')
+            KeyValue::make('value')
                 ->columnSpanFull(),
         ];
     }

@@ -12,21 +12,13 @@ namespace Modules\User\Filament\Resources;
 use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\TextInput;
+use Filament\Resources\RelationManagers\RelationGroup;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\HtmlString;
 use Modules\User\Filament\Resources\UserResource\Pages;
 use Modules\User\Filament\Resources\UserResource\RelationManagers;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-
-
-
-
-use Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager;
-
-
-
-
 
 class UserResource extends XotBaseResource
 {
@@ -52,26 +44,26 @@ class UserResource extends XotBaseResource
     public static function getFormSchema(): array
     {
         return [
-            'section01' => Section::make([
-                'name' => TextInput::make('name')
+            'section01'=>Section::make([
+                'name'=>TextInput::make('name')
                     ->required(),
-                'email' => TextInput::make('email')
+                'email'=>TextInput::make('email')
                     ->required()
                     ->unique(ignoreRecord: true),
-                'password' => TextInput::make('password')
+                'password'=>TextInput::make('password')
                     ->password()
                     ->dehydrateStateUsing(fn ($state) => ! empty($state) ? Hash::make($state) : null)
                     ->required(fn ($livewire) => $livewire instanceof Pages\CreateUser),
             ])->columnSpan(8),
-            'section02' => Section::make([
-                'created_at' => Placeholder::make('created_at')
-                    ->content(static fn ($record) => $record->created_at->diffForHumans() ?? new HtmlString('&mdash;')),
+            'section02'=>Section::make([
+                'created_at'=>Placeholder::make('created_at')
+                    ->content(static fn ($record) => $record?->created_at?->diffForHumans() ?? new HtmlString('&mdash;')),
             ])->columnSpan(4),
         ];
     }
 
     /**
-     * ---.
+     * ---
      */
     public static function getRelations(): array
     {
@@ -80,6 +72,8 @@ class UserResource extends XotBaseResource
             'tenants' => RelationManagers\TenantsRelationManager::class,
         ];
     }
+
+    
 
     // public static function enablePasswordUpdates(bool|Closure $condition = true): void
     // {

@@ -5,14 +5,12 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'name' => 'Tenant',
-        'plural' => 'Tenants',
+        'plural' => 'Tenant',
         'group' => [
-            'name' => 'Gestione Utenti',
-            'description' => 'Gestione dei tenant e delle loro configurazioni',
+            'name' => 'Admin',
         ],
         'label' => 'tenant',
-        'sort' => 30,
-        'icon' => 'user-user-tenant',
+        'sort' => 69,
     ],
     'table' => [
         'heading' => 'Tenant',
@@ -34,12 +32,6 @@ return [
         ],
         'message' => [
             'label' => 'message',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
         ],
     ],
     'actions' => [

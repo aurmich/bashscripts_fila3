@@ -4,54 +4,93 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources\ScheduleResource\Pages;
 
+use Filament\Actions;
 use Filament\Tables;
+use Filament\Tables\Columns\Column;
+use Filament\Tables\Table;
+use Illuminate\Support\Carbon;
+use Modules\Job\Filament\Columns\ActionGroup;
+use Modules\Job\Filament\Columns\ScheduleArguments;
+use Modules\Job\Filament\Columns\ScheduleOptions;
 use Modules\Job\Filament\Resources\ScheduleResource;
+use Modules\Job\Models\Schedule;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListSchedules extends XotBaseListRecords
 {
     protected static string $resource = ScheduleResource::class;
 
-    public function getListTableColumns(): array
+    public function getTableColumns(): array
     {
         return [
-            'id' => Tables\Columns\TextColumn::make('id')
-                ->numeric()
-                ->sortable()
-                ->searchable(),
-            'command' => Tables\Columns\TextColumn::make('command')
-                ->sortable()
-                ->searchable(),
-            'params' => Tables\Columns\TextColumn::make('params')
-                ->wrap()
-                ->searchable(),
-            'expression' => Tables\Columns\TextColumn::make('expression')
-                ->sortable()
-                ->searchable(),
-            'timezone' => Tables\Columns\TextColumn::make('timezone')
-                ->sortable()
-                ->searchable(),
-            'is_active' => Tables\Columns\IconColumn::make('is_active')
-                ->boolean()
+            Tables\Columns\TextColumn::make('id')
+                ->searchable()
                 ->sortable(),
-            'without_overlapping' => Tables\Columns\IconColumn::make('without_overlapping')
-                ->boolean()
+            Tables\Columns\TextColumn::make('command')
+                ->getStateUsing(function ($record) {
+                    if ('custom' === $record->command) {
+                        return $record->command_custom;
+                    }
+
+                    return $record->command;
+                })
+                ->searchable()
+                ->sortable()
+                ->wrap(),
+            ScheduleArguments::make('params')
+                ->searchable()
                 ->sortable(),
-            'on_one_server' => Tables\Columns\IconColumn::make('on_one_server')
-                ->boolean()
+            Tables\Columns\TextColumn::make('expression')
+                ->searchable()
                 ->sortable(),
-            'created_at' => Tables\Columns\TextColumn::make('created_at')
+            Tables\Columns\TagsColumn::make('environments')
+                ->separator(',')
+                ->searchable()
+                ->sortable(),
+            ScheduleOptions::make('options')
+                ->searchable()
+                ->sortable(),
+            Tables\Columns\BadgeColumn::make('status')
+                ->enum([
+                    Schedule::STATUS_ACTIVE => static::trans('status.active'),
+                    Schedule::STATUS_INACTIVE => static::trans('status.inactive'),
+                    Schedule::STATUS_TRASHED => static::trans('status.trashed'),
+                ])
+                ->colors([
+                    'success' => Schedule::STATUS_ACTIVE,
+                    'warning' => Schedule::STATUS_INACTIVE,
+                    'danger' => Schedule::STATUS_TRASHED,
+                ])
+                ->icons([
+                    'heroicon-o-check-circle' => Schedule::STATUS_ACTIVE,
+                    'heroicon-o-document' => Schedule::STATUS_INACTIVE,
+                    'heroicon-o-x-circle' => Schedule::STATUS_TRASHED,
+                ])
+                ->searchable()
+                ->sortable(),
+            Tables\Columns\TextColumn::make('created_at')
                 ->dateTime()
-                ->sortable()
-                ->toggleable(isToggledHiddenByDefault: true),
-            'updated_at' => Tables\Columns\TextColumn::make('updated_at')
+                ->searchable()
+                ->sortable(),
+            Tables\Columns\TextColumn::make('updated_at')
+                ->getStateUsing(fn ($record) => $record->created_at == $record->updated_at ? static::trans('fields.never') : $record->updated_at)
                 ->dateTime()
-                ->sortable()
-                ->toggleable(isToggledHiddenByDefault: true),
+                ->formatStateUsing(static function (Column $column, $state): ?string {
+                    $format ??= config('tables.date_time_format');
+                    if (blank($state) || $state == static::trans('fields.never')) {
+                        return $state;
+                    }
+
+                    return Carbon::parse($state)
+                        ->setTimezone($timezone ?? $column->getTimezone())
+                        ->translatedFormat($format);
+                })
+                ->searchable()
+                ->sortable(),
         ];
     }
 
-    public function getListTableActions(): array
+    public function getTableActions(): array
     {
         return [
             Tables\Actions\EditAction::make()
@@ -70,7 +109,7 @@ class ListSchedules extends XotBaseListRecords
         ];
     }
 
-    public function getListTableBulkActions(): array
+    public function getTableBulkActions(): array
     {
         return [
             Tables\Actions\DeleteBulkAction::make(),

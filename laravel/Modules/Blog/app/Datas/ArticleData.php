@@ -161,39 +161,13 @@ class ArticleData extends Data implements \Stringable
     public static function fromArray(array $data): self
     {
         return new self(
-            id: (string)($data['id'] ?? ''),
-            uuid: (string)($data['uuid'] ?? ''),
-            title: $data['title'] ?? '',
-            slug: (string)($data['slug'] ?? ''),
-            category_id: isset($data['category_id']) ? (int)$data['category_id'] : null,
-            status: (string)($data['status'] ?? 'draft'),
-            show_on_homepage: (bool)($data['show_on_homepage'] ?? false),
-    
-            // ✅ Cast Carbon -> string se necessario
-            published_at: isset($data['published_at']) && $data['published_at'] instanceof Carbon
-                ? $data['published_at']->toDateTimeString()
-                : ($data['published_at'] ?? null),
-    
-            content_blocks: $data['content_blocks'] ?? null,
-            sidebar_blocks: $data['sidebar_blocks'] ?? null,
-            footer_blocks: $data['footer_blocks'] ?? null,
-            categories: isset($data['categories']) ? collect($data['categories']) : null,
-            url: $data['url'] ?? null,
-            ratings: $data['ratings'] ?? null,
-    
-            closed_at: isset($data['closed_at']) && $data['closed_at'] instanceof Carbon
-                ? $data['closed_at']->toDateTimeString()
-                : ($data['closed_at'] ?? null),
-    
-            closed_at_date: $data['closed_at_date'] ?? null,
-            time_left_for_humans: $data['time_left_for_humans'] ?? null,
-            tags: isset($data['tags']) ? collect($data['tags']) : null,
-    
             bet_end_date: isset($data['bet_end_date']) ? Carbon::parse($data['bet_end_date']) : null,
             event_start_date: isset($data['event_start_date']) ? Carbon::parse($data['event_start_date']) : null,
             event_end_date: isset($data['event_end_date']) ? Carbon::parse($data['event_end_date']) : null,
-    
             category: $data['category'] ?? [],
+            title: (string)($data['title'] ?? ''),
+            slug: (string)($data['slug'] ?? ''),
+            status: ArticleStatus::fromString((string)($data['status'] ?? 'draft')),
             status_display: (string)($data['status_display'] ?? ''),
             is_wagerable: (bool)($data['is_wagerable'] ?? false),
             brier_score: (float)($data['brier_score'] ?? 0.0),
@@ -209,5 +183,4 @@ class ArticleData extends Data implements \Stringable
             thumbnail_2x: $data['thumbnail_2x'] ?? null,
         );
     }
-    
 }

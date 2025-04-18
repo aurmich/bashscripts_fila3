@@ -1,80 +1,26 @@
-#!/bin/bash
+#!/bin/sh
 
-# Script per eliminare i branch Git più vecchi di 30 giorni
-# Questo script aiuta a mantenere pulito il repository rimuovendo i branch non più necessari
+me=$( readlink -f -- "$0";)
+git submodule foreach "$me" 
 
-# Configurazione
-DAYS_TO_KEEP=30
-MAIN_BRANCHES="main master develop"
-EXCLUDE_PATTERN="^(main|master|develop|HEAD)$"
+# Branch da mantenere
+branches_to_keep="dev master prod"
 
-# Funzione per ottenere la data dell'ultimo commit di un branch
-get_last_commit_date() {
-    local branch="$1"
-    git show -s --format=%ct "$branch" 2>/dev/null
-}
+# Itera su tutti i remote configurati
+for remote in $(git remote); do
+    echo "Checking remote: $remote"
 
-# Funzione per convertire timestamp in data leggibile
-format_date() {
-    local timestamp="$1"
-    date -d "@$timestamp" "+%Y-%m-%d %H:%M:%S"
-}
+    # Ottieni la lista di tutti i branch remoti, escludendo quelli da mantenere
+    branches_to_delete=$(git branch -r | grep "remotes/$remote/" | sed "s#remotes/$remote/##" | grep -v -E "^(dev|master|prod)$")
+    #branches_to_delete=$(git ls-remote --heads "$remote" | awk '{print $2}' | sed 's#refs/heads/##' | grep -v -E "^(dev|master|prod)$")
 
-# Funzione per verificare se un branch è protetto
-is_protected_branch() {
-    local branch="$1"
-    [[ "$MAIN_BRANCHES" =~ "$branch" ]] || [[ "$branch" =~ $EXCLUDE_PATTERN ]]
-}
-
-# Funzione per eliminare un branch
-delete_branch() {
-    local branch="$1"
-    local last_commit_date="$2"
-    local formatted_date="$3"
-    
-    echo "Eliminazione del branch: $branch (ultimo commit: $formatted_date)"
-    git branch -D "$branch"
-    git push origin --delete "$branch"
-}
-
-# Funzione principale
-main() {
-    # Verifica se siamo in un repository Git
-    if ! git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
-        echo "Errore: Non sei in un repository Git"
-        exit 1
-    }
-
-    # Ottieni la data di cutoff
-    local cutoff_date=$(date -d "$DAYS_TO_KEEP days ago" +%s)
-    
-    echo "Eliminazione dei branch più vecchi di $DAYS_TO_KEEP giorni..."
-    echo "Data di cutoff: $(format_date $cutoff_date)"
-    echo "----------------------------------------"
-
-    # Itera su tutti i branch remoti
-    git branch -r | while read -r branch; do
-        # Rimuovi il prefisso 'origin/'
-        branch=${branch#origin/}
-        
-        # Salta i branch protetti
-        if is_protected_branch "$branch"; then
-            continue
-        fi
-        
-        # Ottieni la data dell'ultimo commit
-        last_commit_date=$(get_last_commit_date "$branch")
-        
-        if [ -n "$last_commit_date" ]; then
-            formatted_date=$(format_date "$last_commit_date")
-            
-            # Se il branch è più vecchio del cutoff
-            if [ "$last_commit_date" -lt "$cutoff_date" ]; then
-                delete_branch "$branch" "$last_commit_date" "$formatted_date"
-            fi
-        fi
-    done
-}
-
-# Esegui lo script
-main
+    # Cancella solo se ci sono branch da eliminare
+    if [ -n "$branches_to_delete" ]; then
+        for branch in $branches_to_delete; do
+            echo "Deleting branch '$branch' from remote '$remote'..."
+            git push "$remote" --delete "$branch"
+        done
+    else
+        echo "No branches to delete for remote '$remote'."
+    fi
+done

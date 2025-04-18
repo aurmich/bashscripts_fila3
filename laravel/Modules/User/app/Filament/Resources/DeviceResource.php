@@ -13,7 +13,6 @@ use Modules\User\Filament\Resources\DeviceResource\Pages\ListDevices;
 use Modules\User\Filament\Resources\DeviceResource\RelationManagers\UsersRelationManager;
 use Modules\User\Models\Device;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-use Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager;
 
 class DeviceResource extends XotBaseResource
 {
@@ -22,13 +21,13 @@ class DeviceResource extends XotBaseResource
     public static function getFormSchema(): array
     {
         return [
-            'uuid' => TextInput::make('uuid')
+            TextInput::make('uuid')
                 ->label('UUID')
                 ->maxLength(255),
-            'mobile_id' => TextInput::make('mobile_id')
+            TextInput::make('mobile_id')
                 ->label('Mobile ID')
                 ->maxLength(255),
-            'languages' => TagsInput::make('languages')
+            TagsInput::make('languages')
                 ->label('Languages')
                 ->suggestions([
                     'it' => 'Italiano',
@@ -41,30 +40,44 @@ class DeviceResource extends XotBaseResource
                 ->helperText('Select or type languages codes (e.g. it, en, es)')
                 ->separator(',')
                 ->reorderable(),
-            'device' => TextInput::make('device')
+            TextInput::make('device')
                 ->label('Device Name')
                 ->maxLength(255),
-            'platform' => TextInput::make('platform')
+            TextInput::make('platform')
                 ->maxLength(255),
-            'browser' => TextInput::make('browser')
+            TextInput::make('browser')
                 ->maxLength(255),
-            'version' => TextInput::make('version')
+            TextInput::make('version')
                 ->maxLength(255),
-            'is_robot' => Toggle::make('is_robot')
+            Toggle::make('is_robot')
                 ->label('Is Robot'),
-            'robot' => TextInput::make('robot')
+            TextInput::make('robot')
                 ->maxLength(255)
                 ->visible(fn (callable $get) => $get('is_robot')),
-            'is_desktop' => Toggle::make('is_desktop')
+            Toggle::make('is_desktop')
                 ->label('Is Desktop'),
-            'is_mobile' => Toggle::make('is_mobile')
+            Toggle::make('is_mobile')
                 ->label('Is Mobile'),
-            'is_tablet' => Toggle::make('is_tablet')
+            Toggle::make('is_tablet')
                 ->label('Is Tablet'),
-            'is_phone' => Toggle::make('is_phone')
+            Toggle::make('is_phone')
                 ->label('Is Phone'),
         ];
     }
 
-    
+    public static function getRelations(): array
+    {
+        return [
+            UsersRelationManager::class,
+        ];
+    }
+
+    public static function getPages(): array
+    {
+        return [
+            'index' => ListDevices::route('/'),
+            'create' => CreateDevice::route('/create'),
+            'edit' => EditDevice::route('/{record}/edit'),
+        ];
+    }
 }

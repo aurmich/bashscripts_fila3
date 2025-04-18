@@ -11,7 +11,6 @@ use Filament\Tables\Actions\Action as TableAction;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Filters\BaseFilter;
 use Illuminate\Support\Arr;
-use Illuminate\Support\Str;
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Spatie\QueueableAction\QueueableAction;
@@ -32,23 +31,8 @@ class AutoLabelAction
     public function execute($component)
     {
         $backtrace = debug_backtrace();
-        $backtrace_slice = array_slice($backtrace, 2);
-        $class = Arr::first($backtrace_slice, function ($item) {
-            if (! isset($item['object'])) {
-                return false;
-            }
-
-            return Str::startsWith($item['object']::class, 'Modules\\');
-            // return Str::startsWith($item['class'],'Modules\\');
-        });
-        if (is_array($class) && isset($class['object'])) {
-            $object_class = $class['object']::class;
-
-            // Assert::string($class = Arr::get($backtrace, '5.class'));
-            $trans_key = app(GetTransKeyAction::class)->execute($object_class);
-        } else {
-            $trans_key = 'lang::txt';
-        }
+        Assert::string($class = Arr::get($backtrace, '5.class'));
+        $trans_key = app(GetTransKeyAction::class)->execute($class);
 
         if ($component instanceof Step) {
             Assert::string($val = $component->getLabel());

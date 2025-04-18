@@ -29,6 +29,10 @@ abstract class XotBaseRouteServiceProvider extends RouteServiceProvider
     public function boot(): void
     {
         Config::set('extra_conn', Request::segment(2)); // Se configurato va a prendere db diverso
+        // if (method_exists($this, 'bootCallback')) {
+        //    $this->bootCallback();
+        // }
+
         parent::boot();
     }
 
@@ -46,7 +50,7 @@ abstract class XotBaseRouteServiceProvider extends RouteServiceProvider
      */
     protected function mapWebRoutes(): void
     {
-        if ('' === $this->name) {
+        if ($this->name == '') {
             Notification::make()
                 ->title('Error')
                 ->danger()
@@ -59,6 +63,7 @@ abstract class XotBaseRouteServiceProvider extends RouteServiceProvider
         Route::middleware('web')
             ->namespace($this->moduleNamespace)
             ->group($this->module_dir.'/../../routes/web.php');
+        // ->group(module_path($this->name, '/routes/web.php'));
     }
 
     /**
@@ -66,12 +71,14 @@ abstract class XotBaseRouteServiceProvider extends RouteServiceProvider
      */
     protected function mapApiRoutes(): void
     {
-        if ('' === $this->name) {
+        if ($this->name === '') {
             throw new \Exception('name is empty on ['.static::class.']');
         }
+        // -- da usare il config
         Route::prefix('api')
             ->middleware('api')
             ->namespace($this->moduleNamespace)
             ->group($this->module_dir.'/../../routes/api.php');
+        // ->group(module_path($this->name, '/routes/api.php'));
     }
 }

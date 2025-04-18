@@ -10,12 +10,10 @@ return [
         'name' => 'Social Provider',
         'plural' => 'Social Providers',
         'group' => [
-            'name' => 'Gestione Utenti',
-            'description' => 'Gestione dei provider social',
+            'name' => 'Admin',
         ],
         'label' => 'social provider',
-        'sort' => 93,
-        'icon' => 'user-user-social',
+        'sort' => 41,
     ],
     'fields' => [
         'name' => 'Nome',

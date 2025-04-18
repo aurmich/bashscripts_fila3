@@ -4,13 +4,21 @@ declare(strict_types=1);
 
 namespace Modules\Notify\Filament\Resources;
 
-use Filament\Forms;
-use Filament\Forms\Components\Component;
-use Filament\Forms\Components\TextInput;
-use Filament\Resources\Pages\PageRegistration;
-use Modules\Notify\Filament\Resources\ContactResource\Pages;
+use Filament\Forms\Form;
+use Filament\Tables\Actions\BulkActionGroup;
+use Filament\Tables\Actions\DeleteBulkAction;
+use Filament\Tables\Actions\EditAction;
+use Filament\Tables\Table;
+use Modules\Notify\Filament\Resources\ContactResource\Pages\CreateContact;
+// use Modules\Notify\Filament\Resources\ContactResource\RelationManagers;
+use Modules\Notify\Filament\Resources\ContactResource\Pages\EditContact;
+// use Filament\Forms;
+use Modules\Notify\Filament\Resources\ContactResource\Pages\ListContacts;
 use Modules\Notify\Models\Contact;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+
+// use Illuminate\Database\Eloquent\Builder;
+// use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class ContactResource extends XotBaseResource
 {
@@ -18,41 +26,30 @@ class ContactResource extends XotBaseResource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
-    /**
-     * Get the form schema for the resource.
-     *
-     * @return array<string, Component>
-     */
-    public static function getFormSchema(): array
+    public static function form(Form $form): Form
     {
-        return [
-            'name' => TextInput::make('name')
-                ->hint(static::trans('fields.name.hint'))
-                ->required()
-                ->maxLength(255),
-            'email' => TextInput::make('email')
-                ->hint(static::trans('fields.email.hint'))
-                ->email()
-                ->required()
-                ->maxLength(255),
-            'phone' => TextInput::make('phone')
-                ->hint(static::trans('fields.phone.hint'))
-                ->tel()
-                ->maxLength(255),
-        ];
+        return $form
+            ->schema(
+                [
+                ]
+            );
     }
+
+
 
     public static function getRelations(): array
     {
-        return [];
+        return [
+            // RelationManagers
+        ];
     }
 
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListContacts::route('/'),
-            'create' => Pages\CreateContact::route('/create'),
-            'edit' => Pages\EditContact::route('/{record}/edit'),
+            'index' => ListContacts::route('/'),
+            'create' => CreateContact::route('/create'),
+            'edit' => EditContact::route('/{record}/edit'),
         ];
     }
 }

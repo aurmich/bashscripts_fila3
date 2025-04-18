@@ -29,7 +29,7 @@ class ExportTreeXlsAction extends Action
         parent::setUp();
         $this->translateLabel()
 
-            
+            ->label('')
             ->tooltip(__('xot::actions.export_xls'))
 
             // ->icon('heroicon-o-cloud-arrow-down')
@@ -50,10 +50,7 @@ class ExportTreeXlsAction extends Action
                 $resource = $livewire->getResource();
                 $fields = [];
                 if (method_exists($resource, 'getXlsFields')) {
-                    $fields = $resource::getXlsFields($tableFilters);
-                    // Convertiamo tutti i valori a stringhe
-                    $fields = array_map(fn ($field) => is_string($field) ? $field : (string) $field, (array) $fields);
-                    Assert::isArray($fields);
+                    Assert::isArray($fields = $resource::getXlsFields($tableFilters));
                 }
 
                 return app(ExportXlsByCollection::class)->execute($rows, $filename, $transKey, $fields);

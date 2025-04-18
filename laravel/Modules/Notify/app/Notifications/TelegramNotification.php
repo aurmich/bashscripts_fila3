@@ -14,9 +14,6 @@ use Illuminate\Notifications\Notification;
 use InvalidArgumentException;
 use NotificationChannels\Telegram\TelegramMessage;
 
-/**
- * Classe per inviare notifiche tramite Telegram.
- */
 class TelegramNotification extends Notification
 {
     use Queueable;
@@ -32,10 +29,11 @@ class TelegramNotification extends Notification
     /**
      * Get the notification's delivery channels.
      *
-     * @param object $notifiable The entity to be notified
-     * @return array<string>
+     * @param mixed $notifiable the entity to be notified
+     *
+     * throws InvalidArgumentException if no delivery channels are available for the notifiable entity
      */
-    public function via(object $notifiable): array
+    public function via(mixed $notifiable): array
     {
         return ['telegram'];
     }
@@ -43,7 +41,6 @@ class TelegramNotification extends Notification
     /**
      * Get the array representation of the notification.
      *
-     * @param object|null $notifiable The entity to be notified
      * @return array<string, mixed>
      */
     public function toArray(?object $notifiable): array
@@ -52,12 +49,6 @@ class TelegramNotification extends Notification
         return [];
     }
 
-    /**
-     * Get the Telegram representation of the notification.
-     *
-     * @param object|null $notifiable The entity to be notified
-     * @return TelegramMessage
-     */
     public function toTelegram(?object $notifiable): TelegramMessage
     {
         // $url = url('/invoice/'.$this->invoice->id);

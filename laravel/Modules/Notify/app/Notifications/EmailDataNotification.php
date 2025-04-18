@@ -5,29 +5,17 @@ declare(strict_types=1);
 namespace Modules\Notify\Notifications;
 
 use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 use Modules\Notify\Datas\EmailData;
 
-/**
- * Classe per inviare notifiche email utilizzando EmailData.
- */
 class EmailDataNotification extends Notification
 {
     use Queueable;
 
-    /**
-     * I dati dell'email da inviare.
-     *
-     * @var EmailData
-     */
     protected EmailData $emailData;
 
-    /**
-     * Create a new notification instance.
-     *
-     * @param EmailData $emailData I dati dell'email da inviare
-     */
     public function __construct(EmailData $emailData)
     {
         $this->emailData = $emailData;
@@ -36,21 +24,17 @@ class EmailDataNotification extends Notification
     /**
      * Get the notification's delivery channels.
      *
-     * @param object $notifiable The entity to be notified
      * @return array<string>
      */
-    public function via(object $notifiable): array
+    public function via(mixed $notifiable): array
     {
         return ['mail'];
     }
 
     /**
      * Get the mail representation of the notification.
-     *
-     * @param object $notifiable The entity to be notified
-     * @return MailMessage
      */
-    public function toMail(object $notifiable): MailMessage
+    public function toMail(mixed $notifiable): MailMessage
     {
         $mailMessage = (new MailMessage())
             ->subject($this->emailData->subject)
@@ -72,10 +56,9 @@ class EmailDataNotification extends Notification
     /**
      * Get the array representation of the notification.
      *
-     * @param object $notifiable The entity to be notified
-     * @return array<string, string|null>
+     * @return array<string, mixed>
      */
-    public function toArray(object $notifiable): array
+    public function toArray(mixed $notifiable): array
     {
         return [
             'to' => $this->emailData->to,

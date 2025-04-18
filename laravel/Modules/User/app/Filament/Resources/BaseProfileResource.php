@@ -6,20 +6,12 @@ namespace Modules\User\Filament\Resources;
 
 use Filament\Forms;
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
+use Filament\Forms\Form;
 use Filament\Resources\Concerns\Translatable;
 use Illuminate\Database\Eloquent\Collection;
 use Modules\User\Filament\Resources\BaseProfileResource\Pages;
 use Modules\User\Models\BaseProfile;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-
-
-
-
-use Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager;
-
-
-
-
 
 abstract class BaseProfileResource extends XotBaseResource
 {
@@ -33,25 +25,25 @@ abstract class BaseProfileResource extends XotBaseResource
     {
         return [
             // Forms\Components\TextInput::make('user_id'),
-            // Forms\Components\TextInput::make('user_id')->readonly(),
-            'user_name' => Forms\Components\TextInput::make('user.name'),
-            'email' => Forms\Components\TextInput::make('email'),
-            'first_name' => Forms\Components\TextInput::make('first_name'),
-            'last_name' => Forms\Components\TextInput::make('last_name'),
-            'photo_profile' => SpatieMediaLibraryFileUpload::make('photo_profile')
-                // ->image()
-                // ->maxSize(5000)
-                // ->multiple()
-                // ->enableReordering()
-                ->openable()
-                ->downloadable()
-                ->columnSpanFull()
-                // ->collection('avatars')
-                // ->conversion('thumbnail')
-                ->disk('uploads')
-                ->directory('photos')
-                ->collection('photo_profile'),
-        ];
+                // Forms\Components\TextInput::make('user_id')->readonly(),
+                Forms\Components\TextInput::make('user.name'),
+                Forms\Components\TextInput::make('email'),
+                Forms\Components\TextInput::make('first_name'),
+                Forms\Components\TextInput::make('last_name'),
+                SpatieMediaLibraryFileUpload::make('photo_profile')
+                    // ->image()
+                    // ->maxSize(5000)
+                    // ->multiple()
+                    // ->enableReordering()
+                    ->openable()
+                    ->downloadable()
+                    ->columnSpanFull()
+                    // ->collection('avatars')
+                    // ->conversion('thumbnail')
+                    ->disk('uploads')
+                    ->directory('photos')
+                    ->collection('photo_profile'),
+        ]; 
     }
 
     public static function getRelations(): array

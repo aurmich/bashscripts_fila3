@@ -1,11 +1,11 @@
 {
     "name": "Lang",
     "alias": "Lang",
-    "description": "label language",
+    "description": "",
     "keywords": [],
     "active": 1,
     "priority": 4,
-    "order": 5,
+    "order": 4,
     "providers": [
         "Modules\\Lang\\Providers\\LangServiceProvider",
         "Modules\\Lang\\Providers\\Filament\\AdminPanelProvider"

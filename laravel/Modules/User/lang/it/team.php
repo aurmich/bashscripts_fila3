@@ -7,60 +7,16 @@ return [
         'name' => 'Team',
         'plural' => 'Teams',
         'group' => [
-            'name' => 'Gestione Utenti',
-            'description' => 'Gestione dei team e delle loro autorizzazioni',
+            'name' => 'Admin',
         ],
         'label' => 'team',
-        'sort' => 18,
-        'icon' => 'user-team',
+        'sort' => 97,
     ],
     'fields' => [
         'first_name' => 'Nome',
         'last_name' => 'Cognome',
         'detach' => [
             'label' => 'detach',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'create' => [
-            'label' => 'create',
-        ],
-        'attach' => [
-            'label' => 'attach',
-        ],
-        'view' => [
-            'label' => 'view',
-        ],
-        'edit' => [
-            'label' => 'edit',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'updated_at' => [
-            'label' => 'updated_at',
-        ],
-        'created_at' => [
-            'label' => 'created_at',
-        ],
-        'users_count' => [
-            'label' => 'users_count',
-        ],
-        'name' => [
-            'label' => 'name',
-        ],
-        'recordId' => [
-            'label' => 'recordId',
         ],
     ],
     'actions' => [
@@ -78,11 +34,6 @@ return [
         ],
         'create' => [
             'label' => 'create',
-        ],
-    ],
-    'plural' => [
-        'model' => [
-            'label' => 'team.plural.model',
         ],
     ],
 ];

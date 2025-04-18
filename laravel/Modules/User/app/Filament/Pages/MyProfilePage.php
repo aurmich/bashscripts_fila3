@@ -93,7 +93,7 @@ class MyProfilePage extends Page implements HasForms
                             ->password()
                             ->required()
                             ->currentPassword(),
-                        PasswordData::make()->getPasswordFormComponent('new_password')
+                        PasswordData::make()->getPasswordFormComponent()
                             ->dehydrateStateUsing(fn ($state): string => Hash::make($state))
                             ->live(debounce: 500)
                         // ->same('passwordConfirmation')
@@ -159,18 +159,18 @@ class MyProfilePage extends Page implements HasForms
     // {
     //     return filament('filament-breezy')->getRegisteredMyProfileComponents();
     // }
-    public function getFormSchema(): array
+    public function form(Form $form): Form
     {
-        return [
-            Forms\Components\TextInput::make('name')
-                ->autofocus()
-                ->required(),
-            Forms\Components\TextInput::make('email')
-                ->required(),
-        ];
-        // Nota: i seguenti commenti sono stati rimossi perché non sono applicabili al metodo getFormSchema()
-        // ->statePath('data')
-        // ->model(auth()->user());
+        return $form
+            ->schema([
+                Forms\Components\TextInput::make('name')
+                    ->autofocus()
+                    ->required(),
+                Forms\Components\TextInput::make('email')
+                    ->required(),
+            ])
+            ->statePath('data')
+            ->model(auth()->user());
     }
 
     public function updateProfile(): void
@@ -199,7 +199,6 @@ class MyProfilePage extends Page implements HasForms
         if (request()->hasSession() && array_key_exists('password', $data)) {
             request()->session()->put([
                 'password_hash_'.Filament::getAuthGuard() => $data['password'],
-            
             ]);
         }
 

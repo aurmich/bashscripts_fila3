@@ -14,21 +14,15 @@ class ApplyMetatagToPanelAction
 
     public function execute(Panel &$panel): Panel
     {
-        try {
-            $metatag = MetatagData::make();
+        $metatag = MetatagData::make();
 
-            return $panel
-                // @phpstan-ignore argument.type
-                ->colors($metatag->getColors())
-                ->brandLogo($metatag->getLogoHeader())
-                ->brandName($metatag->title)
-                ->darkModeBrandLogo($metatag->getLogoHeaderDark())
-                ->brandLogoHeight($metatag->getLogoHeight())
-                ->favicon($metatag->getFavicon());
-        } catch (\Exception $e) {
-            // Log l'errore ma non bloccare l'applicazione
-            \Illuminate\Support\Facades\Log::error('Error applying metatag to panel: ' . $e->getMessage());
-            return $panel;
-        }
+        return $panel
+            // @phpstan-ignore argument.type
+            ->colors($metatag->getColors())
+            ->brandLogo($metatag->getLogoHeader())
+            ->brandName($metatag->title)
+            ->darkModeBrandLogo($metatag->getLogoHeaderDark())
+            ->brandLogoHeight($metatag->getLogoHeight())
+            ->favicon($metatag->getFavicon());
     }
 }
