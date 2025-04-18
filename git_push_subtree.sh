@@ -35,14 +35,14 @@ push_subtree() {
 
     find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
 
-    #push_subtree 
+    #push_subtree_v1
     split_subtree
     
     git rebase --rebase-merges --strategy subtree "$BRANCH" --autosquash
     #git rebase --preserve-merges "$BRANCH"
 }
 
-push_subtree_old() {
+push_subtree_v1() {
     if(! git subtree push -P "$LOCAL_PATH" "$REMOTE_REPO" "$BRANCH")
     then
         log "✅ Subtree $LOCAL_PATH pushed successfully with $REMOTE_REPO"
