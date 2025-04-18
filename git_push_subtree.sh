@@ -45,7 +45,7 @@ push_subtree() {
     ############################################
     git fetch "$REMOTE_REPO" "$BRANCH"
     git subtree split --rejoin --prefix="$LOCAL_PATH" -b "$TEMP_BRANCH" || log "❌ Failed to split subtree"
-    git push -f "$REMOTE_REPO"  "$TEMP_BRANCH":"$BRANCH" || log "❌ Failed to push subtree"
+    git push  "$REMOTE_REPO"  "$TEMP_BRANCH":"$BRANCH" || log "❌ Failed to push subtree"
     git branch -D "$TEMP_BRANCH" || log "❌ Failed to delete temporary branch $TEMP_BRANCH"
 
     git rebase --rebase-merges --strategy subtree "$BRANCH" --autosquash
