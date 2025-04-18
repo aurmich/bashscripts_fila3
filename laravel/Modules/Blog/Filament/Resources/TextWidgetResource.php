@@ -22,17 +22,31 @@ class TextWidgetResource extends XotBaseResource
 
     // protected static ?string $navigationGroup = 'Content';
 
-    public static function form(Form $form): Form
+    protected function getFormSchema(): array
     {
-        return $form
-            ->schema([
-                Forms\Components\TextInput::make('key')
-                    ->required()
-                    ->maxLength(255),
-                // Forms\Components\FileUpload::make('image'),
-                SpatieMediaLibraryFileUpload::make('image')
-                    // ->image()
-                    // ->maxSize(5000)
+        return [
+            Forms\Components\TextInput::make('key')
+                ->required()
+                ->maxLength(255),
+            // Forms\Components\FileUpload::make('image'),
+            SpatieMediaLibraryFileUpload::make('image')
+                // ->image()
+                // ->maxSize(5000)
+                // ->multiple()
+                // ->enableReordering()
+                ->enableOpen()
+                ->enableDownload()
+                ->columnSpanFull()
+                // ->collection('avatars')
+                // ->conversion('thumbnail')
+                ->disk('uploads')
+                ->directory('photos'),
+            Forms\Components\TextInput::make('title')
+                ->maxLength(2048),
+            Forms\Components\RichEditor::make('content'),
+            Forms\Components\Toggle::make('active')
+                ->required(),
+        ];
                     // ->multiple()
                     // ->enableReordering()
                     ->enableOpen()

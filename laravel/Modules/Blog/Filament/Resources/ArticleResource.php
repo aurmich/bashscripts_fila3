@@ -33,6 +33,11 @@ class ArticleResource extends XotBaseResource
         return ['it', 'en'];
     }
 
+    public static function getFormSchema(): array
+    {
+        return static::getFormFields();
+    }
+
     public static function getFormFields(): array
     {
         return [
@@ -165,11 +170,6 @@ class ArticleResource extends XotBaseResource
         ];
     }
 
-    public static function form(Form $form): Form
-    {
-        return $form->schema(static::getFormFields());
-    }
-
     public static function getRelations(): array
     {
         return [
@@ -180,7 +180,7 @@ class ArticleResource extends XotBaseResource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListArticles::route('/'),
+            'index' => Pages\ListArticles::route('/'), // FIXME: route() non implementato o non necessario
             'create' => Pages\CreateArticle::route('/create'),
             'edit' => Pages\EditArticle::route('/{record}/edit'),
             'view' => Pages\ViewArticle::route('/{record}'),

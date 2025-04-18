@@ -1,5 +1,37 @@
 # Analisi PHPStan - Modulo Blog - Livello 2
 
+---
+
+## 🚩 Correzione: Implementazione metodo astratto getListTableColumns
+
+**Errore rilevato:**
+
+> Class Modules\Blog\Filament\Resources\TextWidgetResource\Pages\ListTextWidgets contains 1 abstract method and must therefore be declared abstract or implement the remaining methods (Modules\Xot\Filament\Resources\Pages\XotBaseListRecords::getListTableColumns)
+
+**Causa:**
+
+Quando si estende una classe base che dichiara metodi astratti (in questo caso `XotBaseListRecords`), è obbligatorio implementare tutti i metodi astratti nelle classi figlie concrete. L'assenza di implementazione per `getListTableColumns()` genera un errore PHPStan e un errore a runtime.
+
+**Soluzione applicata:**
+
+Abbiamo implementato concretamente il metodo `getListTableColumns()` nella classe `ListTextWidgets`, anche solo restituendo un array vuoto, per rispettare il contratto della classe base. La firma del metodo è stata mantenuta conforme e tipizzata:
+
+```php
+public function getListTableColumns(): array
+{
+    // TODO: Personalizza le colonne secondo le specifiche di dominio
+    return [];
+}
+```
+
+**Riferimento architetturale:**
+- [Documentazione root PHPStan](../../../../docs/phpstan/phpstan_summary.md)
+
+**Link bidirezionale:**
+- Vedi anche la sezione "Implementazione metodi astratti" nella [documentazione root PHPStan](../../../../docs/phpstan/phpstan_summary.md)
+
+---
+
 [⬅️ Torna alla Roadmap del modulo](../roadmap.md)
 
 

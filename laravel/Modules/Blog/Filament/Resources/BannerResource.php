@@ -28,39 +28,33 @@ class BannerResource extends XotBaseResource
     //     return ['it', 'en'];
     // }
 
-    public static function form(Form $form): Form
+    protected function getFormSchema(): array
     {
-        return $form
-            ->schema([
-                Forms\Components\Grid::make()->columns(2)->schema([
-                    Forms\Components\TextInput::make('title')
-                        ->label(static::trans('fields.title'))
-                        ->columnSpan(1)
-                        ->required(),
-                    Forms\Components\TextInput::make('description')
-                        ->columnSpan(1)
-                        ->required(),
-                    // Forms\Components\TextInput::make('action_text')
-                    //     ->columnSpan(1)
-                    //     ->required(),
-                    Forms\Components\Select::make('category_id')
-                        ->required()
-                        ->options(Category::getTreeCategoryOptions()),
-                    // Forms\Components\TextInput::make('link')
-                    //     ->columnSpan(1)
-                    // ->required(),
-                    // ->helperText('bla bla bla'),
-                    // Forms\Components\DateTimePicker::make('start_date')
-                    //     ->columnSpan(1),
-                    // Forms\Components\DateTimePicker::make('end_date')
-                    //     ->columnSpan(1),
-                    Forms\Components\Toggle::make('hot_topic')
-                        ->columnSpan(1),
-                    Forms\Components\Toggle::make('landing_banner')
-                        ->columnSpan(1),
-
-                    SpatieMediaLibraryFileUpload::make('image')
-                        // ->image()
+        return [
+            Forms\Components\Grid::make()->columns(2)->schema([
+                Forms\Components\TextInput::make('title')
+                    ->label(static::trans('fields.title'))
+                    ->columnSpan(1)
+                    ->required(),
+                Forms\Components\TextInput::make('description')
+                    ->columnSpan(1)
+                    ->required(),
+                Forms\Components\Select::make('category_id')
+                    ->required()
+                    ->options(Category::getTreeCategoryOptions()),
+                Forms\Components\Toggle::make('hot_topic')
+                    ->columnSpan(1),
+                Forms\Components\Toggle::make('landing_banner')
+                    ->columnSpan(1),
+                SpatieMediaLibraryFileUpload::make('image')
+                    ->enableOpen()
+                    ->enableDownload()
+                    ->columnSpanFull()
+                    ->disk('uploads')
+                    ->directory('banners'),
+            ]),
+        ];
+    }
                         // ->maxSize(5000)
                         // ->multiple()
                         // ->enableReordering()

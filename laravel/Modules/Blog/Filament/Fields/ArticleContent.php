@@ -15,19 +15,24 @@ use Modules\UI\Filament\Blocks\Title;
 
 class ArticleContent
 {
-    public static function make(
-        string $name,
-        string $context = 'form',
-    ): Builder {
+    /**
+     * Crea un builder per il contenuto dell'articolo.
+     *
+     * @param string $name
+     * @param string $context
+     * @return Builder
+     */
+    public static function make(string $name, string $context = 'form'): Builder
+    {
         return Builder::make($name)
             ->blocks([
-                Title::make(context: $context),
-                Paragraph::make(context: $context),
-                // Image::make(context: $context),
-                ImageSpatie::make(context: $context),
-                ImagesGallery::make(context: $context),
-                Rating::make(context: $context),
-                Chart::make(context: $context),
+                Title::make($name),
+                Paragraph::make($name),
+                // Image::make('content', $name),
+                ImageSpatie::make($name),
+                ImagesGallery::make($name),
+                Rating::make($name),
+                Chart::make($name),
             ])
             ->collapsible();
     }

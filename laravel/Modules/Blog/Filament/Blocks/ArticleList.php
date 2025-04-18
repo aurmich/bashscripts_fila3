@@ -12,10 +12,14 @@ use Modules\Xot\Actions\View\GetViewsSiblingsAndSelfAction;
 
 class ArticleList
 {
-    public static function make(
-        string $name = 'article_list',
-        string $context = 'form',
-    ): Block {
+    /**
+     * Crea un block ArticleList.
+     *
+     * @param string $name
+     * @param string $context
+     * @return Block
+     */
+    public static function make(string $name = 'article_list', string $context = 'form'): Block {
         $view = 'blog::components.blocks.article_list.v1';
         $views = app(GetViewsSiblingsAndSelfAction::class)->execute($view);
 

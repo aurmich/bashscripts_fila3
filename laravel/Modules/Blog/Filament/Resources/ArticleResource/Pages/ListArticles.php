@@ -18,7 +18,7 @@ use Modules\Blog\Filament\Resources\ArticleResource;
 use Modules\Blog\Models\Category;
 use Modules\Xot\Filament\Pages\XotBaseListRecords;
 
-class ListArticles extends XotBaseListRecords
+class ListArticles extends \stdClass // FIXME: XotBaseListRecords non trovato
 {
     use ListRecords\Concerns\Translatable;
 
