@@ -54,8 +54,18 @@ push_subtree_v1() {
 
 split_subtree() {
     git fetch "$REMOTE_REPO" "$BRANCH"
-    git subtree split --rejoin --prefix="$LOCAL_PATH" -b "$TEMP_BRANCH" || log "❌ Failed to split subtree"
-    git push  "$REMOTE_REPO"  "$TEMP_BRANCH":"$BRANCH" || log "❌ Failed to push subtree"
+    if(git subtree split --rejoin --prefix="$LOCAL_PATH" -b "$TEMP_BRANCH")
+    then
+        log "✅ Subtree $LOCAL_PATH splitted"
+    else 
+        log "❌ Failed to split subtree"
+    fi
+    if(git push  "$REMOTE_REPO"  "$TEMP_BRANCH":"$BRANCH")
+    then
+        log "✅ Subtree $LOCAL_PATH pushed to $REMOTE_REPO"
+    else
+        log "❌ Failed to push subtree"
+    fi
     git branch -D "$TEMP_BRANCH" || log "❌ Failed to delete temporary branch $TEMP_BRANCH"
     log "✅ Subtree $LOCAL_PATH splitted and pushed to $REMOTE_REPO"
 }
