@@ -53,8 +53,8 @@ push_subtree_v1() {
 
 
 split_subtree() {
-    git fetch "$REMOTE_REPO" "$BRANCH"
-    #--squash  o --rejoin
+    git fetch --depth=1 "$REMOTE_REPO" "$BRANCH"
+    #--squash  non esiste
     if(git subtree split --rejoin --prefix="$LOCAL_PATH" -b "$TEMP_BRANCH")
     then
         log "✅ Subtree $LOCAL_PATH splitted"
