@@ -38,7 +38,9 @@ push_subtree() {
     find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
 
 
-    git push "$REMOTE_REPO" $(git commit-tree $(git subtree split --prefix="$LOCAL_PATH" HEAD^{tree}) -m "Unico commit del subtree"):"$REMOTE_BRANCH"
+    #git push "$REMOTE_REPO" $(git commit-tree $(git subtree split --prefix="$LOCAL_PATH" HEAD^{tree}) -m "Unico commit del subtree"):"$REMOTE_BRANCH"
+    git push "$REMOTE_REPO" $(git commit-tree $(git subtree split --prefix="$LOCAL_PATH")^{tree} -m "Unico commit del subtree"):"$REMOTE_BRANCH"
+
 
 
 
