@@ -94,3 +94,4 @@ orbit.sqlite
 cache
 _docs
 laravel/Modules/Cms/build/
+laravel/Modules/Predict/_docs/
