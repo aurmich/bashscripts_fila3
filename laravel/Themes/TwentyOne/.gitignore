@@ -51,4 +51,5 @@ vendor
 .git-blame-ignore-revs
 vendor/
 build/
+docs/cache/
 cache/

@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Password;
@@ -9,13 +10,17 @@ use Illuminate\Validation\Rule;
 use Livewire\Volt\Component;
 use Livewire\Attributes\Validate;
 use Livewire\Attributes\Locked;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Str;
+use Modules\Xot\Contracts\UserContract;
+use Illuminate\Support\Facades\Redirect;
 
 name('profile.edit');
 middleware(['auth', 'verified']);
 
 new class extends Component {
     #[Locked]
-    public ?Modules\Fixcity\Models\User $user = null;
+    public ?User $user = null;
 
     public string $name = '';
     public string $email = '';
@@ -28,9 +33,9 @@ new class extends Component {
 
     public function mount(): void
     {
-        $user = auth()->user();
-        if (!$user instanceof \Modules\Fixcity\Models\User) {
-            throw new \RuntimeException('Authenticated user is not a Fixcity User');
+        $user = Auth::user();
+        if (!$user instanceof User) {
+            throw new \RuntimeException('Authenticated user is not a valid User');
         }
 
         $this->user = $user;
@@ -45,7 +50,6 @@ new class extends Component {
             'email' => 'required|min:3|email|max:255|unique:users,email,' . $this->user->id . ',id',
         ]);
 
-        // if the user hasn't changed their name or email and we also want to make, don't update and show error
         if (!$this->user) {
             return;
         }
@@ -55,9 +59,7 @@ new class extends Component {
             return;
         }
 
-        if ($this->user) {
-            $this->user->fill(['email' => $this->email, 'name' => $this->name])->save();
-        }
+        $this->user->fill(['email' => $this->email, 'name' => $this->name])->save();
 
         $this->dispatch('toast', message: 'Successfully updated profile.', data: ['position' => 'top-right', 'type' => 'success']);
     }
@@ -71,11 +73,12 @@ new class extends Component {
             return;
         }
 
-        $this->dispatch('toast', message: 'Successfully updated password.', data: ['position' => 'top-right', 'type' => 'success']);
-        if ($this->user) {
-            $this->user->fill(['password' => Hash::make($this->new_password), 'remember_token' => Str::random(60)])->save();
-        }
+        $this->user->fill([
+            'password' => Hash::make($this->new_password),
+            'remember_token' => Str::random(60)
+        ])->save();
 
+        $this->dispatch('toast', message: 'Successfully updated password.', data: ['position' => 'top-right', 'type' => 'success']);
         $this->reset(['current_password', 'new_password', 'new_password_confirmation']);
     }
 
@@ -84,28 +87,24 @@ new class extends Component {
         if (!$this->user || !Hash::check($this->delete_confirm_password, $this->user->password)) {
             $this->dispatch('toast', message: 'The Password you entered is incorrect', data: ['position' => 'top-right', 'type' => 'danger']);
             $this->reset(['delete_confirm_password']);
-            return;
+            return redirect()->back();
         }
 
-        $user = auth()->user();
+        $user = Auth::user();
         if (!$user) {
             return redirect('/');
         }
 
         Auth::logout();
 
+        // Gestiamo tutti i possibili tipi di utente nel sistema
         if ($user instanceof \Modules\Fixcity\Models\User) {
+            $user->delete();
+        } elseif ($user instanceof UserContract) {
             $user->delete();
         }
 
-        request()
-            ->session()
-            ->invalidate();
-        request()
-            ->session()
-            ->regenerateToken();
-
-        return Redirect::to('/');
+        return redirect('/');
     }
 };
 
