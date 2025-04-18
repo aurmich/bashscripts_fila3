@@ -37,13 +37,17 @@ push_subtree() {
     find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
 
     ############################################
-    if(! git subtree push -P "$LOCAL_PATH" "$REMOTE_REPO" "$BRANCH")
-    then
-        log "✅ Subtree $LOCAL_PATH pushed successfully with $REMOTE_REPO"
-    else
-        log "❌ Fallimento push subtree $LOCAL_PATH verso $REMOTE_REPO"
-    fi
+    #if(! git subtree push -P "$LOCAL_PATH" "$REMOTE_REPO" "$BRANCH")
+    #then
+    #    log "✅ Subtree $LOCAL_PATH pushed successfully with $REMOTE_REPO"
+    #else
+    #    log "❌ Fallimento push subtree $LOCAL_PATH verso $REMOTE_REPO"
+    #fi
     ############################################
+    git subtree split --prefix="$LOCAL_PATH" -b "$TEMP_BRANCH"
+    git subtree merge --prefix="$LOCAL_PATH" "$TEMP_BRANCH" || log "Failed to merge subtree"
+    git push "$REMOTE_BRANCH"  "$TEMP_BRANCH":"$REMOTE_BRANCH"
+    git branch -D "$TEMP_BRANCH" || log "Failed to delete temporary branch $TEMP_BRANCH"
 
 
 
