@@ -11,7 +11,7 @@ class ProfileFactory extends Factory
     /**
      * The name of the factory's corresponding model.
      */
-    protected $model = \Modules\Predict\App\Models\Profile::class;
+    protected $model = \Modules\Predict\Models\Profile::class;
 
     /**
      * Define the model's default state.

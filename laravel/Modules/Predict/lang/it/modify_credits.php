@@ -1,14 +1,19 @@
 <?php
 
-declare(strict_types=1);
-
-return [
-    'fields' => [
-        'credits' => [
-            'label' => 'credits',
-        ],
-        'opt' => [
-            'label' => 'opt',
-        ],
-    ],
-];
+return array (
+  'fields' => 
+  array (
+    'credits' => 
+    array (
+      'label' => 'credits',
+    ),
+    'opt' => 
+    array (
+      'label' => 'opt',
+    ),
+    'addCredits' => 
+    array (
+      'label' => 'addCredits',
+    ),
+  ),
+);

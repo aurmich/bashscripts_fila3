@@ -11,7 +11,7 @@ class TransactionFactory extends Factory
     /**
      * The name of the factory's corresponding model.
      */
-    protected $model = \Modules\Predict\App\Models\Transaction::class;
+    protected $model = \Modules\Predict\Models\Transaction::class;
 
     /**
      * Define the model's default state.

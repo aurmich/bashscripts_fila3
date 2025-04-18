@@ -209,7 +209,7 @@ class SpotlightResult
 
     public function fingerprint()
     {
-        return md5($this->title.$this->subtitle.$this->image.$this->typeahead.$this->priority.json_encode($this->group).json_encode($this->icon).json_encode($this->action).json_encode($this->action));
+        return md5($this->title.$this->subtitle.$this->image.$this->typeahead.$this->priority.\Safe\json_encode($this->group).\Safe\json_encode($this->icon).\Safe\json_encode($this->action).\Safe\json_encode($this->action));
     }
 
     public function toArray()

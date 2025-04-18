@@ -1,4 +1,6 @@
-<?php return array (
+<?php
+
+return array (
   'navigation' => 
   array (
     'name' => 'Banner',
@@ -20,5 +22,17 @@
       'title' => 'Categoria abbinata',
     ),
     'image' => 'Immagine',
+    'toggleColumns' => 
+    array (
+      'label' => 'toggleColumns',
+    ),
+    'reorderRecords' => 
+    array (
+      'label' => 'reorderRecords',
+    ),
   ),
-);
+  'model' => 
+  array (
+    'label' => 'banner.model',
+  ),
+);

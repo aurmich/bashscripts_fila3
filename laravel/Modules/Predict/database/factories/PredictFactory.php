@@ -11,7 +11,7 @@ class PredictFactory extends Factory
     /**
      * The name of the factory's corresponding model.
      */
-    protected $model = \Modules\Predict\App\Models\Predict::class;
+    protected $model = \Modules\Predict\Models\Predict::class;
 
     /**
      * Define the model's default state.

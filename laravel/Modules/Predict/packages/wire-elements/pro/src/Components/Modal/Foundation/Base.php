@@ -70,7 +70,7 @@ abstract class Base extends Component
             'slide-over' => BehavesAsSlideOver::class,
         };
 
-        if (false === in_array($requiredInterface, class_implements($componentClass), true)) {
+        if (false === in_array($requiredInterface, \Safe\class_implements($componentClass), true)) {
             throw new \UnexpectedValueException("[{$componentClass}] does not support this action. Required interface [{$requiredInterface}] is missing.");
         }
     }

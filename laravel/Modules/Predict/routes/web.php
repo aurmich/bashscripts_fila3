@@ -2,6 +2,9 @@
 
 declare(strict_types=1);
 
+use Illuminate\Support\Facades\Route;
+use Modules\Predict\Http\Controllers\PredictController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +19,10 @@ declare(strict_types=1);
 // Route::prefix('predict')->group(function() {
 //     Route::get('/', 'PredictController@index');
 // });
+
+Route::middleware(['web', 'auth'])
+    ->name('predict.')
+    ->prefix('predict')
+    ->group(function (): void {
+        Route::resource('predicts', PredictController::class);
+    });

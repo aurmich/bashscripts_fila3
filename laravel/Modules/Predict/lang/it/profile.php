@@ -1,4 +1,6 @@
-<?php return array (
+<?php
+
+return array (
   'navigation' => 
   array (
     'name' => 'Profilo',
@@ -24,6 +26,10 @@
     'last_name' => 'Cognome',
     'email' => 'email',
     'is_active' => 'attivo ?',
+    'applyFilters' => 
+    array (
+      'label' => 'applyFilters',
+    ),
   ),
   'setting' => 
   array (
@@ -38,4 +44,4 @@
     'admin_add_credit_to_profile' => 'Aggiunta crediti dall\'amministratore',
     'admin_remove_credit_to_profile' => 'Sottrazione crediti dall\'amministratore',
   ),
-);
+);

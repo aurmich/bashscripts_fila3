@@ -81,7 +81,7 @@ abstract class Component extends \Livewire\Component
     protected function getEventsAndHandlers()
     {
         return collect($this->getListeners())
-            ->when(array_key_exists('WireElements\Pro\Concerns\InteractsWithConfirmationModal', class_uses($this)), function ($collection) {
+            ->when(array_key_exists('WireElements\Pro\Concerns\InteractsWithConfirmationModal', \Safe\class_uses($this)), function ($collection) {
                 $collection->put('actionConfirmed', 'actionConfirmed');
             })
             ->mapWithKeys(function ($value, $key) {

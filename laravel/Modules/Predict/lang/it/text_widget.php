@@ -1,4 +1,6 @@
-<?php return array (
+<?php
+
+return array (
   'navigation' => 
   array (
     'name' => 'Text Widget',
@@ -11,4 +13,11 @@
     'label' => 'Blocchi di testo',
     'icon' => 'heroicon-o-document-text',
   ),
-);
+  'fields' => 
+  array (
+    'toggleColumns' => 
+    array (
+      'label' => 'toggleColumns',
+    ),
+  ),
+);

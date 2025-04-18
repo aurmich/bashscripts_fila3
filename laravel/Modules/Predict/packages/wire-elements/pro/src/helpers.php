@@ -17,7 +17,7 @@ if (! function_exists('wep_insert')) {
             'scope' => $scope,
         ];
 
-        $e = "JSON.parse(atob('".base64_encode(json_encode($config))."'))";
+        $e = "JSON.parse(atob('".base64_encode(\Safe\json_encode($config))."'))";
 
         return new HtmlString('x-data="SupportsWepInsert('.$e.')" x-bind="insertInput"');
     }
