@@ -3,7 +3,7 @@
 
 
 
-#  - Sistema di Gestione 
+# SaluteOra - Sistema di Gestione Salute Orale
 
 ## Requisiti di Sistema
 - PHP 8.2 o superiore
@@ -16,8 +16,8 @@
 
 ### 1. Clonare il Repository
 ```bash
-git clone https://github.com/your-username/.git
-cd 
+git clone https://github.com/your-username/saluteora.git
+cd saluteora
 ```
 
 ### 2. Installare le Dipendenze PHP
@@ -42,7 +42,7 @@ Modificare il file `.env` con le credenziali del database:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=
+DB_DATABASE=saluteora
 DB_USERNAME=root
 DB_PASSWORD=
 ```
@@ -78,7 +78,7 @@ php artisan serve
 ## Struttura del Progetto
 
 ```
-/
+saluteora/
 ├── app/
 ├── config/
 ├── database/
