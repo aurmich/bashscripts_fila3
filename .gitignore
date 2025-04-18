@@ -93,3 +93,4 @@ cache/
 orbit.sqlite
 cache
 _docs
+laravel/Modules/Cms/build/
