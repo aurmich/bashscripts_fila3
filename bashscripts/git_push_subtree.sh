@@ -16,8 +16,8 @@ TEMP_BRANCH=$(basename "$LOCAL_PATH")-temp
 
 echo "  📁 Path: $LOCAL_PATH"
 echo "  🌐 URL: $REMOTE_REPO"
-echo "  🌐 Branch: $REMOTE_BRANCH"
-echo "  🌐 Temporary branch: $TEMP_BRANCH"
+echo "  🌿 Branch: $REMOTE_BRANCH"
+echo "  🌿 Temporary branch: $TEMP_BRANCH"
 
 
 
@@ -34,23 +34,16 @@ push_subtree() {
     git commit -am "."
     git push -u origin "$REMOTE_BRANCH"
 
-
     find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
 
-    git checkout -b $TEMP_BRANCH
-    git filter-branch --prune-empty --subdirectory-filter "$LOCAL_PATH" HEAD
-
-    # Crea un singolo commit con il contenuto attuale
-    git reset $(git commit-tree HEAD^{tree} -m "Unico commit del subtree")
-
-    # Push al repository remoto
-    git push -f "$REMOTE_REPO" HEAD:"$REMOTE_BRANCH"
-
-    # Torna al branch originale e rimuovi quello temporaneo
-    git checkout -
-    git branch -D $TEMP_BRANCH
-    
-
+    ############################################
+    if(! git subtree push -P "$LOCAL_PATH" "$REMOTE_REPO" "$BRANCH")
+    then
+        log "✅ Subtree $LOCAL_PATH pushed successfully with $REMOTE_REPO"
+    else
+        log "❌ Fallimento push subtree $LOCAL_PATH verso $REMOTE_REPO"
+    fi
+    ############################################
 
 
 
