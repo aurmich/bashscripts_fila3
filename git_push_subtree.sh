@@ -44,7 +44,7 @@ push_subtree() {
     git reset $(git commit-tree HEAD^{tree} -m "Unico commit del subtree")
 
     # Push al repository remoto
-    git push "$REMOTE_REPO" HEAD:"$REMOTE_BRANCH"
+    git push -f "$REMOTE_REPO" HEAD:"$REMOTE_BRANCH"
 
     # Torna al branch originale e rimuovi quello temporaneo
     git checkout -
