@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 // WHY: Recupera il nome della relazione 'table' associata all'istanza corrente.
 // WHAT: Usa il metodo getRelationValue per ottenere la proprietà 'name' della relazione.
 $this->getRelationValue('table')->name;
@@ -15,17 +15,17 @@ $query->when($request->filled('q'), function (Builder $query) use ($request) {
     });
 $this->getRelationValue('table')->name
 
-=======
+
 $this->getRelationValue('table')->name
 
 
->>>>>>> cb513be (.)
+ cb513be (.)
 $query->when($request->filled('q'), function (Builder $query) use ($request) {
     $query->where(function (Builder $query) use ($request) {
         $query->where('name', 'like', "%{$request->get('q')}%")
             ->orWhere('email', 'like', "%{$request->get('q')}%");
     });
-<<<<<<< HEAD
+
 });
         $query->where('name', 'like', "%{$request->get('q')}%")
             ->orWhere('email', 'like', "%{$request->get('q')}%");
@@ -33,6 +33,6 @@ $query->when($request->filled('q'), function (Builder $query) use ($request) {
 
  origin/dev
  origin/dev
-=======
->>>>>>> cb513be (.)
+
+ cb513be (.)
 })

@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-# [CONFLITTO RISOLTO] Questo script è stato ripulito dai marker di conflitto git.
-# WHY: I marker di conflitto impediscono la corretta esecuzione e la manutenzione.
-# WHAT: È stata mantenuta la versione più coerente e aggiornata per la gestione della struttura delle cartelle.
-# Consulta la cartella docs per motivazioni e dettagli.
-
-#!/bin/bash
-
-=======
 #!/bin/sh
 
 # Funzione per copiare e rinominare le cartelle
@@ -43,4 +34,3 @@ move_config "Database"
 move_config "Resources"
 move_config "Routes"
 move_config "Tests"
->>>>>>> cb513be (.)

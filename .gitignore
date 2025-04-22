@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-[0;34mℹ️ [2025-04-22 11:23:27] Scelto blocco incoming (1 linee vs 1)[0m
 # Sistema operativo
 .fuse_hidden*
 .fuse_hidden**.lock
@@ -64,9 +61,7 @@ cache/
 .php-cs-fixer.cache
 **/*.Zone.Identifier
 
-[0;34mℹ️ [2025-04-22 11:23:27] Scelto blocco HEAD (34 linee vs 1)[0m
-=======
->>>>>>> cb513be (.)
+
 .git-rewrite
 .fuse_hidden*
 .fuse_hidden**.lock
@@ -100,7 +95,6 @@ cache/
 *:Zone.Identifier
 .php-cs-fixer.cache
 **/*.Zone.Identifier
-<<<<<<< HEAD
 .git-rewrite
 .fuse_hidden*
 .fuse_hidden**.lock
@@ -135,7 +129,3 @@ cache/
 .php-cs-fixer.cache
 **/*.Zone.Identifier
 
-
-[0;34mℹ️ [2025-04-22 11:23:27] Scelto blocco HEAD (35 linee vs 1)[0m
-=======
->>>>>>> cb513be (.)

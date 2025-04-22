@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.3/phpunit.xsd"
@@ -19,14 +18,11 @@
 </phpunit>
 
 [0;34mℹ️ [2025-04-22 11:23:29] Scelto blocco HEAD (19 linee vs 1)[0m
-=======
->>>>>>> cb513be (.)
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.3/phpunit.xsd"
          bootstrap="vendor/autoload.php"
          colors="true"
-<<<<<<< HEAD
          cacheResult="true"
          cacheResultFile=".phpunit.cache"
          executionOrder="random"
@@ -49,28 +45,17 @@
         </testsuite>
     </testsuites>
 
-=======
->>>>>>> cb513be (.)
 >
     <testsuites>
         <testsuite name="Test Suite">
             <directory suffix="Test.php">./tests</directory>
         </testsuite>
     </testsuites>
-<<<<<<< HEAD
 
 [0;34mℹ️ [2025-04-22 11:23:29] Scelto blocco HEAD (29 linee vs 1)[0m
-=======
->>>>>>> cb513be (.)
     <source>
         <include>
             <directory suffix=".php">./app</directory>
             <directory suffix=".php">./src</directory>
-<<<<<<< HEAD
 
 [0;34mℹ️ [2025-04-22 11:23:29] Scelto blocco incoming (1 linee vs 1)[0m
-=======
-        </include>
-    </source>
-</phpunit>
->>>>>>> cb513be (.)
