@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/dev
 #!/bin/bash
 
 # Validate input
@@ -48,6 +52,10 @@ sync_subtree() {
 # Run sync
 sync_subtree
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/dev
 #!/bin/bash
 
 # Validate input
@@ -98,4 +106,8 @@ sync_subtree() {
 # Run sync
 sync_subtree
 
+<<<<<<< HEAD
+=======
+>>>>>>> origin/dev
+>>>>>>> origin/dev
 echo "Subtree $LOCAL_PATH synchronized successfully with $REMOTE_REPO"

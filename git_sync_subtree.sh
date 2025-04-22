@@ -8,18 +8,46 @@ fi
 
 # Input parameters
 me=$( readlink -f -- "$0")
+<<<<<<< HEAD
 script_dir=$(dirname "$me")
+=======
+<<<<<<< HEAD
+script_dir=$(dirname "$me")
+=======
+<<<<<<< HEAD
+script_dir=$(dirname "$me")
+=======
+<<<<<<< HEAD
+script_dir=$(dirname "$me")
+=======
+>>>>>>> origin/dev
+>>>>>>> origin/dev
+>>>>>>> origin/dev
+>>>>>>> origin/dev
 LOCAL_PATH="$1"
 REMOTE_REPO="$2"
 REMOTE_BRANCH=$(git symbolic-ref --short HEAD 2>/dev/null || echo "main")
 TEMP_BRANCH=$(basename "$LOCAL_PATH")-temp
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/dev
 # Simple error handling function
 die() {
     echo "$1" >&2
     exit 1
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/dev
+>>>>>>> origin/dev
+>>>>>>> origin/dev
 # Funzione per loggare messaggi
 log() {
     local message="$1"
@@ -35,6 +63,26 @@ handle_error() {
 
 # Sync subtree
 sync_subtree() {
+<<<<<<< HEAD
+=======
+    sed -i -e 's/\r$//' "$script_dir/git_push_subtree.sh"
+    sed -i -e 's/\r$//' "$script_dir/git_pull_subtree.sh"
+    chmod +x "$script_dir/git_push_subtree.sh"
+    chmod +x "$script_dir/git_pull_subtree.sh"
+    if ! "$script_dir/git_push_subtree.sh" "$LOCAL_PATH" "$REMOTE_REPO" ; then
+        log "⚠️ Push fallita per $current_path."
+    fi
+    if ! "$script_dir/git_pull_subtree.sh" "$LOCAL_PATH" "$REMOTE_REPO" ; then
+        log "⚠️ Pull fallita per $current_path."
+    fi
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+# Sync subtree
+sync_subtree() {
+>>>>>>> origin/dev
     git add .
     git commit -am "."
     git push -u origin "$REMOTE_BRANCH"
@@ -59,9 +107,30 @@ sync_subtree() {
     git branch -D "$TEMP_BRANCH"
 
     git subtree push -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH"
+<<<<<<< HEAD
+=======
+>>>>>>> origin/dev
+>>>>>>> origin/dev
+>>>>>>> origin/dev
+>>>>>>> origin/dev
 }
 
 # Run sync
 sync_subtree
+<<<<<<< HEAD
 sed -i -e 's/\r$//' "$me"
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+=======
+sed -i -e 's/\r$//' "$me"
+>>>>>>> origin/dev
+>>>>>>> origin/dev
+>>>>>>> origin/dev
+>>>>>>> origin/dev
 echo "Subtree $LOCAL_PATH synchronized successfully with $REMOTE_REPO"

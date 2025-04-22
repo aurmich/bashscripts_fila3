@@ -1,11 +1,42 @@
+<<<<<<< HEAD
 {
     "name": "laraxot/bashscripts_fila3",
      "authors": [
+=======
+<<<<<<< HEAD
+{
+    "name": "laraxot/bashscripts_fila3",
+    "autoload": {
+        "psr-4": {
+            "Laraxot\\BashscriptsFila3\\": "src/"
+        }
+    },
+    "authors": [
         {
             "name": "marco76tv",
             "email": "marco.sottana@gmail.com"
         }
     ],
+    "require-dev": {
+        "larastan/larastan": "^3.0"
+    }
+}
+=======
+{
+    "name": "laraxot/bashscripts_fila3",
+    "autoload": {
+        "psr-4": {
+            "Laraxot\\BashscriptsFila3\\": "src/"
+        }
+    },
+    "authors": [
+>>>>>>> origin/dev
+        {
+            "name": "marco76tv",
+            "email": "marco.sottana@gmail.com"
+        }
+    ],
+<<<<<<< HEAD
     "autoload": {
         "psr-4": {
             
@@ -14,7 +45,13 @@
     "require": {
         
     },
+=======
+>>>>>>> origin/dev
     "require-dev": {
         "larastan/larastan": "^3.0"
     }
 }
+<<<<<<< HEAD
+=======
+>>>>>>> origin/dev
+>>>>>>> origin/dev
