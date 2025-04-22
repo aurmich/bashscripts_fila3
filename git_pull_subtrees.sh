@@ -1,67 +1,117 @@
 #!/bin/bash
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/dev
+source ./bashscripts/lib/custom.sh
+# Includi lo script di parsing
+source ./bashscripts/lib/parse_gitmodules_ini.sh
+
+# Chiama la funzione
+parse_gitmodules gitmodules.ini
+<<<<<<< HEAD
+
+=======
+=======
+>>>>>>> origin/dev
+
+>>>>>>> origin/dev
+>>>>>>> origin/dev
+source ./bashscripts/lib/custom.sh
+# Includi lo script di parsing
+source ./bashscripts/lib/parse_gitmodules_ini.sh
+
+# Chiama la funzione
+parse_gitmodules gitmodules.ini
 
 me=$( readlink -f -- "$0")
 script_dir=$(dirname "$me")
+ORG="$1"
 
-# Script per sincronizzare git subtree con ottimizzazione della history
-CONFIG_FILE="gitmodules.ini"
-DEPTH=1  # Limita la profondità della history scaricata
-LOG_FILE="subtree_sync.log"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/dev
+# Esegui backup se richiesto
+backup_disk
 
-# Funzione per loggare messaggi
-log() {
-    local message="$1"
-    echo "$(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$LOG_FILE"
-}
-
-# Funzione per gestire gli errori
-handle_error() {
-    local error_message="$1"
-    log "❌ Errore: $error_message"
+# Configurazione git
+git_config_setup
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/dev
+if ! ./bashscripts/sync_to_disk.sh d ; then
+    log "⚠️ backup fallito"
     exit 1
-}
-
-# Verifica che il file di configurazione esista
-if [[ ! -f $CONFIG_FILE ]]; then
-    handle_error "File $CONFIG_FILE non trovato!"
 fi
 
-# Ottieni il branch corrente
-current_branch=$(git symbolic-ref --short HEAD 2>/dev/null || echo "main")
-log "🌿 Branch corrente: $current_branch"
+git config core.ignorecase false
+git config core.fileMode false
+<<<<<<< HEAD
+=======
+>>>>>>> origin/dev
+>>>>>>> origin/dev
+>>>>>>> origin/dev
 
-# Processa le righe del file di configurazione
-while IFS= read -r line; do
-    # Salta righe vuote e commenti
-    [[ -z "$line" || "$line" =~ ^[[:space:]]*# ]] && continue
-    
-    # Rimuovi spazi e CR
-    line=$(echo "$line" | tr -d '\r' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
-    
-    # Estrai i valori path e url
-    if [[ "$line" =~ ^path\ *=\ *(.+)$ ]]; then
-        current_path="${BASH_REMATCH[1]}"
-    elif [[ "$line" =~ ^url\ *=\ *(.+)$ && -n "$current_path" ]]; then
-        current_url="${BASH_REMATCH[1]}"
-        script="$script_dir/git_pull_subtree.sh"
+total=${submodules_array["total"]}
+for ((i=0; i<total; i++)); do
+    path=${submodules_array["path_${i}"]}
+    url=${submodules_array["url_${i}"]}
+    # Applica riscrittura URL se ORG è passato
+    if [ -n "$ORG" ]; then
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        url=$(rewrite_url "$url" "$ORG")
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/dev
+>>>>>>> origin/dev
+        url_org=$(rewrite_url "$url" "$ORG")
+        script="$script_dir/git_push_subtree_org.sh" 
         chmod +x "$script"
         sed -i -e 's/\r$//' "$script"
-        
-        # Chiamata esterna allo script di sincronizzazione
-        log "🔄 Sincronizzazione modulo: $current_path"
-        if ! "$script" "$current_path" "$current_url" ; then
-            log "⚠️ Sincronizzazione fallita per $current_path."
+<<<<<<< HEAD
+        if ! "$script" "$path" "$url_org" ; then
+            log "⚠️ Push ORG fallita per $path."
         fi
-        
-        # Pulizia: reset delle variabili per il prossimo modulo
-        current_path=""
-        current_url=""
+=======
+<<<<<<< HEAD
+        if ! "$script" "$path" "$url_org" ; then
+            log "⚠️ Push ORG fallita per $path."
+        fi
+=======
+        if ! "$script" "$path" "$url_org" "$BRANCH" ; then
+            log "⚠️ Push ORG fallita per $path."
+        fi
+=======
+        url=$(rewrite_url "$url" "$ORG")
+>>>>>>> origin/dev
+>>>>>>> origin/dev
+>>>>>>> origin/dev
+>>>>>>> origin/dev
     fi
-done < "$CONFIG_FILE"
+    echo "---------"
+    echo "Submodule $i  📁 Path: $path  🌐 URL: $url"
+    script="$script_dir/git_pull_subtree.sh"
+    chmod +x "$script"
+    sed -i -e 's/\r$//' "$script"
 
-# Esegui git gc per mantenere il repository leggero
-log "🧹 Pulizia del repository..."
-git gc --prune=now --aggressive
-
-log "✅ Sincronizzazione completata con history ottimizzata!"
+    # Chiamata esterna allo script di sincronizzazione
+    log "🔄 Pull modulo: $path"
+    if ! "$script" "$path" "$url" ; then
+        log "⚠️ Pull fallita per $path."
+    fi
+<<<<<<< HEAD
+done
+=======
+done
+>>>>>>> origin/dev

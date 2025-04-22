@@ -1,3 +1,43 @@
+<<<<<<< HEAD
+#!/bin/bash
+
+# 🚀 Importa funzioni di utilità
+source ./bashscripts/lib/custom.sh
+
+# ✅ Verifica prerequisiti
+if [ ! -f .gitmodules ]; then
+    log "error" "File .gitmodules non trovato"
+    exit 1
+fi
+
+# 🔄 Reset submoduli
+log "info" "Inizio reset submoduli..."
+
+git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |
+    while read path_key path; do
+        url_key=$(echo "$path_key" | sed 's/\.path/.url/')
+        url=$(git config -f .gitmodules --get "$url_key")
+        
+        log "info" "Reset submodule: $path"
+        
+        # Rimuovi directory e cache
+        rm -rf "$path" || log "warning" "Impossibile rimuovere $path"
+        rm -rf ".git/modules/$path" || log "warning" "Impossibile rimuovere .git/modules/$path"
+        
+        # Rimuovi dal tracking
+        git rm --cached -r -f "$path" || log "warning" "Impossibile rimuovere $path dal tracking"
+        
+        # Re-inizializza submodule
+        git submodule add -f "$url" "$path" || handle_git_error "submodule add" "Errore nell'aggiunta del submodule $path"
+        
+        log "success" "Submodule $path resettato con successo"
+    done
+
+log "success" "Reset submoduli completato"
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 #!/bin/sh
 set -e
 git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |
@@ -11,4 +51,24 @@ git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |
         git rm --cached -r -f $path || echo $path
         git submodule add -f $url $path 
     done
+=======
+>>>>>>> origin/dev
+#!/bin/sh
+set -e
+git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |
+    while read path_key path
+    do
+        url_key=$(echo $path_key | sed 's/\.path/.url/')
+        url=$(git config -f .gitmodules --get "$url_key")
+        echo $path
+        rm -rf $path
+        rm -rf .git/modules/$path
+        git rm --cached -r -f $path || echo $path
+        git submodule add -f $url $path 
+    done
+<<<<<<< HEAD
+=======
+>>>>>>> origin/dev
+>>>>>>> origin/dev
+>>>>>>> origin/dev
     

@@ -1,67 +1,114 @@
 #!/bin/bash
 
 
+source ./bashscripts/lib/custom.sh
+# Includi lo script di parsing
+source ./bashscripts/lib/parse_gitmodules_ini.sh
+
+# Chiama la funzione
+parse_gitmodules gitmodules.ini
+
 me=$( readlink -f -- "$0")
 script_dir=$(dirname "$me")
+ORG="$1"
 
-# Script per sincronizzare git subtree con ottimizzazione della history
-CONFIG_FILE="gitmodules.ini"
-DEPTH=1  # Limita la profondità della history scaricata
-LOG_FILE="subtree_sync.log"
+<<<<<<< HEAD
 
-# Funzione per loggare messaggi
-log() {
-    local message="$1"
-    echo "$(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$LOG_FILE"
-}
-
-# Funzione per gestire gli errori
-handle_error() {
-    local error_message="$1"
-    log "❌ Errore: $error_message"
+# Esegui backup prima del push per garantire la sicurezza dei dati
+# Perché: Il backup è cruciale prima di operazioni potenzialmente distruttive
+# Cosa: Sincronizza i dati su disco e verifica il successo dell'operazione
+if ! ./bashscripts/sync_to_disk.sh g ; then
+    log "⚠️ Backup fallito - Interruzione per sicurezza"
     exit 1
-}
-
-# Verifica che il file di configurazione esista
-if [[ ! -f $CONFIG_FILE ]]; then
-    handle_error "File $CONFIG_FILE non trovato!"
 fi
+=======
+<<<<<<< HEAD
+# Esegui backup se richiesto
+backup_disk
+=======
+<<<<<<< HEAD
+# Esegui backup se richiesto
+backup_disk
+=======
+if ! ./bashscripts/sync_to_disk.sh g ; then
+    log "⚠️ backup fallito"
+    exit 1
+fi
+>>>>>>> origin/dev
+>>>>>>> origin/dev
+>>>>>>> origin/dev
 
-# Ottieni il branch corrente
-current_branch=$(git symbolic-ref --short HEAD 2>/dev/null || echo "main")
-log "🌿 Branch corrente: $current_branch"
-
-# Processa le righe del file di configurazione
-while IFS= read -r line; do
-    # Salta righe vuote e commenti
-    [[ -z "$line" || "$line" =~ ^[[:space:]]*# ]] && continue
-    
-    # Rimuovi spazi e CR
-    line=$(echo "$line" | tr -d '\r' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
-    
-    # Estrai i valori path e url
-    if [[ "$line" =~ ^path\ *=\ *(.+)$ ]]; then
-        current_path="${BASH_REMATCH[1]}"
-    elif [[ "$line" =~ ^url\ *=\ *(.+)$ && -n "$current_path" ]]; then
-        current_url="${BASH_REMATCH[1]}"
-        script="$script_dir/git_push_subtree.sh"
+total=${submodules_array["total"]}
+for ((i=0; i<total; i++)); do
+    path=${submodules_array["path_${i}"]}
+    url=${submodules_array["url_${i}"]}
+    # Applica riscrittura URL se ORG è passato
+    if [ -n "$ORG" ]; then
+<<<<<<< HEAD
+        # Perché: La riscrittura dell'URL permette di supportare organizzazioni diverse
+        # Cosa: Trasforma l'URL del repository per puntare all'organizzazione specificata
+        url_org=$(rewrite_url "$url" "$ORG")
+        
+        # Preparazione dello script per il push verso l'organizzazione
+        script="$script_dir/git_push_subtree_org.sh"
         chmod +x "$script"
         sed -i -e 's/\r$//' "$script"
         
-        # Chiamata esterna allo script di sincronizzazione
-        log "🔄 Sincronizzazione modulo: $current_path"
-        if ! "$script" "$current_path" "$current_url" ; then
-            log "⚠️ Sincronizzazione fallita per $current_path."
-        fi
         
-        # Pulizia: reset delle variabili per il prossimo modulo
-        current_path=""
-        current_url=""
+        # Esecuzione del push con gestione degli errori
+        if ! "$script" "$path" "$url_org" ; then
+=======
+        url_org=$(rewrite_url "$url" "$ORG")
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/dev
+        script="$script_dir/git_push_subtree_org.sh" 
+        chmod +x "$script"
+        sed -i -e 's/\r$//' "$script"
+        if ! "$script" "$path" "$url_org" ; then
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+        script="$script_dir/git_push_subtree_org.sh" 
+=======
+        script="$script_dir/git_push_subtree_org.sh"
+>>>>>>> origin/dev
+        chmod +x "$script"
+        sed -i -e 's/\r$//' "$script"
+        if ! "$script" "$path" "$url_org" "$BRANCH" ; then
+>>>>>>> origin/dev
+>>>>>>> origin/dev
+>>>>>>> origin/dev
+            log "⚠️ Push ORG fallita per $path."
+        fi
     fi
-done < "$CONFIG_FILE"
+    echo "---------"
+    echo "🔄Submodule $i:"
+    echo "  📁 Path: $path"
+    echo "  🌐 URL: $url"
+<<<<<<< HEAD
+    # Preparazione dello script per il push standard
+    # Perché: Lo script deve essere eseguibile e con terminazioni di riga corrette
+    # Cosa: Imposta i permessi e normalizza le terminazioni di riga
+    script="$script_dir/git_push_subtree.sh"
+    chmod +x "$script"
+    sed -i -e 's/\r$//' "$script"
+=======
+    script="$script_dir/git_push_subtree.sh"
+    chmod +x "$script"
+    sed -i -e 's/\r$//' "$script"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
 
-# Esegui git gc per mantenere il repository leggero
-log "🧹 Pulizia del repository..."
-git gc --prune=now --aggressive
-
-log "✅ Sincronizzazione completata con history ottimizzata!"
+>>>>>>> origin/dev
+>>>>>>> origin/dev
+>>>>>>> origin/dev
+    # Chiamata esterna allo script di sincronizzazione
+    if ! "$script" "$path" "$url" ; then
+        log "⚠️ Push fallita per $path."
+    fi
+done

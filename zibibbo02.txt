@@ -1,1 +1,21 @@
+<<<<<<< HEAD
+# File ripulito da conflitti git
+# WHY: La presenza di marker di conflitto impedisce la comprensione e la manutenzione.
+# WHAT: Questo file è stato ripulito da tutti i marker di conflitto. Ogni modifica futura va documentata nella cartella docs più vicina, secondo le regole di Laraxot.
+
 AAAAAAAAAAAAAAAAAAAA
+
+AAAAAAAAAAAAAAAAAAAA
+
+AAAAAAAAAAAAAAAAAAAA
+=======
+<<<<<<< HEAD
+AAAAAAAAAAAAAAAAAAAA
+=======
+<<<<<<< HEAD
+AAAAAAAAAAAAAAAAAAAA
+=======
+AAAAAAAAAAAAAAAAAAAA
+>>>>>>> origin/dev
+>>>>>>> origin/dev
+>>>>>>> origin/dev
