@@ -3,6 +3,8 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
@@ -53,6 +55,7 @@ function something()
 =======
 >>>>>>> origin/dev
 >>>>>>> origin/dev
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
 <?php
 
 declare(strict_types=1);
@@ -104,6 +107,9 @@ function something()
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 >>>>>>> origin/dev
 >>>>>>> origin/dev
 >>>>>>> origin/dev
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9

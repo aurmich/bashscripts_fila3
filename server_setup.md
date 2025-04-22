@@ -3,6 +3,8 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 >>>>>>> origin/dev
 # Setup del Progetto Laravel
 
@@ -1243,6 +1245,7 @@ php artisan user:assign-module
 =======
 =======
 >>>>>>> origin/dev
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
 # Setup del Progetto Laravel
 
 Questo documento contiene la documentazione dettagliata dei comandi utilizzati per il setup di un progetto Laravel, insieme a spiegazioni, consigli e note per migliorare il processo.
@@ -1437,6 +1440,8 @@ sudo apt-get install -y php libapache2-mod-php php8.*-{cli,bcmath,bz2,intl,gd,mb
 
 **Spiegazione:**
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 - Installa tutte le estensioni PHP necessarie per lo sviluppo Laravel
 - Include moduli per database, manipolazione di stringhe, immagini, ecc.
 - Configura automaticamente Apache per utilizzare PHP
@@ -1448,6 +1453,7 @@ sudo apt-get install -y php libapache2-mod-php php8.*-{cli,bcmath,bz2,intl,gd,mb
 - Supporto per JSON, XML e ZIP
 - Moduli per SQLite e MySQL
 =======
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
 - Installa PHP e tutte le estensioni necessarie per lo sviluppo
 - Il flag `-y` risponde automaticamente "sì" alle domande durante l'installazione
 - Installa sia le estensioni PHP 8.x che i moduli Apache necessari
@@ -1471,11 +1477,16 @@ sudo apt-get install -y php libapache2-mod-php php8.*-{cli,bcmath,bz2,intl,gd,mb
   - php-dom: DOM XML
   - php-json: Elaborazione JSON
   - php-tokenizer: Tokenizzazione PHP
+<<<<<<< HEAD
+=======
 >>>>>>> origin/dev
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
 
 **Note:**
 - Richiede privilegi di root (sudo)
 - Consigliato eseguire `sudo apt update` prima dell'installazione
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 - Verificare che tutte le estensioni siano abilitate:
   ```bash
@@ -1485,6 +1496,7 @@ sudo apt-get install -y php libapache2-mod-php php8.*-{cli,bcmath,bz2,intl,gd,mb
   ```bash
   sudo systemctl restart apache2
 =======
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
 - Dopo l'installazione, riavviare Apache:
   ```bash
   sudo systemctl restart apache2
@@ -2063,11 +2075,16 @@ sudo pecl install redis
 - Per rimuovere l'estensione:
   ```bash
   sudo pecl uninstall redis
+<<<<<<< HEAD
+=======
 >>>>>>> origin/dev
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
   ```
 
 ## Configurazione Database
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 ### Creazione Database
 ```bash
@@ -2110,6 +2127,7 @@ EXIT;
   DB_USERNAME=laravel
   DB_PASSWORD=password
 =======
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
 ### Creazione Database SQLite
 ```bash
 # Crea il file database.sqlite nella directory database
@@ -2227,11 +2245,16 @@ php artisan migrate
 - Per ripristinare tutte le migrazioni:
   ```bash
   php artisan migrate:fresh
+<<<<<<< HEAD
+=======
 >>>>>>> origin/dev
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
   ```
 
 ## Note e Consigli
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 ### Sicurezza
 - Utilizzare sempre password complesse
@@ -2266,6 +2289,7 @@ Questo documento fornisce una guida completa per il setup di un ambiente di svil
 
 Per ulteriori informazioni, consultare la [documentazione ufficiale di Laravel](https://laravel.com/docs).
 =======
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
 *In attesa dei comandi per documentare...*
 
 ## Ottimizzazione PHP
@@ -2570,6 +2594,9 @@ php artisan user:assign-module
   ```
 - Per rimuovere l'assegnazione di un modulo:
   ```
+<<<<<<< HEAD
+=======
 >>>>>>> origin/dev
 >>>>>>> origin/dev
 >>>>>>> origin/dev
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9

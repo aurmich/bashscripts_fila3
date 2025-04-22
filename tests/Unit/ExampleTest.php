@@ -1,4 +1,6 @@
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
@@ -55,6 +57,7 @@ test('example', function () {
 });
 =======
 >>>>>>> origin/dev
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
 <?php
 
 test('example', function () {
@@ -62,6 +65,9 @@ test('example', function () {
 });
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 >>>>>>> origin/dev
 >>>>>>> origin/dev
 >>>>>>> origin/dev
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9

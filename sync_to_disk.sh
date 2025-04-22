@@ -32,10 +32,14 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
+<<<<<<< HEAD
+DISK_NAME="$1"
+=======
 DISK_NAME=$1
 >>>>>>> origin/dev
 >>>>>>> origin/dev
 >>>>>>> origin/dev
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
 TIMESTAMP=$(date +"%Y%m%d-%H%M")  # Formato YYYYMMDD-HHMM
 ARCHIVE_NAME="$(basename "$PWD")_$TIMESTAMP.tar.gz"
 
@@ -45,6 +49,9 @@ DEST_PATH="/mnt/$DISK_NAME/var/www/html/_bases/$ARCHIVE_NAME"
 
 echo "🚀 Avvio sincronizzazione: $PWD → $DEST_PATH"
 
+<<<<<<< HEAD
+# 🧹 Pulizia file temporanei inutili (*:Zone.Identifier)
+=======
 <<<<<<< HEAD
 # 🧹 Pulizia file temporanei inutili (*:Zone.Identifier)
 =======
@@ -136,11 +143,44 @@ echo "✅ Sincronizzazione completata con successo!"
 =======
 =======
 # 🧹 Rimuove i file temporanei (*:Zone.Identifier)
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
 echo "🧹 Pulizia file temporanei..."
 find . -type f -name "*:Zone.Identifier" -delete
 
-# 📦 Creazione dell'archivio tar.gz con massima compressione
+# 📦 Creazione dell'archivio tar.gz con esclusioni
 echo "📝 Creazione dell'archivio: $TEMP_PATH"
+<<<<<<< HEAD
+tar -czf "$TEMP_PATH" \
+    --exclude='.git' \
+    --exclude='build' \
+    --exclude='cache' \
+    --exclude='storage' \
+    --exclude='venv' \
+    --exclude='node_modules' \
+    --exclude='vendor' \
+    --exclude='*.log' \
+    --exclude='*.tmp' \
+    --exclude='*.bak' \
+    --exclude='*.swp' \
+    --exclude='*.DS_Store' \
+    --exclude='public_html' \
+    --exclude='*.phar' \
+    --exclude='img' \
+    --exclude='*.cache' \
+    --exclude='.git-rewrite' \
+    --exclude='svg' \
+    --exclude='package-lock.json' \
+    --exclude='*.lock' \
+    . || { echo "❌ Errore nella creazione dell'archivio"; exit 1; }
+
+# 📁 Copia dell’archivio sul disco
+echo "📤 Trasferimento dell'archivio a $DEST_PATH"
+cp "$TEMP_PATH" "$DEST_PATH" || { echo "❌ Errore durante la copia"; exit 1; }
+
+echo "✅ Archivio creato e trasferito con successo: $DEST_PATH"
+
+# 🛠️ Normalizzazione dello script stesso (opzionale)
+=======
 tar -czf "$TEMP_PATH" --exclude='.git' --exclude='build' --exclude='cache' --exclude='storage' \
     --exclude='venv' --exclude='node_modules' --exclude='*.log' --exclude='*.tmp' \
     --exclude='*.bak' --exclude='*.swp' --exclude='*.DS_Store' --exclude='vendor' \
@@ -164,10 +204,13 @@ fi
 <<<<<<< HEAD
 
 # 🛠️ Normalizzazione dello script stesso
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
 me=$(readlink -f -- "$0")
 sed -i -e 's/\r$//' "$me"
 
 echo "✅ Sincronizzazione completata!"
+<<<<<<< HEAD
+=======
 =======
 DEST_PATH="/mnt/$DISK_NAME$PWD"
 me=$( readlink -f -- "$0";)
@@ -182,3 +225,4 @@ echo "Sincronizzazione completata!"
 >>>>>>> origin/dev
 >>>>>>> origin/dev
 >>>>>>> origin/dev
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9

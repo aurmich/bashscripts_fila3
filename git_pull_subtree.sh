@@ -190,7 +190,11 @@ die() {
 # Funzione per loggare messaggi
 log() {
     local message="$1"
+<<<<<<< HEAD
+    echo "🗓️ $(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$LOG_FILE"
+=======
     echo "$(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$LOG_FILE"
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
 }
 
 # Funzione per gestire gli errori
@@ -394,7 +398,7 @@ pull_subtree() {
     #git rebase --preserve-merges "$REMOTE_BRANCH"
 =======
     
-    git rebase --rebase-merges --strategy subtree "$REMOTE_BRANCH"
+    git rebase --rebase-merges --strategy subtree "$REMOTE_BRANCH" --autosquash
     #git rebase --preserve-merges "$REMOTE_BRANCH" 
 >>>>>>> origin/dev
 >>>>>>> origin/dev

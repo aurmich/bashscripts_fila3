@@ -118,9 +118,12 @@ die() {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 >>>>>>> origin/dev
 >>>>>>> origin/dev
 >>>>>>> origin/dev
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
 # Funzione per loggare messaggi
 log() {
     local message="$1"
@@ -138,6 +141,9 @@ handle_error() {
 sync_subtree() {
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
     sed -i -e 's/\r$//' "$script_dir/git_push_subtree.sh"
     sed -i -e 's/\r$//' "$script_dir/git_pull_subtree.sh"
     chmod +x "$script_dir/git_push_subtree.sh"
@@ -148,6 +154,8 @@ sync_subtree() {
     if ! "$script_dir/git_pull_subtree.sh" "$LOCAL_PATH" "$REMOTE_REPO" ; then
         log "⚠️ Pull fallita per $current_path."
     fi
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -186,6 +194,7 @@ sync_subtree() {
 >>>>>>> origin/dev
 >>>>>>> origin/dev
 >>>>>>> origin/dev
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
 }
 
 # Run sync

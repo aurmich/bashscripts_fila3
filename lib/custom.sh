@@ -1,6 +1,8 @@
 #!/bin/bash
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 # 🎨 Colori per il logging
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -99,6 +101,7 @@ git_config_setup() {
     log "success" "Configurazione git completata con successo"
 }
 =======
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
 LOG_FILE="subtree_sync.log"
 BRANCH=$(git symbolic-ref --short HEAD 2>/dev/null || echo "main")
 LOG_FILE="subtree_sync.log"
@@ -111,12 +114,17 @@ log() {
     echo "📆 $(date '+%Y-%m-%d %H:%M:%S') - $message"
 =======
 <<<<<<< HEAD
+    #echo "📆 $(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$LOG_FILE"
+    echo "📆 $(date '+%Y-%m-%d %H:%M:%S') - $message"
+=======
+<<<<<<< HEAD
     echo "📆 $(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$LOG_FILE"
 =======
     #echo "📆 $(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$LOG_FILE"
     echo "📆 $(date '+%Y-%m-%d %H:%M:%S') - $message"
 >>>>>>> origin/dev
 >>>>>>> origin/dev
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
 }
 
 # Funzione per gestire gli errori
@@ -133,7 +141,10 @@ die() {
 }
 
 
+<<<<<<< HEAD
+=======
 >>>>>>> origin/dev
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
 
 # Funzione per riscrivere la URL secondo le regole specificate
 rewrite_url() {
@@ -150,6 +161,8 @@ rewrite_url() {
         # ORG è un'organizzazione GitHub → usa formato GitHub SSH
         echo "git@github.com:${org}/${repo_name}"
     fi
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 }
 
@@ -232,4 +245,5 @@ git_delete_history(){
 >>>>>>> origin/dev
 >>>>>>> origin/dev
 >>>>>>> origin/dev
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
 }

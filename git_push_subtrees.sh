@@ -13,12 +13,17 @@ script_dir=$(dirname "$me")
 ORG="$1"
 
 <<<<<<< HEAD
+if ! ./bashscripts/sync_to_disk.sh g ; then
+    log "⚠️ backup fallito"
+=======
+<<<<<<< HEAD
 
 # Esegui backup prima del push per garantire la sicurezza dei dati
 # Perché: Il backup è cruciale prima di operazioni potenzialmente distruttive
 # Cosa: Sincronizza i dati su disco e verifica il successo dell'operazione
 if ! ./bashscripts/sync_to_disk.sh g ; then
     log "⚠️ Backup fallito - Interruzione per sicurezza"
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
     exit 1
 fi
 =======
@@ -44,6 +49,13 @@ for ((i=0; i<total; i++)); do
     url=${submodules_array["url_${i}"]}
     # Applica riscrittura URL se ORG è passato
     if [ -n "$ORG" ]; then
+<<<<<<< HEAD
+        url_org=$(rewrite_url "$url" "$ORG")
+        script="$script_dir/git_push_subtree_org.sh" 
+        chmod +x "$script"
+        sed -i -e 's/\r$//' "$script"
+        if ! "$script" "$path" "$url_org" ; then
+=======
 <<<<<<< HEAD
         # Perché: La riscrittura dell'URL permette di supportare organizzazioni diverse
         # Cosa: Trasforma l'URL del repository per puntare all'organizzazione specificata
@@ -81,6 +93,7 @@ for ((i=0; i<total; i++)); do
 >>>>>>> origin/dev
 >>>>>>> origin/dev
 >>>>>>> origin/dev
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
             log "⚠️ Push ORG fallita per $path."
         fi
     fi
@@ -88,6 +101,12 @@ for ((i=0; i<total; i++)); do
     echo "🔄Submodule $i:"
     echo "  📁 Path: $path"
     echo "  🌐 URL: $url"
+<<<<<<< HEAD
+    script="$script_dir/git_push_subtree.sh"
+    chmod +x "$script"
+    sed -i -e 's/\r$//' "$script"
+
+=======
 <<<<<<< HEAD
     # Preparazione dello script per il push standard
     # Perché: Lo script deve essere eseguibile e con terminazioni di riga corrette
@@ -107,6 +126,7 @@ for ((i=0; i<total; i++)); do
 >>>>>>> origin/dev
 >>>>>>> origin/dev
 >>>>>>> origin/dev
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
     # Chiamata esterna allo script di sincronizzazione
     if ! "$script" "$path" "$url" ; then
         log "⚠️ Push fallita per $path."

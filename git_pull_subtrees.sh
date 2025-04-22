@@ -27,10 +27,20 @@ source ./bashscripts/lib/parse_gitmodules_ini.sh
 # Chiama la funzione
 parse_gitmodules gitmodules.ini
 
+source ./bashscripts/lib/custom.sh
+# Includi lo script di parsing
+source ./bashscripts/lib/parse_gitmodules_ini.sh
+
+# Chiama la funzione
+parse_gitmodules gitmodules.ini
+
 me=$( readlink -f -- "$0")
 script_dir=$(dirname "$me")
 ORG="$1"
 
+<<<<<<< HEAD
+if ! ./bashscripts/sync_to_disk.sh g ; then
+=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -47,6 +57,7 @@ git_config_setup
 =======
 >>>>>>> origin/dev
 if ! ./bashscripts/sync_to_disk.sh d ; then
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
     log "⚠️ backup fallito"
     exit 1
 fi
@@ -55,9 +66,12 @@ git config core.ignorecase false
 git config core.fileMode false
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 >>>>>>> origin/dev
 >>>>>>> origin/dev
 >>>>>>> origin/dev
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
 
 total=${submodules_array["total"]}
 for ((i=0; i<total; i++)); do
@@ -68,6 +82,8 @@ for ((i=0; i<total; i++)); do
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
         url=$(rewrite_url "$url" "$ORG")
 =======
 <<<<<<< HEAD
@@ -75,10 +91,16 @@ for ((i=0; i<total; i++)); do
 <<<<<<< HEAD
 >>>>>>> origin/dev
 >>>>>>> origin/dev
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
         url_org=$(rewrite_url "$url" "$ORG")
         script="$script_dir/git_push_subtree_org.sh" 
         chmod +x "$script"
         sed -i -e 's/\r$//' "$script"
+<<<<<<< HEAD
+        if ! "$script" "$path" "$url_org"; then
+            log "⚠️ Push ORG fallita per $path."
+        fi
+=======
 <<<<<<< HEAD
         if ! "$script" "$path" "$url_org" ; then
             log "⚠️ Push ORG fallita per $path."
@@ -98,6 +120,7 @@ for ((i=0; i<total; i++)); do
 >>>>>>> origin/dev
 >>>>>>> origin/dev
 >>>>>>> origin/dev
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
     fi
     echo "---------"
     echo "Submodule $i  📁 Path: $path  🌐 URL: $url"
@@ -113,5 +136,9 @@ for ((i=0; i<total; i++)); do
 <<<<<<< HEAD
 done
 =======
+<<<<<<< HEAD
+done
+=======
 done
 >>>>>>> origin/dev
+>>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
