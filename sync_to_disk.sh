@@ -1,9 +1,12 @@
 #!/bin/bash
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 43df3e0 (.)
+=======
+>>>>>>> 0440c57 (.)
 # ✅ Controllo se è stato passato il nome del disco
 if [ -z "$1" ]; then
     echo "⚠️ Errore: specificare il nome del disco!"
@@ -56,8 +59,12 @@ tar -czf "$TEMP_PATH" \
 =======
     . || { echo "❌ Errore nella creazione dell'archivio"; exit 1; }
 
+<<<<<<< HEAD
 # 📁 Copia dell’archivio sul disco
 >>>>>>> 43df3e0 (.)
+=======
+# 📁 Copia dell'archivio sul disco
+>>>>>>> 0440c57 (.)
 echo "📤 Trasferimento dell'archivio a $DEST_PATH"
 cp "$TEMP_PATH" "$DEST_PATH" || { echo "❌ Errore durante la copia"; exit 1; }
 
@@ -72,6 +79,7 @@ me=$(readlink -f -- "$0")
 sed -i -e 's/\r$//' "$me"
 
 echo "✅ Sincronizzazione completata!"
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -92,3 +100,5 @@ sed -i -e 's/\r$//' "$me"
 echo "Sincronizzazione completata!"
 >>>>>>> cb513be (.)
 >>>>>>> 43df3e0 (.)
+=======
+>>>>>>> 0440c57 (.)

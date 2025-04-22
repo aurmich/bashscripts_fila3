@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
@@ -24,15 +25,40 @@
 =======
 >>>>>>> cb513be (.)
 >>>>>>> 43df3e0 (.)
+=======
+>>>>>>> 0440c57 (.)
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.3/phpunit.xsd"
          bootstrap="vendor/autoload.php"
          colors="true"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 43df3e0 (.)
+=======
+>
+    <testsuites>
+        <testsuite name="Test Suite">
+            <directory suffix="Test.php">./tests</directory>
+        </testsuite>
+    </testsuites>
+    <source>
+        <include>
+            <directory suffix=".php">./app</directory>
+            <directory suffix=".php">./src</directory>
+        </include>
+    </source>
+</phpunit>
+
+[0;34mℹ️ [2025-04-22 11:23:29] Scelto blocco HEAD (19 linee vs 1)[0m
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.3/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         colors="true"
+>>>>>>> 0440c57 (.)
          cacheResult="true"
          cacheResultFile=".phpunit.cache"
          executionOrder="random"
@@ -56,25 +82,31 @@
     </testsuites>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> cb513be (.)
+=======
+>>>>>>> 0440c57 (.)
 >
     <testsuites>
         <testsuite name="Test Suite">
             <directory suffix="Test.php">./tests</directory>
         </testsuite>
     </testsuites>
-<<<<<<< HEAD
 
 [0;34mℹ️ [2025-04-22 11:23:29] Scelto blocco HEAD (29 linee vs 1)[0m
+<<<<<<< HEAD
 =======
 >>>>>>> cb513be (.)
 >>>>>>> 43df3e0 (.)
+=======
+>>>>>>> 0440c57 (.)
     <source>
         <include>
             <directory suffix=".php">./app</directory>
             <directory suffix=".php">./src</directory>
+<<<<<<< HEAD
 <<<<<<< HEAD
             <directory suffix=".php">./modules</directory>
         </include>
@@ -126,3 +158,7 @@
 </phpunit>
 >>>>>>> cb513be (.)
 >>>>>>> 43df3e0 (.)
+=======
+
+[0;34mℹ️ [2025-04-22 11:23:29] Scelto blocco incoming (1 linee vs 1)[0m
+>>>>>>> 0440c57 (.)

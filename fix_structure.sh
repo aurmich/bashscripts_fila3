@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #!/bin/bash
 
 # 🎨 Colori per il logging
@@ -82,6 +83,8 @@ log "success" "Struttura del progetto aggiornata con successo."
 #!/bin/bash
 
 =======
+=======
+>>>>>>> 0440c57 (.)
 #!/bin/sh
 
 # Funzione per copiare e rinominare le cartelle
@@ -118,5 +121,8 @@ move_config "Database"
 move_config "Resources"
 move_config "Routes"
 move_config "Tests"
+<<<<<<< HEAD
 >>>>>>> cb513be (.)
 >>>>>>> 43df3e0 (.)
+=======
+>>>>>>> 0440c57 (.)

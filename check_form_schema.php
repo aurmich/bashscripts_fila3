@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -85,6 +86,8 @@ file_put_contents('/var/www/html/base_techplanner_fila3/docs/documentation_updat
 =======
 >>>>>>> cb513be (.)
 >>>>>>> 43df3e0 (.)
+=======
+>>>>>>> 0440c57 (.)
 #!/usr/bin/env php
 <?php
 
@@ -180,12 +183,16 @@ $missingFormSchema = array_filter($results, function ($result) {
 
 echo "XotBaseResource Classes Form Schema Check\n";
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 echo "====\n\n";
 =======
 >>>>>>> cb513be (.)
 >>>>>>> 43df3e0 (.)
+=======
+echo "====\n\n";
+>>>>>>> 0440c57 (.)
 echo "=======================================\n\n";
 
 if (empty($missingFormSchema)) {
@@ -204,6 +211,7 @@ $logContent .= 'Classes missing getFormSchema: '.count($missingFormSchema)."\n\n
 
 file_put_contents('/var/www/html/base_techplanner_fila3/docs/documentation_update.log', $logContent, FILE_APPEND);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -212,3 +220,5 @@ file_put_contents('/var/www/html/base_techplanner_fila3/docs/documentation_updat
 =======
 >>>>>>> cb513be (.)
 >>>>>>> 43df3e0 (.)
+=======
+>>>>>>> 0440c57 (.)
