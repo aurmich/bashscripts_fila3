@@ -81,6 +81,7 @@ git commit -m "Inizializzazione repository" || true  # Non fallire se non ci son
 =======
 >>>>>>> 754d7c0 (Inizializzazione repository)
 log "info" "Merge con remote"
+<<<<<<< HEAD
 #git merge origin/"$BRANCH" --allow-unrelated-histories || handle_git_error "git merge" "Impossibile eseguire merge con origin/$BRANCH"
 git pull origin "$BRANCH" --autostash --rebase --allow-unrelated-histories --depth=1
 
@@ -100,6 +101,9 @@ git rebase --continue
 >>>>>>> 38d1ecb (Inizializzazione repository)
 log "info" "pull con remote"
 #git merge origin/"$BRANCH" --allow-unrelated-histories || handle_git_error "git merge" "Impossibile eseguire merge con origin/$BRANCH"
+=======
+git merge origin/"$BRANCH" --allow-unrelated-histories || handle_git_error "git merge" "Impossibile eseguire merge con origin/$BRANCH"
+>>>>>>> 9a303e2 (Inizializzazione repository)
 git pull origin "$BRANCH" --autostash --rebase --allow-unrelated-histories --depth=1
 
 
