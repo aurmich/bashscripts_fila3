@@ -10,10 +10,13 @@ fi
 LOCAL_PATH="$1"
 REMOTE_REPO="$2"
 <<<<<<< HEAD
+<<<<<<< HEAD
 BRANCH="main"  # Default branch
 =======
 
 >>>>>>> 3fd0e77 (Inizializzazione repository)
+=======
+>>>>>>> 38d1ecb (Inizializzazione repository)
 
 curr_dir=$(pwd)
 
@@ -29,10 +32,14 @@ git init || handle_git_error "git init" "Impossibile inizializzare il repository
 log "info" "Creazione branch $BRANCH"
 git checkout -b "$BRANCH" || handle_git_error "git checkout" "Impossibile creare il branch $BRANCH"
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 git_config_setup
 >>>>>>> 3fd0e77 (Inizializzazione repository)
+=======
+git_config_setup
+>>>>>>> 38d1ecb (Inizializzazione repository)
 # Configurazione remote
 log "info" "Configurazione remote origin"
 git remote add origin "$REMOTE_REPO" || handle_git_error "git remote add" "Impossibile aggiungere il remote origin"
@@ -47,6 +54,7 @@ git add -A
 git commit -m "Inizializzazione repository" || true  # Non fallire se non ci sono cambiamenti
 
 # Merge con remote
+<<<<<<< HEAD
 <<<<<<< HEAD
 log "info" "Merge con remote"
 #git merge origin/"$BRANCH" --allow-unrelated-histories || handle_git_error "git merge" "Impossibile eseguire merge con origin/$BRANCH"
@@ -63,6 +71,8 @@ git rebase --continue
 
 
 =======
+=======
+>>>>>>> 38d1ecb (Inizializzazione repository)
 log "info" "pull con remote"
 #git merge origin/"$BRANCH" --allow-unrelated-histories || handle_git_error "git merge" "Impossibile eseguire merge con origin/$BRANCH"
 git pull origin "$BRANCH" --autostash --rebase --allow-unrelated-histories --depth=1
@@ -83,7 +93,10 @@ while true; do
     echo "Ci sono conflitti, continua il rebase..."
   fi
 done
+<<<<<<< HEAD
 >>>>>>> 3fd0e77 (Inizializzazione repository)
+=======
+>>>>>>> 38d1ecb (Inizializzazione repository)
 
 # Pulizia
 log "info" "Pulizia repository locale"
