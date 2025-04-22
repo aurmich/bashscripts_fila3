@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * Configurazione Tailwind CSS per il progetto
  *
@@ -41,5 +42,14 @@ module.exports = {
     require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
   ],
+=======
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+>>>>>>> cb513be (.)
 }
 

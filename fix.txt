@@ -43,6 +43,7 @@ find . -type f -name "*:Zone.Identifier" -exec rm -f {} +
 
 sudo update-alternatives --config php
 
+<<<<<<< HEAD
 ----
 
 [0;34mℹ️ [2025-04-22 11:23:27] Scelto blocco HEAD (47 linee vs 1)[0m
@@ -216,3 +217,5 @@ SOLUZIONE: > sudo chmod 777 -R .
         
 
 [0;34mℹ️ [2025-04-22 11:23:27] Scelto blocco HEAD (22 linee vs 1)[0m
+=======
+>>>>>>> cb513be (.)

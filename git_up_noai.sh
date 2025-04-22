@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/bin/bash
 
 # 🎨 Colori per il logging
@@ -143,6 +144,9 @@ git rebase --continue || echo '🔔 Nessun rebase da continuare'
 
 # Checkout e aggiornamento del branch
 echo "🔀 Checkout del branch $branch..."
+=======
+#!/bin/sh
+>>>>>>> cb513be (.)
 if [ "$1" ]; then
      echo yes
 else
@@ -156,8 +160,20 @@ where=$(pwd)
 git submodule update --progress --init --recursive --force --merge --rebase --remote
 git submodule foreach "$me" "$branch"
 find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
+<<<<<<< HEAD
 #delete old branches
 #git push origin --delete cs0.2.03
+=======
+#old branches
+#git push origin --delete cs0.2.03
+#git push origin --delete cs0.2.04
+#git push origin --delete cs0.2.05
+#git push origin --delete cs0.2.06
+#git push origin --delete cs0.2.07
+#git push origin --delete cs0.2.08
+#git push origin --delete cs0.2.09
+#git push origin --delete cs0.2.10
+>>>>>>> cb513be (.)
 
 git config core.fileMode false
 git config advice.submoduleMergeConflict false
@@ -172,6 +188,7 @@ git checkout $branch --
 git branch --set-upstream-to=origin/$branch $branch
 git branch -u origin/$branch
 git merge $branch
+<<<<<<< HEAD
 
 echo "-------- END PUSH[$where ($branch)] ----------"
 echo "-------- END BRANCH[$where ($branch)] ----------"
@@ -186,6 +203,8 @@ git pull origin $branch --autostash --recurse-submodules --allow-unrelated-histo
 sed -i -e 's/\r$//' "$me"
 
 echo "-------- END PULL[$where ($branch)] ----------"
+=======
+>>>>>>> cb513be (.)
 echo "-------- END BRANCH[$where ($branch)] ----------";
 git submodule update --progress --init --recursive --force --merge --rebase --remote
 git checkout $branch --

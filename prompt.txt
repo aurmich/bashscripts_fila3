@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # GUIDA ESSENZIALE LARAXOT
 
 ## DOCUMENTAZIONE
@@ -155,11 +156,14 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 
 
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco HEAD (156 linee vs 1)[0m
+=======
+>>>>>>> cb513be (.)
 # GUIDA ESSENZIALE LARAXOT
 
 ## DOCUMENTAZIONE
 - Consulta SEMPRE le cartelle docs prima di ogni azione
 - Mai includere percorsi assoluti specifici (es. base_*_fila3)
+<<<<<<< HEAD
 - Aggiorna e studia la cartella "docs" più vicina prima di implementare soluzioni
 - La documentazione non deve essere una replica del codice
 
@@ -186,11 +190,14 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 
 
 
+=======
+>>>>>>> cb513be (.)
 
 ## TRADUZIONI
 - Formato corretto: `'field' => ['label' => 'Etichetta', 'tooltip' => 'Descrizione']`
 - MAI usare ->label() (gestito da LangServiceProvider)
 
+<<<<<<< HEAD
 
 
 
@@ -201,6 +208,11 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 - Non estendiamo mai Migration ma XotBaseMigration
 - Estendere classi base Xot (XotBaseServiceProvider) per i Service Provider
 - Chiamare sempre parent::boot() nei Service Provider
+=======
+## ESTENSIONE CLASSI
+- MAI estendere classi Filament direttamente
+- SEMPRE estendere classi XotBase dal modulo Xot
+>>>>>>> cb513be (.)
 
 ## FILAMENT RESOURCES
 - Estendere XotBaseResource, non Resource
@@ -212,6 +224,7 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 - Usare metodi specifici: getListTableColumns(), getTableFilters(), getTableActions()
 - Usare array associativi con chiavi string per componenti
 
+<<<<<<< HEAD
 ## TRADUZIONI
 - Formato corretto: `'field' => ['label' => 'Etichetta', 'tooltip' => 'Descrizione']`
 - MAI usare ->label() (gestito da LangServiceProvider)
@@ -220,6 +233,8 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 
 
 
+=======
+>>>>>>> cb513be (.)
 ## NAMESPACE
 - Modello: `Modules\*\Models` (non `Modules\*\app\Models`)
 - Filament: `Modules\*\Filament` (non `Modules\*\app\Filament`)
@@ -233,6 +248,7 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 - Estendere classi base Xot (XotBaseServiceProvider)
 - Chiamare sempre parent::boot()
 
+<<<<<<< HEAD
 
 
 
@@ -540,11 +556,17 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 
 
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
+=======
+## MIGRAZIONI
+- Estendere XotBaseMigration
+- Usare tableCreate() e tableUpdate()
+>>>>>>> cb513be (.)
 
 ## METODOLOGIA
 - Analizzare moduli esistenti
 - Focalizzarsi sullo scopo, non solo sulla correzione
 - Seguire convenzioni del framework
+<<<<<<< HEAD
 
 
 
@@ -598,3 +620,5 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 
 
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
+=======
+>>>>>>> cb513be (.)

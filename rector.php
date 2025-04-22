@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
@@ -19,6 +20,8 @@ return RectorConfig::configure()
     ]);
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (20 linee vs 1)[0m
+=======
+>>>>>>> cb513be (.)
 <?php
 
 declare(strict_types=1);
@@ -26,6 +29,7 @@ declare(strict_types=1);
 use Rector\Config\RectorConfig;
 use Rector\TypeDeclaration\Rector\ClassMethod\AddVoidReturnTypeWhereNoReturnRector;
 
+<<<<<<< HEAD
 /**
  * Configurazione Rector per l'analisi statica e la trasformazione automatica del codice
  * 
@@ -40,6 +44,8 @@ use Rector\TypeDeclaration\Rector\ClassMethod\AddVoidReturnTypeWhereNoReturnRect
  */
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (13 linee vs 1)[0m
+=======
+>>>>>>> cb513be (.)
 return RectorConfig::configure()
     ->withPaths([
         __DIR__.'/',
@@ -47,5 +53,13 @@ return RectorConfig::configure()
     ->withSkip([
         __DIR__.'/vendor',
     ])
+<<<<<<< HEAD
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
+=======
+    // uncomment to reach your current PHP version
+    ->withPhpSets()
+    ->withRules([
+        // AddVoidReturnTypeWhereNoReturnRector::class,
+    ]);
+>>>>>>> cb513be (.)

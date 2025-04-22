@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 #!/usr/bin/env php
 <?php
@@ -79,6 +80,8 @@ $logContent .= 'Classes missing getFormSchema: '.count($missingFormSchema)."\n\n
 file_put_contents('/var/www/html/base_techplanner_fila3/docs/documentation_update.log', $logContent, FILE_APPEND);
 
  origin/dev
+=======
+>>>>>>> cb513be (.)
 #!/usr/bin/env php
 <?php
 
@@ -139,7 +142,10 @@ $missingFormSchema = array_filter($results, function ($result) {
 });
 
 echo "XotBaseResource Classes Form Schema Check\n";
+<<<<<<< HEAD
 echo "====\n\n";
+=======
+>>>>>>> cb513be (.)
 echo "=======================================\n\n";
 
 if (empty($missingFormSchema)) {
@@ -157,6 +163,9 @@ $logContent .= 'Total classes checked: '.count($results)."\n";
 $logContent .= 'Classes missing getFormSchema: '.count($missingFormSchema)."\n\n";
 
 file_put_contents('/var/www/html/base_techplanner_fila3/docs/documentation_update.log', $logContent, FILE_APPEND);
+<<<<<<< HEAD
 
  origin/dev
  origin/dev
+=======
+>>>>>>> cb513be (.)

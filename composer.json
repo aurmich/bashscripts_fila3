@@ -1,7 +1,16 @@
 {
+<<<<<<< HEAD
     "name": "laraxot/git-automation",
     "description": "Toolkit di automazione Git per progetti Laravel",
     "type": "library",
+=======
+    "name": "laraxot/bashscripts_fila3",
+    "autoload": {
+        "psr-4": {
+            "Laraxot\\BashscriptsFila3\\": "src/"
+        }
+    },
+>>>>>>> cb513be (.)
     "authors": [
         {
             "name": "marco76tv",

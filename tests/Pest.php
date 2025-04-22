@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
@@ -47,6 +48,8 @@ function something()
 }
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (48 linee vs 1)[0m
+=======
+>>>>>>> cb513be (.)
 <?php
 
 declare(strict_types=1);
@@ -94,5 +97,8 @@ function something()
 {
     // ..
 }
+<<<<<<< HEAD
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
+=======
+>>>>>>> cb513be (.)
