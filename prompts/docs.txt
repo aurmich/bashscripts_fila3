@@ -5,16 +5,14 @@ le cartelle docs dei moduli sono la tua memoria , la cartella docs nella root de
 
 ,phpstan e' gia' installato dentro la cartella laravel e lo esegui con ./vendor/bin/phpstan, non toccare phpstan.neon, correggi tutte le segnalazioni di phpstan a livello 2 su tutto Modules, ogni modulo ha il suo composer.json ,  le classi da registrare dei moduli son dentro la loro cartella app , il namespace non e' Modules\<nome>\app\  ma Modules\<nome>\, procedi nell'ordine che preferisci,   senza MAI fermarti, le priorità e l'ordine di cosa fare prima lo scegli te
 
-<<<<<<< HEAD
+
 procedi con la sistemazione degli errori di phpstan su tutto Modules a livello 9, aiutandoti e aggiornando le cartelle docs 
 
 le cartelle docs sono la tua memoria e devi aggiornarle e studiarle costantemente , le cartelle docs son dentro i moduli e poi c'e' una cartella docs nella root del progetto che tramite collegamenti bidirezionali ti serve come indice per andare a leggere e studiare e aggioarnare la cartella docs piu' adeguata , Riscriviamo la documentazione in modo più efficace, concentrandoci sul "perché" e sul "cosa" piuttosto che sul "come",aggiorna le tue rules, le rules globali e le tue memories
-=======
-<<<<<<< HEAD
+
+
 procedi con la sistemazione degli errori di phpstan su tutto Modules a livello 9, aiutandoti e aggiornando le cartelle docs 
 
 le cartelle docs sono la tua memoria e devi aggiornarle e studiarle costantemente , le cartelle docs son dentro i moduli e poi c'e' una cartella docs nella root del progetto che tramite collegamenti bidirezionali ti serve come indice per andare a leggere e studiare e aggioarnare la cartella docs piu' adeguata , Riscriviamo la documentazione in modo più efficace, concentrandoci sul "perché" e sul "cosa" piuttosto che sul "come",aggiorna le tue rules, le rules globali e le tue memories
-=======
+
 procedi con la sistemazione degli errori di phpstan su tutto Modules a livello 9, aiutandoti e aggiornando le cartelle docs 
->>>>>>> origin/dev
->>>>>>> origin/dev

@@ -1,10 +1,10 @@
 #!/bin/bash
 
-<<<<<<< HEAD
 # 🎨 Colori per il logging
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
 NC='\033[0m'
 
 # 📝 Funzione di logging
@@ -15,8 +15,34 @@ log() {
         "error") echo -e "${RED}❌ $message${NC}" ;;
         "success") echo -e "${GREEN}✅ $message${NC}" ;;
         "warning") echo -e "${YELLOW}⚠️ $message${NC}" ;;
-        "info") echo -e "ℹ️ $message" ;;
+        "info") echo -e "${BLUE}ℹ️ $message${NC}" ;;
     esac
+}
+
+# 🔍 Funzione per verificare le dipendenze
+check_dependencies() {
+    local deps=("git" "php" "composer" "node" "npm")
+    for dep in "${deps[@]}"; do
+        if ! command -v "$dep" &> /dev/null; then
+            log "error" "Dipendenza mancante: $dep"
+            exit 1
+        fi
+    done
+}
+
+# 📦 Funzione per gestire le librerie comuni
+handle_common_libraries() {
+    local file="$1"
+    local content=$(cat "$file")
+    
+    # Verifica se il file contiene riferimenti a librerie comuni
+    if [[ "$content" == *"spatie/laravel-data"* ]] || 
+       [[ "$content" == *"spatie/laravel-queueable-action"* ]] ||
+       [[ "$content" == *"laraxot"* ]]; then
+        log "info" "File contiene librerie comuni: $file"
+        return 0
+    fi
+    return 1
 }
 
 # 🔧 Funzione per risolvere i conflitti in un file
@@ -26,6 +52,12 @@ fix_conflicts() {
     
     # 📦 Backup del file originale
     cp "$file" "${file}.bak" || { log "error" "Impossibile creare backup di $file"; return 1; }
+    
+    # 🔍 Verifica se il file contiene librerie comuni
+    if handle_common_libraries "$file"; then
+        log "warning" "File contiene librerie comuni, verifica manuale necessaria"
+        return 1
+    fi
     
     # 🧹 Rimozione marcatori di conflitto
     sed -i -e '/^<<<<<<< HEAD$/d' \
@@ -44,6 +76,12 @@ fix_conflicts() {
     fi
 }
 
+# 🚀 Inizio script
+log "info" "Inizio processo di risoluzione conflitti..."
+
+# 🔍 Verifica dipendenze
+check_dependencies
+
 # 🔍 Ricerca file con conflitti
 log "info" "Ricerca file con conflitti..."
 files_with_conflicts=$(find . -type f \
@@ -61,51 +99,12 @@ fi
 
 # 🚀 Risoluzione conflitti
 log "info" "Inizio risoluzione conflitti..."
-=======
-# Funzione per risolvere i conflitti in un file
-fix_conflicts() {
-    local file="$1"
-    echo "🔧 Risoluzione conflitti in: $file"
-    
-    # Backup del file originale
-    cp "$file" "${file}.bak"
-    
-    # Rimuove i marcatori di conflitto e mantiene la versione più recente
-    sed -i -e '/^<<<<<<< HEAD$/d' \
-           -e '/^=======$/d' \
-           -e '/^>>>>>>> /d' \
-           "$file"
-    
-    # Verifica se il file è stato modificato
-    if diff -q "$file" "${file}.bak" >/dev/null; then
-        echo "⚠️ Nessuna modifica necessaria in: $file"
-        rm "${file}.bak"
-    else
-        echo "✅ Conflitti risolti in: $file"
-        rm "${file}.bak"
-        git add "$file"
-    fi
-}
-
-# Trova tutti i file con conflitti
-echo "🔍 Ricerca file con conflitti..."
-files_with_conflicts=$(find . -type f -not -path "*/\.*" -not -path "*/vendor/*" -not -path "*/node_modules/*" -exec grep -l "<<<<<<< HEAD" {} \;)
-
-if [ -z "$files_with_conflicts" ]; then
-    echo "✨ Nessun conflitto trovato!"
-    exit 0
-fi
-
-# Risolvi i conflitti in ogni file
-echo "🚀 Inizio risoluzione conflitti..."
->>>>>>> origin/dev
 echo "$files_with_conflicts" | while read -r file; do
     if [ -f "$file" ]; then
         fix_conflicts "$file"
     fi
 done
 
-<<<<<<< HEAD
 # 🧪 Esecuzione test
 log "info" "Esecuzione test..."
 cd laravel && ./vendor/bin/pest tests/Feature/GitConflictTest.php || {
@@ -128,19 +127,4 @@ find . -type f -name "*.php" \
     fi
 done
 
-log "success" "Processo completato con successo!" 
-=======
-# Esegui i test
-echo "🧪 Esecuzione test..."
-cd laravel && ./vendor/bin/pest tests/Feature/GitConflictTest.php
-
-# Verifica PHPStan per i file PHP
-echo "🔍 Verifica PHPStan..."
-find . -type f -name "*.php" -not -path "*/vendor/*" -not -path "*/node_modules/*" | while read -r file; do
-    if [ -f "$file" ]; then
-        ./vendor/bin/phpstan analyse "$file"
-    fi
-done
-
-echo "✅ Processo completato!" 
->>>>>>> origin/dev
+log "success" "Processo completato con successo!"

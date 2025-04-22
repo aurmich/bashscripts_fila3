@@ -1,8 +1,5 @@
 #!/bin/bash
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 # 🎨 Colori per il logging
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -100,51 +97,6 @@ git_config_setup() {
     
     log "success" "Configurazione git completata con successo"
 }
-=======
->>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
-LOG_FILE="subtree_sync.log"
-BRANCH=$(git symbolic-ref --short HEAD 2>/dev/null || echo "main")
-LOG_FILE="subtree_sync.log"
-
-# Funzione per loggare messaggi
-log() {
-    local message="$1"
-<<<<<<< HEAD
-    #echo "📆 $(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$LOG_FILE"
-    echo "📆 $(date '+%Y-%m-%d %H:%M:%S') - $message"
-=======
-<<<<<<< HEAD
-    #echo "📆 $(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$LOG_FILE"
-    echo "📆 $(date '+%Y-%m-%d %H:%M:%S') - $message"
-=======
-<<<<<<< HEAD
-    echo "📆 $(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$LOG_FILE"
-=======
-    #echo "📆 $(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$LOG_FILE"
-    echo "📆 $(date '+%Y-%m-%d %H:%M:%S') - $message"
->>>>>>> origin/dev
->>>>>>> origin/dev
->>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
-}
-
-# Funzione per gestire gli errori
-handle_error() {
-    local error_message="$1"
-    log "❌ Errore: $error_message"
-    exit 1
-}
-
-# Simple error handling function
-die() {
-    echo "$1" >&2
-    exit 1
-}
-
-
-<<<<<<< HEAD
-=======
->>>>>>> origin/dev
->>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
 
 # Funzione per riscrivere la URL secondo le regole specificate
 rewrite_url() {
@@ -161,43 +113,8 @@ rewrite_url() {
         # ORG è un'organizzazione GitHub → usa formato GitHub SSH
         echo "git@github.com:${org}/${repo_name}"
     fi
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 }
 
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/dev
-}
-
-# Git maintenance
-git_maintenance() {
-    log "Eseguo manutenzione del repository git..."
-    
-    # Pulizia e ottimizzazione
-    git gc --aggressive --prune=now
-    git reflog expire --expire=now --all
-    
-    # Rimozione branch remoti non più esistenti
-    git remote prune origin
-    
-    # Pulizia dei file non tracciati
-    git clean -fd
-    
-    # Verifica integrità repository
-    git fsck --full --strict
-
-    # Ottimizzazione specifica per subtree
-    #log "Ottimizzazione subtree..."
-    #git filter-branch --prune-empty --subdirectory-filter "$LOCAL_PATH" "$BRANCH" || true
-    #git for-each-ref --format="%(refname)" refs/original/ | xargs -n 1 git update-ref -d
-}
-
-
->>>>>>> origin/dev
 backup_disk() {
     # Richiesta interattiva della lettera del disco
     read -p "📀 Inserisci la lettera del disco per il backup [d]: " DISK_LETTER
@@ -210,21 +127,6 @@ backup_disk() {
     echo "  💾 Backup Disk: $DISK_LETTER"
 }
 
-<<<<<<< HEAD
-=======
-# Funzione per configurare le impostazioni git
-git_config_setup() {
-    log "🔧 Configurazione git di base..."
-    git config core.ignorecase false        # Gestione case-sensitive dei file
-    git config core.fileMode false          # Ignora i permessi dei file
-    git config core.autocrlf false          # Non convertire automaticamente i line endings
-    git config core.eol lf                  # Usa LF come line ending di default
-    git config core.symlinks false          # Gestione symlinks disabilitata per Windows
-    git config core.longpaths true          # Supporto per path lunghi su Windows
-    log "✅ Configurazione git completata"
-}
-
->>>>>>> origin/dev
 git_delete_history(){
     local branch="$1"
     git checkout --orphan newBranch$branch
@@ -237,13 +139,4 @@ git_delete_history(){
     git push -uf origin $branch  # Force push $1 branch to github
     git gc --aggressive --prune=all     # remove the old files
     git gc --auto
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/dev
->>>>>>> origin/dev
->>>>>>> origin/dev
->>>>>>> 84b3813e50c4cbfe71b6ec59f9d5305384b70fb9
 }

@@ -1,18 +1,16 @@
-<<<<<<< HEAD
-
-
-
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/dev
 #!/usr/bin/env php
 <?php
 
 declare(strict_types=1);
 
-function checkFormSchemaMethod($file)
+use function Safe\file_get_contents;
+use function Safe\file_put_contents;
+use function Safe\preg_match;
+
+/**
+ * @return array{file: string, class: string, has_form_schema: bool}|null
+ */
+function checkFormSchemaMethod(string $file): ?array
 {
     $content = file_get_contents($file);
 
@@ -29,11 +27,14 @@ function checkFormSchemaMethod($file)
     return [
         'file' => $file,
         'class' => $className,
-        'has_form_schema' => $hasFormSchema,
+        'has_form_schema' => (bool) $hasFormSchema,
     ];
 }
 
-function findXotBaseResourceClasses($directory)
+/**
+ * @return array<array{file: string, class: string, has_form_schema: bool}>
+ */
+function findXotBaseResourceClasses(string $directory): array
 {
     $results = [];
 
@@ -45,11 +46,15 @@ function findXotBaseResourceClasses($directory)
     $phpFiles = new RegexIterator($iterator, '/\.php$/');
 
     foreach ($phpFiles as $file) {
+        if (!$file instanceof SplFileInfo) {
+            continue;
+        }
+
         $fileContent = file_get_contents($file->getPathname());
 
-        if (false !== strpos($fileContent, 'extends XotBaseResource')) {
+        if (strpos($fileContent, 'extends XotBaseResource') !== false) {
             $check = checkFormSchemaMethod($file->getPathname());
-            if ($check) {
+            if ($check !== null) {
                 $results[] = $check;
             }
         }
@@ -67,11 +72,7 @@ $missingFormSchema = array_filter($results, function ($result) {
 });
 
 echo "XotBaseResource Classes Form Schema Check\n";
-<<<<<<< HEAD
-echo "====\n\n";
-=======
 echo "=======================================\n\n";
->>>>>>> origin/dev
 
 if (empty($missingFormSchema)) {
     echo "✅ All XotBaseResource classes have getFormSchema method.\n";
@@ -88,102 +89,3 @@ $logContent .= 'Total classes checked: '.count($results)."\n";
 $logContent .= 'Classes missing getFormSchema: '.count($missingFormSchema)."\n\n";
 
 file_put_contents('/var/www/html/base_techplanner_fila3/docs/documentation_update.log', $logContent, FILE_APPEND);
-<<<<<<< HEAD
-
- origin/dev
-=======
-=======
->>>>>>> origin/dev
->>>>>>> origin/dev
-#!/usr/bin/env php
-<?php
-
-declare(strict_types=1);
-
-function checkFormSchemaMethod($file)
-{
-    $content = file_get_contents($file);
-
-    // Check if the class extends XotBaseResource
-    if (! preg_match('/class\s+(\w+)\s+extends\s+XotBaseResource/', $content, $matches)) {
-        return null;
-    }
-
-    $className = $matches[1];
-
-    // Check if getFormSchema method exists
-    $hasFormSchema = preg_match('/public\s+function\s+getFormSchema\s*\(/', $content);
-
-    return [
-        'file' => $file,
-        'class' => $className,
-        'has_form_schema' => $hasFormSchema,
-    ];
-}
-
-function findXotBaseResourceClasses($directory)
-{
-    $results = [];
-
-    $iterator = new RecursiveIteratorIterator(
-        new RecursiveDirectoryIterator($directory, RecursiveDirectoryIterator::SKIP_DOTS),
-        RecursiveIteratorIterator::SELF_FIRST
-    );
-
-    $phpFiles = new RegexIterator($iterator, '/\.php$/');
-
-    foreach ($phpFiles as $file) {
-        $fileContent = file_get_contents($file->getPathname());
-
-        if (false !== strpos($fileContent, 'extends XotBaseResource')) {
-            $check = checkFormSchemaMethod($file->getPathname());
-            if ($check) {
-                $results[] = $check;
-            }
-        }
-    }
-
-    return $results;
-}
-
-$directory = '/var/www/html/base_techplanner_fila3/laravel';
-$results = findXotBaseResourceClasses($directory);
-
-// Generate report
-$missingFormSchema = array_filter($results, function ($result) {
-    return ! $result['has_form_schema'];
-});
-
-echo "XotBaseResource Classes Form Schema Check\n";
-<<<<<<< HEAD
-echo "====\n\n";
-=======
-echo "=======================================\n\n";
->>>>>>> origin/dev
-
-if (empty($missingFormSchema)) {
-    echo "✅ All XotBaseResource classes have getFormSchema method.\n";
-} else {
-    echo '❌ '.count($missingFormSchema)." classes missing getFormSchema method:\n\n";
-    foreach ($missingFormSchema as $result) {
-        echo "- {$result['class']} in {$result['file']}\n";
-    }
-}
-
-// Write to documentation log
-$logContent = date('Y-m-d H:i:s')." - Form Schema Check\n";
-$logContent .= 'Total classes checked: '.count($results)."\n";
-$logContent .= 'Classes missing getFormSchema: '.count($missingFormSchema)."\n\n";
-
-file_put_contents('/var/www/html/base_techplanner_fila3/docs/documentation_update.log', $logContent, FILE_APPEND);
-<<<<<<< HEAD
-
-
- origin/dev
- origin/dev
-=======
-<<<<<<< HEAD
-=======
->>>>>>> origin/dev
->>>>>>> origin/dev
->>>>>>> origin/dev
