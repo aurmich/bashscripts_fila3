@@ -1,46 +1,12 @@
-<<<<<<< HEAD
 // WHY: Recupera il nome della relazione 'table' associata all'istanza corrente.
 // WHAT: Usa il metodo getRelationValue per ottenere la proprietà 'name' della relazione.
 $this->getRelationValue('table')->name;
 
 // WHY: Filtro avanzato per query con ricerca su nome o email.
 // WHAT: Applica una where annidata solo se la query string 'q' è presente nella request.
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-$this->getRelationValue('table')->name
-
-
 $query->when($request->filled('q'), function (Builder $query) use ($request) {
     $query->where(function (Builder $query) use ($request) {
         $query->where('name', 'like', "%{$request->get('q')}%")
             ->orWhere('email', 'like', "%{$request->get('q')}%");
     });
-=======
->>>>>>> origin/dev
-$this->getRelationValue('table')->name
-
-
->>>>>>> origin/dev
-$query->when($request->filled('q'), function (Builder $query) use ($request) {
-    $query->where(function (Builder $query) use ($request) {
-        $query->where('name', 'like', "%{$request->get('q')}%")
-            ->orWhere('email', 'like', "%{$request->get('q')}%");
-    });
-<<<<<<< HEAD
 });
-        $query->where('name', 'like', "%{$request->get('q')}%")
-            ->orWhere('email', 'like', "%{$request->get('q')}%");
-    });
-
-
- origin/dev
- origin/dev
-=======
-<<<<<<< HEAD
-=======
->>>>>>> origin/dev
->>>>>>> origin/dev
->>>>>>> origin/dev
-})

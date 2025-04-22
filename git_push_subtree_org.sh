@@ -19,6 +19,8 @@ cd "$LOCAL_PATH"
 git init
 git checkout -b "$BRANCH"
 git remote add origin "$REMOTE_REPO"
+# 🛠️ Setup iniziale
+git_config_setup
 git fetch --all
 git add -A
 git commit -am .
