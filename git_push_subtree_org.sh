@@ -31,7 +31,7 @@ git remote add origin "$REMOTE_REPO" || handle_git_error "git remote add" "Impos
 
 # Fetch e merge
 log "info" "Fetch da remote"
-git fetch --all || handle_git_error "git fetch" "Impossibile eseguire fetch"
+git fetch --all --depth=1 || handle_git_error "git fetch" "Impossibile eseguire fetch"
 
 # Aggiunta e commit dei file
 log "info" "Commit dei file locali"
@@ -41,13 +41,18 @@ git commit -m "Inizializzazione repository" || true  # Non fallire se non ci son
 # Merge con remote
 log "info" "Merge con remote"
 #git merge origin/"$BRANCH" --allow-unrelated-histories || handle_git_error "git merge" "Impossibile eseguire merge con origin/$BRANCH"
-git pull origin "$BRANCH" --autostash 
+git pull origin "$BRANCH" --autostash --rebase --allow-unrelated-histories --depth=1
 
 # Commit finale e push
 log "info" "Commit finale e push"
 git add -A
 git commit -m "Merge con remote" || true  # Non fallire se non ci sono cambiamenti
-git push -u origin "$BRANCH" || handle_git_error "git push" "Impossibile eseguire push su origin/$BRANCH"
+git push -u origin HEAD:"$BRANCH" || handle_git_error "git push" "Impossibile eseguire push su origin/$BRANCH"
+git rebase --continue
+
+
+
+
 
 # Pulizia
 log "info" "Pulizia repository locale"
