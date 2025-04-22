@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🛡️ Fase 5: Sicurezza
 
 ## 📋 Panoramica
@@ -249,7 +248,6 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 ### Q4 2025
 - Deployment produzione
 - Monitoraggio continuo
-=======
 # 🛡️ Fase 5: Sicurezza
 
 ## 📋 Panoramica
@@ -375,5 +373,4 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 ### Q4 2025
 - Deployment produzione
 - Monitoraggio continuo
->>>>>>> origin/dev
 - Aggiornamenti 

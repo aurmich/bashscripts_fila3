@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -191,7 +190,6 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 ### Altri
 - Logging strutturato
 - Monitoraggio performance
-=======
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -288,5 +286,4 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 ### Altri
 - Logging strutturato
 - Monitoraggio performance
->>>>>>> origin/dev
 - Alert automatici 

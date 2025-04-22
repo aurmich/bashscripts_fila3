@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 # 🚀 Toolkit di Automazione Git
 
@@ -366,7 +365,6 @@ Discover more of my work at marco76tv!
 </div>
  b1ca4c93 (Squashed 'bashscripts/' changes from c21599d..019cc70)
  80ec88ee9 (.)
-=======
 # 🚀 Toolkit di Automazione Git
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com)
@@ -467,4 +465,3 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file `LICENSE` per 
 <div align="center">
   <sub>Built with ❤️ by the development team</sub>
 </div> 
->>>>>>> origin/dev

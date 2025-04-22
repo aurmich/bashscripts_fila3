@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🔄 Fase 4: Automazione Avanzata
 
 ## 📋 Panoramica
@@ -239,7 +238,6 @@ Questa fase si concentra sull'implementazione di funzionalità di automazione av
 ### Q4 2024
 - Deployment produzione
 - Monitoraggio
-=======
 # 🔄 Fase 4: Automazione Avanzata
 
 ## 📋 Panoramica
@@ -360,5 +358,4 @@ Questa fase si concentra sull'implementazione di funzionalità di automazione av
 ### Q4 2024
 - Deployment produzione
 - Monitoraggio
->>>>>>> origin/dev
 - Ottimizzazione finale 

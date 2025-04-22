@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 📱 Fase 9: UI/UX
 
 ## 📋 Panoramica
@@ -247,7 +246,6 @@ Questa fase si concentra sullo sviluppo di interfacce utente moderne e intuitive
 ### Q4 2029
 - Deployment produzione
 - Monitoraggio utilizzo
-=======
 # 📱 Fase 9: UI/UX
 
 ## 📋 Panoramica
@@ -372,5 +370,4 @@ Questa fase si concentra sullo sviluppo di interfacce utente moderne e intuitive
 ### Q4 2029
 - Deployment produzione
 - Monitoraggio utilizzo
->>>>>>> origin/dev
 - Aggiornamenti 

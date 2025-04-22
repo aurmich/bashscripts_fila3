@@ -2,22 +2,13 @@
 
 source ./bashscripts/lib/custom.sh
 # Validate input
-<<<<<<< HEAD
 if [ $# -ne 2 ]; then
     echo "Usage: $0 <path> <remote_repo>"
-=======
-if [ $# -ne 3 ]; then
-    echo "Usage: $0 <path> <remote_repo> <branch>"
->>>>>>> origin/dev
     exit 1
 fi
 
 LOCAL_PATH="$1"
 REMOTE_REPO="$2"
-<<<<<<< HEAD
-=======
-BRANCH="$3"
->>>>>>> origin/dev
 curr_dir=$(pwd)
 
 echo "🔄 Submodule $LOCAL_PATH"

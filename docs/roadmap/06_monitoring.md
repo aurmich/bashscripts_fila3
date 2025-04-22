@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 📊 Fase 6: Monitoraggio
 
 ## 📋 Panoramica
@@ -249,7 +248,6 @@ Questa fase si concentra sull'implementazione di un sistema avanzato di monitora
 ### Q4 2026
 - Deployment produzione
 - Monitoraggio continuo
-=======
 # 📊 Fase 6: Monitoraggio
 
 ## 📋 Panoramica
@@ -375,5 +373,4 @@ Questa fase si concentra sull'implementazione di un sistema avanzato di monitora
 ### Q4 2026
 - Deployment produzione
 - Monitoraggio continuo
->>>>>>> origin/dev
 - Aggiornamenti 

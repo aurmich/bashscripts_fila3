@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 AAAAAAAAAAAAAAAAAAAA
-=======
-AAAAAAAAAAAAAAAAAAAA
->>>>>>> origin/dev

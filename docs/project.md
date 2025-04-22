@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 📚 Documentazione Dettagliata degli Script
 
 ## 🔄 Script di Sincronizzazione Git
@@ -341,7 +340,6 @@
 - Identificazione dei branch obsoleti
 - Rimozione sicura
 - Backup prima dell'operazione
-=======
 # 📚 Documentazione Dettagliata degli Script
 
 ## 🔄 Script di Sincronizzazione Git
@@ -513,5 +511,4 @@
 - Identificazione dei branch obsoleti
 - Rimozione sicura
 - Backup prima dell'operazione
->>>>>>> origin/dev
 **Uso**: `./git_delete_old_branches.sh <days>` 

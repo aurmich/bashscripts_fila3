@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Analisi e Risoluzione Errori Git Subtree
 
 ## Struttura degli Script
@@ -118,7 +117,6 @@ fi
 1. Aggiungere `set -x` all'inizio degli script per debug verbose
 2. Implementare logging più dettagliato
 3. Verificare i permessi degli script
-=======
 # Analisi e Risoluzione Errori Git Subtree
 
 ## Struttura degli Script
@@ -238,5 +236,4 @@ fi
 1. Aggiungere `set -x` all'inizio degli script per debug verbose
 2. Implementare logging più dettagliato
 3. Verificare i permessi degli script
->>>>>>> origin/dev
 4. Controllare la configurazione di git per il repository 

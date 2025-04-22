@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🚀 Fase 1: Core Git Operations
 
 ## 📋 Panoramica
@@ -191,7 +190,6 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 ### Altri
 - SSH per connessioni sicure
 - Cron per automazione
-=======
 # 🚀 Fase 1: Core Git Operations
 
 ## 📋 Panoramica
@@ -288,5 +286,4 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 ### Altri
 - SSH per connessioni sicure
 - Cron per automazione
->>>>>>> origin/dev
 - Rsync per backup 

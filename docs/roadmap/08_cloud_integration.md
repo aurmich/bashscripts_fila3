@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🌐 Fase 8: Cloud Integration
 
 ## 📋 Panoramica
@@ -249,7 +248,6 @@ Questa fase si concentra sull'integrazione con i principali cloud provider per g
 ### Q4 2028
 - Deployment produzione
 - Monitoraggio continuo
-=======
 # 🌐 Fase 8: Cloud Integration
 
 ## 📋 Panoramica
@@ -375,5 +373,4 @@ Questa fase si concentra sull'integrazione con i principali cloud provider per g
 ### Q4 2028
 - Deployment produzione
 - Monitoraggio continuo
->>>>>>> origin/dev
 - Aggiornamenti 

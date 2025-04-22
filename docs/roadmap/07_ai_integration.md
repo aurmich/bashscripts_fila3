@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🤖 Fase 7: AI Integration
 
 ## 📋 Panoramica
@@ -249,7 +248,6 @@ Questa fase si concentra sull'integrazione di tecnologie di Intelligenza Artific
 ### Q4 2027
 - Deployment produzione
 - Monitoraggio continuo
-=======
 # 🤖 Fase 7: AI Integration
 
 ## 📋 Panoramica
@@ -375,5 +373,4 @@ Questa fase si concentra sull'integrazione di tecnologie di Intelligenza Artific
 ### Q4 2027
 - Deployment produzione
 - Monitoraggio continuo
->>>>>>> origin/dev
 - Aggiornamenti 
