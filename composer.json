@@ -1,0 +1,20 @@
+{
+    "name": "laraxot/bashscripts_fila3",
+     "authors": [
+        {
+            "name": "marco76tv",
+            "email": "marco.sottana@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            
+        }
+    },
+    "require": {
+        
+    },
+    "require-dev": {
+        "larastan/larastan": "^3.0"
+    }
+}
