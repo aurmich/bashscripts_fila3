@@ -15,6 +15,7 @@ REMOTE_REPO="$2"
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 BRANCH="main"  # Default branch
 =======
 
@@ -44,6 +45,12 @@ dummy_push "$BRANCH"
 curr_dir=$(pwd)
 dummy_push "$BRANCH"
 >>>>>>> feb158b (Inizializzazione repository)
+=======
+BRANCH="main"  # Default branch
+
+curr_dir=$(pwd)
+
+>>>>>>> ed29429 (.)
 log "info" "Inizializzazione push per $LOCAL_PATH verso $REMOTE_REPO (branch: $BRANCH)"
 
 cd "$LOCAL_PATH" || handle_error "Impossibile accedere a $LOCAL_PATH"
@@ -55,6 +62,7 @@ git init || handle_git_error "git init" "Impossibile inizializzare il repository
 # Creazione branch
 log "info" "Creazione branch $BRANCH"
 git checkout -b "$BRANCH" || handle_git_error "git checkout" "Impossibile creare il branch $BRANCH"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -80,6 +88,9 @@ git_config_setup
 =======
 git_config_setup
 >>>>>>> feb158b (Inizializzazione repository)
+=======
+git_config_setup
+>>>>>>> ed29429 (.)
 # Configurazione remote
 log "info" "Configurazione remote origin"
 git remote add origin "$REMOTE_REPO" || handle_git_error "git remote add" "Impossibile aggiungere il remote origin"
@@ -100,6 +111,7 @@ git commit -m "Inizializzazione repository" || true  # Non fallire se non ci son
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 754d7c0 (Inizializzazione repository)
 log "info" "Merge con remote"
@@ -108,11 +120,17 @@ log "info" "Merge con remote"
 git pull origin "$BRANCH" --autostash --rebase --allow-unrelated-histories --depth=1
 
 <<<<<<< HEAD
+=======
+log "info" "pull con remote"
+git pull origin "$BRANCH" --autostash --rebase --allow-unrelated-histories --depth=1
+
+>>>>>>> ed29429 (.)
 # Commit finale e push
 log "info" "Commit finale e push"
 git add -A
 git commit -m "Merge con remote" || true  # Non fallire se non ci sono cambiamenti
 git push -u origin HEAD:"$BRANCH" || handle_git_error "git push" "Impossibile eseguire push su origin/$BRANCH"
+<<<<<<< HEAD
 git rebase --continue
 
 
@@ -194,6 +212,8 @@ done
 >>>>>>> 924f497 (Inizializzazione repository)
 =======
 >>>>>>> feb158b (Inizializzazione repository)
+=======
+>>>>>>> ed29429 (.)
 
 # Pulizia
 log "info" "Pulizia repository locale"

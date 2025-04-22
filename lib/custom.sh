@@ -175,6 +175,7 @@ git_delete_history() {
     git gc --auto
 }
 
+<<<<<<< HEAD
 dummy_push(){
     local branch="$1"
     git add -A
@@ -182,6 +183,8 @@ dummy_push(){
     git push -u origin HEAD:"$branch"
 }
 
+=======
+>>>>>>> ed29429 (.)
 # Funzione per verificare se un comando esiste
 command_exists() {
     command -v "$1" >/dev/null 2>&1
