@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
@@ -43,3 +44,24 @@ test('validazione namespace', function () {
     // Il namespace non valido contiene 'App'
     expect(strpos($invalidNamespace, '\\App\\'))->toBeGreaterThan(0);
 });
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<?php
+
+test('example', function () {
+    expect(true)->toBeTrue();
+});
+=======
+>>>>>>> origin/dev
+<?php
+
+test('example', function () {
+    expect(true)->toBeTrue();
+});
+<<<<<<< HEAD
+=======
+>>>>>>> origin/dev
+>>>>>>> origin/dev
+>>>>>>> origin/dev

@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 
 
 
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/dev
 #!/usr/bin/env php
 <?php
 
@@ -61,7 +67,11 @@ $missingFormSchema = array_filter($results, function ($result) {
 });
 
 echo "XotBaseResource Classes Form Schema Check\n";
+<<<<<<< HEAD
 echo "====\n\n";
+=======
+echo "=======================================\n\n";
+>>>>>>> origin/dev
 
 if (empty($missingFormSchema)) {
     echo "✅ All XotBaseResource classes have getFormSchema method.\n";
@@ -78,8 +88,13 @@ $logContent .= 'Total classes checked: '.count($results)."\n";
 $logContent .= 'Classes missing getFormSchema: '.count($missingFormSchema)."\n\n";
 
 file_put_contents('/var/www/html/base_techplanner_fila3/docs/documentation_update.log', $logContent, FILE_APPEND);
+<<<<<<< HEAD
 
  origin/dev
+=======
+=======
+>>>>>>> origin/dev
+>>>>>>> origin/dev
 #!/usr/bin/env php
 <?php
 
@@ -140,7 +155,11 @@ $missingFormSchema = array_filter($results, function ($result) {
 });
 
 echo "XotBaseResource Classes Form Schema Check\n";
+<<<<<<< HEAD
 echo "====\n\n";
+=======
+echo "=======================================\n\n";
+>>>>>>> origin/dev
 
 if (empty($missingFormSchema)) {
     echo "✅ All XotBaseResource classes have getFormSchema method.\n";
@@ -157,7 +176,14 @@ $logContent .= 'Total classes checked: '.count($results)."\n";
 $logContent .= 'Classes missing getFormSchema: '.count($missingFormSchema)."\n\n";
 
 file_put_contents('/var/www/html/base_techplanner_fila3/docs/documentation_update.log', $logContent, FILE_APPEND);
+<<<<<<< HEAD
 
 
  origin/dev
  origin/dev
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> origin/dev
+>>>>>>> origin/dev
+>>>>>>> origin/dev

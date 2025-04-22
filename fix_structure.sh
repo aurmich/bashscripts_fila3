@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+>>>>>>> origin/dev
 #!/bin/bash
 
 # Definizione degli array di cartelle
@@ -53,6 +57,7 @@ for folder in "${RENAME_TO_LOWER[@]}"; do
 done
 
 echo "Struttura del progetto aggiornata con successo."
+<<<<<<< HEAD
 
 
 
@@ -60,6 +65,15 @@ echo "Struttura del progetto aggiornata con successo."
 
 
  origin/dev
+=======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/dev
+>>>>>>> origin/dev
 #!/bin/sh
 
 # Funzione per copiare e rinominare le cartelle
@@ -96,10 +110,17 @@ move_config "Database"
 move_config "Resources"
 move_config "Routes"
 move_config "Tests"
+<<<<<<< HEAD
 
 
 
  origin/dev
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/dev
+>>>>>>> origin/dev
 #!/bin/bash
 
 # Array di cartelle da spostare in app/
@@ -128,9 +149,18 @@ for folder in "${RENAME_TO_LOWER[@]}"; do
 done
 
 echo "Struttura del progetto aggiornata con successo."
+<<<<<<< HEAD
 
 
  origin/dev
  origin/dev
  origin/dev
  origin/dev
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> origin/dev
+>>>>>>> origin/dev
+>>>>>>> origin/dev
+>>>>>>> origin/dev
+>>>>>>> origin/dev

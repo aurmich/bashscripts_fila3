@@ -1,1 +1,13 @@
+<<<<<<< HEAD
 AAAAAAAAAAAAAAAAAAAA
+=======
+<<<<<<< HEAD
+AAAAAAAAAAAAAAAAAAAA
+=======
+<<<<<<< HEAD
+AAAAAAAAAAAAAAAAAAAA
+=======
+AAAAAAAAAAAAAAAAAAAA
+>>>>>>> origin/dev
+>>>>>>> origin/dev
+>>>>>>> origin/dev
