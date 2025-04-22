@@ -13,6 +13,7 @@ REMOTE_REPO="$2"
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 BRANCH="main"  # Default branch
 =======
 
@@ -32,6 +33,11 @@ dummy_push "$BRANCH"
 curr_dir=$(pwd)
 dummy_push "$BRANCH"
 >>>>>>> 8bbe085 (Inizializzazione repository)
+=======
+
+curr_dir=$(pwd)
+dummy_push "$BRANCH"
+>>>>>>> 924f497 (Inizializzazione repository)
 log "info" "Inizializzazione push per $LOCAL_PATH verso $REMOTE_REPO (branch: $BRANCH)"
 
 cd "$LOCAL_PATH" || handle_error "Impossibile accedere a $LOCAL_PATH"
@@ -43,6 +49,7 @@ git init || handle_git_error "git init" "Impossibile inizializzare il repository
 # Creazione branch
 log "info" "Creazione branch $BRANCH"
 git checkout -b "$BRANCH" || handle_git_error "git checkout" "Impossibile creare il branch $BRANCH"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -60,6 +67,9 @@ git_config_setup
 =======
 git_config_setup
 >>>>>>> 8bbe085 (Inizializzazione repository)
+=======
+git_config_setup
+>>>>>>> 924f497 (Inizializzazione repository)
 # Configurazione remote
 log "info" "Configurazione remote origin"
 git remote add origin "$REMOTE_REPO" || handle_git_error "git remote add" "Impossibile aggiungere il remote origin"
@@ -74,6 +84,7 @@ git add -A
 git commit -m "Inizializzazione repository" || true  # Non fallire se non ci sono cambiamenti
 
 # Merge con remote
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -119,14 +130,24 @@ git merge origin/"$BRANCH" --allow-unrelated-histories || handle_git_error "git 
 #git pull origin "$BRANCH" --autostash --rebase --allow-unrelated-histories --depth=1
 
 >>>>>>> 8bbe085 (Inizializzazione repository)
+=======
+log "info" "Merge con remote"
+git merge origin/"$BRANCH" --allow-unrelated-histories || handle_git_error "git merge" "Impossibile eseguire merge con origin/$BRANCH"
+git pull origin "$BRANCH" --autostash --rebase --allow-unrelated-histories --depth=1
+
+>>>>>>> 924f497 (Inizializzazione repository)
 
 while true; do
   # Fai l'add, commit e push
   dummy_push "$BRANCH"
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 754d7c0 (Inizializzazione repository)
 =======
 >>>>>>> 8bbe085 (Inizializzazione repository)
+=======
+  git push -f 
+>>>>>>> 924f497 (Inizializzazione repository)
   git rebase --continue
    if [ $? -eq 0 ]; then
     # Se il rebase è completato senza errori (no conflitti)
@@ -140,6 +161,7 @@ done
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 3fd0e77 (Inizializzazione repository)
 =======
 >>>>>>> 38d1ecb (Inizializzazione repository)
@@ -147,6 +169,8 @@ done
 >>>>>>> 754d7c0 (Inizializzazione repository)
 =======
 >>>>>>> 8bbe085 (Inizializzazione repository)
+=======
+>>>>>>> 924f497 (Inizializzazione repository)
 
 # Pulizia
 log "info" "Pulizia repository locale"
