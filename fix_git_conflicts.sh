@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source ./bashscripts/lib/custom.sh
+
 # 🎨 Colori per il logging
 RED='\033[0;31m'
 GREEN='\033[0;32m'
