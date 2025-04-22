@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Could not open input file: /var/www/html/ptvx/vendor/bin/phpstan
+=======
+Note: Using configuration file /var/www/html/ptvx/laravel/phpstan.neon.
+>>>>>>> ac610bcf (up)
