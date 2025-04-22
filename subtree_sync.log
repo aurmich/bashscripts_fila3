@@ -1,4 +1,44 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+[0;34mℹ️ [2025-04-22 13:14:26] Inizializzazione repository locale[0m
+[0;34mℹ️ [2025-04-22 13:14:26] Creazione branch main[0m
+[0;34mℹ️ [2025-04-22 13:14:26] Configurazione remote origin[0m
+[0;34mℹ️ [2025-04-22 13:14:26] Fetch da remote[0m
+[0;34mℹ️ [2025-04-22 13:14:59] Commit dei file locali[0m
+[0;34mℹ️ [2025-04-22 13:14:59] Merge con remote[0m
+[0;34mℹ️ [2025-04-22 13:15:01] Commit finale e push[0m
+=======
+>>>>>>> 3fd0e77 (Inizializzazione repository)
 [0;34mℹ️ [2025-04-22 13:21:48] Commit finale e push[0m
 [0;31m❌ [2025-04-22 13:21:50] Errore durante git push: Impossibile eseguire push su origin/dev[0m
 [1;33m⚠️ [2025-04-22 13:21:50] Tentativo di ripetere l'operazione (3 tentativi rimasti)[0m
 [0;34mℹ️ [2025-04-22 13:21:50] Pulizia repository locale[0m
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7a7ee10 (.)
+=======
+[0;34mℹ️ [2025-04-22 13:40:01] Inizializzazione repository locale[0m
+[0;34mℹ️ [2025-04-22 13:40:01] Creazione branch main[0m
+📆 2025-04-22 13:40:01 - 🔧 Configurazione git di base...
+📆 2025-04-22 13:40:01 - ✅ Configurazione git completata
+[0;34mℹ️ [2025-04-22 13:40:01] Configurazione remote origin[0m
+[0;31m❌ [2025-04-22 13:40:01] Errore durante git remote add: Impossibile aggiungere il remote origin[0m
+[1;33m⚠️ [2025-04-22 13:40:01] Tentativo di ripetere l'operazione (3 tentativi rimasti)[0m
+[0;34mℹ️ [2025-04-22 13:40:01] Fetch da remote[0m
+[0;34mℹ️ [2025-04-22 13:40:03] Commit dei file locali[0m
+<<<<<<< Updated upstream
+>>>>>>> 3a8292c (Inizializzazione repository)
+=======
+[0;34mℹ️ [2025-04-22 13:40:03] pull con remote[0m
+>>>>>>> Stashed changes
+[0;34mℹ️ [2025-04-22 13:40:08] Pulizia repository locale[0m
+[0;34mℹ️ [2025-04-22 13:41:03] Inizializzazione repository locale[0m
+[0;34mℹ️ [2025-04-22 13:41:03] Creazione branch dev[0m
+📆 2025-04-22 13:41:03 - 🔧 Configurazione git di base...
+📆 2025-04-22 13:41:03 - ✅ Configurazione git completata
+[0;34mℹ️ [2025-04-22 13:41:03] Configurazione remote origin[0m
+[0;34mℹ️ [2025-04-22 13:41:03] Fetch da remote[0m
+[0;34mℹ️ [2025-04-22 13:41:05] Commit dei file locali[0m
+>>>>>>> 3fd0e77 (Inizializzazione repository)
