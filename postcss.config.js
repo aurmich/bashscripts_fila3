@@ -1,22 +1,7 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 module.exports = {
   plugins: {
     tailwindcss: {},
     autoprefixer: {},
-  },
-}
-=======
->>>>>>> origin/dev
->>>>>>> origin/dev
-module.exports = {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-<<<<<<< HEAD
     'postcss-preset-env': {
       stage: 3,
       features: {
@@ -27,11 +12,3 @@ module.exports = {
     },
   },
 }
-=======
-  },
-}
-<<<<<<< HEAD
-=======
->>>>>>> origin/dev
->>>>>>> origin/dev
->>>>>>> origin/dev
