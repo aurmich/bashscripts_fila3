@@ -129,4 +129,12 @@ find . -type f -name "*.php" \
     fi
 done
 
-log "success" "Processo completato con successo!"
+# ✅ Verifica finale
+log "info" "Verifica finale..."
+if find . -type f -exec grep -l "<<<<<<< HEAD" {} \; | grep -q .; then
+    log "error" "Sono stati trovati conflitti non risolti!"
+    exit 1
+else
+    log "success" "Tutti i conflitti sono stati risolti con successo!"
+    exit 0
+fi
