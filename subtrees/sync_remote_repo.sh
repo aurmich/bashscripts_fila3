@@ -38,6 +38,7 @@ for ((i=0; i<total; i++)); do
     cd "$path" 
     git init
     git config --global --add safe.directory "$curr_dir/$path"
+    git checkout "$BRANCH" -- 
     git remote add "$ORG" "$url"
     git_config_setup
     git add -A
