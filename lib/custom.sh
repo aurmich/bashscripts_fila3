@@ -149,7 +149,6 @@ backup_disk() {
     echo "  💾 Backup Disk: $DISK_LETTER"
 }
 
-<<<<<<< HEAD
 # Funzione per configurare le impostazioni git
 git_config_setup() {
     log "🔧 Configurazione git di base..."
@@ -162,8 +161,6 @@ git_config_setup() {
     log "✅ Configurazione git completata"
 }
 
-=======
->>>>>>> 9b65b0d (.)
 git_delete_history() {
     local branch="$1"
     git checkout --orphan newBranch$branch
@@ -178,10 +175,6 @@ git_delete_history() {
     git gc --auto
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 9b65b0d (.)
 dummy_push(){
     local branch="$1"
     git add -A
@@ -189,11 +182,6 @@ dummy_push(){
     git push -u origin HEAD:"$branch"
 }
 
-<<<<<<< HEAD
-=======
->>>>>>> ed29429 (.)
-=======
->>>>>>> 9b65b0d (.)
 # Funzione per verificare se un comando esiste
 command_exists() {
     command -v "$1" >/dev/null 2>&1
