@@ -1,11 +1,32 @@
 #!/bin/sh
 
+<<<<<<< HEAD
 me=$( readlink -f -- "$0";)
 git submodule foreach "$me" 
+=======
+<<<<<<< HEAD
+me=$(readlink -f -- "$0";)
+git submodule foreach "$me"
+=======
+<<<<<<< HEAD
+me=$( readlink -f -- "$0";)
+git submodule foreach "$me" 
+=======
+me=$(readlink -f -- "$0";)
+git submodule foreach "$me"
+>>>>>>> origin/dev
+>>>>>>> origin/dev
+>>>>>>> origin/dev
 
 # Branch da mantenere
 branches_to_keep="dev master prod"
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/dev
 # Itera su tutti i remote configurati
 for remote in $(git remote); do
     echo "Checking remote: $remote"
@@ -24,3 +45,18 @@ for remote in $(git remote); do
         echo "No branches to delete for remote '$remote'."
     fi
 done
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/dev
+# Elimina i branch vecchi
+for branch in $(git branch -r | grep -v HEAD | grep -v "$branches_to_keep"); do
+    git branch -d "$branch"
+done
+
+echo "Branch vecchi eliminati con successo."
+<<<<<<< HEAD
+=======
+>>>>>>> origin/dev
+>>>>>>> origin/dev
+>>>>>>> origin/dev

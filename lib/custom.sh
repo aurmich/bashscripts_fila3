@@ -7,7 +7,12 @@ LOG_FILE="subtree_sync.log"
 # Funzione per loggare messaggi
 log() {
     local message="$1"
+<<<<<<< HEAD
     echo "📆 $(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$LOG_FILE"
+=======
+    #echo "📆 $(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$LOG_FILE"
+    echo "📆 $(date '+%Y-%m-%d %H:%M:%S') - $message"
+>>>>>>> origin/dev
 }
 
 # Funzione per gestire gli errori
@@ -40,6 +45,7 @@ rewrite_url() {
         # ORG è un'organizzazione GitHub → usa formato GitHub SSH
         echo "git@github.com:${org}/${repo_name}"
     fi
+<<<<<<< HEAD
 }
 
 # Git maintenance
@@ -102,4 +108,6 @@ git_delete_history(){
     git push -uf origin $branch  # Force push $1 branch to github
     git gc --aggressive --prune=all     # remove the old files
     git gc --auto
+=======
+>>>>>>> origin/dev
 }
