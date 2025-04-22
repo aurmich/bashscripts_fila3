@@ -1,12 +1,18 @@
 #!/bin/bash
 
+<<<<<<< HEAD
 source ./bashscripts/lib/custom.sh
 
+=======
+>>>>>>> 43df3e0 (.)
 # 🎨 Colori per il logging
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
+<<<<<<< HEAD
 BLUE='\033[0;34m'
+=======
+>>>>>>> 43df3e0 (.)
 NC='\033[0m'
 
 # 📝 Funzione di logging
@@ -17,6 +23,7 @@ log() {
         "error") echo -e "${RED}❌ $message${NC}" ;;
         "success") echo -e "${GREEN}✅ $message${NC}" ;;
         "warning") echo -e "${YELLOW}⚠️ $message${NC}" ;;
+<<<<<<< HEAD
         "info") echo -e "${BLUE}ℹ️ $message${NC}" ;;
     esac
 }
@@ -47,6 +54,12 @@ handle_common_libraries() {
     return 1
 }
 
+=======
+        "info") echo -e "ℹ️ $message" ;;
+    esac
+}
+
+>>>>>>> 43df3e0 (.)
 # 🔧 Funzione per risolvere i conflitti in un file
 fix_conflicts() {
     local file="$1"
@@ -55,6 +68,7 @@ fix_conflicts() {
     # 📦 Backup del file originale
     cp "$file" "${file}.bak" || { log "error" "Impossibile creare backup di $file"; return 1; }
     
+<<<<<<< HEAD
     # 🔍 Verifica se il file contiene librerie comuni
     if handle_common_libraries "$file"; then
         log "warning" "File contiene librerie comuni, verifica manuale necessaria"
@@ -65,6 +79,11 @@ fix_conflicts() {
     sed -i -e '/^<<<<<<< HEAD$/d' \
            -e '/^=======$/d' \
            -e '/^>>>>>>> /d' \
+=======
+    # 🧹 Rimozione marcatori di conflitto
+    sed -i -e '/^<<<<<<< HEAD$/d' \
+           -e '/^=======$/d' \
+>>>>>>> 43df3e0 (.)
            "$file" || { log "error" "Errore nella pulizia di $file"; return 1; }
     
     # 🔍 Verifica modifiche
@@ -78,12 +97,15 @@ fix_conflicts() {
     fi
 }
 
+<<<<<<< HEAD
 # 🚀 Inizio script
 log "info" "Inizio processo di risoluzione conflitti..."
 
 # 🔍 Verifica dipendenze
 check_dependencies
 
+=======
+>>>>>>> 43df3e0 (.)
 # 🔍 Ricerca file con conflitti
 log "info" "Ricerca file con conflitti..."
 files_with_conflicts=$(find . -type f \
@@ -129,6 +151,7 @@ find . -type f -name "*.php" \
     fi
 done
 
+<<<<<<< HEAD
 # ✅ Verifica finale
 log "info" "Verifica finale..."
 if find . -type f -exec grep -l "<<<<<<< HEAD" {} \; | grep -q .; then
@@ -138,3 +161,6 @@ else
     log "success" "Tutti i conflitti sono stati risolti con successo!"
     exit 0
 fi
+=======
+log "success" "Processo completato con successo!" 
+>>>>>>> 43df3e0 (.)

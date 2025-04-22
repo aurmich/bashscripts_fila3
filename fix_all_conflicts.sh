@@ -18,7 +18,10 @@ for dir in "${DIRS_TO_CHECK[@]}"; do
       # Rimuove le righe di marcatura del conflitto e mantiene la versione "dopo il merge"
       sed -i -e '/^<<<<<<< HEAD$/d' \
              -e '/^=======$/d' \
+<<<<<<< HEAD
              -e '/^>>>>>>> e4940e9b (first)$/d' \
+=======
+>>>>>>> 43df3e0 (.)
              -e 's/namespace Modules\\Broker\\Filament\\Resources/namespace Modules\\Broker\\Filament\\Clusters\\AltriCluster\\Resources/' \
              -e 's/use Modules\\Broker\\Filament\\Resources\\/use Modules\\Broker\\Filament\\Clusters\\AltriCluster\\Resources\\/' \
              "$file"
@@ -36,7 +39,10 @@ do
   # Rimuove le righe di marcatura del conflitto e mantiene la versione "dopo il merge"
   sed -i -e '/^<<<<<<< HEAD$/d' \
          -e '/^=======$/d' \
+<<<<<<< HEAD
          -e '/^>>>>>>> e4940e9b (first)$/d' \
+=======
+>>>>>>> 43df3e0 (.)
          -e 's/namespace Modules\\Broker\\Filament\\Resources/namespace Modules\\Broker\\Filament\\Clusters\\AltriCluster\\Resources/' \
          -e 's/use Modules\\Broker\\Filament\\Resources\\/use Modules\\Broker\\Filament\\Clusters\\AltriCluster\\Resources\\/' \
          "$file"
@@ -60,8 +66,14 @@ find . -type f -not -path "*/.git/*" -not -path "*/laravel/*" | xargs grep -l "<
   # Rimuove le righe di marcatura del conflitto e mantiene la versione "dopo il merge"
   sed -i -e '/^<<<<<<< HEAD$/d' \
          -e '/^=======$/d' \
+<<<<<<< HEAD
          -e '/^>>>>>>> e4940e9b (first)$/d' \
          "$file"
 done
 
 echo "Tutti i conflitti sono stati risolti!" 
+=======
+         "$file"
+done
+
+>>>>>>> 43df3e0 (.)

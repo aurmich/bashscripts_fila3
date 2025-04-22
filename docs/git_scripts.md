@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 # Script Git per la Gestione dei Subtree
+=======
+# Script Git
+
+Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
+>>>>>>> 43df3e0 (.)
 
 ## Panoramica
 Questa documentazione descrive gli script bash utilizzati per la gestione dei subtree git nel progetto Laraxot.

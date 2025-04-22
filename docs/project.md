@@ -169,4 +169,22 @@
 - Identificazione dei branch obsoleti
 - Rimozione sicura
 - Backup prima dell'operazione
+<<<<<<< HEAD
 **Uso**: `./git_delete_old_branches.sh <days>` 
+=======
+**Uso**: `./git_delete_old_branches.sh <days>`
+
+## 📚 Documentazione Aggiuntiva
+
+Per ulteriori informazioni sulla gestione dei repository e l'utilizzo degli script, consultare:
+- [Roadmap del Progetto](roadmap.md)
+- [Documentazione in Italiano](it/README.md)
+- [Risoluzione dei Conflitti](CONFLICT_RESOLUTION_BASH.md)
+
+## ⚠️ Note Importanti
+
+- Tutti gli script includono controlli di sicurezza e validazione
+- È consigliato eseguire backup prima di operazioni critiche
+- Verificare sempre le modifiche in ambiente di test
+- Mantenere aggiornata la documentazione
+>>>>>>> 43df3e0 (.)
