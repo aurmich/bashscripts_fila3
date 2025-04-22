@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 source ./bashscripts/lib/custom.sh
 # Includi lo script di parsing
 source ./bashscripts/lib/parse_gitmodules_ini.sh
@@ -11,7 +10,6 @@ parse_gitmodules gitmodules.ini
 me=$( readlink -f -- "$0")
 script_dir=$(dirname "$me")
 ORG="$1"
-
 
 # Esegui backup prima del push per garantire la sicurezza dei dati
 # Perché: Il backup è cruciale prima di operazioni potenzialmente distruttive
@@ -36,9 +34,6 @@ for ((i=0; i<total; i++)); do
         chmod +x "$script"
         sed -i -e 's/\r$//' "$script"
         
-        # Supporto per il branch specificato (se presente)
-        BRANCH=${BRANCH:-"main"}
-        
         # Esecuzione del push con gestione degli errori
         if ! "$script" "$path" "$url_org" "$BRANCH" ; then
             log "⚠️ Push ORG fallita per $path."
@@ -54,6 +49,7 @@ for ((i=0; i<total; i++)); do
     script="$script_dir/git_push_subtree.sh"
     chmod +x "$script"
     sed -i -e 's/\r$//' "$script"
+
     # Chiamata esterna allo script di sincronizzazione
     if ! "$script" "$path" "$url" ; then
         log "⚠️ Push fallita per $path."

@@ -1,7 +1,5 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/dev
+
+[0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
 #!/bin/bash
 
 
@@ -68,10 +66,8 @@ done < "$CONFIG_FILE"
 log "🧹 Pulizia del repository..."
 git gc --prune=now --aggressive
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/dev
+
+[0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
 #!/bin/bash
 
 
@@ -138,8 +134,5 @@ done < "$CONFIG_FILE"
 log "🧹 Pulizia del repository..."
 git gc --prune=now --aggressive
 
-<<<<<<< HEAD
-=======
->>>>>>> origin/dev
->>>>>>> origin/dev
-log "✅ Sincronizzazione completata con history ottimizzata!"
+
+[0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m

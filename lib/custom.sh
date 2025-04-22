@@ -12,17 +12,26 @@ BRANCH=$(git symbolic-ref --short HEAD 2>/dev/null || echo "main")
 
 # Funzione avanzata per loggare messaggi
 log() {
-    local level="$1"
-    local message="$2"
-    local timestamp=$(date '+%Y-%m-%d %H:%M:%S')
-    
-    case "$level" in
-        "error") echo -e "${RED}❌ [$timestamp] $message${NC}" | tee -a "$LOG_FILE" ;;
-        "success") echo -e "${GREEN}✅ [$timestamp] $message${NC}" | tee -a "$LOG_FILE" ;;
-        "warning") echo -e "${YELLOW}⚠️ [$timestamp] $message${NC}" | tee -a "$LOG_FILE" ;;
-        "info") echo -e "${BLUE}ℹ️ [$timestamp] $message${NC}" | tee -a "$LOG_FILE" ;;
-        *) echo -e "[$timestamp] $message" | tee -a "$LOG_FILE" ;;
-    esac
+    # Supporta sia il formato avanzato con livelli che il formato semplice
+    if [ $# -eq 2 ]; then
+        # Formato avanzato: log "level" "message"
+        local level="$1"
+        local message="$2"
+        local timestamp=$(date '+%Y-%m-%d %H:%M:%S')
+        
+        case "$level" in
+            "error") echo -e "${RED}❌ [$timestamp] $message${NC}" | tee -a "$LOG_FILE" ;;
+            "success") echo -e "${GREEN}✅ [$timestamp] $message${NC}" | tee -a "$LOG_FILE" ;;
+            "warning") echo -e "${YELLOW}⚠️ [$timestamp] $message${NC}" | tee -a "$LOG_FILE" ;;
+            "info") echo -e "${BLUE}ℹ️ [$timestamp] $message${NC}" | tee -a "$LOG_FILE" ;;
+            *) echo -e "[$timestamp] $message" | tee -a "$LOG_FILE" ;;
+        esac
+    else
+        # Formato semplice: log "message"
+        local message="$1"
+        local timestamp=$(date '+%Y-%m-%d %H:%M:%S')
+        echo "📆 $timestamp - $message" | tee -a "$LOG_FILE"
+    fi
 }
 
 # Funzione avanzata per gestire gli errori git
@@ -42,6 +51,19 @@ handle_git_error() {
     fi
 }
 
+# Funzione per gestire gli errori generici
+handle_error() {
+    local error_message="$1"
+    log "error" "$error_message"
+    exit 1
+}
+
+# Funzione semplice per terminare con errore
+die() {
+    echo "$1" >&2
+    exit 1
+}
+
 # Funzione per verificare l'integrità del repository
 check_repository_integrity() {
     log "info" "Verifica integrità repository..."
@@ -52,6 +74,23 @@ check_repository_integrity() {
     
     if ! git diff --quiet; then
         log "warning" "Ci sono modifiche non committate nel repository"
+    fi
+}
+
+# Funzione per riscrivere la URL secondo le regole specificate
+rewrite_url() {
+    local original_url="$1"
+    local org="$2"
+
+    # Estrai solo il nome del repository (ultimo componente dopo lo slash)
+    repo_name=$(basename "$original_url")
+
+    if [[ "$org" == *"/"* ]]; then
+        # ORG contiene uno slash → usa direttamente come prefisso
+        echo "${org}/${repo_name}"
+    else
+        # ORG è un'organizzazione GitHub → usa formato GitHub SSH
+        echo "git@github.com:${org}/${repo_name}"
     fi
 }
 
@@ -98,23 +137,6 @@ git_config_setup() {
     log "success" "Configurazione git completata con successo"
 }
 
-# Funzione per riscrivere la URL secondo le regole specificate
-rewrite_url() {
-    local original_url="$1"
-    local org="$2"
-
-    # Estrai solo il nome del repository (ultimo componente dopo lo slash)
-    repo_name=$(basename "$original_url")
-
-    if [[ "$org" == *"/"* ]]; then
-        # ORG contiene uno slash → usa direttamente come prefisso
-        echo "${org}/${repo_name}"
-    else
-        # ORG è un'organizzazione GitHub → usa formato GitHub SSH
-        echo "git@github.com:${org}/${repo_name}"
-    fi
-}
-
 backup_disk() {
     # Richiesta interattiva della lettera del disco
     read -p "📀 Inserisci la lettera del disco per il backup [d]: " DISK_LETTER
@@ -127,7 +149,19 @@ backup_disk() {
     echo "  💾 Backup Disk: $DISK_LETTER"
 }
 
-git_delete_history(){
+# Funzione per configurare le impostazioni git
+git_config_setup() {
+    log "🔧 Configurazione git di base..."
+    git config core.ignorecase false        # Gestione case-sensitive dei file
+    git config core.fileMode false          # Ignora i permessi dei file
+    git config core.autocrlf false          # Non convertire automaticamente i line endings
+    git config core.eol lf                  # Usa LF come line ending di default
+    git config core.symlinks false          # Gestione symlinks disabilitata per Windows
+    git config core.longpaths true          # Supporto per path lunghi su Windows
+    log "✅ Configurazione git completata"
+}
+
+git_delete_history() {
     local branch="$1"
     git checkout --orphan newBranch$branch
     git add --renormalize -A
@@ -139,4 +173,34 @@ git_delete_history(){
     git push -uf origin $branch  # Force push $1 branch to github
     git gc --aggressive --prune=all     # remove the old files
     git gc --auto
+}
+
+# Funzione per verificare se un comando esiste
+command_exists() {
+    command -v "$1" >/dev/null 2>&1
+}
+
+# Funzione per verificare se un file esiste
+file_exists() {
+    [ -f "$1" ]
+}
+
+# Funzione per verificare se una directory esiste
+dir_exists() {
+    [ -d "$1" ]
+}
+
+# Funzione per verificare se un file è eseguibile
+is_executable() {
+    [ -x "$1" ]
+}
+
+# Funzione per verificare se un file è leggibile
+is_readable() {
+    [ -r "$1" ]
+}
+
+# Funzione per verificare se un file è scrivibile
+is_writable() {
+    [ -w "$1" ]
 }

@@ -1,58 +1,48 @@
 #!/bin/bash
 
-# 🚀 Importa funzioni di utilità
-source ./bashscripts/lib/custom.sh
-
-# ✅ Validazione input
 if [ "$#" -ne 2 ]; then
-    log "error" "Parametri mancanti"
-    log "info" "Uso: $0 <organization> <branch>"
+    echo "Usage: $0 <organization> <branch>"
     exit 1
 fi
 
-# 📌 Configurazione
 org="$1"
 branch="$2"
 repo_name=$(basename "$(git rev-parse --show-toplevel)")
 script_path=$(readlink -f -- "$0")
 where=$(pwd)
 
-log "info" "-------- START SYNC [$where ($branch) - ORG: $org] ----------"
-
-# 1️⃣ Configurazioni globali per evitare problemi
-git_config_setup
+# 1️⃣ Configurazione Git
+git config core.fileMode false
+git config core.ignorecase false
+git config advice.skippedCherryPicks false
 
 # 2️⃣ Sincronizziamo i submoduli PRIMA di lavorare sul repository principale
-log "info" "Sincronizzazione submoduli..."
-git submodule sync --recursive || handle_git_error "sync submodules" "Errore nella sincronizzazione submoduli"
-git submodule update --progress --init --recursive --force --merge --rebase --remote || handle_git_error "update submodules" "Errore nell'aggiornamento submoduli"
-git submodule foreach "$script_path" "$org" "$branch" || log "warning" "Errore nell'esecuzione script sui submoduli"
+git submodule sync --recursive
+git submodule update --progress --init --recursive --force --merge --rebase --remote
+git submodule foreach "$script_path" "$org" "$branch"
 
 # 3️⃣ Sincronizziamo il repository principale
-log "info" "Sincronizzazione repository principale..."
-git fetch origin --progress --prune || handle_git_error "fetch" "Errore nel fetch"
-
+git fetch origin --progress --prune
 if git show-ref --verify --quiet refs/heads/"$branch"; then
-    git checkout "$branch" || handle_git_error "checkout" "Errore nel checkout del branch esistente"
+    git checkout "$branch"
 else
-    git checkout -t origin/"$branch" || git checkout -b "$branch" || handle_git_error "checkout" "Errore nella creazione del branch"
+    git checkout -t origin/"$branch" || git checkout -b "$branch"
 fi
 
 # 4️⃣ Pull con gestione dei conflitti
-log "info" "Esecuzione pull con rebase..."
 git pull --rebase origin "$branch" --autostash --recurse-submodules --allow-unrelated-histories --prune --progress -v || {
-    log "warning" "Rebase fallito, tentativo di risoluzione conflitti..."
+    echo "Rebase failed, attempting conflict resolution..."
     
     # 🔄 Tentiamo di continuare il rebase automaticamente
     if git rebase --continue; then
-        log "success" "Rebase completato con successo"
+        echo "Rebase continued successfully."
     else
-        log "warning" "Rilevati conflitti nel rebase. Tentativo di risoluzione automatica..."
+        echo "Rebase conflicts detected. Attempting automatic resolution..."
 
         # 🛠 Risolviamo automaticamente i conflitti prendendo la versione remota
         git diff --name-only --diff-filter=U | while read file; do
-            git checkout --theirs "$file" || log "warning" "Impossibile risolvere conflitto in $file"
-            git add "$file" || log "warning" "Impossibile aggiungere $file"
+            git checkout --theirs "$file"
+            git add "$file"
         done
 
         # 🛠 Proviamo a completare il rebase
@@ -83,7 +73,8 @@ if ! git rev-parse --abbrev-ref --symbolic-full-name "@{u}" >/dev/null 2>&1; the
     git branch -u origin/$branch || true
 fi
 
-# 8️⃣ Manutenzione finale
-git_maintenance
+# 8️⃣ Configurazione globale
+git config --global core.fileMode false
+git config --global core.autocrlf input
 
-log "success" "-------- END SYNC [$where ($branch) - ORG: $org] ----------"
+echo "-------- END SYNC [$where ($branch) - ORG: $org] ----------"

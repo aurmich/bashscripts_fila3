@@ -1,15 +1,5 @@
 #!/bin/bash
 
-
-=======
-
-
-=======
-
-=======
-
->>>>>>> origin/dev
->>>>>>> origin/dev
 source ./bashscripts/lib/custom.sh
 # Includi lo script di parsing
 source ./bashscripts/lib/parse_gitmodules_ini.sh
@@ -17,33 +7,6 @@ source ./bashscripts/lib/parse_gitmodules_ini.sh
 # Chiama la funzione
 parse_gitmodules gitmodules.ini
 
-me=$( readlink -f -- "$0")
-script_dir=$(dirname "$me")
-
-total=${submodules_array["total"]}
-for ((i=0; i<total; i++)); do
-    path=${submodules_array["path_${i}"]}
-    url=${submodules_array["url_${i}"]}
-    echo "---------"
-    echo "Submodule $i:"
-    echo "  📁 Path: $path"
-    echo "  🌐 URL: $url"
-    script="$script_dir/git_sync_subtree.sh"
-    chmod +x "$script"
-    sed -i -e 's/\r$//' "$script"
-    
-    # Chiamata esterna allo script di sincronizzazione
-    log "🔄 Push modulo: $path"
-    if ! "$script" "$path" "$url" ; then
-        log "⚠️ Push fallita per $path."
-    fi
-done
-
-=======
-
-=======
-=======
->>>>>>> origin/dev
 me=$( readlink -f -- "$0")
 script_dir=$(dirname "$me")
 CUSTOM_ORG="$1"
@@ -89,7 +52,7 @@ while IFS= read -r line; do
     elif [[ "$line" =~ ^url\ *=\ *(.+)$ && -n "$current_path" ]]; then
         current_url="${BASH_REMATCH[1]}"
 
-         # Modifica l'organizzazione nell'URL se CUSTOM_ORG è fornito
+        # Modifica l'organizzazione nell'URL se CUSTOM_ORG è fornito
         if [[ -n "$CUSTOM_ORG" && "$current_url" =~ git@github.com:([^/]+)/(.+)$ ]]; then
             # Estrae la parte originale dell'organizzazione e il repository
             original_org="${BASH_REMATCH[1]}"
@@ -97,10 +60,7 @@ while IFS= read -r line; do
             
             # Sostituisce l'organizzazione con quella personalizzata
             current_url="git@github.com:${CUSTOM_ORG}/${repo_name}"
-
-=======
-        #    log "🔄 URL modificato: $current_url (org originale: $original_org → $CUSTOM_ORG)"
->>>>>>> origin/dev
+            log "🔄 URL modificato: $current_url (org originale: $original_org → $CUSTOM_ORG)"
         fi
         
         # Chiamata esterna allo script di sincronizzazione
@@ -120,6 +80,3 @@ log "🧹 Pulizia del repository..."
 git gc --prune=now --aggressive
 sed -i -e 's/\r$//' "$me"
 log "✅ Sincronizzazione completata con history ottimizzata!"
->>>>>>> origin/dev
->>>>>>> origin/dev
->>>>>>> origin/dev

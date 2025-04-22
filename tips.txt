@@ -4,6 +4,16 @@ $this->getRelationValue('table')->name;
 
 // WHY: Filtro avanzato per query con ricerca su nome o email.
 // WHAT: Applica una where annidata solo se la query string 'q' è presente nella request.
+$this->getRelationValue('table')->name
+
+
+$query->when($request->filled('q'), function (Builder $query) use ($request) {
+    $query->where(function (Builder $query) use ($request) {
+        $query->where('name', 'like', "%{$request->get('q')}%")
+            ->orWhere('email', 'like', "%{$request->get('q')}%");
+    });
+$this->getRelationValue('table')->name
+
 $query->when($request->filled('q'), function (Builder $query) use ($request) {
     $query->where(function (Builder $query) use ($request) {
         $query->where('name', 'like', "%{$request->get('q')}%")
@@ -13,7 +23,6 @@ $query->when($request->filled('q'), function (Builder $query) use ($request) {
         $query->where('name', 'like', "%{$request->get('q')}%")
             ->orWhere('email', 'like', "%{$request->get('q')}%");
     });
-
 
  origin/dev
  origin/dev

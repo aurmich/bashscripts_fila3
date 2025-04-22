@@ -29,7 +29,6 @@ fix_conflicts() {
     # 🧹 Rimozione marcatori di conflitto
     sed -i -e '/^<<<<<<< HEAD$/d' \
            -e '/^=======$/d' \
-           -e '/^>>>>>>> /d' \
            "$file" || { log "error" "Errore nella pulizia di $file"; return 1; }
     
     # 🔍 Verifica modifiche

@@ -1,6 +1,4 @@
 
-
-
 #!/usr/bin/env php
 <?php
 
@@ -62,6 +60,7 @@ $missingFormSchema = array_filter($results, function ($result) {
 
 echo "XotBaseResource Classes Form Schema Check\n";
 echo "====\n\n";
+echo "=======================================\n\n";
 
 if (empty($missingFormSchema)) {
     echo "✅ All XotBaseResource classes have getFormSchema method.\n";
@@ -141,6 +140,7 @@ $missingFormSchema = array_filter($results, function ($result) {
 
 echo "XotBaseResource Classes Form Schema Check\n";
 echo "====\n\n";
+echo "=======================================\n\n";
 
 if (empty($missingFormSchema)) {
     echo "✅ All XotBaseResource classes have getFormSchema method.\n";
@@ -157,7 +157,6 @@ $logContent .= 'Total classes checked: '.count($results)."\n";
 $logContent .= 'Classes missing getFormSchema: '.count($missingFormSchema)."\n\n";
 
 file_put_contents('/var/www/html/base_techplanner_fila3/docs/documentation_update.log', $logContent, FILE_APPEND);
-
 
  origin/dev
  origin/dev
