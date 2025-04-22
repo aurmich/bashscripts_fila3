@@ -1,10 +1,10 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/dev
->>>>>>> origin/dev
+
+
+
+
+
+
+
 # 🚀 Fase 1: Core Git Operations
 
 ## 📋 Panoramica
@@ -20,10 +20,10 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 - Gestione dei submodule
 - Logging dettagliato
 - Gestione errori
-<<<<<<< HEAD
+
 - Backup automatico pre-operazioni
-=======
->>>>>>> origin/dev
+
+
 
 ### 2. Gestione dei Submodule
 **Script**: `sync_submodules.sh`
@@ -32,10 +32,10 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 - Aggiornamento automatico dei submodule
 - Gestione dei conflitti
 - Backup prima delle operazioni
-<<<<<<< HEAD
+
 - Verifica integrità post-operazioni
-=======
->>>>>>> origin/dev
+
+
 
 ### 3. Backup Automatico
 **Script**: `backup.sh`
@@ -44,11 +44,11 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 - Backup incrementale
 - Compressione automatica
 - Verifica integrità
-<<<<<<< HEAD
+
 - Gestione spazio disco
 - Rotazione backup
-=======
->>>>>>> origin/dev
+
+
 
 ### 4. Risoluzione Conflitti Base
 **Script**: `resolve_git_conflict.sh`
@@ -57,11 +57,11 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 - Analisi automatica dei conflitti
 - Risoluzione quando possibile
 - Logging dettagliato
-<<<<<<< HEAD
+
 - Backup pre-risoluzione
 - Rollback automatico in caso di errori
-=======
->>>>>>> origin/dev
+
+
 
 ## 📝 Note di Implementazione
 
@@ -70,51 +70,51 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
    - Verifica delle chiavi SSH
    - Controllo dei permessi
    - Backup prima delle operazioni critiche
-<<<<<<< HEAD
+
    - Validazione input
    - Sanitizzazione output
-=======
->>>>>>> origin/dev
+
+
 
 2. **Performance**:
    - Ottimizzazione delle operazioni Git
    - Gestione efficiente della memoria
    - Caching dove possibile
-<<<<<<< HEAD
+
    - Parallelizzazione operazioni
    - Gestione risorse
-=======
->>>>>>> origin/dev
+
+
 
 3. **Manutenibilità**:
    - Codice modulare
    - Documentazione dettagliata
    - Logging strutturato
-<<<<<<< HEAD
+
    - Test automatici
    - Versionamento semantico
-=======
->>>>>>> origin/dev
+
+
 
 ### Lezioni Apprese
 1. Importanza del backup prima delle operazioni critiche
 2. Necessità di logging dettagliato per il debug
 3. Valore della gestione automatica dei conflitti
-<<<<<<< HEAD
+
 4. Importanza della validazione input
 5. Necessità di rollback automatico
-=======
->>>>>>> origin/dev
+
+
 
 ## 🔄 Collegamenti
 
 - [Roadmap Principale](../roadmap.md)
 - [Documentazione Script](../project.md)
 - [Fase 2: Manutenzione](../roadmap/02_maintenance.md)
-<<<<<<< HEAD
+
 - [Fase 3: Verifica](../roadmap/03_verification.md)
-=======
->>>>>>> origin/dev
+
+
 
 ## 📈 Metriche di Successo
 
@@ -122,21 +122,21 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 - ✅ 100% automazione operazioni base
 - ✅ 0 errori in produzione
 - ✅ Tempo di sincronizzazione ridotto del 70%
-<<<<<<< HEAD
+
 - ✅ 100% backup automatici
 - ✅ 99.9% risoluzione automatica conflitti
-=======
->>>>>>> origin/dev
+
+
 
 ### Metriche di Performance
 - Tempo medio di sincronizzazione: < 5 minuti
 - Tasso di successo operazioni: 99.9%
 - Tempo di risoluzione conflitti: < 10 minuti
-<<<<<<< HEAD
+
 - Tempo di backup: < 2 minuti
 - Tempo di rollback: < 5 minuti
-=======
->>>>>>> origin/dev
+
+
 
 ## 🛠️ Strumenti Utilizzati
 
@@ -144,26 +144,26 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 - Comandi base (pull, push, merge)
 - Gestione submodule
 - Risoluzione conflitti
-<<<<<<< HEAD
+
 - Hooks personalizzati
 - Workflow automatizzati
-=======
->>>>>>> origin/dev
+
+
 
 ### Bash
 - Scripting avanzato
 - Gestione errori
 - Logging
-<<<<<<< HEAD
+
 - Funzioni di utilità
 - Test automatici
-=======
->>>>>>> origin/dev
+
+
 
 ### Altri
 - SSH per connessioni sicure
 - Cron per automazione
-<<<<<<< HEAD
+
 - Monitoraggio risorse
 - Alerting automatico
 - Dashboard di stato
@@ -6667,8 +6667,8 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 - SSH per connessioni sicure
 - Cron per automazione
 
-=======
->>>>>>> origin/dev
+
+
 # 🚀 Fase 1: Core Git Operations
 
 ## 📋 Panoramica
@@ -6765,11 +6765,11 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 ### Altri
 - SSH per connessioni sicure
 - Cron per automazione
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
->>>>>>> origin/dev
+
+
+
+
 # 🚀 Fase 1: Core Git Operations
 
 ## 📋 Panoramica
@@ -6866,7 +6866,7 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 ### Altri
 - SSH per connessioni sicure
 - Cron per automazione
-<<<<<<< HEAD
+
 
 # 🚀 Fase 1: Core Git Operations
 
@@ -6874,9 +6874,9 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la gestione efficiente dei repository.
 
 ##
-=======
-=======
-=======
+
+
+
 # 🚀 Fase 1: Core Git Operations
 
 ## 📋 Panoramica
@@ -6973,7 +6973,7 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 ### Altri
 - SSH per connessioni sicure
 - Cron per automazione
->>>>>>> origin/dev
->>>>>>> origin/dev
+
+
 - Rsync per backup 
->>>>>>> origin/dev
+
