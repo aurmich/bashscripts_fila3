@@ -1,5 +1,5 @@
 /**
- * Configurazione Tailwind CSS per il progetto Laraxot PTVX
+ * Configurazione Tailwind CSS per il progetto
  *
  * Perché: Tailwind CSS è un framework CSS utility-first che permette di costruire
  * interfacce moderne e responsive con un approccio component-first. Questa configurazione
