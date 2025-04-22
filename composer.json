@@ -1,13 +1,8 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 {
     "name": "laraxot/bashscripts_fila3",
-     "authors": [
-=======
-<<<<<<< HEAD
-{
-    "name": "laraxot/bashscripts_fila3",
+    "description": "Script di utilità per la gestione dei repository Git",
+    "type": "library",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Laraxot\\BashscriptsFila3\\": "src/"
@@ -19,51 +14,20 @@
             "email": "marco.sottana@gmail.com"
         }
     ],
-    "require-dev": {
-        "larastan/larastan": "^3.0"
-    }
-}
-=======
->>>>>>> origin/dev
-{
-    "name": "laraxot/bashscripts_fila3",
-    "autoload": {
-        "psr-4": {
-            "Laraxot\\BashscriptsFila3\\": "src/"
-        }
-    },
-    "authors": [
-<<<<<<< HEAD
-=======
->>>>>>> origin/dev
->>>>>>> origin/dev
-        {
-            "name": "marco76tv",
-            "email": "marco.sottana@gmail.com"
-        }
-    ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    "autoload": {
-        "psr-4": {
-            
-        }
-    },
     "require": {
-        
+        "php": "^8.1",
+        "spatie/laravel-data": "^3.0",
+        "spatie/laravel-queueable-action": "^2.0"
     },
-=======
->>>>>>> origin/dev
->>>>>>> origin/dev
     "require-dev": {
-        "larastan/larastan": "^3.0"
-    }
+        "larastan/larastan": "^3.0",
+        "phpstan/phpstan": "^1.0",
+        "pestphp/pest": "^2.0"
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> origin/dev
->>>>>>> origin/dev
->>>>>>> origin/dev
