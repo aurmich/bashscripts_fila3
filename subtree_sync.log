@@ -57,4 +57,20 @@
 [0;34mℹ️ [2025-04-22 13:42:15] Configurazione remote origin[0m
 [0;34mℹ️ [2025-04-22 13:42:15] Fetch da remote[0m
 [0;34mℹ️ [2025-04-22 13:42:17] Commit dei file locali[0m
+<<<<<<< HEAD
 >>>>>>> 38d1ecb (Inizializzazione repository)
+=======
+<<<<<<< Updated upstream
+>>>>>>> 38d1ecb (Inizializzazione repository)
+=======
+[0;34mℹ️ [2025-04-22 13:42:17] pull con remote[0m
+>>>>>>> Stashed changes
+[0;34mℹ️ [2025-04-22 13:42:21] Pulizia repository locale[0m
+[0;34mℹ️ [2025-04-22 13:44:49] Inizializzazione repository locale[0m
+[0;34mℹ️ [2025-04-22 13:44:49] Creazione branch dev[0m
+📆 2025-04-22 13:44:49 - 🔧 Configurazione git di base...
+📆 2025-04-22 13:44:49 - ✅ Configurazione git completata
+[0;34mℹ️ [2025-04-22 13:44:49] Configurazione remote origin[0m
+[0;34mℹ️ [2025-04-22 13:44:49] Fetch da remote[0m
+[0;34mℹ️ [2025-04-22 13:44:51] Commit dei file locali[0m
+>>>>>>> 754d7c0 (Inizializzazione repository)
