@@ -40,7 +40,8 @@ git commit -m "Inizializzazione repository" || true  # Non fallire se non ci son
 
 # Merge con remote
 log "info" "Merge con remote"
-git merge origin/"$BRANCH" --allow-unrelated-histories || handle_git_error "git merge" "Impossibile eseguire merge con origin/$BRANCH"
+#git merge origin/"$BRANCH" --allow-unrelated-histories || handle_git_error "git merge" "Impossibile eseguire merge con origin/$BRANCH"
+git pull origin "$BRANCH" --autostash 
 
 # Commit finale e push
 log "info" "Commit finale e push"

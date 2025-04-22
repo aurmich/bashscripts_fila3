@@ -51,6 +51,8 @@ function validate_input() {
 
 - [Filosofia della Documentazione](/var/www/html/_bases/base_predict_fila3_mono/docs/DOCUMENTATION_PHILOSOPHY.md) - Principi fondamentali di documentazione
 - [Patterns](/var/www/html/_bases/base_predict_fila3_mono/docs/PATTERNS.md) - Pattern di progettazione adottati nel progetto
+- [Risoluzione Manuale dei Conflitti](/var/www/html/_bases/base_predict_fila3_mono/docs/CONFLICT_RESOLUTION.md) - Principi generali per la risoluzione dei conflitti
+- [Risoluzione Conflitti negli Script Bash](/var/www/html/_bases/base_predict_fila3_mono/bashscripts/docs/CONFLICT_RESOLUTION_BASH.md) - Linee guida specifiche per gli script bash
 
 ---
 
