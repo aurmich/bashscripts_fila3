@@ -32,6 +32,7 @@ build/
 .fuse_hidden*
 .fuse_hidden**.lock
 *.lock
+*.log
 package-lock.json
 .php-cs-fixer.cache
 *.phar
