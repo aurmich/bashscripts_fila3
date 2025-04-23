@@ -60,6 +60,8 @@ for ((i=0; i<total; i++)); do
         fi
     done
 
+    git add -A
+    git commit -am "."
     # Push finale
     git push -u "$ORG" HEAD:"$BRANCH"
 
