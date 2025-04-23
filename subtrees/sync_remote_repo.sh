@@ -54,7 +54,7 @@ for ((i=0; i<total; i++)); do
     git commit -am "."
     #git pull "$ORG" "$BRANCH" --autostash --rebase --depth=1
     git fetch "$ORG" "$BRANCH" --depth=1
-    git merge "$ORG/$BRANCH"
+    git merge "$ORG/$BRANCH" --allow-unrelated-histories
     
      # Loop per gestire eventuali conflitti
     while ! git rebase --continue 2>/dev/null; do
