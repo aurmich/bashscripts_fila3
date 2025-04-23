@@ -18,7 +18,7 @@ log() {
         local level="$1"
         local message="$2"
         local timestamp=$(date '+%Y-%m-%d %H:%M:%S')
-        
+
         case "$level" in
             "error") echo -e "${RED}❌ [$timestamp] $message${NC}" | tee -a "$LOG_FILE" ;;
             "success") echo -e "${GREEN}✅ [$timestamp] $message${NC}" | tee -a "$LOG_FILE" ;;
@@ -39,9 +39,9 @@ handle_git_error() {
     local operation="$1"
     local error_message="$2"
     local retry_count="${3:-3}"
-    
+
     log "error" "Errore durante $operation: $error_message"
-    
+
     if [ $retry_count -gt 0 ]; then
         log "warning" "Tentativo di ripetere l'operazione ($retry_count tentativi rimasti)"
         return 1
@@ -67,11 +67,11 @@ die() {
 # Funzione per verificare l'integrità del repository
 check_repository_integrity() {
     log "info" "Verifica integrità repository..."
-    
+
     if ! git fsck --full --strict; then
         handle_git_error "verifica integrità" "Problemi riscontrati nel repository"
     fi
-    
+
     if ! git diff --quiet; then
         log "warning" "Ci sono modifiche non committate nel repository"
     fi
@@ -97,31 +97,31 @@ rewrite_url() {
 # Funzione avanzata per la manutenzione git
 git_maintenance() {
     log "info" "Eseguo manutenzione avanzata del repository git..."
-    
+
     # Backup automatico prima della manutenzione
     local backup_branch="backup-$(date +%Y%m%d-%H%M%S)"
     git branch "$backup_branch" || handle_git_error "creazione backup" "Impossibile creare branch di backup"
-    
+
     # Pulizia e ottimizzazione
     git gc --aggressive --prune=now || handle_git_error "garbage collection" "Errore durante la pulizia"
     git reflog expire --expire=now --all || handle_git_error "pulizia reflog" "Errore durante la pulizia reflog"
-    
+
     # Rimozione branch remoti non più esistenti
     git remote prune origin || handle_git_error "pulizia remote" "Errore durante la pulizia dei remote"
-    
+
     # Pulizia dei file non tracciati
     git clean -fd || handle_git_error "pulizia file" "Errore durante la pulizia dei file"
-    
+
     # Verifica finale
     check_repository_integrity
-    
+
     log "success" "Manutenzione completata con successo"
 }
 
 # Funzione avanzata per configurare le impostazioni git
 git_config_setup() {
     log "info" "Configurazione avanzata git..."
-    
+
     # Configurazioni base
     git config core.ignorecase false || handle_git_error "configurazione" "Errore impostazione ignorecase"
     git config core.fileMode false || handle_git_error "configurazione" "Errore impostazione fileMode"
@@ -129,11 +129,11 @@ git_config_setup() {
     git config core.eol lf || handle_git_error "configurazione" "Errore impostazione eol"
     git config core.symlinks false || handle_git_error "configurazione" "Errore impostazione symlinks"
     git config core.longpaths true || handle_git_error "configurazione" "Errore impostazione longpaths"
-    
+
     # Configurazioni avanzate
     git config pull.rebase true || handle_git_error "configurazione" "Errore impostazione pull.rebase"
     git config fetch.prune true || handle_git_error "configurazione" "Errore impostazione fetch.prune"
-    
+
     log "success" "Configurazione git completata con successo"
 }
 
@@ -149,25 +149,7 @@ backup_disk() {
     echo "  💾 Backup Disk: $DISK_LETTER"
 }
 
-<<<<<<< HEAD
-git_delete_history() {
-    local directory=$1
-    if [ -z "$directory" ]; then
-        log "error" "Percorso di directory non specificato"
-        return 1
-    fi
 
-    log "warning" "Eliminazione storia git per $directory"
-    rm -rf "$directory/.git"
-    
-    cd "$directory" || return 1
-    git init
-    git add .
-    git commit -m "Initial commit - clean history"
-    
-    log "success" "Storia git eliminata e reinizializzata per $directory"
-    cd - || return 1
-=======
 # Funzione per configurare le impostazioni git
 git_config_setup() {
     log "🔧 Configurazione git di base..."
@@ -192,7 +174,6 @@ git_delete_history() {
     git push -uf origin $branch  # Force push $1 branch to github
     git gc --aggressive --prune=all     # remove the old files
     git gc --auto
->>>>>>> aurmich/dev
 }
 
 dummy_push(){

@@ -1,10 +1,6 @@
 #!/bin/bash
 
-<<<<<<< HEAD
 # Script per correggere automaticamente la struttura delle directory nei moduli Laraxot PTVX
-=======
-# Script per correggere automaticamente la struttura delle directory nei moduli
->>>>>>> aurmich/dev
 
 # Colori per output
 GREEN='\033[0;32m'

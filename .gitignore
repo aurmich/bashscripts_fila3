@@ -15,10 +15,7 @@ docs/cache/
 # Dipendenze e pacchetti
 ## Node.js
 node_modules/
-<<<<<<< HEAD
 /node_modules/
-=======
->>>>>>> aurmich/dev
 package-lock.json
 
 ## Composer
@@ -31,8 +28,6 @@ build/
 
 # Eseguibili
 *.exe
-<<<<<<< HEAD
-=======
 .git-rewrite
 .fuse_hidden*
 .fuse_hidden**.lock
@@ -135,4 +130,3 @@ cache/
 .php-cs-fixer.cache
 **/*.Zone.Identifier
 
->>>>>>> aurmich/dev

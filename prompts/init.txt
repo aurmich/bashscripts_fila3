@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 
 
-=======
  il Modulo fondamentale per tutte le funzionalità di base è il modulo Xot https://github.com/laraxot/module_xot_fila3, percio' devi studiare e analizzare a fondo il codice e aggiornare e studiare la cartella "docs" aggiornare le tue rules e le tue memories
 
 non esiste
@@ -14,7 +12,6 @@ git subtree add -P laravel/Modules/Base https://github.com/laraxot/module_base_f
 non esiste
  # Base - Modulo base per funzionalità comuni
 git subtree add -P laravel/Modules/Base https://github.com/laraxot/module_base_fila3.git dev --squash
->>>>>>> aurmich/dev
  il Modulo fondamentale per tutte le funzionalità di base è il modulo Xot https://github.com/laraxot/module_xot_fila3, percio' devi studiare e analizzare a fondo il codice e aggiornare e studiare la cartella "docs" aggiornare le tue rules e le tue memories
 
 non esiste
@@ -22,7 +19,6 @@ non esiste
 git subtree add -P laravel/Modules/Base https://github.com/laraxot/module_base_fila3.git dev --squash
 
 [0;34mℹ️ [2025-04-22 11:23:29] Scelto blocco HEAD (6 linee vs 1)[0m
-<<<<<<< HEAD
  43df3e0 (.)
  il Modulo fondamentale per tutte le funzionalità di base è il modulo Xot https://github.com/laraxot/module_xot_fila3, percio' devi studiare e analizzare a fondo il codice e aggiornare e studiare la cartella "docs" aggiornare le tue rules e le tue memories
 
@@ -45,5 +41,3 @@ devi stare ai moduli esistenti in https://github.com/laraxot , percio' devi stud
 
 [0;34mℹ️ [2025-04-22 11:23:29] Scelto blocco HEAD (6 linee vs 1)[0m
  43df3e0 (.)
-=======
->>>>>>> aurmich/dev

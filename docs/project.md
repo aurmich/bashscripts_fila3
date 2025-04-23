@@ -30,7 +30,7 @@
 ## 🛠️ Script di Manutenzione
 
 ### `fix_directory_structure.sh`
-<<<<<<< HEAD
+
 **Descrizione**: Corregge e standardizza la struttura delle directory nei moduli Laraxot PTVX
 **Funzionalità**:
 - Verifica della struttura delle directory secondo le convenzioni Laravel
@@ -46,14 +46,7 @@
 - Mantenuta la descrizione specifica che identifica l'uso per moduli Laraxot PTVX
 - Conservata la logica avanzata di identificazione e correzione dei file
 - Migliorata la compatibilità con la struttura Laravel standard
-=======
-**Descrizione**: Corregge e standardizza la struttura delle directory
-**Funzionalità**:
-- Verifica della struttura delle directory
-- Correzione automatica
-- Backup prima delle modifiche
-**Uso**: `./fix_directory_structure.sh <root_directory>`
->>>>>>> aurmich/dev
+aurmich/dev
 
 ### `resolve_git_conflict.sh`
 **Descrizione**: Risolve automaticamente i conflitti Git
@@ -187,12 +180,11 @@
 - Identificazione dei branch obsoleti
 - Rimozione sicura
 - Backup prima dell'operazione
-<<<<<<< HEAD
+
 
 **Uso**: `./git_delete_old_branches.sh <days>` 
 
-=======
->>>>>>> aurmich/dev
+aurmich/dev
 **Uso**: `./git_delete_old_branches.sh <days>`
 
 ## 📚 Documentazione Aggiuntiva
@@ -208,7 +200,6 @@ Per ulteriori informazioni sulla gestione dei repository e l'utilizzo degli scri
 - È consigliato eseguire backup prima di operazioni critiche
 - Verificare sempre le modifiche in ambiente di test
 - Mantenere aggiornata la documentazione
-<<<<<<< HEAD
+
  43df3e0 (.)
-=======
->>>>>>> aurmich/dev
+aurmich/dev

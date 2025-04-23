@@ -67,8 +67,4 @@ rm -rf .git
 # Ritorno alla directory originale
 cd "$curr_dir" || handle_error "Impossibile tornare alla directory originale"
 
-<<<<<<< HEAD
 log "success" "Push ORG completato con successo"
-=======
-log "success" "Push ORG completato con successo"
->>>>>>> aurmich/dev
