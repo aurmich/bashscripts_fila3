@@ -1,84 +1,86 @@
 #!/bin/bash
 
-# 🚀 Importa le funzioni di utilità
 source ./bashscripts/lib/custom.sh
-
-# ✅ Validazione input
+# Validate input
 if [ $# -ne 2 ]; then
-    log "error" "Parametri mancanti"
-    log "info" "Uso: $0 <path> <remote_repo>"
+    echo "Usage: $0 <path> <remote_repo>"
     exit 1
 fi
 
-# 📌 Configurazione
+# Input parameters
 LOCAL_PATH="$1"
+LOCAL_PATH_bak="$LOCAL_PATH"_bak
 REMOTE_REPO="$2"
+REMOTE_BRANCH=$(git symbolic-ref --short HEAD 2>/dev/null || echo "main")
 TEMP_BRANCH=$(basename "$LOCAL_PATH")-temp
 
-# 🎯 Log iniziale
-log "info" "Inizio push subtree"
-log "info" "📁 Path locale: $LOCAL_PATH"
-log "info" "🌐 Repository remoto: $REMOTE_REPO"
-log "info" "🌿 Branch: $BRANCH"
-log "info" "🌿 Branch temporaneo: $TEMP_BRANCH"
+echo "  📁 Path: $LOCAL_PATH"
+echo "  🌐 URL: $REMOTE_REPO"
+echo "  🌐 Branch: $REMOTE_BRANCH"
+echo "  🌐 Temporary branch: $TEMP_BRANCH"
 
-# 🔍 Verifica prerequisiti
-if [ ! -e "$LOCAL_PATH" ]; then
-    handle_git_error "verifica path" "Il path $LOCAL_PATH non esiste"
+
+
+if(! git ls-remote "$REMOTE_REPO" > /dev/null 2>&1)
+then
+    handle_error "Remote repository $REMOTE_REPO not found"
 fi
 
-if ! git ls-remote "$REMOTE_REPO" > /dev/null 2>&1; then
-    handle_git_error "verifica remote" "Repository remoto $REMOTE_REPO non trovato"
-fi
-
-# 🔄 Funzione per il push del subtree
+# Sync subtree
 push_subtree() {
-    log "info" "Inizio push subtree"
-    
-    # 🛠️ Setup iniziale
-    git_config_setup
-    
-    # 🧹 Pulizia file temporanei
     find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
-    
-    # 💾 Commit locale
-    git add -A || handle_git_error "add" "Errore nell'add"
-    git commit -am "🔄 Aggiornamento subtree" || handle_git_error "commit" "Errore nel commit"
-    git push -u origin "$BRANCH" || handle_git_error "push" "Errore nel push"
-    
-    # Pulizia file temporanei (nuovamente, per sicurezza)
+
+    git add -A
+    git commit -am "."
+    git push -u origin "$REMOTE_BRANCH"
+
+
     find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
-    
-    # 📤 Push subtree
-    log "info" "Tentativo push subtree standard"
-    if ! git subtree push -P "$LOCAL_PATH" "$REMOTE_REPO" "$BRANCH"; then
-        log "warning" "Push standard fallito, tentativo con split"
-        
-        # 🔄 Fetch e split
-        git fetch "$REMOTE_REPO" "$BRANCH"
-        if ! git subtree split --rejoin --prefix="$LOCAL_PATH" -b "$TEMP_BRANCH"; then
-            handle_git_error "split" "Errore nello split"
-        else
-            log "success" "Subtree $LOCAL_PATH splittato correttamente"
+
+
+    if(! git subtree push -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH")
+    then
+        log "❌ Failed to push subtree $LOCAL_PATH to $REMOTE_REPO"
+        if(! git push  "$REMOTE_REPO" $(git subtree split --prefix="$LOCAL_PATH"):"$REMOTE_BRANCH")
+        then
+            log "❌ Failed split  to push subtree $LOCAL_PATH to $REMOTE_REPO"
+
+            git subtree split --prefix="$LOCAL_PATH" -b "$TEMP_BRANCH"
+            # Ora fai il merge del branch temporaneo con `git subtree merge`
+            git subtree merge --prefix="$LOCAL_PATH" "$TEMP_BRANCH" || echo "❌ Failed to merge subtree"
+            # Pulisci il branch temporaneo
+            git branch -D "$TEMP_BRANCH" || echo "❌ Failed to delete temporary branch $TEMP_BRANCH"
+    #        # First, split the subtree to a temporary branch
+        #    git subtree split --prefix="$LOCAL_PATH" --rejoin -b "$TEMP_BRANCH"
+
+    #        # Then force push that branch
+        #    git push "$REMOTE_REPO" "$TEMP_BRANCH":"$REMOTE_BRANCH"
+
+    #        # Optionally, clean up the temporary branch
+    #        git branch -D "$TEMP_BRANCH"
+
+    #        git subtree push -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH"
+
+            #mv "$LOCAL_PATH" "$LOCAL_PATH_bak" || die "Failed to rename $LOCAL_PATH to $LOCAL_PATH_bak"
+            #git add .
+            #git commit -am "Add $LOCAL_PATH_bak"
+            #git subtree add --prefix="$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH" --squash
+             # Sincronizza i file dalla cartella di backup
+            #rsync -avz "$LOCAL_PATH_bak/" "$LOCAL_PATH" || die "Failed to sync files"
+            # Rimuovi la cartella di backup
+            #rm -rf "$LOCAL_PATH_bak" || die "Failed to remove backup folder"
+            # Commit delle modifiche
+            #git add . || die "Failed to add changes after submodule sync"
+            #git commit -am "Added submodule for $LOCAL_PATH" || die "Failed to commit submodule changes"
         fi
-        
-        # Push del branch temporaneo
-        if ! git push "$REMOTE_REPO" "$TEMP_BRANCH":"$BRANCH"; then
-            handle_git_error "push" "Errore nel push del branch temporaneo"
-        else
-            log "success" "Subtree $LOCAL_PATH pushato correttamente su $REMOTE_REPO"
-        fi
-        
-        # Pulizia
-        git branch -D "$TEMP_BRANCH" || log "warning" "Impossibile eliminare branch temporaneo"
     fi
-    
-    # 🛠️ Manutenzione
-    git rebase --rebase-merges --strategy subtree "$BRANCH" --autosquash || log "warning" "Errore nel rebase"
-    git_maintenance
+
+
+    git rebase --rebase-merges --strategy subtree "$REMOTE_BRANCH" --autosquash
+    #git rebase --preserve-merges "$REMOTE_BRANCH"
 }
 
-# 🚀 Esecuzione
+# Run sync
 push_subtree
 
-log "success" "Subtree $LOCAL_PATH pushato con successo su $REMOTE_REPO"
+echo "👍 Subtree $LOCAL_PATH pushed successfully with $REMOTE_REPO"

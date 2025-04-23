@@ -44,16 +44,15 @@ tar -czf "$TEMP_PATH" \
     --exclude='svg' \
     --exclude='package-lock.json' \
     --exclude='*.lock' \
-    --warning=no-file-changed \
     . || { echo "❌ Errore nella creazione dell'archivio"; exit 1; }
 
-# 📁 Copia dell'archivio sul disco
+# 📁 Copia dell’archivio sul disco
 echo "📤 Trasferimento dell'archivio a $DEST_PATH"
 cp "$TEMP_PATH" "$DEST_PATH" || { echo "❌ Errore durante la copia"; exit 1; }
 
 echo "✅ Archivio creato e trasferito con successo: $DEST_PATH"
 
-# 🛠️ Normalizzazione dello script stesso
+# 🛠️ Normalizzazione dello script stesso (opzionale)
 me=$(readlink -f -- "$0")
 sed -i -e 's/\r$//' "$me"
 
