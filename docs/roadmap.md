@@ -117,7 +117,7 @@
 - [Fase 6: Monitoraggio](./roadmap/06_monitoring.md)
 - [Fase 7: AI Integration](./roadmap/07_ai_integration.md)
 - [Fase 8: Cloud Integration](./roadmap/08_cloud_integration.md)
-<<<<<<< HEAD
+
 - [Fase 9: UI/UX](./roadmap/09_ui_ux.md) 
-=======
->>>>>>> 43df3e0 (.)
+
+ 43df3e0 (.)

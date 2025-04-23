@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-=======
+
+
 # Setup del Progetto Laravel
 
 Questo documento contiene la documentazione dettagliata dei comandi utilizzati per il setup di un progetto Laravel, insieme a spiegazioni, consigli e note per migliorare il processo.
@@ -1235,12 +1235,12 @@ php artisan user:assign-module
 
   ```
  80ec88ee9 (.)
->>>>>>> 43df3e0 (.)
+ 43df3e0 (.)
 # Setup del Progetto Laravel
 
 Questo documento contiene la documentazione dettagliata dei comandi utilizzati per il setup di un progetto Laravel, insieme a spiegazioni, consigli e note per migliorare il processo.
 
-<<<<<<< HEAD
+
 ## Perché questo documento?
 Questo documento serve come guida completa per il setup di un ambiente di sviluppo Laravel, con particolare attenzione a:
 - Standardizzazione del processo di setup
@@ -1248,8 +1248,8 @@ Questo documento serve come guida completa per il setup di un ambiente di svilup
 - Gestione delle dipendenze comuni
 - Configurazione ottimale dell'ambiente
 
-=======
->>>>>>> 43df3e0 (.)
+
+ 43df3e0 (.)
 ## Requisiti di Sistema
 
 ### Hardware Minimi
@@ -1299,17 +1299,17 @@ composer --version
 sudo apt install tasksel
 ```
 
-<<<<<<< HEAD
+
 **Perché?**
 - `tasksel` permette di installare rapidamente gruppi di pacchetti predefiniti
 - Standardizza l'installazione degli ambienti di sviluppo
 - Riduce la possibilità di errori durante il setup
-=======
+
 **Spiegazione:**
 - `tasksel` è un tool che permette di installare gruppi di pacchetti predefiniti su sistemi Debian/Ubuntu
 - Utile per installare rapidamente ambienti di sviluppo completi
 - Richiede privilegi di root (sudo)
->>>>>>> 43df3e0 (.)
+ 43df3e0 (.)
 
 **Note:**
 - Verificare che il sistema sia aggiornato prima dell'installazione
@@ -1323,7 +1323,7 @@ sudo apt install tasksel
 sudo add-apt-repository ppa:ondrej/php
 ```
 
-<<<<<<< HEAD
+
 **Perché?**
 - Fornisce accesso alle versioni più recenti e stabili di PHP
 - Permette di installare versioni specifiche di PHP
@@ -1333,7 +1333,7 @@ sudo add-apt-repository ppa:ondrej/php
 - Richiede privilegi di root (sudo)
 - Dopo l'aggiunta, eseguire `sudo apt update`
 - Repository affidabile per PHP su Ubuntu
-=======
+
 **Spiegazione:**
 - Aggiunge il repository PPA di Ondřej Surý, che contiene le versioni più recenti e stabili di PHP
 - Permette di installare versioni specifiche di PHP (7.4, 8.0, 8.1, 8.2, 8.3)
@@ -1344,7 +1344,7 @@ sudo add-apt-repository ppa:ondrej/php
 - Dopo l'aggiunta del repository, è necessario aggiornare la lista dei pacchetti con `sudo apt update`
 - Questo repository è considerato uno dei più affidabili per PHP su Ubuntu
 - Consigliato per progetti che necessitano di versioni specifiche di PHP
->>>>>>> 43df3e0 (.)
+ 43df3e0 (.)
 
 ### Configurazione File .env
 ```bash
@@ -1358,7 +1358,7 @@ cp .env.latest .env
 php artisan key:generate
 ```
 
-<<<<<<< HEAD
+
 **Perché?**
 - Configura l'ambiente di sviluppo Laravel
 - Genera una chiave di crittografia sicura
@@ -1370,7 +1370,7 @@ php artisan key:generate
 - Configurare manualmente altre variabili se necessario:
   ```ini
   APP_NAME=SaluteOra
-=======
+
 **Spiegazione:**
 - Configura l'ambiente di sviluppo Laravel
 - `cp .env.latest .env`: Copia il file di configurazione template in .env
@@ -1389,18 +1389,18 @@ php artisan key:generate
 - Se necessario, configurare manualmente altre variabili d'ambiente:
   ```ini
   APP_NAME=<nome progetto>
->>>>>>> 43df3e0 (.)
+ 43df3e0 (.)
   APP_ENV=local
   APP_DEBUG=true
   APP_URL=http://localhost
   ```
-<<<<<<< HEAD
-=======
+
+
 - In caso di problemi, verificare i permessi del file .env:
   ```bash
   chmod 644 .env
   ```
->>>>>>> 43df3e0 (.)
+ 43df3e0 (.)
 
 ## Installazione Dipendenze
 
@@ -1409,7 +1409,7 @@ php artisan key:generate
 sudo apt install lamp-server^
 ```
 
-<<<<<<< HEAD
+
 **Perché?**
 - Installa il completo stack LAMP in un unico comando
 - Garantisce la compatibilità tra i componenti
@@ -1425,7 +1425,7 @@ sudo apt install lamp-server^
 - Richiede privilegi di root
 - Durante l'installazione verrà richiesta la password per MySQL
 - Verificare lo stato dei servizi:
-=======
+
 **Spiegazione:**
 - Installa il completo stack LAMP (Linux, Apache, MySQL, PHP)
 - Il simbolo `^` alla fine indica che si tratta di un task completo
@@ -1443,7 +1443,7 @@ sudo apt install lamp-server^
 - Durante l'installazione verrà richiesta la password per MySQL
 - Consigliato eseguire `sudo apt update` prima dell'installazione
 - Verificare che tutti i servizi siano attivi dopo l'installazione:
->>>>>>> 43df3e0 (.)
+ 43df3e0 (.)
   ```bash
   sudo systemctl status apache2
   sudo systemctl status mysql
@@ -1454,7 +1454,7 @@ sudo apt install lamp-server^
 sudo apt install git npm aptitude
 ```
 
-<<<<<<< HEAD
+
 **Perché?**
 - Fornisce gli strumenti essenziali per lo sviluppo
 - Facilita la gestione del codice e delle dipendenze
@@ -1472,7 +1472,7 @@ sudo apt install git npm aptitude
   sudo npm install -g npm@latest
   
   # Configura Git
-=======
+
 **Spiegazione:**
 - Installa tre strumenti essenziali per lo sviluppo:
   1. `git`: Sistema di controllo versione distribuito
@@ -1502,13 +1502,13 @@ sudo apt install git npm aptitude
   ```
 - Per Git, configurare l'utente:
   ```bash
->>>>>>> 43df3e0 (.)
+ 43df3e0 (.)
   git config --global user.name "Nome Utente"
   git config --global user.email "email@example.com"
   ```
 
-<<<<<<< HEAD
-=======
+
+
 ### Installazione Estensioni PHP
 ```bash
 sudo apt-get install -y php libapache2-mod-php php8.*-{cli,bcmath,bz2,intl,gd,mbstring,mysql,zip,common,curl,xml,imap,pdo-sqlite,sqlite3,dom} php-{json,xml,zip,common,tokenizer,mysql,sqlite3} libapache2-mod-php8*
@@ -2139,17 +2139,17 @@ sudo pecl install redis
   sudo pecl uninstall redis
   ```
 
->>>>>>> 43df3e0 (.)
+ 43df3e0 (.)
 ## Configurazione Database
 
 ### Creazione Database
 ```bash
 # Accedi a MySQL
-<<<<<<< HEAD
+
 mysql -u root -p
-=======
+
 sudo mysql
->>>>>>> 43df3e0 (.)
+ 43df3e0 (.)
 
 # Crea il database
 CREATE DATABASE laravel CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
@@ -2157,16 +2157,16 @@ CREATE DATABASE laravel CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 # Crea l'utente
 CREATE USER 'laravel'@'localhost' IDENTIFIED BY 'password';
 
-<<<<<<< HEAD
+
 # Concedi i privilegi
-=======
+
 # Assegna i permessi
->>>>>>> 43df3e0 (.)
+ 43df3e0 (.)
 GRANT ALL PRIVILEGES ON laravel.* TO 'laravel'@'localhost';
 
 # Applica i cambiamenti
 FLUSH PRIVILEGES;
-<<<<<<< HEAD
+
 ```
 
 **Perché?**
@@ -2179,7 +2179,7 @@ FLUSH PRIVILEGES;
 - Verificare la connessione:
   ```bash
   mysql -u laravel -p laravel
-=======
+
 
 # Esci
 EXIT;
@@ -2321,12 +2321,12 @@ php artisan migrate
 - Per ripristinare tutte le migrazioni:
   ```bash
   php artisan migrate:fresh
->>>>>>> 43df3e0 (.)
+ 43df3e0 (.)
   ```
 
 ## Note e Consigli
 
-<<<<<<< HEAD
+
 ### Best Practices
 1. **Sicurezza:**
    - Utilizzare password complesse
@@ -2358,7 +2358,7 @@ php artisan migrate
 - [[docs/index|Indice Documentazione]]
 - [[docs/architecture/README|Architettura]]
 - [[docs/development/README|Guide Sviluppo]]
-=======
+
 ### Sicurezza
 - Utilizzare sempre password complesse
 - Limitare i permessi degli utenti al minimo necessario
@@ -2695,4 +2695,4 @@ php artisan user:assign-module
   ```
 - Per rimuovere l'assegnazione di un modulo:
   ```
->>>>>>> 43df3e0 (.)
+ 43df3e0 (.)

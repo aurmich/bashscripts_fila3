@@ -1,8 +1,8 @@
-<<<<<<< HEAD
-=======
+
+
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
->>>>>>> 43df3e0 (.)
+ 43df3e0 (.)
 # 📱 Fase 9: UI/UX
 
 ## 📋 Panoramica
@@ -126,9 +126,9 @@ Questa fase si concentra sullo sviluppo di interfacce utente moderne e intuitive
 
 ### Q4 2029
 - Deployment produzione
-<<<<<<< HEAD
+
 - Monitoraggio utilizzo 
-=======
+
 - Monitoraggio utilizzo
 # 📱 Fase 9: UI/UX
 
@@ -634,4 +634,4 @@ Questa fase si concentra sullo sviluppo di interfacce utente moderne e intuitive
 - Monitoraggio utilizzo
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (253 linee vs 1)[0m
->>>>>>> 43df3e0 (.)
+ 43df3e0 (.)

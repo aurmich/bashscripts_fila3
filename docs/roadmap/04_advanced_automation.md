@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 # 🔄 Fase 4: Automazione Avanzata
 
@@ -9,10 +9,10 @@ Questa fase si concentra sull'implementazione di funzionalità di automazione av
 
 
 
-=======
+
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
->>>>>>> 43df3e0 (.)
+ 43df3e0 (.)
 # 🔄 Fase 4: Automazione Avanzata
 
 ## 📋 Panoramica
@@ -253,10 +253,10 @@ Questa fase si concentra sull'implementazione di funzionalità di automazione av
 ### Q4 2024
 - Deployment produzione
 - Monitoraggio
-<<<<<<< HEAD
 
-=======
->>>>>>> 43df3e0 (.)
+
+
+ 43df3e0 (.)
 # 🔄 Fase 4: Automazione Avanzata
 
 ## 📋 Panoramica
@@ -377,7 +377,7 @@ Questa fase si concentra sull'implementazione di funzionalità di automazione av
 ### Q4 2024
 - Deployment produzione
 - Monitoraggio
-<<<<<<< HEAD
+
 
 
 # 🔄 Fase 4: Automazione Avanzata
@@ -595,7 +595,7 @@ Questa fase si concentra sull'implementazione di funzionalità di automazione av
 
 - Ottimizzazione finale 
 
-=======
+
 # 🔄 Fase 4: Automazione Avanzata
 
 ## 📋 Panoramica
@@ -792,4 +792,4 @@ Questa fase si concentra sull'implementazione di funzionalità di automazione av
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (4 linee vs 1)[0m
 - Ottimizzazione finale 
->>>>>>> 43df3e0 (.)
+ 43df3e0 (.)

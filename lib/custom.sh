@@ -12,19 +12,6 @@ BRANCH=$(git symbolic-ref --short HEAD 2>/dev/null || echo "main")
 
 # Funzione avanzata per loggare messaggi
 log() {
-<<<<<<< HEAD
-    local level="$1"
-    local message="$2"
-    local timestamp=$(date '+%Y-%m-%d %H:%M:%S')
-    
-    case "$level" in
-        "error") echo -e "${RED}❌ [$timestamp] $message${NC}" | tee -a "$LOG_FILE" ;;
-        "success") echo -e "${GREEN}✅ [$timestamp] $message${NC}" | tee -a "$LOG_FILE" ;;
-        "warning") echo -e "${YELLOW}⚠️ [$timestamp] $message${NC}" | tee -a "$LOG_FILE" ;;
-        "info") echo -e "${BLUE}ℹ️ [$timestamp] $message${NC}" | tee -a "$LOG_FILE" ;;
-        *) echo -e "[$timestamp] $message" | tee -a "$LOG_FILE" ;;
-    esac
-=======
     # Supporta sia il formato avanzato con livelli che il formato semplice
     if [ $# -eq 2 ]; then
         # Formato avanzato: log "level" "message"
@@ -45,7 +32,6 @@ log() {
         local timestamp=$(date '+%Y-%m-%d %H:%M:%S')
         echo "📆 $timestamp - $message" | tee -a "$LOG_FILE"
     fi
->>>>>>> 43df3e0 (.)
 }
 
 # Funzione avanzata per gestire gli errori git
@@ -65,8 +51,6 @@ handle_git_error() {
     fi
 }
 
-<<<<<<< HEAD
-=======
 # Funzione per gestire gli errori generici
 handle_error() {
     local error_message="$1"
@@ -80,7 +64,6 @@ die() {
     exit 1
 }
 
->>>>>>> 43df3e0 (.)
 # Funzione per verificare l'integrità del repository
 check_repository_integrity() {
     log "info" "Verifica integrità repository..."
@@ -94,8 +77,6 @@ check_repository_integrity() {
     fi
 }
 
-<<<<<<< HEAD
-=======
 # Funzione per riscrivere la URL secondo le regole specificate
 rewrite_url() {
     local original_url="$1"
@@ -113,7 +94,6 @@ rewrite_url() {
     fi
 }
 
->>>>>>> 43df3e0 (.)
 # Funzione avanzata per la manutenzione git
 git_maintenance() {
     log "info" "Eseguo manutenzione avanzata del repository git..."
@@ -157,26 +137,6 @@ git_config_setup() {
     log "success" "Configurazione git completata con successo"
 }
 
-<<<<<<< HEAD
-# Funzione per riscrivere la URL secondo le regole specificate
-rewrite_url() {
-    local original_url="$1"
-    local org="$2"
-
-    # Estrai solo il nome del repository (ultimo componente dopo lo slash)
-    repo_name=$(basename "$original_url")
-
-    if [[ "$org" == *"/"* ]]; then
-        # ORG contiene uno slash → usa direttamente come prefisso
-        echo "${org}/${repo_name}"
-    else
-        # ORG è un'organizzazione GitHub → usa formato GitHub SSH
-        echo "git@github.com:${org}/${repo_name}"
-    fi
-}
-
-=======
->>>>>>> 43df3e0 (.)
 backup_disk() {
     # Richiesta interattiva della lettera del disco
     read -p "📀 Inserisci la lettera del disco per il backup [d]: " DISK_LETTER
@@ -189,36 +149,23 @@ backup_disk() {
     echo "  💾 Backup Disk: $DISK_LETTER"
 }
 
-<<<<<<< HEAD
-git_delete_history(){
-=======
-# Funzione per configurare le impostazioni git
-git_config_setup() {
-    log "🔧 Configurazione git di base..."
-    git config core.ignorecase false        # Gestione case-sensitive dei file
-    git config core.fileMode false          # Ignora i permessi dei file
-    git config core.autocrlf false          # Non convertire automaticamente i line endings
-    git config core.eol lf                  # Usa LF come line ending di default
-    git config core.symlinks false          # Gestione symlinks disabilitata per Windows
-    git config core.longpaths true          # Supporto per path lunghi su Windows
-    log "✅ Configurazione git completata"
-}
-
 git_delete_history() {
->>>>>>> 43df3e0 (.)
-    local branch="$1"
-    git checkout --orphan newBranch$branch
-    git add --renormalize -A
-    git add -A  # Add all files and commit them
-    git commit -am "first"
-    git branch -D $branch  # Deletes the $1 branch
-    git branch -m $branch  # Rename the current branch to $1
-    git gc --aggressive --prune=all     # remove the old files
-    git push -uf origin $branch  # Force push $1 branch to github
-    git gc --aggressive --prune=all     # remove the old files
-    git gc --auto
-<<<<<<< HEAD
-=======
+    local directory=$1
+    if [ -z "$directory" ]; then
+        log "error" "Percorso di directory non specificato"
+        return 1
+    fi
+
+    log "warning" "Eliminazione storia git per $directory"
+    rm -rf "$directory/.git"
+    
+    cd "$directory" || return 1
+    git init
+    git add .
+    git commit -m "Initial commit - clean history"
+    
+    log "success" "Storia git eliminata e reinizializzata per $directory"
+    cd - || return 1
 }
 
 dummy_push(){
@@ -256,5 +203,4 @@ is_readable() {
 # Funzione per verificare se un file è scrivibile
 is_writable() {
     [ -w "$1" ]
->>>>>>> 43df3e0 (.)
 }

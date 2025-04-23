@@ -43,7 +43,9 @@ for ((i=0; i<total; i++)); do
     git_config_setup
     git add -A
     git commit -am "."
-    git pull "$ORG" "$BRANCH" --autostash --rebase --depth=1
+    #git pull "$ORG" "$BRANCH" --autostash --rebase --depth=1
+    git fetch "$ORG" "$BRANCH" --depth=1
+    git merge "$ORG/$BRANCH"
     
      # Loop per gestire eventuali conflitti
     while ! git rebase --continue 2>/dev/null; do

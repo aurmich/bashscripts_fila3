@@ -1,16 +1,16 @@
-<<<<<<< HEAD
+
 # 📊 Fase 6: Monitoraggio
 
 ## 📋 Panoramica
 Questa fase si concentra sull'implementazione di un sistema avanzato di monitoraggio e analisi delle performance del sistema, garantendo visibilità completa e proattività nella gestione delle risorse.
-=======
+
 
 [0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
 # 📊 Fase 6: Monitoraggio
 
 ## 📋 Panoramica
 Questa fase si concentra sull'implementazione di un sistema avanzato di monitoraggio e analisi delle performance del sistema.
->>>>>>> 43df3e0 (.)
+ 43df3e0 (.)
 
 ## 🎯 Funzionalità Future
 
@@ -132,9 +132,9 @@ Questa fase si concentra sull'implementazione di un sistema avanzato di monitora
 ### Q4 2026
 - Deployment produzione
 - Monitoraggio continuo
-<<<<<<< HEAD
 
-=======
+
+
 # 📊 Fase 6: Monitoraggio
 
 ## 📋 Panoramica
@@ -590,4 +590,4 @@ Questa fase si concentra sull'implementazione di un sistema avanzato di monitora
 
 [0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco HEAD (4 linee vs 1)[0m
 - Aggiornamenti 
->>>>>>> 43df3e0 (.)
+ 43df3e0 (.)

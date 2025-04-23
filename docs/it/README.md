@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-=======
+
+
 
 [0;34mℹ️ [2025-04-22 11:23:10] Scelto blocco incoming (1 linee vs 1)[0m
 # 🚀 Toolkit di Automazione Git
@@ -404,7 +404,7 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file `LICENSE` per 
   <sub>Built with ❤️ by the development team</sub>
 
 
->>>>>>> 43df3e0 (.)
+ 43df3e0 (.)
 # 🚀 Toolkit di Automazione Git
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com)
@@ -443,24 +443,24 @@ Questo toolkit è una suite completa di script Bash progettata per automatizzare
 bashscripts/
 ├── git/                 # Script per la gestione Git
 ├── maintenance/         # Script di manutenzione
-<<<<<<< HEAD
+
 ├── checks/              # Script di verifica
 └── prompt/              # Template per prompt personalizzati
-=======
+
 ├── checks/             # Script di verifica
 └── prompt/             # Template per prompt personalizzati
->>>>>>> 43df3e0 (.)
+ 43df3e0 (.)
 ```
 
 ## 🚀 Script Principali
 
 ### Git Sync & Organization
 - `git_sync_org.sh`: Sincronizza repository tra organizzazioni
-<<<<<<< HEAD
+
 - `git_sync_subtree.sh`: Gestisce la sincronizzazione dei subtrees
-=======
+
 - `git_sync_subtree.sh`: Gestisce la sincronizzazione dei subtree
->>>>>>> 43df3e0 (.)
+ 43df3e0 (.)
 - `git_change_org.sh`: Cambia l'organizzazione del repository
 
 ### Manutenzione
@@ -513,9 +513,9 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file `LICENSE` per 
 
 <div align="center">
   <sub>Built with ❤️ by the development team</sub>
-<<<<<<< HEAD
+
 </div>
-=======
+
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (203 linee vs 1)[0m
->>>>>>> 43df3e0 (.)
+ 43df3e0 (.)

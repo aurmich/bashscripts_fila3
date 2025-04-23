@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 # GUIDA ESSENZIALE LARAXOT
 
 ## DOCUMENTAZIONE
@@ -17,7 +13,7 @@
 - Analizza ogni modulo separatamente con PHPStan
 - PHPStan è installato nella cartella laravel: `./vendor/bin/phpstan`
 - Strategia per errori numerosi: scendi di livello fino a <100 errori, poi sali gradualmente
-- Cerca e sistema i file con conflitti git ("<<< HEAD")
+- Cerca e sistema i file con conflitti git 
 
 ## NAMESPACE E STRUTTURA
 - Modello: `Modules\*\Models` (non `Modules\*\app\Models`)
@@ -159,10 +155,10 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 
 
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco HEAD (156 linee vs 1)[0m
-=======
->>>>>>> cb513be (.)
-=======
->>>>>>> 0440c57 (.)
+
+ cb513be (.)
+
+ 0440c57 (.)
 # GUIDA ESSENZIALE LARAXOT
 
 ## DOCUMENTAZIONE
@@ -614,7 +610,7 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 
 
 
->>>>>>> 43df3e0 (.)
+ 43df3e0 (.)
 # GUIDA ESSENZIALE LARAXOT
 
 ## DOCUMENTAZIONE
@@ -640,24 +636,24 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 - Esempio: User path: `/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/User/app/Models/User.php`
   namespace: `Modules\User\Models`
 
-<<<<<<< HEAD
-=======
+
+
 
 
 
 
 
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
->>>>>>> 43df3e0 (.)
+ 43df3e0 (.)
 ## TRADUZIONI
 - Formato corretto: `'field' => ['label' => 'Etichetta', 'tooltip' => 'Descrizione']`
 - MAI usare ->label() (gestito da LangServiceProvider)
 
-<<<<<<< HEAD
-=======
+
+
 
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
->>>>>>> 43df3e0 (.)
+ 43df3e0 (.)
 ## ESTENSIONE CLASSI
 - MAI estendere classi Filament direttamente
 - SEMPRE estendere classi XotBase dal modulo Xot
@@ -675,8 +671,8 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 - Usare metodi specifici: getListTableColumns(), getTableFilters(), getTableActions()
 - Usare array associativi con chiavi string per componenti
 
-<<<<<<< HEAD
-=======
+
+
 ## TRADUZIONI
 - Formato corretto: `'field' => ['label' => 'Etichetta', 'tooltip' => 'Descrizione']`
 - MAI usare ->label() (gestito da LangServiceProvider)
@@ -703,7 +699,7 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
 
->>>>>>> 43df3e0 (.)
+ 43df3e0 (.)
 ## MIGRAZIONI
 - Estendere XotBaseMigration
 - Usare tableCreate() e tableUpdate()
@@ -715,8 +711,8 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 - Evitare l'uso di "mixed" (solo come ultima risorsa)
 - Analizzare moduli esistenti prima di implementare nuove funzionalità
 
-<<<<<<< HEAD
-=======
+
+
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
 
 
@@ -733,7 +729,7 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 - Usare tableCreate() e tableUpdate()
  cb513be (.)
 
->>>>>>> 43df3e0 (.)
+ 43df3e0 (.)
 ## METODOLOGIA
 - Analizzare moduli esistenti
 - Focalizzarsi sullo scopo, non solo sulla correzione
@@ -750,8 +746,8 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 - Formato completo: `'field' => ['label' => 'Etichetta', 'tooltip' => 'Descrizione', 'placeholder' => 'Testo']`
 - Actions: `'action' => ['label' => 'Azione', 'icon' => 'heroicon-o-plus', 'color' => 'primary']`
 - Gestire tutto tramite LangServiceProvider
-=======
-<<<<<<< HEAD
+
+
 
 
 
@@ -805,11 +801,11 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 
 
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
-<<<<<<< HEAD
-=======
->>>>>>> cb513be (.)
->>>>>>> 43df3e0 (.)
-=======
+
 
  cb513be (.)
->>>>>>> 0440c57 (.)
+ 43df3e0 (.)
+
+
+ cb513be (.)
+ 0440c57 (.)

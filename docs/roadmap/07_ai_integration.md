@@ -1,8 +1,8 @@
-<<<<<<< HEAD
-=======
+
+
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
->>>>>>> 43df3e0 (.)
+ 43df3e0 (.)
 # 🤖 Fase 7: AI Integration
 
 ## 📋 Panoramica
@@ -127,9 +127,9 @@ Questa fase si concentra sull'integrazione di tecnologie di Intelligenza Artific
 
 ### Q4 2027
 - Deployment produzione
-<<<<<<< HEAD
+
 - Monitoraggio continuo 
-=======
+
 - Monitoraggio continuo
 # 🤖 Fase 7: AI Integration
 
@@ -639,4 +639,4 @@ Questa fase si concentra sull'integrazione di tecnologie di Intelligenza Artific
 - Monitoraggio continuo
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (255 linee vs 1)[0m
->>>>>>> 43df3e0 (.)
+ 43df3e0 (.)
