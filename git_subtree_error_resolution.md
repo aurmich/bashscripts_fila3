@@ -20,6 +20,7 @@ Il sistema di gestione dei subtree è composto da tre componenti principali:
   2. Pull subtree
 
 ### 2. Push Script (`git_push_subtree.sh`)
+<<<<<<< HEAD
 
 ```bash
 # 1. Inizializzazione
@@ -49,6 +50,8 @@ git subtree pull -P "$LOCAL_PATH" "$REMOTE_REPO" "$BRANCH"
 git fetch "$REMOTE_REPO" "$BRANCH" --depth=1
 git merge -s subtree FETCH_HEAD --allow-unrelated-histories
 
+=======
+>>>>>>> aurmich/dev
 Esegue una sequenza complessa di operazioni:
 ```bash
 1. git add -A && git commit -am "."
@@ -71,7 +74,10 @@ Esegue una sequenza con fallback:
    - git fetch $REMOTE_REPO $REMOTE_BRANCH --depth=1
    - git merge -s subtree FETCH_HEAD --allow-unrelated-histories
 4. git rebase --rebase-merges --strategy subtree $REMOTE_BRANCH
+<<<<<<< HEAD
  43df3e0 (.)
+=======
+>>>>>>> aurmich/dev
 ```
 
 ## 🚨 Analisi Errori Comuni
@@ -97,6 +103,7 @@ fi
 ! [rejected] dev -> dev (non-fast-forward)
 ```
 
+<<<<<<< HEAD
 
 **Causa**: Divergenze tra repository locale e remoto
 
@@ -173,6 +180,8 @@ fi
   <sub>Built with ❤️ by the development team</sub>
 </div>
 
+=======
+>>>>>>> aurmich/dev
 **Causa**: Questo errore si verifica nella sequenza di push quando ci sono divergenze tra il repository locale e remoto.
 
 **Soluzione**:
@@ -218,4 +227,7 @@ fi
 1. Aggiungere `set -x` all'inizio degli script per debug verbose
 2. Implementare logging più dettagliato
 3. Verificare i permessi degli script
+<<<<<<< HEAD
  43df3e0 (.)
+=======
+>>>>>>> aurmich/dev

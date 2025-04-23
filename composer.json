@@ -1,14 +1,26 @@
 {
+<<<<<<< HEAD
     "name": "laraxot/bashscripts_fila3",
     "description": "Script di utilità per la gestione dei repository Git, Toolkit di automazione Git per progetti Laravel",
     "type": "library",
     "license": "MIT",
+=======
+    "description": "Toolkit di automazione Git per progetti Laravel",
+    "type": "library",
+    "name": "laraxot/bashscripts_fila3",
+    "autoload": {
+        "psr-4": {
+            
+        }
+    },
+>>>>>>> aurmich/dev
     "authors": [
         {
             "name": "marco76tv",
             "email": "marco.sottana@gmail.com"
         }
     ],
+<<<<<<< HEAD
     "require": {
     },
     "require-dev": {
@@ -24,4 +36,9 @@
     },
     "minimum-stability": "stable",
     "prefer-stable": true
+=======
+    "require-dev": {
+        
+    }
+>>>>>>> aurmich/dev
 }

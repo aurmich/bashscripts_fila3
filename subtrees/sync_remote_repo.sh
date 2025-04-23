@@ -36,6 +36,7 @@ for ((i=0; i<total; i++)); do
     #fi
     echo "Submodule $i: 📂 path: $path 🌐 URL: $url 🔑 ORG: $ORG"
     cd "$path" 
+<<<<<<< HEAD
     # Verifica se .git esiste prima di inizializzare
     if [ ! -d ".git" ]; then
         echo "Inizializzazione repository Git in $path..."
@@ -55,6 +56,16 @@ for ((i=0; i<total; i++)); do
     #git pull "$ORG" "$BRANCH" --autostash --rebase --depth=1
     git fetch "$ORG" "$BRANCH" --depth=1
     git merge "$ORG/$BRANCH" --allow-unrelated-histories
+=======
+    git init
+    git config --global --add safe.directory "$curr_dir/$path"
+    git checkout "$BRANCH" -- 
+    git remote add "$ORG" "$url"
+    git_config_setup
+    git add -A
+    git commit -am "."
+    git pull "$ORG" "$BRANCH" --autostash --rebase --depth=1
+>>>>>>> aurmich/dev
     
      # Loop per gestire eventuali conflitti
     while ! git rebase --continue 2>/dev/null; do
@@ -69,10 +80,13 @@ for ((i=0; i<total; i++)); do
         fi
     done
 
+<<<<<<< HEAD
     # 🧹 Pulizia file temporanei
     find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
     git add -A
     git commit -am "."
+=======
+>>>>>>> aurmich/dev
     # Push finale
     git push -u "$ORG" HEAD:"$BRANCH"
 

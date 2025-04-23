@@ -155,6 +155,7 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 
 
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco HEAD (156 linee vs 1)[0m
+<<<<<<< HEAD
 
  cb513be (.)
 
@@ -316,6 +317,8 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 
 
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco HEAD (156 linee vs 1)[0m
+=======
+>>>>>>> aurmich/dev
 # GUIDA ESSENZIALE LARAXOT
 
 ## DOCUMENTAZIONE
@@ -610,7 +613,10 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 
 
 
+<<<<<<< HEAD
  43df3e0 (.)
+=======
+>>>>>>> aurmich/dev
 # GUIDA ESSENZIALE LARAXOT
 
 ## DOCUMENTAZIONE
@@ -641,19 +647,27 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 
 
 
+<<<<<<< HEAD
 
 
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
  43df3e0 (.)
+=======
+[0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
+>>>>>>> aurmich/dev
 ## TRADUZIONI
 - Formato corretto: `'field' => ['label' => 'Etichetta', 'tooltip' => 'Descrizione']`
 - MAI usare ->label() (gestito da LangServiceProvider)
 
 
+<<<<<<< HEAD
 
 
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
  43df3e0 (.)
+=======
+[0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
+>>>>>>> aurmich/dev
 ## ESTENSIONE CLASSI
 - MAI estendere classi Filament direttamente
 - SEMPRE estendere classi XotBase dal modulo Xot
@@ -671,8 +685,11 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 - Usare metodi specifici: getListTableColumns(), getTableFilters(), getTableActions()
 - Usare array associativi con chiavi string per componenti
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> aurmich/dev
 ## TRADUZIONI
 - Formato corretto: `'field' => ['label' => 'Etichetta', 'tooltip' => 'Descrizione']`
 - MAI usare ->label() (gestito da LangServiceProvider)
@@ -699,7 +716,10 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
 
+<<<<<<< HEAD
  43df3e0 (.)
+=======
+>>>>>>> aurmich/dev
 ## MIGRAZIONI
 - Estendere XotBaseMigration
 - Usare tableCreate() e tableUpdate()
@@ -711,8 +731,11 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 - Evitare l'uso di "mixed" (solo come ultima risorsa)
 - Analizzare moduli esistenti prima di implementare nuove funzionalità
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> aurmich/dev
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
 
 
@@ -729,13 +752,17 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 - Usare tableCreate() e tableUpdate()
  cb513be (.)
 
+<<<<<<< HEAD
  43df3e0 (.)
+=======
+>>>>>>> aurmich/dev
 ## METODOLOGIA
 - Analizzare moduli esistenti
 - Focalizzarsi sullo scopo, non solo sulla correzione
 - Seguire convenzioni del framework
 
 
+<<<<<<< HEAD
 ## MEMORIA E AGGIORNAMENTO
 - La cartella "docs" è la memoria principale
 - Aggiornare e studiare continuamente la documentazione
@@ -749,6 +776,8 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 
 
 
+=======
+>>>>>>> aurmich/dev
 
 
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
@@ -802,6 +831,7 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
 
+<<<<<<< HEAD
 
  cb513be (.)
  43df3e0 (.)
@@ -809,3 +839,6 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 
  cb513be (.)
  0440c57 (.)
+=======
+ cb513be (.)
+>>>>>>> aurmich/dev

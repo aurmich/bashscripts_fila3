@@ -3,6 +3,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use function Safe\file_get_contents;
 use function Safe\file_put_contents;
 use function Safe\preg_match;
@@ -11,6 +12,9 @@ use function Safe\preg_match;
  * @return array{file: string, class: string, has_form_schema: bool}|null
  */
 function checkFormSchemaMethod(string $file): ?array
+=======
+function checkFormSchemaMethod($file)
+>>>>>>> aurmich/dev
 {
     $content = file_get_contents($file);
 
@@ -27,6 +31,7 @@ function checkFormSchemaMethod(string $file): ?array
     return [
         'file' => $file,
         'class' => $className,
+<<<<<<< HEAD
         'has_form_schema' => (bool) $hasFormSchema,
     ];
 }
@@ -35,6 +40,13 @@ function checkFormSchemaMethod(string $file): ?array
  * @return array<array{file: string, class: string, has_form_schema: bool}>
  */
 function findXotBaseResourceClasses(string $directory): array
+=======
+        'has_form_schema' => $hasFormSchema,
+    ];
+}
+
+function findXotBaseResourceClasses($directory)
+>>>>>>> aurmich/dev
 {
     $results = [];
 
@@ -46,6 +58,7 @@ function findXotBaseResourceClasses(string $directory): array
     $phpFiles = new RegexIterator($iterator, '/\.php$/');
 
     foreach ($phpFiles as $file) {
+<<<<<<< HEAD
         if (!$file instanceof SplFileInfo) {
             continue;
         }
@@ -55,6 +68,13 @@ function findXotBaseResourceClasses(string $directory): array
         if (strpos($fileContent, 'extends XotBaseResource') !== false) {
             $check = checkFormSchemaMethod($file->getPathname());
             if ($check !== null) {
+=======
+        $fileContent = file_get_contents($file->getPathname());
+
+        if (false !== strpos($fileContent, 'extends XotBaseResource')) {
+            $check = checkFormSchemaMethod($file->getPathname());
+            if ($check) {
+>>>>>>> aurmich/dev
                 $results[] = $check;
             }
         }
@@ -72,6 +92,10 @@ $missingFormSchema = array_filter($results, function ($result) {
 });
 
 echo "XotBaseResource Classes Form Schema Check\n";
+<<<<<<< HEAD
+=======
+echo "====\n\n";
+>>>>>>> aurmich/dev
 echo "=======================================\n\n";
 
 if (empty($missingFormSchema)) {

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 per sistemare un errore devi prima trovare la cartella docs piu' vicina all'errore, e la cartella docs della root del
@@ -10,6 +11,8 @@ una regola interessante aggiorna anche .cursor/rules e .windsurfrules,
 per sistemare un errore devi prima trovare la cartella docs piu' vicina all'errore, e la cartella docs della root del
 progetto queste cartelle devi costantemente aggiornarle, migliorarle, studiarle, dopo aver capito l'errore se trovi
 una regola interessante aggiorna anche .cursor/rules e .windsurfrules, 
+=======
+>>>>>>> aurmich/dev
 per sistemare un errore devi prima trovare la cartella docs piu' vicina all'errore, e la cartella docs della root del
 progetto queste cartelle devi costantemente aggiornarle, migliorarle, studiarle, dopo aver capito l'errore se trovi
 una regola interessante aggiorna anche .cursor/rules e .windsurfrules, 
@@ -17,6 +20,7 @@ per sistemare un errore devi prima trovare la cartella docs piu' vicina all'erro
 progetto queste cartelle devi costantemente aggiornarle, migliorarle, studiarle, dopo aver capito l'errore se trovi
 una regola interessante aggiorna anche .cursor/rules e .windsurfrules, 
 
+<<<<<<< HEAD
 per sistemare un errore devi prima trovare la cartella docs piu' vicina all'errore, e la cartella docs della root del
 progetto queste cartelle devi costantemente aggiornarle, migliorarle, studiarle, dopo aver capito l'errore se trovi
 una regola interessante aggiorna anche .cursor/rules e .windsurfrules, 
@@ -35,3 +39,6 @@ una regola interessante aggiorna anche .cursor/rules e .windsurfrules,
 
 
  0440c57 (.)
+=======
+
+>>>>>>> aurmich/dev

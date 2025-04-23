@@ -1,8 +1,13 @@
 /**
+<<<<<<< HEAD
  * Configurazione Tailwind CSS per il progetto Laraxot PTVX
 /**
  * Configurazione Tailwind CSS per il progetto
   *
+=======
+ * Configurazione Tailwind CSS per il progetto
+ *
+>>>>>>> aurmich/dev
  * Perché: Tailwind CSS è un framework CSS utility-first che permette di costruire
  * interfacce moderne e responsive con un approccio component-first. Questa configurazione
  * definisce come Tailwind deve essere compilato e quali estensioni utilizzare.
@@ -44,6 +49,7 @@ module.exports = {
     require('@tailwindcss/typography'),
   ],
 }
+<<<<<<< HEAD
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [],
@@ -54,3 +60,6 @@ module.exports = {
   }
 
  
+=======
+
+>>>>>>> aurmich/dev

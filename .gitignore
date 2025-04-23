@@ -15,7 +15,10 @@ docs/cache/
 # Dipendenze e pacchetti
 ## Node.js
 node_modules/
+<<<<<<< HEAD
 /node_modules/
+=======
+>>>>>>> aurmich/dev
 package-lock.json
 
 ## Composer
@@ -28,3 +31,108 @@ build/
 
 # Eseguibili
 *.exe
+<<<<<<< HEAD
+=======
+.git-rewrite
+.fuse_hidden*
+.fuse_hidden**.lock
+*.lock
+package-lock.json
+.php-cs-fixer.cache
+*.phar
+*.cache
+node_modules
+/node_modules
+vendor/
+.git-blame-ignore-revs
+.git-blame-ignore-revs
+node_modules
+vendor
+.php-cs-fixer.cache
+.git-blame-ignore-revs
+build/
+vendor/
+build/
+node_modules
+docs/cache/
+cache/
+.git-blame-ignore-revs
+.php-cs-fixer.cache
+*.exe
+**/*.Zone.Identifier
+*:Zone.Identifier
+*:Zone.Identifier
+.php-cs-fixer.cache
+*:Zone.Identifier
+.php-cs-fixer.cache
+**/*.Zone.Identifier
+
+
+.git-rewrite
+.fuse_hidden*
+.fuse_hidden**.lock
+*.lock
+package-lock.json
+.php-cs-fixer.cache
+*.phar
+*.cache
+node_modules
+/node_modules
+vendor/
+.git-blame-ignore-revs
+.git-blame-ignore-revs
+node_modules
+vendor
+.php-cs-fixer.cache
+.git-blame-ignore-revs
+build/
+vendor/
+build/
+node_modules
+docs/cache/
+cache/
+.git-blame-ignore-revs
+.php-cs-fixer.cache
+*.exe
+**/*.Zone.Identifier
+*:Zone.Identifier
+*:Zone.Identifier
+.php-cs-fixer.cache
+*:Zone.Identifier
+.php-cs-fixer.cache
+**/*.Zone.Identifier
+.git-rewrite
+.fuse_hidden*
+.fuse_hidden**.lock
+*.lock
+package-lock.json
+.php-cs-fixer.cache
+*.phar
+*.cache
+node_modules
+/node_modules
+vendor/
+.git-blame-ignore-revs
+.git-blame-ignore-revs
+node_modules
+vendor
+.php-cs-fixer.cache
+.git-blame-ignore-revs
+build/
+vendor/
+build/
+node_modules
+docs/cache/
+cache/
+.git-blame-ignore-revs
+.php-cs-fixer.cache
+*.exe
+**/*.Zone.Identifier
+*:Zone.Identifier
+*:Zone.Identifier
+.php-cs-fixer.cache
+*:Zone.Identifier
+.php-cs-fixer.cache
+**/*.Zone.Identifier
+
+>>>>>>> aurmich/dev

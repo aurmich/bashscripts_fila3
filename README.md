@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # 🚀 Toolkit di Automazione Git per Laraxot PTVX
 
@@ -155,6 +156,8 @@ Questo progetto è sotto licenza MIT - vedi il file [LICENSE](LICENSE) per i det
   <sub>Built with ❤️ by the development team</sub>
 </div>
 
+=======
+>>>>>>> aurmich/dev
 # 🚀 Git Automation Toolkit
 
 [![PHPStan](https://img.shields.io/badge/PHPStan-Level%209-brightgreen.svg?style=for-the-badge&logo=php&logoColor=white)](docs/phpstan/ANALISI_MODULI_PHPSTAN.md)
@@ -331,4 +334,7 @@ This toolkit addresses these challenges by providing automated tools that simpli
 ## Translations
 - [Italiano](docs/README.it.md)
 - [Español](docs/README.es.md)
+<<<<<<< HEAD
  43df3e0 (.)
+=======
+>>>>>>> aurmich/dev

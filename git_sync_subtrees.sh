@@ -12,7 +12,10 @@ script_dir=$(dirname "$me")
 CUSTOM_ORG="$1"
 
 # Script per sincronizzare git subtree con ottimizzazione della history
+<<<<<<< HEAD
 # e preservazione delle modifiche locali
+=======
+>>>>>>> aurmich/dev
 CONFIG_FILE="gitmodules.ini"
 DEPTH=1  # Limita la profondità della history scaricata
 LOG_FILE="subtree_sync.log"
@@ -39,6 +42,7 @@ fi
 current_branch=$(git symbolic-ref --short HEAD 2>/dev/null || echo "main")
 log "🌿 Branch corrente: $current_branch"
 
+<<<<<<< HEAD
 # Funzione per sincronizzare un modulo
 sync_module() {
     local path="$1"
@@ -221,3 +225,47 @@ for ((i=0; i<total; i++)); do
 done
 
 log "🎉 Sincronizzazione completata per tutti i moduli!"
+=======
+# Processa le righe del file di configurazione
+while IFS= read -r line; do
+    # Salta righe vuote e commenti
+    [[ -z "$line" || "$line" =~ ^[[:space:]]*# ]] && continue
+    
+    # Rimuovi spazi e CR
+    line=$(echo "$line" | tr -d '\r' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+    
+    # Estrai i valori path e url
+    if [[ "$line" =~ ^path\ *=\ *(.+)$ ]]; then
+        current_path="${BASH_REMATCH[1]}"
+    elif [[ "$line" =~ ^url\ *=\ *(.+)$ && -n "$current_path" ]]; then
+        current_url="${BASH_REMATCH[1]}"
+
+        # Modifica l'organizzazione nell'URL se CUSTOM_ORG è fornito
+        if [[ -n "$CUSTOM_ORG" && "$current_url" =~ git@github.com:([^/]+)/(.+)$ ]]; then
+            # Estrae la parte originale dell'organizzazione e il repository
+            original_org="${BASH_REMATCH[1]}"
+            repo_name="${BASH_REMATCH[2]}"
+            
+            # Sostituisce l'organizzazione con quella personalizzata
+            current_url="git@github.com:${CUSTOM_ORG}/${repo_name}"
+            log "🔄 URL modificato: $current_url (org originale: $original_org → $CUSTOM_ORG)"
+        fi
+        
+        # Chiamata esterna allo script di sincronizzazione
+        log "🔄 Sincronizzazione modulo: $current_path [$current_url]"
+        if ! "$script_dir/git_sync_subtree.sh" "$current_path" "$current_url" ; then
+            log "⚠️ Sincronizzazione fallita per $current_path."
+        fi
+        
+        # Pulizia: reset delle variabili per il prossimo modulo
+        current_path=""
+        current_url=""
+    fi
+done < "$CONFIG_FILE"
+
+# Esegui git gc per mantenere il repository leggero
+log "🧹 Pulizia del repository..."
+git gc --prune=now --aggressive
+sed -i -e 's/\r$//' "$me"
+log "✅ Sincronizzazione completata con history ottimizzata!"
+>>>>>>> aurmich/dev

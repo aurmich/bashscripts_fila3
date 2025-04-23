@@ -44,7 +44,10 @@ tar -czf "$TEMP_PATH" \
     --exclude='svg' \
     --exclude='package-lock.json' \
     --exclude='*.lock' \
+<<<<<<< HEAD
     --warning=no-file-changed \
+=======
+>>>>>>> aurmich/dev
     . || { echo "❌ Errore nella creazione dell'archivio"; exit 1; }
 
 # 📁 Copia dell'archivio sul disco
@@ -53,7 +56,11 @@ cp "$TEMP_PATH" "$DEST_PATH" || { echo "❌ Errore durante la copia"; exit 1; }
 
 echo "✅ Archivio creato e trasferito con successo: $DEST_PATH"
 
+<<<<<<< HEAD
 # 🛠️ Normalizzazione dello script stesso
+=======
+# 🛠️ Normalizzazione dello script stesso (opzionale)
+>>>>>>> aurmich/dev
 me=$(readlink -f -- "$0")
 sed -i -e 's/\r$//' "$me"
 

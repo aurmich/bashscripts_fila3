@@ -149,6 +149,7 @@ backup_disk() {
     echo "  💾 Backup Disk: $DISK_LETTER"
 }
 
+<<<<<<< HEAD
 git_delete_history() {
     local directory=$1
     if [ -z "$directory" ]; then
@@ -166,6 +167,32 @@ git_delete_history() {
     
     log "success" "Storia git eliminata e reinizializzata per $directory"
     cd - || return 1
+=======
+# Funzione per configurare le impostazioni git
+git_config_setup() {
+    log "🔧 Configurazione git di base..."
+    git config core.ignorecase false        # Gestione case-sensitive dei file
+    git config core.fileMode false          # Ignora i permessi dei file
+    git config core.autocrlf false          # Non convertire automaticamente i line endings
+    git config core.eol lf                  # Usa LF come line ending di default
+    git config core.symlinks false          # Gestione symlinks disabilitata per Windows
+    git config core.longpaths true          # Supporto per path lunghi su Windows
+    log "✅ Configurazione git completata"
+}
+
+git_delete_history() {
+    local branch="$1"
+    git checkout --orphan newBranch$branch
+    git add --renormalize -A
+    git add -A  # Add all files and commit them
+    git commit -am "first"
+    git branch -D $branch  # Deletes the $1 branch
+    git branch -m $branch  # Rename the current branch to $1
+    git gc --aggressive --prune=all     # remove the old files
+    git push -uf origin $branch  # Force push $1 branch to github
+    git gc --aggressive --prune=all     # remove the old files
+    git gc --auto
+>>>>>>> aurmich/dev
 }
 
 dummy_push(){

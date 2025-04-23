@@ -13,7 +13,11 @@
 - Analizza ogni modulo separatamente con PHPStan
 - PHPStan è installato nella cartella laravel: `./vendor/bin/phpstan`
 - Strategia per errori numerosi: scendi di livello fino a <100 errori, poi sali gradualmente
+<<<<<<< HEAD
 - Cerca e sistema i file con conflitti git ("<<< HEAD")
+=======
+- Cerca e sistema i file con conflitti git 
+>>>>>>> aurmich/dev
 
 ## NAMESPACE E STRUTTURA
 - Modello: `Modules\*\Models` (non `Modules\*\app\Models`)
