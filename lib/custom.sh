@@ -177,11 +177,44 @@ git_delete_history() {
 }
 
 dummy_push(){
-    local branch="$1"
+    local org="$1"
+    local branch="$2"
+    local msg="${3:-.}"  # Se il messaggio non è specificato, usa "."
+    # 🧹 Pulizia file temporanei
+    find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
     git add -A
-    git commit -am "."
-    git push -u origin HEAD:"$branch"
+    git commit -am "$msg"
+    git push -u "$org" HEAD:"$branch"
 }
+
+declare -A PARSED_KV  # Dizionario globale (o può essere passato per riferimento)
+
+parse_args() {
+    local _target=""
+    PARSED_KV=()  # Reset del dizionario
+
+    for arg in "$@"; do
+        if [[ "$arg" == --*=* ]]; then
+            local key="${arg%%=*}"
+            local value="${arg#*=}"
+            key="${key#--}"
+            PARSED_KV["$key"]="$value"
+        else
+            if [ -z "$_target" ]; then
+                _target="$arg"
+            fi
+        fi
+    done
+
+    if [ -z "$_target" ]; then
+        echo "❌ Argomento principale (es: branch) mancante" >&2
+        return 1
+    fi
+
+    # Restituisci il target principale tramite nome di variabile passato
+    eval "$1='$_target'"
+}
+
 
 # Funzione per verificare se un comando esiste
 command_exists() {

@@ -53,34 +53,25 @@ for ((i=0; i<total; i++)); do
     git checkout "$BRANCH" -- || git checkout -b "$BRANCH"
     git remote add "$ORG" "$url"
     git_config_setup
-     # 🧹 Pulizia file temporanei
-    find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
-    git add -A
-    git commit -am "."
+    dummy_push "$ORG" "$BRANCH" "."
 
     git fetch "$ORG" "$BRANCH" --depth=1
     git pull "$ORG" "$BRANCH" --autostash  --depth=1
-    #git merge "$ORG/$BRANCH" --allow-unrelated-histories
+    git merge "$ORG/$BRANCH" --allow-unrelated-histories
 
      # Loop per gestire eventuali conflitti
     while ! git rebase --continue 2>/dev/null; do
         if git diff --name-only --diff-filter=U | grep .; then
             echo "⚠️  Conflitti trovati. Li sistemiamo in automatico (accettando i tuoi cambiamenti)..."
-            git add -A
-            git commit -am "fix: auto resolve conflict"
-            git push -u "$ORG" HEAD:"$BRANCH"
         else
             echo "✅ Nessun conflitto o già risolto"
             break
         fi
+        dummy_push "$ORG" "$BRANCH" "."
     done
 
-    # 🧹 Pulizia file temporanei
-    find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
-    git add -A
-    git commit -am "."
     # Push finale
-    git push -u "$ORG" HEAD:"$BRANCH"
+    dummy_push "$ORG" "$BRANCH" "."
 
     cd "$curr_dir"
 done
