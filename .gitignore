@@ -32,10 +32,7 @@ build/
 .fuse_hidden*
 .fuse_hidden**.lock
 *.lock
-<<<<<<< HEAD
-=======
 *.log
->>>>>>> aurmich/dev
 package-lock.json
 .php-cs-fixer.cache
 *.phar

@@ -19,10 +19,10 @@ ORG="$1"
 curr_dir=$(pwd)
 
 # Esegui backup se richiesto
-#backup_disk
+backup_disk
 
 # Configurazione git
-# git_config_setup
+git_config_setup
 
 total=${submodules_array["total"]}
 for ((i=0; i<total; i++)); do
@@ -57,9 +57,10 @@ for ((i=0; i<total; i++)); do
     find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
     git add -A
     git commit -am "."
-    #git pull "$ORG" "$BRANCH" --autostash --rebase --depth=1
+
     git fetch "$ORG" "$BRANCH" --depth=1
-    git merge "$ORG/$BRANCH" --allow-unrelated-histories
+    git pull "$ORG" "$BRANCH" --autostash  --depth=1
+    #git merge "$ORG/$BRANCH" --allow-unrelated-histories
 
      # Loop per gestire eventuali conflitti
     while ! git rebase --continue 2>/dev/null; do
