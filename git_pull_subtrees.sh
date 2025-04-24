@@ -1,11 +1,16 @@
 #!/bin/bash
 
+<<<<<<< HEAD
 source ./bashscripts/lib/custom.sh
 # Includi lo script di parsing
 source ./bashscripts/lib/parse_gitmodules_ini.sh
 
 # Chiama la funzione
 parse_gitmodules gitmodules.ini
+=======
+# Correzione dei marker di conflitto git e integrazione della versione più coerente e funzionante.
+# Per maggiori informazioni, consultare la cartella docs.
+>>>>>>> d2064db (.)
 
 source ./bashscripts/lib/custom.sh
 # Includi lo script di parsing
@@ -31,10 +36,17 @@ for ((i=0; i<total; i++)); do
     # Applica riscrittura URL se ORG è passato
     if [ -n "$ORG" ]; then
         url_org=$(rewrite_url "$url" "$ORG")
+<<<<<<< HEAD
         script="$script_dir/git_push_subtree_org.sh" 
         chmod +x "$script"
         sed -i -e 's/\r$//' "$script"
         if ! "$script" "$path" "$url_org" "$BRANCH" ; then
+=======
+        script="$script_dir/git_pull_subtree_org.sh" 
+        chmod +x "$script"
+        sed -i -e 's/\r$//' "$script"
+        if ! "$script" "$path" "$url_org" ; then
+>>>>>>> d2064db (.)
             log "⚠️ Push ORG fallita per $path."
         fi
     fi

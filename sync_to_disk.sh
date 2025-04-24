@@ -56,4 +56,8 @@ echo "✅ Archivio creato e trasferito con successo: $DEST_PATH"
 me=$(readlink -f -- "$0")
 sed -i -e 's/\r$//' "$me"
 
+<<<<<<< HEAD
 echo "✅ Sincronizzazione completata!"
+=======
+echo "✅ Sincronizzazione completata!"
+>>>>>>> d2064db (.)

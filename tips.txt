@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -6,15 +7,20 @@
 
 
  0440c57 (.)
+=======
+>>>>>>> d2064db (.)
 // WHY: Recupera il nome della relazione 'table' associata all'istanza corrente.
 // WHAT: Usa il metodo getRelationValue per ottenere la proprietà 'name' della relazione.
 $this->getRelationValue('table')->name;
 
 // WHY: Filtro avanzato per query con ricerca su nome o email.
 // WHAT: Applica una where annidata solo se la query string 'q' è presente nella request.
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> d2064db (.)
 $this->getRelationValue('table')->name
 
 
@@ -25,6 +31,7 @@ $query->when($request->filled('q'), function (Builder $query) use ($request) {
     });
 $this->getRelationValue('table')->name
 
+<<<<<<< HEAD
 
 $this->getRelationValue('table')->name
 
@@ -36,11 +43,14 @@ $this->getRelationValue('table')->name
 
 
  0440c57 (.)
+=======
+>>>>>>> d2064db (.)
 $query->when($request->filled('q'), function (Builder $query) use ($request) {
     $query->where(function (Builder $query) use ($request) {
         $query->where('name', 'like', "%{$request->get('q')}%")
             ->orWhere('email', 'like', "%{$request->get('q')}%");
     });
+<<<<<<< HEAD
 $this->getRelationValue('table')->name
 
 
@@ -57,6 +67,8 @@ $query->when($request->filled('q'), function (Builder $query) use ($request) {
 });
 
 
+=======
+>>>>>>> d2064db (.)
 });
         $query->where('name', 'like', "%{$request->get('q')}%")
             ->orWhere('email', 'like', "%{$request->get('q')}%");
@@ -64,6 +76,7 @@ $query->when($request->filled('q'), function (Builder $query) use ($request) {
 
  origin/dev
  origin/dev
+<<<<<<< HEAD
 
 
  cb513be (.)
@@ -74,3 +87,6 @@ $query->when($request->filled('q'), function (Builder $query) use ($request) {
  cb513be (.)
 })
  0440c57 (.)
+=======
+})
+>>>>>>> d2064db (.)

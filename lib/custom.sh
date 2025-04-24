@@ -178,6 +178,7 @@ git_delete_history() {
 
 dummy_push(){
 <<<<<<< HEAD
+<<<<<<< HEAD
     local branch="$1"
     git add -A
     git commit -am "."
@@ -185,6 +186,8 @@ dummy_push(){
 }
 
 =======
+=======
+>>>>>>> d2064db (.)
     local org="$1"
     local branch="$2"
     local msg="${3:-.}"  # Se il messaggio non è specificato, usa "."
@@ -224,7 +227,10 @@ parse_args() {
 }
 
 
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> d2064db (.)
 # Funzione per verificare se un comando esiste
 command_exists() {
     command -v "$1" >/dev/null 2>&1

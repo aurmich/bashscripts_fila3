@@ -20,16 +20,22 @@ curr_dir=$(pwd)
 
 # Esegui backup se richiesto
 <<<<<<< HEAD
+<<<<<<< HEAD
 #backup_disk
 
 # Configurazione git
 # git_config_setup
 =======
+=======
+>>>>>>> d2064db (.)
 backup_disk
 
 # Configurazione git
 git_config_setup
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> d2064db (.)
 
 total=${submodules_array["total"]}
 for ((i=0; i<total; i++)); do
@@ -61,6 +67,7 @@ for ((i=0; i<total; i++)); do
     git remote add "$ORG" "$url"
     git_config_setup
 <<<<<<< HEAD
+<<<<<<< HEAD
      # 🧹 Pulizia file temporanei
     find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
     git add -A
@@ -68,11 +75,16 @@ for ((i=0; i<total; i++)); do
     #git pull "$ORG" "$BRANCH" --autostash --rebase --depth=1
     git fetch "$ORG" "$BRANCH" --depth=1
 =======
+=======
+>>>>>>> d2064db (.)
     dummy_push "$ORG" "$BRANCH" "."
 
     git fetch "$ORG" "$BRANCH" --depth=1
     git pull "$ORG" "$BRANCH" --autostash  --depth=1
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> d2064db (.)
     git merge "$ORG/$BRANCH" --allow-unrelated-histories
 
      # Loop per gestire eventuali conflitti
@@ -80,15 +92,19 @@ for ((i=0; i<total; i++)); do
         if git diff --name-only --diff-filter=U | grep .; then
             echo "⚠️  Conflitti trovati. Li sistemiamo in automatico (accettando i tuoi cambiamenti)..."
 <<<<<<< HEAD
+<<<<<<< HEAD
             git add -A
             git commit -am "fix: auto resolve conflict"
             git push -u "$ORG" HEAD:"$BRANCH"
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> d2064db (.)
         else
             echo "✅ Nessun conflitto o già risolto"
             break
         fi
+<<<<<<< HEAD
 <<<<<<< HEAD
     done
 
@@ -99,12 +115,17 @@ for ((i=0; i<total; i++)); do
     # Push finale
     git push -u "$ORG" HEAD:"$BRANCH"
 =======
+=======
+>>>>>>> d2064db (.)
         dummy_push "$ORG" "$BRANCH" "."
     done
 
     # Push finale
     dummy_push "$ORG" "$BRANCH" "."
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> d2064db (.)
 
     cd "$curr_dir"
 done

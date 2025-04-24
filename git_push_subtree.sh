@@ -11,13 +11,21 @@ fi
 LOCAL_PATH="$1"
 LOCAL_PATH_bak="$LOCAL_PATH"_bak
 REMOTE_REPO="$2"
+<<<<<<< HEAD
 REMOTE_BRANCH=$(git symbolic-ref --short HEAD 2>/dev/null || echo "main")
+=======
+>>>>>>> d2064db (.)
 TEMP_BRANCH=$(basename "$LOCAL_PATH")-temp
 
 echo "  📁 Path: $LOCAL_PATH"
 echo "  🌐 URL: $REMOTE_REPO"
+<<<<<<< HEAD
 echo "  🌐 Branch: $REMOTE_BRANCH"
 echo "  🌐 Temporary branch: $TEMP_BRANCH"
+=======
+echo "  🌿 Branch: $BRANCH"
+echo "  🌿 Temporary branch: $TEMP_BRANCH"
+>>>>>>> d2064db (.)
 
 
 
@@ -32,6 +40,7 @@ push_subtree() {
 
     git add -A
     git commit -am "."
+<<<<<<< HEAD
     git push -u origin "$REMOTE_BRANCH"
 
 
@@ -78,6 +87,46 @@ push_subtree() {
 
     git rebase --rebase-merges --strategy subtree "$REMOTE_BRANCH" --autosquash
     #git rebase --preserve-merges "$REMOTE_BRANCH"
+=======
+    git push -u origin "$BRANCH"
+
+    find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
+
+    #push_subtree_v1
+    split_subtree
+    
+    git rebase --rebase-merges --strategy subtree "$BRANCH" --autosquash
+    #git rebase --preserve-merges "$BRANCH"
+}
+
+push_subtree_v1() {
+    if(! git subtree push -P "$LOCAL_PATH" "$REMOTE_REPO" "$BRANCH")
+    then
+        log "✅ Subtree $LOCAL_PATH pushed successfully with $REMOTE_REPO"
+    else
+        log "❌ Fallimento push subtree $LOCAL_PATH verso $REMOTE_REPO"
+    fi
+}
+
+
+split_subtree() {
+    git fetch "$REMOTE_REPO" "$BRANCH" --depth=1
+    #--rejoin 
+    if(git subtree split --prefix="$LOCAL_PATH" -b "$TEMP_BRANCH")
+    then
+        log "✅ Subtree $LOCAL_PATH splitted"
+    else 
+        log "❌ Failed to split subtree"
+    fi
+    if(git push  "$REMOTE_REPO"  "$TEMP_BRANCH":"$BRANCH")
+    then
+        log "✅ Subtree $LOCAL_PATH pushed to $REMOTE_REPO"
+    else
+        log "❌ Failed to push subtree"
+    fi
+    git branch -D "$TEMP_BRANCH" || log "❌ Failed to delete temporary branch $TEMP_BRANCH"
+    log "✅ Subtree $LOCAL_PATH splitted and pushed to $REMOTE_REPO"
+>>>>>>> d2064db (.)
 }
 
 # Run sync

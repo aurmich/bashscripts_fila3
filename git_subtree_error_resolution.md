@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi e Risoluzione Errori Git Subtree
 
 ## Struttura degli Script
@@ -17,6 +18,28 @@ Il sistema è composto da tre script interconnessi:
 - Chiama in sequenza:
   1. `git_push_subtree.sh`
   2. `git_pull_subtree.sh`
+=======
+# 🚀 Gestione Errori Git Subtree
+
+## 📋 Struttura del Sistema
+
+Il sistema di gestione dei subtree è composto da tre componenti principali:
+
+1. `git_sync_subtree.sh` - Script principale di sincronizzazione
+2. `git_push_subtree.sh` - Gestore delle operazioni di push
+3. `git_pull_subtree.sh` - Gestore delle operazioni di pull
+
+## 🔄 Flusso Operativo
+
+### 1. Script Principale (`git_sync_subtree.sh`)
+- **Input**: `<path>` e `<remote_repo>`
+- **Preparazione**:
+  - Normalizzazione CRLF
+  - Impostazione permessi
+- **Sequenza**:
+  1. Push subtree
+  2. Pull subtree
+>>>>>>> d2064db (.)
 
 ### 2. Push Script (`git_push_subtree.sh`)
 Esegue una sequenza complessa di operazioni:
@@ -43,6 +66,7 @@ Esegue una sequenza con fallback:
 4. git rebase --rebase-merges --strategy subtree $REMOTE_BRANCH
 ```
 
+<<<<<<< HEAD
 ## Analisi degli Errori
 
 ### 1. Errore: --prefix option mancante
@@ -66,12 +90,34 @@ sync_subtree() {
         log "⚠️ Pull fallita per $LOCAL_PATH"
     fi
 }
+=======
+## 🚨 Analisi Errori Comuni
+
+### 1. Errore: Prefix Mancante
+```
+fatal: you must provide the --prefix option
+```
+
+**Causa**: Variabili `LOCAL_PATH` o `REMOTE_REPO` non definite
+
+**Soluzione**:
+```bash
+# Verifica variabili
+if [ -z "$LOCAL_PATH" ] || [ -z "$REMOTE_REPO" ]; then
+    echo "❌ Error: Missing required variables"
+    exit 1
+fi
+>>>>>>> d2064db (.)
 ```
 
 ### 2. Errore: Push Rejected
 ```
 ! [rejected] dev -> dev (non-fast-forward)
 ```
+<<<<<<< HEAD
+=======
+
+>>>>>>> d2064db (.)
 **Causa**: Questo errore si verifica nella sequenza di push quando ci sono divergenze tra il repository locale e remoto.
 
 **Soluzione**:
@@ -117,4 +163,7 @@ fi
 1. Aggiungere `set -x` all'inizio degli script per debug verbose
 2. Implementare logging più dettagliato
 3. Verificare i permessi degli script
+<<<<<<< HEAD
 4. Controllare la configurazione di git per il repository 
+=======
+>>>>>>> d2064db (.)

@@ -25,7 +25,11 @@ for ((i=0; i<total; i++)); do
         script="$script_dir/git_push_subtree_org.sh" 
         chmod +x "$script"
         sed -i -e 's/\r$//' "$script"
+<<<<<<< HEAD
         if ! "$script" "$path" "$url_org" "$BRANCH" ; then
+=======
+        if ! "$script" "$path" "$url_org" ; then
+>>>>>>> d2064db (.)
             log "⚠️ Push ORG fallita per $path."
         fi
     fi
@@ -40,4 +44,8 @@ for ((i=0; i<total; i++)); do
     if ! "$script" "$path" "$url" ; then
         log "⚠️ Push fallita per $path."
     fi
+<<<<<<< HEAD
 done
+=======
+done
+>>>>>>> d2064db (.)
