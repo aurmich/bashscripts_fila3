@@ -19,10 +19,17 @@ ORG="$1"
 curr_dir=$(pwd)
 
 # Esegui backup se richiesto
+<<<<<<< HEAD
 #backup_disk
 
 # Configurazione git
 # git_config_setup
+=======
+backup_disk
+
+# Configurazione git
+git_config_setup
+>>>>>>> aurmich/dev
 
 total=${submodules_array["total"]}
 for ((i=0; i<total; i++)); do
@@ -53,25 +60,36 @@ for ((i=0; i<total; i++)); do
     git checkout "$BRANCH" -- || git checkout -b "$BRANCH"
     git remote add "$ORG" "$url"
     git_config_setup
+<<<<<<< HEAD
      # 🧹 Pulizia file temporanei
     find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
     git add -A
     git commit -am "."
     #git pull "$ORG" "$BRANCH" --autostash --rebase --depth=1
     git fetch "$ORG" "$BRANCH" --depth=1
+=======
+    dummy_push "$ORG" "$BRANCH" "."
+
+    git fetch "$ORG" "$BRANCH" --depth=1
+    git pull "$ORG" "$BRANCH" --autostash  --depth=1
+>>>>>>> aurmich/dev
     git merge "$ORG/$BRANCH" --allow-unrelated-histories
 
      # Loop per gestire eventuali conflitti
     while ! git rebase --continue 2>/dev/null; do
         if git diff --name-only --diff-filter=U | grep .; then
             echo "⚠️  Conflitti trovati. Li sistemiamo in automatico (accettando i tuoi cambiamenti)..."
+<<<<<<< HEAD
             git add -A
             git commit -am "fix: auto resolve conflict"
             git push -u "$ORG" HEAD:"$BRANCH"
+=======
+>>>>>>> aurmich/dev
         else
             echo "✅ Nessun conflitto o già risolto"
             break
         fi
+<<<<<<< HEAD
     done
 
     # 🧹 Pulizia file temporanei
@@ -80,6 +98,13 @@ for ((i=0; i<total; i++)); do
     git commit -am "."
     # Push finale
     git push -u "$ORG" HEAD:"$BRANCH"
+=======
+        dummy_push "$ORG" "$BRANCH" "."
+    done
+
+    # Push finale
+    dummy_push "$ORG" "$BRANCH" "."
+>>>>>>> aurmich/dev
 
     cd "$curr_dir"
 done
