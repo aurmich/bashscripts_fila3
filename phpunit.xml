@@ -3,32 +3,6 @@
          xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.3/phpunit.xsd"
          bootstrap="vendor/autoload.php"
          colors="true"
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->
-    <testsuites>
-        <testsuite name="Test Suite">
-            <directory suffix="Test.php">./tests</directory>
-        </testsuite>
-    </testsuites>
-    <source>
-        <include>
-            <directory suffix=".php">./app</directory>
-            <directory suffix=".php">./src</directory>
-        </include>
-    </source>
-</phpunit>
-
-[0;34mℹ️ [2025-04-22 11:23:29] Scelto blocco HEAD (19 linee vs 1)[0m
-<?xml version="1.0" encoding="UTF-8"?>
-<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.3/phpunit.xsd"
-         bootstrap="vendor/autoload.php"
-         colors="true"
->>>>>>> d2064db (.)
->>>>>>> aurmich/dev
          cacheResult="true"
          cacheResultFile=".phpunit.cache"
          executionOrder="random"
@@ -51,28 +25,10 @@
         </testsuite>
     </testsuites>
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->
-    <testsuites>
-        <testsuite name="Test Suite">
-            <directory suffix="Test.php">./tests</directory>
-        </testsuite>
-    </testsuites>
-
-[0;34mℹ️ [2025-04-22 11:23:29] Scelto blocco HEAD (29 linee vs 1)[0m
->>>>>>> d2064db (.)
->>>>>>> aurmich/dev
     <source>
         <include>
             <directory suffix=".php">./app</directory>
             <directory suffix=".php">./src</directory>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
             <directory suffix=".php">./modules</directory>
         </include>
         <exclude>
@@ -113,10 +69,3 @@
         </report>
     </coverage>
 </phpunit>
-<<<<<<< HEAD
-=======
-=======
-
-[0;34mℹ️ [2025-04-22 11:23:29] Scelto blocco incoming (1 linee vs 1)[0m
->>>>>>> d2064db (.)
->>>>>>> aurmich/dev

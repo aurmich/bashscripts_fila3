@@ -19,29 +19,10 @@ ORG="$1"
 curr_dir=$(pwd)
 
 # Esegui backup se richiesto
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-#backup_disk
-
-# Configurazione git
-# git_config_setup
-=======
-=======
->>>>>>> d2064db (.)
->>>>>>> aurmich/dev
 backup_disk
 
 # Configurazione git
 git_config_setup
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> d2064db (.)
->>>>>>> aurmich/dev
 
 total=${submodules_array["total"]}
 for ((i=0; i<total; i++)); do
@@ -72,81 +53,25 @@ for ((i=0; i<total; i++)); do
     git checkout "$BRANCH" -- || git checkout -b "$BRANCH"
     git remote add "$ORG" "$url"
     git_config_setup
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-     # 🧹 Pulizia file temporanei
-    find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
-    git add -A
-    git commit -am "."
-    #git pull "$ORG" "$BRANCH" --autostash --rebase --depth=1
-    git fetch "$ORG" "$BRANCH" --depth=1
-=======
-=======
->>>>>>> d2064db (.)
->>>>>>> aurmich/dev
     dummy_push "$ORG" "$BRANCH" "."
 
     git fetch "$ORG" "$BRANCH" --depth=1
     git pull "$ORG" "$BRANCH" --autostash  --depth=1
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> d2064db (.)
->>>>>>> aurmich/dev
     git merge "$ORG/$BRANCH" --allow-unrelated-histories
 
      # Loop per gestire eventuali conflitti
     while ! git rebase --continue 2>/dev/null; do
         if git diff --name-only --diff-filter=U | grep .; then
             echo "⚠️  Conflitti trovati. Li sistemiamo in automatico (accettando i tuoi cambiamenti)..."
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            git add -A
-            git commit -am "fix: auto resolve conflict"
-            git push -u "$ORG" HEAD:"$BRANCH"
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> d2064db (.)
->>>>>>> aurmich/dev
         else
             echo "✅ Nessun conflitto o già risolto"
             break
         fi
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    done
-
-    # 🧹 Pulizia file temporanei
-    find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
-    git add -A
-    git commit -am "."
-    # Push finale
-    git push -u "$ORG" HEAD:"$BRANCH"
-=======
-=======
->>>>>>> d2064db (.)
->>>>>>> aurmich/dev
         dummy_push "$ORG" "$BRANCH" "."
     done
 
     # Push finale
     dummy_push "$ORG" "$BRANCH" "."
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> d2064db (.)
->>>>>>> aurmich/dev
 
     cd "$curr_dir"
 done
