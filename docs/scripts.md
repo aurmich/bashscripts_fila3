@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 # Documentazione degli Script Bash
 
 Questo file contiene la documentazione di tutti gli script bash del progetto SaluteOra, organizzati per categoria.
@@ -233,3 +237,99 @@ Script PHP per verificare gli schemi dei form.
 ## Note
 
 Gli script sono stati organizzati in categorie per facilitare la manutenzione e la comprensione. Tutti i file di documentazione relativi agli script si trovano nella directory `bashscripts/docs/`.
+<<<<<<< HEAD
+=======
+=======
+# 🚀 Script Bash: La Tua Guida Definitiva
+
+## 📋 Indice
+- [Introduzione](#-introduzione)
+- [Script di Sviluppo](#-script-di-sviluppo)
+- [Script di Deployment](#-script-di-deployment)
+- [Script di Manutenzione](#-script-di-manutenzione)
+- [Script di Sicurezza](#-script-di-sicurezza)
+- [Script di Monitoraggio](#-script-di-monitoraggio)
+
+## 🌟 Introduzione
+
+Benvenuto nella documentazione degli script bash! Questa guida ti accompagnerà attraverso tutti gli script presenti nel progetto, spiegando nel dettaglio cosa fanno e come utilizzarli al meglio.
+
+## 🛠 Script di Sviluppo
+
+### 🔄 `sync_to_disk.sh`
+**Cosa fa:** Sincronizza il tuo progetto su un disco esterno in modo sicuro e organizzato.
+**Perché ti serve:** Perfetto per backup rapidi o per lavorare su più macchine.
+**Come usarlo:** `./sync_to_disk.sh /percorso/disco`
+
+### 🔄 `git_sync_subtrees.sh`
+**Cosa fa:** Sincronizza tutti i submodule Git del progetto in un colpo solo.
+**Perché ti serve:** Risparmia ore di lavoro manuale nella gestione dei submodule.
+**Come usarlo:** `./git_sync_subtrees.sh`
+
+### 🔄 `fix_conflicts.sh`
+**Cosa fa:** Risolve automaticamente i conflitti Git più comuni.
+**Perché ti serve:** Elimina lo stress dei conflitti di merge.
+**Come usarlo:** `./fix_conflicts.sh`
+
+## 🚀 Script di Deployment
+
+### 🔄 `deploy.sh`
+**Cosa fa:** Deploy automatico del progetto con rollback integrato.
+**Perché ti serve:** Deployment sicuro e senza sorprese.
+**Come usarlo:** `./deploy.sh ambiente`
+
+### 🔄 `setup_server.sh`
+**Cosa fa:** Configura un nuovo server da zero in pochi minuti.
+**Perché ti serve:** Risparmia giorni di configurazione manuale.
+**Come usarlo:** `./setup_server.sh`
+
+## 🔧 Script di Manutenzione
+
+### 🔄 `cleanup.sh`
+**Cosa fa:** Pulisce il progetto da file temporanei e cache.
+**Perché ti serve:** Mantiene il progetto pulito e performante.
+**Come usarlo:** `./cleanup.sh`
+
+### 🔄 `update_deps.sh`
+**Cosa fa:** Aggiorna tutte le dipendenze in modo sicuro.
+**Perché ti serve:** Mantieni il progetto sempre aggiornato.
+**Come usarlo:** `./update_deps.sh`
+
+## 🔒 Script di Sicurezza
+
+### 🔄 `check_security.sh`
+**Cosa fa:** Scansiona il progetto per vulnerabilità note.
+**Perché ti serve:** Dormi sonni tranquilli sapendo che il tuo codice è sicuro.
+**Come usarlo:** `./check_security.sh`
+
+### 🔄 `backup.sh`
+**Cosa fa:** Crea backup crittografati del progetto.
+**Perché ti serve:** Proteggi il tuo lavoro da qualsiasi imprevisto.
+**Come usarlo:** `./backup.sh`
+
+## 📊 Script di Monitoraggio
+
+### 🔄 `monitor.sh`
+**Cosa fa:** Monitora le performance del progetto in tempo reale.
+**Perché ti serve:** Identifica i colli di bottiglia prima che diventino problemi.
+**Come usarlo:** `./monitor.sh`
+
+### 🔄 `logs.sh`
+**Cosa fa:** Analizza i log del progetto in modo intelligente.
+**Perché ti serve:** Trova e risolvi i problemi in pochi secondi.
+**Come usarlo:** `./logs.sh`
+
+## 🔗 Collegamenti Utili
+
+- [README.md](../README.md) - Panoramica generale del progetto
+- [Documentazione Tailwind](../docs/TAILWIND_CONFIG.md) - Configurazione CSS
+- [Best Practices](../docs/BEST_PRACTICES.md) - Linee guida per lo sviluppo
+
+## 📝 Note per gli Sviluppatori
+
+- Tutti gli script sono testati su Ubuntu 20.04 LTS
+- Assicurati di avere i permessi di esecuzione (`chmod +x script.sh`)
+- Leggi sempre la documentazione prima di eseguire uno script
+- Fai backup prima di eseguire script di modifica
+>>>>>>> d2064db (.)
+>>>>>>> aurmich/dev

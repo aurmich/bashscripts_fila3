@@ -142,7 +142,11 @@ backup_disk() {
     read -p "📀 Inserisci la lettera del disco per il backup [d]: " DISK_LETTER
     DISK_LETTER=${DISK_LETTER:-"d"}  # Se non specificato, usa 'd' come default
     # Backup to disk
+<<<<<<< HEAD
     if ! ./bashscripts/utils/sync_to_disk.sh "$DISK_LETTER" ; then
+=======
+    if ! ./bashscripts/sync_to_disk.sh "$DISK_LETTER" ; then
+>>>>>>> aurmich/dev
         handle_error "Failed to sync to disk $DISK_LETTER"
     fi
 
@@ -177,6 +181,20 @@ git_delete_history() {
 }
 
 dummy_push(){
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    local branch="$1"
+    git add -A
+    git commit -am "."
+    git push -u origin HEAD:"$branch"
+}
+
+=======
+=======
+>>>>>>> d2064db (.)
+>>>>>>> aurmich/dev
     local org="$1"
     local branch="$2"
     local msg="${3:-.}"  # Se il messaggio non è specificato, usa "."
@@ -216,6 +234,13 @@ parse_args() {
 }
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> d2064db (.)
+>>>>>>> aurmich/dev
 # Funzione per verificare se un comando esiste
 command_exists() {
     command -v "$1" >/dev/null 2>&1

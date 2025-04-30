@@ -1,4 +1,8 @@
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 
 # 📊 Fase 5: Monitoraggio
 
@@ -53,6 +57,11 @@ Questa fase si concentra sul monitoraggio e l'ottimizzazione del sistema, fornen
 - Node.js per l'interfaccia web
 
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> d2064db (.)
+>>>>>>> aurmich/dev
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
 # 📊 Fase 5: Monitoraggio
 
@@ -74,7 +83,14 @@ Questa fase si concentra sul monitoraggio e l'ottimizzazione del sistema.
 - [Fase 4: Deployment](../roadmap/04_deployment.md)
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
+<<<<<<< HEAD
 aurmich/dev
+=======
+<<<<<<< HEAD
+aurmich/dev
+=======
+>>>>>>> d2064db (.)
+>>>>>>> aurmich/dev
 # 📊 Fase 5: Monitoraggio
 
 ## 📋 Panoramica
@@ -86,7 +102,14 @@ Questa fase si concentra sul monitoraggio e l'ottimizzazione del sistema.
 - [Fase 4: Deployment](../roadmap/04_deployment.md)
 
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d2064db (.)
+>>>>>>> aurmich/dev
 # 📊 Fase 5: Monitoraggio
 
 ## 📋 Panoramica
@@ -102,16 +125,33 @@ Questa fase si concentra sul monitoraggio e l'ottimizzazione del sistema.
 
 ## 📋 Panoramica
 Questa fase si concentra sul monitoraggio e l'ottimizzazione del sistema.
+<<<<<<< HEAD
  43df3e0 (.)
+=======
+<<<<<<< HEAD
+ 43df3e0 (.)
+=======
+>>>>>>> d2064db (.)
+>>>>>>> aurmich/dev
 
 ## 🔄 Collegamenti
 - [Roadmap Principale](../roadmap.md)
 - [Documentazione Script](../project.md)
 - [Fase 4: Deployment](../roadmap/04_deployment.md)
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 - [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
 
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (23 linee vs 1)[0m
  43df3e0 (.)
 aurmich/dev
+<<<<<<< HEAD
+=======
+=======
+[0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (23 linee vs 1)[0m
+>>>>>>> d2064db (.)
+>>>>>>> aurmich/dev

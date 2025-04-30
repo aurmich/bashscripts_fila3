@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+[0;34mℹ️ [2025-04-22 11:23:27] Scelto blocco incoming (1 linee vs 1)[0m
+>>>>>>> d2064db (.)
+>>>>>>> aurmich/dev
 # Sistema operativo
 .fuse_hidden*
 .fuse_hidden**.lock
@@ -15,7 +23,14 @@ docs/cache/
 # Dipendenze e pacchetti
 ## Node.js
 node_modules/
+<<<<<<< HEAD
 /node_modules/
+=======
+<<<<<<< HEAD
+/node_modules/
+=======
+>>>>>>> d2064db (.)
+>>>>>>> aurmich/dev
 package-lock.json
 
 ## Composer
@@ -32,7 +47,14 @@ build/
 .fuse_hidden*
 .fuse_hidden**.lock
 *.lock
+<<<<<<< HEAD
 *.log
+=======
+<<<<<<< HEAD
+*.log
+=======
+>>>>>>> d2064db (.)
+>>>>>>> aurmich/dev
 package-lock.json
 .php-cs-fixer.cache
 *.phar
@@ -63,7 +85,15 @@ cache/
 .php-cs-fixer.cache
 **/*.Zone.Identifier
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+[0;34mℹ️ [2025-04-22 11:23:27] Scelto blocco HEAD (34 linee vs 1)[0m
+>>>>>>> d2064db (.)
+>>>>>>> aurmich/dev
 .git-rewrite
 .fuse_hidden*
 .fuse_hidden**.lock
@@ -131,3 +161,11 @@ cache/
 .php-cs-fixer.cache
 **/*.Zone.Identifier
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+[0;34mℹ️ [2025-04-22 11:23:27] Scelto blocco HEAD (35 linee vs 1)[0m
+>>>>>>> d2064db (.)
+>>>>>>> aurmich/dev

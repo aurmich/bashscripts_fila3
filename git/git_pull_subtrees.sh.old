@@ -64,4 +64,8 @@ done < "$CONFIG_FILE"
 log "🧹 Pulizia del repository..."
 git gc --prune=now --aggressive
 
+<<<<<<< HEAD
 log "✅ Sincronizzazione completata con history ottimizzata!"
+=======
+log "✅ Sincronizzazione completata con history ottimizzata!"
+>>>>>>> aurmich/dev

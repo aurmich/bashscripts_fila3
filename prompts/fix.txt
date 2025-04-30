@@ -1,1 +1,52 @@
+<<<<<<< HEAD
 per sistemare un errore devi prima trovare la cartella docs piu' vicina all'errore, e la cartella docs della root del progetto queste cartelle devi costantemente aggiornarle, migliorarle, studiarle, dopo aver capito l'errore se trovi una regola interessante aggiorna anche .cursor/rules e .windsurfrules.
+=======
+<<<<<<< HEAD
+
+
+per sistemare un errore devi prima trovare la cartella docs piu' vicina all'errore, e la cartella docs della root del
+progetto queste cartelle devi costantemente aggiornarle, migliorarle, studiarle, dopo aver capito l'errore se trovi
+una regola interessante aggiorna anche .cursor/rules e .windsurfrules,
+
+per sistemare un errore devi prima trovare la cartella docs piu' vicina all'errore, e la cartella docs della root del
+progetto queste cartelle devi costantemente aggiornarle, migliorarle, studiarle, dopo aver capito l'errore se trovi
+una regola interessante aggiorna anche .cursor/rules e .windsurfrules,
+per sistemare un errore devi prima trovare la cartella docs piu' vicina all'errore, e la cartella docs della root del
+progetto queste cartelle devi costantemente aggiornarle, migliorarle, studiarle, dopo aver capito l'errore se trovi
+una regola interessante aggiorna anche .cursor/rules e .windsurfrules,
+per sistemare un errore devi prima trovare la cartella docs piu' vicina all'errore, e la cartella docs della root del
+progetto queste cartelle devi costantemente aggiornarle, migliorarle, studiarle, dopo aver capito l'errore se trovi
+una regola interessante aggiorna anche .cursor/rules e .windsurfrules,
+per sistemare un errore devi prima trovare la cartella docs piu' vicina all'errore, e la cartella docs della root del
+progetto queste cartelle devi costantemente aggiornarle, migliorarle, studiarle, dopo aver capito l'errore se trovi
+una regola interessante aggiorna anche .cursor/rules e .windsurfrules,
+
+per sistemare un errore devi prima trovare la cartella docs piu' vicina all'errore, e la cartella docs della root del
+progetto queste cartelle devi costantemente aggiornarle, migliorarle, studiarle, dopo aver capito l'errore se trovi
+una regola interessante aggiorna anche .cursor/rules e .windsurfrules,
+
+per sistemare un errore devi prima trovare la cartella docs piu' vicina all'errore, e la cartella docs della root del
+progetto queste cartelle devi costantemente aggiornarle, migliorarle, studiarle, dopo aver capito l'errore se trovi
+una regola interessante aggiorna anche .cursor/rules e .windsurfrules,
+ 0440c57 (.)
+per sistemare un errore devi prima trovare la cartella docs piu' vicina all'errore, e la cartella docs della root del
+progetto queste cartelle devi costantemente aggiornarle, migliorarle, studiarle, dopo aver capito l'errore se trovi
+una regola interessante aggiorna anche .cursor/rules e .windsurfrules,
+
+
+[0;34mℹ️ [2025-04-22 11:23:29] Scelto blocco HEAD (7 linee vs 1)[0m
+ 43df3e0 (.)
+
+
+ 0440c57 (.)
+=======
+per sistemare un errore devi prima trovare la cartella docs piu' vicina all'errore, e la cartella docs della root del
+progetto queste cartelle devi costantemente aggiornarle, migliorarle, studiarle, dopo aver capito l'errore se trovi
+una regola interessante aggiorna anche .cursor/rules e .windsurfrules, 
+per sistemare un errore devi prima trovare la cartella docs piu' vicina all'errore, e la cartella docs della root del
+progetto queste cartelle devi costantemente aggiornarle, migliorarle, studiarle, dopo aver capito l'errore se trovi
+una regola interessante aggiorna anche .cursor/rules e .windsurfrules, 
+
+[0;34mℹ️ [2025-04-22 11:23:29] Scelto blocco HEAD (7 linee vs 1)[0m
+>>>>>>> d2064db (.)
+>>>>>>> aurmich/dev
