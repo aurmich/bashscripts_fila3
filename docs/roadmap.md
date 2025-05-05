@@ -1,3 +1,9 @@
+# Roadmap
+
+> **Nota**: Questo documento è correlato a [Roadmap](../../docs/roadmap.md). Per una panoramica completa, consulta entrambi i documenti.
+
+> **Nota**: Per informazioni aggiuntive sulla roadmap, consulta anche [Roadmap in Docs](../../docs/roadmap.md)
+
 # 🗺️ Roadmap del Progetto
 
 ## 📋 Indice delle Fasi
@@ -123,3 +129,26 @@
 
  43df3e0 (.)
 aurmich/dev
+
+# Roadmap Progetto
+
+> **Nota**: Per informazioni aggiuntive sulla roadmap, consulta anche [Roadmap in Docs](../../docs/roadmap.md)
+
+## Collegamenti tra versioni di roadmap.md
+* [roadmap.md](roadmap.md)
+* [roadmap.md](../../docs/roadmap.md)
+* [roadmap.md](../../laravel/Modules/Gdpr/docs/roadmap.md)
+* [roadmap.md](../../laravel/Modules/Notify/docs/roadmap.md)
+* [roadmap.md](../../laravel/Modules/Xot/docs/roadmap.md)
+* [roadmap.md](../../laravel/Modules/Dental/docs/roadmap.md)
+* [roadmap.md](../../laravel/Modules/User/docs/roadmap.md)
+* [roadmap.md](../../laravel/Modules/UI/docs/roadmap.md)
+* [roadmap.md](../../laravel/Modules/Lang/docs/roadmap.md)
+* [roadmap.md](../../laravel/Modules/Job/docs/roadmap.md)
+* [roadmap.md](../../laravel/Modules/Media/docs/roadmap.md)
+* [roadmap.md](../../laravel/Modules/Tenant/docs/roadmap.md)
+* [roadmap.md](../../laravel/Modules/Activity/docs/roadmap.md)
+* [roadmap.md](../../laravel/Modules/Patient/docs/roadmap.md)
+* [roadmap.md](../../laravel/Modules/Cms/docs/roadmap.md)
+* [roadmap.md](../../laravel/Themes/One/docs/roadmap.md)
+

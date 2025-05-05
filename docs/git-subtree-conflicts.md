@@ -1,5 +1,11 @@
 # Risoluzione dei Conflitti negli Script Git Subtree
 
+> **Nota**: Per informazioni aggiuntive sulla risoluzione dei conflitti, consulta anche [Risoluzione Conflitti Git](../../docs/risoluzione_conflitti_git.md)
+
+## Collegamenti tra versioni di git_subtree_conflicts.md
+* [risoluzione_conflitti_git.md](../../docs/risoluzione_conflitti_git.md)
+* [git_subtree_conflicts.md](git_subtree_conflicts.md)
+
 ## Problema
 
 Durante lo sviluppo del progetto sono stati identificati diversi script di gestione git subtree con conflitti di merge non risolti. Questi script sono fondamentali per la corretta gestione dei sottoprogetti e la sincronizzazione tra repository. I conflitti presenti impediscono il corretto funzionamento degli script e potrebbero causare problemi di integrità nel repository.
@@ -126,7 +132,22 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 ## Collegamenti
 
 - [Documentazione Git Subtree](https://git-scm.com/book/en/v2/Git-Tools-Advanced-Merging)
+<<<<<<< HEAD
 - [Documentazione sulla Risoluzione dei Conflitti Bash](conflict-resolution-bash.md)
 - [Documentazione degli Script Git](git-scripts.md)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](scripts-conflict-resolution.md)
 - [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md) 
+=======
+<<<<<<< HEAD:bashscripts/docs/git-subtree-conflicts.md
+- [Documentazione sulla Risoluzione dei Conflitti Bash](conflict-resolution-bash.md)
+- [Documentazione degli Script Git](git-scripts.md)
+- [Documentazione Generale sulla Risoluzione dei Conflitti](scripts-conflict-resolution.md)
+- [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md) 
+=======
+- [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
+- [Documentazione degli Script Git](git_scripts.md)
+- [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
+- [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md)
+- [Risoluzione Conflitti Git](../../docs/risoluzione_conflitti_git.md) 
+>>>>>>> 8244aa81a (,):bashscripts/docs/git_subtree_conflicts.md
+>>>>>>> 87e42413 (.)

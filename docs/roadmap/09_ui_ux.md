@@ -643,3 +643,8 @@ Questa fase si concentra sullo sviluppo di interfacce utente moderne e intuitive
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (253 linee vs 1)[0m
  43df3e0 (.)
 aurmich/dev
+
+## Collegamenti tra versioni di 09_ui_ux.md
+* [09_ui_ux.md](bashscripts/docs/roadmap/09_ui_ux.md)
+* [09_ui_ux.md](docs/roadmap/09_ui_ux.md)
+

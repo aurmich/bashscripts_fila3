@@ -183,4 +183,30 @@
 ### Collegamenti Interni
 - [Backup Testing](./testing.md#backup)
 - [Security Testing](./testing.md#security)
+<<<<<<< HEAD
 - [Performance Testing](./testing.md#performance) 
+=======
+- [Performance Testing](./testing.md#performance) 
+## Collegamenti tra versioni di bottlenecks.md
+* [bottlenecks.md](../../laravel/Modules/Chart/docs/bottlenecks.md)
+* [bottlenecks.md](../../laravel/Modules/Chart/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../laravel/Modules/Gdpr/docs/bottlenecks.md)
+* [bottlenecks.md](../../laravel/Modules/Gdpr/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../laravel/Modules/Xot/docs/bottlenecks.md)
+* [bottlenecks.md](../../laravel/Modules/Xot/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../laravel/Modules/Xot/docs/roadmap/bottlenecks.md)
+* [bottlenecks.md](../../laravel/Modules/Dental/docs/bottlenecks.md)
+* [bottlenecks.md](../../laravel/Modules/User/docs/bottlenecks.md)
+* [bottlenecks.md](../../laravel/Modules/User/docs/roadmap/bottlenecks.md)
+* [bottlenecks.md](../../laravel/Modules/UI/docs/bottlenecks.md)
+* [bottlenecks.md](../../laravel/Modules/UI/docs/roadmap/bottlenecks.md)
+* [bottlenecks.md](../../laravel/Modules/Lang/docs/bottlenecks.md)
+* [bottlenecks.md](../../laravel/Modules/Lang/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../laravel/Modules/Job/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../laravel/Modules/Media/docs/bottlenecks.md)
+* [bottlenecks.md](../../laravel/Modules/Media/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../laravel/Modules/Activity/docs/bottlenecks.md)
+* [bottlenecks.md](../../laravel/Modules/Patient/docs/roadmap/bottlenecks.md)
+* [bottlenecks.md](../../laravel/Modules/Cms/docs/bottlenecks.md)
+
+>>>>>>> 87e42413 (.)

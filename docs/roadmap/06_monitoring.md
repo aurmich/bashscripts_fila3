@@ -633,3 +633,8 @@ aurmich/dev
 - Aggiornamenti 
  43df3e0 (.)
 aurmich/dev
+
+## Collegamenti tra versioni di 06_monitoring.md
+* [06_monitoring.md](bashscripts/docs/roadmap/06_monitoring.md)
+* [06_monitoring.md](docs/roadmap/06_monitoring.md)
+

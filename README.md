@@ -2,7 +2,7 @@
 
 
 
-# SaluteOra - Sistema di Gestione Salute Orale
+# il progetto - Sistema di Gestione Salute Orale
 
 ## Requisiti di Sistema
 - PHP 8.2 o superiore
@@ -372,7 +372,7 @@ Discover more of my work at marco76tv!
 
 # Bash Scripts
 
-Questa cartella contiene gli script di automazione per il progetto SaluteOra.
+Questa cartella contiene gli script di automazione per il progetto il progetto.
 
 ## Struttura
 La documentazione completa della struttura è disponibile in [docs/structure.md](docs/structure.md).

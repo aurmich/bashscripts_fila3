@@ -115,3 +115,22 @@ bashscripts/
 - [Maintenance Scripts](maintenance/README.md)
 - [Testing Tools](testing/README.md)
 - [Documentation Tools](docs/README.md) 
+
+## Collegamenti tra versioni di structure.md
+* [structure.md](bashscripts/docs/structure.md)
+* [structure.md](laravel/Modules/Gdpr/docs/structure.md)
+* [structure.md](laravel/Modules/Notify/docs/structure.md)
+* [structure.md](laravel/Modules/Xot/docs/structure.md)
+* [structure.md](laravel/Modules/Xot/docs/base/structure.md)
+* [structure.md](laravel/Modules/Xot/docs/config/structure.md)
+* [structure.md](laravel/Modules/User/docs/structure.md)
+* [structure.md](laravel/Modules/UI/docs/structure.md)
+* [structure.md](laravel/Modules/Lang/docs/structure.md)
+* [structure.md](laravel/Modules/Job/docs/structure.md)
+* [structure.md](laravel/Modules/Media/docs/structure.md)
+* [structure.md](laravel/Modules/Tenant/docs/structure.md)
+* [structure.md](laravel/Modules/Activity/docs/structure.md)
+* [structure.md](laravel/Modules/Cms/docs/structure.md)
+* [structure.md](laravel/Modules/Cms/docs/themes/structure.md)
+* [structure.md](laravel/Modules/Cms/docs/components/structure.md)
+

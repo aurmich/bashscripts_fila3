@@ -7318,3 +7318,8 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 - Rsync per backup 
  43df3e0 (.)
 aurmich/dev
+
+## Collegamenti tra versioni di 01_core_git_operations.md
+* [01_core_git_operations.md](bashscripts/docs/roadmap/01_core_git_operations.md)
+* [01_core_git_operations.md](docs/roadmap/01_core_git_operations.md)
+

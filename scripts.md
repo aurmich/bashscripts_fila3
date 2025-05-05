@@ -1,4 +1,4 @@
-# 🚀 Script Bash di SaluteOra: La Tua Guida Definitiva
+# 🚀 Script Bash di il progetto: La Tua Guida Definitiva
 
 ## 📋 Indice
 - [Introduzione](#introduzione)
@@ -12,7 +12,7 @@
 - [Troubleshooting](#troubleshooting)
 
 ## Introduzione
-Benvenuti nella documentazione completa degli script bash di SaluteOra! Questa guida ti mostrerà come utilizzare al meglio gli strumenti di automazione del progetto. Ogni script è stato progettato per semplificare le operazioni quotidiane e migliorare la produttività del team. **Scopri come risparmiare ore di lavoro con un semplice comando!**
+Benvenuti nella documentazione completa degli script bash di il progetto! Questa guida ti mostrerà come utilizzare al meglio gli strumenti di automazione del progetto. Ogni script è stato progettato per semplificare le operazioni quotidiane e migliorare la produttività del team. **Scopri come risparmiare ore di lavoro con un semplice comando!**
 
 ## Script di Backup e Sicurezza
 

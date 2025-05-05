@@ -68,3 +68,8 @@ Questa fase si concentra sull'ottimizzazione e il miglioramento continuo del sis
 [0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco HEAD (23 linee vs 1)[0m
  43df3e0 (.)
 aurmich/dev
+
+## Collegamenti tra versioni di 06_optimization.md
+* [06_optimization.md](bashscripts/docs/roadmap/06_optimization.md)
+* [06_optimization.md](docs/roadmap/06_optimization.md)
+

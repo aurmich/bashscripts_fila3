@@ -799,3 +799,8 @@ Questa fase si concentra sull'implementazione di funzionalità di automazione av
 - Ottimizzazione finale 
  43df3e0 (.)
 aurmich/dev
+
+## Collegamenti tra versioni di 04_advanced_automation.md
+* [04_advanced_automation.md](bashscripts/docs/roadmap/04_advanced_automation.md)
+* [04_advanced_automation.md](docs/roadmap/04_advanced_automation.md)
+

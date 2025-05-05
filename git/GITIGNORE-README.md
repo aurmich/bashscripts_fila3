@@ -2,7 +2,7 @@
 
 ## Introduzione
 
-Questo documento descrive la standardizzazione dei file `.gitignore` all'interno dei moduli Laravel di SaluteOra.
+Questo documento descrive la standardizzazione dei file `.gitignore` all'interno dei moduli Laravel di il progetto.
 
 ## File Template Standardizzato
 

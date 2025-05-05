@@ -1,3 +1,9 @@
+# Project
+
+> **Nota**: Questo documento è correlato a [Progetto](../../docs/project.md). Per una panoramica completa, consulta entrambi i documenti.
+
+> **Nota**: Per informazioni aggiuntive sul progetto, consulta anche [Project Documentation in Docs](../../docs/project.md)
+
 # 📚 Documentazione Dettagliata degli Script
 
 ## 🔄 Script di Sincronizzazione Git
@@ -201,5 +207,11 @@ Per ulteriori informazioni sulla gestione dei repository e l'utilizzo degli scri
 - Verificare sempre le modifiche in ambiente di test
 - Mantenere aggiornata la documentazione
 
- 43df3e0 (.)
-aurmich/dev
+# Documentazione Progetto
+
+> **Nota**: Per informazioni aggiuntive sul progetto, consulta anche [Project Documentation in Docs](../../docs/project.md)
+
+## Collegamenti tra versioni di project.md
+* [project.md](project.md)
+* [project.md](../../docs/project.md)
+

@@ -1,6 +1,6 @@
 # Documentazione degli Script Bash
 
-Questo file contiene la documentazione di tutti gli script bash del progetto SaluteOra, organizzati per categoria.
+Questo file contiene la documentazione di tutti gli script bash del progetto il progetto, organizzati per categoria.
 
 ## Indice
 - [Script PHPStan](#script-phpstan)

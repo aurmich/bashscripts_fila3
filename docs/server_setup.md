@@ -1,5 +1,8 @@
+# Configurazione Server
 
+> **Nota**: Questo documento è correlato a [Installazione Iniziale](/docs/installazione-iniziale.md). Per una panoramica completa, consulta entrambi i documenti.
 
+> **Nota**: Per informazioni aggiuntive sulla configurazione del server, consulta anche [Server Setup](../../docs/server_setup.md)
 
 aurmich/dev
 # Setup del Progetto Laravel
@@ -112,13 +115,14 @@ php artisan key:generate
 - Dopo la generazione della chiave, verificare che sia stata aggiunta al file .env
 - Se necessario, configurare manualmente altre variabili d'ambiente:
   ```ini
-
-
   APP_NAME=<nome progetto>
+<<<<<<< HEAD
 
-  APP_NAME=SaluteOra
+  APP_NAME=il progetto
  80ec88ee9 (.)
 aurmich/dev
+=======
+>>>>>>> 8244aa81a (,)
   APP_ENV=local
   APP_DEBUG=true
   APP_URL=http://localhost
@@ -1235,6 +1239,7 @@ php artisan user:assign-module
   tail -f storage/logs/laravel.log
   ```
 - Per rimuovere l'assegnazione di un modulo:
+<<<<<<< HEAD
 
   ```
 
@@ -1374,7 +1379,7 @@ php artisan key:generate
 - Verificare l'esistenza di .env.latest
 - Configurare manualmente altre variabili se necessario:
   ```ini
-  APP_NAME=SaluteOra
+  APP_NAME=il progetto
 
 **Spiegazione:**
 - Configura l'ambiente di sviluppo Laravel
@@ -2712,7 +2717,14 @@ php artisan user:assign-module
   tail -f storage/logs/laravel.log
   ```
 - Per rimuovere l'assegnazione di un modulo:
+=======
+>>>>>>> 8244aa81a (,)
   ```
 
  43df3e0 (.)
 aurmich/dev
+
+## Collegamenti tra versioni di server_setup.md
+* [server_setup.md](../../docs/server_setup.md)
+* [server_setup.md](server_setup.md)
+

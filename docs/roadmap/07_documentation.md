@@ -68,3 +68,8 @@ Questa fase si concentra sulla documentazione completa del sistema.
 [0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco HEAD (23 linee vs 1)[0m
  43df3e0 (.)
 aurmich/dev
+
+## Collegamenti tra versioni di 07_documentation.md
+* [07_documentation.md](bashscripts/docs/roadmap/07_documentation.md)
+* [07_documentation.md](docs/roadmap/07_documentation.md)
+

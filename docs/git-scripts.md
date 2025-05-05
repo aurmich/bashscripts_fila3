@@ -1,3 +1,6 @@
+# Git Scripts
+
+> **Nota**: Questo documento è correlato a [Git](../../docs/git.md). Per una panoramica completa, consulta entrambi i documenti.
 
 # Script Git per la Gestione dei Subtree
 
@@ -114,7 +117,7 @@ Script completo per la sincronizzazione di tutti i subtree definiti in `gitmodul
 **Parametri:**
 - `[org_personalizzata]`: (Opzionale) Permette di specificare un'organizzazione GitHub alternativa per tutti i repository
 
-Per una documentazione più generale sugli script di gestione Git, consultare la [documentazione centrale](/docs/bashscripts/gestione_git.md).
+Per una documentazione più generale sugli script di gestione Git, consultare la [documentazione centrale](../../docs/bashscripts/gestione_git.md).
 
 aurmich/dev
 ## Best Practices
@@ -168,4 +171,4 @@ Questo script sincronizza i repository remoti con i sottoprogetti locali definit
 Questa strategia è generalmente migliore per ridurre i conflitti rispetto all'uso di `git merge`, specialmente quando si lavora con sottoprogetti che vengono aggiornati frequentemente. Il rebase mantiene una storia più pulita e lineare.
 
 aurmich/dev
-[Torna alla documentazione principale](/docs/maintenance.md#git-management) 
+[Torna alla documentazione principale](../../docs/maintenance.md#git-management) 

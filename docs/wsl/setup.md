@@ -2,6 +2,12 @@
 
 > **Questa guida è pensata per chi non ha mai usato Linux e vuole installare un ambiente di sviluppo web completo su Windows con pochi semplici passaggi. Seguila nell'ordine indicato.**
 
+> **Nota**: Per informazioni aggiuntive sull'installazione, consulta anche [Installazione](../../../docs/installazione.md)
+
+## Collegamenti tra versioni di setup.md
+* [installazione.md](../../../docs/installazione.md)
+* [setup.md](setup.md)
+
 ## ❗ Prima di Iniziare
 
 ### Cosa ti serve:
@@ -896,8 +902,8 @@ sudo tail -f /var/log/apache2/error.log
 - [Common MySQL Errors](https://dev.mysql.com/doc/mysql-errors/8.0/en/server-error-reference.html)
 - [How to Debug PHP Errors](https://www.sitepoint.com/debug-php-errors/)
 
-### Struttura Progetti SaluteOra
-- [Documentazione SaluteOra](/var/www/html/saluteora/docs)
+### Struttura Progetti il progetto
+- [Documentazione il progetto](/var/www/html/saluteora/docs)
 - [Convenzioni Laravel](https://laravel.com/docs/12.x/contributions#coding-style)
 - [Best Practices](https://laravel.com/docs/12.x/best-practices)
 - [PSR-12 Coding Standards](https://www.php-fig.org/psr/psr-12/)
@@ -906,7 +912,7 @@ sudo tail -f /var/log/apache2/error.log
 - [Filament PHP Documentation](https://filamentphp.com/docs)
 - [Laravel Filament Cookbook](https://filamentphp.com/cookbook)
 - [Laravel Directory Structure](https://laravel.com/docs/12.x/structure)
-- [Riferimenti struttura cartelle SaluteOra](/var/www/html/saluteora/docs/standards/directory_structure.md)
+- [Riferimenti struttura cartelle il progetto](/var/www/html/saluteora/docs/standards/directory_structure.md)
 
 ### Strumenti di Sviluppo
 - [Visual Studio Code](https://code.visualstudio.com/docs)

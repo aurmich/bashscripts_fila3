@@ -177,3 +177,8 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema.
 - [Fase 3: Verifica](../roadmap/03_verification.md) 
  43df3e0 (.)
 aurmich/dev
+
+## Collegamenti tra versioni di 02_maintenance.md
+* [02_maintenance.md](bashscripts/docs/roadmap/02_maintenance.md)
+* [02_maintenance.md](docs/roadmap/02_maintenance.md)
+
