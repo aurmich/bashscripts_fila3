@@ -77,4 +77,4 @@ Per aggiungere nuovi pattern di esclusione, si consiglia di:
 
 ## Documentazione Correlata
 - [Gestione dei Repository Git](/docs/bashscripts/gestione_git.md)
-- [Conflitti di Merge](/bashscripts/docs/CONFLICT_RESOLUTION_BASH.md) 
+- [Conflitti di Merge](conflict-resolution-bash.md) 

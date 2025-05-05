@@ -192,7 +192,7 @@ aurmich/dev
 Per ulteriori informazioni sulla gestione dei repository e l'utilizzo degli script, consultare:
 - [Roadmap del Progetto](roadmap.md)
 - [Documentazione in Italiano](it/README.md)
-- [Risoluzione dei Conflitti](CONFLICT_RESOLUTION_BASH.md)
+- [Risoluzione dei Conflitti](conflict-resolution-bash.md)
 
 ## ⚠️ Note Importanti
 

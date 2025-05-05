@@ -149,17 +149,60 @@ backup_disk() {
     echo "  💾 Backup Disk: $DISK_LETTER"
 }
 
-
-# Funzione per configurare le impostazioni git
-git_config_setup() {
-    log "🔧 Configurazione git di base..."
-    git config core.ignorecase false        # Gestione case-sensitive dei file
-    git config core.fileMode false          # Ignora i permessi dei file
-    git config core.autocrlf false          # Non convertire automaticamente i line endings
-    git config core.eol lf                  # Usa LF come line ending di default
-    git config core.symlinks false          # Gestione symlinks disabilitata per Windows
-    git config core.longpaths true          # Supporto per path lunghi su Windows
-    log "✅ Configurazione git completata"
+restore_disk() {
+    # Richiesta interattiva della lettera del disco
+    read -p "📀 Inserisci la lettera del disco da cui ripristinare [d]: " DISK_LETTER
+    DISK_LETTER=${DISK_LETTER:-"d"}  # Se non specificato, usa 'd' come default
+    
+    # Verifica che il disco sia montato
+    BACKUP_DIR="/mnt/$DISK_LETTER/var/www/html/_bases"
+    if [ ! -d "$BACKUP_DIR" ]; then
+        handle_error "Il disco $DISK_LETTER non è montato o la directory di backup non esiste"
+        return 1
+    fi
+    
+    log "info" "Ricerca backup disponibili su disco $DISK_LETTER..."
+    
+    # Trova gli ultimi 10 backup ordinati per data (più recenti prima)
+    BACKUPS=($(ls -t "$BACKUP_DIR"/*.tar.gz 2>/dev/null | head -10))
+    
+    if [ ${#BACKUPS[@]} -eq 0 ]; then
+        handle_error "Nessun backup trovato sul disco $DISK_LETTER"
+        return 1
+    fi
+    
+    echo -e "\nBackup disponibili sul disco $DISK_LETTER:\n"
+    
+    # Mostra i backup disponibili con radio button
+    for i in ${!BACKUPS[@]}; do
+        BACKUP_NAME=$(basename "${BACKUPS[$i]}")
+        echo "[$((i+1))] $BACKUP_NAME"
+    done
+    
+    # Richiedi la selezione
+    echo ""
+    read -p "Seleziona il backup da ripristinare [1-${#BACKUPS[@]}]: " SELECTION
+    
+    # Verifica che la selezione sia valida
+    if ! [[ "$SELECTION" =~ ^[0-9]+$ ]] || [ "$SELECTION" -lt 1 ] || [ "$SELECTION" -gt ${#BACKUPS[@]} ]; then
+        handle_error "Selezione non valida"
+        return 1
+    fi
+    
+    # Calcola l'indice dell'array (0-based)
+    SELECTION=$((SELECTION-1))
+    SELECTED_BACKUP="${BACKUPS[$SELECTION]}"
+    BACKUP_NAME=$(basename "$SELECTED_BACKUP")
+    
+    echo -e "\n🔄 Ripristino di $BACKUP_NAME in corso..."
+    
+    # Chiama lo script restore_from_disk.sh
+    if ! ./bashscripts/utils/restore_from_disk.sh "$DISK_LETTER" "$SELECTED_BACKUP"; then
+        handle_error "Errore durante il ripristino del backup"
+        return 1
+    fi
+    
+    log "success" "Ripristino completato con successo"
 }
 
 git_delete_history() {
@@ -174,6 +217,23 @@ git_delete_history() {
     git push -uf origin $branch  # Force push $1 branch to github
     git gc --aggressive --prune=all     # remove the old files
     git gc --auto
+}
+
+# Funzione per configurare le impostazioni git (versione semplificata)
+git_config_setup() {
+    log "🔧 Configurazione git di base..."
+    git config core.ignorecase false        # Gestione case-sensitive dei file
+    git config core.fileMode false          # Ignora i permessi dei file
+    git config core.autocrlf false          # Non convertire automaticamente i line endings
+    git config core.eol lf                  # Usa LF come line ending di default
+    git config core.symlinks false          # Gestione symlinks disabilitata per Windows
+    git config core.longpaths true          # Supporto per path lunghi su Windows
+    
+    # Configurazioni avanzate
+    git config pull.rebase true             # Usa rebase invece di merge per pull
+    git config fetch.prune true             # Rimuovi branch remoti non più esistenti
+    
+    log "✅ Configurazione git completata"
 }
 
 dummy_push(){

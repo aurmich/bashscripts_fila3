@@ -55,4 +55,42 @@ XotBaseResource Classes Form Schema Check
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 
-### phpstan_docs_generator.sh 
+### phpstan_docs_generator.sh
+
+# Regole per la Qualità del Codice
+
+## Convenzioni di Nomenclatura File
+
+### File di Documentazione
+1. **README.md**
+   - DEVE essere in maiuscolo
+   - È il file principale di documentazione di ogni directory
+   - Segue la convenzione storica Unix/GitHub
+   - Esempio: `README.md`, `README.it.md`, `README.es.md`
+
+2. **Altri File Markdown**
+   - DEVONO essere in lowercase
+   - DEVONO usare trattini per separare le parole
+   - NON DEVONO contenere underscore
+   - Esempio: `code-quality.md`, `git-scripts.md`, `best-practices.md`
+
+3. **File di Testo**
+   - DEVONO essere in lowercase
+   - POSSONO usare trattini o underscore
+   - Esempio: `tips.txt`, `git-reset.txt`
+
+### Struttura Directory docs/
+```
+docs/
+├── README.md              # File principale (MAIUSCOLO)
+├── code-quality.md        # File markdown (lowercase con trattini)
+├── best-practices.md      # File markdown (lowercase con trattini)
+├── it/                    # Sottodirectory per lingue
+│   └── README.md         # README localizzato (MAIUSCOLO)
+└── roadmap/              # Sottodirectory per sezioni
+    └── README.md         # README della sezione (MAIUSCOLO)
+```
+
+## PHPStan
+
+Per mantenere alta la qualità del codice, utilizziamo PHPStan per l'analisi statica. 

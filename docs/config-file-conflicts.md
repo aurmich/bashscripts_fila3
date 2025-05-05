@@ -96,5 +96,5 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione PHPUnit](https://phpunit.readthedocs.io/en/10.3/configuration.html)
 - [Documentazione PostCSS](https://postcss.org/)
 - [Documentazione Rector](https://getrector.org/documentation)
-- [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
-- [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md) 
+- [Documentazione sulla Risoluzione dei Conflitti Bash](conflict-resolution-bash.md)
+- [Documentazione Generale sulla Risoluzione dei Conflitti](scripts-conflict-resolution.md) 

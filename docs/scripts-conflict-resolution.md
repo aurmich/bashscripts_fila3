@@ -139,10 +139,10 @@ Dopo la risoluzione dei conflitti, verranno eseguite le seguenti verifiche:
 
 ## Collegamenti
 
-- [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
-- [Linee Guida per la Scrittura di Script Bash](./git_scripts.md)
-- [Principio DRY negli Script Bash](./NO_DUPLICATE_FUNCTIONS_IN_SOURCED_SCRIPTS.md)
-- [Risoluzione dei Conflitti Bash](./CONFLICT_RESOLUTION_BASH.md)
+- [Documentazione Generale sulla Risoluzione dei Conflitti](scripts-conflict-resolution.md)
+- [Linee Guida per la Scrittura di Script Bash](git-scripts.md)
+- [Principio DRY negli Script Bash](no-duplicate-functions-in-sourced-scripts.md)
+- [Risoluzione dei Conflitti Bash](conflict-resolution-bash.md)
 
 ## Risoluzioni recenti (Aprile 2025)
 
@@ -153,4 +153,4 @@ I seguenti file sono stati recentemente risolti:
 - `sync_to_disk.sh`: Mantenuta versione avanzata con migliore feedback e gestione esclusioni
 - `fix_merge_conflicts.sh`: Corretta la logica di individuazione e rimozione dei marker di conflitto per garantire la pulizia completa di tutti i tre tipi di marker 
 
-Questa documentazione è collegata bidirezionalmente con la [documentazione principale sulla risoluzione dei conflitti](../../docs/bashscripts_conflict_resolution.md) nella root del progetto. 
+Questa documentazione è collegata bidirezionalmente con la [documentazione principale sulla risoluzione dei conflitti](scripts-conflict-resolution.md) nella root del progetto. 
