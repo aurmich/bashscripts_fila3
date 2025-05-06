@@ -1,26 +1,66 @@
 {
     "name": "laraxot/bashscripts_fila3",
+<<<<<<< HEAD
     "description": "Script di utilità per la gestione dei repository Git, Toolkit di automazione Git per progetti Laravel",
     "type": "library",
     "license": "MIT",
+=======
+     "authors": [
+{
+    "name": "laraxot/bashscripts_fila3",
+    "autoload": {
+        "psr-4": {
+            "Laraxot\\BashscriptsFila3\\": "src/"
+        }
+    },
     "authors": [
         {
             "name": "marco76tv",
             "email": "marco.sottana@gmail.com"
         }
     ],
+    "require-dev": {
+        "larastan/larastan": "^3.0"
+    }
+}
+{
+    "name": "laraxot/bashscripts_fila3",
+    "autoload": {
+        "psr-4": {
+            "Laraxot\\BashscriptsFila3\\": "src/"
+        }
+    },
+>>>>>>> a2974b79 (.)
+    "authors": [
+        {
+            "name": "marco76tv",
+            "email": "marco.sottana@gmail.com"
+        }
+    ],
+<<<<<<< HEAD
     "require": {
         "dotswan/filament-grapesjs-v3": "^1.1"
     },
+=======
+>>>>>>> a2974b79 (.)
     "autoload": {
         "psr-4": {
             
         }
     },
+<<<<<<< HEAD
     "config": {
         "sort-packages": true,
         "optimize-autoloader": true
     },
     "minimum-stability": "stable",
     "prefer-stable": true
+=======
+    "require": {
+        
+    },
+    "require-dev": {
+        "larastan/larastan": "^3.0"
+    }
+>>>>>>> a2974b79 (.)
 }

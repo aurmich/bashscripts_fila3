@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 
 
 
@@ -51,6 +52,47 @@ Questa fase rappresenta la conclusione del progetto e la consegna finale.
 
 
 
+=======
+[0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
+# 🎯 Fase 10: Conclusione
+
+## 📋 Panoramica
+Questa fase rappresenta la conclusione del progetto e la consegna finale.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+# 🎯 Fase 10: Conclusione
+
+## 📋 Panoramica
+Questa fase rappresenta la conclusione del progetto e la consegna finale.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+
+[0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
+# 🎯 Fase 10: Conclusione
+
+## 📋 Panoramica
+Questa fase rappresenta la conclusione del progetto e la consegna finale.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+
+
+# 🎯 Fase 10: Conclusione
+
+## 📋 Panoramica
+Questa fase rappresenta la conclusione del progetto e la consegna finale.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+
+
+>>>>>>> a2974b79 (.)
 # 🎯 Fase 10: Conclusione
 
 ## 📋 Panoramica
@@ -61,6 +103,7 @@ Questa fase rappresenta la conclusione del progetto e la consegna finale.
 - [Documentazione Script](../project.md)
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (21 linee vs 1)[0m
+<<<<<<< HEAD
  43df3e0 (.)
 aurmich/dev
 
@@ -68,3 +111,5 @@ aurmich/dev
 * [10_conclusion.md](bashscripts/docs/roadmap/10_conclusion.md)
 * [10_conclusion.md](docs/roadmap/10_conclusion.md)
 
+=======
+>>>>>>> a2974b79 (.)
