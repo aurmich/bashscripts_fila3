@@ -1,6 +1,165 @@
+<<<<<<< HEAD
 [0;34mℹ️ [2025-05-06 17:26:51] Configurazione avanzata git...[0m
 [0;32m✅ [2025-05-06 17:26:51] Configurazione git completata con successo[0m
 [0;34mℹ️ [2025-05-06 18:39:10] Configurazione avanzata git...[0m
 [0;32m✅ [2025-05-06 18:39:10] Configurazione git completata con successo[0m
 [0;34mℹ️ [2025-05-06 21:18:38] Configurazione avanzata git...[0m
 [0;32m✅ [2025-05-06 21:18:38] Configurazione git completata con successo[0m
+=======
+📆 2025-05-02 15:56:08 - 🔧 Configurazione git di base...
+📆 2025-05-02 15:56:08 - ✅ Configurazione git completata
+📆 2025-05-05 10:40:29 - 🔧 Configurazione git di base...
+📆 2025-05-05 10:40:29 - ✅ Configurazione git completata
+📆 2025-05-05 10:46:35 - 🔧 Configurazione git di base...
+📆 2025-05-05 10:46:35 - ✅ Configurazione git completata
+=======
+📆 2025-05-05 22:54:49 - 🔧 Configurazione git di base...
+📆 2025-05-05 22:54:49 - ✅ Configurazione git completata
+<<<<<<< HEAD
+=======
+[0;34mℹ️ [2025-04-22 13:14:26] Inizializzazione repository locale[0m
+[0;34mℹ️ [2025-04-22 13:14:26] Creazione branch main[0m
+[0;34mℹ️ [2025-04-22 13:14:26] Configurazione remote origin[0m
+[0;34mℹ️ [2025-04-22 13:14:26] Fetch da remote[0m
+[0;34mℹ️ [2025-04-22 13:14:59] Commit dei file locali[0m
+[0;34mℹ️ [2025-04-22 13:14:59] Merge con remote[0m
+[0;34mℹ️ [2025-04-22 13:15:01] Commit finale e push[0m
+=======
+[0;34mℹ️ [2025-04-22 13:21:48] Commit finale e push[0m
+[0;31m❌ [2025-04-22 13:21:50] Errore durante git push: Impossibile eseguire push su origin/dev[0m
+[1;33m⚠️ [2025-04-22 13:21:50] Tentativo di ripetere l'operazione (3 tentativi rimasti)[0m
+[0;34mℹ️ [2025-04-22 13:21:50] Pulizia repository locale[0m
+=======
+[0;34mℹ️ [2025-04-22 13:40:01] Inizializzazione repository locale[0m
+[0;34mℹ️ [2025-04-22 13:40:01] Creazione branch main[0m
+📆 2025-04-22 13:40:01 - 🔧 Configurazione git di base...
+📆 2025-04-22 13:40:01 - ✅ Configurazione git completata
+[0;34mℹ️ [2025-04-22 13:40:01] Configurazione remote origin[0m
+[0;31m❌ [2025-04-22 13:40:01] Errore durante git remote add: Impossibile aggiungere il remote origin[0m
+[1;33m⚠️ [2025-04-22 13:40:01] Tentativo di ripetere l'operazione (3 tentativi rimasti)[0m
+[0;34mℹ️ [2025-04-22 13:40:01] Fetch da remote[0m
+[0;34mℹ️ [2025-04-22 13:40:03] Commit dei file locali[0m
+[0;34mℹ️ [2025-04-22 13:40:03] pull con remote[0m
+[0;34mℹ️ [2025-04-22 13:40:08] Pulizia repository locale[0m
+[0;34mℹ️ [2025-04-22 13:41:03] Inizializzazione repository locale[0m
+[0;34mℹ️ [2025-04-22 13:41:03] Creazione branch dev[0m
+📆 2025-04-22 13:41:03 - 🔧 Configurazione git di base...
+📆 2025-04-22 13:41:03 - ✅ Configurazione git completata
+[0;34mℹ️ [2025-04-22 13:41:03] Configurazione remote origin[0m
+[0;34mℹ️ [2025-04-22 13:41:03] Fetch da remote[0m
+[0;34mℹ️ [2025-04-22 13:41:05] Commit dei file locali[0m
+<<<<<<< Updated upstream
+=======
+[0;34mℹ️ [2025-04-22 13:41:05] pull con remote[0m
+[0;34mℹ️ [2025-04-22 13:41:08] Pulizia repository locale[0m
+[0;34mℹ️ [2025-04-22 13:42:15] Inizializzazione repository locale[0m
+[0;34mℹ️ [2025-04-22 13:42:15] Creazione branch dev[0m
+📆 2025-04-22 13:42:15 - 🔧 Configurazione git di base...
+📆 2025-04-22 13:42:15 - ✅ Configurazione git completata
+[0;34mℹ️ [2025-04-22 13:42:15] Configurazione remote origin[0m
+[0;34mℹ️ [2025-04-22 13:42:15] Fetch da remote[0m
+[0;34mℹ️ [2025-04-22 13:42:17] Commit dei file locali[0m
+<<<<<<< Updated upstream
+=======
+[0;34mℹ️ [2025-04-22 13:42:17] pull con remote[0m
+[0;34mℹ️ [2025-04-22 13:42:21] Pulizia repository locale[0m
+[0;34mℹ️ [2025-04-22 13:44:49] Inizializzazione repository locale[0m
+[0;34mℹ️ [2025-04-22 13:44:49] Creazione branch dev[0m
+📆 2025-04-22 13:44:49 - 🔧 Configurazione git di base...
+📆 2025-04-22 13:44:49 - ✅ Configurazione git completata
+[0;34mℹ️ [2025-04-22 13:44:49] Configurazione remote origin[0m
+[0;34mℹ️ [2025-04-22 13:44:49] Fetch da remote[0m
+[0;34mℹ️ [2025-04-22 13:44:51] Commit dei file locali[0m
+<<<<<<< Updated upstream
+=======
+[0;34mℹ️ [2025-04-22 13:44:51] Merge con remote[0m
+[0;34mℹ️ [2025-04-22 13:44:55] Pulizia repository locale[0m
+[0;34mℹ️ [2025-04-22 13:45:19] Inizializzazione repository locale[0m
+[0;34mℹ️ [2025-04-22 13:45:19] Creazione branch dev[0m
+📆 2025-04-22 13:45:19 - 🔧 Configurazione git di base...
+📆 2025-04-22 13:45:19 - ✅ Configurazione git completata
+[0;34mℹ️ [2025-04-22 13:45:19] Configurazione remote origin[0m
+[0;34mℹ️ [2025-04-22 13:45:19] Fetch da remote[0m
+[0;34mℹ️ [2025-04-22 13:45:21] Commit dei file locali[0m
+[0;34mℹ️ [2025-04-22 13:45:21] Merge con remote[0m
+[0;31m❌ [2025-04-22 13:45:21] Errore durante git merge: Impossibile eseguire merge con origin/dev[0m
+[1;33m⚠️ [2025-04-22 13:45:21] Tentativo di ripetere l'operazione (3 tentativi rimasti)[0m
+[0;34mℹ️ [2025-04-22 13:45:38] Inizializzazione repository locale[0m
+[0;34mℹ️ [2025-04-22 13:45:38] Creazione branch dev[0m
+[0;31m❌ [2025-04-22 13:45:38] Errore durante git checkout: Impossibile creare il branch dev[0m
+[1;33m⚠️ [2025-04-22 13:45:38] Tentativo di ripetere l'operazione (3 tentativi rimasti)[0m
+📆 2025-04-22 13:45:38 - 🔧 Configurazione git di base...
+📆 2025-04-22 13:45:38 - ✅ Configurazione git completata
+[0;34mℹ️ [2025-04-22 13:45:38] Configurazione remote origin[0m
+[0;31m❌ [2025-04-22 13:45:38] Errore durante git remote add: Impossibile aggiungere il remote origin[0m
+[1;33m⚠️ [2025-04-22 13:45:38] Tentativo di ripetere l'operazione (3 tentativi rimasti)[0m
+[0;34mℹ️ [2025-04-22 13:45:38] Fetch da remote[0m
+[0;34mℹ️ [2025-04-22 13:45:40] Commit dei file locali[0m
+[0;34mℹ️ [2025-04-22 13:45:40] Merge con remote[0m
+[0;31m❌ [2025-04-22 13:45:40] Errore durante git merge: Impossibile eseguire merge con origin/dev[0m
+[1;33m⚠️ [2025-04-22 13:45:40] Tentativo di ripetere l'operazione (3 tentativi rimasti)[0m
+[0;34mℹ️ [2025-04-22 13:46:05] Inizializzazione repository locale[0m
+[0;34mℹ️ [2025-04-22 13:46:05] Creazione branch dev[0m
+[0;31m❌ [2025-04-22 13:46:05] Errore durante git checkout: Impossibile creare il branch dev[0m
+[1;33m⚠️ [2025-04-22 13:46:05] Tentativo di ripetere l'operazione (3 tentativi rimasti)[0m
+📆 2025-04-22 13:46:05 - 🔧 Configurazione git di base...
+📆 2025-04-22 13:46:05 - ✅ Configurazione git completata
+[0;34mℹ️ [2025-04-22 13:46:05] Configurazione remote origin[0m
+[0;31m❌ [2025-04-22 13:46:05] Errore durante git remote add: Impossibile aggiungere il remote origin[0m
+[1;33m⚠️ [2025-04-22 13:46:05] Tentativo di ripetere l'operazione (3 tentativi rimasti)[0m
+[0;34mℹ️ [2025-04-22 13:46:05] Fetch da remote[0m
+[0;34mℹ️ [2025-04-22 13:46:07] Commit dei file locali[0m
+<<<<<<< Updated upstream
+=======
+[0;34mℹ️ [2025-04-22 13:46:07] Merge con remote[0m
+[0;31m❌ [2025-04-22 13:46:07] Errore durante git merge: Impossibile eseguire merge con origin/dev[0m
+[1;33m⚠️ [2025-04-22 13:46:07] Tentativo di ripetere l'operazione (3 tentativi rimasti)[0m
+[0;34mℹ️ [2025-04-22 13:46:15] Pulizia repository locale[0m
+[0;34mℹ️ [2025-04-22 13:46:50] Inizializzazione repository locale[0m
+[0;34mℹ️ [2025-04-22 13:46:50] Creazione branch dev[0m
+📆 2025-04-22 13:46:50 - 🔧 Configurazione git di base...
+📆 2025-04-22 13:46:50 - ✅ Configurazione git completata
+[0;34mℹ️ [2025-04-22 13:46:50] Configurazione remote origin[0m
+[0;34mℹ️ [2025-04-22 13:46:50] Fetch da remote[0m
+[0;34mℹ️ [2025-04-22 13:46:52] Commit dei file locali[0m
+<<<<<<< Updated upstream
+=======
+[0;34mℹ️ [2025-04-22 13:46:52] Merge con remote[0m
+[0;31m❌ [2025-04-22 13:46:52] Errore durante git merge: Impossibile eseguire merge con origin/dev[0m
+[1;33m⚠️ [2025-04-22 13:46:52] Tentativo di ripetere l'operazione (3 tentativi rimasti)[0m
+[0;34mℹ️ [2025-04-22 13:46:56] Pulizia repository locale[0m
+[0;34mℹ️ [2025-04-22 13:48:00] Inizializzazione repository locale[0m
+[0;34mℹ️ [2025-04-22 13:48:00] Creazione branch dev[0m
+📆 2025-04-22 13:48:00 - 🔧 Configurazione git di base...
+📆 2025-04-22 13:48:01 - ✅ Configurazione git completata
+[0;34mℹ️ [2025-04-22 13:48:01] Configurazione remote origin[0m
+[0;34mℹ️ [2025-04-22 13:48:01] Fetch da remote[0m
+[0;34mℹ️ [2025-04-22 13:48:03] Commit dei file locali[0m
+[0;32m✅ [2025-04-22 13:53:13] Merge/rebase completato con successo![0m
+[0;34mℹ️ [2025-04-22 13:53:13] Esecuzione push finale[0m
+=======
+[0;32m✅ [2025-04-22 13:55:15] Merge/rebase completato con successo![0m
+[0;34mℹ️ [2025-04-22 13:55:15] Esecuzione push finale[0m
+[0;34mℹ️ [2025-04-22 13:55:18] Esecuzione manutenzione repository[0m
+[0;34mℹ️ [2025-04-22 13:55:18] Eseguo manutenzione avanzata del repository git...[0m
+[0;34mℹ️ [2025-04-22 13:55:20] Verifica integrità repository...[0m
+[1;33m⚠️ [2025-04-22 13:55:20] Ci sono modifiche non committate nel repository[0m
+[0;32m✅ [2025-04-22 13:55:20] Manutenzione completata con successo[0m
+[0;34mℹ️ [2025-04-22 13:55:20] Pulizia repository locale[0m
+=======
+📆 2025-05-06 08:53:32 - 🔧 Configurazione git di base...
+📆 2025-05-06 08:53:32 - ✅ Configurazione git completata
+[0;34mℹ️ [2025-05-06 11:26:31] Configurazione avanzata git...[0m
+[0;32m✅ [2025-05-06 11:26:31] Configurazione git completata con successo[0m
+[0;34mℹ️ [2025-05-06 11:48:11] Configurazione avanzata git...[0m
+[0;32m✅ [2025-05-06 11:48:11] Configurazione git completata con successo[0m
+[0;34mℹ️ [2025-05-06 14:02:03] Configurazione avanzata git...[0m
+[0;32m✅ [2025-05-06 14:02:03] Configurazione git completata con successo[0m
+=======
+>>>>>>> 87e42413 (.)
+📆 2025-05-06 14:44:09 - 🔧 Configurazione git di base...
+📆 2025-05-06 14:44:09 - ✅ Configurazione git completata
+>>>>>>> e1d18e20 (.)
+[0;34mℹ️ [2025-05-06 21:29:14] Configurazione avanzata git...[0m
+[0;32m✅ [2025-05-06 21:29:15] Configurazione git completata con successo[0m
+>>>>>>> 25759f8a (.)
