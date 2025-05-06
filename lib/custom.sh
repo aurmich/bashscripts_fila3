@@ -205,6 +205,7 @@ backup_disk() {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 restore_disk() {
     # Richiesta interattiva della lettera del disco
     read -p "📀 Inserisci la lettera del disco da cui ripristinare [d]: " DISK_LETTER
@@ -260,6 +261,8 @@ restore_disk() {
     
     log "success" "Ripristino completato con successo"
 =======
+=======
+>>>>>>> b7235002 (.)
 # Funzione per configurare le impostazioni git
 git_config_setup() {
     log "🔧 Configurazione git di base..."
@@ -273,6 +276,8 @@ git_config_setup() {
 >>>>>>> a2974b79 (.)
 }
 
+=======
+>>>>>>> 9b65b0d (.)
 git_delete_history() {
     local branch="$1"
     git checkout --orphan newBranch$branch
@@ -287,6 +292,7 @@ git_delete_history() {
     git gc --auto
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 # Funzione per configurare le impostazioni git (versione semplificata)
 git_config_setup() {
@@ -347,6 +353,11 @@ parse_args() {
 
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 9b65b0d (.)
+>>>>>>> b7235002 (.)
 dummy_push(){
     local branch="$1"
     git add -A
@@ -354,9 +365,15 @@ dummy_push(){
     git push -u origin HEAD:"$branch"
 }
 
+<<<<<<< HEAD
 =======
 >>>>>>> ed29429 (.)
+<<<<<<< HEAD
 >>>>>>> a2974b79 (.)
+=======
+=======
+>>>>>>> 9b65b0d (.)
+>>>>>>> b7235002 (.)
 # Funzione per verificare se un comando esiste
 command_exists() {
     command -v "$1" >/dev/null 2>&1

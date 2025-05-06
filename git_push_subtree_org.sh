@@ -16,6 +16,7 @@ REMOTE_REPO="$2"
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 BRANCH="main"  # Default branch
 =======
 
@@ -51,6 +52,11 @@ BRANCH="main"  # Default branch
 curr_dir=$(pwd)
 
 >>>>>>> ed29429 (.)
+=======
+BRANCH="main"  # Default branch
+
+curr_dir=$(pwd)
+>>>>>>> 9b65b0d (.)
 log "info" "Inizializzazione push per $LOCAL_PATH verso $REMOTE_REPO (branch: $BRANCH)"
 
 cd "$LOCAL_PATH" || handle_error "Impossibile accedere a $LOCAL_PATH"
@@ -69,6 +75,7 @@ git checkout -b "$BRANCH" || handle_git_error "git checkout" "Impossibile creare
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 git_config_setup
@@ -91,6 +98,10 @@ git_config_setup
 =======
 git_config_setup
 >>>>>>> ed29429 (.)
+=======
+git_config_setup
+
+>>>>>>> 9b65b0d (.)
 # Configurazione remote
 log "info" "Configurazione remote origin"
 git remote add origin "$REMOTE_REPO" || handle_git_error "git remote add" "Impossibile aggiungere il remote origin"
@@ -105,6 +116,7 @@ git add -A
 git commit -m "Inizializzazione repository" || true  # Non fallire se non ci sono cambiamenti
 
 # Merge con remote
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -147,10 +159,17 @@ git merge origin/"$BRANCH" --allow-unrelated-histories || handle_git_error "git 
 git pull origin "$BRANCH" --autostash --rebase --allow-unrelated-histories --depth=1
 
 
+=======
+log "info" "Merge con remote"
+git merge origin/"$BRANCH" --allow-unrelated-histories || handle_git_error "git merge" "Impossibile eseguire merge con origin/$BRANCH"
+git pull origin "$BRANCH" --autostash --rebase --allow-unrelated-histories --depth=1
+
+>>>>>>> 9b65b0d (.)
 while true; do
   # Fai l'add, commit e push
   git add -A
   git commit -am "."
+<<<<<<< HEAD
   git push -u origin HEAD:"$BRANCH"
 =======
 =======
@@ -186,6 +205,9 @@ while true; do
 =======
   git push -f origin HEAD:"$BRANCH"
 >>>>>>> feb158b (Inizializzazione repository)
+=======
+  git push -f origin HEAD:"$BRANCH"
+>>>>>>> 9b65b0d (.)
   git rebase --continue
    if [ $? -eq 0 ]; then
     # Se il rebase è completato senza errori (no conflitti)
@@ -196,6 +218,7 @@ while true; do
     echo "Ci sono conflitti, continua il rebase..."
   fi
 done
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -214,6 +237,8 @@ done
 >>>>>>> feb158b (Inizializzazione repository)
 =======
 >>>>>>> ed29429 (.)
+=======
+>>>>>>> 9b65b0d (.)
 
 # Pulizia
 log "info" "Pulizia repository locale"
