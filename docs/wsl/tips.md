@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+\\wsl.localhost\Ubuntu-24.04\var\www\html\...
+=======
+>>>>>>> e1d18e20 (.)
 \\wsl.localhost\Ubuntu-24.04\var\www\html\...
 
 ## Collegamenti tra versioni di tips.md

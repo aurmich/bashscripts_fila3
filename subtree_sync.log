@@ -7,6 +7,7 @@
 =======
 📆 2025-05-05 22:54:49 - 🔧 Configurazione git di base...
 📆 2025-05-05 22:54:49 - ✅ Configurazione git completata
+<<<<<<< HEAD
 =======
 [0;34mℹ️ [2025-04-22 13:14:26] Inizializzazione repository locale[0m
 [0;34mℹ️ [2025-04-22 13:14:26] Creazione branch main[0m
@@ -146,3 +147,8 @@
 [0;32m✅ [2025-05-06 11:48:11] Configurazione git completata con successo[0m
 [0;34mℹ️ [2025-05-06 14:02:03] Configurazione avanzata git...[0m
 [0;32m✅ [2025-05-06 14:02:03] Configurazione git completata con successo[0m
+=======
+>>>>>>> 87e42413 (.)
+📆 2025-05-06 14:44:09 - 🔧 Configurazione git di base...
+📆 2025-05-06 14:44:09 - ✅ Configurazione git completata
+>>>>>>> e1d18e20 (.)
