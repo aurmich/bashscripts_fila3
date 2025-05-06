@@ -4,43 +4,43 @@
 
 ### 1. CategoryResource.php
 - Posizione: `laravel/Modules/Predict/app/Filament/Resources/CategoryResource.php`
-- Azione: Rimosso marcatore di conflitto `<<<<<<< HEAD` mantenendo la versione corrente
+- Azione: Rimosso marcatore di conflitto  mantenendo la versione corrente
 - Contenuto: Resource Filament per la gestione delle categorie
 - Namespace corretto: `Modules\Predict\Filament\Resources`
 
 ### 2. PredictServiceProvider.php
 - Posizione: `laravel/Modules/Predict/app/Providers/PredictServiceProvider.php`
-- Azione: Rimosso marcatore di conflitto `<<<<<<< HEAD` mantenendo la versione corrente
+- Azione: Rimosso marcatore di conflitto  mantenendo la versione corrente
 - Contenuto: Service Provider principale del modulo Predict
 - Namespace corretto: `Modules\Predict\Providers`
 
 ### 3. TextWidgetResource.php
 - Posizione: `laravel/Modules/Predict/app/Filament/Resources/TextWidgetResource.php`
-- Azione: Rimosso marcatore di conflitto `<<<<<<< HEAD` mantenendo la versione corrente
+- Azione: Rimosso marcatore di conflitto  mantenendo la versione corrente
 - Contenuto: Resource Filament per la gestione dei widget testuali
 - Namespace corretto: `Modules\Predict\Filament\Resources`
 
 ### 4. ProfileResource.php
 - Posizione: `laravel/Modules/Predict/app/Filament/Resources/ProfileResource.php`
-- Azione: Rimosso marcatore di conflitto `<<<<<<< HEAD` mantenendo la versione corrente
+- Azione: Rimosso marcatore di conflitto  mantenendo la versione corrente
 - Contenuto: Resource Filament per la gestione dei profili
 - Namespace corretto: `Modules\Predict\Filament\Resources`
 
 ### 5. RouteServiceProvider.php
 - Posizione: `laravel/Modules/Predict/app/Providers/RouteServiceProvider.php`
-- Azione: Rimosso marcatore di conflitto `<<<<<<< HEAD` mantenendo la versione corrente
+- Azione: Rimosso marcatore di conflitto  mantenendo la versione corrente
 - Contenuto: Provider per la gestione delle rotte del modulo
 - Namespace corretto: `Modules\Predict\Providers`
 
 ### 6. bet.php (File di lingua)
 - Posizione: `laravel/Modules/Predict/lang/it/bet.php`
-- Azione: Rimosso marcatore di conflitto `<<<<<<< HEAD` mantenendo la versione corrente
+- Azione: Rimosso marcatore di conflitto  mantenendo la versione corrente
 - Contenuto: File di traduzione italiano per le scommesse
 - Tipo: File di lingua
 
 ### 7. BannerFactory.php
 - Posizione: `laravel/Modules/Predict/database/factories/BannerFactory.php`
-- Azione: Rimosso marcatore di conflitto `<<<<<<< HEAD` mantenendo la versione corrente
+- Azione: Rimosso marcatore di conflitto  mantenendo la versione corrente
 - Contenuto: Factory per la creazione di banner di test
 - Namespace corretto: `Modules\Predict\Database\Factories`
 
