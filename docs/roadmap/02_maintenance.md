@@ -1,8 +1,4 @@
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 2b4bc286 (.)
 
 
 # 🛠️ Fase 2: Manutenzione
@@ -113,62 +109,6 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema, garant
 
 
 
-<<<<<<< HEAD
-[0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
- 43df3e0 (.)
-aurmich/dev
-# 🛠️ Fase 2: Manutenzione
-
-## 📋 Panoramica
-Questa fase si concentra sulla manutenzione e ottimizzazione del sistema.
-
-## 🔄 Collegamenti
-- [Roadmap Principale](../roadmap.md)
-- [Documentazione Script](../project.md)
-- [Fase 1: Core Git Operations](../roadmap/01_core_git_operations.md)
-# 🛠️ Fase 2: Manutenzione
-
-## 📋 Panoramica
-Questa fase si concentra sulla manutenzione e ottimizzazione del sistema.
-
-## 🔄 Collegamenti
-- [Roadmap Principale](../roadmap.md)
-- [Documentazione Script](../project.md)
-- [Fase 1: Core Git Operations](../roadmap/01_core_git_operations.md)
-
-
-
-
- 43df3e0 (.)
-aurmich/dev
-# 🛠️ Fase 2: Manutenzione
-
-## 📋 Panoramica
-Questa fase si concentra sulla manutenzione e ottimizzazione del sistema.
-
-## 🔄 Collegamenti
-- [Roadmap Principale](../roadmap.md)
-- [Documentazione Script](../project.md)
-- [Fase 1: Core Git Operations](../roadmap/01_core_git_operations.md)
-
-
-
-
-# 🛠️ Fase 2: Manutenzione
-
-## 📋 Panoramica
-Questa fase si concentra sulla manutenzione e ottimizzazione del sistema.
-
-## 🔄 Collegamenti
-- [Roadmap Principale](../roadmap.md)
-- [Documentazione Script](../project.md)
-- [Fase 1: Core Git Operations](../roadmap/01_core_git_operations.md)
-
-
-- [Fase 3: Verifica](../roadmap/03_verification.md) 
-
-
-=======
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
 # 🛠️ Fase 2: Manutenzione
 
@@ -197,7 +137,6 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema.
 - [Roadmap Principale](../roadmap.md)
 - [Documentazione Script](../project.md)
 - [Fase 1: Core Git Operations](../roadmap/01_core_git_operations.md)
->>>>>>> a2974b79 (.)
 =======
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
  43df3e0 (.)
@@ -253,7 +192,6 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema.
 - [Fase 3: Verifica](../roadmap/03_verification.md) 
 
 
->>>>>>> 2b4bc286 (.)
 # 🛠️ Fase 2: Manutenzione
 
 ## 📋 Panoramica
@@ -266,10 +204,6 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema.
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (19 linee vs 1)[0m
 - [Fase 3: Verifica](../roadmap/03_verification.md) 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 2b4bc286 (.)
  43df3e0 (.)
 aurmich/dev
 
@@ -277,8 +211,4 @@ aurmich/dev
 * [02_maintenance.md](bashscripts/docs/roadmap/02_maintenance.md)
 * [02_maintenance.md](docs/roadmap/02_maintenance.md)
 
-<<<<<<< HEAD
 =======
->>>>>>> a2974b79 (.)
-=======
->>>>>>> 2b4bc286 (.)

@@ -1,4 +1,4 @@
-# Contesto Globale Base SaluteOra
+# Contesto Globale Base <nome progetto>
 
 ## Architettura Modulare
 - Directory Base: laravel/Modules/

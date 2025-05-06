@@ -2,11 +2,8 @@
 
 source ./bashscripts/lib/custom.sh
 
-<<<<<<< HEAD
-=======
 
 [0;34mℹ️ [2025-04-22 11:23:27] Scelto blocco HEAD (3 linee vs 1)[0m
->>>>>>> 2b4bc286 (.)
 # Validate input
 if [ $# -ne 2 ]; then
     echo "Usage: $0 <path> <remote_repo>"
@@ -17,10 +14,6 @@ fi
 LOCAL_PATH="$1"
 LOCAL_PATH_bak="$LOCAL_PATH"_bak
 REMOTE_REPO="$2"
-<<<<<<< HEAD
-LOG_FILE="subtree_sync.log"
-
-=======
 
 [0;34mℹ️ [2025-04-22 11:23:27] Scelto blocco incoming (1 linee vs 1)[0m
 LOG_FILE="subtree_sync.log"
@@ -42,7 +35,6 @@ if [ ! -e "$LOCAL_PATH" ]; then
 fi
 
 [0;34mℹ️ [2025-04-22 11:23:27] Scelto blocco incoming (1 linee vs 1)[0m
->>>>>>> 2b4bc286 (.)
 # Simple error handling function
 die() {
     echo "$1" >&2
@@ -67,11 +59,8 @@ if [ ! -e "$LOCAL_PATH" ]; then
     handle_error "Il path $LOCAL_PATH non esiste"
 fi
 
-<<<<<<< HEAD
-=======
 [0;34mℹ️ [2025-04-22 11:23:27] Scelto blocco HEAD (6 linee vs 1)[0m
 
->>>>>>> 2b4bc286 (.)
 if(! git ls-remote "$REMOTE_REPO" > /dev/null 2>&1)
 then
     handle_error "Remote repository $REMOTE_REPO not found"
@@ -79,17 +68,7 @@ fi
 
 # Sync subtree
 pull_subtree() {
-<<<<<<< HEAD
-    # Cross-platform compatibility settings
-    git config core.ignorecase false        # Gestione case-sensitive dei file
-    git config core.fileMode false          # Ignora i permessi dei file
-    git config core.autocrlf false          # Non convertire automaticamente i line endings
-    git config core.eol lf                  # Usa LF come line ending di default
-    git config core.symlinks false          # Gestione symlinks disabilitata per Windows
-    git config core.longpaths true          # Supporto per path lunghi su Windows
-=======
     git_config_setup
->>>>>>> 2b4bc286 (.)
 
     find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
     git add -A
@@ -125,8 +104,6 @@ pull_subtree() {
     # Manutenzione avanzata repository
     git rebase --rebase-merges --strategy subtree "$BRANCH" --autosquash
     git_maintenance
-<<<<<<< HEAD
-=======
 
 [0;34mℹ️ [2025-04-22 11:23:27] Scelto blocco HEAD (37 linee vs 1)[0m
     find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
@@ -202,7 +179,6 @@ pull_subtree() {
     #git rebase --preserve-merges "$REMOTE_BRANCH" 
 
 [0;34mℹ️ [2025-04-22 11:23:27] Scelto blocco HEAD (7 linee vs 1)[0m
->>>>>>> 2b4bc286 (.)
 }
 
 # Run sync
@@ -210,8 +186,5 @@ pull_subtree
 
 log "Subtree $LOCAL_PATH synchronized successfully with $REMOTE_REPO"
 echo "👍Subtree $LOCAL_PATH synchronized successfully with $REMOTE_REPO"
-<<<<<<< HEAD
-=======
 
 [0;34mℹ️ [2025-04-22 11:23:27] Scelto blocco HEAD (3 linee vs 1)[0m
->>>>>>> 2b4bc286 (.)

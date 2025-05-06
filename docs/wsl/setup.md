@@ -903,7 +903,7 @@ sudo tail -f /var/log/apache2/error.log
 - [How to Debug PHP Errors](https://www.sitepoint.com/debug-php-errors/)
 
 ### Struttura Progetti il progetto
-- [Documentazione il progetto](/var/www/html/saluteora/docs)
+- [Documentazione il progetto](/var/www/html/<nome progetto>/docs)
 - [Convenzioni Laravel](https://laravel.com/docs/12.x/contributions#coding-style)
 - [Best Practices](https://laravel.com/docs/12.x/best-practices)
 - [PSR-12 Coding Standards](https://www.php-fig.org/psr/psr-12/)
@@ -912,7 +912,7 @@ sudo tail -f /var/log/apache2/error.log
 - [Filament PHP Documentation](https://filamentphp.com/docs)
 - [Laravel Filament Cookbook](https://filamentphp.com/cookbook)
 - [Laravel Directory Structure](https://laravel.com/docs/12.x/structure)
-- [Riferimenti struttura cartelle il progetto](/var/www/html/saluteora/docs/standards/directory_structure.md)
+- [Riferimenti struttura cartelle il progetto](/var/www/html/<nome progetto>/docs/standards/directory_structure.md)
 
 ### Strumenti di Sviluppo
 - [Visual Studio Code](https://code.visualstudio.com/docs)

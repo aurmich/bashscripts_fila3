@@ -146,18 +146,7 @@ Seleziona il backup da ripristinare [1-3]: 1
 - Richiede che il disco sia già montato
 - Richiede permessi di scrittura nella directory di destinazione
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-## Vedi Anche
-- [backup_disk](backup_disk.md): Funzione per creare backup
-- [sync_to_disk.sh](../utils/sync_to_disk.sh): Script per il backup
-- [restore_from_disk.sh](../utils/restore_from_disk.sh): Script per il ripristino
-- [bottlenecks](bottlenecks.md): Analisi delle performance
-- [best-practices](best-practices.md): Linee guida e best practices
-- [testing](testing.md): Documentazione dei test
 =======
-=======
->>>>>>> 2b4bc286 (.)
 ## Collegamenti Bidirezionali
 - [backup_disk](backup_disk.md) - Funzione per creare backup
 - [restore_from_disk](../utils/restore_from_disk.sh) - Script per il ripristino
@@ -168,9 +157,4 @@ Seleziona il backup da ripristinare [1-3]: 1
 - [Documentazione Principale](../../docs/INDEX.md) - Indice della documentazione
 - [Best Practices](best-practices.md) - Linee guida e best practices
 - [Testing](testing.md) - Documentazione dei test
-<<<<<<< HEAD
 - [Convenzioni di Naming](../../docs/standards/file_naming_conventions.md) - Standard per la nomenclatura dei file
->>>>>>> 87e42413 (.)
-=======
-- [Convenzioni di Naming](../../docs/standards/file_naming_conventions.md) - Standard per la nomenclatura dei file
->>>>>>> 2b4bc286 (.)

@@ -40,8 +40,4 @@ for ((i=0; i<total; i++)); do
     if ! "$script" "$path" "$url" ; then
         log "⚠️ Push fallita per $path."
     fi
-<<<<<<< HEAD
 done
-=======
-done
->>>>>>> 2b4bc286 (.)

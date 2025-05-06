@@ -14,7 +14,7 @@ clean_file() {
     echo -e "${YELLOW}Pulizia di $file${NC}"
     
     # Rimuove i marcatori di conflitto
-    sed -i -e '/^<<<<<<< HEAD$/d' \
+    sed -i -e '/^<<<<$CONFLICT_MARKER$/d' \
            -e '/^=======$/d' \
     
     # Rimuove le righe vuote multiple
@@ -27,19 +27,19 @@ clean_file() {
 find . -type f -not -path "*/\.*" \
        -not -path "*/vendor/*" \
        -not -path "*/node_modules/*" \
-       -exec grep -l "<<<<<<< HEAD" {} \; | while read -r file; do
+       -exec grep -l "<<<<$CONFLICT_MARKER" {} \; | while read -r file; do
     clean_file "$file"
 done
 
 # Script per risolvere conflitti di merge in file PHP
 # Risolve automaticamente i conflitti mantenendo la versione più recente (e4940e9b)
 
-for file in $(grep -l "<<<<<<< HEAD" $(find laravel/Modules/Broker/app/Filament/Clusters/AltriCluster/Resources -type f -name "*.php"))
+for file in $(grep -l "<<<<$CONFLICT_MARKER" $(find laravel/Modules/Broker/app/Filament/Clusters/AltriCluster/Resources -type f -name "*.php"))
 do
   echo "Fixing conflicts in $file"
   
   # Rimuove le righe di marcatura del conflitto e mantiene la versione "dopo il merge"
-  sed -i -e '/^<<<<<<< HEAD$/d' \
+  sed -i -e '/^<<<<$CONFLICT_MARKER$/d' \
          -e '/^=======$/d' \
          -e 's/namespace Modules\\Broker\\Filament\\Resources/namespace Modules\\Broker\\Filament\\Clusters\\AltriCluster\\Resources/' \
          -e 's/use Modules\\Broker\\Filament\\Resources\\/use Modules\\Broker\\Filament\\Clusters\\AltriCluster\\Resources\\/' \

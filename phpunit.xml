@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.3/phpunit.xsd"
@@ -20,7 +18,6 @@
 </phpunit>
 
 [0;34mℹ️ [2025-04-22 11:23:29] Scelto blocco HEAD (19 linee vs 1)[0m
->>>>>>> a2974b79 (.)
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.3/phpunit.xsd"
@@ -48,8 +45,6 @@
         </testsuite>
     </testsuites>
 
-<<<<<<< HEAD
-=======
 >
     <testsuites>
         <testsuite name="Test Suite">
@@ -58,53 +53,9 @@
     </testsuites>
 
 [0;34mℹ️ [2025-04-22 11:23:29] Scelto blocco HEAD (29 linee vs 1)[0m
->>>>>>> a2974b79 (.)
     <source>
         <include>
             <directory suffix=".php">./app</directory>
             <directory suffix=".php">./src</directory>
-<<<<<<< HEAD
-            <directory suffix=".php">./modules</directory>
-        </include>
-        <exclude>
-            <directory>./vendor</directory>
-            <directory>./node_modules</directory>
-            <directory>./storage</directory>
-            <directory>./public</directory>
-        </exclude>
-    </source>
-
-    <php>
-        <env name="APP_ENV" value="testing"/>
-        <env name="BCRYPT_ROUNDS" value="4"/>
-        <env name="CACHE_DRIVER" value="array"/>
-        <env name="DB_CONNECTION" value="sqlite"/>
-        <env name="DB_DATABASE" value=":memory:"/>
-        <env name="MAIL_MAILER" value="array"/>
-        <env name="QUEUE_CONNECTION" value="sync"/>
-        <env name="SESSION_DRIVER" value="array"/>
-        <env name="TELESCOPE_ENABLED" value="false"/>
-    </php>
-
-    <coverage>
-        <include>
-            <directory suffix=".php">./app</directory>
-            <directory suffix=".php">./src</directory>
-            <directory suffix=".php">./modules</directory>
-        </include>
-        <exclude>
-            <directory>./vendor</directory>
-            <directory>./node_modules</directory>
-            <directory>./storage</directory>
-            <directory>./public</directory>
-        </exclude>
-        <report>
-            <html outputDirectory="build/coverage"/>
-            <text outputFile="php://stdout" showUncoveredFiles="true"/>
-        </report>
-    </coverage>
-</phpunit>
-=======
 
 [0;34mℹ️ [2025-04-22 11:23:29] Scelto blocco incoming (1 linee vs 1)[0m
->>>>>>> a2974b79 (.)

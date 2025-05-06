@@ -53,14 +53,8 @@ push_subtree_v1() {
 
 
 split_subtree() {
-<<<<<<< HEAD
-    git fetch "$REMOTE_REPO" "$BRANCH" --depth=1
-    #--rejoin 
-    if(git subtree split --prefix="$LOCAL_PATH" -b "$TEMP_BRANCH")
-=======
     git fetch "$REMOTE_REPO" "$BRANCH"
     if(git subtree split --rejoin --prefix="$LOCAL_PATH" -b "$TEMP_BRANCH")
->>>>>>> 2b4bc286 (.)
     then
         log "✅ Subtree $LOCAL_PATH splitted"
     else 

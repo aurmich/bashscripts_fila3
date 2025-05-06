@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 {
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.7",
@@ -15,7 +13,6 @@
     "vite": "^5.0.12"
   }
 }
->>>>>>> a2974b79 (.)
 {
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.7",

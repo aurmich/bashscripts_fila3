@@ -1,8 +1,4 @@
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 2b4bc286 (.)
 
 
 
@@ -204,8 +200,6 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
  43df3e0 (.)
-<<<<<<< HEAD
-=======
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
 # 🔍 Fase 3: Verifica
 
@@ -597,9 +591,7 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 - Monitoraggio performance
 
 
->>>>>>> a2974b79 (.)
 =======
->>>>>>> 2b4bc286 (.)
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -697,10 +689,6 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 - Logging strutturato
 - Monitoraggio performance
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 2b4bc286 (.)
 
 - Alert automatici 
 
@@ -910,9 +898,5 @@ aurmich/dev
 * [03_verification.md](bashscripts/docs/roadmap/03_verification.md)
 * [03_verification.md](docs/roadmap/03_verification.md)
 
-<<<<<<< HEAD
-=======
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (197 linee vs 1)[0m
->>>>>>> a2974b79 (.)
 =======
->>>>>>> 2b4bc286 (.)

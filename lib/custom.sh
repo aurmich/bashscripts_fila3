@@ -18,15 +18,7 @@ log() {
         local level="$1"
         local message="$2"
         local timestamp=$(date '+%Y-%m-%d %H:%M:%S')
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
         
->>>>>>> a2974b79 (.)
-=======
-
->>>>>>> 2b4bc286 (.)
         case "$level" in
             "error") echo -e "${RED}❌ [$timestamp] $message${NC}" | tee -a "$LOG_FILE" ;;
             "success") echo -e "${GREEN}✅ [$timestamp] $message${NC}" | tee -a "$LOG_FILE" ;;
@@ -47,21 +39,9 @@ handle_git_error() {
     local operation="$1"
     local error_message="$2"
     local retry_count="${3:-3}"
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-    log "error" "Errore durante $operation: $error_message"
-
-=======
     
     log "error" "Errore durante $operation: $error_message"
-    
->>>>>>> a2974b79 (.)
-=======
 
-    log "error" "Errore durante $operation: $error_message"
-
->>>>>>> 2b4bc286 (.)
     if [ $retry_count -gt 0 ]; then
         log "warning" "Tentativo di ripetere l'operazione ($retry_count tentativi rimasti)"
         return 1
@@ -87,27 +67,11 @@ die() {
 # Funzione per verificare l'integrità del repository
 check_repository_integrity() {
     log "info" "Verifica integrità repository..."
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-    if ! git fsck --full --strict; then
-        handle_git_error "verifica integrità" "Problemi riscontrati nel repository"
-    fi
-
-=======
     
     if ! git fsck --full --strict; then
         handle_git_error "verifica integrità" "Problemi riscontrati nel repository"
     fi
-    
->>>>>>> a2974b79 (.)
-=======
 
-    if ! git fsck --full --strict; then
-        handle_git_error "verifica integrità" "Problemi riscontrati nel repository"
-    fi
-
->>>>>>> 2b4bc286 (.)
     if ! git diff --quiet; then
         log "warning" "Ci sono modifiche non committate nel repository"
     fi
@@ -133,9 +97,7 @@ rewrite_url() {
 # Funzione avanzata per la manutenzione git
 git_maintenance() {
     log "info" "Eseguo manutenzione avanzata del repository git..."
-<<<<<<< HEAD
-<<<<<<< HEAD
-
+    
     # Backup automatico prima della manutenzione
     local backup_branch="backup-$(date +%Y%m%d-%H%M%S)"
     git branch "$backup_branch" || handle_git_error "creazione backup" "Impossibile creare branch di backup"
@@ -153,48 +115,13 @@ git_maintenance() {
     # Verifica finale
     check_repository_integrity
 
-=======
-    
-=======
-
->>>>>>> 2b4bc286 (.)
-    # Backup automatico prima della manutenzione
-    local backup_branch="backup-$(date +%Y%m%d-%H%M%S)"
-    git branch "$backup_branch" || handle_git_error "creazione backup" "Impossibile creare branch di backup"
-
-    # Pulizia e ottimizzazione
-    git gc --aggressive --prune=now || handle_git_error "garbage collection" "Errore durante la pulizia"
-    git reflog expire --expire=now --all || handle_git_error "pulizia reflog" "Errore durante la pulizia reflog"
-
-    # Rimozione branch remoti non più esistenti
-    git remote prune origin || handle_git_error "pulizia remote" "Errore durante la pulizia dei remote"
-
-    # Pulizia dei file non tracciati
-    git clean -fd || handle_git_error "pulizia file" "Errore durante la pulizia dei file"
-
-    # Verifica finale
-    check_repository_integrity
-<<<<<<< HEAD
-    
->>>>>>> a2974b79 (.)
-=======
-
->>>>>>> 2b4bc286 (.)
     log "success" "Manutenzione completata con successo"
 }
 
 # Funzione avanzata per configurare le impostazioni git
 git_config_setup() {
     log "info" "Configurazione avanzata git..."
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
     
->>>>>>> a2974b79 (.)
-=======
-
->>>>>>> 2b4bc286 (.)
     # Configurazioni base
     git config core.ignorecase false || handle_git_error "configurazione" "Errore impostazione ignorecase"
     git config core.fileMode false || handle_git_error "configurazione" "Errore impostazione fileMode"
@@ -202,27 +129,11 @@ git_config_setup() {
     git config core.eol lf || handle_git_error "configurazione" "Errore impostazione eol"
     git config core.symlinks false || handle_git_error "configurazione" "Errore impostazione symlinks"
     git config core.longpaths true || handle_git_error "configurazione" "Errore impostazione longpaths"
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-    # Configurazioni avanzate
-    git config pull.rebase true || handle_git_error "configurazione" "Errore impostazione pull.rebase"
-    git config fetch.prune true || handle_git_error "configurazione" "Errore impostazione fetch.prune"
-
-=======
     
     # Configurazioni avanzate
     git config pull.rebase true || handle_git_error "configurazione" "Errore impostazione pull.rebase"
     git config fetch.prune true || handle_git_error "configurazione" "Errore impostazione fetch.prune"
-    
->>>>>>> a2974b79 (.)
-=======
 
-    # Configurazioni avanzate
-    git config pull.rebase true || handle_git_error "configurazione" "Errore impostazione pull.rebase"
-    git config fetch.prune true || handle_git_error "configurazione" "Errore impostazione fetch.prune"
-
->>>>>>> 2b4bc286 (.)
     log "success" "Configurazione git completata con successo"
 }
 
@@ -231,26 +142,13 @@ backup_disk() {
     read -p "📀 Inserisci la lettera del disco per il backup [d]: " DISK_LETTER
     DISK_LETTER=${DISK_LETTER:-"d"}  # Se non specificato, usa 'd' come default
     # Backup to disk
-<<<<<<< HEAD
-<<<<<<< HEAD
     if ! ./bashscripts/utils/sync_to_disk.sh "$DISK_LETTER" ; then
-=======
-    if ! ./bashscripts/sync_to_disk.sh "$DISK_LETTER" ; then
->>>>>>> a2974b79 (.)
-=======
-    if ! ./bashscripts/utils/sync_to_disk.sh "$DISK_LETTER" ; then
->>>>>>> 2b4bc286 (.)
         handle_error "Failed to sync to disk $DISK_LETTER"
     fi
 
     echo "  💾 Backup Disk: $DISK_LETTER"
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 2b4bc286 (.)
 restore_disk() {
     # Richiesta interattiva della lettera del disco
     read -p "📀 Inserisci la lettera del disco da cui ripristinare [d]: " DISK_LETTER
@@ -305,23 +203,6 @@ restore_disk() {
     fi
     
     log "success" "Ripristino completato con successo"
-<<<<<<< HEAD
-=======
-=======
->>>>>>> b7235002 (.)
-# Funzione per configurare le impostazioni git
-git_config_setup() {
-    log "🔧 Configurazione git di base..."
-    git config core.ignorecase false        # Gestione case-sensitive dei file
-    git config core.fileMode false          # Ignora i permessi dei file
-    git config core.autocrlf false          # Non convertire automaticamente i line endings
-    git config core.eol lf                  # Usa LF come line ending di default
-    git config core.symlinks false          # Gestione symlinks disabilitata per Windows
-    git config core.longpaths true          # Supporto per path lunghi su Windows
-    log "✅ Configurazione git completata"
->>>>>>> a2974b79 (.)
-=======
->>>>>>> 2b4bc286 (.)
 }
 
 git_delete_history() {
@@ -338,29 +219,6 @@ git_delete_history() {
     git gc --auto
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 2b4bc286 (.)
-# Funzione per configurare le impostazioni git (versione semplificata)
-git_config_setup() {
-    log "🔧 Configurazione git di base..."
-    git config core.ignorecase false        # Gestione case-sensitive dei file
-    git config core.fileMode false          # Ignora i permessi dei file
-    git config core.autocrlf false          # Non convertire automaticamente i line endings
-    git config core.eol lf                  # Usa LF come line ending di default
-    git config core.symlinks false          # Gestione symlinks disabilitata per Windows
-    git config core.longpaths true          # Supporto per path lunghi su Windows
-    
-    # Configurazioni avanzate
-    git config pull.rebase true             # Usa rebase invece di merge per pull
-    git config fetch.prune true             # Rimuovi branch remoti non più esistenti
-    
-    log "✅ Configurazione git completata"
-<<<<<<< HEAD
-}
-
 dummy_push(){
     local org="$1"
     local branch="$2"
@@ -401,73 +259,6 @@ parse_args() {
 }
 
 
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 9b65b0d (.)
->>>>>>> b7235002 (.)
-dummy_push(){
-    local branch="$1"
-    git add -A
-    git commit -am "."
-    git push -u origin HEAD:"$branch"
-}
-
-<<<<<<< HEAD
-=======
->>>>>>> ed29429 (.)
-<<<<<<< HEAD
->>>>>>> a2974b79 (.)
-=======
-=======
->>>>>>> 9b65b0d (.)
->>>>>>> b7235002 (.)
-=======
-}
-
-dummy_push(){
-    local org="$1"
-    local branch="$2"
-    local msg="${3:-.}"  # Se il messaggio non è specificato, usa "."
-    # 🧹 Pulizia file temporanei
-    find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
-    git add -A
-    git commit -am "$msg"
-    git push -u "$org" HEAD:"$branch"
-}
-
-declare -A PARSED_KV  # Dizionario globale (o può essere passato per riferimento)
-
-parse_args() {
-    local _target=""
-    PARSED_KV=()  # Reset del dizionario
-
-    for arg in "$@"; do
-        if [[ "$arg" == --*=* ]]; then
-            local key="${arg%%=*}"
-            local value="${arg#*=}"
-            key="${key#--}"
-            PARSED_KV["$key"]="$value"
-        else
-            if [ -z "$_target" ]; then
-                _target="$arg"
-            fi
-        fi
-    done
-
-    if [ -z "$_target" ]; then
-        echo "❌ Argomento principale (es: branch) mancante" >&2
-        return 1
-    fi
-
-    # Restituisci il target principale tramite nome di variabile passato
-    eval "$1='$_target'"
-}
-
-
->>>>>>> 2b4bc286 (.)
 # Funzione per verificare se un comando esiste
 command_exists() {
     command -v "$1" >/dev/null 2>&1

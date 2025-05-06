@@ -1,15 +1,6 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-[0;34mℹ️ [2025-04-22 11:23:27] Scelto blocco incoming (1 linee vs 1)[0m
->>>>>>> a2974b79 (.)
-# Sistema operativo
-=======
 # ───────────────────────────────────────────────────────
 # Sistema operativo / File nascosti e metadata
 # ───────────────────────────────────────────────────────
->>>>>>> 2b4bc286 (.)
 .fuse_hidden*
 .fuse_hidden**.lock
 *.Zone.Identifier
@@ -34,8 +25,8 @@ desktop.ini
 ~$*
 *.tmp.*
 ~*.*
-.php-cs-fixer.cache
 .git-rewrite
+.php-cs-fixer.cache
 .git-blame-ignore-revs
 
 # ───────────────────────────────────────────────────────
@@ -44,10 +35,6 @@ desktop.ini
 
 ## Node.js
 node_modules/
-<<<<<<< HEAD
-/node_modules/
-=======
->>>>>>> a2974b79 (.)
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
@@ -64,168 +51,21 @@ build/
 dist/
 out/
 coverage/
-cache/
 docs/cache/
+cache/
 tmp/
 tmp*/
 
 # ───────────────────────────────────────────────────────
-# Eseguibili
+# Eseguibili e binari
 # ───────────────────────────────────────────────────────
 *.exe
-<<<<<<< HEAD
-<<<<<<< HEAD
-.git-rewrite
-.fuse_hidden*
-.fuse_hidden**.lock
-*.lock
-*.log
-package-lock.json
-.php-cs-fixer.cache
-*.phar
-*.cache
-node_modules
-/node_modules
-vendor/
-.git-blame-ignore-revs
-.git-blame-ignore-revs
-node_modules
-vendor
-.php-cs-fixer.cache
-.git-blame-ignore-revs
-build/
-vendor/
-build/
-node_modules
-docs/cache/
-cache/
-.git-blame-ignore-revs
-.php-cs-fixer.cache
-*.exe
-**/*.Zone.Identifier
-*:Zone.Identifier
-*:Zone.Identifier
-.php-cs-fixer.cache
-*:Zone.Identifier
-.php-cs-fixer.cache
-**/*.Zone.Identifier
-
-
-=======
-.git-rewrite
-.fuse_hidden*
-.fuse_hidden**.lock
-*.lock
-package-lock.json
-.php-cs-fixer.cache
-*.phar
-*.cache
-node_modules
-/node_modules
-vendor/
-.git-blame-ignore-revs
-.git-blame-ignore-revs
-node_modules
-vendor
-.php-cs-fixer.cache
-.git-blame-ignore-revs
-build/
-vendor/
-build/
-node_modules
-docs/cache/
-cache/
-.git-blame-ignore-revs
-.php-cs-fixer.cache
-*.exe
-**/*.Zone.Identifier
-*:Zone.Identifier
-*:Zone.Identifier
-.php-cs-fixer.cache
-*:Zone.Identifier
-.php-cs-fixer.cache
-**/*.Zone.Identifier
-
-[0;34mℹ️ [2025-04-22 11:23:27] Scelto blocco HEAD (34 linee vs 1)[0m
->>>>>>> a2974b79 (.)
-.git-rewrite
-.fuse_hidden*
-.fuse_hidden**.lock
-*.lock
-package-lock.json
-.php-cs-fixer.cache
-*.phar
-*.cache
-node_modules
-/node_modules
-vendor/
-.git-blame-ignore-revs
-.git-blame-ignore-revs
-node_modules
-vendor
-.php-cs-fixer.cache
-.git-blame-ignore-revs
-build/
-vendor/
-build/
-node_modules
-docs/cache/
-cache/
-.git-blame-ignore-revs
-.php-cs-fixer.cache
-*.exe
-**/*.Zone.Identifier
-*:Zone.Identifier
-*:Zone.Identifier
-.php-cs-fixer.cache
-*:Zone.Identifier
-.php-cs-fixer.cache
-**/*.Zone.Identifier
-.git-rewrite
-.fuse_hidden*
-.fuse_hidden**.lock
-*.lock
-package-lock.json
-.php-cs-fixer.cache
-*.phar
-*.cache
-node_modules
-/node_modules
-vendor/
-.git-blame-ignore-revs
-.git-blame-ignore-revs
-node_modules
-vendor
-.php-cs-fixer.cache
-.git-blame-ignore-revs
-build/
-vendor/
-build/
-node_modules
-docs/cache/
-cache/
-.git-blame-ignore-revs
-.php-cs-fixer.cache
-*.exe
-**/*.Zone.Identifier
-*:Zone.Identifier
-*:Zone.Identifier
-.php-cs-fixer.cache
-*:Zone.Identifier
-.php-cs-fixer.cache
-**/*.Zone.Identifier
-
-<<<<<<< HEAD
-=======
-
-[0;34mℹ️ [2025-04-22 11:23:27] Scelto blocco HEAD (35 linee vs 1)[0m
->>>>>>> a2974b79 (.)
-=======
 *.out
 *.app
 *.dll
 *.so
 *.dylib
+*.lock
 
 # ───────────────────────────────────────────────────────
 # Configurazioni e ambienti locali
@@ -269,4 +109,3 @@ junit.xml
 test-output/
 .nyc_output/
 coverage/
->>>>>>> 2b4bc286 (.)

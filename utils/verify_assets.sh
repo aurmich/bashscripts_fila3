@@ -7,7 +7,7 @@ YELLOW='\033[1;33m'
 NC='\033[0m'
 
 # Directory da verificare
-PUBLIC_DIR="/var/www/html/saluteora/public_html"
+PUBLIC_DIR="/var/www/html/<nome progetto>/public_html"
 ASSETS_DIR="$PUBLIC_DIR/assets"
 
 echo -e "${YELLOW}Verifica Asset System${NC}"

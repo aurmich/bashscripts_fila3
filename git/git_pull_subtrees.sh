@@ -27,17 +27,10 @@ for ((i=0; i<total; i++)); do
     # Applica riscrittura URL se ORG è passato
     if [ -n "$ORG" ]; then
         url_org=$(rewrite_url "$url" "$ORG")
-<<<<<<< HEAD
-        script="$script_dir/git_pull_subtree_org.sh" 
-        chmod +x "$script"
-        sed -i -e 's/\r$//' "$script"
-        if ! "$script" "$path" "$url_org" ; then
-=======
         script="$script_dir/git_push_subtree_org.sh" 
         chmod +x "$script"
         sed -i -e 's/\r$//' "$script"
         if ! "$script" "$path" "$url_org" "$BRANCH" ; then
->>>>>>> 2b4bc286 (.)
             log "⚠️ Push ORG fallita per $path."
         fi
     fi
