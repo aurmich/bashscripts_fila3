@@ -1,30 +1,20 @@
 #!/bin/bash
 
 source ./bashscripts/lib/custom.sh
+
 # Validate input
-if [ $# -ne 2 ]; then
-    echo "Usage: $0 <path> <remote_repo>"
+if [ $# -lt 2 ] || [ $# -gt 3 ]; then
+    log "error" "Parametri errati"
+    log "info" "Uso: $0 <path> <remote_repo> [branch]"
     exit 1
 fi
 
 LOCAL_PATH="$1"
 REMOTE_REPO="$2"
+BRANCH="${3:-main}"  # Usa il terzo parametro se fornito, altrimenti "main"
 
 curr_dir=$(pwd)
 
-curr_dir=$(pwd)
-dummy_push "$BRANCH"
-curr_dir=$(pwd)
-dummy_push "$BRANCH"
-curr_dir=$(pwd)
-dummy_push "$BRANCH"
-curr_dir=$(pwd)
-dummy_push "$BRANCH"BRANCH="main"  # Default branch
-
-curr_dir=$(pwd)
-BRANCH="main"  # Default branch
-
-curr_dir=$(pwd)
 log "info" "Inizializzazione push per $LOCAL_PATH verso $REMOTE_REPO (branch: $BRANCH)"
 
 cd "$LOCAL_PATH" || handle_error "Impossibile accedere a $LOCAL_PATH"
@@ -33,10 +23,13 @@ cd "$LOCAL_PATH" || handle_error "Impossibile accedere a $LOCAL_PATH"
 log "info" "Inizializzazione repository locale"
 git init || handle_git_error "git init" "Impossibile inizializzare il repository"
 
+# Configurazione git
+log "info" "Configurazione git"
+git_config_setup
+
 # Creazione branch
 log "info" "Creazione branch $BRANCH"
 git checkout -b "$BRANCH" || handle_git_error "git checkout" "Impossibile creare il branch $BRANCH"
-git_config_setupgit_config_setupgit_config_setupgit_config_setupgit_config_setupgit_config_setupgit_config_setupgit_config_setup
 
 # Configurazione remote
 log "info" "Configurazione remote origin"
@@ -53,46 +46,34 @@ git commit -m "Inizializzazione repository" || true  # Non fallire se non ci son
 
 # Merge con remote
 log "info" "Merge con remote"
-log "info" "pull con remote"
-git pull origin "$BRANCH" --autostash --rebase --allow-unrelated-histories --depth=1
+git pull origin "$BRANCH" --autostash --rebase --allow-unrelated-histories --depth=1 || true
 
-# Commit finale e push
-log "info" "Commit finale e push"
-git add -A
-git commit -m "Merge con remote" || true  # Non fallire se non ci sono cambiamenti
-git push -u origin HEAD:"$BRANCH" || handle_git_error "git push" "Impossibile eseguire push su origin/$BRANCH"log "info" "pull con remote"
-#git merge origin/"$BRANCH" --allow-unrelated-histories || handle_git_error "git merge" "Impossibile eseguire merge con origin/$BRANCH"git merge origin/"$BRANCH" --allow-unrelated-histories || handle_git_error "git merge" "Impossibile eseguire merge con origin/$BRANCH"
-git pull origin "$BRANCH" --autostash --rebase --allow-unrelated-histories --depth=1
-
-log "info" "Merge con remote"
-git merge origin/"$BRANCH" --allow-unrelated-histories || handle_git_error "git merge" "Impossibile eseguire merge con origin/$BRANCH"
-git pull origin "$BRANCH" --autostash --rebase --allow-unrelated-histories --depth=1
-
+# Gestione conflitti
 while true; do
-  # Fai l'add, commit e push
-  git add -A
-  git commit -am "."log "info" "Merge con remote"
-git merge origin/"$BRANCH" --allow-unrelated-histories || handle_git_error "git merge" "Impossibile eseguire merge con origin/$BRANCH"
-#git pull origin "$BRANCH" --autostash --rebase --allow-unrelated-histories --depth=1
-=======
-log "info" "Merge con remote"
-git merge origin/"$BRANCH" --allow-unrelated-histories || handle_git_error "git merge" "Impossibile eseguire merge con origin/$BRANCH"
-git pull origin "$BRANCH" --autostash --rebase --allow-unrelated-histories --depth=1
+    # Tenta il push
+    if git push -u origin HEAD:"$BRANCH" 2>/dev/null; then
+        log "success" "Push completato con successo"
+        break
+    fi
 
+    # Se il push fallisce, prova il rebase
+    git pull --rebase origin "$BRANCH"
 
-while true; do
-  # Fai l'add, commit e push
-  dummy_push "$BRANCH"  git push -f   git push -f origin HEAD:"$BRANCH"  git push -f origin HEAD:"$BRANCH"
-  git rebase --continue
-   if [ $? -eq 0 ]; then
-    # Se il rebase è completato senza errori (no conflitti)
-    echo "Rebase completato con successo!"
-    break
-  else
-    # Se ci sono conflitti, continua a tentare
-    echo "Ci sono conflitti, continua il rebase..."
-  fi
-done=====================
+    # Se ci sono conflitti
+    if [ $? -ne 0 ]; then
+        log "warning" "Rilevati conflitti, tentativo di risoluzione automatica..."
+        git add -A
+        git rebase --continue
+
+        # Se il rebase fallisce, annulla e riprova
+        if [ $? -ne 0 ]; then
+            log "warning" "Impossibile risolvere automaticamente, annullo il rebase..."
+            git rebase --abort
+            git reset --hard HEAD
+            git pull origin "$BRANCH" --autostash --rebase --allow-unrelated-histories --depth=1
+        fi
+    fi
+done
 
 # Pulizia
 log "info" "Pulizia repository locale"
