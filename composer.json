@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "name": "laraxot/bashscripts_fila3",
 <<<<<<< HEAD
     "description": "Script di utilità per la gestione dei repository Git, Toolkit di automazione Git per progetti Laravel",
@@ -31,12 +32,18 @@
         }
     },
 >>>>>>> a2974b79 (.)
+=======
+    "name": "laraxot/git-automation",
+    "description": "Toolkit di automazione Git per progetti Laravel",
+    "type": "library",
+>>>>>>> ae804b26 (.)
     "authors": [
         {
             "name": "marco76tv",
             "email": "marco.sottana@gmail.com"
         }
     ],
+<<<<<<< HEAD
 <<<<<<< HEAD
     "require": {
         "dotswan/filament-grapesjs-v3": "^1.1"
@@ -59,6 +66,8 @@
     "require": {
         
     },
+=======
+>>>>>>> ae804b26 (.)
     "require-dev": {
         "larastan/larastan": "^3.0"
     }
