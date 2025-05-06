@@ -609,7 +609,7 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file `LICENSE` per 
   <sub>Built with ❤️ by the development team</sub>
 
 
-=======
+
 # 🚀 Toolkit di Automazione Git
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com)
@@ -1009,4 +1009,4 @@ aurmich/dev
 * [README.md](laravel/Themes/One/docs/README.md)
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (203 linee vs 1)[0m
-=======
+

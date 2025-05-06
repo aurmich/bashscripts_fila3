@@ -348,5 +348,5 @@ Este kit de herramientas aborda estos desafíos proporcionando herramientas auto
 
 ## Traducciones
 - [English](../../README.md)
-=======
+
 - [Italiano](README.it.md) 

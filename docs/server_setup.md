@@ -1344,7 +1344,7 @@ php artisan key:generate
 - Se necessario, configurare manualmente altre variabili d'ambiente:
   ```ini
   APP_NAME=<nome progetto>
-=======
+
   APP_ENV=local
   APP_DEBUG=true
   APP_URL=http://localhost
@@ -2558,5 +2558,5 @@ aurmich/dev
 * [server_setup.md](../../docs/server_setup.md)
 * [server_setup.md](server_setup.md)
 
-=======
+
   ```

@@ -1,36 +1,6 @@
 {
-     "authors": [
-{
     "name": "laraxot/bashscripts_fila3",
-    "autoload": {
-        "psr-4": {
-            "Laraxot\\BashscriptsFila3\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "marco76tv",
-            "email": "marco.sottana@gmail.com"
-        }
-    ],
-    "require-dev": {
-        "larastan/larastan": "^3.0"
-    }
-}
-{
-    "name": "laraxot/bashscripts_fila3",
-    "autoload": {
-        "psr-4": {
-            "Laraxot\\BashscriptsFila3\\": "src/"
-        }
-    },
-=======
-    "name": "laraxot/git-automation",
-    "description": "Toolkit di automazione Git per progetti Laravel",
-    "type": "library",
-=======
-    "name": "laraxot/bashscripts_fila3",
-    "description": "Script di utilità per la gestione dei repository Git, Toolkit di automazione Git per progetti Laravel",
+    "description": "Script di utilità per la gestione dei repository Git e toolkit di automazione Git per progetti Laravel",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -39,9 +9,8 @@
             "email": "marco.sottana@gmail.com"
         }
     ],
-=======
     "require": {
-        "dotswan/filament-grapesjs-v3": "^1.1"
+        
     },
     "autoload": {
         "psr-4": {
@@ -53,13 +22,8 @@
         "optimize-autoloader": true
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
-    "require": {
-        
-    },
-=======
+    "prefer-stable": true,
     "require-dev": {
-        "larastan/larastan": "^3.0"
+        
     }
-=======
 }

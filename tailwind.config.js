@@ -1,5 +1,4 @@
 /**
-=======
  * Configurazione Tailwind CSS per il progetto
  *
  * Perché: Tailwind CSS è un framework CSS utility-first che permette di costruire

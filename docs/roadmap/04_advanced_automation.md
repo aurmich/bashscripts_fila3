@@ -373,7 +373,7 @@ Questa fase si concentra sull'implementazione di funzionalità di automazione av
 ### Q4 2024
 - Deployment produzione
 - Monitoraggio
-=======
+
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
  43df3e0 (.)
 aurmich/dev
@@ -1166,4 +1166,4 @@ aurmich/dev
 * [04_advanced_automation.md](bashscripts/docs/roadmap/04_advanced_automation.md)
 * [04_advanced_automation.md](docs/roadmap/04_advanced_automation.md)
 
-=======
+

@@ -146,7 +146,7 @@ Seleziona il backup da ripristinare [1-3]: 1
 - Richiede che il disco sia già montato
 - Richiede permessi di scrittura nella directory di destinazione
 
-=======
+
 ## Collegamenti Bidirezionali
 - [backup_disk](backup_disk.md) - Funzione per creare backup
 - [restore_from_disk](../utils/restore_from_disk.sh) - Script per il ripristino

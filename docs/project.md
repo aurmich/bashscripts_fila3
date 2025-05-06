@@ -6,7 +6,7 @@
 
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
-=======
+
 # 📚 Documentazione Dettagliata degli Script
 
 ## 🔄 Script di Sincronizzazione Git
@@ -244,7 +244,7 @@ aurmich/dev
 - Correzione automatica
 - Backup prima delle modifiche
 **Uso**: `./fix_directory_structure.sh <root_directory>`
-=======
+
 
 ### `resolve_git_conflict.sh`
 **Descrizione**: Risolve automaticamente i conflitti Git
@@ -408,9 +408,9 @@ Per ulteriori informazioni sulla gestione dei repository e l'utilizzo degli scri
 * [project.md](../../docs/project.md)
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (347 linee vs 1)[0m
-=======
+
 - Tutti gli script includono controlli di sicurezza e validazione
 - È consigliato eseguire backup prima di operazioni critiche
 - Verificare sempre le modifiche in ambiente di test
 - Mantenere aggiornata la documentazione
-=======
+

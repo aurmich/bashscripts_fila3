@@ -10,32 +10,18 @@ fi
 LOCAL_PATH="$1"
 REMOTE_REPO="$2"
 
-=======
-
 curr_dir=$(pwd)
-
-=======
 
 curr_dir=$(pwd)
 dummy_push "$BRANCH"
-=======
-
 curr_dir=$(pwd)
 dummy_push "$BRANCH"
-=======
-
 curr_dir=$(pwd)
 dummy_push "$BRANCH"
-=======
+curr_dir=$(pwd)
+dummy_push "$BRANCH"BRANCH="main"  # Default branch
 
 curr_dir=$(pwd)
-dummy_push "$BRANCH"
-=======
-BRANCH="main"  # Default branch
-
-curr_dir=$(pwd)
-
-=======
 BRANCH="main"  # Default branch
 
 curr_dir=$(pwd)
@@ -50,21 +36,7 @@ git init || handle_git_error "git init" "Impossibile inizializzare il repository
 # Creazione branch
 log "info" "Creazione branch $BRANCH"
 git checkout -b "$BRANCH" || handle_git_error "git checkout" "Impossibile creare il branch $BRANCH"
-git_config_setup
-=======
-git_config_setup
-=======
-git_config_setup
-=======
-git_config_setup
-=======
-git_config_setup
-=======
-git_config_setup
-=======
-git_config_setup
-=======
-git_config_setup
+git_config_setupgit_config_setupgit_config_setupgit_config_setupgit_config_setupgit_config_setupgit_config_setupgit_config_setup
 
 # Configurazione remote
 log "info" "Configurazione remote origin"
@@ -88,16 +60,10 @@ git pull origin "$BRANCH" --autostash --rebase --allow-unrelated-histories --dep
 log "info" "Commit finale e push"
 git add -A
 git commit -m "Merge con remote" || true  # Non fallire se non ci sono cambiamenti
-git push -u origin HEAD:"$BRANCH" || handle_git_error "git push" "Impossibile eseguire push su origin/$BRANCH"
-=======
-log "info" "pull con remote"
-#git merge origin/"$BRANCH" --allow-unrelated-histories || handle_git_error "git merge" "Impossibile eseguire merge con origin/$BRANCH"
-=======
-git merge origin/"$BRANCH" --allow-unrelated-histories || handle_git_error "git merge" "Impossibile eseguire merge con origin/$BRANCH"
+git push -u origin HEAD:"$BRANCH" || handle_git_error "git push" "Impossibile eseguire push su origin/$BRANCH"log "info" "pull con remote"
+#git merge origin/"$BRANCH" --allow-unrelated-histories || handle_git_error "git merge" "Impossibile eseguire merge con origin/$BRANCH"git merge origin/"$BRANCH" --allow-unrelated-histories || handle_git_error "git merge" "Impossibile eseguire merge con origin/$BRANCH"
 git pull origin "$BRANCH" --autostash --rebase --allow-unrelated-histories --depth=1
 
-
-=======
 log "info" "Merge con remote"
 git merge origin/"$BRANCH" --allow-unrelated-histories || handle_git_error "git merge" "Impossibile eseguire merge con origin/$BRANCH"
 git pull origin "$BRANCH" --autostash --rebase --allow-unrelated-histories --depth=1
@@ -105,13 +71,9 @@ git pull origin "$BRANCH" --autostash --rebase --allow-unrelated-histories --dep
 while true; do
   # Fai l'add, commit e push
   git add -A
-  git commit -am "."
-=======
-log "info" "Merge con remote"
+  git commit -am "."log "info" "Merge con remote"
 git merge origin/"$BRANCH" --allow-unrelated-histories || handle_git_error "git merge" "Impossibile eseguire merge con origin/$BRANCH"
 #git pull origin "$BRANCH" --autostash --rebase --allow-unrelated-histories --depth=1
-
-=======
 =======
 log "info" "Merge con remote"
 git merge origin/"$BRANCH" --allow-unrelated-histories || handle_git_error "git merge" "Impossibile eseguire merge con origin/$BRANCH"
@@ -120,13 +82,7 @@ git pull origin "$BRANCH" --autostash --rebase --allow-unrelated-histories --dep
 
 while true; do
   # Fai l'add, commit e push
-  dummy_push "$BRANCH"
-=======
-  git push -f 
-=======
-  git push -f origin HEAD:"$BRANCH"
-=======
-  git push -f origin HEAD:"$BRANCH"
+  dummy_push "$BRANCH"  git push -f   git push -f origin HEAD:"$BRANCH"  git push -f origin HEAD:"$BRANCH"
   git rebase --continue
    if [ $? -eq 0 ]; then
     # Se il rebase è completato senza errori (no conflitti)
@@ -136,13 +92,7 @@ while true; do
     # Se ci sono conflitti, continua a tentare
     echo "Ci sono conflitti, continua il rebase..."
   fi
-done
-=======
-=======
-=======
-=======
-=======
-=======
+done=====================
 
 # Pulizia
 log "info" "Pulizia repository locale"

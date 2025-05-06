@@ -57,7 +57,7 @@ log() {
         *) echo -e "[$timestamp] $message" | tee -a "$LOG_FILE" ;;
     esac
 }
-=======
+
 # Versione semplice
 log() {
     local message="$1"
@@ -104,7 +104,7 @@ fi
 
 LOCAL_PATH="$1"
 REMOTE_REPO="$2"
-=======
+
 # Versione che richiede 3 parametri
 if [ $# -ne 3 ]; then
     echo "Usage: $0 <path> <remote_repo> <branch>"

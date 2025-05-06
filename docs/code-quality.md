@@ -28,7 +28,7 @@ php bashscripts/check_form_schema.php
 Il comando genererà un output simile a:
 ```
 XotBaseResource Classes Form Schema Check
-====
+
 
 ❌ 3 classes missing getFormSchema method:
 

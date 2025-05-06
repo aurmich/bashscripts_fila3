@@ -591,7 +591,7 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 - Monitoraggio performance
 
 
-=======
+
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -899,4 +899,4 @@ aurmich/dev
 * [03_verification.md](docs/roadmap/03_verification.md)
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (197 linee vs 1)[0m
-=======
+

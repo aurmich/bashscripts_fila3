@@ -348,5 +348,5 @@ Questo toolkit affronta queste sfide fornendo strumenti automatizzati che sempli
 
 ## Traduzioni
 - [English](../../README.md)
-=======
+
 - [Español](README.es.md) 

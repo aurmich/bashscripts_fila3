@@ -183,7 +183,6 @@
 ### Collegamenti Interni
 - [Backup Testing](./testing.md#backup)
 - [Security Testing](./testing.md#security)
-=======
 - [Performance Testing](./testing.md#performance) 
 ## Collegamenti tra versioni di bottlenecks.md
 * [bottlenecks.md](../../laravel/Modules/Chart/docs/bottlenecks.md)
