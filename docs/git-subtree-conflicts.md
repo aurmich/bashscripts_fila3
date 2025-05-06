@@ -133,11 +133,14 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 
 - [Documentazione Git Subtree](https://git-scm.com/book/en/v2/Git-Tools-Advanced-Merging)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione sulla Risoluzione dei Conflitti Bash](conflict-resolution-bash.md)
 - [Documentazione degli Script Git](git-scripts.md)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](scripts-conflict-resolution.md)
 - [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md) 
 =======
+=======
+>>>>>>> 2b4bc286 (.)
 <<<<<<< HEAD:bashscripts/docs/git-subtree-conflicts.md
 - [Documentazione sulla Risoluzione dei Conflitti Bash](conflict-resolution-bash.md)
 - [Documentazione degli Script Git](git-scripts.md)
@@ -150,4 +153,7 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md)
 - [Risoluzione Conflitti Git](../../docs/risoluzione_conflitti_git.md) 
 >>>>>>> 8244aa81a (,):bashscripts/docs/git_subtree_conflicts.md
+<<<<<<< HEAD
 >>>>>>> 87e42413 (.)
+=======
+>>>>>>> 2b4bc286 (.)

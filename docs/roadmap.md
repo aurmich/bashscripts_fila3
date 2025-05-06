@@ -1,11 +1,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2b4bc286 (.)
 # Roadmap
 
 > **Nota**: Questo documento è correlato a [Roadmap](../../docs/roadmap.md). Per una panoramica completa, consulta entrambi i documenti.
 
 > **Nota**: Per informazioni aggiuntive sulla roadmap, consulta anche [Roadmap in Docs](../../docs/roadmap.md)
 
+<<<<<<< HEAD
 =======
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
@@ -495,6 +499,8 @@
 
 
 >>>>>>> a2974b79 (.)
+=======
+>>>>>>> 2b4bc286 (.)
 # 🗺️ Roadmap del Progetto
 
 ## 📋 Indice delle Fasi
@@ -616,6 +622,9 @@
 - [Fase 8: Cloud Integration](./roadmap/08_cloud_integration.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2b4bc286 (.)
 
 - [Fase 9: UI/UX](./roadmap/09_ui_ux.md) 
 
@@ -644,8 +653,11 @@ aurmich/dev
 * [roadmap.md](../../laravel/Modules/Cms/docs/roadmap.md)
 * [roadmap.md](../../laravel/Themes/One/docs/roadmap.md)
 
+<<<<<<< HEAD
 =======
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (243 linee vs 1)[0m
 >>>>>>> a2974b79 (.)
 =======
 >>>>>>> be20527a (.)
+=======
+>>>>>>> 2b4bc286 (.)

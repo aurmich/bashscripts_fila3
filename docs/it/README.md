@@ -1,5 +1,8 @@
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2b4bc286 (.)
 
 
 
@@ -207,6 +210,7 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file `LICENSE` per 
 
 [0;34mℹ️ [2025-04-22 11:23:10] Scelto blocco incoming (1 linee vs 1)[0m
 aurmich/dev
+<<<<<<< HEAD
 =======
 [0;34mℹ️ [2025-04-22 11:23:10] Scelto blocco incoming (1 linee vs 1)[0m
 # 🚀 Toolkit di Automazione Git
@@ -612,6 +616,8 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file `LICENSE` per 
 
 
 >>>>>>> a2974b79 (.)
+=======
+>>>>>>> 2b4bc286 (.)
 # 🚀 Toolkit di Automazione Git
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com)
@@ -713,6 +719,9 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file `LICENSE` per 
   <sub>Built with ❤️ by the development team</sub>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2b4bc286 (.)
 
 # 🚀 Toolkit di Automazione Git
 
@@ -1011,6 +1020,9 @@ aurmich/dev
 * [README.md](laravel/Themes/Two/docs/README.md)
 * [README.md](laravel/Themes/One/docs/README.md)
 
+<<<<<<< HEAD
 =======
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (203 linee vs 1)[0m
 >>>>>>> a2974b79 (.)
+=======
+>>>>>>> 2b4bc286 (.)

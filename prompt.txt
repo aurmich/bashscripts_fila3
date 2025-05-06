@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # GUIDA ESSENZIALE LARAXOT
 
 ## DOCUMENTAZIONE
@@ -474,6 +475,8 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 >>>>>>> a2974b79 (.)
 
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco HEAD (156 linee vs 1)[0m
+=======
+>>>>>>> 2b4bc286 (.)
 # GUIDA ESSENZIALE LARAXOT
 
 ## DOCUMENTAZIONE
@@ -490,10 +493,14 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 - PHPStan è installato nella cartella laravel: `./vendor/bin/phpstan`
 - Strategia per errori numerosi: scendi di livello fino a <100 errori, poi sali gradualmente
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Cerca e sistema i file con conflitti git
 =======
 - Cerca e sistema i file con conflitti git ("<<< HEAD")
 >>>>>>> a2974b79 (.)
+=======
+- Cerca e sistema i file con conflitti git
+>>>>>>> 2b4bc286 (.)
 
 ## NAMESPACE E STRUTTURA
 - Modello: `Modules\*\Models` (non `Modules\*\app\Models`)
@@ -503,8 +510,6 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 - Esempio: User path: `/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/User/app/Models/User.php`
   namespace: `Modules\User\Models`
 
-
-[0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
 
 
 
@@ -621,6 +626,7 @@ getInfolistSchema restituisec un array cui le chiavi sono  stringhe aggiorna la 
 getInfolistSchema restituisec un array cui le chiavi sono  stringhe aggiorna la cartellla "docs" piu' vicina e studiala e aggiorna anche le tue rules e memories
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 esegui phpstan a livello 7 su tutto Modules e aggiorna la cartella docs piu' vicina all'errore che andrai a correggere , poi studia quella cartella docs, poi implementa soluzione , poi procedi con gli altri errori, non ti fermare finche phpstan non ti dice che non hai piu' errori in tutto Modules
 Pensa ad alta voce e parla a te stesso. prima di rispondere, analizza la richiesta, scomponi i concetti chiave,
 formula un ragionamento passo passo,
@@ -633,23 +639,37 @@ e puoi aggiungere anche tooltip e placeholder anche actions stessa logina ma puo
 =======
 esegui phpstan a livello 7 su tutto Modules e aggiorna la cartella docs piu' vicina all'errore che andrai a correggere , poi studia quella cartella docs, poi implementa soluzione , poi procedi con gli altri errori, non ti fermare finche phpstan non ti dice che non hai piu' errori in tutto Modules 
 Pensa ad alta voce e parla a te stesso. prima di rispondere, analizza la richiesta, scomponi i concetti chiave, 
+=======
+esegui phpstan a livello 7 su tutto Modules e aggiorna la cartella docs piu' vicina all'errore che andrai a correggere , poi studia quella cartella docs, poi implementa soluzione , poi procedi con gli altri errori, non ti fermare finche phpstan non ti dice che non hai piu' errori in tutto Modules
+Pensa ad alta voce e parla a te stesso. prima di rispondere, analizza la richiesta, scomponi i concetti chiave,
+>>>>>>> 2b4bc286 (.)
 formula un ragionamento passo passo,
 
- la tua memoria e' la cartella docs  , 
+ la tua memoria e' la cartella docs  ,
 percio' aggiornala di continuo e studiala di continuo e prima di fare qualsiasi cosa consultala
+<<<<<<< HEAD
 ogni modulo ha la sua cartella docs e devi studiarla di continuo e aggiornarla di continuo, 
 fields non e'  'source' => 'Sorgente',  ma e'  'source' => ['label'=>'Sorgente'],  
 e puoi aggiungere anche tooltip e placeholder anche actions stessa logina ma puoi aggiungere anche icon e color, 
 >>>>>>> a2974b79 (.)
+=======
+ogni modulo ha la sua cartella docs e devi studiarla di continuo e aggiornarla di continuo,
+fields non e'  'source' => 'Sorgente',  ma e'  'source' => ['label'=>'Sorgente'],
+e puoi aggiungere anche tooltip e placeholder anche actions stessa logina ma puoi aggiungere anche icon e color,
+>>>>>>> 2b4bc286 (.)
 ragiona e migliora e sistema
 Quando correggi qualsiasi cosa devi focalizzarti sullo scopo non solo sulla correzione
 non voglio  ->label(   le label son gestite tramite langserviceprovider coi file di traduzioni
 
 <<<<<<< HEAD
+<<<<<<< HEAD
  la tua memoria e' la cartella docs ,
 =======
  la tua memoria e' la cartella docs , 
 >>>>>>> a2974b79 (.)
+=======
+ la tua memoria e' la cartella docs ,
+>>>>>>> 2b4bc286 (.)
 percio' aggiornala di continuo e studiala di continuo e prima di fare qualsiasi cosa consultala,
 quando correggi o fai qualcosa devi focalizzarti sullo scopo non solo alla correzione dell'errore
 
@@ -657,17 +677,23 @@ quando correggi o fai qualcosa devi focalizzarti sullo scopo non solo alla corre
 
 ---per traduzioni --
 <<<<<<< HEAD
+<<<<<<< HEAD
 fields non e'  'source' => 'Sorgente',  ma e'  'source' => ['label'=>'Sorgente'],
 e puoi aggiungere anche tooltip e placeholder anche actions stessa logina
 =======
 fields non e'  'source' => 'Sorgente',  ma e'  'source' => ['label'=>'Sorgente'],  
 e puoi aggiungere anche tooltip e placeholder anche actions stessa logina 
 >>>>>>> a2974b79 (.)
+=======
+fields non e'  'source' => 'Sorgente',  ma e'  'source' => ['label'=>'Sorgente'],
+e puoi aggiungere anche tooltip e placeholder anche actions stessa logina
+>>>>>>> 2b4bc286 (.)
 ma puoi aggiungere anche icon e color, ragiona e migliora e sistema
 
  la tua memoria e' la cartella docs , quando correggi errori devi concentrarti sullo scopo non solo alla correzione dell'errore
 percio' aggiornala di continuo e studiala di continuo e prima di fare qualsiasi cosa consultala
 
+<<<<<<< HEAD
 <<<<<<< HEAD
  la tua memoria e' la cartella docs  ,
 percio' aggiornala di continuo e studiala di continuo e prima di fare qualsiasi cosa consultala
@@ -681,6 +707,343 @@ ogni modulo ha la sua cartella docs e devi studiarla di continuo e aggiornarla d
 fields non e'  'source' => 'Sorgente',  ma e'  'source' => ['label'=>'Sorgente'],  
 e puoi aggiungere anche tooltip e placeholder anche actions stessa logina ma puoi aggiungere anche icon e color, 
 >>>>>>> a2974b79 (.)
+=======
+ la tua memoria e' la cartella docs  ,
+percio' aggiornala di continuo e studiala di continuo e prima di fare qualsiasi cosa consultala
+ogni modulo ha la sua cartella docs e devi studiarla di continuo e aggiornarla di continuo,
+fields non e'  'source' => 'Sorgente',  ma e'  'source' => ['label'=>'Sorgente'],
+e puoi aggiungere anche tooltip e placeholder anche actions stessa logina ma puoi aggiungere anche icon e color,
+ragiona e migliora e sistema
+Quando correggi qualsiasi cosa devi focalizzarti sullo scopo non solo sulla correzione
+non voglio  ->label(   le label son gestite tramite langserviceprovider coi file di traduzioni
+
+
+
+
+
+
+[0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco HEAD (156 linee vs 1)[0m
+
+ cb513be (.)
+
+ 0440c57 (.)
+# GUIDA ESSENZIALE LARAXOT
+
+## DOCUMENTAZIONE
+- Consulta SEMPRE le cartelle docs prima di ogni azione
+- Mai includere percorsi assoluti specifici (es. base_*_fila3)
+- Aggiorna e studia la cartella "docs" più vicina prima di implementare soluzioni
+- La documentazione non deve essere una replica del codice
+
+## VALIDAZIONE E CORREZIONE
+- Eseguire PHPStan livello 9/10 prima di iniziare qualsiasi lavoro
+- Processo: 1) Aggiornare docs 2) Studiare 3) Correggere
+- Quando correggi un errore, aggiorna la documentazione più vicina
+- Analizza ogni modulo separatamente con PHPStan
+- PHPStan è installato nella cartella laravel: `./vendor/bin/phpstan`
+- Strategia per errori numerosi: scendi di livello fino a <100 errori, poi sali gradualmente
+- Cerca e sistema i file con conflitti git
+
+## NAMESPACE E STRUTTURA
+- Modello: `Modules\*\Models` (non `Modules\*\app\Models`)
+- Filament: `Modules\*\Filament` (non `Modules\*\app\Filament`)
+- Percorso corretto: `Modules\Xot\Filament\Resources\Pages\XotBaseListRecords`
+- Ogni modulo ha il suo composer.json - analizzalo per path e namespace corretti
+- Esempio: User path: `/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/User/app/Models/User.php`
+  namespace: `Modules\User\Models`
+
+
+
+
+
+
+## TRADUZIONI
+- Formato corretto: `'field' => ['label' => 'Etichetta', 'tooltip' => 'Descrizione']`
+- MAI usare ->label() (gestito da LangServiceProvider)
+
+
+
+
+
+## ESTENSIONE CLASSI
+- MAI estendere classi Filament direttamente
+- SEMPRE estendere classi XotBase dal modulo Xot
+- Non estendiamo mai Migration ma XotBaseMigration
+- Estendere classi base Xot (XotBaseServiceProvider) per i Service Provider
+- Chiamare sempre parent::boot() nei Service Provider
+
+## FILAMENT RESOURCES
+- Estendere XotBaseResource, non Resource
+- Usare getFormSchema(), non form()
+- Non definire $navigationIcon, $modelLabel (gestiti da traduzioni)
+- Non definire table() (gestito dalla pagina index)
+
+## PAGINE DI LISTA
+- Usare metodi specifici: getListTableColumns(), getTableFilters(), getTableActions()
+- Usare array associativi con chiavi string per componenti
+
+## TRADUZIONI
+- Formato corretto: `'field' => ['label' => 'Etichetta', 'tooltip' => 'Descrizione']`
+- MAI usare ->label() (gestito da LangServiceProvider)
+
+
+
+
+
+## NAMESPACE
+- Modello: `Modules\*\Models` (non `Modules\*\app\Models`)
+- Filament: `Modules\*\Filament` (non `Modules\*\app\Filament`)
+- Percorso corretto: `Modules\Xot\Filament\Resources\Pages\XotBaseListRecords`
+
+## VALIDAZIONE
+- Eseguire PHPStan livello 7 prima di iniziare
+- Processo: 1) Aggiornare docs 2) Studiare 3) Correggere
+
+## SERVICE PROVIDER
+- Estendere classi base Xot (XotBaseServiceProvider)
+- Chiamare sempre parent::boot()
+
+
+
+
+
+## MIGRAZIONI
+- Estendere XotBaseMigration
+- Usare tableCreate() e tableUpdate()
+- Studiare le migrazioni negli altri moduli per la struttura corretta
+
+## BEST PRACTICES
+- Utilizzare spatie/laravel-data invece di services
+- Utilizzare spatie/queueable-actions
+- Evitare l'uso di "mixed" (solo come ultima risorsa)
+- Analizzare moduli esistenti prima di implementare nuove funzionalità
+
+
+## METODOLOGIA
+- Analizzare moduli esistenti
+
+
+
+
+## METODOLOGIA
+- Analizzare moduli esistenti
+
+
+- Focalizzarsi sullo scopo, non solo sulla correzione
+- Seguire convenzioni del framework
+
+
+
+getInfolistSchema restituisec un array cui le chiavi sono  stringhe aggiorna la cartellla "docs" piu' vicina e studiala e aggiorna anche le tue rules e memories
+
+
+getInfolistSchema restituisec un array cui le chiavi sono  stringhe aggiorna la cartellla "docs" piu' vicina e studiala e aggiorna anche le tue rules e memories
+
+
+getInfolistSchema restituisec un array cui le chiavi sono  stringhe aggiorna la cartellla "docs" piu' vicina e studiala e aggiorna anche le tue rules e memories
+
+esegui phpstan a livello 7 su tutto Modules e aggiorna la cartella docs piu' vicina all'errore che andrai a correggere , poi studia quella cartella docs, poi implementa soluzione , poi procedi con gli altri errori, non ti fermare finche phpstan non ti dice che non hai piu' errori in tutto Modules
+Pensa ad alta voce e parla a te stesso. prima di rispondere, analizza la richiesta, scomponi i concetti chiave,
+formula un ragionamento passo passo,
+
+ la tua memoria e' la cartella docs  ,
+percio' aggiornala di continuo e studiala di continuo e prima di fare qualsiasi cosa consultala
+ogni modulo ha la sua cartella docs e devi studiarla di continuo e aggiornarla di continuo,
+fields non e'  'source' => 'Sorgente',  ma e'  'source' => ['label'=>'Sorgente'],
+e puoi aggiungere anche tooltip e placeholder anche actions stessa logina ma puoi aggiungere anche icon e color,
+ragiona e migliora e sistema
+Quando correggi qualsiasi cosa devi focalizzarti sullo scopo non solo sulla correzione
+non voglio  ->label(   le label son gestite tramite langserviceprovider coi file di traduzioni
+
+ la tua memoria e' la cartella docs ,
+percio' aggiornala di continuo e studiala di continuo e prima di fare qualsiasi cosa consultala,
+quando correggi o fai qualcosa devi focalizzarti sullo scopo non solo alla correzione dell'errore
+
+
+
+---per traduzioni --
+fields non e'  'source' => 'Sorgente',  ma e'  'source' => ['label'=>'Sorgente'],
+e puoi aggiungere anche tooltip e placeholder anche actions stessa logina
+ma puoi aggiungere anche icon e color, ragiona e migliora e sistema
+
+ la tua memoria e' la cartella docs , quando correggi errori devi concentrarti sullo scopo non solo alla correzione dell'errore
+percio' aggiornala di continuo e studiala di continuo e prima di fare qualsiasi cosa consultala
+
+ la tua memoria e' la cartella docs  ,
+percio' aggiornala di continuo e studiala di continuo e prima di fare qualsiasi cosa consultala
+ogni modulo ha la sua cartella docs e devi studiarla di continuo e aggiornarla di continuo,
+fields non e'  'source' => 'Sorgente',  ma e'  'source' => ['label'=>'Sorgente'],
+e puoi aggiungere anche tooltip e placeholder anche actions stessa logina ma puoi aggiungere anche icon e color,
+ragiona e migliora e sistema
+Quando correggi qualsiasi cosa devi focalizzarti sullo scopo non solo sulla correzione
+non voglio  ->label(   le label son gestite tramite langserviceprovider coi file di traduzioni
+
+
+
+
+
+
+[0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco HEAD (156 linee vs 1)[0m
+# GUIDA ESSENZIALE LARAXOT
+
+## DOCUMENTAZIONE
+- Consulta SEMPRE le cartelle docs prima di ogni azione
+- Mai includere percorsi assoluti specifici (es. base_*_fila3)
+- Aggiorna e studia la cartella "docs" più vicina prima di implementare soluzioni
+- La documentazione non deve essere una replica del codice
+
+## VALIDAZIONE E CORREZIONE
+- Eseguire PHPStan livello 9/10 prima di iniziare qualsiasi lavoro
+- Processo: 1) Aggiornare docs 2) Studiare 3) Correggere
+- Quando correggi un errore, aggiorna la documentazione più vicina
+- Analizza ogni modulo separatamente con PHPStan
+- PHPStan è installato nella cartella laravel: `./vendor/bin/phpstan`
+- Strategia per errori numerosi: scendi di livello fino a <100 errori, poi sali gradualmente
+- Cerca e sistema i file con conflitti git
+
+## NAMESPACE E STRUTTURA
+- Modello: `Modules\*\Models` (non `Modules\*\app\Models`)
+- Filament: `Modules\*\Filament` (non `Modules\*\app\Filament`)
+- Percorso corretto: `Modules\Xot\Filament\Resources\Pages\XotBaseListRecords`
+- Ogni modulo ha il suo composer.json - analizzalo per path e namespace corretti
+- Esempio: User path: `/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/User/app/Models/User.php`
+  namespace: `Modules\User\Models`
+
+
+[0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
+
+
+
+
+
+## TRADUZIONI
+- Formato corretto: `'field' => ['label' => 'Etichetta', 'tooltip' => 'Descrizione']`
+- MAI usare ->label() (gestito da LangServiceProvider)
+
+
+
+
+
+
+## ESTENSIONE CLASSI
+- MAI estendere classi Filament direttamente
+- SEMPRE estendere classi XotBase dal modulo Xot
+- Non estendiamo mai Migration ma XotBaseMigration
+- Estendere classi base Xot (XotBaseServiceProvider) per i Service Provider
+- Chiamare sempre parent::boot() nei Service Provider
+
+## ESTENSIONE CLASSI
+- MAI estendere classi Filament direttamente
+- SEMPRE estendere classi XotBase dal modulo Xot
+ cb513be (.)
+
+## FILAMENT RESOURCES
+- Estendere XotBaseResource, non Resource
+- Usare getFormSchema(), non form()
+- Non definire $navigationIcon, $modelLabel (gestiti da traduzioni)
+- Non definire table() (gestito dalla pagina index)
+
+## PAGINE DI LISTA
+- Usare metodi specifici: getListTableColumns(), getTableFilters(), getTableActions()
+- Usare array associativi con chiavi string per componenti
+
+
+## TRADUZIONI
+- Formato corretto: `'field' => ['label' => 'Etichetta', 'tooltip' => 'Descrizione']`
+- MAI usare ->label() (gestito da LangServiceProvider)
+
+
+
+
+
+
+ cb513be (.)
+## NAMESPACE
+- Modello: `Modules\*\Models` (non `Modules\*\app\Models`)
+- Filament: `Modules\*\Filament` (non `Modules\*\app\Filament`)
+- Percorso corretto: `Modules\Xot\Filament\Resources\Pages\XotBaseListRecords`
+
+## VALIDAZIONE
+- Eseguire PHPStan livello 7 prima di iniziare
+- Processo: 1) Aggiornare docs 2) Studiare 3) Correggere
+
+## SERVICE PROVIDER
+- Estendere classi base Xot (XotBaseServiceProvider)
+- Chiamare sempre parent::boot()
+
+
+
+
+
+
+## MIGRAZIONI
+- Estendere XotBaseMigration
+- Usare tableCreate() e tableUpdate()
+- Studiare le migrazioni negli altri moduli per la struttura corretta
+
+## BEST PRACTICES
+- Utilizzare spatie/laravel-data invece di services
+- Utilizzare spatie/queueable-actions
+- Evitare l'uso di "mixed" (solo come ultima risorsa)
+- Analizzare moduli esistenti prima di implementare nuove funzionalità
+
+
+## METODOLOGIA
+- Analizzare moduli esistenti
+
+
+
+
+## METODOLOGIA
+- Analizzare moduli esistenti
+
+
+- Focalizzarsi sullo scopo, non solo sulla correzione
+- Seguire convenzioni del framework
+
+
+
+getInfolistSchema restituisec un array cui le chiavi sono  stringhe aggiorna la cartellla "docs" piu' vicina e studiala e aggiorna anche le tue rules e memories
+
+
+getInfolistSchema restituisec un array cui le chiavi sono  stringhe aggiorna la cartellla "docs" piu' vicina e studiala e aggiorna anche le tue rules e memories
+
+
+getInfolistSchema restituisec un array cui le chiavi sono  stringhe aggiorna la cartellla "docs" piu' vicina e studiala e aggiorna anche le tue rules e memories
+
+esegui phpstan a livello 7 su tutto Modules e aggiorna la cartella docs piu' vicina all'errore che andrai a correggere , poi studia quella cartella docs, poi implementa soluzione , poi procedi con gli altri errori, non ti fermare finche phpstan non ti dice che non hai piu' errori in tutto Modules
+Pensa ad alta voce e parla a te stesso. prima di rispondere, analizza la richiesta, scomponi i concetti chiave,
+formula un ragionamento passo passo,
+
+ la tua memoria e' la cartella docs  ,
+percio' aggiornala di continuo e studiala di continuo e prima di fare qualsiasi cosa consultala
+ogni modulo ha la sua cartella docs e devi studiarla di continuo e aggiornarla di continuo,
+fields non e'  'source' => 'Sorgente',  ma e'  'source' => ['label'=>'Sorgente'],
+e puoi aggiungere anche tooltip e placeholder anche actions stessa logina ma puoi aggiungere anche icon e color,
+ragiona e migliora e sistema
+Quando correggi qualsiasi cosa devi focalizzarti sullo scopo non solo sulla correzione
+non voglio  ->label(   le label son gestite tramite langserviceprovider coi file di traduzioni
+
+ la tua memoria e' la cartella docs ,
+percio' aggiornala di continuo e studiala di continuo e prima di fare qualsiasi cosa consultala,
+quando correggi o fai qualcosa devi focalizzarti sullo scopo non solo alla correzione dell'errore
+
+
+
+---per traduzioni --
+fields non e'  'source' => 'Sorgente',  ma e'  'source' => ['label'=>'Sorgente'],
+e puoi aggiungere anche tooltip e placeholder anche actions stessa logina
+ma puoi aggiungere anche icon e color, ragiona e migliora e sistema
+
+ la tua memoria e' la cartella docs , quando correggi errori devi concentrarti sullo scopo non solo alla correzione dell'errore
+percio' aggiornala di continuo e studiala di continuo e prima di fare qualsiasi cosa consultala
+
+ la tua memoria e' la cartella docs  ,
+percio' aggiornala di continuo e studiala di continuo e prima di fare qualsiasi cosa consultala
+ogni modulo ha la sua cartella docs e devi studiarla di continuo e aggiornarla di continuo,
+fields non e'  'source' => 'Sorgente',  ma e'  'source' => ['label'=>'Sorgente'],
+e puoi aggiungere anche tooltip e placeholder anche actions stessa logina ma puoi aggiungere anche icon e color,
+>>>>>>> 2b4bc286 (.)
 ## VALIDAZIONE E CORREZIONE
 - Esegui PHPStan livello 9/10 prima di ogni lavoro su ogni modulo.
 - Processo: 1) Aggiorna docs 2) Studia 3) Correggi 4) Documenta la motivazione.
@@ -688,10 +1051,14 @@ e puoi aggiungere anche tooltip e placeholder anche actions stessa logina ma puo
 - Analizza ogni modulo separatamente con PHPStan (`./vendor/bin/phpstan`).
 - Se hai troppi errori, abbassa il livello fino a <100 errori, poi risali gradualmente.
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Cerca e sistema i file con conflitti git  ogni conflitto è un’occasione di miglioramento.
 =======
 - Cerca e sistema i file con conflitti git ("<<< HEAD"): ogni conflitto è un’occasione di miglioramento.
 >>>>>>> a2974b79 (.)
+=======
+- Cerca e sistema i file con conflitti git  ogni conflitto è un’occasione di miglioramento.
+>>>>>>> 2b4bc286 (.)
 
 ## NAMESPACE E STRUTTURA
 - Usa sempre namespace senza il segmento `app` (es. `Modules\User\Models` e non `Modules\User\app\Models`).
@@ -778,6 +1145,7 @@ getInfolistSchema restituisec un array cui le chiavi sono  stringhe aggiorna la 
 getInfolistSchema restituisec un array cui le chiavi sono  stringhe aggiorna la cartellla "docs" piu' vicina e studiala e aggiorna anche le tue rules e memories
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 esegui phpstan a livello 7 su tutto Modules e aggiorna la cartella docs piu' vicina all'errore che andrai a correggere , poi studia quella cartella docs, poi implementa soluzione , poi procedi con gli altri errori, non ti fermare finche phpstan non ti dice che non hai piu' errori in tutto Modules
 Pensa ad alta voce e parla a te stesso. prima di rispondere, analizza la richiesta, scomponi i concetti chiave,
 formula un ragionamento passo passo,
@@ -790,23 +1158,37 @@ e puoi aggiungere anche tooltip e placeholder anche actions stessa logina ma puo
 =======
 esegui phpstan a livello 7 su tutto Modules e aggiorna la cartella docs piu' vicina all'errore che andrai a correggere , poi studia quella cartella docs, poi implementa soluzione , poi procedi con gli altri errori, non ti fermare finche phpstan non ti dice che non hai piu' errori in tutto Modules 
 Pensa ad alta voce e parla a te stesso. prima di rispondere, analizza la richiesta, scomponi i concetti chiave, 
+=======
+esegui phpstan a livello 7 su tutto Modules e aggiorna la cartella docs piu' vicina all'errore che andrai a correggere , poi studia quella cartella docs, poi implementa soluzione , poi procedi con gli altri errori, non ti fermare finche phpstan non ti dice che non hai piu' errori in tutto Modules
+Pensa ad alta voce e parla a te stesso. prima di rispondere, analizza la richiesta, scomponi i concetti chiave,
+>>>>>>> 2b4bc286 (.)
 formula un ragionamento passo passo,
 
- la tua memoria e' la cartella docs  , 
+ la tua memoria e' la cartella docs  ,
 percio' aggiornala di continuo e studiala di continuo e prima di fare qualsiasi cosa consultala
+<<<<<<< HEAD
 ogni modulo ha la sua cartella docs e devi studiarla di continuo e aggiornarla di continuo, 
 fields non e'  'source' => 'Sorgente',  ma e'  'source' => ['label'=>'Sorgente'],  
 e puoi aggiungere anche tooltip e placeholder anche actions stessa logina ma puoi aggiungere anche icon e color, 
 >>>>>>> a2974b79 (.)
+=======
+ogni modulo ha la sua cartella docs e devi studiarla di continuo e aggiornarla di continuo,
+fields non e'  'source' => 'Sorgente',  ma e'  'source' => ['label'=>'Sorgente'],
+e puoi aggiungere anche tooltip e placeholder anche actions stessa logina ma puoi aggiungere anche icon e color,
+>>>>>>> 2b4bc286 (.)
 ragiona e migliora e sistema
 Quando correggi qualsiasi cosa devi focalizzarti sullo scopo non solo sulla correzione
 non voglio  ->label(   le label son gestite tramite langserviceprovider coi file di traduzioni
 
 <<<<<<< HEAD
+<<<<<<< HEAD
  la tua memoria e' la cartella docs ,
 =======
  la tua memoria e' la cartella docs , 
 >>>>>>> a2974b79 (.)
+=======
+ la tua memoria e' la cartella docs ,
+>>>>>>> 2b4bc286 (.)
 percio' aggiornala di continuo e studiala di continuo e prima di fare qualsiasi cosa consultala,
 quando correggi o fai qualcosa devi focalizzarti sullo scopo non solo alla correzione dell'errore
 
@@ -814,17 +1196,23 @@ quando correggi o fai qualcosa devi focalizzarti sullo scopo non solo alla corre
 
 ---per traduzioni --
 <<<<<<< HEAD
+<<<<<<< HEAD
 fields non e'  'source' => 'Sorgente',  ma e'  'source' => ['label'=>'Sorgente'],
 e puoi aggiungere anche tooltip e placeholder anche actions stessa logina
 =======
 fields non e'  'source' => 'Sorgente',  ma e'  'source' => ['label'=>'Sorgente'],  
 e puoi aggiungere anche tooltip e placeholder anche actions stessa logina 
 >>>>>>> a2974b79 (.)
+=======
+fields non e'  'source' => 'Sorgente',  ma e'  'source' => ['label'=>'Sorgente'],
+e puoi aggiungere anche tooltip e placeholder anche actions stessa logina
+>>>>>>> 2b4bc286 (.)
 ma puoi aggiungere anche icon e color, ragiona e migliora e sistema
 
  la tua memoria e' la cartella docs , quando correggi errori devi concentrarti sullo scopo non solo alla correzione dell'errore
 percio' aggiornala di continuo e studiala di continuo e prima di fare qualsiasi cosa consultala
 
+<<<<<<< HEAD
 <<<<<<< HEAD
  la tua memoria e' la cartella docs  ,
 percio' aggiornala di continuo e studiala di continuo e prima di fare qualsiasi cosa consultala
@@ -838,6 +1226,13 @@ ogni modulo ha la sua cartella docs e devi studiarla di continuo e aggiornarla d
 fields non e'  'source' => 'Sorgente',  ma e'  'source' => ['label'=>'Sorgente'],  
 e puoi aggiungere anche tooltip e placeholder anche actions stessa logina ma puoi aggiungere anche icon e color, 
 >>>>>>> a2974b79 (.)
+=======
+ la tua memoria e' la cartella docs  ,
+percio' aggiornala di continuo e studiala di continuo e prima di fare qualsiasi cosa consultala
+ogni modulo ha la sua cartella docs e devi studiarla di continuo e aggiornarla di continuo,
+fields non e'  'source' => 'Sorgente',  ma e'  'source' => ['label'=>'Sorgente'],
+e puoi aggiungere anche tooltip e placeholder anche actions stessa logina ma puoi aggiungere anche icon e color,
+>>>>>>> 2b4bc286 (.)
 
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco HEAD (125 linee vs 1)[0m
 ragiona e migliora e sistema
@@ -850,9 +1245,13 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
  43df3e0 (.)
 =======
 >>>>>>> a2974b79 (.)
+=======
+ 43df3e0 (.)
+>>>>>>> 2b4bc286 (.)
 # GUIDA ESSENZIALE LARAXOT
 
 ## DOCUMENTAZIONE
@@ -869,10 +1268,14 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 - PHPStan è installato nella cartella laravel: `./vendor/bin/phpstan`
 - Strategia per errori numerosi: scendi di livello fino a <100 errori, poi sali gradualmente
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Cerca e sistema i file con conflitti git
 =======
 - Cerca e sistema i file con conflitti git ("<<< HEAD")
 >>>>>>> a2974b79 (.)
+=======
+- Cerca e sistema i file con conflitti git
+>>>>>>> 2b4bc286 (.)
 
 ## NAMESPACE E STRUTTURA
 - Modello: `Modules\*\Models` (non `Modules\*\app\Models`)
@@ -888,12 +1291,18 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2b4bc286 (.)
 
 
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
  43df3e0 (.)
+<<<<<<< HEAD
 =======
 >>>>>>> a2974b79 (.)
+=======
+>>>>>>> 2b4bc286 (.)
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
 ## TRADUZIONI
 - Formato corretto: `'field' => ['label' => 'Etichetta', 'tooltip' => 'Descrizione']`
@@ -901,12 +1310,18 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2b4bc286 (.)
 
 
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
  43df3e0 (.)
+<<<<<<< HEAD
 =======
 >>>>>>> a2974b79 (.)
+=======
+>>>>>>> 2b4bc286 (.)
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
 ## ESTENSIONE CLASSI
 - MAI estendere classi Filament direttamente
@@ -926,10 +1341,15 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 - Usare array associativi con chiavi string per componenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
 >>>>>>> a2974b79 (.)
+=======
+
+
+>>>>>>> 2b4bc286 (.)
 ## TRADUZIONI
 - Formato corretto: `'field' => ['label' => 'Etichetta', 'tooltip' => 'Descrizione']`
 - MAI usare ->label() (gestito da LangServiceProvider)
@@ -957,9 +1377,13 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
 
 <<<<<<< HEAD
+<<<<<<< HEAD
  43df3e0 (.)
 =======
 >>>>>>> a2974b79 (.)
+=======
+ 43df3e0 (.)
+>>>>>>> 2b4bc286 (.)
 ## MIGRAZIONI
 - Estendere XotBaseMigration
 - Usare tableCreate() e tableUpdate()
@@ -972,10 +1396,15 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 - Analizzare moduli esistenti prima di implementare nuove funzionalità
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
 >>>>>>> a2974b79 (.)
+=======
+
+
+>>>>>>> 2b4bc286 (.)
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
 
 
@@ -988,14 +1417,20 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2b4bc286 (.)
 ## MIGRAZIONI
 - Estendere XotBaseMigration
 - Usare tableCreate() e tableUpdate()
  cb513be (.)
 
  43df3e0 (.)
+<<<<<<< HEAD
 =======
 >>>>>>> a2974b79 (.)
+=======
+>>>>>>> 2b4bc286 (.)
 ## METODOLOGIA
 - Analizzare moduli esistenti
 - Focalizzarsi sullo scopo, non solo sulla correzione
@@ -1003,6 +1438,9 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2b4bc286 (.)
 ## MEMORIA E AGGIORNAMENTO
 - La cartella "docs" è la memoria principale
 - Aggiornare e studiare continuamente la documentazione
@@ -1017,8 +1455,11 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 
 
 
+<<<<<<< HEAD
 =======
 >>>>>>> a2974b79 (.)
+=======
+>>>>>>> 2b4bc286 (.)
 
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
 
@@ -1033,6 +1474,7 @@ getInfolistSchema restituisec un array cui le chiavi sono  stringhe aggiorna la 
 getInfolistSchema restituisec un array cui le chiavi sono  stringhe aggiorna la cartellla "docs" piu' vicina e studiala e aggiorna anche le tue rules e memories
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 esegui phpstan a livello 7 su tutto Modules e aggiorna la cartella docs piu' vicina all'errore che andrai a correggere , poi studia quella cartella docs, poi implementa soluzione , poi procedi con gli altri errori, non ti fermare finche phpstan non ti dice che non hai piu' errori in tutto Modules
 Pensa ad alta voce e parla a te stesso. prima di rispondere, analizza la richiesta, scomponi i concetti chiave,
 formula un ragionamento passo passo,
@@ -1045,23 +1487,37 @@ e puoi aggiungere anche tooltip e placeholder anche actions stessa logina ma puo
 =======
 esegui phpstan a livello 7 su tutto Modules e aggiorna la cartella docs piu' vicina all'errore che andrai a correggere , poi studia quella cartella docs, poi implementa soluzione , poi procedi con gli altri errori, non ti fermare finche phpstan non ti dice che non hai piu' errori in tutto Modules 
 Pensa ad alta voce e parla a te stesso. prima di rispondere, analizza la richiesta, scomponi i concetti chiave, 
+=======
+esegui phpstan a livello 7 su tutto Modules e aggiorna la cartella docs piu' vicina all'errore che andrai a correggere , poi studia quella cartella docs, poi implementa soluzione , poi procedi con gli altri errori, non ti fermare finche phpstan non ti dice che non hai piu' errori in tutto Modules
+Pensa ad alta voce e parla a te stesso. prima di rispondere, analizza la richiesta, scomponi i concetti chiave,
+>>>>>>> 2b4bc286 (.)
 formula un ragionamento passo passo,
 
- la tua memoria e' la cartella docs  , 
+ la tua memoria e' la cartella docs  ,
 percio' aggiornala di continuo e studiala di continuo e prima di fare qualsiasi cosa consultala
+<<<<<<< HEAD
 ogni modulo ha la sua cartella docs e devi studiarla di continuo e aggiornarla di continuo, 
 fields non e'  'source' => 'Sorgente',  ma e'  'source' => ['label'=>'Sorgente'],  
 e puoi aggiungere anche tooltip e placeholder anche actions stessa logina ma puoi aggiungere anche icon e color, 
 >>>>>>> a2974b79 (.)
+=======
+ogni modulo ha la sua cartella docs e devi studiarla di continuo e aggiornarla di continuo,
+fields non e'  'source' => 'Sorgente',  ma e'  'source' => ['label'=>'Sorgente'],
+e puoi aggiungere anche tooltip e placeholder anche actions stessa logina ma puoi aggiungere anche icon e color,
+>>>>>>> 2b4bc286 (.)
 ragiona e migliora e sistema
 Quando correggi qualsiasi cosa devi focalizzarti sullo scopo non solo sulla correzione
 non voglio  ->label(   le label son gestite tramite langserviceprovider coi file di traduzioni
 
 <<<<<<< HEAD
+<<<<<<< HEAD
  la tua memoria e' la cartella docs ,
 =======
  la tua memoria e' la cartella docs , 
 >>>>>>> a2974b79 (.)
+=======
+ la tua memoria e' la cartella docs ,
+>>>>>>> 2b4bc286 (.)
 percio' aggiornala di continuo e studiala di continuo e prima di fare qualsiasi cosa consultala,
 quando correggi o fai qualcosa devi focalizzarti sullo scopo non solo alla correzione dell'errore
 
@@ -1069,17 +1525,23 @@ quando correggi o fai qualcosa devi focalizzarti sullo scopo non solo alla corre
 
 ---per traduzioni --
 <<<<<<< HEAD
+<<<<<<< HEAD
 fields non e'  'source' => 'Sorgente',  ma e'  'source' => ['label'=>'Sorgente'],
 e puoi aggiungere anche tooltip e placeholder anche actions stessa logina
 =======
 fields non e'  'source' => 'Sorgente',  ma e'  'source' => ['label'=>'Sorgente'],  
 e puoi aggiungere anche tooltip e placeholder anche actions stessa logina 
 >>>>>>> a2974b79 (.)
+=======
+fields non e'  'source' => 'Sorgente',  ma e'  'source' => ['label'=>'Sorgente'],
+e puoi aggiungere anche tooltip e placeholder anche actions stessa logina
+>>>>>>> 2b4bc286 (.)
 ma puoi aggiungere anche icon e color, ragiona e migliora e sistema
 
  la tua memoria e' la cartella docs , quando correggi errori devi concentrarti sullo scopo non solo alla correzione dell'errore
 percio' aggiornala di continuo e studiala di continuo e prima di fare qualsiasi cosa consultala
 
+<<<<<<< HEAD
 <<<<<<< HEAD
  la tua memoria e' la cartella docs  ,
 percio' aggiornala di continuo e studiala di continuo e prima di fare qualsiasi cosa consultala
@@ -1093,6 +1555,13 @@ ogni modulo ha la sua cartella docs e devi studiarla di continuo e aggiornarla d
 fields non e'  'source' => 'Sorgente',  ma e'  'source' => ['label'=>'Sorgente'],  
 e puoi aggiungere anche tooltip e placeholder anche actions stessa logina ma puoi aggiungere anche icon e color, 
 >>>>>>> a2974b79 (.)
+=======
+ la tua memoria e' la cartella docs  ,
+percio' aggiornala di continuo e studiala di continuo e prima di fare qualsiasi cosa consultala
+ogni modulo ha la sua cartella docs e devi studiarla di continuo e aggiornarla di continuo,
+fields non e'  'source' => 'Sorgente',  ma e'  'source' => ['label'=>'Sorgente'],
+e puoi aggiungere anche tooltip e placeholder anche actions stessa logina ma puoi aggiungere anche icon e color,
+>>>>>>> 2b4bc286 (.)
 ragiona e migliora e sistema
 Quando correggi qualsiasi cosa devi focalizzarti sullo scopo non solo sulla correzione
 non voglio  ->label(   le label son gestite tramite langserviceprovider coi file di traduzioni
@@ -1100,6 +1569,9 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2b4bc286 (.)
 
 
  cb513be (.)
@@ -1109,5 +1581,8 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
  cb513be (.)
  0440c57 (.)
  cb513be (.)
+<<<<<<< HEAD
 =======
 >>>>>>> a2974b79 (.)
+=======
+>>>>>>> 2b4bc286 (.)

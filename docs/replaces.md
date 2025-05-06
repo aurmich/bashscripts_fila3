@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sostituzioni e Aggiornamenti
 
 > **Nota**: Per informazioni aggiuntive sulle sostituzioni, consulta anche [Replaces](../../docs/replaces.md)
@@ -7,6 +8,8 @@ public static function form\(Form \$form\): Form\s*\{\s*return \$form\s*->schema
 
 
 aurmich/dev
+=======
+>>>>>>> 2b4bc286 (.)
 public static function form\(Form \$form\): Form\s*\{\s*return \$form\s*->schema\(\[\s*([\s\S]*?)\s*\]\);\s*\}
 
 
@@ -22,6 +25,7 @@ public static function getFormSchema(): array
 
 
 public static function table\(Table \$table\): Table\s*\{[\s\S]*?\n\s*\}
+<<<<<<< HEAD
 
 
  0440c57 (.)
@@ -83,3 +87,5 @@ aurmich/dev
 * [replaces.md](../../docs/replaces.md)
 * [replaces.md](replaces.md)
 
+=======
+>>>>>>> 2b4bc286 (.)

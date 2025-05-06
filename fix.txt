@@ -1,5 +1,8 @@
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2b4bc286 (.)
 # 🛠️ Soluzioni Comuni per Problemi Git e Bash
 
 ## 🔧 Problemi di Interprete Bash
@@ -110,8 +113,11 @@ sudo update-alternatives --config php
 ```
 
 
+<<<<<<< HEAD
 =======
 >>>>>>> a2974b79 (.)
+=======
+>>>>>>> 2b4bc286 (.)
 /bin/bash^M: bad interpreter: No such file or directory
 sed -i -e 's/\r$//' nomefile.sh
 
@@ -156,6 +162,7 @@ find . -type f -name "*:Zone.Identifier" -exec rm -f {} +
 
 sudo update-alternatives --config php
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 ----
@@ -249,6 +256,8 @@ SOLUZIONE: > sudo chmod 777 -R .
 [0;34mℹ️ [2025-04-22 11:23:27] Scelto blocco HEAD (79 linee vs 1)[0m
 =======
 >>>>>>> a2974b79 (.)
+=======
+>>>>>>> 2b4bc286 (.)
 
 /bin/bash^M: bad interpreter: No such file or directory
 sed -i -e 's/\r$//' nomefile.sh
@@ -333,6 +342,9 @@ SOLUZIONE: > sudo chmod 777 -R .
 
 [0;34mℹ️ [2025-04-22 11:23:27] Scelto blocco HEAD (22 linee vs 1)[0m
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2b4bc286 (.)
 
 
  cb513be (.)
@@ -340,5 +352,8 @@ SOLUZIONE: > sudo chmod 777 -R .
 
 
  0440c57 (.)
+<<<<<<< HEAD
 =======
 >>>>>>> a2974b79 (.)
+=======
+>>>>>>> 2b4bc286 (.)

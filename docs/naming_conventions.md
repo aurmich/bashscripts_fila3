@@ -37,10 +37,16 @@ docs/
 ## Riferimenti
 - [GitHub Documentation](https://docs.github.com/en/repositories/managing-your-repository/about-readmes)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Unix File Naming Conventions](https://www.ibm.com/docs/en/aix/7.2?topic=files-naming-conventions) 
 =======
+=======
+>>>>>>> 2b4bc286 (.)
 - [Unix File Naming Conventions](https://www.ibm.com/docs/en/aix/7.2?topic=files-naming-conventions) 
 ## Collegamenti tra versioni di naming_conventions.md
 * [naming_conventions.md](../../laravel/Modules/Xot/docs/naming_conventions.md)
 
+<<<<<<< HEAD
 >>>>>>> 87e42413 (.)
+=======
+>>>>>>> 2b4bc286 (.)

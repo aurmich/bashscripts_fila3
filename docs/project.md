@@ -1,11 +1,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2b4bc286 (.)
 # Project
 
 > **Nota**: Questo documento è correlato a [Progetto](../../docs/project.md). Per una panoramica completa, consulta entrambi i documenti.
 
 > **Nota**: Per informazioni aggiuntive sul progetto, consulta anche [Project Documentation in Docs](../../docs/project.md)
 
+<<<<<<< HEAD
 =======
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
@@ -693,6 +697,8 @@ Per ulteriori informazioni sulla gestione dei repository e l'utilizzo degli scri
 
 
 >>>>>>> a2974b79 (.)
+=======
+>>>>>>> 2b4bc286 (.)
 # 📚 Documentazione Dettagliata degli Script
 
 ## 🔄 Script di Sincronizzazione Git
@@ -726,6 +732,9 @@ Per ulteriori informazioni sulla gestione dei repository e l'utilizzo degli scri
 
 ### `fix_directory_structure.sh`
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2b4bc286 (.)
 
 **Descrizione**: Corregge e standardizza la struttura delle directory nei moduli Laraxot PTVX
 **Funzionalità**:
@@ -743,6 +752,7 @@ Per ulteriori informazioni sulla gestione dei repository e l'utilizzo degli scri
 - Conservata la logica avanzata di identificazione e correzione dei file
 - Migliorata la compatibilità con la struttura Laravel standard
 aurmich/dev
+<<<<<<< HEAD
 =======
 **Descrizione**: Corregge e standardizza la struttura delle directory
 **Funzionalità**:
@@ -751,6 +761,8 @@ aurmich/dev
 - Backup prima delle modifiche
 **Uso**: `./fix_directory_structure.sh <root_directory>`
 >>>>>>> a2974b79 (.)
+=======
+>>>>>>> 2b4bc286 (.)
 
 ### `resolve_git_conflict.sh`
 **Descrizione**: Risolve automaticamente i conflitti Git
@@ -886,6 +898,9 @@ aurmich/dev
 - Backup prima dell'operazione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2b4bc286 (.)
 
 **Uso**: `./git_delete_old_branches.sh <days>` 
 
@@ -914,6 +929,7 @@ Per ulteriori informazioni sulla gestione dei repository e l'utilizzo degli scri
 * [project.md](project.md)
 * [project.md](../../docs/project.md)
 
+<<<<<<< HEAD
 =======
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (347 linee vs 1)[0m
 >>>>>>> a2974b79 (.)
@@ -923,3 +939,5 @@ Per ulteriori informazioni sulla gestione dei repository e l'utilizzo degli scri
 - Verificare sempre le modifiche in ambiente di test
 - Mantenere aggiornata la documentazione
 >>>>>>> be20527a (.)
+=======
+>>>>>>> 2b4bc286 (.)

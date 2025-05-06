@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2b4bc286 (.)
 # 🚀 Kit de Herramientas de Automatización Git
 
 [![PHPStan](https://img.shields.io/badge/PHPStan-Level%209-brightgreen.svg?style=for-the-badge&logo=php&logoColor=white)](phpstan/ANALISI_MODULI_PHPSTAN.md)
@@ -174,6 +177,7 @@ Este kit de herramientas aborda estos desafíos proporcionando herramientas auto
 
 ## Traducciones
 - [English](../../README.md)
+<<<<<<< HEAD
 =======
 # 🚀 Kit de Herramientas de Automatización Git
 
@@ -351,4 +355,6 @@ Este kit de herramientas aborda estos desafíos proporcionando herramientas auto
 ## Traducciones
 - [English](../../README.md)
 >>>>>>> c21c06a2 (.)
+=======
+>>>>>>> 2b4bc286 (.)
 - [Italiano](README.it.md) 

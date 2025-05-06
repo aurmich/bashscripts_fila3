@@ -1,5 +1,6 @@
 #!/bin/bash
 
+<<<<<<< HEAD
 # 🚀 Importa funzioni di utilità
 source ./bashscripts/lib/custom.sh
 
@@ -11,12 +12,20 @@ if [ "$#" -ne 2 ]; then
 fi
 
 # 📌 Configurazione
+=======
+if [ "$#" -ne 2 ]; then
+    echo "Usage: $0 <organization> <branch>"
+    exit 1
+fi
+
+>>>>>>> 2b4bc286 (.)
 org="$1"
 branch="$2"
 repo_name=$(basename "$(git rev-parse --show-toplevel)")
 script_path=$(readlink -f -- "$0")
 where=$(pwd)
 
+<<<<<<< HEAD
 log "info" "-------- START SYNC [$where ($branch) - ORG: $org] ----------"
 
 # 1️⃣ Configurazioni globali per evitare problemi
@@ -53,6 +62,40 @@ git pull --rebase origin "$branch" --autostash --recurse-submodules --allow-unre
         git diff --name-only --diff-filter=U | while read file; do
             git checkout --theirs "$file" || log "warning" "Impossibile risolvere conflitto in $file"
             git add "$file" || log "warning" "Impossibile aggiungere $file"
+=======
+# 1️⃣ Configurazione Git
+git config core.fileMode false
+git config core.ignorecase false
+git config advice.skippedCherryPicks false
+
+# 2️⃣ Sincronizziamo i submoduli PRIMA di lavorare sul repository principale
+git submodule sync --recursive
+git submodule update --progress --init --recursive --force --merge --rebase --remote
+git submodule foreach "$script_path" "$org" "$branch"
+
+# 3️⃣ Sincronizziamo il repository principale
+git fetch origin --progress --prune
+if git show-ref --verify --quiet refs/heads/"$branch"; then
+    git checkout "$branch"
+else
+    git checkout -t origin/"$branch" || git checkout -b "$branch"
+fi
+
+# 4️⃣ Pull con gestione dei conflitti
+git pull --rebase origin "$branch" --autostash --recurse-submodules --allow-unrelated-histories --prune --progress -v || {
+    echo "Rebase failed, attempting conflict resolution..."
+    
+    # 🔄 Tentiamo di continuare il rebase automaticamente
+    if git rebase --continue; then
+        echo "Rebase continued successfully."
+    else
+        echo "Rebase conflicts detected. Attempting automatic resolution..."
+
+        # 🛠 Risolviamo automaticamente i conflitti prendendo la versione remota
+        git diff --name-only --diff-filter=U | while read file; do
+            git checkout --theirs "$file"
+            git add "$file"
+>>>>>>> 2b4bc286 (.)
         done
 
         # 🛠 Proviamo a completare il rebase
@@ -83,7 +126,15 @@ if ! git rev-parse --abbrev-ref --symbolic-full-name "@{u}" >/dev/null 2>&1; the
     git branch -u origin/$branch || true
 fi
 
+<<<<<<< HEAD
 # 8️⃣ Manutenzione finale
 git_maintenance
 
 log "success" "-------- END SYNC [$where ($branch) - ORG: $org] ----------"
+=======
+# 8️⃣ Configurazione globale
+git config --global core.fileMode false
+git config --global core.autocrlf input
+
+echo "-------- END SYNC [$where ($branch) - ORG: $org] ----------"
+>>>>>>> 2b4bc286 (.)

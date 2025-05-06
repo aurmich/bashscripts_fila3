@@ -1,10 +1,14 @@
 #!/bin/bash
 
+<<<<<<< HEAD
 source ./bashscripts/lib/custom.sh
 
 #!/bin/bash
 
  # 🎨 Colori per il logging
+=======
+# 🎨 Colori per il logging
+>>>>>>> 2b4bc286 (.)
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
@@ -50,7 +54,10 @@ find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
 
 # ⚙️ Configurazione git
 log "info" "Configurazione git..."
+<<<<<<< HEAD
 git_config_setup
+=======
+>>>>>>> 2b4bc286 (.)
 git config core.fileMode false || log "warning" "Impossibile impostare fileMode"
 git config advice.submoduleMergeConflict false || log "warning" "Impossibile impostare submoduleMergeConflict"
 git config core.ignorecase false || log "warning" "Impossibile impostare ignorecase"
@@ -148,8 +155,12 @@ git rebase --continue || echo '🔔 Nessun rebase da continuare'
 
 # Checkout e aggiornamento del branch
 echo "🔀 Checkout del branch $branch..."
+<<<<<<< HEAD
 #!/bin/sh
  if [ "$1" ]; then
+=======
+if [ "$1" ]; then
+>>>>>>> 2b4bc286 (.)
      echo yes
 else
     echo 'aggiungere il branch ./bashscripts/git_up_noai.sh  <branch>'
@@ -164,6 +175,7 @@ git submodule foreach "$me" "$branch"
 find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
 #delete old branches
 #git push origin --delete cs0.2.03
+<<<<<<< HEAD
 #old branches
 #git push origin --delete cs0.2.03
 #git push origin --delete cs0.2.04
@@ -173,6 +185,8 @@ find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
 #git push origin --delete cs0.2.08
 #git push origin --delete cs0.2.09
 #git push origin --delete cs0.2.10
+=======
+>>>>>>> 2b4bc286 (.)
 
 git config core.fileMode false
 git config advice.submoduleMergeConflict false
@@ -201,12 +215,19 @@ git pull origin $branch --autostash --recurse-submodules --allow-unrelated-histo
 sed -i -e 's/\r$//' "$me"
 
 echo "-------- END PULL[$where ($branch)] ----------"
+<<<<<<< HEAD
  echo "-------- END BRANCH[$where ($branch)] ----------";
+=======
+echo "-------- END BRANCH[$where ($branch)] ----------";
+>>>>>>> 2b4bc286 (.)
 git submodule update --progress --init --recursive --force --merge --rebase --remote
 git checkout $branch --
 git pull origin $branch --autostash --recurse-submodules --allow-unrelated-histories --prune --progress -v --rebase
 sed -i -e 's/\r$//' "$me"
 echo "-------- END PULL[$where ($branch)] ----------";
+<<<<<<< HEAD
  0440c57 (.)
 
+=======
+>>>>>>> 2b4bc286 (.)
 
