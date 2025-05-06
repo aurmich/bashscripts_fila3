@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # 🚀 Toolkit di Automazione Git
 
 
@@ -175,42 +176,45 @@ Questo progetto è sotto licenza MIT. Vedere il file [LICENSE](LICENSE) per i de
 =======
 >>>>>>> be20527a (.)
 # 🚀 Toolkit di Automazione Git
+=======
+# 🚀 Git Automation Toolkit
+>>>>>>> c21c06a2 (.)
 
-[![PHPStan](https://img.shields.io/badge/PHPStan-Level%209-brightgreen.svg?style=for-the-badge&logo=php&logoColor=white)](../docs/phpstan/ANALISI_MODULI_PHPSTAN.md)
+[![PHPStan](https://img.shields.io/badge/PHPStan-Level%209-brightgreen.svg?style=for-the-badge&logo=php&logoColor=white)](docs/phpstan/ANALISI_MODULI_PHPSTAN.md)
 
-## Requisiti di Sistema
-- PHP 8.2 o superiore
+## System Requirements
+- PHP 8.2 or higher
 - Composer
-- Node.js 18+ e npm
+- Node.js 18+ and npm
 - MySQL 8.0+
 - Git
 
-## Installazione
+## Installation
 
-### 1. Clonare il Repository
+### 1. Clone the Repository
 ```bash
 git clone https://github.com/your-username/project.git
 cd project
 ```
 
-### 2. Installare le Dipendenze PHP
+### 2. Install PHP Dependencies
 ```bash
 composer install
 ```
 
-### 3. Installare le Dipendenze Node.js
+### 3. Install Node.js Dependencies
 ```bash
 npm install
 ```
 
-### 4. Configurare l'Ambiente
+### 4. Configure Environment
 ```bash
 cp .env.example .env
 php artisan key:generate
 ```
 
-### 5. Configurare il Database
-Modificare il file `.env` con le credenziali del database:
+### 5. Configure Database
+Edit the `.env` file with your database credentials:
 ```env
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -220,35 +224,35 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-### 6. Eseguire le Migrazioni
+### 6. Run Migrations
 ```bash
 php artisan migrate
 ```
 
-### 7. Installare i Moduli
+### 7. Install Modules
 ```bash
-# Installare Laravel Modules
+# Install Laravel Modules
 composer require nwidart/laravel-modules
 
-# Pubblicare la configurazione dei moduli
+# Publish module configuration
 php artisan vendor:publish --provider="Nwidart\Modules\LaravelModulesServiceProvider"
 
-# Aggiungere il modulo Xot
+# Add Xot module
 git remote add -f xot https://github.com/crud-lab/xot.git
 git subtree add --prefix Modules/Xot xot main --squash
 ```
 
-### 8. Compilare gli Assets
+### 8. Compile Assets
 ```bash
 npm run dev
 ```
 
-### 9. Avviare il Server di Sviluppo
+### 9. Start Development Server
 ```bash
 php artisan serve
 ```
 
-## Struttura del Progetto
+## Project Structure
 
 ```
 project/
@@ -270,81 +274,82 @@ project/
     └── packages/
 ```
 
-## Moduli Principali
+## Core Modules
 
 ### Core
-- Gestione utenti e autenticazione
-- Configurazione sistema
-- Funzionalità base
+- User management and authentication
+- System configuration
+- Base functionality
 
 ### Module1
-- Funzionalità specifiche del modulo 1
-- Gestione dati
-- Interfaccia utente
+- Module 1 specific features
+- Data management
+- User interface
 
 ### Module2
-- Funzionalità specifiche del modulo 2
-- Gestione processi
-- Integrazioni
+- Module 2 specific features
+- Process management
+- Integrations
 
 ### Xot
-- Framework base per i moduli
-- Componenti riutilizzabili
-- Funzionalità comuni
+- Base framework for modules
+- Reusable components
+- Common functionality
 
-## Documentazione
+## Documentation
 
-La documentazione completa è disponibile nella directory `docs/`:
-- [Roadmap del Progetto](docs/roadmap/README.md)
-- [Documentazione dei Pacchetti](docs/packages/README.md)
+Complete documentation is available in the `docs/` directory:
+- [Project Roadmap](docs/roadmap/README.md)
+- [Packages Documentation](docs/packages/README.md)
 
-## Sviluppo
+## Development
 
-### Comandi Utili
+### Useful Commands
 ```bash
-# Creare un nuovo modulo
-php artisan module:make NomeModulo
+# Create a new module
+php artisan module:make ModuleName
 
-# Generare componenti per un modulo
-php artisan module:make-controller NomeController NomeModulo
-php artisan module:make-model NomeModel NomeModulo
-php artisan module:make-migration create_table NomeModulo
+# Generate module components
+php artisan module:make-controller ControllerName ModuleName
+php artisan module:make-model ModelName ModuleName
+php artisan module:make-migration create_table ModuleName
 
-# Eseguire i test
+# Run tests
 php artisan test
 
-# Aggiornare le dipendenze
+# Update dependencies
 composer update
 npm update
 ```
 
 ### Best Practices
-- Seguire le convenzioni PSR-4 per l'autoloading
-- Utilizzare i namespace corretti per i moduli
-- Documentare le modifiche nel CHANGELOG.md
-- Mantenere i test aggiornati
-- Verificare la compatibilità cross-browser
+- Follow PSR-4 autoloading conventions
+- Use proper namespaces for modules
+- Document changes in CHANGELOG.md
+- Keep tests updated
+- Verify cross-browser compatibility
 
-## Licenza
-Questo progetto è sotto licenza MIT. Vedere il file [LICENSE](LICENSE) per i dettagli.
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com)
 [![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
 [![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
 
-> **⚠️ ATTENZIONE: Questo toolkit è stato progettato per sviluppatori esperti che lavorano con repository Git complessi e strutture monorepo.**
+> **⚠️ WARNING: This toolkit is designed for experienced developers working with complex Git repositories and monorepo structures.**
 
-## 🤔 Perché questo toolkit?
+## 🤔 Why this toolkit?
 
-Lo sviluppo di un progetto modulare complesso presenta sfide uniche:
+Developing a complex modular project presents unique challenges:
 
-- **Gestione di decine di moduli interdipendenti** che devono rimanere sincronizzati
-- **Necessità di collaborazione** tra team distribuiti su repository diversi
-- **Mantenimento della coerenza** del codice attraverso molteplici branch e organizzazioni
-- **Riduzione del rischio di errori manuali** in operazioni Git complesse
-- **Automazione dei processi ripetitivi** per aumentare la produttività
-- **Supporto per l'analisi statica** con PHPStan Level 9
+- **Managing dozens of interdependent modules** that need to stay synchronized
+- **Collaboration needs** between teams distributed across different repositories
+- **Maintaining code consistency** across multiple branches and organizations
+- **Reducing the risk of manual errors** in complex Git operations
+- **Automating repetitive processes** to increase productivity
+- **Support for static analysis** with PHPStan Level 9
 
+<<<<<<< HEAD
 Questo toolkit affronta queste sfide fornendo strumenti automatizzati che semplificano il flusso di lavoro e garantiscono coerenza e qualità.
 <<<<<<< HEAD
 ## 📋 Panoramica
@@ -1064,3 +1069,10 @@ chmod +x script.sh
 >>>>>>> a2974b79 (.)
 =======
 >>>>>>> be20527a (.)
+=======
+This toolkit addresses these challenges by providing automated tools that simplify workflow and ensure consistency and quality.
+
+## Translations
+- [Italiano](docs/README.it.md)
+- [Español](docs/README.es.md)
+>>>>>>> c21c06a2 (.)
