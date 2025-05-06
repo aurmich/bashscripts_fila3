@@ -1,10 +1,14 @@
 /**
+<<<<<<< HEAD
  * Configurazione Tailwind CSS per il progetto Laraxot PTVX
 <<<<<<< HEAD
 /**
  * Configurazione Tailwind CSS per il progetto
   *
 =======
+=======
+ * Configurazione Tailwind CSS per il progetto
+>>>>>>> be20527a (.)
  *
 >>>>>>> a2974b79 (.)
  * Perché: Tailwind CSS è un framework CSS utility-first che permette di costruire

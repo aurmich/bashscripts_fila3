@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Project
 
 > **Nota**: Questo documento è correlato a [Progetto](../../docs/project.md). Per una panoramica completa, consulta entrambi i documenti.
@@ -8,6 +9,8 @@
 =======
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
+=======
+>>>>>>> be20527a (.)
 # 📚 Documentazione Dettagliata degli Script
 
 ## 🔄 Script di Sincronizzazione Git
@@ -179,27 +182,18 @@
 - Identificazione dei branch obsoleti
 - Rimozione sicura
 - Backup prima dell'operazione
-# 📚 Documentazione Dettagliata degli Script
+**Uso**: `./git_delete_old_branches.sh <days>`
 
-## 🔄 Script di Sincronizzazione Git
+## 📚 Documentazione Aggiuntiva
 
-### `git_sync_org.sh`
-**Descrizione**: Sincronizza repository tra diverse organizzazioni GitHub
-**Funzionalità**:
-- Sincronizzazione automatica di repository tra organizzazioni
-- Gestione intelligente dei submodule
-- Logging dettagliato delle operazioni
-- Gestione degli errori e rollback
-**Uso**: `./git_sync_org.sh <org> <branch> [--no-confirm]`
+Per ulteriori informazioni sulla gestione dei repository e l'utilizzo degli script, consultare:
+- [Roadmap del Progetto](roadmap.md)
+- [Documentazione in Italiano](it/README.md)
+- [Risoluzione dei Conflitti](CONFLICT_RESOLUTION_BASH.md)
 
-### `git_sync_subtree.sh`
-**Descrizione**: Gestisce la sincronizzazione dei subtree Git
-**Funzionalità**:
-- Sincronizzazione automatica dei subtree
-- Gestione dei conflitti
-- Backup automatico
-**Uso**: `./git_sync_subtree.sh <subtree_path> <remote_url>`
+## ⚠️ Note Importanti
 
+<<<<<<< HEAD
 ### `git_change_org.sh`
 **Descrizione**: Cambia l'organizzazione di un repository
 **Funzionalità**:
@@ -923,3 +917,9 @@ Per ulteriori informazioni sulla gestione dei repository e l'utilizzo degli scri
 =======
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (347 linee vs 1)[0m
 >>>>>>> a2974b79 (.)
+=======
+- Tutti gli script includono controlli di sicurezza e validazione
+- È consigliato eseguire backup prima di operazioni critiche
+- Verificare sempre le modifiche in ambiente di test
+- Mantenere aggiornata la documentazione
+>>>>>>> be20527a (.)

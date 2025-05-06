@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # 🚀 Toolkit di Automazione Git
 
 
@@ -171,11 +172,11 @@ Questo progetto è sotto licenza MIT. Vedere il file [LICENSE](LICENSE) per i de
 
 [![PHPStan](https://img.shields.io/badge/PHPStan-Level%209-brightgreen.svg?style=for-the-badge&logo=php&logoColor=white)](../docs/phpstan/ANALISI_MODULI_PHPSTAN.md)
 
+=======
+>>>>>>> be20527a (.)
 # 🚀 Toolkit di Automazione Git
 
-
-
-# SaluteOra - Sistema di Gestione Salute Orale
+[![PHPStan](https://img.shields.io/badge/PHPStan-Level%209-brightgreen.svg?style=for-the-badge&logo=php&logoColor=white)](../docs/phpstan/ANALISI_MODULI_PHPSTAN.md)
 
 ## Requisiti di Sistema
 - PHP 8.2 o superiore
@@ -188,8 +189,8 @@ Questo progetto è sotto licenza MIT. Vedere il file [LICENSE](LICENSE) per i de
 
 ### 1. Clonare il Repository
 ```bash
-git clone https://github.com/your-username/saluteora.git
-cd saluteora
+git clone https://github.com/your-username/project.git
+cd project
 ```
 
 ### 2. Installare le Dipendenze PHP
@@ -214,7 +215,7 @@ Modificare il file `.env` con le credenziali del database:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=saluteora
+DB_DATABASE=project
 DB_USERNAME=root
 DB_PASSWORD=
 ```
@@ -250,14 +251,14 @@ php artisan serve
 ## Struttura del Progetto
 
 ```
-saluteora/
+project/
 ├── app/
 ├── config/
 ├── database/
 ├── Modules/
 │   ├── Core/
-│   ├── Patient/
-│   ├── Dental/
+│   ├── Module1/
+│   ├── Module2/
 │   └── Xot/
 ├── public/
 ├── resources/
@@ -276,15 +277,15 @@ saluteora/
 - Configurazione sistema
 - Funzionalità base
 
-### Patient
-- Gestione pazienti
-- Anamnesi
-- Storico visite
+### Module1
+- Funzionalità specifiche del modulo 1
+- Gestione dati
+- Interfaccia utente
 
-### Dental
-- Gestione trattamenti
-- Calendario appuntamenti
-- Documenti clinici
+### Module2
+- Funzionalità specifiche del modulo 2
+- Gestione processi
+- Integrazioni
 
 ### Xot
 - Framework base per i moduli
@@ -325,18 +326,7 @@ npm update
 - Verificare la compatibilità cross-browser
 
 ## Licenza
-Questo progetto è sotto licenza MIT. Vedere il file [LICENSE](LICENSE) per i dettagli. 
-
-
-
-
- b0f37c83 (.)
-
- b7907077 (.)
-
- b1ca4c93 (Squashed 'bashscripts/' changes from c21599d..019cc70)
-# 🚀 BashScripts Power Tools
- 80ec88ee9 (.)
+Questo progetto è sotto licenza MIT. Vedere il file [LICENSE](LICENSE) per i dettagli.
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com)
 [![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
@@ -346,7 +336,7 @@ Questo progetto è sotto licenza MIT. Vedere il file [LICENSE](LICENSE) per i de
 
 ## 🤔 Perché questo toolkit?
 
-Lo sviluppo di un progetto modulare complesso come Laraxot PTVX presenta sfide uniche:
+Lo sviluppo di un progetto modulare complesso presenta sfide uniche:
 
 - **Gestione di decine di moduli interdipendenti** che devono rimanere sincronizzati
 - **Necessità di collaborazione** tra team distribuiti su repository diversi
@@ -356,6 +346,7 @@ Lo sviluppo di un progetto modulare complesso come Laraxot PTVX presenta sfide u
 - **Supporto per l'analisi statica** con PHPStan Level 9
 
 Questo toolkit affronta queste sfide fornendo strumenti automatizzati che semplificano il flusso di lavoro e garantiscono coerenza e qualità.
+<<<<<<< HEAD
 ## 📋 Panoramica
 
 Questo toolkit è una suite completa di script Bash progettata per automatizzare e semplificare la gestione di repository Git complessi, con particolare attenzione alle strutture monorepo e alla sincronizzazione tra organizzazioni. È stato sviluppato per ottimizzare il flusso di lavoro degli sviluppatori e ridurre gli errori umani nelle operazioni Git complesse.
@@ -1071,3 +1062,5 @@ chmod +x script.sh
   <sub>Built with ❤️ by the development team</sub>
 </div> 
 >>>>>>> a2974b79 (.)
+=======
+>>>>>>> be20527a (.)
