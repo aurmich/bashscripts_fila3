@@ -658,7 +658,11 @@ chmod +x script.sh
 - Gestire gli errori
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Documentazione SaluteOra](/docs/README.md)
+=======
+- [Documentazione <nome progetto>](/docs/README.md)
+>>>>>>> 74570873 (.)
 - [Mappa Documentazione](/docs/collegamenti-documentazione.md)
 - [Script Git](/docs/git.md)
 - [Toolkit Bashscripts](/bashscripts/docs/README.md)

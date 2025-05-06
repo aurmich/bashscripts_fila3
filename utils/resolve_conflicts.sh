@@ -1,4 +1,5 @@
 #!/bin/bash
+<<<<<<< HEAD
 set -euo pipefail
 
 # Includi le librerie necessarie
@@ -167,3 +168,98 @@ main() {
 }
 
 main "$@"
+=======
+
+# Script per la risoluzione automatica dei conflitti Git
+# Questo script aiuta a identificare e risolvere i conflitti nei file
+
+# Colori per output
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+NC='\033[0m'
+
+# Funzione per il logging
+log_info() {
+    echo -e "${GREEN}[INFO]${NC} $1"
+}
+
+log_warn() {
+    echo -e "${YELLOW}[WARN]${NC} $1"
+}
+
+log_error() {
+    echo -e "${RED}[ERROR]${NC} $1"
+}
+
+# Verifica se il file esiste
+if [ ! -f "$1" ]; then
+    log_error "File non trovato: $1"
+    exit 1
+fi
+
+file="$1"
+
+# 1. Backup del file originale
+cp "$file" "${file}.bak"
+log_info "Backup creato: ${file}.bak"
+
+# 2. Rimuovi i marker di conflitto Git se presenti
+if grep -q "^<<<<<<< " "$file"; then
+    log_info "Rimozione marker di conflitto..."
+    sed -i -e '/^<<<<<<< /d' \
+           -e '/^=======/d' \
+           -e '/^>>>>>>> /d' "$file"
+    log_info "Marker di conflitto rimossi"
+fi
+
+# 3. Verifica la sintassi del file
+if [[ "$file" == *.php ]]; then
+    log_info "Verifica sintassi PHP..."
+    php -l "$file" > /dev/null
+    if [ $? -eq 0 ]; then
+        log_info "Sintassi PHP valida"
+    else
+        log_error "Errori di sintassi PHP trovati"
+        exit 1
+    fi
+fi
+
+# 4. Verifica la formattazione
+if [[ "$file" == *.php ]]; then
+    log_info "Verifica formattazione PHP..."
+    php-cs-fixer fix --dry-run --diff "$file" > /dev/null
+    if [ $? -eq 0 ]; then
+        log_info "Formattazione PHP valida"
+    else
+        log_warn "Problemi di formattazione PHP trovati"
+    fi
+fi
+
+# 5. Verifica i test
+if [ -f "phpunit.xml" ]; then
+    log_info "Esecuzione test..."
+    php artisan test --filter="$(basename "$file")" > /dev/null
+    if [ $? -eq 0 ]; then
+        log_info "Test passati"
+    else
+        log_warn "Test falliti"
+    fi
+fi
+
+log_info "Risoluzione conflitti completata per: $file"
+
+# 6. Trova altri file con conflitti
+log_info "Ricerca altri file con conflitti..."
+conflict_files=$(find . -type f -not -path "*/\.*" \
+    -not -path "*/vendor/*" \
+    -not -path "*/node_modules/*" \
+    -exec grep -l "<<<<<<< " {} \;)
+
+if [ -n "$conflict_files" ]; then
+    log_warn "Altri file con conflitti trovati:"
+    echo "$conflict_files"
+else
+    log_info "Nessun altro file con conflitti trovato"
+fi
+>>>>>>> 74570873 (.)
