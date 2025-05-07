@@ -204,12 +204,9 @@ sudo update-alternatives --config php
 find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
 find . -type f -name "*:Zone.Identifier" -exec rm -f {} +
 
-<<<<<<< HEAD
 
-=======
 sudo chown -R $USER:$USER storage bootstrap/cache
 chmod -R ug+rwX storage bootstrap/cache
->>>>>>> 6410d4f (.)
 
 sudo update-alternatives --config php
 
