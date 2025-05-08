@@ -5,6 +5,8 @@
 
 public static function form\(Form \$form\): Form\s*\{\s*return \$form\s*->schema\(\[\s*([\s\S]*?)\s*\]\);\s*\}
 
+<<<<<<< HEAD
+=======
 
 
 public static function getFormSchema(): array
@@ -19,6 +21,7 @@ public static function getFormSchema(): array
 
 public static function table\(Table \$table\): Table\s*\{[\s\S]*?\n\s*\}
 
+>>>>>>> b99ed1f1 (.)
 <<<<<<< HEAD
 =======
 
