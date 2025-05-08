@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Script di Risoluzione Automatica dei Conflitti Git
 
 ## Descrizione

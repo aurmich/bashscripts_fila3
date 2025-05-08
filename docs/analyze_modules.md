@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Script analyze_modules.sh
 
 ## Descrizione

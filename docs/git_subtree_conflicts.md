@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Risoluzione dei Conflitti negli Script Git Subtree
 
 ## Problema

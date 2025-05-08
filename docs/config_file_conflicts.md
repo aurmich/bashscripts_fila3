@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Risoluzione dei Conflitti nei File di Configurazione
 
 ## Problema

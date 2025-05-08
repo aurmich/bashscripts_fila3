@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Risoluzione Conflitti negli Script Bash
 
 ## Problema

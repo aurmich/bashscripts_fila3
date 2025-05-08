@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Risoluzione Conflitti Git - Modulo Predict
 
 ## File Modificati

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Script Git
 
 Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.

@@ -21,6 +21,9 @@ desktop.ini
 *.swo
 *.bak
 *.orig
+*.old
+*.old1
+*.old2
 *_old
 *.rej
 ~$*

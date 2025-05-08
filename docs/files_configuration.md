@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # File di Configurazione
 
 Questa documentazione descrive i file di configurazione utilizzati nel progetto.
