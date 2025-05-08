@@ -22,6 +22,7 @@
 📆 2025-05-05 10:40:29 - ✅ Configurazione git completata
 📆 2025-05-05 10:46:35 - 🔧 Configurazione git di base...
 📆 2025-05-05 10:46:35 - ✅ Configurazione git completata
+<<<<<<< HEAD
 =======
 📆 2025-05-05 22:54:49 - 🔧 Configurazione git di base...
 📆 2025-05-05 22:54:49 - ✅ Configurazione git completata
@@ -184,3 +185,7 @@
 >>>>>>> deb82dd1 (.)
 [0;34mℹ️ [2025-05-07 21:04:40] Configurazione avanzata git...[0m
 [0;32m✅ [2025-05-07 21:04:40] Configurazione git completata con successo[0m
+=======
+[0;34mℹ️ [2025-05-08 09:20:57] Configurazione avanzata git...[0m
+[0;32m✅ [2025-05-08 09:20:57] Configurazione git completata con successo[0m
+>>>>>>> 5338a990 (.)

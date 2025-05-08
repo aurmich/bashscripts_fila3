@@ -19,6 +19,23 @@ public static function getFormSchema(): array
 
 public static function table\(Table \$table\): Table\s*\{[\s\S]*?\n\s*\}
 
+<<<<<<< HEAD
+=======
+
+
+public static function getFormSchema(): array
+    {
+        return [
+            $1
+        ]; 
+    }
+
+---------------------------------------------
+
+
+public static function table\(Table \$table\): Table\s*\{[\s\S]*?\n\s*\}
+
+>>>>>>> 5338a990 (.)
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco HEAD (16 linee vs 1)[0m
 
 ---
