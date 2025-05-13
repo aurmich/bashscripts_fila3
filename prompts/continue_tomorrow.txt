@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Prompt per Continuazione Lavoro - Email Multilingua e Aggiornamento Modelli Laravel 12
+# Prompt per Continuazione Lavoro - Email Multilingua e Aggiornamento Moduli Laravel
 
 ## Task Prioritari - Modulo Notify
 
@@ -31,70 +29,34 @@
 - **Metodi deprecati:** Non usare getListTable* ma getTable* nei componenti Filament
 - **Filament Cards:** Usa Forms\Components\Section::make('') invece di Forms\Components\Card::make()
 - **Convention over Configuration:** Segui le convenzioni stabilite per namespace, directory e naming
-=======
-# Prompt Unificato per Sviluppo Modulare Laravel
-=======
-# Prompt per Continuazione Lavoro - Email Multilingua e Aggiornamento Modelli Laravel 12
->>>>>>> 4d4d6cb7 (.)
 
-## Task Prioritari - Modulo Notify
+## Struttura Moduli
 
-1. **Correzione Errori:**
-   - Correggi l'errore di sintassi nel metodo sendEmail() nel file SendSpatieEmail.php (manca -> tra locale() e send())
-   - Verifica e correggi eventuali altri errori simili nel modulo
-
-2. **Aggiornamento Modelli per Laravel 12:**
-   - Converti i modelli che ancora usano proprietà protette ($casts, $fillable, ecc.) ai nuovi metodi in Laravel 12
-   - Implementa protected function casts(): array, fillable(): array, ecc.
-   - Assicurati che la type-hinting sia corretta nei docblock e nei return types
-
-3. **Implementazione Traduzioni:**
-   - Implementa best practices per gestione traduzioni mancanti (documentate in /Modules/Lang/docs/)
-   - Migliora la gestione dei fallback per attributi traducibili
-   - Centralizza la configurazione di traduzione in TranslatableServiceProvider
-
-4. **Test e Documentazione:**
-   - Crea test unitari per verificare il comportamento dei modelli traducibili
-   - Documenta le modifiche seguendo le convenzioni di naming (README.md maiuscolo, altri file minuscolo)
-   - Assicurati che la documentazione sia indipendente dal contesto specifico (no riferimenti al nome del progetto)
-
-## Regole Fondamentali
-
-<<<<<<< HEAD
-#### 2. UI
+### 1. UI
 - Gestisce componenti interfaccia
 - Estende Filament con componenti custom
 - Implementa temi e layout
 - Directory: laravel/Modules/UI
 
-#### 3. User
+### 2. User
 - Gestione utenti e autenticazione
 - Ruoli e permessi (Spatie)
 - Profili utente
 - Directory: laravel/Modules/User
->>>>>>> 7893bf8 (.)
-=======
-- **Modelli:** Mai estendere Model direttamente, usa sempre BaseModel del modulo
-- **Filament:** Mai usare ->label(), ->placeholder() o ->helperText() (gestiti da LangServiceProvider)
-- **Routing:** Non modificare route/web.php per funzionalità frontend (usa Volt+Folio)
-- **Metodi deprecati:** Non usare getListTable* ma getTable* nei componenti Filament
-- **Filament Cards:** Usa Forms\Components\Section::make('') invece di Forms\Components\Card::make()
-- **Convention over Configuration:** Segui le convenzioni stabilite per namespace, directory e naming
->>>>>>> 4d4d6cb7 (.)
 
-#### 4. Tenant
+### 3. Tenant
 - Gestione multi-tenant
 - Configurazioni per tenant
 - Isolamento dati
 - Directory: laravel/Modules/Tenant
 
-#### 5. Notify
+### 4. Notify
 - Sistema di notifiche
 - Template e-mail
 - Gestione canali
 - Directory: laravel/Modules/Notify
 
-#### 6. Patient
+### 5. Patient
 - Gestione pazienti
 - Cartelle cliniche
 - Appuntamenti

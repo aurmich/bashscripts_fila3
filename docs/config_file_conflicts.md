@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 4d4d6cb7 (.)
 # Risoluzione dei Conflitti nei File di Configurazione
 
 ## Problema
@@ -402,8 +398,6 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione Rector](https://getrector.org/documentation)
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
 >>>>>>> f000df5 (.)
-<<<<<<< HEAD
-=======
 # Risoluzione dei Conflitti nei File di Configurazione
 
 ## Problema
@@ -503,7 +497,6 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione PostCSS](https://postcss.org/)
 - [Documentazione Rector](https://getrector.org/documentation)
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
->>>>>>> 7893bf8 (.)
 =======
 >>>>>>> 4d4d6cb7 (.)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md) 
