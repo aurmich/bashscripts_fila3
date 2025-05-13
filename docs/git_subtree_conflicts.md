@@ -123,24 +123,13 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 2. **Documentazione**: Aggiornare la documentazione con le modifiche apportate
 3. **Segnalazioni agli sviluppatori**: Informare gli sviluppatori delle modifiche alla firma dei metodi
 
-## Collegamenti
+## Best Practice
 
-- [Documentazione Git Subtree](https://git-scm.com/book/en/v2/Git-Tools-Advanced-Merging)
-- [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
-- [Documentazione degli Script Git](git_scripts.md)
-- [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
-# Risoluzione dei Conflitti negli Script Git Subtree
+- Automatizzare ove possibile la gestione dei subtree per ridurre errori manuali.
+- Integrare test e validazioni automatiche negli script di gestione subtree.
+- Aggiornare periodicamente la documentazione per riflettere le modifiche agli script.
+- Mantenere sempre una copia di backup degli script prima di risolvere conflitti complessi.
 
-## Problema
-
-Durante lo sviluppo del progetto sono stati identificati diversi script di gestione git subtree con conflitti di merge non risolti. Questi script sono fondamentali per la corretta gestione dei sottoprogetti e la sincronizzazione tra repository. I conflitti presenti impediscono il corretto funzionamento degli script e potrebbero causare problemi di integrità nel repository.
-
-## Script con Conflitti Identificati
-
-I seguenti script relativi ai git subtree contengono marker di conflitto Git:
-
-1. `bashscripts/git_pull_subtree_org.sh` - Script per pull da repository remoti di organizzazione
-2. `bashscripts/git_pull_subtrees.sh.old` - Versione precedente dello script per pull di tutti i subtree
 3. `bashscripts/git_sync_subtree.sh.old` - Versione precedente dello script per sincronizzazione dei subtree
 
 ## Analisi dei Conflitti

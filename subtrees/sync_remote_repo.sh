@@ -36,11 +36,13 @@ for ((i=0; i<total; i++)); do
     #fi
     echo "Submodule $i: 📂 path: $path 🌐 URL: $url 🔑 ORG: $ORG"
     cd "$path"
+    
     # Controllo se .git è un file e non una directory
     if [ -f ".git" ]; then
         echo "Trovato .git come file in $path, lo elimino..."
         rm -f .git
     fi
+    
     # Verifica se .git esiste prima di inizializzare
     if [ ! -d ".git" ]; then
         echo "Inizializzazione repository Git in $path..."
@@ -53,13 +55,14 @@ for ((i=0; i<total; i++)); do
     git checkout "$BRANCH" -- || git checkout -b "$BRANCH"
     git remote add "$ORG" "$url"
     git_config_setup
+    git stash || echo "🔄 Non ci sono modifiche da salvare"
     dummy_push "$ORG" "$BRANCH" "."
 
     git fetch "$ORG" "$BRANCH" --depth=1
     git pull "$ORG" "$BRANCH" --autostash  --depth=1
     git merge "$ORG/$BRANCH" --allow-unrelated-histories
 
-     # Loop per gestire eventuali conflitti
+    # Loop per gestire eventuali conflitti
     while ! git rebase --continue 2>/dev/null; do
         if git diff --name-only --diff-filter=U | grep .; then
             echo "⚠️  Conflitti trovati. Li sistemiamo in automatico (accettando i tuoi cambiamenti)..."
@@ -69,7 +72,7 @@ for ((i=0; i<total; i++)); do
         fi
         dummy_push "$ORG" "$BRANCH" "."
     done
-
+    git stash apply || echo "🔄 Non ci sono modifiche da ripristinare"
     # Push finale
     dummy_push "$ORG" "$BRANCH" "."
 
