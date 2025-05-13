@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Risoluzione Conflitti Git - Modulo Predict
 
 ## File Modificati
@@ -75,7 +74,6 @@ Tutti i file modificati hanno un backup con timestamp nel formato:
 1. Eseguire `composer dump-autoload` per aggiornare l'autoloader
 2. Eseguire `php artisan config:clear` per pulire la cache
 3. Verificare che tutte le risorse Filament siano registrate correttamente
-=======
 # Risoluzione Conflitti Git - Modulo Predict
 
 ## File Modificati
@@ -152,7 +150,6 @@ Tutti i file modificati hanno un backup con timestamp nel formato:
 1. Eseguire `composer dump-autoload` per aggiornare l'autoloader
 2. Eseguire `php artisan config:clear` per pulire la cache
 3. Verificare che tutte le risorse Filament siano registrate correttamente
->>>>>>> b99ed1f1 (.)
 =======
 # Risoluzione Conflitti Git - Modulo Predict
 

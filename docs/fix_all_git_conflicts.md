@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Script di Risoluzione Automatica dei Conflitti Git
 
 ## Descrizione
@@ -50,7 +49,6 @@ Lo script fornisce feedback colorato per:
 
 ## Limitazioni
 - Non gestisce conflitti complessi che potrebbero richiedere merge manuale
-=======
 # Script di Risoluzione Automatica dei Conflitti Git
 
 ## Descrizione
@@ -102,7 +100,6 @@ Lo script fornisce feedback colorato per:
 
 ## Limitazioni
 - Non gestisce conflitti complessi che potrebbero richiedere merge manuale
->>>>>>> b99ed1f1 (.)
 =======
 # Script di Risoluzione Automatica dei Conflitti Git
 

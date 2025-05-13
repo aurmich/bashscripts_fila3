@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Script analyze_modules.sh
 
 ## Descrizione
@@ -80,7 +79,6 @@ Modules/<NomeModulo>/docs/phpstan/
    - Directory non trovata
    - Permessi insufficienti
    - PHPStan non installato
-=======
 # Script analyze_modules.sh
 
 ## Descrizione
@@ -162,7 +160,6 @@ Modules/<NomeModulo>/docs/phpstan/
    - Directory non trovata
    - Permessi insufficienti
    - PHPStan non installato
->>>>>>> b99ed1f1 (.)
 =======
 # Script analyze_modules.sh
 

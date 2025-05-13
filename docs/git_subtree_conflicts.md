@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Risoluzione dei Conflitti negli Script Git Subtree
 
 ## Problema
@@ -130,7 +129,6 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
 - [Documentazione degli Script Git](git_scripts.md)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
-=======
 # Risoluzione dei Conflitti negli Script Git Subtree
 
 ## Problema
@@ -262,7 +260,6 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
 - [Documentazione degli Script Git](git_scripts.md)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
->>>>>>> b99ed1f1 (.)
 =======
 # Risoluzione dei Conflitti negli Script Git Subtree
 
