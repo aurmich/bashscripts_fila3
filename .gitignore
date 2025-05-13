@@ -21,9 +21,12 @@ desktop.ini
 *.swo
 *.bak
 *.orig
+<<<<<<< HEAD
 *.old
 *.old1
 *.old2
+=======
+>>>>>>> f000df5 (.)
 *_old
 *.rej
 ~$*
