@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4d4d6cb7 (.)
 # Script analyze_modules.sh
 
 ## Descrizione
@@ -327,6 +330,7 @@ Modules/<NomeModulo>/docs/phpstan/
    - Permessi insufficienti
    - PHPStan non installato
 >>>>>>> f000df5 (.)
+<<<<<<< HEAD
 =======
 # Script analyze_modules.sh
 
@@ -410,4 +414,6 @@ Modules/<NomeModulo>/docs/phpstan/
    - Permessi insufficienti
    - PHPStan non installato
 >>>>>>> 7893bf8 (.)
+=======
+>>>>>>> 4d4d6cb7 (.)
    - Configurazione PHPStan errata 

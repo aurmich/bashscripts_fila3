@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4d4d6cb7 (.)
 # Script di Risoluzione Automatica dei Conflitti Git
 
 ## Descrizione
@@ -207,6 +210,7 @@ Lo script fornisce feedback colorato per:
 ## Limitazioni
 - Non gestisce conflitti complessi che potrebbero richiedere merge manuale
 >>>>>>> f000df5 (.)
+<<<<<<< HEAD
 =======
 # Script di Risoluzione Automatica dei Conflitti Git
 
@@ -260,4 +264,6 @@ Lo script fornisce feedback colorato per:
 ## Limitazioni
 - Non gestisce conflitti complessi che potrebbero richiedere merge manuale
 >>>>>>> 7893bf8 (.)
+=======
+>>>>>>> 4d4d6cb7 (.)
 - Mantiene sempre la versione HEAD, che potrebbe non essere sempre la scelta desiderata 

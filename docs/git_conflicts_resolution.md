@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4d4d6cb7 (.)
 # Risoluzione Conflitti Git - Modulo Predict
 
 ## File Modificati
@@ -307,6 +310,7 @@ Tutti i file modificati hanno un backup con timestamp nel formato:
 2. Eseguire `php artisan config:clear` per pulire la cache
 3. Verificare che tutte le risorse Filament siano registrate correttamente
 >>>>>>> f000df5 (.)
+<<<<<<< HEAD
 =======
 # Risoluzione Conflitti Git - Modulo Predict
 
@@ -385,4 +389,6 @@ Tutti i file modificati hanno un backup con timestamp nel formato:
 2. Eseguire `php artisan config:clear` per pulire la cache
 3. Verificare che tutte le risorse Filament siano registrate correttamente
 >>>>>>> 7893bf8 (.)
+=======
+>>>>>>> 4d4d6cb7 (.)
 4. Testare il modulo in ambiente di sviluppo 

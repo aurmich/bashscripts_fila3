@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4d4d6cb7 (.)
 # Risoluzione Conflitti negli Script Bash
 
 ## Problema
@@ -623,6 +626,7 @@ I seguenti file sono stati recentemente risolti:
 - `fix_merge_conflicts.sh`: Corretta la logica di individuazione e rimozione dei marker di conflitto per garantire la pulizia completa di tutti i tre tipi di marker 
 
 >>>>>>> f000df5 (.)
+<<<<<<< HEAD
 =======
 # Risoluzione Conflitti negli Script Bash
 
@@ -780,4 +784,6 @@ I seguenti file sono stati recentemente risolti:
 - `fix_merge_conflicts.sh`: Corretta la logica di individuazione e rimozione dei marker di conflitto per garantire la pulizia completa di tutti i tre tipi di marker 
 
 >>>>>>> 7893bf8 (.)
+=======
+>>>>>>> 4d4d6cb7 (.)
 Questa documentazione è collegata bidirezionalmente con la [documentazione principale sulla risoluzione dei conflitti](../../docs/bashscripts_conflict_resolution.md) nella root del progetto. 
