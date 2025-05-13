@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Prompt per Continuazione Lavoro - Email Multilingua e Aggiornamento Modelli Laravel 12
 
 ## Task Prioritari - Modulo Notify
@@ -29,6 +30,46 @@
 - **Metodi deprecati:** Non usare getListTable* ma getTable* nei componenti Filament
 - **Filament Cards:** Usa Forms\Components\Section::make('') invece di Forms\Components\Card::make()
 - **Convention over Configuration:** Segui le convenzioni stabilite per namespace, directory e naming
+=======
+# Prompt Unificato per Sviluppo Modulare Laravel
+
+## Istruzioni per Continuazione Lavoro
+
+- Riprendi da dove hai lasciato sul progetto, applicando tutte le regole di progetto e le ultime convenzioni a tutti i moduli: BaseModel, override inutili, array associativi, docs collegati, ecc.
+- Controlla che nessun model estenda direttamente Model, ma solo BaseModel.
+- Applica sempre le regole: niente override inutili, docs e bidirezionalità aggiornata, nessuna rotta custom in web.php dei moduli Filament/Volt.
+- Continua a lavorare su tutte le entità e i moduli seguendo le ultime best practice documentate.
+- Prima di ogni refactor, verifica se la regola è già documentata in docs e memory.
+- Aggiorna sempre la documentazione e le memories se cambi una regola o una convenzione.
+- Se trovi un errore già visto (es: estensione Model diretta), correggi e documenta subito.
+
+## Architettura Modulare
+
+### Struttura Base
+- Directory Base: laravel/Modules/
+- Ogni modulo segue la stessa struttura e pattern
+- Modulo Xot fornisce le classi base per tutti gli altri moduli
+
+### Moduli Principali
+
+#### 1. Xot (Core)
+- Fornisce tutte le classi base (XotBase*)
+- Gestisce la configurazione globale
+- Implementa i pattern fondamentali
+- Directory: laravel/Modules/Xot
+
+#### 2. UI
+- Gestisce componenti interfaccia
+- Estende Filament con componenti custom
+- Implementa temi e layout
+- Directory: laravel/Modules/UI
+
+#### 3. User
+- Gestione utenti e autenticazione
+- Ruoli e permessi (Spatie)
+- Profili utente
+- Directory: laravel/Modules/User
+>>>>>>> 7893bf8 (.)
 
 #### 4. Tenant
 - Gestione multi-tenant

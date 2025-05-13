@@ -21,9 +21,12 @@ desktop.ini
 *.swo
 *.bak
 *.orig
+<<<<<<< HEAD
 *.old
 *.old1
 *.old2
+=======
+>>>>>>> 7893bf8 (.)
 *_old
 *.rej
 ~$*
