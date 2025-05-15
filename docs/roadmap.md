@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Roadmap
 
 > **Nota**: Questo documento è correlato a [Roadmap](../../docs/roadmap.md). Per una panoramica completa, consulta entrambi i documenti.
@@ -8,8 +7,6 @@
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
 
-=======
->>>>>>> 53079ab (.)
 # 🗺️ Roadmap del Progetto
 
 ## 📋 Indice delle Fasi
@@ -129,7 +126,6 @@
 - [Fase 6: Monitoraggio](./roadmap/06_monitoring.md)
 - [Fase 7: AI Integration](./roadmap/07_ai_integration.md)
 - [Fase 8: Cloud Integration](./roadmap/08_cloud_integration.md)
-<<<<<<< HEAD
 # 🗺️ Roadmap del Progetto
 
 ## 📋 Indice delle Fasi
@@ -250,13 +246,10 @@
 - [Fase 7: AI Integration](./roadmap/07_ai_integration.md)
 - [Fase 8: Cloud Integration](./roadmap/08_cloud_integration.md)
 
-=======
->>>>>>> 53079ab (.)
 
 - [Fase 9: UI/UX](./roadmap/09_ui_ux.md) 
 
  43df3e0 (.)
-<<<<<<< HEAD
 aurmich/dev
 
 # Roadmap Progetto
@@ -284,5 +277,3 @@ aurmich/dev
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (243 linee vs 1)[0m
 
 
-=======
->>>>>>> 53079ab (.)

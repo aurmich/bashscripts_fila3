@@ -43,13 +43,6 @@ La risoluzione manuale dei conflitti negli script bash è particolarmente delica
 ### Conflitto in funzione di logging
 
 ```bash
-<<<<<<< HEAD
-=======
-
-
-
- 9b65b0d (.)
->>>>>>> 53079ab (.)
 # Versione avanzata con livelli di log
 log() {
     local level="$1"
@@ -65,24 +58,11 @@ log() {
     esac
 }
 
-<<<<<<< HEAD
-=======
-
-
- 9b65b0d (.)
->>>>>>> 53079ab (.)
 # Versione semplice
 log() {
     local message="$1"
     echo "📆 $(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$LOG_FILE"
 }
-<<<<<<< HEAD
-=======
-
- feature-branch
-
- 9b65b0d (.)
->>>>>>> 53079ab (.)
 ```
 
 **Soluzione ottimale**: Integrare entrambe le versioni mantenendo la compatibilità con il codice esistente.
@@ -116,13 +96,6 @@ log() {
 ### Conflitto in parametri di script
 
 ```bash
-<<<<<<< HEAD
-=======
-
-
-
- 9b65b0d (.)
->>>>>>> 53079ab (.)
 # Versione che richiede 2 parametri
 if [ $# -ne 2 ]; then
     echo "Usage: $0 <path> <remote_repo>"
@@ -132,12 +105,6 @@ fi
 LOCAL_PATH="$1"
 REMOTE_REPO="$2"
 
-<<<<<<< HEAD
-=======
-
-
- 9b65b0d (.)
->>>>>>> 53079ab (.)
 # Versione che richiede 3 parametri
 if [ $# -ne 3 ]; then
     echo "Usage: $0 <path> <remote_repo> <branch>"
@@ -147,13 +114,6 @@ fi
 LOCAL_PATH="$1"
 REMOTE_REPO="$2"
 BRANCH="$3"
-<<<<<<< HEAD
-=======
-
- feature-branch
-
- 9b65b0d (.)
->>>>>>> 53079ab (.)
 ```
 
 **Soluzione ottimale**: Valutare quale approccio è più flessibile e coerente con il resto del sistema. Se il branch è opzionale, rendere il terzo parametro opzionale con un valore predefinito.

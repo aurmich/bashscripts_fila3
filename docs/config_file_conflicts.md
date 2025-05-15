@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -8,6 +9,8 @@
 =======
 >>>>>>> 53079ab (.)
 >>>>>>> 7404b54 (.)
+=======
+>>>>>>> Stashed changes
 # Risoluzione dei Conflitti nei File di Configurazione
 
 ## Problema
@@ -107,7 +110,6 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione PostCSS](https://postcss.org/)
 - [Documentazione Rector](https://getrector.org/documentation)
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
-<<<<<<< HEAD
 # Risoluzione dei Conflitti nei File di Configurazione
 
 ## Problema
@@ -510,6 +512,7 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
 =======
 >>>>>>> 4d4d6cb7 (.)
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< Updated upstream
@@ -619,4 +622,6 @@ I seguenti file di configurazione sono stati recentemente risolti:
 =======
 >>>>>>> 53079ab (.)
 >>>>>>> 7404b54 (.)
+=======
+>>>>>>> Stashed changes
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md) 

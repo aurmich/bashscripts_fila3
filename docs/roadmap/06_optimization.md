@@ -1,16 +1,11 @@
 
 
 
-<<<<<<< HEAD
 
 
 [0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
  43df3e0 (.)
 aurmich/dev
-=======
-[0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
- 43df3e0 (.)
->>>>>>> 53079ab (.)
 # ⚡ Fase 6: Ottimizzazione
 
 ## 📋 Panoramica
@@ -21,15 +16,10 @@ Questa fase si concentra sull'ottimizzazione e il miglioramento continuo del sis
 - [Documentazione Script](../project.md)
 - [Fase 5: Monitoraggio](../roadmap/05_monitoring.md)
 
-<<<<<<< HEAD
 
 - [Fase 7: Documentazione](../roadmap/07_documentation.md) 
 
 aurmich/dev
-=======
-- [Fase 7: Documentazione](../roadmap/07_documentation.md) 
-
->>>>>>> 53079ab (.)
 # ⚡ Fase 6: Ottimizzazione
 
 ## 📋 Panoramica
@@ -40,13 +30,9 @@ Questa fase si concentra sull'ottimizzazione e il miglioramento continuo del sis
 - [Documentazione Script](../project.md)
 - [Fase 5: Monitoraggio](../roadmap/05_monitoring.md)
 
-<<<<<<< HEAD
 
 [0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
 aurmich/dev
-=======
-[0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
->>>>>>> 53079ab (.)
 # ⚡ Fase 6: Ottimizzazione
 
 ## 📋 Panoramica
@@ -69,10 +55,7 @@ Questa fase si concentra sull'ottimizzazione e il miglioramento continuo del sis
 - [Fase 5: Monitoraggio](../roadmap/05_monitoring.md)
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 53079ab (.)
 # ⚡ Fase 6: Ottimizzazione
 
 ## 📋 Panoramica
@@ -85,7 +68,6 @@ Questa fase si concentra sull'ottimizzazione e il miglioramento continuo del sis
 
 [0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco HEAD (23 linee vs 1)[0m
  43df3e0 (.)
-<<<<<<< HEAD
 aurmich/dev
 
 ## Collegamenti tra versioni di 06_optimization.md
@@ -93,5 +75,3 @@ aurmich/dev
 * [06_optimization.md](docs/roadmap/06_optimization.md)
 
 
-=======
->>>>>>> 53079ab (.)

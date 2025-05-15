@@ -1,16 +1,11 @@
 
 
 
-<<<<<<< HEAD
 
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
  43df3e0 (.)
 aurmich/dev
-=======
-[0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
- 43df3e0 (.)
->>>>>>> 53079ab (.)
 # 📱 Fase 9: UI/UX
 
 ## 📋 Panoramica
@@ -135,15 +130,10 @@ Questa fase si concentra sullo sviluppo di interfacce utente moderne e intuitive
 ### Q4 2029
 - Deployment produzione
 
-<<<<<<< HEAD
 
 - Monitoraggio utilizzo 
 
 aurmich/dev
-=======
-- Monitoraggio utilizzo 
-
->>>>>>> 53079ab (.)
 - Monitoraggio utilizzo
 # 📱 Fase 9: UI/UX
 
@@ -270,13 +260,9 @@ Questa fase si concentra sullo sviluppo di interfacce utente moderne e intuitive
 - Deployment produzione
 - Monitoraggio utilizzo
 
-<<<<<<< HEAD
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
 aurmich/dev
-=======
-[0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
->>>>>>> 53079ab (.)
 # 📱 Fase 9: UI/UX
 
 ## 📋 Panoramica
@@ -529,10 +515,7 @@ Questa fase si concentra sullo sviluppo di interfacce utente moderne e intuitive
 - Monitoraggio utilizzo
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 53079ab (.)
 # 📱 Fase 9: UI/UX
 
 ## 📋 Panoramica
@@ -660,7 +643,6 @@ Questa fase si concentra sullo sviluppo di interfacce utente moderne e intuitive
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (253 linee vs 1)[0m
  43df3e0 (.)
-<<<<<<< HEAD
 aurmich/dev
 
 ## Collegamenti tra versioni di 09_ui_ux.md
@@ -668,5 +650,3 @@ aurmich/dev
 * [09_ui_ux.md](docs/roadmap/09_ui_ux.md)
 
 
-=======
->>>>>>> 53079ab (.)

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -8,6 +9,8 @@
 =======
 >>>>>>> 53079ab (.)
 >>>>>>> 7404b54 (.)
+=======
+>>>>>>> Stashed changes
 # Script analyze_modules.sh
 
 ## Descrizione
@@ -89,7 +92,6 @@ Modules/<NomeModulo>/docs/phpstan/
    - Directory non trovata
    - Permessi insufficienti
    - PHPStan non installato
-<<<<<<< HEAD
 
 ## Gestione dei Conflitti
 In caso di conflitti durante l'analisi dei moduli:
@@ -101,6 +103,7 @@ In caso di conflitti durante l'analisi dei moduli:
 ## Collegamenti
 - [Documentazione PHPStan](../../docs/phpstan/PHPSTAN_WORKFLOW.md)
 - [Linee Guida Moduli](../../docs/MODULES.md)
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 - [Risoluzione Conflitti](../../docs/development/CONFLICT_RESOLUTION.md)
 =======
@@ -197,3 +200,6 @@ Modules/<NomeModulo>/docs/phpstan/
    - Configurazione PHPStan errata 
 >>>>>>> 53079ab (.)
 >>>>>>> 7404b54 (.)
+=======
+- [Risoluzione Conflitti](../../docs/development/CONFLICT_RESOLUTION.md)
+>>>>>>> Stashed changes

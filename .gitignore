@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ───────────────────────────────────────────────────────
 # Sistema operativo / File nascosti e metadata
 # ───────────────────────────────────────────────────────
@@ -114,35 +113,3 @@ junit.xml
 test-output/
 .nyc_output/
 coverage/
-=======
-# Sistema operativo
-.fuse_hidden*
-.fuse_hidden**.lock
-**/*.Zone.Identifier
-*:Zone.Identifier
-
-# File temporanei e cache
-*.cache
-.php-cs-fixer.cache
-.git-rewrite
-.git-blame-ignore-revs
-cache/
-docs/cache/
-
-# Dipendenze e pacchetti
-## Node.js
-node_modules/
-/node_modules/
-package-lock.json
-
-## Composer
-vendor/
-*.lock
-*.phar
-
-# Build e output
-build/
-
-# Eseguibili
-*.exe
->>>>>>> 53079ab (.)

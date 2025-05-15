@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -6,6 +7,8 @@
 =======
 >>>>>>> Stashed changes
 >>>>>>> 7404b54 (.)
+=======
+>>>>>>> Stashed changes
 # Risoluzione dei Conflitti negli Script Git Subtree
 
 ## Problema
@@ -258,8 +261,6 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione degli Script Git](git_scripts.md)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
 =======
-=======
->>>>>>> 53079ab (.)
 # Risoluzione dei Conflitti negli Script Git Subtree
 
 ## Problema
@@ -391,7 +392,6 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
 - [Documentazione degli Script Git](git_scripts.md)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
-<<<<<<< HEAD
 >>>>>>> 5338a990 (.)
 =======
 # Risoluzione dei Conflitti negli Script Git Subtree
@@ -659,6 +659,7 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
 =======
 >>>>>>> 4d4d6cb7 (.)
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 - [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md) 
 =======
@@ -803,3 +804,6 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md) 
 >>>>>>> 53079ab (.)
 >>>>>>> 7404b54 (.)
+=======
+- [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md) 
+>>>>>>> Stashed changes

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -8,6 +9,8 @@
 =======
 >>>>>>> 53079ab (.)
 >>>>>>> 7404b54 (.)
+=======
+>>>>>>> Stashed changes
 # Script di Verifica della Qualità del Codice
 
 Questa documentazione descrive gli script utilizzati per verificare e migliorare la qualità del codice nel progetto.
@@ -65,7 +68,6 @@ XotBaseResource Classes Form Schema Check
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 
-<<<<<<< HEAD
 # Script di Verifica della Qualità del Codice
 
 Questa documentazione descrive gli script utilizzati per verificare e migliorare la qualità del codice nel progetto.
@@ -300,6 +302,7 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 
 =======
 >>>>>>> 4d4d6cb7 (.)
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 =======
@@ -366,4 +369,6 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 =======
 >>>>>>> 53079ab (.)
 >>>>>>> 7404b54 (.)
+=======
+>>>>>>> Stashed changes
 ### phpstan_docs_generator.sh 
