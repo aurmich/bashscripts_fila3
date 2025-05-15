@@ -55,7 +55,7 @@ for ((i=0; i<total; i++)); do
     git checkout "$BRANCH" -- || git checkout -b "$BRANCH"
     git remote add "$ORG" "$url"
     git_config_setup
-    git stash || echo "🔄 Non ci sono modifiche da salvare"
+    #git stash || echo "🔄 Non ci sono modifiche da salvare"
     dummy_push "$ORG" "$BRANCH" "."
 
     git fetch "$ORG" "$BRANCH" --depth=1
@@ -72,7 +72,7 @@ for ((i=0; i<total; i++)); do
         fi
         dummy_push "$ORG" "$BRANCH" "."
     done
-    git stash apply || echo "🔄 Non ci sono modifiche da ripristinare"
+    #git stash apply || echo "🔄 Non ci sono modifiche da ripristinare"
     # Push finale
     dummy_push "$ORG" "$BRANCH" "."
 
