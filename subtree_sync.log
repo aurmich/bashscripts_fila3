@@ -386,4 +386,9 @@
 =======
 📆 2025-04-22 19:19:15 - 🔧 Configurazione git di base...
 📆 2025-04-22 19:19:15 - ✅ Configurazione git completata
+<<<<<<< HEAD
 >>>>>>> 9e6997fb (fix: auto resolve conflict)
+=======
+📆 2025-04-22 21:10:06 - 🔧 Configurazione git di base...
+📆 2025-04-22 21:10:06 - ✅ Configurazione git completata
+>>>>>>> 2cea9ae4 (.)
