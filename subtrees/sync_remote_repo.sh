@@ -77,4 +77,8 @@ for ((i=0; i<total; i++)); do
     dummy_push "$ORG" "$BRANCH" "."
 
     cd "$curr_dir"
+<<<<<<< HEAD
 done
+=======
+done
+>>>>>>> 3a208a9 (.)
