@@ -221,9 +221,14 @@
 [0;32m✅ [2025-05-13 16:42:09] Configurazione git completata con successo[0m
 [0;34mℹ️ [2025-05-13 16:46:23] Configurazione avanzata git...[0m
 [0;32m✅ [2025-05-13 16:46:23] Configurazione git completata con successo[0m
+<<<<<<< HEAD
 [0;34mℹ️ [2025-05-13 20:52:26] Configurazione avanzata git...[0m
 [0;32m✅ [2025-05-13 20:52:26] Configurazione git completata con successo[0m
 =======
 [0;34mℹ️ [2025-05-13 20:55:45] Configurazione avanzata git...[0m
 [0;32m✅ [2025-05-13 20:55:45] Configurazione git completata con successo[0m
 >>>>>>> e74ca056 (.)
+=======
+[0;34mℹ️ [2025-05-15 09:07:32] Configurazione avanzata git...[0m
+[0;32m✅ [2025-05-15 09:07:32] Configurazione git completata con successo[0m
+>>>>>>> a6404835 (.)
