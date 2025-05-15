@@ -448,12 +448,21 @@ Per ulteriori informazioni sulla gestione dei repository e l'utilizzo degli scri
 ## 🛠️ Script di Manutenzione
 
 ### `fix_directory_structure.sh`
-**Descrizione**: Corregge e standardizza la struttura delle directory
+**Descrizione**: Corregge e standardizza la struttura delle directory nei moduli Laraxot PTVX
 **Funzionalità**:
-- Verifica della struttura delle directory
-- Correzione automatica
-- Backup prima delle modifiche
-**Uso**: `./fix_directory_structure.sh <root_directory>`
+- Verifica della struttura delle directory secondo le convenzioni Laravel
+- Sposta automaticamente i file PHP nelle cartelle corrette (app/Models, app/Http, ecc.)
+- Identifica e corregge file posizionati erroneamente
+- Supporta correzione di un singolo modulo o di tutti i moduli
+- Visualizzazione colorata dei risultati per maggiore leggibilità
+**Uso**: 
+- Per un singolo modulo: `./fix_directory_structure.sh NomeModulo`
+- Per tutti i moduli: `./fix_directory_structure.sh --all`
+
+**Risoluzione conflitti applicata**:
+- Mantenuta la descrizione specifica che identifica l'uso per moduli Laraxot PTVX
+- Conservata la logica avanzata di identificazione e correzione dei file
+- Migliorata la compatibilità con la struttura Laravel standard
 
 ### `resolve_git_conflict.sh`
 **Descrizione**: Risolve automaticamente i conflitti Git
@@ -588,12 +597,18 @@ Per ulteriori informazioni sulla gestione dei repository e l'utilizzo degli scri
 - Rimozione sicura
 - Backup prima dell'operazione
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Uso**: `./git_delete_old_branches.sh <days>` 
 >>>>>>> ce77bf25 (🔄 Aggiornamento subtree)
 =======
 <<<<<<< HEAD
 **Uso**: `./git_delete_old_branches.sh <days>` 
 =======
+=======
+
+**Uso**: `./git_delete_old_branches.sh <days>` 
+
+>>>>>>> 6c99a4dc (.)
 **Uso**: `./git_delete_old_branches.sh <days>`
 
 ## 📚 Documentazione Aggiuntiva
@@ -609,5 +624,9 @@ Per ulteriori informazioni sulla gestione dei repository e l'utilizzo degli scri
 - È consigliato eseguire backup prima di operazioni critiche
 - Verificare sempre le modifiche in ambiente di test
 - Mantenere aggiornata la documentazione
+<<<<<<< HEAD
 >>>>>>> 43df3e0 (.)
 >>>>>>> 975498ad (fix: auto resolve conflict)
+=======
+ 43df3e0 (.)
+>>>>>>> 6c99a4dc (.)

@@ -3,81 +3,12 @@
 source ./bashscripts/lib/custom.sh
 # Validate input
 if [ $# -ne 2 ]; then
-<<<<<<< HEAD
-    echo "Usage: $0 <path> <remote_repo> "
-=======
     echo "Usage: $0 <path> <remote_repo>"
->>>>>>> 43df3e0 (.)
     exit 1
 fi
 
 LOCAL_PATH="$1"
 REMOTE_REPO="$2"
-<<<<<<< HEAD
-<<<<<<< HEAD
-curr_dir=$(pwd)
-
-echo "🔄 Submodule $LOCAL_PATH"
-echo "🌐 Remote repo $REMOTE_REPO"
-echo "🌿 Branch $BRANCH"
-echo "🔄 Current dir $curr_dir"
-cd "$LOCAL_PATH"
-git init
-git checkout -b "$BRANCH"
-git remote add origin "$REMOTE_REPO"
-# 🛠️ Setup iniziale
-git_config_setup
-git fetch --all
-git add -A
-git commit -am .
-git pull origin/"$BRANCH" --allow-unrelated-histories --autostash --rebase
-git add -A
-git commit -am .
-git push -u origin "$BRANCH"
-rm -rf .git
-cd "$curr_dir"
-echo "👍 Push ORG completato"
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-BRANCH="main"  # Default branch
-=======
-
->>>>>>> 3fd0e77 (Inizializzazione repository)
-=======
->>>>>>> 38d1ecb (Inizializzazione repository)
-
-curr_dir=$(pwd)
-
-=======
-
-curr_dir=$(pwd)
-dummy_push "$BRANCH"
->>>>>>> 754d7c0 (Inizializzazione repository)
-=======
-
-curr_dir=$(pwd)
-dummy_push "$BRANCH"
->>>>>>> 8bbe085 (Inizializzazione repository)
-=======
-
-curr_dir=$(pwd)
-dummy_push "$BRANCH"
->>>>>>> 924f497 (Inizializzazione repository)
-=======
-
-curr_dir=$(pwd)
-dummy_push "$BRANCH"
->>>>>>> feb158b (Inizializzazione repository)
-=======
-=======
->>>>>>> 0440c57 (.)
 BRANCH="main"  # Default branch
 
 curr_dir=$(pwd)
@@ -137,4 +68,3 @@ rm -rf .git
 cd "$curr_dir" || handle_error "Impossibile tornare alla directory originale"
 
 log "success" "Push ORG completato con successo"
->>>>>>> 43df3e0 (.)

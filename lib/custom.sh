@@ -14,6 +14,7 @@ BRANCH=$(git symbolic-ref --short HEAD 2>/dev/null || echo "main")
 log() {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     # Supporta sia il formato avanzato con livelli che il formato semplice
     if [ $# -eq 2 ]; then
         # Formato avanzato: log "level" "message"
@@ -52,6 +53,8 @@ log() {
 >>>>>>> ce77bf25 (🔄 Aggiornamento subtree)
 =======
 =======
+=======
+>>>>>>> 6c99a4dc (.)
     # Supporta sia il formato avanzato con livelli che il formato semplice
     if [ $# -eq 2 ]; then
         # Formato avanzato: log "level" "message"
@@ -72,8 +75,11 @@ log() {
         local timestamp=$(date '+%Y-%m-%d %H:%M:%S')
         echo "📆 $timestamp - $message" | tee -a "$LOG_FILE"
     fi
+<<<<<<< HEAD
 >>>>>>> 43df3e0 (.)
 >>>>>>> 975498ad (fix: auto resolve conflict)
+=======
+>>>>>>> 6c99a4dc (.)
 }
 
 # Funzione avanzata per gestire gli errori git
@@ -99,9 +105,12 @@ handle_git_error() {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 975498ad (fix: auto resolve conflict)
+=======
+>>>>>>> 6c99a4dc (.)
 # Funzione per gestire gli errori generici
 handle_error() {
     local error_message="$1"
@@ -116,11 +125,14 @@ die() {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ce77bf25 (🔄 Aggiornamento subtree)
 =======
 >>>>>>> 43df3e0 (.)
 >>>>>>> 975498ad (fix: auto resolve conflict)
+=======
+>>>>>>> 6c99a4dc (.)
 # Funzione per verificare l'integrità del repository
 check_repository_integrity() {
     log "info" "Verifica integrità repository..."
@@ -139,9 +151,12 @@ check_repository_integrity() {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 6c99a4dc (.)
 # Funzione per riscrivere la URL secondo le regole specificate
 rewrite_url() {
     local original_url="$1"
@@ -159,8 +174,11 @@ rewrite_url() {
     fi
 }
 
+<<<<<<< HEAD
 >>>>>>> 43df3e0 (.)
 >>>>>>> 975498ad (fix: auto resolve conflict)
+=======
+>>>>>>> 6c99a4dc (.)
 # Funzione avanzata per la manutenzione git
 git_maintenance() {
     log "info" "Eseguo manutenzione avanzata del repository git..."
@@ -204,6 +222,7 @@ git_config_setup() {
     log "success" "Configurazione git completata con successo"
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> ce77bf25 (🔄 Aggiornamento subtree)
 =======
@@ -277,6 +296,8 @@ git_config_setup() {
 =======
 >>>>>>> 43df3e0 (.)
 >>>>>>> 975498ad (fix: auto resolve conflict)
+=======
+>>>>>>> 6c99a4dc (.)
 backup_disk() {
     # Richiesta interattiva della lettera del disco
     read -p "📀 Inserisci la lettera del disco per il backup [d]: " DISK_LETTER
@@ -293,6 +314,7 @@ backup_disk() {
     echo "  💾 Backup Disk: $DISK_LETTER"
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 restore_disk() {
@@ -430,6 +452,25 @@ parse_args() {
 
 =======
 =======
+=======
+git_delete_history() {
+    local directory=$1
+    if [ -z "$directory" ]; then
+        log "error" "Percorso di directory non specificato"
+        return 1
+    fi
+
+    log "warning" "Eliminazione storia git per $directory"
+    rm -rf "$directory/.git"
+    
+    cd "$directory" || return 1
+    git init
+    git add .
+    git commit -m "Initial commit - clean history"
+    
+    log "success" "Storia git eliminata e reinizializzata per $directory"
+    cd - || return 1
+>>>>>>> 6c99a4dc (.)
 }
 
 dummy_push(){
@@ -469,9 +510,12 @@ is_readable() {
 is_writable() {
     [ -w "$1" ]
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ce77bf25 (🔄 Aggiornamento subtree)
 =======
 >>>>>>> 43df3e0 (.)
 >>>>>>> 975498ad (fix: auto resolve conflict)
+=======
+>>>>>>> 6c99a4dc (.)
 }

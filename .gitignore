@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ───────────────────────────────────────────────────────
 # Sistema operativo / File nascosti e metadata
 # ───────────────────────────────────────────────────────
@@ -131,6 +132,8 @@ coverage/
 =======
 >>>>>>> 0440c57 (.)
 >>>>>>> 9e6997fb (fix: auto resolve conflict)
+=======
+>>>>>>> 6c99a4dc (.)
 # Sistema operativo
 .fuse_hidden*
 .fuse_hidden**.lock
@@ -148,6 +151,7 @@ docs/cache/
 # Dipendenze e pacchetti
 ## Node.js
 node_modules/
+/node_modules/
 package-lock.json
 
 ## Composer
@@ -160,6 +164,7 @@ build/
 
 # Eseguibili
 *.exe
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -391,3 +396,5 @@ cache/
 
 >>>>>>> 0440c57 (.)
 >>>>>>> 9e6997fb (fix: auto resolve conflict)
+=======
+>>>>>>> 6c99a4dc (.)

@@ -1,10 +1,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> ce77bf25 (🔄 Aggiornamento subtree)
 =======
 >>>>>>> 975498ad (fix: auto resolve conflict)
+=======
+
+>>>>>>> 6c99a4dc (.)
 # 🛠️ Soluzioni Comuni per Problemi Git e Bash
 
 ## 🔧 Problemi di Interprete Bash
@@ -115,11 +119,15 @@ sudo update-alternatives --config php
 ```
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
 =======
 >>>>>>> 975498ad (fix: auto resolve conflict)
+=======
+
+>>>>>>> 6c99a4dc (.)
 
 /bin/bash^M: bad interpreter: No such file or directory
 sed -i -e 's/\r$//' nomefile.sh
@@ -434,6 +442,7 @@ SOLUZIONE: > sudo chmod 777 -R .
 [0;34mℹ️ [2025-04-22 11:23:27] Scelto blocco HEAD (22 linee vs 1)[0m
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
  cb513be (.)
@@ -457,3 +466,12 @@ SOLUZIONE: > sudo chmod 777 -R .
 
 >>>>>>> 0440c57 (.)
 >>>>>>> 9e6997fb (fix: auto resolve conflict)
+=======
+
+
+ cb513be (.)
+ 43df3e0 (.)
+
+
+ 0440c57 (.)
+>>>>>>> 6c99a4dc (.)

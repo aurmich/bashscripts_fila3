@@ -1,12 +1,17 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Per sistemare un errore devi prima trovare la cartella docs più vicina all'errore e la cartella docs della root del progetto. Queste cartelle devi costantemente aggiornarle, migliorarle, studiarle. Dopo aver capito l'errore, se trovi una regola interessante aggiorna anche .cursor/rules e .windsurfrules.
 =======
 =======
 >>>>>>> 975498ad (fix: auto resolve conflict)
 =======
 >>>>>>> 9e6997fb (fix: auto resolve conflict)
+=======
+
+
+>>>>>>> 6c99a4dc (.)
 per sistemare un errore devi prima trovare la cartella docs piu' vicina all'errore, e la cartella docs della root del
 progetto queste cartelle devi costantemente aggiornarle, migliorarle, studiarle, dopo aver capito l'errore se trovi
 una regola interessante aggiorna anche .cursor/rules e .windsurfrules,
@@ -24,6 +29,7 @@ per sistemare un errore devi prima trovare la cartella docs piu' vicina all'erro
 progetto queste cartelle devi costantemente aggiornarle, migliorarle, studiarle, dopo aver capito l'errore se trovi
 una regola interessante aggiorna anche .cursor/rules e .windsurfrules, 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> ce77bf25 (🔄 Aggiornamento subtree)
 =======
 =======
@@ -35,12 +41,24 @@ per sistemare un errore devi prima trovare la cartella docs piu' vicina all'erro
 progetto queste cartelle devi costantemente aggiornarle, migliorarle, studiarle, dopo aver capito l'errore se trovi
 una regola interessante aggiorna anche .cursor/rules e .windsurfrules, 
 >>>>>>> 0440c57 (.)
+=======
+
+>>>>>>> 6c99a4dc (.)
 per sistemare un errore devi prima trovare la cartella docs piu' vicina all'errore, e la cartella docs della root del
 progetto queste cartelle devi costantemente aggiornarle, migliorarle, studiarle, dopo aver capito l'errore se trovi
 una regola interessante aggiorna anche .cursor/rules e .windsurfrules, 
 
-<<<<<<< HEAD
+per sistemare un errore devi prima trovare la cartella docs piu' vicina all'errore, e la cartella docs della root del
+progetto queste cartelle devi costantemente aggiornarle, migliorarle, studiarle, dopo aver capito l'errore se trovi
+una regola interessante aggiorna anche .cursor/rules e .windsurfrules, 
+ 0440c57 (.)
+per sistemare un errore devi prima trovare la cartella docs piu' vicina all'errore, e la cartella docs della root del
+progetto queste cartelle devi costantemente aggiornarle, migliorarle, studiarle, dopo aver capito l'errore se trovi
+una regola interessante aggiorna anche .cursor/rules e .windsurfrules, 
+
+
 [0;34mℹ️ [2025-04-22 11:23:29] Scelto blocco HEAD (7 linee vs 1)[0m
+<<<<<<< HEAD
 >>>>>>> 43df3e0 (.)
 <<<<<<< HEAD
 >>>>>>> 975498ad (fix: auto resolve conflict)
@@ -49,3 +67,9 @@ una regola interessante aggiorna anche .cursor/rules e .windsurfrules,
 
 >>>>>>> 0440c57 (.)
 >>>>>>> 9e6997fb (fix: auto resolve conflict)
+=======
+ 43df3e0 (.)
+
+
+ 0440c57 (.)
+>>>>>>> 6c99a4dc (.)

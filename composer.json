@@ -1,7 +1,6 @@
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
     "name": "laraxot/bashscripts_fila3",
+<<<<<<< HEAD
 <<<<<<< HEAD
     "description": "Script di utilità per la gestione dei repository Git e toolkit di automazione Git per progetti Laravel",
     "type": "library",
@@ -40,14 +39,19 @@
 =======
 >>>>>>> 0440c57 (.)
 >>>>>>> 9e6997fb (fix: auto resolve conflict)
+=======
+    "description": "Script di utilità per la gestione dei repository Git, Toolkit di automazione Git per progetti Laravel",
+    "type": "library",
+    "license": "MIT",
+>>>>>>> 6c99a4dc (.)
     "authors": [
         {
             "name": "marco76tv",
             "email": "marco.sottana@gmail.com"
         }
     ],
-<<<<<<< HEAD
     "require": {
+<<<<<<< HEAD
 <<<<<<< HEAD
         
     },
@@ -65,6 +69,15 @@
         "phpstan/phpstan": "^1.0",
         "pestphp/pest": "^2.0"
 >>>>>>> ce77bf25 (🔄 Aggiornamento subtree)
+=======
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            
+        }
+>>>>>>> 6c99a4dc (.)
     },
     "config": {
         "sort-packages": true,
@@ -79,6 +92,7 @@
 =======
     "prefer-stable": true
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> ce77bf25 (🔄 Aggiornamento subtree)
 =======
 =======
@@ -87,4 +101,6 @@
     }
 >>>>>>> 43df3e0 (.)
 >>>>>>> 975498ad (fix: auto resolve conflict)
+=======
+>>>>>>> 6c99a4dc (.)
 }

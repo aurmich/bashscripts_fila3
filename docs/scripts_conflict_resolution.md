@@ -153,6 +153,7 @@ I seguenti file sono stati recentemente risolti:
 - `sync_to_disk.sh`: Mantenuta versione avanzata con migliore feedback e gestione esclusioni
 - `fix_merge_conflicts.sh`: Corretta la logica di individuazione e rimozione dei marker di conflitto per garantire la pulizia completa di tutti i tre tipi di marker 
 
+<<<<<<< HEAD
 ##<!-- REVISIONE MANUALE: File aggiornato per chiarezza architetturale e tracciabilità delle scelte. Vedi anche [README globale](/docs/README.md) e gli script citati in questa documentazione. -->
 
 [Backlink: Documentazione Globale](/docs/README.md)
@@ -383,4 +384,6 @@ I seguenti file sono stati recentemente risolti:
 =======
 >>>>>>> Stashed changes
 >>>>>>> 3a208a9 (.)
+=======
+>>>>>>> 6c99a4dc (.)
 Questa documentazione è collegata bidirezionalmente con la [documentazione principale sulla risoluzione dei conflitti](../../docs/bashscripts_conflict_resolution.md) nella root del progetto. 

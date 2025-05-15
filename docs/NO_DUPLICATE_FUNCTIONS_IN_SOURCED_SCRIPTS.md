@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Principio DRY negli Script Bash: NO alla duplicazione di funzioni
 
 ## PERCHÉ È FONDAMENTALE
@@ -62,6 +63,9 @@ function validate_input() {
 =======
 =======
 >>>>>>> 975498ad (fix: auto resolve conflict)
+=======
+
+>>>>>>> 6c99a4dc (.)
 # ERRORE GRAVE: Duplicazione di funzioni in presenza di 'source'
 
 ## Regola fondamentale per script Bash modulari
@@ -87,9 +91,13 @@ Quando in uno script .sh si incorporano altre librerie tramite `source ./bashscr
 
 > Questa regola è stata aggiornata a seguito di un errore grave di duplicazione in uno script .sh. Va rispettata e diffusa in tutto il progetto.
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> ce77bf25 (🔄 Aggiornamento subtree)
 =======
 =======
+=======
+
+>>>>>>> 6c99a4dc (.)
 # Principio DRY negli Script Bash: NO alla duplicazione di funzioni
 
 ## PERCHÉ È FONDAMENTALE
@@ -149,5 +157,9 @@ function validate_input() {
 ---
 
 > **NOTA IMPORTANTE**: Questa regola è stata aggiornata a seguito di errori gravi di duplicazione riscontrati in diversi script .sh. Il suo rispetto è considerato **CRITICO** per la manutenibilità del progetto.
+<<<<<<< HEAD
 >>>>>>> 43df3e0 (.)
 >>>>>>> 975498ad (fix: auto resolve conflict)
+=======
+ 43df3e0 (.)
+>>>>>>> 6c99a4dc (.)

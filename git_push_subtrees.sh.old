@@ -1,13 +1,7 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/dev
-=======
+ origin/dev
 
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
->>>>>>> 43df3e0 (.)
-#!/bin/bash
+ #!/bin/bash
 
 
 me=$( readlink -f -- "$0")
@@ -73,16 +67,10 @@ done < "$CONFIG_FILE"
 log "🧹 Pulizia del repository..."
 git gc --prune=now --aggressive
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/dev
-=======
+ origin/dev
 
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
->>>>>>> 43df3e0 (.)
-#!/bin/bash
+ #!/bin/bash
 
 
 me=$( readlink -f -- "$0")
@@ -148,13 +136,9 @@ done < "$CONFIG_FILE"
 log "🧹 Pulizia del repository..."
 git gc --prune=now --aggressive
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> origin/dev
->>>>>>> origin/dev
+ origin/dev
+ origin/dev
 log "✅ Sincronizzazione completata con history ottimizzata!"
-=======
 
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
->>>>>>> 43df3e0 (.)
+ 

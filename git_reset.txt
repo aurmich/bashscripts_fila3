@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
+
 #!/bin/bash
 
 # 🚀 Importa funzioni di utilità
@@ -36,8 +36,8 @@ git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |
 
 log "success" "Reset submoduli completato"
     
-=======
-<<<<<<< HEAD
+
+
 #!/bin/sh
 set -e
 git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |
@@ -53,10 +53,10 @@ git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |
     done
 
 [0;34mℹ️ [2025-04-22 11:23:27] Scelto blocco HEAD (14 linee vs 1)[0m
-=======
->>>>>>> cb513be (.)
-=======
->>>>>>> 0440c57 (.)
+
+ cb513be (.)
+
+ 0440c57 (.)
 #!/bin/sh
 set -e
 git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |
@@ -71,11 +71,11 @@ git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |
         git submodule add -f $url $path 
     done
 
-<<<<<<< HEAD
+
 [0;34mℹ️ [2025-04-22 11:23:27] Scelto blocco incoming (1 linee vs 1)[0m
-=======
+
     
->>>>>>> cb513be (.)
->>>>>>> 43df3e0 (.)
-=======
->>>>>>> 0440c57 (.)
+ cb513be (.)
+ 43df3e0 (.)
+
+ 0440c57 (.)

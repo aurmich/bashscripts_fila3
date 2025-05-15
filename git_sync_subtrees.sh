@@ -1,12 +1,5 @@
 #!/bin/bash
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 43df3e0 (.)
-=======
->>>>>>> 0440c57 (.)
 source ./bashscripts/lib/custom.sh
 # Includi lo script di parsing
 source ./bashscripts/lib/parse_gitmodules_ini.sh
@@ -19,25 +12,7 @@ script_dir=$(dirname "$me")
 CUSTOM_ORG="$1"
 
 # Script per sincronizzare git subtree con ottimizzazione della history
-<<<<<<< HEAD
-<<<<<<< HEAD
-CONFIG_FILE="gitmodules.ini"
-DEPTH=1  # Limita la profondità della history scaricata
-
-# Verifica che il file di configurazione esista
-if [[ ! -f $CONFIG_FILE ]]; then
-    handle_git_error "verifica configurazione" "File $CONFIG_FILE non trovato!"
-fi
-
-log "info" "🌿 Branch corrente: $BRANCH"
-
-=======
-=======
-# Script per sincronizzare git subtree con ottimizzazione della history
 # e preservazione delle modifiche locali
->>>>>>> cb513be (.)
-=======
->>>>>>> 0440c57 (.)
 CONFIG_FILE="gitmodules.ini"
 DEPTH=1  # Limita la profondità della history scaricata
 LOG_FILE="subtree_sync.log"
@@ -64,9 +39,6 @@ fi
 current_branch=$(git symbolic-ref --short HEAD 2>/dev/null || echo "main")
 log "🌿 Branch corrente: $current_branch"
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 # Funzione per sincronizzare un modulo
 sync_module() {
     local path="$1"
@@ -230,86 +202,22 @@ sync_module() {
         git stash pop
     fi
     
+    log "✅ Sincronizzazione completata per $path"
     return 0
 }
 
->>>>>>> cb513be (.)
->>>>>>> 43df3e0 (.)
-=======
->>>>>>> 0440c57 (.)
-# Processa le righe del file di configurazione
-while IFS= read -r line; do
-    # Salta righe vuote e commenti
-    [[ -z "$line" || "$line" =~ ^[[:space:]]*# ]] && continue
+# Processa ogni modulo dal file di configurazione
+total=${submodules_array["total"]}
+for ((i=0; i<total; i++)); do
+    path=${submodules_array["path_${i}"]}
+    url=${submodules_array["url_${i}"]}
     
-    # Rimuovi spazi e CR
-    line=$(echo "$line" | tr -d '\r' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
-    
-    # Estrai i valori path e url
-    if [[ "$line" =~ ^path\ *=\ *(.+)$ ]]; then
-        current_path="${BASH_REMATCH[1]}"
-    elif [[ "$line" =~ ^url\ *=\ *(.+)$ && -n "$current_path" ]]; then
-        current_url="${BASH_REMATCH[1]}"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 43df3e0 (.)
-=======
->>>>>>> 0440c57 (.)
-
-        # Modifica l'organizzazione nell'URL se CUSTOM_ORG è fornito
-        if [[ -n "$CUSTOM_ORG" && "$current_url" =~ git@github.com:([^/]+)/(.+)$ ]]; then
-            # Estrae la parte originale dell'organizzazione e il repository
-            original_org="${BASH_REMATCH[1]}"
-            repo_name="${BASH_REMATCH[2]}"
-            
-            # Sostituisce l'organizzazione con quella personalizzata
-            current_url="git@github.com:${CUSTOM_ORG}/${repo_name}"
-<<<<<<< HEAD
-            log "info" "🔄 URL modificato: $current_url (org originale: $original_org → $CUSTOM_ORG)"
-        fi
-        
-        # Chiamata esterna allo script di sincronizzazione
-        log "info" "🔄 Sincronizzazione modulo: $current_path [$current_url]"
-        if ! "$script_dir/git_sync_subtree.sh" "$current_path" "$current_url" ; then
-            log "error" "Sincronizzazione fallita per $current_path"
-=======
-            log "🔄 URL modificato: $current_url (org originale: $original_org → $CUSTOM_ORG)"
-        fi
-        
-        # Chiamata esterna allo script di sincronizzazione
-        log "🔄 Sincronizzazione modulo: $current_path [$current_url]"
-        if ! "$script_dir/git_sync_subtree.sh" "$current_path" "$current_url" ; then
-            log "⚠️ Sincronizzazione fallita per $current_path."
->>>>>>> 43df3e0 (.)
-        fi
-        
-        # Pulizia: reset delle variabili per il prossimo modulo
-        current_path=""
-        current_url=""
+    # Riscrivere l'URL se è specificata un'organizzazione personalizzata
+    if [[ -n "$CUSTOM_ORG" ]]; then
+        url=$(rewrite_url "$url" "$CUSTOM_ORG")
     fi
-done < "$CONFIG_FILE"
+    
+    sync_module "$path" "$url"
+done
 
-<<<<<<< HEAD
-# Esegui manutenzione git per mantenere il repository leggero
-git_maintenance
-
-# Normalizza le terminazioni di riga dello script
-sed -i -e 's/\r$//' "$me"
-
-log "success" "Sincronizzazione completata con history ottimizzata!"
-=======
-# Esegui git gc per mantenere il repository leggero
-log "🧹 Pulizia del repository..."
-git gc --prune=now --aggressive
-sed -i -e 's/\r$//' "$me"
-log "✅ Sincronizzazione completata con history ottimizzata!"
-<<<<<<< HEAD
-=======
-
-log "✅ Sincronizzazione completata con history ottimizzata e preservazione delle modifiche locali!"
->>>>>>> cb513be (.)
->>>>>>> 43df3e0 (.)
-=======
->>>>>>> 0440c57 (.)
+log "🎉 Sincronizzazione completata per tutti i moduli!"

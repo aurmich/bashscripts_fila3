@@ -28,7 +28,11 @@ php bashscripts/check_form_schema.php
 Il comando genererà un output simile a:
 ```
 XotBaseResource Classes Form Schema Check
+<<<<<<< HEAD
 ====
+=======
+=======================================
+>>>>>>> 6c99a4dc (.)
 
 ❌ 3 classes missing getFormSchema method:
 
@@ -55,6 +59,7 @@ XotBaseResource Classes Form Schema Check
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 
+<<<<<<< HEAD
 # Script di Verifica della Qualità del Codice
 
 Questa documentazione descrive gli script utilizzati per verificare e migliorare la qualità del codice nel progetto.
@@ -348,4 +353,6 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 >>>>>>> 3a208a9 (.)
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> 6c99a4dc (.)
 ### phpstan_docs_generator.sh 

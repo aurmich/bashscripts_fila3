@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -117,29 +118,36 @@ aurmich/dev
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
 >>>>>>> 43df3e0 (.)
 >>>>>>> 975498ad (fix: auto resolve conflict)
-# 🔧 Fase 8: Manutenzione
-
-## 📋 Panoramica
-Questa fase si concentra sulla manutenzione e il supporto continuo del sistema.
-
-## 🔄 Collegamenti
-- [Roadmap Principale](../roadmap.md)
-- [Documentazione Script](../project.md)
-- [Fase 7: Documentazione](../roadmap/07_documentation.md)
-# 🔧 Fase 8: Manutenzione
-
-## 📋 Panoramica
-Questa fase si concentra sulla manutenzione e il supporto continuo del sistema.
-
-## 🔄 Collegamenti
-- [Roadmap Principale](../roadmap.md)
-- [Documentazione Script](../project.md)
-- [Fase 7: Documentazione](../roadmap/07_documentation.md)
-<<<<<<< HEAD
-
-
-
 =======
+
+
+
+[0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
+ 43df3e0 (.)
+>>>>>>> 6c99a4dc (.)
+# 🔧 Fase 8: Manutenzione
+
+## 📋 Panoramica
+Questa fase si concentra sulla manutenzione e il supporto continuo del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 7: Documentazione](../roadmap/07_documentation.md)
+# 🔧 Fase 8: Manutenzione
+
+## 📋 Panoramica
+Questa fase si concentra sulla manutenzione e il supporto continuo del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 7: Documentazione](../roadmap/07_documentation.md)
+
+
+
+
+
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
 # 🔧 Fase 8: Manutenzione
@@ -151,7 +159,7 @@ Questa fase si concentra sulla manutenzione e il supporto continuo del sistema.
 - [Roadmap Principale](../roadmap.md)
 - [Documentazione Script](../project.md)
 - [Fase 7: Documentazione](../roadmap/07_documentation.md)
->>>>>>> 43df3e0 (.)
+ 43df3e0 (.)
 
 
 # 🔧 Fase 8: Manutenzione
@@ -163,36 +171,37 @@ Questa fase si concentra sulla manutenzione e il supporto continuo del sistema.
 - [Roadmap Principale](../roadmap.md)
 - [Documentazione Script](../project.md)
 - [Fase 7: Documentazione](../roadmap/07_documentation.md)
+
+
+
+
+# 🔧 Fase 8: Manutenzione
+
+## 📋 Panoramica
+Questa fase si concentra sulla manutenzione e il supporto continuo del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 7: Documentazione](../roadmap/07_documentation.md)
+
+
+
+
+
+# 🔧 Fase 8: Manutenzione
+
+## 📋 Panoramica
+Questa fase si concentra sulla manutenzione e il supporto continuo del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 7: Documentazione](../roadmap/07_documentation.md)
+
 
 
 <<<<<<< HEAD
-
-# 🔧 Fase 8: Manutenzione
-
-## 📋 Panoramica
-Questa fase si concentra sulla manutenzione e il supporto continuo del sistema.
-
-## 🔄 Collegamenti
-- [Roadmap Principale](../roadmap.md)
-- [Documentazione Script](../project.md)
-- [Fase 7: Documentazione](../roadmap/07_documentation.md)
-
-
-
-
-
-# 🔧 Fase 8: Manutenzione
-
-## 📋 Panoramica
-Questa fase si concentra sulla manutenzione e il supporto continuo del sistema.
-
-## 🔄 Collegamenti
-- [Roadmap Principale](../roadmap.md)
-- [Documentazione Script](../project.md)
-- [Fase 7: Documentazione](../roadmap/07_documentation.md)
-
-
-
 - [Fase 9: Scalabilità](../roadmap/09_scalability.md) 
 <<<<<<< HEAD
 >>>>>>> ce77bf25 (🔄 Aggiornamento subtree)
@@ -211,3 +220,19 @@ Questa fase si concentra sulla manutenzione e il supporto continuo del sistema.
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (23 linee vs 1)[0m
 >>>>>>> 43df3e0 (.)
 >>>>>>> 975498ad (fix: auto resolve conflict)
+=======
+- [Fase 9: Scalabilità](../roadmap/09_scalability.md) 
+
+# 🔧 Fase 8: Manutenzione
+
+## 📋 Panoramica
+Questa fase si concentra sulla manutenzione e il supporto continuo del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 7: Documentazione](../roadmap/07_documentation.md)
+
+[0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (23 linee vs 1)[0m
+ 43df3e0 (.)
+>>>>>>> 6c99a4dc (.)
