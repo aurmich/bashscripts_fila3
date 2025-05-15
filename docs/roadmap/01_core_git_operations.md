@@ -8,11 +8,16 @@
 
 
 
+<<<<<<< HEAD
 
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
  43df3e0 (.)
 aurmich/dev
+=======
+[0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
+ 43df3e0 (.)
+>>>>>>> 53079ab (.)
 # 🚀 Fase 1: Core Git Operations
 
 ## 📋 Panoramica
@@ -30,7 +35,10 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 - Gestione errori
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 53079ab (.)
 - Backup automatico pre-operazioni
 
 
@@ -39,7 +47,10 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (2 linee vs 1)[0m
  43df3e0 (.)
+<<<<<<< HEAD
 aurmich/dev
+=======
+>>>>>>> 53079ab (.)
 
 ### 2. Gestione dei Submodule
 **Script**: `sync_submodules.sh`
@@ -50,7 +61,10 @@ aurmich/dev
 - Backup prima delle operazioni
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 53079ab (.)
 - Verifica integrità post-operazioni
 
 
@@ -59,7 +73,10 @@ aurmich/dev
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (2 linee vs 1)[0m
  43df3e0 (.)
+<<<<<<< HEAD
 aurmich/dev
+=======
+>>>>>>> 53079ab (.)
 
 ### 3. Backup Automatico
 **Script**: `backup.sh`
@@ -70,7 +87,10 @@ aurmich/dev
 - Verifica integrità
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 53079ab (.)
 - Gestione spazio disco
 - Rotazione backup
 
@@ -81,7 +101,10 @@ aurmich/dev
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (3 linee vs 1)[0m
  43df3e0 (.)
+<<<<<<< HEAD
 aurmich/dev
+=======
+>>>>>>> 53079ab (.)
 
 ### 4. Risoluzione Conflitti Base
 **Script**: `resolve_git_conflict.sh`
@@ -92,7 +115,10 @@ aurmich/dev
 - Logging dettagliato
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 53079ab (.)
 - Backup pre-risoluzione
 - Rollback automatico in caso di errori
 
@@ -103,7 +129,10 @@ aurmich/dev
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (3 linee vs 1)[0m
  43df3e0 (.)
+<<<<<<< HEAD
 aurmich/dev
+=======
+>>>>>>> 53079ab (.)
 
 ## 📝 Note di Implementazione
 
@@ -114,7 +143,10 @@ aurmich/dev
    - Backup prima delle operazioni critiche
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 53079ab (.)
    - Validazione input
    - Sanitizzazione output
 
@@ -125,7 +157,10 @@ aurmich/dev
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (3 linee vs 1)[0m
  43df3e0 (.)
+<<<<<<< HEAD
 aurmich/dev
+=======
+>>>>>>> 53079ab (.)
 
 2. **Performance**:
    - Ottimizzazione delle operazioni Git
@@ -133,7 +168,10 @@ aurmich/dev
    - Caching dove possibile
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 53079ab (.)
    - Parallelizzazione operazioni
    - Gestione risorse
 
@@ -144,7 +182,10 @@ aurmich/dev
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (3 linee vs 1)[0m
  43df3e0 (.)
+<<<<<<< HEAD
 aurmich/dev
+=======
+>>>>>>> 53079ab (.)
 
 3. **Manutenibilità**:
    - Codice modulare
@@ -152,7 +193,10 @@ aurmich/dev
    - Logging strutturato
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 53079ab (.)
    - Test automatici
    - Versionamento semantico
 
@@ -163,7 +207,10 @@ aurmich/dev
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (3 linee vs 1)[0m
  43df3e0 (.)
+<<<<<<< HEAD
 aurmich/dev
+=======
+>>>>>>> 53079ab (.)
 
 ### Lezioni Apprese
 1. Importanza del backup prima delle operazioni critiche
@@ -171,7 +218,10 @@ aurmich/dev
 3. Valore della gestione automatica dei conflitti
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 53079ab (.)
 4. Importanza della validazione input
 5. Necessità di rollback automatico
 
@@ -182,7 +232,10 @@ aurmich/dev
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (3 linee vs 1)[0m
  43df3e0 (.)
+<<<<<<< HEAD
 aurmich/dev
+=======
+>>>>>>> 53079ab (.)
 
 ## 🔄 Collegamenti
 
@@ -191,7 +244,10 @@ aurmich/dev
 - [Fase 2: Manutenzione](../roadmap/02_maintenance.md)
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 53079ab (.)
 - [Fase 3: Verifica](../roadmap/03_verification.md)
 
 
@@ -200,7 +256,10 @@ aurmich/dev
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (2 linee vs 1)[0m
  43df3e0 (.)
+<<<<<<< HEAD
 aurmich/dev
+=======
+>>>>>>> 53079ab (.)
 
 ## 📈 Metriche di Successo
 
@@ -210,7 +269,10 @@ aurmich/dev
 - ✅ Tempo di sincronizzazione ridotto del 70%
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 53079ab (.)
 - ✅ 100% backup automatici
 - ✅ 99.9% risoluzione automatica conflitti
 
@@ -221,7 +283,10 @@ aurmich/dev
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (3 linee vs 1)[0m
  43df3e0 (.)
+<<<<<<< HEAD
 aurmich/dev
+=======
+>>>>>>> 53079ab (.)
 
 ### Metriche di Performance
 - Tempo medio di sincronizzazione: < 5 minuti
@@ -229,7 +294,10 @@ aurmich/dev
 - Tempo di risoluzione conflitti: < 10 minuti
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 53079ab (.)
 - Tempo di backup: < 2 minuti
 - Tempo di rollback: < 5 minuti
 
@@ -240,7 +308,10 @@ aurmich/dev
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (3 linee vs 1)[0m
  43df3e0 (.)
+<<<<<<< HEAD
 aurmich/dev
+=======
+>>>>>>> 53079ab (.)
 
 ## 🛠️ Strumenti Utilizzati
 
@@ -250,7 +321,10 @@ aurmich/dev
 - Risoluzione conflitti
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 53079ab (.)
 - Hooks personalizzati
 - Workflow automatizzati
 
@@ -261,7 +335,10 @@ aurmich/dev
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (3 linee vs 1)[0m
  43df3e0 (.)
+<<<<<<< HEAD
 aurmich/dev
+=======
+>>>>>>> 53079ab (.)
 
 ### Bash
 - Scripting avanzato
@@ -269,7 +346,10 @@ aurmich/dev
 - Logging
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 53079ab (.)
 - Funzioni di utilità
 - Test automatici
 
@@ -280,7 +360,10 @@ aurmich/dev
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (3 linee vs 1)[0m
  43df3e0 (.)
+<<<<<<< HEAD
 aurmich/dev
+=======
+>>>>>>> 53079ab (.)
 
 ### Altri
 - SSH per connessioni sicure
@@ -288,9 +371,13 @@ aurmich/dev
 
 
 
+<<<<<<< HEAD
 
  43df3e0 (.)
 aurmich/dev
+=======
+ 43df3e0 (.)
+>>>>>>> 53079ab (.)
 - Monitoraggio risorse
 - Alerting automatico
 - Dashboard di stato
@@ -6799,9 +6886,13 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 
 
 
+<<<<<<< HEAD
 
 [0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco HEAD (6504 linee vs 1)[0m
 aurmich/dev
+=======
+[0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco HEAD (6504 linee vs 1)[0m
+>>>>>>> 53079ab (.)
 # 🚀 Fase 1: Core Git Operations
 
 ## 📋 Panoramica
@@ -6899,16 +6990,24 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 - SSH per connessioni sicure
 - Cron per automazione
 
+<<<<<<< HEAD
 
 [0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
  43df3e0 (.)
 aurmich/dev
+=======
+[0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
+ 43df3e0 (.)
+>>>>>>> 53079ab (.)
 # 🚀 Fase 1: Core Git Operations
 
 ## 📋 Panoramica
 Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la gestione efficiente dei repository.
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 53079ab (.)
 ## ✅ Funzionalità Completate
 
 ### 1. Sincronizzazione Base tra Organizzazioni
@@ -7318,6 +7417,7 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 [0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco HEAD (104 linee vs 1)[0m
 - Rsync per backup 
  43df3e0 (.)
+<<<<<<< HEAD
 aurmich/dev
 
 ## Collegamenti tra versioni di 01_core_git_operations.md
@@ -7325,3 +7425,5 @@ aurmich/dev
 * [01_core_git_operations.md](docs/roadmap/01_core_git_operations.md)
 
 
+=======
+>>>>>>> 53079ab (.)

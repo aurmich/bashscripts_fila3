@@ -1,6 +1,10 @@
 {
     "name": "laraxot/bashscripts_fila3",
+<<<<<<< HEAD
     "description": "Script di utilità per la gestione dei repository Git e toolkit di automazione Git per progetti Laravel",
+=======
+    "description": "Script di utilità per la gestione dei repository Git, Toolkit di automazione Git per progetti Laravel",
+>>>>>>> 53079ab (.)
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -10,7 +14,12 @@
         }
     ],
     "require": {
+<<<<<<< HEAD
         
+=======
+    },
+    "require-dev": {
+>>>>>>> 53079ab (.)
     },
     "autoload": {
         "psr-4": {
@@ -22,8 +31,12 @@
         "optimize-autoloader": true
     },
     "minimum-stability": "stable",
+<<<<<<< HEAD
     "prefer-stable": true,
     "require-dev": {
         
     }
+=======
+    "prefer-stable": true
+>>>>>>> 53079ab (.)
 }

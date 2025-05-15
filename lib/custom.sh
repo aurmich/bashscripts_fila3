@@ -41,7 +41,11 @@ handle_git_error() {
     local retry_count="${3:-3}"
     
     log "error" "Errore durante $operation: $error_message"
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 53079ab (.)
     if [ $retry_count -gt 0 ]; then
         log "warning" "Tentativo di ripetere l'operazione ($retry_count tentativi rimasti)"
         return 1
@@ -71,7 +75,11 @@ check_repository_integrity() {
     if ! git fsck --full --strict; then
         handle_git_error "verifica integrità" "Problemi riscontrati nel repository"
     fi
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 53079ab (.)
     if ! git diff --quiet; then
         log "warning" "Ci sono modifiche non committate nel repository"
     fi
@@ -101,6 +109,7 @@ git_maintenance() {
     # Backup automatico prima della manutenzione
     local backup_branch="backup-$(date +%Y%m%d-%H%M%S)"
     git branch "$backup_branch" || handle_git_error "creazione backup" "Impossibile creare branch di backup"
+<<<<<<< HEAD
 
     # Pulizia e ottimizzazione
     git gc --aggressive --prune=now || handle_git_error "garbage collection" "Errore durante la pulizia"
@@ -115,6 +124,22 @@ git_maintenance() {
     # Verifica finale
     check_repository_integrity
 
+=======
+    
+    # Pulizia e ottimizzazione
+    git gc --aggressive --prune=now || handle_git_error "garbage collection" "Errore durante la pulizia"
+    git reflog expire --expire=now --all || handle_git_error "pulizia reflog" "Errore durante la pulizia reflog"
+    
+    # Rimozione branch remoti non più esistenti
+    git remote prune origin || handle_git_error "pulizia remote" "Errore durante la pulizia dei remote"
+    
+    # Pulizia dei file non tracciati
+    git clean -fd || handle_git_error "pulizia file" "Errore durante la pulizia dei file"
+    
+    # Verifica finale
+    check_repository_integrity
+    
+>>>>>>> 53079ab (.)
     log "success" "Manutenzione completata con successo"
 }
 
@@ -133,7 +158,11 @@ git_config_setup() {
     # Configurazioni avanzate
     git config pull.rebase true || handle_git_error "configurazione" "Errore impostazione pull.rebase"
     git config fetch.prune true || handle_git_error "configurazione" "Errore impostazione fetch.prune"
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 53079ab (.)
     log "success" "Configurazione git completata con successo"
 }
 
@@ -142,13 +171,18 @@ backup_disk() {
     read -p "📀 Inserisci la lettera del disco per il backup [d]: " DISK_LETTER
     DISK_LETTER=${DISK_LETTER:-"d"}  # Se non specificato, usa 'd' come default
     # Backup to disk
+<<<<<<< HEAD
     if ! ./bashscripts/utils/sync_to_disk.sh "$DISK_LETTER" ; then
+=======
+    if ! ./bashscripts/sync_to_disk.sh "$DISK_LETTER" ; then
+>>>>>>> 53079ab (.)
         handle_error "Failed to sync to disk $DISK_LETTER"
     fi
 
     echo "  💾 Backup Disk: $DISK_LETTER"
 }
 
+<<<<<<< HEAD
 restore_disk() {
     # Richiesta interattiva della lettera del disco
     read -p "📀 Inserisci la lettera del disco da cui ripristinare [d]: " DISK_LETTER
@@ -259,6 +293,34 @@ parse_args() {
 }
 
 
+=======
+git_delete_history() {
+    local directory=$1
+    if [ -z "$directory" ]; then
+        log "error" "Percorso di directory non specificato"
+        return 1
+    fi
+
+    log "warning" "Eliminazione storia git per $directory"
+    rm -rf "$directory/.git"
+    
+    cd "$directory" || return 1
+    git init
+    git add .
+    git commit -m "Initial commit - clean history"
+    
+    log "success" "Storia git eliminata e reinizializzata per $directory"
+    cd - || return 1
+}
+
+dummy_push(){
+    local branch="$1"
+    git add -A
+    git commit -am "."
+    git push -u origin HEAD:"$branch"
+}
+
+>>>>>>> 53079ab (.)
 # Funzione per verificare se un comando esiste
 command_exists() {
     command -v "$1" >/dev/null 2>&1

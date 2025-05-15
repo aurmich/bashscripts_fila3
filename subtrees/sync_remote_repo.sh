@@ -19,10 +19,17 @@ ORG="$1"
 curr_dir=$(pwd)
 
 # Esegui backup se richiesto
+<<<<<<< HEAD
 backup_disk
 
 # Configurazione git
 git_config_setup
+=======
+#backup_disk
+
+# Configurazione git
+# git_config_setup
+>>>>>>> 53079ab (.)
 
 total=${submodules_array["total"]}
 for ((i=0; i<total; i++)); do
@@ -35,6 +42,7 @@ for ((i=0; i<total; i++)); do
     #    git remote add "$ORG" "$url"
     #fi
     echo "Submodule $i: 📂 path: $path 🌐 URL: $url 🔑 ORG: $ORG"
+<<<<<<< HEAD
     cd "$path"
     
     # Controllo se .git è un file e non una directory
@@ -43,6 +51,9 @@ for ((i=0; i<total; i++)); do
         rm -f .git
     fi
     
+=======
+    cd "$path" 
+>>>>>>> 53079ab (.)
     # Verifica se .git esiste prima di inizializzare
     if [ ! -d ".git" ]; then
         echo "Inizializzazione repository Git in $path..."
@@ -55,6 +66,7 @@ for ((i=0; i<total; i++)); do
     git checkout "$BRANCH" -- || git checkout -b "$BRANCH"
     git remote add "$ORG" "$url"
     git_config_setup
+<<<<<<< HEAD
     git stash || echo "🔄 Non ci sono modifiche da salvare"
     dummy_push "$ORG" "$BRANCH" "."
 
@@ -66,10 +78,28 @@ for ((i=0; i<total; i++)); do
     while ! git rebase --continue 2>/dev/null; do
         if git diff --name-only --diff-filter=U | grep .; then
             echo "⚠️  Conflitti trovati. Li sistemiamo in automatico (accettando i tuoi cambiamenti)..."
+=======
+     # 🧹 Pulizia file temporanei
+    find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
+    git add -A
+    git commit -am "."
+    #git pull "$ORG" "$BRANCH" --autostash --rebase --depth=1
+    git fetch "$ORG" "$BRANCH" --depth=1
+    git merge "$ORG/$BRANCH"
+    
+     # Loop per gestire eventuali conflitti
+    while ! git rebase --continue 2>/dev/null; do
+        if git diff --name-only --diff-filter=U | grep .; then
+            echo "⚠️  Conflitti trovati. Li sistemiamo in automatico (accettando i tuoi cambiamenti)..."
+            git add -A
+            git commit -am "fix: auto resolve conflict"
+            git push -u "$ORG" HEAD:"$BRANCH"
+>>>>>>> 53079ab (.)
         else
             echo "✅ Nessun conflitto o già risolto"
             break
         fi
+<<<<<<< HEAD
         dummy_push "$ORG" "$BRANCH" "."
     done
     git stash apply || echo "🔄 Non ci sono modifiche da ripristinare"
@@ -78,3 +108,22 @@ for ((i=0; i<total; i++)); do
 
     cd "$curr_dir"
 done
+<<<<<<< HEAD
+=======
+=======
+done
+>>>>>>> 3a208a9 (.)
+=======
+    done
+
+    # 🧹 Pulizia file temporanei
+    find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
+    git add -A
+    git commit -am "."
+    # Push finale
+    git push -u "$ORG" HEAD:"$BRANCH"
+
+    cd "$curr_dir"
+done
+>>>>>>> 53079ab (.)
+>>>>>>> 7404b54 (.)

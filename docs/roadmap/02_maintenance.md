@@ -1,6 +1,9 @@
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 53079ab (.)
 # 🛠️ Fase 2: Manutenzione
 
 ## 📋 Panoramica
@@ -110,6 +113,7 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema, garant
 
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
+<<<<<<< HEAD
 # 🛠️ Fase 2: Manutenzione
 
 ## 📋 Panoramica
@@ -141,6 +145,9 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema.
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
  43df3e0 (.)
 aurmich/dev
+=======
+ 43df3e0 (.)
+>>>>>>> 53079ab (.)
 # 🛠️ Fase 2: Manutenzione
 
 ## 📋 Panoramica
@@ -162,9 +169,13 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema.
 
 
 
+<<<<<<< HEAD
 
  43df3e0 (.)
 aurmich/dev
+=======
+ 43df3e0 (.)
+>>>>>>> 53079ab (.)
 # 🛠️ Fase 2: Manutenzione
 
 ## 📋 Panoramica
@@ -177,7 +188,10 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema.
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 53079ab (.)
 # 🛠️ Fase 2: Manutenzione
 
 ## 📋 Panoramica
@@ -205,6 +219,7 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema.
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (19 linee vs 1)[0m
 - [Fase 3: Verifica](../roadmap/03_verification.md) 
  43df3e0 (.)
+<<<<<<< HEAD
 aurmich/dev
 
 ## Collegamenti tra versioni di 02_maintenance.md
@@ -212,3 +227,5 @@ aurmich/dev
 * [02_maintenance.md](docs/roadmap/02_maintenance.md)
 
 
+=======
+>>>>>>> 53079ab (.)

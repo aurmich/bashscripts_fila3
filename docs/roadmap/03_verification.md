@@ -1,9 +1,13 @@
 
 
 
+<<<<<<< HEAD
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
 aurmich/dev
+=======
+[0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
+>>>>>>> 53079ab (.)
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -197,6 +201,7 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 - Logging strutturato
 - Monitoraggio performance
 
+<<<<<<< HEAD
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
  43df3e0 (.)
@@ -592,6 +597,10 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 
 
 
+=======
+[0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
+ 43df3e0 (.)
+>>>>>>> 53079ab (.)
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -693,7 +702,10 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 - Alert automatici 
 
 
+<<<<<<< HEAD
 aurmich/dev
+=======
+>>>>>>> 53079ab (.)
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -889,6 +901,7 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 - Logging strutturato
 - Monitoraggio performance
 
+<<<<<<< HEAD
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (197 linee vs 1)[0m
  43df3e0 (.)
@@ -900,3 +913,7 @@ aurmich/dev
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (197 linee vs 1)[0m
 
+=======
+[0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (197 linee vs 1)[0m
+ 43df3e0 (.)
+>>>>>>> 53079ab (.)

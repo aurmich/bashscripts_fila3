@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Project
 
 > **Nota**: Questo documento è correlato a [Progetto](../../docs/project.md). Per una panoramica completa, consulta entrambi i documenti.
@@ -7,6 +8,8 @@
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
 
+=======
+>>>>>>> 53079ab (.)
 # 📚 Documentazione Dettagliata degli Script
 
 ## 🔄 Script di Sincronizzazione Git
@@ -39,6 +42,7 @@
 ## 🛠️ Script di Manutenzione
 
 ### `fix_directory_structure.sh`
+<<<<<<< HEAD
 **Descrizione**: Corregge e standardizza la struttura delle directory
 **Funzionalità**:
 - Verifica della struttura delle directory
@@ -222,6 +226,8 @@ Per ulteriori informazioni sulla gestione dei repository e l'utilizzo degli scri
 
 ### `fix_directory_structure.sh`
 
+=======
+>>>>>>> 53079ab (.)
 **Descrizione**: Corregge e standardizza la struttura delle directory nei moduli Laraxot PTVX
 **Funzionalità**:
 - Verifica della struttura delle directory secondo le convenzioni Laravel
@@ -237,6 +243,7 @@ Per ulteriori informazioni sulla gestione dei repository e l'utilizzo degli scri
 - Mantenuta la descrizione specifica che identifica l'uso per moduli Laraxot PTVX
 - Conservata la logica avanzata di identificazione e correzione dei file
 - Migliorata la compatibilità con la struttura Laravel standard
+<<<<<<< HEAD
 aurmich/dev
 **Descrizione**: Corregge e standardizza la struttura delle directory
 **Funzionalità**:
@@ -245,6 +252,8 @@ aurmich/dev
 - Backup prima delle modifiche
 **Uso**: `./fix_directory_structure.sh <root_directory>`
 
+=======
+>>>>>>> 53079ab (.)
 
 ### `resolve_git_conflict.sh`
 **Descrizione**: Risolve automaticamente i conflitti Git
@@ -379,10 +388,15 @@ aurmich/dev
 - Rimozione sicura
 - Backup prima dell'operazione
 
+<<<<<<< HEAD
 
 **Uso**: `./git_delete_old_branches.sh <days>` 
 
 aurmich/dev
+=======
+**Uso**: `./git_delete_old_branches.sh <days>` 
+
+>>>>>>> 53079ab (.)
 **Uso**: `./git_delete_old_branches.sh <days>`
 
 ## 📚 Documentazione Aggiuntiva
@@ -390,7 +404,11 @@ aurmich/dev
 Per ulteriori informazioni sulla gestione dei repository e l'utilizzo degli script, consultare:
 - [Roadmap del Progetto](roadmap.md)
 - [Documentazione in Italiano](it/README.md)
+<<<<<<< HEAD
 - [Risoluzione dei Conflitti](conflict-resolution-bash.md)
+=======
+- [Risoluzione dei Conflitti](CONFLICT_RESOLUTION_BASH.md)
+>>>>>>> 53079ab (.)
 
 ## ⚠️ Note Importanti
 
@@ -398,6 +416,7 @@ Per ulteriori informazioni sulla gestione dei repository e l'utilizzo degli scri
 - È consigliato eseguire backup prima di operazioni critiche
 - Verificare sempre le modifiche in ambiente di test
 - Mantenere aggiornata la documentazione
+<<<<<<< HEAD
 
 # Documentazione Progetto
 
@@ -414,3 +433,6 @@ Per ulteriori informazioni sulla gestione dei repository e l'utilizzo degli scri
 - Verificare sempre le modifiche in ambiente di test
 - Mantenere aggiornata la documentazione
 
+=======
+ 43df3e0 (.)
+>>>>>>> 53079ab (.)
