@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -108,3 +109,67 @@ aurmich/dev
 * [09_scalability.md](docs/roadmap/09_scalability.md)
 
 
+=======
+# 📈 Fase 9: Scalabilità
+
+## 📋 Panoramica
+Questa fase si concentra sulla scalabilità e l'espansione del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 8: Manutenzione](../roadmap/08_maintenance.md)
+# 📈 Fase 9: Scalabilità
+
+## 📋 Panoramica
+Questa fase si concentra sulla scalabilità e l'espansione del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 8: Manutenzione](../roadmap/08_maintenance.md)
+
+
+
+
+
+# 📈 Fase 9: Scalabilità
+
+## 📋 Panoramica
+Questa fase si concentra sulla scalabilità e l'espansione del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 8: Manutenzione](../roadmap/08_maintenance.md)
+
+
+
+# 📈 Fase 9: Scalabilità
+
+## 📋 Panoramica
+Questa fase si concentra sulla scalabilità e l'espansione del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 8: Manutenzione](../roadmap/08_maintenance.md)
+
+
+
+
+
+# 📈 Fase 9: Scalabilità
+
+## 📋 Panoramica
+Questa fase si concentra sulla scalabilità e l'espansione del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 8: Manutenzione](../roadmap/08_maintenance.md)
+
+
+
+- [Fase 10: Conclusione](../roadmap/10_conclusion.md) 
+>>>>>>> ce77bf25 (🔄 Aggiornamento subtree)

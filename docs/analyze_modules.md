@@ -79,6 +79,7 @@ Modules/<NomeModulo>/docs/phpstan/
    - Directory non trovata
    - Permessi insufficienti
    - PHPStan non installato
+<<<<<<< HEAD
 
 ## Gestione dei Conflitti
 In caso di conflitti durante l'analisi dei moduli:
@@ -176,3 +177,6 @@ Modules/<NomeModulo>/docs/phpstan/
 =======
 - [Risoluzione Conflitti](../../docs/development/CONFLICT_RESOLUTION.md)
 >>>>>>> Stashed changes
+=======
+   - Configurazione PHPStan errata 
+>>>>>>> ce77bf25 (🔄 Aggiornamento subtree)

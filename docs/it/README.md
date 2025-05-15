@@ -10,6 +10,7 @@
 
 Questo toolkit è una suite completa di script Bash progettata per automatizzare e semplificare la gestione di repository Git complessi, con particolare attenzione alle strutture monorepo e alla sincronizzazione tra organizzazioni. È stato sviluppato per ottimizzare il flusso di lavoro degli sviluppatori e ridurre gli errori umani nelle operazioni Git complesse.
 
+<<<<<<< HEAD
 ## 📚 Documentazione Correlata
 
 > **Nota:** I seguenti link puntano esclusivamente a moduli e documenti tecnici realmente necessari come dipendenza per l'utilizzo e la manutenzione degli script Bash di questo toolkit.
@@ -34,6 +35,8 @@ Questo toolkit è una suite completa di script Bash progettata per automatizzare
 - [Comandi Disponibili](../../docs/moduli/comandi/README.md)
   > Elenco dei comandi Bash disponibili e la loro documentazione contestuale.
 
+=======
+>>>>>>> ce77bf25 (🔄 Aggiornamento subtree)
 ## 🎯 Caratteristiche Principali
 
 ### 🔄 Sincronizzazione Avanzata
@@ -60,15 +63,24 @@ Questo toolkit è una suite completa di script Bash progettata per automatizzare
 bashscripts/
 ├── git/                 # Script per la gestione Git
 ├── maintenance/         # Script di manutenzione
+<<<<<<< HEAD
 ├── checks/             # Script di verifica
 └── prompt/             # Template per prompt personalizzati
+=======
+├── checks/              # Script di verifica
+└── prompt/              # Template per prompt personalizzati
+>>>>>>> ce77bf25 (🔄 Aggiornamento subtree)
 ```
 
 ## 🚀 Script Principali
 
 ### Git Sync & Organization
 - `git_sync_org.sh`: Sincronizza repository tra organizzazioni
+<<<<<<< HEAD
 - `git_sync_subtree.sh`: Gestisce la sincronizzazione dei subtree
+=======
+- `git_sync_subtree.sh`: Gestisce la sincronizzazione dei subtrees
+>>>>>>> ce77bf25 (🔄 Aggiornamento subtree)
 - `git_change_org.sh`: Cambia l'organizzazione del repository
 
 ### Manutenzione
@@ -94,6 +106,18 @@ bashscripts/
 - PHP 8.0+ (per alcuni script)
 - MySQL (per gli script di verifica database)
 
+<<<<<<< HEAD
+=======
+## 📚 Documentazione
+
+Per informazioni dettagliate su ogni script, consulta la documentazione specifica:
+
+- [Roadmap del Progetto](../roadmap.md)
+- [Documentazione del Progetto](../project.md)
+- [Fasi della Roadmap](../roadmap/)
+- [README in Inglese](../../README.md)
+
+>>>>>>> ce77bf25 (🔄 Aggiornamento subtree)
 ## ⚠️ Avvertenze
 
 - Utilizzare con cautela in ambienti di produzione
@@ -112,4 +136,8 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file `LICENSE` per 
 
 <div align="center">
   <sub>Built with ❤️ by the development team</sub>
+<<<<<<< HEAD
 </div> 
+=======
+</div>
+>>>>>>> ce77bf25 (🔄 Aggiornamento subtree)

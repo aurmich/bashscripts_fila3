@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> ce77bf25 (🔄 Aggiornamento subtree)
 # 🛠️ Soluzioni Comuni per Problemi Git e Bash
 
 ## 🔧 Problemi di Interprete Bash
@@ -107,6 +110,7 @@ Soluzione: sudo chmod 777 -R .
 # Cambia versione PHP
 sudo update-alternatives --config php
 ```
+<<<<<<< HEAD
 
 
 
@@ -338,3 +342,5 @@ SOLUZIONE: > sudo chmod 777 -R .
 
  0440c57 (.)
 
+=======
+>>>>>>> ce77bf25 (🔄 Aggiornamento subtree)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -108,3 +109,67 @@ aurmich/dev
 * [08_maintenance.md](docs/roadmap/08_maintenance.md)
 
 
+=======
+# 🔧 Fase 8: Manutenzione
+
+## 📋 Panoramica
+Questa fase si concentra sulla manutenzione e il supporto continuo del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 7: Documentazione](../roadmap/07_documentation.md)
+# 🔧 Fase 8: Manutenzione
+
+## 📋 Panoramica
+Questa fase si concentra sulla manutenzione e il supporto continuo del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 7: Documentazione](../roadmap/07_documentation.md)
+
+
+
+
+
+# 🔧 Fase 8: Manutenzione
+
+## 📋 Panoramica
+Questa fase si concentra sulla manutenzione e il supporto continuo del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 7: Documentazione](../roadmap/07_documentation.md)
+
+
+
+# 🔧 Fase 8: Manutenzione
+
+## 📋 Panoramica
+Questa fase si concentra sulla manutenzione e il supporto continuo del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 7: Documentazione](../roadmap/07_documentation.md)
+
+
+
+
+
+# 🔧 Fase 8: Manutenzione
+
+## 📋 Panoramica
+Questa fase si concentra sulla manutenzione e il supporto continuo del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 7: Documentazione](../roadmap/07_documentation.md)
+
+
+
+- [Fase 9: Scalabilità](../roadmap/09_scalability.md) 
+>>>>>>> ce77bf25 (🔄 Aggiornamento subtree)
