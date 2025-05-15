@@ -1,49 +1,8 @@
 {
     "name": "laraxot/bashscripts_fila3",
-<<<<<<< HEAD
-<<<<<<< HEAD
     "description": "Script di utilità per la gestione dei repository Git e toolkit di automazione Git per progetti Laravel",
     "type": "library",
     "license": "MIT",
-=======
-    "description": "Script di utilità per la gestione dei repository Git",
-    "type": "library",
-    "license": "MIT",
-=======
-<<<<<<< HEAD
-    "name": "laraxot/git-automation",
-=======
->>>>>>> 0440c57 (.)
-    "description": "Toolkit di automazione Git per progetti Laravel",
-    "type": "library",
-    "name": "laraxot/bashscripts_fila3",
->>>>>>> 43df3e0 (.)
-    "autoload": {
-        "psr-4": {
-            
-        }
-    },
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> ce77bf25 (🔄 Aggiornamento subtree)
-=======
-=======
->>>>>>> 9e6997fb (fix: auto resolve conflict)
-<<<<<<< HEAD
-=======
->>>>>>> cb513be (.)
->>>>>>> 43df3e0 (.)
-<<<<<<< HEAD
->>>>>>> 975498ad (fix: auto resolve conflict)
-=======
-=======
->>>>>>> 0440c57 (.)
->>>>>>> 9e6997fb (fix: auto resolve conflict)
-=======
-    "description": "Script di utilità per la gestione dei repository Git, Toolkit di automazione Git per progetti Laravel",
-    "type": "library",
-    "license": "MIT",
->>>>>>> 6c99a4dc (.)
     "authors": [
         {
             "name": "marco76tv",
@@ -51,56 +10,20 @@
         }
     ],
     "require": {
-<<<<<<< HEAD
-<<<<<<< HEAD
         
     },
     "autoload": {
         "psr-4": {
             
         }
-=======
-        "php": "^8.1",
-        "spatie/laravel-data": "^3.0",
-        "spatie/laravel-queueable-action": "^2.0"
-    },
-    "require-dev": {
-        "larastan/larastan": "^3.0",
-        "phpstan/phpstan": "^1.0",
-        "pestphp/pest": "^2.0"
->>>>>>> ce77bf25 (🔄 Aggiornamento subtree)
-=======
-    },
-    "require-dev": {
-    },
-    "autoload": {
-        "psr-4": {
-            
-        }
->>>>>>> 6c99a4dc (.)
     },
     "config": {
         "sort-packages": true,
         "optimize-autoloader": true
     },
     "minimum-stability": "stable",
-<<<<<<< HEAD
     "prefer-stable": true,
     "require-dev": {
         
     }
-=======
-    "prefer-stable": true
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> ce77bf25 (🔄 Aggiornamento subtree)
-=======
-=======
-    "require-dev": {
-        
-    }
->>>>>>> 43df3e0 (.)
->>>>>>> 975498ad (fix: auto resolve conflict)
-=======
->>>>>>> 6c99a4dc (.)
 }

@@ -1,7 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<<<<<<< HEAD
 [0;34mℹ️ [2025-05-07 16:55:33] Configurazione avanzata git...[0m
 [0;32m✅ [2025-05-07 16:55:33] Configurazione git completata con successo[0m
 [0;34mℹ️ [2025-05-07 17:10:13] Configurazione avanzata git...[0m
@@ -32,14 +29,6 @@
 📆 2025-05-05 22:54:49 - ✅ Configurazione git completata
 <<<<<<< HEAD
 =======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> ed29429 (.)
->>>>>>> 975498ad (fix: auto resolve conflict)
 [0;34mℹ️ [2025-04-22 13:14:26] Inizializzazione repository locale[0m
 [0;34mℹ️ [2025-04-22 13:14:26] Creazione branch main[0m
 [0;34mℹ️ [2025-04-22 13:14:26] Configurazione remote origin[0m
@@ -48,27 +37,10 @@
 [0;34mℹ️ [2025-04-22 13:14:59] Merge con remote[0m
 [0;34mℹ️ [2025-04-22 13:15:01] Commit finale e push[0m
 =======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 3fd0e77 (Inizializzazione repository)
-=======
->>>>>>> ed29429 (.)
->>>>>>> 975498ad (fix: auto resolve conflict)
 [0;34mℹ️ [2025-04-22 13:21:48] Commit finale e push[0m
 [0;31m❌ [2025-04-22 13:21:50] Errore durante git push: Impossibile eseguire push su origin/dev[0m
 [1;33m⚠️ [2025-04-22 13:21:50] Tentativo di ripetere l'operazione (3 tentativi rimasti)[0m
 [0;34mℹ️ [2025-04-22 13:21:50] Pulizia repository locale[0m
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> ed29429 (.)
->>>>>>> 7a7ee10 (.)
->>>>>>> 975498ad (fix: auto resolve conflict)
 =======
 [0;34mℹ️ [2025-04-22 13:40:01] Inizializzazione repository locale[0m
 [0;34mℹ️ [2025-04-22 13:40:01] Creazione branch main[0m
@@ -79,16 +51,7 @@
 [1;33m⚠️ [2025-04-22 13:40:01] Tentativo di ripetere l'operazione (3 tentativi rimasti)[0m
 [0;34mℹ️ [2025-04-22 13:40:01] Fetch da remote[0m
 [0;34mℹ️ [2025-04-22 13:40:03] Commit dei file locali[0m
-<<<<<<< HEAD
 [0;34mℹ️ [2025-04-22 13:40:03] pull con remote[0m
-=======
-<<<<<<< HEAD
-<<<<<<< Updated upstream
->>>>>>> 3a8292c (Inizializzazione repository)
-=======
-[0;34mℹ️ [2025-04-22 13:40:03] pull con remote[0m
->>>>>>> Stashed changes
->>>>>>> 975498ad (fix: auto resolve conflict)
 [0;34mℹ️ [2025-04-22 13:40:08] Pulizia repository locale[0m
 [0;34mℹ️ [2025-04-22 13:41:03] Inizializzazione repository locale[0m
 [0;34mℹ️ [2025-04-22 13:41:03] Creazione branch dev[0m
@@ -97,20 +60,9 @@
 [0;34mℹ️ [2025-04-22 13:41:03] Configurazione remote origin[0m
 [0;34mℹ️ [2025-04-22 13:41:03] Fetch da remote[0m
 [0;34mℹ️ [2025-04-22 13:41:05] Commit dei file locali[0m
-<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 [0;34mℹ️ [2025-04-22 13:41:05] pull con remote[0m
-=======
-<<<<<<< HEAD
->>>>>>> 3fd0e77 (Inizializzazione repository)
-=======
-<<<<<<< Updated upstream
->>>>>>> 3fd0e77 (Inizializzazione repository)
-=======
-[0;34mℹ️ [2025-04-22 13:41:05] pull con remote[0m
->>>>>>> Stashed changes
->>>>>>> 975498ad (fix: auto resolve conflict)
 [0;34mℹ️ [2025-04-22 13:41:08] Pulizia repository locale[0m
 [0;34mℹ️ [2025-04-22 13:42:15] Inizializzazione repository locale[0m
 [0;34mℹ️ [2025-04-22 13:42:15] Creazione branch dev[0m
@@ -119,20 +71,9 @@
 [0;34mℹ️ [2025-04-22 13:42:15] Configurazione remote origin[0m
 [0;34mℹ️ [2025-04-22 13:42:15] Fetch da remote[0m
 [0;34mℹ️ [2025-04-22 13:42:17] Commit dei file locali[0m
-<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 [0;34mℹ️ [2025-04-22 13:42:17] pull con remote[0m
-=======
-<<<<<<< HEAD
->>>>>>> 38d1ecb (Inizializzazione repository)
-=======
-<<<<<<< Updated upstream
->>>>>>> 38d1ecb (Inizializzazione repository)
-=======
-[0;34mℹ️ [2025-04-22 13:42:17] pull con remote[0m
->>>>>>> Stashed changes
->>>>>>> 975498ad (fix: auto resolve conflict)
 [0;34mℹ️ [2025-04-22 13:42:21] Pulizia repository locale[0m
 [0;34mℹ️ [2025-04-22 13:44:49] Inizializzazione repository locale[0m
 [0;34mℹ️ [2025-04-22 13:44:49] Creazione branch dev[0m
@@ -141,20 +82,9 @@
 [0;34mℹ️ [2025-04-22 13:44:49] Configurazione remote origin[0m
 [0;34mℹ️ [2025-04-22 13:44:49] Fetch da remote[0m
 [0;34mℹ️ [2025-04-22 13:44:51] Commit dei file locali[0m
-<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 [0;34mℹ️ [2025-04-22 13:44:51] Merge con remote[0m
-=======
-<<<<<<< HEAD
->>>>>>> 754d7c0 (Inizializzazione repository)
-=======
-<<<<<<< Updated upstream
->>>>>>> 754d7c0 (Inizializzazione repository)
-=======
-[0;34mℹ️ [2025-04-22 13:44:51] Merge con remote[0m
->>>>>>> Stashed changes
->>>>>>> 975498ad (fix: auto resolve conflict)
 [0;34mℹ️ [2025-04-22 13:44:55] Pulizia repository locale[0m
 [0;34mℹ️ [2025-04-22 13:45:19] Inizializzazione repository locale[0m
 [0;34mℹ️ [2025-04-22 13:45:19] Creazione branch dev[0m
@@ -163,12 +93,6 @@
 [0;34mℹ️ [2025-04-22 13:45:19] Configurazione remote origin[0m
 [0;34mℹ️ [2025-04-22 13:45:19] Fetch da remote[0m
 [0;34mℹ️ [2025-04-22 13:45:21] Commit dei file locali[0m
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 8bbe085 (Inizializzazione repository)
-=======
->>>>>>> 975498ad (fix: auto resolve conflict)
 [0;34mℹ️ [2025-04-22 13:45:21] Merge con remote[0m
 [0;31m❌ [2025-04-22 13:45:21] Errore durante git merge: Impossibile eseguire merge con origin/dev[0m
 [1;33m⚠️ [2025-04-22 13:45:21] Tentativo di ripetere l'operazione (3 tentativi rimasti)[0m
@@ -183,21 +107,9 @@
 [1;33m⚠️ [2025-04-22 13:45:38] Tentativo di ripetere l'operazione (3 tentativi rimasti)[0m
 [0;34mℹ️ [2025-04-22 13:45:38] Fetch da remote[0m
 [0;34mℹ️ [2025-04-22 13:45:40] Commit dei file locali[0m
-<<<<<<< HEAD
 [0;34mℹ️ [2025-04-22 13:45:40] Merge con remote[0m
 [0;31m❌ [2025-04-22 13:45:40] Errore durante git merge: Impossibile eseguire merge con origin/dev[0m
 [1;33m⚠️ [2025-04-22 13:45:40] Tentativo di ripetere l'operazione (3 tentativi rimasti)[0m
-=======
-<<<<<<< HEAD
->>>>>>> 8108e5c (Inizializzazione repository)
-=======
-[0;34mℹ️ [2025-04-22 13:45:40] Merge con remote[0m
-[0;31m❌ [2025-04-22 13:45:40] Errore durante git merge: Impossibile eseguire merge con origin/dev[0m
-[1;33m⚠️ [2025-04-22 13:45:40] Tentativo di ripetere l'operazione (3 tentativi rimasti)[0m
-<<<<<<< HEAD
->>>>>>> 54c764f (.)
-=======
->>>>>>> 975498ad (fix: auto resolve conflict)
 [0;34mℹ️ [2025-04-22 13:46:05] Inizializzazione repository locale[0m
 [0;34mℹ️ [2025-04-22 13:46:05] Creazione branch dev[0m
 [0;31m❌ [2025-04-22 13:46:05] Errore durante git checkout: Impossibile creare il branch dev[0m
@@ -209,23 +121,11 @@
 [1;33m⚠️ [2025-04-22 13:46:05] Tentativo di ripetere l'operazione (3 tentativi rimasti)[0m
 [0;34mℹ️ [2025-04-22 13:46:05] Fetch da remote[0m
 [0;34mℹ️ [2025-04-22 13:46:07] Commit dei file locali[0m
-<<<<<<< HEAD
 <<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
->>>>>>> 9a303e2 (Inizializzazione repository)
-=======
-<<<<<<< Updated upstream
->>>>>>> 9a303e2 (Inizializzazione repository)
->>>>>>> 975498ad (fix: auto resolve conflict)
 =======
 [0;34mℹ️ [2025-04-22 13:46:07] Merge con remote[0m
 [0;31m❌ [2025-04-22 13:46:07] Errore durante git merge: Impossibile eseguire merge con origin/dev[0m
 [1;33m⚠️ [2025-04-22 13:46:07] Tentativo di ripetere l'operazione (3 tentativi rimasti)[0m
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
->>>>>>> 975498ad (fix: auto resolve conflict)
 [0;34mℹ️ [2025-04-22 13:46:15] Pulizia repository locale[0m
 [0;34mℹ️ [2025-04-22 13:46:50] Inizializzazione repository locale[0m
 [0;34mℹ️ [2025-04-22 13:46:50] Creazione branch dev[0m
@@ -234,23 +134,11 @@
 [0;34mℹ️ [2025-04-22 13:46:50] Configurazione remote origin[0m
 [0;34mℹ️ [2025-04-22 13:46:50] Fetch da remote[0m
 [0;34mℹ️ [2025-04-22 13:46:52] Commit dei file locali[0m
-<<<<<<< HEAD
 <<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
->>>>>>> 924f497 (Inizializzazione repository)
-=======
-<<<<<<< Updated upstream
->>>>>>> 924f497 (Inizializzazione repository)
->>>>>>> 975498ad (fix: auto resolve conflict)
 =======
 [0;34mℹ️ [2025-04-22 13:46:52] Merge con remote[0m
 [0;31m❌ [2025-04-22 13:46:52] Errore durante git merge: Impossibile eseguire merge con origin/dev[0m
 [1;33m⚠️ [2025-04-22 13:46:52] Tentativo di ripetere l'operazione (3 tentativi rimasti)[0m
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
->>>>>>> 975498ad (fix: auto resolve conflict)
 [0;34mℹ️ [2025-04-22 13:46:56] Pulizia repository locale[0m
 [0;34mℹ️ [2025-04-22 13:48:00] Inizializzazione repository locale[0m
 [0;34mℹ️ [2025-04-22 13:48:00] Creazione branch dev[0m
@@ -259,17 +147,9 @@
 [0;34mℹ️ [2025-04-22 13:48:01] Configurazione remote origin[0m
 [0;34mℹ️ [2025-04-22 13:48:01] Fetch da remote[0m
 [0;34mℹ️ [2025-04-22 13:48:03] Commit dei file locali[0m
-<<<<<<< HEAD
 [0;32m✅ [2025-04-22 13:53:13] Merge/rebase completato con successo![0m
 [0;34mℹ️ [2025-04-22 13:53:13] Esecuzione push finale[0m
 =======
-=======
->>>>>>> feb158b (Inizializzazione repository)
-[0;32m✅ [2025-04-22 13:53:13] Merge/rebase completato con successo![0m
-[0;34mℹ️ [2025-04-22 13:53:13] Esecuzione push finale[0m
-=======
->>>>>>> 3a8292c (Inizializzazione repository)
->>>>>>> 975498ad (fix: auto resolve conflict)
 [0;32m✅ [2025-04-22 13:55:15] Merge/rebase completato con successo![0m
 [0;34mℹ️ [2025-04-22 13:55:15] Esecuzione push finale[0m
 [0;34mℹ️ [2025-04-22 13:55:18] Esecuzione manutenzione repository[0m
@@ -278,7 +158,6 @@
 [1;33m⚠️ [2025-04-22 13:55:20] Ci sono modifiche non committate nel repository[0m
 [0;32m✅ [2025-04-22 13:55:20] Manutenzione completata con successo[0m
 [0;34mℹ️ [2025-04-22 13:55:20] Pulizia repository locale[0m
-<<<<<<< HEAD
 =======
 📆 2025-05-06 08:53:32 - 🔧 Configurazione git di base...
 📆 2025-05-06 08:53:32 - ✅ Configurazione git completata
@@ -342,88 +221,11 @@
 [0;32m✅ [2025-05-13 16:42:09] Configurazione git completata con successo[0m
 [0;34mℹ️ [2025-05-13 16:46:23] Configurazione avanzata git...[0m
 [0;32m✅ [2025-05-13 16:46:23] Configurazione git completata con successo[0m
-<<<<<<< HEAD
 [0;34mℹ️ [2025-05-13 20:52:26] Configurazione avanzata git...[0m
 [0;32m✅ [2025-05-13 20:52:26] Configurazione git completata con successo[0m
 =======
 [0;34mℹ️ [2025-05-13 20:55:45] Configurazione avanzata git...[0m
 [0;32m✅ [2025-05-13 20:55:45] Configurazione git completata con successo[0m
 >>>>>>> e74ca056 (.)
-=======
-[0;34mℹ️ [2025-05-15 09:07:32] Configurazione avanzata git...[0m
-[0;32m✅ [2025-05-15 09:07:32] Configurazione git completata con successo[0m
-<<<<<<< Updated upstream
->>>>>>> a6404835 (.)
-=======
-[0;34mℹ️ [2025-05-15 09:31:30] Configurazione avanzata git...[0m
-[0;32m✅ [2025-05-15 09:31:30] Configurazione git completata con successo[0m
->>>>>>> Stashed changes
-[0;34mℹ️ [2025-05-15 09:42:08] Configurazione avanzata git...[0m
-[0;32m✅ [2025-05-15 09:42:08] Configurazione git completata con successo[0m
-=======
-[0;34mℹ️ [2025-05-15 12:26:32] Configurazione avanzata git...[0m
-[0;32m✅ [2025-05-15 12:26:32] Configurazione git completata con successo[0m
->>>>>>> Stashed changes
-[0;34mℹ️ [2025-05-15 12:59:15] Configurazione avanzata git...[0m
-[0;32m✅ [2025-05-15 12:59:15] Configurazione git completata con successo[0m
-=======
->>>>>>> ed29429 (.)
-📆 2025-04-22 15:53:04 - 🔧 Configurazione git di base...
-📆 2025-04-22 15:53:04 - ✅ Configurazione git completata
-📆 2025-04-22 15:54:19 - 🔧 Configurazione git di base...
-📆 2025-04-22 15:54:19 - ✅ Configurazione git completata
-📆 2025-04-22 15:54:54 - 🔧 Configurazione git di base...
-📆 2025-04-22 15:54:54 - ✅ Configurazione git completata
-📆 2025-04-22 15:55:29 - 🔧 Configurazione git di base...
-📆 2025-04-22 15:55:29 - ✅ Configurazione git completata
-📆 2025-04-22 16:03:50 - 🔧 Configurazione git di base...
-📆 2025-04-22 16:03:50 - ✅ Configurazione git completata
-📆 2025-04-22 16:06:50 - 🔧 Configurazione git di base...
-📆 2025-04-22 16:06:50 - ✅ Configurazione git completata
-📆 2025-04-22 16:09:02 - 🔧 Configurazione git di base...
-📆 2025-04-22 16:09:02 - ✅ Configurazione git completata
->>>>>>> 975498ad (fix: auto resolve conflict)
-=======
-📆 2025-04-22 19:19:15 - 🔧 Configurazione git di base...
-📆 2025-04-22 19:19:15 - ✅ Configurazione git completata
-<<<<<<< HEAD
->>>>>>> 9e6997fb (fix: auto resolve conflict)
-=======
-📆 2025-04-22 21:10:06 - 🔧 Configurazione git di base...
-📆 2025-04-22 21:10:06 - ✅ Configurazione git completata
-<<<<<<< HEAD
->>>>>>> 2cea9ae4 (.)
-=======
-[0;34mℹ️ [2025-04-23 08:30:52] Configurazione avanzata git...[0m
-[0;32m✅ [2025-04-23 08:30:52] Configurazione git completata con successo[0m
-<<<<<<< HEAD
->>>>>>> 6c99a4dc (.)
-=======
-[0;34mℹ️ [2025-04-23 08:53:01] Configurazione avanzata git...[0m
-[0;32m✅ [2025-04-23 08:53:01] Configurazione git completata con successo[0m
-<<<<<<< HEAD
->>>>>>> c5435d36 (.)
-=======
-[0;34mℹ️ [2025-04-23 09:44:14] Configurazione avanzata git...[0m
-[0;32m✅ [2025-04-23 09:44:14] Configurazione git completata con successo[0m
-<<<<<<< HEAD
->>>>>>> 04f8a5c1 (.)
-=======
-[0;34mℹ️ [2025-04-23 10:16:49] Configurazione avanzata git...[0m
-[0;32m✅ [2025-04-23 10:16:49] Configurazione git completata con successo[0m
-<<<<<<< HEAD
->>>>>>> 42345c4e (.)
-=======
-[0;34mℹ️ [2025-04-23 10:37:41] Configurazione avanzata git...[0m
-[0;32m✅ [2025-04-23 10:37:41] Configurazione git completata con successo[0m
-<<<<<<< HEAD
->>>>>>> 7599d647 (.)
-=======
-[0;34mℹ️ [2025-04-23 14:54:17] Configurazione avanzata git...[0m
-[0;32m✅ [2025-04-23 14:54:17] Configurazione git completata con successo[0m
-<<<<<<< Updated upstream
->>>>>>> a04170cd (.)
-=======
-[0;34mℹ️ [2025-05-15 13:16:54] Configurazione avanzata git...[0m
-[0;32m✅ [2025-05-15 13:16:54] Configurazione git completata con successo[0m
->>>>>>> Stashed changes
+[0;34mℹ️ [2025-05-15 14:02:35] Configurazione avanzata git...[0m
+[0;32m✅ [2025-05-15 14:02:35] Configurazione git completata con successo[0m
