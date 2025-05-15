@@ -70,9 +70,6 @@ for ((i=0; i<total; i++)); do
             echo "✅ Nessun conflitto o già risolto"
             break
         fi
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< HEAD
         dummy_push "$ORG" "$BRANCH" "."
     done
     git stash apply || echo "🔄 Non ci sono modifiche da ripristinare"
@@ -81,25 +78,3 @@ for ((i=0; i<total; i++)); do
 
     cd "$curr_dir"
 done
-<<<<<<< HEAD
-=======
-=======
-done
->>>>>>> 3a208a9 (.)
-=======
-=======
-=======
->>>>>>> Stashed changes
-        dummy_push "$ORG" "$BRANCH" "."
-    done
-    git stash apply || echo "🔄 Non ci sono modifiche da ripristinare"
-    # Push finale
-    dummy_push "$ORG" "$BRANCH" "."
-
-    cd "$curr_dir"
-done
-<<<<<<< Updated upstream
->>>>>>> 53079ab (.)
->>>>>>> 7404b54 (.)
-=======
->>>>>>> Stashed changes
