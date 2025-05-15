@@ -19,6 +19,7 @@ ORG="$1"
 curr_dir=$(pwd)
 
 # Esegui backup se richiesto
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 backup_disk
 
@@ -30,6 +31,12 @@ git_config_setup
 # Configurazione git
 # git_config_setup
 >>>>>>> 53079ab (.)
+=======
+backup_disk
+
+# Configurazione git
+git_config_setup
+>>>>>>> Stashed changes
 
 total=${submodules_array["total"]}
 for ((i=0; i<total; i++)); do
@@ -42,7 +49,10 @@ for ((i=0; i<total; i++)); do
     #    git remote add "$ORG" "$url"
     #fi
     echo "Submodule $i: 📂 path: $path 🌐 URL: $url 🔑 ORG: $ORG"
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
     cd "$path"
     
     # Controllo se .git è un file e non una directory
@@ -51,9 +61,12 @@ for ((i=0; i<total; i++)); do
         rm -f .git
     fi
     
+<<<<<<< Updated upstream
 =======
     cd "$path" 
 >>>>>>> 53079ab (.)
+=======
+>>>>>>> Stashed changes
     # Verifica se .git esiste prima di inizializzare
     if [ ! -d ".git" ]; then
         echo "Inizializzazione repository Git in $path..."
@@ -66,6 +79,7 @@ for ((i=0; i<total; i++)); do
     git checkout "$BRANCH" -- || git checkout -b "$BRANCH"
     git remote add "$ORG" "$url"
     git_config_setup
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     git stash || echo "🔄 Non ci sono modifiche da salvare"
     dummy_push "$ORG" "$BRANCH" "."
@@ -84,21 +98,31 @@ for ((i=0; i<total; i++)); do
     git add -A
     git commit -am "."
     #git pull "$ORG" "$BRANCH" --autostash --rebase --depth=1
+=======
+    git stash || echo "🔄 Non ci sono modifiche da salvare"
+    dummy_push "$ORG" "$BRANCH" "."
+
+>>>>>>> Stashed changes
     git fetch "$ORG" "$BRANCH" --depth=1
-    git merge "$ORG/$BRANCH"
-    
-     # Loop per gestire eventuali conflitti
+    git pull "$ORG" "$BRANCH" --autostash  --depth=1
+    git merge "$ORG/$BRANCH" --allow-unrelated-histories
+
+    # Loop per gestire eventuali conflitti
     while ! git rebase --continue 2>/dev/null; do
         if git diff --name-only --diff-filter=U | grep .; then
             echo "⚠️  Conflitti trovati. Li sistemiamo in automatico (accettando i tuoi cambiamenti)..."
+<<<<<<< Updated upstream
             git add -A
             git commit -am "fix: auto resolve conflict"
             git push -u "$ORG" HEAD:"$BRANCH"
 >>>>>>> 53079ab (.)
+=======
+>>>>>>> Stashed changes
         else
             echo "✅ Nessun conflitto o già risolto"
             break
         fi
+<<<<<<< Updated upstream
 <<<<<<< HEAD
         dummy_push "$ORG" "$BRANCH" "."
     done
@@ -114,14 +138,13 @@ done
 done
 >>>>>>> 3a208a9 (.)
 =======
+=======
+        dummy_push "$ORG" "$BRANCH" "."
+>>>>>>> Stashed changes
     done
-
-    # 🧹 Pulizia file temporanei
-    find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
-    git add -A
-    git commit -am "."
+    git stash apply || echo "🔄 Non ci sono modifiche da ripristinare"
     # Push finale
-    git push -u "$ORG" HEAD:"$BRANCH"
+    dummy_push "$ORG" "$BRANCH" "."
 
     cd "$curr_dir"
 done
