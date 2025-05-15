@@ -108,6 +108,8 @@ for ((i=0; i<total; i++)); do
 =======
     done
 
+    git add -A
+    git commit -am "."
     # Push finale
     git push -u "$ORG" HEAD:"$BRANCH"
 >>>>>>> 975498ad (fix: auto resolve conflict)

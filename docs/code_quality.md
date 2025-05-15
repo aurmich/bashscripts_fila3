@@ -29,10 +29,14 @@ Il comando genererà un output simile a:
 ```
 XotBaseResource Classes Form Schema Check
 <<<<<<< HEAD
+<<<<<<< HEAD
 ====
 =======
 =======================================
 >>>>>>> 6c99a4dc (.)
+=======
+====
+>>>>>>> c5435d36 (.)
 
 ❌ 3 classes missing getFormSchema method:
 
