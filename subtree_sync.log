@@ -416,4 +416,9 @@
 =======
 [0;34mℹ️ [2025-04-23 10:37:41] Configurazione avanzata git...[0m
 [0;32m✅ [2025-04-23 10:37:41] Configurazione git completata con successo[0m
+<<<<<<< HEAD
 >>>>>>> 7599d647 (.)
+=======
+[0;34mℹ️ [2025-04-23 14:54:17] Configurazione avanzata git...[0m
+[0;32m✅ [2025-04-23 14:54:17] Configurazione git completata con successo[0m
+>>>>>>> a04170cd (.)
