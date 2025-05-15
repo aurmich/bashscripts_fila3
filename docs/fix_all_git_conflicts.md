@@ -1,4 +1,7 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 # Script di Risoluzione Automatica dei Conflitti Git
 
 ## Descrizione
@@ -57,6 +60,7 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 
 [Backlink: Documentazione Globale](/docs/README.md)
 [Backlink: scripts_conflict_resolution.md](scripts_conflict_resolution.md)
+<<<<<<< Updated upstream
 [Backlink: git_conflicts_resolution.md](git_conflicts_resolution.md)
 =======
 # Script di Risoluzione Automatica dei Conflitti Git
@@ -112,3 +116,6 @@ Lo script fornisce feedback colorato per:
 - Non gestisce conflitti complessi che potrebbero richiedere merge manuale
 - Mantiene sempre la versione HEAD, che potrebbe non essere sempre la scelta desiderata 
 >>>>>>> 3a208a9 (.)
+=======
+[Backlink: git_conflicts_resolution.md](git_conflicts_resolution.md)
+>>>>>>> Stashed changes

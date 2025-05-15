@@ -21,12 +21,18 @@ desktop.ini
 *.swo
 *.bak
 *.orig
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 *.old
 *.old1
 *.old2
 =======
 >>>>>>> 3a208a9 (.)
+=======
+*.old
+*.old1
+*.old2
+>>>>>>> Stashed changes
 *_old
 *.rej
 ~$*

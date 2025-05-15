@@ -1,4 +1,7 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 # Risoluzione dei Conflitti nei File di Configurazione
 
 ## Problema
@@ -500,6 +503,7 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
 =======
 >>>>>>> 4d4d6cb7 (.)
+<<<<<<< Updated upstream
 =======
 # Risoluzione dei Conflitti nei File di Configurazione
 
@@ -601,4 +605,6 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione Rector](https://getrector.org/documentation)
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
 >>>>>>> 3a208a9 (.)
+=======
+>>>>>>> Stashed changes
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md) 

@@ -136,4 +136,7 @@ Modules/
 - Documentare OGNI deviazione
 - Aggiornare questo prompt per nuovi pattern
 - STUDIARE la documentazione prima di ogni modifica 
+<<<<<<< Updated upstream
 >>>>>>> 3a208a9 (.)
+=======
+>>>>>>> Stashed changes
