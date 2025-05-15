@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <?php
@@ -25,6 +26,8 @@ return RectorConfig::configure()
 =======
 >>>>>>> cb513be (.)
 >>>>>>> 43df3e0 (.)
+=======
+>>>>>>> 0440c57 (.)
 <?php
 
 declare(strict_types=1);
@@ -32,6 +35,7 @@ declare(strict_types=1);
 use Rector\Config\RectorConfig;
 use Rector\TypeDeclaration\Rector\ClassMethod\AddVoidReturnTypeWhereNoReturnRector;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -55,6 +59,8 @@ use Rector\TypeDeclaration\Rector\ClassMethod\AddVoidReturnTypeWhereNoReturnRect
 =======
 >>>>>>> cb513be (.)
 >>>>>>> 43df3e0 (.)
+=======
+>>>>>>> 0440c57 (.)
 return RectorConfig::configure()
     ->withPaths([
         __DIR__.'/',
@@ -62,6 +68,7 @@ return RectorConfig::configure()
     ->withSkip([
         __DIR__.'/vendor',
     ])
+<<<<<<< HEAD
 <<<<<<< HEAD
     // Imposta la compatibilità con la versione PHP corrente
     ->withPhpSets()
@@ -74,10 +81,16 @@ return RectorConfig::configure()
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
 =======
+=======
+>>>>>>> 0440c57 (.)
     // uncomment to reach your current PHP version
     ->withPhpSets()
     ->withRules([
         // AddVoidReturnTypeWhereNoReturnRector::class,
     ]);
+<<<<<<< HEAD
 >>>>>>> cb513be (.)
 >>>>>>> 43df3e0 (.)
+=======
+
+>>>>>>> 0440c57 (.)

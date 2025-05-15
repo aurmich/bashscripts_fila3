@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #!/bin/bash
 
 # 🚀 Importa funzioni di utilità
@@ -17,12 +16,6 @@ fi
 #!/bin/bash
 
 if [ "$#" -ne 2 ]; then
-=======
-#!/bin/sh
-
-# Controllo parametri
-if [ -z "$1" ] || [ -z "$2" ]; then
->>>>>>> cb513be (.)
     echo "Usage: $0 <organization> <branch>"
     exit 1
 fi
@@ -34,6 +27,7 @@ repo_name=$(basename "$(git rev-parse --show-toplevel)")
 script_path=$(readlink -f -- "$0")
 where=$(pwd)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 log "info" "-------- START SYNC [$where ($branch) - ORG: $org] ----------"
 
@@ -73,12 +67,9 @@ git pull --rebase origin "$branch" --autostash --recurse-submodules --allow-unre
             git add "$file" || log "warning" "Impossibile aggiungere $file"
 =======
 <<<<<<< HEAD
-# 1️⃣ Configurazione Git
 =======
-echo "-------- START SYNC [$where ($branch) - ORG: $org] ----------"
-
-# 1️⃣ Configurazioni globali per evitare problemi
->>>>>>> cb513be (.)
+>>>>>>> 0440c57 (.)
+# 1️⃣ Configurazione Git
 git config core.fileMode false
 git config core.ignorecase false
 git config advice.skippedCherryPicks false
@@ -116,13 +107,17 @@ git pull --rebase origin "$branch" --autostash --recurse-submodules --allow-unre
         # 🛠 Proviamo a completare il rebase
         git rebase --continue || {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 43df3e0 (.)
+=======
+>>>>>>> 0440c57 (.)
             log "error" "Risoluzione automatica fallita. Abort..."
             git rebase --abort
             log "info" "Tentativo merge..."
             git merge origin/$branch || handle_git_error "merge" "Merge fallito. Intervento manuale richiesto!"
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -135,15 +130,20 @@ git pull --rebase origin "$branch" --autostash --recurse-submodules --allow-unre
             }
 >>>>>>> cb513be (.)
 >>>>>>> 43df3e0 (.)
+=======
+>>>>>>> 0440c57 (.)
         }
     fi
 }
 
 # 5️⃣ Normalizziamo i file e committiamo se ci sono modifiche
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 43df3e0 (.)
+=======
+>>>>>>> 0440c57 (.)
 log "info" "Normalizzazione e commit modifiche..."
 git add --renormalize -A || handle_git_error "add" "Errore nell'add"
 git commit -am "sync update" || log "info" "Nessuna modifica da committare"
@@ -155,6 +155,7 @@ git push origin "$branch" --progress || {
     git pull --rebase origin "$branch" && git push origin "$branch" || handle_git_error "push" "Push fallito dopo retry"
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -171,6 +172,8 @@ echo "-------- END PUSH [$where ($branch)] ----------"
 
 >>>>>>> cb513be (.)
 >>>>>>> 43df3e0 (.)
+=======
+>>>>>>> 0440c57 (.)
 # 7️⃣ Configuriamo il tracking del branch, se necessario
 if ! git rev-parse --abbrev-ref --symbolic-full-name "@{u}" >/dev/null 2>&1; then
     git branch --set-upstream-to=origin/$branch "$branch" || true
@@ -178,17 +181,18 @@ if ! git rev-parse --abbrev-ref --symbolic-full-name "@{u}" >/dev/null 2>&1; the
 fi
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # 8️⃣ Manutenzione finale
 git_maintenance
 
 log "success" "-------- END SYNC [$where ($branch) - ORG: $org] ----------"
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 0440c57 (.)
 # 8️⃣ Configurazione globale
 git config --global core.fileMode false
 git config --global core.autocrlf input
 
-=======
->>>>>>> cb513be (.)
 echo "-------- END SYNC [$where ($branch) - ORG: $org] ----------"
 >>>>>>> 43df3e0 (.)

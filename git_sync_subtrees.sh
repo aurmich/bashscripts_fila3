@@ -1,9 +1,12 @@
 #!/bin/bash
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 43df3e0 (.)
+=======
+>>>>>>> 0440c57 (.)
 source ./bashscripts/lib/custom.sh
 # Includi lo script di parsing
 source ./bashscripts/lib/parse_gitmodules_ini.sh
@@ -16,6 +19,7 @@ script_dir=$(dirname "$me")
 CUSTOM_ORG="$1"
 
 # Script per sincronizzare git subtree con ottimizzazione della history
+<<<<<<< HEAD
 <<<<<<< HEAD
 CONFIG_FILE="gitmodules.ini"
 DEPTH=1  # Limita la profondità della history scaricata
@@ -32,6 +36,8 @@ log "info" "🌿 Branch corrente: $BRANCH"
 # Script per sincronizzare git subtree con ottimizzazione della history
 # e preservazione delle modifiche locali
 >>>>>>> cb513be (.)
+=======
+>>>>>>> 0440c57 (.)
 CONFIG_FILE="gitmodules.ini"
 DEPTH=1  # Limita la profondità della history scaricata
 LOG_FILE="subtree_sync.log"
@@ -58,6 +64,7 @@ fi
 current_branch=$(git symbolic-ref --short HEAD 2>/dev/null || echo "main")
 log "🌿 Branch corrente: $current_branch"
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 # Funzione per sincronizzare un modulo
@@ -228,6 +235,8 @@ sync_module() {
 
 >>>>>>> cb513be (.)
 >>>>>>> 43df3e0 (.)
+=======
+>>>>>>> 0440c57 (.)
 # Processa le righe del file di configurazione
 while IFS= read -r line; do
     # Salta righe vuote e commenti
@@ -242,9 +251,12 @@ while IFS= read -r line; do
     elif [[ "$line" =~ ^url\ *=\ *(.+)$ && -n "$current_path" ]]; then
         current_url="${BASH_REMATCH[1]}"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 43df3e0 (.)
+=======
+>>>>>>> 0440c57 (.)
 
         # Modifica l'organizzazione nell'URL se CUSTOM_ORG è fornito
         if [[ -n "$CUSTOM_ORG" && "$current_url" =~ git@github.com:([^/]+)/(.+)$ ]]; then
@@ -269,11 +281,6 @@ while IFS= read -r line; do
         # Chiamata esterna allo script di sincronizzazione
         log "🔄 Sincronizzazione modulo: $current_path [$current_url]"
         if ! "$script_dir/git_sync_subtree.sh" "$current_path" "$current_url" ; then
-=======
-        
-        # Sincronizza il modulo
-        if ! sync_module "$current_path" "$current_url"; then
->>>>>>> cb513be (.)
             log "⚠️ Sincronizzazione fallita per $current_path."
 >>>>>>> 43df3e0 (.)
         fi
@@ -296,11 +303,13 @@ log "success" "Sincronizzazione completata con history ottimizzata!"
 # Esegui git gc per mantenere il repository leggero
 log "🧹 Pulizia del repository..."
 git gc --prune=now --aggressive
-<<<<<<< HEAD
 sed -i -e 's/\r$//' "$me"
 log "✅ Sincronizzazione completata con history ottimizzata!"
+<<<<<<< HEAD
 =======
 
 log "✅ Sincronizzazione completata con history ottimizzata e preservazione delle modifiche locali!"
 >>>>>>> cb513be (.)
 >>>>>>> 43df3e0 (.)
+=======
+>>>>>>> 0440c57 (.)

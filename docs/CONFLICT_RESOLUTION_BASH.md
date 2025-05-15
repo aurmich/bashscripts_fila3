@@ -44,12 +44,19 @@ La risoluzione manuale dei conflitti negli script bash è particolarmente delica
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 9b65b0d (.)
 >>>>>>> 975498ad (fix: auto resolve conflict)
+=======
+
+
+
+ 9b65b0d (.)
+>>>>>>> 9e6997fb (fix: auto resolve conflict)
 # Versione avanzata con livelli di log
 log() {
     local level="$1"
@@ -65,6 +72,7 @@ log() {
     esac
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -72,11 +80,18 @@ log() {
 =======
 >>>>>>> 9b65b0d (.)
 >>>>>>> 975498ad (fix: auto resolve conflict)
+=======
+
+
+
+ 9b65b0d (.)
+>>>>>>> 9e6997fb (fix: auto resolve conflict)
 # Versione semplice
 log() {
     local message="$1"
     echo "📆 $(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$LOG_FILE"
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -84,6 +99,12 @@ log() {
 =======
 >>>>>>> 9b65b0d (.)
 >>>>>>> 975498ad (fix: auto resolve conflict)
+=======
+
+ feature-branch
+
+ 9b65b0d (.)
+>>>>>>> 9e6997fb (fix: auto resolve conflict)
 ```
 
 **Soluzione ottimale**: Integrare entrambe le versioni mantenendo la compatibilità con il codice esistente.
@@ -118,12 +139,19 @@ log() {
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 9b65b0d (.)
 >>>>>>> 975498ad (fix: auto resolve conflict)
+=======
+
+
+
+ 9b65b0d (.)
+>>>>>>> 9e6997fb (fix: auto resolve conflict)
 # Versione che richiede 2 parametri
 if [ $# -ne 2 ]; then
     echo "Usage: $0 <path> <remote_repo>"
@@ -133,6 +161,7 @@ fi
 LOCAL_PATH="$1"
 REMOTE_REPO="$2"
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -140,6 +169,12 @@ REMOTE_REPO="$2"
 =======
 >>>>>>> 9b65b0d (.)
 >>>>>>> 975498ad (fix: auto resolve conflict)
+=======
+
+
+
+ 9b65b0d (.)
+>>>>>>> 9e6997fb (fix: auto resolve conflict)
 # Versione che richiede 3 parametri
 if [ $# -ne 3 ]; then
     echo "Usage: $0 <path> <remote_repo> <branch>"
@@ -150,12 +185,19 @@ LOCAL_PATH="$1"
 REMOTE_REPO="$2"
 BRANCH="$3"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> feature-branch
 =======
 >>>>>>> 9b65b0d (.)
 >>>>>>> 975498ad (fix: auto resolve conflict)
+=======
+
+ feature-branch
+
+ 9b65b0d (.)
+>>>>>>> 9e6997fb (fix: auto resolve conflict)
 ```
 
 **Soluzione ottimale**: Valutare quale approccio è più flessibile e coerente con il resto del sistema. Se il branch è opzionale, rendere il terzo parametro opzionale con un valore predefinito.

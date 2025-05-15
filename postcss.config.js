@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 module.exports = {
@@ -12,10 +13,13 @@ module.exports = {
 =======
 >>>>>>> cb513be (.)
 >>>>>>> 43df3e0 (.)
+=======
+>>>>>>> 0440c57 (.)
 module.exports = {
   plugins: {
     tailwindcss: {},
     autoprefixer: {},
+<<<<<<< HEAD
 <<<<<<< HEAD
     'postcss-preset-env': {
       stage: 3,
@@ -36,3 +40,7 @@ module.exports = {
 }
 >>>>>>> cb513be (.)
 >>>>>>> 43df3e0 (.)
+=======
+  },
+}
+>>>>>>> 0440c57 (.)

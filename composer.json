@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "laraxot/bashscripts_fila3",
 <<<<<<< HEAD
     "description": "Script di utilità per la gestione dei repository Git e toolkit di automazione Git per progetti Laravel",
@@ -12,24 +13,33 @@
 =======
 <<<<<<< HEAD
     "name": "laraxot/git-automation",
+=======
+>>>>>>> 0440c57 (.)
     "description": "Toolkit di automazione Git per progetti Laravel",
     "type": "library",
-=======
     "name": "laraxot/bashscripts_fila3",
 >>>>>>> 43df3e0 (.)
     "autoload": {
         "psr-4": {
-            "Laraxot\\BashscriptsFila3\\": "src/"
+            
         }
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> ce77bf25 (🔄 Aggiornamento subtree)
 =======
+=======
+>>>>>>> 9e6997fb (fix: auto resolve conflict)
 <<<<<<< HEAD
 =======
 >>>>>>> cb513be (.)
 >>>>>>> 43df3e0 (.)
+<<<<<<< HEAD
 >>>>>>> 975498ad (fix: auto resolve conflict)
+=======
+=======
+>>>>>>> 0440c57 (.)
+>>>>>>> 9e6997fb (fix: auto resolve conflict)
     "authors": [
         {
             "name": "marco76tv",
@@ -73,7 +83,7 @@
 =======
 =======
     "require-dev": {
-        "larastan/larastan": "^3.0"
+        
     }
 >>>>>>> 43df3e0 (.)
 >>>>>>> 975498ad (fix: auto resolve conflict)

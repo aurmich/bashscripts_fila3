@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #!/bin/bash
 
 source ./bashscripts/lib/custom.sh
@@ -106,6 +105,7 @@ git pull origin "$BRANCH" --autostash --recurse-submodules --allow-unrelated-his
 sed -i -e 's/\r$//' "$me" || log "warning" "Impossibile normalizzare lo script"
 
 log "success" "Pull completato in $WHERE ($BRANCH)"
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 #!/bin/sh
@@ -224,5 +224,7 @@ git checkout $branch --
 git pull origin $branch --autostash --recurse-submodules --allow-unrelated-histories --prune --progress -v --rebase
 sed -i -e 's/\r$//' "$me"
 echo "-------- END PULL[$where ($branch)] ----------";
+=======
+>>>>>>> 0440c57 (.)
 
 >>>>>>> 43df3e0 (.)

@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Trova tutti i file contenenti git collision partendo dalla root del progetto. Analizza ciascun file con conflitti dando priorità in base all'impatto funzionale. Studia attentamente le differenze tra le versioni in conflitto per comprenderne lo scopo e il contesto. Ogni conflitto deve essere analizzato e risolto manualmente con ragionamento: non è ammesso l'uso di risoluzioni automatiche né la generazione di script per l'automazione. Per ogni file identifica la cartella "docs" più vicina, leggila e aggiornala con informazioni relative agli obiettivi funzionali e alle decisioni architetturali, evitando dettagli implementativi. Aggiorna anche la cartella "docs" principale nella root del progetto creando collegamenti bidirezionali tra la documentazione locale e quella globale, includendo anche le altre documentazioni eventualmente interessate. Nella cartella "laravel/Modules" ogni sottocartella è un modulo indipendente con proprio "composer.json", namespace, autoload, cartella "app" per le classi e documentazione dedicata. Mantieni aggiornate le relazioni tra la documentazione del modulo e quella principale tramite backlink bidirezionali. Dopo aver aggiornato tutta la documentazione, implementa manualmente una correzione coerente con lo stile e l'architettura del progetto. Durante la scansione della documentazione assicurati che ogni file ".md" abbia almeno due collegamenti in ingresso provenienti da altri file ".md". Se mancano, crea i backlink più significativi in base al contenuto e al contesto. Procedi in modo sistematico e continuo ma senza alcuna automazione cieca. Al termine fornisci un riepilogo con i file corretti, la documentazione aggiornata, i backlink creati, gli impatti rilevati e le motivazioni delle scelte adottate. Si devi sistemare e migliorare tutti i files che hanno collisioni, quando tocchi un file devi sempre farlo pensandolo per phpstan a livello 10.
 =======
 Trova tutti i file contenenti git collision partendo dalla root del progetto. Analizza ciascun file con conflitti dando priorità in base all’impatto funzionale. Studia attentamente le differenze tra le versioni in conflitto per comprenderne lo scopo e il contesto. Ogni conflitto deve essere analizzato e risolto manualmente con ragionamento: non è ammesso l’uso di risoluzioni automatiche né la generazione di script per l’automazione. Per ogni file identifica la cartella "docs" più vicina, leggila e aggiornala con informazioni relative agli obiettivi funzionali e alle decisioni architetturali, evitando dettagli implementativi. Aggiorna anche la cartella "docs" principale nella root del progetto creando collegamenti bidirezionali tra la documentazione locale e quella globale, includendo anche le altre documentazioni eventualmente interessate. Nella cartella "laravel/Modules" ogni sottocartella è un modulo indipendente con proprio "composer.json", namespace, autoload, cartella "app" per le classi e documentazione dedicata. Mantieni aggiornate le relazioni tra la documentazione del modulo e quella principale tramite backlink bidirezionali. Dopo aver aggiornato tutta la documentazione, implementa manualmente una correzione coerente con lo stile e l’architettura del progetto. Durante la scansione della documentazione assicurati che ogni file ".md" abbia almeno due collegamenti in ingresso provenienti da altri file ".md". Se mancano, crea i backlink più significativi in base al contenuto e al contesto. Procedi in modo sistematico e continuo ma senza alcuna automazione cieca. Al termine fornisci un riepilogo con i file corretti, la documentazione aggiornata, i backlink creati, gli impatti rilevati e le motivazioni delle scelte adottate.
@@ -10,27 +11,37 @@ Trova tutti i file contenenti git collision partendo dalla root del progetto. An
 =======
 =======
 >>>>>>> 975498ad (fix: auto resolve conflict)
+=======
+>>>>>>> 9e6997fb (fix: auto resolve conflict)
 
 =======
 >>>>>>> 43df3e0 (.)
 trova tutti i file con dentro <<< HEAD, studiali, ragionaci su, trova cartella docs piu' vicina al file da correggere trova la cartella docs 
+=======
+trova tutti i file con dentro collisioni git , studiali, ragionaci su, trova cartella docs piu' vicina al file da correggere trova la cartella docs 
+>>>>>>> 0440c57 (.)
 nella root del progetto, queste 2 cartelle deve studiarle ed aggiornarle e migliorarle di continuo, poi procedi con implementazione correzione, 
 devi anche creare dei test in pest per sincerarti che la tua correzione funzioni e che il sito continui a funzionare, se non funziona 
 devi studiare la cartella docs, poi implementare soluzione, procedi senza domandarmi nulla, in maniera sistematica , automatica e senza interruzioni 
 
 
-trova i file con dentro "<<<<<<< HEAD"  questi file bisogna correggerli, percio' prendiamo l'occasione di migliorarli , per migliorarli devi aggiornare e studiare la cartella "docs" piu' vicina al file con l'errore e alla cartella "docs" che si trova nella root del progetto che deve contenere i collegamenti bidirezionali ai file aggiornati della cartella docs piu' vicina all'errore, se il file con "<<< HEAD" e' un file .php devi anche validarlo con phpstan che e' gia' installato nella cartella laravel e lo puoi eseguire con ./vendor/bin/phpstan  e devi analizzare il file che hai corretto a livello 9, le tue correzzioni devi prima documentarle dentro la cartella docs piu' vicina all'errore, e poi creare collegamenti bidirezionali verso i file adeguati della cartella docs che si trova nella root del progetto, poi implementi la correzione 
+trova i file con dentro ""  questi file bisogna correggerli, percio' prendiamo l'occasione di migliorarli , per migliorarli devi aggiornare e studiare la cartella "docs" piu' vicina al file con l'errore e alla cartella "docs" che si trova nella root del progetto che deve contenere i collegamenti bidirezionali ai file aggiornati della cartella docs piu' vicina all'errore, se il file con collisioni git e' un file .php devi anche validarlo con phpstan che e' gia' installato nella cartella laravel e lo puoi eseguire con ./vendor/bin/phpstan  e devi analizzare il file che hai corretto a livello 9, le tue correzzioni devi prima documentarle dentro la cartella docs piu' vicina all'errore, e poi creare collegamenti bidirezionali verso i file adeguati della cartella docs che si trova nella root del progetto, poi implementi la correzione 
 
 <<<<<<< HEAD
 =======
 [2025-04-22 11:23:29] Scelto blocco HEAD (8 linee vs 1)
+<<<<<<< HEAD
 >>>>>>> 43df3e0 (.)
 trova tutti i file con dentro <<< HEAD, studiali, ragionaci su, trova cartella docs piu' vicina al file da correggere trova la cartella docs 
+=======
+trova tutti i file con dentro collisioni git , studiali, ragionaci su, trova cartella docs piu' vicina al file da correggere trova la cartella docs 
+>>>>>>> 0440c57 (.)
 nella root del progetto, queste 2 cartelle deve studiarle ed aggiornarle e migliorarle di continuo, poi procedi con implementazione correzione, 
 devi anche creare dei test in pest per sincerarti che la tua correzione funzioni e che il sito continui a funzionare, se non funziona 
 devi studiare la cartella docs, poi implementare soluzione, procedi senza domandarmi nulla, in maniera sistematica , automatica e senza interruzioni 
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 trova i file con dentro "<<<<<<< HEAD"  questi file bisogna correggerli, percio' prendiamo l'occasione di migliorarli , per migliorarli devi aggiornare e studiare la cartella "docs" piu' vicina al file con l'errore e alla cartella "docs" che si trova nella root del progetto che deve contenere i collegamenti bidirezionali ai file aggiornati della cartella docs piu' vicina all'errore, se il file con "<<< HEAD" e' un file .php devi anche validarlo con phpstan che e' gia' installato nella cartella laravel e lo puoi eseguire con ./vendor/bin/phpstan  e devi analizzare il file che hai corretto a livello 9, le tue correzzioni devi prima documentarle dentro la cartella docs piu' vicina all'errore, e poi creare collegamenti bidirezionali verso i file adeguati della cartella docs che si trova nella root del progetto, poi implementi la correzione
 
@@ -41,10 +52,22 @@ trova i file con dentro "<<<<<<< HEAD"  questi file bisogna correggerli, percio'
 =======
 =======
 trova i file con dentro "<<<<<<< HEAD"  questi file bisogna correggerli, percio' prendiamo l'occasione di migliorarli , per migliorarli devi aggiornare e studiare la cartella "docs" piu' vicina al file con l'errore e alla cartella "docs" che si trova nella root del progetto che deve contenere i collegamenti bidirezionali ai file aggiornati della cartella docs piu' vicina all'errore, se il file con "<<< HEAD" e' un file .php devi anche validarlo con phpstan che e' gia' installato nella cartella laravel e lo puoi eseguire con ./vendor/bin/phpstan  e devi analizzare il file che hai corretto a livello 9, le tue correzzioni devi prima documentarle dentro la cartella docs piu' vicina all'errore, e poi creare collegamenti bidirezionali verso i file adeguati della cartella docs che si trova nella root del progetto, poi implementi la correzione 
+=======
+trova i file con dentro ""  questi file bisogna correggerli, percio' prendiamo l'occasione di migliorarli , per migliorarli devi aggiornare e studiare la cartella "docs" piu' vicina al file con l'errore e alla cartella "docs" che si trova nella root del progetto che deve contenere i collegamenti bidirezionali ai file aggiornati della cartella docs piu' vicina all'errore, se il file con collisioni git e' un file .php devi anche validarlo con phpstan che e' gia' installato nella cartella laravel e lo puoi eseguire con ./vendor/bin/phpstan  e devi analizzare il file che hai corretto a livello 9, le tue correzzioni devi prima documentarle dentro la cartella docs piu' vicina all'errore, e poi creare collegamenti bidirezionali verso i file adeguati della cartella docs che si trova nella root del progetto, poi implementi la correzione 
+>>>>>>> 0440c57 (.)
 
 [0;34mℹ️ [2025-04-22 11:23:29] Scelto blocco HEAD (4 linee vs 1)
 
 
+<<<<<<< HEAD
 i conflitti vanno sistemati a mano, perche' devi analizzare il codice, ragionare, e scegliere la scelta piu' intelligente studiando e aggiornando la cartella docs adeguata e poi creando i collegamenti bidirezionali ai file adeguati della cartella docs della root del progetto 
 >>>>>>> 43df3e0 (.)
+<<<<<<< HEAD
 >>>>>>> 975498ad (fix: auto resolve conflict)
+=======
+=======
+cerca tutti i files con dentro collisioni git  , devi correggere e migliorare questi files, per poterli correggere devi prima analizzare il codice del modulo che contiene il file, aggiornare e studiare la cartella docs del modulo che contiene il file , creare collegamenti bidirezionali ai file della cartella docs dentro la root del progetto,  analizzare studiare , e solo dopo implementare correzione i conflitti vanno sistemati a mano, perche' devi analizzare il codice, ragionare, e scegliere la scelta piu' intelligente studiando e aggiornando la cartella docs adeguata e poi creando i collegamenti bidirezionali ai file adeguati della cartella docs della root del progetto , scegli te l'ordine e la priorità, procedi senza interruzioni , senza domandarmi nulla
+
+
+>>>>>>> 0440c57 (.)
+>>>>>>> 9e6997fb (fix: auto resolve conflict)
