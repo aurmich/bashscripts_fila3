@@ -1,7 +1,3 @@
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
 # Risoluzione Conflitti Git - Modulo Predict
 
 ## File Modificati
@@ -108,8 +104,6 @@ Tutti i file modificati hanno un backup con timestamp nel formato:
 3. Verificare che tutte le risorse Filament siano registrate correttamente
 =======
 >>>>>>> 4d4d6cb7 (.)
-<<<<<<< Updated upstream
-=======
 # Risoluzione Conflitti Git - Modulo Predict
 
 ## File Modificati
@@ -186,7 +180,6 @@ Tutti i file modificati hanno un backup con timestamp nel formato:
 1. Eseguire `composer dump-autoload` per aggiornare l'autoloader
 2. Eseguire `php artisan config:clear` per pulire la cache
 3. Verificare che tutte le risorse Filament siano registrate correttamente
->>>>>>> 3a208a9 (.)
 =======
 >>>>>>> Stashed changes
 4. Testare il modulo in ambiente di sviluppo 

@@ -1,7 +1,3 @@
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
 # Script analyze_modules.sh
 
 ## Descrizione
@@ -94,9 +90,7 @@ In caso di conflitti durante l'analisi dei moduli:
 ## Collegamenti
 - [Documentazione PHPStan](../../docs/phpstan/PHPSTAN_WORKFLOW.md)
 - [Linee Guida Moduli](../../docs/MODULES.md)
-<<<<<<< Updated upstream
 - [Risoluzione Conflitti](../../docs/development/CONFLICT_RESOLUTION.md)
-=======
 # Script analyze_modules.sh
 
 ## Descrizione
@@ -179,7 +173,6 @@ Modules/<NomeModulo>/docs/phpstan/
    - Permessi insufficienti
    - PHPStan non installato
    - Configurazione PHPStan errata 
->>>>>>> 3a208a9 (.)
 =======
 - [Risoluzione Conflitti](../../docs/development/CONFLICT_RESOLUTION.md)
 >>>>>>> Stashed changes

@@ -1,7 +1,3 @@
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
 # Risoluzione dei Conflitti negli Script Git Subtree
 
 ## Problema
@@ -252,9 +248,7 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione Git Subtree](https://git-scm.com/book/en/v2/Git-Tools-Advanced-Merging)
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
 - [Documentazione degli Script Git](git_scripts.md)
-<<<<<<< Updated upstream
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
-=======
 # Risoluzione dei Conflitti negli Script Git Subtree
 
 ## Problema
@@ -386,7 +380,6 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
 - [Documentazione degli Script Git](git_scripts.md)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
->>>>>>> 5338a990 (.)
 =======
 # Risoluzione dei Conflitti negli Script Git Subtree
 

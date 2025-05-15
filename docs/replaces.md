@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 # 📄 Refactoring Regex Laravel Filament
 
@@ -64,7 +63,6 @@ public static function table\(Table \$table\): Table\s*\{[\s\S]*?\n\s*\}
 ---
 
 > Ogni modifica va sempre verificata manualmente e testata con PHPStan livello 10. Segnalare eventuali casi limite in [git_conflicts_resolution.md](./git_conflicts_resolution.md).
-=======
 ### Versione HEAD
 
 
@@ -95,7 +93,6 @@ public static function form\(Form \$form\): Form\s*\{\s*return \$form\s*->schema
 
 
 public static function getFormSchema(): array
->>>>>>> 3a208a9 (.)
     {
         return [
             $1
