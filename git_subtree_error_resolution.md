@@ -20,6 +20,7 @@ Il sistema di gestione dei subtree è composto da tre componenti principali:
   2. Pull subtree
 
 ### 2. Push Script (`git_push_subtree.sh`)
+<<<<<<< HEAD
 ```bash
 # 1. Inizializzazione
 git init
@@ -47,6 +48,30 @@ git subtree pull -P "$LOCAL_PATH" "$REMOTE_REPO" "$BRANCH"
 # 3. Fallback 2
 git fetch "$REMOTE_REPO" "$BRANCH" --depth=1
 git merge -s subtree FETCH_HEAD --allow-unrelated-histories
+=======
+Esegue una sequenza complessa di operazioni:
+```bash
+1. git add -A && git commit -am "."
+2. git push -u origin $REMOTE_BRANCH
+3. git subtree push -P $LOCAL_PATH $REMOTE_REPO $REMOTE_BRANCH
+4. git push -f $REMOTE_REPO $(git subtree split --prefix=$LOCAL_PATH):$REMOTE_BRANCH
+5. git subtree split --prefix=$LOCAL_PATH -b $TEMP_BRANCH
+6. git push -f $REMOTE_REPO $TEMP_BRANCH:$REMOTE_BRANCH
+7. git branch -D $TEMP_BRANCH
+8. git subtree push -P $LOCAL_PATH $REMOTE_REPO $REMOTE_BRANCH
+9. git rebase --rebase-merges --strategy subtree $REMOTE_BRANCH
+```
+
+### 3. Pull Script (`git_pull_subtree.sh`)
+Esegue una sequenza con fallback:
+```bash
+1. git subtree pull -P $LOCAL_PATH $REMOTE_REPO $REMOTE_BRANCH --squash
+2. Se fallisce, prova: git subtree pull -P $LOCAL_PATH $REMOTE_REPO $REMOTE_BRANCH
+3. Se fallisce ancora:
+   - git fetch $REMOTE_REPO $REMOTE_BRANCH --depth=1
+   - git merge -s subtree FETCH_HEAD --allow-unrelated-histories
+4. git rebase --rebase-merges --strategy subtree $REMOTE_BRANCH
+>>>>>>> 43df3e0 (.)
 ```
 
 ## 🚨 Analisi Errori Comuni
@@ -72,6 +97,7 @@ fi
 ! [rejected] dev -> dev (non-fast-forward)
 ```
 
+<<<<<<< HEAD
 **Causa**: Divergenze tra repository locale e remoto
 
 **Soluzione**:
@@ -146,3 +172,50 @@ fi
 <div align="center">
   <sub>Built with ❤️ by the development team</sub>
 </div>
+=======
+**Causa**: Questo errore si verifica nella sequenza di push quando ci sono divergenze tra il repository locale e remoto.
+
+**Soluzione**:
+1. Prima del push, assicurarsi che il repository locale sia aggiornato:
+```bash
+git fetch origin $REMOTE_BRANCH
+git merge origin/$REMOTE_BRANCH --allow-unrelated-histories
+```
+
+2. Modificare la sequenza di push per gestire meglio i conflitti:
+```bash
+if ! git push -u origin "$REMOTE_BRANCH"; then
+    git pull --rebase origin "$REMOTE_BRANCH"
+    git push -u origin "$REMOTE_BRANCH"
+fi
+```
+
+## Best Practices per l'Uso
+
+1. **Prima dell'Esecuzione**:
+   - Committare o stashare modifiche pendenti
+   - Assicurarsi di essere sul branch corretto
+   - Verificare lo stato del repository remoto
+
+2. **Durante l'Esecuzione**:
+   - Monitorare l'output per errori specifici
+   - Non interrompere gli script durante l'esecuzione
+
+3. **Dopo l'Esecuzione**:
+   - Verificare lo stato del subtree
+   - Controllare la storia dei commit
+   - Verificare la sincronizzazione con il remote
+
+## Note sulla Manutenzione
+
+1. Gli script utilizzano una strategia aggressiva con `--force` push in alcuni casi
+2. Il rebase viene utilizzato per mantenere una storia pulita
+3. Sono implementati meccanismi di fallback per il pull
+4. La gestione degli errori potrebbe essere migliorata con più logging
+
+## Suggerimenti per il Debugging
+
+1. Aggiungere `set -x` all'inizio degli script per debug verbose
+2. Implementare logging più dettagliato
+3. Verificare i permessi degli script
+>>>>>>> 43df3e0 (.)

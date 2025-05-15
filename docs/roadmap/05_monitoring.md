@@ -1,8 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
 >>>>>>> ce77bf25 (🔄 Aggiornamento subtree)
+=======
+>>>>>>> 975498ad (fix: auto resolve conflict)
 # 📊 Fase 5: Monitoraggio
 
 ## 📋 Panoramica
@@ -54,6 +57,56 @@ Questa fase si concentra sul monitoraggio e l'ottimizzazione del sistema, fornen
 - Grafana per le dashboard
 - Prometheus per il monitoraggio
 - Node.js per l'interfaccia web
+=======
+
+[0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
+# 📊 Fase 5: Monitoraggio
+
+## 📋 Panoramica
+Questa fase si concentra sul monitoraggio e l'ottimizzazione del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 4: Deployment](../roadmap/04_deployment.md)
+# 📊 Fase 5: Monitoraggio
+
+## 📋 Panoramica
+Questa fase si concentra sul monitoraggio e l'ottimizzazione del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 4: Deployment](../roadmap/04_deployment.md)
+
+[0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
+# 📊 Fase 5: Monitoraggio
+
+## 📋 Panoramica
+Questa fase si concentra sul monitoraggio e l'ottimizzazione del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 4: Deployment](../roadmap/04_deployment.md)
+
+
+# 📊 Fase 5: Monitoraggio
+
+## 📋 Panoramica
+Questa fase si concentra sul monitoraggio e l'ottimizzazione del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 4: Deployment](../roadmap/04_deployment.md)
+
+
+# 📊 Fase 5: Monitoraggio
+
+## 📋 Panoramica
+Questa fase si concentra sul monitoraggio e l'ottimizzazione del sistema.
+>>>>>>> 43df3e0 (.)
 
 <<<<<<< HEAD
 
@@ -69,6 +122,7 @@ Questa fase si concentra sul monitoraggio e l'ottimizzazione del sistema.
 - [Roadmap Principale](../roadmap.md)
 - [Documentazione Script](../project.md)
 - [Fase 4: Deployment](../roadmap/04_deployment.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 # 📊 Fase 5: Monitoraggio
 
@@ -176,3 +230,10 @@ aurmich/dev
 =======
 - [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
 >>>>>>> ce77bf25 (🔄 Aggiornamento subtree)
+=======
+- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
+=======
+
+[0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (23 linee vs 1)[0m
+>>>>>>> 43df3e0 (.)
+>>>>>>> 975498ad (fix: auto resolve conflict)

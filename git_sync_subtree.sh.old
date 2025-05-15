@@ -1,7 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> origin/dev
+=======
+
+[0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
+>>>>>>> 43df3e0 (.)
 #!/bin/bash
 
 # Validate input
@@ -53,9 +58,14 @@ sync_subtree() {
 sync_subtree
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/dev
+=======
+
+[0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
+>>>>>>> 43df3e0 (.)
 #!/bin/bash
 
 # Validate input
@@ -106,8 +116,13 @@ sync_subtree() {
 # Run sync
 sync_subtree
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> origin/dev
 >>>>>>> origin/dev
 echo "Subtree $LOCAL_PATH synchronized successfully with $REMOTE_REPO"
+=======
+
+[0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
+>>>>>>> 43df3e0 (.)

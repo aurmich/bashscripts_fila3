@@ -19,10 +19,17 @@ ORG="$1"
 curr_dir=$(pwd)
 
 # Esegui backup se richiesto
+<<<<<<< HEAD
 backup_disk
 
 # Configurazione git
 git_config_setup
+=======
+#backup_disk
+
+# Configurazione git
+# git_config_setup
+>>>>>>> 975498ad (fix: auto resolve conflict)
 
 total=${submodules_array["total"]}
 for ((i=0; i<total; i++)); do
@@ -35,6 +42,7 @@ for ((i=0; i<total; i++)); do
     #    git remote add "$ORG" "$url"
     #fi
     echo "Submodule $i: 📂 path: $path 🌐 URL: $url 🔑 ORG: $ORG"
+<<<<<<< HEAD
     cd "$path"
     
     # Controllo se .git è un file e non una directory
@@ -66,15 +74,41 @@ for ((i=0; i<total; i++)); do
     while ! git rebase --continue 2>/dev/null; do
         if git diff --name-only --diff-filter=U | grep .; then
             echo "⚠️  Conflitti trovati. Li sistemiamo in automatico (accettando i tuoi cambiamenti)..."
+=======
+    cd "$path" 
+    git init
+    git config --global --add safe.directory "$curr_dir/$path"
+    git checkout "$BRANCH" -- 
+    git remote add "$ORG" "$url"
+    git_config_setup
+    git add -A
+    git commit -am "."
+    git pull "$ORG" "$BRANCH" --autostash --rebase --depth=1
+    
+     # Loop per gestire eventuali conflitti
+    while ! git rebase --continue 2>/dev/null; do
+        if git diff --name-only --diff-filter=U | grep .; then
+            echo "⚠️  Conflitti trovati. Li sistemiamo in automatico (accettando i tuoi cambiamenti)..."
+            git add -A
+            git commit -am "fix: auto resolve conflict"
+            git push -u "$ORG" HEAD:"$BRANCH"
+>>>>>>> 975498ad (fix: auto resolve conflict)
         else
             echo "✅ Nessun conflitto o già risolto"
             break
         fi
+<<<<<<< HEAD
         dummy_push "$ORG" "$BRANCH" "."
     done
     #git stash apply || echo "🔄 Non ci sono modifiche da ripristinare"
     # Push finale
     dummy_push "$ORG" "$BRANCH" "."
+=======
+    done
+
+    # Push finale
+    git push -u "$ORG" HEAD:"$BRANCH"
+>>>>>>> 975498ad (fix: auto resolve conflict)
 
     cd "$curr_dir"
 done

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 PHPStan è già installato nella cartella laravel e si esegue con ./vendor/bin/phpstan. Analizza ogni modulo in laravel/Modules (dal livello 1 al 10) in modo sistematico e strutturato, salvando i report JSON nella cartella docs/phpstan di ciascun modulo (es: laravel/Modules/Auth/docs/phpstan/level_1.json). Prima di correggere, studia e aggiorna la documentazione specifica del modulo e crea collegamenti bidirezionali con la documentazione generale nella cartella docs della root, che funge da indice centrale.
 
 Per ogni correzione:
@@ -17,6 +18,8 @@ Regole chiave:
 
 La documentazione approfondita e tecnica si trova nelle cartelle docs di ciascun modulo; la root contiene solo l'indice e i link bidirezionali. Dopo ogni livello di analisi fornisci un riepilogo delle modifiche, delle scelte architetturali e degli impatti futuri attesi.
 =======
+=======
+>>>>>>> 975498ad (fix: auto resolve conflict)
 
 phpstan e' gia' installato dentro la cartella laravel, lo puoi eseguire con ./vendor/bin/phpstan devi analizzare tutte le cartelle che sono dentro laravel/Modules queste cartelle sono moduli in oguno di questi moduli ci deve essere la cartella docs/phpstan e li dentro metti il tuo report di phpstan per quel modulo partendo dal livello max chiamando il file level_<level>.md per facilitarti la cosa puoi fare anche la versione json level_<level>.json, 
 il file json lo puoi generare direttamente da phpstan, hai domande ?
@@ -35,6 +38,8 @@ Gestire eventuali errori e fornire feedback chiari
 Essere riutilizzabile in qualsiasi ambiente con la stessa struttura di directory
 il file json lo puoi generare direttamente da phpstan, hai domande ? 
 
+=======
+>>>>>>> 43df3e0 (.)
 phpstan e' gia' installato dentro la cartella laravel lo esegui con ./vendor/bin/phpstan 
 devi analizzare ogni singola cartella dentro laravel/Modules queste cartelle sono moduli, da livello 1 a livello 10 , ogni modulo ha la sua cartella docs/phpstan dentro ci metti il file level_<level>.json che lo crea in automatico phpstan , poi studiando e aggiornando la cartella docs del modulo e analizzando e ragionando sul codice del modulo scrivi il file level_<level>.md con come correggere gli errori, pero' devi aver ben in chiaro lo scopo , quando correggi un file controlli di non aver distrutto il sito
 
