@@ -7,7 +7,7 @@ YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
 NC='\033[0m'
 
-LOG_FILE="subtree_sync.log"
+# LOG_FILE="subtree_sync.log"  # Rimosso: non si scrive più su file
 BRANCH=$(git symbolic-ref --short HEAD 2>/dev/null || echo "main")
 
 # Funzione avanzata per loggare messaggi
@@ -18,19 +18,18 @@ log() {
         local level="$1"
         local message="$2"
         local timestamp=$(date '+%Y-%m-%d %H:%M:%S')
-        
         case "$level" in
-            "error") echo -e "${RED}❌ [$timestamp] $message${NC}" | tee -a "$LOG_FILE" ;;
-            "success") echo -e "${GREEN}✅ [$timestamp] $message${NC}" | tee -a "$LOG_FILE" ;;
-            "warning") echo -e "${YELLOW}⚠️ [$timestamp] $message${NC}" | tee -a "$LOG_FILE" ;;
-            "info") echo -e "${BLUE}ℹ️ [$timestamp] $message${NC}" | tee -a "$LOG_FILE" ;;
-            *) echo -e "[$timestamp] $message" | tee -a "$LOG_FILE" ;;
+            "error") echo -e "${RED}❌ [$timestamp] $message${NC}" ;;
+            "success") echo -e "${GREEN}✅ [$timestamp] $message${NC}" ;;
+            "warning") echo -e "${YELLOW}⚠️ [$timestamp] $message${NC}" ;;
+            "info") echo -e "${BLUE}ℹ️ [$timestamp] $message${NC}" ;;
+            *) echo -e "[$timestamp] $message" ;;
         esac
     else
         # Formato semplice: log "message"
         local message="$1"
         local timestamp=$(date '+%Y-%m-%d %H:%M:%S')
-        echo "📆 $timestamp - $message" | tee -a "$LOG_FILE"
+        echo "📆 $timestamp - $message"
     fi
 }
 
