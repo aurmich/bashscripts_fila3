@@ -31,6 +31,11 @@ fi
 echo "🚀 Avvio del server MCP MySQL personalizzato..."
 
 # Avvia il connector script
+# Imposta una dimensione di schermo standard per evitare errori
+export COLUMNS=80
+export LINES=24
+
+# Avvia il connector senza utilizzare screen
 cd "$PROJECT_DIR" && node "$CONNECTOR_SCRIPT" > "$LOGS_DIR/mysql.log" 2>&1 &
 
 # Attendi che il server si avvii
