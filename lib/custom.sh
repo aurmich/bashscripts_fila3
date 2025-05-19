@@ -18,6 +18,10 @@ log() {
         local level="$1"
         local message="$2"
         local timestamp=$(date '+%Y-%m-%d %H:%M:%S')
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8febbeaf (.)
         case "$level" in
             "error") echo -e "${RED}❌ [$timestamp] $message${NC}" ;;
             "success") echo -e "${GREEN}✅ [$timestamp] $message${NC}" ;;
@@ -38,7 +42,7 @@ handle_git_error() {
     local operation="$1"
     local error_message="$2"
     local retry_count="${3:-3}"
-    
+
     log "error" "Errore durante $operation: $error_message"
 
     if [ $retry_count -gt 0 ]; then
@@ -66,7 +70,7 @@ die() {
 # Funzione per verificare l'integrità del repository
 check_repository_integrity() {
     log "info" "Verifica integrità repository..."
-    
+
     if ! git fsck --full --strict; then
         handle_git_error "verifica integrità" "Problemi riscontrati nel repository"
     fi
@@ -96,7 +100,7 @@ rewrite_url() {
 # Funzione avanzata per la manutenzione git
 git_maintenance() {
     log "info" "Eseguo manutenzione avanzata del repository git..."
-    
+
     # Backup automatico prima della manutenzione
     local backup_branch="backup-$(date +%Y%m%d-%H%M%S)"
     git branch "$backup_branch" || handle_git_error "creazione backup" "Impossibile creare branch di backup"
@@ -120,7 +124,7 @@ git_maintenance() {
 # Funzione avanzata per configurare le impostazioni git
 git_config_setup() {
     log "info" "Configurazione avanzata git..."
-    
+
     # Configurazioni base
     git config core.ignorecase false || handle_git_error "configurazione" "Errore impostazione ignorecase"
     git config core.fileMode false || handle_git_error "configurazione" "Errore impostazione fileMode"
@@ -128,7 +132,7 @@ git_config_setup() {
     git config core.eol lf || handle_git_error "configurazione" "Errore impostazione eol"
     git config core.symlinks false || handle_git_error "configurazione" "Errore impostazione symlinks"
     git config core.longpaths true || handle_git_error "configurazione" "Errore impostazione longpaths"
-    
+
     # Configurazioni avanzate
     git config pull.rebase true || handle_git_error "configurazione" "Errore impostazione pull.rebase"
     git config fetch.prune true || handle_git_error "configurazione" "Errore impostazione fetch.prune"
@@ -152,55 +156,55 @@ restore_disk() {
     # Richiesta interattiva della lettera del disco
     read -p "📀 Inserisci la lettera del disco da cui ripristinare [d]: " DISK_LETTER
     DISK_LETTER=${DISK_LETTER:-"d"}  # Se non specificato, usa 'd' come default
-    
+
     # Verifica che il disco sia montato
     BACKUP_DIR="/mnt/$DISK_LETTER/var/www/html/_bases"
     if [ ! -d "$BACKUP_DIR" ]; then
         handle_error "Il disco $DISK_LETTER non è montato o la directory di backup non esiste"
         return 1
     fi
-    
+
     log "info" "Ricerca backup disponibili su disco $DISK_LETTER..."
-    
+
     # Trova gli ultimi 10 backup ordinati per data (più recenti prima)
     BACKUPS=($(ls -t "$BACKUP_DIR"/*.tar.gz 2>/dev/null | head -10))
-    
+
     if [ ${#BACKUPS[@]} -eq 0 ]; then
         handle_error "Nessun backup trovato sul disco $DISK_LETTER"
         return 1
     fi
-    
+
     echo -e "\nBackup disponibili sul disco $DISK_LETTER:\n"
-    
+
     # Mostra i backup disponibili con radio button
     for i in ${!BACKUPS[@]}; do
         BACKUP_NAME=$(basename "${BACKUPS[$i]}")
         echo "[$((i+1))] $BACKUP_NAME"
     done
-    
+
     # Richiedi la selezione
     echo ""
     read -p "Seleziona il backup da ripristinare [1-${#BACKUPS[@]}]: " SELECTION
-    
+
     # Verifica che la selezione sia valida
     if ! [[ "$SELECTION" =~ ^[0-9]+$ ]] || [ "$SELECTION" -lt 1 ] || [ "$SELECTION" -gt ${#BACKUPS[@]} ]; then
         handle_error "Selezione non valida"
         return 1
     fi
-    
+
     # Calcola l'indice dell'array (0-based)
     SELECTION=$((SELECTION-1))
     SELECTED_BACKUP="${BACKUPS[$SELECTION]}"
     BACKUP_NAME=$(basename "$SELECTED_BACKUP")
-    
+
     echo -e "\n🔄 Ripristino di $BACKUP_NAME in corso..."
-    
+
     # Chiama lo script restore_from_disk.sh
     if ! ./bashscripts/utils/restore_from_disk.sh "$DISK_LETTER" "$SELECTED_BACKUP"; then
         handle_error "Errore durante il ripristino del backup"
         return 1
     fi
-    
+
     log "success" "Ripristino completato con successo"
 }
 
