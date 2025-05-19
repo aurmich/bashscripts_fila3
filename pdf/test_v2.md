@@ -1,11 +1,7 @@
 # 
 
 *Autore: *  
-<<<<<<< HEAD
-*Generato automaticamente il 2025-05-19 15:20:57*  
-=======
 *Generato automaticamente il 2025-05-19 15:21:46*  
->>>>>>> e9f150887 (first)
 *Pagine: 215*
 
 ---
@@ -661,8 +657,4 @@ class CartReplay 4 public function _inveke(): void { Bi: tableC(new CartItem())â
 ---
 
 *Documento convertito da PDF a Markdown con formattazione avanzata*  
-<<<<<<< HEAD
-*Data di conversione: 2025-05-19 15:20:57*
-=======
 *Data di conversione: 2025-05-19 15:21:46*
->>>>>>> e9f150887 (first)
