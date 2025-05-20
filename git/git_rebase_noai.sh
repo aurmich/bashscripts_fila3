@@ -12,5 +12,5 @@ number=$1
 echo "N: $number"
 for(( i=1; i<=$number; i++ ))
 do
-git add -A && git commit -am "rebase $1" && git push origin HEAD:$branch -uf && git rebase --continue || git rebase --continue || git push origin HEAD:$branch -uf || echo "loop: $i"
-done 
+git add -A && git commit -am "rebase $1" && git push origin HEAD:$branch -u && git rebase --continue || git rebase --continue || git push origin HEAD:$branch -u || echo "loop: $i"
+done
