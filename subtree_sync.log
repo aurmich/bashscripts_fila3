@@ -234,7 +234,12 @@
 [0;32m✅ [2025-05-15 16:43:11] Configurazione git completata con successo[0m
 [0;34mℹ️ [2025-05-15 19:29:05] Configurazione avanzata git...[0m
 [0;32m✅ [2025-05-15 19:29:05] Configurazione git completata con successo[0m
+<<<<<<< HEAD
 =======
 [0;34mℹ️ [2025-05-18 22:04:31] Configurazione avanzata git...[0m
 [0;32m✅ [2025-05-18 22:04:31] Configurazione git completata con successo[0m
 >>>>>>> Stashed changes
+=======
+[0;34mℹ️ [2025-05-20 10:23:18] Configurazione avanzata git...[0m
+[0;32m✅ [2025-05-20 10:23:18] Configurazione git completata con successo[0m
+>>>>>>> a8755035 (.)
