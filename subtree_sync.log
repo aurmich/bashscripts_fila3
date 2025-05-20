@@ -228,6 +228,7 @@
 [0;34mℹ️ [2025-05-13 20:55:45] Configurazione avanzata git...[0m
 [0;32m✅ [2025-05-13 20:55:45] Configurazione git completata con successo[0m
 >>>>>>> e74ca056 (.)
+<<<<<<< Updated upstream
 [0;34mℹ️ [2025-05-15 16:34:19] Configurazione avanzata git...[0m
 [0;32m✅ [2025-05-15 16:34:19] Configurazione git completata con successo[0m
 [0;34mℹ️ [2025-05-15 16:43:11] Configurazione avanzata git...[0m
@@ -243,3 +244,13 @@
 [0;34mℹ️ [2025-05-20 10:23:18] Configurazione avanzata git...[0m
 [0;32m✅ [2025-05-20 10:23:18] Configurazione git completata con successo[0m
 >>>>>>> a8755035 (.)
+=======
+[0;34mℹ️ [2025-05-15 14:02:35] Configurazione avanzata git...[0m
+[0;32m✅ [2025-05-15 14:02:35] Configurazione git completata con successo[0m
+[0;34mℹ️ [2025-05-15 15:01:46] Configurazione avanzata git...[0m
+[0;32m✅ [2025-05-15 15:01:46] Configurazione git completata con successo[0m
+[0;34mℹ️ [2025-05-15 15:52:26] Configurazione avanzata git...[0m
+[0;32m✅ [2025-05-15 15:52:26] Configurazione git completata con successo[0m
+[0;34mℹ️ [2025-05-20 12:12:22] Configurazione avanzata git...[0m
+[0;32m✅ [2025-05-20 12:12:22] Configurazione git completata con successo[0m
+>>>>>>> Stashed changes
