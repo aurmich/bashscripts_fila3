@@ -8,8 +8,8 @@ from datetime import datetime
 import json
 
 # Configurazione
-PDF_PATH = '/var/www/html/YOUR_PROJECT/bashscripts/pdf/test.pdf'
-OUTPUT_MD = '/var/www/html/YOUR_PROJECT/bashscripts/pdf/test_info2.md'
+PDF_PATH = '/var/www/html/saluteora/bashscripts/pdf/test.pdf'
+OUTPUT_MD = '/var/www/html/saluteora/bashscripts/pdf/test_info2.md'
 TEMP_DIR = '/tmp/pdf_analysis'
 
 # Crea la directory temporanea se non esiste

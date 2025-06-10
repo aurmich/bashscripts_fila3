@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Configurazione
-PDF_PATH="/var/www/html/YOUR_PROJECT/bashscripts/pdf/test.pdf"
-OUTPUT_MD="/var/www/html/YOUR_PROJECT/bashscripts/pdf/test_completo.md"
+PDF_PATH="/var/www/html/saluteora/bashscripts/pdf/test.pdf"
+OUTPUT_MD="/var/www/html/saluteora/bashscripts/pdf/test_completo.md"
 TEMP_DIR="/tmp/pdf_conversion_$(date +%s)"
 
 # Crea la directory temporanea

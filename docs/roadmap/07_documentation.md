@@ -1,3 +1,12 @@
+
+
+
+
+
+[0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
+ 43df3e0 (.)
+
+aurmich/dev
 # 📚 Fase 7: Documentazione
 
 ## 📋 Panoramica
@@ -100,6 +109,29 @@ Questa fase si concentra sulla documentazione completa del sistema, garantendo u
 - [Roadmap Principale](../roadmap.md)
 - [Documentazione Script](../project.md)
 - [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
+- [Fase 8: Manutenzione](../roadmap/08_maintenance.md)
+
+## 📅 Timeline
+
+### Q1 2026
+- Setup strumenti
+- Struttura base
+- Template
+
+### Q2 2026
+- Documentazione tecnica
+- Guide utente
+- Procedure
+
+### Q3 2026
+- Review
+- Feedback
+- Miglioramenti
+
+### Q4 2026
+- Finalizzazione
+- Pubblicazione
+- Manutenzione
 
 
 - [Fase 8: Manutenzione](../roadmap/08_maintenance.md) 

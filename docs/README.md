@@ -1,4 +1,12 @@
+### Versione HEAD
+
+### Versione HEAD
+
+### Versione HEAD
+
 # 🚀 Toolkit di Automazione Git
+
+
 
 # il progetto - Toolkit di Automazione <nome-progetto>
 
@@ -102,7 +110,7 @@ php artisan serve
 - Funzionalità base
 
 ### Patient
-- Gestione anagrafica utenti
+- Gestione pazienti
 - Anamnesi
 - Storico visite
 
@@ -113,10 +121,11 @@ php artisan serve
 
 ### Xot
 - Framework base per i moduli
+- Componenti riutilizzabili
+- Funzionalità comuni
 
-## Struttura Bashscripts
+## Documentazione
 
-<<<<<<< HEAD
 La documentazione completa è disponibile nella directory `docs/`:
 - [Roadmap del Progetto](docs/roadmap/README.md)
 - [Documentazione dei Pacchetti](docs/packages/README.md)
@@ -583,13 +592,6 @@ Script per la gestione di Git, inclusi:
 - Sincronizzazione dei repository
 - Risoluzione dei conflitti
 - Gestione dei branch
-=======
-### 1. PDF (`pdf/`)
-Script per la gestione PDF:
-- Conversione PDF in testo/markdown
-- Analisi dei contenuti
-- Backup e restore
->>>>>>> 30d238a4 (📝 (README.md): update project documentation to reflect changes in user management)
 
 ### 2. Setup (`setup/`)
 Script per la configurazione iniziale:
@@ -667,6 +669,30 @@ chmod +x script.sh
 - [Script Git](/docs/git.md)
 - [Toolkit Bashscripts](/bashscripts/docs/README.md)
 
+### Versione Incoming
+
 <div align="center">
   <sub>Built with ❤️ by the development team</sub>
-</div>
+</div> 
+
+---
+
+
+### Versione Incoming
+
+
+---
+
+
+### Versione Incoming
+
+This toolkit addresses these challenges by providing automated tools that simplify workflow and ensure consistency and quality.
+
+## Translations
+- [Italiano](docs/README.it.md)
+- [Español](docs/README.es.md)
+
+---
+
+
+```

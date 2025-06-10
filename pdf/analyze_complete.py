@@ -9,8 +9,8 @@ from datetime import datetime
 from collections import defaultdict
 
 # Configurazione
-PDF_PATH = '/var/www/html/project/bashscripts/pdf/test.pdf'
-OUTPUT_MD = '/var/www/html/project/bashscripts/pdf/test_info2.md'
+PDF_PATH = '/var/www/html/saluteora/bashscripts/pdf/test.pdf'
+OUTPUT_MD = '/var/www/html/saluteora/bashscripts/pdf/test_info2.md'
 TEMP_DIR = '/tmp/pdf_analysis'
 
 # Crea la directory temporanea

@@ -225,24 +225,8 @@ dummy_push(){
     # 🧹 Pulizia file temporanei
     find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
     git add -A
-<<<<<<< HEAD
-<<<<<<< HEAD
     git commit -am "$msg"
     git push -u "$org" HEAD:"$branch"
-<<<<<<< HEAD
-=======
-    #oco --yes
-=======
-    #git commit -am "$msg"
-    #git push -u "$org" HEAD:"$branch"
-    oco --yes
->>>>>>> 7d506470 (✨ (fix.txt): add common solutions for Git and Bash issues to improve developer experience)
->>>>>>> 64149e35 (📝 (custom.sh, collision.txt): resolve merge conflicts and clean up code to ensure clarity and maintainability)
-=======
-    #git commit -am "$msg"
-    #git push -u "$org" HEAD:"$branch"
-    oco --yes
->>>>>>> 30d238a4 (📝 (README.md): update project documentation to reflect changes in user management)
 }
 
 declare -A PARSED_KV  # Dizionario globale (o può essere passato per riferimento)

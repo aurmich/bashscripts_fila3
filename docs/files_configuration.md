@@ -314,6 +314,8 @@ Per aggiungere nuovi pattern di esclusione, si consiglia di:
 
 ## Documentazione Correlata
 - [Gestione dei Repository Git](/docs/bashscripts/gestione_git.md)
+f000df5 (.)
+
 
 Questa documentazione descrive i file di configurazione utilizzati nel progetto.
 
