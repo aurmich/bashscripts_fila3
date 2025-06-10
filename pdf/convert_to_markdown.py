@@ -10,8 +10,8 @@ from PIL import Image
 import io
 
 # Configurazione
-PDF_PATH = '/var/www/html/saluteora/bashscripts/pdf/test.pdf'
-OUTPUT_MD = '/var/www/html/saluteora/bashscripts/pdf/test_v2.md'
+PDF_PATH = '/var/www/html/project/bashscripts/pdf/test.pdf'
+OUTPUT_MD = '/var/www/html/project/bashscripts/pdf/test_v2.md'
 TEMP_DIR = '/tmp/pdf_conversion'
 IMAGE_DIR = os.path.join(TEMP_DIR, 'images')
 

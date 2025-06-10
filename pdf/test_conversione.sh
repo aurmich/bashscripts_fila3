@@ -34,7 +34,7 @@ if [ ! -f "$TEST_PDF" ]; then
 \documentclass{article}
 \begin{document}
 \title{Documento di Test}
-\author{SaluteOra}
+\author{YOUR_PROJECT}
 \date{\today}
 \maketitle
 

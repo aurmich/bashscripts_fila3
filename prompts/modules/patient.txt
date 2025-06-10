@@ -4,7 +4,11 @@
 
 ### 1. Models
 ```php
+<<<<<<< HEAD
 namespace Modules\Patient\Models;
+=======
+namespace Modules\YourModule\Models; // Personalizza per il tuo dominio
+>>>>>>> 30d238a4 (📝 (README.md): update project documentation to reflect changes in user management)
 
 abstract class BaseModel extends XotBaseModel
 {
@@ -31,7 +35,11 @@ class Doctor extends BaseModel
 
 ### 2. Resources
 ```php
+<<<<<<< HEAD
 namespace Modules\Patient\Filament\Resources;
+=======
+namespace Modules\YourModule\Filament\Resources; // Personalizza per il tuo dominio
+>>>>>>> 30d238a4 (📝 (README.md): update project documentation to reflect changes in user management)
 
 class DoctorResource extends XotBaseResource
 {
@@ -53,7 +61,11 @@ class DoctorResource extends XotBaseResource
 
 ### 3. Providers
 ```php
+<<<<<<< HEAD
 namespace Modules\Patient\Providers;
+=======
+namespace Modules\YourModule\Providers; // Personalizza per il tuo dominio
+>>>>>>> 30d238a4 (📝 (README.md): update project documentation to reflect changes in user management)
 
 class PatientServiceProvider extends XotBaseServiceProvider
 {

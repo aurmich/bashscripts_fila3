@@ -222,7 +222,7 @@ Questo esempio mostra come un singolo evento può innescare aggiornamenti multip
 
 Il sourcing di eventi offre un approccio potente per gestire la complessità delle applicazioni, specialmente in contesti dove la tracciabilità e l'auditabilità sono cruciali. Con l'uso di eventi, proiettori e reattori, possiamo costruire sistemi flessibili e mantenibili che registrano ogni cambiamento di stato, facilitando la conformità e l'analisi storica.
 
-Se hai bisogno di ulteriori dettagli su come applicare questi concetti in `saluteora`, fammi sapere!
+Se hai bisogno di ulteriori dettagli su come applicare questi concetti, fammi sapere!
 
 ## Introduzione al Sourcing di Eventi
 
