@@ -141,6 +141,9 @@ class Example {
 ## Filosofia
 - La coerenza strutturale del codice è fondamentale per la manutenibilità e la prevenzione di bug sistemici.
 - Ogni correzione va documentata nella cartella docs più vicina e nel knowledge base dei bugfix.
+<<<<<<< HEAD
 
 
 dentro le cartelle docs i files e le cartelle non devono contenere caratteri maiuscoli ad eccezzione di README.md controlla e sistema
+=======
+>>>>>>> 6ec6f56b (.)
