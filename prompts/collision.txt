@@ -271,4 +271,6 @@ class PredictResource extends XotBaseResource // Sempre estendere XotBase
 - **Translation System**: Usare chiavi strutturate, evitare label() espliciti
 - **PHPStan**: Mirare sempre al livello 10 per tutto il codice PHP
 
+
+Dentro le cartelle docs , i files e le sottocartelle non devono contenere caratteri maiuscoli ad eccezzione di README.md
 Procedi a risolvere tutti i conflitti git nei file PHP rilevati, uno dopo l’altro, senza chiedere nulla e senza fermarmi !
