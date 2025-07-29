@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 *.pdf
 *.png
 *.txt
 venv/
 ocr_tmp/
+=======
+*.pdf
+*.png
+*.txt
+venv/
+ocr_tmp/
+>>>>>>> c142b7c (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/bin/bash
 git config core.filemode false
 sudo chown -R www-data:www-data .
@@ -10,3 +11,11 @@ chmod 600 ~/.ssh/config
 chmod 644 ~/.ssh/id_rsa.pub
 # Also ensure your .ssh directory has correct permissions
 chmod 700 ~/.ssh
+=======
+#!/bin/bash
+git config core.filemode false
+sudo chown -R www-data:www-data .
+sudo find . -type f -exec chmod 644 {} \;
+sudo find . -type d -exec chmod 755 {} \;
+sudo chmod -R u+w .git
+>>>>>>> c142b7c (.)
