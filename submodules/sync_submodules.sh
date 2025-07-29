@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # File contenente le configurazioni dei submodules
@@ -83,6 +86,7 @@ while read -r line; do
 done < "$GITMODULES_FILE"
 
 echo "Tutti i submodules sono stati sincronizzati con il branch $ROOT_BRANCH."
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -169,3 +173,5 @@ done < "$GITMODULES_FILE"
 
 echo "Tutti i submodules sono stati sincronizzati con il branch $ROOT_BRANCH."
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

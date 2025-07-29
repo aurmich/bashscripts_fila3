@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # 🚀 Toolkit di Automazione Git
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com)
@@ -113,6 +116,7 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file `LICENSE` per 
 
 <div align="center">
   <sub>Built with ❤️ by the development team</sub>
+<<<<<<< HEAD
 =======
 # 🚀 Toolkit di Automazione Git
 
@@ -229,4 +233,6 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file `LICENSE` per 
 <div align="center">
   <sub>Built with ❤️ by the development team</sub>
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 </div> 

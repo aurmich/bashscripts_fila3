@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per correggere i nomi di file e cartelle nelle cartelle docs
@@ -94,6 +97,7 @@ else
     find docs laravel/docs laravel/Modules/*/docs -name "*[A-Z]*" ! -name "README.md" 2>/dev/null || true
 fi
 
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -191,4 +195,6 @@ else
 fi
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo -e "${GREEN}🎉 Script completato!${NC}" 

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # =====================================================
@@ -75,6 +78,7 @@ else
 fi
 
 echo -e "${BLUE}ℹ️ To start MCP servers again, run: ${YELLOW}~/start-mcp-servers${NC}"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -153,3 +157,5 @@ fi
 
 echo -e "${BLUE}ℹ️ To start MCP servers again, run: ${YELLOW}~/start-mcp-servers${NC}"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

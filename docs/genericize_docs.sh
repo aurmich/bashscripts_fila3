@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Directory base
@@ -54,6 +57,7 @@ if [ -d "$BASE_DIR/laravel/Modules" ]; then
     done
 fi
 
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -111,4 +115,6 @@ if [ -d "$BASE_DIR/laravel/Modules" ]; then
 fi
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo "Sostituzione riferimenti specifici completata!" 

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/sh
 day=$(date +"%Y%m%d-%H%M")
 curr_dir=${PWD##*/}
@@ -15,6 +18,7 @@ mkdir -p $bak_dir
 tar cvf $tar --exclude=vendor --exclude=bc --exclude=node_modules --exclude=debugbar --exclude=build $curr_dir/* 
 #cd $bak_dir
 #tar xvf backup.tar
+<<<<<<< HEAD
 =======
 #!/bin/sh
 day=$(date +"%Y%m%d-%H%M")
@@ -33,3 +37,5 @@ tar cvf $tar --exclude=vendor --exclude=bc --exclude=node_modules --exclude=debu
 #cd $bak_dir
 #tar xvf backup.tar
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 ---
 # 📝 Documentazione Script Git
 
@@ -231,6 +234,7 @@ Script per il push dei subtree. Funzionalità:
 >>>>>>> 4d4d6cb7 (.)
 =======
 >>>>>>> d83fe8da (.)
+<<<<<<< HEAD
 =======
 ---
 # 📝 Documentazione Script Git
@@ -465,4 +469,6 @@ Script per il push dei subtree. Funzionalità:
 =======
 >>>>>>> d83fe8da (.)
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 [Torna alla documentazione principale](/docs/maintenance.md#git-management) 

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 {
     "name": "laraxot/bashscripts_fila3",
     "description": "Script di utilità per la gestione dei repository Git, Toolkit di automazione Git per progetti Laravel",
@@ -26,6 +29,7 @@
     "minimum-stability": "stable",
     "prefer-stable": true
 }
+<<<<<<< HEAD
 =======
 {
     "name": "laraxot/bashscripts_fila3",
@@ -55,3 +59,5 @@
     "prefer-stable": true
 }
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

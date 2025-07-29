@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # GUIDA ESSENZIALE LARAXOT
 
 ## DOCUMENTAZIONE
@@ -85,6 +88,7 @@
 - Aggiornare e studiare continuamente la documentazione
 - Consultare la documentazione prima di ogni azione
 - Ogni modulo ha la sua cartella docs da studiare e aggiornare
+<<<<<<< HEAD
 =======
 # GUIDA ESSENZIALE LARAXOT
 
@@ -173,3 +177,5 @@
 - Consultare la documentazione prima di ogni azione
 - Ogni modulo ha la sua cartella docs da studiare e aggiornare
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

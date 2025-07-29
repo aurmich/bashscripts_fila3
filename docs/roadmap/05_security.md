@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 
 
 # 🛡️ Fase 5: Sicurezza
@@ -1059,6 +1062,7 @@ aurmich/dev
 * [05_security.md](docs/roadmap/05_security.md)
 
 
+<<<<<<< HEAD
 =======
 
 
@@ -2121,3 +2125,5 @@ aurmich/dev
 
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

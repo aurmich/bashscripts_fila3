@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # ✅ Controllo se è stato passato il nome del disco
@@ -58,6 +61,7 @@ me=$(readlink -f -- "$0")
 sed -i -e 's/\r$//' "$me"
 
 echo "✅ Sincronizzazione completata!"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -119,3 +123,5 @@ sed -i -e 's/\r$//' "$me"
 
 echo "✅ Sincronizzazione completata!"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

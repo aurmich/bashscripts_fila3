@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script to convert Comune data to individual JSON files for Sushi
@@ -52,6 +55,7 @@ done
 echo "Conversion completed successfully!"
 echo "Output directory: $OUTPUT_DIR"
 echo "Total files created: $(ls -1 "$OUTPUT_DIR" | wc -l)"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -107,3 +111,5 @@ echo "Conversion completed successfully!"
 echo "Output directory: $OUTPUT_DIR"
 echo "Total files created: $(ls -1 "$OUTPUT_DIR" | wc -l)"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

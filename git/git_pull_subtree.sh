@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 source ./bashscripts/lib/custom.sh
@@ -189,6 +192,7 @@ log "Subtree $LOCAL_PATH synchronized successfully with $REMOTE_REPO"
 echo "👍Subtree $LOCAL_PATH synchronized successfully with $REMOTE_REPO"
 
 [0;34mℹ️ [2025-04-22 11:23:27] Scelto blocco HEAD (3 linee vs 1)[0m
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -381,3 +385,5 @@ echo "👍Subtree $LOCAL_PATH synchronized successfully with $REMOTE_REPO"
 
 [0;34mℹ️ [2025-04-22 11:23:27] Scelto blocco HEAD (3 linee vs 1)[0m
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

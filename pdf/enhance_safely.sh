@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Attiva l'ambiente virtuale
@@ -13,6 +16,7 @@ head -n 30 test_enhanced.md
 
 echo -e "\nFile migliorato salvato come: test_enhanced.md"
 echo "Il file originale (test.md) non è stato modificato."
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -29,3 +33,5 @@ head -n 30 test_enhanced.md
 echo -e "\nFile migliorato salvato come: test_enhanced.md"
 echo "Il file originale (test.md) non è stato modificato."
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

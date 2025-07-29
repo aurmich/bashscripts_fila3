@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per riscrivere completamente i file di traduzione SaluteMo
@@ -515,6 +518,7 @@ echo -e "${YELLOW}📋 Prossimi passi:${NC}"
 echo -e "  1. Verifica che i file siano sintatticamente corretti"
 echo -e "  2. Aggiungi altri file di traduzione se necessario"
 echo -e "  3. Testa le traduzioni nell'applicazione"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -1033,4 +1037,6 @@ echo -e "  1. Verifica che i file siano sintatticamente corretti"
 echo -e "  2. Aggiungi altri file di traduzione se necessario"
 echo -e "  3. Testa le traduzioni nell'applicazione"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo -e "  4. Aggiorna la documentazione" 

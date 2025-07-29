@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Controlla se è stato fornito un file di input
@@ -40,6 +43,7 @@ while IFS= read -r line; do
         current_url=""
     fi
 done < "$INPUT_FILE"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -83,3 +87,5 @@ while IFS= read -r line; do
     fi
 done < "$INPUT_FILE"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

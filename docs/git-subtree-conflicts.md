@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Risoluzione dei Conflitti negli Script Git Subtree
 
 > **Nota**: Per informazioni aggiuntive sulla risoluzione dei conflitti, consulta anche [Risoluzione Conflitti Git](../../docs/risoluzione_conflitti_git.md)
@@ -139,6 +142,7 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
 - [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md)
 - [Risoluzione Conflitti Git](../../docs/risoluzione_conflitti_git.md) 
+<<<<<<< HEAD
 =======
 # Risoluzione dei Conflitti negli Script Git Subtree
 
@@ -281,3 +285,5 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md)
 - [Risoluzione Conflitti Git](../../docs/risoluzione_conflitti_git.md) 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

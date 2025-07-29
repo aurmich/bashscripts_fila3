@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per eseguire tutti gli script di analisi in sequenza
@@ -19,6 +22,7 @@ bash analyze_specific_functions.sh
 echo "3. Analisi PHPStan su tutti i livelli..."
 bash run_phpstan_analysis_all_levels.sh
 
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -41,4 +45,6 @@ echo "3. Analisi PHPStan su tutti i livelli..."
 bash run_phpstan_analysis_all_levels.sh
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo "Analisi completa terminata. Tutti i report sono stati generati nella cartella docs/phpstan/" 

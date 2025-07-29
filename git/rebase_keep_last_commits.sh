@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # 📋 Controlla se il nome del branch è stato passato come parametro
@@ -37,6 +40,7 @@ else
 fi
 
 echo "✅ Il processo è completato!"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -77,3 +81,5 @@ fi
 
 echo "✅ Il processo è completato!"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

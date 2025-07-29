@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # 🎨 Colori per il logging
@@ -194,6 +197,7 @@ git pull origin $branch --autostash --recurse-submodules --allow-unrelated-histo
 sed -i -e 's/\r$//' "$me"
 echo "-------- END PULL[$where ($branch)] ----------";
 
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -391,3 +395,5 @@ sed -i -e 's/\r$//' "$me"
 echo "-------- END PULL[$where ($branch)] ----------";
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

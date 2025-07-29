@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Risoluzione dei Conflitti Git
 
 ## Panoramica
@@ -102,6 +105,7 @@ git config pull.rebase true
 - [Workflow Git](git_workflow.md)
 - [Gestione Branch](git_branching.md)
 - [Monitoraggio Conflitti](conflict_monitoring.md) 
+<<<<<<< HEAD
 =======
 # Risoluzione dei Conflitti Git
 
@@ -207,3 +211,5 @@ git config pull.rebase true
 - [Gestione Branch](git_branching.md)
 - [Monitoraggio Conflitti](conflict_monitoring.md) 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

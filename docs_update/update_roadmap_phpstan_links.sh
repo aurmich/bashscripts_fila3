@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per aggiornare i collegamenti PHPStan nella roadmap
@@ -64,6 +67,7 @@ if [ -n "$files_to_update" ]; then
 else
     log_info "Nessun altro file con collegamenti da aggiornare"
 fi
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -131,3 +135,5 @@ else
     log_info "Nessun altro file con collegamenti da aggiornare"
 fi
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

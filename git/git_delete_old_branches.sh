@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/sh
 
 me=$( readlink -f -- "$0";)
@@ -43,6 +46,7 @@ done
 echo "Branch vecchi eliminati con successo."
 
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
+<<<<<<< HEAD
 =======
 #!/bin/sh
 
@@ -89,3 +93,5 @@ echo "Branch vecchi eliminati con successo."
 
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Operazioni Git 🔄
 
 Questa directory contiene gli script per la gestione avanzata delle operazioni Git, con particolare focus su subtrees, submodules e manutenzione del repository.
@@ -114,6 +117,7 @@ Questo script:
 
 ## Note
 Questi file sono utilizzati per mantenere la coerenza nella gestione dei file ignorati da Git in tutti i moduli del progetto.
+<<<<<<< HEAD
 =======
 # Operazioni Git 🔄
 
@@ -231,3 +235,5 @@ Questo script:
 ## Note
 Questi file sono utilizzati per mantenere la coerenza nella gestione dei file ignorati da Git in tutti i moduli del progetto.
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 echo "MySQL Database Diagnostic Tool"
@@ -37,6 +40,7 @@ echo -e "\nChecking MySQL memory usage..."
 ps aux | grep mysql | grep -v grep
 
 echo -e "\nDiagnostic complete. Check results above for any issues."
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -77,3 +81,5 @@ ps aux | grep mysql | grep -v grep
 
 echo -e "\nDiagnostic complete. Check results above for any issues."
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

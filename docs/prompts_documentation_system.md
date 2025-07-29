@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Sistema di Prompt per la Documentazione
 
 ## Panoramica
@@ -63,6 +66,7 @@ Ogni volta che il prompt viene modificato:
 - [Regole per la Configurazione degli IDE](./REGOLE_IDE_CONFIGURAZIONE.md)
 - [Convenzioni Generali per la Documentazione](../../docs/regole-documentazione.md)
 - [Collegamenti della Documentazione](../../docs/collegamenti-documentazione.md)
+<<<<<<< HEAD
 =======
 # Sistema di Prompt per la Documentazione
 
@@ -129,3 +133,5 @@ Ogni volta che il prompt viene modificato:
 - [Convenzioni Generali per la Documentazione](../../docs/regole-documentazione.md)
 - [Collegamenti della Documentazione](../../docs/collegamenti-documentazione.md)
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

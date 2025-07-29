@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Directory base
@@ -79,6 +82,7 @@ echo "📦 Moduli totali: $TOTAL_MODULES"
 echo "✅ Moduli analizzati con successo: $ANALYZED_MODULES"
 echo "⚠️  Moduli vuoti: $EMPTY_MODULES"
 echo "❌ Moduli con errori: $ERROR_MODULES"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -161,4 +165,6 @@ echo "✅ Moduli analizzati con successo: $ANALYZED_MODULES"
 echo "⚠️  Moduli vuoti: $EMPTY_MODULES"
 echo "❌ Moduli con errori: $ERROR_MODULES"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo "----------------------------------------" 

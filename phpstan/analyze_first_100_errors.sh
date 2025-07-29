@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per analizzare i primi 100 errori PHPStan senza baseline
@@ -165,6 +168,7 @@ echo "=== Analisi PHPStan completata ==="
 echo "File di output disponibili in: $OUTPUT_DIR"
 echo "Per visualizzare i risultati:"
 echo "  cat $OUTPUT_DIR/first_100_errors_level_${LEVEL}_${DATE}.json | jq ."
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -333,3 +337,5 @@ echo "File di output disponibili in: $OUTPUT_DIR"
 echo "Per visualizzare i risultati:"
 echo "  cat $OUTPUT_DIR/first_100_errors_level_${LEVEL}_${DATE}.json | jq ."
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/usr/bin/env php
 <?php
 
@@ -109,6 +112,7 @@ foreach ($files_to_check as $check_file) {
         log_warn("File potenzialmente problematico trovato: $check_file");
     }
 }
+<<<<<<< HEAD
 =======
 #!/usr/bin/env php
 <?php
@@ -221,3 +225,5 @@ foreach ($files_to_check as $check_file) {
     }
 }
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

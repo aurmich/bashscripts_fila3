@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 <?php
 
 declare(strict_types=1);
@@ -27,6 +30,7 @@ return RectorConfig::configure()
         // AddVoidReturnTypeWhereNoReturnRector::class,
     ]);
 
+<<<<<<< HEAD
 =======
 <?php
 
@@ -57,3 +61,5 @@ return RectorConfig::configure()
     ]);
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

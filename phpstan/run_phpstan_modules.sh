@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/usr/bin/env bash
 set -e
 
@@ -27,6 +30,7 @@ EOF
     done
   fi
 done
+<<<<<<< HEAD
 =======
 #!/usr/bin/env bash
 set -e
@@ -57,3 +61,5 @@ EOF
   fi
 done
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

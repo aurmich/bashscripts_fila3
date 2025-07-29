@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/usr/bin/env bash
 # Script per generare collegamenti bidirezionali tra file con lo stesso nome in cartelle docs
 # Esegue la scansione dei file *.md in tutte le directory */docs/ e */_docs/
@@ -34,6 +37,7 @@ for name in "${!groups[@]}"; do
     done
   fi
 done
+<<<<<<< HEAD
 =======
 #!/usr/bin/env bash
 # Script per generare collegamenti bidirezionali tra file con lo stesso nome in cartelle docs
@@ -71,3 +75,5 @@ for name in "${!groups[@]}"; do
   fi
 done
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

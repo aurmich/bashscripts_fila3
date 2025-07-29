@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Continuazione Lavoro Modulo Notify
 
 ## Contesto Attuale
@@ -68,6 +71,7 @@ Illuminate\Database\Eloquent\Model
 2. Correggere eventuali estensioni errate
 3. Aggiornare la documentazione
 4. Implementare test per verificare il corretto funzionamento
+<<<<<<< HEAD
 =======
 # Continuazione Lavoro Modulo Notify
 
@@ -139,4 +143,6 @@ Illuminate\Database\Eloquent\Model
 3. Aggiornare la documentazione
 4. Implementare test per verificare il corretto funzionamento
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 5. Controllare la coerenza con altri moduli 

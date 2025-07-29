@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # This script renames all files in the docs directory to lowercase, except for README.md
@@ -15,6 +18,7 @@ find /var/www/html/YOUR_PROJECT/docs -type f -name "*[A-Z]*" | grep -v "README\.
 done
 
 echo "All files in docs have been renamed to lowercase (except README.md files)"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -33,3 +37,5 @@ done
 
 echo "All files in docs have been renamed to lowercase (except README.md files)"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

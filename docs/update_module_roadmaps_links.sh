@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per aggiungere collegamenti bidirezionali alle roadmap dei moduli
@@ -76,6 +79,7 @@ for theme_dir in "${BASE_DIR}/laravel/Themes/"*/; do
 done
 
 echo -e "${GREEN}Aggiornamento completato!${NC}"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -155,3 +159,5 @@ done
 
 echo -e "${GREEN}Aggiornamento completato!${NC}"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

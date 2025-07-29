@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Operazioni Docker 🐳
 
 Questa directory contiene gli script per la gestione e automazione delle operazioni Docker, con focus su deployment, monitoraggio e manutenzione dei container.
@@ -121,6 +124,7 @@ docker/
 3. Commit modifiche
 4. Push al branch
 5. Creazione Pull Request 
+<<<<<<< HEAD
 =======
 # Operazioni Docker 🐳
 
@@ -245,3 +249,5 @@ docker/
 4. Push al branch
 5. Creazione Pull Request 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

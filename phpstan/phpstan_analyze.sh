@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Exit on error, undefined variables, and pipe failures
@@ -148,6 +151,7 @@ main() {
 
 # Esegui lo script
 main
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -299,3 +303,5 @@ main() {
 # Esegui lo script
 main
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

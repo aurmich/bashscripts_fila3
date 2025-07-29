@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per avviare il server MCP MySQL personalizzato con le configurazioni dal file .env di Laravel
@@ -52,6 +55,7 @@ else
     echo "📋 Ultimi log:"
     tail -n 10 "$LOGS_DIR/mysql.log"
 fi
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -107,3 +111,5 @@ else
     tail -n 10 "$LOGS_DIR/mysql.log"
 fi
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

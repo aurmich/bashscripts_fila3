@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 set -euo pipefail
 
@@ -33,6 +36,7 @@ else
     echo "Si sono verificati errori durante la risoluzione dei conflitti."
     exit 1
 fi
+<<<<<<< HEAD
 =======
 #!/bin/bash
 set -euo pipefail
@@ -69,3 +73,5 @@ else
     exit 1
 fi
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

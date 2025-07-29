@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 source ./bashscripts/lib/custom.sh
@@ -84,6 +87,7 @@ push_subtree() {
 # Run sync
 push_subtree
 
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -171,4 +175,6 @@ push_subtree() {
 push_subtree
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo "👍 Subtree $LOCAL_PATH pushed successfully with $REMOTE_REPO"

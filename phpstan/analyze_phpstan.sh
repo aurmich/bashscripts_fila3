@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Colori per output
@@ -87,6 +90,7 @@ for module in "$MODULES_DIR"/*/ ; do
     done
 done
 
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -177,4 +181,6 @@ for module in "$MODULES_DIR"/*/ ; do
 done
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo -e "${GREEN}Analisi completata per tutti i moduli!${NC}"

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # =====================================================
@@ -118,6 +121,7 @@ else
 fi
 
 echo -e "${BLUE}ℹ️ To stop MCP servers, run: ${YELLOW}~/stop-mcp${NC}"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -239,3 +243,5 @@ fi
 
 echo -e "${BLUE}ℹ️ To stop MCP servers, run: ${YELLOW}~/stop-mcp${NC}"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

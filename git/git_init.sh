@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/sh
 if [ "$1" ]; then
      echo yes
@@ -25,6 +28,7 @@ git branch --set-upstream-to=origin/$branch $branch
 git config advice.setUpstreamFailure false
 sed -i -e 's/\r$//' "$me"
 
+<<<<<<< HEAD
 =======
 #!/bin/sh
 if [ "$1" ]; then
@@ -53,3 +57,5 @@ git config advice.setUpstreamFailure false
 sed -i -e 's/\r$//' "$me"
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

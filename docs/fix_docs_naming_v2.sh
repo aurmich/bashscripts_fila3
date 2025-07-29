@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per correggere i nomi di file e cartelle nelle cartelle docs
@@ -103,6 +106,7 @@ else
     echo "$remaining_files"
 fi
 
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -209,4 +213,6 @@ else
 fi
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo -e "${GREEN}🎉 Script completato!${NC}" 

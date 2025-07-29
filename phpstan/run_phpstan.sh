@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per eseguire PHPStan su tutti i moduli Laravel
@@ -147,6 +150,7 @@ for MODULE_NAME in "${MODULES[@]}"; do
 done
 
 echo "Analisi PHPStan completata per tutti i moduli."
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -297,4 +301,6 @@ done
 
 echo "Analisi PHPStan completata per tutti i moduli."
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo "Report generale disponibile in $MAIN_DOC" 

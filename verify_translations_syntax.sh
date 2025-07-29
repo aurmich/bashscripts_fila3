@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per verificare la sintassi di tutti i file di traduzione
@@ -34,6 +37,7 @@ echo -e "${YELLOW}🧹 Pulizia cache Laravel...${NC}"
 cd laravel
 php artisan config:clear 2>/dev/null || true
 php artisan view:clear 2>/dev/null || true
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -71,4 +75,6 @@ cd laravel
 php artisan config:clear 2>/dev/null || true
 php artisan view:clear 2>/dev/null || true
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo -e "${GREEN}✅ Cache pulita${NC}" 

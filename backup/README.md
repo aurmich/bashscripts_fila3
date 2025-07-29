@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Script di Backup
 
 ## Descrizione
@@ -42,6 +45,7 @@ Gestisce la rotazione dei backup con:
 - Eseguire backup regolari
 - Verificare l'integrità dei backup
 - Mantenere backup in location sicure 
+<<<<<<< HEAD
 =======
 # Script di Backup
 
@@ -87,3 +91,5 @@ Gestisce la rotazione dei backup con:
 - Verificare l'integrità dei backup
 - Mantenere backup in location sicure 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

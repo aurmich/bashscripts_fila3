@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 <?php
 
 /**
@@ -130,6 +133,7 @@ foreach ($files as $file) {
 }
 
 echo "\nOperazione completata. $updatedFiles file sono stati aggiornati.\n";
+<<<<<<< HEAD
 =======
 <?php
 
@@ -263,3 +267,5 @@ foreach ($files as $file) {
 
 echo "\nOperazione completata. $updatedFiles file sono stati aggiornati.\n";
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Activate virtual environment
@@ -27,6 +30,7 @@ echo "Elaborazione completata. File originale salvato come test_original_backup.
 # Show the first 50 lines of the processed file
 echo -e "\n=== Prime 50 righe del file elaborato ===\n"
 head -n 50 test.md
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -57,3 +61,5 @@ echo "Elaborazione completata. File originale salvato come test_original_backup.
 echo -e "\n=== Prime 50 righe del file elaborato ===\n"
 head -n 50 test.md
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

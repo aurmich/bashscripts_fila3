@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per aggiornare i file roadmap.md con collegamenti ai file phpstan
@@ -231,6 +234,7 @@ EOL
 done
 
 echo -e "${GREEN}Aggiornamento dei file roadmap.md completato per tutti i moduli!${NC}"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -465,3 +469,5 @@ done
 
 echo -e "${GREEN}Aggiornamento dei file roadmap.md completato per tutti i moduli!${NC}"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

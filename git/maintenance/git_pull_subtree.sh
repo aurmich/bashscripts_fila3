@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 source ./bashscripts/lib/custom.sh
@@ -85,6 +88,7 @@ pull_subtree() {
 # Run sync
 pull_subtree
 
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -173,4 +177,6 @@ pull_subtree() {
 pull_subtree
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 log "Subtree $LOCAL_PATH synchronized successfully with $REMOTE_REPO"

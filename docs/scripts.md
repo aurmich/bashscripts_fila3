@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # 🚀 Script Bash di il progetto: La Tua Guida Definitiva
 
 ## 📋 Indice
@@ -437,6 +440,7 @@ Per problemi o domande:
 - Email: support@<nome progetto>.it
 - Telefono: +39 123 456 7890
 - Ticket: https://support.<nome progetto>.it
+<<<<<<< HEAD
 =======
 # 🚀 Script Bash di il progetto: La Tua Guida Definitiva
 
@@ -877,3 +881,5 @@ Per problemi o domande:
 - Telefono: +39 123 456 7890
 - Ticket: https://support.<nome progetto>.it
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

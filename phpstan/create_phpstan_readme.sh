@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per creare file README.md nella cartella docs/phpstan di ogni modulo
@@ -87,6 +90,7 @@ for MODULE_PATH in $MODULES_DIR/*; do
 done
 
 echo -e "${GREEN}Creazione file README.md completata per tutti i moduli!${NC}"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -177,3 +181,5 @@ done
 
 echo -e "${GREEN}Creazione file README.md completata per tutti i moduli!${NC}"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Percorsi Relativi nella Documentazione
 
 ## Errore Comune da Evitare
@@ -119,6 +122,7 @@ Prima di committare modifiche alla documentazione:
 - [Sistema di Prompt](./PROMPTS_DOCUMENTATION_SYSTEM.md)
 - [Collegamenti della Documentazione](../../docs/collegamenti-documentazione.md)
 - [Linee Guida per la Documentazione di Xot](../../laravel/Modules/Xot/docs/DOCUMENTATION-GUIDELINES.md)
+<<<<<<< HEAD
 =======
 # Percorsi Relativi nella Documentazione
 
@@ -241,3 +245,5 @@ Prima di committare modifiche alla documentazione:
 - [Collegamenti della Documentazione](../../docs/collegamenti-documentazione.md)
 - [Linee Guida per la Documentazione di Xot](../../laravel/Modules/Xot/docs/DOCUMENTATION-GUIDELINES.md)
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

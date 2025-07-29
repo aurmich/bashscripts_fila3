@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 
 # 🚀 Toolkit di Automazione Git per Laraxot PTVX
 
@@ -667,6 +670,7 @@ This toolkit addresses these challenges by providing automated tools that simpli
 - [Italiano](docs/README.it.md)
 - [Español](docs/README.es.md)
  43df3e0 (.)
+<<<<<<< HEAD
 =======
 
 # 🚀 Toolkit di Automazione Git per Laraxot PTVX
@@ -1337,3 +1341,5 @@ This toolkit addresses these challenges by providing automated tools that simpli
 - [Español](docs/README.es.md)
  43df3e0 (.)
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

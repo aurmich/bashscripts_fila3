@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Risoluzione dei Conflitti negli Script Git Subtree
 
 ## Problema
@@ -780,6 +783,7 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 >>>>>>> 4d4d6cb7 (.)
 =======
 >>>>>>> d83fe8da (.)
+<<<<<<< HEAD
 =======
 # Risoluzione dei Conflitti negli Script Git Subtree
 
@@ -1563,4 +1567,6 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 =======
 >>>>>>> d83fe8da (.)
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 - [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md) 

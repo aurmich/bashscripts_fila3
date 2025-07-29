@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per verificare la struttura delle directory prima di eseguire PHPStan
@@ -56,6 +59,7 @@ echo -e "${YELLOW}Prima di eseguire PHPStan, è necessario correggere la struttu
 echo -e "${YELLOW}Esegui il seguente comando per correggere automaticamente la struttura:${NC}"
 echo -e "${GREEN}./bashscripts/fix_directory_structure.sh $MODULE${NC}"
 
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -115,4 +119,6 @@ echo -e "${YELLOW}Esegui il seguente comando per correggere automaticamente la s
 echo -e "${GREEN}./bashscripts/fix_directory_structure.sh $MODULE${NC}"
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 exit 1 

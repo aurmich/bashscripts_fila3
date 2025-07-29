@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Contesto Modulo Notify
 
 ## Struttura Base
@@ -59,6 +62,7 @@
 - Mantenere coerenza con architettura esistente
 - Seguire pattern stabiliti
 - Documentare ogni deviazione dalle regole
+<<<<<<< HEAD
 =======
 # Contesto Modulo Notify
 
@@ -121,4 +125,6 @@
 - Seguire pattern stabiliti
 - Documentare ogni deviazione dalle regole
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 - Aggiornare questo prompt per nuovi pattern 

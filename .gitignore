@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # ───────────────────────────────────────────────────────
 # Sistema operativo / File nascosti e metadata
 # ───────────────────────────────────────────────────────
@@ -114,6 +117,7 @@ junit.xml
 test-output/
 .nyc_output/
 coverage/
+<<<<<<< HEAD
 =======
 # ───────────────────────────────────────────────────────
 # Sistema operativo / File nascosti e metadata
@@ -231,3 +235,5 @@ test-output/
 .nyc_output/
 coverage/
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

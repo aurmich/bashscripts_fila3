@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Validate input
@@ -50,6 +53,7 @@ sync_subtree() {
 # Run sync
 sync_subtree
 
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -103,4 +107,6 @@ sync_subtree() {
 sync_subtree
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo "Subtree $LOCAL_PATH synchronized successfully with $REMOTE_REPO"

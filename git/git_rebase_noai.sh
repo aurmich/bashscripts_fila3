@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 if [ "$2" ]; then
      echo yes
@@ -15,6 +18,7 @@ for(( i=1; i<=$number; i++ ))
 do
 git add -A && git commit -am "rebase $1" && git push origin HEAD:$branch -uf && git rebase --continue || git rebase --continue || git push origin HEAD:$branch -uf || echo "loop: $i"
 done 
+<<<<<<< HEAD
 =======
 #!/bin/bash
 if [ "$2" ]; then
@@ -33,3 +37,5 @@ do
 git add -A && git commit -am "rebase $1" && git push origin HEAD:$branch -uf && git rebase --continue || git rebase --continue || git push origin HEAD:$branch -uf || echo "loop: $i"
 done 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

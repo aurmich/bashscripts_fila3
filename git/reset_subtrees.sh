@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 CONFIG_FILE="gitmodules.ini"
@@ -45,6 +48,7 @@ while IFS= read -r line; do
 done < "$CONFIG_FILE"
 
 echo "✅ Tutti i git subtree sono stati inizializzati con successo!!!"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -93,3 +97,5 @@ done < "$CONFIG_FILE"
 
 echo "✅ Tutti i git subtree sono stati inizializzati con successo!!!"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

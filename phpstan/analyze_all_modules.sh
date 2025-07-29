@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Directory base
@@ -47,6 +50,7 @@ for module in "${modules[@]}"; do
     fi
 done
 
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -97,4 +101,6 @@ for module in "${modules[@]}"; do
 done
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo "✅ Analisi completata per tutti i moduli!" 

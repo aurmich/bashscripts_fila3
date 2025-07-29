@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Operazioni di Sistema 🖥️
 
 Questa directory contiene gli script per la gestione e manutenzione del sistema operativo, con focus su automazione, monitoraggio e ottimizzazione.
@@ -118,6 +121,7 @@ system/
 3. Commit modifiche
 4. Push al branch
 5. Creazione Pull Request 
+<<<<<<< HEAD
 =======
 # Operazioni di Sistema 🖥️
 
@@ -239,3 +243,5 @@ system/
 4. Push al branch
 5. Creazione Pull Request 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

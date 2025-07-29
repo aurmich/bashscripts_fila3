@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per analizzare i primi 100 errori PHPStan
@@ -203,6 +206,7 @@ echo
 echo "=== Analisi PHPStan completata ==="
 echo "File di output disponibili in: $OUTPUT_DIR"
 echo "Per visualizzare i risultati:"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -409,4 +413,6 @@ echo "=== Analisi PHPStan completata ==="
 echo "File di output disponibili in: $OUTPUT_DIR"
 echo "Per visualizzare i risultati:"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo "  cat $OUTPUT_DIR/level_*_first_100_*.json | head -50" 

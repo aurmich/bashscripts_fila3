@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 ### Versione HEAD
 
 ### Versione HEAD
@@ -697,6 +700,7 @@ This toolkit addresses these challenges by providing automated tools that simpli
 
 
 ```
+<<<<<<< HEAD
 =======
 ### Versione HEAD
 
@@ -1397,3 +1401,5 @@ This toolkit addresses these challenges by providing automated tools that simpli
 
 ```
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 <?php
 declare(strict_types=1);
 
@@ -65,6 +68,7 @@ foreach ($expected as $mod => $servers) {
         echo $msg."\n";
     }
 }
+<<<<<<< HEAD
 =======
 <?php
 declare(strict_types=1);
@@ -133,3 +137,5 @@ foreach ($expected as $mod => $servers) {
     }
 }
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

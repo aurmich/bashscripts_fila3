@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per verificare la presenza di file di traduzione duplicati o in percorsi non standard
@@ -119,6 +122,7 @@ echo "2. Verificare che tutte le traduzioni siano nelle posizioni standard: Modu
 echo "3. Utilizzare sempre la sintassi breve degli array []"
 echo "4. Aggiornare la documentazione dopo ogni correzione"
 
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -241,4 +245,6 @@ echo "3. Utilizzare sempre la sintassi breve degli array []"
 echo "4. Aggiornare la documentazione dopo ogni correzione"
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 exit 0

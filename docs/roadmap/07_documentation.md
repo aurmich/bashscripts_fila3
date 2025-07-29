@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 
 
 
@@ -194,6 +197,7 @@ aurmich/dev
 * [07_documentation.md](docs/roadmap/07_documentation.md)
 
 
+<<<<<<< HEAD
 =======
 
 
@@ -391,3 +395,5 @@ aurmich/dev
 
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

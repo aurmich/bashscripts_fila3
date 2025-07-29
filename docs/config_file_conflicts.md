@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Gestione dei Conflitti nei File di Configurazione
 
 ## Panoramica
@@ -547,6 +550,7 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Conflitti Merge Risolti Xot](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/conflitti_merge_risolti.md)
 - [Gestione della Configurazione](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/config.md)
 >>>>>>> d83fe8da (.)
+<<<<<<< HEAD
 =======
 # Gestione dei Conflitti nei File di Configurazione
 
@@ -1097,3 +1101,5 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Gestione della Configurazione](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/config.md)
 >>>>>>> d83fe8da (.)
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

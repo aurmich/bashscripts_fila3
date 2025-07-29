@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Miglioramenti al Prompt docs.txt
 
 > **Collegamenti correlati**
@@ -66,6 +69,7 @@ Il prompt rimane conforme alla [Regola Universale](/laravel/Modules/Xot/docs/pro
 ## Utilizzo
 
 Il prompt aggiornato può essere utilizzato in qualsiasi progetto modulare Laravel senza modifiche, rendendo il modulo `bashscripts` completamente riutilizzabile.
+<<<<<<< HEAD
 =======
 # Miglioramenti al Prompt docs.txt
 
@@ -135,3 +139,5 @@ Il prompt rimane conforme alla [Regola Universale](/laravel/Modules/Xot/docs/pro
 
 Il prompt aggiornato può essere utilizzato in qualsiasi progetto modulare Laravel senza modifiche, rendendo il modulo `bashscripts` completamente riutilizzabile.
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

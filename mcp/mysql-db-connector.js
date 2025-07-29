@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/usr/bin/env node
 
 // MYSQL_DB_CONNECTOR_PID_MARKER
@@ -188,6 +191,7 @@ process.on('SIGTERM', () => {
 
 // Segnala che il server è pronto
 console.log('✅ Server MCP MySQL personalizzato pronto');
+<<<<<<< HEAD
 =======
 #!/usr/bin/env node
 
@@ -379,3 +383,5 @@ process.on('SIGTERM', () => {
 // Segnala che il server è pronto
 console.log('✅ Server MCP MySQL personalizzato pronto');
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

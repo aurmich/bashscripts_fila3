@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per analizzare funzioni specifiche nei moduli
@@ -159,6 +162,7 @@ In assenza di una chiara localizzazione, si consiglia di implementarli nel modul
 
 EOL
 
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -321,4 +325,6 @@ In assenza di una chiara localizzazione, si consiglia di implementarli nel modul
 EOL
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo "Documentazione per l'implementazione di MetatagData creata in $METATAG_DOC" 

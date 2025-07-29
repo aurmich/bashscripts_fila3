@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Setup del Progetto Laravel
 
 Questo documento contiene la documentazione dettagliata dei comandi utilizzati per il setup di un progetto Laravel, insieme a spiegazioni, consigli e note per migliorare il processo.
@@ -1236,6 +1239,7 @@ php artisan user:assign-module
   ```
  80ec88ee9 (.)
 
+<<<<<<< HEAD
 =======
 # Setup del Progetto Laravel
 
@@ -2475,3 +2479,5 @@ php artisan user:assign-module
  80ec88ee9 (.)
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

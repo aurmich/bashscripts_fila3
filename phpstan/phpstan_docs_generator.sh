@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per generare documentazione PHPStan per tutti i moduli
@@ -143,6 +146,7 @@ for MODULE_PATH in $MODULES_DIR/*; do
 done
 
 echo -e "${GREEN}Generazione documentazione PHPStan completata per tutti i moduli!${NC}"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -289,3 +293,5 @@ done
 
 echo -e "${GREEN}Generazione documentazione PHPStan completata per tutti i moduli!${NC}"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

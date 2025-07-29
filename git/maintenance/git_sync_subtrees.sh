@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 
@@ -30,6 +33,7 @@ for ((i=0; i<total; i++)); do
         log "⚠️ Push fallita per $path."
     fi
 done
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -63,3 +67,5 @@ for ((i=0; i<total; i++)); do
     fi
 done
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

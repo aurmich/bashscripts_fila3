@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/sh
 if [ "$1" ]; then
      echo yes
@@ -21,6 +24,7 @@ git push -uf origin $branch  # Force push $1 branch to github
 git gc --aggressive --prune=all     # remove the old files
 git gc --auto
 echo "-------- END [$where ($branch)] ----------";
+<<<<<<< HEAD
 =======
 #!/bin/sh
 if [ "$1" ]; then
@@ -45,3 +49,5 @@ git gc --aggressive --prune=all     # remove the old files
 git gc --auto
 echo "-------- END [$where ($branch)] ----------";
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

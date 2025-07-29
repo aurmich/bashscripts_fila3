@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Verifica che sia stato fornito un nome modulo
@@ -72,6 +75,7 @@ done
 echo "----------------------------------------"
 echo "📈 Report finale per il modulo $MODULE_NAME:"
 echo "📁 I risultati sono salvati in: $MODULE_DIR/docs/phpstan/"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -147,4 +151,6 @@ echo "----------------------------------------"
 echo "📈 Report finale per il modulo $MODULE_NAME:"
 echo "📁 I risultati sono salvati in: $MODULE_DIR/docs/phpstan/"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo "----------------------------------------" 

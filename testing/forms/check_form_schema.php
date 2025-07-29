@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/usr/bin/env php
 <?php
 
@@ -76,6 +79,7 @@ $logContent .= 'Total classes checked: '.count($results)."\n";
 $logContent .= 'Classes missing getFormSchema: '.count($missingFormSchema)."\n\n";
 
 file_put_contents('/var/www/html/base_techplanner_fila3/docs/documentation_update.log', $logContent, FILE_APPEND);
+<<<<<<< HEAD
 =======
 #!/usr/bin/env php
 <?php
@@ -155,3 +159,5 @@ $logContent .= 'Classes missing getFormSchema: '.count($missingFormSchema)."\n\n
 
 file_put_contents('/var/www/html/base_techplanner_fila3/docs/documentation_update.log', $logContent, FILE_APPEND);
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

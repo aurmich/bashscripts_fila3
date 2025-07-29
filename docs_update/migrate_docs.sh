@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Funzione per migrare i contenuti di un modulo
@@ -48,6 +51,7 @@ for module in "$MODULES_PATH"/*; do
     fi
 done
 
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -99,4 +103,6 @@ for module in "$MODULES_PATH"/*; do
 done
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo "Migrazione completata per tutti i moduli" 

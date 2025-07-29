@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/sh
 
 # Controllo parametri
@@ -81,6 +84,7 @@ if ! git rev-parse --abbrev-ref --symbolic-full-name "@{u}" >/dev/null 2>&1; the
 fi
 
 echo "-------- END SYNC [$where ($branch) - ORG: $org] ----------"
+<<<<<<< HEAD
 =======
 #!/bin/sh
 
@@ -165,3 +169,5 @@ fi
 
 echo "-------- END SYNC [$where ($branch) - ORG: $org] ----------"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

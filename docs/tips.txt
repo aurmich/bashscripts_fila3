@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Tips e Snippets Utili
 
 ## Relazioni
@@ -19,6 +22,7 @@ $query->when($request->filled('q'), function (Builder $query) use ($request) {
     });
 });
 ```
+<<<<<<< HEAD
 =======
 # Tips e Snippets Utili
 
@@ -41,3 +45,5 @@ $query->when($request->filled('q'), function (Builder $query) use ($request) {
 });
 ```
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

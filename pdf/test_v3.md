@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Event Sourcing in Laravel
 *Autore: Brent Roose*
 *Generato il: 2025-05-19 15:24:41*
@@ -27,6 +30,7 @@
 
 *Documento convertito da PDF a Markdown con pdftotext*
 *Data di conversione: 2025-05-19 15:24:41*
+<<<<<<< HEAD
 =======
 # Event Sourcing in Laravel
 *Autore: Brent Roose*
@@ -57,3 +61,5 @@
 *Documento convertito da PDF a Markdown con pdftotext*
 *Data di conversione: 2025-05-19 15:24:41*
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

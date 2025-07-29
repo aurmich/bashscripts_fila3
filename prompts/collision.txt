@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Guida per la Risoluzione dei Conflitti Git
 
 ## Obiettivo
@@ -260,6 +263,7 @@ class PredictResource extends XotBaseResource // Sempre estendere XotBase
 
 
 Dentro le cartelle docs , i files e le sottocartelle non devono contenere caratteri maiuscoli ad eccezzione di README.md
+<<<<<<< HEAD
 =======
 # Guida per la Risoluzione dei Conflitti Git
 
@@ -537,4 +541,6 @@ class PredictResource extends XotBaseResource // Sempre estendere XotBase
 
 Dentro le cartelle docs , i files e le sottocartelle non devono contenere caratteri maiuscoli ad eccezzione di README.md
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 Procedi a risolvere tutti i conflitti git nei file PHP rilevati, uno dopo l’altro, senza chiedere nulla e senza fermarmi !

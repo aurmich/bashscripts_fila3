@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Analisi e Miglioramento del Sistema di Prompt
 
 ## Analisi dell'Attuale File di Prompt
@@ -62,6 +65,7 @@ La nuova struttura proposta offrirà:
 - [Sistema di Prompt](./PROMPTS_DOCUMENTATION_SYSTEM.md)
 - [Percorsi Relativi nella Documentazione](./PERCORSI_RELATIVI_DOCUMENTAZIONE.md)
 - [Regole per la Configurazione degli IDE](./REGOLE_IDE_CONFIGURAZIONE.md)
+<<<<<<< HEAD
 =======
 # Analisi e Miglioramento del Sistema di Prompt
 
@@ -127,3 +131,5 @@ La nuova struttura proposta offrirà:
 - [Percorsi Relativi nella Documentazione](./PERCORSI_RELATIVI_DOCUMENTAZIONE.md)
 - [Regole per la Configurazione degli IDE](./REGOLE_IDE_CONFIGURAZIONE.md)
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

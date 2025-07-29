@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 source ./bashscripts/lib/custom.sh
@@ -84,6 +87,7 @@ rm -rf .git
 cd "$curr_dir" || handle_error "Impossibile tornare alla directory originale"
 
 log "success" "Push ORG completato con successo"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -171,3 +175,5 @@ cd "$curr_dir" || handle_error "Impossibile tornare alla directory originale"
 
 log "success" "Push ORG completato con successo"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

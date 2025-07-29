@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # fix_docs_case.sh
 
 ## Descrizione
@@ -41,6 +44,7 @@ Per modifiche future, assicurarsi di:
 2. Testare su sistemi case-sensitive
 3. Aggiornare questa documentazione
 4. Verificare la compatibilità con la struttura del progetto
+<<<<<<< HEAD
 =======
 # fix_docs_case.sh
 
@@ -85,3 +89,5 @@ Per modifiche future, assicurarsi di:
 3. Aggiornare questa documentazione
 4. Verificare la compatibilità con la struttura del progetto
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

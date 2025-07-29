@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # 
 
 *Autore: *  
@@ -659,6 +662,7 @@ class CartReplay 4 public function _inveke(): void { Bi: tableC(new CartItem())â
 
 *Documento convertito da PDF a Markdown con formattazione avanzata*  
 *Data di conversione: 2025-05-19 15:21:46*
+<<<<<<< HEAD
 =======
 # 
 
@@ -1321,3 +1325,5 @@ class CartReplay 4 public function _inveke(): void { Bi: tableC(new CartItem())â
 *Documento convertito da PDF a Markdown con formattazione avanzata*  
 *Data di conversione: 2025-05-19 15:21:46*
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

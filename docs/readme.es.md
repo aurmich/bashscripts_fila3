@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # 🚀 Kit de Herramientas de Automatización Git
 
 [![PHPStan](https://img.shields.io/badge/PHPStan-Level%209-brightgreen.svg?style=for-the-badge&logo=php&logoColor=white)](phpstan/ANALISI_MODULI_PHPSTAN.md)
@@ -350,6 +353,7 @@ Este kit de herramientas aborda estos desafíos proporcionando herramientas auto
 ## Traducciones
 - [English](../../README.md)
 
+<<<<<<< HEAD
 =======
 # 🚀 Kit de Herramientas de Automatización Git
 
@@ -703,4 +707,6 @@ Este kit de herramientas aborda estos desafíos proporcionando herramientas auto
 - [English](../../README.md)
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 - [Italiano](README.it.md) 

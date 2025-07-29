@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script di gestione dei server MCP per base_predict_fila3_mono
@@ -337,6 +340,7 @@ case "$COMMAND" in
 esac
 
 exit 0
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -677,3 +681,5 @@ esac
 
 exit 0
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

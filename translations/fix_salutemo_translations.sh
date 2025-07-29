@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per correggere i problemi di duplicazione nei file di traduzione SaluteMo
@@ -106,6 +109,7 @@ echo -e "${GREEN}🎉 Correzione traduzioni SaluteMo completata!${NC}"
 echo -e "${YELLOW}📋 Verifica finale:${NC}"
 echo -e "  1. Controlla che i file non abbiano duplicazioni"
 echo -e "  2. Verifica la sintassi PHP"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -215,4 +219,6 @@ echo -e "${YELLOW}📋 Verifica finale:${NC}"
 echo -e "  1. Controlla che i file non abbiano duplicazioni"
 echo -e "  2. Verifica la sintassi PHP"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo -e "  3. Testa le traduzioni nell'applicazione" 

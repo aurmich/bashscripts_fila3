@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Correzione dei marker di conflitto git e integrazione della versione più coerente e funzionante.
@@ -47,6 +50,7 @@ for ((i=0; i<total; i++)); do
         log "⚠️ Pull fallita per $path."
     fi
 done
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -97,3 +101,5 @@ for ((i=0; i<total; i++)); do
     fi
 done
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

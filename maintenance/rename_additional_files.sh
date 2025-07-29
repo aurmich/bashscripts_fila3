@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Questo script rinomina in minuscolo i file specificati mantenendo README.md maiuscolo
@@ -61,6 +64,7 @@ for file in "${files[@]}"; do
 done
 
 echo "Operazione completata!"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -125,3 +129,5 @@ done
 
 echo "Operazione completata!"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

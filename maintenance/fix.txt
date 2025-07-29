@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # 🛠️ Soluzioni Comuni per Problemi Git e Bash
 
 ## Problemi di Interprete Bash
@@ -326,6 +329,7 @@ PROBLEMA: zsh: permission denied: ./bashscripts/git_up_noai.sh (dando comando ./
 SOLUZIONE: > sudo chmod 777 -R .     
 
 
+<<<<<<< HEAD
 =======
 # 🛠️ Soluzioni Comuni per Problemi Git e Bash
 
@@ -655,3 +659,5 @@ SOLUZIONE: > sudo chmod 777 -R .
 
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

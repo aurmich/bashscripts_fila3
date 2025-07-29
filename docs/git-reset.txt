@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/sh
 set -e
 git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |
@@ -13,6 +16,7 @@ git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |
         git submodule add -f $url $path 
     done
     
+<<<<<<< HEAD
 =======
 #!/bin/sh
 set -e
@@ -29,3 +33,5 @@ git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |
     done
     
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

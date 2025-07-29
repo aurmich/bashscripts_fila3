@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per analizzare un singolo modulo con PHPStan
@@ -116,6 +119,7 @@ done
 
 echo "Analisi completata per il modulo $MODULE_NAME"
 echo "Il report è disponibile in $DOC_FILE"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -235,3 +239,5 @@ done
 echo "Analisi completata per il modulo $MODULE_NAME"
 echo "Il report è disponibile in $DOC_FILE"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Includi lo script di parsing
@@ -14,6 +17,7 @@ for ((i=0; i<total; i++)); do
     echo "Submodule $i:"
     echo "  Path: ${submodules_array["path_${i}"]}"
     echo "  URL: ${submodules_array["url_${i}"]}"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -31,4 +35,6 @@ for ((i=0; i<total; i++)); do
     echo "  Path: ${submodules_array["path_${i}"]}"
     echo "  URL: ${submodules_array["url_${i}"]}"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 done

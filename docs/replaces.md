@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 ---
 # 📄 Refactoring Regex Laravel Filament
 
@@ -84,6 +87,7 @@ public static function table\(Table \$table\): Table\s*\{[\s\S]*?\n\s*\}
 
 ---
 
+<<<<<<< HEAD
 =======
 ---
 # 📄 Refactoring Regex Laravel Filament
@@ -171,3 +175,5 @@ public static function table\(Table \$table\): Table\s*\{[\s\S]*?\n\s*\}
 ---
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

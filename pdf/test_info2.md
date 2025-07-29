@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # 📚 Analisi Completa del Documento
 
 ## 📋 Informazioni Generali
@@ -99,6 +102,7 @@ Part 1: The BaSics .......... ccc cece cece cece cece cence cence sence eeeseeee
 
 ---
 *Generato automaticamente con analyze_complete.py*
+<<<<<<< HEAD
 =======
 # 📚 Analisi Completa del Documento
 
@@ -201,3 +205,5 @@ Part 1: The BaSics .......... ccc cece cece cece cece cence cence sence eeeseeee
 ---
 *Generato automaticamente con analyze_complete.py*
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

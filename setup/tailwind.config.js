@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 /**
  * Configurazione Tailwind CSS per il progetto Laraxot PTVX
 /**
@@ -55,6 +58,7 @@ module.exports = {
   }
 
  
+<<<<<<< HEAD
 =======
 /**
  * Configurazione Tailwind CSS per il progetto Laraxot PTVX
@@ -113,3 +117,5 @@ module.exports = {
 
  
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

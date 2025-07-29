@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/usr/bin/env php
 <?php
 declare(strict_types=1);
@@ -161,6 +164,7 @@ if (file_exists($rootReadme)) {
 }
 
 echo "Generazione completata. Indice principale: {$rootIndexFile}\n";
+<<<<<<< HEAD
 =======
 #!/usr/bin/env php
 <?php
@@ -325,3 +329,5 @@ if (file_exists($rootReadme)) {
 
 echo "Generazione completata. Indice principale: {$rootIndexFile}\n";
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

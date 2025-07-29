@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Model Context Protocol (MCP) – Panoramica e Guida Rapida
 
 > **Riferimenti ufficiali:**
@@ -70,6 +73,7 @@ Entrambi i file usano lo stesso schema JSON, vedi esempio sopra.
 ---
 
 *Ultimo aggiornamento: maggio 2025 – conforme a standard Laraxot, best practice Windsurf, e regole di documentazione interna.*
+<<<<<<< HEAD
 =======
 # Model Context Protocol (MCP) – Panoramica e Guida Rapida
 
@@ -143,3 +147,5 @@ Entrambi i file usano lo stesso schema JSON, vedi esempio sopra.
 
 *Ultimo aggiornamento: maggio 2025 – conforme a standard Laraxot, best practice Windsurf, e regole di documentazione interna.*
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

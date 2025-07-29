@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 
 
 
@@ -112,6 +115,7 @@ aurmich/dev
 * [09_scalability.md](docs/roadmap/09_scalability.md)
 
 
+<<<<<<< HEAD
 =======
 
 
@@ -227,3 +231,5 @@ aurmich/dev
 
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

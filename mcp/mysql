@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # =====================================================
@@ -109,6 +112,7 @@ fi
 rm -f "$TMP_SCRIPT"
 
 echo -e "${BLUE}To stop the MySQL MCP server, run: pkill -f mysql-db-connector.js${NC}"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -221,3 +225,5 @@ rm -f "$TMP_SCRIPT"
 
 echo -e "${BLUE}To stop the MySQL MCP server, run: pkill -f mysql-db-connector.js${NC}"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

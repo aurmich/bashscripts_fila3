@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Ensure that the script is provided with the new organization name
@@ -83,6 +86,7 @@ while IFS= read -r line; do
 done < .gitmodules
 sed -i 's/\r$//' "$SCRIPT_PATH"
 echo "All submodules and the main repository remote URL have been updated!"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -169,3 +173,5 @@ done < .gitmodules
 sed -i 's/\r$//' "$SCRIPT_PATH"
 echo "All submodules and the main repository remote URL have been updated!"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

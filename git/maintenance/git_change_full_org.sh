@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Prompt user for provider and organization/group
@@ -77,6 +80,7 @@ while IFS= read -r line; do
 done < .gitmodules
 
 echo "All submodules and the main repository remote URL have been updated!"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -157,3 +161,5 @@ done < .gitmodules
 
 echo "All submodules and the main repository remote URL have been updated!"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

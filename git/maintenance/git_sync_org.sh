@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 # Script per sincronizzare repository Git tra organizzazioni
 # Uso: ./git_sync_org.sh <org> <branch> [--no-confirm]
@@ -105,6 +108,7 @@ set -e
 echo -e "\nRiepilogo: $TOTAL totali, $SYNCED sync, $SKIPPED saltati, $FAILED falliti"
 [ "$FAILED" -gt 0 ] && log_warn "Alcuni repository richiedono attenzione manuale"
 echo "Completato!"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 # Script per sincronizzare repository Git tra organizzazioni
@@ -213,3 +217,5 @@ echo -e "\nRiepilogo: $TOTAL totali, $SYNCED sync, $SKIPPED saltati, $FAILED fal
 [ "$FAILED" -gt 0 ] && log_warn "Alcuni repository richiedono attenzione manuale"
 echo "Completato!"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

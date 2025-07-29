@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Conversione di test.pdf in Markdown (test_v4.md)
 
 > **Attenzione:** Il PDF originale non contiene testo estraibile. Tutti i tentativi di estrazione automatica (testo, immagini, OCR) hanno fallito. Questo file contiene la struttura, i metadati, i dettagli tecnici e placeholder per i contenuti delle pagine.
@@ -73,6 +76,7 @@
 Di seguito un placeholder per ogni pagina del PDF. Sostituisci il testo con il contenuto effettivo quando sarà disponibile.
 
 <!-- Inizio placeholder pagine -->
+<<<<<<< HEAD
 =======
 # Conversione di test.pdf in Markdown (test_v4.md)
 
@@ -149,3 +153,5 @@ Di seguito un placeholder per ogni pagina del PDF. Sostituisci il testo con il c
 
 <!-- Inizio placeholder pagine -->
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

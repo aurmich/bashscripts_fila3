@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Configurazione
@@ -28,6 +31,7 @@ foreach (\$json['files'] as \$file => &\$data) {
 \$json['files'] = array_filter(\$json['files'], fn(\$f) => !empty(\$f['messages']));
 file_put_contents('$OUTPUT_FILE', json_encode(\$json, JSON_PRETTY_PRINT));
 "
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -59,3 +63,5 @@ foreach (\$json['files'] as \$file => &\$data) {
 file_put_contents('$OUTPUT_FILE', json_encode(\$json, JSON_PRETTY_PRINT));
 "
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

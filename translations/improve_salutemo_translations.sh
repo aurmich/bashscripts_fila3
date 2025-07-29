@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per migliorare le traduzioni del modulo SaluteMo
@@ -308,6 +311,7 @@ echo -e "${YELLOW}📋 Prossimi passi:${NC}"
 echo -e "  1. Verifica che tutti i file siano stati migliorati correttamente"
 echo -e "  2. Controlla che non ci siano errori di sintassi"
 echo -e "  3. Testa l'applicazione per verificare che le traduzioni funzionino"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -619,4 +623,6 @@ echo -e "  1. Verifica che tutti i file siano stati migliorati correttamente"
 echo -e "  2. Controlla che non ci siano errori di sintassi"
 echo -e "  3. Testa l'applicazione per verificare che le traduzioni funzionino"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo -e "  4. Aggiorna la documentazione se necessario" 

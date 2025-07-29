@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/sh
 
 me=$( readlink -f -- "$0";)
@@ -25,6 +28,7 @@ for remote in $(git remote); do
         echo "No branches to delete for remote '$remote'."
     fi
 done
+<<<<<<< HEAD
 =======
 #!/bin/sh
 
@@ -53,3 +57,5 @@ for remote in $(git remote); do
     fi
 done
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

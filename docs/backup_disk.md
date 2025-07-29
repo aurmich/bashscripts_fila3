@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Funzione backup_disk
 
 ## Descrizione
@@ -44,6 +47,7 @@ backup_disk() {
 - [Best Practices](best-practices.md) - Linee guida e best practices
 - [Testing](testing.md) - Documentazione dei test
 - [Convenzioni di Naming](../../docs/standards/file_naming_conventions.md) - Standard per la nomenclatura dei file
+<<<<<<< HEAD
 =======
 # Funzione backup_disk
 
@@ -91,3 +95,5 @@ backup_disk() {
 - [Testing](testing.md) - Documentazione dei test
 - [Convenzioni di Naming](../../docs/standards/file_naming_conventions.md) - Standard per la nomenclatura dei file
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

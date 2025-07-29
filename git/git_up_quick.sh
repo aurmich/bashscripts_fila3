@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Funzione per aggiornare un submodule
@@ -105,6 +108,7 @@ done
 update_root "$branch"
 
 echo "Aggiornamento completato!"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -213,3 +217,5 @@ update_root "$branch"
 
 echo "Aggiornamento completato!"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

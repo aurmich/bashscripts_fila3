@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Project
 
 > **Nota**: Questo documento è correlato a [Progetto](../../docs/project.md). Per una panoramica completa, consulta entrambi i documenti.
@@ -415,6 +418,7 @@ Per ulteriori informazioni sulla gestione dei repository e l'utilizzo degli scri
 - Verificare sempre le modifiche in ambiente di test
 - Mantenere aggiornata la documentazione
 
+<<<<<<< HEAD
 =======
 # Project
 
@@ -833,3 +837,5 @@ Per ulteriori informazioni sulla gestione dei repository e l'utilizzo degli scri
 - Mantenere aggiornata la documentazione
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

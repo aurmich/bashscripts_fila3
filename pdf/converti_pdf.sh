@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 # Script wrapper per la conversione di PDF in Markdown
 
@@ -77,6 +80,7 @@ else
     echo "Si è verificato un errore durante la conversione."
     exit 1
 fi
+<<<<<<< HEAD
 =======
 #!/bin/bash
 # Script wrapper per la conversione di PDF in Markdown
@@ -157,3 +161,5 @@ else
     exit 1
 fi
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

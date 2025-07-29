@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per analizzare tutti i moduli con PHPStan dal livello 1 al 10
@@ -67,6 +70,7 @@ for MODULE_PATH in $MODULES; do
     echo "Completata l'analisi completa per il modulo $MODULE"
 done
 
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -137,4 +141,6 @@ for MODULE_PATH in $MODULES; do
 done
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo "Analisi completata per tutti i moduli" 

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per generare un report riassuntivo dell'analisi PHPStan per tutti i moduli
@@ -193,6 +196,7 @@ In base all'analisi, si consiglia di intervenire sui moduli nel seguente ordine:
 EOL
 
 echo -e "${GREEN}Report riassuntivo generato: ${OUTPUT_FILE}${NC}"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -389,3 +393,5 @@ EOL
 
 echo -e "${GREEN}Report riassuntivo generato: ${OUTPUT_FILE}${NC}"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

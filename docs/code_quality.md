@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Script di Verifica della Qualità del Codice
 
 Questa documentazione descrive gli script utilizzati per verificare e migliorare la qualità del codice nel progetto.
@@ -292,6 +295,7 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data/v4/introduction)
 - [CI/CD Best Practices](https://docs.github.com/en/actions/guides/building-and-testing-php) 
 >>>>>>> d83fe8da (.)
+<<<<<<< HEAD
 =======
 # Script di Verifica della Qualità del Codice
 
@@ -587,3 +591,5 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 - [CI/CD Best Practices](https://docs.github.com/en/actions/guides/building-and-testing-php) 
 >>>>>>> d83fe8da (.)
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

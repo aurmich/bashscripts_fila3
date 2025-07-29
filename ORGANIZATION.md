@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Organizzazione Script Bash
 
 ## Struttura Organizzata
@@ -220,6 +223,7 @@ Gli script bash sono stati organizzati in sottocartelle tematiche per migliorare
 ---
 
 *Ultimo aggiornamento: Giugno 2025*
+<<<<<<< HEAD
 =======
 # Organizzazione Script Bash
 
@@ -443,4 +447,6 @@ Gli script bash sono stati organizzati in sottocartelle tematiche per migliorare
 
 *Ultimo aggiornamento: Giugno 2025*
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 *Organizzazione completata: 24 Giugno 2025* 

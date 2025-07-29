@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 # Script di test per verificare la conversione PDF -> Markdown
 
@@ -116,6 +119,7 @@ fi
 
 echo "\n=== Test completato ==="
 echo "Per convertire altri file, utilizza: ./converti_pdf.sh file_da_convertire.pdf"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 # Script di test per verificare la conversione PDF -> Markdown
@@ -235,3 +239,5 @@ fi
 echo "\n=== Test completato ==="
 echo "Per convertire altri file, utilizza: ./converti_pdf.sh file_da_convertire.pdf"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

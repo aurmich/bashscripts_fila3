@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Risoluzione Conflitti Git
 
 ## Panoramica
@@ -164,6 +167,7 @@ Il progetto include alcuni script per facilitare la gestione dei conflitti:
 - [Conflitti nei File di Configurazione](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/config_file_conflicts.md)
 - [Convenzioni Namespace](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/NAMESPACE-CONVENTIONS.md)
 >>>>>>> d83fe8da (.)
+<<<<<<< HEAD
 =======
 # Risoluzione Conflitti Git
 
@@ -331,3 +335,5 @@ Il progetto include alcuni script per facilitare la gestione dei conflitti:
 - [Convenzioni Namespace](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/NAMESPACE-CONVENTIONS.md)
 >>>>>>> d83fe8da (.)
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

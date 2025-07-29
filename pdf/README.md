@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # PDF to Markdown OCR Script
 
 Questo script converte un file PDF in un file Markdown (.md) utilizzando OCR.
@@ -227,6 +230,7 @@ Questo script è rilasciato sotto licenza MIT. Sentiti libero di modificarlo e d
 
 ## Contributi
 I contributi sono ben accetti! Apri una issue o una pull request per suggerire miglioramenti o segnalare bug.
+<<<<<<< HEAD
 =======
 # PDF to Markdown OCR Script
 
@@ -457,3 +461,5 @@ Questo script è rilasciato sotto licenza MIT. Sentiti libero di modificarlo e d
 ## Contributi
 I contributi sono ben accetti! Apri una issue o una pull request per suggerire miglioramenti o segnalare bug.
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

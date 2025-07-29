@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Guida Super Semplice: WSL + Laravel + Webmin + HeidiSQL
 
 > **Questa guida è pensata per chi non ha mai usato Linux e vuole installare un ambiente di sviluppo web completo su Windows con pochi semplici passaggi. Seguila nell'ordine indicato.**
@@ -938,6 +941,7 @@ sudo tail -f /var/log/apache2/error.log
 - [Stack Overflow](https://stackoverflow.com/questions/tagged/laravel)
 - [GitHub Issues](https://github.com/laravel/laravel/issues)
 - [Discord Laravel](https://discord.gg/laravel)
+<<<<<<< HEAD
 =======
 # Guida Super Semplice: WSL + Laravel + Webmin + HeidiSQL
 
@@ -1879,3 +1883,5 @@ sudo tail -f /var/log/apache2/error.log
 - [GitHub Issues](https://github.com/laravel/laravel/issues)
 - [Discord Laravel](https://discord.gg/laravel)
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Regole per i Percorsi Relativi nella Documentazione
 
 > **Collegamenti correlati**
@@ -49,6 +52,7 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
    ```markdown
    [ERRATO](../../../laravel/Modules/Xot/docs/README.md) <!-- Senza considerare che serve salire di due livelli -->
    ```
+<<<<<<< HEAD
 =======
 # Regole per i Percorsi Relativi nella Documentazione
 
@@ -101,3 +105,5 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
    [ERRATO](../../../laravel/Modules/Xot/docs/README.md) <!-- Senza considerare che serve salire di due livelli -->
    ```
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

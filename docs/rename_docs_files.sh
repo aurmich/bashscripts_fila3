@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per rinominare tutti i file e le cartelle con nomi maiuscoli nelle cartelle docs
@@ -41,6 +44,7 @@ find /var/www/html/ptvx/docs /var/www/html/ptvx/laravel/Modules/*/docs -type d -
     fi
 done
 
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -85,4 +89,6 @@ find /var/www/html/ptvx/docs /var/www/html/ptvx/laravel/Modules/*/docs -type d -
 done
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo "Processo di rinomina completato!"

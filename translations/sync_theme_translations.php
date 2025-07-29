@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 <?php
 
 declare(strict_types=1);
@@ -290,6 +293,7 @@ try {
 } catch (Throwable $e) {
     echo "❌ Errore durante la sincronizzazione: " . $e->getMessage() . "\n";
     exit(1);
+<<<<<<< HEAD
 =======
 <?php
 
@@ -583,4 +587,6 @@ try {
     echo "❌ Errore durante la sincronizzazione: " . $e->getMessage() . "\n";
     exit(1);
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 } 

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Bottlenecks Modulo Bashscripts
 
 ## Performance
@@ -207,6 +210,7 @@
 * [bottlenecks.md](../../laravel/Modules/Patient/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../laravel/Modules/Cms/docs/bottlenecks.md)
 
+<<<<<<< HEAD
 =======
 # Bottlenecks Modulo Bashscripts
 
@@ -417,3 +421,5 @@
 * [bottlenecks.md](../../laravel/Modules/Cms/docs/bottlenecks.md)
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

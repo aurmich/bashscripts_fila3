@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Sourcing di Eventi in Laravel
 
 **Una strategia oltre il CRUD**
@@ -529,6 +532,7 @@ L'event storming è una tecnica di workshop collaborativo che aiuta i team a sco
 
 - **Idempotenza dei Proiettori**: Assicurati che i proiettori possano gestire eventi duplicati senza causare modifiche indesiderate.
 - **Event Store Performance**: Considera l'uso di database ottimizzati per il sourcing di eventi come EventStoreDB per applicazioni ad alto volume.
+<<<<<<< HEAD
 =======
 # Sourcing di Eventi in Laravel
 
@@ -1061,4 +1065,6 @@ L'event storming è una tecnica di workshop collaborativo che aiuta i team a sco
 - **Idempotenza dei Proiettori**: Assicurati che i proiettori possano gestire eventi duplicati senza causare modifiche indesiderate.
 - **Event Store Performance**: Considera l'uso di database ottimizzati per il sourcing di eventi come EventStoreDB per applicazioni ad alto volume.
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 - **Monitoraggio e Logging**: Monitorare la salute delle proiezioni e dei reattori è cruciale per rilevare e risolvere problemi rapidamente.

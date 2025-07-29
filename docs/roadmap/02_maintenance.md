@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # 🛠️ Fase 2: Manutenzione
 
 ## 📋 Panoramica
@@ -118,6 +121,7 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema, garant
 Per ulteriori dettagli, consultare la documentazione degli script specifici e le sezioni successive della roadmap.
 
 
+<<<<<<< HEAD
 =======
 # 🛠️ Fase 2: Manutenzione
 
@@ -239,3 +243,5 @@ Per ulteriori dettagli, consultare la documentazione degli script specifici e le
 
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

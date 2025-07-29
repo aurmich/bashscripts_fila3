@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/sh
 
 # Funzione per copiare e rinominare le cartelle
@@ -35,6 +38,7 @@ move_config "Database"
 move_config "Resources"
 move_config "Routes"
 move_config "Tests"
+<<<<<<< HEAD
 =======
 #!/bin/sh
 
@@ -73,3 +77,5 @@ move_config "Resources"
 move_config "Routes"
 move_config "Tests"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

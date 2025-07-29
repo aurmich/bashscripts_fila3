@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Modulo Patient
 
 ## Struttura Attuale
@@ -132,6 +135,7 @@ return [
 ## Collegamenti
 - [Workflow Registrazione](docs/registration-workflow.md)
 - [Gestione Dottori](docs/doctors.md)
+<<<<<<< HEAD
 =======
 # Modulo Patient
 
@@ -267,4 +271,6 @@ return [
 - [Workflow Registrazione](docs/registration-workflow.md)
 - [Gestione Dottori](docs/doctors.md)
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 - [Sistema Appuntamenti](docs/appointments.md) 

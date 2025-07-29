@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per il push automatico delle modifiche al repository remoto
@@ -70,6 +73,7 @@ if git diff --name-only --diff-filter=U | grep -q .; then
     exit 1
 fi
 
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -143,4 +147,6 @@ if git diff --name-only --diff-filter=U | grep -q .; then
 fi
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 log_info "Operazione completata con successo"

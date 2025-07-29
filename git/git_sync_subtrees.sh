@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 source ./bashscripts/lib/custom.sh
@@ -81,6 +84,7 @@ log "🧹 Pulizia del repository..."
 git gc --prune=now --aggressive
 sed -i -e 's/\r$//' "$me"
 log "✅ Sincronizzazione completata con history ottimizzata!"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -165,3 +169,5 @@ git gc --prune=now --aggressive
 sed -i -e 's/\r$//' "$me"
 log "✅ Sincronizzazione completata con history ottimizzata!"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

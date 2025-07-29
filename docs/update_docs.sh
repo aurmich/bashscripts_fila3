@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Documentation Update Script
@@ -54,6 +57,7 @@ case "$1" in
         exit 1
         ;;
 esac
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -111,3 +115,5 @@ case "$1" in
         ;;
 esac
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Script di Verifica della Qualità del Codice
 
 Questa documentazione descrive gli script utilizzati per verificare e migliorare la qualità del codice nel progetto.
@@ -94,6 +97,7 @@ docs/
 
 ## PHPStan
 
+<<<<<<< HEAD
 =======
 # Script di Verifica della Qualità del Codice
 
@@ -191,4 +195,6 @@ docs/
 ## PHPStan
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 Per mantenere alta la qualità del codice, utilizziamo PHPStan per l'analisi statica. 

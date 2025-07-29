@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per correggere naming file docs del modulo User secondo regole Laraxot
@@ -72,6 +75,7 @@ done
 
 echo "🎉 Correzione naming completata!"
 echo "📁 Directory: $USER_DOCS_DIR"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -147,4 +151,6 @@ done
 echo "🎉 Correzione naming completata!"
 echo "📁 Directory: $USER_DOCS_DIR"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo "🔍 Verificare i collegamenti nei file aggiornati" 

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script to enforce lowercase naming convention in docs folders
@@ -29,6 +32,7 @@ find . -type d -name "docs" -print0 | while IFS= read -r -d '' docs_dir; do
         fi
     done
 done
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -61,3 +65,5 @@ find . -type d -name "docs" -print0 | while IFS= read -r -d '' docs_dir; do
     done
 done
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

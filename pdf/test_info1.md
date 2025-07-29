@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Informazioni sul Libro: Event Sourcing in Laravel
 
 Questo documento contiene una documentazione dettagliata del libro **Event Sourcing in Laravel** scritto da Brent Roose, pubblicato nel 2021 da Spatie. Di seguito sono riportate tutte le informazioni estratte dal PDF convertito in Markdown tramite OCR, organizzate per sezioni e capitoli.
@@ -172,6 +175,7 @@ L'event storming è una tecnica collaborativa per scoprire e modellare processi 
 Questo libro fornisce una guida completa al sourcing di eventi in Laravel, coprendo teoria, pratica e sfide. L'app demo del carrello della spesa inclusa serve come base pratica per applicare i concetti. Brent Roose sottolinea l'importanza dei test e della flessibilità del sourcing di eventi per applicazioni complesse.
 
 Se hai bisogno di ulteriori dettagli su una sezione specifica o desideri che approfondisca un capitolo, fammi sapere!
+<<<<<<< HEAD
 =======
 # Informazioni sul Libro: Event Sourcing in Laravel
 
@@ -347,3 +351,5 @@ Questo libro fornisce una guida completa al sourcing di eventi in Laravel, copre
 
 Se hai bisogno di ulteriori dettagli su una sezione specifica o desideri che approfondisca un capitolo, fammi sapere!
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Risoluzione dei Conflitti nei File di Configurazione
 
 ## Problema
@@ -98,6 +101,7 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione PostCSS](https://postcss.org/)
 - [Documentazione Rector](https://getrector.org/documentation)
 - [Documentazione sulla Risoluzione dei Conflitti Bash](conflict-resolution-bash.md)
+<<<<<<< HEAD
 =======
 # Risoluzione dei Conflitti nei File di Configurazione
 
@@ -199,4 +203,6 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione Rector](https://getrector.org/documentation)
 - [Documentazione sulla Risoluzione dei Conflitti Bash](conflict-resolution-bash.md)
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](scripts-conflict-resolution.md) 

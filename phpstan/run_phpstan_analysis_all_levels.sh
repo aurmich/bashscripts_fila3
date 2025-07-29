@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per eseguire l'analisi PHPStan su laravel/Modules
@@ -94,6 +97,7 @@ EOL
   echo "-------------------------------------------------"
 done
 
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -191,4 +195,6 @@ EOL
 done
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo "Analisi PHPStan completata. Tutti i report sono stati generati nella cartella docs/phpstan/" 

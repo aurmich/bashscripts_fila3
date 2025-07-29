@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Risoluzione Manuale dei Conflitti negli Script Bash
 
 > **Nota**: Per informazioni aggiuntive sui conflitti nei moduli, consulta anche [Conflitti Git nei Moduli](../../docs/conflitti_git_moduli.md)
@@ -104,6 +107,7 @@ BRANCH="${3:-main}"  # Usa il terzo parametro se fornito, altrimenti "main"
 ---
 
 > **NOTA IMPORTANTE**: La risoluzione dei conflitti negli script bash deve sempre privilegiare la robustezza, la gestione degli errori e il rispetto del principio DRY. Ogni conflitto risolto deve essere accompagnato da un aggiornamento della documentazione.
+<<<<<<< HEAD
 =======
 # Risoluzione Manuale dei Conflitti negli Script Bash
 
@@ -211,3 +215,5 @@ BRANCH="${3:-main}"  # Usa il terzo parametro se fornito, altrimenti "main"
 
 > **NOTA IMPORTANTE**: La risoluzione dei conflitti negli script bash deve sempre privilegiare la robustezza, la gestione degli errori e il rispetto del principio DRY. Ogni conflitto risolto deve essere accompagnato da un aggiornamento della documentazione.
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

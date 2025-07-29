@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Script di Setup
 
 ## Descrizione
@@ -45,6 +48,7 @@ Configura i moduli con:
 - Eseguire gli script in ordine corretto
 - Verificare i requisiti di sistema
 - Mantenere backup della configurazione 
+<<<<<<< HEAD
 =======
 # Script di Setup
 
@@ -93,3 +97,5 @@ Configura i moduli con:
 - Verificare i requisiti di sistema
 - Mantenere backup della configurazione 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

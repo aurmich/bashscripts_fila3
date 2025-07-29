@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 
 
 
@@ -85,6 +88,7 @@ $query->when($request->filled('q'), function (Builder $query) use ($request) {
 })
  0440c57 (.)
 
+<<<<<<< HEAD
 =======
 
 
@@ -173,3 +177,5 @@ $query->when($request->filled('q'), function (Builder $query) use ($request) {
  0440c57 (.)
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

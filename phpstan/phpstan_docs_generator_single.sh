@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per generare documentazione PHPStan per un singolo modulo
@@ -150,6 +153,7 @@ done
 echo -e "${GREEN}Analisi completata per il modulo: ${MODULE_NAME}${NC}"
 echo ""
 echo "Puoi trovare i report nella cartella: $DOCS_DIR"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -303,3 +307,5 @@ echo -e "${GREEN}Analisi completata per il modulo: ${MODULE_NAME}${NC}"
 echo ""
 echo "Puoi trovare i report nella cartella: $DOCS_DIR"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

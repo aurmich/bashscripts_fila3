@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Roadmap
 
 > **Nota**: Questo documento è correlato a [Roadmap](../../docs/roadmap.md). Per una panoramica completa, consulta entrambi i documenti.
@@ -279,6 +282,7 @@ aurmich/dev
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (243 linee vs 1)[0m
 
 
+<<<<<<< HEAD
 =======
 # Roadmap
 
@@ -561,3 +565,5 @@ aurmich/dev
 
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

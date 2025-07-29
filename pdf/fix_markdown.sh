@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Activate virtual environment
@@ -21,6 +24,7 @@ echo "Markdown fix complete. Original file backed up as test_original_backup.md"
 # Show the first 50 lines of the fixed file
 echo -e "\n=== First 50 lines of fixed file ===\n"
 head -n 50 test.md
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -45,3 +49,5 @@ echo "Markdown fix complete. Original file backed up as test_original_backup.md"
 echo -e "\n=== First 50 lines of fixed file ===\n"
 head -n 50 test.md
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

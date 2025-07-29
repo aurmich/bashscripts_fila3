@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Verifica se è stato fornito un parametro
@@ -54,6 +57,7 @@ echo "$RESOLVED" > "$FILE_PATH"
 
 echo "Conflitti risolti con successo!"
 echo "Backup del file originale salvato in: ${FILE_PATH}.backup"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -111,4 +115,6 @@ echo "$RESOLVED" > "$FILE_PATH"
 echo "Conflitti risolti con successo!"
 echo "Backup del file originale salvato in: ${FILE_PATH}.backup"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo "Verifica la risoluzione prima di committare" 

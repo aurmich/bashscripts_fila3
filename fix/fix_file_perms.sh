@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 git config core.filemode false
 sudo chown -R www-data:www-data .
@@ -10,6 +13,7 @@ chmod 600 ~/.ssh/config
 # If you have a public key, set its permissions too
 chmod 644 ~/.ssh/id_rsa.pub
 # Also ensure your .ssh directory has correct permissions
+<<<<<<< HEAD
 chmod 700 ~/.ssh
 =======
 #!/bin/bash
@@ -19,3 +23,6 @@ sudo find . -type f -exec chmod 644 {} \;
 sudo find . -type d -exec chmod 755 {} \;
 sudo chmod -R u+w .git
 >>>>>>> c142b7c (.)
+=======
+chmod 700 ~/.ssh
+>>>>>>> ff1452c (.)

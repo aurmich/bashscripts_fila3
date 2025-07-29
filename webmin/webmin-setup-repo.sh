@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/sh
 # shellcheck disable=SC1090 disable=SC2059 disable=SC2164 disable=SC2181 disable=SC2317
 # webmin-setup-repo.sh
@@ -583,6 +586,7 @@ check_gpg
 download_key
 setup_repos
 final_msg
+<<<<<<< HEAD
 =======
 #!/bin/sh
 # shellcheck disable=SC1090 disable=SC2059 disable=SC2164 disable=SC2181 disable=SC2317
@@ -1169,3 +1173,5 @@ download_key
 setup_repos
 final_msg
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

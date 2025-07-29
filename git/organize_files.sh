@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Directory base
@@ -92,6 +95,7 @@ for file in "$BASE_DIR"/*.md; do
     fi
 done
 
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -187,4 +191,6 @@ for file in "$BASE_DIR"/*.md; do
 done
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo "Organizzazione completata!" 

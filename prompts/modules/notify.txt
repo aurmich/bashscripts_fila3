@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Modulo Notify
 
 ## Struttura Attuale
@@ -126,6 +129,7 @@ Grapesjs::make('grapesjs_data')
 ## Collegamenti
 - [Documentazione GrapesJS](docs/grapesjs.md)
 - [Template Management](docs/templates.md)
+<<<<<<< HEAD
 =======
 # Modulo Notify
 
@@ -255,4 +259,6 @@ Grapesjs::make('grapesjs_data')
 - [Documentazione GrapesJS](docs/grapesjs.md)
 - [Template Management](docs/templates.md)
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 - [Notification System](docs/notifications.md) 

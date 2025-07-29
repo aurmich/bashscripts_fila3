@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 source ./bashscripts/lib/custom.sh
@@ -30,6 +33,7 @@ git commit -am .
 git push -u origin "$BRANCH"
 rm -rf .git
 cd "$curr_dir"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -63,4 +67,6 @@ git push -u origin "$BRANCH"
 rm -rf .git
 cd "$curr_dir"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo "👍 Pull ORG completato"

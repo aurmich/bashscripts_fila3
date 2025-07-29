@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Nuovo Formato Proposto per il File di Prompt
 
 Il seguente formato propone una ristrutturazione completa del file di prompt `docs.txt` per migliorarne la leggibilità, l'organizzazione e l'efficacia:
@@ -130,6 +133,7 @@ Questo formato:
 - [Sistema di Prompt](./PROMPTS_DOCUMENTATION_SYSTEM.md)
 - [Percorsi Relativi nella Documentazione](./PERCORSI_RELATIVI_DOCUMENTAZIONE.md)
 - [Regole per la Configurazione degli IDE](./REGOLE_IDE_CONFIGURAZIONE.md)
+<<<<<<< HEAD
 =======
 # Nuovo Formato Proposto per il File di Prompt
 
@@ -263,3 +267,5 @@ Questo formato:
 - [Percorsi Relativi nella Documentazione](./PERCORSI_RELATIVI_DOCUMENTAZIONE.md)
 - [Regole per la Configurazione degli IDE](./REGOLE_IDE_CONFIGURAZIONE.md)
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

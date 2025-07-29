@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Analisi e Risoluzione Errori Git Subtree
 
 ## Struttura degli Script
@@ -118,6 +121,7 @@ fi
 1. Aggiungere `set -x` all'inizio degli script per debug verbose
 2. Implementare logging più dettagliato
 3. Verificare i permessi degli script
+<<<<<<< HEAD
 =======
 # Analisi e Risoluzione Errori Git Subtree
 
@@ -239,4 +243,6 @@ fi
 2. Implementare logging più dettagliato
 3. Verificare i permessi degli script
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 4. Controllare la configurazione di git per il repository 

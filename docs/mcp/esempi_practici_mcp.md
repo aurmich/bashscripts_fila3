@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Model Context Protocol (MCP) – Guida Pratica e Best Practice
 
 ## Cos'è MCP?
@@ -197,6 +200,7 @@ $screenshotPath = $this->mcpService->puppeteer()->captureScreenshot(
 - [mcp_implementation_guide.md](../../../docs/mcp_implementation_guide.md)
 - [mcp_implementation_correction.md](../../../docs/mcp_implementation_correction.md)
 - [mcp_errors_and_lessons.md](../../../docs/mcp_errors_and_lessons.md)
+<<<<<<< HEAD
 =======
 # Model Context Protocol (MCP) – Guida Pratica e Best Practice
 
@@ -397,4 +401,6 @@ $screenshotPath = $this->mcpService->puppeteer()->captureScreenshot(
 - [mcp_implementation_correction.md](../../../docs/mcp_implementation_correction.md)
 - [mcp_errors_and_lessons.md](../../../docs/mcp_errors_and_lessons.md)
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 - [Indice e collegamenti root](../../../docs/links.md) 

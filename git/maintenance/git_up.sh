@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/sh
 if [ "$1" ]; then
      echo yes
@@ -28,6 +31,7 @@ echo "-------- END PULL[$where ($branch)] ----------";
 git status
 
 
+<<<<<<< HEAD
 =======
 #!/bin/sh
 if [ "$1" ]; then
@@ -59,3 +63,5 @@ git status
 
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

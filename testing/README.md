@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Script di Testing
 
 ## Descrizione
@@ -44,6 +47,7 @@ Verifica la qualità con:
 - Eseguire test regolarmente
 - Mantenere coverage alto
 - Seguire gli standard di codice 
+<<<<<<< HEAD
 =======
 # Script di Testing
 
@@ -91,3 +95,5 @@ Verifica la qualità con:
 - Mantenere coverage alto
 - Seguire gli standard di codice 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

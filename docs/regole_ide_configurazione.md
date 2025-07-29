@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Regole per la Configurazione degli IDE
 
 ## Cartelle di Configurazione Critiche
@@ -36,6 +39,7 @@ Quando si identificano errori ricorrenti o si implementano nuove best practices:
 - [Percorsi Relativi nella Documentazione](./PERCORSI_RELATIVI_DOCUMENTAZIONE.md)
 - [Sistema di Prompt](./PROMPTS_DOCUMENTATION_SYSTEM.md)
 - [Collegamenti della Documentazione](../../docs/collegamenti-documentazione.md)
+<<<<<<< HEAD
 =======
 # Regole per la Configurazione degli IDE
 
@@ -75,3 +79,5 @@ Quando si identificano errori ricorrenti o si implementano nuove best practices:
 - [Sistema di Prompt](./PROMPTS_DOCUMENTATION_SYSTEM.md)
 - [Collegamenti della Documentazione](../../docs/collegamenti-documentazione.md)
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

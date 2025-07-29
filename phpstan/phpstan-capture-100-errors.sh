@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per catturare i primi 100 errori PHPStan
@@ -168,6 +171,7 @@ echo "Per visualizzare il summary:"
 echo "  cat $SUMMARY_FILE"
 echo
 echo "Per visualizzare i primi errori:"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -339,4 +343,6 @@ echo "  cat $SUMMARY_FILE"
 echo
 echo "Per visualizzare i primi errori:"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo "  jq -r '.modules | to_entries | .[0].value.files | to_entries | .[0].value.messages' $OUTPUT_FILE" 

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 
 
 # 📊 Fase 5: Monitoraggio
@@ -169,6 +172,7 @@ aurmich/dev
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (23 linee vs 1)[0m
 
+<<<<<<< HEAD
 =======
 
 
@@ -341,3 +345,5 @@ aurmich/dev
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (23 linee vs 1)[0m
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

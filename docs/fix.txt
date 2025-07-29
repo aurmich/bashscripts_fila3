@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # 🛠️ Soluzioni Comuni per Problemi Git e Bash
 
 ## 🔧 Problemi di Interprete Bash
@@ -107,6 +110,7 @@ Soluzione: sudo chmod 777 -R .
 # Cambia versione PHP
 sudo update-alternatives --config php
 ```
+<<<<<<< HEAD
 =======
 # 🛠️ Soluzioni Comuni per Problemi Git e Bash
 
@@ -217,3 +221,5 @@ Soluzione: sudo chmod 777 -R .
 sudo update-alternatives --config php
 ```
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

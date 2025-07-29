@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Risoluzione Manuale dei Conflitti negli Script Bash
 
 ## PERCHÉ È CRUCIALE
@@ -140,6 +143,7 @@ BRANCH="${3:-main}"  # Usa il terzo parametro se fornito, altrimenti "main"
 ---
 
 > **NOTA IMPORTANTE**: La risoluzione dei conflitti negli script bash deve sempre privilegiare la robustezza, la gestione degli errori e il rispetto del principio DRY. Ogni conflitto risolto deve essere accompagnato da un aggiornamento della documentazione.
+<<<<<<< HEAD
 =======
 # Risoluzione Manuale dei Conflitti negli Script Bash
 
@@ -283,3 +287,5 @@ BRANCH="${3:-main}"  # Usa il terzo parametro se fornito, altrimenti "main"
 
 > **NOTA IMPORTANTE**: La risoluzione dei conflitti negli script bash deve sempre privilegiare la robustezza, la gestione degli errori e il rispetto del principio DRY. Ogni conflitto risolto deve essere accompagnato da un aggiornamento della documentazione.
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

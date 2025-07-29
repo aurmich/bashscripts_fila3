@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Abilita l'exit immediato in caso di errori
@@ -27,6 +30,7 @@ rsync -av --progress ./ "$destination" \
 
 echo "Copia completata!"
 echo "I file sono stati copiati in $destination."
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -57,3 +61,5 @@ rsync -av --progress ./ "$destination" \
 echo "Copia completata!"
 echo "I file sono stati copiati in $destination."
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

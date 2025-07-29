@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Script analyze_modules.sh
 
 ## Descrizione
@@ -80,6 +83,7 @@ Modules/<NomeModulo>/docs/phpstan/
    - Directory non trovata
    - Permessi insufficienti
    - PHPStan non installato
+<<<<<<< HEAD
 =======
 # Script analyze_modules.sh
 
@@ -163,4 +167,6 @@ Modules/<NomeModulo>/docs/phpstan/
    - Permessi insufficienti
    - PHPStan non installato
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
    - Configurazione PHPStan errata 

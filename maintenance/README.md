@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Script di Manutenzione
 
 ## Descrizione
@@ -45,6 +48,7 @@ Gestisce gli aggiornamenti con:
 - Eseguire backup prima della manutenzione
 - Verificare l'impatto delle ottimizzazioni
 - Monitorare le performance dopo gli aggiornamenti 
+<<<<<<< HEAD
 =======
 # Script di Manutenzione
 
@@ -93,3 +97,5 @@ Gestisce gli aggiornamenti con:
 - Verificare l'impatto delle ottimizzazioni
 - Monitorare le performance dopo gli aggiornamenti 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

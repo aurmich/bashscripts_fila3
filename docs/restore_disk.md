@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Funzione restore_disk
 
 ## Descrizione
@@ -159,6 +162,7 @@ Seleziona il backup da ripristinare [1-3]: 1
 - [Best Practices](best-practices.md) - Linee guida e best practices
 - [Testing](testing.md) - Documentazione dei test
 - [Convenzioni di Naming](../../docs/standards/file_naming_conventions.md) - Standard per la nomenclatura dei file
+<<<<<<< HEAD
 =======
 # Funzione restore_disk
 
@@ -321,3 +325,5 @@ Seleziona il backup da ripristinare [1-3]: 1
 - [Testing](testing.md) - Documentazione dei test
 - [Convenzioni di Naming](../../docs/standards/file_naming_conventions.md) - Standard per la nomenclatura dei file
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

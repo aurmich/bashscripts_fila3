@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 
@@ -23,6 +26,7 @@ done
 
 
 echo "✅ Tutti i git subtree sono stati inizializzati con successo!!!"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -49,3 +53,5 @@ done
 
 echo "✅ Tutti i git subtree sono stati inizializzati con successo!!!"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

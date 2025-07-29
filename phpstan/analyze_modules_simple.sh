@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script semplificato per analizzare i moduli PHPStan
@@ -146,6 +149,7 @@ echo
 echo "File di output disponibili in: $OUTPUT_DIR"
 echo "Per visualizzare i risultati:"
 echo "  find $OUTPUT_DIR -name '*_${DATE}.json' -exec echo '=== {} ===' \; -exec cat {} \;"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -295,3 +299,5 @@ echo "File di output disponibili in: $OUTPUT_DIR"
 echo "Per visualizzare i risultati:"
 echo "  find $OUTPUT_DIR -name '*_${DATE}.json' -exec echo '=== {} ===' \; -exec cat {} \;"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

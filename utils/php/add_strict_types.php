@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 <?php
 
 declare(strict_types=1);
@@ -57,6 +60,7 @@ $excludeDirs = [
 // Processa la directory principale
 processDirectory($rootDir);
 
+<<<<<<< HEAD
 =======
 <?php
 
@@ -117,4 +121,6 @@ $excludeDirs = [
 processDirectory($rootDir);
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo "Completato!\n"; 

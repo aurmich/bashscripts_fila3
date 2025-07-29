@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/usr/bin/env python3
 import re
 import sys
@@ -186,6 +189,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+<<<<<<< HEAD
 =======
 #!/usr/bin/env python3
 import re
@@ -375,3 +379,5 @@ def main():
 if __name__ == "__main__":
     main()
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

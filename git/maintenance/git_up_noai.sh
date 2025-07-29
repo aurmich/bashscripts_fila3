@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/sh
 
 # Controllo se è stato passato un argomento
@@ -66,6 +69,7 @@ git pull origin $branch --autostash --recurse-submodules --allow-unrelated-histo
 sed -i -e 's/\r$//' "$me"
 
 echo "-------- END PULL[$where ($branch)] ----------"
+<<<<<<< HEAD
 =======
 #!/bin/sh
 
@@ -135,3 +139,5 @@ sed -i -e 's/\r$//' "$me"
 
 echo "-------- END PULL[$where ($branch)] ----------"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

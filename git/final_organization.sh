@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Directory base
@@ -59,6 +62,7 @@ find "$BASH_DIR" -maxdepth 1 -name "*.sh" -type f | while read -r file; do
     move_sh_files "$file"
 done
 
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -121,4 +125,6 @@ find "$BASH_DIR" -maxdepth 1 -name "*.sh" -type f | while read -r file; do
 done
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo "Organizzazione finale completata!" 

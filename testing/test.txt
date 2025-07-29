@@ -1,11 +1,17 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 AAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAA
 
 [0;34mℹ️ [2025-04-22 11:23:29] Scelto blocco HEAD (3 linee vs 1)[0m
+<<<<<<< HEAD
 =======
 AAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAA
 
 [0;34mℹ️ [2025-04-22 11:23:29] Scelto blocco HEAD (3 linee vs 1)[0m
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Event Sourcing in Laravel
 
 **Una strategia oltre il CRUD**
@@ -196,6 +199,7 @@ Questo esempio mostra come un singolo evento può innescare aggiornamenti multip
 
 L'event sourcing offre un approccio potente per gestire la complessità delle applicazioni, specialmente in contesti come il commercio elettronico o, nel nostro caso, applicazioni sanitarie come `saluteora`, dove la tracciabilità e l'auditabilità sono cruciali. Con l'uso di eventi, proiettori e reattori, possiamo costruire sistemi flessibili e mantenibili che registrano ogni cambiamento di stato, facilitando la conformità e l'analisi storica.
 
+<<<<<<< HEAD
 =======
 # Event Sourcing in Laravel
 
@@ -395,4 +399,6 @@ Questo esempio mostra come un singolo evento può innescare aggiornamenti multip
 L'event sourcing offre un approccio potente per gestire la complessità delle applicazioni, specialmente in contesti come il commercio elettronico o, nel nostro caso, applicazioni sanitarie come `saluteora`, dove la tracciabilità e l'auditabilità sono cruciali. Con l'uso di eventi, proiettori e reattori, possiamo costruire sistemi flessibili e mantenibili che registrano ogni cambiamento di stato, facilitando la conformità e l'analisi storica.
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 Se hai bisogno di ulteriori dettagli su come applicare questi concetti in `saluteora`, fammi sapere!

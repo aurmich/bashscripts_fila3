@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # GUIDA ESSENZIALE LARAXOT
 
 ## DOCUMENTAZIONE
@@ -810,6 +813,7 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 
  cb513be (.)
  0440c57 (.)
+<<<<<<< HEAD
 =======
 # GUIDA ESSENZIALE LARAXOT
 
@@ -1623,3 +1627,5 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
  cb513be (.)
  0440c57 (.)
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Dipendenze e pacchetti
 /vendor/
 /node_modules/
@@ -53,6 +56,7 @@ Homestead.json
 
 # Caches specifiche
 docs/cache/
+<<<<<<< HEAD
 =======
 # Dipendenze e pacchetti
 /vendor/
@@ -109,4 +113,6 @@ Homestead.json
 # Caches specifiche
 docs/cache/
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 cache/

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 module.exports = {
   plugins: {
     tailwindcss: {},
@@ -13,6 +16,7 @@ module.exports = {
     },
   },
 }
+<<<<<<< HEAD
 =======
 module.exports = {
   plugins: {
@@ -29,3 +33,5 @@ module.exports = {
   },
 }
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

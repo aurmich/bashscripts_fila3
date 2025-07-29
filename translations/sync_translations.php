@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 <?php
 
 require_once __DIR__ . '/../../laravel/vendor/autoload.php';
@@ -171,6 +174,7 @@ function arrayToPhp(array $array, int $indent = 0): string
     }
     
     return $content;
+<<<<<<< HEAD
 =======
 <?php
 
@@ -345,4 +349,6 @@ function arrayToPhp(array $array, int $indent = 0): string
     
     return $content;
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 } 

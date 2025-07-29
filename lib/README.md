@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Librerie Bash: Documentazione delle Funzioni
 
 ## Perché questa documentazione è importante
@@ -69,6 +72,7 @@ Per aggiungere nuove funzioni:
 ---
 
 > Questo documento è parte della [Filosofia della Documentazione](/var/www/html/_bases/base_predict_fila3_mono/docs/DOCUMENTATION_PHILOSOPHY.md) del progetto.
+<<<<<<< HEAD
 =======
 # Librerie Bash: Documentazione delle Funzioni
 
@@ -141,3 +145,5 @@ Per aggiungere nuove funzioni:
 
 > Questo documento è parte della [Filosofia della Documentazione](/var/www/html/_bases/base_predict_fila3_mono/docs/DOCUMENTATION_PHILOSOPHY.md) del progetto.
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # 🎨 Colori per il logging
@@ -72,6 +75,7 @@ for folder in "${RENAME_TO_LOWER[@]}"; do
 done
 
 log "success" "Struttura del progetto aggiornata con successo."
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -147,3 +151,5 @@ done
 
 log "success" "Struttura del progetto aggiornata con successo."
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

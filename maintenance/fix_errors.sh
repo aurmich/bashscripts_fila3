@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Check if a file path was provided
@@ -48,6 +51,7 @@ echo "$FIXED_CODE" > "$FILE_PATH"
 # Clean up
 rm "$TEMP_PROMPT"
 
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -99,4 +103,6 @@ echo "$FIXED_CODE" > "$FILE_PATH"
 rm "$TEMP_PROMPT"
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo "Done! Original file backed up as '${FILE_PATH}.bak'"

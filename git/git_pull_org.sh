@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 if [ "$#" -ne 2 ]; then
@@ -79,6 +82,7 @@ git config --global core.fileMode false
 git config --global core.autocrlf input
 
 echo "-------- END SYNC [$where ($branch) - ORG: $org] ----------"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -161,3 +165,5 @@ git config --global core.autocrlf input
 
 echo "-------- END SYNC [$where ($branch) - ORG: $org] ----------"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

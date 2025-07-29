@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Event Sourcing in Laravel — Sintesi e Mappa dei Contenuti
 
 ## Indice Analitico
@@ -47,6 +50,7 @@
 
 ---
 
+<<<<<<< HEAD
 =======
 # Event Sourcing in Laravel — Sintesi e Mappa dei Contenuti
 
@@ -97,4 +101,6 @@
 ---
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 (Procedere con l'analisi delle sezioni successive per completare la sintesi e la mappa dei contenuti...) 

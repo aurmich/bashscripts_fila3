@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per correggere automaticamente la struttura delle directory nei moduli Laraxot PTVX
@@ -202,6 +205,7 @@ else
     echo -e "${GREEN}✓ Non ci sono file di framework erroneamente posizionati in app/!${NC}"
 fi
 
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -407,4 +411,6 @@ else
 fi
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo -e "${GREEN}Script completato.${NC}" 

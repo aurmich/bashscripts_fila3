@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 me=$( readlink -f -- "$0";)
@@ -31,6 +34,7 @@ else
 fi
 sed -i -e 's/\r$//' "$me"
 echo "Aggiornamento completato!"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -65,3 +69,5 @@ fi
 sed -i -e 's/\r$//' "$me"
 echo "Aggiornamento completato!"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

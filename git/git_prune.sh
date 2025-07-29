@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 git submodule foreach $( readlink -f -- "$0"; );
 git fsck --full --unreachable
 git filter-branch -- --all
@@ -12,6 +15,7 @@ git gc --prune=now --aggressive
 #read -p "Press [Enter] key to exit..."
 echo "-------- END PRUNE[$(pwd)] ----------";
 
+<<<<<<< HEAD
 =======
 git submodule foreach $( readlink -f -- "$0"; );
 git fsck --full --unreachable
@@ -27,3 +31,5 @@ git gc --prune=now --aggressive
 echo "-------- END PRUNE[$(pwd)] ----------";
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

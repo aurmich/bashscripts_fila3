@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # 🚀 Gestione Errori Git Subtree
 
 ## 📋 Struttura del Sistema
@@ -171,6 +174,7 @@ fi
 <div align="center">
   <sub>Built with ❤️ by the development team</sub>
 </div>
+<<<<<<< HEAD
 =======
 # 🚀 Gestione Errori Git Subtree
 
@@ -345,3 +349,5 @@ fi
   <sub>Built with ❤️ by the development team</sub>
 </div>
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

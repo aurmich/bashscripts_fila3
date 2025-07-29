@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 script_dir=$(dirname "$me")
@@ -71,6 +74,7 @@ sed -i -e 's/\r$//' "$me"
 
 [0;34mℹ️ [2025-04-22 11:23:29] Scelto blocco HEAD (3 linee vs 1)[0m
 echo "Subtree $LOCAL_PATH synchronized successfully with $REMOTE_REPO"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -145,3 +149,5 @@ sed -i -e 's/\r$//' "$me"
 [0;34mℹ️ [2025-04-22 11:23:29] Scelto blocco HEAD (3 linee vs 1)[0m
 echo "Subtree $LOCAL_PATH synchronized successfully with $REMOTE_REPO"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

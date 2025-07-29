@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per aggiornare i file .gitignore in tutti i moduli
@@ -49,6 +52,7 @@ for MODULE_DIR in */; do
 done
 
 echo "Aggiornamento completato di tutti i file .gitignore nei moduli."
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -101,3 +105,5 @@ done
 
 echo "Aggiornamento completato di tutti i file .gitignore nei moduli."
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

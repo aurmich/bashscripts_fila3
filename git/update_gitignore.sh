@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Directory base
@@ -21,6 +24,7 @@ find "$BASE_DIR" -name ".gitignore" -type f | while read -r file; do
     update_gitignore "$file"
 done
 
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -45,4 +49,6 @@ find "$BASE_DIR" -name ".gitignore" -type f | while read -r file; do
 done
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo "Aggiornamento file .gitignore completato!" 

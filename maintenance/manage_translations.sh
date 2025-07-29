@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Funzione per creare la struttura delle traduzioni
@@ -64,6 +67,7 @@ for module in "$MODULES_PATH"/*; do
     fi
 done
 
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -131,4 +135,6 @@ for module in "$MODULES_PATH"/*; do
 done
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo "Gestione traduzioni completata!" 

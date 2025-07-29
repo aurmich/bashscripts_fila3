@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per rinominare i file della documentazione secondo le convenzioni
@@ -67,6 +70,7 @@ echo "Rinominazione completata!"
 
 # Verifica finale
 echo "Verifica dei file rimanenti con caratteri maiuscoli:"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -137,4 +141,6 @@ echo "Rinominazione completata!"
 # Verifica finale
 echo "Verifica dei file rimanenti con caratteri maiuscoli:"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 find "$DOCS_DIR" -type f -name "*.md" ! -name "README.md" -exec grep -l "[A-Z]" {} \; 

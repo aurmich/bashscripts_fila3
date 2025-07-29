@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # PHPStan Code Quality Analyzer
@@ -323,6 +326,7 @@ main() {
 }
 
 # Esegui script
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -649,4 +653,6 @@ main() {
 
 # Esegui script
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 main "$@" 

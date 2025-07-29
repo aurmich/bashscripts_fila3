@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Gestione File .gitignore nei Moduli
 
 ## Introduzione
@@ -60,6 +63,7 @@ Durante l'analisi sono stati trovati file `.gitignore` con vari stili e contenut
 - Eliminazione di duplicati
 - Organizzazione in categorie
 - Standardizzazione del formato 
+<<<<<<< HEAD
 =======
 # Gestione File .gitignore nei Moduli
 
@@ -123,3 +127,5 @@ Durante l'analisi sono stati trovati file `.gitignore` con vari stili e contenut
 - Organizzazione in categorie
 - Standardizzazione del formato 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

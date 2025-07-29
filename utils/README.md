@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Script di Utilità
 
 ## Descrizione
@@ -44,6 +47,7 @@ Assiste nello sviluppo con:
 - Mantenere gli script aggiornati
 - Documentare le funzionalità
 - Verificare la compatibilità 
+<<<<<<< HEAD
 =======
 # Script di Utilità
 
@@ -91,3 +95,5 @@ Assiste nello sviluppo con:
 - Documentare le funzionalità
 - Verificare la compatibilità 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

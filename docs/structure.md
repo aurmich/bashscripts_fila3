@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Struttura degli Script Bash
 
 ## Organizzazione delle Cartelle
@@ -135,6 +138,7 @@ bashscripts/
 * [structure.md](laravel/Modules/Cms/docs/themes/structure.md)
 * [structure.md](laravel/Modules/Cms/docs/components/structure.md)
 
+<<<<<<< HEAD
 =======
 # Struttura degli Script Bash
 
@@ -273,3 +277,5 @@ bashscripts/
 * [structure.md](laravel/Modules/Cms/docs/components/structure.md)
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 
 ---
 
@@ -6248,6 +6251,7 @@ a.k.a. partials — as well. In order to avoid confusion between the
 structural pattern of splitting aggregate roots into several classes and
 DDD entities, we’ve decided to rename AggregateEntity to
 AggregatePartial in the latest version of our event sourcing package.
+<<<<<<< HEAD
 =======
 
 ---
@@ -12499,3 +12503,5 @@ structural pattern of splitting aggregate roots into several classes and
 DDD entities, we’ve decided to rename AggregateEntity to
 AggregatePartial in the latest version of our event sourcing package.
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

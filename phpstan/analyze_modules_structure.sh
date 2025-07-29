@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Script per analizzare la struttura dei moduli in laravel/Modules
@@ -149,6 +152,7 @@ Dall'analisi dei namespace e delle strutture dei moduli emergono i seguenti patt
 - Documentare le dipendenze tra moduli in modo esplicito
 EOL
 
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -301,4 +305,6 @@ Dall'analisi dei namespace e delle strutture dei moduli emergono i seguenti patt
 EOL
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo "Analisi strutturale dei moduli completata. Il report è disponibile in $MODULES_ANALYSIS" 

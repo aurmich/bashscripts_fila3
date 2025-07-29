@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # File di Configurazione
 
 Questa documentazione descrive i file di configurazione utilizzati nel progetto.
@@ -479,6 +482,7 @@ Per aggiungere nuovi pattern di esclusione, si consiglia di:
 >>>>>>> 4d4d6cb7 (.)
 =======
 >>>>>>> d83fe8da (.)
+<<<<<<< HEAD
 =======
 # File di Configurazione
 
@@ -961,4 +965,6 @@ Per aggiungere nuovi pattern di esclusione, si consiglia di:
 =======
 >>>>>>> d83fe8da (.)
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 - [Conflitti di Merge](/bashscripts/docs/CONFLICT_RESOLUTION_BASH.md) 

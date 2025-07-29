@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Verifica che sia stato passato un parametro
@@ -27,6 +30,7 @@ if [ $? -eq 0 ]; then
     echo "Remote '$NEW_ORG' aggiunto con URL $NEW_MAIN_REMOTE"
 else
     echo "Errore durante l'aggiunta del remote $NEW_MAIN_REMOTE"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -57,4 +61,6 @@ if [ $? -eq 0 ]; then
 else
     echo "Errore durante l'aggiunta del remote $NEW_MAIN_REMOTE"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 fi

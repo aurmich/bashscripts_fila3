@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 
 
 # 📊 Fase 6: Monitoraggio
@@ -1060,6 +1063,7 @@ aurmich/dev
 * [06_monitoring.md](docs/roadmap/06_monitoring.md)
 
 
+<<<<<<< HEAD
 =======
 
 
@@ -2123,3 +2127,5 @@ aurmich/dev
 
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

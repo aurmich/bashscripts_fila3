@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 
 
 
@@ -658,6 +661,7 @@ aurmich/dev
 * [07_ai_integration.md](docs/roadmap/07_ai_integration.md)
 
 
+<<<<<<< HEAD
 =======
 
 
@@ -1319,3 +1323,5 @@ aurmich/dev
 
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # Attiva l'ambiente virtuale
@@ -24,6 +27,7 @@ echo -e "\n=== ANTEPRIMA DEL REPORT ===\n"
 head -n 30 test_info2.md
 
 echo -e "\n\nAnalisi completata. Il report completo è disponibile in: test_info2.md"
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -51,3 +55,5 @@ head -n 30 test_info2.md
 
 echo -e "\n\nAnalisi completata. Il report completo è disponibile in: test_info2.md"
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Analisi tecnica del PDF: test.pdf
 
 ## Metadati principali
@@ -55,6 +58,7 @@
 ---
 
 **Nota**: Se hai bisogno di una sintesi dei contenuti, sarà necessario fornire immagini di esempio o utilizzare servizi OCR esterni più potenti rispetto a quelli disponibili in ambiente CLI standard. 
+<<<<<<< HEAD
 =======
 # Analisi tecnica del PDF: test.pdf
 
@@ -113,3 +117,5 @@
 
 **Nota**: Se hai bisogno di una sintesi dei contenuti, sarà necessario fornire immagini di esempio o utilizzare servizi OCR esterni più potenti rispetto a quelli disponibili in ambiente CLI standard. 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

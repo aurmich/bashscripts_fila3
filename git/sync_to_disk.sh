@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 
 # ✅ Controllo se è stato passato il nome del disco
@@ -57,6 +60,7 @@ echo "✅ Archivio creato e trasferito con successo: $DEST_PATH"
 me=$(readlink -f -- "$0")
 sed -i -e 's/\r$//' "$me"
 
+<<<<<<< HEAD
 =======
 #!/bin/bash
 
@@ -117,4 +121,6 @@ me=$(readlink -f -- "$0")
 sed -i -e 's/\r$//' "$me"
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 echo "✅ Sincronizzazione completata!"

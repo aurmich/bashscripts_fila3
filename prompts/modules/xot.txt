@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Modulo Xot (Core)
 
 ## Classi Base Fornite
@@ -139,6 +142,7 @@ trait HasXotTable
 1. MAI modificare i metodi finali
 2. Implementare TUTTI i metodi astratti
 3. Mantenere la documentazione aggiornata
+<<<<<<< HEAD
 =======
 # Modulo Xot (Core)
 
@@ -281,4 +285,6 @@ trait HasXotTable
 2. Implementare TUTTI i metodi astratti
 3. Mantenere la documentazione aggiornata
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
 4. Seguire i pattern stabiliti 

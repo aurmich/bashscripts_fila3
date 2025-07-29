@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Git Scripts
 
 > **Nota**: Questo documento è correlato a [Git](../../docs/git.md). Per una panoramica completa, consulta entrambi i documenti.
@@ -164,6 +167,7 @@ Questo script sincronizza i repository remoti con i sottoprogetti locali definit
 Questa strategia è generalmente migliore per ridurre i conflitti rispetto all'uso di `git merge`, specialmente quando si lavora con sottoprogetti che vengono aggiornati frequentemente. Il rebase mantiene una storia più pulita e lineare.
 
 [Torna alla documentazione principale](../../docs/maintenance.md#git-management) 
+<<<<<<< HEAD
 =======
 # Git Scripts
 
@@ -331,3 +335,5 @@ Questa strategia è generalmente migliore per ridurre i conflitti rispetto all'u
 
 [Torna alla documentazione principale](../../docs/maintenance.md#git-management) 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

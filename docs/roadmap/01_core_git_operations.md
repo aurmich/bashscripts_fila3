@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # 🚀 Fase 1: Core Git Operations
 
 ## 📋 Panoramica
@@ -133,6 +136,7 @@ Per ulteriori dettagli, consultare la documentazione degli script specifici e le
 
 
 
+<<<<<<< HEAD
 =======
 # 🚀 Fase 1: Core Git Operations
 
@@ -269,3 +273,5 @@ Per ulteriori dettagli, consultare la documentazione degli script specifici e le
 
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

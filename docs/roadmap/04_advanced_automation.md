@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 
 
 
@@ -1171,6 +1174,7 @@ aurmich/dev
 * [04_advanced_automation.md](docs/roadmap/04_advanced_automation.md)
 
 
+<<<<<<< HEAD
 =======
 
 
@@ -2345,3 +2349,5 @@ aurmich/dev
 
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

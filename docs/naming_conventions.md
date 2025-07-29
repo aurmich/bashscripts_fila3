@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Convenzioni di Naming
 
 ## File di Documentazione
@@ -42,6 +45,7 @@ docs/
 ## Collegamenti tra versioni di naming_conventions.md
 * [naming_conventions.md](../../laravel/Modules/Xot/docs/naming_conventions.md)
 
+<<<<<<< HEAD
 =======
 # Convenzioni di Naming
 
@@ -87,3 +91,5 @@ docs/
 * [naming_conventions.md](../../laravel/Modules/Xot/docs/naming_conventions.md)
 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

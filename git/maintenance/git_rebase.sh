@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 #!/bin/bash
 if [ "$2" ]; then
      echo yes
@@ -16,6 +19,7 @@ do
 find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
 git add -A && oco --yes && git rebase --continue || git push -uf origin HEAD:$branch && git rebase --continue || git rebase --continue || echo "loop: $i"
 done 
+<<<<<<< HEAD
 =======
 #!/bin/bash
 if [ "$2" ]; then
@@ -35,3 +39,5 @@ find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
 git add -A && oco --yes && git rebase --continue || git push -uf origin HEAD:$branch && git rebase --continue || git rebase --continue || echo "loop: $i"
 done 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

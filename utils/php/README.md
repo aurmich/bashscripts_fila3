@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Script PHP di Utilità
 
 Questa directory contiene script PHP di utilità per il progetto.
@@ -49,6 +52,7 @@ php add_strict_types.php
 4. Documentazione:
    - Ogni script deve avere un commento di intestazione che ne descrive lo scopo
    - Includere esempi di utilizzo nel README
+<<<<<<< HEAD
 =======
 # Script PHP di Utilità
 
@@ -101,4 +105,6 @@ php add_strict_types.php
    - Ogni script deve avere un commento di intestazione che ne descrive lo scopo
    - Includere esempi di utilizzo nel README
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
    - Documentare eventuali dipendenze 

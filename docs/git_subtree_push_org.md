@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Script Push Subtree per Organizzazioni
 
 ## Panoramica
@@ -121,6 +124,7 @@ Lo script implementa una strategia robusta per la gestione dei conflitti:
 - [Documentazione Git](../../docs/git.md)
 - [Script di Backup](backup_scripts.md)
 - [Configurazione Git](git_config.md) 
+<<<<<<< HEAD
 =======
 # Script Push Subtree per Organizzazioni
 
@@ -245,3 +249,5 @@ Lo script implementa una strategia robusta per la gestione dei conflitti:
 - [Script di Backup](backup_scripts.md)
 - [Configurazione Git](git_config.md) 
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

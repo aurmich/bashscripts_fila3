@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Setup del Progetto Laravel
 
 Questo documento contiene la documentazione dettagliata dei comandi utilizzati per il setup di un progetto Laravel, insieme a spiegazioni, consigli e note per migliorare il processo.
@@ -832,6 +835,7 @@ EXIT;
 Questo documento fornisce una guida completa per il setup di un ambiente di sviluppo Laravel. Seguire attentamente le istruzioni e verificare ogni passaggio per garantire un'installazione corretta e sicura.
 
 Per ulteriori informazioni, consultare la [documentazione ufficiale di Laravel](https://laravel.com/docs).
+<<<<<<< HEAD
 =======
 # Setup del Progetto Laravel
 
@@ -1667,3 +1671,5 @@ Questo documento fornisce una guida completa per il setup di un ambiente di svil
 
 Per ulteriori informazioni, consultare la [documentazione ufficiale di Laravel](https://laravel.com/docs).
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)

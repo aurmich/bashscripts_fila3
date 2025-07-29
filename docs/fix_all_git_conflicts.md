@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ff1452c (.)
 # Script di Risoluzione Automatica dei Conflitti Git
 
 ## Descrizione
@@ -93,6 +96,7 @@ Dopo l'esecuzione dello script, è consigliabile verificare che tutti i conflitt
 - [Script di Automazione](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/scripts.md)
 - [Conflitti nei File di Configurazione](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/config_file_conflicts.md)
 - [Risoluzione Conflitti nei Moduli](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/conflitti_merge_risolti.md)
+<<<<<<< HEAD
 =======
 # Script di Risoluzione Automatica dei Conflitti Git
 
@@ -189,3 +193,5 @@ Dopo l'esecuzione dello script, è consigliabile verificare che tutti i conflitt
 - [Conflitti nei File di Configurazione](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/config_file_conflicts.md)
 - [Risoluzione Conflitti nei Moduli](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/conflitti_merge_risolti.md)
 >>>>>>> c142b7c (.)
+=======
+>>>>>>> ff1452c (.)
