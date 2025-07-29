@@ -1,19 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> ff1452c (.)
 *.pdf
 *.png
 *.txt
 venv/
 ocr_tmp/
-<<<<<<< HEAD
-=======
-*.pdf
-*.png
-*.txt
-venv/
-ocr_tmp/
->>>>>>> c142b7c (.)
-=======
->>>>>>> ff1452c (.)

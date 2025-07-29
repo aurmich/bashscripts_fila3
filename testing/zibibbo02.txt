@@ -1,9 +1,1 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 AAAAAAAAAAAAAAAAAAAA
-=======
-AAAAAAAAAAAAAAAAAAAA
->>>>>>> c142b7c (.)
-=======
-AAAAAAAAAAAAAAAAAAAA
->>>>>>> ff1452c (.)
