@@ -102,10 +102,13 @@ Per ogni file conflittuale:
 ### Conflitto in file PHP:
 ```php
 // PRIMA (conflitto)
+<<<<<<< HEAD
 public function getUserData(): array
 {
     return $this->user->toArray();
 }
+=======
+>>>>>>> 017df0eb (.)
 public function getUserData(): ?UserData
 {
     return $this->user ? UserData::from($this->user) : null;
@@ -216,7 +219,10 @@ composer dump-autoload
 ### Conflitto in Service Provider:
 ```php
 // PRIMA (conflitto)
+<<<<<<< HEAD
 public string $name = 'predict';
+=======
+>>>>>>> 017df0eb (.)
 public string $name = 'Predict';
 
 // DOPO (risolto seguendo convenzioni)
@@ -226,8 +232,11 @@ public string $name = 'Predict'; // PascalCase per nome modulo
 ### Conflitto in Resource Filament:
 ```php
 // PRIMA (conflitto)
+<<<<<<< HEAD
 use Filament\Resources\Resource;
 class PredictResource extends Resource
+=======
+>>>>>>> 017df0eb (.)
 use Modules\Xot\Filament\Resources\XotBaseResource;
 class PredictResource extends XotBaseResource
 
@@ -240,7 +249,10 @@ class PredictResource extends XotBaseResource // Sempre estendere XotBase
 ### Conflitto in traduzione:
 ```php
 // PRIMA (conflitto in lang file)
+<<<<<<< HEAD
 'title' => 'Titolo',
+=======
+>>>>>>> 017df0eb (.)
 'title' => [
     'label' => 'Titolo',
     'placeholder' => 'Inserisci titolo'
