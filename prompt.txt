@@ -13,8 +13,6 @@
 - Analizza ogni modulo separatamente con PHPStan
 - PHPStan è installato nella cartella laravel: `./vendor/bin/phpstan`
 - Strategia per errori numerosi: scendi di livello fino a <100 errori, poi sali gradualmente
-<<<<<<< HEAD
-=======
 - Cerca e sistema i file con conflitti git 
 
 ## NAMESPACE E STRUTTURA
@@ -628,7 +626,6 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 - Analizza ogni modulo separatamente con PHPStan
 - PHPStan è installato nella cartella laravel: `./vendor/bin/phpstan`
 - Strategia per errori numerosi: scendi di livello fino a <100 errori, poi sali gradualmente
->>>>>>> 8338515 (.)
 - Cerca e sistema i file con conflitti git
 
 ## NAMESPACE E STRUTTURA
@@ -639,8 +636,6 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 - Esempio: User path: `/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/User/app/Models/User.php`
   namespace: `Modules\User\Models`
 
-<<<<<<< HEAD
-=======
 
 
 
@@ -650,19 +645,15 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
  43df3e0 (.)
->>>>>>> 8338515 (.)
 ## TRADUZIONI
 - Formato corretto: `'field' => ['label' => 'Etichetta', 'tooltip' => 'Descrizione']`
 - MAI usare ->label() (gestito da LangServiceProvider)
 
-<<<<<<< HEAD
-=======
 
 
 
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
  43df3e0 (.)
->>>>>>> 8338515 (.)
 ## ESTENSIONE CLASSI
 - MAI estendere classi Filament direttamente
 - SEMPRE estendere classi XotBase dal modulo Xot
@@ -677,11 +668,9 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 - Non definire table() (gestito dalla pagina index)
 
 ## PAGINE DI LISTA
-<<<<<<< HEAD
 - Usare metodi specifici: getTableColumns(), getTableFilters(), getTableActions()
 - Usare array associativi con chiavi string per componenti
 
-=======
 - Usare metodi specifici: getListTableColumns(), getTableFilters(), getTableActions()
 - Usare array associativi con chiavi string per componenti
 
@@ -714,7 +703,6 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
 
  43df3e0 (.)
->>>>>>> 8338515 (.)
 ## MIGRAZIONI
 - Estendere XotBaseMigration
 - Usare tableCreate() e tableUpdate()
@@ -726,8 +714,6 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 - Evitare l'uso di "mixed" (solo come ultima risorsa)
 - Analizzare moduli esistenti prima di implementare nuove funzionalità
 
-<<<<<<< HEAD
-=======
 
 
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
@@ -747,13 +733,11 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
  cb513be (.)
 
  43df3e0 (.)
->>>>>>> 8338515 (.)
 ## METODOLOGIA
 - Analizzare moduli esistenti
 - Focalizzarsi sullo scopo, non solo sulla correzione
 - Seguire convenzioni del framework
 
-<<<<<<< HEAD
 ## REGOLE IMPORTANTI
 - getInfolistSchema restituisce un array con chiavi stringhe
 - Aggiornare la cartella "docs" più vicina e studiarla
@@ -778,7 +762,6 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 - Aggiornare e studiare continuamente la documentazione
 - Consultare la documentazione prima di ogni azione
 - Ogni modulo ha la sua cartella docs da studiare e aggiornare
-=======
 
 ## MEMORIA E AGGIORNAMENTO
 - La cartella "docs" è la memoria principale
@@ -853,4 +836,3 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 
  cb513be (.)
  0440c57 (.)
->>>>>>> 8338515 (.)
