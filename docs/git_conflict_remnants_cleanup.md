@@ -1,6 +1,6 @@
 # Git Conflict Remnants Cleanup List
 
-## Files with ">>>>>>>" markers (potential git conflict remnants)
+## Files with  markers (potential git conflict remnants)
 
 ### Status Legend
 - [ ] = Not fixed yet
@@ -38,7 +38,7 @@
 ---
 
 ## Summary
-- **Total files with ">>>>>>>" markers: 21**
+- **Total files with  markers: 21**
 - **Files with actual git conflict remnants: ~18**
 - **Files with documentation references only: ~3**
 - **Critical PHP files needing immediate attention: 1**
@@ -52,7 +52,7 @@
 
 ## Notes
 - ✅ All files with actual git conflict remnants have been successfully cleaned
-- ✅ Files containing ">>>>>>>" as documentation references have been verified and marked complete
+- ✅ Files containing  as documentation references have been verified and marked complete
 - ✅ The critical AddressResource.php file has been fixed and is now conflict-free
 - ✅ All documentation files with real conflict markers have been consolidated properly
 
