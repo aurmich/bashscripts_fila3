@@ -77,9 +77,6 @@ Per aggiungere nuovi pattern di esclusione, si consiglia di:
 
 ## Documentazione Correlata
 - [Gestione dei Repository Git](/docs/bashscripts/gestione_git.md)
-<<<<<<< HEAD
-- [Conflitti di Merge](conflict-resolution-bash.md) 
-=======
 # File di Configurazione
 
 Questa documentazione descrive i file di configurazione utilizzati nel progetto.
@@ -479,10 +476,6 @@ Per aggiungere nuovi pattern di esclusione, si consiglia di:
 - [Gestione dei Repository Git](/docs/bashscripts/gestione_git.md)
 =======
 >>>>>>> 4d4d6cb7 (.)
-<<<<<<< HEAD
 =======
 >>>>>>> d83fe8da (.)
-=======
->>>>>>> origin/dev
 - [Conflitti di Merge](/bashscripts/docs/CONFLICT_RESOLUTION_BASH.md) 
->>>>>>> 15c7effd (.)

@@ -4,11 +4,11 @@
 Lo script `analyze_modules.sh` esegue l'analisi PHPStan su tutti i moduli Laravel presenti nella cartella `laravel/Modules/`. Per ogni modulo, esegue l'analisi a tutti i livelli di PHPStan (da 1 a max) e salva i risultati in formato JSON nella cartella `docs/phpstan` di ogni modulo.
 
 ## Posizione
-`/var/www/html/ptvx/bashscripts/analyze_modules.sh`
+`/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/analyze_modules.sh`
 
 ## Utilizzo
 ```bash
-cd /var/www/html/ptvx
+cd /var/www/html/_bases/base_ptvx_fila3_mono
 ./bashscripts/analyze_modules.sh
 ```
 
@@ -40,7 +40,7 @@ Modules/<NomeModulo>/docs/phpstan/
 - Configurazione PHPStan in `laravel/phpstan.neon`
 
 ## Variabili di Ambiente
-- `BASE_DIR`: Directory base del progetto (`/var/www/html/ptvx/laravel`)
+- `BASE_DIR`: Directory base del progetto (`/var/www/html/_bases/base_ptvx_fila3_mono/laravel`)
 - `MODULES_DIR`: Directory dei moduli (`$BASE_DIR/Modules`)
 - `LEVELS`: Array dei livelli PHPStan da analizzare
 
@@ -79,9 +79,6 @@ Modules/<NomeModulo>/docs/phpstan/
    - Directory non trovata
    - Permessi insufficienti
    - PHPStan non installato
-<<<<<<< HEAD
-   - Configurazione PHPStan errata 
-=======
 
 ## Gestione dei Conflitti
 In caso di conflitti durante l'analisi dei moduli:
@@ -93,7 +90,6 @@ In caso di conflitti durante l'analisi dei moduli:
 ## Collegamenti
 - [Documentazione PHPStan](../../docs/phpstan/PHPSTAN_WORKFLOW.md)
 - [Linee Guida Moduli](../../docs/MODULES.md)
-<<<<<<< HEAD
 - [Risoluzione Conflitti](../../docs/development/CONFLICT_RESOLUTION.md)
    - Configurazione PHPStan errata
 
@@ -162,7 +158,3 @@ jobs:
 - [Struttura dei Moduli](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/MODULE-STRUCTURE.md)
 - [Best Practices PHPStan](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/PHPSTAN-LEVEL9-GUIDE.md)
 - [Script di Automazione](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/scripts.md)
-=======
-- [Risoluzione Conflitti](../../docs/development/CONFLICT_RESOLUTION.md)
->>>>>>> origin/dev
->>>>>>> 15c7effd (.)

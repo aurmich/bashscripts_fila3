@@ -1,6 +1,5 @@
 # 🛠️ Soluzioni Comuni per Problemi Git e Bash
 
-<<<<<<< HEAD
 ## 🔧 Problemi di Interprete Bash
 ```bash
 # Fix per "bad interpreter: No such file or directory"
@@ -49,7 +48,6 @@ find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
 ## 🚀 Setup Nuovo Repository
 ```bash
 # Inizializza nuovo repository
-=======
 ## Problemi di Interprete Bash
 **Errore:** `/bin/bash^M: bad interpreter: No such file or directory`
 **Soluzione:**
@@ -260,7 +258,6 @@ sudo update-alternatives --config php
 
 ----
 cd <dir>
->>>>>>> 15c7effd (.)
 git init
 git checkout -b dev
 git remote add origin <repo>
@@ -271,7 +268,6 @@ git merge origin/dev --allow-unrelated-histories
 git add -A
 git commit -am .
 git push -u origin dev
-<<<<<<< HEAD
 ```
 
 ## ⚙️ Configurazione PHP
@@ -334,7 +330,6 @@ chmod -R ug+rwX storage bootstrap/cache
 - [Documentazione Git](https://git-scm.com/doc)
 - [Documentazione Bash](https://www.gnu.org/software/bash/manual/)
 - [Laravel File Permissions](https://laravel.com/docs/10.x/filesystem#configuration)
-=======
 rm -rf .git
 
 
@@ -420,13 +415,10 @@ git add -A
 git commit -am .
 git push -u origin dev
 rm -rf .git
->>>>>>> 15c7effd (.)
 
 
 
 
-<<<<<<< HEAD
-=======
 
 
 PROBLEMA: accesso cartelle file
@@ -443,4 +435,3 @@ PROBLEMA: zsh: permission denied: ./bashscripts/git_up_noai.sh (dando comando ./
 SOLUZIONE: > sudo chmod 777 -R .     
 
 
->>>>>>> 15c7effd (.)

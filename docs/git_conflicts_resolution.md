@@ -128,7 +128,6 @@ namespace Modules\NomeModulo\App\Filament;
 3. Verificare che tutte le risorse Filament siano registrate correttamente
 4. Testare il modulo in ambiente di sviluppo 
 =======
-<<<<<<< HEAD
 ## Risoluzione di Casi Specifici
 
 ### Conflitti in File PHP
@@ -163,11 +162,4 @@ Il progetto include alcuni script per facilitare la gestione dei conflitti:
 - [Script di Risoluzione Automatica](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/fix_all_git_conflicts.md)
 - [Conflitti nei File di Configurazione](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/config_file_conflicts.md)
 - [Convenzioni Namespace](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/NAMESPACE-CONVENTIONS.md)
-<<<<<<< HEAD
-=======
 >>>>>>> d83fe8da (.)
-=======
->>>>>>> 4d4d6cb7 (.)
-4. Testare il modulo in ambiente di sviluppo 
->>>>>>> origin/dev
->>>>>>> 15c7effd (.)
