@@ -79,14 +79,12 @@ Modules/<NomeModulo>/docs/phpstan/
    - Directory non trovata
    - Permessi insufficienti
    - PHPStan non installato
+   - Configurazione PHPStan errata
 
-## Gestione dei Conflitti
-In caso di conflitti durante l'analisi dei moduli:
-1. Verificare che non ci siano modifiche non committate
-2. Eseguire `git status` per identificare i file in conflitto
-3. Risolvere i conflitti manualmente seguendo le linee guida in [CONFLICT_RESOLUTION.md](../../docs/development/CONFLICT_RESOLUTION.md)
-4. Dopo la risoluzione, rieseguire l'analisi PHPStan
+## Pattern di Risoluzione Errori
+Durante l'analisi PHPStan potrebbero emergere errori ricorrenti. Ecco le soluzioni più comuni:
 
+<<<<<<< HEAD
 ## Collegamenti
 - [Documentazione PHPStan](../../docs/phpstan/PHPSTAN_WORKFLOW.md)
 - [Linee Guida Moduli](../../docs/MODULES.md)
@@ -96,6 +94,8 @@ In caso di conflitti durante l'analisi dei moduli:
 ## Pattern di Risoluzione Errori
 Durante l'analisi PHPStan potrebbero emergere errori ricorrenti. Ecco le soluzioni più comuni:
 
+=======
+>>>>>>> origin/dev
 ### 1. Tipizzazione nelle Collection
 Utilizzare annotazioni PHPDoc appropriate per specificare il tipo di elementi in una Collection:
 ```php
