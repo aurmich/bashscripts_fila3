@@ -129,6 +129,7 @@ Script per il push dei subtree. Funzionalità:
 <<<<<<< HEAD
 3. Problemi di permessi: controllare fileMode e symlinks
 
+<<<<<<< HEAD
 =======
 # Script Git
 
@@ -235,3 +236,5 @@ Script per il push dei subtree. Funzionalità:
 =======
 3. Problemi di permessi: controllare fileMode e symlinks
 >>>>>>> origin/dev
+=======
+>>>>>>> a76e699 (.)

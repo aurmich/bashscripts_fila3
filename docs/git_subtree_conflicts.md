@@ -56,6 +56,7 @@ La soluzione ottimale è mantenere la versione che accetta 3 parametri, ma con g
 #!/bin/bash
 
 source ./bashscripts/lib/custom.sh
+
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     log "error" "Parametri errati"
@@ -176,6 +177,7 @@ La soluzione ottimale è mantenere la versione che accetta 3 parametri, ma con g
 #!/bin/bash
 
 source ./bashscripts/lib/custom.sh
+
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     log "error" "Parametri errati"
@@ -306,6 +308,7 @@ La soluzione ottimale è mantenere la versione che accetta 3 parametri, ma con g
 #!/bin/bash
 
 source ./bashscripts/lib/custom.sh
+
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     log "error" "Parametri errati"
@@ -380,6 +383,7 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione degli Script Git](git_scripts.md)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
 5338a990 (.)
+<<<<<<< HEAD
 # Risoluzione dei Conflitti negli Script Git Subtree
 
 ## Problema
@@ -783,3 +787,5 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 =======
 >>>>>>> d83fe8da (.)
 - [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md) 
+=======
+>>>>>>> a76e699 (.)

@@ -239,6 +239,10 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione Rector](https://getrector.org/documentation)
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> a76e699 (.)
 # Risoluzione dei Conflitti nei File di Configurazione
 
 ## Problema
@@ -338,9 +342,13 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione PostCSS](https://postcss.org/)
 - [Documentazione Rector](https://getrector.org/documentation)
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
+<<<<<<< HEAD
 =======
 >>>>>>> origin/dev
 =======
+=======
+
+>>>>>>> a76e699 (.)
 # Risoluzione dei Conflitti nei File di Configurazione
 
 ## Problema
@@ -440,7 +448,7 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione PostCSS](https://postcss.org/)
 - [Documentazione Rector](https://getrector.org/documentation)
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
->>>>>>> f000df5 (.)
+
 # Risoluzione dei Conflitti nei File di Configurazione
 
 ## Problema
@@ -540,12 +548,7 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione PostCSS](https://postcss.org/)
 - [Documentazione Rector](https://getrector.org/documentation)
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
-=======
->>>>>>> 4d4d6cb7 (.)
-- [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md) 
-=======
 - [Risoluzione Conflitti Git](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/git_conflicts_resolution.md)
 - [Script di Risoluzione Automatica](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/fix_all_git_conflicts.md)
 - [Conflitti Merge Risolti Xot](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/conflitti_merge_risolti.md)
 - [Gestione della Configurazione](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/config.md)
->>>>>>> d83fe8da (.)
