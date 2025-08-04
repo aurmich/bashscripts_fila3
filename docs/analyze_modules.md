@@ -84,7 +84,6 @@ Modules/<NomeModulo>/docs/phpstan/
 ## Pattern di Risoluzione Errori
 Durante l'analisi PHPStan potrebbero emergere errori ricorrenti. Ecco le soluzioni più comuni:
 
-<<<<<<< HEAD
 ## Collegamenti
 - [Documentazione PHPStan](../../docs/phpstan/PHPSTAN_WORKFLOW.md)
 - [Linee Guida Moduli](../../docs/MODULES.md)
@@ -94,8 +93,6 @@ Durante l'analisi PHPStan potrebbero emergere errori ricorrenti. Ecco le soluzio
 ## Pattern di Risoluzione Errori
 Durante l'analisi PHPStan potrebbero emergere errori ricorrenti. Ecco le soluzioni più comuni:
 
-=======
->>>>>>> origin/dev
 ### 1. Tipizzazione nelle Collection
 Utilizzare annotazioni PHPDoc appropriate per specificare il tipo di elementi in una Collection:
 ```php

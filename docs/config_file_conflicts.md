@@ -238,11 +238,6 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione PostCSS](https://postcss.org/)
 - [Documentazione Rector](https://getrector.org/documentation)
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> a76e699 (.)
 # Risoluzione dei Conflitti nei File di Configurazione
 
 ## Problema
@@ -342,9 +337,6 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione PostCSS](https://postcss.org/)
 - [Documentazione Rector](https://getrector.org/documentation)
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
-<<<<<<< HEAD
-=======
->>>>>>> origin/dev
 =======
 =======
 

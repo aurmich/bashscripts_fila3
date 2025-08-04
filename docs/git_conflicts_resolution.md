@@ -34,7 +34,6 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 # Visualizzare tutti i file con conflitti
 git status
 
-<<<<<<< HEAD
 [Backlink: Documentazione Globale](/docs/README.md)
 [Backlink: scripts_conflict_resolution.md](scripts_conflict_resolution.md)
 [Backlink: fix_all_git_conflicts.md](fix_all_git_conflicts.md)
@@ -87,33 +86,10 @@ Scegliere una delle seguenti strategie:
 
 Per i file di codice PHP, verificare sempre la compatibilità con PHPStan livello 9 dopo la risoluzione.
 
-=======
-# Trovare i marker di conflitto
-
-```
-
-### Fase 2: Analisi
-Per ogni file in conflitto:
-1. Comprendere il contesto delle modifiche
-2. Determinare quali modifiche devono essere mantenute
-3. Considerare le dipendenze e gli impatti delle modifiche
-
-### Fase 3: Risoluzione
-Scegliere una delle seguenti strategie:
-
-1. **Mantenere la versione HEAD**: Se la versione corrente è corretta
-2. **Mantenere la versione incoming**: Se la versione del branch è corretta
-3. **Fusione manuale**: Integrare le modifiche di entrambe le versioni
-4. **Approccio per i file .md**: Per i file di documentazione, mantenere entrambe le versioni
-
-Per i file di codice PHP, verificare sempre la compatibilità con PHPStan livello 9 dopo la risoluzione.
-
->>>>>>> origin/dev
 ### Fase 4: Test
 1. Eseguire PHPStan: `cd laravel && ./vendor/bin/phpstan analyse`
 2. Verificare il corretto funzionamento delle funzionalità modificate
 3. Assicurarsi che non ci siano errori sintattici
-<<<<<<< HEAD
 
 ### Fase 5: Documentazione
 1. Aggiornare la documentazione del modulo
@@ -155,45 +131,6 @@ namespace Modules\NomeModulo\App\Filament;
 1. Eseguire `composer dump-autoload` per aggiornare l'autoloader
 2. Eseguire `php artisan config:clear` per pulire la cache
 3. Verificare che tutte le risorse Filament siano registrate correttamente
-=======
-
-### Fase 5: Documentazione
-1. Aggiornare la documentazione del modulo
-2. Creare collegamenti bidirezionali con la documentazione principale
-3. Documentare le decisioni prese durante la risoluzione
-
-## Convenzioni di Namespace
-
-Una delle cause più comuni di conflitti nel progetto sono le incoerenze nei namespace. Seguire queste regole:
-
-### Regola Fondamentale
-
-I namespace dei moduli **NON** devono includere il segmento `app` anche se i file sono fisicamente posizionati nella directory `app`.
-
-#### ✅ CORRETTO
-```php
-namespace Modules\NomeModulo\Models;
-namespace Modules\NomeModulo\Http\Controllers;
-namespace Modules\NomeModulo\Filament;
-```
-
-#### ❌ ERRATO
-```php
-namespace Modules\NomeModulo\App\Models;
-namespace Modules\NomeModulo\App\Http\Controllers;
-namespace Modules\NomeModulo\App\Filament;
-```
-
-## Best Practices per Evitare Conflitti
-
-1. **Pull Frequenti**: Eseguire pull frequenti dal branch principale
-2. **Comunicazione**: Coordinare le modifiche a file critici
-3. **Branch Isolati**: Lavorare su branch isolati per feature specifiche
-4. **Commit Atomici**: Effettuare commit piccoli e atomici
-5. **Documentare**: Mantenere aggiornata la documentazione
-6. **Seguire le Convenzioni**: Rispettare sempre le convenzioni di namespace e tipizzazione
-
->>>>>>> origin/dev
 4. Testare il modulo in ambiente di sviluppo 
 
 ## Risoluzione di Casi Specifici

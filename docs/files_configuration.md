@@ -316,11 +316,8 @@ Per aggiungere nuovi pattern di esclusione, si consiglia di:
 
 ## Documentazione Correlata
 - [Gestione dei Repository Git](/docs/bashscripts/gestione_git.md)
-<<<<<<< HEAD
 f000df5 (.)
 
-=======
->>>>>>> origin/dev
 
 Questa documentazione descrive i file di configurazione utilizzati nel progetto.
 

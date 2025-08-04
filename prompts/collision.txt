@@ -1,21 +1,24 @@
-<<<<<<< HEAD
-# Guida per la Risoluzione dei Conflitti Git
+# Guida per la Risoluzione dei Conflitti Git - Laraxot
 
 ## Obiettivo
-Risolvere tutti i conflitti Git presenti nel progetto mediante analisi manuale approfondita, aggiornamento della documentazione e implementazione di soluzioni coerenti con l'architettura del progetto.
+Risolvere tutti i conflitti Git presenti nel progetto mediante analisi manuale approfondita, aggiornamento della documentazione e implementazione di soluzioni coerenti con l'architettura Laraxot.
 
 ## Principi Fondamentali
 - **Analisi manuale obbligatoria**: Ogni conflitto deve essere analizzato e risolto manualmente
 - **NO automazione cieca**: Vietato l'uso di risoluzioni automatiche o script di automazione
 - **Qualità PHPStan**: Tutti i file PHP devono essere compatibili con PHPStan livello 10
 - **Documentazione completa**: Aggiornare sempre la documentazione correlata
+- **Convenzioni naming**: Tutti i file e cartelle in docs/ devono essere in minuscolo (eccetto README.md)
 
 ## Workflow Sistematico
 
 ### 1. Identificazione e Prioritizzazione
 ```bash
 # Trova tutti i file con conflitti Git
+git status --porcelain | grep "^UU\|^AA\|^DD"
 
+# Lista dettagliata dei conflitti
+git diff --name-only --diff-filter=U
 ```
 
 **Criteri di priorità:**
@@ -41,7 +44,7 @@ Per ogni file conflittuale:
 
 **c) Valutazione dell'impatto:**
 - Impatto sulla funzionalità esistente
-- Compatibilità con l'architettura del progetto
+- Compatibilità con l'architettura Laraxot
 - Effetti sui moduli dipendenti
 
 ### 3. Risoluzione del Conflitto
@@ -51,11 +54,13 @@ Per ogni file conflittuale:
 - Seguire PSR-12 per lo stile del codice
 - Verificare type hints e return types
 - Controllare documentazione PHPDoc
+- Utilizzare `declare(strict_types=1);`
 
 **Per file Markdown (.md):**
 - Mantenere entrambe le versioni quando possibile
 - Unire i contenuti in modo logico
 - Preservare i backlink esistenti
+- Rispettare convenzioni naming (minuscolo)
 
 **Per file di configurazione:**
 - Privilegiare le configurazioni più recenti
@@ -166,9 +171,10 @@ Al termine del processo, fornire:
 ### Identificazione conflitti
 ```bash
 # Trova file con conflitti Git
-
+git status --porcelain | grep "^UU\|^AA\|^DD"
 
 # Lista file con conflitti per tipo
+git diff --name-only --diff-filter=U
 ```
 
 ### Verifica PHPStan
@@ -257,14 +263,29 @@ class PredictResource extends XotBaseResource // Sempre estendere XotBase
 - **Model Inheritance**: Non ridichiarare trait già presenti nei parent
 - **Translation System**: Usare chiavi strutturate, evitare label() espliciti
 - **PHPStan**: Mirare sempre al livello 10 per tutto il codice PHP
+- **Documentation Naming**: Tutti i file e cartelle in docs/ in minuscolo (eccetto README.md)
 
+## Regole Critiche per Progetti Laraxot
 
-Dentro le cartelle docs , i files e le sottocartelle non devono contenere caratteri maiuscoli ad eccezzione di README.md
-Procedi a risolvere tutti i conflitti git nei file PHP rilevati, uno dopo l’altro, senza chiedere nulla e senza fermarmi !
-<<<<<<< HEAD
-=======
-=======
-Trova tutti i file contenenti git collision partendo dalla root del progetto. Analizza ciascun file con conflitti dando priorità in base all'impatto funzionale. Studia attentamente le differenze tra le versioni in conflitto per comprenderne lo scopo e il contesto. Ogni conflitto deve essere analizzato e risolto manualmente con ragionamento: non è ammesso l'uso di risoluzioni automatiche né la generazione di script per l'automazione. Per ogni file identifica la cartella "docs" più vicina, leggila e aggiornala con informazioni relative agli obiettivi funzionali e alle decisioni architetturali, evitando dettagli implementativi. Aggiorna anche la cartella "docs" principale nella root del progetto creando collegamenti bidirezionali tra la documentazione locale e quella globale, includendo anche le altre documentazioni eventualmente interessate. Nella cartella "laravel/Modules" ogni sottocartella è un modulo indipendente con proprio "composer.json", namespace, autoload, cartella "app" per le classi e documentazione dedicata. Mantieni aggiornate le relazioni tra la documentazione del modulo e quella principale tramite backlink bidirezionali. Dopo aver aggiornato tutta la documentazione, implementa manualmente una correzione coerente con lo stile e l'architettura del progetto. Durante la scansione della documentazione assicurati che ogni file ".md" abbia almeno due collegamenti in ingresso provenienti da altri file ".md". Se mancano, crea i backlink più significativi in base al contenuto e al contesto. Procedi in modo sistematico e continuo ma senza alcuna automazione cieca. Al termine fornisci un riepilogo con i file corretti, la documentazione aggiornata, i backlink creati, gli impatti rilevati e le motivazioni delle scelte adottate. Si devi sistemare e migliorare tutti i files che hanno collisioni, quando tocchi un file devi sempre farlo pensandolo per phpstan a livello 10.
-Trova tutti i file contenenti git collision partendo dalla root del progetto. Analizza ciascun file con conflitti dando priorità in base all’impatto funzionale. Studia attentamente le differenze tra le versioni in conflitto per comprenderne lo scopo e il contesto. Ogni conflitto deve essere analizzato e risolto manualmente con ragionamento: non è ammesso l’uso di risoluzioni automatiche né la generazione di script per l’automazione. Per ogni file identifica la cartella "docs" più vicina, leggila e aggiornala con informazioni relative agli obiettivi funzionali e alle decisioni architetturali, evitando dettagli implementativi. Aggiorna anche la cartella "docs" principale nella root del progetto creando collegamenti bidirezionali tra la documentazione locale e quella globale, includendo anche le altre documentazioni eventualmente interessate. Nella cartella "laravel/Modules" ogni sottocartella è un modulo indipendente con proprio "composer.json", namespace, autoload, cartella "app" per le classi e documentazione dedicata. Mantieni aggiornate le relazioni tra la documentazione del modulo e quella principale tramite backlink bidirezionali. Dopo aver aggiornato tutta la documentazione, implementa manualmente una correzione coerente con lo stile e l’architettura del progetto. Durante la scansione della documentazione assicurati che ogni file ".md" abbia almeno due collegamenti in ingresso provenienti da altri file ".md". Se mancano, crea i backlink più significativi in base al contenuto e al contesto. Procedi in modo sistematico e continuo ma senza alcuna automazione cieca. Al termine fornisci un riepilogo con i file corretti, la documentazione aggiornata, i backlink creati, gli impatti rilevati e le motivazioni delle scelte adottate. se ci sono collisioni tra i file .md scegli la versione entrambi. 
->>>>>>> origin/dev
->>>>>>> d141a144 (.)
+### Struttura del Progetto
+- Root progetto: `/var/www/html/_bases/base_{nome_progetto}/`
+- Root Laravel: `/var/www/html/_bases/base_{nome_progetto}/laravel/`
+- Moduli: `/var/www/html/_bases/base_{nome_progetto}/laravel/Modules/{ModuleName}/`
+- Temi: `/var/www/html/_bases/base_{nome_progetto}/laravel/Themes/One/`
+
+### Autenticazione
+- Pagina login: `/it/auth/login` (rotta localizzata)
+- Blade template: `/var/www/html/_bases/base_{nome_progetto}/laravel/Themes/One/resources/views/pages/auth/login.blade.php`
+- Widget: `Modules\User\Filament\Widgets\Auth\LoginWidget`
+
+### Pattern Test Separati
+- `LoginTest.php`: testa SOLO pagina `/it/auth/login`
+- `LoginVoltTest.php`: testa SOLO componente Volt `auth.login`
+- `LoginWidgetTest.php`: testa SOLO widget Filament
+- SEMPRE usare `XotData::make()->getUserClass()` invece di import diretti
+
+## Filosofia di Risoluzione
+- **Approccio olistico**: Considerare implicazioni architetturali complete
+- **Sostenibilità**: Prevenire debito tecnico e mantenere longevità del codice
+- **Trasparenza**: Documentare ogni decisione tecnica importante
+- **Responsabilità**: Rispettare i confini e le responsabilità dei moduli
