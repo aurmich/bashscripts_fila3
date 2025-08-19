@@ -1,12 +1,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 # Guida per la Risoluzione dei Conflitti Git - Laraxot
 
 ## Obiettivo
 Risolvere tutti i conflitti Git presenti nel progetto mediante analisi manuale approfondita, aggiornamento della documentazione e implementazione di soluzioni coerenti con l'architettura Laraxot.
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> ff45a019 (.)
+=======
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 # Guida per la Risoluzione dei Conflitti Git
 
 ## Obiettivo
@@ -329,6 +335,10 @@ class PredictResource extends XotBaseResource // Sempre estendere XotBase
 Dentro le cartelle docs , i files e le sottocartelle non devono contenere caratteri maiuscoli ad eccezzione di README.md
 Procedi a risolvere tutti i conflitti git nei file PHP rilevati, uno dopo l’altro, senza chiedere nulla e senza fermarmi !
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 3c18aa7e (.)
 =======
 >>>>>>> ff45a019 (.)
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)

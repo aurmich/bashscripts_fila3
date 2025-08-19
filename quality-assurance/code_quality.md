@@ -27,19 +27,28 @@ php bashscripts/check_form_schema.php
 ### Output
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 Esempio di output:
 =======
 Il comando genererà un output simile a:
 >>>>>>> 3c18aa7e (.)
+<<<<<<< HEAD
 =======
 Il comando genererà un output simile a:
 >>>>>>> ff45a019 (.)
+=======
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 ```
 XotBaseResource Classes Form Schema Check
 ====
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 ❌ 3 classi senza getFormSchema:
 - UserResource in Modules/User/Http/Resources/UserResource.php
 - ProfileResource in Modules/Profile/Http/Resources/ProfileResource.php
@@ -60,6 +69,7 @@ XotBaseResource Classes Form Schema Check
 - EventResource in /var/www/html/base_techplanner_fila3/laravel/Modules/Event/Http/Resources/EventResource.php
 ```
 
+<<<<<<< HEAD
 =======
 ❌ 3 classes missing getFormSchema method:
 
@@ -69,6 +79,8 @@ XotBaseResource Classes Form Schema Check
 ```
 
 >>>>>>> ff45a019 (.)
+=======
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 ### Miglioramenti Applicati
 - **Tipi PHP fortemente tipizzati**: Migliorato il codice con type hints
 - **Funzioni Safe**: Utilizzate per una maggiore sicurezza
@@ -82,9 +94,13 @@ XotBaseResource Classes Form Schema Check
 - Come parte del processo di CI/CD
 - Durante le revisioni del codice
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 3c18aa7e (.)
 =======
 >>>>>>> ff45a019 (.)
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 
 ## Altri Script di Verifica della Qualità
 
@@ -92,6 +108,7 @@ XotBaseResource Classes Form Schema Check
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 
 ### phpstan_docs_generator.sh
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 Genera la documentazione dei risultati di PHPStan.
@@ -112,6 +129,20 @@ Genera documentazione automatica per PHPStan.
 - **Configurazione minima**: Parametri essenziali
 
 <<<<<<< HEAD
+=======
+Genera la documentazione dei risultati di PHPStan.
+
+## Raccomandazioni Generali
+- Documentare sempre le regole di qualità e i criteri di accettazione
+- Aggiornare la documentazione ogni volta che vengono introdotti nuovi controlli
+- Integrare i controlli di qualità nel processo di sviluppo e deploy
+
+## check_form_schema.php
+
+### Descrizione
+Script PHP che verifica se le classi che estendono `XotBaseResource` implementano correttamente il metodo `getFormSchema()`, essenziale per il corretto funzionamento del sistema di form.
+
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 ### Posizione
 ```
 bashscripts/check_form_schema.php
@@ -356,9 +387,12 @@ Genera documentazione automatica per PHPStan.
 =======
 - [CI/CD Best Practices](https://docs.github.com/en/actions/guides/building-and-testing-php)
 >>>>>>> 3c18aa7e (.)
+<<<<<<< HEAD
 =======
 ## Risorse Utili
 - [PHPStan](https://phpstan.org/)
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data/v4/introduction)
 - [CI/CD Best Practices](https://docs.github.com/en/actions/guides/building-and-testing-php)
 >>>>>>> ff45a019 (.)
+=======
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)

@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 # Guida Completa per Bug Fixing - Laraxot SaluteOra
 
 ## Principi Fondamentali
@@ -308,9 +311,13 @@ Un errore di tipo `ParseError: syntax error, unexpected token "protected", expec
 
 ### Esempio (Corretto)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 3c18aa7e (.)
 =======
 >>>>>>> ff45a019 (.)
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 ```php
 class Example {
     public function foo() {}
@@ -320,6 +327,9 @@ class Example {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 ## Processo di Revisione
 
 ### Auto-Revisione
@@ -370,8 +380,11 @@ class Example {
 *Versione: 2.0*
 *Compatibilità: Laraxot SaluteOra, PHP 8.2+, Laravel 12+, Filament 3.4+*
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> ff45a019 (.)
+=======
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 ### Caso Reale
 - Errore su `Modules/User/app/Filament/Widgets/Auth/RegisterWidget.php` risolto spostando la funzione orfana all'interno della classe o eliminandola se non più necessaria
 
@@ -447,6 +460,10 @@ class Example {
 - Mantenere longevità del codice
 - Rispettare principi di economia circolare del software
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 3c18aa7e (.)
 =======
 >>>>>>> ff45a019 (.)
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)

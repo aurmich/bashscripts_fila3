@@ -108,6 +108,15 @@ Durante l'analisi PHPStan potrebbero emergere errori ricorrenti. Ecco le soluzio
 ## Pattern di Risoluzione Errori
 Durante l'analisi PHPStan potrebbero emergere errori ricorrenti. Ecco le soluzioni più comuni:
 
+## Collegamenti
+- [Documentazione PHPStan](../../docs/phpstan/PHPSTAN_WORKFLOW.md)
+- [Linee Guida Moduli](../../docs/MODULES.md)
+- [Risoluzione Conflitti](../../docs/development/CONFLICT_RESOLUTION.md)
+   - Configurazione PHPStan errata
+
+## Pattern di Risoluzione Errori
+Durante l'analisi PHPStan potrebbero emergere errori ricorrenti. Ecco le soluzioni più comuni:
+
 ### 1. Tipizzazione nelle Collection
 Utilizzare annotazioni PHPDoc appropriate per specificare il tipo di elementi in una Collection:
 ```php

@@ -193,8 +193,13 @@ Script per il push dei subtree. Funzionalità:
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Torna alla documentazione principale](/docs/maintenance.md#git-management) 
 >>>>>>> 3c18aa7e (.)
 =======
 [Torna alla documentazione principale](/docs/maintenance.md#git-management) 
 >>>>>>> ff45a019 (.)
+=======
+[Torna alla documentazione principale](/docs/maintenance.md#git-management) 
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)

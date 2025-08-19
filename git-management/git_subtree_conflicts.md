@@ -670,8 +670,13 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - **Struttura lineare**: Script semplici e comprensibili
 - **Gestione errori chiara**: Messaggi di errore informativi
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Documentazione concisa**: Istruzioni chiare e dirette 
 >>>>>>> 3c18aa7e (.)
 =======
 - **Documentazione concisa**: Istruzioni chiare e dirette 
 >>>>>>> ff45a019 (.)
+=======
+- **Documentazione concisa**: Istruzioni chiare e dirette 
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)

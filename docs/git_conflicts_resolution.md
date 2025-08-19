@@ -88,6 +88,9 @@ Per ogni file in conflitto:
 <<<<<<< HEAD
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 =======
 >>>>>>> 3c18aa7e (.)
 ### Fase 3: Risoluzione
