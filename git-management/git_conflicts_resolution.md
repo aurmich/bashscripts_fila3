@@ -138,18 +138,25 @@ namespace Modules\NomeModulo\App\Filament;
 2. Eseguire `php artisan config:clear` per pulire la cache
 3. Verificare che tutte le risorse Filament siano registrate correttamente
 <<<<<<< HEAD
+<<<<<<< HEAD
 4. Testare il modulo in ambiente di sviluppo 
 =======
 4. Testare il modulo in ambiente di sviluppo
 >>>>>>> 3c18aa7e (.)
+=======
+4. Testare il modulo in ambiente di sviluppo
+>>>>>>> ff45a019 (.)
 
 ## Risoluzione di Casi Specifici
 
 ### Conflitti in File PHP
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> ff45a019 (.)
 1. Verificare la compatibilità con PHPStan
 2. Mantenere le annotazioni PHPDoc complete
 3. Seguire le convenzioni di namespace
@@ -157,18 +164,24 @@ namespace Modules\NomeModulo\App\Filament;
 
 ### Conflitti in File di Documentazione
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> ff45a019 (.)
 1. In genere, mantenere entrambe le versioni
 2. Organizzare il contenuto in modo logico
 3. Aggiornare tutti i collegamenti
 
 ### Conflitti in File di Configurazione
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> ff45a019 (.)
 1. Confrontare attentamente le configurazioni
 2. Verificare l'impatto delle modifiche
 3. Documentare le decisioni prese

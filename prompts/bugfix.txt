@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Guida Completa per Bug Fixing - Laraxot SaluteOra
 
 ## Principi Fondamentali
@@ -183,6 +184,62 @@ Un errore `ParseError: syntax error, unexpected token "protected", expecting end
    - Rivedere modifiche recenti
    - Analizzare classi estese e traits correlati
 
+=======
+# Linee Guida per il Bug Fixing e Best Practices
+
+## Principi Fondamentali
+- Analizzare sempre la causa radice attraverso un'analisi approfondita del codice e del contesto
+- Seguire un approccio sistematico alla risoluzione dei bug
+- Mantenere l'integrità della documentazione durante tutto il processo
+- Rispettare i confini e le responsabilità dei moduli
+- Aggiornare costantemente le cartelle docs come fonte primaria di memoria
+
+## Processo di Documentazione
+1. **Prima di Apportare Modifiche**
+   - Studiare la documentazione nella cartella `docs` del modulo (NON nella cartella `docs` della root)
+   - Creare collegamenti bidirezionali tra documentazione del modulo e documentazione root
+   - Aggiornare la documentazione pertinente prima di implementare le correzioni
+   - Verificare che non esistano già file che trattano lo stesso argomento
+
+## Organizzazione del Codice
+- **Struttura Namespace**:
+  - Utilizzare `Modules\<module>\` (NON `Modules\<module>\App\`)
+  - Componenti Filament: `Modules\<module>\Filament`
+  - Mai estendere classi Filament direttamente - utilizzare classi XotBase
+  - Estendere `Modules\Xot\Providers\XotBaseServiceProvider` invece di `Illuminate\Support\ServiceProvider`
+
+## Linee Guida per le Traduzioni
+- **Mai** utilizzare `->label()` direttamente
+- Utilizzare il LangServiceProvider per tutte le traduzioni
+- Memorizzare traduzioni in: `Modules/<module>/lang/<language>/`
+- Seguire la struttura di traduzione espansa
+- Per i campi di upload file, il placeholder deve indicare l'azione da compiere (es. "Carica Fattura") NON il contenuto
+
+## Pattern di Correzione Comuni
+1. **Classi Resource**:
+   - Rimuovere `getTableColumn`, `getTableFilters`, `getBulkActions` se vuoti
+   - Rimuovere `getPages` se restituisce solo pagine di default
+   - Utilizzare array associativi con chiavi stringa per tutti i metodi
+   - Implementare `getTableColumns()` con chiavi stringa univoche
+
+2. **Gestione Form**:
+   - Convertire opzioni array in enum per type safety
+   - Utilizzare regole di validazione appropriate
+   - Implementare gestione errori appropriata
+
+3. **ServiceProvider**:
+   - Dichiarare `public string $name = '<ModuleName>';` immediatamente dopo la dichiarazione della classe
+   - Non utilizzare docblock sopra questa proprietà
+   - Mantenere visibilità `public` per compatibilità con la classe base
+
+## Strategia di Implementazione
+1. **Fase di Analisi**:
+   - Comprendere il contesto dell'errore
+   - Controllare componenti correlati
+   - Rivedere modifiche recenti
+   - Analizzare classi estese e traits correlati
+
+>>>>>>> ff45a019 (.)
 2. **Aggiornamento Documentazione**:
    - Aggiornare documentazione del modulo
    - Creare/aggiornare documentazione root
@@ -250,7 +307,10 @@ Un errore di tipo `ParseError: syntax error, unexpected token "protected", expec
 - Utilizzare sempre editor con linting attivo per prevenire errori di sintassi
 
 ### Esempio (Corretto)
+<<<<<<< HEAD
 >>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> ff45a019 (.)
 ```php
 class Example {
     public function foo() {}
@@ -258,6 +318,7 @@ class Example {
 } // <--- questa DEVE essere l'ultima parentesi graffa
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ## Processo di Revisione
 
@@ -309,6 +370,8 @@ class Example {
 *Versione: 2.0*
 *Compatibilità: Laraxot SaluteOra, PHP 8.2+, Laravel 12+, Filament 3.4+*
 =======
+=======
+>>>>>>> ff45a019 (.)
 ### Caso Reale
 - Errore su `Modules/User/app/Filament/Widgets/Auth/RegisterWidget.php` risolto spostando la funzione orfana all'interno della classe o eliminandola se non più necessaria
 
@@ -383,4 +446,7 @@ class Example {
 - Considerare costi nascosti
 - Mantenere longevità del codice
 - Rispettare principi di economia circolare del software
+<<<<<<< HEAD
 >>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> ff45a019 (.)

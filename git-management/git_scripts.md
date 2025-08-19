@@ -192,5 +192,9 @@ Script per il push dei subtree. Funzionalità:
 - **Output chiaro**: Log leggibili e informativi
 
 ## Collegamenti
+<<<<<<< HEAD
 [Torna alla documentazione principale](/docs/maintenance.md#git-management) 
 >>>>>>> 3c18aa7e (.)
+=======
+[Torna alla documentazione principale](/docs/maintenance.md#git-management) 
+>>>>>>> ff45a019 (.)

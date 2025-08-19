@@ -136,6 +136,7 @@ Questa fase si concentra sulla documentazione completa del sistema, garantendo u
 - Finalizzazione
 - Pubblicazione
 - Manutenzione
+<<<<<<< HEAD
 
 
 - [Fase 8: Manutenzione](../roadmap/08_maintenance.md) 
@@ -195,6 +196,8 @@ aurmich/dev
 ## Collegamenti tra versioni di 07_documentation.md
 * [07_documentation.md](bashscripts/docs/roadmap/07_documentation.md)
 * [07_documentation.md](docs/roadmap/07_documentation.md)
+=======
+>>>>>>> ff45a019 (.)
 
 
 - [Fase 8: Manutenzione](../roadmap/08_maintenance.md) 

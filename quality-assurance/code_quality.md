@@ -26,14 +26,19 @@ php bashscripts/check_form_schema.php
 
 ### Output
 <<<<<<< HEAD
+<<<<<<< HEAD
 Esempio di output:
 =======
 Il comando genererà un output simile a:
 >>>>>>> 3c18aa7e (.)
+=======
+Il comando genererà un output simile a:
+>>>>>>> ff45a019 (.)
 ```
 XotBaseResource Classes Form Schema Check
 ====
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ❌ 3 classi senza getFormSchema:
 - UserResource in Modules/User/Http/Resources/UserResource.php
@@ -55,6 +60,15 @@ XotBaseResource Classes Form Schema Check
 - EventResource in /var/www/html/base_techplanner_fila3/laravel/Modules/Event/Http/Resources/EventResource.php
 ```
 
+=======
+❌ 3 classes missing getFormSchema method:
+
+- UserResource in /var/www/html/base_techplanner_fila3/laravel/Modules/User/Http/Resources/UserResource.php
+- ProfileResource in /var/www/html/base_techplanner_fila3/laravel/Modules/Profile/Http/Resources/ProfileResource.php
+- EventResource in /var/www/html/base_techplanner_fila3/laravel/Modules/Event/Http/Resources/EventResource.php
+```
+
+>>>>>>> ff45a019 (.)
 ### Miglioramenti Applicati
 - **Tipi PHP fortemente tipizzati**: Migliorato il codice con type hints
 - **Funzioni Safe**: Utilizzate per una maggiore sicurezza
@@ -67,7 +81,10 @@ XotBaseResource Classes Form Schema Check
 - Prima di ogni commit importante
 - Come parte del processo di CI/CD
 - Durante le revisioni del codice
+<<<<<<< HEAD
 >>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> ff45a019 (.)
 
 ## Altri Script di Verifica della Qualità
 
@@ -76,18 +93,25 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 
 ### phpstan_docs_generator.sh
 <<<<<<< HEAD
+<<<<<<< HEAD
 Genera la documentazione dei risultati di PHPStan.
+=======
+Genera documentazione automatica per PHPStan.
+>>>>>>> ff45a019 (.)
 
-## Raccomandazioni Generali
-- Documentare sempre le regole di qualità e i criteri di accettazione
-- Aggiornare la documentazione ogni volta che vengono introdotti nuovi controlli
-- Integrare i controlli di qualità nel processo di sviluppo e deploy
+## Principi Applicati
 
-## check_form_schema.php
+### DRY (Don't Repeat Yourself)
+- **Centralizzazione logica**: Script riutilizzabili
+- **Configurazione unificata**: Parametri centralizzati
+- **Funzioni comuni**: Librerie condivise
 
-### Descrizione
-Script PHP che verifica se le classi che estendono `XotBaseResource` implementano correttamente il metodo `getFormSchema()`, essenziale per il corretto funzionamento del sistema di form.
+### KISS (Keep It Simple, Stupid)
+- **Struttura semplice**: Script lineari e comprensibili
+- **Output chiaro**: Report leggibili
+- **Configurazione minima**: Parametri essenziali
 
+<<<<<<< HEAD
 ### Posizione
 ```
 bashscripts/check_form_schema.php
@@ -332,3 +356,9 @@ Genera documentazione automatica per PHPStan.
 =======
 - [CI/CD Best Practices](https://docs.github.com/en/actions/guides/building-and-testing-php)
 >>>>>>> 3c18aa7e (.)
+=======
+## Risorse Utili
+- [PHPStan](https://phpstan.org/)
+- [Spatie Laravel Data](https://spatie.be/docs/laravel-data/v4/introduction)
+- [CI/CD Best Practices](https://docs.github.com/en/actions/guides/building-and-testing-php)
+>>>>>>> ff45a019 (.)

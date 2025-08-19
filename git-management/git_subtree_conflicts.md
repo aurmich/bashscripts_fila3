@@ -669,5 +669,9 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 ### KISS (Keep It Simple, Stupid)
 - **Struttura lineare**: Script semplici e comprensibili
 - **Gestione errori chiara**: Messaggi di errore informativi
+<<<<<<< HEAD
 - **Documentazione concisa**: Istruzioni chiare e dirette 
 >>>>>>> 3c18aa7e (.)
+=======
+- **Documentazione concisa**: Istruzioni chiare e dirette 
+>>>>>>> ff45a019 (.)
