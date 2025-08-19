@@ -57,7 +57,10 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 [Backlink: Documentazione Globale](/docs/README.md)
 [Backlink: scripts_conflict_resolution.md](scripts_conflict_resolution.md)
 [Backlink: git_conflicts_resolution.md](git_conflicts_resolution.md)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3c18aa7e (.)
 ## Casi d'Uso Avanzati
 
 ### 1. Risoluzione Selettiva
@@ -68,7 +71,10 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 Lo script può essere integrato con Git hooks per verificare automaticamente la presenza di conflitti prima del commit:
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3c18aa7e (.)
 # .git/hooks/pre-commit
 #!/bin/bash
 ```

@@ -116,7 +116,10 @@ test('successful login regenerates session', function (): void {
 
 ### **Test Execution Commands**
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3c18aa7e (.)
 # Complete test suite
 ./vendor/bin/pest Modules/Cms/tests/Feature/Auth/LoginTest.php
 
@@ -209,3 +212,7 @@ Questa implementazione fornisce una **base solida** per tutti i futuri test di a
 
 *Last Updated: Gennaio 2025*  
 *Project: Laraxot SaluteOra*  
+<<<<<<< HEAD
+=======
+*Module: Cms Testing Suite* 
+>>>>>>> 3c18aa7e (.)

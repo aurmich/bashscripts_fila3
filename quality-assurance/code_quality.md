@@ -25,11 +25,16 @@ php bashscripts/check_form_schema.php
 ```
 
 ### Output
+<<<<<<< HEAD
 Esempio di output:
+=======
+Il comando genererà un output simile a:
+>>>>>>> 3c18aa7e (.)
 ```
 XotBaseResource Classes Form Schema Check
 ====
 
+<<<<<<< HEAD
 ❌ 3 classi senza getFormSchema:
 - UserResource in Modules/User/Http/Resources/UserResource.php
 - ProfileResource in Modules/Profile/Http/Resources/ProfileResource.php
@@ -42,6 +47,27 @@ XotBaseResource Classes Form Schema Check
 - Eseguire lo script prima di ogni commit importante e durante le review
 - Preferire l'uso di Spatie Laravel Data per la validazione e la tipizzazione dei dati
 - Utilizzare strumenti come PHPStan e PHP-CS-Fixer per garantire la qualità del codice
+=======
+❌ 3 classes missing getFormSchema method:
+
+- UserResource in /var/www/html/base_techplanner_fila3/laravel/Modules/User/Http/Resources/UserResource.php
+- ProfileResource in /var/www/html/base_techplanner_fila3/laravel/Modules/Profile/Http/Resources/ProfileResource.php
+- EventResource in /var/www/html/base_techplanner_fila3/laravel/Modules/Event/Http/Resources/EventResource.php
+```
+
+### Miglioramenti Applicati
+- **Tipi PHP fortemente tipizzati**: Migliorato il codice con type hints
+- **Funzioni Safe**: Utilizzate per una maggiore sicurezza
+- **Documentazione PHPDoc**: Aggiunta documentazione di tipo
+- **Controlli robusti**: Cast di tipo espliciti
+- **Sicurezza**: Controllo per `SplFileInfo`
+
+### Integrazione con il Workflow di Sviluppo
+È consigliabile eseguire questo script:
+- Prima di ogni commit importante
+- Come parte del processo di CI/CD
+- Durante le revisioni del codice
+>>>>>>> 3c18aa7e (.)
 
 ## Altri Script di Verifica della Qualità
 
@@ -49,6 +75,7 @@ XotBaseResource Classes Form Schema Check
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 
 ### phpstan_docs_generator.sh
+<<<<<<< HEAD
 Genera la documentazione dei risultati di PHPStan.
 
 ## Raccomandazioni Generali
@@ -281,8 +308,27 @@ XotBaseResource Classes Form Schema Check
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 
 ### phpstan_docs_generator.sh 
+=======
+Genera documentazione automatica per PHPStan.
+
+## Principi Applicati
+
+### DRY (Don't Repeat Yourself)
+- **Centralizzazione logica**: Script riutilizzabili
+- **Configurazione unificata**: Parametri centralizzati
+- **Funzioni comuni**: Librerie condivise
+
+### KISS (Keep It Simple, Stupid)
+- **Struttura semplice**: Script lineari e comprensibili
+- **Output chiaro**: Report leggibili
+- **Configurazione minima**: Parametri essenziali
+>>>>>>> 3c18aa7e (.)
 
 ## Risorse Utili
 - [PHPStan](https://phpstan.org/)
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data/v4/introduction)
+<<<<<<< HEAD
 - [CI/CD Best Practices](https://docs.github.com/en/actions/guides/building-and-testing-php) 
+=======
+- [CI/CD Best Practices](https://docs.github.com/en/actions/guides/building-and-testing-php)
+>>>>>>> 3c18aa7e (.)
