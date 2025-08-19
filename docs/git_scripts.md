@@ -175,3 +175,9 @@ Script per il push dei subtree. Funzionalità:
 1. Conflitti di merge: utilizzare gli script di backup prima di risolvere
 2. Errori di path: verificare la configurazione Windows
 3. Problemi di permessi: controllare fileMode e symlinks
+<<<<<<< HEAD
+=======
+
+[Torna alla documentazione principale](/docs/maintenance.md#git-management) 
+3. Problemi di permessi: controllare fileMode e symlinks
+>>>>>>> a013e8e (.)
