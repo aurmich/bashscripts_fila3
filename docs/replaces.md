@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 # 📄 Refactoring Regex Laravel Filament
 
@@ -64,8 +63,6 @@ public static function table\(Table \$table\): Table\s*\{[\s\S]*?\n\s*\}
 ---
 
 > Ogni modifica va sempre verificata manualmente e testata con PHPStan livello 10. Segnalare eventuali casi limite in [git_conflicts_resolution.md](./git_conflicts_resolution.md).
-=======
->>>>>>> a013e8e (.)
 
 
 public static function form\(Form \$form\): Form\s*\{\s*return \$form\s*->schema\(\[\s*([\s\S]*?)\s*\]\);\s*\}
@@ -87,13 +84,10 @@ public static function getFormSchema(): array
 
 
 public static function table\(Table \$table\): Table\s*\{[\s\S]*?\n\s*\}
-<<<<<<< HEAD
 ### Versione HEAD
 
 
 ### Versione Incoming
-=======
->>>>>>> a013e8e (.)
 
  0440c57 (.)
 
@@ -139,11 +133,8 @@ public static function table\(Table \$table\): Table\s*\{[\s\S]*?\n\s*\}
 
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
 
-<<<<<<< HEAD
 ---
 
-=======
->>>>>>> a013e8e (.)
 
  cb513be (.)
  43df3e0 (.)

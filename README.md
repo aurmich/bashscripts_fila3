@@ -25,10 +25,7 @@
 
 - [Installazione](#-installazione)
 - [Utilizzo](#-utilizzo)
-<<<<<<< HEAD
 - [Organizzazione Script](#-organizzazione-script)
-=======
->>>>>>> a013e8e (.)
 - [Script Disponibili](#-script-disponibili)
 - [Esempi](#-esempi)
 - [Risoluzione Problemi](#-risoluzione-problemi)
@@ -37,35 +34,22 @@
 ## 💻 Installazione
 
 ```bash
-<<<<<<< HEAD
-=======
-
->>>>>>> a013e8e (.)
 # Clona il repository
 git clone git@github.com:aurmich/bashscripts_fila3.git
 
 # Rendi gli script eseguibili
-<<<<<<< HEAD
 chmod +x scripts/**/*.sh
-=======
-chmod +x *.sh
->>>>>>> a013e8e (.)
 ```
 
 ## 🚀 Utilizzo
 
 ### Sincronizzazione Subtree
 ```bash
-<<<<<<< HEAD
 ./scripts/git/git_sync_subtree.sh <path> <remote_repo>
-=======
-./git_sync_subtree.sh <path> <remote_repo>
->>>>>>> a013e8e (.)
 ```
 
 Esempio:
 ```bash
-<<<<<<< HEAD
 ./scripts/git/git_sync_subtree.sh modules/auth git@github.com:user/auth-module.git
 ```
 
@@ -131,7 +115,6 @@ Tutti gli script sono organizzati in sottocartelle per categoria:
 
 ### 1. Git Management (scripts/git/)
 > 🎯 Script per la gestione Git e subtree
-=======
 ./git_sync_subtree.sh modules/auth git@github.com:user/auth-module.git
 ```
 
@@ -139,14 +122,12 @@ Tutti gli script sono organizzati in sottocartelle per categoria:
 
 ### 1. git_sync_subtree.sh
 > 🎯 Script principale per la sincronizzazione dei subtree
->>>>>>> a013e8e (.)
 
 **Caratteristiche:**
 - Gestione automatica di push e pull
 - Rimozione caratteri CR (^M)
 - Gestione permessi automatica
 
-<<<<<<< HEAD
 ### 2. Documentation Management (scripts/docs/)
 > 📝 Script per la gestione della documentazione
 
@@ -178,7 +159,7 @@ Tutti gli script sono organizzati in sottocartelle per categoria:
 - Correzione errori automatica
 - Riparazione struttura
 - Correzione violazioni PSR-4
-=======
+
 ### 2. git_push_subtree.sh
 > 🔼 Gestisce le operazioni di push
 
@@ -194,44 +175,19 @@ Tutti gli script sono organizzati in sottocartelle per categoria:
 - Pull con squash opzionale
 - Gestione conflitti automatica
 - Merge strategy personalizzabile
->>>>>>> a013e8e (.)
 
 ## 🎯 Esempi
 
 ### Sincronizzazione Modulo
 ```bash
-<<<<<<< HEAD
 # Sincronizza un modulo specifico
 ./scripts/git/git_sync_subtree.sh modules/users git@github.com:org/users.git
 
 # Sincronizza con branch specifico
-REMOTE_BRANCH=develop ./scripts/git/git_sync_subtree.sh modules/auth git@github.com:org/auth.git
-```
-
-### Audit Documentazione
-```bash
-# Esegui audit completo della documentazione
-./scripts/docs/docs-audit-dry-kiss.sh
-
-# Correggi naming conventions
-./scripts/docs/fix-docs-naming.sh
-```
-
-### Analisi PHPStan
-```bash
-# Controlli pre-PHPStan
-./scripts/phpstan/check_before_phpstan.sh
+REMOTE_BRANCH=develop ./scripts/phpstan/check_before_phpstan.sh
 
 # Genera riassunto PHPStan
 ./scripts/phpstan/generate_phpstan_summary.sh
-=======
-
-# Sincronizza un modulo specifico
-./git_sync_subtree.sh modules/users git@github.com:org/users.git
-
-# Sincronizza con branch specifico
-REMOTE_BRANCH=develop ./git_sync_subtree.sh modules/auth git@github.com:org/auth.git
->>>>>>> a013e8e (.)
 ```
 
 ## ⚠️ Risoluzione Problemi
@@ -242,7 +198,6 @@ REMOTE_BRANCH=develop ./git_sync_subtree.sh modules/auth git@github.com:org/auth
    ```bash
    fatal: you must provide the --prefix option
    ```
-<<<<<<< HEAD
    **Soluzione**: Verifica che il path del subtree sia corretto
 
 2. **Permessi Script**
@@ -332,14 +287,6 @@ Questo progetto è rilasciato sotto licenza MIT. Vedi il file [LICENSE](LICENSE)
 <div align="center">
   <strong>🚀 Potenzia il tuo workflow Git con questi script!</strong>
 </div>
-=======
-   ✅ **Soluzione:** Verifica il path del subtree
-
-2. **Push Rejected**
-   ```bash
-   ! [rejected] dev -> dev (non-fast-forward)
-   ```
-   ✅ **Soluzione:** Esegui prima un pull
 
 ## 🛠️ Best Practices
 
@@ -908,4 +855,3 @@ This toolkit addresses these challenges by providing automated tools that simpli
 - [Italiano](docs/README.it.md)
 - [Español](docs/README.es.md)
  43df3e0 (.)
->>>>>>> a013e8e (.)

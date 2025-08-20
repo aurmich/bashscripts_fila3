@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # GUIDA ESSENZIALE LARAXOT
 
 ## DOCUMENTAZIONE
@@ -85,7 +84,6 @@
 - Aggiornare e studiare continuamente la documentazione
 - Consultare la documentazione prima di ogni azione
 - Ogni modulo ha la sua cartella docs da studiare e aggiornare
-=======
 # GUIDA ESSENZIALE LARAXOT
 
 ## DOCUMENTAZIONE
@@ -172,4 +170,3 @@
 - Aggiornare e studiare continuamente la documentazione
 - Consultare la documentazione prima di ogni azione
 - Ogni modulo ha la sua cartella docs da studiare e aggiornare
->>>>>>> ea40299b (.)

@@ -7,10 +7,7 @@
  43df3e0 (.)
 
 aurmich/dev
-<<<<<<< HEAD
 
-=======
->>>>>>> 3c18aa7e (.)
 # ⚡ Fase 6: Ottimizzazione
 
 ## 📋 Panoramica
@@ -136,7 +133,6 @@ Questa fase si concentra sull'ottimizzazione e il miglioramento continuo del sis
 - Monitoraggio
 - Fine-tuning
 - Manutenzione
-<<<<<<< HEAD
 
 
 [0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
@@ -182,8 +178,6 @@ aurmich/dev
 ## Collegamenti tra versioni di 06_optimization.md
 * [06_optimization.md](bashscripts/docs/roadmap/06_optimization.md)
 * [06_optimization.md](docs/roadmap/06_optimization.md)
-=======
->>>>>>> ff45a019 (.)
 
 
 [0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m

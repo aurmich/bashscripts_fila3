@@ -112,10 +112,7 @@ php artisan key:generate
 - Dopo la generazione della chiave, verificare che sia stata aggiunta al file .env
 - Se necessario, configurare manualmente altre variabili d'ambiente:
   ```ini
-<<<<<<< HEAD
   APP_NAME=<nome progetto>
-=======
->>>>>>> a013e8e (.)
 
   APP_NAME=<nome progetto>
 
@@ -814,7 +811,6 @@ sudo pecl install redis
 
 ## Configurazione Database
 
-<<<<<<< HEAD
 ### Creazione Database MySQL
 ```bash
 mysql -u root -p
@@ -822,8 +818,6 @@ CREATE DATABASE nome_database CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 CREATE USER 'nome_utente'@'localhost' IDENTIFIED BY 'password_sicura';
 GRANT ALL PRIVILEGES ON nome_database.* TO 'nome_utente'@'localhost';
 FLUSH PRIVILEGES;
-=======
->>>>>>> a013e8e (.)
 ### Creazione Database SQLite
 ```bash
 
@@ -2218,7 +2212,6 @@ EXIT;
 ```
 
 **Spiegazione:**
-<<<<<<< HEAD
 - Crea un nuovo database e un utente dedicato con privilegi completi
 - Utilizza la codifica utf8mb4 per il massimo supporto Unicode
 
@@ -2233,8 +2226,6 @@ EXIT;
 - Documentare ogni personalizzazione
 - Monitorare costantemente le performance del server
 - Aggiornare regolarmente sistema e dipendenze
-=======
->>>>>>> a013e8e (.)
 - Crea un nuovo database per il progetto Laravel
 - Configura un utente dedicato con i permessi necessari
 - Imposta il charset e la collation corretti

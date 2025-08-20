@@ -119,10 +119,7 @@ name('login');
 
 ### 1. Verifica Componenti Esistenti
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> 3c18aa7e (.)
 # Verifica componenti nel progetto
 find resources/views/components -name "*.blade.php" | head -20
 
@@ -137,10 +134,7 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 
 ### 3. Test in Sviluppo
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> 3c18aa7e (.)
 # Test componente
 php artisan view:clear
 php artisan config:clear
@@ -198,7 +192,3 @@ L'errore è stato causato da:
 
 *Analisi completata il: $(date)*
 *Stato: Errore critico identificato*
-<<<<<<< HEAD
-=======
-*Priorità: CRITICA* 
->>>>>>> 3c18aa7e (.)

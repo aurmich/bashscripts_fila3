@@ -85,14 +85,7 @@ Per ogni file in conflitto:
 - `Modules\Predict\Providers` per i service provider
 - `Modules\Predict\Database\Factories` per le factory
 - `Modules\Predict\lang\it` per i file di traduzione
-<<<<<<< HEAD
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
-=======
->>>>>>> 3c18aa7e (.)
 ### Fase 3: Risoluzione
 Scegliere una delle seguenti strategie:
 
@@ -103,8 +96,6 @@ Scegliere una delle seguenti strategie:
 
 Per i file di codice PHP, verificare sempre la compatibilità con PHPStan livello 9 dopo la risoluzione.
 
-=======
->>>>>>> ff45a019 (.)
 ### Fase 4: Test
 1. Eseguire PHPStan: `cd laravel && ./vendor/bin/phpstan analyse`
 2. Verificare il corretto funzionamento delle funzionalità modificate
