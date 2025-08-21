@@ -25,12 +25,20 @@ php bashscripts/check_form_schema.php
 ```
 
 ### Output
+<<<<<<< HEAD
 Esempio di output:
+<<<<<<< HEAD
 Il comando genererà un output simile a:
+=======
+=======
+Il comando genererà un output simile a:
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 9c02579 (.)
 ```
 XotBaseResource Classes Form Schema Check
 ====
 
+<<<<<<< HEAD
 ❌ 3 classi senza getFormSchema:
 - UserResource in Modules/User/Http/Resources/UserResource.php
 - ProfileResource in Modules/Profile/Http/Resources/ProfileResource.php
@@ -43,6 +51,10 @@ XotBaseResource Classes Form Schema Check
 - Eseguire lo script prima di ogni commit importante e durante le review
 - Preferire l'uso di Spatie Laravel Data per la validazione e la tipizzazione dei dati
 - Utilizzare strumenti come PHPStan e PHP-CS-Fixer per garantire la qualità del codice
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 9c02579 (.)
 ❌ 3 classes missing getFormSchema method:
 
 - UserResource in /var/www/html/base_techplanner_fila3/laravel/Modules/User/Http/Resources/UserResource.php
@@ -62,6 +74,10 @@ XotBaseResource Classes Form Schema Check
 - Prima di ogni commit importante
 - Come parte del processo di CI/CD
 - Durante le revisioni del codice
+<<<<<<< HEAD
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 9c02579 (.)
 
 ## Altri Script di Verifica della Qualità
 
@@ -69,6 +85,7 @@ XotBaseResource Classes Form Schema Check
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 
 ### phpstan_docs_generator.sh
+<<<<<<< HEAD
 Genera la documentazione dei risultati di PHPStan.
 
 ## Principi Applicati
@@ -303,6 +320,10 @@ XotBaseResource Classes Form Schema Check
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 
 ### phpstan_docs_generator.sh 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 9c02579 (.)
 Genera documentazione automatica per PHPStan.
 
 ## Principi Applicati
@@ -316,8 +337,16 @@ Genera documentazione automatica per PHPStan.
 - **Struttura semplice**: Script lineari e comprensibili
 - **Output chiaro**: Report leggibili
 - **Configurazione minima**: Parametri essenziali
+<<<<<<< HEAD
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 9c02579 (.)
 
 ## Risorse Utili
 - [PHPStan](https://phpstan.org/)
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data/v4/introduction)
+<<<<<<< HEAD
 - [CI/CD Best Practices](https://docs.github.com/en/actions/guides/building-and-testing-php) 
+=======
+- [CI/CD Best Practices](https://docs.github.com/en/actions/guides/building-and-testing-php)
+>>>>>>> 3c18aa7e (.)

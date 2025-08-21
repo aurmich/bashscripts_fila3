@@ -85,7 +85,10 @@ Per ogni file in conflitto:
 - `Modules\Predict\Providers` per i service provider
 - `Modules\Predict\Database\Factories` per le factory
 - `Modules\Predict\lang\it` per i file di traduzione
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3c18aa7e (.)
 ### Fase 3: Risoluzione
 Scegliere una delle seguenti strategie:
 

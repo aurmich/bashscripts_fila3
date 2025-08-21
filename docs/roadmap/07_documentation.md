@@ -7,7 +7,10 @@
  43df3e0 (.)
 
 aurmich/dev
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3c18aa7e (.)
 # 📚 Fase 7: Documentazione
 
 ## 📋 Panoramica
