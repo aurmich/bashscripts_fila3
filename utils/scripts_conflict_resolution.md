@@ -189,9 +189,12 @@ I seguenti file sono stati recentemente risolti:
 [Backlink: fix_all_git_conflicts.md](fix_all_git_conflicts.md)
 [Backlink: git_conflicts_resolution.md](git_conflicts_resolution.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> 574afe9e (.)
 ### fix_structure.sh
 
 Mantenere la versione più avanzata con funzioni di logging colorate, migliorando:
@@ -260,10 +263,14 @@ I seguenti file sono stati recentemente risolti:
 
 Questa documentazione è collegata bidirezionalmente con la [documentazione principale sulla risoluzione dei conflitti](../../docs/bashscripts_conflict_resolution.md) nella root del progetto. 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
 >>>>>>> 3c18aa7e (.)
+=======
+=======
+>>>>>>> 574afe9e (.)
 #### Utilizzo
 ```bash
 ./bashscripts/utils/conflict_analyzer.sh
@@ -280,9 +287,12 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 ### Fase 1: Identificazione
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> 574afe9e (.)
 # Trova tutti i file con conflitti
 ./bashscripts/git/find_conflicts.sh
 ```
@@ -290,9 +300,12 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 ### Fase 2: Analisi
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> 574afe9e (.)
 # Analizza i conflitti trovati
 ./bashscripts/utils/conflict_analyzer.sh
 ```
@@ -300,9 +313,12 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 ### Fase 3: Risoluzione Mirata
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> 574afe9e (.)
 # Risolvi manualmente i conflitti più critici
 ./bashscripts/utils/resolve_conflicts.sh [file_critico]
 ```
@@ -310,9 +326,12 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 ### Fase 4: Risoluzione Automatica
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> 574afe9e (.)
 # Risolvi automaticamente i conflitti rimanenti meno critici
 ./bashscripts/utils/fix_all_git_conflicts.sh
 ```
@@ -350,6 +369,7 @@ Gli script possono essere migliorati e personalizzati. Per contribuire:
 
 # =======================
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 # Nome dello script
 
@@ -362,12 +382,17 @@ Gli script possono essere migliorati e personalizzati. Per contribuire:
 # Autore: Nome dell'autore
 
 =======
+=======
+>>>>>>> 574afe9e (.)
 # Nome dello script
 # =======================
 # Descrizione: Breve descrizione dello script
 # Utilizzo: ./path/to/script.sh [argomenti]
 # Autore: Nome dell'autore
+<<<<<<< HEAD
 >>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> 574afe9e (.)
 # =======================
 
 # Dichiarazione delle costanti e variabili
@@ -386,9 +411,12 @@ Quando un `git pull` fallisce a causa di conflitti:
 ```bash
 git pull origin main
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> 574afe9e (.)
 # Conflitti rilevati
 ./bashscripts/utils/conflict_analyzer.sh
 ./bashscripts/utils/resolve_conflicts.sh [file_conflittuale]
@@ -399,9 +427,12 @@ Prima di eseguire un commit, verificare l'assenza di conflitti:
 ```bash
 ./bashscripts/git/find_conflicts.sh
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> 574afe9e (.)
 # Se vengono trovati conflitti, risolverli
 git add .
 git commit -m "Messaggio del commit"
@@ -434,6 +465,9 @@ Per pulire un repository con molti conflitti non risolti:
 - [Convenzioni di Namespace](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/NAMESPACE-CONVENTIONS.md)
 - [Risoluzione Conflitti nei Moduli](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/conflitti_merge_risolti.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d83fe8da (.)
+=======
+>>>>>>> 574afe9e (.)
 >>>>>>> 3c18aa7e (.)

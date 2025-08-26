@@ -38,6 +38,10 @@
 git clone git@github.com:aurmich/bashscripts_fila3.git
 
 # Rendi gli script eseguibili
+<<<<<<< HEAD
+=======
+chmod +x *.sh
+>>>>>>> 574afe9e (.)
 chmod +x scripts/**/*.sh
 ```
 
@@ -45,6 +49,10 @@ chmod +x scripts/**/*.sh
 
 ### Sincronizzazione Subtree
 ```bash
+<<<<<<< HEAD
+=======
+./git_sync_subtree.sh <path> <remote_repo>
+>>>>>>> 574afe9e (.)
 ./scripts/git/git_sync_subtree.sh <path> <remote_repo>
 ```
 
@@ -180,6 +188,15 @@ Tutti gli script sono organizzati in sottocartelle per categoria:
 
 ### Sincronizzazione Modulo
 ```bash
+<<<<<<< HEAD
+=======
+
+# Sincronizza un modulo specifico
+./git_sync_subtree.sh modules/users git@github.com:org/users.git
+
+# Sincronizza con branch specifico
+REMOTE_BRANCH=develop ./git_sync_subtree.sh modules/auth git@github.com:org/auth.git
+>>>>>>> 574afe9e (.)
 # Sincronizza un modulo specifico
 ./scripts/git/git_sync_subtree.sh modules/users git@github.com:org/users.git
 
@@ -198,6 +215,16 @@ REMOTE_BRANCH=develop ./scripts/phpstan/check_before_phpstan.sh
    ```bash
    fatal: you must provide the --prefix option
    ```
+<<<<<<< HEAD
+=======
+   ✅ **Soluzione:** Verifica il path del subtree
+
+2. **Push Rejected**
+   ```bash
+   ! [rejected] dev -> dev (non-fast-forward)
+   ```
+   ✅ **Soluzione:** Esegui prima un pull
+>>>>>>> 574afe9e (.)
    **Soluzione**: Verifica che il path del subtree sia corretto
 
 2. **Permessi Script**

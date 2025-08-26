@@ -26,6 +26,12 @@ php bashscripts/check_form_schema.php
 
 ### Output
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+Il comando genererà un output simile a:
+=======
+<<<<<<< HEAD
+>>>>>>> 574afe9e (.)
 Esempio di output:
 <<<<<<< HEAD
 Il comando genererà un output simile a:
@@ -34,11 +40,20 @@ Il comando genererà un output simile a:
 Il comando genererà un output simile a:
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
+<<<<<<< HEAD
+=======
+>>>>>>> 1420e3b683 (.)
+>>>>>>> 574afe9e (.)
 ```
 XotBaseResource Classes Form Schema Check
 ====
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 574afe9e (.)
 ❌ 3 classi senza getFormSchema:
 - UserResource in Modules/User/Http/Resources/UserResource.php
 - ProfileResource in Modules/Profile/Http/Resources/ProfileResource.php
@@ -55,6 +70,10 @@ XotBaseResource Classes Form Schema Check
 =======
 =======
 >>>>>>> 9c02579 (.)
+<<<<<<< HEAD
+=======
+>>>>>>> 1420e3b683 (.)
+>>>>>>> 574afe9e (.)
 ❌ 3 classes missing getFormSchema method:
 
 - UserResource in /var/www/html/base_techplanner_fila3/laravel/Modules/User/Http/Resources/UserResource.php
@@ -76,8 +95,16 @@ XotBaseResource Classes Form Schema Check
 - Durante le revisioni del codice
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 9c02579 (.)
+>>>>>>> 1420e3b683 (.)
+>>>>>>> 574afe9e (.)
 
 ## Altri Script di Verifica della Qualità
 
@@ -86,6 +113,11 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 
 ### phpstan_docs_generator.sh
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 574afe9e (.)
 Genera la documentazione dei risultati di PHPStan.
 
 ## Principi Applicati
@@ -324,6 +356,10 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 =======
 =======
 >>>>>>> 9c02579 (.)
+<<<<<<< HEAD
+=======
+>>>>>>> 1420e3b683 (.)
+>>>>>>> 574afe9e (.)
 Genera documentazione automatica per PHPStan.
 
 ## Principi Applicati
@@ -339,14 +375,26 @@ Genera documentazione automatica per PHPStan.
 - **Configurazione minima**: Parametri essenziali
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 9c02579 (.)
+>>>>>>> 1420e3b683 (.)
+>>>>>>> 574afe9e (.)
 
 ## Risorse Utili
 - [PHPStan](https://phpstan.org/)
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data/v4/introduction)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [CI/CD Best Practices](https://docs.github.com/en/actions/guides/building-and-testing-php) 
 =======
 - [CI/CD Best Practices](https://docs.github.com/en/actions/guides/building-and-testing-php)
 >>>>>>> 3c18aa7e (.)
+=======
+- [CI/CD Best Practices](https://docs.github.com/en/actions/guides/building-and-testing-php)
+>>>>>>> 574afe9e (.)

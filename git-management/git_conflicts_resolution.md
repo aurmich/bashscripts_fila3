@@ -40,9 +40,16 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 - Sono stati rimossi solo i marcatori di conflitto, mantenendo il codice funzionale
 - I file di backup sono stati creati con il timestamp per sicurezza
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ### Fase 1: Identificazione
 ```bash
+=======
+### Fase 1: Identificazione
+```bash
+<<<<<<< HEAD
+=======
+>>>>>>> 574afe9e (.)
 
 <<<<<<< HEAD
 ### Fase 1: Identificazione
@@ -53,6 +60,10 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 ```bash
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
+<<<<<<< HEAD
+=======
+>>>>>>> 1420e3b683 (.)
+>>>>>>> 574afe9e (.)
 # Visualizzare tutti i file con conflitti
 git status
 
@@ -84,9 +95,12 @@ Per ogni file in conflitto:
 - `Modules\Predict\Database\Factories` per le factory
 - `Modules\Predict\lang\it` per i file di traduzione
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> 574afe9e (.)
 ### Fase 3: Risoluzione
 Scegliere una delle seguenti strategie:
 
@@ -143,6 +157,12 @@ namespace Modules\NomeModulo\App\Filament;
 2. Eseguire `php artisan config:clear` per pulire la cache
 3. Verificare che tutte le risorse Filament siano registrate correttamente
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+4. Testare il modulo in ambiente di sviluppo
+=======
+<<<<<<< HEAD
+>>>>>>> 574afe9e (.)
 4. Testare il modulo in ambiente di sviluppo 
 <<<<<<< HEAD
 4. Testare il modulo in ambiente di sviluppo
@@ -151,11 +171,20 @@ namespace Modules\NomeModulo\App\Filament;
 4. Testare il modulo in ambiente di sviluppo
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
+<<<<<<< HEAD
+=======
+>>>>>>> 1420e3b683 (.)
+>>>>>>> 574afe9e (.)
 
 ## Risoluzione di Casi Specifici
 
 ### Conflitti in File PHP
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 574afe9e (.)
 
 <<<<<<< HEAD
 
@@ -163,6 +192,10 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
+<<<<<<< HEAD
+=======
+>>>>>>> 1420e3b683 (.)
+>>>>>>> 574afe9e (.)
 1. Verificare la compatibilità con PHPStan
 2. Mantenere le annotazioni PHPDoc complete
 3. Seguire le convenzioni di namespace
@@ -170,6 +203,11 @@ namespace Modules\NomeModulo\App\Filament;
 
 ### Conflitti in File di Documentazione
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 574afe9e (.)
 
 <<<<<<< HEAD
 
@@ -177,12 +215,21 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
+<<<<<<< HEAD
+=======
+>>>>>>> 1420e3b683 (.)
+>>>>>>> 574afe9e (.)
 1. In genere, mantenere entrambe le versioni
 2. Organizzare il contenuto in modo logico
 3. Aggiornare tutti i collegamenti
 
 ### Conflitti in File di Configurazione
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 574afe9e (.)
 
 <<<<<<< HEAD
 
@@ -190,6 +237,10 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
+<<<<<<< HEAD
+=======
+>>>>>>> 1420e3b683 (.)
+>>>>>>> 574afe9e (.)
 1. Confrontare attentamente le configurazioni
 2. Verificare l'impatto delle modifiche
 3. Documentare le decisioni prese
@@ -207,4 +258,7 @@ Il progetto include alcuni script per facilitare la gestione dei conflitti:
 - [Script di Risoluzione Automatica](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/fix_all_git_conflicts.md)
 - [Conflitti nei File di Configurazione](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/config_file_conflicts.md)
 - [Convenzioni Namespace](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/NAMESPACE-CONVENTIONS.md)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 574afe9e (.)

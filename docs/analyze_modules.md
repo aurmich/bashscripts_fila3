@@ -80,7 +80,10 @@ Modules/<NomeModulo>/docs/phpstan/
    - Permessi insufficienti
    - PHPStan non installato
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 574afe9e (.)
 
 ## Gestione dei Conflitti
 In caso di conflitti durante l'analisi dei moduli:
@@ -97,7 +100,10 @@ In caso di conflitti durante l'analisi dei moduli:
 
 ## Pattern di Risoluzione Errori
 Durante l'analisi PHPStan potrebbero emergere errori ricorrenti. Ecco le soluzioni più comuni:
+<<<<<<< HEAD
 >>>>>>> 9c02579 (.)
+=======
+>>>>>>> 574afe9e (.)
 
 ## Gestione dei Conflitti
 In caso di conflitti durante l'analisi dei moduli:

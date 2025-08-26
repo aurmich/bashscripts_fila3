@@ -166,6 +166,7 @@ XotBaseResource Classes Form Schema Check
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -174,6 +175,8 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 >>>>>>> 3c18aa7e (.)
 =======
 >>>>>>> 9c02579 (.)
+=======
+>>>>>>> 574afe9e (.)
 
 # Script di Verifica della Qualità del Codice
 
