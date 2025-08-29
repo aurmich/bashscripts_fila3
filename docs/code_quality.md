@@ -166,8 +166,11 @@ XotBaseResource Classes Form Schema Check
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> f198176d (.)
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -180,7 +183,10 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 =======
 >>>>>>> 574afe9e (.)
 
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
 # Script di Verifica della Qualità del Codice
 
 Questa documentazione descrive gli script utilizzati per verificare e migliorare la qualità del codice nel progetto.
@@ -240,9 +246,13 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 59901687 (.)
+=======
+
+>>>>>>> f198176d (.)
 # Script di Verifica della Qualità del Codice
 
 Questa documentazione descrive gli script utilizzati per verificare e migliorare la qualità del codice nel progetto.

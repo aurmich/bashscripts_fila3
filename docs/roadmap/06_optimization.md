@@ -11,10 +11,14 @@ aurmich/dev
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 59901687 (.)
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> f198176d (.)
 # ⚡ Fase 6: Ottimizzazione
 
 ## 📋 Panoramica
@@ -118,7 +122,10 @@ Questa fase si concentra sull'ottimizzazione e il miglioramento continuo del sis
 - [Documentazione Script](../project.md)
 - [Fase 5: Monitoraggio](../roadmap/05_monitoring.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f198176d (.)
 - [Fase 7: Documentazione](../roadmap/07_documentation.md)
 
 ## 📅 Timeline
@@ -142,7 +149,10 @@ Questa fase si concentra sull'ottimizzazione e il miglioramento continuo del sis
 - Monitoraggio
 - Fine-tuning
 - Manutenzione
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
 
 
 [0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
@@ -237,7 +247,10 @@ aurmich/dev
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f198176d (.)
 [0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
 aurmich/dev
 
@@ -284,4 +297,7 @@ aurmich/dev
 * [06_optimization.md](docs/roadmap/06_optimization.md)
 
 
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)

@@ -107,11 +107,17 @@ Soluzione: sudo chmod 777 -R .
 sudo update-alternatives --config php
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f198176d (.)
 
 ## 🔄 Se menù o altri elementi frontend non si aggiornano
 ```bash
 # Eseguire script "go" presente nel composer.json
 composer go
 ```
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)

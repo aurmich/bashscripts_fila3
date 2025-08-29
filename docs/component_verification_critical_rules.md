@@ -77,9 +77,12 @@
 ### 1. Verifica Componenti Esistenti
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> f198176d (.)
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -89,7 +92,10 @@
 >>>>>>> 9c02579 (.)
 =======
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
 # Verifica componenti nel progetto
 find resources/views/components -name "*.blade.php"
 
@@ -105,9 +111,12 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 ### 3. Test in Sviluppo
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> f198176d (.)
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -117,7 +126,10 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 >>>>>>> 9c02579 (.)
 =======
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
 # Test componente
 php artisan view:clear
 php artisan config:clear
@@ -201,11 +213,14 @@ name('login');
 ### 3. Non Testare in Sviluppo
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 # ERRATO: Non testare
 
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> f198176d (.)
 <<<<<<< HEAD
 
 # ERRATO: Non testare
@@ -216,16 +231,22 @@ name('login');
 =======
 # ERRATO: Non testare
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
 # Usare componente senza test
 
 # CORRETTO: Testare sempre
 php artisan view:clear
 php artisan config:clear
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> f198176d (.)
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -235,7 +256,10 @@ php artisan config:clear
 >>>>>>> 9c02579 (.)
 =======
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
 # Testare componente
 ```
 
@@ -272,8 +296,11 @@ L'errore è stato causato da:
 *Regole aggiornate il: $(date)*
 *Stato: Regole critiche definite*
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> f198176d (.)
 <<<<<<< HEAD
 =======
 *Priorità: CRITICA* 
@@ -281,4 +308,7 @@ L'errore è stato causato da:
 =======
 *Priorità: CRITICA*
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)

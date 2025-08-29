@@ -57,9 +57,12 @@ out/
 coverage/
 docs/cache/
 <<<<<<< HEAD
+<<<<<<< HEAD
 docs/
 =======
 >>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
 cache/
 tmp/
 tmp*/

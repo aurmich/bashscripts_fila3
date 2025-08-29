@@ -855,9 +855,12 @@ find docs/ -name "*" | grep '[A-Z]' | grep -v "README.md"
 **Compatibilità:** Laravel 12.x, PHP 8.2+, Filament 3.x
 **Autore:** Analisi approfondita del codice Laraxot
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
 
 
 facciamo un recfactor radicale di tutte le cartelle docs, in ottica dry + kiss, ti ricordo che dentro le cartelle docs, ne i nomi dei files ne i nomi delle cartelle devono contenere caratteri maiuscoli ad eccezzione di README.md
@@ -865,7 +868,10 @@ dentro le cartelle "docs" ne i nomi dei files ne i nomi delle sottocartelle di "
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f198176d (.)
 =======
 >>>>>>> 13fed511 (.)
 =======
@@ -873,4 +879,7 @@ dentro le cartelle "docs" ne i nomi dei files ne i nomi delle sottocartelle di "
 =======
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)

@@ -123,10 +123,14 @@ name('login');
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 59901687 (.)
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> f198176d (.)
 # Verifica componenti nel progetto
 find resources/views/components -name "*.blade.php" | head -20
 
@@ -145,10 +149,14 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 59901687 (.)
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> f198176d (.)
 # Test componente
 php artisan view:clear
 php artisan config:clear
@@ -209,7 +217,12 @@ L'errore è stato causato da:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Priorità: CRITICA* 
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 59901687 (.)
+=======
+*Priorità: CRITICA* 
+>>>>>>> 3c18aa7e (.)
+>>>>>>> f198176d (.)

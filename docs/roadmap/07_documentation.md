@@ -11,10 +11,14 @@ aurmich/dev
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 59901687 (.)
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> f198176d (.)
 # 📚 Fase 7: Documentazione
 
 ## 📋 Panoramica
@@ -118,7 +122,10 @@ Questa fase si concentra sulla documentazione completa del sistema, garantendo u
 - [Documentazione Script](../project.md)
 - [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f198176d (.)
 - [Fase 8: Manutenzione](../roadmap/08_maintenance.md)
 
 ## 📅 Timeline
@@ -142,7 +149,10 @@ Questa fase si concentra sulla documentazione completa del sistema, garantendo u
 - Finalizzazione
 - Pubblicazione
 - Manutenzione
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
 
 
 - [Fase 8: Manutenzione](../roadmap/08_maintenance.md) 
@@ -266,7 +276,10 @@ aurmich/dev
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f198176d (.)
 - [Fase 8: Manutenzione](../roadmap/08_maintenance.md) 
 
 aurmich/dev
@@ -328,4 +341,7 @@ aurmich/dev
 * [07_documentation.md](docs/roadmap/07_documentation.md)
 
 
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
