@@ -22,7 +22,17 @@ Ho analizzato tutte le cartelle docs del progetto per verificare la conformità 
 
 ### 1. File Rinominato
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 9c02579 (.)
+>>>>>>> 59901687 (.)
 # Prima (ERRATO)
 ./Modules/Xot/docs/filament/infinite-loop-getStepByName-fix.md
 
@@ -41,20 +51,51 @@ Ho analizzato tutte le cartelle docs del progetto per verificare la conformità 
 ## ✅ Verifica Finale
 
 ```bash
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 59901687 (.)
 
 # Verifica file con maiuscole
 find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f | grep -v README.md
 
+<<<<<<< HEAD
+=======
+=======
+# Verifica file con maiuscole
+find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f | grep -v README.md
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 59901687 (.)
 # Risultato: Nessun file trovato ✅
 
 # Verifica cartelle con maiuscole
 find ./docs ./Modules/*/docs -name "*[A-Z]*" -type d
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 9c02579 (.)
+>>>>>>> 59901687 (.)
 # Risultato: Nessuna cartella trovata ✅
 
 # Verifica completa (solo README.md permessi)
 find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 9c02579 (.)
+>>>>>>> 59901687 (.)
 # Risultato: Solo file README.md trovati ✅
 ```
 
@@ -96,7 +137,17 @@ find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f
 
 #### Verifica Manuale
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 9c02579 (.)
+>>>>>>> 59901687 (.)
 # Trova file con maiuscole nelle cartelle docs
 find docs/ -name "*[A-Z]*" -type f | grep -v README.md
 
@@ -109,7 +160,17 @@ find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f | grep -v README.md
 
 #### Correzione Automatica
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 9c02579 (.)
+>>>>>>> 59901687 (.)
 # Esegui script di correzione automatica
 ./bashscripts/fix_docs_naming_convention.sh
 ```
@@ -147,3 +208,10 @@ find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f | grep -v README.md
 **Ultimo aggiornamento**: 2025-01-06
 **File corretti**: 1
 **Documentazione creata**: 2
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+**README aggiornato**: 1 
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 59901687 (.)

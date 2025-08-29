@@ -29,6 +29,19 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 
 ## Processo di Risoluzione
 
+<<<<<<< HEAD
+=======
+## Note Importanti
+- Tutti i file sono stati mantenuti nella versione<!-- REVISIONE MANUALE: File aggiornato per chiarezza e tracciabilità. Vedi anche [README globale](/docs/README.md) e gli altri file di risoluzione conflitti. -->
+
+[Backlink: Documentazione Globale](/docs/README.md)
+[Backlink: scripts_conflict_resolution.md](scripts_conflict_resolution.md)
+[Backlink: fix_all_git_conflicts.md](fix_all_git_conflicts.md)
+ (corrente)
+- I namespace sono stati mantenuti corretti secondo la struttura del modulo
+- Sono stati rimossi solo i marcatori di conflitto, mantenendo il codice funzionale
+- I file di backup sono stati creati con il timestamp per sicurezza
+>>>>>>> 59901687 (.)
 ### Fase 1: Identificazione
 ```bash
 # Visualizzare tutti i file con conflitti
@@ -75,7 +88,14 @@ Per ogni file in conflitto:
 - `Modules\Predict\Providers` per i service provider
 - `Modules\Predict\Database\Factories` per le factory
 - `Modules\Predict\lang\it` per i file di traduzione
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 59901687 (.)
 ### Fase 3: Risoluzione
 Scegliere una delle seguenti strategie:
 
