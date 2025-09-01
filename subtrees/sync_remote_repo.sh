@@ -52,6 +52,7 @@ for ((i=0; i<total; i++)); do
     fi
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -66,6 +67,10 @@ for ((i=0; i<total; i++)); do
 
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+    echo "🔗 $url"
+
+>>>>>>> c06b8db1 (.)
     git config --global --add safe.directory "$curr_dir/$path"
     git checkout "$BRANCH" -- || git checkout -b "$BRANCH"
     git remote add "$ORG" "$url"
