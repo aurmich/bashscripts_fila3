@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # GUIDA ESSENZIALE LARAXOT
 
 ## DOCUMENTAZIONE
@@ -179,6 +180,8 @@
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 85c5198c (.)
+=======
+>>>>>>> d20d0523 (.)
 # GUIDA ESSENZIALE LARAXOT
 
 ## DOCUMENTAZIONE
@@ -271,10 +274,14 @@
 =======
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> 9de04485 (.)
 =======
 =======
 >>>>>>> 85c5198c (.)
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
 # GUIDA ESSENZIALE LARAXOT
 
 ## DOCUMENTAZIONE
@@ -449,6 +456,7 @@
 - Ogni modulo ha la sua cartella docs da studiare e aggiornare
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
 =======
@@ -456,3 +464,8 @@
 =======
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
+=======
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)

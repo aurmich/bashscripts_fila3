@@ -33,6 +33,7 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 85c5198c (.)
@@ -41,6 +42,11 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 =======
 =======
 >>>>>>> 85c5198c (.)
+=======
+=======
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
 ## Note Importanti
 - Tutti i file sono stati mantenuti nella versione<!-- REVISIONE MANUALE: File aggiornato per chiarezza e tracciabilità. Vedi anche [README globale](/docs/README.md) e gli altri file di risoluzione conflitti. -->
 
@@ -54,6 +60,7 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 337c5266 (.)
 =======
@@ -64,6 +71,11 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 =======
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
+=======
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
 ### Fase 1: Identificazione
 ```bash
 # Visualizzare tutti i file con conflitti
@@ -118,6 +130,7 @@ Per ogni file in conflitto:
 =======
 >>>>>>> 85c5198c (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
@@ -131,12 +144,18 @@ Per ogni file in conflitto:
 >>>>>>> 3c18aa7e (.)
 <<<<<<< HEAD
 >>>>>>> 59901687 (.)
+<<<<<<< HEAD
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
 =======
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
+=======
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
 ### Fase 3: Risoluzione
 Scegliere una delle seguenti strategie:
 

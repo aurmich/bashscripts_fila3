@@ -44,12 +44,18 @@ La risoluzione manuale dei conflitti negli script bash è particolarmente delica
 
 ```bash
 <<<<<<< HEAD
-
-=======
 <<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
 <<<<<<< HEAD
 
 =======
@@ -57,8 +63,14 @@ La risoluzione manuale dei conflitti negli script bash è particolarmente delica
 =======
 
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
+<<<<<<< HEAD
 >>>>>>> 85c5198c (.)
+=======
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
 # Versione avanzata con livelli di log
 log() {
     local level="$1"
@@ -85,12 +97,18 @@ log() {
 
 ```bash
 <<<<<<< HEAD
-
-=======
 <<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
 <<<<<<< HEAD
 
 =======
@@ -98,8 +116,14 @@ log() {
 =======
 
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
+<<<<<<< HEAD
 >>>>>>> 85c5198c (.)
+=======
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
 # Funzione avanzata per loggare messaggi che supporta entrambi i formati
 log() {
     # Supporta sia il formato avanzato con livelli che il formato semplice
@@ -129,12 +153,18 @@ log() {
 
 ```bash
 <<<<<<< HEAD
-
-=======
 <<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
 <<<<<<< HEAD
 
 =======
@@ -142,8 +172,14 @@ log() {
 =======
 
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
+<<<<<<< HEAD
 >>>>>>> 85c5198c (.)
+=======
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
 # Versione che richiede 2 parametri
 if [ $# -ne 2 ]; then
     echo "Usage: $0 <path> <remote_repo>"
@@ -168,12 +204,18 @@ BRANCH="$3"
 
 ```bash
 <<<<<<< HEAD
-
-=======
 <<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
 <<<<<<< HEAD
 
 =======
@@ -181,8 +223,14 @@ BRANCH="$3"
 =======
 
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
+<<<<<<< HEAD
 >>>>>>> 85c5198c (.)
+=======
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
 # Versione che supporta 2 o 3 parametri
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     echo "Usage: $0 <path> <remote_repo> [branch]"

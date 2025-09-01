@@ -127,6 +127,7 @@ name('login');
 =======
 >>>>>>> 85c5198c (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
@@ -140,12 +141,18 @@ name('login');
 >>>>>>> 3c18aa7e (.)
 <<<<<<< HEAD
 >>>>>>> 59901687 (.)
+<<<<<<< HEAD
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
 =======
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
+=======
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
 # Verifica componenti nel progetto
 find resources/views/components -name "*.blade.php" | head -20
 
@@ -168,6 +175,7 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 =======
 >>>>>>> 85c5198c (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
@@ -181,12 +189,18 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 >>>>>>> 3c18aa7e (.)
 <<<<<<< HEAD
 >>>>>>> 59901687 (.)
+<<<<<<< HEAD
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
 =======
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
+=======
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
 # Test componente
 php artisan view:clear
 php artisan config:clear
@@ -268,8 +282,16 @@ L'errore è stato causato da:
 =======
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Priorità: CRITICA* 
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 59901687 (.)
+<<<<<<< HEAD
 >>>>>>> 85c5198c (.)
+=======
+=======
+*Priorità: CRITICA* 
+>>>>>>> 3c18aa7e (.)
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)

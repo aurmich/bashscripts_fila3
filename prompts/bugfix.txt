@@ -1,8 +1,13 @@
 <<<<<<< HEAD
-=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -12,8 +17,14 @@
 =======
 <<<<<<< HEAD
 >>>>>>> 9c02579 (.)
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
+<<<<<<< HEAD
 >>>>>>> 85c5198c (.)
+=======
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
 # Guida Completa per Bug Fixing - Laraxot SaluteOra
 
 ## Principi Fondamentali
@@ -144,10 +155,15 @@ Un errore `ParseError: syntax error, unexpected token "protected", expecting end
 
 ### Esempio Corretto
 <<<<<<< HEAD
-=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
 # Linee Guida per il Bug Fixing e Best Practices
 
 ## Principi Fondamentali
@@ -342,8 +358,14 @@ Un errore di tipo `ParseError: syntax error, unexpected token "protected", expec
 >>>>>>> 9c02579 (.)
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
+<<<<<<< HEAD
 >>>>>>> 85c5198c (.)
+=======
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
 ```php
 class Example {
     public function foo() {}
@@ -352,17 +374,28 @@ class Example {
 ```
 
 <<<<<<< HEAD
-=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
 <<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
+<<<<<<< HEAD
 >>>>>>> 85c5198c (.)
+=======
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
 ## Processo di Revisione
 
 ### Auto-Revisione
@@ -415,9 +448,12 @@ class Example {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> f198176d (.)
 =======
 >>>>>>> 9c02579 (.)
 <<<<<<< HEAD
@@ -510,5 +546,11 @@ class Example {
 >>>>>>> 9c02579 (.)
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
+<<<<<<< HEAD
 >>>>>>> 85c5198c (.)
+=======
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)

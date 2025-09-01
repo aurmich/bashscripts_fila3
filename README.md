@@ -1,8 +1,12 @@
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 85c5198c (.)
+=======
+<<<<<<< HEAD
+>>>>>>> d20d0523 (.)
 # BashScripts - Organizzazione Script
 
 ## Regola Fondamentale
@@ -187,6 +191,8 @@ php artisan tinker
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> f198176d (.)
 # 🚀 Toolkit di Automazione Git per Laraxot PTVX
 
 [![PHPStan](https://img.shields.io/badge/PHPStan-Level%209-brightgreen.svg?style=for-the-badge&logo=php&logoColor=white)](../docs/phpstan/ANALISI_MODULI_PHPSTAN.md)
@@ -1070,5 +1076,11 @@ This toolkit addresses these challenges by providing automated tools that simpli
 - [Italiano](docs/README.it.md)
 - [Español](docs/README.es.md)
  43df3e0 (.)
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
+<<<<<<< HEAD
 >>>>>>> 85c5198c (.)
+=======
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)

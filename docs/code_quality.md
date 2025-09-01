@@ -169,6 +169,7 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 85c5198c (.)
@@ -179,6 +180,12 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 =======
 <<<<<<< HEAD
 >>>>>>> 85c5198c (.)
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -194,6 +201,7 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 337c5266 (.)
 =======
@@ -204,6 +212,11 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 =======
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
+=======
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
 # Script di Verifica della Qualità del Codice
 
 Questa documentazione descrive gli script utilizzati per verificare e migliorare la qualità del codice nel progetto.
@@ -266,6 +279,7 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 337c5266 (.)
@@ -282,6 +296,14 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
+=======
+=======
+
+>>>>>>> 59901687 (.)
+=======
+
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
 # Script di Verifica della Qualità del Codice
 
 Questa documentazione descrive gli script utilizzati per verificare e migliorare la qualità del codice nel progetto.

@@ -243,7 +243,9 @@ I seguenti file di configurazione sono stati recentemente risolti:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> 85c5198c (.)
 <<<<<<< HEAD
 =======
@@ -254,6 +256,10 @@ I seguenti file di configurazione sono stati recentemente risolti:
 <<<<<<< HEAD
 =======
 >>>>>>> 85c5198c (.)
+=======
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
 # Risoluzione dei Conflitti nei File di Configurazione
 
 ## Problema
@@ -755,6 +761,7 @@ I seguenti file di configurazione sono stati recentemente risolti:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 337c5266 (.)
 =======
@@ -765,6 +772,11 @@ I seguenti file di configurazione sono stati recentemente risolti:
 =======
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
+=======
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
 # Risoluzione dei Conflitti nei File di Configurazione
 
 ## Problema

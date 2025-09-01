@@ -1,9 +1,13 @@
 # Script di Verifica della Qualità del Codice
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 85c5198c (.)
+=======
+<<<<<<< HEAD
+>>>>>>> d20d0523 (.)
 Questa documentazione descrive gli script utilizzati per verificare e migliorare la qualità del codice nel progetto.
 
 ## check_form_schema.php
@@ -293,6 +297,8 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> f198176d (.)
 Questa documentazione descrive gli script e le procedure utilizzate per verificare e migliorare la qualità del codice nel progetto Laravel.
 
 ## Panoramica
@@ -623,6 +629,13 @@ git checkout HEAD -- storage/quality-reports/
 ---
 
 *Ultimo aggiornamento: Agosto 2025*  
+<<<<<<< HEAD
 *Versione: 2.1.0*
 >>>>>>> 59901687 (.)
+<<<<<<< HEAD
 >>>>>>> 85c5198c (.)
+=======
+=======
+*Versione: 2.1.0*
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)

@@ -51,6 +51,7 @@ for ((i=0; i<total; i++)); do
         echo "Repository Git già inizializzato in $path"
     fi
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -58,7 +59,13 @@ for ((i=0; i<total; i++)); do
 =======
     echo "🔗 $url"
 >>>>>>> 59901687 (.)
+<<<<<<< HEAD
 >>>>>>> 85c5198c (.)
+=======
+=======
+
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
     git config --global --add safe.directory "$curr_dir/$path"
     git checkout "$BRANCH" -- || git checkout -b "$BRANCH"
     git remote add "$ORG" "$url"
