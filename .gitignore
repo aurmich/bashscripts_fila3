@@ -56,6 +56,10 @@ dist/
 out/
 coverage/
 docs/cache/
+<<<<<<< HEAD
+=======
+docs/
+>>>>>>> 337c5266 (.)
 cache/
 tmp/
 tmp*/

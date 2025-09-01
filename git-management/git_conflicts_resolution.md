@@ -41,6 +41,7 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 - I file di backup sono stati creati con il timestamp per sicurezza
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ### Fase 1: Identificazione
 ```bash
@@ -64,6 +65,12 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 =======
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
+=======
+
+### Fase 1: Identificazione
+```bash
+
+>>>>>>> 337c5266 (.)
 # Visualizzare tutti i file con conflitti
 git status
 
@@ -96,11 +103,15 @@ Per ogni file in conflitto:
 - `Modules\Predict\lang\it` per i file di traduzione
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
 =======
 >>>>>>> 574afe9e (.)
+=======
+
+>>>>>>> 337c5266 (.)
 ### Fase 3: Risoluzione
 Scegliere una delle seguenti strategie:
 
@@ -158,6 +169,7 @@ namespace Modules\NomeModulo\App\Filament;
 3. Verificare che tutte le risorse Filament siano registrate correttamente
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 4. Testare il modulo in ambiente di sviluppo
 =======
@@ -175,10 +187,14 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
+=======
+4. Testare il modulo in ambiente di sviluppo 
+>>>>>>> 337c5266 (.)
 
 ## Risoluzione di Casi Specifici
 
 ### Conflitti in File PHP
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -196,6 +212,9 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
+=======
+
+>>>>>>> 337c5266 (.)
 1. Verificare la compatibilità con PHPStan
 2. Mantenere le annotazioni PHPDoc complete
 3. Seguire le convenzioni di namespace
@@ -204,6 +223,7 @@ namespace Modules\NomeModulo\App\Filament;
 ### Conflitti in File di Documentazione
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -219,6 +239,9 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
+=======
+
+>>>>>>> 337c5266 (.)
 1. In genere, mantenere entrambe le versioni
 2. Organizzare il contenuto in modo logico
 3. Aggiornare tutti i collegamenti
@@ -226,6 +249,7 @@ namespace Modules\NomeModulo\App\Filament;
 ### Conflitti in File di Configurazione
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -241,6 +265,9 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
+=======
+
+>>>>>>> 337c5266 (.)
 1. Confrontare attentamente le configurazioni
 2. Verificare l'impatto delle modifiche
 3. Documentare le decisioni prese
@@ -259,6 +286,9 @@ Il progetto include alcuni script per facilitare la gestione dei conflitti:
 - [Conflitti nei File di Configurazione](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/config_file_conflicts.md)
 - [Convenzioni Namespace](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/NAMESPACE-CONVENTIONS.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 574afe9e (.)
+=======
+>>>>>>> 337c5266 (.)

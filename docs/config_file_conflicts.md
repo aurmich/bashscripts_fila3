@@ -239,6 +239,7 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione Rector](https://getrector.org/documentation)
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Risoluzione dei Conflitti nei File di Configurazione
 
@@ -738,6 +739,8 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione PostCSS](https://postcss.org/)
 - [Documentazione Rector](https://getrector.org/documentation)
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
+=======
+>>>>>>> 337c5266 (.)
 # Risoluzione dei Conflitti nei File di Configurazione
 
 ## Problema

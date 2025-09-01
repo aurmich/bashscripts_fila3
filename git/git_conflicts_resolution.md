@@ -41,6 +41,7 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 - I file di backup sono stati creati con il timestamp per sicurezza
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ### Fase 1: Identificazione
 ```bash
@@ -64,6 +65,12 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 =======
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
+=======
+
+### Fase 1: Identificazione
+```bash
+
+>>>>>>> 337c5266 (.)
 # Visualizzare tutti i file con conflitti
 git status
 
@@ -96,11 +103,15 @@ Per ogni file in conflitto:
 - `Modules\Predict\lang\it` per i file di traduzione
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
 =======
 >>>>>>> 574afe9e (.)
+=======
+
+>>>>>>> 337c5266 (.)
 ### Fase 3: Risoluzione
 Scegliere una delle seguenti strategie:
 
@@ -159,6 +170,7 @@ namespace Modules\NomeModulo\App\Filament;
 4. Testare il modulo in ambiente di sviluppo 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
@@ -174,6 +186,9 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
+=======
+
+>>>>>>> 337c5266 (.)
 ## Risoluzione di Casi Specifici
 
 ### Conflitti in File PHP

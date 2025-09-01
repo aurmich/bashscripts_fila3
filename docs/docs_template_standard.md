@@ -24,12 +24,16 @@ docs/
 ### Document Header Template
 ```markdown
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
+=======
+
+>>>>>>> 337c5266 (.)
 # [Document Title]
 
 **Module**: [Module Name]  

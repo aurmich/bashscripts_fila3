@@ -78,6 +78,7 @@
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -86,6 +87,9 @@
 >>>>>>> 9c02579 (.)
 =======
 >>>>>>> 574afe9e (.)
+=======
+
+>>>>>>> 337c5266 (.)
 # Verifica componenti nel progetto
 find resources/views/components -name "*.blade.php"
 
@@ -102,6 +106,7 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -110,6 +115,9 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 >>>>>>> 9c02579 (.)
 =======
 >>>>>>> 574afe9e (.)
+=======
+
+>>>>>>> 337c5266 (.)
 # Test componente
 php artisan view:clear
 php artisan config:clear
@@ -194,6 +202,7 @@ name('login');
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 # ERRATO: Non testare
 
@@ -203,11 +212,17 @@ name('login');
 =======
 # ERRATO: Non testare
 >>>>>>> 574afe9e (.)
+=======
+
+# ERRATO: Non testare
+
+>>>>>>> 337c5266 (.)
 # Usare componente senza test
 
 # CORRETTO: Testare sempre
 php artisan view:clear
 php artisan config:clear
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -218,6 +233,9 @@ php artisan config:clear
 >>>>>>> 9c02579 (.)
 =======
 >>>>>>> 574afe9e (.)
+=======
+
+>>>>>>> 337c5266 (.)
 # Testare componente
 ```
 
@@ -255,9 +273,12 @@ L'errore è stato causato da:
 *Stato: Regole critiche definite*
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Priorità: CRITICA* 
 >>>>>>> 3c18aa7e (.)
 =======
 *Priorità: CRITICA*
 >>>>>>> 574afe9e (.)
+=======
+>>>>>>> 337c5266 (.)

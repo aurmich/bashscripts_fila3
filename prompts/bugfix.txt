@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -8,6 +9,8 @@
 =======
 <<<<<<< HEAD
 >>>>>>> 9c02579 (.)
+=======
+>>>>>>> 337c5266 (.)
 # Guida Completa per Bug Fixing - Laraxot SaluteOra
 
 ## Principi Fondamentali
@@ -137,6 +140,7 @@ Un errore `ParseError: syntax error, unexpected token "protected", expecting end
 3. **Eliminare se inutile**: Se il metodo non serve più, eliminarlo
 
 ### Esempio Corretto
+<<<<<<< HEAD
 <<<<<<< HEAD
 # Linee Guida per il Bug Fixing e Best Practices
 
@@ -332,6 +336,8 @@ Un errore di tipo `ParseError: syntax error, unexpected token "protected", expec
 >>>>>>> 9c02579 (.)
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
+=======
+>>>>>>> 337c5266 (.)
 ```php
 class Example {
     public function foo() {}
@@ -341,10 +347,13 @@ class Example {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
 >>>>>>> 574afe9e (.)
+=======
+>>>>>>> 337c5266 (.)
 ## Processo di Revisione
 
 ### Auto-Revisione
@@ -394,6 +403,7 @@ class Example {
 *Ultimo aggiornamento: 2025-08-04*
 *Versione: 2.0*
 *Compatibilità: Laraxot SaluteOra, PHP 8.2+, Laravel 12+, Filament 3.4+*
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -488,3 +498,5 @@ class Example {
 >>>>>>> 9c02579 (.)
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
+=======
+>>>>>>> 337c5266 (.)

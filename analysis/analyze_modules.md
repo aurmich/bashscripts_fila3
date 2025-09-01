@@ -137,6 +137,7 @@ Lo script può essere integrato in pipeline CI/CD per automatizzare l'analisi de
 ```yaml
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -145,6 +146,9 @@ Lo script può essere integrato in pipeline CI/CD per automatizzare l'analisi de
 >>>>>>> 9c02579 (.)
 =======
 >>>>>>> 574afe9e (.)
+=======
+
+>>>>>>> 337c5266 (.)
 # Esempio di configurazione GitHub Actions
 name: PHPStan Analysis
 on: [push, pull_request]

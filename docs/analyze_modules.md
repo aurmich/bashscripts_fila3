@@ -81,6 +81,7 @@ Modules/<NomeModulo>/docs/phpstan/
    - PHPStan non installato
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 574afe9e (.)
@@ -96,10 +97,13 @@ In caso di conflitti durante l'analisi dei moduli:
 - [Documentazione PHPStan](../../docs/phpstan/PHPSTAN_WORKFLOW.md)
 - [Linee Guida Moduli](../../docs/MODULES.md)
 - [Risoluzione Conflitti](../../docs/development/CONFLICT_RESOLUTION.md)
+=======
+>>>>>>> 337c5266 (.)
    - Configurazione PHPStan errata
 
 ## Pattern di Risoluzione Errori
 Durante l'analisi PHPStan potrebbero emergere errori ricorrenti. Ecco le soluzioni più comuni:
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 9c02579 (.)
 =======
@@ -111,6 +115,9 @@ In caso di conflitti durante l'analisi dei moduli:
 2. Eseguire `git status` per identificare i file in conflitto
 3. Risolvere i conflitti manualmente seguendo le linee guida in [CONFLICT_RESOLUTION.md](../../docs/development/CONFLICT_RESOLUTION.md)
 4. Dopo la risoluzione, rieseguire l'analisi PHPStan
+=======
+
+>>>>>>> 337c5266 (.)
 ## Collegamenti
 - [Documentazione PHPStan](../../docs/phpstan/PHPSTAN_WORKFLOW.md)
 - [Linee Guida Moduli](../../docs/MODULES.md)

@@ -59,20 +59,29 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 [Backlink: git_conflicts_resolution.md](git_conflicts_resolution.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
 =======
 >>>>>>> 574afe9e (.)
+=======
+
+>>>>>>> 337c5266 (.)
 ## Casi d'Uso Avanzati
 
 ### 1. Risoluzione Selettiva
 È possibile modificare lo script per risolvere selettivamente solo determinati tipi di file:
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 337c5266 (.)
 ### 2. Integrazione con Git Hooks
 Lo script può essere integrato con Git hooks per verificare automaticamente la presenza di conflitti prima del commit:
 
 ```bash
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -89,6 +98,9 @@ Lo script può essere integrato con Git hooks per verificare automaticamente la 
 =======
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
+=======
+
+>>>>>>> 337c5266 (.)
 # .git/hooks/pre-commit
 #!/bin/bash
 ```
