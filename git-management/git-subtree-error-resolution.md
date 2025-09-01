@@ -25,6 +25,7 @@ Il sistema di gestione dei subtree è composto da tre componenti principali:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
@@ -33,6 +34,18 @@ Il sistema di gestione dei subtree è composto da tre componenti principali:
 =======
 
 >>>>>>> 337c5266 (.)
+=======
+
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> 574afe9e (.)
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
 # 1. Inizializzazione
 git init
 git checkout -b "$BRANCH"
@@ -53,6 +66,7 @@ git push -u origin "$BRANCH"
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
@@ -61,6 +75,18 @@ git push -u origin "$BRANCH"
 =======
 
 >>>>>>> 337c5266 (.)
+=======
+
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> 574afe9e (.)
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
 # 1. Pull standard
 git subtree pull -P "$LOCAL_PATH" "$REMOTE_REPO" "$BRANCH" --squash
 
@@ -109,6 +135,7 @@ fatal: you must provide the --prefix option
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
@@ -117,6 +144,18 @@ fatal: you must provide the --prefix option
 =======
 
 >>>>>>> 337c5266 (.)
+=======
+
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> 574afe9e (.)
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
 # Verifica variabili
 if [ -z "$LOCAL_PATH" ] || [ -z "$REMOTE_REPO" ]; then
     echo "❌ Error: Missing required variables"
@@ -136,6 +175,7 @@ fi
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
@@ -144,6 +184,18 @@ fi
 =======
 
 >>>>>>> 337c5266 (.)
+=======
+
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> 574afe9e (.)
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
 # Aggiorna repository locale
 git fetch origin "$BRANCH"
 git merge origin/"$BRANCH" --allow-unrelated-histories"

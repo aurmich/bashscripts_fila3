@@ -131,6 +131,7 @@ I seguenti file avevano già `"minimum-stability": "dev"`:
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -140,6 +141,18 @@ I seguenti file avevano già `"minimum-stability": "dev"`:
 =======
 
 >>>>>>> 337c5266 (.)
+=======
+
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 9c02579 (.)
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
 # Verifica configurazione
 composer config --list | grep minimum-stability
 
@@ -197,6 +210,7 @@ composer check-platform-reqs
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -206,6 +220,18 @@ composer check-platform-reqs
 =======
 
 >>>>>>> 337c5266 (.)
+=======
+
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 9c02579 (.)
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
 # Abilita debug composer
 composer update -vvv
 
@@ -232,7 +258,15 @@ La configurazione mantiene `"prefer-stable": true` per garantire stabilità quan
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 85c5198c (.)
+<<<<<<< HEAD
+=======
 *Totale file verificati: 22* 
 >>>>>>> 3c18aa7e (.)
+<<<<<<< HEAD
 =======
 >>>>>>> 337c5266 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)

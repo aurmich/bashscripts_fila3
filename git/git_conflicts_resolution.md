@@ -42,6 +42,7 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ### Fase 1: Identificazione
 ```bash
@@ -66,11 +67,43 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
 =======
+=======
+>>>>>>> 85c5198c (.)
 
 ### Fase 1: Identificazione
 ```bash
 
+<<<<<<< HEAD
 >>>>>>> 337c5266 (.)
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+### Fase 1: Identificazione
+```bash
+=======
+### Fase 1: Identificazione
+```bash
+<<<<<<< HEAD
+=======
+>>>>>>> 574afe9e (.)
+
+<<<<<<< HEAD
+### Fase 1: Identificazione
+```bash
+=======
+=======
+### Fase 1: Identificazione
+```bash
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 9c02579 (.)
+<<<<<<< HEAD
+=======
+>>>>>>> 1420e3b683 (.)
+>>>>>>> 574afe9e (.)
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
 # Visualizzare tutti i file con conflitti
 git status
 
@@ -104,6 +137,7 @@ Per ogni file in conflitto:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
@@ -112,6 +146,18 @@ Per ogni file in conflitto:
 =======
 
 >>>>>>> 337c5266 (.)
+=======
+
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> 574afe9e (.)
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
 ### Fase 3: Risoluzione
 Scegliere una delle seguenti strategie:
 
@@ -171,8 +217,17 @@ namespace Modules\NomeModulo\App\Filament;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> 85c5198c (.)
 =======
 <<<<<<< HEAD
 >>>>>>> 574afe9e (.)
@@ -186,9 +241,13 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 =======
 
 >>>>>>> 337c5266 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
 ## Risoluzione di Casi Specifici
 
 ### Conflitti in File PHP

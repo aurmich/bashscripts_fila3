@@ -118,6 +118,7 @@ test('successful login regenerates session', function (): void {
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -127,6 +128,18 @@ test('successful login regenerates session', function (): void {
 =======
 
 >>>>>>> 337c5266 (.)
+=======
+
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 9c02579 (.)
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
 # Complete test suite
 ./vendor/bin/pest Modules/Cms/tests/Feature/Auth/LoginTest.php
 
@@ -222,7 +235,15 @@ Questa implementazione fornisce una **base solida** per tutti i futuri test di a
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 85c5198c (.)
+<<<<<<< HEAD
+=======
 *Module: Cms Testing Suite* 
 >>>>>>> 3c18aa7e (.)
+<<<<<<< HEAD
 =======
 >>>>>>> 337c5266 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
