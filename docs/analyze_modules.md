@@ -82,12 +82,17 @@ Modules/<NomeModulo>/docs/phpstan/
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 85c5198c (.)
 <<<<<<< HEAD
 =======
 >>>>>>> 9de04485 (.)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 85c5198c (.)
 <<<<<<< HEAD
 =======
 =======
@@ -106,6 +111,7 @@ In caso di conflitti durante l'analisi dei moduli:
 - [Risoluzione Conflitti](../../docs/development/CONFLICT_RESOLUTION.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 337c5266 (.)
 =======
@@ -113,6 +119,9 @@ In caso di conflitti durante l'analisi dei moduli:
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
    - Configurazione PHPStan errata
 
 ## Pattern di Risoluzione Errori
@@ -121,10 +130,16 @@ Durante l'analisi PHPStan potrebbero emergere errori ricorrenti. Ecco le soluzio
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+
+=======
+>>>>>>> 85c5198c (.)
+<<<<<<< HEAD
 >>>>>>> 9c02579 (.)
 =======
 >>>>>>> 574afe9e (.)
 
+<<<<<<< HEAD
 =======
 
 =======
@@ -135,6 +150,8 @@ Durante l'analisi PHPStan potrebbero emergere errori ricorrenti. Ecco le soluzio
 =======
 >>>>>>> 574afe9e (.)
 
+>>>>>>> 85c5198c (.)
+=======
 >>>>>>> 85c5198c (.)
 ## Gestione dei Conflitti
 In caso di conflitti durante l'analisi dei moduli:
@@ -144,6 +161,7 @@ In caso di conflitti durante l'analisi dei moduli:
 4. Dopo la risoluzione, rieseguire l'analisi PHPStan
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 337c5266 (.)
@@ -152,6 +170,9 @@ In caso di conflitti durante l'analisi dei moduli:
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
 ## Collegamenti
 - [Documentazione PHPStan](../../docs/phpstan/PHPSTAN_WORKFLOW.md)
 - [Linee Guida Moduli](../../docs/MODULES.md)

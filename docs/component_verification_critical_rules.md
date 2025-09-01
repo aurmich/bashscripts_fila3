@@ -80,11 +80,17 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+
+=======
+>>>>>>> 85c5198c (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
 =======
+<<<<<<< HEAD
 =======
 
 =======
@@ -97,10 +103,13 @@
 
 =======
 >>>>>>> 85c5198c (.)
+=======
+>>>>>>> 85c5198c (.)
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
 =======
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -111,6 +120,9 @@
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
 # Verifica componenti nel progetto
 find resources/views/components -name "*.blade.php"
 
@@ -129,11 +141,17 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+
+=======
+>>>>>>> 85c5198c (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
 =======
+<<<<<<< HEAD
 =======
 
 =======
@@ -146,10 +164,13 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 
 =======
 >>>>>>> 85c5198c (.)
+=======
+>>>>>>> 85c5198c (.)
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
 =======
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -160,6 +181,9 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
 # Test componente
 php artisan view:clear
 php artisan config:clear
@@ -247,6 +271,9 @@ name('login');
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 85c5198c (.)
 =======
 >>>>>>> 85c5198c (.)
 
@@ -254,14 +281,20 @@ name('login');
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> 9de04485 (.)
+=======
+>>>>>>> 85c5198c (.)
 <<<<<<< HEAD
 
 # ERRATO: Non testare
 
+=======
+<<<<<<< HEAD
+>>>>>>> 85c5198c (.)
 =======
 >>>>>>> 85c5198c (.)
 # ERRATO: Non testare
@@ -269,6 +302,7 @@ name('login');
 =======
 # ERRATO: Non testare
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -281,6 +315,9 @@ name('login');
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
 # Usare componente senza test
 
 # CORRETTO: Testare sempre
@@ -290,11 +327,17 @@ php artisan config:clear
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+
+=======
+>>>>>>> 85c5198c (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
 =======
+<<<<<<< HEAD
 =======
 
 =======
@@ -307,10 +350,13 @@ php artisan config:clear
 
 =======
 >>>>>>> 85c5198c (.)
+=======
+>>>>>>> 85c5198c (.)
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
 =======
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -321,6 +367,9 @@ php artisan config:clear
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
 # Testare componente
 ```
 
@@ -359,12 +408,17 @@ L'errore è stato causato da:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 85c5198c (.)
 <<<<<<< HEAD
 =======
 >>>>>>> 9de04485 (.)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 85c5198c (.)
 <<<<<<< HEAD
 =======
 *Priorità: CRITICA* 
@@ -374,6 +428,7 @@ L'errore è stato causato da:
 >>>>>>> 574afe9e (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 337c5266 (.)
 =======
@@ -381,3 +436,6 @@ L'errore è stato causato da:
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)

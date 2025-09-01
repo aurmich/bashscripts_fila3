@@ -10,9 +10,15 @@ aurmich/dev
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+
+=======
+>>>>>>> 85c5198c (.)
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
+<<<<<<< HEAD
 =======
 
 >>>>>>> 337c5266 (.)
@@ -25,6 +31,9 @@ aurmich/dev
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
 # 📚 Fase 7: Documentazione
 
 ## 📋 Panoramica
@@ -130,11 +139,15 @@ Questa fase si concentra sulla documentazione completa del sistema, garantendo u
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
+=======
+=======
+>>>>>>> 85c5198c (.)
 - [Fase 8: Manutenzione](../roadmap/08_maintenance.md)
 
 ## 📅 Timeline
@@ -160,205 +173,6 @@ Questa fase si concentra sulla documentazione completa del sistema, garantendo u
 - Manutenzione
 <<<<<<< HEAD
 <<<<<<< HEAD
-=======
->>>>>>> 337c5266 (.)
-=======
->>>>>>> 59901687 (.)
->>>>>>> 85c5198c (.)
-=======
->>>>>>> 9de04485 (.)
-
-
-- [Fase 8: Manutenzione](../roadmap/08_maintenance.md) 
-
-aurmich/dev
-# 📚 Fase 7: Documentazione
-
-## 📋 Panoramica
-Questa fase si concentra sulla documentazione completa del sistema.
-
-## 🔄 Collegamenti
-- [Roadmap Principale](../roadmap.md)
-- [Documentazione Script](../project.md)
-- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
-
-
-[0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
-aurmich/dev
-# 📚 Fase 7: Documentazione
-
-## 📋 Panoramica
-Questa fase si concentra sulla documentazione completa del sistema.
-
-## 🔄 Collegamenti
-- [Roadmap Principale](../roadmap.md)
-- [Documentazione Script](../project.md)
-- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
-
-
-# 📚 Fase 7: Documentazione
-
-## 📋 Panoramica
-Questa fase si concentra sulla documentazione completa del sistema.
-
-## 🔄 Collegamenti
-- [Roadmap Principale](../roadmap.md)
-- [Documentazione Script](../project.md)
-- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
-
-
-
-# 📚 Fase 7: Documentazione
-
-## 📋 Panoramica
-Questa fase si concentra sulla documentazione completa del sistema.
-
-## 🔄 Collegamenti
-- [Roadmap Principale](../roadmap.md)
-- [Documentazione Script](../project.md)
-- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
-
-[0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco HEAD (23 linee vs 1)[0m
- 43df3e0 (.)
-
-aurmich/dev
-
-## Collegamenti tra versioni di 07_documentation.md
-* [07_documentation.md](bashscripts/docs/roadmap/07_documentation.md)
-* [07_documentation.md](docs/roadmap/07_documentation.md)
-
-
-- [Fase 8: Manutenzione](../roadmap/08_maintenance.md) 
-
-aurmich/dev
-
-# 📚 Fase 7: Documentazione
-
-## 📋 Panoramica
-Questa fase si concentra sulla documentazione completa del sistema.
-
-## 🔄 Collegamenti
-- [Roadmap Principale](../roadmap.md)
-- [Documentazione Script](../project.md)
-- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
-
-
-[0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
-aurmich/dev
-
-# 📚 Fase 7: Documentazione
-
-## 📋 Panoramica
-Questa fase si concentra sulla documentazione completa del sistema.
-
-## 🔄 Collegamenti
-- [Roadmap Principale](../roadmap.md)
-- [Documentazione Script](../project.md)
-- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
-
-
-# 📚 Fase 7: Documentazione
-
-## 📋 Panoramica
-Questa fase si concentra sulla documentazione completa del sistema.
-
-## 🔄 Collegamenti
-- [Roadmap Principale](../roadmap.md)
-- [Documentazione Script](../project.md)
-- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
-
-
-
-# 📚 Fase 7: Documentazione
-
-## 📋 Panoramica
-Questa fase si concentra sulla documentazione completa del sistema.
-
-## 🔄 Collegamenti
-- [Roadmap Principale](../roadmap.md)
-- [Documentazione Script](../project.md)
-- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
-
-[0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco HEAD (23 linee vs 1)[0m
- 43df3e0 (.)
-
-aurmich/dev
-
-## Collegamenti tra versioni di 07_documentation.md
-* [07_documentation.md](bashscripts/docs/roadmap/07_documentation.md)
-* [07_documentation.md](docs/roadmap/07_documentation.md)
-
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 85c5198c (.)
-=======
->>>>>>> 9de04485 (.)
-- [Fase 8: Manutenzione](../roadmap/08_maintenance.md) 
-
-aurmich/dev
-
-# 📚 Fase 7: Documentazione
-
-## 📋 Panoramica
-Questa fase si concentra sulla documentazione completa del sistema.
-
-## 🔄 Collegamenti
-- [Roadmap Principale](../roadmap.md)
-- [Documentazione Script](../project.md)
-- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
-
-
-[0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
-aurmich/dev
-
-# 📚 Fase 7: Documentazione
-
-## 📋 Panoramica
-Questa fase si concentra sulla documentazione completa del sistema.
-
-## 🔄 Collegamenti
-- [Roadmap Principale](../roadmap.md)
-- [Documentazione Script](../project.md)
-- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
-
-
-# 📚 Fase 7: Documentazione
-
-## 📋 Panoramica
-Questa fase si concentra sulla documentazione completa del sistema.
-
-## 🔄 Collegamenti
-- [Roadmap Principale](../roadmap.md)
-- [Documentazione Script](../project.md)
-- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
-
-
-
-# 📚 Fase 7: Documentazione
-
-## 📋 Panoramica
-Questa fase si concentra sulla documentazione completa del sistema.
-
-## 🔄 Collegamenti
-- [Roadmap Principale](../roadmap.md)
-- [Documentazione Script](../project.md)
-- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
-
-[0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco HEAD (23 linee vs 1)[0m
- 43df3e0 (.)
-
-aurmich/dev
-
-## Collegamenti tra versioni di 07_documentation.md
-* [07_documentation.md](bashscripts/docs/roadmap/07_documentation.md)
-* [07_documentation.md](docs/roadmap/07_documentation.md)
-
-
-<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 337c5266 (.)
@@ -367,3 +181,214 @@ aurmich/dev
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
+
+
+- [Fase 8: Manutenzione](../roadmap/08_maintenance.md) 
+
+aurmich/dev
+# 📚 Fase 7: Documentazione
+
+## 📋 Panoramica
+Questa fase si concentra sulla documentazione completa del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
+
+
+[0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
+aurmich/dev
+# 📚 Fase 7: Documentazione
+
+## 📋 Panoramica
+Questa fase si concentra sulla documentazione completa del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
+
+
+# 📚 Fase 7: Documentazione
+
+## 📋 Panoramica
+Questa fase si concentra sulla documentazione completa del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
+
+
+
+# 📚 Fase 7: Documentazione
+
+## 📋 Panoramica
+Questa fase si concentra sulla documentazione completa del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
+
+[0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco HEAD (23 linee vs 1)[0m
+ 43df3e0 (.)
+
+aurmich/dev
+
+## Collegamenti tra versioni di 07_documentation.md
+* [07_documentation.md](bashscripts/docs/roadmap/07_documentation.md)
+* [07_documentation.md](docs/roadmap/07_documentation.md)
+
+
+- [Fase 8: Manutenzione](../roadmap/08_maintenance.md) 
+
+aurmich/dev
+
+# 📚 Fase 7: Documentazione
+
+## 📋 Panoramica
+Questa fase si concentra sulla documentazione completa del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
+
+
+[0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
+aurmich/dev
+
+# 📚 Fase 7: Documentazione
+
+## 📋 Panoramica
+Questa fase si concentra sulla documentazione completa del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
+
+
+# 📚 Fase 7: Documentazione
+
+## 📋 Panoramica
+Questa fase si concentra sulla documentazione completa del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
+
+
+
+# 📚 Fase 7: Documentazione
+
+## 📋 Panoramica
+Questa fase si concentra sulla documentazione completa del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
+
+[0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco HEAD (23 linee vs 1)[0m
+ 43df3e0 (.)
+
+aurmich/dev
+
+## Collegamenti tra versioni di 07_documentation.md
+* [07_documentation.md](bashscripts/docs/roadmap/07_documentation.md)
+* [07_documentation.md](docs/roadmap/07_documentation.md)
+
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9de04485 (.)
+=======
+=======
+>>>>>>> 85c5198c (.)
+- [Fase 8: Manutenzione](../roadmap/08_maintenance.md) 
+
+aurmich/dev
+
+# 📚 Fase 7: Documentazione
+
+## 📋 Panoramica
+Questa fase si concentra sulla documentazione completa del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
+
+
+[0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
+aurmich/dev
+
+# 📚 Fase 7: Documentazione
+
+## 📋 Panoramica
+Questa fase si concentra sulla documentazione completa del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
+
+
+# 📚 Fase 7: Documentazione
+
+## 📋 Panoramica
+Questa fase si concentra sulla documentazione completa del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
+
+
+
+# 📚 Fase 7: Documentazione
+
+## 📋 Panoramica
+Questa fase si concentra sulla documentazione completa del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
+
+[0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco HEAD (23 linee vs 1)[0m
+ 43df3e0 (.)
+
+aurmich/dev
+
+## Collegamenti tra versioni di 07_documentation.md
+* [07_documentation.md](bashscripts/docs/roadmap/07_documentation.md)
+* [07_documentation.md](docs/roadmap/07_documentation.md)
+
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 337c5266 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9de04485 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)

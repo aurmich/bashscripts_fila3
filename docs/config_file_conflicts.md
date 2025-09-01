@@ -240,6 +240,7 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -248,6 +249,11 @@ I seguenti file di configurazione sono stati recentemente risolti:
 =======
 =======
 >>>>>>> 9de04485 (.)
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 85c5198c (.)
 # Risoluzione dei Conflitti nei File di Configurazione
 
 ## Problema
@@ -748,6 +754,7 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 337c5266 (.)
 =======
@@ -755,6 +762,9 @@ I seguenti file di configurazione sono stati recentemente risolti:
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
 # Risoluzione dei Conflitti nei File di Configurazione
 
 ## Problema
