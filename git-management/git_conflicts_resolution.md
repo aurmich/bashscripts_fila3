@@ -43,6 +43,7 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ### Fase 1: Identificazione
 ```bash
@@ -78,6 +79,8 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 =======
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 9de04485 (.)
 <<<<<<< HEAD
 
 ### Fase 1: Identificazione
@@ -102,8 +105,11 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 =======
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9de04485 (.)
 # Visualizzare tutti i file con conflitti
 git status
 
@@ -138,6 +144,7 @@ Per ogni file in conflitto:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
@@ -150,14 +157,19 @@ Per ogni file in conflitto:
 
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 9de04485 (.)
 <<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
 =======
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9de04485 (.)
 ### Fase 3: Risoluzione
 Scegliere una delle seguenti strategie:
 
@@ -217,6 +229,7 @@ namespace Modules\NomeModulo\App\Filament;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 4. Testare il modulo in ambiente di sviluppo
 =======
@@ -227,6 +240,8 @@ namespace Modules\NomeModulo\App\Filament;
 4. Testare il modulo in ambiente di sviluppo 
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 9de04485 (.)
 <<<<<<< HEAD
 =======
 4. Testare il modulo in ambiente di sviluppo
@@ -247,12 +262,15 @@ namespace Modules\NomeModulo\App\Filament;
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 4. Testare il modulo in ambiente di sviluppo 
 >>>>>>> 337c5266 (.)
 =======
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9de04485 (.)
 
 ## Risoluzione di Casi Specifici
 
@@ -261,6 +279,7 @@ namespace Modules\NomeModulo\App\Filament;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -270,6 +289,8 @@ namespace Modules\NomeModulo\App\Filament;
 
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 9de04485 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -288,12 +309,15 @@ namespace Modules\NomeModulo\App\Filament;
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 337c5266 (.)
 =======
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9de04485 (.)
 1. Verificare la compatibilità con PHPStan
 2. Mantenere le annotazioni PHPDoc complete
 3. Seguire le convenzioni di namespace
@@ -304,6 +328,7 @@ namespace Modules\NomeModulo\App\Filament;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -313,6 +338,8 @@ namespace Modules\NomeModulo\App\Filament;
 
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 9de04485 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -331,12 +358,15 @@ namespace Modules\NomeModulo\App\Filament;
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 337c5266 (.)
 =======
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9de04485 (.)
 1. In genere, mantenere entrambe le versioni
 2. Organizzare il contenuto in modo logico
 3. Aggiornare tutti i collegamenti
@@ -346,6 +376,7 @@ namespace Modules\NomeModulo\App\Filament;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -355,6 +386,8 @@ namespace Modules\NomeModulo\App\Filament;
 
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 9de04485 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -373,12 +406,15 @@ namespace Modules\NomeModulo\App\Filament;
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 337c5266 (.)
 =======
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9de04485 (.)
 1. Confrontare attentamente le configurazioni
 2. Verificare l'impatto delle modifiche
 3. Documentare le decisioni prese
@@ -398,6 +434,7 @@ Il progetto include alcuni script per facilitare la gestione dei conflitti:
 - [Convenzioni Namespace](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/NAMESPACE-CONVENTIONS.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 85c5198c (.)
@@ -411,3 +448,8 @@ Il progetto include alcuni script per facilitare la gestione dei conflitti:
 =======
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
+=======
+
+=======
+>>>>>>> 574afe9e (.)
+>>>>>>> 9de04485 (.)

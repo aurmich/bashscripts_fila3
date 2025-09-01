@@ -108,9 +108,12 @@ sudo update-alternatives --config php
 ```
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9de04485 (.)
 
 ## 🔄 Se menù o altri elementi frontend non si aggiornano
 ```bash
@@ -118,8 +121,11 @@ sudo update-alternatives --config php
 composer go
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 337c5266 (.)
 =======
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9de04485 (.)

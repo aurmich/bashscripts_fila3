@@ -61,6 +61,7 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
@@ -73,14 +74,19 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 9de04485 (.)
 <<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
 =======
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9de04485 (.)
 ## Casi d'Uso Avanzati
 
 ### 1. Risoluzione Selettiva
@@ -88,6 +94,7 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 337c5266 (.)
@@ -96,10 +103,13 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 =======
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9de04485 (.)
 ### 2. Integrazione con Git Hooks
 Lo script può essere integrato con Git hooks per verificare automaticamente la presenza di conflitti prima del commit:
 
 ```bash
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -116,6 +126,8 @@ Lo script può essere integrato con Git hooks per verificare automaticamente la 
 
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 9de04485 (.)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -133,12 +145,15 @@ Lo script può essere integrato con Git hooks per verificare automaticamente la 
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 337c5266 (.)
 =======
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9de04485 (.)
 # .git/hooks/pre-commit
 #!/bin/bash
 ```

@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questa documentazione descrive gli script e le procedure utilizzate per verificare e migliorare la qualità del codice nel progetto Laravel.
 
 ## Panoramica
@@ -626,6 +627,8 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 >>>>>>> 337c5266 (.)
 =======
 =======
+=======
+>>>>>>> 9de04485 (.)
 Questa documentazione descrive gli script e le procedure utilizzate per verificare e migliorare la qualità del codice nel progetto Laravel.
 
 ## Panoramica
@@ -956,6 +959,10 @@ git checkout HEAD -- storage/quality-reports/
 ---
 
 *Ultimo aggiornamento: Agosto 2025*  
+<<<<<<< HEAD
 *Versione: 2.1.0*
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
+=======
+*Versione: 2.1.0*
+>>>>>>> 9de04485 (.)
