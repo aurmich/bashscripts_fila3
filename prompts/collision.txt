@@ -105,6 +105,7 @@ Risolvere tutti i conflitti Git presenti nel progetto mediante analisi manuale a
 # Trova tutti i file con conflitti Git
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -142,6 +143,9 @@ git diff --name-only --diff-filter=U
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+
+>>>>>>> e1b46df35 (.)
 ```
 
 **Criteri di priorità:**
@@ -376,6 +380,7 @@ Al termine del processo, fornire:
 # Trova file con conflitti Git
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -418,6 +423,11 @@ git diff --name-only --diff-filter=U
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+
+
+# Lista file con conflitti per tipo
+>>>>>>> e1b46df35 (.)
 ```
 
 ### Verifica PHPStan
@@ -562,6 +572,7 @@ class PredictResource extends XotBaseResource // Sempre estendere XotBase
 Dentro le cartelle docs , i files e le sottocartelle non devono contenere caratteri maiuscoli ad eccezzione di README.md
 Procedi a risolvere tutti i conflitti git nei file PHP rilevati, uno dopo l’altro, senza chiedere nulla e senza fermarmi !
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 3c18aa7e (.)
 =======
 >>>>>>> 574afe9e (.)
@@ -573,3 +584,5 @@ Procedi a risolvere tutti i conflitti git nei file PHP rilevati, uno dopo l’al
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)

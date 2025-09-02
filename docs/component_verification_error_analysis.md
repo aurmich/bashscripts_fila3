@@ -122,6 +122,7 @@ name('login');
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 =======
@@ -153,6 +154,8 @@ name('login');
 >>>>>>> 3c18aa7e (.)
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)
 # Verifica componenti nel progetto
 find resources/views/components -name "*.blade.php" | head -20
 
@@ -170,6 +173,7 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 =======
@@ -201,6 +205,8 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 >>>>>>> 3c18aa7e (.)
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)
 # Test componente
 php artisan view:clear
 php artisan config:clear
@@ -261,6 +267,7 @@ L'errore è stato causato da:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -295,3 +302,6 @@ L'errore è stato causato da:
 >>>>>>> 3c18aa7e (.)
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+*Priorità: CRITICA* 
+>>>>>>> e1b46df35 (.)

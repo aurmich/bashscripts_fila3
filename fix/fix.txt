@@ -108,6 +108,7 @@ sudo update-alternatives --config php
 ```
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -130,3 +131,5 @@ composer go
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)

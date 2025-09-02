@@ -2,12 +2,15 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 85c5198c (.)
 =======
 <<<<<<< HEAD
 >>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)
 Questa documentazione descrive gli script utilizzati per verificare e migliorare la qualità del codice nel progetto.
 
 ## check_form_schema.php
@@ -174,6 +177,10 @@ XotBaseResource Classes Form Schema Check
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> e1b46df35 (.)
 # Script di Verifica della Qualità del Codice
 
 Questa documentazione descrive gli script utilizzati per verificare e migliorare la qualità del codice nel progetto.
@@ -231,6 +238,10 @@ XotBaseResource Classes Form Schema Check
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 
+<<<<<<< HEAD
+=======
+>>>>>>> f000df5 (.)
+>>>>>>> e1b46df35 (.)
 # Script di Verifica della Qualità del Codice
 
 Questa documentazione descrive gli script utilizzati per verificare e migliorare la qualità del codice nel progetto.
@@ -288,12 +299,20 @@ XotBaseResource Classes Form Schema Check
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 
+<<<<<<< HEAD
 ### phpstan_docs_generator.sh 
 
+=======
+=======
+>>>>>>> 4d4d6cb7 (.)
+### phpstan_docs_generator.sh 
+=======
+>>>>>>> e1b46df35 (.)
 ## Risorse Utili
 - [PHPStan](https://phpstan.org/)
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data/v4/introduction)
 - [CI/CD Best Practices](https://docs.github.com/en/actions/guides/building-and-testing-php) 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -639,3 +658,6 @@ git checkout HEAD -- storage/quality-reports/
 *Versione: 2.1.0*
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+>>>>>>> d83fe8da (.)
+>>>>>>> e1b46df35 (.)

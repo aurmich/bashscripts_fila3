@@ -357,6 +357,7 @@ bashscripts/update-doc-links.sh       # Aggiorna collegamenti
 **Nota:** Ogni variazione a questa policy va documentata sia nella root che nel modulo coinvolto, con motivazione e collegamenti aggiornati.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -396,3 +397,5 @@ dentro le cartelle "docs" ne i nomi dei files ne i nomi delle sottocartelle di "
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)

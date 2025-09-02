@@ -81,6 +81,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> d20d0523 (.)
@@ -134,6 +135,8 @@
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)
 # Verifica componenti nel progetto
 find resources/views/components -name "*.blade.php"
 
@@ -153,6 +156,7 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> d20d0523 (.)
@@ -206,6 +210,8 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)
 # Test componente
 php artisan view:clear
 php artisan config:clear
@@ -295,6 +301,7 @@ name('login');
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 85c5198c (.)
 =======
@@ -351,11 +358,15 @@ name('login');
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+# ERRATO: Non testare
+>>>>>>> e1b46df35 (.)
 # Usare componente senza test
 
 # CORRETTO: Testare sempre
 php artisan view:clear
 php artisan config:clear
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -414,6 +425,8 @@ php artisan config:clear
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)
 # Testare componente
 ```
 
@@ -449,6 +462,7 @@ L'errore è stato causato da:
 
 *Regole aggiornate il: $(date)*
 *Stato: Regole critiche definite*
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -496,3 +510,6 @@ L'errore è stato causato da:
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+*Priorità: CRITICA* 
+>>>>>>> e1b46df35 (.)

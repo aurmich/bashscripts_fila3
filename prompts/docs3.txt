@@ -464,6 +464,7 @@ Ogni documento deve avere collegamenti ai documenti correlati:
 **Cross-references:** docs1.txt, docs2.txt, docs4.txt
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -503,3 +504,5 @@ dentro le cartelle "docs" ne i nomi dei files ne i nomi delle sottocartelle di "
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)

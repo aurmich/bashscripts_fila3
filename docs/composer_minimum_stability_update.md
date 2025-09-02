@@ -134,6 +134,7 @@ I seguenti file avevano già `"minimum-stability": "dev"`:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> d20d0523 (.)
@@ -179,6 +180,8 @@ I seguenti file avevano già `"minimum-stability": "dev"`:
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)
 # Verifica configurazione
 composer config --list | grep minimum-stability
 
@@ -239,6 +242,7 @@ composer check-platform-reqs
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> d20d0523 (.)
@@ -284,6 +288,8 @@ composer check-platform-reqs
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)
 # Abilita debug composer
 composer update -vvv
 
@@ -310,6 +316,7 @@ La configurazione mantiene `"prefer-stable": true` per garantire stabilità quan
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -344,3 +351,6 @@ La configurazione mantiene `"prefer-stable": true` per garantire stabilità quan
 >>>>>>> 3c18aa7e (.)
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+*Totale file verificati: 22* 
+>>>>>>> e1b46df35 (.)

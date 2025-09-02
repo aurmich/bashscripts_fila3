@@ -45,6 +45,7 @@ La risoluzione manuale dei conflitti negli script bash è particolarmente delica
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -71,6 +72,8 @@ La risoluzione manuale dei conflitti negli script bash è particolarmente delica
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)
 # Versione avanzata con livelli di log
 log() {
     local level="$1"
@@ -98,6 +101,7 @@ log() {
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -124,6 +128,8 @@ log() {
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)
 # Funzione avanzata per loggare messaggi che supporta entrambi i formati
 log() {
     # Supporta sia il formato avanzato con livelli che il formato semplice
@@ -154,6 +160,7 @@ log() {
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -180,6 +187,8 @@ log() {
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)
 # Versione che richiede 2 parametri
 if [ $# -ne 2 ]; then
     echo "Usage: $0 <path> <remote_repo>"
@@ -205,6 +214,7 @@ BRANCH="$3"
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -231,6 +241,8 @@ BRANCH="$3"
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)
 # Versione che supporta 2 o 3 parametri
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     echo "Usage: $0 <path> <remote_repo> [branch]"

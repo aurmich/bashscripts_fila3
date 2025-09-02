@@ -834,6 +834,7 @@ protected function casts(): array
 **Autore**: Analisi approfondita del codice Laraxot
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -873,3 +874,5 @@ dentro le cartelle "docs" ne i nomi dei files ne i nomi delle sottocartelle di "
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)

@@ -190,6 +190,7 @@ I seguenti file sono stati recentemente risolti:
 [Backlink: git_conflicts_resolution.md](git_conflicts_resolution.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -215,6 +216,8 @@ I seguenti file sono stati recentemente risolti:
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)
 ### fix_structure.sh
 
 Mantenere la versione più avanzata con funzioni di logging colorate, migliorando:
@@ -284,6 +287,7 @@ I seguenti file sono stati recentemente risolti:
 Questa documentazione è collegata bidirezionalmente con la [documentazione principale sulla risoluzione dei conflitti](../../docs/bashscripts_conflict_resolution.md) nella root del progetto. 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -311,6 +315,9 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+=======
+>>>>>>> e1b46df35 (.)
 #### Utilizzo
 ```bash
 ./bashscripts/utils/conflict_analyzer.sh
@@ -328,6 +335,7 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -353,6 +361,8 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)
 # Trova tutti i file con conflitti
 ./bashscripts/git/find_conflicts.sh
 ```
@@ -361,6 +371,7 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -386,6 +397,8 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)
 # Analizza i conflitti trovati
 ./bashscripts/utils/conflict_analyzer.sh
 ```
@@ -394,6 +407,7 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -419,6 +433,8 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)
 # Risolvi manualmente i conflitti più critici
 ./bashscripts/utils/resolve_conflicts.sh [file_critico]
 ```
@@ -427,6 +443,7 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -452,6 +469,8 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)
 # Risolvi automaticamente i conflitti rimanenti meno critici
 ./bashscripts/utils/fix_all_git_conflicts.sh
 ```
@@ -490,6 +509,7 @@ Gli script possono essere migliorati e personalizzati. Per contribuire:
 # =======================
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -524,11 +544,14 @@ Gli script possono essere migliorati e personalizzati. Per contribuire:
 =======
 =======
 >>>>>>> 574afe9e (.)
+=======
+>>>>>>> e1b46df35 (.)
 # Nome dello script
 # =======================
 # Descrizione: Breve descrizione dello script
 # Utilizzo: ./path/to/script.sh [argomenti]
 # Autore: Nome dell'autore
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 3c18aa7e (.)
 =======
@@ -541,6 +564,8 @@ Gli script possono essere migliorati e personalizzati. Per contribuire:
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)
 # =======================
 
 # Dichiarazione delle costanti e variabili
@@ -560,6 +585,7 @@ Quando un `git pull` fallisce a causa di conflitti:
 git pull origin main
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -585,6 +611,8 @@ git pull origin main
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)
 # Conflitti rilevati
 ./bashscripts/utils/conflict_analyzer.sh
 ./bashscripts/utils/resolve_conflicts.sh [file_conflittuale]
@@ -596,6 +624,7 @@ Prima di eseguire un commit, verificare l'assenza di conflitti:
 ./bashscripts/git/find_conflicts.sh
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -621,6 +650,8 @@ Prima di eseguire un commit, verificare l'assenza di conflitti:
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)
 # Se vengono trovati conflitti, risolverli
 git add .
 git commit -m "Messaggio del commit"
@@ -654,6 +685,7 @@ Per pulire un repository con molti conflitti non risolti:
 - [Risoluzione Conflitti nei Moduli](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/conflitti_merge_risolti.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -676,3 +708,6 @@ Per pulire un repository con molti conflitti non risolti:
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+>>>>>>> d83fe8da (.)
+>>>>>>> e1b46df35 (.)
