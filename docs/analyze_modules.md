@@ -109,6 +109,7 @@ Modules/<NomeModulo>/docs/phpstan/
    - Directory non trovata
    - Permessi insufficienti
    - PHPStan non installato
+<<<<<<< HEAD
 =======
 =======
 =======
@@ -119,6 +120,13 @@ Modules/<NomeModulo>/docs/phpstan/
 >>>>>>> d20d0523 (.)
 =======
 >>>>>>> f71d08e230 (.)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 574afe9e (.)
+>>>>>>> 7de7063d (.)
 
 ## Gestione dei Conflitti
 In caso di conflitti durante l'analisi dei moduli:
@@ -152,7 +160,14 @@ In caso di conflitti durante l'analisi dei moduli:
 
 ## Pattern di Risoluzione Errori
 Durante l'analisi PHPStan potrebbero emergere errori ricorrenti. Ecco le soluzioni più comuni:
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> 9c02579 (.)
+=======
+>>>>>>> 574afe9e (.)
+>>>>>>> 7de7063d (.)
 
 =======
 >>>>>>> 85c5198c (.)

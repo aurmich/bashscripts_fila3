@@ -76,6 +76,11 @@
 
 ### 1. Verifica Componenti Esistenti
 ```bash
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 7de7063d (.)
 =======
 =======
 
@@ -89,6 +94,7 @@
 >>>>>>> 9c02579 (.)
 =======
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 
 =======
 >>>>>>> 59901687 (.)
@@ -106,6 +112,8 @@
 =======
 >>>>>>> e1b46df35 (.)
 >>>>>>> f71d08e230 (.)
+=======
+>>>>>>> 7de7063d (.)
 # Verifica componenti nel progetto
 find resources/views/components -name "*.blade.php"
 
@@ -120,6 +128,11 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 
 ### 3. Test in Sviluppo
 ```bash
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 7de7063d (.)
 =======
 =======
 
@@ -133,6 +146,7 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 >>>>>>> 9c02579 (.)
 =======
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 
 =======
 >>>>>>> 59901687 (.)
@@ -150,6 +164,8 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 =======
 >>>>>>> e1b46df35 (.)
 >>>>>>> f71d08e230 (.)
+=======
+>>>>>>> 7de7063d (.)
 # Test componente
 php artisan view:clear
 php artisan config:clear
@@ -232,11 +248,16 @@ name('login');
 
 ### 3. Non Testare in Sviluppo
 ```bash
+<<<<<<< HEAD
 =======
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> d20d0523 (.)
 >>>>>>> f71d08e230 (.)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 7de7063d (.)
 
 # ERRATO: Non testare
 
@@ -251,6 +272,7 @@ name('login');
 =======
 # ERRATO: Non testare
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 
 # ERRATO: Non testare
 
@@ -271,11 +293,18 @@ name('login');
 # ERRATO: Non testare
 >>>>>>> e1b46df35 (.)
 >>>>>>> f71d08e230 (.)
+=======
+>>>>>>> 7de7063d (.)
 # Usare componente senza test
 
 # CORRETTO: Testare sempre
 php artisan view:clear
 php artisan config:clear
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 7de7063d (.)
 =======
 =======
 
@@ -289,6 +318,7 @@ php artisan config:clear
 >>>>>>> 9c02579 (.)
 =======
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 
 =======
 >>>>>>> 59901687 (.)
@@ -306,6 +336,8 @@ php artisan config:clear
 =======
 >>>>>>> e1b46df35 (.)
 >>>>>>> f71d08e230 (.)
+=======
+>>>>>>> 7de7063d (.)
 # Testare componente
 ```
 
@@ -341,6 +373,7 @@ L'errore è stato causato da:
 
 *Regole aggiornate il: $(date)*
 *Stato: Regole critiche definite*
+<<<<<<< HEAD
 *Priorità: CRITICA* 
 =======
 =======
@@ -370,3 +403,13 @@ L'errore è stato causato da:
 *Priorità: CRITICA* 
 >>>>>>> e1b46df35 (.)
 >>>>>>> f71d08e230 (.)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+*Priorità: CRITICA* 
+>>>>>>> 3c18aa7e (.)
+=======
+*Priorità: CRITICA*
+>>>>>>> 574afe9e (.)
+>>>>>>> 7de7063d (.)
