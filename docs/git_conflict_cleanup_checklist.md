@@ -3,7 +3,12 @@
 Questo file contiene l'elenco di tutti i file che contengono marcatori di conflitto Git (">>>>>>>") che devono essere risolti.
 =======
 Questo file contiene l'elenco di tutti i file che contengono marcatori di conflitto Git che devono essere risolti.
+<<<<<<< HEAD
 >>>>>>> 04d882f8f6 (.)
+=======
+=======
+Questo file contiene l'elenco di tutti i file che contengono marcatori di conflitto Git che devono essere risolti.
+>>>>>>> f52d0712 (.)
 
 **Data creazione**: 2025-07-30  
 **Stato**: In corso

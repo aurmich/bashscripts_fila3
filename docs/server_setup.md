@@ -1,7 +1,13 @@
 =======
 
 
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+
+
+>>>>>>> f52d0712 (.)
 # Setup del Progetto Laravel
 
 Questo documento contiene la documentazione dettagliata dei comandi utilizzati per il setup di un progetto Laravel, insieme a spiegazioni, consigli e note per migliorare il processo.
@@ -26,7 +32,12 @@ Questo documento contiene la documentazione dettagliata dei comandi utilizzati p
 ```bash
 =======
 
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 # Verifica versione PHP
 php -v
 
@@ -90,7 +101,12 @@ sudo add-apt-repository ppa:ondrej/php
 ```bash
 =======
 
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 # Naviga nella directory del progetto
 cd laravel
 
@@ -122,14 +138,22 @@ php artisan key:generate
   APP_NAME=<nome progetto>
  80ec88ee9 (.)
 =======
+<<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
+=======
+=======
+>>>>>>> f52d0712 (.)
 =======
 
   APP_NAME=<nome progetto>
 
   APP_NAME=SaluteOra
  80ec88ee9 (.)
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+>>>>>>> f52d0712 (.)
   APP_ENV=local
   APP_DEBUG=true
   APP_URL=http://localhost
@@ -390,7 +414,12 @@ git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerl
 ```bash
 =======
 
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 # Modifica il file ~/.zshrc
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ```
@@ -529,7 +558,12 @@ sudo apt-get install --install-recommends webmin usermin
 ```bash
 =======
 
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 # Naviga nella directory del progetto
 cd laravel
 
@@ -2095,12 +2129,20 @@ FLUSH PRIVILEGES;
 
 # Esci
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> f52d0712 (.)
 mysql -u root -p
 CREATE DATABASE nome_database CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 CREATE USER 'nome_utente'@'localhost' IDENTIFIED BY 'password_sicura';
 GRANT ALL PRIVILEGES ON nome_database.* TO 'nome_utente'@'localhost';
 FLUSH PRIVILEGES;
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> f52d0712 (.)
 ### Creazione Database SQLite
 ```bash
 
@@ -3491,7 +3533,11 @@ FLUSH PRIVILEGES;
 
 
 # Esci
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+>>>>>>> f52d0712 (.)
 EXIT;
 ```
 
@@ -3648,6 +3694,10 @@ php artisan migrate
 - Testare la connessione al database
 - Controllare la configurazione di PHP
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> f52d0712 (.)
 - Sostituire `nome_database`, `nome_utente` e `password_sicura` con valori reali
 - Conservare le credenziali in modo sicuro
 
@@ -3659,6 +3709,10 @@ php artisan migrate
 - Monitorare costantemente le performance del server
 - Aggiornare regolarmente sistema e dipendenze
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> f52d0712 (.)
 - Crea un nuovo database per il progetto Laravel
 - Configura un utente dedicato con i permessi necessari
 - Imposta il charset e la collation corretti
@@ -3862,7 +3916,11 @@ php artisan migrate
 - Verificare i permessi dei file
 - Testare la connessione al database
 - Controllare la configurazione di PHP
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+>>>>>>> f52d0712 (.)
 
 ## Conclusioni
 
@@ -3905,7 +3963,12 @@ sudo systemctl start redis-server
 ```ini
 =======
 
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 # /etc/redis/redis.conf
 maxmemory 256mb
 maxmemory-policy allkeys-lru
@@ -3933,7 +3996,12 @@ maxmemory-policy allkeys-lru
 ```apache
 =======
 
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 # /etc/apache2/mods-available/mpm_prefork.conf
 <IfModule mpm_prefork_module>
     StartServers 5
@@ -3948,7 +4016,12 @@ maxmemory-policy allkeys-lru
 ```bash
 =======
 
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 # Disabilita il modulo PHP 8.2
 sudo a2dismod php8.2
 
@@ -4193,7 +4266,14 @@ aurmich/dev
 
   ```
 =======
+<<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
 =======
  43df3e0 (.)
 >>>>>>> f71d08e230 (.)
+=======
+=======
+ 43df3e0 (.)
+=======
+ 43df3e0 (.)
+>>>>>>> f52d0712 (.)

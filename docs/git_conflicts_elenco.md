@@ -5,7 +5,14 @@ Questo file contiene l'elenco di tutti i file che contengono marcatori di confli
 # Elenco File con Marcatori di Conflitto Git 
 
 Questo file contiene l'elenco di tutti i file che contengono marcatori di conflitto Git  che devono essere controllati e risolti.
+<<<<<<< HEAD
 >>>>>>> 04d882f8f6 (.)
+=======
+=======
+# Elenco File con Marcatori di Conflitto Git 
+
+Questo file contiene l'elenco di tutti i file che contengono marcatori di conflitto Git  che devono essere controllati e risolti.
+>>>>>>> f52d0712 (.)
 
 ## File con Marcatori di Conflitto
 
@@ -13,7 +20,12 @@ Questo file contiene l'elenco di tutti i file che contengono marcatori di confli
 I seguenti file contengono ">>>>>>>" come parte di documentazione o esempi, NON come conflitti reali:
 =======
 I seguenti file contengono  come parte di documentazione o esempi, NON come conflitti reali:
+<<<<<<< HEAD
 >>>>>>> 04d882f8f6 (.)
+=======
+=======
+I seguenti file contengono  come parte di documentazione o esempi, NON come conflitti reali:
+>>>>>>> f52d0712 (.)
 
 - `bashscripts/utils/resolve_conflicts.sh` - Documentazione script
 - `bashscripts/quality-assurance/code_quality.md` - Esempi di conflitti
@@ -58,7 +70,12 @@ I seguenti file potrebbero contenere conflitti reali che necessitano di attenzio
 - **Totale file con ">>>>>>>" markers: 21**
 =======
 - **Totale file con  markers: 21**
+<<<<<<< HEAD
 >>>>>>> 04d882f8f6 (.)
+=======
+=======
+- **Totale file con  markers: 21**
+>>>>>>> f52d0712 (.)
 - **File con conflitti reali potenziali: 0** ✅ TUTTI VERIFICATI
 - **File di documentazione/esempi: 21** ✅ TUTTI VERIFICATI
 
@@ -75,8 +92,13 @@ I seguenti file potrebbero contenere conflitti reali che necessitano di attenzio
 
 Tutti i 21 file che contengono la stringa ">>>>>>>" sono file di documentazione o script che utilizzano questi marcatori come esempi o documentazione. Nessun file contiene conflitti Git non risolti.
 =======
+<<<<<<< HEAD
 Tutti i 21 file che contengono la stringa  sono file di documentazione o script che utilizzano questi marcatori come esempi o documentazione. Nessun file contiene conflitti Git non risolti.
 >>>>>>> 04d882f8f6 (.)
+=======
+=======
+Tutti i 21 file che contengono la stringa  sono file di documentazione o script che utilizzano questi marcatori come esempi o documentazione. Nessun file contiene conflitti Git non risolti.
+>>>>>>> f52d0712 (.)
 
 ---
 *Ultimo aggiornamento: $(date)*

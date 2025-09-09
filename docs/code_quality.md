@@ -29,6 +29,10 @@ Esempio di output:
 =======
 =======
 Esempio di output:
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> f52d0712 (.)
 ```
 XotBaseResource Classes Form Schema Check
 ====
@@ -139,9 +143,14 @@ php bashscripts/check_form_schema.php
 ```
 
 ### Output
+<<<<<<< HEAD
 >>>>>>> f1e7ef1046 (.)
 Il comando genererà un output simile a:
 >>>>>>> 04d882f8f6 (.)
+=======
+=======
+Il comando genererà un output simile a:
+>>>>>>> f52d0712 (.)
 ```
 XotBaseResource Classes Form Schema Check
 ====
@@ -170,6 +179,7 @@ XotBaseResource Classes Form Schema Check
 
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
+<<<<<<< HEAD
 =======
 =======
 =======
@@ -195,6 +205,16 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+
+=======
+=======
+
+=======
+=======
+=======
+=======
+>>>>>>> f52d0712 (.)
 # Script di Verifica della Qualità del Codice
 
 Questa documentazione descrive gli script utilizzati per verificare e migliorare la qualità del codice nel progetto.
@@ -216,7 +236,10 @@ bashscripts/check_form_schema.php
 - Genera un report delle classi che non implementano il metodo
 - Crea un log di documentazione con i risultati
 =======
+<<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
+=======
+>>>>>>> f52d0712 (.)
 Il comando genererà un output simile a:
 ```
 XotBaseResource Classes Form Schema Check
@@ -246,6 +269,7 @@ XotBaseResource Classes Form Schema Check
 
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -262,6 +286,15 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 >>>>>>> 574afe9e (.)
 >>>>>>> 7de7063d (.)
 
+=======
+
+=======
+=======
+
+=======
+
+=======
+>>>>>>> f52d0712 (.)
 # Script di Verifica della Qualità del Codice
 
 Questa documentazione descrive gli script utilizzati per verificare e migliorare la qualità del codice nel progetto.
@@ -435,10 +468,15 @@ XotBaseResource Classes Form Schema Check
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 
+<<<<<<< HEAD
 >>>>>>> f000df5 (.)
 =======
 
 >>>>>>> 0c55086029 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 # Script di Verifica della Qualità del Codice
 
 Questa documentazione descrive gli script utilizzati per verificare e migliorare la qualità del codice nel progetto.
@@ -500,20 +538,31 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 =======
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> 0c55086029 (.)
+=======
+>>>>>>> f52d0712 (.)
 ## Risorse Utili
 - [PHPStan](https://phpstan.org/)
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data/v4/introduction)
 - [CI/CD Best Practices](https://docs.github.com/en/actions/guides/building-and-testing-php) 
+<<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
 =======
 
 >>>>>>> 0c55086029 (.)
 =======
+=======
+
+>>>>>>> f52d0712 (.)
+=======
 ## PHPStan
 
 Per mantenere alta la qualità del codice, utilizziamo PHPStan per l'analisi statica. 
+<<<<<<< HEAD
 >>>>>>> 04d882f8f6 (.)
+=======
+>>>>>>> f52d0712 (.)
 =======
 
 ### Uso
@@ -556,6 +605,7 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 =======
 =======
 
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
 =======
@@ -574,6 +624,21 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+=======
+
+=======
+=======
+
+=======
+=======
+
+=======
+
+=======
+
+
+>>>>>>> f52d0712 (.)
 # Script di Verifica della Qualità del Codice
 
 Questa documentazione descrive gli script utilizzati per verificare e migliorare la qualità del codice nel progetto.
@@ -635,6 +700,11 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 - [PHPStan](https://phpstan.org/)
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data/v4/introduction)
 - [CI/CD Best Practices](https://docs.github.com/en/actions/guides/building-and-testing-php) 
+<<<<<<< HEAD
 >>>>>>> f1e7ef1046 (.)
 =======
 >>>>>>> f71d08e230 (.)
+=======
+=======
+=======
+>>>>>>> f52d0712 (.)

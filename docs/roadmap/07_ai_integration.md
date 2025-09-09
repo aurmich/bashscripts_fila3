@@ -10,7 +10,11 @@ aurmich/dev
 
 aurmich/dev
 =======
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+>>>>>>> f52d0712 (.)
 # 🤖 Fase 7: AI Integration
 
 ## 📋 Panoramica
@@ -143,7 +147,12 @@ aurmich/dev
 - Monitoraggio continuo
 =======
 
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 # 🤖 Fase 7: AI Integration
 
 ## 📋 Panoramica
@@ -275,7 +284,12 @@ Questa fase si concentra sull'integrazione di tecnologie di Intelligenza Artific
 aurmich/dev
 =======
 
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 # 🤖 Fase 7: AI Integration
 
 ## 📋 Panoramica
@@ -661,7 +675,12 @@ Questa fase si concentra sull'integrazione di tecnologie di Intelligenza Artific
  43df3e0 (.)
 =======
 
+<<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 aurmich/dev
 
 ## Collegamenti tra versioni di 07_ai_integration.md

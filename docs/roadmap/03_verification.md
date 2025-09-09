@@ -6,7 +6,12 @@
 aurmich/dev
 =======
 
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -105,7 +110,12 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 - Monitoraggio performance
 =======
 
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -211,7 +221,11 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
 =======
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+>>>>>>> f52d0712 (.)
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -310,7 +324,12 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 - Monitoraggio performance
 =======
 
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -411,7 +430,12 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
 =======
 
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -713,7 +737,12 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 aurmich/dev
 =======
 
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -914,7 +943,12 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
  43df3e0 (.)
 =======
 
+<<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 aurmich/dev
 
 ## Collegamenti tra versioni di 03_verification.md

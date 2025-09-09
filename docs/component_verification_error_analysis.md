@@ -119,6 +119,24 @@ name('login');
 
 ### 1. Verifica Componenti Esistenti
 ```bash
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> f198176d (.)
+=======
+>>>>>>> f52d0712 (.)
 =======
 
 =======
@@ -140,6 +158,15 @@ name('login');
 =======
 >>>>>>> e1b46df35 (.)
 >>>>>>> f71d08e230 (.)
+<<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
+=======
+
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 42ab2308 (.)
+>>>>>>> f52d0712 (.)
 # Verifica componenti nel progetto
 find resources/views/components -name "*.blade.php" | head -20
 
@@ -154,6 +181,24 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 
 ### 3. Test in Sviluppo
 ```bash
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> f198176d (.)
+=======
+>>>>>>> f52d0712 (.)
 =======
 
 =======
@@ -175,6 +220,15 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 =======
 >>>>>>> e1b46df35 (.)
 >>>>>>> f71d08e230 (.)
+<<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
+=======
+
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 42ab2308 (.)
+>>>>>>> f52d0712 (.)
 # Test componente
 php artisan view:clear
 php artisan config:clear
@@ -232,6 +286,24 @@ L'errore è stato causato da:
 
 *Analisi completata il: $(date)*
 *Stato: Errore critico identificato*
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+*Priorità: CRITICA* 
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 59901687 (.)
+=======
+*Priorità: CRITICA* 
+>>>>>>> 3c18aa7e (.)
+>>>>>>> f198176d (.)
+=======
+>>>>>>> f52d0712 (.)
 *Priorità: CRITICA* 
 =======
 *Priorità: CRITICA* 
@@ -256,3 +328,12 @@ L'errore è stato causato da:
 *Priorità: CRITICA* 
 >>>>>>> e1b46df35 (.)
 >>>>>>> f71d08e230 (.)
+<<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
+=======
+=======
+*Priorità: CRITICA* 
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 42ab2308 (.)
+>>>>>>> f52d0712 (.)

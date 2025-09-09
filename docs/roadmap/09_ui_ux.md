@@ -10,7 +10,11 @@ aurmich/dev
 
 aurmich/dev
 =======
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+>>>>>>> f52d0712 (.)
 # 📱 Fase 9: UI/UX
 
 ## 📋 Panoramica
@@ -142,7 +146,12 @@ aurmich/dev
 - Monitoraggio utilizzo
 =======
 
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 # 📱 Fase 9: UI/UX
 
 ## 📋 Panoramica
@@ -273,7 +282,12 @@ Questa fase si concentra sullo sviluppo di interfacce utente moderne e intuitive
 aurmich/dev
 =======
 
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 # 📱 Fase 9: UI/UX
 
 ## 📋 Panoramica
@@ -656,7 +670,12 @@ Questa fase si concentra sullo sviluppo di interfacce utente moderne e intuitive
  43df3e0 (.)
 =======
 
+<<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 aurmich/dev
 
 ## Collegamenti tra versioni di 09_ui_ux.md

@@ -128,7 +128,12 @@
 - [Fase 8: Cloud Integration](./roadmap/08_cloud_integration.md)
 =======
 
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 # 🗺️ Roadmap del Progetto
 
 ## 📋 Indice delle Fasi
@@ -255,7 +260,12 @@
  43df3e0 (.)
 =======
 
+<<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 aurmich/dev
 
 # Roadmap Progetto

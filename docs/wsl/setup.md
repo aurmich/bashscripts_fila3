@@ -725,7 +725,12 @@ ssh-add ~/.ssh/id_ed25519
 ```bash
 =======
 
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 # Riavviare tutti i servizi
 sudo service mysql restart
 sudo service php8.2-fpm restart

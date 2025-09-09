@@ -57,10 +57,17 @@ La soluzione ottimale è mantenere la versione che accetta 3 parametri, ma con g
 
 source ./bashscripts/lib/custom.sh
 =======
+<<<<<<< HEAD
 >>>>>>> f1e7ef1046 (.)
 =======
 
 >>>>>>> f71d08e230 (.)
+=======
+=======
+
+=======
+
+>>>>>>> f52d0712 (.)
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     log "error" "Parametri errati"
@@ -183,7 +190,12 @@ La soluzione ottimale è mantenere la versione che accetta 3 parametri, ma con g
 source ./bashscripts/lib/custom.sh
 =======
 
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     log "error" "Parametri errati"
@@ -334,9 +346,14 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 ## Collegamenti tra versioni di git_subtree_conflicts.md
 * [risoluzione_conflitti_git.md](../../docs/risoluzione_conflitti_git.md)
 * [git_subtree_conflicts.md](git_subtree_conflicts.md)
+<<<<<<< HEAD
 >>>>>>> 04d882f8f6 (.)
 =======
 >>>>>>> f1e7ef1046 (.)
+=======
+=======
+=======
+>>>>>>> f52d0712 (.)
 
 ## Problema
 
@@ -471,10 +488,17 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 =======
 =======
 5338a990 (.)
+<<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
 =======
 5338a990 (.)
 >>>>>>> f1e7ef1046 (.)
+=======
+=======
+5338a990 (.)
+=======
+5338a990 (.)
+>>>>>>> f52d0712 (.)
 # Risoluzione dei Conflitti negli Script Git Subtree
 
 ## Problema
@@ -739,14 +763,21 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione degli Script Git](git_scripts.md)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
 =======
+<<<<<<< HEAD
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 >>>>>>> f71d08e230 (.)
+=======
+=======
+>>>>>>> f52d0712 (.)
 # Risoluzione dei Conflitti negli Script Git Subtree
 =======
 f000df5 (.)
 
+<<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
+=======
+>>>>>>> f52d0712 (.)
 
 ## Problema
 
@@ -879,10 +910,15 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
 =======
 
+<<<<<<< HEAD
 >>>>>>> 0c55086029 (.)
 =======
 >>>>>>> f000df5 (.)
 >>>>>>> f1e7ef1046 (.)
+=======
+=======
+=======
+>>>>>>> f52d0712 (.)
 # Risoluzione dei Conflitti negli Script Git Subtree
 
 ## Problema
@@ -1015,6 +1051,7 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione degli Script Git](git_scripts.md)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
 =======
+<<<<<<< HEAD
 >>>>>>> 4d4d6cb7 (.)
 =======
 =======
@@ -1035,3 +1072,18 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 >>>>>>> f1e7ef1046 (.)
 =======
 >>>>>>> f71d08e230 (.)
+=======
+=======
+=======
+- [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md) 
+=======
+3. **Segnalazioni agli sviluppatori**: Informare gli sviluppatori delle modifiche alla firma dei metodi
+=======
+- [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md)
+- [Risoluzione Conflitti Git](../../docs/risoluzione_conflitti_git.md) 
+=======
+=======
+- [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md) 
+=======
+=======
+>>>>>>> f52d0712 (.)

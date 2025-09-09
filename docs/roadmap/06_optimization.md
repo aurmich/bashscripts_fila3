@@ -8,14 +8,20 @@
 
 aurmich/dev
 =======
+<<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
 =======
-
+=======
+=======
+>>>>>>> f52d0712 (.)
 =======
 
 =======
 
 =======
+
+=======
+<<<<<<< HEAD
 >>>>>>> 3c18aa7e (.)
 =======
 >>>>>>> 9de04485 (.)
@@ -28,6 +34,15 @@ aurmich/dev
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
 >>>>>>> f71d08e230 (.)
+=======
+=======
+=======
+=======
+=======
+=======
+
+=======
+>>>>>>> f52d0712 (.)
 # ⚡ Fase 6: Ottimizzazione
 
 ## 📋 Panoramica
@@ -133,6 +148,7 @@ Questa fase si concentra sull'ottimizzazione e il miglioramento continuo del sis
 =======
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> 9de04485 (.)
 =======
 =======
@@ -143,6 +159,16 @@ Questa fase si concentra sull'ottimizzazione e il miglioramento continuo del sis
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
 >>>>>>> f71d08e230 (.)
+=======
+=======
+=======
+=======
+=======
+=======
+=======
+=======
+=======
+>>>>>>> f52d0712 (.)
 - [Fase 7: Documentazione](../roadmap/07_documentation.md)
 
 ## 📅 Timeline
@@ -168,6 +194,7 @@ Questa fase si concentra sull'ottimizzazione e il miglioramento continuo del sis
 - Manutenzione
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
 =======
@@ -181,6 +208,14 @@ Questa fase si concentra sull'ottimizzazione e il miglioramento continuo del sis
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
 >>>>>>> f71d08e230 (.)
+=======
+=======
+=======
+=======
+=======
+=======
+=======
+>>>>>>> f52d0712 (.)
 
 
 [0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
@@ -276,6 +311,7 @@ aurmich/dev
 
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> 9de04485 (.)
 =======
 =======
@@ -285,6 +321,16 @@ aurmich/dev
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+=======
+=======
+=======
+=======
+=======
+=======
+=======
+=======
+>>>>>>> f52d0712 (.)
 [0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
 aurmich/dev
 
@@ -332,6 +378,7 @@ aurmich/dev
 
 
 =======
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
 =======
@@ -344,3 +391,11 @@ aurmich/dev
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+=======
+=======
+=======
+=======
+=======
+=======
+>>>>>>> f52d0712 (.)

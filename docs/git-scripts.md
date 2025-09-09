@@ -11,10 +11,17 @@ Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
 aurmich/dev
 =======
 Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
+<<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
 =======
 Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
 >>>>>>> f1e7ef1046 (.)
+=======
+=======
+Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
+=======
+Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
+>>>>>>> f52d0712 (.)
 
 ## Panoramica
 Questa documentazione descrive gli script bash utilizzati per la gestione dei subtree git nel progetto Laraxot.
@@ -67,9 +74,14 @@ Script per il pull di un singolo subtree. Caratteristiche:
 - `<remote_repo>`: L'URL del repository remoto
 aurmich/dev
 =======
+<<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
 =======
 >>>>>>> f1e7ef1046 (.)
+=======
+=======
+=======
+>>>>>>> f52d0712 (.)
 
 ### git_push_subtrees.sh
 Script per il push dei subtree. Funzionalità:
@@ -79,9 +91,14 @@ Script per il push dei subtree. Funzionalità:
 
 
 =======
+<<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
 =======
 >>>>>>> f1e7ef1046 (.)
+=======
+=======
+=======
+>>>>>>> f52d0712 (.)
 ### git_sync_subtree.sh
 Script ottimizzato per la sincronizzazione di un singolo subtree. Caratteristiche principali:
 1. Sistema avanzato di logging con timestamp e codici colore
@@ -135,9 +152,14 @@ Per una documentazione più generale sugli script di gestione Git, consultare la
 
 aurmich/dev
 =======
+<<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
 =======
 >>>>>>> f1e7ef1046 (.)
+=======
+=======
+=======
+>>>>>>> f52d0712 (.)
 ## Best Practices
 1. Utilizzare sempre `git_config_setup` per la configurazione
 2. Gestire i backup prima delle operazioni critiche
@@ -151,9 +173,14 @@ aurmich/dev
 
 
 =======
+<<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
 =======
 >>>>>>> f1e7ef1046 (.)
+=======
+=======
+=======
+>>>>>>> f52d0712 (.)
 ## Script di sincronizzazione repository remoti
 
 ### sync_remote_repo.sh
@@ -194,7 +221,12 @@ Questa strategia è generalmente migliore per ridurre i conflitti rispetto all'u
 
 aurmich/dev
 =======
+<<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
 =======
 >>>>>>> f1e7ef1046 (.)
+=======
+=======
+=======
+>>>>>>> f52d0712 (.)
 [Torna alla documentazione principale](../../docs/maintenance.md#git-management) 

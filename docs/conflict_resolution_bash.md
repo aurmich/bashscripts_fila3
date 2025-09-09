@@ -74,11 +74,19 @@ log() {
 =======
 # Funzione di log avanzata: accetta sia log "message" che log "level" "message"
 log() {
+<<<<<<< HEAD
 >>>>>>> 04d882f8f6 (.)
 =======
 =======
 
 >>>>>>> f71d08e230 (.)
+=======
+=======
+=======
+
+=======
+
+>>>>>>> f52d0712 (.)
 # Versione avanzata con livelli di log
 log() {
     local level="$1"
@@ -108,7 +116,11 @@ log() {
 # Funzione avanzata per loggare messaggi che supporta entrambi i formati
 log() {
     # Supporta sia il formato avanzato con livelli che il formato semplice
+<<<<<<< HEAD
 >>>>>>> f1e7ef1046 (.)
+=======
+=======
+>>>>>>> f52d0712 (.)
     if [ $# -eq 2 ]; then
         # Formato avanzato: log "level" "message"
         local level="$1"
@@ -135,10 +147,17 @@ log() {
 
 ```bash
 =======
+<<<<<<< HEAD
 >>>>>>> f1e7ef1046 (.)
 =======
 
 >>>>>>> f71d08e230 (.)
+=======
+=======
+
+=======
+
+>>>>>>> f52d0712 (.)
 # Versione che richiede 2 parametri
 if [ $# -ne 2 ]; then
     echo "Usage: $0 <path> <remote_repo>"
@@ -163,6 +182,7 @@ BRANCH="$3"
 
 ```bash
 =======
+<<<<<<< HEAD
 
 >>>>>>> f71d08e230 (.)
 # Versione che supporta 2 o 3 parametri
@@ -172,6 +192,15 @@ BRANCH="$3"
 =======
 # Versione che supporta 2 o 3 parametri
 >>>>>>> f1e7ef1046 (.)
+=======
+=======
+
+# Versione che supporta 2 o 3 parametri
+# Gestione robusta dei parametri: supporta 2 o 3 parametri, con branch opzionale
+=======
+# Versione che supporta 2 o 3 parametri
+=======
+>>>>>>> f52d0712 (.)
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     echo "Usage: $0 <path> <remote_repo> [branch]"
     exit 1

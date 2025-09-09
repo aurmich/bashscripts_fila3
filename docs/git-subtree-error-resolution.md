@@ -24,12 +24,21 @@ Il sistema di gestione dei subtree è composto da tre componenti principali:
 
 =======
 ```bash
+<<<<<<< HEAD
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 ```bash
 >>>>>>> f1e7ef1046 (.)
 =======
 >>>>>>> f71d08e230 (.)
+=======
+=======
+```bash
+=======
+=======
+```bash
+
+>>>>>>> f52d0712 (.)
 # 1. Inizializzazione
 git init
 git checkout -b "$BRANCH"
@@ -44,20 +53,34 @@ git commit -am "🔧 Aggiornamento subtree"
 git merge origin/"$BRANCH" --allow-unrelated-histories
 =======
 git merge origin/"$BRANCH" --allow-unrelated-histories"
+<<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
 =======
 git merge origin/"$BRANCH" --allow-unrelated-histories"
 >>>>>>> f1e7ef1046 (.)
+=======
+=======
+git merge origin/"$BRANCH" --allow-unrelated-histories"
+=======
+git merge origin/"$BRANCH" --allow-unrelated-histories"
+>>>>>>> f52d0712 (.)
 git push -u origin "$BRANCH"
 ```
 
 ### 3. Pull Script (`git_pull_subtree.sh`)
 ```bash
 =======
+<<<<<<< HEAD
 >>>>>>> f1e7ef1046 (.)
 =======
 
 >>>>>>> f71d08e230 (.)
+=======
+=======
+
+=======
+
+>>>>>>> f52d0712 (.)
 # 1. Pull standard
 git subtree pull -P "$LOCAL_PATH" "$REMOTE_REPO" "$BRANCH" --squash
 
@@ -72,11 +95,20 @@ aurmich/dev
 =======
 ```
 
+<<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
 =======
 ```
 
 >>>>>>> f1e7ef1046 (.)
+=======
+=======
+```
+
+=======
+```
+
+>>>>>>> f52d0712 (.)
 Esegue una sequenza complessa di operazioni:
 ```bash
 1. git add -A && git commit -am "."
@@ -92,9 +124,14 @@ Esegue una sequenza complessa di operazioni:
 
 ### 3. Pull Script (`git_pull_subtree.sh`)
 =======
+<<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
 =======
 >>>>>>> f1e7ef1046 (.)
+=======
+=======
+=======
+>>>>>>> f52d0712 (.)
 Esegue una sequenza con fallback:
 ```bash
 1. git subtree pull -P $LOCAL_PATH $REMOTE_REPO $REMOTE_BRANCH --squash
@@ -107,9 +144,14 @@ Esegue una sequenza con fallback:
  43df3e0 (.)
 aurmich/dev
 =======
+<<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
 =======
 >>>>>>> f1e7ef1046 (.)
+=======
+=======
+=======
+>>>>>>> f52d0712 (.)
 ```
 
 ## 🚨 Analisi Errori Comuni
@@ -124,10 +166,17 @@ fatal: you must provide the --prefix option
 **Soluzione**:
 ```bash
 =======
+<<<<<<< HEAD
 >>>>>>> f1e7ef1046 (.)
 =======
 
 >>>>>>> f71d08e230 (.)
+=======
+=======
+
+=======
+
+>>>>>>> f52d0712 (.)
 # Verifica variabili
 if [ -z "$LOCAL_PATH" ] || [ -z "$REMOTE_REPO" ]; then
     echo "❌ Error: Missing required variables"
@@ -143,9 +192,14 @@ fi
 
 
 =======
+<<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
 =======
 >>>>>>> f1e7ef1046 (.)
+=======
+=======
+=======
+>>>>>>> f52d0712 (.)
 **Causa**: Divergenze tra repository locale e remoto
 
 **Soluzione**:
@@ -159,12 +213,19 @@ git merge origin/"$BRANCH" --allow-unrelated-histories"
 git fetch origin "$BRANCH"
 =======
 git merge origin/"$BRANCH" --allow-unrelated-histories"
+<<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
+=======
+>>>>>>> f52d0712 (.)
 =======
 # Aggiorna repository locale
 git fetch origin "$BRANCH"
 git merge origin/"$BRANCH" --allow-unrelated-histories"
+<<<<<<< HEAD
 >>>>>>> f1e7ef1046 (.)
+=======
+=======
+>>>>>>> f52d0712 (.)
 
 # Riprova push
 if ! git push -u origin "$BRANCH"; then
@@ -283,6 +344,11 @@ fi
  43df3e0 (.)
 aurmich/dev
 =======
+<<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
 =======
 >>>>>>> f1e7ef1046 (.)
+=======
+=======
+=======
+>>>>>>> f52d0712 (.)

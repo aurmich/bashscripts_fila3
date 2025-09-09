@@ -10,7 +10,11 @@ aurmich/dev
 
 aurmich/dev
 =======
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+>>>>>>> f52d0712 (.)
 # 🚀 Fase 4: Deployment
 
 ## 📋 Panoramica
@@ -27,7 +31,12 @@ Questa fase si concentra sul deployment e la distribuzione del sistema.
 aurmich/dev
 =======
 
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 # 🚀 Fase 4: Deployment
 
 ## 📋 Panoramica
@@ -43,7 +52,12 @@ Questa fase si concentra sul deployment e la distribuzione del sistema.
 aurmich/dev
 =======
 
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 # 🚀 Fase 4: Deployment
 
 ## 📋 Panoramica
@@ -81,7 +95,12 @@ Questa fase si concentra sul deployment e la distribuzione del sistema.
  43df3e0 (.)
 =======
 
+<<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 aurmich/dev
 
 ## Collegamenti tra versioni di 04_deployment.md

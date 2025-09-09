@@ -10,7 +10,11 @@ aurmich/dev
 
 aurmich/dev
 =======
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+>>>>>>> f52d0712 (.)
 # 📈 Fase 9: Scalabilità
 
 ## 📋 Panoramica
@@ -22,7 +26,12 @@ Questa fase si concentra sulla scalabilità e l'espansione del sistema.
 - [Fase 8: Manutenzione](../roadmap/08_maintenance.md)
 =======
 
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 # 📈 Fase 9: Scalabilità
 
 ## 📋 Panoramica
@@ -43,7 +52,12 @@ Questa fase si concentra sulla scalabilità e l'espansione del sistema.
 aurmich/dev
 =======
 
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 # 📈 Fase 9: Scalabilità
 
 ## 📋 Panoramica
@@ -57,7 +71,12 @@ Questa fase si concentra sulla scalabilità e l'espansione del sistema.
  43df3e0 (.)
 =======
 
+<<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 aurmich/dev
 
 
@@ -117,7 +136,12 @@ Questa fase si concentra sulla scalabilità e l'espansione del sistema.
  43df3e0 (.)
 =======
 
+<<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 aurmich/dev
 
 ## Collegamenti tra versioni di 09_scalability.md

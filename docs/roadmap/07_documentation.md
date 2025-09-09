@@ -8,14 +8,20 @@
 
 aurmich/dev
 =======
+<<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
 =======
-
+=======
+=======
+>>>>>>> f52d0712 (.)
 =======
 
 =======
 
 =======
+
+=======
+<<<<<<< HEAD
 >>>>>>> 3c18aa7e (.)
 =======
 >>>>>>> 9de04485 (.)
@@ -28,6 +34,15 @@ aurmich/dev
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
 >>>>>>> f71d08e230 (.)
+=======
+=======
+=======
+=======
+=======
+=======
+
+=======
+>>>>>>> f52d0712 (.)
 # 📚 Fase 7: Documentazione
 
 ## 📋 Panoramica
@@ -133,6 +148,7 @@ Questa fase si concentra sulla documentazione completa del sistema, garantendo u
 =======
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> 9de04485 (.)
 =======
 =======
@@ -143,6 +159,16 @@ Questa fase si concentra sulla documentazione completa del sistema, garantendo u
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
 >>>>>>> f71d08e230 (.)
+=======
+=======
+=======
+=======
+=======
+=======
+=======
+=======
+=======
+>>>>>>> f52d0712 (.)
 - [Fase 8: Manutenzione](../roadmap/08_maintenance.md)
 
 ## 📅 Timeline
@@ -168,6 +194,7 @@ Questa fase si concentra sulla documentazione completa del sistema, garantendo u
 - Manutenzione
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
 =======
@@ -181,6 +208,14 @@ Questa fase si concentra sulla documentazione completa del sistema, garantendo u
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
 >>>>>>> f71d08e230 (.)
+=======
+=======
+=======
+=======
+=======
+=======
+=======
+>>>>>>> f52d0712 (.)
 
 
 - [Fase 8: Manutenzione](../roadmap/08_maintenance.md) 
@@ -305,6 +340,7 @@ aurmich/dev
 
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> 9de04485 (.)
 =======
 =======
@@ -314,6 +350,16 @@ aurmich/dev
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+=======
+=======
+=======
+=======
+=======
+=======
+=======
+=======
+>>>>>>> f52d0712 (.)
 - [Fase 8: Manutenzione](../roadmap/08_maintenance.md) 
 
 aurmich/dev
@@ -376,6 +422,7 @@ aurmich/dev
 
 
 =======
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
 =======
@@ -388,3 +435,11 @@ aurmich/dev
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+=======
+=======
+=======
+=======
+=======
+=======
+=======
+>>>>>>> f52d0712 (.)

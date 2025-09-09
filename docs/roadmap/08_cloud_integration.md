@@ -10,7 +10,11 @@ aurmich/dev
 
 aurmich/dev
 =======
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+>>>>>>> f52d0712 (.)
 # 🌐 Fase 8: Cloud Integration
 
 ## 📋 Panoramica
@@ -138,7 +142,12 @@ Questa fase si concentra sull'integrazione con i principali cloud provider per g
 - Monitoraggio continuo
 =======
 
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 # 🌐 Fase 8: Cloud Integration
 
 ## 📋 Panoramica
@@ -275,7 +284,12 @@ Questa fase si concentra sull'integrazione con i principali cloud provider per g
 aurmich/dev
 =======
 
+<<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 # 🌐 Fase 8: Cloud Integration
 
 ## 📋 Panoramica
@@ -405,7 +419,12 @@ Questa fase si concentra sull'integrazione con i principali cloud provider per g
  43df3e0 (.)
 =======
 
+<<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 aurmich/dev
 
 
@@ -929,7 +948,12 @@ Questa fase si concentra sull'integrazione con i principali cloud provider per g
  43df3e0 (.)
 =======
 
+<<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
 aurmich/dev
 
 ## Collegamenti tra versioni di 08_cloud_integration.md
