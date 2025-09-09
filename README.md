@@ -1,6 +1,9 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 # BashScripts - Organizzazione Script
 
 ## Regola Fondamentale
@@ -182,6 +185,7 @@ php artisan tinker
 **Ultimo aggiornamento**: Gennaio 2025
 **Versione**: 2.0
 **Compatibilità**: Laravel 10+, Moduli SaluteOra/SaluteMo
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> f198176d (.)
@@ -1072,3 +1076,5 @@ This toolkit addresses these challenges by providing automated tools that simpli
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
+=======
+>>>>>>> e9356a3a (.)

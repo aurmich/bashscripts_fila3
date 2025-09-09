@@ -24,6 +24,7 @@ Il sistema di gestione dei subtree è composto da tre componenti principali:
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -39,6 +40,9 @@ Il sistema di gestione dei subtree è composto da tre componenti principali:
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
+=======
+
+>>>>>>> e9356a3a (.)
 # 1. Inizializzazione
 git init
 git checkout -b "$BRANCH"
@@ -58,6 +62,7 @@ git push -u origin "$BRANCH"
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -73,6 +78,9 @@ git push -u origin "$BRANCH"
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
+=======
+
+>>>>>>> e9356a3a (.)
 # 1. Pull standard
 git subtree pull -P "$LOCAL_PATH" "$REMOTE_REPO" "$BRANCH" --squash
 
@@ -120,6 +128,7 @@ fatal: you must provide the --prefix option
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -135,6 +144,9 @@ fatal: you must provide the --prefix option
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
+=======
+
+>>>>>>> e9356a3a (.)
 # Verifica variabili
 if [ -z "$LOCAL_PATH" ] || [ -z "$REMOTE_REPO" ]; then
     echo "❌ Error: Missing required variables"
@@ -153,6 +165,7 @@ fi
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -168,6 +181,9 @@ fi
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
+=======
+
+>>>>>>> e9356a3a (.)
 # Aggiorna repository locale
 git fetch origin "$BRANCH"
 git merge origin/"$BRANCH" --allow-unrelated-histories"

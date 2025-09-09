@@ -120,6 +120,7 @@ name('login');
 ### 1. Verifica Componenti Esistenti
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -131,6 +132,29 @@ name('login');
 =======
 >>>>>>> 3c18aa7e (.)
 >>>>>>> f198176d (.)
+=======
+=======
+
+=======
+
+=======
+
+=======
+>>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> 9de04485 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
+=======
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # Verifica componenti nel progetto
 find resources/views/components -name "*.blade.php" | head -20
 
@@ -146,6 +170,7 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 ### 3. Test in Sviluppo
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -157,6 +182,29 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 =======
 >>>>>>> 3c18aa7e (.)
 >>>>>>> f198176d (.)
+=======
+=======
+
+=======
+
+=======
+
+=======
+>>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> 9de04485 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
+=======
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # Test componente
 php artisan view:clear
 php artisan config:clear
@@ -215,6 +263,7 @@ L'errore è stato causato da:
 *Analisi completata il: $(date)*
 *Stato: Errore critico identificato*
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -226,3 +275,29 @@ L'errore è stato causato da:
 *Priorità: CRITICA* 
 >>>>>>> 3c18aa7e (.)
 >>>>>>> f198176d (.)
+=======
+*Priorità: CRITICA* 
+=======
+*Priorità: CRITICA* 
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
+=======
+*Priorità: CRITICA* 
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 9de04485 (.)
+=======
+=======
+*Priorità: CRITICA* 
+>>>>>>> 59901687 (.)
+=======
+=======
+*Priorità: CRITICA* 
+>>>>>>> 3c18aa7e (.)
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
+=======
+*Priorità: CRITICA* 
+>>>>>>> e1b46df35 (.)
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)

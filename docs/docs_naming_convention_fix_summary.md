@@ -24,6 +24,7 @@ Ho analizzato tutte le cartelle docs del progetto per verificare la conformità 
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -39,6 +40,35 @@ Ho analizzato tutte le cartelle docs del progetto per verificare la conformità 
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
+=======
+=======
+=======
+
+=======
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9c02579 (.)
+
+=======
+
+=======
+=======
+>>>>>>> 9c02579 (.)
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9de04485 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # Prima (ERRATO)
 ./Modules/Xot/docs/filament/infinite-loop-getStepByName-fix.md
 
@@ -59,34 +89,87 @@ Ho analizzato tutte le cartelle docs del progetto per verificare la conformità 
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
+=======
+=======
+=======
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9de04485 (.)
+=======
+=======
+>>>>>>> 85c5198c (.)
+=======
+=======
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 
 # Verifica file con maiuscole
 find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f | grep -v README.md
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
+=======
+# Verifica file con maiuscole
+find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f | grep -v README.md
+=======
+=======
+=======
+>>>>>>> 337c5266 (.)
+=======
+=======
+>>>>>>> 9de04485 (.)
+=======
+=======
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> f198176d (.)
 =======
 # Verifica file con maiuscole
 find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f | grep -v README.md
 >>>>>>> 3c18aa7e (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
+=======
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9de04485 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
+=======
+# Verifica file con maiuscole
+find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f | grep -v README.md
+>>>>>>> e1b46df35 (.)
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # Risultato: Nessun file trovato ✅
 
 # Verifica cartelle con maiuscole
 find ./docs ./Modules/*/docs -name "*[A-Z]*" -type d
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -102,12 +185,42 @@ find ./docs ./Modules/*/docs -name "*[A-Z]*" -type d
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
+=======
+=======
+=======
+
+=======
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9c02579 (.)
+
+=======
+
+=======
+=======
+>>>>>>> 9c02579 (.)
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9de04485 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # Risultato: Nessuna cartella trovata ✅
 
 # Verifica completa (solo README.md permessi)
 find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -123,6 +236,35 @@ find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
+=======
+=======
+=======
+
+=======
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9c02579 (.)
+
+=======
+
+=======
+=======
+>>>>>>> 9c02579 (.)
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9de04485 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # Risultato: Solo file README.md trovati ✅
 ```
 
@@ -166,6 +308,7 @@ find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -181,6 +324,35 @@ find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
+=======
+=======
+=======
+
+=======
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9c02579 (.)
+
+=======
+
+=======
+=======
+>>>>>>> 9c02579 (.)
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9de04485 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # Trova file con maiuscole nelle cartelle docs
 find docs/ -name "*[A-Z]*" -type f | grep -v README.md
 
@@ -195,6 +367,7 @@ find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f | grep -v README.md
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -210,6 +383,35 @@ find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f | grep -v README.md
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
+=======
+=======
+=======
+
+=======
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9c02579 (.)
+
+=======
+
+=======
+=======
+>>>>>>> 9c02579 (.)
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9de04485 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # Esegui script di correzione automatica
 ./bashscripts/fix_docs_naming_convention.sh
 ```
@@ -248,6 +450,7 @@ find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f | grep -v README.md
 **File corretti**: 1
 **Documentazione creata**: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -259,3 +462,29 @@ find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f | grep -v README.md
 **README aggiornato**: 1 
 >>>>>>> 3c18aa7e (.)
 >>>>>>> f198176d (.)
+=======
+**README aggiornato**: 1 
+=======
+**README aggiornato**: 1 
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
+=======
+**README aggiornato**: 1 
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 9de04485 (.)
+=======
+=======
+**README aggiornato**: 1 
+>>>>>>> 59901687 (.)
+=======
+=======
+**README aggiornato**: 1 
+>>>>>>> 3c18aa7e (.)
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
+=======
+**README aggiornato**: 1 
+>>>>>>> e1b46df35 (.)
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)

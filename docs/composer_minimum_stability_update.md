@@ -131,6 +131,7 @@ I seguenti file avevano già `"minimum-stability": "dev"`:
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -146,6 +147,35 @@ I seguenti file avevano già `"minimum-stability": "dev"`:
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
+=======
+=======
+=======
+
+=======
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9c02579 (.)
+
+=======
+
+=======
+=======
+>>>>>>> 9c02579 (.)
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9de04485 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # Verifica configurazione
 composer config --list | grep minimum-stability
 
@@ -203,6 +233,7 @@ composer check-platform-reqs
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -218,6 +249,35 @@ composer check-platform-reqs
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
+=======
+=======
+=======
+
+=======
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9c02579 (.)
+
+=======
+
+=======
+=======
+>>>>>>> 9c02579 (.)
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9de04485 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
+=======
+>>>>>>> e1b46df35 (.)
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # Abilita debug composer
 composer update -vvv
 
@@ -242,6 +302,7 @@ La configurazione mantiene `"prefer-stable": true` per garantire stabilità quan
 *File modificati: 4*
 *File già configurati: 18*
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -253,3 +314,29 @@ La configurazione mantiene `"prefer-stable": true` per garantire stabilità quan
 *Totale file verificati: 22* 
 >>>>>>> 3c18aa7e (.)
 >>>>>>> f198176d (.)
+=======
+*Totale file verificati: 22* 
+=======
+*Totale file verificati: 22* 
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
+=======
+*Totale file verificati: 22* 
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 9de04485 (.)
+=======
+=======
+*Totale file verificati: 22* 
+>>>>>>> 59901687 (.)
+=======
+=======
+*Totale file verificati: 22* 
+>>>>>>> 3c18aa7e (.)
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
+=======
+*Totale file verificati: 22* 
+>>>>>>> e1b46df35 (.)
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)

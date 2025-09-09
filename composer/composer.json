@@ -18,6 +18,7 @@
     "require-dev": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "larastan/larastan": "^3.0"
 =======
         "larastan/larastan": "*"
@@ -25,6 +26,9 @@
 =======
         "larastan/larastan": "*"
 >>>>>>> f198176d (.)
+=======
+        "larastan/larastan": "^3.0"
+>>>>>>> e9356a3a (.)
     },
     "config": {
         "sort-packages": true,

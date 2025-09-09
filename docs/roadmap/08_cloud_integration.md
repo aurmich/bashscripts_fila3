@@ -8,6 +8,12 @@
 
 aurmich/dev
 
+<<<<<<< HEAD
+=======
+aurmich/dev
+=======
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # 🌐 Fase 8: Cloud Integration
 
 ## 📋 Panoramica
@@ -133,7 +139,13 @@ Questa fase si concentra sull'integrazione con i principali cloud provider per g
 ### Q4 2028
 - Deployment produzione
 - Monitoraggio continuo
+<<<<<<< HEAD
 
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # 🌐 Fase 8: Cloud Integration
 
 ## 📋 Panoramica
@@ -268,7 +280,13 @@ Questa fase si concentra sull'integrazione con i principali cloud provider per g
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
 aurmich/dev
+<<<<<<< HEAD
 
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # 🌐 Fase 8: Cloud Integration
 
 ## 📋 Panoramica
@@ -396,7 +414,13 @@ Questa fase si concentra sull'integrazione con i principali cloud provider per g
 - Monitoraggio continuo
 
  43df3e0 (.)
+<<<<<<< HEAD
 
+=======
+=======
+
+>>>>>>> 1831d11e78 (.)
+>>>>>>> e9356a3a (.)
 aurmich/dev
 
 
@@ -918,7 +942,13 @@ Questa fase si concentra sull'integrazione con i principali cloud provider per g
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (255 linee vs 1)[0m
  43df3e0 (.)
+<<<<<<< HEAD
 
+=======
+=======
+
+>>>>>>> 1831d11e78 (.)
+>>>>>>> e9356a3a (.)
 aurmich/dev
 
 ## Collegamenti tra versioni di 08_cloud_integration.md

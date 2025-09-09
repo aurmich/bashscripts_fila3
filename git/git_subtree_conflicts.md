@@ -58,6 +58,7 @@ La soluzione ottimale è mantenere la versione che accetta 3 parametri, ma con g
 source ./bashscripts/lib/custom.sh
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -73,6 +74,9 @@ source ./bashscripts/lib/custom.sh
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
+=======
+
+>>>>>>> e9356a3a (.)
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     log "error" "Parametri errati"
@@ -195,6 +199,7 @@ La soluzione ottimale è mantenere la versione che accetta 3 parametri, ma con g
 source ./bashscripts/lib/custom.sh
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -210,6 +215,9 @@ source ./bashscripts/lib/custom.sh
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
+=======
+
+>>>>>>> e9356a3a (.)
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     log "error" "Parametri errati"
@@ -342,6 +350,7 @@ La soluzione ottimale è mantenere la versione che accetta 3 parametri, ma con g
 source ./bashscripts/lib/custom.sh
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -357,6 +366,9 @@ source ./bashscripts/lib/custom.sh
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
+=======
+
+>>>>>>> e9356a3a (.)
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     log "error" "Parametri errati"
@@ -431,6 +443,7 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione degli Script Git](git_scripts.md)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
 5338a990 (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -859,3 +872,5 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
+=======
+>>>>>>> e9356a3a (.)

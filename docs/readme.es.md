@@ -51,7 +51,13 @@ php artisan migrate
 
 ### 7. Instalar Módulos
 ```bash
+<<<<<<< HEAD
 
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # Instalar Laravel Modules
 composer require nwidart/laravel-modules
 
@@ -127,7 +133,13 @@ La documentación completa está disponible en el directorio `docs/`:
 
 ### Comandos Útiles
 ```bash
+<<<<<<< HEAD
 
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # Crear un nuevo módulo
 php artisan module:make NombreModulo
 
@@ -175,7 +187,13 @@ Este kit de herramientas aborda estos desafíos proporcionando herramientas auto
 
 ## Traducciones
 - [English](../../README.md)
+<<<<<<< HEAD
 
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # 🚀 Kit de Herramientas de Automatización Git
 
 [![PHPStan](https://img.shields.io/badge/PHPStan-Level%209-brightgreen.svg?style=for-the-badge&logo=php&logoColor=white)](phpstan/ANALISI_MODULI_PHPSTAN.md)
@@ -229,7 +247,13 @@ php artisan migrate
 
 ### 7. Instalar Módulos
 ```bash
+<<<<<<< HEAD
 
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # Instalar Laravel Modules
 composer require nwidart/laravel-modules
 
@@ -305,7 +329,13 @@ La documentación completa está disponible en el directorio `docs/`:
 
 ### Comandos Útiles
 ```bash
+<<<<<<< HEAD
 
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # Crear un nuevo módulo
 php artisan module:make NombreModulo
 
@@ -354,3 +384,9 @@ Este kit de herramientas aborda estos desafíos proporcionando herramientas auto
 ## Traducciones
 - [English](../../README.md)
 
+<<<<<<< HEAD
+=======
+- [Italiano](README.it.md) 
+=======
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)

@@ -59,6 +59,7 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 [Backlink: git_conflicts_resolution.md](git_conflicts_resolution.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -74,6 +75,9 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
+=======
+
+>>>>>>> e9356a3a (.)
 ## Casi d'Uso Avanzati
 
 ### 1. Risoluzione Selettiva
@@ -81,15 +85,20 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
+=======
+
+>>>>>>> e9356a3a (.)
 ### 2. Integrazione con Git Hooks
 Lo script può essere integrato con Git hooks per verificare automaticamente la presenza di conflitti prima del commit:
 
 ```bash
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -116,6 +125,9 @@ Lo script può essere integrato con Git hooks per verificare automaticamente la 
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
+=======
+
+>>>>>>> e9356a3a (.)
 # .git/hooks/pre-commit
 #!/bin/bash
 ```
