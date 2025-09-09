@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
@@ -18,6 +19,8 @@ aurmich/dev
 =======
 >>>>>>> 1831d11e78 (.)
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
 # 🚀 Fase 1: Core Git Operations
 
 ## 📋 Panoramica
@@ -34,26 +37,17 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 - Logging dettagliato
 - Gestione errori
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Backup automatico pre-operazioni
 
 =======
 
 
 
-- Backup automatico pre-operazioni
-
-
-
-- Backup automatico pre-operazioni
-
-[0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (2 linee vs 1)[0m
- 43df3e0 (.)
-aurmich/dev
-
 =======
+>>>>>>> 42ab2308 (.)
 - Backup automatico pre-operazioni
 
->>>>>>> 1831d11e78 (.)
 ### 2. Gestione dei Submodule
 **Script**: `sync_submodules.sh`
 **Stato**: ✅ Completato
@@ -61,23 +55,8 @@ aurmich/dev
 - Aggiornamento automatico dei submodule
 - Gestione dei conflitti
 - Backup prima delle operazioni
-
-
-
 - Verifica integrità post-operazioni
 
-
-
-- Verifica integrità post-operazioni
-
-[0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (2 linee vs 1)[0m
- 43df3e0 (.)
-aurmich/dev
-
-=======
-- Verifica integrità post-operazioni
-
->>>>>>> 1831d11e78 (.)
 ### 3. Backup Automatico
 **Script**: `backup.sh`
 **Stato**: ✅ Completato
@@ -85,26 +64,9 @@ aurmich/dev
 - Backup incrementale
 - Compressione automatica
 - Verifica integrità
-
-
-
 - Gestione spazio disco
 - Rotazione backup
 
-
-
-- Gestione spazio disco
-- Rotazione backup
-
-[0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (3 linee vs 1)[0m
- 43df3e0 (.)
-aurmich/dev
-
-=======
-- Gestione spazio disco
-- Rotazione backup
-
->>>>>>> 1831d11e78 (.)
 ### 4. Risoluzione Conflitti Base
 **Script**: `resolve_git_conflict.sh`
 **Stato**: ✅ Completato
@@ -112,26 +74,9 @@ aurmich/dev
 - Analisi automatica dei conflitti
 - Risoluzione quando possibile
 - Logging dettagliato
-
-
-
 - Backup pre-risoluzione
 - Rollback automatico in caso di errori
 
-
-
-- Backup pre-risoluzione
-- Rollback automatico in caso di errori
-
-[0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (3 linee vs 1)[0m
- 43df3e0 (.)
-aurmich/dev
-
-=======
-- Backup pre-risoluzione
-- Rollback automatico in caso di errori
-
->>>>>>> 1831d11e78 (.)
 ## 📝 Note di Implementazione
 
 ### Best Practices Implementate
@@ -139,148 +84,49 @@ aurmich/dev
    - Verifica delle chiavi SSH
    - Controllo dei permessi
    - Backup prima delle operazioni critiche
-
-
-
    - Validazione input
    - Sanitizzazione output
-
-
-
-   - Validazione input
-   - Sanitizzazione output
-
-[0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (3 linee vs 1)[0m
- 43df3e0 (.)
-aurmich/dev
-
-=======
-   - Validazione input
-   - Sanitizzazione output
->>>>>>> 1831d11e78 (.)
 2. **Performance**:
    - Ottimizzazione delle operazioni Git
    - Gestione efficiente della memoria
    - Caching dove possibile
-
-
-
    - Parallelizzazione operazioni
    - Gestione risorse
-
-
-
-   - Parallelizzazione operazioni
-   - Gestione risorse
-
-[0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (3 linee vs 1)[0m
- 43df3e0 (.)
-aurmich/dev
-
-=======
-   - Parallelizzazione operazioni
-   - Gestione risorse
->>>>>>> 1831d11e78 (.)
 3. **Manutenibilità**:
    - Codice modulare
    - Documentazione dettagliata
    - Logging strutturato
-
-
-
    - Test automatici
    - Versionamento semantico
 
-
-
-   - Test automatici
-   - Versionamento semantico
-
-[0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (3 linee vs 1)[0m
- 43df3e0 (.)
-aurmich/dev
-
-=======
-   - Test automatici
-   - Versionamento semantico
-
->>>>>>> 1831d11e78 (.)
 ### Lezioni Apprese
 1. Importanza del backup prima delle operazioni critiche
 2. Necessità di logging dettagliato per il debug
 3. Valore della gestione automatica dei conflitti
-
-
-
 4. Importanza della validazione input
 5. Necessità di rollback automatico
 
-
-
-4. Importanza della validazione input
-5. Necessità di rollback automatico
-
-[0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (3 linee vs 1)[0m
- 43df3e0 (.)
-aurmich/dev
-
-=======
-4. Importanza della validazione input
-5. Necessità di rollback automatico
-
->>>>>>> 1831d11e78 (.)
 ## 🔄 Collegamenti
 
 - [Roadmap Principale](../roadmap.md)
 - [Documentazione Script](../project.md)
 - [Fase 2: Manutenzione](../roadmap/02_maintenance.md)
-
-
-
 - [Fase 3: Verifica](../roadmap/03_verification.md)
 
-
-
-- [Fase 3: Verifica](../roadmap/03_verification.md)
-
-[0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (2 linee vs 1)[0m
- 43df3e0 (.)
-aurmich/dev
-
-=======
-- [Fase 3: Verifica](../roadmap/03_verification.md)
-
->>>>>>> 1831d11e78 (.)
 ## 📈 Metriche di Successo
 
 ### Obiettivi Raggiunti
 - ✅ 100% automazione operazioni base
 - ✅ 0 errori in produzione
 - ✅ Tempo di sincronizzazione ridotto del 70%
-
-
-
 - ✅ 100% backup automatici
 - ✅ 99.9% risoluzione automatica conflitti
 
-
-
-- ✅ 100% backup automatici
-- ✅ 99.9% risoluzione automatica conflitti
-
-[0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (3 linee vs 1)[0m
- 43df3e0 (.)
-aurmich/dev
-
-=======
-- ✅ 100% backup automatici
-- ✅ 99.9% risoluzione automatica conflitti
-
->>>>>>> 1831d11e78 (.)
 ### Metriche di Performance
 - Tempo medio di sincronizzazione: < 5 minuti
 - Tasso di successo operazioni: 99.9%
 - Tempo di risoluzione conflitti: < 10 minuti
+<<<<<<< HEAD
 
 
 
@@ -7299,6 +7145,8 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 
 =======
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
 - Tempo di backup: < 2 minuti
 - Tempo di rollback: < 5 minuti
 
@@ -7339,6 +7187,9 @@ Per ulteriori dettagli, consultare la documentazione degli script specifici e le
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)

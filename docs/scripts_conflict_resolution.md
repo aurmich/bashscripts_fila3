@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Script di Risoluzione dei Conflitti
 =======
 # Risoluzione Conflitti negli Script Bash
@@ -6,6 +7,9 @@
 # Script di Risoluzione dei Conflitti
 >>>>>>> f1e7ef1046 (.)
 >>>>>>> e9356a3a (.)
+=======
+# Script di Risoluzione dei Conflitti
+>>>>>>> 42ab2308 (.)
 
 ## Panoramica
 
@@ -91,6 +95,7 @@ Verifica e corregge i problemi comuni di namespace nei file PHP, che sono spesso
 
 #### Descrizione
 Analizza i conflitti e fornisce statistiche e suggerimenti per la risoluzione.
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 # Risoluzione Conflitti negli Script Bash
@@ -190,6 +195,8 @@ Analizza i conflitti e fornisce statistiche e suggerimenti per la risoluzione.
 =======
 >>>>>>> f1e7ef1046 (.)
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
 
 ### sync_to_disk.sh
 
@@ -295,6 +302,7 @@ I seguenti file sono stati recentemente risolti:
 [Backlink: fix_all_git_conflicts.md](fix_all_git_conflicts.md)
 [Backlink: git_conflicts_resolution.md](git_conflicts_resolution.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
@@ -303,6 +311,9 @@ I seguenti file sono stati recentemente risolti:
 
 >>>>>>> f71d08e230 (.)
 >>>>>>> e9356a3a (.)
+=======
+
+>>>>>>> 42ab2308 (.)
 ### fix_structure.sh
 
 Mantenere la versione più avanzata con funzioni di logging colorate, migliorando:
@@ -370,6 +381,7 @@ I seguenti file sono stati recentemente risolti:
 - `fix_merge_conflicts.sh`: Corretta la logica di individuazione e rimozione dei marker di conflitto per garantire la pulizia completa di tutti i tre tipi di marker 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 Questa documentazione è collegata bidirezionalmente con la [documentazione principale sulla risoluzione dei conflitti](../../docs/bashscripts_conflict_resolution.md) nella root del progetto. 
@@ -378,6 +390,8 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 =======
 >>>>>>> f1e7ef1046 (.)
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
 Questa documentazione è collegata bidirezionalmente con la [documentazione principale sulla risoluzione dei conflitti](../../docs/bashscripts_conflict_resolution.md) nella root del progetto. 
 
 #### Utilizzo
@@ -524,6 +538,7 @@ Per pulire un repository con molti conflitti non risolti:
 - [Convenzioni di Namespace](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/NAMESPACE-CONVENTIONS.md)
 - [Risoluzione Conflitti nei Moduli](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/conflitti_merge_risolti.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 1831d11e78 (.)
 =======
@@ -537,3 +552,5 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 =======
 >>>>>>> f71d08e230 (.)
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)

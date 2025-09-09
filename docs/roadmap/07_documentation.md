@@ -9,6 +9,7 @@
 aurmich/dev
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -43,6 +44,11 @@ aurmich/dev
 >>>>>>> d20d0523 (.)
 >>>>>>> f71d08e230 (.)
 >>>>>>> e9356a3a (.)
+=======
+
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 42ab2308 (.)
 # 📚 Fase 7: Documentazione
 
 ## 📋 Panoramica
@@ -148,6 +154,7 @@ Questa fase si concentra sulla documentazione completa del sistema, garantendo u
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> f198176d (.)
@@ -166,6 +173,8 @@ Questa fase si concentra sulla documentazione completa del sistema, garantendo u
 >>>>>>> d20d0523 (.)
 >>>>>>> f71d08e230 (.)
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
 - [Fase 8: Manutenzione](../roadmap/08_maintenance.md)
 
 ## 📅 Timeline
@@ -191,6 +200,7 @@ Questa fase si concentra sulla documentazione completa del sistema, garantendo u
 - Manutenzione
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
@@ -211,6 +221,8 @@ Questa fase si concentra sulla documentazione completa del sistema, garantendo u
 >>>>>>> d20d0523 (.)
 >>>>>>> f71d08e230 (.)
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
 
 
 - [Fase 8: Manutenzione](../roadmap/08_maintenance.md) 
@@ -333,6 +345,7 @@ aurmich/dev
 * [07_documentation.md](docs/roadmap/07_documentation.md)
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -352,6 +365,8 @@ aurmich/dev
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
 - [Fase 8: Manutenzione](../roadmap/08_maintenance.md) 
 
 aurmich/dev
@@ -415,6 +430,7 @@ aurmich/dev
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
@@ -433,3 +449,5 @@ aurmich/dev
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)

@@ -4,12 +4,16 @@ Il seguente formato propone una ristrutturazione completa del file di prompt `do
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
 
 >>>>>>> f71d08e230 (.)
 >>>>>>> e9356a3a (.)
+=======
+
+>>>>>>> 42ab2308 (.)
 # SISTEMA DI DOCUMENTAZIONE MODULARE
 
 ## 1. PRINCIPI FONDAMENTALI

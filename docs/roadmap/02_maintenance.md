@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
@@ -6,6 +7,8 @@
 =======
 >>>>>>> 1831d11e78 (.)
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
 # 🛠️ Fase 2: Manutenzione
 
 ## 📋 Panoramica
@@ -49,22 +52,28 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema, garant
    - Alerting proattivo
    - Report automatizzati
 <<<<<<< HEAD
-=======
-
-=======
->>>>>>> 1831d11e78 (.)
->>>>>>> e9356a3a (.)
-2. **Sicurezza**:
-   - Verifica integrità dati
-   - Backup crittografati
-   - Controllo accessi
-   - Audit log
 <<<<<<< HEAD
 =======
 
 =======
 >>>>>>> 1831d11e78 (.)
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
+2. **Sicurezza**:
+   - Verifica integrità dati
+   - Backup crittografati
+   - Controllo accessi
+   - Audit log
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+=======
+>>>>>>> 1831d11e78 (.)
+>>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
 3. **Performance**:
    - Ottimizzazione risorse
    - Caching intelligente
@@ -135,6 +144,7 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema, garant
 ---
 
 Per ulteriori dettagli, consultare la documentazione degli script specifici e le sezioni successive della roadmap.
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 - Bash 
@@ -249,5 +259,7 @@ aurmich/dev
 =======
 >>>>>>> 1831d11e78 (.)
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
 
 

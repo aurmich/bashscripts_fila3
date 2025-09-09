@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - Usare metodi specifici: getListTableColumns(), getTableFilters(), getTableActions()
 =======
@@ -239,6 +240,8 @@
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
 # GUIDA ESSENZIALE LARAXOT
 
 ## DOCUMENTAZIONE
@@ -412,6 +415,7 @@
 - Consultare la documentazione prima di ogni azione
 - Ogni modulo ha la sua cartella docs da studiare e aggiornare
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 85c5198c (.)
@@ -426,3 +430,5 @@
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)

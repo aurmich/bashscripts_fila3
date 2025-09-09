@@ -57,6 +57,7 @@ La soluzione ottimale è mantenere la versione che accetta 3 parametri, ma con g
 
 source ./bashscripts/lib/custom.sh
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
@@ -65,6 +66,9 @@ source ./bashscripts/lib/custom.sh
 
 >>>>>>> f71d08e230 (.)
 >>>>>>> e9356a3a (.)
+=======
+
+>>>>>>> 42ab2308 (.)
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     log "error" "Parametri errati"
@@ -186,12 +190,16 @@ La soluzione ottimale è mantenere la versione che accetta 3 parametri, ma con g
 
 source ./bashscripts/lib/custom.sh
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
 
 >>>>>>> f71d08e230 (.)
 >>>>>>> e9356a3a (.)
+=======
+
+>>>>>>> 42ab2308 (.)
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     log "error" "Parametri errati"
@@ -265,6 +273,7 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
 - [Documentazione degli Script Git](git_scripts.md)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)# Risoluzione dei Conflitti negli Script Git Subtree
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 # Validate input
@@ -348,6 +357,8 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 =======
 >>>>>>> f1e7ef1046 (.)
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
 
 ## Problema
 
@@ -480,6 +491,7 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione degli Script Git](git_scripts.md)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 5338a990 (.)
 =======
 =======
@@ -490,6 +502,9 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 5338a990 (.)
 >>>>>>> f1e7ef1046 (.)
 >>>>>>> e9356a3a (.)
+=======
+5338a990 (.)
+>>>>>>> 42ab2308 (.)
 # Risoluzione dei Conflitti negli Script Git Subtree
 
 ## Problema
@@ -753,6 +768,7 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
 - [Documentazione degli Script Git](git_scripts.md)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -901,6 +917,8 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 >>>>>>> f000df5 (.)
 >>>>>>> f1e7ef1046 (.)
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
 # Risoluzione dei Conflitti negli Script Git Subtree
 
 ## Problema
@@ -1033,6 +1051,7 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione degli Script Git](git_scripts.md)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 4d4d6cb7 (.)
@@ -1056,3 +1075,5 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 =======
 >>>>>>> f71d08e230 (.)
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)

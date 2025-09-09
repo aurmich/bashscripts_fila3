@@ -14,12 +14,16 @@ Questa fase si concentra sull'implementazione di funzionalità di automazione av
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
 
 >>>>>>> f71d08e230 (.)
 >>>>>>> e9356a3a (.)
+=======
+
+>>>>>>> 42ab2308 (.)
 # 🔄 Fase 4: Automazione Avanzata
 
 ## 📋 Panoramica
@@ -141,12 +145,16 @@ Questa fase si concentra sull'implementazione di funzionalità di automazione av
 - Deployment produzione
 - Monitoraggio
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
 
 >>>>>>> f71d08e230 (.)
 >>>>>>> e9356a3a (.)
+=======
+
+>>>>>>> 42ab2308 (.)
 # 🔄 Fase 4: Automazione Avanzata
 
 ## 📋 Panoramica
@@ -268,12 +276,16 @@ Questa fase si concentra sull'implementazione di funzionalità di automazione av
 - Deployment produzione
 - Monitoraggio
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
 
 >>>>>>> f71d08e230 (.)
 >>>>>>> e9356a3a (.)
+=======
+
+>>>>>>> 42ab2308 (.)
 # 🔄 Fase 4: Automazione Avanzata
 
 ## 📋 Panoramica
@@ -401,11 +413,14 @@ Questa fase si concentra sull'implementazione di funzionalità di automazione av
 aurmich/dev
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 aurmich/dev
 =======
 >>>>>>> f71d08e230 (.)
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
 # 🔄 Fase 4: Automazione Avanzata
 
 ## 📋 Panoramica
@@ -527,12 +542,16 @@ Questa fase si concentra sull'implementazione di funzionalità di automazione av
 - Deployment produzione
 - Monitoraggio
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
 
 >>>>>>> f71d08e230 (.)
 >>>>>>> e9356a3a (.)
+=======
+
+>>>>>>> 42ab2308 (.)
 # 🔄 Fase 4: Automazione Avanzata
 
 ## 📋 Panoramica
@@ -662,11 +681,14 @@ Questa fase si concentra sull'implementazione di funzionalità di automazione av
 aurmich/dev
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 aurmich/dev
 =======
 >>>>>>> f71d08e230 (.)
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
 # 🔄 Fase 4: Automazione Avanzata
 
 ## 📋 Panoramica
@@ -1205,12 +1227,16 @@ Questa fase si concentra sull'implementazione di funzionalità di automazione av
 - Ottimizzazione finale 
  43df3e0 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
 
 >>>>>>> 1831d11e78 (.)
 >>>>>>> e9356a3a (.)
+=======
+
+>>>>>>> 42ab2308 (.)
 aurmich/dev
 
 ## Collegamenti tra versioni di 04_advanced_automation.md

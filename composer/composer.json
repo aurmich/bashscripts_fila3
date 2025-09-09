@@ -19,6 +19,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "larastan/larastan": "^3.0"
 =======
         "larastan/larastan": "*"
@@ -29,6 +30,9 @@
 =======
         "larastan/larastan": "^3.0"
 >>>>>>> e9356a3a (.)
+=======
+        "larastan/larastan": "*"
+>>>>>>> 42ab2308 (.)
     },
     "config": {
         "sort-packages": true,

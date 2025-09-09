@@ -27,11 +27,14 @@ php bashscripts/check_form_schema.php
 ### Output
 Esempio di output:
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 Esempio di output:
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
 ```
 XotBaseResource Classes Form Schema Check
 ====
@@ -143,10 +146,12 @@ php bashscripts/check_form_schema.php
 
 ### Output
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f1e7ef1046 (.)
+=======
+>>>>>>> 42ab2308 (.)
 Il comando genererà un output simile a:
->>>>>>> 04d882f8f6 (.)
 ```
 XotBaseResource Classes Form Schema Check
 ====
@@ -175,18 +180,20 @@ XotBaseResource Classes Form Schema Check
 
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
+<<<<<<< HEAD
+<<<<<<< HEAD
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
 =======
-=======
-=======
-=======
->>>>>>> d20d0523 (.)
 
+>>>>>>> 3c18aa7e (.)
 =======
 >>>>>>> 9c02579 (.)
 =======
 >>>>>>> 574afe9e (.)
 
+<<<<<<< HEAD
 =======
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
@@ -278,6 +285,8 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 =======
 
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
 # Script di Verifica della Qualità del Codice
 
 Questa documentazione descrive gli script utilizzati per verificare e migliorare la qualità del codice nel progetto.
@@ -335,6 +344,7 @@ XotBaseResource Classes Form Schema Check
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 <<<<<<< HEAD
@@ -599,6 +609,10 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 =======
 >>>>>>> d20d0523 (.)
 >>>>>>> e9356a3a (.)
+=======
+
+
+>>>>>>> 42ab2308 (.)
 # Script di Verifica della Qualità del Codice
 
 Questa documentazione descrive gli script utilizzati per verificare e migliorare la qualità del codice nel progetto.
@@ -661,8 +675,11 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data/v4/introduction)
 - [CI/CD Best Practices](https://docs.github.com/en/actions/guides/building-and-testing-php) 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f1e7ef1046 (.)
 =======
 >>>>>>> f71d08e230 (.)
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)

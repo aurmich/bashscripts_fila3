@@ -60,12 +60,16 @@ php artisan migrate
 ### 7. Installare i Moduli
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
 
 >>>>>>> f71d08e230 (.)
 >>>>>>> e9356a3a (.)
+=======
+
+>>>>>>> 42ab2308 (.)
 # Installare Laravel Modules
 composer require nwidart/laravel-modules
 
@@ -142,12 +146,16 @@ La documentazione completa è disponibile nella directory `docs/`:
 ### Comandi Utili
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
 
 >>>>>>> f71d08e230 (.)
 >>>>>>> e9356a3a (.)
+=======
+
+>>>>>>> 42ab2308 (.)
 # Creare un nuovo modulo
 php artisan module:make NomeModulo
 
@@ -180,14 +188,18 @@ Questo progetto è sotto licenza MIT. Vedere il file [LICENSE](LICENSE) per i de
  b0f37c83 (.)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
 
  b7907077 (.)
 
 
  b1ca4c93 (Squashed 'bashscripts/' changes from c21599d..019cc70)
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
@@ -195,6 +207,9 @@ Questo progetto è sotto licenza MIT. Vedere il file [LICENSE](LICENSE) per i de
 =======
 >>>>>>> f71d08e230 (.)
 >>>>>>> e9356a3a (.)
+=======
+
+>>>>>>> 42ab2308 (.)
 # 🚀 BashScripts Power Tools
  80ec88ee9 (.
 
@@ -272,12 +287,16 @@ php artisan migrate
 ### 7. Install Modules
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
 
 >>>>>>> f71d08e230 (.)
 >>>>>>> e9356a3a (.)
+=======
+
+>>>>>>> 42ab2308 (.)
 # Install Laravel Modules
 composer require nwidart/laravel-modules
 
@@ -354,12 +373,16 @@ Complete documentation is available in the `docs/` directory:
 ### Useful Commands
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
 
 >>>>>>> f71d08e230 (.)
 >>>>>>> e9356a3a (.)
+=======
+
+>>>>>>> 42ab2308 (.)
 # Create a new module
 php artisan module:make ModuleName
 
@@ -494,9 +517,12 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file `LICENSE` per 
 
  4bd5ca8f (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
 
  b0f37c83 (.)
 
@@ -504,12 +530,16 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file `LICENSE` per 
  b7907077 (.)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
 
 >>>>>>> 1831d11e78 (.)
 >>>>>>> e9356a3a (.)
+=======
+
+>>>>>>> 42ab2308 (.)
 # 📣 Enhance Your App with the Fila3 Notify Module! 🚀
 
 ![GitHub issues](https://img.shields.io/github/issues/laraxot/module_notify_fila3)
@@ -599,12 +629,16 @@ Discover more of my work at marco76tv!
  80ec88ee9 (.)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
 
 >>>>>>> 1831d11e78 (.)
 >>>>>>> e9356a3a (.)
+=======
+
+>>>>>>> 42ab2308 (.)
 # Bash Scripts
 
 **Policy di organizzazione:** Nessuno script `.sh` deve essere presente direttamente nella root di questa cartella. Tutti gli script devono essere categorizzati e inseriti in sottocartelle dedicate in base alla loro funzione (es. `utils/`, `git/`, `docs_update/`).
@@ -685,12 +719,16 @@ Script per i test:
 ### 1. Esecuzione degli Script
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
 
 >>>>>>> f71d08e230 (.)
 >>>>>>> e9356a3a (.)
+=======
+
+>>>>>>> 42ab2308 (.)
 # Rendere lo script eseguibile
 chmod +x script.sh
 

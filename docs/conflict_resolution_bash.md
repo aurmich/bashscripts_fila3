@@ -44,6 +44,7 @@ La risoluzione manuale dei conflitti negli script bash è particolarmente delica
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 # Versione avanzata con livelli di log
@@ -83,6 +84,9 @@ log() {
 
 >>>>>>> f71d08e230 (.)
 >>>>>>> e9356a3a (.)
+=======
+
+>>>>>>> 42ab2308 (.)
 # Versione avanzata con livelli di log
 log() {
     local level="$1"
@@ -113,9 +117,12 @@ log() {
 log() {
     # Supporta sia il formato avanzato con livelli che il formato semplice
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f1e7ef1046 (.)
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
     if [ $# -eq 2 ]; then
         # Formato avanzato: log "level" "message"
         local level="$1"
@@ -142,6 +149,7 @@ log() {
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
@@ -150,6 +158,9 @@ log() {
 
 >>>>>>> f71d08e230 (.)
 >>>>>>> e9356a3a (.)
+=======
+
+>>>>>>> 42ab2308 (.)
 # Versione che richiede 2 parametri
 if [ $# -ne 2 ]; then
     echo "Usage: $0 <path> <remote_repo>"
@@ -174,13 +185,16 @@ BRANCH="$3"
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 # Versione che supporta 2 o 3 parametri
 =======
 =======
+=======
+>>>>>>> 42ab2308 (.)
 
->>>>>>> f71d08e230 (.)
 # Versione che supporta 2 o 3 parametri
+<<<<<<< HEAD
 =======
 # Gestione robusta dei parametri: supporta 2 o 3 parametri, con branch opzionale
 >>>>>>> 04d882f8f6 (.)
@@ -188,6 +202,8 @@ BRANCH="$3"
 # Versione che supporta 2 o 3 parametri
 >>>>>>> f1e7ef1046 (.)
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     echo "Usage: $0 <path> <remote_repo> [branch]"
     exit 1

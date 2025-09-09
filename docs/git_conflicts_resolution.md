@@ -1,8 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Risoluzione Conflitti Git - Modulo Predict
 =======
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
 # Risoluzione Conflitti Git
 
 ## Panoramica
@@ -37,6 +40,7 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> f198176d (.)
@@ -60,6 +64,10 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 - Tutti i file sono stati mantenuti nella versione<!-- REVISIONE MANUALE: File aggiornato per chiarezza e tracciabilità. Vedi anche [README globale](/docs/README.md) e gli altri file di risoluzione conflitti. -->
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 >>>>>>> e9356a3a (.)
+=======
+## Note Importanti
+- Tutti i file sono stati mantenuti nella versione<!-- REVISIONE MANUALE: File aggiornato per chiarezza e tracciabilità. Vedi anche [README globale](/docs/README.md) e gli altri file di risoluzione conflitti. -->
+>>>>>>> 42ab2308 (.)
 
 [Backlink: Documentazione Globale](/docs/README.md)
 [Backlink: scripts_conflict_resolution.md](scripts_conflict_resolution.md)
@@ -68,6 +76,7 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 - I namespace sono stati mantenuti corretti secondo la struttura del modulo
 - Sono stati rimossi solo i marcatori di conflitto, mantenendo il codice funzionale
 - I file di backup sono stati creati con il timestamp per sicurezza
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 59901687 (.)
@@ -88,6 +97,8 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
 ### Fase 1: Identificazione
 ```bash
 # Visualizzare tutti i file con conflitti
@@ -108,6 +119,7 @@ git status
 git status
 
 # Trovare i marker di conflitto
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -122,6 +134,8 @@ Il modulo Predict mantiene la seguente struttura di namespace:
 # Trovare i marker di conflitto
 >>>>>>> 1831d11e78 (.)
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
 
 ## Verifica Post-Risoluzione
 Si consiglia di:
@@ -133,6 +147,7 @@ Si consiglia di:
 6. Verificare il funzionamento delle factory nei test
 7. Testare il modulo in ambiente di sviluppo
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 ## Backup
@@ -140,6 +155,8 @@ Tutti i file modificati hanno un backup con timestamp nel formato:
 `.backup-YYYYMMDD-HHMMSS`
 =======
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
 ```
 
 ### Fase 2: Analisi
@@ -148,9 +165,12 @@ Per ogni file in conflitto:
 2. Determinare quali modifiche devono essere mantenute
 3. Considerare le dipendenze e gli impatti delle modifiche
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 1831d11e78 (.)
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
 
 ## Prossimi Passi
 1. Eseguire `composer dump-autoload` per aggiornare l'autoloader
@@ -160,6 +180,7 @@ Per ogni file in conflitto:
 - `Modules\Predict\Providers` per i service provider
 - `Modules\Predict\Database\Factories` per le factory
 - `Modules\Predict\lang\it` per i file di traduzione
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -192,6 +213,11 @@ Per ogni file in conflitto:
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
 >>>>>>> e9356a3a (.)
+=======
+
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 42ab2308 (.)
 ### Fase 3: Risoluzione
 Scegliere una delle seguenti strategie:
 
@@ -199,6 +225,7 @@ Scegliere una delle seguenti strategie:
 2. **Mantenere la versione incoming**: Se la versione del branch è corretta
 3. **Fusione manuale**: Integrare le modifiche di entrambe le versioni
 4. **Approccio per i file .md**: Per i file di documentazione, mantenere entrambe le versioni
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 ## Verifica Post-Risoluzione
@@ -215,6 +242,8 @@ Tutti i file modificati hanno un backup con timestamp nel formato:
 `.backup-YYYYMMDD-HHMMSS`
 =======
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
 
 Per i file di codice PHP, verificare sempre la compatibilità con PHPStan livello 9 dopo la risoluzione.
 
@@ -259,14 +288,18 @@ namespace Modules\NomeModulo\App\Filament;
 5. **Documentare**: Mantenere aggiornata la documentazione
 6. **Seguire le Convenzioni**: Rispettare sempre le convenzioni di namespace e tipizzazione
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 1831d11e78 (.)
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
 
 ## Prossimi Passi
 1. Eseguire `composer dump-autoload` per aggiornare l'autoloader
 2. Eseguire `php artisan config:clear` per pulire la cache
 3. Verificare che tutte le risorse Filament siano registrate correttamente
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -274,6 +307,8 @@ namespace Modules\NomeModulo\App\Filament;
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
 4. Testare il modulo in ambiente di sviluppo 
 
 ## Risoluzione di Casi Specifici
@@ -311,6 +346,7 @@ Il progetto include alcuni script per facilitare la gestione dei conflitti:
 - [Conflitti nei File di Configurazione](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/config_file_conflicts.md)
 - [Convenzioni Namespace](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/NAMESPACE-CONVENTIONS.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 1831d11e78 (.)
 =======
@@ -321,3 +357,5 @@ Il progetto include alcuni script per facilitare la gestione dei conflitti:
 =======
 >>>>>>> f71d08e230 (.)
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)

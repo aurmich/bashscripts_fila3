@@ -191,6 +191,7 @@ I seguenti file sono stati recentemente risolti:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -209,6 +210,13 @@ I seguenti file sono stati recentemente risolti:
 =======
 
 >>>>>>> e9356a3a (.)
+=======
+
+=======
+>>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> 574afe9e (.)
+>>>>>>> 42ab2308 (.)
 ### fix_structure.sh
 
 Mantenere la versione più avanzata con funzioni di logging colorate, migliorando:
@@ -279,6 +287,7 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -288,10 +297,15 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 
 =======
 =======
+
+=======
+>>>>>>> 42ab2308 (.)
+=======
 >>>>>>> 3c18aa7e (.)
 =======
 =======
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 59901687 (.)
 =======
@@ -299,6 +313,8 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 =======
 
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
 #### Utilizzo
 ```bash
 ./bashscripts/utils/conflict_analyzer.sh
@@ -317,6 +333,7 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -335,6 +352,13 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 =======
 
 >>>>>>> e9356a3a (.)
+=======
+
+=======
+>>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> 574afe9e (.)
+>>>>>>> 42ab2308 (.)
 # Trova tutti i file con conflitti
 ./bashscripts/git/find_conflicts.sh
 ```
@@ -344,6 +368,7 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -362,6 +387,13 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 =======
 
 >>>>>>> e9356a3a (.)
+=======
+
+=======
+>>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> 574afe9e (.)
+>>>>>>> 42ab2308 (.)
 # Analizza i conflitti trovati
 ./bashscripts/utils/conflict_analyzer.sh
 ```
@@ -371,6 +403,7 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -389,6 +422,13 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 =======
 
 >>>>>>> e9356a3a (.)
+=======
+
+=======
+>>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> 574afe9e (.)
+>>>>>>> 42ab2308 (.)
 # Risolvi manualmente i conflitti più critici
 ./bashscripts/utils/resolve_conflicts.sh [file_critico]
 ```
@@ -398,6 +438,7 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -416,6 +457,13 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 =======
 
 >>>>>>> e9356a3a (.)
+=======
+
+=======
+>>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> 574afe9e (.)
+>>>>>>> 42ab2308 (.)
 # Risolvi automaticamente i conflitti rimanenti meno critici
 ./bashscripts/utils/fix_all_git_conflicts.sh
 ```
@@ -455,6 +503,7 @@ Gli script possono essere migliorati e personalizzati. Per contribuire:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -464,6 +513,8 @@ Gli script possono essere migliorati e personalizzati. Per contribuire:
 >>>>>>> f198176d (.)
 =======
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
 
 # Nome dello script
 
@@ -478,9 +529,12 @@ Gli script possono essere migliorati e personalizzati. Per contribuire:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> f198176d (.)
+=======
+>>>>>>> 42ab2308 (.)
 =======
 =======
 >>>>>>> 574afe9e (.)
@@ -494,11 +548,14 @@ Gli script possono essere migliorati e personalizzati. Per contribuire:
 =======
 >>>>>>> 574afe9e (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
 =======
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
 # =======================
 
 # Dichiarazione delle costanti e variabili
@@ -519,6 +576,7 @@ git pull origin main
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -537,6 +595,13 @@ git pull origin main
 =======
 
 >>>>>>> e9356a3a (.)
+=======
+
+=======
+>>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> 574afe9e (.)
+>>>>>>> 42ab2308 (.)
 # Conflitti rilevati
 ./bashscripts/utils/conflict_analyzer.sh
 ./bashscripts/utils/resolve_conflicts.sh [file_conflittuale]
@@ -549,6 +614,7 @@ Prima di eseguire un commit, verificare l'assenza di conflitti:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -567,6 +633,13 @@ Prima di eseguire un commit, verificare l'assenza di conflitti:
 =======
 
 >>>>>>> e9356a3a (.)
+=======
+
+=======
+>>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> 574afe9e (.)
+>>>>>>> 42ab2308 (.)
 # Se vengono trovati conflitti, risolverli
 git add .
 git commit -m "Messaggio del commit"
@@ -601,19 +674,25 @@ Per pulire un repository con molti conflitti non risolti:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> f198176d (.)
 <<<<<<< HEAD
+=======
+>>>>>>> 42ab2308 (.)
 =======
 >>>>>>> d83fe8da (.)
 =======
 >>>>>>> 574afe9e (.)
 >>>>>>> 3c18aa7e (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
 =======
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)

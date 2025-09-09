@@ -58,11 +58,15 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 [Backlink: scripts_conflict_resolution.md](scripts_conflict_resolution.md)
 [Backlink: git_conflicts_resolution.md](git_conflicts_resolution.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
 >>>>>>> f71d08e230 (.)
 >>>>>>> e9356a3a (.)
+=======
+
+>>>>>>> 42ab2308 (.)
 ## Casi d'Uso Avanzati
 
 ### 1. Risoluzione Selettiva
@@ -74,12 +78,16 @@ Lo script può essere integrato con Git hooks per verificare automaticamente la 
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
 
 >>>>>>> f71d08e230 (.)
 >>>>>>> e9356a3a (.)
+=======
+
+>>>>>>> 42ab2308 (.)
 # .git/hooks/pre-commit
 #!/bin/bash
 ```
@@ -106,8 +114,11 @@ Dopo l'esecuzione dello script, è consigliabile verificare che tutti i conflitt
 - [Conflitti nei File di Configurazione](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/config_file_conflicts.md)
 - [Risoluzione Conflitti nei Moduli](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/conflitti_merge_risolti.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 [Backlink: git_conflicts_resolution.md](git_conflicts_resolution.md)
 =======
 >>>>>>> 1831d11e78 (.)
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)

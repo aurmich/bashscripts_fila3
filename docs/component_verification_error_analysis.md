@@ -121,6 +121,7 @@ name('login');
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -155,6 +156,11 @@ name('login');
 >>>>>>> e1b46df35 (.)
 >>>>>>> f71d08e230 (.)
 >>>>>>> e9356a3a (.)
+=======
+
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 42ab2308 (.)
 # Verifica componenti nel progetto
 find resources/views/components -name "*.blade.php" | head -20
 
@@ -171,6 +177,7 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -205,6 +212,11 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 >>>>>>> e1b46df35 (.)
 >>>>>>> f71d08e230 (.)
 >>>>>>> e9356a3a (.)
+=======
+
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 42ab2308 (.)
 # Test componente
 php artisan view:clear
 php artisan config:clear
@@ -264,6 +276,7 @@ L'errore è stato causato da:
 *Stato: Errore critico identificato*
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -301,3 +314,8 @@ L'errore è stato causato da:
 >>>>>>> e1b46df35 (.)
 >>>>>>> f71d08e230 (.)
 >>>>>>> e9356a3a (.)
+=======
+=======
+*Priorità: CRITICA* 
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 42ab2308 (.)
