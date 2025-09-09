@@ -77,17 +77,10 @@ Per aggiungere nuovi pattern di esclusione, si consiglia di:
 
 ## Documentazione Correlata
 - [Gestione dei Repository Git](/docs/bashscripts/gestione_git.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
 =======
 
->>>>>>> f71d08e230 (.)
->>>>>>> e9356a3a (.)
 =======
 
->>>>>>> 42ab2308 (.)
 # File di Configurazione
 
 Questa documentazione descrive i file di configurazione utilizzati nel progetto.
@@ -246,18 +239,10 @@ Per aggiungere nuovi pattern di esclusione, si consiglia di:
 ## Documentazione Correlata
 - [Gestione dei Repository Git](/docs/bashscripts/gestione_git.md)
 5338a990 (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
-
 =======
 =======
->>>>>>> 1831d11e78 (.)
-=======
->>>>>>> f1e7ef1046 (.)
->>>>>>> e9356a3a (.)
 =======
 
->>>>>>> 42ab2308 (.)
 # File di Configurazione
 
 Questa documentazione descrive i file di configurazione utilizzati nel progetto.
@@ -417,18 +402,11 @@ Per aggiungere nuovi pattern di esclusione, si consiglia di:
 
 ## Documentazione Correlata
 - [Gestione dei Repository Git](/docs/bashscripts/gestione_git.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
 =======
 =======
 
->>>>>>> f71d08e230 (.)
->>>>>>> e9356a3a (.)
 =======
 
->>>>>>> 42ab2308 (.)
 # File di Configurazione
 
 Questa documentazione descrive i file di configurazione utilizzati nel progetto.
@@ -508,22 +486,17 @@ Per aggiungere nuovi pattern di esclusione, si consiglia di:
 
 ## Documentazione Correlata
 - [Gestione dei Repository Git](/docs/bashscripts/gestione_git.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 =======
 # File di Configurazione
 =======
 f000df5 (.)
 
->>>>>>> 1831d11e78 (.)
 
 Questa documentazione descrive i file di configurazione utilizzati nel progetto.
 
 ## .gitignore
 
 =======
->>>>>>> f1e7ef1046 (.)
 ### Descrizione
 Il file `.gitignore` specifica i file e le directory che Git dovrebbe ignorare durante le operazioni di commit e sincronizzazione.
 
@@ -598,10 +571,8 @@ Per aggiungere nuovi pattern di esclusione, si consiglia di:
 ## Documentazione Correlata
 - [Gestione dei Repository Git](/docs/bashscripts/gestione_git.md)
 =======
->>>>>>> f1e7ef1046 (.)
 =======
 
->>>>>>> f71d08e230 (.)
 # File di Configurazione
 
 Questa documentazione descrive i file di configurazione utilizzati nel progetto.
@@ -683,24 +654,14 @@ Per aggiungere nuovi pattern di esclusione, si consiglia di:
 - [Gestione dei Repository Git](/docs/bashscripts/gestione_git.md)
 =======
 =======
->>>>>>> d83fe8da (.)
 - [Conflitti di Merge](/bashscripts/docs/CONFLICT_RESOLUTION_BASH.md) 
->>>>>>> 1831d11e78 (.)
 =======
 - [Conflitti di Merge](/bashscripts/docs/CONFLICT_RESOLUTION_BASH.md) 
->>>>>>> 0c55086029 (.)
 =======
 - [Conflitti di Merge](conflict-resolution-bash.md) 
->>>>>>> 04d882f8f6 (.)
 =======
 =======
->>>>>>> 4d4d6cb7 (.)
 =======
->>>>>>> d83fe8da (.)
 - [Conflitti di Merge](/bashscripts/docs/CONFLICT_RESOLUTION_BASH.md) 
->>>>>>> f1e7ef1046 (.)
 =======
->>>>>>> f71d08e230 (.)
->>>>>>> e9356a3a (.)
 =======
->>>>>>> 42ab2308 (.)

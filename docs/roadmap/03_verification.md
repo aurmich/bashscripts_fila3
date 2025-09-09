@@ -4,17 +4,10 @@
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
 aurmich/dev
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
 =======
 
->>>>>>> f71d08e230 (.)
->>>>>>> e9356a3a (.)
 =======
 
->>>>>>> 42ab2308 (.)
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -111,17 +104,10 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 ### Altri
 - Logging strutturato
 - Monitoraggio performance
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
 =======
 
->>>>>>> f71d08e230 (.)
->>>>>>> e9356a3a (.)
 =======
 
->>>>>>> 42ab2308 (.)
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -225,15 +211,9 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
 =======
->>>>>>> f71d08e230 (.)
->>>>>>> e9356a3a (.)
 =======
->>>>>>> 42ab2308 (.)
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -330,17 +310,10 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 ### Altri
 - Logging strutturato
 - Monitoraggio performance
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
 =======
 
->>>>>>> f71d08e230 (.)
->>>>>>> e9356a3a (.)
 =======
 
->>>>>>> 42ab2308 (.)
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -439,17 +412,10 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 - Monitoraggio performance
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
 =======
 
->>>>>>> f71d08e230 (.)
->>>>>>> e9356a3a (.)
 =======
 
->>>>>>> 42ab2308 (.)
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -749,17 +715,10 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 
 
 aurmich/dev
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
 =======
 
->>>>>>> f71d08e230 (.)
->>>>>>> e9356a3a (.)
 =======
 
->>>>>>> 42ab2308 (.)
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -958,17 +917,10 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (197 linee vs 1)[0m
  43df3e0 (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
 =======
 
->>>>>>> 1831d11e78 (.)
->>>>>>> e9356a3a (.)
 =======
 
->>>>>>> 42ab2308 (.)
 aurmich/dev
 
 ## Collegamenti tra versioni di 03_verification.md

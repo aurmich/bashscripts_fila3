@@ -129,58 +129,19 @@ I seguenti file avevano già `"minimum-stability": "dev"`:
 
 ### Comandi di Verifica
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-=======
->>>>>>> f198176d (.)
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c18aa7e (.)
->>>>>>> 9c02579 (.)
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
-=======
->>>>>>> f198176d (.)
 =======
 =======
->>>>>>> 42ab2308 (.)
 =======
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c18aa7e (.)
->>>>>>> 9c02579 (.)
-<<<<<<< HEAD
-
 =======
 
 =======
 =======
->>>>>>> 9c02579 (.)
->>>>>>> 85c5198c (.)
 =======
->>>>>>> 9de04485 (.)
 =======
->>>>>>> 59901687 (.)
->>>>>>> 85c5198c (.)
 =======
->>>>>>> 59901687 (.)
 =======
->>>>>>> f198176d (.)
->>>>>>> d20d0523 (.)
 =======
->>>>>>> e1b46df35 (.)
->>>>>>> f71d08e230 (.)
->>>>>>> e9356a3a (.)
 =======
->>>>>>> 42ab2308 (.)
 # Verifica configurazione
 composer config --list | grep minimum-stability
 
@@ -236,58 +197,19 @@ composer check-platform-reqs
 
 ### Log di Debug
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-=======
->>>>>>> f198176d (.)
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c18aa7e (.)
->>>>>>> 9c02579 (.)
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
-=======
->>>>>>> f198176d (.)
 =======
 =======
->>>>>>> 42ab2308 (.)
 =======
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c18aa7e (.)
->>>>>>> 9c02579 (.)
-<<<<<<< HEAD
-
 =======
 
 =======
 =======
->>>>>>> 9c02579 (.)
->>>>>>> 85c5198c (.)
 =======
->>>>>>> 9de04485 (.)
 =======
->>>>>>> 59901687 (.)
->>>>>>> 85c5198c (.)
 =======
->>>>>>> 59901687 (.)
 =======
->>>>>>> f198176d (.)
->>>>>>> d20d0523 (.)
 =======
->>>>>>> e1b46df35 (.)
->>>>>>> f71d08e230 (.)
->>>>>>> e9356a3a (.)
 =======
->>>>>>> 42ab2308 (.)
 # Abilita debug composer
 composer update -vvv
 
@@ -311,48 +233,24 @@ La configurazione mantiene `"prefer-stable": true` per garantire stabilità quan
 *Aggiornamento completato il: $(date)*
 *File modificati: 4*
 *File già configurati: 18*
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
+*Totale file verificati: 22* 
 =======
 *Totale file verificati: 22* 
->>>>>>> 3c18aa7e (.)
->>>>>>> 59901687 (.)
-=======
-*Totale file verificati: 22* 
->>>>>>> 3c18aa7e (.)
->>>>>>> f198176d (.)
 =======
 *Totale file verificati: 22* 
 =======
 *Totale file verificati: 22* 
 =======
->>>>>>> 59901687 (.)
->>>>>>> 85c5198c (.)
 =======
 *Totale file verificati: 22* 
->>>>>>> 3c18aa7e (.)
->>>>>>> 9de04485 (.)
 =======
 =======
 *Totale file verificati: 22* 
->>>>>>> 59901687 (.)
 =======
 =======
 *Totale file verificati: 22* 
->>>>>>> 3c18aa7e (.)
->>>>>>> f198176d (.)
->>>>>>> d20d0523 (.)
 =======
 *Totale file verificati: 22* 
->>>>>>> e1b46df35 (.)
->>>>>>> f71d08e230 (.)
->>>>>>> e9356a3a (.)
 =======
 =======
 *Totale file verificati: 22* 
->>>>>>> 3c18aa7e (.)
->>>>>>> 42ab2308 (.)

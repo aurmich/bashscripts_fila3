@@ -1,14 +1,7 @@
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> e9356a3a (.)
 # BashScripts - Organizzazione Script
 =======
 # 🚀 Toolkit di Automazione Git per Laraxot PTVX
->>>>>>> 42ab2308 (.)
 
 [![PHPStan](https://img.shields.io/badge/PHPStan-Level%209-brightgreen.svg?style=for-the-badge&logo=php&logoColor=white)](../docs/phpstan/ANALISI_MODULI_PHPSTAN.md)
 [![Bash Version](https://img.shields.io/badge/Bash-5.0%2B-brightgreen.svg)](https://www.gnu.org/software/bash/)
@@ -47,10 +40,7 @@
 git clone git@github.com:aurmich/bashscripts_fila3.git
 
 # Rendi gli script eseguibili
-<<<<<<< HEAD
-=======
 chmod +x *.sh
->>>>>>> 574afe9e (.)
 chmod +x scripts/**/*.sh
 ```
 
@@ -58,10 +48,7 @@ chmod +x scripts/**/*.sh
 
 ### Sincronizzazione Subtree
 ```bash
-<<<<<<< HEAD
-=======
 ./git_sync_subtree.sh <path> <remote_repo>
->>>>>>> 574afe9e (.)
 ./scripts/git/git_sync_subtree.sh <path> <remote_repo>
 ```
 
@@ -197,15 +184,12 @@ Tutti gli script sono organizzati in sottocartelle per categoria:
 
 ### Sincronizzazione Modulo
 ```bash
-<<<<<<< HEAD
-=======
 
 # Sincronizza un modulo specifico
 ./git_sync_subtree.sh modules/users git@github.com:org/users.git
 
 # Sincronizza con branch specifico
 REMOTE_BRANCH=develop ./git_sync_subtree.sh modules/auth git@github.com:org/auth.git
->>>>>>> 574afe9e (.)
 # Sincronizza un modulo specifico
 ./scripts/git/git_sync_subtree.sh modules/users git@github.com:org/users.git
 
@@ -224,8 +208,6 @@ REMOTE_BRANCH=develop ./scripts/phpstan/check_before_phpstan.sh
    ```bash
    fatal: you must provide the --prefix option
    ```
-<<<<<<< HEAD
-=======
    ✅ **Soluzione:** Verifica il path del subtree
 
 2. **Push Rejected**
@@ -233,7 +215,6 @@ REMOTE_BRANCH=develop ./scripts/phpstan/check_before_phpstan.sh
    ! [rejected] dev -> dev (non-fast-forward)
    ```
    ✅ **Soluzione:** Esegui prima un pull
->>>>>>> 574afe9e (.)
    **Soluzione**: Verifica che il path del subtree sia corretto
 
 2. **Permessi Script**
@@ -320,14 +301,7 @@ Questo progetto è rilasciato sotto licenza MIT. Vedi il file [LICENSE](LICENSE)
 
 ---
 
-<<<<<<< HEAD
-**Ultimo aggiornamento**: Gennaio 2025
-**Versione**: 2.0
-**Compatibilità**: Laravel 10+, Moduli SaluteOra/SaluteMo
-<<<<<<< HEAD
 =======
-=======
->>>>>>> f198176d (.)
 # 🚀 Toolkit di Automazione Git per Laraxot PTVX
 
 [![PHPStan](https://img.shields.io/badge/PHPStan-Level%209-brightgreen.svg?style=for-the-badge&logo=php&logoColor=white)](../docs/phpstan/ANALISI_MODULI_PHPSTAN.md)
@@ -367,10 +341,7 @@ Questo progetto è rilasciato sotto licenza MIT. Vedi il file [LICENSE](LICENSE)
 git clone git@github.com:aurmich/bashscripts_fila3.git
 
 # Rendi gli script eseguibili
-<<<<<<< HEAD
-=======
 chmod +x *.sh
->>>>>>> 574afe9e (.)
 chmod +x scripts/**/*.sh
 ```
 
@@ -378,10 +349,7 @@ chmod +x scripts/**/*.sh
 
 ### Sincronizzazione Subtree
 ```bash
-<<<<<<< HEAD
-=======
 ./git_sync_subtree.sh <path> <remote_repo>
->>>>>>> 574afe9e (.)
 ./scripts/git/git_sync_subtree.sh <path> <remote_repo>
 ```
 
@@ -517,15 +485,12 @@ Tutti gli script sono organizzati in sottocartelle per categoria:
 
 ### Sincronizzazione Modulo
 ```bash
-<<<<<<< HEAD
-=======
 
 # Sincronizza un modulo specifico
 ./git_sync_subtree.sh modules/users git@github.com:org/users.git
 
 # Sincronizza con branch specifico
 REMOTE_BRANCH=develop ./git_sync_subtree.sh modules/auth git@github.com:org/auth.git
->>>>>>> 574afe9e (.)
 # Sincronizza un modulo specifico
 ./scripts/git/git_sync_subtree.sh modules/users git@github.com:org/users.git
 
@@ -544,8 +509,6 @@ REMOTE_BRANCH=develop ./scripts/phpstan/check_before_phpstan.sh
    ```bash
    fatal: you must provide the --prefix option
    ```
-<<<<<<< HEAD
-=======
    ✅ **Soluzione:** Verifica il path del subtree
 
 2. **Push Rejected**
@@ -553,7 +516,6 @@ REMOTE_BRANCH=develop ./scripts/phpstan/check_before_phpstan.sh
    ! [rejected] dev -> dev (non-fast-forward)
    ```
    ✅ **Soluzione:** Esegui prima un pull
->>>>>>> 574afe9e (.)
    **Soluzione**: Verifica che il path del subtree sia corretto
 
 2. **Permessi Script**
@@ -641,7 +603,6 @@ Questo progetto è rilasciato sotto licenza MIT. Vedi il file [LICENSE](LICENSE)
 ---
 
 =======
->>>>>>> 42ab2308 (.)
 <div align="center">
   <strong>🚀 Potenzia il tuo workflow Git con questi script!</strong>
 </div>
@@ -1213,12 +1174,5 @@ This toolkit addresses these challenges by providing automated tools that simpli
 - [Italiano](docs/README.it.md)
 - [Español](docs/README.es.md)
  43df3e0 (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
 =======
->>>>>>> f198176d (.)
 =======
->>>>>>> e9356a3a (.)
-=======
->>>>>>> 42ab2308 (.)

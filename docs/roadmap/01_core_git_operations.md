@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
 
 
@@ -17,10 +14,7 @@
  43df3e0 (.)
 aurmich/dev
 =======
->>>>>>> 1831d11e78 (.)
->>>>>>> e9356a3a (.)
 =======
->>>>>>> 42ab2308 (.)
 # 🚀 Fase 1: Core Git Operations
 
 ## 📋 Panoramica
@@ -36,16 +30,10 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 - Gestione dei submodule
 - Logging dettagliato
 - Gestione errori
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Backup automatico pre-operazioni
-
-=======
 
 
 
 =======
->>>>>>> 42ab2308 (.)
 - Backup automatico pre-operazioni
 
 ### 2. Gestione dei Submodule
@@ -126,103 +114,6 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 - Tempo medio di sincronizzazione: < 5 minuti
 - Tasso di successo operazioni: 99.9%
 - Tempo di risoluzione conflitti: < 10 minuti
-<<<<<<< HEAD
-
-
-
-- Tempo di backup: < 2 minuti
-- Tempo di rollback: < 5 minuti
-
-
-
-- Tempo di backup: < 2 minuti
-- Tempo di rollback: < 5 minuti
-
-[0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (3 linee vs 1)[0m
- 43df3e0 (.)
-aurmich/dev
-
-## 🛠️ Strumenti Utilizzati
-
-### Git
-- Comandi base (pull, push, merge)
-- Gestione submodule
-- Risoluzione conflitti
-
-
-
-- Hooks personalizzati
-- Workflow automatizzati
-
-
-
-- Hooks personalizzati
-- Workflow automatizzati
-
-[0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (3 linee vs 1)[0m
- 43df3e0 (.)
-aurmich/dev
-
-### Bash
-- Scripting avanzato
-- Gestione errori
-- Logging
-
-
-
-- Funzioni di utilità
-- Test automatici
-
-
-
-- Funzioni di utilità
-- Test automatici
-
-[0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (3 linee vs 1)[0m
- 43df3e0 (.)
-aurmich/dev
-
-### Altri
-- SSH per connessioni sicure
-- Cron per automazione
-
-
-
-
- 43df3e0 (.)
-aurmich/dev
-- Monitoraggio risorse
-- Alerting automatico
-- Dashboard di stato
-
-# 🚀 Fase 1: Core Git Operations
-
-## 📋 Panoramica
-Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la gestione efficiente dei repository.
-
-## ✅ Funzionalità Completate
-
-### 1. Sincronizzazione Base tra Organizzazioni
-**Script**: `git_sync_org.sh`
-**Stato**: ✅ Completato
-**Dettagli**:
-- Sincronizzazione automatica tra organizzazioni GitHub
-- Gestione dei submodule
-- Logging dettagliato
-- Gestione errori
-
->>>>>>> e9356a3a (.)
-### 2. Gestione dei Submodule
-**Script**: `sync_submodules.sh`
-**Stato**: ✅ Completato
-**Dettagli**:
-- Aggiornamento automatico dei submodule
-- Gestione dei conflitti
-- Backup prima delle operazioni
-<<<<<<< HEAD
-- Verifica integrità post-operazioni
-=======
->>>>>>> e9356a3a (.)
 
 ### 3. Backup Automatico
 **Script**: `backup.sh`
@@ -231,11 +122,6 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 - Backup incrementale
 - Compressione automatica
 - Verifica integrità
-<<<<<<< HEAD
-- Gestione spazio disco
-- Rotazione backup
-=======
->>>>>>> e9356a3a (.)
 
 ### 4. Risoluzione Conflitti Base
 **Script**: `resolve_git_conflict.sh`
@@ -244,11 +130,6 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 - Analisi automatica dei conflitti
 - Risoluzione quando possibile
 - Logging dettagliato
-<<<<<<< HEAD
-- Backup pre-risoluzione
-- Rollback automatico in caso di errori
-=======
->>>>>>> e9356a3a (.)
 
 ## 📝 Note di Implementazione
 
@@ -257,51 +138,27 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
    - Verifica delle chiavi SSH
    - Controllo dei permessi
    - Backup prima delle operazioni critiche
-<<<<<<< HEAD
-   - Validazione input
-   - Sanitizzazione output
-=======
 
->>>>>>> e9356a3a (.)
 2. **Performance**:
    - Ottimizzazione delle operazioni Git
    - Gestione efficiente della memoria
    - Caching dove possibile
-<<<<<<< HEAD
-   - Parallelizzazione operazioni
-   - Gestione risorse
-=======
 
->>>>>>> e9356a3a (.)
 3. **Manutenibilità**:
    - Codice modulare
    - Documentazione dettagliata
    - Logging strutturato
-<<<<<<< HEAD
-   - Test automatici
-   - Versionamento semantico
-=======
->>>>>>> e9356a3a (.)
 
 ### Lezioni Apprese
 1. Importanza del backup prima delle operazioni critiche
 2. Necessità di logging dettagliato per il debug
 3. Valore della gestione automatica dei conflitti
-<<<<<<< HEAD
-4. Importanza della validazione input
-5. Necessità di rollback automatico
-=======
->>>>>>> e9356a3a (.)
 
 ## 🔄 Collegamenti
 
 - [Roadmap Principale](../roadmap.md)
 - [Documentazione Script](../project.md)
 - [Fase 2: Manutenzione](../roadmap/02_maintenance.md)
-<<<<<<< HEAD
-- [Fase 3: Verifica](../roadmap/03_verification.md)
-=======
->>>>>>> e9356a3a (.)
 
 ## 📈 Metriche di Successo
 
@@ -309,18 +166,11 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 - ✅ 100% automazione operazioni base
 - ✅ 0 errori in produzione
 - ✅ Tempo di sincronizzazione ridotto del 70%
-<<<<<<< HEAD
-- ✅ 100% backup automatici
-- ✅ 99.9% risoluzione automatica conflitti
-=======
->>>>>>> e9356a3a (.)
 
 ### Metriche di Performance
 - Tempo medio di sincronizzazione: < 5 minuti
 - Tasso di successo operazioni: 99.9%
 - Tempo di risoluzione conflitti: < 10 minuti
-<<<<<<< HEAD
-=======
 
 ## 🛠️ Strumenti Utilizzati
 
@@ -7144,9 +6994,7 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 - Tempo di risoluzione conflitti: < 10 minuti
 
 =======
->>>>>>> e9356a3a (.)
 =======
->>>>>>> 42ab2308 (.)
 - Tempo di backup: < 2 minuti
 - Tempo di rollback: < 5 minuti
 
@@ -7186,10 +7034,4 @@ Per ulteriori dettagli, consultare la documentazione degli script specifici e le
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 =======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
->>>>>>> e9356a3a (.)
-=======
->>>>>>> 42ab2308 (.)

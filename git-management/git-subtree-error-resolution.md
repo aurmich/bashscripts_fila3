@@ -22,35 +22,13 @@ Il sistema di gestione dei subtree è composto da tre componenti principali:
 ### 2. Push Script (`git_push_subtree.sh`)
 
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
 =======
-<<<<<<< HEAD
-=======
->>>>>>> f198176d (.)
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c18aa7e (.)
-=======
->>>>>>> 574afe9e (.)
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
-=======
->>>>>>> f198176d (.)
-=======
-
->>>>>>> e9356a3a (.)
 =======
 
 =======
->>>>>>> 3c18aa7e (.)
+
 =======
->>>>>>> 574afe9e (.)
->>>>>>> 42ab2308 (.)
+=======
 # 1. Inizializzazione
 git init
 git checkout -b "$BRANCH"
@@ -68,35 +46,13 @@ git push -u origin "$BRANCH"
 
 ### 3. Pull Script (`git_pull_subtree.sh`)
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
 =======
-<<<<<<< HEAD
-=======
->>>>>>> f198176d (.)
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c18aa7e (.)
-=======
->>>>>>> 574afe9e (.)
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
-=======
->>>>>>> f198176d (.)
-=======
-
->>>>>>> e9356a3a (.)
 =======
 
 =======
->>>>>>> 3c18aa7e (.)
+
 =======
->>>>>>> 574afe9e (.)
->>>>>>> 42ab2308 (.)
+=======
 # 1. Pull standard
 git subtree pull -P "$LOCAL_PATH" "$REMOTE_REPO" "$BRANCH" --squash
 
@@ -142,35 +98,13 @@ fatal: you must provide the --prefix option
 
 **Soluzione**:
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
 =======
-<<<<<<< HEAD
-=======
->>>>>>> f198176d (.)
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c18aa7e (.)
-=======
->>>>>>> 574afe9e (.)
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
-=======
->>>>>>> f198176d (.)
-=======
-
->>>>>>> e9356a3a (.)
 =======
 
 =======
->>>>>>> 3c18aa7e (.)
+
 =======
->>>>>>> 574afe9e (.)
->>>>>>> 42ab2308 (.)
+=======
 # Verifica variabili
 if [ -z "$LOCAL_PATH" ] || [ -z "$REMOTE_REPO" ]; then
     echo "❌ Error: Missing required variables"
@@ -187,35 +121,13 @@ fi
 
 **Soluzione**:
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
 =======
-<<<<<<< HEAD
-=======
->>>>>>> f198176d (.)
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c18aa7e (.)
-=======
->>>>>>> 574afe9e (.)
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
-=======
->>>>>>> f198176d (.)
-=======
-
->>>>>>> e9356a3a (.)
 =======
 
 =======
->>>>>>> 3c18aa7e (.)
+
 =======
->>>>>>> 574afe9e (.)
->>>>>>> 42ab2308 (.)
+=======
 # Aggiorna repository locale
 git fetch origin "$BRANCH"
 git merge origin/"$BRANCH" --allow-unrelated-histories"

@@ -1,15 +1,8 @@
 # Script di Verifica della Qualità del Codice
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> e9356a3a (.)
 Questa documentazione descrive gli script utilizzati per verificare e migliorare la qualità del codice nel progetto.
 =======
 Questa documentazione descrive gli script e le procedure utilizzate per verificare e migliorare la qualità del codice nel progetto Laravel.
->>>>>>> 42ab2308 (.)
 
 ## Panoramica
 
@@ -336,15 +329,7 @@ git checkout HEAD -- storage/quality-reports/
 - [SonarQube PHP](https://docs.sonarqube.org/latest/analysis/languages/php/)
 - [Blackfire Profiler](https://blackfire.io/docs/introduction)
 
-<<<<<<< HEAD
-## Risorse Utili
-- [PHPStan](https://phpstan.org/)
-- [Spatie Laravel Data](https://spatie.be/docs/laravel-data/v4/introduction)
-- [CI/CD Best Practices](https://docs.github.com/en/actions/guides/building-and-testing-php) 
-<<<<<<< HEAD
 =======
-=======
->>>>>>> f198176d (.)
 Questa documentazione descrive gli script e le procedure utilizzate per verificare e migliorare la qualità del codice nel progetto Laravel.
 
 ## Panoramica
@@ -675,17 +660,10 @@ git checkout HEAD -- storage/quality-reports/
 ---
 
 *Ultimo aggiornamento: Agosto 2025*  
-<<<<<<< HEAD
 *Versione: 2.1.0*
->>>>>>> 59901687 (.)
 =======
-*Versione: 2.1.0*
->>>>>>> f198176d (.)
-=======
->>>>>>> e9356a3a (.)
 =======
 ---
 
 *Ultimo aggiornamento: Agosto 2025*  
 *Versione: 2.1.0*
->>>>>>> 42ab2308 (.)

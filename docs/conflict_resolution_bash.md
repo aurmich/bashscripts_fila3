@@ -43,10 +43,6 @@ La risoluzione manuale dei conflitti negli script bash è particolarmente delica
 ### Conflitto in funzione di logging
 
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
 # Versione avanzata con livelli di log
 log() {
     local level="$1"
@@ -78,15 +74,11 @@ log() {
 =======
 # Funzione di log avanzata: accetta sia log "message" che log "level" "message"
 log() {
->>>>>>> 04d882f8f6 (.)
 =======
 =======
 
->>>>>>> f71d08e230 (.)
->>>>>>> e9356a3a (.)
 =======
 
->>>>>>> 42ab2308 (.)
 # Versione avanzata con livelli di log
 log() {
     local level="$1"
@@ -116,13 +108,7 @@ log() {
 # Funzione avanzata per loggare messaggi che supporta entrambi i formati
 log() {
     # Supporta sia il formato avanzato con livelli che il formato semplice
-<<<<<<< HEAD
-<<<<<<< HEAD
 =======
->>>>>>> f1e7ef1046 (.)
->>>>>>> e9356a3a (.)
-=======
->>>>>>> 42ab2308 (.)
     if [ $# -eq 2 ]; then
         # Formato avanzato: log "level" "message"
         local level="$1"
@@ -148,19 +134,11 @@ log() {
 ### Conflitto in parametri di script
 
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
+=======
+=======
 
 =======
-=======
->>>>>>> f1e7ef1046 (.)
-=======
 
->>>>>>> f71d08e230 (.)
->>>>>>> e9356a3a (.)
-=======
-
->>>>>>> 42ab2308 (.)
 # Versione che richiede 2 parametri
 if [ $# -ne 2 ]; then
     echo "Usage: $0 <path> <remote_repo>"
@@ -184,26 +162,14 @@ BRANCH="$3"
 **Soluzione ottimale**: Valutare quale approccio è più flessibile e coerente con il resto del sistema. Se il branch è opzionale, rendere il terzo parametro opzionale con un valore predefinito.
 
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
+=======
+=======
 
 # Versione che supporta 2 o 3 parametri
-=======
-=======
-=======
->>>>>>> 42ab2308 (.)
-
-# Versione che supporta 2 o 3 parametri
-<<<<<<< HEAD
-=======
 # Gestione robusta dei parametri: supporta 2 o 3 parametri, con branch opzionale
->>>>>>> 04d882f8f6 (.)
 =======
 # Versione che supporta 2 o 3 parametri
->>>>>>> f1e7ef1046 (.)
->>>>>>> e9356a3a (.)
 =======
->>>>>>> 42ab2308 (.)
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     echo "Usage: $0 <path> <remote_repo> [branch]"
     exit 1

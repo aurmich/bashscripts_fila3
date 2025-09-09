@@ -43,36 +43,14 @@ La risoluzione manuale dei conflitti negli script bash è particolarmente delica
 ### Conflitto in funzione di logging
 
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
 =======
-<<<<<<< HEAD
-=======
->>>>>>> f198176d (.)
-<<<<<<< HEAD
 
 =======
 =======
 
 =======
->>>>>>> 42ab2308 (.)
->>>>>>> 3c18aa7e (.)
-=======
 
->>>>>>> 574afe9e (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
 =======
->>>>>>> f198176d (.)
-=======
-
->>>>>>> e9356a3a (.)
-=======
->>>>>>> 42ab2308 (.)
 # Versione avanzata con livelli di log
 log() {
     local level="$1"
@@ -98,36 +76,14 @@ log() {
 **Soluzione ottimale**: Integrare entrambe le versioni mantenendo la compatibilità con il codice esistente.
 
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
 =======
-<<<<<<< HEAD
-=======
->>>>>>> f198176d (.)
-<<<<<<< HEAD
 
 =======
 =======
 
 =======
->>>>>>> 42ab2308 (.)
->>>>>>> 3c18aa7e (.)
-=======
 
->>>>>>> 574afe9e (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
 =======
->>>>>>> f198176d (.)
-=======
-
->>>>>>> e9356a3a (.)
-=======
->>>>>>> 42ab2308 (.)
 # Funzione avanzata per loggare messaggi che supporta entrambi i formati
 log() {
     # Supporta sia il formato avanzato con livelli che il formato semplice
@@ -156,36 +112,14 @@ log() {
 ### Conflitto in parametri di script
 
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
 =======
-<<<<<<< HEAD
-=======
->>>>>>> f198176d (.)
-<<<<<<< HEAD
 
 =======
 =======
 
 =======
->>>>>>> 42ab2308 (.)
->>>>>>> 3c18aa7e (.)
-=======
 
->>>>>>> 574afe9e (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
 =======
->>>>>>> f198176d (.)
-=======
-
->>>>>>> e9356a3a (.)
-=======
->>>>>>> 42ab2308 (.)
 # Versione che richiede 2 parametri
 if [ $# -ne 2 ]; then
     echo "Usage: $0 <path> <remote_repo>"
@@ -209,36 +143,14 @@ BRANCH="$3"
 **Soluzione ottimale**: Valutare quale approccio è più flessibile e coerente con il resto del sistema. Se il branch è opzionale, rendere il terzo parametro opzionale con un valore predefinito.
 
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
 =======
-<<<<<<< HEAD
-=======
->>>>>>> f198176d (.)
-<<<<<<< HEAD
 
 =======
 =======
 
 =======
->>>>>>> 42ab2308 (.)
->>>>>>> 3c18aa7e (.)
-=======
 
->>>>>>> 574afe9e (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
 =======
->>>>>>> f198176d (.)
-=======
-
->>>>>>> e9356a3a (.)
-=======
->>>>>>> 42ab2308 (.)
 # Versione che supporta 2 o 3 parametri
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     echo "Usage: $0 <path> <remote_repo> [branch]"

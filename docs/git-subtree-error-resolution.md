@@ -21,25 +21,15 @@ Il sistema di gestione dei subtree è composto da tre componenti principali:
 
 ### 2. Push Script (`git_push_subtree.sh`)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-```bash
-
-=======
 
 =======
 ```bash
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 ```bash
->>>>>>> f1e7ef1046 (.)
 =======
->>>>>>> f71d08e230 (.)
->>>>>>> e9356a3a (.)
 =======
 ```bash
 
->>>>>>> 42ab2308 (.)
 # 1. Inizializzazione
 git init
 git checkout -b "$BRANCH"
@@ -51,39 +41,23 @@ git fetch --all
 # 3. Commit e push
 git add -A
 git commit -am "🔧 Aggiornamento subtree"
-<<<<<<< HEAD
-<<<<<<< HEAD
-git merge origin/"$BRANCH" --allow-unrelated-histories"
-=======
 git merge origin/"$BRANCH" --allow-unrelated-histories
 =======
 git merge origin/"$BRANCH" --allow-unrelated-histories"
->>>>>>> 1831d11e78 (.)
 =======
 git merge origin/"$BRANCH" --allow-unrelated-histories"
->>>>>>> f1e7ef1046 (.)
->>>>>>> e9356a3a (.)
 =======
 git merge origin/"$BRANCH" --allow-unrelated-histories"
->>>>>>> 42ab2308 (.)
 git push -u origin "$BRANCH"
 ```
 
 ### 3. Pull Script (`git_pull_subtree.sh`)
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
+=======
+=======
 
 =======
-=======
->>>>>>> f1e7ef1046 (.)
-=======
 
->>>>>>> f71d08e230 (.)
->>>>>>> e9356a3a (.)
-=======
-
->>>>>>> 42ab2308 (.)
 # 1. Pull standard
 git subtree pull -P "$LOCAL_PATH" "$REMOTE_REPO" "$BRANCH" --squash
 
@@ -93,26 +67,17 @@ git subtree pull -P "$LOCAL_PATH" "$REMOTE_REPO" "$BRANCH"
 # 3. Fallback 2
 git fetch "$REMOTE_REPO" "$BRANCH" --depth=1
 git merge -s subtree FETCH_HEAD --allow-unrelated-histories
-<<<<<<< HEAD
-<<<<<<< HEAD
-```
-
-=======
 
 aurmich/dev
 =======
 ```
 
->>>>>>> 1831d11e78 (.)
 =======
 ```
 
->>>>>>> f1e7ef1046 (.)
->>>>>>> e9356a3a (.)
 =======
 ```
 
->>>>>>> 42ab2308 (.)
 Esegue una sequenza complessa di operazioni:
 ```bash
 1. git add -A && git commit -am "."
@@ -126,17 +91,10 @@ Esegue una sequenza complessa di operazioni:
 9. git rebase --rebase-merges --strategy subtree $REMOTE_BRANCH
 ```
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 ### 3. Pull Script (`git_pull_subtree.sh`)
 =======
->>>>>>> 1831d11e78 (.)
 =======
->>>>>>> f1e7ef1046 (.)
->>>>>>> e9356a3a (.)
 =======
->>>>>>> 42ab2308 (.)
 Esegue una sequenza con fallback:
 ```bash
 1. git subtree pull -P $LOCAL_PATH $REMOTE_REPO $REMOTE_BRANCH --squash
@@ -145,19 +103,12 @@ Esegue una sequenza con fallback:
    - git fetch $REMOTE_REPO $REMOTE_BRANCH --depth=1
    - git merge -s subtree FETCH_HEAD --allow-unrelated-histories
 4. git rebase --rebase-merges --strategy subtree $REMOTE_BRANCH
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
  43df3e0 (.)
 aurmich/dev
 =======
->>>>>>> 1831d11e78 (.)
 =======
->>>>>>> f1e7ef1046 (.)
->>>>>>> e9356a3a (.)
 =======
->>>>>>> 42ab2308 (.)
 ```
 
 ## 🚨 Analisi Errori Comuni
@@ -171,19 +122,11 @@ fatal: you must provide the --prefix option
 
 **Soluzione**:
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
+=======
+=======
 
 =======
-=======
->>>>>>> f1e7ef1046 (.)
-=======
 
->>>>>>> f71d08e230 (.)
->>>>>>> e9356a3a (.)
-=======
-
->>>>>>> 42ab2308 (.)
 # Verifica variabili
 if [ -z "$LOCAL_PATH" ] || [ -z "$REMOTE_REPO" ]; then
     echo "❌ Error: Missing required variables"
@@ -196,18 +139,11 @@ fi
 ! [rejected] dev -> dev (non-fast-forward)
 ```
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
 
 =======
->>>>>>> 1831d11e78 (.)
 =======
->>>>>>> f1e7ef1046 (.)
->>>>>>> e9356a3a (.)
 =======
->>>>>>> 42ab2308 (.)
 **Causa**: Divergenze tra repository locale e remoto
 
 **Soluzione**:
@@ -216,23 +152,16 @@ fi
 # Aggiorna repository locale
 git fetch origin "$BRANCH"
 git merge origin/"$BRANCH" --allow-unrelated-histories"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 =======
 # Aggiorna repository locale
 git fetch origin "$BRANCH"
 =======
 git merge origin/"$BRANCH" --allow-unrelated-histories"
->>>>>>> 1831d11e78 (.)
 =======
 # Aggiorna repository locale
 git fetch origin "$BRANCH"
 git merge origin/"$BRANCH" --allow-unrelated-histories"
->>>>>>> f1e7ef1046 (.)
->>>>>>> e9356a3a (.)
 =======
->>>>>>> 42ab2308 (.)
 
 # Riprova push
 if ! git push -u origin "$BRANCH"; then
@@ -300,9 +229,6 @@ fi
 <div align="center">
   <sub>Built with ❤️ by the development team</sub>
 </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
 aurmich/dev
 **Causa**: Questo errore si verifica nella sequenza di push quando ci sono divergenze tra il repository locale e remoto.
@@ -354,9 +280,5 @@ fi
  43df3e0 (.)
 aurmich/dev
 =======
->>>>>>> 1831d11e78 (.)
 =======
->>>>>>> f1e7ef1046 (.)
->>>>>>> e9356a3a (.)
 =======
->>>>>>> 42ab2308 (.)
