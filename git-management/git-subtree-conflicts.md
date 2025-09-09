@@ -64,6 +64,7 @@ La soluzione ottimale è mantenere la versione che accetta 3 parametri, ma con g
 source ./bashscripts/lib/custom.sh
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -76,13 +77,21 @@ source ./bashscripts/lib/custom.sh
 >>>>>>> 7de7063d (.)
 =======
 =======
+
+=======
+>>>>>>> 71ff9e32 (.)
+=======
 =======
 
 =======
 
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     log "error" "Parametri errati"

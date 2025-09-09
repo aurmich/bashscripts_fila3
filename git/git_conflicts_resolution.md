@@ -41,6 +41,14 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 - I file di backup sono stati creati con il timestamp per sicurezza
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+### Fase 1: Identificazione
+```bash
+
+=======
+>>>>>>> 71ff9e32 (.)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -84,8 +92,12 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 >>>>>>> 7de7063d (.)
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
 # Visualizzare tutti i file con conflitti
 git status
 
@@ -118,6 +130,7 @@ Per ogni file in conflitto:
 - `Modules\Predict\lang\it` per i file di traduzione
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -130,13 +143,21 @@ Per ogni file in conflitto:
 >>>>>>> 7de7063d (.)
 =======
 =======
+
+=======
+>>>>>>> 71ff9e32 (.)
+=======
 =======
 
 =======
 
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
 ### Fase 3: Risoluzione
 Scegliere una delle seguenti strategie:
 
@@ -195,6 +216,7 @@ namespace Modules\NomeModulo\App\Filament;
 4. Testare il modulo in ambiente di sviluppo 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -219,12 +241,20 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 
 =======
+>>>>>>> 71ff9e32 (.)
+=======
+
+=======
 =======
 =======
 =======
 
 =======
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
 ## Risoluzione di Casi Specifici
 
 ### Conflitti in File PHP

@@ -60,6 +60,7 @@ php artisan migrate
 ### 7. Installare i Moduli
 ```bash
 =======
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
@@ -67,6 +68,15 @@ php artisan migrate
 =======
 
 >>>>>>> f52d0712 (.)
+=======
+<<<<<<< HEAD
+=======
+
+=======
+>>>>>>> develop
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> 71ff9e32 (.)
 # Installare Laravel Modules
 composer require nwidart/laravel-modules
 
@@ -143,6 +153,7 @@ La documentazione completa è disponibile nella directory `docs/`:
 ### Comandi Utili
 ```bash
 =======
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
@@ -150,6 +161,15 @@ La documentazione completa è disponibile nella directory `docs/`:
 =======
 
 >>>>>>> f52d0712 (.)
+=======
+<<<<<<< HEAD
+=======
+
+=======
+>>>>>>> develop
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> 71ff9e32 (.)
 # Creare un nuovo modulo
 php artisan module:make NomeModulo
 
@@ -185,7 +205,11 @@ Questo progetto è sotto licenza MIT. Vedere il file [LICENSE](LICENSE) per i de
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
 
  b7907077 (.)
 
@@ -199,7 +223,11 @@ Questo progetto è sotto licenza MIT. Vedere il file [LICENSE](LICENSE) per i de
 =======
 =======
 
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
 # 🚀 BashScripts Power Tools
  80ec88ee9 (.
 
@@ -277,6 +305,7 @@ php artisan migrate
 ### 7. Install Modules
 ```bash
 =======
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
@@ -284,6 +313,15 @@ php artisan migrate
 =======
 
 >>>>>>> f52d0712 (.)
+=======
+<<<<<<< HEAD
+=======
+
+=======
+>>>>>>> develop
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> 71ff9e32 (.)
 # Install Laravel Modules
 composer require nwidart/laravel-modules
 
@@ -360,6 +398,7 @@ Complete documentation is available in the `docs/` directory:
 ### Useful Commands
 ```bash
 =======
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
@@ -367,6 +406,15 @@ Complete documentation is available in the `docs/` directory:
 =======
 
 >>>>>>> f52d0712 (.)
+=======
+<<<<<<< HEAD
+=======
+
+=======
+>>>>>>> develop
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> 71ff9e32 (.)
 # Create a new module
 php artisan module:make ModuleName
 
@@ -504,7 +552,11 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file `LICENSE` per 
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
 
  b0f37c83 (.)
 
@@ -512,6 +564,7 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file `LICENSE` per 
  b7907077 (.)
 
 =======
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
@@ -519,6 +572,15 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file `LICENSE` per 
 =======
 
 >>>>>>> f52d0712 (.)
+=======
+<<<<<<< HEAD
+=======
+
+=======
+>>>>>>> develop
+
+>>>>>>> 1831d11e78 (.)
+>>>>>>> 71ff9e32 (.)
 # 📣 Enhance Your App with the Fila3 Notify Module! 🚀
 
 ![GitHub issues](https://img.shields.io/github/issues/laraxot/module_notify_fila3)
@@ -608,6 +670,7 @@ Discover more of my work at marco76tv!
  80ec88ee9 (.)
 
 =======
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
@@ -615,6 +678,15 @@ Discover more of my work at marco76tv!
 =======
 
 >>>>>>> f52d0712 (.)
+=======
+<<<<<<< HEAD
+=======
+
+=======
+>>>>>>> develop
+
+>>>>>>> 1831d11e78 (.)
+>>>>>>> 71ff9e32 (.)
 # Bash Scripts
 
 **Policy di organizzazione:** Nessuno script `.sh` deve essere presente direttamente nella root di questa cartella. Tutti gli script devono essere categorizzati e inseriti in sottocartelle dedicate in base alla loro funzione (es. `utils/`, `git/`, `docs_update/`).
@@ -695,6 +767,7 @@ Script per i test:
 ### 1. Esecuzione degli Script
 ```bash
 =======
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
@@ -702,6 +775,15 @@ Script per i test:
 =======
 
 >>>>>>> f52d0712 (.)
+=======
+<<<<<<< HEAD
+=======
+
+=======
+>>>>>>> develop
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> 71ff9e32 (.)
 # Rendere lo script eseguibile
 chmod +x script.sh
 

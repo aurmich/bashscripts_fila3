@@ -6,6 +6,8 @@
 
 # Script Git
 
+<<<<<<< HEAD
+=======
 Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
  43df3e0 (.)
 aurmich/dev
@@ -20,8 +22,20 @@ Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
 =======
 Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
 =======
+>>>>>>> develop
 Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+ 43df3e0 (.)
+aurmich/dev
+=======
+Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
+>>>>>>> 1831d11e78 (.)
+=======
+Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
+>>>>>>> f1e7ef1046 (.)
+>>>>>>> 71ff9e32 (.)
 
 ## Panoramica
 Questa documentazione descrive gli script bash utilizzati per la gestione dei subtree git nel progetto Laraxot.
@@ -81,7 +95,11 @@ aurmich/dev
 =======
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
 
 ### git_push_subtrees.sh
 Script per il push dei subtree. Funzionalità:
@@ -98,7 +116,11 @@ Script per il push dei subtree. Funzionalità:
 =======
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
 ### git_sync_subtree.sh
 Script ottimizzato per la sincronizzazione di un singolo subtree. Caratteristiche principali:
 1. Sistema avanzato di logging con timestamp e codici colore
@@ -159,7 +181,11 @@ aurmich/dev
 =======
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
 ## Best Practices
 1. Utilizzare sempre `git_config_setup` per la configurazione
 2. Gestire i backup prima delle operazioni critiche
@@ -180,7 +206,11 @@ aurmich/dev
 =======
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
 ## Script di sincronizzazione repository remoti
 
 ### sync_remote_repo.sh
@@ -228,5 +258,9 @@ aurmich/dev
 =======
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
 [Torna alla documentazione principale](../../docs/maintenance.md#git-management) 

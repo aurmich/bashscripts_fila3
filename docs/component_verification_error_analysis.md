@@ -122,6 +122,17 @@ name('login');
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+
+=======
+
+=======
+
+=======
+>>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> 71ff9e32 (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -145,6 +156,7 @@ name('login');
 
 =======
 >>>>>>> 3c18aa7e (.)
+>>>>>>> develop
 =======
 >>>>>>> 9de04485 (.)
 =======
@@ -166,7 +178,11 @@ name('login');
 =======
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 42ab2308 (.)
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
 # Verifica componenti nel progetto
 find resources/views/components -name "*.blade.php" | head -20
 
@@ -184,6 +200,17 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+
+=======
+
+=======
+
+=======
+>>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> 71ff9e32 (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -207,6 +234,7 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 
 =======
 >>>>>>> 3c18aa7e (.)
+>>>>>>> develop
 =======
 >>>>>>> 9de04485 (.)
 =======
@@ -228,7 +256,11 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 =======
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 42ab2308 (.)
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
 # Test componente
 php artisan view:clear
 php artisan config:clear
@@ -287,6 +319,18 @@ L'errore è stato causato da:
 *Analisi completata il: $(date)*
 *Stato: Errore critico identificato*
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+*Priorità: CRITICA* 
+=======
+*Priorità: CRITICA* 
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
+=======
+*Priorità: CRITICA* 
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 71ff9e32 (.)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -313,6 +357,7 @@ L'errore è stato causato da:
 =======
 *Priorità: CRITICA* 
 >>>>>>> 3c18aa7e (.)
+>>>>>>> develop
 >>>>>>> 9de04485 (.)
 =======
 =======
@@ -336,4 +381,8 @@ L'errore è stato causato da:
 *Priorità: CRITICA* 
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 42ab2308 (.)
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)

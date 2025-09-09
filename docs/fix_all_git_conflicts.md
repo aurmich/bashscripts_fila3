@@ -63,7 +63,11 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 =======
 =======
 
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
 ## Casi d'Uso Avanzati
 
 ### 1. Risoluzione Selettiva
@@ -75,6 +79,7 @@ Lo script può essere integrato con Git hooks per verificare automaticamente la 
 
 ```bash
 =======
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 >>>>>>> f71d08e230 (.)
@@ -82,6 +87,15 @@ Lo script può essere integrato con Git hooks per verificare automaticamente la 
 =======
 
 >>>>>>> f52d0712 (.)
+=======
+<<<<<<< HEAD
+=======
+
+=======
+>>>>>>> develop
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> 71ff9e32 (.)
 # .git/hooks/pre-commit
 #!/bin/bash
 ```
@@ -113,4 +127,8 @@ Dopo l'esecuzione dello script, è consigliabile verificare che tutti i conflitt
 >>>>>>> 1831d11e78 (.)
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)

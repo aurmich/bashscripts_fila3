@@ -57,6 +57,8 @@ log() {
         *) echo -e "[$timestamp] $message" | tee -a "$LOG_FILE" ;;
     esac
 }
+<<<<<<< HEAD
+=======
 
 # Versione semplice
 log() {
@@ -85,8 +87,33 @@ log() {
 =======
 
 =======
+>>>>>>> develop
 
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+# Versione semplice
+log() {
+    local message="$1"
+    echo "📆 $(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$LOG_FILE"
+}
+```
+
+**Soluzione ottimale**: Integrare entrambe le versioni mantenendo la compatibilità con il codice esistente.
+
+```bash
+# Funzione avanzata per loggare messaggi che supporta entrambi i formati
+log() {
+    # Supporta sia il formato avanzato con livelli che il formato semplice
+=======
+# Funzione di log avanzata: accetta sia log "message" che log "level" "message"
+log() {
+>>>>>>> 04d882f8f6 (.)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> 71ff9e32 (.)
 # Versione avanzata con livelli di log
 log() {
     local level="$1"
@@ -120,7 +147,11 @@ log() {
 >>>>>>> f1e7ef1046 (.)
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
     if [ $# -eq 2 ]; then
         # Formato avanzato: log "level" "message"
         local level="$1"
@@ -150,14 +181,22 @@ log() {
 <<<<<<< HEAD
 >>>>>>> f1e7ef1046 (.)
 =======
+<<<<<<< HEAD
 
 >>>>>>> f71d08e230 (.)
 =======
 =======
-
+>>>>>>> 71ff9e32 (.)
 =======
 
+>>>>>>> develop
+=======
+
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> f71d08e230 (.)
+>>>>>>> 71ff9e32 (.)
 # Versione che richiede 2 parametri
 if [ $# -ne 2 ]; then
     echo "Usage: $0 <path> <remote_repo>"
@@ -183,6 +222,7 @@ BRANCH="$3"
 ```bash
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 >>>>>>> f71d08e230 (.)
 # Versione che supporta 2 o 3 parametri
@@ -194,13 +234,30 @@ BRANCH="$3"
 >>>>>>> f1e7ef1046 (.)
 =======
 =======
+>>>>>>> 71ff9e32 (.)
+=======
+=======
+>>>>>>> develop
 
+>>>>>>> f71d08e230 (.)
 # Versione che supporta 2 o 3 parametri
+<<<<<<< HEAD
+=======
+# Gestione robusta dei parametri: supporta 2 o 3 parametri, con branch opzionale
+>>>>>>> 04d882f8f6 (.)
+=======
+# Versione che supporta 2 o 3 parametri
+>>>>>>> f1e7ef1046 (.)
+=======
 # Gestione robusta dei parametri: supporta 2 o 3 parametri, con branch opzionale
 =======
 # Versione che supporta 2 o 3 parametri
 =======
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     echo "Usage: $0 <path> <remote_repo> [branch]"
     exit 1

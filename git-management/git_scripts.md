@@ -130,9 +130,13 @@ Script per il push dei subtree. Funzionalità:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 71ff9e32 (.)
 =======
 =======
 <<<<<<< HEAD
@@ -228,5 +232,9 @@ Script per il push dei subtree. Funzionalità:
 >>>>>>> 7de7063d (.)
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)

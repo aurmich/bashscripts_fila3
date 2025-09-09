@@ -58,6 +58,7 @@ La soluzione ottimale è mantenere la versione che accetta 3 parametri, ma con g
 source ./bashscripts/lib/custom.sh
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -70,13 +71,21 @@ source ./bashscripts/lib/custom.sh
 >>>>>>> 7de7063d (.)
 =======
 =======
+
+=======
+>>>>>>> 71ff9e32 (.)
+=======
 =======
 
 =======
 
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     log "error" "Parametri errati"
@@ -199,6 +208,7 @@ La soluzione ottimale è mantenere la versione che accetta 3 parametri, ma con g
 source ./bashscripts/lib/custom.sh
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -211,13 +221,21 @@ source ./bashscripts/lib/custom.sh
 >>>>>>> 7de7063d (.)
 =======
 =======
+
+=======
+>>>>>>> 71ff9e32 (.)
+=======
 =======
 
 =======
 
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     log "error" "Parametri errati"
@@ -350,6 +368,7 @@ La soluzione ottimale è mantenere la versione che accetta 3 parametri, ma con g
 source ./bashscripts/lib/custom.sh
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -362,13 +381,21 @@ source ./bashscripts/lib/custom.sh
 >>>>>>> 7de7063d (.)
 =======
 =======
+
+=======
+>>>>>>> 71ff9e32 (.)
+=======
 =======
 
 =======
 
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     log "error" "Parametri errati"
@@ -445,6 +472,7 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 5338a990 (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -458,6 +486,9 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 >>>>>>> 9c02579 (.)
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
+=======
+=======
+>>>>>>> 71ff9e32 (.)
 =======
 =======
 =======
@@ -874,5 +905,9 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 >>>>>>> 7de7063d (.)
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)

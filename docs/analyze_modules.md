@@ -13,7 +13,11 @@ cd /var/www/html/ptvx
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
 `/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/analyze_modules.sh`
 
 ## Utilizzo
@@ -22,7 +26,11 @@ cd /var/www/html/_bases/base_ptvx_fila3_mono
 <<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
 =======
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
 =======
 `/var/www/html/ptvx/bashscripts/analyze_modules.sh`
 
@@ -32,7 +40,11 @@ cd /var/www/html/ptvx
 <<<<<<< HEAD
 >>>>>>> 04d882f8f6 (.)
 =======
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
 =======
 `/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/analyze_modules.sh`
 
@@ -43,7 +55,11 @@ cd /var/www/html/_bases/base_ptvx_fila3_mono
 >>>>>>> f1e7ef1046 (.)
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
 ./bashscripts/analyze_modules.sh
 ```
 
@@ -77,6 +93,8 @@ Modules/<NomeModulo>/docs/phpstan/
 ## Variabili di Ambiente
 - `BASE_DIR`: Directory base del progetto (`/var/www/html/ptvx/laravel`)
 =======
+<<<<<<< HEAD
+=======
 - `BASE_DIR`: Directory base del progetto (`/var/www/html/_bases/base_ptvx_fila3_mono/laravel`)
 <<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
@@ -92,8 +110,19 @@ Modules/<NomeModulo>/docs/phpstan/
 =======
 - `BASE_DIR`: Directory base del progetto (`/var/www/html/_bases/base_ptvx_fila3_mono/laravel`)
 =======
+>>>>>>> develop
 - `BASE_DIR`: Directory base del progetto (`/var/www/html/_bases/base_ptvx_fila3_mono/laravel`)
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> 1831d11e78 (.)
+=======
+- `BASE_DIR`: Directory base del progetto (`/var/www/html/ptvx/laravel`)
+>>>>>>> 04d882f8f6 (.)
+=======
+- `BASE_DIR`: Directory base del progetto (`/var/www/html/_bases/base_ptvx_fila3_mono/laravel`)
+>>>>>>> f1e7ef1046 (.)
+>>>>>>> 71ff9e32 (.)
 - `MODULES_DIR`: Directory dei moduli (`$BASE_DIR/Modules`)
 - `LEVELS`: Array dei livelli PHPStan da analizzare
 
@@ -147,6 +176,7 @@ Modules/<NomeModulo>/docs/phpstan/
 >>>>>>> d20d0523 (.)
 =======
 >>>>>>> f71d08e230 (.)
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -155,13 +185,19 @@ Modules/<NomeModulo>/docs/phpstan/
 >>>>>>> 574afe9e (.)
 >>>>>>> 7de7063d (.)
 =======
+>>>>>>> 71ff9e32 (.)
 =======
 =======
 =======
 =======
 =======
 =======
+=======
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
 
 ## Gestione dei Conflitti
 In caso di conflitti durante l'analisi dei moduli:
@@ -174,7 +210,11 @@ In caso di conflitti durante l'analisi dei moduli:
 >>>>>>> f1e7ef1046 (.)
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
 
 ## Collegamenti
 - [Documentazione PHPStan](../../docs/phpstan/PHPSTAN_WORKFLOW.md)
@@ -182,6 +222,7 @@ In caso di conflitti durante l'analisi dei moduli:
 =======
 <<<<<<< HEAD
 >>>>>>> f1e7ef1046 (.)
+<<<<<<< HEAD
 - [Risoluzione Conflitti](../../docs/development/CONFLICT_RESOLUTION.md)
 =======
 >>>>>>> 59901687 (.)
@@ -207,10 +248,37 @@ In caso di conflitti durante l'analisi dei moduli:
 =======
 - [Risoluzione Conflitti](../../docs/development/CONFLICT_RESOLUTION.md)
 >>>>>>> f52d0712 (.)
+=======
+=======
+=======
+- [Risoluzione Conflitti](../../docs/development/CONFLICT_RESOLUTION.md)
+=======
+=======
+=======
+=======
+=======
+=======
+>>>>>>> develop
+- [Risoluzione Conflitti](../../docs/development/CONFLICT_RESOLUTION.md)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9de04485 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
+>>>>>>> 71ff9e32 (.)
    - Configurazione PHPStan errata
 
 ## Pattern di Risoluzione Errori
 Durante l'analisi PHPStan potrebbero emergere errori ricorrenti. Ecco le soluzioni più comuni:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -220,11 +288,15 @@ Durante l'analisi PHPStan potrebbero emergere errori ricorrenti. Ecco le soluzio
 =======
 >>>>>>> 574afe9e (.)
 >>>>>>> 7de7063d (.)
+=======
+=======
+>>>>>>> 71ff9e32 (.)
 
 =======
 >>>>>>> 85c5198c (.)
 >>>>>>> 9c02579 (.)
 =======
+<<<<<<< HEAD
 >>>>>>> 574afe9e (.)
 
 
@@ -238,19 +310,37 @@ Durante l'analisi PHPStan potrebbero emergere errori ricorrenti. Ecco le soluzio
 >>>>>>> 85c5198c (.)
 =======
 =======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+=======
+=======
+
+<<<<<<< HEAD
+
+=======
+>>>>>>> 9c02579 (.)
+=======
+>>>>>>> 574afe9e (.)
+
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 85c5198c (.)
+=======
+=======
+=======
+=======
+
+
+=======
 =======
 
 =======
 =======
-=======
-
-
-=======
-=======
-
-=======
-=======
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
 ## Gestione dei Conflitti
 In caso di conflitti durante l'analisi dei moduli:
 1. Verificare che non ci siano modifiche non committate
@@ -281,7 +371,11 @@ In caso di conflitti durante l'analisi dei moduli:
 =======
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
 ## Collegamenti
 - [Documentazione PHPStan](../../docs/phpstan/PHPSTAN_WORKFLOW.md)
 - [Linee Guida Moduli](../../docs/MODULES.md)
@@ -334,14 +428,22 @@ Lo script può essere integrato in pipeline CI/CD per automatizzare l'analisi de
 <<<<<<< HEAD
 >>>>>>> f1e7ef1046 (.)
 =======
+<<<<<<< HEAD
 
 >>>>>>> f71d08e230 (.)
 =======
 =======
-
+>>>>>>> 71ff9e32 (.)
 =======
 
+>>>>>>> develop
+=======
+
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> f71d08e230 (.)
+>>>>>>> 71ff9e32 (.)
 # Esempio di configurazione GitHub Actions
 name: PHPStan Analysis
 on: [push, pull_request]
@@ -379,4 +481,8 @@ jobs:
    - Configurazione PHPStan errata 
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
