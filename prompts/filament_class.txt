@@ -6,9 +6,12 @@ non estendiamo Filament\Resources\Pages\Page ma estendiamo Modules\Xot\Filament\
 
 chi estende XotBaseResource non vuole il metodo getTableColumns
 
+<<<<<<< HEAD
 chi estende Modules\Xot\Filament\Pages\XotBasePage  non deve avere 
 protected static ?string $navigationIcon
 protected static ?string $title
 protected static ?string $navigationLabel
 
+=======
+>>>>>>> ea169dcc (.)
 questa e' una regola che devi seguire sempre , percio' aggiorna le tue rules , le tue memories, le tue ai guidelines, le cartelle docs, aggiorna tutto quello che puoi per ricordartelo sempre e poi implementa correzioni cercando di non fare mai piu' questo errore
