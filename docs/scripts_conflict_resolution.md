@@ -1,8 +1,28 @@
 # Risoluzione Conflitti negli Script Bash
 =======
+<<<<<<< HEAD
 # Script di Risoluzione dei Conflitti
 =======
 # Script di Risoluzione dei Conflitti
+=======
+<<<<<<< HEAD
+# Script di Risoluzione dei Conflitti
+<<<<<<< HEAD
+>>>>>>> f1e7ef1046 (.)
+=======
+=======
+# Script di Risoluzione dei Conflitti
+>>>>>>> f52d0712 (.)
+=======
+<<<<<<< HEAD
+=======
+# Script di Risoluzione dei Conflitti
+=======
+>>>>>>> develop
+# Script di Risoluzione dei Conflitti
+>>>>>>> f1e7ef1046 (.)
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 
 ## Panoramica
 
@@ -177,11 +197,31 @@ Verifica e corregge i problemi comuni di namespace nei file PHP, che sono spesso
 
 #### Descrizione
 Analizza i conflitti e fornisce statistiche e suggerimenti per la risoluzione.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 1831d11e78 (.)
+=======
+1. **Struttura principale**: Duplicazione dell'intero script, con marker di conflitto nidificati
+2. **Messaggi di sistema**: Presenza di messaggi informativi sulla risoluzione del conflitto
+>>>>>>> 04d882f8f6 (.)
+=======
+>>>>>>> f1e7ef1046 (.)
+=======
+>>>>>>> ec52a6b4 (.)
 =======
 1. **Struttura principale**: Duplicazione dell'intero script, con marker di conflitto nidificati
 2. **Messaggi di sistema**: Presenza di messaggi informativi sulla risoluzione del conflitto
 =======
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 
 ### sync_to_disk.sh
 
@@ -287,10 +327,32 @@ I seguenti file sono stati recentemente risolti:
 [Backlink: fix_all_git_conflicts.md](fix_all_git_conflicts.md)
 [Backlink: git_conflicts_resolution.md](git_conflicts_resolution.md)
 =======
+<<<<<<< HEAD
 =======
 
 =======
 
+=======
+<<<<<<< HEAD
+>>>>>>> f1e7ef1046 (.)
+=======
+<<<<<<< HEAD
+
+>>>>>>> f71d08e230 (.)
+=======
+=======
+>>>>>>> 71ff9e32 (.)
+=======
+
+>>>>>>> develop
+=======
+
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> f71d08e230 (.)
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 ### fix_structure.sh
 
 Mantenere la versione più avanzata con funzioni di logging colorate, migliorando:
@@ -359,9 +421,26 @@ I seguenti file sono stati recentemente risolti:
 
 =======
 Questa documentazione è collegata bidirezionalmente con la [documentazione principale sulla risoluzione dei conflitti](../../docs/bashscripts_conflict_resolution.md) nella root del progetto. 
+<<<<<<< HEAD
 =======
 =======
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+=======
+>>>>>>> f1e7ef1046 (.)
+=======
+=======
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 Questa documentazione è collegata bidirezionalmente con la [documentazione principale sulla risoluzione dei conflitti](../../docs/bashscripts_conflict_resolution.md) nella root del progetto. 
 
 #### Utilizzo
@@ -507,9 +586,33 @@ Per pulire un repository con molti conflitti non risolti:
 - [Conflitti nei File di Configurazione](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/config_file_conflicts.md)
 - [Convenzioni di Namespace](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/NAMESPACE-CONVENTIONS.md)
 - [Risoluzione Conflitti nei Moduli](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/conflitti_merge_risolti.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 1831d11e78 (.)
+=======
+>>>>>>> 0c55086029 (.)
+=======
+Questa documentazione è collegata bidirezionalmente con la [documentazione principale sulla risoluzione dei conflitti](scripts-conflict-resolution.md) nella root del progetto. 
+>>>>>>> 04d882f8f6 (.)
+=======
+>>>>>>> d83fe8da (.)
+>>>>>>> f1e7ef1046 (.)
+=======
+>>>>>>> f71d08e230 (.)
+=======
+>>>>>>> ec52a6b4 (.)
 =======
 =======
 Questa documentazione è collegata bidirezionalmente con la [documentazione principale sulla risoluzione dei conflitti](scripts-conflict-resolution.md) nella root del progetto. 
 =======
 =======
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)

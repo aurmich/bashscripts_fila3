@@ -47,8 +47,23 @@ La risoluzione manuale dei conflitti negli script bash è particolarmente delica
 =======
 2. **Analizzare le versioni in conflitto**
    - Confrontare le implementazioni per identificare le differenze sostanziali.
+<<<<<<< HEAD
 =======
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> 1831d11e78 (.)
+=======
+>>>>>>> f1e7ef1046 (.)
+=======
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
    - Valutare quale versione offre:
      - Migliore gestione degli errori
      - Maggiore robustezza
@@ -57,7 +72,19 @@ La risoluzione manuale dei conflitti negli script bash è particolarmente delica
 
 3. **Risoluzione consapevole**
 =======
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> f1e7ef1046 (.)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
    - Scegliere la versione più completa e robusta.
    - Se entrambe le versioni hanno vantaggi, integrarle in modo coerente.
    - Assicurarsi che la funzione mantenga la stessa firma e comportamento atteso.
@@ -68,7 +95,19 @@ La risoluzione manuale dei conflitti negli script bash è particolarmente delica
    - Verificare che non ci siano duplicazioni con funzioni già esistenti nelle librerie
 =======
 =======
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> f1e7ef1046 (.)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 
 4. **Verifica e test**
    - Testare lo script dopo la risoluzione.
@@ -86,8 +125,23 @@ Spesso i conflitti riguardano funzioni duplicate o con logiche diverse. Ecco una
 # Funzione di log avanzata: accetta sia log "message" che log "level" "message"
 log() {
 =======
+<<<<<<< HEAD
 =======
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> 1831d11e78 (.)
+=======
+>>>>>>> f1e7ef1046 (.)
+=======
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
     if [ $# -eq 2 ]; then
         # Formato avanzato: log "level" "message"
         local level="$1"
@@ -95,8 +149,23 @@ log() {
         local timestamp=$(date '+%Y-%m-%d %H:%M:%S')
         
 =======
+<<<<<<< HEAD
 =======
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> 1831d11e78 (.)
+=======
+>>>>>>> f1e7ef1046 (.)
+=======
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
         case "$level" in
             "error") echo -e "❌ [$timestamp] $message" | tee -a "$LOG_FILE" ;;
             "success") echo -e "✅ [$timestamp] $message" | tee -a "$LOG_FILE" ;;
@@ -114,7 +183,19 @@ log() {
 ```
 
 =======
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> f1e7ef1046 (.)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 **Suggerimento:**
 - Utilizza sempre la funzione di log integrata per ogni operazione critica o errore.
 - Personalizza i livelli di log secondo le esigenze del tuo progetto.
@@ -161,16 +242,50 @@ BRANCH="$3"
 ```bash
 # Versione che supporta 2 o 3 parametri
 =======
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 
 ```bash
 
 # Gestione robusta dei parametri: supporta 2 o 3 parametri, con branch opzionale
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 1831d11e78 (.)
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 =======
 
 ```bash
 # Gestione robusta dei parametri: supporta 2 o 3 parametri, con branch opzionale
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> f1e7ef1046 (.)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     echo "Usage: $0 <path> <remote_repo> [branch]"
     exit 1
@@ -182,7 +297,19 @@ BRANCH="${3:-main}"  # Usa il terzo parametro se fornito, altrimenti "main"
 ```
 
 =======
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> f1e7ef1046 (.)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 **Suggerimento:**
 - Documenta sempre chiaramente i parametri richiesti e opzionali.
 - Fornisci esempi di utilizzo nei commenti degli script.
@@ -190,8 +317,23 @@ BRANCH="${3:-main}"  # Usa il terzo parametro se fornito, altrimenti "main"
 ## Collegamenti utili
 ## COLLEGAMENTI ALLA DOCUMENTAZIONE PRINCIPALE
 =======
+<<<<<<< HEAD
 =======
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> 1831d11e78 (.)
+=======
+>>>>>>> f1e7ef1046 (.)
+=======
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 
 - [Risoluzione Manuale dei Conflitti](../../docs/CONFLICT_RESOLUTION.md) - Principi generali per la risoluzione dei conflitti
 - [Principio DRY negli Script Bash](NO_DUPLICATE_FUNCTIONS_IN_SOURCED_SCRIPTS.md) - Linee guida per evitare la duplicazione di codice
@@ -205,5 +347,20 @@ BRANCH="${3:-main}"  # Usa il terzo parametro se fornito, altrimenti "main"
 
 > **Nota**: Per informazioni aggiuntive sui conflitti nei moduli, consulta anche [Conflitti Git nei Moduli](../../docs/conflitti_git_moduli.md)
 =======
+<<<<<<< HEAD
 =======
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> 1831d11e78 (.)
+=======
+>>>>>>> f1e7ef1046 (.)
+=======
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)

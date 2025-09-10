@@ -156,6 +156,22 @@ return [
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+=======
+
+=======
+
+=======
+
+=======
+>>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> 71ff9e32 (.)
+<<<<<<< HEAD
+>>>>>>> ec52a6b4 (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
@@ -169,6 +185,10 @@ return [
 >>>>>>> 3c18aa7e (.)
 >>>>>>> f198176d (.)
 =======
+<<<<<<< HEAD
+=======
+>>>>>>> f52d0712 (.)
+>>>>>>> ec52a6b4 (.)
 =======
 
 =======
@@ -177,6 +197,10 @@ return [
 
 =======
 >>>>>>> 3c18aa7e (.)
+<<<<<<< HEAD
+=======
+>>>>>>> develop
+>>>>>>> ec52a6b4 (.)
 =======
 >>>>>>> 9de04485 (.)
 =======
@@ -190,12 +214,25 @@ return [
 =======
 >>>>>>> e1b46df35 (.)
 >>>>>>> f71d08e230 (.)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> ec52a6b4 (.)
 >>>>>>> e9356a3a (.)
 =======
 
 =======
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 42ab2308 (.)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 # Pubblicazione delle configurazioni
 php artisan vendor:publish --tag=zeus-bolt-config
 
@@ -329,11 +366,32 @@ La soluzione implementata risolve completamente l'errore originale e fornisce un
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+*Autore: AI Assistant* 
+=======
+=======
+=======
+=======
+=======
+=======
+>>>>>>> d20d0523 (.)
+*Autore: AI Assistant* 
+=======
+*Autore: AI Assistant* 
+>>>>>>> 9c02579 (.)
+=======
+>>>>>>> 71ff9e32 (.)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> ec52a6b4 (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> f198176d (.)
+<<<<<<< HEAD
 *Autore: AI Assistant* 
 =======
 <<<<<<< HEAD
@@ -341,6 +399,23 @@ La soluzione implementata risolve completamente l'errore originale e fornisce un
 *Autore: AI Assistant* 
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
+=======
+>>>>>>> develop
+*Autore: AI Assistant* 
+=======
+=======
+=======
+=======
+=======
+=======
+>>>>>>> d20d0523 (.)
+*Autore: AI Assistant* 
+=======
+*Autore: AI Assistant* 
+>>>>>>> 9c02579 (.)
+<<<<<<< HEAD
+=======
+>>>>>>> ec52a6b4 (.)
 <<<<<<< HEAD
 >>>>>>> 59901687 (.)
 =======
@@ -356,6 +431,14 @@ La soluzione implementata risolve completamente l'errore originale e fornisce un
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 =======
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
@@ -373,6 +456,19 @@ La soluzione implementata risolve completamente l'errore originale e fornisce un
 *Autore: AI Assistant* 
 >>>>>>> e1b46df35 (.)
 >>>>>>> f71d08e230 (.)
+<<<<<<< HEAD
 >>>>>>> e9356a3a (.)
 =======
 >>>>>>> 42ab2308 (.)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)

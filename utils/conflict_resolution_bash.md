@@ -43,6 +43,28 @@ La risoluzione manuale dei conflitti negli script bash è particolarmente delica
 ### Conflitto in funzione di logging
 
 ```bash
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3c18aa7e (.)
+=======
+
+>>>>>>> 574afe9e (.)
+>>>>>>> 7de7063d (.)
+=======
+=======
+
+=======
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 =======
 
 =======
@@ -51,6 +73,14 @@ La risoluzione manuale dei conflitti negli script bash è particolarmente delica
 =======
 
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 # Versione avanzata con livelli di log
 log() {
     local level="$1"
@@ -76,6 +106,28 @@ log() {
 **Soluzione ottimale**: Integrare entrambe le versioni mantenendo la compatibilità con il codice esistente.
 
 ```bash
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3c18aa7e (.)
+=======
+
+>>>>>>> 574afe9e (.)
+>>>>>>> 7de7063d (.)
+=======
+=======
+
+=======
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 =======
 
 =======
@@ -84,6 +136,14 @@ log() {
 =======
 
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 # Funzione avanzata per loggare messaggi che supporta entrambi i formati
 log() {
     # Supporta sia il formato avanzato con livelli che il formato semplice
@@ -112,6 +172,28 @@ log() {
 ### Conflitto in parametri di script
 
 ```bash
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3c18aa7e (.)
+=======
+
+>>>>>>> 574afe9e (.)
+>>>>>>> 7de7063d (.)
+=======
+=======
+
+=======
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 =======
 
 =======
@@ -120,6 +202,14 @@ log() {
 =======
 
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 # Versione che richiede 2 parametri
 if [ $# -ne 2 ]; then
     echo "Usage: $0 <path> <remote_repo>"
@@ -143,6 +233,28 @@ BRANCH="$3"
 **Soluzione ottimale**: Valutare quale approccio è più flessibile e coerente con il resto del sistema. Se il branch è opzionale, rendere il terzo parametro opzionale con un valore predefinito.
 
 ```bash
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3c18aa7e (.)
+=======
+
+>>>>>>> 574afe9e (.)
+>>>>>>> 7de7063d (.)
+=======
+=======
+
+=======
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 =======
 
 =======
@@ -151,6 +263,14 @@ BRANCH="$3"
 =======
 
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 # Versione che supporta 2 o 3 parametri
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     echo "Usage: $0 <path> <remote_repo> [branch]"

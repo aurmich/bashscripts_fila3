@@ -16,6 +16,12 @@
     },
     "require": {},
     "require-dev": {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        "larastan/larastan": "^3.0"
+=======
+>>>>>>> ec52a6b4 (.)
         "larastan/larastan": "*"
 =======
         "larastan/larastan": "*"
@@ -23,6 +29,14 @@
         "larastan/larastan": "^3.0"
 =======
         "larastan/larastan": "*"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
     },
     "config": {
         "sort-packages": true,

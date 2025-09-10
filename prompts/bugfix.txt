@@ -1,5 +1,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> ec52a6b4 (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -10,6 +21,10 @@
 =======
 >>>>>>> 42ab2308 (.)
 =======
+<<<<<<< HEAD
+=======
+>>>>>>> f52d0712 (.)
+>>>>>>> ec52a6b4 (.)
 =======
 <<<<<<< HEAD
 >>>>>>> 574afe9e (.)
@@ -19,6 +34,12 @@
 >>>>>>> 9c02579 (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> 7de7063d (.)
+=======
+<<<<<<< HEAD
+>>>>>>> ec52a6b4 (.)
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
@@ -26,6 +47,14 @@
 >>>>>>> e9356a3a (.)
 =======
 >>>>>>> 42ab2308 (.)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 # Guida Completa per Bug Fixing - Laraxot SaluteOra
 
 ## Principi Fondamentali
@@ -157,6 +186,15 @@ Un errore `ParseError: syntax error, unexpected token "protected", expecting end
 ### Esempio Corretto
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> ec52a6b4 (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -165,6 +203,10 @@ Un errore `ParseError: syntax error, unexpected token "protected", expecting end
 >>>>>>> f198176d (.)
 =======
 >>>>>>> 42ab2308 (.)
+<<<<<<< HEAD
+=======
+>>>>>>> f52d0712 (.)
+>>>>>>> ec52a6b4 (.)
 # Linee Guida per il Bug Fixing e Best Practices
 
 ## Principi Fondamentali
@@ -361,6 +403,12 @@ Un errore di tipo `ParseError: syntax error, unexpected token "protected", expec
 >>>>>>> 574afe9e (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> 7de7063d (.)
+=======
+<<<<<<< HEAD
+>>>>>>> ec52a6b4 (.)
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
@@ -368,6 +416,14 @@ Un errore di tipo `ParseError: syntax error, unexpected token "protected", expec
 >>>>>>> e9356a3a (.)
 =======
 >>>>>>> 42ab2308 (.)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 ```php
 class Example {
     public function foo() {}
@@ -376,6 +432,21 @@ class Example {
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 574afe9e (.)
+>>>>>>> 7de7063d (.)
+=======
+>>>>>>> ec52a6b4 (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -399,6 +470,14 @@ class Example {
 >>>>>>> e9356a3a (.)
 =======
 >>>>>>> 42ab2308 (.)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 ## Processo di Revisione
 
 ### Auto-Revisione
@@ -450,6 +529,16 @@ class Example {
 *Compatibilità: Laraxot SaluteOra, PHP 8.2+, Laravel 12+, Filament 3.4+*
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> ec52a6b4 (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -460,6 +549,10 @@ class Example {
 =======
 =======
 >>>>>>> 42ab2308 (.)
+<<<<<<< HEAD
+=======
+>>>>>>> f52d0712 (.)
+>>>>>>> ec52a6b4 (.)
 =======
 >>>>>>> 9c02579 (.)
 <<<<<<< HEAD
@@ -554,6 +647,12 @@ class Example {
 >>>>>>> 574afe9e (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> 7de7063d (.)
+=======
+<<<<<<< HEAD
+>>>>>>> ec52a6b4 (.)
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
@@ -561,3 +660,11 @@ class Example {
 >>>>>>> e9356a3a (.)
 =======
 >>>>>>> 42ab2308 (.)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)

@@ -1,6 +1,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 - Usare metodi specifici: getListTableColumns(), getTableFilters(), getTableActions()
 =======
 - Usare metodi specifici: getTableColumns(), getTableFilters(), getTableActions()
@@ -47,7 +59,18 @@
 - Aggiornare e studiare continuamente la documentazione
 - Consultare la documentazione prima di ogni azione
 - Ogni modulo ha la sua cartella docs da studiare e aggiornare
+<<<<<<< HEAD
 >>>>>>> e9356a3a (.)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 # GUIDA ESSENZIALE LARAXOT
 
 ## DOCUMENTAZIONE
@@ -137,8 +160,20 @@
 =======
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> f198176d (.)
 =======
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> f198176d (.)
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 85c5198c (.)
@@ -239,9 +274,22 @@
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+<<<<<<< HEAD
 >>>>>>> e9356a3a (.)
 =======
 >>>>>>> 42ab2308 (.)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 # GUIDA ESSENZIALE LARAXOT
 
 ## DOCUMENTAZIONE
@@ -414,10 +462,23 @@
 - Aggiornare e studiare continuamente la documentazione
 - Consultare la documentazione prima di ogni azione
 - Ogni modulo ha la sua cartella docs da studiare e aggiornare
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
@@ -429,6 +490,19 @@
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+<<<<<<< HEAD
 >>>>>>> e9356a3a (.)
 =======
 >>>>>>> 42ab2308 (.)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
+=======
+>>>>>>> 42ab2308 (.)
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)

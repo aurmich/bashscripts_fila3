@@ -10,7 +10,19 @@ aurmich/dev
 
 aurmich/dev
 =======
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> f71d08e230 (.)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 # 🔧 Fase 8: Manutenzione
 
 ## 📋 Panoramica
@@ -21,9 +33,29 @@ Questa fase si concentra sulla manutenzione e il supporto continuo del sistema.
 - [Documentazione Script](../project.md)
 - [Fase 7: Documentazione](../roadmap/07_documentation.md)
 =======
+<<<<<<< HEAD
 
 =======
 
+=======
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+>>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
+=======
+<<<<<<< HEAD
+=======
+
+=======
+>>>>>>> develop
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 # 🔧 Fase 8: Manutenzione
 
 ## 📋 Panoramica
@@ -43,9 +75,29 @@ Questa fase si concentra sulla manutenzione e il supporto continuo del sistema.
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
 aurmich/dev
 =======
+<<<<<<< HEAD
 
 =======
 
+=======
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+>>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
+=======
+<<<<<<< HEAD
+=======
+
+=======
+>>>>>>> develop
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 # 🔧 Fase 8: Manutenzione
 
 ## 📋 Panoramica
@@ -58,9 +110,29 @@ Questa fase si concentra sulla manutenzione e il supporto continuo del sistema.
 
  43df3e0 (.)
 =======
+<<<<<<< HEAD
 
 =======
 
+=======
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+>>>>>>> 1831d11e78 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
+=======
+<<<<<<< HEAD
+=======
+
+=======
+>>>>>>> develop
+
+>>>>>>> 1831d11e78 (.)
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 aurmich/dev
 
 
@@ -119,9 +191,29 @@ Questa fase si concentra sulla manutenzione e il supporto continuo del sistema.
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (23 linee vs 1)[0m
  43df3e0 (.)
 =======
+<<<<<<< HEAD
 
 =======
 
+=======
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+>>>>>>> 1831d11e78 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
+=======
+<<<<<<< HEAD
+=======
+
+=======
+>>>>>>> develop
+
+>>>>>>> 1831d11e78 (.)
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 aurmich/dev
 
 ## Collegamenti tra versioni di 08_maintenance.md

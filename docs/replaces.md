@@ -64,7 +64,18 @@ public static function table\(Table \$table\): Table\s*\{[\s\S]*?\n\s*\}
 
 > Ogni modifica va sempre verificata manualmente e testata con PHPStan livello 10. Segnalare eventuali casi limite in [git_conflicts_resolution.md](./git_conflicts_resolution.md).
 =======
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 
 
 public static function form\(Form \$form\): Form\s*\{\s*return \$form\s*->schema\(\[\s*([\s\S]*?)\s*\]\);\s*\}
@@ -76,7 +87,19 @@ public static function form\(Form \$form\): Form\s*\{\s*return \$form\s*->schema
 
 
 public static function getFormSchema(): array
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> f71d08e230 (.)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
     {
         return [
             $1
@@ -139,7 +162,18 @@ public static function table\(Table \$table\): Table\s*\{[\s\S]*?\n\s*\}
 ---
 
 =======
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 
  cb513be (.)
  43df3e0 (.)
@@ -147,4 +181,16 @@ public static function table\(Table \$table\): Table\s*\{[\s\S]*?\n\s*\}
 
  cb513be (.)
  0440c57 (.)
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> f71d08e230 (.)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)

@@ -57,10 +57,32 @@ La soluzione ottimale è mantenere la versione che accetta 3 parametri, ma con g
 
 source ./bashscripts/lib/custom.sh
 =======
+<<<<<<< HEAD
 =======
 
 =======
 
+=======
+<<<<<<< HEAD
+>>>>>>> f1e7ef1046 (.)
+=======
+<<<<<<< HEAD
+
+>>>>>>> f71d08e230 (.)
+=======
+=======
+>>>>>>> 71ff9e32 (.)
+=======
+
+>>>>>>> develop
+=======
+
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> f71d08e230 (.)
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     log "error" "Parametri errati"
@@ -182,9 +204,29 @@ La soluzione ottimale è mantenere la versione che accetta 3 parametri, ma con g
 
 source ./bashscripts/lib/custom.sh
 =======
+<<<<<<< HEAD
 
 =======
 
+=======
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+>>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
+=======
+<<<<<<< HEAD
+=======
+
+=======
+>>>>>>> develop
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     log "error" "Parametri errati"
@@ -335,8 +377,23 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 ## Collegamenti tra versioni di git_subtree_conflicts.md
 * [risoluzione_conflitti_git.md](../../docs/risoluzione_conflitti_git.md)
 * [git_subtree_conflicts.md](git_subtree_conflicts.md)
+<<<<<<< HEAD
 =======
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> 04d882f8f6 (.)
+=======
+>>>>>>> f1e7ef1046 (.)
+=======
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 
 ## Problema
 
@@ -470,11 +527,39 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
 =======
 =======
+<<<<<<< HEAD
 5338a990 (.)
+=======
+<<<<<<< HEAD
+5338a990 (.)
+<<<<<<< HEAD
+>>>>>>> 1831d11e78 (.)
+=======
+5338a990 (.)
+>>>>>>> f1e7ef1046 (.)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 =======
 5338a990 (.)
 =======
 5338a990 (.)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+=======
+>>>>>>> develop
+5338a990 (.)
+>>>>>>> 1831d11e78 (.)
+=======
+5338a990 (.)
+>>>>>>> f1e7ef1046 (.)
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 # Risoluzione dei Conflitti negli Script Git Subtree
 
 ## Problema
@@ -739,11 +824,36 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione degli Script Git](git_scripts.md)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
 =======
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+>>>>>>> f71d08e230 (.)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 # Risoluzione dei Conflitti negli Script Git Subtree
 =======
 f000df5 (.)
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 1831d11e78 (.)
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 
 ## Problema
 
@@ -876,8 +986,24 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
 =======
 
+<<<<<<< HEAD
 =======
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> 0c55086029 (.)
+=======
+>>>>>>> f000df5 (.)
+>>>>>>> f1e7ef1046 (.)
+=======
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
 # Risoluzione dei Conflitti negli Script Git Subtree
 
 ## Problema
@@ -1010,6 +1136,31 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione degli Script Git](git_scripts.md)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 4d4d6cb7 (.)
+=======
+=======
+>>>>>>> d83fe8da (.)
+- [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md) 
+>>>>>>> 1831d11e78 (.)
+=======
+3. **Segnalazioni agli sviluppatori**: Informare gli sviluppatori delle modifiche alla firma dei metodi
+>>>>>>> 0c55086029 (.)
+=======
+- [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md)
+- [Risoluzione Conflitti Git](../../docs/risoluzione_conflitti_git.md) 
+>>>>>>> 04d882f8f6 (.)
+=======
+=======
+>>>>>>> d83fe8da (.)
+- [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md) 
+>>>>>>> f1e7ef1046 (.)
+=======
+>>>>>>> f71d08e230 (.)
+=======
+>>>>>>> ec52a6b4 (.)
 =======
 =======
 - [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md) 
@@ -1023,3 +1174,11 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md) 
 =======
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
