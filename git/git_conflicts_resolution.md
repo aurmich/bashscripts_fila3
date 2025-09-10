@@ -42,11 +42,25 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 7de7063d (.)
+>>>>>>> c3f4b1c69 (.)
 
 ### Fase 1: Identificazione
 ```bash
+=======
+### Fase 1: Identificazione
+```bash
+<<<<<<< HEAD
+=======
+>>>>>>> 574afe9e (.)
 
+<<<<<<< HEAD
 =======
 >>>>>>> 71ff9e32 (.)
 =======
@@ -76,6 +90,11 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 ```bash
 
 >>>>>>> f52d0712 (.)
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c3f4b1c69 (.)
 ### Fase 1: Identificazione
 ```bash
 =======
@@ -83,6 +102,9 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 ### Fase 1: Identificazione
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c3f4b1c69 (.)
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
 <<<<<<< HEAD
@@ -90,6 +112,7 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
 >>>>>>> 7de7063d (.)
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -98,6 +121,8 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 =======
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> c3f4b1c69 (.)
 # Visualizzare tutti i file con conflitti
 git status
 
@@ -131,6 +156,9 @@ Per ogni file in conflitto:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c3f4b1c69 (.)
 
 =======
 <<<<<<< HEAD
@@ -141,6 +169,7 @@ Per ogni file in conflitto:
 =======
 >>>>>>> 574afe9e (.)
 >>>>>>> 7de7063d (.)
+<<<<<<< HEAD
 =======
 =======
 
@@ -158,6 +187,8 @@ Per ogni file in conflitto:
 =======
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> c3f4b1c69 (.)
 ### Fase 3: Risoluzione
 Scegliere una delle seguenti strategie:
 
@@ -217,6 +248,9 @@ namespace Modules\NomeModulo\App\Filament;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c3f4b1c69 (.)
 
 =======
 <<<<<<< HEAD
@@ -237,6 +271,7 @@ namespace Modules\NomeModulo\App\Filament;
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
 >>>>>>> 7de7063d (.)
+<<<<<<< HEAD
 =======
 =======
 
@@ -255,6 +290,8 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> c3f4b1c69 (.)
 ## Risoluzione di Casi Specifici
 
 ### Conflitti in File PHP

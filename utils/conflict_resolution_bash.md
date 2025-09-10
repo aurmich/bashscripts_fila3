@@ -46,6 +46,9 @@ La risoluzione manuale dei conflitti negli script bash è particolarmente delica
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c3f4b1c69 (.)
 
 =======
 <<<<<<< HEAD
@@ -57,6 +60,7 @@ La risoluzione manuale dei conflitti negli script bash è particolarmente delica
 
 >>>>>>> 574afe9e (.)
 >>>>>>> 7de7063d (.)
+<<<<<<< HEAD
 =======
 =======
 
@@ -75,6 +79,8 @@ La risoluzione manuale dei conflitti negli script bash è particolarmente delica
 =======
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> c3f4b1c69 (.)
 # Versione avanzata con livelli di log
 log() {
     local level="$1"
@@ -103,6 +109,9 @@ log() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c3f4b1c69 (.)
 
 =======
 <<<<<<< HEAD
@@ -114,6 +123,7 @@ log() {
 
 >>>>>>> 574afe9e (.)
 >>>>>>> 7de7063d (.)
+<<<<<<< HEAD
 =======
 =======
 
@@ -132,6 +142,8 @@ log() {
 =======
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> c3f4b1c69 (.)
 # Funzione avanzata per loggare messaggi che supporta entrambi i formati
 log() {
     # Supporta sia il formato avanzato con livelli che il formato semplice
@@ -163,6 +175,9 @@ log() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c3f4b1c69 (.)
 
 =======
 <<<<<<< HEAD
@@ -174,6 +189,7 @@ log() {
 
 >>>>>>> 574afe9e (.)
 >>>>>>> 7de7063d (.)
+<<<<<<< HEAD
 =======
 =======
 
@@ -192,6 +208,8 @@ log() {
 =======
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> c3f4b1c69 (.)
 # Versione che richiede 2 parametri
 if [ $# -ne 2 ]; then
     echo "Usage: $0 <path> <remote_repo>"
@@ -218,6 +236,9 @@ BRANCH="$3"
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c3f4b1c69 (.)
 
 =======
 <<<<<<< HEAD
@@ -229,6 +250,7 @@ BRANCH="$3"
 
 >>>>>>> 574afe9e (.)
 >>>>>>> 7de7063d (.)
+<<<<<<< HEAD
 =======
 =======
 
@@ -247,6 +269,8 @@ BRANCH="$3"
 =======
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> c3f4b1c69 (.)
 # Versione che supporta 2 o 3 parametri
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     echo "Usage: $0 <path> <remote_repo> [branch]"

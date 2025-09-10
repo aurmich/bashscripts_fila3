@@ -149,6 +149,7 @@ php artisan tinker
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 71ff9e32 (.)
 =======
@@ -298,6 +299,8 @@ php artisan tinker
   - Appuntamenti totali: 500
 =======
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> c3f4b1c69 (.)
 
 # Sincronizza un modulo specifico
 ./git_sync_subtree.sh modules/users git@github.com:org/users.git
@@ -305,9 +308,13 @@ php artisan tinker
 # Sincronizza con branch specifico
 REMOTE_BRANCH=develop ./git_sync_subtree.sh modules/auth git@github.com:org/auth.git
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 574afe9e (.)
 =======
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> 574afe9e (.)
+>>>>>>> c3f4b1c69 (.)
 # Sincronizza un modulo specifico
 ./scripts/git/git_sync_subtree.sh modules/users git@github.com:org/users.git
 
@@ -318,6 +325,9 @@ REMOTE_BRANCH=develop ./scripts/phpstan/check_before_phpstan.sh
 ./scripts/phpstan/generate_phpstan_summary.sh
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c3f4b1c69 (.)
 >>>>>>> 7de7063d (.)
 ```
 
@@ -362,6 +372,7 @@ REMOTE_BRANCH=develop ./scripts/phpstan/check_before_phpstan.sh
 3. **Controllare namespace**: Verificare struttura moduli
 4. **Testare connessione**: Verificare configurazione database
 =======
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> develop
@@ -415,15 +426,21 @@ REMOTE_BRANCH=develop ./scripts/phpstan/check_before_phpstan.sh
 ## Note Importanti
 =======
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> c3f4b1c69 (.)
 1. **Prefix Option Mancante**
    ```bash
    fatal: you must provide the --prefix option
    ```
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> f52d0712 (.)
+=======
+=======
+>>>>>>> c3f4b1c69 (.)
    ✅ **Soluzione:** Verifica il path del subtree
 
 2. **Push Rejected**
@@ -432,6 +449,9 @@ REMOTE_BRANCH=develop ./scripts/phpstan/check_before_phpstan.sh
    ```
    ✅ **Soluzione:** Esegui prima un pull
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c3f4b1c69 (.)
 >>>>>>> 574afe9e (.)
    **Soluzione**: Verifica che il path del subtree sia corretto
 >>>>>>> 7de7063d (.)

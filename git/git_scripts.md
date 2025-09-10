@@ -131,6 +131,9 @@ Script per il push dei subtree. Funzionalità:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c3f4b1c69 (.)
 =======
 <<<<<<< HEAD
 =======
@@ -145,6 +148,7 @@ Script per il push dei subtree. Funzionalità:
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 71ff9e32 (.)
 =======
@@ -153,6 +157,8 @@ Script per il push dei subtree. Funzionalità:
 =======
 >>>>>>> f52d0712 (.)
 =======
+=======
+>>>>>>> c3f4b1c69 (.)
 # Script Git
 
 Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
@@ -252,6 +258,9 @@ Script per il push dei subtree. Funzionalità:
 [Torna alla documentazione principale](/docs/maintenance.md#git-management) 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c3f4b1c69 (.)
 =======
 <<<<<<< HEAD
 >>>>>>> 3c18aa7e (.)
@@ -264,6 +273,7 @@ Script per il push dei subtree. Funzionalità:
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
 >>>>>>> 7de7063d (.)
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -272,3 +282,5 @@ Script per il push dei subtree. Funzionalità:
 =======
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> c3f4b1c69 (.)

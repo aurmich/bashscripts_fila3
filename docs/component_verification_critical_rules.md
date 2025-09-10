@@ -80,9 +80,12 @@
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> c3f4b1c69 (.)
 >>>>>>> 7de7063d (.)
 =======
 =======
@@ -138,6 +141,7 @@
 =======
 >>>>>>> 574afe9e (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -153,6 +157,8 @@
 =======
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> c3f4b1c69 (.)
 
 =======
 >>>>>>> 59901687 (.)
@@ -171,6 +177,7 @@
 >>>>>>> e1b46df35 (.)
 >>>>>>> f71d08e230 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 7de7063d (.)
@@ -185,6 +192,10 @@
 >>>>>>> 42ab2308 (.)
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
+=======
+=======
+>>>>>>> 7de7063d (.)
+>>>>>>> c3f4b1c69 (.)
 # Verifica componenti nel progetto
 find resources/views/components -name "*.blade.php"
 
@@ -203,9 +214,12 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> c3f4b1c69 (.)
 >>>>>>> 7de7063d (.)
 =======
 =======
@@ -261,6 +275,7 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 =======
 >>>>>>> 574afe9e (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -276,6 +291,8 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 =======
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> c3f4b1c69 (.)
 
 =======
 >>>>>>> 59901687 (.)
@@ -294,6 +311,7 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 >>>>>>> e1b46df35 (.)
 >>>>>>> f71d08e230 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 7de7063d (.)
@@ -308,6 +326,10 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 >>>>>>> 42ab2308 (.)
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
+=======
+=======
+>>>>>>> 7de7063d (.)
+>>>>>>> c3f4b1c69 (.)
 # Test componente
 php artisan view:clear
 php artisan config:clear
@@ -391,6 +413,7 @@ name('login');
 ### 3. Non Testare in Sviluppo
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -405,10 +428,13 @@ name('login');
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
 =======
+>>>>>>> c3f4b1c69 (.)
+=======
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> d20d0523 (.)
 >>>>>>> f71d08e230 (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -422,6 +448,12 @@ name('login');
 >>>>>>> e9356a3a (.)
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 7de7063d (.)
+>>>>>>> c3f4b1c69 (.)
 
 # ERRATO: Non testare
 
@@ -467,6 +499,7 @@ name('login');
 # ERRATO: Non testare
 >>>>>>> 574afe9e (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -482,6 +515,8 @@ name('login');
 =======
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> c3f4b1c69 (.)
 
 # ERRATO: Non testare
 
@@ -503,6 +538,7 @@ name('login');
 >>>>>>> e1b46df35 (.)
 >>>>>>> f71d08e230 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 7de7063d (.)
@@ -517,6 +553,10 @@ name('login');
 >>>>>>> 42ab2308 (.)
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
+=======
+=======
+>>>>>>> 7de7063d (.)
+>>>>>>> c3f4b1c69 (.)
 # Usare componente senza test
 
 # CORRETTO: Testare sempre
@@ -526,9 +566,12 @@ php artisan config:clear
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> c3f4b1c69 (.)
 >>>>>>> 7de7063d (.)
 =======
 =======
@@ -584,6 +627,7 @@ php artisan config:clear
 =======
 >>>>>>> 574afe9e (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -599,6 +643,8 @@ php artisan config:clear
 =======
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> c3f4b1c69 (.)
 
 =======
 >>>>>>> 59901687 (.)
@@ -617,6 +663,7 @@ php artisan config:clear
 >>>>>>> e1b46df35 (.)
 >>>>>>> f71d08e230 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 7de7063d (.)
@@ -631,6 +678,10 @@ php artisan config:clear
 >>>>>>> 42ab2308 (.)
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
+=======
+=======
+>>>>>>> 7de7063d (.)
+>>>>>>> c3f4b1c69 (.)
 # Testare componente
 ```
 
@@ -667,9 +718,12 @@ L'errore è stato causato da:
 *Regole aggiornate il: $(date)*
 *Stato: Regole critiche definite*
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> c3f4b1c69 (.)
 *Priorità: CRITICA* 
 =======
 =======
@@ -743,10 +797,16 @@ L'errore è stato causato da:
 >>>>>>> e1b46df35 (.)
 >>>>>>> f71d08e230 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> c3f4b1c69 (.)
 =======
 *Priorità: CRITICA* 
 >>>>>>> 3c18aa7e (.)
@@ -754,6 +814,7 @@ L'errore è stato causato da:
 *Priorità: CRITICA*
 >>>>>>> 574afe9e (.)
 >>>>>>> 7de7063d (.)
+<<<<<<< HEAD
 =======
 >>>>>>> e9356a3a (.)
 =======
@@ -765,3 +826,5 @@ L'errore è stato causato da:
 >>>>>>> 42ab2308 (.)
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> c3f4b1c69 (.)

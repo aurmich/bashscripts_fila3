@@ -42,11 +42,25 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 7de7063d (.)
+>>>>>>> c3f4b1c69 (.)
 
 ### Fase 1: Identificazione
 ```bash
+=======
+### Fase 1: Identificazione
+```bash
+<<<<<<< HEAD
+=======
+>>>>>>> 574afe9e (.)
 
+<<<<<<< HEAD
 =======
 >>>>>>> 71ff9e32 (.)
 =======
@@ -76,6 +90,11 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 ```bash
 
 >>>>>>> f52d0712 (.)
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c3f4b1c69 (.)
 ### Fase 1: Identificazione
 ```bash
 =======
@@ -83,6 +102,9 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 ### Fase 1: Identificazione
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c3f4b1c69 (.)
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
 <<<<<<< HEAD
@@ -90,6 +112,7 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
 >>>>>>> 7de7063d (.)
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -98,6 +121,8 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 =======
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> c3f4b1c69 (.)
 # Visualizzare tutti i file con conflitti
 git status
 
@@ -131,6 +156,9 @@ Per ogni file in conflitto:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c3f4b1c69 (.)
 
 =======
 <<<<<<< HEAD
@@ -141,6 +169,7 @@ Per ogni file in conflitto:
 =======
 >>>>>>> 574afe9e (.)
 >>>>>>> 7de7063d (.)
+<<<<<<< HEAD
 =======
 =======
 
@@ -158,6 +187,8 @@ Per ogni file in conflitto:
 =======
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> c3f4b1c69 (.)
 ### Fase 3: Risoluzione
 Scegliere una delle seguenti strategie:
 
@@ -216,6 +247,9 @@ namespace Modules\NomeModulo\App\Filament;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c3f4b1c69 (.)
 4. Testare il modulo in ambiente di sviluppo 
 =======
 <<<<<<< HEAD
@@ -238,6 +272,7 @@ namespace Modules\NomeModulo\App\Filament;
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
 >>>>>>> 7de7063d (.)
+<<<<<<< HEAD
 =======
 =======
 4. Testare il modulo in ambiente di sviluppo 
@@ -258,6 +293,8 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> c3f4b1c69 (.)
 
 ## Risoluzione di Casi Specifici
 
@@ -265,6 +302,9 @@ namespace Modules\NomeModulo\App\Filament;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c3f4b1c69 (.)
 
 =======
 <<<<<<< HEAD
@@ -285,6 +325,7 @@ namespace Modules\NomeModulo\App\Filament;
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
 >>>>>>> 7de7063d (.)
+<<<<<<< HEAD
 =======
 =======
 
@@ -302,6 +343,8 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> c3f4b1c69 (.)
 1. Verificare la compatibilità con PHPStan
 2. Mantenere le annotazioni PHPDoc complete
 3. Seguire le convenzioni di namespace
@@ -311,6 +354,9 @@ namespace Modules\NomeModulo\App\Filament;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c3f4b1c69 (.)
 
 =======
 <<<<<<< HEAD
@@ -331,6 +377,7 @@ namespace Modules\NomeModulo\App\Filament;
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
 >>>>>>> 7de7063d (.)
+<<<<<<< HEAD
 =======
 =======
 
@@ -348,6 +395,8 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> c3f4b1c69 (.)
 1. In genere, mantenere entrambe le versioni
 2. Organizzare il contenuto in modo logico
 3. Aggiornare tutti i collegamenti
@@ -356,6 +405,9 @@ namespace Modules\NomeModulo\App\Filament;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c3f4b1c69 (.)
 
 =======
 <<<<<<< HEAD
@@ -376,6 +428,7 @@ namespace Modules\NomeModulo\App\Filament;
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
 >>>>>>> 7de7063d (.)
+<<<<<<< HEAD
 =======
 =======
 
@@ -393,6 +446,8 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> c3f4b1c69 (.)
 1. Confrontare attentamente le configurazioni
 2. Verificare l'impatto delle modifiche
 3. Documentare le decisioni prese
@@ -413,6 +468,7 @@ Il progetto include alcuni script per facilitare la gestione dei conflitti:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 574afe9e (.)
@@ -431,3 +487,8 @@ Il progetto include alcuni script per facilitare la gestione dei conflitti:
 =======
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
+=======
+
+=======
+>>>>>>> 574afe9e (.)
+>>>>>>> c3f4b1c69 (.)

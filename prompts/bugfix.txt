@@ -5,6 +5,7 @@
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -20,12 +21,15 @@
 =======
 >>>>>>> f52d0712 (.)
 =======
+>>>>>>> c3f4b1c69 (.)
+=======
 <<<<<<< HEAD
 >>>>>>> 574afe9e (.)
 
 =======
 <<<<<<< HEAD
 >>>>>>> 9c02579 (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7de7063d (.)
 =======
@@ -43,6 +47,9 @@
 =======
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> 7de7063d (.)
+>>>>>>> c3f4b1c69 (.)
 # Guida Completa per Bug Fixing - Laraxot SaluteOra
 
 ## Principi Fondamentali
@@ -176,6 +183,7 @@ Un errore `ParseError: syntax error, unexpected token "protected", expecting end
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -189,6 +197,8 @@ Un errore `ParseError: syntax error, unexpected token "protected", expecting end
 =======
 >>>>>>> 42ab2308 (.)
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> c3f4b1c69 (.)
 # Linee Guida per il Bug Fixing e Best Practices
 
 ## Principi Fondamentali
@@ -384,6 +394,7 @@ Un errore di tipo `ParseError: syntax error, unexpected token "protected", expec
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7de7063d (.)
 =======
 <<<<<<< HEAD
@@ -400,6 +411,9 @@ Un errore di tipo `ParseError: syntax error, unexpected token "protected", expec
 =======
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> 7de7063d (.)
+>>>>>>> c3f4b1c69 (.)
 ```php
 class Example {
     public function foo() {}
@@ -414,11 +428,15 @@ class Example {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> c3f4b1c69 (.)
 =======
 <<<<<<< HEAD
 >>>>>>> 574afe9e (.)
 >>>>>>> 7de7063d (.)
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -448,6 +466,8 @@ class Example {
 =======
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> c3f4b1c69 (.)
 ## Processo di Revisione
 
 ### Auto-Revisione
@@ -501,6 +521,7 @@ class Example {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -518,6 +539,10 @@ class Example {
 >>>>>>> 42ab2308 (.)
 >>>>>>> f52d0712 (.)
 =======
+=======
+=======
+=======
+>>>>>>> c3f4b1c69 (.)
 >>>>>>> 9c02579 (.)
 <<<<<<< HEAD
 =======
@@ -610,6 +635,7 @@ class Example {
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7de7063d (.)
 =======
 <<<<<<< HEAD
@@ -626,3 +652,6 @@ class Example {
 =======
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> 7de7063d (.)
+>>>>>>> c3f4b1c69 (.)

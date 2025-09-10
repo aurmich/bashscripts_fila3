@@ -163,8 +163,11 @@ Modules/<NomeModulo>/docs/phpstan/
    - PHPStan non installato
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f52d0712 (.)
+=======
+>>>>>>> c3f4b1c69 (.)
 =======
 =======
 =======
@@ -177,6 +180,9 @@ Modules/<NomeModulo>/docs/phpstan/
 =======
 >>>>>>> f71d08e230 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c3f4b1c69 (.)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -184,6 +190,7 @@ Modules/<NomeModulo>/docs/phpstan/
 =======
 >>>>>>> 574afe9e (.)
 >>>>>>> 7de7063d (.)
+<<<<<<< HEAD
 =======
 >>>>>>> 71ff9e32 (.)
 =======
@@ -198,6 +205,8 @@ Modules/<NomeModulo>/docs/phpstan/
 =======
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> c3f4b1c69 (.)
 
 ## Gestione dei Conflitti
 In caso di conflitti durante l'analisi dei moduli:
@@ -281,6 +290,9 @@ Durante l'analisi PHPStan potrebbero emergere errori ricorrenti. Ecco le soluzio
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c3f4b1c69 (.)
 =======
 =======
 <<<<<<< HEAD
@@ -288,9 +300,12 @@ Durante l'analisi PHPStan potrebbero emergere errori ricorrenti. Ecco le soluzio
 =======
 >>>>>>> 574afe9e (.)
 >>>>>>> 7de7063d (.)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> c3f4b1c69 (.)
 
 =======
 >>>>>>> 85c5198c (.)

@@ -1,4 +1,5 @@
 #!/bin/bash
+<<<<<<< HEAD
 
 # Script di gestione dei server MCP per base_predict_fila3_mono
 # Versione 2.0 - Supporto per server MySQL personalizzato
@@ -553,3 +554,9 @@ case "$COMMAND" in
 esac
 
 exit 0
+=======
+set -a
+source /var/www/html/_bases/base_techplanner_fila3_mono/laravel/.env
+set +a
+npx -y @modelcontextprotocol/server-mysql
+>>>>>>> c3f4b1c69 (.)
