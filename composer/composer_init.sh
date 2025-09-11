@@ -9,6 +9,7 @@ rm package-lock.json
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 
@@ -56,12 +57,18 @@ php -d memory_limit=-1 composer.phar require -W illuminate/contracts
 #php composer.phar init
 
 >>>>>>> ea169dcc (.)
+=======
+#mv composer.json composer_$(date +"%Y-%m-%d").json
+#php composer.phar init
+
+>>>>>>> e0c964a3 (first)
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs filament/filament
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs coolsam/modules
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs nwidart/laravel-modules
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs doctrine/dbal
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs livewire/livewire
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs livewire/volt
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -91,6 +98,9 @@ php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs livewire/
 =======
 ### SPATIE
 >>>>>>> ea169dcc (.)
+=======
+### SPATIE
+>>>>>>> e0c964a3 (first)
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs filament/spatie-laravel-tags-plugin
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs filament/spatie-laravel-media-library-plugin
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs filament/spatie-laravel-translatable-plugin
@@ -114,6 +124,7 @@ php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs spatie/co
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 ### USER MODULE
@@ -140,6 +151,9 @@ php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs spatie/co
 =======
 ### USER 
 >>>>>>> ea169dcc (.)
+=======
+### USER 
+>>>>>>> e0c964a3 (first)
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs jenssegers/agent
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs laravel/passport
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs socialiteproviders/auth0
@@ -148,8 +162,11 @@ php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs tightenco
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ea169dcc (.)
+=======
+>>>>>>> e0c964a3 (first)
 ### NOTIFY
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs kreait/firebase-php
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs laravel-notification-channels/telegram
@@ -160,6 +177,7 @@ php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs intervent
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs spatie/image
 ### PROFILE 
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs tightenco/parental
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -235,6 +253,9 @@ php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs tightenco
 =======
 ### UI
 >>>>>>> ea169dcc (.)
+=======
+### UI
+>>>>>>> e0c964a3 (first)
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs mhmiton/laravel-modules-livewire
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs laravel/breeze
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs owenvoke/blade-fontawesome
@@ -247,14 +268,18 @@ php artisan volt:install
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ea169dcc (.)
+=======
+>>>>>>> e0c964a3 (first)
 #php -d memory_limit=-1 composer.phar require -W guava/filament-icon-picker
 ## IMPORT/EXPORT
 #php -d memory_limit=-1 composer.phar require -W konnco/filament-import
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs spipu/html2pdf
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs maatwebsite/excel
 ####
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> ec52a6b4 (.)
@@ -307,6 +332,8 @@ php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs maatwebsi
 >>>>>>> ec52a6b4 (.)
 =======
 >>>>>>> ea169dcc (.)
+=======
+>>>>>>> e0c964a3 (first)
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs thecodingmachine/safe
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs symfony/dom-crawler
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs flowframe/laravel-trend
@@ -318,6 +345,7 @@ php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs predis/pr
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ############################ DEV DEPENDENCIES ###############################
 =======
@@ -342,6 +370,9 @@ php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs predis/pr
 =======
 ### DEV
 >>>>>>> ea169dcc (.)
+=======
+### DEV
+>>>>>>> e0c964a3 (first)
 php -d memory_limit=-1 composer.phar require -W --dev --ignore-platform-reqs barryvdh/laravel-debugbar
 php -d memory_limit=-1 composer.phar require -W --dev --ignore-platform-reqs barryvdh/laravel-ide-helper
 php -d memory_limit=-1 composer.phar require -W --dev --ignore-platform-reqs thecodingmachine/phpstan-safe-rule
@@ -353,12 +384,16 @@ php -d memory_limit=-1 composer.phar require -W --dev --ignore-platform-reqs pes
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ea169dcc (.)
+=======
+>>>>>>> e0c964a3 (first)
 
 ### REMOVE
 php -d memory_limit=-1 composer.phar remove laravel/sanctum
 rm config/sanctum.php 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -423,3 +458,5 @@ rm config/sanctum.php
 >>>>>>> ec52a6b4 (.)
 =======
 >>>>>>> ea169dcc (.)
+=======
+>>>>>>> e0c964a3 (first)

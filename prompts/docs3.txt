@@ -465,6 +465,7 @@ Ogni documento deve avere collegamenti ai documenti correlati:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -473,10 +474,13 @@ Ogni documento deve avere collegamenti ai documenti correlati:
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+>>>>>>> e0c964a3 (first)
+=======
 <<<<<<< HEAD
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
+<<<<<<< HEAD
 =======
 >>>>>>> e9356a3a (.)
 =======
@@ -491,10 +495,13 @@ Ogni documento deve avere collegamenti ai documenti correlati:
 >>>>>>> ec52a6b4 (.)
 =======
 >>>>>>> ea169dcc (.)
+=======
+>>>>>>> e0c964a3 (first)
 
 
 facciamo un recfactor radicale di tutte le cartelle docs, in ottica dry + kiss, ti ricordo che dentro le cartelle docs, ne i nomi dei files ne i nomi delle cartelle devono contenere caratteri maiuscoli ad eccezzione di README.md
 dentro le cartelle "docs" ne i nomi dei files ne i nomi delle sottocartelle di "docs" devono contenere caratteri maiuscoli , ad eccezzione di README.md , e non deve esistere readme.md scritto in minuscolo ! questa e' una regola che devi sempre ricordare, adesso va a controllare tutte le cartelle docs e sistemale
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -505,15 +512,20 @@ dentro le cartelle "docs" ne i nomi dei files ne i nomi delle sottocartelle di "
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+>>>>>>> e0c964a3 (first)
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> f198176d (.)
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 42ab2308 (.)
 =======
+=======
+>>>>>>> e0c964a3 (first)
 >>>>>>> 13fed511 (.)
 =======
 >>>>>>> a013e8e (.)
@@ -522,6 +534,7 @@ dentro le cartelle "docs" ne i nomi dei files ne i nomi delle sottocartelle di "
 >>>>>>> 9c02579 (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
@@ -539,3 +552,8 @@ dentro le cartelle "docs" ne i nomi dei files ne i nomi delle sottocartelle di "
 >>>>>>> ec52a6b4 (.)
 =======
 >>>>>>> ea169dcc (.)
+=======
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
+>>>>>>> e0c964a3 (first)

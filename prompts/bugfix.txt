@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -15,11 +16,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+>>>>>>> e0c964a3 (first)
+=======
 <<<<<<< HEAD
 =======
 >>>>>>> f198176d (.)
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> 42ab2308 (.)
 =======
 <<<<<<< HEAD
@@ -27,12 +31,15 @@
 >>>>>>> f52d0712 (.)
 >>>>>>> ec52a6b4 (.)
 =======
+>>>>>>> e0c964a3 (first)
+=======
 <<<<<<< HEAD
 >>>>>>> 574afe9e (.)
 
 =======
 <<<<<<< HEAD
 >>>>>>> 9c02579 (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -58,6 +65,11 @@
 >>>>>>> ec52a6b4 (.)
 =======
 >>>>>>> ea169dcc (.)
+=======
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
+>>>>>>> e0c964a3 (first)
 # Guida Completa per Bug Fixing - Laraxot SaluteOra
 
 ## Principi Fondamentali
@@ -190,6 +202,7 @@ Un errore `ParseError: syntax error, unexpected token "protected", expecting end
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -202,15 +215,20 @@ Un errore `ParseError: syntax error, unexpected token "protected", expecting end
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+>>>>>>> e0c964a3 (first)
+=======
 <<<<<<< HEAD
 =======
 >>>>>>> f198176d (.)
+<<<<<<< HEAD
 =======
 >>>>>>> 42ab2308 (.)
 <<<<<<< HEAD
 =======
 >>>>>>> f52d0712 (.)
 >>>>>>> ec52a6b4 (.)
+=======
+>>>>>>> e0c964a3 (first)
 # Linee Guida per il Bug Fixing e Best Practices
 
 ## Principi Fondamentali
@@ -407,6 +425,7 @@ Un errore di tipo `ParseError: syntax error, unexpected token "protected", expec
 >>>>>>> 574afe9e (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7de7063d (.)
 =======
@@ -430,6 +449,11 @@ Un errore di tipo `ParseError: syntax error, unexpected token "protected", expec
 >>>>>>> ec52a6b4 (.)
 =======
 >>>>>>> ea169dcc (.)
+=======
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
+>>>>>>> e0c964a3 (first)
 ```php
 class Example {
     public function foo() {}
@@ -440,6 +464,7 @@ class Example {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -458,16 +483,22 @@ class Example {
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+>>>>>>> e0c964a3 (first)
+=======
 <<<<<<< HEAD
 =======
 >>>>>>> f198176d (.)
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> 42ab2308 (.)
 =======
 =======
+>>>>>>> e0c964a3 (first)
+=======
 <<<<<<< HEAD
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 59901687 (.)
@@ -487,6 +518,11 @@ class Example {
 >>>>>>> ec52a6b4 (.)
 =======
 >>>>>>> ea169dcc (.)
+=======
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
+>>>>>>> e0c964a3 (first)
 ## Processo di Revisione
 
 ### Auto-Revisione
@@ -539,6 +575,7 @@ class Example {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -550,6 +587,8 @@ class Example {
 >>>>>>> ec52a6b4 (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> e0c964a3 (first)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -557,6 +596,7 @@ class Example {
 =======
 >>>>>>> f198176d (.)
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 42ab2308 (.)
 <<<<<<< HEAD
@@ -564,6 +604,8 @@ class Example {
 >>>>>>> f52d0712 (.)
 >>>>>>> ec52a6b4 (.)
 =======
+=======
+>>>>>>> e0c964a3 (first)
 >>>>>>> 9c02579 (.)
 <<<<<<< HEAD
 =======
@@ -657,6 +699,7 @@ class Example {
 >>>>>>> 574afe9e (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7de7063d (.)
 =======
@@ -680,3 +723,8 @@ class Example {
 >>>>>>> ec52a6b4 (.)
 =======
 >>>>>>> ea169dcc (.)
+=======
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
+>>>>>>> e0c964a3 (first)

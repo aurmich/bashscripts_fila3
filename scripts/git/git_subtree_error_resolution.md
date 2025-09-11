@@ -34,10 +34,14 @@ git fetch --all
 git add -A
 git commit -am "🔧 Aggiornamento subtree"
 <<<<<<< HEAD
+<<<<<<< HEAD
 git merge origin/"$BRANCH" --allow-unrelated-histories"
 =======
 git merge origin/"$BRANCH" --allow-unrelated-histories
 >>>>>>> ea169dcc (.)
+=======
+git merge origin/"$BRANCH" --allow-unrelated-histories
+>>>>>>> e0c964a3 (first)
 git push -u origin "$BRANCH"
 ```
 
@@ -53,9 +57,12 @@ git subtree pull -P "$LOCAL_PATH" "$REMOTE_REPO" "$BRANCH"
 git fetch "$REMOTE_REPO" "$BRANCH" --depth=1
 git merge -s subtree FETCH_HEAD --allow-unrelated-histories
 <<<<<<< HEAD
+<<<<<<< HEAD
 ```
 =======
 >>>>>>> ea169dcc (.)
+=======
+>>>>>>> e0c964a3 (first)
 
 Esegue una sequenza complessa di operazioni:
 ```bash
@@ -71,9 +78,13 @@ Esegue una sequenza complessa di operazioni:
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ### 3. Pull Script (`git_pull_subtree.sh`)
 >>>>>>> ea169dcc (.)
+=======
+### 3. Pull Script (`git_pull_subtree.sh`)
+>>>>>>> e0c964a3 (first)
 Esegue una sequenza con fallback:
 ```bash
 1. git subtree pull -P $LOCAL_PATH $REMOTE_REPO $REMOTE_BRANCH --squash
@@ -83,9 +94,13 @@ Esegue una sequenza con fallback:
    - git merge -s subtree FETCH_HEAD --allow-unrelated-histories
 4. git rebase --rebase-merges --strategy subtree $REMOTE_BRANCH
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  43df3e0 (.)
 >>>>>>> ea169dcc (.)
+=======
+ 43df3e0 (.)
+>>>>>>> e0c964a3 (first)
 ```
 
 ## 🚨 Analisi Errori Comuni
@@ -112,9 +127,13 @@ fi
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> ea169dcc (.)
+=======
+
+>>>>>>> e0c964a3 (first)
 **Causa**: Divergenze tra repository locale e remoto
 
 **Soluzione**:
@@ -122,10 +141,14 @@ fi
 # Aggiorna repository locale
 git fetch origin "$BRANCH"
 <<<<<<< HEAD
+<<<<<<< HEAD
 git merge origin/"$BRANCH" --allow-unrelated-histories"
 =======
 git merge origin/"$BRANCH" --allow-unrelated-histories
 >>>>>>> ea169dcc (.)
+=======
+git merge origin/"$BRANCH" --allow-unrelated-histories
+>>>>>>> e0c964a3 (first)
 
 # Riprova push
 if ! git push -u origin "$BRANCH"; then
@@ -194,7 +217,10 @@ fi
   <sub>Built with ❤️ by the development team</sub>
 </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> e0c964a3 (first)
 
 **Causa**: Questo errore si verifica nella sequenza di push quando ci sono divergenze tra il repository locale e remoto.
 
@@ -242,4 +268,7 @@ fi
 2. Implementare logging più dettagliato
 3. Verificare i permessi degli script
  43df3e0 (.)
+<<<<<<< HEAD
 >>>>>>> ea169dcc (.)
+=======
+>>>>>>> e0c964a3 (first)
