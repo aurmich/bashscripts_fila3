@@ -61,8 +61,11 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -71,6 +74,9 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 =======
 
 =======
@@ -78,8 +84,11 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 <<<<<<< HEAD
 
 =======
@@ -88,8 +97,11 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 >>>>>>> 574afe9e (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 >>>>>>> 7de7063d (.)
 =======
 =======
@@ -116,14 +128,20 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 
 >>>>>>> ea169dcc (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 =======
 <<<<<<< HEAD
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 ## Casi d'Uso Avanzati
 
 ### 1. Risoluzione Selettiva
@@ -133,8 +151,11 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 =======
 <<<<<<< HEAD
 
@@ -156,6 +177,9 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 
 >>>>>>> ea169dcc (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 =======
 
 =======
@@ -163,8 +187,11 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 ### 2. Integrazione con Git Hooks
 Lo script può essere integrato con Git hooks per verificare automaticamente la presenza di conflitti prima del commit:
 
@@ -173,30 +200,43 @@ Lo script può essere integrato con Git hooks per verificare automaticamente la 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
 =======
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 829c80f (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 
 =======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 =======
 >>>>>>> f198176d (.)
 =======
 >>>>>>> e0c964a3 (first)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 <<<<<<< HEAD
 =======
 =======
@@ -212,8 +252,11 @@ Lo script può essere integrato con Git hooks per verificare automaticamente la 
 >>>>>>> 574afe9e (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 >>>>>>> 7de7063d (.)
 =======
 =======
@@ -241,14 +284,20 @@ Lo script può essere integrato con Git hooks per verificare automaticamente la 
 
 >>>>>>> ea169dcc (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 =======
 <<<<<<< HEAD
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 # .git/hooks/pre-commit
 #!/bin/bash
 ```

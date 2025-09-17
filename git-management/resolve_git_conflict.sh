@@ -55,8 +55,11 @@ You are an expert PHP developer tasked with fixing and optimizing the following 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 =======
 2. Remove git conflict markers if present
 =======
@@ -71,10 +74,15 @@ You are an expert PHP developer tasked with fixing and optimizing the following 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> e0c964a3 (first)
 =======
 >>>>>>> 4f97354 (.)
+=======
+=======
+>>>>>>> e0c964a3 (first)
+>>>>>>> 829c80f (.)
 2. Remove git conflict markers if present
 =======
 <<<<<<< HEAD
@@ -84,17 +92,25 @@ You are an expert PHP developer tasked with fixing and optimizing the following 
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 >>>>>>> f52d0712 (.)
 >>>>>>> ec52a6b4 (.)
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> e0c964a3 (first)
 =======
 >>>>>>> 4f97354 (.)
+=======
+=======
+>>>>>>> e0c964a3 (first)
+>>>>>>> 829c80f (.)
 2. Remove git conflict markers (<<<<<<<, =======, >>>>>>>) if present
 =======
 <<<<<<< HEAD
@@ -103,8 +119,11 @@ You are an expert PHP developer tasked with fixing and optimizing the following 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 =======
 <<<<<<< HEAD
 =======
@@ -123,10 +142,15 @@ You are an expert PHP developer tasked with fixing and optimizing the following 
 >>>>>>> ec52a6b4 (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> e0c964a3 (first)
 =======
 >>>>>>> 4f97354 (.)
+=======
+=======
+>>>>>>> e0c964a3 (first)
+>>>>>>> 829c80f (.)
 2. Remove git conflict markers (<<<<<<<, =======, >>>>>>>) if present
 =======
 =======
@@ -141,8 +165,11 @@ You are an expert PHP developer tasked with fixing and optimizing the following 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 =======
 >>>>>>> 7de7063d (.)
 =======
@@ -169,13 +196,19 @@ You are an expert PHP developer tasked with fixing and optimizing the following 
 2. Remove git conflict markers if present
 >>>>>>> ea169dcc (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 =======
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 3. Optimize the code structure and readability without changing functionality
 4. Ensure consistency in formatting and naming conventions
 5. Apply PHP best practices and modern syntax where appropriate

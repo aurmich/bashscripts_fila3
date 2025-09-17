@@ -47,8 +47,11 @@ La risoluzione manuale dei conflitti negli script bash è particolarmente delica
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -57,6 +60,9 @@ La risoluzione manuale dei conflitti negli script bash è particolarmente delica
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 =======
 
 =======
@@ -64,8 +70,11 @@ La risoluzione manuale dei conflitti negli script bash è particolarmente delica
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 <<<<<<< HEAD
 
 =======
@@ -75,8 +84,11 @@ La risoluzione manuale dei conflitti negli script bash è particolarmente delica
 >>>>>>> 574afe9e (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 >>>>>>> 7de7063d (.)
 =======
 =======
@@ -104,14 +116,20 @@ La risoluzione manuale dei conflitti negli script bash è particolarmente delica
 
 >>>>>>> ea169dcc (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 =======
 <<<<<<< HEAD
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 # Versione avanzata con livelli di log
 log() {
     local level="$1"
@@ -141,8 +159,11 @@ log() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -151,6 +172,9 @@ log() {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 =======
 
 =======
@@ -158,8 +182,11 @@ log() {
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 <<<<<<< HEAD
 
 =======
@@ -169,8 +196,11 @@ log() {
 >>>>>>> 574afe9e (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 >>>>>>> 7de7063d (.)
 =======
 =======
@@ -198,14 +228,20 @@ log() {
 
 >>>>>>> ea169dcc (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 =======
 <<<<<<< HEAD
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 # Funzione avanzata per loggare messaggi che supporta entrambi i formati
 log() {
     # Supporta sia il formato avanzato con livelli che il formato semplice
@@ -238,8 +274,11 @@ log() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -248,6 +287,9 @@ log() {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 =======
 
 =======
@@ -255,8 +297,11 @@ log() {
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 <<<<<<< HEAD
 
 =======
@@ -266,8 +311,11 @@ log() {
 >>>>>>> 574afe9e (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 >>>>>>> 7de7063d (.)
 =======
 =======
@@ -295,14 +343,20 @@ log() {
 
 >>>>>>> ea169dcc (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 =======
 <<<<<<< HEAD
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 # Versione che richiede 2 parametri
 if [ $# -ne 2 ]; then
     echo "Usage: $0 <path> <remote_repo>"
@@ -330,8 +384,11 @@ BRANCH="$3"
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -340,6 +397,9 @@ BRANCH="$3"
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 =======
 
 =======
@@ -347,8 +407,11 @@ BRANCH="$3"
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 <<<<<<< HEAD
 
 =======
@@ -358,8 +421,11 @@ BRANCH="$3"
 >>>>>>> 574afe9e (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 >>>>>>> 7de7063d (.)
 =======
 =======
@@ -387,14 +453,20 @@ BRANCH="$3"
 
 >>>>>>> ea169dcc (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 =======
 <<<<<<< HEAD
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 # Versione che supporta 2 o 3 parametri
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     echo "Usage: $0 <path> <remote_repo> [branch]"

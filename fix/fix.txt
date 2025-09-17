@@ -3,6 +3,9 @@
 ## 🔧 Problemi di Interprete Bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 
 ### Fix "bad interpreter: No such file or directory"
 ```bash
@@ -19,6 +22,7 @@ chmod +x nomefile.sh
 ## 🔄 Configurazione Git Avanzata
 
 ### Setup Repository e Remote
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 4f97354 (.)
@@ -71,6 +75,8 @@ find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
 >>>>>>> bd3b585 (.)
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 ```bash
 # Inizializza nuovo repository
 git init
@@ -79,6 +85,9 @@ git commit -m "Initial commit"
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 # Configura remote principale
 git remote add origin <url>
 git push -u origin main
@@ -387,6 +396,7 @@ git mergetool
 - **Force push** solo su branch personali
 - **Test SSH** dopo ogni modifica configurazione
 - **Commit frequenti** con messaggi descrittivi
+<<<<<<< HEAD
 - **Pull prima** di ogni push su branch condivisi
 =======
 =======
@@ -510,3 +520,6 @@ composer go
 >>>>>>> bd3b585 (.)
 =======
 >>>>>>> 4f97354 (.)
+=======
+- **Pull prima** di ogni push su branch condivisi
+>>>>>>> 829c80f (.)

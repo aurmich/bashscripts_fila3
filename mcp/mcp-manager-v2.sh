@@ -8,8 +8,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 PROJECT_DIR="$(pwd)/.."
 =======
 PROJECT_DIR="/var/www/html/_bases/base_predict_fila3_mono"
@@ -17,6 +20,9 @@ PROJECT_DIR="/var/www/html/_bases/base_predict_fila3_mono"
 LOGS_DIR="$PROJECT_DIR/storage/logs/mcp"
 MYSQL_CONNECTOR="$PROJECT_DIR/bashscripts/mcp/mysql-db-connector.js"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 =======
 PROJECT_DIR="/var/www/html/_bases/base_predict_fila3_mono"
 LOGS_DIR="$PROJECT_DIR/storage/logs/mcp"
@@ -30,8 +36,11 @@ MYSQL_CONNECTOR="$PROJECT_DIR/scripts/mysql-db-connector.js"
 MYSQL_CONNECTOR="$PROJECT_DIR/scripts/mysql-db-connector.js"
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 
 # Crea la directory dei log se non esiste
 mkdir -p "$LOGS_DIR"
@@ -42,13 +51,19 @@ show_help() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
     echo "Utilizzo: /var/www/html/_bases/base_predict_fila3_mono/bashscripts/mcp/mcp-manager-v2.sh [comando] [server]"
 =======
     echo "Utilizzo: ./bashscripts/mcp/mcp-manager-v2.sh [comando] [server]"
 >>>>>>> ea169dcc (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 =======
 <<<<<<< HEAD
     echo "Utilizzo: ./bashscripts/mcp/mcp-manager-v2.sh [comando] [server]"
@@ -59,8 +74,11 @@ show_help() {
     echo "Utilizzo: /var/www/html/_bases/base_predict_fila3_mono/bashscripts/mcp/mcp-manager-v2.sh [comando] [server]"
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
     echo ""
     echo "Comandi disponibili:"
     echo "  start [server]    - Avvia uno o tutti i server MCP"
@@ -78,13 +96,19 @@ show_help() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
     echo "  postgres           - Server per database PostgreSQL"
     echo "  redis              - Server per Redis"
 =======
 >>>>>>> ea169dcc (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 =======
 <<<<<<< HEAD
 =======
@@ -96,8 +120,11 @@ show_help() {
     echo "  redis              - Server per Redis"
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
     echo "  puppeteer          - Server per l'automazione del browser"
     echo "  mysql              - Server personalizzato per MySQL (usa .env di Laravel)"
     echo "  all                - Tutti i server (default se non specificato)"
@@ -106,8 +133,11 @@ show_help() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
     echo "  /var/www/html/_bases/base_predict_fila3_mono/bashscripts/mcp/mcp-manager-v2.sh start mysql    - Avvia il server MCP MySQL"
     echo "  /var/www/html/_bases/base_predict_fila3_mono/bashscripts/mcp/mcp-manager-v2.sh start          - Avvia tutti i server MCP"
     echo "  /var/www/html/_bases/base_predict_fila3_mono/bashscripts/mcp/mcp-manager-v2.sh status         - Mostra lo stato di tutti i server MCP"
@@ -117,6 +147,9 @@ show_help() {
     echo "  ./bashscripts/mcp/mcp-manager-v2.sh status         - Mostra lo stato di tutti i server MCP"
 >>>>>>> ea169dcc (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 =======
 <<<<<<< HEAD
     echo "  ./bashscripts/mcp/mcp-manager-v2.sh start mysql    - Avvia il server MCP MySQL"
@@ -133,8 +166,11 @@ show_help() {
     echo "  /var/www/html/_bases/base_predict_fila3_mono/bashscripts/mcp/mcp-manager-v2.sh status         - Mostra lo stato di tutti i server MCP"
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 }
 
 # Funzione per ottenere il PID di un server MCP
@@ -143,6 +179,9 @@ get_pid() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
     
 =======
 >>>>>>> ea169dcc (.)
@@ -155,11 +194,14 @@ get_pid() {
     
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
     
 =======
 >>>>>>> ea169dcc (.)
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
     if [ "$server_name" = "mysql" ]; then
         ps aux | grep "MYSQL_DB_CONNECTOR_PID_MARKER" | grep -v grep | awk '{print $2}'
     else
@@ -173,6 +215,9 @@ install_server() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 =======
 <<<<<<< HEAD
 
@@ -184,8 +229,11 @@ install_server() {
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
     
     if [ "$server_name" = "mysql" ]; then
         echo "📦 Installazione delle dipendenze per il server MySQL personalizzato..."
@@ -193,8 +241,11 @@ install_server() {
         
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 =======
 
     if [ "$server_name" = "mysql" ]; then
@@ -203,14 +254,20 @@ install_server() {
 
 >>>>>>> ea169dcc (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 =======
 <<<<<<< HEAD
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
         if [ $? -eq 0 ]; then
             echo "✅ Dipendenze per il server MySQL personalizzato installate con successo"
             return 0
@@ -223,6 +280,9 @@ install_server() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
         
 =======
 >>>>>>> ea169dcc (.)
@@ -235,11 +295,14 @@ install_server() {
         
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
         
 =======
 >>>>>>> ea169dcc (.)
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
         # Verifica se il server è già installato
         if npm list -g | grep -q "@modelcontextprotocol/server-$server_name"; then
             echo "✅ Server MCP $server_name è già installato globalmente"
@@ -249,6 +312,9 @@ install_server() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
             
 =======
 >>>>>>> ea169dcc (.)
@@ -261,11 +327,14 @@ install_server() {
             
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
             
 =======
 >>>>>>> ea169dcc (.)
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
             if [ $? -eq 0 ]; then
                 echo "✅ Server MCP $server_name installato globalmente con successo"
             else
@@ -273,8 +342,11 @@ install_server() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
                 
                 # Prova con installazione locale
                 echo "🔄 Tentativo di installazione locale di @modelcontextprotocol/server-$server_name..."
@@ -288,6 +360,9 @@ install_server() {
 
 >>>>>>> ea169dcc (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 =======
 <<<<<<< HEAD
 
@@ -308,8 +383,11 @@ install_server() {
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
                 if [ $? -eq 0 ]; then
                     echo "✅ Server MCP $server_name installato localmente con successo"
                 else
@@ -322,6 +400,9 @@ install_server() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
     
 =======
 >>>>>>> ea169dcc (.)
@@ -334,11 +415,14 @@ install_server() {
     
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
     
 =======
 >>>>>>> ea169dcc (.)
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
     return 0
 }
 
@@ -349,6 +433,9 @@ start_server() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
     
 =======
 >>>>>>> ea169dcc (.)
@@ -361,11 +448,14 @@ start_server() {
     
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
     
 =======
 >>>>>>> ea169dcc (.)
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
     if [ -n "$pid" ]; then
         echo "⚠️ Il server MCP $server_name è già in esecuzione con PID $pid"
         return 0
@@ -373,13 +463,19 @@ start_server() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
     
     # Gestione speciale per il server MySQL personalizzato
 =======
 >>>>>>> ea169dcc (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 =======
 <<<<<<< HEAD
 =======
@@ -391,8 +487,11 @@ start_server() {
     # Gestione speciale per il server MySQL personalizzato
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
     if [ "$server_name" = "mysql" ]; then
         if [ ! -f "$MYSQL_CONNECTOR" ]; then
             echo "❌ Script connector MySQL non trovato: $MYSQL_CONNECTOR"
@@ -401,8 +500,11 @@ start_server() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
         
         echo "🚀 Avvio del server MCP MySQL personalizzato..."
         cd "$PROJECT_DIR" && node "$MYSQL_CONNECTOR" > "$LOGS_DIR/mysql.log" 2>&1 &
@@ -422,11 +524,17 @@ start_server() {
     
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> e0c964a3 (first)
 =======
 >>>>>>> 4f97354 (.)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> e0c964a3 (first)
+>>>>>>> 829c80f (.)
         echo "🚀 Avvio del server MCP MySQL personalizzato..."
         cd "$PROJECT_DIR" && node "$MYSQL_CONNECTOR" > "$LOGS_DIR/mysql.log" 2>&1 &
     elif [ "$server_name" = "postgres" ]; then
@@ -455,6 +563,9 @@ start_server() {
     sleep 3
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 >>>>>>> ea169dcc (.)
 =======
 =======
@@ -482,9 +593,12 @@ start_server() {
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 >>>>>>> ea169dcc (.)
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
     pid=$(get_pid "$server_name")
     if [ -n "$pid" ]; then
         echo "✅ Server MCP $server_name avviato con PID $pid"
@@ -497,18 +611,27 @@ start_server() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
         else
             echo "📋 Ultimi log:"
             tail -n 10 "$LOGS_DIR/$server_name.log"
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> e0c964a3 (first)
 =======
 >>>>>>> 4f97354 (.)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> e0c964a3 (first)
+>>>>>>> 829c80f (.)
         elif [ "$server_name" = "postgres" ]; then
             echo "📋 Ultimi log:"
             tail -n 10 "$LOGS_DIR/postgres.log"
@@ -517,6 +640,9 @@ start_server() {
             tail -n 10 "$LOGS_DIR/redis.log"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 >>>>>>> ea169dcc (.)
 =======
 =======
@@ -530,9 +656,12 @@ start_server() {
             tail -n 10 "$LOGS_DIR/$server_name.log"
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 >>>>>>> ea169dcc (.)
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
         fi
         return 1
     fi
@@ -545,6 +674,9 @@ stop_server() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
     
 =======
 >>>>>>> ea169dcc (.)
@@ -557,11 +689,14 @@ stop_server() {
     
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
     
 =======
 >>>>>>> ea169dcc (.)
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
     if [ -z "$pid" ]; then
         echo "⚠️ Il server MCP $server_name non è in esecuzione"
         return 0
@@ -569,8 +704,11 @@ stop_server() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
     
     echo "🛑 Arresto del server MCP $server_name con PID $pid..."
     kill -9 "$pid" 2>/dev/null
@@ -584,6 +722,9 @@ stop_server() {
 
 >>>>>>> ea169dcc (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 =======
 <<<<<<< HEAD
 
@@ -604,8 +745,11 @@ stop_server() {
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
     pid=$(get_pid "$server_name")
     if [ -z "$pid" ]; then
         echo "✅ Server MCP $server_name arrestato"
@@ -618,6 +762,9 @@ stop_server() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
         
 =======
 >>>>>>> ea169dcc (.)
@@ -630,11 +777,14 @@ stop_server() {
         
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
         
 =======
 >>>>>>> ea169dcc (.)
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
         pid=$(get_pid "$server_name")
         if [ -z "$pid" ]; then
             echo "✅ Server MCP $server_name arrestato forzatamente"
@@ -653,6 +803,9 @@ status_server() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
     
 =======
 >>>>>>> ea169dcc (.)
@@ -665,11 +818,14 @@ status_server() {
     
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
     
 =======
 >>>>>>> ea169dcc (.)
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
     if [ -n "$pid" ]; then
         echo "✅ Server MCP $server_name è in esecuzione con PID $pid"
         return 0
@@ -694,6 +850,9 @@ logs_server() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
     
 =======
 >>>>>>> ea169dcc (.)
@@ -706,11 +865,14 @@ logs_server() {
     
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
     
 =======
 >>>>>>> ea169dcc (.)
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
     if [ -f "$log_file" ]; then
         echo "📋 Log del server MCP $server_name:"
         tail -n 50 "$log_file"
@@ -724,13 +886,19 @@ logs_server() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 ALL_SERVERS=("sequential-thinking" "memory" "fetch" "filesystem" "postgres" "redis" "puppeteer" "mysql")
 =======
 ALL_SERVERS=("mysql")
 >>>>>>> ea169dcc (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 =======
 <<<<<<< HEAD
 ALL_SERVERS=("mysql")
@@ -741,8 +909,11 @@ ALL_SERVERS=("sequential-thinking" "memory" "fetch" "filesystem" "postgres" "red
 ALL_SERVERS=("sequential-thinking" "memory" "fetch" "filesystem" "postgres" "redis" "puppeteer" "mysql")
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 
 # Funzione per eseguire un comando su tutti i server
 all_servers() {
@@ -752,6 +923,9 @@ all_servers() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
     
 =======
 >>>>>>> ea169dcc (.)
@@ -764,11 +938,14 @@ all_servers() {
     
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
     
 =======
 >>>>>>> ea169dcc (.)
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
     for server in "${ALL_SERVERS[@]}"; do
         ((total++))
         case "$command" in
@@ -795,6 +972,9 @@ all_servers() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
     
 =======
 >>>>>>> ea169dcc (.)
@@ -807,11 +987,14 @@ all_servers() {
     
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
     
 =======
 >>>>>>> ea169dcc (.)
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
     echo ""
     echo "📊 Riepilogo: $success/$total server MCP gestiti con successo"
 }

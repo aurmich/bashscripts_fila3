@@ -133,8 +133,11 @@ Script per il push dei subtree. Funzionalità:
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 =======
 =======
 <<<<<<< HEAD
@@ -149,14 +152,20 @@ Script per il push dei subtree. Funzionalità:
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 =======
 >>>>>>> f198176d (.)
 <<<<<<< HEAD
 >>>>>>> e0c964a3 (first)
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> 4f97354 (.)
 =======
+=======
+>>>>>>> 829c80f (.)
 <<<<<<< HEAD
 >>>>>>> 574afe9e (.)
 [Torna alla documentazione principale](/docs/maintenance.md#git-management) 
@@ -172,18 +181,26 @@ Script per il push dei subtree. Funzionalità:
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 =======
 =======
 >>>>>>> f52d0712 (.)
 >>>>>>> ec52a6b4 (.)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> e0c964a3 (first)
 =======
 >>>>>>> 4f97354 (.)
+=======
+=======
+>>>>>>> e0c964a3 (first)
+>>>>>>> 829c80f (.)
 # Script Git
 
 Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
@@ -249,11 +266,15 @@ Script per il push dei subtree. Funzionalità:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
 =======
+>>>>>>> 829c80f (.)
 =======
 =======
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -261,6 +282,10 @@ Script per il push dei subtree. Funzionalità:
 >>>>>>> e0c964a3 (first)
 =======
 >>>>>>> 4f97354 (.)
+=======
+=======
+>>>>>>> e0c964a3 (first)
+>>>>>>> 829c80f (.)
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
 =======
@@ -272,8 +297,11 @@ Script per il push dei subtree. Funzionalità:
 >>>>>>> 574afe9e (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 >>>>>>> 7de7063d (.)
 =======
 =======
@@ -287,11 +315,17 @@ Script per il push dei subtree. Funzionalità:
 =======
 >>>>>>> ea169dcc (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 =======
 <<<<<<< HEAD
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)

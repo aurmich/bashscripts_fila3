@@ -5,8 +5,11 @@
 Questa documentazione descrive gli script utilizzati per verificare e migliorare la qualità del codice nel progetto.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 =======
 Questa documentazione descrive gli script e le procedure utilizzate per verificare e migliorare la qualità del codice nel progetto Laravel.
 
@@ -535,10 +538,15 @@ Questa documentazione descrive gli script e le procedure utilizzate per verifica
 Questa documentazione descrive gli script utilizzati per verificare e migliorare la qualità del codice nel progetto.
 >>>>>>> ea169dcc (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> e0c964a3 (first)
 =======
 >>>>>>> 4f97354 (.)
+=======
+=======
+>>>>>>> e0c964a3 (first)
+>>>>>>> 829c80f (.)
 
 ## check_form_schema.php
 
@@ -568,8 +576,11 @@ php bashscripts/check_form_schema.php
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 ### Output
 Esempio di output:
 ```
@@ -582,6 +593,9 @@ XotBaseResource Classes Form Schema Check
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 =======
 ### Output
 Esempio di output:
@@ -590,8 +604,11 @@ XotBaseResource Classes Form Schema Check
 ====
 
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 ❌ 3 classi senza getFormSchema:
 - UserResource in Modules/User/Http/Resources/UserResource.php
 - ProfileResource in Modules/Profile/Http/Resources/ProfileResource.php
@@ -608,8 +625,11 @@ XotBaseResource Classes Form Schema Check
 ## Altri Script di Verifica della Qualità
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 =======
 =======
 #### Output di Esempio
@@ -679,10 +699,15 @@ XotBaseResource Classes Form Schema Check
 =======
 >>>>>>> ea169dcc (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> e0c964a3 (first)
 =======
 >>>>>>> 4f97354 (.)
+=======
+=======
+>>>>>>> e0c964a3 (first)
+>>>>>>> 829c80f (.)
 
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
@@ -694,14 +719,20 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 =======
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> ea169dcc (.)
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 Genera la documentazione dei risultati di PHPStan.
 
 ## Raccomandazioni Generali
@@ -716,8 +747,11 @@ Script PHP che verifica se le classi che estendono `XotBaseResource` implementan
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 =======
 =======
 >>>>>>> f52d0712 (.)
@@ -737,10 +771,15 @@ Script PHP che verifica se le classi che estendono `XotBaseResource` implementan
 =======
 >>>>>>> ea169dcc (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> e0c964a3 (first)
 =======
 >>>>>>> 4f97354 (.)
+=======
+=======
+>>>>>>> e0c964a3 (first)
+>>>>>>> 829c80f (.)
 
 ### Posizione
 ```
@@ -848,8 +887,11 @@ XotBaseResource Classes Form Schema Check
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 >>>>>>> ec52a6b4 (.)
 ### KISS (Keep It Simple, Stupid)
 - **Struttura lineare**: Script comprensibili e diretti
@@ -1338,12 +1380,18 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 >>>>>>> ea169dcc (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 =======
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 
 # Script di Verifica della Qualità del Codice
 
@@ -1465,14 +1513,20 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 =======
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> ea169dcc (.)
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 ## Risorse Utili
 - [PHPStan](https://phpstan.org/)
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data/v4/introduction)
@@ -1480,8 +1534,11 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
 =======
 ---
 
@@ -1523,6 +1580,9 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 =======
 >>>>>>> ea169dcc (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 829c80f (.)
 =======
 =======
 =======
@@ -1864,5 +1924,8 @@ git checkout HEAD -- storage/quality-reports/
 *Versione: 2.1.0*
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
+=======
+>>>>>>> 829c80f (.)
