@@ -60,12 +60,16 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4f97354 (.)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -74,6 +78,8 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 4f97354 (.)
 <<<<<<< HEAD
 
 =======
@@ -81,6 +87,9 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 =======
 >>>>>>> 574afe9e (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4f97354 (.)
 >>>>>>> 7de7063d (.)
 =======
 =======
@@ -106,12 +115,15 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 =======
 
 >>>>>>> ea169dcc (.)
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 4f97354 (.)
 ## Casi d'Uso Avanzati
 
 ### 1. Risoluzione Selettiva
@@ -120,6 +132,9 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4f97354 (.)
 =======
 <<<<<<< HEAD
 
@@ -140,6 +155,7 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 =======
 
 >>>>>>> ea169dcc (.)
+<<<<<<< HEAD
 =======
 
 =======
@@ -147,6 +163,8 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 4f97354 (.)
 ### 2. Integrazione con Git Hooks
 Lo script può essere integrato con Git hooks per verificare automaticamente la presenza di conflitti prima del commit:
 
@@ -154,22 +172,31 @@ Lo script può essere integrato con Git hooks per verificare automaticamente la 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+>>>>>>> 4f97354 (.)
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 4f97354 (.)
 
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> f198176d (.)
 =======
 >>>>>>> e0c964a3 (first)
 <<<<<<< HEAD
+=======
+>>>>>>> 4f97354 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -184,6 +211,9 @@ Lo script può essere integrato con Git hooks per verificare automaticamente la 
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4f97354 (.)
 >>>>>>> 7de7063d (.)
 =======
 =======
@@ -210,12 +240,15 @@ Lo script può essere integrato con Git hooks per verificare automaticamente la 
 =======
 
 >>>>>>> ea169dcc (.)
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 4f97354 (.)
 # .git/hooks/pre-commit
 #!/bin/bash
 ```

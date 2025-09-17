@@ -19,6 +19,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4f97354 (.)
 =======
 <<<<<<< HEAD
         "larastan/larastan": "^3.0"
@@ -42,6 +45,7 @@
 =======
         "larastan/larastan": "^3.0"
 >>>>>>> ea169dcc (.)
+<<<<<<< HEAD
 =======
         "larastan/larastan": "^3.0"
 =======
@@ -51,6 +55,8 @@
         "larastan/larastan": "*"
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 4f97354 (.)
     },
     "config": {
         "sort-packages": true,

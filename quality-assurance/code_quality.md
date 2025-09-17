@@ -4,6 +4,9 @@
 <<<<<<< HEAD
 Questa documentazione descrive gli script utilizzati per verificare e migliorare la qualità del codice nel progetto.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4f97354 (.)
 =======
 Questa documentazione descrive gli script e le procedure utilizzate per verificare e migliorare la qualità del codice nel progetto Laravel.
 
@@ -531,8 +534,11 @@ Questa documentazione descrive gli script e le procedure utilizzate per verifica
 =======
 Questa documentazione descrive gli script utilizzati per verificare e migliorare la qualità del codice nel progetto.
 >>>>>>> ea169dcc (.)
+<<<<<<< HEAD
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 4f97354 (.)
 
 ## check_form_schema.php
 
@@ -561,6 +567,9 @@ php bashscripts/check_form_schema.php
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4f97354 (.)
 ### Output
 Esempio di output:
 ```
@@ -572,6 +581,7 @@ XotBaseResource Classes Form Schema Check
 ========================================
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ### Output
 Esempio di output:
@@ -580,6 +590,8 @@ XotBaseResource Classes Form Schema Check
 ====
 
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 4f97354 (.)
 ❌ 3 classi senza getFormSchema:
 - UserResource in Modules/User/Http/Resources/UserResource.php
 - ProfileResource in Modules/Profile/Http/Resources/ProfileResource.php
@@ -595,6 +607,9 @@ XotBaseResource Classes Form Schema Check
 
 ## Altri Script di Verifica della Qualità
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4f97354 (.)
 =======
 =======
 #### Output di Esempio
@@ -663,8 +678,11 @@ XotBaseResource Classes Form Schema Check
 >>>>>>> 71ff9e32 (.)
 =======
 >>>>>>> ea169dcc (.)
+<<<<<<< HEAD
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 4f97354 (.)
 
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
@@ -675,10 +693,15 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+=======
+>>>>>>> ea169dcc (.)
+>>>>>>> 4f97354 (.)
 Genera la documentazione dei risultati di PHPStan.
 
 ## Raccomandazioni Generali
@@ -692,6 +715,9 @@ Genera la documentazione dei risultati di PHPStan.
 Script PHP che verifica se le classi che estendono `XotBaseResource` implementano correttamente il metodo `getFormSchema()`, essenziale per il corretto funzionamento del sistema di form.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4f97354 (.)
 =======
 =======
 >>>>>>> f52d0712 (.)
@@ -710,8 +736,11 @@ Genera la documentazione dei risultati di PHPStan.
 Script PHP che verifica se le classi che estendono `XotBaseResource` implementano correttamente il metodo `getFormSchema()`, essenziale per il corretto funzionamento del sistema di form.
 =======
 >>>>>>> ea169dcc (.)
+<<<<<<< HEAD
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 4f97354 (.)
 
 ### Posizione
 ```
@@ -818,6 +847,9 @@ XotBaseResource Classes Form Schema Check
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4f97354 (.)
 >>>>>>> ec52a6b4 (.)
 ### KISS (Keep It Simple, Stupid)
 - **Struttura lineare**: Script comprensibili e diretti
@@ -1305,10 +1337,13 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 >>>>>>> ea169dcc (.)
+<<<<<<< HEAD
 =======
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 4f97354 (.)
 
 # Script di Verifica della Qualità del Codice
 
@@ -1429,16 +1464,24 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+=======
+>>>>>>> ea169dcc (.)
+>>>>>>> 4f97354 (.)
 ## Risorse Utili
 - [PHPStan](https://phpstan.org/)
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data/v4/introduction)
 - [CI/CD Best Practices](https://docs.github.com/en/actions/guides/building-and-testing-php) 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4f97354 (.)
 =======
 ---
 
@@ -1479,6 +1522,7 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 >>>>>>> ec52a6b4 (.)
 =======
 >>>>>>> ea169dcc (.)
+<<<<<<< HEAD
 =======
 =======
 =======
@@ -1820,3 +1864,5 @@ git checkout HEAD -- storage/quality-reports/
 *Versione: 2.1.0*
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 4f97354 (.)

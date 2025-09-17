@@ -42,6 +42,9 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4f97354 (.)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -66,6 +69,7 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 =======
 =======
 >>>>>>> f52d0712 (.)
+<<<<<<< HEAD
 =======
 
 ### Fase 1: Identificazione
@@ -77,22 +81,30 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 >>>>>>> f198176d (.)
 <<<<<<< HEAD
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 4f97354 (.)
 
 ### Fase 1: Identificazione
 ```bash
 =======
 ### Fase 1: Identificazione
 ```bash
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> e0c964a3 (first)
 =======
+>>>>>>> 4f97354 (.)
+=======
 >>>>>>> 574afe9e (.)
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4f97354 (.)
 =======
 <<<<<<< HEAD
 =======
@@ -108,8 +120,11 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 =======
 >>>>>>> f52d0712 (.)
 >>>>>>> ec52a6b4 (.)
+<<<<<<< HEAD
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 4f97354 (.)
 ### Fase 1: Identificazione
 ```bash
 =======
@@ -118,12 +133,18 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4f97354 (.)
 =======
 =======
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 4f97354 (.)
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
 <<<<<<< HEAD
@@ -131,6 +152,9 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4f97354 (.)
 >>>>>>> 7de7063d (.)
 =======
 =======
@@ -143,12 +167,15 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 >>>>>>> ec52a6b4 (.)
 =======
 >>>>>>> ea169dcc (.)
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 4f97354 (.)
 # Visualizzare tutti i file con conflitti
 git status
 
@@ -182,12 +209,16 @@ Per ogni file in conflitto:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4f97354 (.)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -196,6 +227,8 @@ Per ogni file in conflitto:
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 4f97354 (.)
 <<<<<<< HEAD
 
 =======
@@ -203,6 +236,9 @@ Per ogni file in conflitto:
 =======
 >>>>>>> 574afe9e (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4f97354 (.)
 >>>>>>> 7de7063d (.)
 =======
 =======
@@ -228,12 +264,15 @@ Per ogni file in conflitto:
 =======
 
 >>>>>>> ea169dcc (.)
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 4f97354 (.)
 ### Fase 3: Risoluzione
 Scegliere una delle seguenti strategie:
 
@@ -293,12 +332,16 @@ namespace Modules\NomeModulo\App\Filament;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4f97354 (.)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -307,6 +350,8 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 4f97354 (.)
 <<<<<<< HEAD
 
 =======
@@ -324,6 +369,9 @@ namespace Modules\NomeModulo\App\Filament;
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4f97354 (.)
 >>>>>>> 7de7063d (.)
 =======
 =======
@@ -350,12 +398,15 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 
 >>>>>>> ea169dcc (.)
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 4f97354 (.)
 ## Risoluzione di Casi Specifici
 
 ### Conflitti in File PHP

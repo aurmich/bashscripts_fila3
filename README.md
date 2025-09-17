@@ -1,9 +1,13 @@
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4f97354 (.)
 # BashScripts - Organizzazione Script
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -192,6 +196,8 @@ php artisan tinker
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 4f97354 (.)
 # 🚀 Toolkit di Automazione Git per Laraxot PTVX
 
 [![PHPStan](https://img.shields.io/badge/PHPStan-Level%209-brightgreen.svg?style=for-the-badge&logo=php&logoColor=white)](../docs/phpstan/ANALISI_MODULI_PHPSTAN.md)
@@ -232,6 +238,7 @@ git clone git@github.com:aurmich/bashscripts_fila3.git
 
 # Rendi gli script eseguibili
 <<<<<<< HEAD
+<<<<<<< HEAD
 chmod +x *.sh
 =======
 <<<<<<< HEAD
@@ -239,6 +246,9 @@ chmod +x *.sh
 chmod +x *.sh
 >>>>>>> 574afe9e (.)
 >>>>>>> e0c964a3 (first)
+=======
+chmod +x *.sh
+>>>>>>> 4f97354 (.)
 chmod +x scripts/**/*.sh
 ```
 
@@ -247,6 +257,7 @@ chmod +x scripts/**/*.sh
 ### Sincronizzazione Subtree
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 ./git_sync_subtree.sh <path> <remote_repo>
 =======
 <<<<<<< HEAD
@@ -254,6 +265,9 @@ chmod +x scripts/**/*.sh
 ./git_sync_subtree.sh <path> <remote_repo>
 >>>>>>> 574afe9e (.)
 >>>>>>> e0c964a3 (first)
+=======
+./git_sync_subtree.sh <path> <remote_repo>
+>>>>>>> 4f97354 (.)
 ./scripts/git/git_sync_subtree.sh <path> <remote_repo>
 ```
 
@@ -390,6 +404,9 @@ Tutti gli script sono organizzati in sottocartelle per categoria:
 ### Sincronizzazione Modulo
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4f97354 (.)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -708,10 +725,13 @@ php artisan tinker
 =======
 >>>>>>> 71ff9e32 (.)
 >>>>>>> ec52a6b4 (.)
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 4f97354 (.)
 
 # Sincronizza un modulo specifico
 ./git_sync_subtree.sh modules/users git@github.com:org/users.git
@@ -720,15 +740,21 @@ php artisan tinker
 REMOTE_BRANCH=develop ./git_sync_subtree.sh modules/auth git@github.com:org/auth.git
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4f97354 (.)
 =======
 <<<<<<< HEAD
 >>>>>>> 574afe9e (.)
 =======
 >>>>>>> f52d0712 (.)
 >>>>>>> ec52a6b4 (.)
+<<<<<<< HEAD
 =======
 >>>>>>> 574afe9e (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 4f97354 (.)
 # Sincronizza un modulo specifico
 ./scripts/git/git_sync_subtree.sh modules/users git@github.com:org/users.git
 
@@ -739,8 +765,11 @@ REMOTE_BRANCH=develop ./scripts/phpstan/check_before_phpstan.sh
 ./scripts/phpstan/generate_phpstan_summary.sh
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 4f97354 (.)
 ```
 
 ## ⚠️ Risoluzione Problemi
@@ -748,6 +777,9 @@ REMOTE_BRANCH=develop ./scripts/phpstan/check_before_phpstan.sh
 ### Errori Comuni
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4f97354 (.)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -855,8 +887,11 @@ REMOTE_BRANCH=develop ./scripts/phpstan/check_before_phpstan.sh
 =======
 >>>>>>> 71ff9e32 (.)
 >>>>>>> ec52a6b4 (.)
+<<<<<<< HEAD
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 4f97354 (.)
 1. **Prefix Option Mancante**
    ```bash
    fatal: you must provide the --prefix option
@@ -866,12 +901,18 @@ REMOTE_BRANCH=develop ./scripts/phpstan/check_before_phpstan.sh
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4f97354 (.)
 =======
 =======
 >>>>>>> f52d0712 (.)
 >>>>>>> ec52a6b4 (.)
+<<<<<<< HEAD
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 4f97354 (.)
    ✅ **Soluzione:** Verifica il path del subtree
 
 2. **Push Rejected**
@@ -881,9 +922,12 @@ REMOTE_BRANCH=develop ./scripts/phpstan/check_before_phpstan.sh
    ✅ **Soluzione:** Esegui prima un pull
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 574afe9e (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 4f97354 (.)
    **Soluzione**: Verifica che il path del subtree sia corretto
 
 2. **Permessi Script**
@@ -971,6 +1015,9 @@ Questo progetto è rilasciato sotto licenza MIT. Vedi il file [LICENSE](LICENSE)
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4f97354 (.)
 =======
 <<<<<<< HEAD
 >>>>>>> 574afe9e (.)
@@ -1311,8 +1358,11 @@ Questo progetto è rilasciato sotto licenza MIT. Vedi il file [LICENSE](LICENSE)
 ---
 
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 4f97354 (.)
 <div align="center">
   <strong>🚀 Potenzia il tuo workflow Git con questi script!</strong>
 </div>
@@ -1885,6 +1935,9 @@ This toolkit addresses these challenges by providing automated tools that simpli
 - [Español](docs/README.es.md)
  43df3e0 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4f97354 (.)
 =======
 =======
 <<<<<<< HEAD
@@ -1897,9 +1950,12 @@ This toolkit addresses these challenges by providing automated tools that simpli
 >>>>>>> ec52a6b4 (.)
 =======
 >>>>>>> ea169dcc (.)
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 4f97354 (.)
