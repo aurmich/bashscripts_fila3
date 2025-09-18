@@ -1,12 +1,18 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bdeae81f (first)
 declare(strict_types=1);
 
 return [
     'navigation' => [
         'name' => 'Tenant',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bdeae81f (first)
         'plural' => 'Tenants',
         'group' => [
             'name' => 'Gestione Utenti',
@@ -58,6 +64,7 @@ return [
             ],
         ],
         'change_password' => 'Cambio password',
+<<<<<<< HEAD
 =======
         'group' => 'Sistema',
         'sort' => 25,
@@ -267,3 +274,7 @@ return array (
   ),
 );
 >>>>>>> e83070fd (.)
+=======
+    ],
+];
+>>>>>>> bdeae81f (first)

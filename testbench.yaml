@@ -28,6 +28,7 @@ providers:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Modules\Rating\Providers\RatingServiceProvider
 =======
   - Modules\Xot\Providers\XotServiceProvider
@@ -125,3 +126,7 @@ providers:
   - Modules\User\Providers\UserServiceProvider
   - Modules\User\Providers\Filament\AdminPanelProvider
 >>>>>>> e83070fd (.)
+=======
+  - Modules\User\Providers\UserServiceProvider
+  - Modules\User\Providers\Filament\AdminPanelProvider
+>>>>>>> bdeae81f (first)

@@ -5,6 +5,7 @@ declare(strict_types=1);
 return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'failed' => 'These credentials do not match our records!',
     'general_error' => 'You do not have access to do that.',
     'socialite' => [
@@ -15,6 +16,8 @@ return [
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     'login-via' => 'Or log in via',
 
     'login-failed' => 'Login failed, please try again.',
@@ -26,7 +29,10 @@ return [
     'login-in' => 'Sign in',
     'sign-up' => 'Sign up',
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 ];

@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bdeae81f (first)
 declare(strict_types=1);
 
 return [
@@ -117,6 +120,7 @@ return [
         'manage_roles' => 'Gestisci ruoli',
     ],
 ];
+<<<<<<< HEAD
 =======
 return array (
   'navigation' => 
@@ -295,3 +299,5 @@ return array (
   ),
 );
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)

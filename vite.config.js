@@ -20,6 +20,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 const dotenvExpand = require('dotenv-expand');
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -126,10 +127,15 @@ dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/}));
 const dotenvExpand = require('dotenv-expand');
 dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/ }));
 >>>>>>> e83070fd (.)
+=======
+const dotenvExpand = require('dotenv-expand');
+dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/ }));
+>>>>>>> bdeae81f (first)
 
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -246,10 +252,13 @@ export default defineConfig(
 >>>>>>> 8fc3049b (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 export default defineConfig(
     {
         build: {
             outDir: '../../public/build-user',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -275,10 +284,13 @@ export default defineConfig(
 >>>>>>> 8fc3049b (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
             emptyOutDir: true,
             manifest: true,
         },
         plugins: [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -304,14 +316,19 @@ export default defineConfig(
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
             laravel(
                 {
                     publicDirectory: '../../public',
                     buildDirectory: 'build-user',
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 8fc3049b (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
                     input: [
                         __dirname + '/resources/assets/sass/app.scss',
                         __dirname + '/resources/assets/js/app.js'
@@ -322,6 +339,7 @@ export default defineConfig(
         ],
     }
 );
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -487,3 +505,5 @@ viteStaticCopy({
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)

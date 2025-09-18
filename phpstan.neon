@@ -1,7 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 includes:
     - ./phpstan-baseline.neon
     - ./../../vendor/larastan/larastan/extension.neon
@@ -61,6 +64,7 @@ parameters:
     checkModelProperties: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 parameters:
     level: 4
@@ -80,3 +84,5 @@ parameters:
 >>>>>>> 961ad402 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)

@@ -63,8 +63,14 @@ use Modules\Xot\Datas\XotData;
 class Device extends BaseModel
 {
     /** @var list<string> */
+<<<<<<< HEAD
     public $fillable = [
         'id',
+=======
+    protected $fillable = [
+        'id',
+        'uuid',
+>>>>>>> bdeae81f (first)
         'mobile_id',
         'languages',
         'device',
@@ -77,11 +83,14 @@ class Device extends BaseModel
         'is_mobile',
         'is_tablet',
         'is_phone',
+<<<<<<< HEAD
         'created_at',
         'updated_at',
         'updated_by',
         'created_by',
         'uuid'
+=======
+>>>>>>> bdeae81f (first)
     ];
 
     /**
@@ -101,6 +110,7 @@ class Device extends BaseModel
      *
      * @return array<string, string>
      */
+<<<<<<< HEAD
     public function casts(): array
     {
         return [
@@ -117,13 +127,29 @@ class Device extends BaseModel
             'is_mobile' => 'boolean',
             'is_tablet' => 'boolean',
             'is_phone' => 'boolean',
+=======
+    protected function casts(): array
+    {
+        return [
+            'id' => 'string',
+            'uuid' => 'string',
+>>>>>>> bdeae81f (first)
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
             'deleted_at' => 'datetime',
             'updated_by' => 'string',
             'created_by' => 'string',
             'deleted_by' => 'string',
+<<<<<<< HEAD
             'uuid' => 'string'
+=======
+            'languages' => 'array',
+            'is_robot' => 'boolean',
+            'is_desktop' => 'boolean',
+            'is_mobile' => 'boolean',
+            'is_tablet' => 'boolean',
+            'is_phone' => 'boolean',
+>>>>>>> bdeae81f (first)
         ];
     }
 }

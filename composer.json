@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -97,10 +98,16 @@
     "name": "laraxot/module_tenant_fila3",
     "description": "tenant module for software architecture that allows a single instance of a software application to serve multiple tenants",
 >>>>>>> 8fc3049b (first)
+=======
+{
+    "name": "laraxot/module_user_fila3",
+    "description": "user module for user management",
+>>>>>>> bdeae81f (first)
     "keywords": [
         "laraxot",
         "laravel",
         "filament",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         "module_setting",
@@ -401,6 +408,8 @@
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
         "module_user",
         "Laravel",
         "User module",
@@ -409,6 +418,7 @@
         "Xot"
     ],
     "homepage": "https://github.com/laraxot/module_user_fila3",
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
@@ -423,10 +433,13 @@
 >>>>>>> c986cc10 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     "license": "MIT",
     "authors": [
         {
             "name": "Marco Sottana",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -479,11 +492,15 @@
 =======
             "email": "marco.sottana@gmail.com"
 >>>>>>> e83070fd (.)
+=======
+            "email": "marco.sottana@gmail.com"
+>>>>>>> bdeae81f (first)
         }
     ],
     "extra": {
         "laravel": {
             "providers": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 "Livewire\\LivewireServiceProvider",
@@ -503,12 +520,18 @@
                 "Modules\\User\\Providers\\UserServiceProvider",
                 "Modules\\User\\Providers\\Filament\\AdminPanelProvider"
 >>>>>>> e83070fd (.)
+=======
+                "Livewire\\LivewireServiceProvider",
+                "Modules\\User\\Providers\\UserServiceProvider",
+                "Modules\\User\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> bdeae81f (first)
             ],
             "aliases": {}
         }
     },
     "autoload": {
         "psr-4": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -533,6 +556,8 @@
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
             "Modules\\User\\": "app/",
             "Modules\\User\\Database\\Factories\\": "database/factories/",
             "Modules\\User\\Database\\Seeders\\": "database/seeders/"
@@ -544,6 +569,7 @@
         "laravel/passport": "*",
         "socialiteproviders/auth0": "*",
         "spatie/laravel-personal-data-export": "*"
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
@@ -641,12 +667,15 @@
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     },
     "require-dev": {},
     "repositories": [
         {
             "type": "path",
             "url": "../Xot"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -714,6 +743,8 @@
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
         },
         {
             "type": "path",
@@ -721,6 +752,7 @@
         },
         {
             "type": "path",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -756,11 +788,14 @@
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
             "url": "../UI"
         }
     ],
     "scripts": {
         "post-autoload-dump1": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> d79d9e57 (first)
@@ -796,6 +831,8 @@
 >>>>>>> dc18abbe (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
             "@php vendor/bin/testbench package:discover --ansi"
         ],
         "post-update-cmd": [
@@ -805,6 +842,7 @@
         "test": "./vendor/bin/pest --no-coverage",
         "test-coverage": "vendor/bin/pest --coverage-html coverage",
         "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1286,10 +1324,13 @@
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     },
     "config": {
         "sort-packages": true,
         "allow-plugins": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1419,10 +1460,14 @@
 =======
             "pestphp/pest-plugin": true,
 >>>>>>> e83070fd (.)
+=======
+            "pestphp/pest-plugin": true,
+>>>>>>> bdeae81f (first)
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "wikimedia/composer-merge-plugin": true
         }
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1884,3 +1929,8 @@
 >>>>>>> d8b9f8a6 (up)
 =======
 >>>>>>> d516087e (.)
+=======
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+>>>>>>> bdeae81f (first)

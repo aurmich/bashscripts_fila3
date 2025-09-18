@@ -29,6 +29,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     | Supported: "default", "laravel", "symfony", "magento2", "drupal", "wordpress"
 =======
     | Supported: "default", "laravel", "symfony", "magento2", "drupal"
@@ -39,6 +40,9 @@ return [
 =======
     | Supported: "default", "laravel", "symfony", "magento2", "drupal"
 >>>>>>> e83070fd (.)
+=======
+    | Supported: "default", "laravel", "symfony", "magento2", "drupal"
+>>>>>>> bdeae81f (first)
     |
     */
 
@@ -74,6 +78,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     | mind, that all added `Insights` must belong to a specific `Metric`.
 =======
     | mind that all added `Insights` must belong to a specific `Metric`.
@@ -84,6 +89,9 @@ return [
 =======
     | mind that all added `Insights` must belong to a specific `Metric`.
 >>>>>>> e83070fd (.)
+=======
+    | mind that all added `Insights` must belong to a specific `Metric`.
+>>>>>>> bdeae81f (first)
     |
     */
 
@@ -144,6 +152,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     | the analysis. This is optional, don't provide it and the tool will guess
 =======
     | the analyse. This is optional, don't provide it and the tool will guess
@@ -154,11 +163,15 @@ return [
 =======
     | the analyse. This is optional, don't provide it and the tool will guess
 >>>>>>> e83070fd (.)
+=======
+    | the analyse. This is optional, don't provide it and the tool will guess
+>>>>>>> bdeae81f (first)
     | the max core number available. It accepts null value or integer > 0.
     |
     */
 
     'threads' => null,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -181,4 +194,6 @@ return [
 >>>>>>> 9cec72d6 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 ];

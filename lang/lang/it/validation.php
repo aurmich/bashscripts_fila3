@@ -5,6 +5,7 @@ declare(strict_types=1);
 return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'accepted' => ':attribute deve essere accettato.',
     'active_url' => ':attribute non è un URL valido.',
     'after' => ':attribute deve essere una data successiva a :date.',
@@ -58,6 +59,8 @@ return [
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     /*
     |--------------------------------------------------------------------------
     | Messaggi di validazione
@@ -152,9 +155,12 @@ return [
     'not_regex' => 'Il formato del campo :attribute non è valido.',
     'numeric' => 'Il campo :attribute deve essere un numero.',
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     'password' => [
         'letters' => 'Il campo :attribute deve contenere almeno una lettera.',
         'mixed' => 'Il campo :attribute deve contenere almeno una lettera maiuscola e una minuscola.',
@@ -162,6 +168,7 @@ return [
         'symbols' => 'Il campo :attribute deve contenere almeno un simbolo.',
         'uncompromised' => 'Il :attribute fornito è apparso in una violazione di dati. Scegli un :attribute diverso, per favore.',
     ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     'present' => 'The :attribute field must be present.',
@@ -234,6 +241,8 @@ return [
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 
     'password.letters' => 'Il campo :attribute deve contenere almeno una lettera.',
     'password.mixed' => 'Il campo :attribute deve contenere almeno una lettera maiuscola e una minuscola.',
@@ -279,8 +288,11 @@ return [
     'attributes' => [
         'data.password' => 'zu',
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     ],
 ];

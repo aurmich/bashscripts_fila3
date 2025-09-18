@@ -19,6 +19,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d79d9e57 (first)
 =======
@@ -27,12 +28,15 @@
 >>>>>>> 2df6fbc8 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 /**
  * ---.
  */
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -73,6 +77,8 @@ use Modules\Xot\Datas\XotData;
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 namespace Modules\User\Providers\Filament;
 
 use Filament\Navigation\MenuItem;
@@ -81,6 +87,7 @@ use Filament\Support\Facades\FilamentView;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\View;
 use Modules\User\Filament\Pages\MyProfilePage;
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
@@ -157,10 +164,13 @@ namespace Modules\Progressioni\Providers\Filament;
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 
 class AdminPanelProvider extends XotBasePanelProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -237,6 +247,9 @@ class AdminPanelProvider extends XotBasePanelProvider
 =======
     protected string $module = 'User';
 >>>>>>> e83070fd (.)
+=======
+    protected string $module = 'User';
+>>>>>>> bdeae81f (first)
 
     public function panel(Panel $panel): Panel
     {
@@ -244,8 +257,11 @@ class AdminPanelProvider extends XotBasePanelProvider
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
         FilamentView::registerRenderHook(
             'panels::auth.login.form.after',
             static fn (): string => Blade::render("@livewire('socialite.buttons')"),
@@ -301,6 +317,7 @@ class AdminPanelProvider extends XotBasePanelProvider
 
         return $panel;
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
@@ -358,4 +375,6 @@ class AdminPanelProvider extends XotBasePanelProvider
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 }

@@ -17,6 +17,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -83,12 +84,18 @@ declare(strict_types=1);
 
 return [
 >>>>>>> e83070fd (.)
+=======
+declare(strict_types=1);
+
+return [
+>>>>>>> bdeae81f (first)
     'name' => 'User',
     'description' => 'Modulo per la gestione degli utenti e autorizzazioni',
     'icon' => 'heroicon-o-users',
     'navigation' => [
         'enabled' => true,
         'sort' => 100,
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
@@ -109,12 +116,15 @@ return [
 >>>>>>> 8fc3049b (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     ],
     'routes' => [
         'enabled' => true,
         'middleware' => ['web', 'auth'],
     ],
     'providers' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -299,4 +309,8 @@ return [
         'Modules\\User\\Providers\\UserServiceProvider',
     ],
 >>>>>>> e83070fd (.)
+=======
+        'Modules\\User\\Providers\\UserServiceProvider',
+    ],
+>>>>>>> bdeae81f (first)
 ];

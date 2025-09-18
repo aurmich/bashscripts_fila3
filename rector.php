@@ -1,10 +1,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bdeae81f (first)
 <?php
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -61,10 +65,14 @@ use Rector\Config\RectorConfig;
 =======
 use Rector\Config\RectorConfig;
 >>>>>>> e83070fd (.)
+=======
+use Rector\Config\RectorConfig;
+>>>>>>> bdeae81f (first)
 use Rector\PHPUnit\Set\PHPUnitLevelSetList;
 use Rector\Set\ValueObject\LevelSetList;
 use Rector\TypeDeclaration\Rector\ClassMethod\ReturnTypeFromStrictNativeCallRector;
 use Rector\TypeDeclaration\Rector\ClassMethod\ReturnTypeFromStrictScalarReturnExprRector;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> a8f30311 (first)
@@ -91,11 +99,14 @@ use RectorLaravel\Rector\MethodCall\RedirectRouteToToRouteHelperRector;
 >>>>>>> 9cec72d6 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 use RectorLaravel\Set\LaravelSetList;
 
 return static function (RectorConfig $rectorConfig): void {
     $rectorConfig->paths(
         [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -158,6 +169,9 @@ return static function (RectorConfig $rectorConfig): void {
 =======
             __DIR__,
 >>>>>>> e83070fd (.)
+=======
+            __DIR__,
+>>>>>>> bdeae81f (first)
         ]
     );
 
@@ -168,27 +182,34 @@ return static function (RectorConfig $rectorConfig): void {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     // $rectorConfig->rule(RedirectRouteToToRouteHelperRector::class);
 <<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     // $rectorConfig->rule(RedirectRouteToToRouteHelperRector::class);
     // $rectorConfig->rules([
     //    ReturnTypeFromStrictNativeCallRector::class,
     //    ReturnTypeFromStrictScalarReturnExprRector::class,
     // ]);
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     $rectorConfig->rules(
         [
             ReturnTypeFromStrictNativeCallRector::class,
             ReturnTypeFromStrictScalarReturnExprRector::class,
         ]
     );
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> a8f30311 (first)
@@ -205,11 +226,14 @@ return static function (RectorConfig $rectorConfig): void {
 >>>>>>> 9cec72d6 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 
     // define sets of rules
     $rectorConfig->sets(
         [
             PHPUnitLevelSetList::UP_TO_PHPUNIT_100,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -247,6 +271,8 @@ return static function (RectorConfig $rectorConfig): void {
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
             // SetList::DEAD_CODE,
             // SetList::CODE_QUALITY,
             LevelSetList::UP_TO_PHP_81,
@@ -257,6 +283,7 @@ return static function (RectorConfig $rectorConfig): void {
             // SetList::CODING_STYLE,
             // SetList::PRIVATIZATION, //error "final class"
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
             // SetList::TYPE_DECLARATION,
@@ -265,11 +292,14 @@ return static function (RectorConfig $rectorConfig): void {
 >>>>>>> 9cec72d6 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
             // SetList::EARLY_RETURN,
             // SetList::INSTANCEOF,
         ]
     );
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -342,6 +372,8 @@ return static function (RectorConfig $rectorConfig): void {
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     $rectorConfig->skip(
         [
             // testdummy files
@@ -355,6 +387,7 @@ return static function (RectorConfig $rectorConfig): void {
 
     $rectorConfig->importNames();
 };
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
@@ -469,3 +502,5 @@ return RectorConfig::configure()
 >>>>>>> d8b9f8a6 (up)
 =======
 >>>>>>> d516087e (.)
+=======
+>>>>>>> bdeae81f (first)

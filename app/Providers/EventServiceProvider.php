@@ -26,6 +26,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -347,6 +348,10 @@ class EventServiceProvider extends BaseEventServiceProvider
 declare(strict_types=1);
 
 >>>>>>> e83070fd (.)
+=======
+declare(strict_types=1);
+
+>>>>>>> bdeae81f (first)
 namespace Modules\User\Providers;
 
 use Illuminate\Auth\Events\Failed;
@@ -385,6 +390,7 @@ class EventServiceProvider extends ServiceProvider
             OtherDeviceLogoutListener::class,
         ],
     ];
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
@@ -471,4 +477,6 @@ class EventServiceProvider extends ServiceProvider
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 }

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Xot\Models;
 
 /**
@@ -29,6 +30,8 @@ namespace Modules\Xot\Models;
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 namespace Modules\User\Models;
 
 use Modules\Xot\Models\Extra as XotBaseExtra;
@@ -51,9 +54,12 @@ use Modules\Xot\Models\Extra as XotBaseExtra;
  * @property \Illuminate\Support\Carbon|null $deleted_at
  * @property string|null $deleted_by
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
  * @method static \Illuminate\Database\Eloquent\Builder|Extra whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Extra whereCreatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Extra whereDeletedAt($value)
@@ -68,6 +74,7 @@ use Modules\Xot\Models\Extra as XotBaseExtra;
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @mixin \Eloquent
  */
 class Extra extends BaseExtra
@@ -75,6 +82,8 @@ class Extra extends BaseExtra
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
  * @method static \Modules\User\Database\Factories\ExtraFactory factory($count = null, $state = [])
  * @mixin \Eloquent
  */
@@ -83,7 +92,10 @@ class Extra extends XotBaseExtra
     /** @var string */
     protected $connection = 'user';
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 }

@@ -28,6 +28,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 const dotenvExpand = require('dotenv-expand');
 dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/}));
 
@@ -112,11 +113,14 @@ dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/}));
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 const mix = require('laravel-mix');
 require('laravel-mix-merge-manifest');
 
 mix.setPublicPath('../../public').mergeManifest();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -197,10 +201,15 @@ mix.js(__dirname + '/resources/assets/js/app.js', 'js/indennitaresponsabilita.js
 mix.js(__dirname + '/resources/assets/js/app.js', 'js/blog.js')
     .sass(__dirname + '/resources/assets/sass/app.scss', 'css/blog.css');
 >>>>>>> e83070fd (.)
+=======
+mix.js(__dirname + '/resources/assets/js/app.js', 'js/blog.js')
+    .sass(__dirname + '/resources/assets/sass/app.scss', 'css/blog.css');
+>>>>>>> bdeae81f (first)
 
 if (mix.inProduction()) {
     mix.version();
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -352,3 +361,5 @@ if (mix.inProduction()) {
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)

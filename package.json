@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -43,11 +44,15 @@
 >>>>>>> 9cec72d6 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+{
+>>>>>>> bdeae81f (first)
   "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build"
   },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -72,10 +77,13 @@
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> 58e1cada (.)
+=======
+>>>>>>> bdeae81f (first)
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.13",
     "autoprefixer": "^10.4.19",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -91,10 +99,13 @@
 >>>>>>> 9cec72d6 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     "axios": "^1.6.8",
     "dotenv": "^10.0.0",
     "dotenv-expand": "^5.1.0",
     "laravel-vite-plugin": "^0.6.1",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -109,11 +120,14 @@
     "axios": "^1.6.7",
     "laravel-vite-plugin": "^1.0.1",
 >>>>>>> 58e1cada (.)
+=======
+>>>>>>> bdeae81f (first)
     "lodash": "^4.17.21",
     "postcss": "^8.4.38",
     "postcss-nesting": "^12.1.4",
     "tailwindcss": "^3.4.3",
     "tippy.js": "^6.3.7",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -472,3 +486,8 @@
 >>>>>>> d8b9f8a6 (up)
 =======
 >>>>>>> d516087e (.)
+=======
+    "vite": "^5.4.1"
+  }
+}
+>>>>>>> bdeae81f (first)

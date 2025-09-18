@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -22,11 +23,17 @@ declare(strict_types=1);
 
 namespace Modules\User\Http\Middleware;
 >>>>>>> e83070fd (.)
+=======
+declare(strict_types=1);
+
+namespace Modules\User\Http\Middleware;
+>>>>>>> bdeae81f (first)
 
 use Modules\Xot\Http\Middleware\XotBaseFilamentMiddleware;
 
 class FilamentMiddleware extends XotBaseFilamentMiddleware
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -133,4 +140,9 @@ class FilamentMiddleware extends Middleware
 
     public static string $context = 'filament';
 >>>>>>> e83070fd (.)
+=======
+    public static string $module = 'User';
+
+    public static string $context = 'filament';
+>>>>>>> bdeae81f (first)
 }

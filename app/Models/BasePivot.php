@@ -6,6 +6,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Notify\Models;
 =======
 namespace Modules\User\Models;
@@ -16,6 +17,9 @@ namespace Modules\Incentivi\Models;
 =======
 namespace Modules\User\Models;
 >>>>>>> e83070fd (.)
+=======
+namespace Modules\User\Models;
+>>>>>>> bdeae81f (first)
 
 use Illuminate\Database\Eloquent\Relations\Pivot;
 // //use Laravel\Scout\Searchable;
@@ -46,6 +50,7 @@ abstract class BasePivot extends Pivot
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     // use Searchable;
     /** @var string */
     protected $connection = 'notify';
@@ -65,14 +70,21 @@ abstract class BasePivot extends Pivot
     /** @var string */
     protected $connection = 'user';
 >>>>>>> e83070fd (.)
+=======
+    /** @var string */
+    protected $connection = 'user';
+>>>>>>> bdeae81f (first)
 
     /** @var list<string> */
     protected $appends = [];
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     /**
      * Undocumented variable.
      */
@@ -83,6 +95,7 @@ abstract class BasePivot extends Pivot
     protected $keyType = 'string';
 
     /** @return array<string, string> */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -98,16 +111,21 @@ abstract class BasePivot extends Pivot
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     protected function casts(): array
     {
         return [
             'id' => 'string', // must be string else primary key of related model will be typed as int
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> 15ea09e2 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
             'deleted_at' => 'datetime',
@@ -117,6 +135,7 @@ abstract class BasePivot extends Pivot
             'deleted_by' => 'string',
         ];
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -143,4 +162,6 @@ abstract class BasePivot extends Pivot
 >>>>>>> b7483fd0 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 }

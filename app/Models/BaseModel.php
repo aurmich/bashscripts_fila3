@@ -25,6 +25,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Rating\Models;
 
 use Illuminate\Database\Eloquent\Model;
@@ -71,10 +72,14 @@ namespace Modules\Progressioni\Models;
 =======
 namespace Modules\User\Models;
 >>>>>>> e83070fd (.)
+=======
+namespace Modules\User\Models;
+>>>>>>> bdeae81f (first)
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -177,10 +182,15 @@ use Modules\Xot\Traits\Updater;
 use Modules\Xot\Models\Traits\RelationX;
 use Modules\Xot\Traits\Updater;
 >>>>>>> e83070fd (.)
+=======
+use Modules\Xot\Models\Traits\RelationX;
+use Modules\Xot\Traits\Updater;
+>>>>>>> bdeae81f (first)
 
 /**
  * Class BaseModel.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -251,10 +261,13 @@ abstract class BaseModel extends Model implements HasMedia
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 abstract class BaseModel extends Model
 {
     use HasFactory;
     use RelationX;
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
@@ -285,11 +298,14 @@ abstract class BaseModel extends Model
 >>>>>>> 15ea09e2 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     use Updater;
 
     /**
      * Indicates whether attributes are snake cased on arrays.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -335,11 +351,15 @@ abstract class BaseModel extends Model
 =======
      * @see https://laravel-news.com/6-eloquent-secrets
 >>>>>>> e83070fd (.)
+=======
+     * @see https://laravel-news.com/6-eloquent-secrets
+>>>>>>> bdeae81f (first)
      *
      * @var bool
      */
     public static $snakeAttributes = true;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -371,6 +391,8 @@ abstract class BaseModel extends Model
 >>>>>>> 15ea09e2 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     /** @var bool */
     public $incrementing = true;
 
@@ -381,6 +403,7 @@ abstract class BaseModel extends Model
     protected $perPage = 30;
 
     /** @var string */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -459,10 +482,14 @@ abstract class BaseModel extends Model
 =======
     protected $connection = 'user';
 >>>>>>> e83070fd (.)
+=======
+    protected $connection = 'user';
+>>>>>>> bdeae81f (first)
 
     /** @var list<string> */
     protected $appends = [];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -488,10 +515,13 @@ abstract class BaseModel extends Model
 >>>>>>> 8fc3049b (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     /** @var string */
     protected $primaryKey = 'id';
 
     /** @var string */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -711,10 +741,16 @@ abstract class BaseModel extends Model
 
     /** @var list<string> */
 >>>>>>> e83070fd (.)
+=======
+    protected $keyType = 'string';
+
+    /** @var list<string> */
+>>>>>>> bdeae81f (first)
     protected $hidden = [
         // 'password'
     ];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -758,6 +794,8 @@ abstract class BaseModel extends Model
 >>>>>>> 15ea09e2 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     /**
      * @see vendor/ laravel / framework / src / Illuminate / Database / Eloquent / Factories / HasFactory.php
      * Create a new factory instance for the model.
@@ -765,16 +803,20 @@ abstract class BaseModel extends Model
      * @return Factory<static>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> 15ea09e2 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
      */
     protected static function newFactory()
     {
         return app(\Modules\Xot\Actions\Factory\GetFactoryAction::class)->execute(static::class);
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -813,10 +855,16 @@ abstract class BaseModel extends Model
     /** @return array<string, string> */
     protected function casts(): array
 >>>>>>> e83070fd (.)
+=======
+
+    /** @return array<string, string> */
+    protected function casts(): array
+>>>>>>> bdeae81f (first)
     {
         return [
             'id' => 'string',
             'uuid' => 'string',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -857,14 +905,19 @@ abstract class BaseModel extends Model
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 
             'published_at' => 'datetime',
             'verified_at' => 'datetime',
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
             'deleted_at' => 'datetime',
@@ -872,6 +925,7 @@ abstract class BaseModel extends Model
             'updated_by' => 'string',
             'created_by' => 'string',
             'deleted_by' => 'string',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1154,4 +1208,8 @@ abstract class BaseModel extends Model
         ];
     }
 >>>>>>> e83070fd (.)
+=======
+        ];
+    }
+>>>>>>> bdeae81f (first)
 }

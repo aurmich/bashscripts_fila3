@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Lang\Models;
 
 // //use Laravel\Scout\Searchable;
@@ -26,6 +27,8 @@ abstract class BaseModelLang extends Model
     // use Searchable;
     use LinkedTrait;
 =======
+=======
+>>>>>>> bdeae81f (first)
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
@@ -45,17 +48,24 @@ abstract class BaseUuidModel extends XotBaseUuidModel
     // //use Cachable;
     use HasFactory;
     use HasUuids;
+<<<<<<< HEAD
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     use Updater;
 
     /**
      * Indicates whether attributes are snake cased on arrays.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @see  https://laravel-news.com/6-eloquent-secrets
 =======
      * @see https://laravel-news.com/6-eloquent-secrets
 >>>>>>> e83070fd (.)
+=======
+     * @see https://laravel-news.com/6-eloquent-secrets
+>>>>>>> bdeae81f (first)
      *
      * @var bool
      */
@@ -63,8 +73,11 @@ abstract class BaseUuidModel extends XotBaseUuidModel
 
     /** @var bool */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public $incrementing = true;
 =======
+=======
+>>>>>>> bdeae81f (first)
     public $incrementing = false;
 
     /** @var string */
@@ -72,7 +85,10 @@ abstract class BaseUuidModel extends XotBaseUuidModel
 
     /** @var string */
     protected $primaryKey = 'id';
+<<<<<<< HEAD
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 
     /** @var bool */
     public $timestamps = true;
@@ -81,6 +97,7 @@ abstract class BaseUuidModel extends XotBaseUuidModel
     protected $perPage = 30;
 
     /** @var string */
+<<<<<<< HEAD
 <<<<<<< HEAD
     protected $connection = 'lang';
 
@@ -93,17 +110,23 @@ abstract class BaseUuidModel extends XotBaseUuidModel
     /** @var string */
     protected $keyType = 'string';
 =======
+=======
+>>>>>>> bdeae81f (first)
     protected $connection = 'user';
 
     /** @var list<string> */
     protected $appends = [];
+<<<<<<< HEAD
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 
     /** @var list<string> */
     protected $hidden = [
         // 'password'
     ];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     // -----------
     /*
@@ -124,6 +147,8 @@ abstract class BaseUuidModel extends XotBaseUuidModel
     /**
      * @return array<string, string> */
 =======
+=======
+>>>>>>> bdeae81f (first)
     /**
      * Create a new factory instance for the model.
      *
@@ -136,14 +161,20 @@ abstract class BaseUuidModel extends XotBaseUuidModel
     }
 
     /** @return array<string, string> */
+<<<<<<< HEAD
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     protected function casts(): array
     {
         return [
             'id' => 'string',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'uuid' => 'string', 'published_at' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime'];
 =======
+=======
+>>>>>>> bdeae81f (first)
             'published_at' => 'datetime',
 
             'verified_at' => 'datetime',
@@ -156,6 +187,9 @@ abstract class BaseUuidModel extends XotBaseUuidModel
             'created_by' => 'string',
             'deleted_by' => 'string',
         ];
+<<<<<<< HEAD
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     }
 }

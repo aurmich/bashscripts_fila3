@@ -10,6 +10,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Rating\Models;
 =======
 namespace Modules\Xot\Models;
@@ -28,12 +29,15 @@ use Illuminate\Database\Eloquent\Relations\MorphPivot;
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\MorphPivot;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
@@ -43,6 +47,8 @@ use Illuminate\Database\Eloquent\Relations\MorphPivot;
 >>>>>>> 2df6fbc8 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 use Modules\Xot\Traits\Updater;
 
 /**
@@ -50,6 +56,7 @@ use Modules\Xot\Traits\Updater;
  */
 abstract class BaseMorphPivot extends MorphPivot
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -81,6 +88,8 @@ abstract class BaseMorphPivot extends MorphPivot
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     use HasFactory;
     use Updater;
 
@@ -97,17 +106,21 @@ abstract class BaseMorphPivot extends MorphPivot
      *
      * @see https://laravel-news.com/6-eloquent-secrets
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
      * @see  https://laravel-news.com/6-eloquent-secrets
 >>>>>>> 2df6fbc8 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
      *
      * @var bool
      */
     public static $snakeAttributes = true;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -171,6 +184,8 @@ abstract class BaseMorphPivot extends MorphPivot
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     /**
      * The number of models to return for pagination.
      *
@@ -181,12 +196,15 @@ abstract class BaseMorphPivot extends MorphPivot
     /** @var string */
     protected $connection = 'user';
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
     protected $connection = 'rating';
 >>>>>>> 2df6fbc8 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 
     /** @var list<string> */
     protected $appends = [];
@@ -198,6 +216,7 @@ abstract class BaseMorphPivot extends MorphPivot
     protected $keyType = 'string';
 
     /** @var list<string> */
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 namespace Modules\Ptv\Models;
@@ -222,6 +241,8 @@ abstract class BaseMorphPivot extends MorphPivot
 >>>>>>> dc18abbe (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     protected $fillable = [
         'id',
         'post_id', 'post_type',
@@ -230,6 +251,7 @@ abstract class BaseMorphPivot extends MorphPivot
         'note',
     ];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -255,6 +277,8 @@ abstract class BaseMorphPivot extends MorphPivot
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     /**
      * Create a new factory instance for the model.
      *
@@ -267,14 +291,18 @@ abstract class BaseMorphPivot extends MorphPivot
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     /** @return array<string, string> */
     protected function casts(): array
     {
         return [
             'id' => 'string', // must be string else primary key of related model will be typed as int
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             'uuid' => 'string',
@@ -296,6 +324,8 @@ abstract class BaseMorphPivot extends MorphPivot
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
             'deleted_at' => 'datetime',
@@ -304,6 +334,7 @@ abstract class BaseMorphPivot extends MorphPivot
             'created_by' => 'string',
             'deleted_by' => 'string',
         ];
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -328,5 +359,7 @@ abstract class BaseMorphPivot extends MorphPivot
 >>>>>>> dc18abbe (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     }
 }

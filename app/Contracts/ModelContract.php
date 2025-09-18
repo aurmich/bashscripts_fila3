@@ -3,6 +3,7 @@
 /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @see https://github.com/buyersclub/laravel-eloquent-model-interface/blob/master/src/EloquentModelInterface.php
 =======
  * Definizione dell'interfaccia per i modelli dell'applicazione.
@@ -10,10 +11,14 @@
 =======
  * Definizione dell'interfaccia per i modelli dell'applicazione.
 >>>>>>> e83070fd (.)
+=======
+ * Definizione dell'interfaccia per i modelli dell'applicazione.
+>>>>>>> bdeae81f (first)
  */
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 namespace Modules\Xot\Contracts;
@@ -59,6 +64,8 @@ use Illuminate\Support\Carbon;
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 namespace Modules\User\Contracts;
 
 use Illuminate\Database\Eloquent\Model;
@@ -66,9 +73,12 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Interfaccia ModelContract che deve essere implementata dai modelli.
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
  *
  * @phpstan-require-extends Model
  *
@@ -81,6 +91,7 @@ interface ModelContract
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return $this
 =======
      * @return static The model instance without relations
@@ -88,6 +99,9 @@ interface ModelContract
 =======
      * @return static The model instance without relations
 >>>>>>> e83070fd (.)
+=======
+     * @return static The model instance without relations
+>>>>>>> bdeae81f (first)
      */
     public function withoutRelations();
 
@@ -96,6 +110,7 @@ interface ModelContract
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return $this
 =======
      * @param array<string, mixed> $attributes Gli attributi da assegnare al modello
@@ -105,12 +120,17 @@ interface ModelContract
      * @param array<string, mixed> $attributes Gli attributi da assegnare al modello
      * @return static Il modello stesso
 >>>>>>> e83070fd (.)
+=======
+     * @param array<string, mixed> $attributes Gli attributi da assegnare al modello
+     * @return static Il modello stesso
+>>>>>>> bdeae81f (first)
      */
     public function forceFill(array $attributes);
 
     /**
      * Save the model to the database.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @return bool
@@ -123,6 +143,8 @@ interface ModelContract
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
      * @param array<string, mixed> $options Opzioni per il salvataggio
      * @return bool True se il salvataggio è avvenuto con successo, false altrimenti
      */
@@ -134,9 +156,12 @@ interface ModelContract
          * @param array<string, mixed> $attributes Gli attributi da assegnare al modello
          * @return static Il nuovo modello creato
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 
         public function forceCreate(array $attributes);
         */
@@ -146,6 +171,7 @@ interface ModelContract
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array
 =======
      * @return array<string, mixed> Il modello convertito in array
@@ -153,12 +179,16 @@ interface ModelContract
 =======
      * @return array<string, mixed> Il modello convertito in array
 >>>>>>> e83070fd (.)
+=======
+     * @return array<string, mixed> Il modello convertito in array
+>>>>>>> bdeae81f (first)
      */
     public function toArray();
 
     /**
      * Get the value of the model's primary key.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @return mixed|int|string
@@ -168,6 +198,9 @@ interface ModelContract
 =======
      * @return string|int|null Il valore della chiave primaria
 >>>>>>> e83070fd (.)
+=======
+     * @return string|int|null Il valore della chiave primaria
+>>>>>>> bdeae81f (first)
      */
     public function getKey();
 
@@ -180,6 +213,7 @@ interface ModelContract
      * @param  string $boolean
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return $this
 =======
      * @return static
@@ -187,6 +221,9 @@ interface ModelContract
 =======
      * @return static
 >>>>>>> e83070fd (.)
+=======
+     * @return static
+>>>>>>> bdeae81f (first)
 
     public function where($column, $operator = null, $value = null, $boolean = 'and');
     */

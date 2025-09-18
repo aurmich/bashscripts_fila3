@@ -7,10 +7,13 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'export_xls' => 'Esporta Dati',
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     'attach_user' => 'Collega Utente',
     'associate_user' => 'Associa Utente',
     'user_actions' => 'Azioni Utente',
@@ -26,6 +29,7 @@ return [
     'success_attached' => 'Utente collegato con successo',
     'success_detached' => 'Utente scollegato con successo',
     'success_deleted' => 'Utenti eliminati con successo',
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
@@ -102,4 +106,6 @@ return [
 >>>>>>> dc18abbe (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 ];

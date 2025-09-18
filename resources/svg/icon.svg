@@ -14,6 +14,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <!-- Cubo base -->
     <path stroke-linecap="round" 
           stroke-linejoin="round" 
@@ -109,6 +110,8 @@
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     <!-- Utente principale -->
     <circle cx="12" cy="8" r="3" />
     <path stroke-linecap="round" 
@@ -126,6 +129,7 @@
     <path stroke-linecap="round" 
           stroke-linejoin="round" 
           d="M20 14c.5-1.5 1-2 2-2" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
@@ -172,4 +176,6 @@
 >>>>>>> 8fc3049b (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 </svg> 

@@ -17,6 +17,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -47,12 +48,16 @@ use Illuminate\Support\Facades\Route;
 =======
 declare(strict_types=1);
 >>>>>>> e83070fd (.)
+=======
+declare(strict_types=1);
+>>>>>>> bdeae81f (first)
 
 use Illuminate\Support\Facades\Route;
 
 // use Modules\User\Http\Controllers\Api\UserController;
 
 /*
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
@@ -66,6 +71,8 @@ use Illuminate\Support\Facades\Route;
 >>>>>>> 15ea09e2 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 |--------------------------------------------------------------------------
 | API Routes
 |--------------------------------------------------------------------------
@@ -75,6 +82,7 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -113,6 +121,9 @@ Route::middleware('guest')->group(function () {
 =======
 /*
 >>>>>>> e83070fd (.)
+=======
+/*
+>>>>>>> bdeae81f (first)
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
@@ -178,6 +189,7 @@ Route::middleware('auth:api')
     ]);
 });
 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
@@ -254,3 +266,5 @@ declare(strict_types=1);
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)

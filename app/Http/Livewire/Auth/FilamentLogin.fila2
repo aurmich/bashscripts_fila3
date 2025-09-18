@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -53,12 +54,18 @@ declare(strict_types=1);
 
 namespace Modules\User\Http\Livewire\Auth;
 >>>>>>> e83070fd (.)
+=======
+declare(strict_types=1);
+
+namespace Modules\User\Http\Livewire\Auth;
+>>>>>>> bdeae81f (first)
 
 use Savannabits\FilamentModules\Http\Livewire\Auth\BaseLogin;
 
 class FilamentLogin extends BaseLogin
 {
     public static string $context = 'filament';
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -120,4 +127,8 @@ class FilamentLogin extends BaseLogin
     
     public static string $module = 'User';
 >>>>>>> e83070fd (.)
+=======
+    
+    public static string $module = 'User';
+>>>>>>> bdeae81f (first)
 }

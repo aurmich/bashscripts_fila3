@@ -10,10 +10,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         }
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
         },
         "array_push": true,
         "backtick_to_shell_exec": true,
@@ -65,6 +68,7 @@
         "strict_comparison": true,
         "visibility_required": true
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
         }
@@ -74,5 +78,7 @@
 >>>>>>> 8fc3049b (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     }
 }

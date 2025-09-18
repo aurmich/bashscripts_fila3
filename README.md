@@ -33,6 +33,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2921,6 +2922,8 @@ Power your Laravel application with **Module Xot Fila3**, a comprehensive multi-
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> f3c337b1 (.)
+=======
+>>>>>>> bdeae81f (first)
 # Module User Fila3 🔥 Ultimate User, Roles & Permissions Manager for FilamentPHP 🚀
 
 [![Latest Release](https://img.shields.io/github/v/release/laraxot/module_user_fila3)](https://github.com/laraxot/module_user_fila3/releases)
@@ -2936,14 +2939,18 @@ Manage users, roles, and permissions with lightning speed ⚡ through this Larav
 - **Complete Team Management**: Manage teams with simple commands like `php artisan team:create` and `php artisan team:assign-user`. 👥
 - **Permissions that Fit**: Set flexible roles and permissions to fit your app’s unique needs! 🔑
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 
 ---
 
 ### Installation Guide 💻
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 1. **Install via Composer:**
@@ -2959,10 +2966,16 @@ Manage users, roles, and permissions with lightning speed ⚡ through this Larav
     ```bash
     composer require laraxot/module_user_fila3
 >>>>>>> e83070fd (.)
+=======
+1. **Install the package via Composer:**
+    ```bash
+    composer require laraxot/module_user_fila3
+>>>>>>> bdeae81f (first)
     ```
 
 2. **Run Migrations:**
     ```bash
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     php artisan module:migrate Xot
@@ -2974,6 +2987,8 @@ Manage users, roles, and permissions with lightning speed ⚡ through this Larav
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     php artisan module:migrate User
     ```
 
@@ -2986,15 +3001,19 @@ Manage users, roles, and permissions with lightning speed ⚡ through this Larav
     ```bash
     php artisan make:filament-user
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
     ```
 
 ---
 
 ### Supercharged Console Commands 🚀
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 Take full control with powerful artisan commands:
@@ -3019,6 +3038,8 @@ Take full control with powerful artisan commands:
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 Leverage powerful artisan commands to boost your app’s user management capabilities:
 
 - **Create Super Admin:**
@@ -3049,14 +3070,18 @@ Leverage powerful artisan commands to boost your app’s user management capabil
     ```
     _See all available modules and activate/deactivate them at will._
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 
 ---
 
 ### Configuration 🔧
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 Customize the behavior of your modules via the `module_xot_fila3.php` config file. Take control of routes, permissions, and much more!
@@ -3114,6 +3139,8 @@ Per aggiungere nuovi test:
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 Easily configure the module in the `module_user_fila3.php` config file to suit your app's specific needs.
 
 ### FAQ ❓
@@ -3128,9 +3155,12 @@ Easily configure the module in the `module_user_fila3.php` config file to suit y
 
 We 💖 open source! Want to improve this package? Fork the repo and submit a pull request.
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 
 ---
 
@@ -3147,6 +3177,7 @@ This package is open-sourced under the [MIT license](LICENSE).
 
 ---
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Boost your Laravel app with powerful modular capabilities using Module Xot Fila3!** 💥
@@ -3214,6 +3245,8 @@ Join the revolution! If you want to contribute to the project, send us a pull re
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 Give your Laravel app the **edge** it deserves with **Module User Fila3**. Try it now! 💥
 
 
@@ -3271,6 +3304,7 @@ php artisan user:assign-module
 L'account potrà accedere al modulo assegnato.
 
 ## [Gestione dei Team](docs/teams.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
@@ -3367,3 +3401,5 @@ Una volta che i dati verranno caricati, il Personale potrà quindi stampare/espo
 
 > **Nota**: Questo README è in continuo aggiornamento. Se trovi errori o hai suggerimenti, apri pure una issue! 
 >>>>>>> 0c492c4f (.)
+=======
+>>>>>>> bdeae81f (first)

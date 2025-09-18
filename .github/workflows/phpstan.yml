@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 name: PHPStan
@@ -46,6 +47,11 @@ name: Static Analysis
 
 on: [push]
 >>>>>>> e83070fd (.)
+=======
+name: Static Analysis
+
+on: [push]
+>>>>>>> bdeae81f (first)
 
 jobs:
   phpstan:
@@ -55,6 +61,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Setup PHP
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -103,6 +110,8 @@ jobs:
 >>>>>>> 9cec72d6 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
         uses: shivammathur/setup-php@latest
         with:
           php-version: '8.2'
@@ -116,6 +125,7 @@ jobs:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> 9cec72d6 (first)
@@ -127,3 +137,5 @@ jobs:
 >>>>>>> 2df6fbc8 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)

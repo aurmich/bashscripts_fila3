@@ -31,6 +31,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
 =======
@@ -73,10 +74,15 @@
     "name": "User",
     "alias": "user",
 >>>>>>> e83070fd (.)
+=======
+    "name": "User",
+    "alias": "user",
+>>>>>>> bdeae81f (first)
     "description": "",
     "keywords": [],
     "priority": 0,
     "providers": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -190,6 +196,8 @@
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
         "Modules\\User\\Providers\\UserServiceProvider",
         "Modules\\User\\Providers\\Filament\\AdminPanelProvider"
     ],
@@ -199,6 +207,7 @@
         ]
     },
     "files": []
+<<<<<<< HEAD
 <<<<<<< HEAD
 }
 >>>>>>> 0d55b583 (first)
@@ -446,3 +455,6 @@
 =======
 }
 >>>>>>> e83070fd (.)
+=======
+}
+>>>>>>> bdeae81f (first)

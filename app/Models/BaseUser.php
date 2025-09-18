@@ -30,6 +30,7 @@ use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Traits\RelationX;
 use Spatie\Permission\Traits\HasRoles;
+<<<<<<< HEAD
 use Modules\User\Models\Team;
 use Modules\User\Models\Role;
 use Modules\User\Models\AuthenticationLog;
@@ -40,17 +41,59 @@ use Modules\User\Models\SocialiteUser;
  * Modules\User\Models\BaseUser
  *
  * @property string $id
+=======
+
+/**
+ * Modules\User\Models\User.
+ *
+ * @template TModel of \Illuminate\Database\Eloquent\Model
+ * @template TRelatedModel of \Illuminate\Database\Eloquent\Model
+ *
+ * @property Collection<int, OauthClient> $clients
+ * @property int|null $clients_count
+ * @property Team|null $currentTeam
+ * @property Collection<int, Device> $devices
+ * @property int|null $devices_count
+ * @property string|null $full_name
+ * @property DatabaseNotificationCollection<int, DatabaseNotification> $notifications
+ * @property int|null $notifications_count
+ * @property Collection<int, Team> $ownedTeams
+ * @property int|null $owned_teams_count
+ * @property Collection<int, Permission> $permissions
+ * @property int|null $permissions_count
+ * @property \Modules\Xot\Contracts\ProfileContract|null $profile
+ * @property Collection<int, Role> $roles
+ * @property int|null $roles_count
+ * @property Collection<int, Team> $teams
+ * @property int|null $teams_count
+ * @property Collection<int, Tenant> $tenants
+ * @property int|null $tenants_count
+ * @property Collection<int, OauthAccessToken> $tokens
+ * @property int|null $tokens_count
+ * @property string $surname
+ * @property string|null $facebook_id
+ * @property Collection<int, SocialiteUser> $socialiteUsers
+ * @property int|null $socialite_users_count
+>>>>>>> bdeae81f (first)
  * @property string|null $name
  * @property string|null $first_name
  * @property string|null $last_name
  * @property string|null $email
  * @property string|null $password
+<<<<<<< HEAD
  * @property string|null $remember_token
+=======
+ * @property string|null $lang
+>>>>>>> bdeae81f (first)
  * @property string|null $current_team_id
  * @property bool|null $is_active
  * @property bool|null $is_otp
  * @property \DateTime|null $password_expires_at
  * @property \DateTime|null $email_verified_at
+<<<<<<< HEAD
+=======
+ * @property string|null $remember_token
+>>>>>>> bdeae81f (first)
  * @property \DateTime|null $created_at
  * @property \DateTime|null $updated_at
  * @property \DateTime|null $deleted_at
@@ -59,6 +102,7 @@ use Modules\User\Models\SocialiteUser;
  * @property string|null $deleted_by
  * @property string|null $profile_photo_path
  * @property \Illuminate\Database\Eloquent\Relations\Pivot|null $pivot
+<<<<<<< HEAD
  * @property-read Collection<int, Role> $roles
  * @property-read Collection<int, Team> $teams
  * @property-read Collection<int, Team> $ownedTeams
@@ -84,6 +128,49 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
     use HasUuids;
 
     // use Traits\HasProfilePhoto;
+=======
+ *
+ * @method static \Modules\User\Database\Factories\UserFactory factory($count = null, $state = [])
+ * @method static \Illuminate\Database\Eloquent\Builder|User newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|User newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|User permission($permissions, $without = false)
+ * @method static \Illuminate\Database\Eloquent\Builder|User query()
+ * @method static \Illuminate\Database\Eloquent\Builder|User role($roles, $guard = null, $without = false)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereCreatedBy($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereCurrentTeamId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereDeletedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereDeletedBy($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereEmail($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereEmailVerifiedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereFirstName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereIsActive($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereLang($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereLastName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User wherePassword($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereProfilePhotoPath($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereRememberToken($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereUpdatedBy($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User withoutPermission($permissions)
+ * @method static \Illuminate\Database\Eloquent\Builder|User withoutRole($roles, $guard = null)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereFacebookId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereIsOtp($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User wherePasswordExpiresAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereSurname($value)
+ *
+ * @mixin \Eloquent
+ */
+abstract class BaseUser extends Authenticatable implements HasName, HasTenants, UserContract
+{
+    use HasApiTokens;
+    use HasFactory;
+    use HasRoles;
+    use HasTeams;
+    use HasUuids;
+>>>>>>> bdeae81f (first)
     use Notifiable;
     use RelationX;
     use Traits\HasAuthenticationLogTrait;
@@ -133,7 +220,12 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
         // 'profile_photo_url',
     ];
 
+<<<<<<< HEAD
     protected $pivot;
+=======
+    /** @var \Illuminate\Database\Eloquent\Relations\Pivot|null */
+    public $pivot;
+>>>>>>> bdeae81f (first)
 
     public function canAccessFilament(?Panel $panel = null): bool
     {
@@ -150,6 +242,7 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
     {
         /** @var string|null */
         $name = $this->getAttribute('name');
+<<<<<<< HEAD
         
         /** @var string|null */
         $firstName = $this->getAttribute('first_name');
@@ -157,6 +250,15 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
         /** @var string|null */
         $lastName = $this->getAttribute('last_name');
         
+=======
+
+        /** @var string|null */
+        $firstName = $this->getAttribute('first_name');
+
+        /** @var string|null */
+        $lastName = $this->getAttribute('last_name');
+
+>>>>>>> bdeae81f (first)
         return trim(sprintf(
             '%s %s %s',
             $name ?? '',
@@ -225,6 +327,7 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
         return $this->teams ?? new Collection();
     }
 
+<<<<<<< HEAD
     public function treeSonsCount(): int
     {
         return $this->teams()->count();
@@ -240,6 +343,11 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
         return $this->user ?? $this;
     }
 
+=======
+    /**
+     * @return BelongsToMany<Device, static|$this>
+     */
+>>>>>>> bdeae81f (first)
     public function devices(): BelongsToMany
     {
         return $this
@@ -288,7 +396,11 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 
     public function getFullNameAttribute(?string $value): ?string
     {
+<<<<<<< HEAD
         return $value ?? $this->first_name.' '.$this->last_name;
+=======
+        return $value ?? $this->first_name . ' ' . $this->last_name;
+>>>>>>> bdeae81f (first)
     }
 
     public function getNameAttribute(?string $value): ?string
@@ -298,10 +410,17 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
         }
         $name = Str::of((string) $this->email)->before('@')->toString();
         $i = 1;
+<<<<<<< HEAD
         $value = $name.'-'.$i;
         while (self::firstWhere(['name' => $value]) !== null) {
             $i++;
             $value = $name.'-'.$i;
+=======
+        $value = $name . '-' . $i;
+        while (self::firstWhere(['name' => $value]) !== null) {
+            $i++;
+            $value = $name . '-' . $i;
+>>>>>>> bdeae81f (first)
         }
         $this->update(['name' => $value]);
 
@@ -359,6 +478,7 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
         return true;
     }
 
+<<<<<<< HEAD
     public function hasRole($role, ?string $guard = null): bool
     {
         return once(function () use ($role) {
@@ -371,14 +491,247 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
    
 
     
+=======
+
+    /**
+     * Get permissions for a specific team.
+     *
+     * @param \Modules\User\Contracts\TeamContract $team
+     * @return array<int, string>
+     */
+    public function teamPermissions(\Modules\User\Contracts\TeamContract $team): array
+    {
+        $role = $this->teamRole($team);
+
+        if ($role === null || !$role->permissions) {
+            return [];
+        }
+
+        /** @var array<int, string> */
+        return $role->permissions->pluck('name')->values()->toArray();
+    }
+
+    /**
+     * Get the role name for the current team.
+     *
+     * @return array<int, string>
+     */
+    /**
+     * Get all role names associated with the user.
+     * 
+     * @return array<int, string>
+     */
+    public function getRoleNames(): array
+    {
+        /** @var array<int, string> */
+        return $this->roles()->pluck('name')->filter()->values()->toArray();
+    }
+
+    public function personalTeam(): ?Team
+    {
+        /** @var Team|null */
+        return $this->ownedTeams()->first();
+    }
+
+    public function switchTeam(\Modules\User\Contracts\TeamContract $team): bool
+    {
+        if (! $this->belongsToTeam($team)) {
+            return false;
+        }
+
+        $this->current_team_id = (string) $team->id;
+        $this->save();
+
+        return true;
+    }
+
+    public function allTeams(): Collection
+    {
+        return $this->teams()->get();
+    }
+
+    public function belongsToTeam(\Modules\User\Contracts\TeamContract $team): bool
+    {
+        /** @var ?\Illuminate\Database\Eloquent\Model $found */
+        $found = $this->teams()->get()->first(function ($t) use ($team) {
+            // Accesso sicuro agli attributi
+            $teamId = $team->id ?? null;
+            $tId = $t->id ?? null;
+            $tTeamId = $t->team_id ?? null;
+
+            return ($tId !== null && $teamId !== null && $tId === $teamId) ||
+                ($tTeamId !== null && $teamId !== null && $tTeamId === $teamId);
+        });
+
+        return $found !== null;
+    }
+
+    public function ownsTeam(\Modules\User\Contracts\TeamContract $team): bool
+    {
+        /** @var ?\Illuminate\Database\Eloquent\Model $found */
+        $found = $this->ownedTeams()->get()->first(function ($t) use ($team) {
+            // Accesso sicuro agli attributi
+            $teamId = $team->id ?? null;
+            $tId = $t->id ?? null;
+
+            return $tId !== null && $teamId !== null && $tId === $teamId;
+        });
+
+        return $found !== null;
+    }
+
+    public function teamRole(\Modules\User\Contracts\TeamContract $team): ?Role
+    {
+        /** @var \Illuminate\Database\Eloquent\Model|\Illuminate\Database\Eloquent\Relations\Pivot|null $teamUser */
+        $teamUser = $this->teams()->where('team_id', $team->id)->first();
+        if ($teamUser && method_exists($teamUser, 'getPivot') && $teamUser->getPivot() !== null && isset($teamUser->pivot->role)) {
+            return $teamUser->pivot->role;
+        }
+        return null;
+    }
+
+    public function hasTeamPermission(\Modules\User\Contracts\TeamContract $team, string $permission): bool
+    {
+        return $this->ownsTeam($team) || in_array($permission, $this->teamPermissions($team));
+    }
+
+    public function hasTeamRole(\Modules\User\Contracts\TeamContract $team, string $role): bool
+    {
+        if ($this->ownsTeam($team)) {
+            return true;
+        }
+
+        $teamRole = $this->teamRole($team);
+        return $teamRole !== null && isset($teamRole->name) && $teamRole->name === $role;
+    }
+
+    public function canManageTeam(Team $team): bool
+    {
+        return $this->ownsTeam($team);
+    }
+
+    public function canDeleteTeam(Team $team): bool
+    {
+        return $this->ownsTeam($team);
+    }
+
+    public function canLeaveTeam(Team $team): bool
+    {
+        return $this->belongsToTeam($team) && ! $this->ownsTeam($team);
+    }
+
+    public function canRemoveTeamMember(Team $team, User $user): bool
+    {
+        return $this->ownsTeam($team) || $this->hasTeamPermission($team, 'remove team member');
+    }
+
+    public function canAddTeamMember(Team $team): bool
+    {
+        return $this->ownsTeam($team) || $this->hasTeamPermission($team, 'add team member');
+    }
+
+    public function canUpdateTeamMember(Team $team, User $user): bool
+    {
+        return $this->ownsTeam($team) || $this->hasTeamPermission($team, 'update team member');
+    }
+
+    public function canUpdateTeam(Team $team): bool
+    {
+        return $this->ownsTeam($team) || $this->hasTeamPermission($team, 'update team');
+    }
+
+    public function canViewTeam(Team $team): bool
+    {
+        return $this->belongsToTeam($team) || $this->hasTeamPermission($team, 'view team');
+    }
+
+    public function canCreateTeam(): bool
+    {
+        return $this->hasPermissionTo('create team');
+    }
+
+    public function ownedTeams(): HasMany
+    {
+        return $this->hasMany(Team::class, 'owner_id');
+    }
+
+    public function currentTeam(): BelongsTo
+    {
+        return $this->belongsTo(Team::class, 'current_team_id');
+    }
+
+    public function tenants(): BelongsToMany
+    {
+        return $this->belongsToMany(Tenant::class, 'tenant_user');
+    }
+>>>>>>> bdeae81f (first)
 
     public function authentications(): MorphMany
     {
         return $this->morphMany(\Modules\User\Models\Authentication::class, 'authenticatable');
     }
 
+<<<<<<< HEAD
     public function getEmailForVerification(): string
     {
         return strval($this->email);
+=======
+    /**
+     * Check if the user has a specific role.
+     *
+     * @param array|\Illuminate\Support\Collection|int|\Spatie\Permission\Contracts\Role|string $roles
+     * @param string|null $guard
+     * @return bool
+     */
+    public function hasRole($roles, ?string $guard = null): bool
+    {
+        // Se è una stringa semplice, utilizziamo il metodo interno tramite relazione roles
+        if (is_string($roles)) {
+            return $this->roles()->where('name', $roles)->exists();
+        }
+
+        // Per gli altri tipi, implementiamo una logica di base
+        if (is_array($roles) || $roles instanceof \Illuminate\Support\Collection) {
+            foreach ($roles as $role) {
+                if ($this->hasRole($role, $guard)) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        if ($roles instanceof \Spatie\Permission\Contracts\Role) {
+            return $this->roles()->where('id', $roles->id)->exists();
+        }
+
+        if (is_int($roles)) {
+            return $this->roles()->where('id', $roles)->exists();
+        }
+
+        return false;
+    }
+
+    /**
+     * Get all permission names associated with the user's roles.
+     *
+     * @return array<int, string>
+     */
+    public function getPermissionNames(): array
+    {
+        $roles = $this->roles()->with('permissions')->get();
+        if ($roles->isEmpty()) {
+            return [];
+        }
+
+        $permissions = collect();
+        foreach ($roles as $role) {
+            if (isset($role->permissions) && $role->permissions !== null) {
+                $permissions = $permissions->merge($role->permissions);
+            }
+        }
+
+        /** @var array<int, string> */
+        return $permissions->pluck('name')->values()->toArray();
+>>>>>>> bdeae81f (first)
     }
 }

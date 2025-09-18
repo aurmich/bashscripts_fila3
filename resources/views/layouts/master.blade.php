@@ -23,6 +23,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <html lang="en">
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -106,10 +107,14 @@
 =======
 <html lang="en">
 >>>>>>> e83070fd (.)
+=======
+<html lang="en">
+>>>>>>> bdeae81f (first)
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -163,10 +168,13 @@
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
         <title>Module User</title>
 
        {{-- Laravel Vite - CSS File --}}
        {{-- {{ module_vite('build-user', 'resources/assets/sass/app.scss') }} --}}
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
@@ -308,11 +316,14 @@
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
 
     </head>
     <body>
         @yield('content')
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -550,8 +561,13 @@
 =======
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 =======
+=======
+>>>>>>> bdeae81f (first)
         {{-- Laravel Vite - JS File --}}
         {{-- {{ module_vite('build-user', 'resources/assets/js/app.js') }} --}}
     </body>
 </html>
+<<<<<<< HEAD
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)

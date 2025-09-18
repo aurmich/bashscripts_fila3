@@ -44,17 +44,26 @@ class ModelHasRole extends BaseMorphPivot
     protected $table = 'model_has_role';
 
     /** @var list<string> */
+<<<<<<< HEAD
     public $fillable = [
         'id',
+=======
+    protected $fillable = [
+        'id',
+        // 'uuid',
+>>>>>>> bdeae81f (first)
         'role_id',
         'model_type',
         'model_id',
         'team_id',
+<<<<<<< HEAD
         'created_at',
         'updated_at',
         'updated_by',
         'created_by',
         'uuid'
+=======
+>>>>>>> bdeae81f (first)
     ];
 
     /**
@@ -71,12 +80,17 @@ class ModelHasRole extends BaseMorphPivot
         }
     }
 
+<<<<<<< HEAD
     /**
      * Get the attributes that should be cast.
      *
      * @return array<string, string>
      */
     public function casts(): array
+=======
+    /** @return array<string, string> */
+    protected function casts(): array
+>>>>>>> bdeae81f (first)
     {
         return [
             'id' => 'string',
@@ -84,6 +98,7 @@ class ModelHasRole extends BaseMorphPivot
             'model_type' => 'string',
             'model_id' => 'string',
             'team_id' => 'string',
+<<<<<<< HEAD
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
             'deleted_at' => 'datetime',
@@ -91,6 +106,17 @@ class ModelHasRole extends BaseMorphPivot
             'created_by' => 'string',
             'deleted_by' => 'string',
             'uuid' => 'string'
+=======
+            // 'uuid' => 'string',
+
+            'created_at' => 'datetime',
+            'updated_at' => 'datetime',
+            'deleted_at' => 'datetime',
+
+            'updated_by' => 'string',
+            'created_by' => 'string',
+            'deleted_by' => 'string',
+>>>>>>> bdeae81f (first)
         ];
     }
 }

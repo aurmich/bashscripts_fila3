@@ -21,6 +21,10 @@ use Illuminate\Support\Carbon;
  * @property Carbon|null $updated_at
  * @property string|null $created_by
  * @property string|null $updated_by
+<<<<<<< HEAD
+=======
+ * @property string|null $customer_id
+>>>>>>> bdeae81f (first)
  * @method static \Illuminate\Database\Eloquent\Builder|TeamUser whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|TeamUser whereCreatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|TeamUser whereCustomerId($value)
@@ -41,6 +45,7 @@ use Illuminate\Support\Carbon;
  */
 class TeamUser extends BasePivot
 {
+<<<<<<< HEAD
     /** @var string */
     protected $connection = 'user';
 
@@ -80,4 +85,7 @@ class TeamUser extends BasePivot
             'deleted_by' => 'string'
         ];
     }
+=======
+    protected $connection = 'user';
+>>>>>>> bdeae81f (first)
 }

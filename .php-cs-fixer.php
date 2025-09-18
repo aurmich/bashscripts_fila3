@@ -13,6 +13,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 =======
@@ -45,6 +46,8 @@ declare(strict_types=1);
 declare(strict_types=1);
 
 >>>>>>> f3c337b1 (.)
+=======
+>>>>>>> bdeae81f (first)
 $finder = PhpCsFixer\Finder::create()
     ->notPath('bootstrap/cache')
     ->notPath('storage')
@@ -65,6 +68,7 @@ $finder = PhpCsFixer\Finder::create()
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ;
 =======
 >>>>>>> 59bc4fe7 (first)
@@ -91,6 +95,8 @@ $finder = PhpCsFixer\Finder::create()
 =======
 ;
 >>>>>>> f3c337b1 (.)
+=======
+>>>>>>> bdeae81f (first)
 
 $config = new PhpCsFixer\Config();
 
@@ -111,6 +117,7 @@ $config
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         '@PhpCsFixer:risky' => true,
 =======
 >>>>>>> 164b8363 (Squashed 'laravel/Modules/Rating/' content from commit e5c84117)
@@ -139,6 +146,8 @@ $config
 =======
         '@PhpCsFixer:risky' => true,
 >>>>>>> f3c337b1 (.)
+=======
+>>>>>>> bdeae81f (first)
         'function_typehint_space' => true,
         'declare_equal_normalize' => true,
         'declare_strict_types' => true,
@@ -156,6 +165,7 @@ $config
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         // 'binary_operator_spaces' => ['align_double_arrow' => false],
 =======
         //'binary_operator_spaces' => ['align_double_arrow' => false],
@@ -196,6 +206,9 @@ $config
 =======
         // 'binary_operator_spaces' => ['align_double_arrow' => false],
 >>>>>>> f3c337b1 (.)
+=======
+        //'binary_operator_spaces' => ['align_double_arrow' => false],
+>>>>>>> bdeae81f (first)
         'array_syntax' => ['syntax' => 'short'],
         'linebreak_after_opening_tag' => true,
         'not_operator_with_successor_space' => true,
@@ -213,6 +226,7 @@ $config
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         'phpdoc_order' => true,
 >>>>>>> 164b8363 (Squashed 'laravel/Modules/Rating/' content from commit e5c84117)
@@ -251,6 +265,9 @@ $config
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> f3c337b1 (.)
+=======
+        'phpdoc_order' => true,
+>>>>>>> bdeae81f (first)
         'php_unit_construct' => false,
         'braces' => [
             'position_after_functions_and_oop_constructs' => 'same',
@@ -259,6 +276,7 @@ $config
         'blank_line_after_namespace' => true,
         'class_definition' => true,
         'elseif' => true,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -357,3 +375,9 @@ return $config;
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> f3c337b1 (.)
+=======
+    ])
+    ->setFinder($finder)
+
+return $config;
+>>>>>>> bdeae81f (first)

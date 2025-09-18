@@ -25,6 +25,7 @@ use Illuminate\Auth\Events\Verified;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
 use Modules\User\Http\Controllers\Controller;
+<<<<<<< HEAD
 use Illuminate\Http\Request;
 
 class EmailVerificationController extends Controller
@@ -44,5 +45,39 @@ class EmailVerificationController extends Controller
         $user->sendEmailVerificationNotification();
 
         return back()->with('status', 'verification-link-sent');
+=======
+
+class EmailVerificationController extends Controller
+{
+    public function __invoke(string $id, string $hash): RedirectResponse
+    {
+        $user = Auth::user();
+        if ($user === null) {
+            throw new AuthorizationException;
+        }
+
+        if (! hash_equals($id, (string) Auth::id())) {
+            throw new AuthorizationException;
+        }
+
+        if (! hash_equals($hash, sha1($user->getEmailForVerification()))) {
+            throw new AuthorizationException;
+        }
+
+        if ($user->hasVerifiedEmail()) {
+            return redirect(route('home'));
+        }
+
+        $user->markEmailAsVerified();
+
+        // Verificare che l'utente implementi l'interfaccia MustVerifyEmail
+        if (!($user instanceof \Illuminate\Contracts\Auth\MustVerifyEmail)) {
+            throw new \InvalidArgumentException('L\'utente deve implementare l\'interfaccia MustVerifyEmail');
+        }
+
+        event(new Verified($user));
+
+        return redirect(route('home'));
+>>>>>>> bdeae81f (first)
     }
 }
