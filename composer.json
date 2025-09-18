@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "laraxot/bashscripts_fila3",
     "description": "Script di utilità per la gestione dei repository Git, Toolkit di automazione Git per progetti Laravel",
     "type": "library",
@@ -127,10 +128,15 @@
     "name": "laraxot/module_notify_fila3",
     "description": "notify module dedicated to managing notifications",
 >>>>>>> d79d9e57 (first)
+=======
+    "name": "laraxot/module_user_fila3",
+    "description": "user module for user management",
+>>>>>>> 0d55b583 (first)
     "keywords": [
         "laraxot",
         "laravel",
         "filament",
+<<<<<<< HEAD
 <<<<<<< HEAD
         "module_job",
         "Laravel",
@@ -153,10 +159,21 @@
     ],
     "homepage": "https://github.com/laraxot/module_notify_fila3.git",
 >>>>>>> d79d9e57 (first)
+=======
+        "module_user",
+        "Laravel",
+        "User module",
+        "Users",
+        "Users management",
+        "Xot"
+    ],
+    "homepage": "https://github.com/laraxot/module_user_fila3",
+>>>>>>> 0d55b583 (first)
     "license": "MIT",
     "authors": [
         {
             "name": "Marco Sottana",
+<<<<<<< HEAD
             "email": "marco.sottana@gmail.com",
             "role": "Developer"
         }
@@ -175,12 +192,24 @@
             "providers": [
                 "Modules\\Notify\\Providers\\NotifyServiceProvider",
                 "Modules\\Notify\\Providers\\Filament\\AdminPanelProvider"
+=======
+            "email": "marco.sottana@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Livewire\\LivewireServiceProvider",
+                "Modules\\User\\Providers\\UserServiceProvider",
+                "Modules\\User\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> 0d55b583 (first)
             ],
             "aliases": {}
         }
     },
     "autoload": {
         "psr-4": {
+<<<<<<< HEAD
             "Modules\\Notify\\": "app/",
             "Modules\\Notify\\Database\\Factories\\": "database/factories/",
             "Modules\\Notify\\Database\\Seeders\\": "database/seeders/"
@@ -198,13 +227,29 @@
         "phpdocumentor/type-resolver": "*",
         "symfony/http-client": "*",
         "symfony/postmark-mailer": "*"
+=======
+            "Modules\\User\\": "app/",
+            "Modules\\User\\Database\\Factories\\": "database/factories/",
+            "Modules\\User\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "require": {
+        "flowframe/laravel-trend": "*",
+        "jenssegers/agent": "*",
+        "laravel/passport": "*",
+        "socialiteproviders/auth0": "*",
+        "spatie/laravel-personal-data-export": "*"
+>>>>>>> 0d55b583 (first)
     },
     "require-dev": {},
     "repositories": [
         {
             "type": "path",
             "url": "../Xot"
+<<<<<<< HEAD
 >>>>>>> d79d9e57 (first)
+=======
+>>>>>>> 0d55b583 (first)
         },
         {
             "type": "path",
@@ -212,6 +257,7 @@
         },
         {
             "type": "path",
+<<<<<<< HEAD
 <<<<<<< HEAD
             "url": "../Xot"
         }
@@ -221,12 +267,17 @@
         "post-autoload-dump1": [
 >>>>>>> a8f30311 (first)
 =======
+=======
+>>>>>>> 0d55b583 (first)
             "url": "../UI"
         }
     ],
     "scripts": {
         "post-autoload-dump1": [
+<<<<<<< HEAD
 >>>>>>> d79d9e57 (first)
+=======
+>>>>>>> 0d55b583 (first)
             "@php vendor/bin/testbench package:discover --ansi"
         ],
         "post-update-cmd": [
@@ -236,6 +287,7 @@
         "test": "./vendor/bin/pest --no-coverage",
         "test-coverage": "vendor/bin/pest --coverage-html coverage",
         "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -391,10 +443,13 @@
 >>>>>>> c088001a (first)
 =======
 >>>>>>> d79d9e57 (first)
+=======
+>>>>>>> 0d55b583 (first)
     },
     "config": {
         "sort-packages": true,
         "allow-plugins": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -425,10 +480,14 @@
 =======
             "pestphp/pest-plugin": true,
 >>>>>>> d79d9e57 (first)
+=======
+            "pestphp/pest-plugin": true,
+>>>>>>> 0d55b583 (first)
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "wikimedia/composer-merge-plugin": true
         }
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -480,3 +539,8 @@
     "prefer-stable": true
 }
 >>>>>>> d79d9e57 (first)
+=======
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+>>>>>>> 0d55b583 (first)

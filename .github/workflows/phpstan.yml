@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 name: PHPStan
 
 on:
@@ -19,6 +20,11 @@ on:
 >>>>>>> a8f30311 (first)
 =======
 >>>>>>> bbec4378 (first)
+=======
+name: Static Analysis
+
+on: [push]
+>>>>>>> 0d55b583 (first)
 
 jobs:
   phpstan:
@@ -28,6 +34,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Setup PHP
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         uses: shivammathur/setup-php@v2
@@ -63,3 +70,16 @@ jobs:
 >>>>>>> bbec4378 (first)
       - name: Run PHPStan
         run: ./vendor/bin/phpstan --error-format=github
+=======
+        uses: shivammathur/setup-php@latest
+        with:
+          php-version: '8.2'
+          coverage: none
+
+      - name: Install composer dependencies
+        run: composer install -n --prefer-dist
+
+      - name: Run Static Analysis
+        run: ./vendor/bin/phpstan --error-format=github
+
+>>>>>>> 0d55b583 (first)

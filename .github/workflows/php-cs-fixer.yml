@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 name: Check & fix styling
 =======
 name: lint
@@ -7,11 +8,15 @@ name: lint
 =======
 name: Check & fix styling
 >>>>>>> bbec4378 (first)
+=======
+name: Check & fix styling
+>>>>>>> 0d55b583 (first)
 
 on: [push]
 
 jobs:
   php-cs-fixer:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -22,10 +27,13 @@ jobs:
 >>>>>>> a8f30311 (first)
 =======
 >>>>>>> bbec4378 (first)
+=======
+>>>>>>> 0d55b583 (first)
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         uses: actions/checkout@v3
@@ -35,6 +43,9 @@ jobs:
 =======
         uses: actions/checkout@v3
 >>>>>>> bbec4378 (first)
+=======
+        uses: actions/checkout@v3
+>>>>>>> 0d55b583 (first)
         with:
           ref: ${{ github.head_ref }}
 
@@ -44,6 +55,7 @@ jobs:
           args: --config=.php-cs-fixer.dist.php --allow-risky=yes
 
       - name: Commit changes
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -63,3 +75,8 @@ jobs:
         with:
           commit_message: Check & fix styling
 >>>>>>> bbec4378 (first)
+=======
+        uses: stefanzweifel/git-auto-commit-action@latest
+        with:
+          commit_message: Check & fix styling
+>>>>>>> 0d55b583 (first)

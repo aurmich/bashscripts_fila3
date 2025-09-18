@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Best Practices per Risorse Filament in Laraxot
 
 Questo documento riassume le migliori pratiche per la creazione e gestione delle risorse Filament all'interno dell'ecosistema Laraxot. Seguire queste linee guida garantirà compatibilità e coerenza in tutto il progetto.
@@ -185,6 +186,11 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 # Best Practices per Risorse Filament nel Modulo Job
 
 Questo documento descrive le best practices da seguire quando si creano o modificano risorse Filament nel modulo Job.
+=======
+# Best Practices per Risorse Filament nel Modulo User
+
+Questo documento descrive le best practices da seguire quando si creano o modificano risorse Filament nel modulo User.
+>>>>>>> 0d55b583 (first)
 
 ## Rimozione del metodo `getPages()`
 
@@ -206,9 +212,15 @@ La classe base `XotBaseResource` fornisce già un'implementazione predefinita de
 public static function getPages(): array
 {
     return [
+<<<<<<< HEAD
         'index' => Pages\ListExports::route('/'),
         'create' => Pages\CreateExport::route('/create'),
         'edit' => Pages\EditExport::route('/{record}/edit'),
+=======
+        'index' => Pages\ListUsers::route('/'),
+        'create' => Pages\CreateUser::route('/create'),
+        'edit' => Pages\EditUser::route('/{record}/edit'),
+>>>>>>> 0d55b583 (first)
     ];
 }
 ```
@@ -217,6 +229,7 @@ public static function getPages(): array
 
 Il metodo viene completamente rimosso, lasciando che sia la classe base a fornire l'implementazione predefinita.
 
+<<<<<<< HEAD
 ### Risorse modificate
 
 Le seguenti risorse sono state modificate per rimuovere il metodo `getPages()` ridondante:
@@ -224,6 +237,8 @@ Le seguenti risorse sono state modificate per rimuovere il metodo `getPages()` r
 - `FailedImportRowResource`
 - `ImportResource`
 
+=======
+>>>>>>> 0d55b583 (first)
 ### Quando NON rimuovere il metodo `getPages()`
 
 Il metodo `getPages()` deve essere mantenuto nei seguenti casi:
@@ -259,7 +274,19 @@ public static function getFormSchema(): array
 }
 ```
 
+<<<<<<< HEAD
 Questo pattern è stato corretto nelle seguenti risorse:
 - `ExportResource`
 - `FailedImportRowResource` 
 >>>>>>> c088001a (first)
+=======
+## Integrazione con PHPStan
+
+Questa best practice risolve anche errori PHPStan di livello 9 e superiore relativi al tipo di ritorno del metodo `getFormSchema()`:
+
+```
+Method Resource::getFormSchema() should return array<string, Filament\Forms\Components\Component> but returns array<int, Component>
+```
+
+Seguendo queste best practices si assicura che il codice passi i controlli statici di PHPStan e sia più facile da mantenere. 
+>>>>>>> 0d55b583 (first)

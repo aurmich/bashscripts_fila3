@@ -1,1 +1,7 @@
-https://dudi.dev/optimize-laravel-database-queries/
+<<<<<<< HEAD
+https://dudi.dev/optimize-laravel-database-queries/
+=======
+
+
+https://medium.com/@prevailexcellent/deep-dive-into-eloquent-40-rarely-used-eloquent-orm-methods-every-laravel-developer-must-know-9c75b58f456b
+>>>>>>> 0d55b583 (first)

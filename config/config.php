@@ -8,6 +8,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'name' => 'Rating',
     'icon' => 'heroicon-o-star', // icon on dashboard
     'navigation_sort' => 1,
@@ -50,12 +51,21 @@ return [
         'enabled' => true,
         'sort' => 70,
 >>>>>>> d79d9e57 (first)
+=======
+    'name' => 'User',
+    'description' => 'Modulo per la gestione degli utenti e autorizzazioni',
+    'icon' => 'heroicon-o-users',
+    'navigation' => [
+        'enabled' => true,
+        'sort' => 100,
+>>>>>>> 0d55b583 (first)
     ],
     'routes' => [
         'enabled' => true,
         'middleware' => ['web', 'auth'],
     ],
     'providers' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -79,4 +89,8 @@ return [
         'Modules\\Notify\\Providers\\NotifyServiceProvider',
     ],
 >>>>>>> d79d9e57 (first)
+=======
+        'Modules\\User\\Providers\\UserServiceProvider',
+    ],
+>>>>>>> 0d55b583 (first)
 ];

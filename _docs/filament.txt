@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://github.com/lartisan/filament-rating-tool
 =======
 https://github.com/savannabits/filament-signature-pad
@@ -34,3 +35,11 @@ https://medium.com/@laravelprotips/laravel-filament-top-12-plugins-simplified-wi
 
 >>>>>>> c088001a (first)
 
+=======
+https://github.com/Althinect/filament-spatie-roles-permissions
+https://github.com/ryangjchandler/filament-profile
+
+https://github.com/andrewdwallo/filament-companies
+
+
+>>>>>>> 0d55b583 (first)

@@ -6,7 +6,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Xot\Contracts;
+=======
+namespace Modules\User\Contracts;
+>>>>>>> 0d55b583 (first)
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -23,6 +27,7 @@ interface PassportHasApiTokensContract
 {
     /**
      * Get all of the user's registered OAuth clients.
+<<<<<<< HEAD
      *
      * @return HasMany
      */
@@ -59,6 +64,30 @@ interface PassportHasApiTokensContract
      * @return PersonalAccessTokenResult
      */
     public function createToken($name, array $scopes = []);
+=======
+     */
+    public function clients(): HasMany;
+
+    /**
+     * Get all of the access tokens for the user.
+     */
+    public function tokens(): HasMany;
+
+    /**
+     * Get the current access token being used by the user.
+     */
+    public function token(): Token|TransientToken|null;
+
+    /**
+     * Determine if the current API token has a given scope.
+     */
+    public function tokenCan(string $scope): bool;
+
+    /**
+     * Create a new personal access token for the user.
+     */
+    public function createToken(string $name, array $scopes = []): PersonalAccessTokenResult;
+>>>>>>> 0d55b583 (first)
 
     /**
      * Set the current access token for the user.

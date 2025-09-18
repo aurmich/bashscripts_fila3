@@ -5,6 +5,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Rector\Config\RectorConfig;
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -40,10 +41,14 @@ use Rector\PHPUnit\Set\PHPUnitLevelSetList;
 use Rector\Set\ValueObject\LevelSetList;
 use Rector\Set\ValueObject\SetList;
 =======
+=======
+use Rector\Config\RectorConfig;
+>>>>>>> 0d55b583 (first)
 use Rector\PHPUnit\Set\PHPUnitLevelSetList;
 use Rector\Set\ValueObject\LevelSetList;
 use Rector\TypeDeclaration\Rector\ClassMethod\ReturnTypeFromStrictNativeCallRector;
 use Rector\TypeDeclaration\Rector\ClassMethod\ReturnTypeFromStrictScalarReturnExprRector;
+<<<<<<< HEAD
 >>>>>>> a8f30311 (first)
 =======
 use Rector\CodeQuality\Rector\Class_\InlineConstructorDefaultToPropertyRector;
@@ -58,11 +63,14 @@ use RectorLaravel\Rector\MethodCall\RedirectRouteToToRouteHelperRector;
 >>>>>>> c088001a (first)
 =======
 >>>>>>> d79d9e57 (first)
+=======
+>>>>>>> 0d55b583 (first)
 use RectorLaravel\Set\LaravelSetList;
 
 return static function (RectorConfig $rectorConfig): void {
     $rectorConfig->paths(
         [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -108,6 +116,9 @@ return static function (RectorConfig $rectorConfig): void {
             '*/docs',
             '*/vendor',
 >>>>>>> d79d9e57 (first)
+=======
+            __DIR__,
+>>>>>>> 0d55b583 (first)
         ]
     );
 
@@ -115,15 +126,24 @@ return static function (RectorConfig $rectorConfig): void {
     // $rectorConfig->rule(InlineConstructorDefaultToPropertyRector::class);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     // $rectorConfig->rule(RedirectRouteToToRouteHelperRector::class);
 <<<<<<< HEAD
 =======
+=======
+    // $rectorConfig->rule(RedirectRouteToToRouteHelperRector::class);
+    // $rectorConfig->rules([
+    //    ReturnTypeFromStrictNativeCallRector::class,
+    //    ReturnTypeFromStrictScalarReturnExprRector::class,
+    // ]);
+>>>>>>> 0d55b583 (first)
     $rectorConfig->rules(
         [
             ReturnTypeFromStrictNativeCallRector::class,
             ReturnTypeFromStrictScalarReturnExprRector::class,
         ]
     );
+<<<<<<< HEAD
 >>>>>>> a8f30311 (first)
 =======
     $rectorConfig->rule(RedirectRouteToToRouteHelperRector::class);
@@ -131,11 +151,14 @@ return static function (RectorConfig $rectorConfig): void {
 =======
     $rectorConfig->rule(RedirectRouteToToRouteHelperRector::class);
 >>>>>>> d79d9e57 (first)
+=======
+>>>>>>> 0d55b583 (first)
 
     // define sets of rules
     $rectorConfig->sets(
         [
             PHPUnitLevelSetList::UP_TO_PHPUNIT_100,
+<<<<<<< HEAD
 <<<<<<< HEAD
             // SetList::DEAD_CODE,
             // SetList::CODE_QUALITY,
@@ -162,11 +185,23 @@ return static function (RectorConfig $rectorConfig): void {
 >>>>>>> d79d9e57 (first)
             // SetList::CODING_STYLE,
             // SetList::PRIVATIZATION,//problemi con final
+=======
+            // SetList::DEAD_CODE,
+            // SetList::CODE_QUALITY,
+            LevelSetList::UP_TO_PHP_81,
+            LaravelSetList::LARAVEL_100,
+
+            // SetList::NAMING, // error on injection
+            // SetList::TYPE_DECLARATION,  //------------------------ vedere cosa fa
+            // SetList::CODING_STYLE,
+            // SetList::PRIVATIZATION, //error "final class"
+>>>>>>> 0d55b583 (first)
             // SetList::EARLY_RETURN,
             // SetList::INSTANCEOF,
         ]
     );
 
+<<<<<<< HEAD
     $rectorConfig->importNames();
 };
 <<<<<<< HEAD
@@ -230,3 +265,18 @@ return static function (RectorConfig $rectorConfig): void {
 >>>>>>> c088001a (first)
 =======
 >>>>>>> d79d9e57 (first)
+=======
+    $rectorConfig->skip(
+        [
+            // testdummy files
+            '*/build',
+            '*/docs',
+            '*/vendor',
+            './vendor/',
+            __DIR__.'/vendor',
+        ]
+    );
+
+    $rectorConfig->importNames();
+};
+>>>>>>> 0d55b583 (first)

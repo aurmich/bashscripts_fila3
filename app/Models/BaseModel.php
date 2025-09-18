@@ -6,6 +6,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Rating\Models;
 
 use Illuminate\Database\Eloquent\Model;
@@ -32,10 +33,14 @@ namespace Modules\Job\Models;
 =======
 namespace Modules\Notify\Models;
 >>>>>>> d79d9e57 (first)
+=======
+namespace Modules\User\Models;
+>>>>>>> 0d55b583 (first)
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> c088001a (first)
 use Modules\Xot\Traits\Updater;
@@ -44,10 +49,15 @@ use Modules\Xot\Traits\Updater;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 >>>>>>> d79d9e57 (first)
+=======
+use Modules\Xot\Models\Traits\RelationX;
+use Modules\Xot\Traits\Updater;
+>>>>>>> 0d55b583 (first)
 
 /**
  * Class BaseModel.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 abstract class BaseModel extends Model
 {
@@ -78,11 +88,18 @@ abstract class BaseModel extends Model implements HasMedia
     use HasFactory;
     use InteractsWithMedia;
 >>>>>>> d79d9e57 (first)
+=======
+abstract class BaseModel extends Model
+{
+    use HasFactory;
+    use RelationX;
+>>>>>>> 0d55b583 (first)
     use Updater;
 
     /**
      * Indicates whether attributes are snake cased on arrays.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -100,11 +117,15 @@ abstract class BaseModel extends Model implements HasMedia
 =======
      * @see https://laravel-news.com/6-eloquent-secrets
 >>>>>>> d79d9e57 (first)
+=======
+     * @see https://laravel-news.com/6-eloquent-secrets
+>>>>>>> 0d55b583 (first)
      *
      * @var bool
      */
     public static $snakeAttributes = true;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -115,6 +136,8 @@ abstract class BaseModel extends Model implements HasMedia
 >>>>>>> c088001a (first)
 =======
 >>>>>>> d79d9e57 (first)
+=======
+>>>>>>> 0d55b583 (first)
     /** @var bool */
     public $incrementing = true;
 
@@ -125,6 +148,7 @@ abstract class BaseModel extends Model implements HasMedia
     protected $perPage = 30;
 
     /** @var string */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -160,15 +184,22 @@ abstract class BaseModel extends Model implements HasMedia
 >>>>>>> c088001a (first)
 =======
     protected $connection = 'notify';
+=======
+    protected $connection = 'user';
+>>>>>>> 0d55b583 (first)
 
     /** @var list<string> */
     protected $appends = [];
 
+<<<<<<< HEAD
 >>>>>>> d79d9e57 (first)
+=======
+>>>>>>> 0d55b583 (first)
     /** @var string */
     protected $primaryKey = 'id';
 
     /** @var string */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -182,6 +213,8 @@ abstract class BaseModel extends Model implements HasMedia
 >>>>>>> c088001a (first)
 =======
 >>>>>>> d79d9e57 (first)
+=======
+>>>>>>> 0d55b583 (first)
     protected $keyType = 'string';
 
     /** @var list<string> */
@@ -189,6 +222,7 @@ abstract class BaseModel extends Model implements HasMedia
         // 'password'
     ];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -213,6 +247,13 @@ abstract class BaseModel extends Model implements HasMedia
      * Create a new factory instance for the model.
      *
      * @return \Illuminate\Database\Eloquent\Factories\Factory<static>
+=======
+    /**
+     * @see vendor/ laravel / framework / src / Illuminate / Database / Eloquent / Factories / HasFactory.php
+     * Create a new factory instance for the model.
+     *
+     * @return Factory<static>
+>>>>>>> 0d55b583 (first)
      */
     protected static function newFactory()
     {
@@ -221,15 +262,20 @@ abstract class BaseModel extends Model implements HasMedia
 
     /** @return array<string, string> */
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected function casts(): array
 >>>>>>> c088001a (first)
 =======
     public function casts(): array
 >>>>>>> d79d9e57 (first)
+=======
+    protected function casts(): array
+>>>>>>> 0d55b583 (first)
     {
         return [
             'id' => 'string',
             'uuid' => 'string',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             // 'published_at' => 'datetime:Y-m-d', // da verificare
@@ -260,6 +306,12 @@ abstract class BaseModel extends Model implements HasMedia
 
             'verified_at' => 'datetime',
 >>>>>>> d79d9e57 (first)
+=======
+
+            'published_at' => 'datetime',
+            'verified_at' => 'datetime',
+
+>>>>>>> 0d55b583 (first)
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
             'deleted_at' => 'datetime',
@@ -267,6 +319,7 @@ abstract class BaseModel extends Model implements HasMedia
             'updated_by' => 'string',
             'created_by' => 'string',
             'deleted_by' => 'string',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 59bc4fe7 (first)
@@ -296,5 +349,8 @@ abstract class BaseModel extends Model implements HasMedia
 =======
         ];
 >>>>>>> d79d9e57 (first)
+=======
+        ];
+>>>>>>> 0d55b583 (first)
     }
 }

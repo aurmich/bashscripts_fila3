@@ -4,6 +4,7 @@ providers:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Modules\Rating\Providers\RatingServiceProvider
 =======
   - Modules\Xot\Providers\XotServiceProvider
@@ -24,3 +25,7 @@ providers:
 =======
   - Modules\Notify\Providers\NotifyServiceProvider
 >>>>>>> d79d9e57 (first)
+=======
+  - Modules\User\Providers\UserServiceProvider
+  - Modules\User\Providers\Filament\AdminPanelProvider
+>>>>>>> 0d55b583 (first)

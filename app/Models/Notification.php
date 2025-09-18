@@ -1,12 +1,21 @@
 <?php
 
+<<<<<<< HEAD
 namespace Modules\Notify\Models;
 
 use Modules\Xot\Models\BaseModel;
+=======
+declare(strict_types=1);
+
+namespace Modules\User\Models;
+
+use Illuminate\Notifications\DatabaseNotification as BaseNotification;
+>>>>>>> 0d55b583 (first)
 
 /**
  * 
  *
+<<<<<<< HEAD
  * @property string $id
  * @property string $type
  * @property string $notifiable_type
@@ -50,4 +59,26 @@ class Notification extends BaseModel
     protected $casts = [
         'read_at' => 'datetime',
     ];
+=======
+ * @property \Illuminate\Database\Eloquent\Model|\Eloquent $notifiable
+ * @method static \Illuminate\Notifications\DatabaseNotificationCollection<int, static> all($columns = ['*'])
+ * @method static \Illuminate\Notifications\DatabaseNotificationCollection<int, static> get($columns = ['*'])
+ * @method static \Illuminate\Database\Eloquent\Builder|Notification newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Notification newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Notification query()
+ * @method static \Illuminate\Database\Eloquent\Builder|Notification read()
+ * @method static \Illuminate\Database\Eloquent\Builder|Notification unread()
+ * @method static \Illuminate\Notifications\DatabaseNotificationCollection<int, static> all($columns = ['*'])
+ * @method static \Illuminate\Notifications\DatabaseNotificationCollection<int, static> get($columns = ['*'])
+ * @method static \Illuminate\Notifications\DatabaseNotificationCollection<int, static> all($columns = ['*'])
+ * @method static \Illuminate\Notifications\DatabaseNotificationCollection<int, static> get($columns = ['*'])
+ * @mixin \Eloquent
+ */
+class Notification extends BaseNotification
+{
+    /** @var string */
+    protected $connection = 'user';
+
+    // protected $fillable = ['id', 'user_id', 'client_id', 'name', 'scopes', 'revoked', 'expires_at'];
+>>>>>>> 0d55b583 (first)
 }

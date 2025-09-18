@@ -3,14 +3,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c088001a (first)
 =======
 >>>>>>> d79d9e57 (first)
+=======
+>>>>>>> 0d55b583 (first)
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -36,11 +40,18 @@
        {{-- Laravel Mix - CSS File --}}
        {{-- <link rel="stylesheet" href="{{ mix('css/notify.css') }}"> --}}
 >>>>>>> d79d9e57 (first)
+=======
+        <title>Module User</title>
+
+       {{-- Laravel Vite - CSS File --}}
+       {{-- {{ module_vite('build-user', 'resources/assets/sass/app.scss') }} --}}
+>>>>>>> 0d55b583 (first)
 
     </head>
     <body>
         @yield('content')
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -82,4 +93,9 @@
         {{-- <script src="{{ mix('js/notify.js') }}"></script> --}}
     </body>
 >>>>>>> d79d9e57 (first)
+=======
+        {{-- Laravel Vite - JS File --}}
+        {{-- {{ module_vite('build-user', 'resources/assets/js/app.js') }} --}}
+    </body>
+>>>>>>> 0d55b583 (first)
 </html>

@@ -6,6 +6,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Rating\Models;
 =======
 namespace Modules\Xot\Models;
@@ -21,6 +22,14 @@ namespace Modules\Notify\Models;
 >>>>>>> d79d9e57 (first)
 
 use Illuminate\Database\Eloquent\Relations\MorphPivot;
+=======
+namespace Modules\User\Models;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\MorphPivot;
+use Modules\Xot\Actions\Factory\GetFactoryAction;
+>>>>>>> 0d55b583 (first)
 use Modules\Xot\Traits\Updater;
 
 /**
@@ -28,6 +37,7 @@ use Modules\Xot\Traits\Updater;
  */
 abstract class BaseMorphPivot extends MorphPivot
 {
+<<<<<<< HEAD
     use Updater;
 
     /**
@@ -50,11 +60,29 @@ abstract class BaseMorphPivot extends MorphPivot
 =======
      * @see https://laravel-news.com/6-eloquent-secrets
 >>>>>>> d79d9e57 (first)
+=======
+    use HasFactory;
+    use Updater;
+
+    // use HasUuids;
+
+    /** @var bool */
+    public $incrementing = true;
+
+    /** @var bool */
+    public $timestamps = true;
+
+    /**
+     * Indicates whether attributes are snake cased on arrays.
+     *
+     * @see https://laravel-news.com/6-eloquent-secrets
+>>>>>>> 0d55b583 (first)
      *
      * @var bool
      */
     public static $snakeAttributes = true;
 
+<<<<<<< HEAD
     /** @var bool */
     public $incrementing = true;
 
@@ -103,6 +131,17 @@ abstract class BaseMorphPivot extends MorphPivot
 =======
     protected $connection = 'notify';
 >>>>>>> d79d9e57 (first)
+=======
+    /**
+     * The number of models to return for pagination.
+     *
+     * @var int
+     */
+    protected $perPage = 30;
+
+    /** @var string */
+    protected $connection = 'user';
+>>>>>>> 0d55b583 (first)
 
     /** @var list<string> */
     protected $appends = [];
@@ -126,6 +165,7 @@ abstract class BaseMorphPivot extends MorphPivot
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function casts(): array
 =======
     protected function casts(): array
@@ -136,11 +176,25 @@ abstract class BaseMorphPivot extends MorphPivot
             'uuid' => 'string', 'created_at' => 'datetime', 'updated_at' => 'datetime', 'deleted_at' => 'datetime'];
 <<<<<<< HEAD
 =======
+=======
+    /**
+     * Create a new factory instance for the model.
+     *
+     * @return Factory<static>
+     */
+    protected static function newFactory()
+    {
+        // return app(\Modules\Xot\Actions\Factory\GetFactoryAction::class)->execute(static::class);
+        return app(GetFactoryAction::class)->execute(static::class);
+    }
+
+>>>>>>> 0d55b583 (first)
     /** @return array<string, string> */
     protected function casts(): array
     {
         return [
             'id' => 'string', // must be string else primary key of related model will be typed as int
+<<<<<<< HEAD
             'uuid' => 'string',
 
 =======
@@ -156,6 +210,8 @@ abstract class BaseMorphPivot extends MorphPivot
 >>>>>>> c088001a (first)
 =======
 >>>>>>> d79d9e57 (first)
+=======
+>>>>>>> 0d55b583 (first)
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
             'deleted_at' => 'datetime',
@@ -166,6 +222,7 @@ abstract class BaseMorphPivot extends MorphPivot
         ];
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 59bc4fe7 (first)
 =======
 >>>>>>> bbec4378 (first)
@@ -173,5 +230,7 @@ abstract class BaseMorphPivot extends MorphPivot
 >>>>>>> c088001a (first)
 =======
 >>>>>>> d79d9e57 (first)
+=======
+>>>>>>> 0d55b583 (first)
     }
 }

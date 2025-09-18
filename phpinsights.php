@@ -26,7 +26,11 @@ return [
     | to make your code reliable, simple, and clean. However, you can always
     | adjust the `Metrics` and `Insights` below in this configuration file.
     |
+<<<<<<< HEAD
     | Supported: "default", "laravel", "symfony", "magento2", "drupal", "wordpress"
+=======
+    | Supported: "default", "laravel", "symfony", "magento2", "drupal"
+>>>>>>> 0d55b583 (first)
     |
     */
 
@@ -59,7 +63,11 @@ return [
     |
     | Here you may adjust all the various `Insights` that will be used by PHP
     | Insights. You can either add, remove or configure `Insights`. Keep in
+<<<<<<< HEAD
     | mind, that all added `Insights` must belong to a specific `Metric`.
+=======
+    | mind that all added `Insights` must belong to a specific `Metric`.
+>>>>>>> 0d55b583 (first)
     |
     */
 
@@ -117,12 +125,17 @@ return [
     |--------------------------------------------------------------------------
     |
     | Here you may adjust how many threads (core) PHPInsights can use to perform
+<<<<<<< HEAD
     | the analysis. This is optional, don't provide it and the tool will guess
+=======
+    | the analyse. This is optional, don't provide it and the tool will guess
+>>>>>>> 0d55b583 (first)
     | the max core number available. It accepts null value or integer > 0.
     |
     */
 
     'threads' => null,
+<<<<<<< HEAD
 
     /*
     |--------------------------------------------------------------------------
@@ -136,4 +149,6 @@ return [
     */
 
     'timeout' => 60,
+=======
+>>>>>>> 0d55b583 (first)
 ];

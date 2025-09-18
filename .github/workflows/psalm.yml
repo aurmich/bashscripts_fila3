@@ -7,12 +7,17 @@ jobs:
         name: PHP Insights checks
         steps:
 <<<<<<< HEAD
+<<<<<<< HEAD
             - uses: actions/checkout@v2
             - uses: shivammathur/setup-php@v2
 =======
             - uses: actions/checkout@v4
             - uses: shivammathur/setup-php@latest
 >>>>>>> d79d9e57 (first)
+=======
+            - uses: actions/checkout@v2
+            - uses: shivammathur/setup-php@latest
+>>>>>>> 0d55b583 (first)
               with:
                   php-version: 8.1
             - run: composer install --prefer-dist --no-progress

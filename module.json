@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
 =======
@@ -14,10 +15,15 @@
     "name": "Notify",
     "alias": "notify",
 >>>>>>> d79d9e57 (first)
+=======
+    "name": "User",
+    "alias": "user",
+>>>>>>> 0d55b583 (first)
     "description": "",
     "keywords": [],
     "priority": 0,
     "providers": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         "Modules\\Rating\\Providers\\RatingServiceProvider",
@@ -90,3 +96,15 @@
 =======
 }
 >>>>>>> d79d9e57 (first)
+=======
+        "Modules\\User\\Providers\\UserServiceProvider",
+        "Modules\\User\\Providers\\Filament\\AdminPanelProvider"
+    ],
+    "migration": {
+        "seeds": [
+            "Modules\\User\\Database\\Seeders\\RolesSeeder"
+        ]
+    },
+    "files": []
+}
+>>>>>>> 0d55b583 (first)

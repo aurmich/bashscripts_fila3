@@ -3,15 +3,20 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Job\Providers;
 =======
 namespace Modules\Notify\Providers;
 >>>>>>> d79d9e57 (first)
+=======
+namespace Modules\User\Providers;
+>>>>>>> 0d55b583 (first)
 
 use Modules\Xot\Providers\XotBaseContextServiceProvider;
 
 class FilamentServiceProvider extends XotBaseContextServiceProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     public static string $name = 'job-filament';
     
@@ -20,4 +25,9 @@ class FilamentServiceProvider extends XotBaseContextServiceProvider
     public static string $name = 'notify-filament';
     public static string $module = 'Notify';
 >>>>>>> d79d9e57 (first)
+=======
+    public static string $name = 'user-filament';
+    
+    public static string $module = 'User';
+>>>>>>> 0d55b583 (first)
 }

@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Xot\Models;
 
 /**
@@ -24,6 +25,29 @@ namespace Modules\Xot\Models;
  * @property string|null                     $created_by
  * @property \Illuminate\Support\Carbon|null $deleted_at
  * @property string|null                     $deleted_by
+=======
+namespace Modules\User\Models;
+
+use Modules\Xot\Models\Extra as XotBaseExtra;
+
+/**
+ * 
+ *
+ * @property \Spatie\SchemalessAttributes\SchemalessAttributes $extra_attributes
+ * @method static \Illuminate\Database\Eloquent\Builder|Extra newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Extra newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Extra query()
+ * @method static \Illuminate\Database\Eloquent\Builder|Extra withExtraAttributes()
+ * @property int $id
+ * @property string $model_type
+ * @property string $model_id
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property string|null $deleted_by
+>>>>>>> 0d55b583 (first)
  * @method static \Illuminate\Database\Eloquent\Builder|Extra whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Extra whereCreatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Extra whereDeletedAt($value)
@@ -36,8 +60,18 @@ namespace Modules\Xot\Models;
  * @method static \Illuminate\Database\Eloquent\Builder|Extra whereUpdatedBy($value)
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
+<<<<<<< HEAD
  * @mixin \Eloquent
  */
 class Extra extends BaseExtra
 {
+=======
+ * @method static \Modules\User\Database\Factories\ExtraFactory factory($count = null, $state = [])
+ * @mixin \Eloquent
+ */
+class Extra extends XotBaseExtra
+{
+    /** @var string */
+    protected $connection = 'user';
+>>>>>>> 0d55b583 (first)
 }
