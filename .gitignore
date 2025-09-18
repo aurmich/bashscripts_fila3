@@ -660,6 +660,7 @@ laravel/Modules/Predict/
 >>>>>>> b46d7627 (.)
 =======
 *.old
+<<<<<<< HEAD
 >>>>>>> eb769019 (.)
 =======
 .git-blame-ignore-revs
@@ -965,3 +966,6 @@ cache/
 *.exe
 *:Zone.Identifier
 >>>>>>> dc18abbe (first)
+=======
+public_html/plugins/
+>>>>>>> 5a1e0641 (.)
