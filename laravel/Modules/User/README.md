@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Module User Fila3 🔥 Ultimate User, Roles & Permissions Manager for FilamentPHP 🚀
 
 [![Latest Release](https://img.shields.io/github/v/release/laraxot/module_user_fila3)](https://github.com/laraxot/module_user_fila3/releases)
@@ -107,7 +106,6 @@ This package is open-sourced under the [MIT license](LICENSE).
 
 Give your Laravel app the **edge** it deserves with **Module User Fila3**. Try it now! 💥
 
-=======
 # 👤 User Module - Gestione Utenti Avanzata
 
 [![PHP Version](https://img.shields.io/badge/PHP-8.2+-blue.svg)](https://php.net)
@@ -224,7 +222,6 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file [LICENSE](LICE
 This project is distributed under the MIT license. See the [LICENSE](LICENSE) file for more details.
 
 Este proyecto está distribuido bajo la licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
->>>>>>> origin/dev
 
 # Module users
 Gestione degli utenti, ruoli, permessi tramite l'utilizzo di filament.

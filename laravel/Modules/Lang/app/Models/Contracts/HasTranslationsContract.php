@@ -7,6 +7,7 @@ namespace Modules\Lang\Models\Contracts;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
  * Interfaccia per modelli che supportano traduzioni.
  */
@@ -49,6 +50,8 @@ interface HasTranslationsContract
 >>>>>>> 55edff60 (.)
 =======
 =======
+=======
+>>>>>>> d7d0a3d0 (.)
 /**
  * Interfaccia per modelli che supportano traduzioni.
  */
@@ -73,8 +76,11 @@ interface HasTranslationsContract
      * @param int|array<mixed>|string|null $value  Il valore da impostare per la traduzione
      *
      * @return self L'istanza corrente del modello, per supportare method chaining
+<<<<<<< HEAD
 >>>>>>> origin/dev
 >>>>>>> bb045b6d (.)
+=======
+>>>>>>> d7d0a3d0 (.)
      */
     public function setTranslation(string $key, string $locale, $value): self;
 }

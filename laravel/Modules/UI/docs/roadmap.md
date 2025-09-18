@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Roadmap Modulo UI
 
 ## Overview
@@ -200,6 +201,8 @@ Sistema completo di interfaccia utente con componenti riutilizzabili, temi e lay
 >>>>>>> 55edff60 (.)
 =======
 >>>>>>> 0885c96d (.)
+=======
+>>>>>>> d7d0a3d0 (.)
 # UI Module Roadmap
 
 ## Module Progress Overview
@@ -279,11 +282,14 @@ Overall Module Completion: 60%
    - Priority: High
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 86b1e4c1 (.)
 =======
 >>>>>>> 55edff60 (.)
 =======
 =======
+=======
+>>>>>>> d7d0a3d0 (.)
 # 🗺️ UI Module Roadmap
 
 ## 📊 Progress Overview
@@ -365,5 +371,8 @@ Overall Module Completion: 60%
 5. 🧪 A11y testing suite
 
 [More details in docs/roadmap/weekly/week2.md] 
+<<<<<<< HEAD
 >>>>>>> origin/dev
 >>>>>>> 0885c96d (.)
+=======
+>>>>>>> d7d0a3d0 (.)

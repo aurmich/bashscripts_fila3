@@ -9,6 +9,7 @@ use Spatie\LaravelData\Data;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 =======
 >>>>>>> 6a0fe737 (.)
@@ -19,6 +20,9 @@ use Webmozart\Assert\Assert;
 use Webmozart\Assert\Assert;
 >>>>>>> origin/dev
 >>>>>>> bb045b6d (.)
+=======
+use Webmozart\Assert\Assert;
+>>>>>>> d7d0a3d0 (.)
 
 class TranslationData extends Data
 {
@@ -50,6 +54,7 @@ class TranslationData extends Data
 =======
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 6a0fe737 (.)
 =======
 
@@ -62,6 +67,11 @@ class TranslationData extends Data
 
 >>>>>>> origin/dev
 >>>>>>> bb045b6d (.)
+=======
+        // Verifichiamo che $path sia una stringa
+        Assert::string($path, 'Il percorso del namespace deve essere una stringa');
+
+>>>>>>> d7d0a3d0 (.)
         return app(\Modules\Xot\Actions\File\FixPathAction::class)->execute($path.'/'.$this->lang.'/'.$this->group.'.php');
     }
 

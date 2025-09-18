@@ -8,12 +8,6 @@ use Illuminate\Support\Facades\Auth;
 
 class WebhookErrorFormatter
 {
-<<<<<<< HEAD
-    public function __construct(private readonly \Throwable $exception)
-    {
-    }
-
-=======
     public function __construct(
         private \Throwable $exception
     ) {}
@@ -21,20 +15,16 @@ class WebhookErrorFormatter
     /**
      * @return array<string, mixed>
      */
->>>>>>> origin/dev
     public function format(): array
     {
         $user = Auth::user();
         $email = $user->email ?? 'CLI User';
 
         return [
-<<<<<<< HEAD
-=======
             'message' => $this->exception->getMessage(),
             'file' => $this->exception->getFile(),
             'line' => $this->exception->getLine(),
             'trace' => $this->exception->getTraceAsString(),
->>>>>>> origin/dev
             'exception' => sprintf(
                 '`%s` (Code `%s`)',
                 get_class($this->exception),

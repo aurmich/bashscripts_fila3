@@ -8,6 +8,7 @@ use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
  * Provider per la registrazione delle rotte del modulo Lang.
  */
@@ -20,6 +21,11 @@ use Modules\Xot\Providers\XotBaseRouteServiceProvider;
  */
 >>>>>>> origin/dev
 >>>>>>> bb045b6d (.)
+=======
+/**
+ * Provider per la registrazione delle rotte del modulo Lang.
+ */
+>>>>>>> d7d0a3d0 (.)
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
     /**
@@ -69,6 +75,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
     protected string $moduleNamespace = 'Modules\Lang\Http\Controllers';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
@@ -79,6 +86,8 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 >>>>>>> 55edff60 (.)
 =======
 =======
+=======
+>>>>>>> d7d0a3d0 (.)
     /**
      * The directory of the module.
      */
@@ -97,14 +106,18 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
     /**
      * Bootstrap the module services.
      */
+<<<<<<< HEAD
 >>>>>>> origin/dev
 >>>>>>> bb045b6d (.)
+=======
+>>>>>>> d7d0a3d0 (.)
     public function boot(): void
     {
         parent::boot();
         $this->registerLang();
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -145,20 +158,17 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
      */
 >>>>>>> origin/dev
 >>>>>>> bb045b6d (.)
+=======
+    /**
+     * Register the module services.
+     */
+>>>>>>> d7d0a3d0 (.)
     public function register(): void
     {
         parent::register();
         // $this->registerLang();
     }
 
-<<<<<<< HEAD
-    public function registerLang(): void
-    {
-        $locales = config('laravellocalization.supportedLocales');
-        if (! \is_array($locales)) {
-            $locales = ['it' => 'it', 'en' => 'en'];
-        }
-=======
     /**
      * Registra le impostazioni di lingua basate sulla configurazione.
      */
@@ -172,7 +182,6 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
         }
 
         /** @var array<string> $langs */
->>>>>>> origin/dev
         $langs = array_keys($locales);
 
         /*
@@ -198,10 +207,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
             if ($lang !== null) {
 =======
         if (\in_array(request()->segment($n), $langs, false)) {
-<<<<<<< HEAD
-=======
             /** @var string|null $lang */
->>>>>>> origin/dev
             $lang = request()->segment($n);
             if (null !== $lang) {
 >>>>>>> 6a0fe737 (.)

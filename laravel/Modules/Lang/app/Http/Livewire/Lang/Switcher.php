@@ -49,6 +49,7 @@ class Switcher extends Component
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 // Verifichiamo che $url sia una stringa o lo convertiamo in modo sicuro
                 if (!is_string($url)) {
                     // Se non è una stringa, utilizziamo una URL di fallback
@@ -65,6 +66,8 @@ class Switcher extends Component
 =======
                 $url = Str::of($url)->replace(url(''), '')->toString();
 =======
+=======
+>>>>>>> d7d0a3d0 (.)
                 // Verifichiamo che $url sia una stringa o lo convertiamo in modo sicuro
                 if (! is_string($url)) {
                     // Se non è una stringa, utilizziamo una URL di fallback
@@ -72,8 +75,11 @@ class Switcher extends Component
                 } else {
                     $url = Str::of($url)->replace(url(''), '')->toString();
                 }
+<<<<<<< HEAD
 >>>>>>> origin/dev
 >>>>>>> bb045b6d (.)
+=======
+>>>>>>> d7d0a3d0 (.)
             }
             $item['url'] = $url;
 

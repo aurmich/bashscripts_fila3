@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 return array (
   'navigation' => 
   array (
@@ -123,6 +124,8 @@ return array (
   ),
 );
 =======
+=======
+>>>>>>> d7d0a3d0 (.)
 declare(strict_types=1);
 
 return [
@@ -209,4 +212,3 @@ return [
         ],
     ],
 ];
->>>>>>> origin/dev

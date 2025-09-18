@@ -12,6 +12,7 @@ use Spatie\LaravelData\DataCollection;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
  * Classe che rappresenta i dati relativi a una lingua.
  */
@@ -73,6 +74,8 @@ class LangData extends Data
 >>>>>>> 55edff60 (.)
 =======
 =======
+=======
+>>>>>>> d7d0a3d0 (.)
 /**
  * Classe che rappresenta i dati relativi a una lingua.
  */
@@ -105,8 +108,11 @@ class LangData extends Data
      *
      * @return DataCollection<LangData>
      */
+<<<<<<< HEAD
 >>>>>>> origin/dev
 >>>>>>> bb045b6d (.)
+=======
+>>>>>>> d7d0a3d0 (.)
     public static function collection(EloquentCollection|Collection|array $data): DataCollection
     {
         return self::collect($data, DataCollection::class);

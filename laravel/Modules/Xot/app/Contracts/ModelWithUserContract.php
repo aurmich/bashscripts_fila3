@@ -38,10 +38,6 @@ use Illuminate\Support\Carbon;
  * @method mixed     save($params)
  * @method array     treeLabel()
  * @method array     treeSons()
-<<<<<<< HEAD
- * @method int       treeSonsCount()
-=======
->>>>>>> origin/dev
  * @method array     toArray()
  * @method BelongsTo user()
  *
@@ -49,10 +45,4 @@ use Illuminate\Support\Carbon;
  *
  * @mixin \Eloquent
  */
-<<<<<<< HEAD
-interface ModelWithUserContract
-{
-}
-=======
 interface ModelWithUserContract {}
->>>>>>> origin/dev

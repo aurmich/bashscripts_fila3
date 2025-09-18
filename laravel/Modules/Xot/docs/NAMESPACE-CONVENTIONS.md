@@ -31,21 +31,15 @@ namespace Modules\Rating\App\Console\Commands;
 Un errore particolarmente frequente riguarda le Actions. La convenzione corretta è la seguente:
 
 - ✅ **CORRETTO**: `namespace Modules\Xot\Actions;`
-<<<<<<< HEAD
 - ❌ **ERRATO**: `namespace Modules\Xot\app\Actions;`
-=======
 - ❌ **ERRATO**: `namespace Modules\Xot\Actions;`
->>>>>>> origin/dev
 
 Anche se il file si trova nel percorso fisico `Modules/Xot/app/Actions/`, il namespace non deve mai includere il segmento `app`.
 
 Questo errore causa spesso problemi di PHPStan come:
 ```
-<<<<<<< HEAD
 Class 'Modules\Xot\app\Actions\MyAction' not found.
-=======
 Class 'Modules\Xot\Actions\MyAction' not found.
->>>>>>> origin/dev
 ```
 
 La correzione è sempre la stessa: rimuovere il segmento `app` dal namespace.

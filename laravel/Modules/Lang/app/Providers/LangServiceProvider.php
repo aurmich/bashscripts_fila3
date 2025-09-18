@@ -88,6 +88,7 @@ class LangServiceProvider extends XotBaseServiceProvider
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $typedMessages = [];
                 foreach ($validationMessages as $key => $value) {
                     if (is_string($key) && (is_string($value) || $value instanceof \Closure)) {
@@ -104,6 +105,8 @@ class LangServiceProvider extends XotBaseServiceProvider
 =======
                 $component->validationMessages($validationMessages);
 =======
+=======
+>>>>>>> d7d0a3d0 (.)
                 // Convertiamo l'array generico in un array<string, string> per soddisfare il tipo richiesto
                 $typedMessages = [];
                 foreach ($validationMessages as $key => $value) {
@@ -112,8 +115,11 @@ class LangServiceProvider extends XotBaseServiceProvider
                     }
                 }
                 $component->validationMessages($typedMessages);
+<<<<<<< HEAD
 >>>>>>> origin/dev
 >>>>>>> bb045b6d (.)
+=======
+>>>>>>> d7d0a3d0 (.)
             }
 
             return $component;

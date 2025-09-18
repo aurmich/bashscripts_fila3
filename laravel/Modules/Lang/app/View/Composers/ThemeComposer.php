@@ -13,6 +13,7 @@ use Spatie\LaravelData\DataCollection;
 use Webmozart\Assert\Assert;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
  * Classe per la composizione di dati relativi alle lingue nei template.
  */
@@ -30,6 +31,11 @@ use Webmozart\Assert\Assert;
  */
 >>>>>>> origin/dev
 >>>>>>> bb045b6d (.)
+=======
+/**
+ * Classe per la composizione di dati relativi alle lingue nei template.
+ */
+>>>>>>> d7d0a3d0 (.)
 class ThemeComposer
 {
     /**
@@ -51,6 +57,7 @@ class ThemeComposer
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             // Ensure $item is an array
             if (! is_array($item)) {
                 throw new \InvalidArgumentException(sprintf('Expected array at locale %s, got %s', $locale, gettype($item)));
@@ -70,6 +77,8 @@ class ThemeComposer
             // Ensure $item is an array as expected, otherwise handle error.
             if (! is_array($item) || ! isset($item['regional'], $item['name'])) {
 =======
+=======
+>>>>>>> d7d0a3d0 (.)
             // Ensure $item is an array
             if (! is_array($item)) {
                 throw new \InvalidArgumentException(sprintf('Expected array at locale %s, got %s', $locale, gettype($item)));
@@ -77,12 +86,16 @@ class ThemeComposer
 
             // Ensure $item has the required keys
             if (! isset($item['regional'], $item['name'])) {
+<<<<<<< HEAD
 >>>>>>> origin/dev
 >>>>>>> bb045b6d (.)
+=======
+>>>>>>> d7d0a3d0 (.)
                 throw new \InvalidArgumentException(sprintf('Expected array with "regional" and "name" keys at locale %s', $locale));
             }
 
             // Extract regional code and handle 'en' to 'gb' mapping.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -103,6 +116,8 @@ class ThemeComposer
 =======
             $regionalCode = explode('_', (string) $item['regional'])[0] ?? 'en';
 =======
+=======
+>>>>>>> d7d0a3d0 (.)
             // Verifichiamo che regional sia una stringa o lo convertiamo in modo sicuro
             $regional = $item['regional'];
             if (! is_string($regional)) {
@@ -111,8 +126,11 @@ class ThemeComposer
             $regionalParts = explode('_', $regional);
             $regionalCode = $regionalParts[0] ?? 'en';
 
+<<<<<<< HEAD
 >>>>>>> origin/dev
 >>>>>>> bb045b6d (.)
+=======
+>>>>>>> d7d0a3d0 (.)
             if ('en' === $regionalCode) {
                 $regionalCode = 'gb';
             }
@@ -122,6 +140,7 @@ class ThemeComposer
                 $url = $this->buildAdminLanguageUrl($locale);
             }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -149,6 +168,8 @@ class ThemeComposer
                 'id' => $locale,
                 'name' => $item['name'],
 =======
+=======
+>>>>>>> d7d0a3d0 (.)
             // Verifichiamo che name sia una stringa o lo convertiamo in modo sicuro
             $name = $item['name'];
             if (! is_string($name)) {
@@ -158,13 +179,17 @@ class ThemeComposer
             return [
                 'id' => $locale,
                 'name' => $name,
+<<<<<<< HEAD
 >>>>>>> origin/dev
 >>>>>>> bb045b6d (.)
+=======
+>>>>>>> d7d0a3d0 (.)
                 'flag' => $this->buildFlagHtml($regionalCode),
                 'url' => $url,
             ];
         });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -181,12 +206,17 @@ class ThemeComposer
 =======
         return LangData::collection($languages->all());
 =======
+=======
+>>>>>>> d7d0a3d0 (.)
         // Convertiamo esplicitamente a array<int, mixed> per soddisfare il tipo richiesto
         $languagesArray = $languages->values()->all();
 
         return LangData::collection($languagesArray);
+<<<<<<< HEAD
 >>>>>>> origin/dev
 >>>>>>> bb045b6d (.)
+=======
+>>>>>>> d7d0a3d0 (.)
     }
 
     /**
@@ -202,6 +232,7 @@ class ThemeComposer
             ->filter(function (mixed $item) use ($currentLocale): bool {
                 // Ensure the item is an instance of LangData
                 if (! $item instanceof LangData) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -229,6 +260,11 @@ class ThemeComposer
 
 >>>>>>> origin/dev
 >>>>>>> bb045b6d (.)
+=======
+                    throw new \Exception(sprintf('Expected instance of LangData, got %s', is_object($item) ? get_class($item) : gettype($item)));
+                }
+
+>>>>>>> d7d0a3d0 (.)
                 return $item->id !== $currentLocale;
             });
     }
@@ -262,6 +298,7 @@ class ThemeComposer
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         // Verifichiamo che il valore del campo sia una stringa o lo convertiamo in modo sicuro
         $value = $lang->{$field};
         if (!is_string($value)) {
@@ -278,6 +315,8 @@ class ThemeComposer
 =======
         return (string) $lang->{$field};
 =======
+=======
+>>>>>>> d7d0a3d0 (.)
         // Verifichiamo che il valore del campo sia una stringa o lo convertiamo in modo sicuro
         $value = $lang->{$field};
         if (! is_string($value)) {
@@ -285,12 +324,16 @@ class ThemeComposer
         }
 
         return $value;
+<<<<<<< HEAD
 >>>>>>> origin/dev
 >>>>>>> bb045b6d (.)
+=======
+>>>>>>> d7d0a3d0 (.)
     }
 
     /**
      * Build the URL for the admin panel based on the current route and parameters.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -303,12 +346,17 @@ class ThemeComposer
 >>>>>>> 55edff60 (.)
 =======
 =======
+=======
+>>>>>>> d7d0a3d0 (.)
      *
      * @param string $locale The locale code to build URL for
      *
      * @return string The generated URL
+<<<<<<< HEAD
 >>>>>>> origin/dev
 >>>>>>> bb045b6d (.)
+=======
+>>>>>>> d7d0a3d0 (.)
      */
     private function buildAdminLanguageUrl(string $locale): string
     {
@@ -329,6 +377,7 @@ class ThemeComposer
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * 
      * @param string $regionalCode The regional code for the flag
      * @return string The HTML for the flag
@@ -338,12 +387,17 @@ class ThemeComposer
 >>>>>>> 55edff60 (.)
 =======
 =======
+=======
+>>>>>>> d7d0a3d0 (.)
      *
      * @param string $regionalCode The regional code for the flag
      *
      * @return string The HTML for the flag
+<<<<<<< HEAD
 >>>>>>> origin/dev
 >>>>>>> bb045b6d (.)
+=======
+>>>>>>> d7d0a3d0 (.)
      */
     private function buildFlagHtml(string $regionalCode): string
     {

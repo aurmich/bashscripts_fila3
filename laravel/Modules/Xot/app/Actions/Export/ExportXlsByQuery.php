@@ -35,6 +35,7 @@ class ExportXlsByQuery
         $stringFields = array_map(function ($field) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             return $field;
 =======
             return is_string($field) ? $field : (string) $field;
@@ -45,6 +46,9 @@ class ExportXlsByQuery
             return strval($field);
 >>>>>>> origin/dev
 >>>>>>> 4ef45c4c (.)
+=======
+            return strval($field);
+>>>>>>> d7d0a3d0 (.)
         }, array_values($fields));
 
         $export = new QueryExport(
@@ -52,11 +56,6 @@ class ExportXlsByQuery
             transKey: null,
             fields: $stringFields
         );
-<<<<<<< HEAD
-        
-=======
-
->>>>>>> origin/dev
         // Note: QueryExport doesn't accept a limit parameter directly
         // If limit is needed, apply it to the query before passing to the exporter
         if ($limit !== null) {

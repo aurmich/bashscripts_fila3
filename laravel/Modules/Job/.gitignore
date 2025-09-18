@@ -36,9 +36,3 @@ cache/
 .git-blame-ignore-revs
 .php-cs-fixer.cache
 *:Zone.Identifier
-<<<<<<< HEAD
-
-=======
-.php-cs-fixer.cache
-.php-cs-fixer.cache
->>>>>>> origin/dev

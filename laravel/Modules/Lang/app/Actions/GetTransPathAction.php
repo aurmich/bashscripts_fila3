@@ -10,6 +10,7 @@ use Spatie\QueueableAction\QueueableAction;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 =======
 >>>>>>> 6a0fe737 (.)
@@ -20,6 +21,9 @@ use Webmozart\Assert\Assert;
 use Webmozart\Assert\Assert;
 >>>>>>> origin/dev
 >>>>>>> bb045b6d (.)
+=======
+use Webmozart\Assert\Assert;
+>>>>>>> d7d0a3d0 (.)
 
 class GetTransPathAction
 {
@@ -49,6 +53,7 @@ class GetTransPathAction
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         
         // Utilizziamo module_path e verifichiamo che restituisca una stringa
         $lang_path = module_path($ns, $relativePath);
@@ -73,6 +78,8 @@ class GetTransPathAction
 
         return $lang_path.'/'.$lang.'/'.$piece[0].'.php';
 =======
+=======
+>>>>>>> d7d0a3d0 (.)
 
         // Utilizziamo module_path e verifichiamo che restituisca una stringa
         $lang_path = module_path($ns, $relativePath);
@@ -82,7 +89,10 @@ class GetTransPathAction
         Assert::string($file_name, 'Il nome del file deve essere una stringa');
 
         return $lang_path.'/'.$lang.'/'.$file_name.'.php';
+<<<<<<< HEAD
 >>>>>>> origin/dev
 >>>>>>> bb045b6d (.)
+=======
+>>>>>>> d7d0a3d0 (.)
     }
 }

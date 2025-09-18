@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
-<<<<<<< HEAD
 use Filament\Forms;
 use Filament\Forms\Form;
 use Illuminate\Support\Facades\Cache;
@@ -15,19 +14,11 @@ use Modules\Xot\Actions\View\GetViewByClassAction;
 use Filament\Widgets\Concerns\InteractsWithPageTable;
 use Filament\Widgets\Concerns\InteractsWithPageFilters;
 use Filament\Actions\Action;
-=======
-use Filament\Widgets\Widget as FilamentWidget;
-use Illuminate\Support\Facades\Cache;
-use Filament\Widgets\WidgetConfiguration;
-use Filament\Widgets\Concerns\InteractsWithPageFilters;
-use Modules\Xot\Actions\View\GetViewByClassAction;
->>>>>>> origin/dev
 
 /**
  * @property bool $shouldRender
  *
  */
-<<<<<<< HEAD
 abstract class XotBaseWidget extends FilamentWidget implements HasForms
 {
     use InteractsWithPageFilters;
@@ -37,13 +28,6 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
     public string $title = '';
     public string $icon = '';
     protected int|string|array $columnSpan = 'full';
-=======
-abstract class XotBaseWidget extends FilamentWidget
-{
-    use InteractsWithPageFilters;
-    public string $title = '';
-    public string $icon = '';
->>>>>>> origin/dev
     /**
      * The view that should be rendered for the widget.
      *
@@ -54,7 +38,6 @@ abstract class XotBaseWidget extends FilamentWidget
      * @var view-string
      */
     protected static string $view;
-<<<<<<< HEAD
     
 
     public array $listener = [
@@ -63,15 +46,10 @@ abstract class XotBaseWidget extends FilamentWidget
     ];
 
     /*
-=======
-
-
->>>>>>> origin/dev
     public function __construct()
     {
         //parent::__construct();//Cannot call constructor
         $view = app(GetViewByClassAction::class)->execute(static::class);
-<<<<<<< HEAD
         if(view()->exists($view)){
             $this->view = $view;
         }
@@ -101,9 +79,6 @@ abstract class XotBaseWidget extends FilamentWidget
 
     public function save(): void
     {
-=======
-        static::$view = $view;
->>>>>>> origin/dev
 
     }
 }

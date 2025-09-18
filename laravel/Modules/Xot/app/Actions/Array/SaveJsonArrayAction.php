@@ -17,6 +17,7 @@ class SaveJsonArrayAction
         $content = \Safe\json_encode($data, JSON_PRETTY_PRINT);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (!$content) {
 =======
 =======
@@ -26,10 +27,11 @@ class SaveJsonArrayAction
             return false;
         }
 =======
+=======
+>>>>>>> d7d0a3d0 (.)
         //if ($content === false) {
         //    return false;
         //}
->>>>>>> origin/dev
         return (bool) \Safe\file_put_contents($filename, $content);
     }
 }

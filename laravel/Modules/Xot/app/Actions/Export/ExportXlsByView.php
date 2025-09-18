@@ -36,6 +36,7 @@ class ExportXlsByView
             $stringFields = array_map(function ($field) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 return $field;
 =======
                 return is_string($field) ? $field : (string) $field;
@@ -46,6 +47,9 @@ class ExportXlsByView
                 return strval($field);
 >>>>>>> origin/dev
 >>>>>>> 4ef45c4c (.)
+=======
+                return strval($field);
+>>>>>>> d7d0a3d0 (.)
             }, array_values($fields));
         }
 
