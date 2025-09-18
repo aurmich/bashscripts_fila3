@@ -2,12 +2,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9ad809a8 (first)
 =======
 >>>>>>> ab6a64ec (first)
 =======
 >>>>>>> d54c77bf (first)
+=======
+>>>>>>> 5070dd4b (first)
 #!/bin/sh
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php composer-setup.php
@@ -15,6 +18,7 @@ php -r "unlink('composer-setup.php');"
 php -r "unlink('composer.lock');"
 rm composer.lock
 rm package-lock.json
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -109,6 +113,8 @@ rm config/sanctum.php
 >>>>>>> ab6a64ec (first)
 =======
 >>>>>>> d54c77bf (first)
+=======
+>>>>>>> 5070dd4b (first)
 
 ##############  ####################
 php -d memory_limit=-1 composer.phar require -W illuminate/contracts
@@ -125,6 +131,7 @@ php -d memory_limit=-1 composer.phar require -W --dev phpstan/extension-installe
 php -d memory_limit=-1 composer.phar require -W --dev phpstan/phpstan-deprecation-rules
 php -d memory_limit=-1 composer.phar require -W --dev phpstan/phpstan-phpunit
 php -d memory_limit=-1 composer.phar require -W --dev spatie/laravel-ray
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -227,3 +234,5 @@ rm config/sanctum.php
 >>>>>>> ab6a64ec (first)
 =======
 >>>>>>> d54c77bf (first)
+=======
+>>>>>>> 5070dd4b (first)
