@@ -11,6 +11,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "laraxot/bashscripts_fila3",
     "description": "Script di utilità per la gestione dei repository Git, Toolkit di automazione Git per progetti Laravel",
     "type": "library",
@@ -18,10 +19,20 @@
     "authors": [
         {
             "name": "marco76tv",
+=======
+    "name": "laraxot/module_badge_fila3",
+    "description": "",
+    "license": "MIT",
+    "homepage": "https://github.com/laraxot/module_badge_fila3.git",
+    "authors": [
+        {
+            "name": "Marco Sottana",
+>>>>>>> 7e417e87 (first)
             "email": "marco.sottana@gmail.com"
         }
     ],
     "require": {
+<<<<<<< HEAD
     },
     "require-dev": {
     },
@@ -331,6 +342,9 @@
         "socialiteproviders/auth0": "*",
         "spatie/laravel-personal-data-export": "*"
 >>>>>>> 0d55b583 (first)
+=======
+
+>>>>>>> 7e417e87 (first)
     },
     "require-dev": {},
     "repositories": [
@@ -338,9 +352,12 @@
             "type": "path",
             "url": "../Xot"
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> d79d9e57 (first)
 =======
 >>>>>>> 0d55b583 (first)
+=======
+>>>>>>> 7e417e87 (first)
         },
         {
             "type": "path",
@@ -348,6 +365,7 @@
         },
         {
             "type": "path",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             "url": "../Xot"
@@ -548,11 +566,22 @@
             "Modules\\Lang\\": "app/",
             "Modules\\Lang\\Database\\Factories\\": "database/factories/",
             "Modules\\Lang\\Database\\Seeders\\": "database/seeders/"
+=======
+            "url": "../UI"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Modules\\Badge\\": "app/",
+            "Modules\\Badge\\Database\\Factories\\": "database/factories/",
+            "Modules\\Badge\\Database\\Seeders\\": "database/seeders/"
+>>>>>>> 7e417e87 (first)
         }
     },
     "scripts": {
         "post-autoload-dump": [],
         "post-update-cmd": [],
+<<<<<<< HEAD
 =======
             "Modules\\Setting\\": "app/",
             "Modules\\Setting\\Database\\Factories\\": "database/factories/",
@@ -581,10 +610,13 @@
 
     "scripts": {
 >>>>>>> 9cec72d6 (first)
+=======
+>>>>>>> 7e417e87 (first)
         "analyse": "vendor/bin/phpstan analyse",
         "test": "./vendor/bin/pest --no-coverage",
         "test-coverage": "vendor/bin/pest --coverage-html coverage",
         "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> bbec4378 (first)
 =======
@@ -599,6 +631,8 @@
 >>>>>>> 2df6fbc8 (first)
 =======
 >>>>>>> 8fc3049b (first)
+=======
+>>>>>>> 7e417e87 (first)
     },
     "config": {
         "sort-packages": true,
@@ -612,14 +646,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bbec4378 (first)
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> 7e417e87 (first)
             "phpstan/extension-installer": true,
             "pestphp/pest-plugin": true
         }
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     "minimum-stability": "dev",
@@ -695,10 +733,18 @@
                 "Modules\\Media\\Providers\\MediaServiceProvider",
                 "Modules\\Media\\Providers\\Filament\\AdminPanelProvider"
 >>>>>>> c986cc10 (first)
+=======
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Badge\\Providers\\BadgeServiceProvider",
+                "Modules\\Badge\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> 7e417e87 (first)
             ],
             "aliases": {}
         }
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
     "minimum-stability": "dev",
 <<<<<<< HEAD
@@ -774,3 +820,8 @@
     "prefer-stable": true
 }
 >>>>>>> 8fc3049b (first)
+=======
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+>>>>>>> 7e417e87 (first)

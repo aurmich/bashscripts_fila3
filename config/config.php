@@ -13,6 +13,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'name' => 'Rating',
     'icon' => 'heroicon-o-star', // icon on dashboard
     'navigation_sort' => 1,
@@ -133,4 +134,8 @@ return [
         'Modules\\Tenant\\Providers\\TenantServiceProvider',
     ],
 >>>>>>> 8fc3049b (first)
+=======
+    'name' => 'Badge',
+    'icon' => 'fas-id-badge',
+>>>>>>> 7e417e87 (first)
 ];

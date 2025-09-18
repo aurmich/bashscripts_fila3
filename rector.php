@@ -8,6 +8,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Rector\Config\RectorConfig;
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -244,6 +245,8 @@ return static function (RectorConfig $rectorConfig): void {
 =======
 >>>>>>> a8f30311 (first)
 =======
+=======
+>>>>>>> 7e417e87 (first)
 use Rector\CodeQuality\Rector\Class_\InlineConstructorDefaultToPropertyRector;
 use Rector\Config\RectorConfig;
 use Rector\PHPUnit\Set\PHPUnitLevelSetList;
@@ -293,6 +296,7 @@ return static function (RectorConfig $rectorConfig): void {
 
     $rectorConfig->importNames();
 };
+<<<<<<< HEAD
 >>>>>>> bbec4378 (first)
 =======
 >>>>>>> c088001a (first)
@@ -383,3 +387,5 @@ return static function (RectorConfig $rectorConfig): void {
     // );
 };
 >>>>>>> 8fc3049b (first)
+=======
+>>>>>>> 7e417e87 (first)

@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -129,3 +130,6 @@ Route::prefix('tenant')->group(function() {
 });
 */
 >>>>>>> 8fc3049b (first)
+=======
+declare(strict_types=1);
+>>>>>>> 7e417e87 (first)

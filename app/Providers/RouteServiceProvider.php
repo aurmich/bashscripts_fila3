@@ -10,6 +10,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 /**
@@ -58,10 +59,18 @@ declare(strict_types=1);
 namespace Modules\Tenant\Providers;
 >>>>>>> 8fc3049b (first)
 
+=======
+declare(strict_types=1);
+
+namespace Modules\Badge\Providers;
+
+// --- bases ---
+>>>>>>> 7e417e87 (first)
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -134,10 +143,17 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected string $moduleNamespace = 'Modules\Tenant\Http\Controllers';
 >>>>>>> 8fc3049b (first)
+=======
+    /**
+     * The module namespace to assume when generating URLs to actions.
+     */
+    protected string $moduleNamespace = 'Modules\Badge\Http\Controllers';
+>>>>>>> 7e417e87 (first)
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -372,4 +388,8 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
     public string $name = 'Tenant';
 >>>>>>> 8fc3049b (first)
+=======
+
+    public string $name = 'Badge';
+>>>>>>> 7e417e87 (first)
 }

@@ -8,6 +8,7 @@ providers:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Modules\Rating\Providers\RatingServiceProvider
 =======
   - Modules\Xot\Providers\XotServiceProvider
@@ -44,3 +45,6 @@ providers:
   - Nwidart\Modules\LaravelModulesServiceProvider
 
 >>>>>>> 8fc3049b (first)
+=======
+  - Modules\User\Providers\UserServiceProvider
+>>>>>>> 7e417e87 (first)

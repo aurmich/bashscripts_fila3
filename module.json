@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
 =======
@@ -163,3 +164,18 @@
 =======
 }
 >>>>>>> 8fc3049b (first)
+=======
+    "name": "Badge",
+    "alias": "badge",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Badge\\Providers\\BadgeServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
+>>>>>>> 7e417e87 (first)

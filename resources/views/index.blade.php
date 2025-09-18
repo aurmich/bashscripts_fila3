@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('rating::layouts.master')
 =======
 @extends('xot::layouts.app')
@@ -39,10 +40,14 @@
 =======
 @extends('tenant::layouts.master')
 >>>>>>> 8fc3049b (first)
+=======
+@extends('badge::layouts.master')
+>>>>>>> 7e417e87 (first)
 
 @section('content')
     <h1>Hello World</h1>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <p>
@@ -107,3 +112,9 @@
     </p>
 @endsection
 >>>>>>> 8fc3049b (first)
+=======
+    <p>
+        This view is loaded from module: {!! config('badge.name') !!}
+    </p>
+@stop
+>>>>>>> 7e417e87 (first)

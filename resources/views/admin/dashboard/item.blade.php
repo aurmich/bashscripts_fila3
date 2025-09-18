@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!-- dashboard item -->
 =======
 notify
@@ -11,3 +12,6 @@ notify
 =======
 <!-- dashboard item -->
 >>>>>>> 8fc3049b (first)
+=======
+<!-- dashboard item -->
+>>>>>>> 7e417e87 (first)

@@ -9,6 +9,7 @@ includes:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 
@@ -70,6 +71,8 @@ parameters:
 =======
 >>>>>>> d79d9e57 (first)
 =======
+=======
+>>>>>>> 7e417e87 (first)
 
 parameters:
 
@@ -77,15 +80,19 @@ parameters:
 
     paths:
         - .
+<<<<<<< HEAD
 >>>>>>> 9cec72d6 (first)
 =======
 >>>>>>> c986cc10 (first)
 =======
 >>>>>>> 8fc3049b (first)
+=======
+>>>>>>> 7e417e87 (first)
 
     ignoreErrors:
     #    - '#Unsafe usage of new static#'
         - '#PHPDoc tag @mixin contains unknown class #'
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -110,11 +117,15 @@ parameters:
         - '#Static call to instance method Nwidart#'
 
 >>>>>>> 8fc3049b (first)
+=======
+
+>>>>>>> 7e417e87 (first)
     excludePaths:
         - ./build/*
         - ./vendor/*
         - ./*/vendor/*
         - ./docs/*
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -144,17 +155,22 @@ parameters:
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 7e417e87 (first)
         - ./Tests/*
         - ./_ide_helper.php
 
     bootstrapFiles:
     #    - ./Services/vendor/autoload.php
     #    - ./phpstan_constants.php
+<<<<<<< HEAD
 >>>>>>> 9cec72d6 (first)
 =======
 >>>>>>> c986cc10 (first)
 =======
 >>>>>>> 8fc3049b (first)
+=======
+>>>>>>> 7e417e87 (first)
 
     scanFiles:
     #    - ./Helpers/Helper.php
@@ -162,6 +178,7 @@ parameters:
 
     editorUrl: 'vscode://file/%%file%%:%%line%%'
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -175,6 +192,9 @@ parameters:
 =======
     tmpDir: build/phpstan
 >>>>>>> 8fc3049b (first)
+=======
+    tmpDir: ./build/phpstan
+>>>>>>> 7e417e87 (first)
     checkUnusedViews: false
     checkMissingIterableValueType: false
     checkGenericClassInNonGenericObjectType: false
@@ -182,6 +202,7 @@ parameters:
     reportUnmatchedIgnoredErrors: false
     checkOctaneCompatibility: false
     checkModelProperties: false
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -224,3 +245,6 @@ parameters:
 >>>>>>> c986cc10 (first)
 =======
 >>>>>>> 8fc3049b (first)
+=======
+
+>>>>>>> 7e417e87 (first)
