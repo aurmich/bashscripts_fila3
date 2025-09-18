@@ -32,6 +32,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1855,6 +1856,10 @@ This toolkit addresses these challenges by providing automated tools that simpli
 # 🚀 Toolkit di Automazione Git per Laraxot PTVX
 
 [![PHPStan](https://img.shields.io/badge/PHPStan-Level%209-brightgreen.svg?style=for-the-badge&logo=php&logoColor=white)](../docs/phpstan/ANALISI_MODULI_PHPSTAN.md)
+=======
+# 🚀 BashScripts Power Tools
+
+>>>>>>> 0c492c4f (.)
 [![Bash Version](https://img.shields.io/badge/Bash-5.0%2B-brightgreen.svg)](https://www.gnu.org/software/bash/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/aurmich/bashscripts_fila3)
@@ -1886,7 +1891,10 @@ This toolkit addresses these challenges by providing automated tools that simpli
 ## 💻 Installazione
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0c492c4f (.)
 # Clona il repository
 git clone git@github.com:aurmich/bashscripts_fila3.git
 
@@ -1936,7 +1944,10 @@ Esempio:
 
 ### Sincronizzazione Modulo
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0c492c4f (.)
 # Sincronizza un modulo specifico
 ./git_sync_subtree.sh modules/users git@github.com:org/users.git
 
@@ -1994,7 +2005,11 @@ Questo progetto è sotto licenza MIT - vedi il file [LICENSE](LICENSE) per i det
 
 ## 👥 Autori
 
+<<<<<<< HEAD
 - **Marco Sottana** - *Lavoro Iniziale* - [aurmich](https://github.com/aurmich)
+=======
+- **Michele Aurilio** - *Lavoro Iniziale* - [aurmich](https://github.com/aurmich)
+>>>>>>> 0c492c4f (.)
 
 ## 🙏 Ringraziamenti
 
@@ -2004,6 +2019,7 @@ Questo progetto è sotto licenza MIT - vedi il file [LICENSE](LICENSE) per i det
 
 ---
 
+<<<<<<< HEAD
 =======
 > **⚠️ ATTENZIONE: Questo toolkit è stato progettato per sviluppatori esperti che lavorano con repository Git complessi e strutture monorepo.**
 
@@ -3336,3 +3352,10 @@ Una volta che i dati verranno caricati, il Personale potrà quindi stampare/espo
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> f3c337b1 (.)
+=======
+<div align="center">
+  <sub>Built with ❤️ by the OrisBroker Team</sub>
+</div>
+
+> **Nota**: Questo README è in continuo aggiornamento. Se trovi errori o hai suggerimenti, apri pure una issue! 
+>>>>>>> 0c492c4f (.)
