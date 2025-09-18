@@ -217,6 +217,14 @@ return array (
     array (
       'label' => 'created_at',
     ),
+    'view' => 
+    array (
+      'label' => 'view',
+    ),
+    'create' => 
+    array (
+      'label' => 'create',
+    ),
   ),
   'actions' => 
   array (

@@ -7,5 +7,13 @@ return array (
     array (
       'label' => 'stabi_repar_anno',
     ),
+    'ha_diritto' => 
+    array (
+      'label' => 'ha_diritto',
+    ),
+    'repar' => 
+    array (
+      'label' => 'repar',
+    ),
   ),
 );

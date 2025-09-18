@@ -4,97 +4,27 @@ declare(strict_types=1);
 
 namespace Modules\Performance\Filament\Resources\IndividualeDipResource\Pages;
 
-use Filament\Actions;
 use Filament\Tables;
-use Filament\Tables\Actions\DeleteBulkAction;
+use Filament\Actions;
+use function Safe\date;
+use Illuminate\Support\Arr;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
-use Illuminate\Support\Arr;
-use Modules\Performance\Filament\Resources\IndividualeDipResource;
+use Filament\Tables\Actions\DeleteBulkAction;
 use Modules\Performance\Models\IndividualeDip;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
-use function Safe\date;
+use Modules\Performance\Filament\Resources\IndividualeDipResource;
+use Modules\Performance\Filament\Resources\IndividualeResource\Pages\ListIndividuales;
 
 /**
  * ---.
  */
-class ListIndividualeDips extends XotBaseListRecords
+class ListIndividualeDips extends ListIndividuales
 {
     protected static string $resource = IndividualeDipResource::class;
 
-    /**
-     * @return array<string, TextColumn>
-     */
-    public function getListTableColumns(): array
-    {
-        return [
-            'id' => Tables\Columns\TextColumn::make('id')
-                ->sortable(),
-            'matr' => Tables\Columns\TextColumn::make('matr')
-                ->sortable()
-                ->searchable(),
-            'cognome' => Tables\Columns\TextColumn::make('cognome')
-                ->sortable()
-                ->searchable(),
-            'nome' => Tables\Columns\TextColumn::make('nome')
-                ->sortable()
-                ->searchable(),
-            'email' => Tables\Columns\TextColumn::make('email')
-                ->sortable()
-                ->searchable(),
-            'stabi' => Tables\Columns\TextColumn::make('stabi')
-                ->sortable()
-                ->searchable(),
-            'repar' => Tables\Columns\TextColumn::make('repar')
-                ->sortable()
-                ->searchable(),
-            'anno' => Tables\Columns\TextColumn::make('anno')
-                ->sortable()
-                ->searchable(),
-            'created_at' => Tables\Columns\TextColumn::make('created_at')
-                ->dateTime()
-                ->sortable()
-                ->toggleable(isToggledHiddenByDefault: true),
-            'updated_at' => Tables\Columns\TextColumn::make('updated_at')
-                ->dateTime()
-                ->sortable()
-                ->toggleable(isToggledHiddenByDefault: true),
-        ];
-    }
+  
 
-    /**
-     * @return array<string, Actions\CreateAction>
-     */
-    protected function getHeaderActions(): array
-    {
-        return [
-            Actions\CreateAction::make(),
-        ];
-    }
-
-    /**
-     * @return array<string, SelectFilter>
-     */
-    public function getTableFilters(): array
-    {
-        return [
-            'anno' => SelectFilter::make('anno')
-                ->options(Arr::pluck(IndividualeDip::select('anno')->distinct()->get(), 'anno', 'anno')),
-            'stabi' => SelectFilter::make('stabi')
-                ->options(Arr::pluck(IndividualeDip::select('stabi')->distinct()->get(), 'stabi', 'stabi')),
-            'repar' => SelectFilter::make('repar')
-                ->options(Arr::pluck(IndividualeDip::select('repar')->distinct()->get(), 'repar', 'repar')),
-        ];
-    }
-
-    /**
-     * @return array<string, Actions\DeleteBulkAction>
-     */
-    public function getTableBulkActions(): array
-    {
-        return [
-            Actions\DeleteBulkAction::make(),
-        ];
-    }
+    
 }

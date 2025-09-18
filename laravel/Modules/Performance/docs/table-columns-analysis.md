@@ -566,3 +566,174 @@ public function getTableBulkActions(): array
     ];
 }
 ```
+
+## Struttura dei Namespace per le Colonne Personalizzate
+
+### Namespace Corretto
+- Le colonne personalizzate devono essere definite nel namespace `Modules\Ptv\Filament\Columns`
+- Il namespace NON deve includere `app` anche se il file è fisicamente nella cartella `app`
+- Questo segue la convenzione standard di Laravel per i namespace dei moduli
+
+### Esempio di Implementazione
+```php
+// ❌ Namespace errato
+namespace Modules\Ptv\app\Filament\Columns;
+
+// ✅ Namespace corretto
+namespace Modules\Ptv\Filament\Columns;
+
+class CustomColumn extends GroupColumn
+{
+    // ... implementation
+}
+```
+
+### Importazione
+```php
+// ❌ Import errato
+use Modules\Ptv\app\Filament\Columns\CustomColumn;
+
+// ✅ Import corretto
+use Modules\Ptv\Filament\Columns\CustomColumn;
+```
+
+## Best Practices per le Colonne Personalizzate
+
+### Principio DRY
+- Evitare la duplicazione del codice nelle colonne personalizzate
+- Definire lo schema delle colonne in un unico punto
+- Utilizzare il metodo `getSchema()` come fonte di verità
+- Il metodo `make()` deve utilizzare `getSchema()`
+
+### Esempio di Implementazione
+```php
+// ❌ Non DRY - schema duplicato
+class CustomColumn extends GroupColumn
+{
+    public static function make(?string $name = null): static
+    {
+        return parent::make($name)
+            ->schema([
+                TextColumn::make('field1'),
+                TextColumn::make('field2'),
+            ]);
+    }
+
+    protected function getSchema(): array
+    {
+        return [
+            TextColumn::make('field1'),
+            TextColumn::make('field2'),
+        ];
+    }
+}
+
+// ✅ DRY - schema definito una sola volta
+class CustomColumn extends GroupColumn
+{
+    public static function make(?string $name = null): static
+    {
+        return parent::make($name)
+            ->schema(static::getSchema());
+    }
+
+    protected static function getSchema(): array
+    {
+        return [
+            TextColumn::make('field1'),
+            TextColumn::make('field2'),
+        ];
+    }
+}
+```
+
+## Best Practices per le Chiavi degli Array nelle Colonne Personalizzate
+
+### Chiavi Esplicite
+- Utilizzare sempre chiavi stringhe esplicite nell'array restituito da `getSchema()`
+- Le chiavi devono corrispondere ai nomi dei campi del modello
+- Questo migliora la leggibilità e la manutenibilità del codice
+- Permette di riutilizzare le chiavi per il searchable
+
+### Esempio di Implementazione
+```php
+// ❌ Chiavi numeriche implicite
+protected static function getSchema(): array
+{
+    return [
+        TextColumn::make('field1'),
+        TextColumn::make('field2'),
+    ];
+}
+
+// ✅ Chiavi stringhe esplicite
+protected static function getSchema(): array
+{
+    return [
+        'field1' => TextColumn::make('field1'),
+        'field2' => TextColumn::make('field2'),
+    ];
+}
+
+// ✅ Utilizzo delle chiavi per searchable
+public static function make(?string $name = null): static
+{
+    return parent::make($name)
+        ->schema(static::getSchema())
+        ->searchable(array_keys(static::getSchema()));
+}
+```
+
+### Vantaggi
+1. **Leggibilità**: Le chiavi esplicite rendono chiaro quali campi sono presenti
+2. **Manutenibilità**: Facilita l'aggiunta/rimozione di campi
+3. **Riutilizzo**: Le chiavi possono essere usate per searchable e altre funzionalità
+4. **Type Safety**: Migliore supporto per l'analisi statica
+5. **Documentazione**: Le chiavi servono come documentazione implicita
+
+## Best Practices per la Ricerca nelle Colonne Personalizzate
+
+### Campi Ricercabili
+- Limitare la ricerca solo ai campi "fillable" del modello
+- Utilizzare `array_intersect()` per filtrare le chiavi dello schema
+- Questo migliora le performance e la sicurezza
+
+### Esempio di Implementazione
+```php
+// ❌ Ricerca su tutti i campi
+public static function make(?string $name = null): static
+{
+    return parent::make($name)
+        ->schema(static::getSchema())
+        ->searchable(array_keys(static::getSchema()));
+}
+
+// ✅ Ricerca solo sui campi fillable
+public static function make(?string $name = null): static
+{
+    $fillable = static::getFillable();
+    $searchable = array_intersect(
+        array_keys(static::getSchema()),
+        $fillable
+    );
+
+    return parent::make($name)
+        ->schema(static::getSchema())
+        ->searchable($searchable);
+}
+
+protected static function getFillable(): array
+{
+    return [
+        'field1',
+        'field2',
+        // ... altri campi fillable
+    ];
+}
+```
+
+### Vantaggi
+1. **Performance**: Ricerca solo sui campi necessari
+2. **Sicurezza**: Evita la ricerca su campi sensibili
+3. **Manutenibilità**: Chiaro quali campi sono ricercabili
+4. **Consistenza**: Allineato con le regole del modello

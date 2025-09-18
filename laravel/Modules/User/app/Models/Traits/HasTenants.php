@@ -46,10 +46,12 @@ trait HasTenants
     {
         /** @var class-string<Tenant> $tenantClass */
         $tenantClass = XotData::make()->getTenantClass();
-        return $this->belongsToMany($tenantClass)
+        return $this->belongsToManyX($tenantClass)
             ->withTimestamps()
             ->withPivot('role');
     }
+
+    
 
     public function ownedTenants(): HasMany
     {

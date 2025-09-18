@@ -22,8 +22,10 @@ class StabiReparAnnoFilter extends SelectFilter
         $profile = XotData::make()->getProfileModel();
         $team_class = XotData::make()->getTeamClass();
         $team_table = app($team_class)->getTable();
+        $user=Auth::user();
+        
 
-        $teams_opts = $profile->teams()->pluck($team_table.'.name', $team_table.'.id');
+        $teams_opts = $user->teams()->pluck($team_table.'.name', $team_table.'.id');
         // $this->label('Filter By Category');
 
         // $this->placeholder('Select a category to filter');

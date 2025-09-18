@@ -80,7 +80,7 @@ class Activity extends BaseModel
         $pivot_fields = $pivot->getFillable();
 
         return $this
-            ->belongsToMany(Employee::class)
+            ->belongsToManyX(Employee::class)
             ->using($pivot_class)
             ->withPivot($pivot_fields)
             ->withTimestamps();

@@ -1,4 +1,6 @@
-<?php return array (
+<?php
+
+return array (
   'navigation' => 
   array (
     'name' => 'Attività di Default',
@@ -57,5 +59,9 @@
     array (
       'label' => 'reorderRecords',
     ),
+    'resetFilters' => 
+    array (
+      'label' => 'resetFilters',
+    ),
   ),
-);
+);

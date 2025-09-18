@@ -4,15 +4,15 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-        'name' => 'Performance PO',
-        'plural' => 'Performance PO',
+        'name' => 'Schede PO',
+        'plural' => 'Schede PO',
         'group' => [
-            'name' => 'Valutazione & KPI',
-            'description' => 'Gestione delle performance delle Posizioni Organizzative',
+            'name' => 'Schede',
+            'description' => 'Gestione delle schede di valutazione delle Posizioni Organizzative',
         ],
-        'label' => 'Performance PO',
-        'sort' => 60,
-        'icon' => 'po-performance',
+        'label' => 'Schede PO',
+        'sort' => 32,
+        'icon' => 'po-document',
     ],
     'fields' => [
         'posizione' => [

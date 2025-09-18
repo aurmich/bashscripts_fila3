@@ -4,15 +4,15 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-        'name' => 'Performance Regionale',
-        'plural' => 'Performance Regionali',
+        'name' => 'Schede Regionali',
+        'plural' => 'Schede Regionali',
         'group' => [
-            'name' => 'Valutazione & KPI',
-            'description' => 'Gestione delle performance regionali',
+            'name' => 'Schede',
+            'description' => 'Gestione delle schede di valutazione regionali',
         ],
-        'label' => 'Performance Regionale',
-        'sort' => 57,
-        'icon' => 'performance-regional-outline',
+        'label' => 'Schede Regionali',
+        'sort' => 33,
+        'icon' => 'region-document',
     ],
     'fields' => [
         'regione' => [

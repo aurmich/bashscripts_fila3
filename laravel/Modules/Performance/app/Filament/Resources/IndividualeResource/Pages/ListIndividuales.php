@@ -4,28 +4,32 @@ declare(strict_types=1);
 
 namespace Modules\Performance\Filament\Resources\IndividualeResource\Pages;
 
-use Filament\Actions;
-use Filament\Notifications\Notification;
 use Filament\Tables;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Columns\ToggleColumn;
-use Filament\Tables\Enums\ActionsPosition;
-use Filament\Tables\Enums\FiltersLayout;
-use Filament\Tables\Filters\SelectFilter;
+use Filament\Actions;
+use function Safe\date;
 use Filament\Tables\Table;
 use Illuminate\Support\Arr;
-use Modules\Performance\Actions\ShowMailSendedAt;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Notifications\Notification;
+use Filament\Tables\Enums\FiltersLayout;
+use Filament\Tables\Columns\ToggleColumn;
+use Filament\Tables\Filters\SelectFilter;
 use Modules\Performance\Enums\WorkerType;
-use Modules\Performance\Filament\Actions\Bulk\SendMailBulkAction;
-use Modules\Performance\Filament\Resources\IndividualeResource;
+use Filament\Tables\Enums\ActionsPosition;
 use Modules\Performance\Models\Individuale;
 use Modules\Performance\Models\Organizzativa;
-use Modules\Ptv\Filament\Resources\ReportResource\Widgets\FirmaStabiReparWidget;
+use Modules\Performance\Actions\ShowMailSendedAt;
+use Modules\Ptv\Filament\Columns\LavoratoreColumn;
 use Modules\UI\Filament\Tables\Columns\GroupColumn;
 use Modules\Xot\Filament\Actions\Header\ExportXlsAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+use Modules\Performance\Filament\Resources\IndividualeResource;
 
-use function Safe\date;
+use Modules\Performance\Filament\Actions\Bulk\SendMailBulkAction;
+use Modules\Ptv\Filament\Resources\ReportResource\Widgets\FirmaStabiReparWidget;
+use Modules\Ptv\Filament\Columns\QualificaColumn;
+use Modules\Ptv\Filament\Columns\RepartoColumn;
+use Modules\Ptv\Filament\Columns\PeriodoColumn;
 
 /**
  * ---.
@@ -50,7 +54,7 @@ class ListIndividuales extends XotBaseListRecords
     /**
      * @return array<string, TextColumn|ToggleColumn>
      */
-    public function getListTableColumns(): array
+    public function getListTableColumnsOLD(): array
     {
         return [
             'id' => Tables\Columns\TextColumn::make('id')
@@ -134,48 +138,21 @@ class ListIndividuales extends XotBaseListRecords
     /**
      * @return array<string, TextColumn>
      */
-    public function getTableColumns(): array
+    public function getListTableColumns(): array
     {
         return [
-            TextColumn::make('matr')->searchable()->toggleable(isToggledHiddenByDefault: true),
-            TextColumn::make('cognome')->searchable()->toggleable(isToggledHiddenByDefault: true),
-            TextColumn::make('nome')->searchable()->toggleable(isToggledHiddenByDefault: true),
-            TextColumn::make('email')->searchable()->toggleable(isToggledHiddenByDefault: true),
-
             ToggleColumn::make('ha_diritto')->searchable(),
             TextColumn::make('motivo')->searchable(),
             TextColumn::make('mail_sended_at')
                 ->html()
                 ->default(fn (Individuale $record) => app(ShowMailSendedAt::class)->execute($record)),
-            GroupColumn::make('lavoratore')->schema([
-                TextColumn::make('matr')->searchable(),
-                TextColumn::make('cognome')->searchable(),
-                TextColumn::make('nome'),
-                TextColumn::make('email'),
-                TextColumn::make('totale_punteggio'),
+            LavoratoreColumn::make('lavoratore')->appendColumns([
+                'totale_punteggio' => TextColumn::make('totale_punteggio'),
+                'propro' => TextColumn::make('propro'),
             ]),
-            GroupColumn::make('qua')->schema([
-                TextColumn::make('propro'),
-                TextColumn::make('posfun'),
-                TextColumn::make('categoria_eco'),
-                TextColumn::make('categoria_ecoval'),
-                TextColumn::make('posfunval'),
-                TextColumn::make('posiz'),
-                TextColumn::make('posiz_txt'),
-                TextColumn::make('disci1'),
-                TextColumn::make('disci1_txt'),
-            ]),
-            GroupColumn::make('rep')->schema([
-                TextColumn::make('stabi'),
-                TextColumn::make('stabi_txt'),
-                TextColumn::make('repar'),
-                TextColumn::make('repar_txt'),
-            ]),
-            GroupColumn::make('periodo')->schema([
-                TextColumn::make('dal'),
-                TextColumn::make('al'),
-                TextColumn::make('anno'),
-            ]),
+            QualificaColumn::make('qua'),
+            RepartoColumn::make('rep'),
+            PeriodoColumn::make('periodo'),
         ];
     }
 
@@ -185,6 +162,7 @@ class ListIndividuales extends XotBaseListRecords
     public function getTableFilters(): array
     {
         return [
+            /*
             'anno' => SelectFilter::make('anno')
                 ->options(Arr::pluck(Individuale::select('anno')->distinct()->get(), 'anno', 'anno')),
             'stabi' => SelectFilter::make('stabi')
@@ -196,6 +174,7 @@ class ListIndividuales extends XotBaseListRecords
                     '1' => 'Sì',
                     '0' => 'No',
                 ]),
+                */
         ];
     }
 

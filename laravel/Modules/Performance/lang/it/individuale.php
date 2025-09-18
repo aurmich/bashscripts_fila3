@@ -5,11 +5,7 @@ return array (
   array (
     'name' => 'Performance Individuale',
     'plural' => 'Performance Individuali',
-    'group' => 
-    array (
-      'name' => 'Valutazione & KPI',
-      'description' => 'Gestione delle performance individuali',
-    ),
+    'group' => 'Admin',
     'label' => 'Performance Individuale',
     'sort' => 37,
     'icon' => 'performance-individuale-outline',

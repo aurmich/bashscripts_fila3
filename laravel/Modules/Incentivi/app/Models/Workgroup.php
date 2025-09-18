@@ -42,13 +42,13 @@ class Workgroup extends BaseModel
 
     public function employees(): BelongsToMany
     {
-        // return $this->belongsToMany(Employee::class, 'employee_workgroup');
+        // return $this->belongsToManyX(Employee::class, 'employee_workgroup');
         return $this->belongsToManyX(Employee::class);
     }
 
     public function projects(): BelongsToMany
     {
-        // return $this->belongsToMany(Project::class);
+        // return $this->belongsToManyX(Project::class);
         return $this->belongsToManyX(Project::class);
     }
 }

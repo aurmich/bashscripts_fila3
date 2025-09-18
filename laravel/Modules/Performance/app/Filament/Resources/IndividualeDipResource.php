@@ -17,14 +17,9 @@ class IndividualeDipResource extends IndividualeResource
 {
     protected static ?string $model = IndividualeDip::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    
 
-    public static function getRelations(): array
-    {
-        return [
-        ];
-    }
-
+    
     public static function getPages(): array
     {
         return [

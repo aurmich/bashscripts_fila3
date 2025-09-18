@@ -4,12 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\Ptv\Filament\Filters;
 
+use Modules\Xot\Datas\XotData;
+use Modules\Sigma\Models\Repart;
+use Illuminate\Support\Facades\Auth;
 use Filament\Forms\Components\Select;
 use Filament\Tables\Filters\SelectFilter;
-use Filament\Tables\Filters\TernaryFilter;
 use Illuminate\Database\Eloquent\Builder;
-use Modules\Sigma\Models\Repart;
-use Modules\Xot\Datas\XotData;
+use Filament\Tables\Filters\TernaryFilter;
 
 class StabiReparAnnoHaDirittoFilter extends SelectFilter
 {
@@ -25,8 +26,10 @@ class StabiReparAnnoHaDirittoFilter extends SelectFilter
         $profile = XotData::make()->getProfileModel();
         $team_class = XotData::make()->getTeamClass();
         $team_table = app($team_class)->getTable();
-
-        $teams_opts = $profile->teams()->pluck($team_table.'.name', $team_table.'.id');
+        $user=Auth::user();
+       
+        
+        $teams_opts = $user->teams()->pluck($team_table.'.name', $team_table.'.id');
         // $this->label('Filter By Category');
 
         // $this->placeholder('Select a category to filter');
