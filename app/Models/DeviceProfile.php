@@ -10,11 +10,19 @@ use Modules\Xot\Contracts\ProfileContract;
 /**
  * Class DeviceProfile.
  *
- * @property ProfileContract|null $creator
- * @property Device|null          $device
- * @property ProfileContract|null $profile
- * @property ProfileContract|null $updater
- * @property User|null            $user
+ * @property int $id
+ * @property int $device_id
+ * @property int $user_id
+ * @property int $profile_id
+ * @property int|null $creator_id
+ * @property int|null $updater_id
+ * @property \Carbon\Carbon|null $created_at
+ * @property \Carbon\Carbon|null $updated_at
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
+ * @property-read \Modules\User\Models\Device|null $device
+ * @property-read \Modules\User\Models\Profile|null $profile
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $user
  *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|DeviceProfile newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|DeviceProfile newQuery()
@@ -42,34 +50,40 @@ class DeviceProfile extends BaseModel
     }
 
     /**
-     * @return BelongsTo<User, DeviceProfile>
-     */
-    public function user(): BelongsTo
-    {
-        return $this->belongsTo(User::class);
-    }
-
-    /**
-     * @return BelongsTo<ProfileContract, DeviceProfile>
+     * Get the profile that owns the device profile.
+     * 
+     * @return BelongsTo<Profile, DeviceProfile>
      */
     public function profile(): BelongsTo
     {
-        return $this->belongsTo(ProfileContract::class);
+        return $this->belongsTo(Profile::class);
     }
 
     /**
-     * @return BelongsTo<ProfileContract, DeviceProfile>
+     * Get the user that owns the device profile.
+     * 
+     * @return BelongsTo<Profile, DeviceProfile>
+     */
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(Profile::class, 'user_id');
+    }
+
+    /**
+     * Get the creator of the device profile.
+     * 
+     * @return BelongsTo<Profile, DeviceProfile>
      */
     public function creator(): BelongsTo
     {
-        return $this->belongsTo(ProfileContract::class, 'creator_id');
+        return $this->belongsTo(Profile::class, 'creator_id');
     }
 
     /**
-     * @return BelongsTo<ProfileContract, DeviceProfile>
+     * @return BelongsTo<Profile, DeviceProfile>
      */
     public function updater(): BelongsTo
     {
-        return $this->belongsTo(ProfileContract::class, 'updater_id');
+        return $this->belongsTo(Profile::class, 'updater_id');
     }
 }

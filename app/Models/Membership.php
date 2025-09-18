@@ -21,7 +21,6 @@ use Illuminate\Support\Carbon;
  * @property Carbon|null $updated_at
  * @property string|null $created_by
  * @property string|null $updated_by
- * @property string|null $customer_id
  * @method static \Illuminate\Database\Eloquent\Builder|Membership whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Membership whereCreatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Membership whereCustomerId($value)
