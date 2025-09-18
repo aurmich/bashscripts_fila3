@@ -2,11 +2,7 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 namespace Modules\Rating\Enums;
-=======
-namespace Modules\Rating\App\Enums;
->>>>>>> origin/dev
 
 enum SupportedLocale: string
 {
@@ -34,6 +30,7 @@ enum SupportedLocale: string
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         return array_reduce(
 =======
         /** @var array<string, string> $result */
@@ -50,10 +47,15 @@ enum SupportedLocale: string
         return array_reduce(
 >>>>>>> origin/dev
 >>>>>>> 2bd35b32 (.)
+=======
+        /** @var array<string, string> $result */
+        $result = array_reduce(
+>>>>>>> 6e451a95 (.)
             self::cases(),
             fn (array $carry, self $locale) => [...$carry, $locale->value => $locale->getLabel()],
             []
         );
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -64,6 +66,8 @@ enum SupportedLocale: string
 >>>>>>> a563de5c (.)
 =======
 >>>>>>> 2bd35b32 (.)
+=======
+>>>>>>> 6e451a95 (.)
         
         return $result;
     }
@@ -79,8 +83,6 @@ enum SupportedLocale: string
             'en' => self::EN,
             default => self::IT,
         };
-=======
->>>>>>> origin/dev
     }
 <<<<<<< HEAD
 

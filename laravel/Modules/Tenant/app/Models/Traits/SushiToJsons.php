@@ -74,6 +74,7 @@ trait SushiToJsons
                 if (! is_iterable($model->schema)) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     throw new \Exception('Schema not found');
                 }
                 foreach ($model->schema ?? [] as $name => $type) {
@@ -92,6 +93,11 @@ trait SushiToJsons
                 foreach ($model->schema ?? [] as $name => $type) {
 >>>>>>> origin/dev
 >>>>>>> 2cdc29e4 (.)
+=======
+                    throw new \Exception('Schema not iterable');
+                }
+                foreach ($model->schema as $name => $type) {
+>>>>>>> 6e451a95 (.)
                     $value = $data[$name] ?? null;
                     $item[$name] = $value;
                 }

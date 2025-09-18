@@ -26,6 +26,7 @@ trait SushiToCsv
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         $csv_path = $this->getCsvPath();
         $csv=Reader::createFromPath($csv_path, 'r');
         //$csv->setHeaderOffset(0);
@@ -38,12 +39,15 @@ trait SushiToCsv
 =======
 =======
 >>>>>>> 2cdc29e4 (.)
+=======
+>>>>>>> 6e451a95 (.)
         $csv = Reader::createFromPath($this->getCsvPath(), 'r');
         // $csv->setDelimiter(';');
         $csv->setHeaderOffset(0);
         // returns all the records as
         $records = $csv->getRecords(); // an Iterator object containing arrays
         // $records = $csv->getRecordsAsObject(MyDTO::class); // an Iterator object containing MyDTO objects
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> a563de5c (.)
 =======
@@ -52,6 +56,8 @@ trait SushiToCsv
         $records = $csv->getRecords();
 >>>>>>> origin/dev
 >>>>>>> 2cdc29e4 (.)
+=======
+>>>>>>> 6e451a95 (.)
         $rows = iterator_to_array($records);
         $rows = array_values($rows);
 
@@ -121,6 +127,7 @@ trait SushiToCsv
                 $dataArray = array_values($rows);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 // $header=$model->getCsvHeader();
 >>>>>>> a563de5c (.)
@@ -129,6 +136,9 @@ trait SushiToCsv
 =======
 >>>>>>> origin/dev
 >>>>>>> 2cdc29e4 (.)
+=======
+                // $header=$model->getCsvHeader();
+>>>>>>> 6e451a95 (.)
                 $header = array_keys($new);
                 $writer = Writer::createFromPath($model->getCsvPath(), 'w+');
                 $writer->insertOne($header);
