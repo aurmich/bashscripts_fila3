@@ -12,6 +12,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('rating::layouts.master')
 =======
 @extends('xot::layouts.app')
@@ -55,10 +56,14 @@
 =======
 @extends('europa::layouts.master')
 >>>>>>> c8cd1ec3 (first)
+=======
+@extends('inail::layouts.master')
+>>>>>>> 51c7727d (first)
 
 @section('content')
     <h1>Hello World</h1>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -151,3 +156,9 @@
     </p>
 @stop
 >>>>>>> c8cd1ec3 (first)
+=======
+    <p>
+        This view is loaded from module: {!! config('inail.name') !!}
+    </p>
+@stop
+>>>>>>> 51c7727d (first)

@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -80,6 +81,11 @@ declare(strict_types=1);
 
 namespace Modules\Europa\Providers;
 >>>>>>> c8cd1ec3 (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Inail\Providers;
+>>>>>>> 51c7727d (first)
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as BaseEventServiceProvider;
 
@@ -91,6 +97,7 @@ class EventServiceProvider extends BaseEventServiceProvider
      * @var array<string, array<int, string>>
      */
     protected $listen = [];
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -123,6 +130,9 @@ class EventServiceProvider extends BaseEventServiceProvider
 =======
 
 >>>>>>> c8cd1ec3 (first)
+=======
+
+>>>>>>> 51c7727d (first)
     /**
      * Indicates if events should be discovered.
      *
@@ -133,6 +143,7 @@ class EventServiceProvider extends BaseEventServiceProvider
     /**
      * Configure the proper event listeners for email verification.
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -223,4 +234,7 @@ class EventServiceProvider extends ServiceProvider
 =======
     protected function configureEmailVerification(): void {}
 >>>>>>> c8cd1ec3 (first)
+=======
+    protected function configureEmailVerification(): void {}
+>>>>>>> 51c7727d (first)
 }

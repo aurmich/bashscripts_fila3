@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @section('page_heading','Bagde')
 =======
 @section('page_heading','cert fisc')
@@ -12,10 +13,14 @@
 =======
 @section('page_heading','Europa')
 >>>>>>> c8cd1ec3 (first)
+=======
+@section('page_heading','Inail')
+>>>>>>> 51c7727d (first)
 @section('content')
 <x-filament::badge> flash-message </x-filament::badge>
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -29,5 +34,8 @@
 =======
 <h1>Benvenuto nel programma EUROPA</h1>
 >>>>>>> c8cd1ec3 (first)
+=======
+<h1>Benvenuto nel programma Inail</h1>
+>>>>>>> 51c7727d (first)
 
 @endsection

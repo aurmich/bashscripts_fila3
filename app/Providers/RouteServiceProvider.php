@@ -14,6 +14,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 /**
@@ -90,10 +91,18 @@ namespace Modules\Europa\Providers;
 
 // --- bases ---
 >>>>>>> c8cd1ec3 (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Inail\Providers;
+
+// --- bases ---
+>>>>>>> 51c7727d (first)
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -196,10 +205,19 @@ class RouteServiceProvider extends ServiceProvider
 
     public string $name = 'Europa';
 >>>>>>> c8cd1ec3 (first)
+=======
+    /**
+     * The module namespace to assume when generating URLs to actions.
+     */
+    protected string $moduleNamespace = 'Modules\Inail\Http\Controllers';
+
+    public string $name = 'Inail';
+>>>>>>> 51c7727d (first)
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -452,4 +470,6 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 >>>>>>> 26424c5e (first)
 =======
 >>>>>>> c8cd1ec3 (first)
+=======
+>>>>>>> 51c7727d (first)
 }

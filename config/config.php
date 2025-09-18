@@ -17,6 +17,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'name' => 'Rating',
     'icon' => 'heroicon-o-star', // icon on dashboard
     'navigation_sort' => 1,
@@ -152,4 +153,8 @@ return [
 =======
     'name' => 'Europa',
 >>>>>>> c8cd1ec3 (first)
+=======
+    'name' => 'Inail',
+    'icon' => 'heroicon-o-exclamation-triangle',
+>>>>>>> 51c7727d (first)
 ];

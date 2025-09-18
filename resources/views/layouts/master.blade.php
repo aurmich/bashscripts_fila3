@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <html lang="en">
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -34,10 +35,14 @@
 =======
 <html lang="en">
 >>>>>>> c8cd1ec3 (first)
+=======
+<html lang="en">
+>>>>>>> 51c7727d (first)
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -112,11 +117,18 @@
        {{-- Laravel Mix - CSS File --}}
        {{-- <link rel="stylesheet" href="{{ mix('css/europa.css') }}"> --}}
 >>>>>>> c8cd1ec3 (first)
+=======
+        <title>Module Inail</title>
+
+       {{-- Laravel Mix - CSS File --}}
+       {{-- <link rel="stylesheet" href="{{ mix('css/inail.css') }}"> --}}
+>>>>>>> 51c7727d (first)
 
     </head>
     <body>
         @yield('content')
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -234,3 +246,9 @@
     </body>
 </html>
 >>>>>>> c8cd1ec3 (first)
+=======
+        {{-- Laravel Mix - JS File --}}
+        {{-- <script src="{{ mix('js/inail.js') }}"></script> --}}
+    </body>
+</html>
+>>>>>>> 51c7727d (first)

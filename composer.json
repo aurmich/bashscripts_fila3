@@ -15,6 +15,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "laraxot/bashscripts_fila3",
     "description": "Script di utilità per la gestione dei repository Git, Toolkit di automazione Git per progetti Laravel",
     "type": "library",
@@ -133,12 +134,19 @@
     "license": "MIT",
     "homepage": "https://github.com/provtv/module_europa_fila3.git",
 >>>>>>> c8cd1ec3 (first)
+=======
+    "name": "laraxot/module_inail_fila3",
+    "description": "",
+    "license": "MIT",
+    "homepage": "https://github.com/laraxot/module_inail_fila3.git",
+>>>>>>> 51c7727d (first)
     "authors": [
         {
             "name": "Marco Sottana",
             "email": "marco.sottana@gmail.com"
         }
     ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -383,12 +391,17 @@
     "require": {
 
 >>>>>>> c8cd1ec3 (first)
+=======
+    "require": {
+
+>>>>>>> 51c7727d (first)
     },
     "require-dev": {},
     "repositories": [
         {
             "type": "path",
             "url": "../Xot"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -405,6 +418,8 @@
 >>>>>>> 26424c5e (first)
 =======
 >>>>>>> c8cd1ec3 (first)
+=======
+>>>>>>> 51c7727d (first)
         },
         {
             "type": "path",
@@ -412,6 +427,7 @@
         },
         {
             "type": "path",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -623,11 +639,14 @@
 >>>>>>> 26424c5e (first)
 =======
 >>>>>>> c8cd1ec3 (first)
+=======
+>>>>>>> 51c7727d (first)
             "url": "../UI"
         }
     ],
     "autoload": {
         "psr-4": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -650,11 +669,17 @@
             "Modules\\Europa\\Database\\Factories\\": "database/factories/",
             "Modules\\Europa\\Database\\Seeders\\": "database/seeders/"
 >>>>>>> c8cd1ec3 (first)
+=======
+            "Modules\\Inail\\": "app/",
+            "Modules\\Inail\\Database\\Factories\\": "database/factories/",
+            "Modules\\Inail\\Database\\Seeders\\": "database/seeders/"
+>>>>>>> 51c7727d (first)
         }
     },
     "scripts": {
         "post-autoload-dump": [],
         "post-update-cmd": [],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -695,10 +720,13 @@
 >>>>>>> 26424c5e (first)
 =======
 >>>>>>> c8cd1ec3 (first)
+=======
+>>>>>>> 51c7727d (first)
         "analyse": "vendor/bin/phpstan analyse",
         "test": "./vendor/bin/pest --no-coverage",
         "test-coverage": "vendor/bin/pest --coverage-html coverage",
         "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -725,10 +753,13 @@
 >>>>>>> 26424c5e (first)
 =======
 >>>>>>> c8cd1ec3 (first)
+=======
+>>>>>>> 51c7727d (first)
     },
     "config": {
         "sort-packages": true,
         "allow-plugins": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -754,10 +785,13 @@
 >>>>>>> 26424c5e (first)
 =======
 >>>>>>> c8cd1ec3 (first)
+=======
+>>>>>>> 51c7727d (first)
             "phpstan/extension-installer": true,
             "pestphp/pest-plugin": true
         }
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -865,10 +899,18 @@
                 "Modules\\Europa\\Providers\\EuropaServiceProvider",
                 "Modules\\Europa\\Providers\\Filament\\AdminPanelProvider"
 >>>>>>> c8cd1ec3 (first)
+=======
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Inail\\Providers\\InailServiceProvider",
+                "Modules\\Inail\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> 51c7727d (first)
             ],
             "aliases": {}
         }
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -968,3 +1010,8 @@
     "prefer-stable": true
 }
 >>>>>>> c8cd1ec3 (first)
+=======
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+>>>>>>> 51c7727d (first)

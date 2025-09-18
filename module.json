@@ -13,6 +13,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
 =======
@@ -182,11 +183,16 @@
     "name": "Europa",
     "alias": "europa",
 >>>>>>> c8cd1ec3 (first)
+=======
+    "name": "Inail",
+    "alias": "inail",
+>>>>>>> 51c7727d (first)
     "description": "",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -200,11 +206,15 @@
 =======
         "Modules\\Europa\\Providers\\EuropaServiceProvider"
 >>>>>>> c8cd1ec3 (first)
+=======
+        "Modules\\Inail\\Providers\\InailServiceProvider"
+>>>>>>> 51c7727d (first)
     ],
     "aliases": {},
     "files": [],
     "requires": []
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -215,3 +225,5 @@
 >>>>>>> 26424c5e (first)
 =======
 >>>>>>> c8cd1ec3 (first)
+=======
+>>>>>>> 51c7727d (first)
