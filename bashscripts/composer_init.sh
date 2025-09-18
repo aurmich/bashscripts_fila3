@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 59bc4fe7 (first)
 =======
@@ -154,6 +155,8 @@ php -d memory_limit=-1 composer.phar require -W --dev spatie/laravel-ray
 =======
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
 =======
+=======
+>>>>>>> 0e032c1f (up)
 #!/bin/sh
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php composer-setup.php
@@ -241,6 +244,7 @@ php -d memory_limit=-1 composer.phar require -W --dev --ignore-platform-reqs pes
 ### REMOVE
 php -d memory_limit=-1 composer.phar remove laravel/sanctum
 rm config/sanctum.php 
+<<<<<<< HEAD
 >>>>>>> 26dea118 (.)
 =======
 >>>>>>> 59bc4fe7 (first)
@@ -254,3 +258,5 @@ rm config/sanctum.php
 >>>>>>> 2df6fbc8 (first)
 =======
 >>>>>>> 8fc3049b (first)
+=======
+>>>>>>> 0e032c1f (up)
