@@ -19,6 +19,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 const dotenvExpand = require('dotenv-expand');
 dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/}));
 
@@ -85,11 +86,14 @@ dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/}));
 >>>>>>> 8e6e7d4c (first)
 =======
 >>>>>>> 4658bb86 (first)
+=======
+>>>>>>> edbb3aab (first)
 const mix = require('laravel-mix');
 require('laravel-mix-merge-manifest');
 
 mix.setPublicPath('../../public').mergeManifest();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -247,3 +251,11 @@ if (mix.inProduction()) {
     mix.version();
 }
 >>>>>>> 4658bb86 (first)
+=======
+mix.js(__dirname + '/resources/assets/js/app.js', 'js/presenzeassenze.js')
+    .sass( __dirname + '/resources/assets/sass/app.scss', 'css/presenzeassenze.css');
+
+if (mix.inProduction()) {
+    mix.version();
+}
+>>>>>>> edbb3aab (first)

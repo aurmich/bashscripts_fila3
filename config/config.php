@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -220,4 +221,11 @@ return [
     'name' => 'Prenotazioni',
     'icon' => 'heroicon-o-calendar-days',
 >>>>>>> 4658bb86 (first)
+=======
+declare(strict_types=1);
+
+return [
+    'name' => 'PresenzeAssenze',
+    'icon' => 'fas-person-rays',
+>>>>>>> edbb3aab (first)
 ];

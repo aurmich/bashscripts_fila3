@@ -21,6 +21,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('rating::layouts.master')
 =======
 @extends('xot::layouts.app')
@@ -91,10 +92,14 @@
 =======
 @extends('prenotazioni::layouts.master')
 >>>>>>> 4658bb86 (first)
+=======
+@extends('presenzeassenze::layouts.master')
+>>>>>>> edbb3aab (first)
 
 @section('content')
     <h1>Hello World</h1>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -250,3 +255,9 @@
     </p>
 @stop
 >>>>>>> 4658bb86 (first)
+=======
+    <p>
+        This view is loaded from module: {!! config('presenzeassenze.name') !!}
+    </p>
+@stop
+>>>>>>> edbb3aab (first)

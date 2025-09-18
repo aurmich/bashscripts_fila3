@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @section('page_heading','Bagde')
 =======
 @section('page_heading','cert fisc')
@@ -30,10 +31,14 @@
 =======
 @section('page_heading','Mobilita volontaria')
 >>>>>>> 8e6e7d4c (first)
+=======
+@section('page_heading','Presenze Assenze')
+>>>>>>> edbb3aab (first)
 @section('content')
 <x-filament::badge> flash-message </x-filament::badge>
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -81,3 +86,8 @@ Benvenuto nel programma mensa
 
 @endsection
 >>>>>>> 4658bb86 (first)
+=======
+<h1>Benvenuto nel programma Presenze Assenze</h1>
+
+@endsection
+>>>>>>> edbb3aab (first)

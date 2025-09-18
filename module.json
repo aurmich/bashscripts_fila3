@@ -22,6 +22,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
 =======
@@ -240,11 +241,16 @@
     "name": "Prenotazioni",
     "alias": "prenotazioni",
 >>>>>>> 4658bb86 (first)
+=======
+    "name": "PresenzeAssenze",
+    "alias": "presenzeassenze",
+>>>>>>> edbb3aab (first)
     "description": "",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -282,11 +288,15 @@
 =======
         "Modules\\Prenotazioni\\Providers\\PrenotazioniServiceProvider"
 >>>>>>> 4658bb86 (first)
+=======
+        "Modules\\PresenzeAssenze\\Providers\\PresenzeAssenzeServiceProvider"
+>>>>>>> edbb3aab (first)
     ],
     "aliases": {},
     "files": [],
     "requires": []
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -328,3 +338,5 @@
 >>>>>>> 8e6e7d4c (first)
 =======
 >>>>>>> 4658bb86 (first)
+=======
+>>>>>>> edbb3aab (first)

@@ -23,6 +23,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 /**
@@ -152,10 +153,18 @@ namespace Modules\Prenotazioni\Providers;
 
 // --- bases ---
 >>>>>>> 4658bb86 (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\PresenzeAssenze\Providers;
+
+// --- bases ---
+>>>>>>> edbb3aab (first)
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -333,10 +342,16 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider {
 
     public string $name = 'Prenotazioni';
 >>>>>>> 4658bb86 (first)
+=======
+    public string $name = 'PresenzeAssenze';
+
+    protected string $moduleNamespace = 'Modules\PresenzeAssenze\Http\Controllers';
+>>>>>>> edbb3aab (first)
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -625,4 +640,6 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 >>>>>>> 8e6e7d4c (first)
 =======
 >>>>>>> 4658bb86 (first)
+=======
+>>>>>>> edbb3aab (first)
 }

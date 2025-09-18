@@ -14,6 +14,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <html lang="en">
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -70,10 +71,14 @@
 =======
 <html lang="en">
 >>>>>>> 4658bb86 (first)
+=======
+<html lang="en">
+>>>>>>> edbb3aab (first)
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -211,11 +216,18 @@
        {{-- Laravel Mix - CSS File --}}
        {{-- <link rel="stylesheet" href="{{ mix('css/prenotazioni.css') }}"> --}}
 >>>>>>> 4658bb86 (first)
+=======
+        <title>Module PresenzeAssenze</title>
+
+       {{-- Laravel Mix - CSS File --}}
+       {{-- <link rel="stylesheet" href="{{ mix('css/presenzeassenze.css') }}"> --}}
+>>>>>>> edbb3aab (first)
 
     </head>
     <body>
         @yield('content')
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -396,3 +408,9 @@
     </body>
 </html>
 >>>>>>> 4658bb86 (first)
+=======
+        {{-- Laravel Mix - JS File --}}
+        {{-- <script src="{{ mix('js/presenzeassenze.js') }}"></script> --}}
+    </body>
+</html>
+>>>>>>> edbb3aab (first)
