@@ -15,6 +15,7 @@ use Filament\Forms\Components\TextInput;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\HtmlString;
 use Modules\User\Filament\Resources\UserResource\Pages;
+<<<<<<< HEAD:app/Filament/Resources/UserResource.php
 <<<<<<< HEAD
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\Xot\Filament\Resources\XotBaseResource;
@@ -34,6 +35,11 @@ use Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelati
 
 
 >>>>>>> bdeae81f (first)
+=======
+use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
+use Modules\Xot\Filament\Resources\XotBaseResource;
+
+>>>>>>> 900f6485 (.):laravel/Modules/User/app/Filament/Resources/UserResource.php
 class UserResource extends XotBaseResource
 {
     // protected static ?string $model = \Modules\Xot\Datas\XotData::make()->getUserClass();
@@ -71,11 +77,18 @@ class UserResource extends XotBaseResource
             ])->columnSpan(8),
             'section02' => Section::make([
                 'created_at' => Placeholder::make('created_at')
-                    ->content(static fn ($record) => $record->created_at->diffForHumans() ?? new HtmlString('&mdash;')),
+                    ->content(static function ($record) {
+                        if ($record === null || $record->created_at === null) {
+                            return new HtmlString('&mdash;');
+                        }
+                        
+                        return $record->created_at->diffForHumans();
+                    }),
             ])->columnSpan(4),
         ];
     }
 
+<<<<<<< HEAD:app/Filament/Resources/UserResource.php
 <<<<<<< HEAD
 =======
     /**
@@ -90,6 +103,8 @@ class UserResource extends XotBaseResource
     }
 
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 900f6485 (.):laravel/Modules/User/app/Filament/Resources/UserResource.php
     // public static function enablePasswordUpdates(bool|Closure $condition = true): void
     // {
     //     static::$enablePasswordUpdates = $condition;

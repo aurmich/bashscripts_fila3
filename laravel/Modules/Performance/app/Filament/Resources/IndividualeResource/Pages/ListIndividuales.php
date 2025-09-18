@@ -52,12 +52,15 @@ class ListIndividuales extends XotBaseListRecords
     {
 
         $myclass=(static::class);
+        
         $fill_class=Str::of($myclass)
             ->before('\Pages\\')
             ->append('\Pages\FillOutTheForm')
             ->toString();
         return [
             ...parent::getTableActions(),
+            \Modules\Xot\Filament\Actions\Table\PdfAction::make('pdf')
+                ->visible(fn ($record) => $record->ha_diritto == 1),
             'fill' => Tables\Actions\Action::make('fill')
                 ->label('Compila')
                 ->icon('heroicon-o-pencil-square')
@@ -75,6 +78,7 @@ class ListIndividuales extends XotBaseListRecords
             ...parent::getHeaderActions(),
             \Modules\Ptv\Filament\Actions\Header\CopyFromLastYearAction::make(),
             \Modules\Ptv\Filament\Actions\Header\PopulateYearAction::make(),
+            
             //ExportXlsAction::make(),
             Actions\Action::make('copy_from_organizzativa')->action(
                 function () {

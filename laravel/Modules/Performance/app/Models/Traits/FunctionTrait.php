@@ -59,9 +59,9 @@ trait FunctionTrait
     }
 
     /**
-     * @return array<string, mixed>
+    
      */
-    public function optionsCriteriOrdered(): array
+    public function optionsCriteriOrdered()
     {
         $criteri = $this->options->where('name', 'criterio')->where('parent_id', 0)->sortBy('pos');
 
@@ -72,7 +72,7 @@ trait FunctionTrait
             $v->save();
         }
 
-        return $criteri->toArray();
+        return $criteri;
     }
 
     /**

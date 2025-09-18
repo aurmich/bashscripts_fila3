@@ -50,9 +50,14 @@ class AnnoValutatoreFilter extends Filter
             if ($data['anno'] == null) {
                 return $query->where('id', 0);
             }
-            if ($data['valutatore_id'] == null) {
+            if ($data['valutatore_id'] == null && profile()->isSuperAdmin()) {
+                unset($data['valutatore_id']);
+            }
+           
+            if (isset($data['valutatore_id']) && $data['valutatore_id'] == null) {
                 return $query->where('id', 0);
             }
+           
             
            
             //app(Populate::class)->execute($data);

@@ -11,7 +11,7 @@ use Modules\Xot\Models\Policies\XotBasePolicy;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 
-class IndividualeDipPolicy extends XotBasePolicy
+class IndividualeDipPolicy extends IndividualePolicy
 {
     // use HandlesAuthorization;
 
@@ -23,7 +23,7 @@ class IndividualeDipPolicy extends XotBasePolicy
         }
     }
 
-    //*/
+    /*
     public function viewAny(?UserContract $userContract): bool
     {
         return true;
@@ -89,4 +89,5 @@ class IndividualeDipPolicy extends XotBasePolicy
     {
         return true;
     }
+        */
 }

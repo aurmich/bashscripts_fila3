@@ -76,12 +76,5 @@
                 <th >@if ($row->excellence)<b style="darkred">SI</b>@endif</th>
             </tr> --}}
     </table>
-    <br />IL DIRIGENTE
-    <br /><span style="font-size:14px">{{ $row->stabiDirigente->nome_diri }}</span>
-    <br /><br />Treviso, li
-    @if ($row->updated_at != '')
-        {{ $row->updated_at->format('d/m/Y') }}
-    @else
-        {{ \Carbon\Carbon::now()->format('d/m/Y') }}
-    @endif
+     @include('ptv::pdf.valutatore_firma')
 </page>

@@ -23,7 +23,7 @@ class StabiDirigentePolicy extends XotBasePolicy {
     //*/
     public function viewAny(?UserContract $userContract): bool
     {
-        return true;
+        return false;
     }
 
     public function index(?UserContract $userContract, MyModel $model): bool

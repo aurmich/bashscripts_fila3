@@ -216,7 +216,7 @@ abstract class BaseIndividualeModel extends Model
         'gg_presenza_anno', 'gg_presenza_dalal',
         'gg_assenza_anno', 'gg_assenza_dalal',
         'hh_assenza_anno', 'hh_assenza_anno',
-        'post_type', 'type',
+        'post_type', 'type','valutatore_id'
     ];
 
     /** @return array<string, string>  */
@@ -251,6 +251,11 @@ abstract class BaseIndividualeModel extends Model
     public function criteriEsclusione(): HasMany
     {
         return $this->hasMany(CriteriEsclusione::class, 'anno', 'anno');
+    }
+
+    public function valutatore(): BelongsTo
+    {
+        return $this->belongsTo(StabiDirigente::class, 'valutatore_id', 'id');
     }
 
     /**

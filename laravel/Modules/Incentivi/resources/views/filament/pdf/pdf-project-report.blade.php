@@ -3,6 +3,7 @@
 <head>
     <title>Resoconto Progetto</title>
     {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
+<<<<<<< HEAD
     {{-- <link rel="stylesheet" href="{{ $_theme->asset('ptv::dist/assets/app.css') }}"> --}}
     <link rel="stylesheet" href="{{ asset('ptv::dist/assets/app.css') }}">
 <<<<<<< HEAD
@@ -12,6 +13,10 @@
 >>>>>>> a6cfb97d (.)
 =======
 >>>>>>> bf472f16 (.)
+=======
+    <link rel="stylesheet" href="{{ $_theme->path('ptv::dist/assets/app.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('ptv::dist/assets/app.css') }}"> --}}
+>>>>>>> 900f6485 (.)
 </head>
 
 <body>

@@ -37,9 +37,10 @@ class GeneratePDFProjectReportActionSpatie extends Action
                 return route('filament.projects.download', $project);
             })
             ->openUrlInNewTab()
-            ->visible(fn (Model $record): bool => $record->getAttribute('stato') === 'concluso' ||
-                $record->getAttribute('stato') === 'aggiudicazione'
-            );
+            // ->visible(fn (Model $record): bool => $record->getAttribute('stato') === 'concluso' ||
+            //     $record->getAttribute('stato') === 'aggiudicazione'
+            // )
+            ;
     }
 
     public static function getDefaultName(): ?string
