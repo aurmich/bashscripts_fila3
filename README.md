@@ -34,6 +34,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2281,6 +2282,8 @@ Getting started is a breeze! Follow these simple steps to install the Fila3 modu
    git clone https://github.com/laraxot/module_media_fila3.git
 >>>>>>> c986cc10 (first)
 =======
+=======
+>>>>>>> 0253339c (first)
 # 🌐 Simplify Multi-Tenancy with the Fila3 Tenant Module! 🚀
 
 ![GitHub issues](https://img.shields.io/github/issues/laraxot/module_tenant_fila3)
@@ -2322,11 +2325,15 @@ Getting started with the Fila3 Tenant Module is straightforward! Follow these st
    ```bash
    git clone https://github.com/laraxot/module_tenant_fila3.git
 
+<<<<<<< HEAD
 >>>>>>> 8fc3049b (first)
+=======
+>>>>>>> 0253339c (first)
 
 Navigate to the project directory:
 bash
 Copia codice
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2344,10 +2351,14 @@ cd module_media_fila3
 =======
 cd module_tenant_fila3
 >>>>>>> 8fc3049b (first)
+=======
+cd module_tenant_fila3
+>>>>>>> 0253339c (first)
 Install dependencies:
 bash
 Copia codice
 npm install
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2411,6 +2422,8 @@ Start your application and watch the magic happen!
 We welcome contributions! Whether it’s fixing bugs, improving documentation, or adding new features, your help is invaluable. Check out the contributing guidelines to get started!
 >>>>>>> c986cc10 (first)
 =======
+=======
+>>>>>>> 0253339c (first)
 Configure tenant settings in the config file.
 Launch your application and experience effortless multi-tenancy!
 📜 Usage Examples
@@ -2435,13 +2448,17 @@ const tenantInfo = tenantManager.getCurrentTenant();
 console.log("Current Tenant:", tenantInfo);
 🤝 Contributing
 We welcome contributions! If you have ideas, bug fixes, or enhancements, check out the contributing guidelines to get started.
+<<<<<<< HEAD
 >>>>>>> 8fc3049b (first)
+=======
+>>>>>>> 0253339c (first)
 
 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 👤 Author
 Marco Sottana
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 Discover more of my work at marco76tv!
@@ -3403,3 +3420,6 @@ Una volta che i dati verranno caricati, il Personale potrà quindi stampare/espo
 >>>>>>> 0c492c4f (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+Discover more of my work at marco76tv!
+>>>>>>> 0253339c (first)

@@ -28,6 +28,7 @@ includes:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 
@@ -53,6 +54,8 @@ parameters:
 >>>>>>> c986cc10 (first)
 =======
 >>>>>>> 8fc3049b (first)
+=======
+>>>>>>> 0253339c (first)
     - ./vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
     #- ./vendor/symplify/phpstan-rules/config/code-complexity-rules.neon
     #- ./vendor/symplify/phpstan-rules/config/collector-rules.neon
@@ -60,6 +63,7 @@ parameters:
     #- ./vendor/symplify/phpstan-rules/config/regex-rules.neon
     #- ./vendor/symplify/phpstan-rules/config/static-rules.neon
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -74,11 +78,14 @@ parameters:
 >>>>>>> c986cc10 (first)
 =======
 >>>>>>> 8fc3049b (first)
+=======
+>>>>>>> 0253339c (first)
 
 parameters:
     level: max
     paths:
         - .
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -196,6 +203,8 @@ parameters:
 >>>>>>> dc18abbe (first)
 =======
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+>>>>>>> 0253339c (first)
 
     ignoreErrors:
     #    - '#Unsafe usage of new static#'
@@ -222,6 +231,7 @@ parameters:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         - '#Static call to instance method Nwidart#'
 
 <<<<<<< HEAD
@@ -300,11 +310,16 @@ parameters:
 =======
 
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+        - '#Static call to instance method Nwidart#'
+
+>>>>>>> 0253339c (first)
     excludePaths:
         - ./build/*
         - ./vendor/*
         - ./*/vendor/*
         - ./docs/*
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -346,10 +361,16 @@ parameters:
         - ./_ide_helper.php
         - ./rector.php
 >>>>>>> 8fc3049b (first)
+=======
+        - ./Tests/*
+        - ./_ide_helper.php
+        - ./rector.php
+>>>>>>> 0253339c (first)
 
     bootstrapFiles:
         #- ./Services/vendor/autoload.php
         - ./phpstan_constants.php
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -459,6 +480,8 @@ parameters:
 >>>>>>> dc18abbe (first)
 =======
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+>>>>>>> 0253339c (first)
 
     scanFiles:
     #    - ./Helpers/Helper.php
@@ -466,6 +489,7 @@ parameters:
 
     editorUrl: 'vscode://file/%%file%%:%%line%%'
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -555,6 +579,9 @@ parameters:
 =======
     tmpDir: ./build/phpstan
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+    tmpDir: build/phpstan
+>>>>>>> 0253339c (first)
     checkUnusedViews: false
     checkMissingIterableValueType: false
     checkGenericClassInNonGenericObjectType: false
@@ -562,6 +589,7 @@ parameters:
     reportUnmatchedIgnoredErrors: false
     checkOctaneCompatibility: false
     checkModelProperties: false
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -680,3 +708,5 @@ parameters:
 =======
 
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+>>>>>>> 0253339c (first)

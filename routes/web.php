@@ -28,6 +28,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -81,6 +82,10 @@ use Modules\Incentivi\Http\Controllers\PdfDownloadController;
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+declare(strict_types=1);
+
+>>>>>>> 0253339c (first)
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -91,6 +96,7 @@ use Modules\Incentivi\Http\Controllers\PdfDownloadController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -170,11 +176,14 @@ Route::get('/upgrade', 'UpgradeController');
 declare(strict_types=1);
 >>>>>>> c986cc10 (first)
 =======
+=======
+>>>>>>> 0253339c (first)
 /*
 Route::prefix('tenant')->group(function() {
     Route::get('/', 'TenantController@index');
 });
 */
+<<<<<<< HEAD
 >>>>>>> 8fc3049b (first)
 =======
 declare(strict_types=1);
@@ -248,3 +257,5 @@ declare(strict_types=1);
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 0253339c (first)

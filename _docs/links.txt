@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---------------------------------------------------------------------------------------------------
 Laravel URL Redirects with Optional Protected Url Passwords
 https://codebrisk.com/blog/laravel-url-redirects-with-optional-protected-url-passwords
@@ -135,14 +136,19 @@ composer require YorCreative/Laravel-Query-Watcher
 ------------------------------------------------------------------------------------------------------
 >>>>>>> 9cec72d6 (first)
 =======
+=======
+>>>>>>> 0253339c (first)
 Laravel Multi-Tenant Applications with Ecotone
 
 https://blog.devgenius.io/laravel-multi-tenant-systems-with-ecotone-e3e5a4751a55
 
 ------------------
 
+<<<<<<< HEAD
 >>>>>>> 8fc3049b (first)
 =======
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 0253339c (first)

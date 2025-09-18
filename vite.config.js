@@ -21,6 +21,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 const dotenvExpand = require('dotenv-expand');
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -131,10 +132,15 @@ dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/ }));
 const dotenvExpand = require('dotenv-expand');
 dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/ }));
 >>>>>>> bdeae81f (first)
+=======
+const dotenvExpand = require('dotenv-expand');
+dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/ }));
+>>>>>>> 0253339c (first)
 
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -254,10 +260,13 @@ export default defineConfig(
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 0253339c (first)
 export default defineConfig(
     {
         build: {
             outDir: '../../public/build-user',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -286,10 +295,13 @@ export default defineConfig(
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 0253339c (first)
             emptyOutDir: true,
             manifest: true,
         },
         plugins: [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -318,10 +330,13 @@ export default defineConfig(
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 0253339c (first)
             laravel(
                 {
                     publicDirectory: '../../public',
                     buildDirectory: 'build-user',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 8fc3049b (first)
@@ -329,6 +344,8 @@ export default defineConfig(
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 0253339c (first)
                     input: [
                         __dirname + '/resources/assets/sass/app.scss',
                         __dirname + '/resources/assets/js/app.js'
@@ -339,6 +356,7 @@ export default defineConfig(
         ],
     }
 );
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -507,3 +525,5 @@ viteStaticCopy({
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 0253339c (first)

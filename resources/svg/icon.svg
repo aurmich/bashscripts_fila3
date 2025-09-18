@@ -15,6 +15,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <!-- Cubo base -->
     <path stroke-linecap="round" 
           stroke-linejoin="round" 
@@ -153,6 +154,8 @@
           d="M9 21h14" />
 >>>>>>> c986cc10 (first)
 =======
+=======
+>>>>>>> 0253339c (first)
     <!-- Edificio principale -->
     <path stroke-linecap="round" 
           stroke-linejoin="round" 
@@ -173,9 +176,12 @@
     <path stroke-linecap="round" 
           stroke-linejoin="round" 
           d="M6 10h-2M20 10h2M3 10h22" />
+<<<<<<< HEAD
 >>>>>>> 8fc3049b (first)
 =======
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 0253339c (first)
 </svg> 

@@ -20,6 +20,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7e417e87 (first)
 =======
@@ -127,6 +128,8 @@ CHANGELOG.md export-ignore
 *.psd filter=lfs diff=lfs merge=lfs -text
 >>>>>>> 2df6fbc8 (first)
 =======
+=======
+>>>>>>> 0253339c (first)
 # Path-based git attributes
 # https://www.kernel.org/pub/software/scm/git/docs/gitattributes.html
 
@@ -146,6 +149,7 @@ CHANGELOG.md export-ignore
 /UPGRADING.md       export-ignore
 /phpstan.neon.dist  export-ignore
 /phpstan-baseline.neon  export-ignore
+<<<<<<< HEAD
 >>>>>>> 8fc3049b (first)
 =======
 >>>>>>> 7e417e87 (first)
@@ -192,3 +196,5 @@ CHANGELOG.md export-ignore
 >>>>>>> f3c337b1 (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 0253339c (first)

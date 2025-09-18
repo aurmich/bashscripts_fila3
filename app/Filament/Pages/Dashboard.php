@@ -13,6 +13,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -40,11 +41,14 @@ namespace Modules\Media\Filament\Pages;
 use Filament\Pages\Page;
 >>>>>>> c986cc10 (first)
 =======
+=======
+>>>>>>> 0253339c (first)
 declare(strict_types=1);
 
 namespace Modules\Tenant\Filament\Pages;
 
 use Filament\Pages\Page;
+<<<<<<< HEAD
 >>>>>>> 8fc3049b (first)
 =======
 declare(strict_types=1);
@@ -73,11 +77,14 @@ use Filament\Pages\Page;
 >>>>>>> bcab6efe (first)
 =======
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+>>>>>>> 0253339c (first)
 
 class Dashboard extends Page
 {
     protected static ?string $navigationIcon = 'heroicon-o-home';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -380,4 +387,7 @@ class Dashboard extends BaseDashboard
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+    protected static string $view = 'tenant::filament.pages.dashboard';
+>>>>>>> 0253339c (first)
 }

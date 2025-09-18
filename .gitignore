@@ -40,6 +40,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ───────────────────────────────────────────────────────
 # Sistema operativo / File nascosti e metadata
 # ───────────────────────────────────────────────────────
@@ -528,6 +529,8 @@ vendor
 >>>>>>> d79d9e57 (first)
 =======
 >>>>>>> 8fc3049b (first)
+=======
+>>>>>>> 0253339c (first)
 /vendor/
 vendor/
 node_modules/
@@ -536,6 +539,7 @@ npm-debug.log
 *.phar
 *.lock
 package-lock.json
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 /vendor
@@ -557,6 +561,8 @@ npm-debug.log
 >>>>>>> c986cc10 (first)
 =======
 >>>>>>> 8fc3049b (first)
+=======
+>>>>>>> 0253339c (first)
 yarn-error.log
 
 # Laravel 4 specific
@@ -577,6 +583,7 @@ Homestead.yaml
 Homestead.json
 /.vagrant
 .phpunit.result.cache
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -767,6 +774,8 @@ vendor/
 build/
 =======
 =======
+=======
+>>>>>>> 0253339c (first)
 
 *.stackdump
 *.log
@@ -782,11 +791,15 @@ node_modules
 .git-blame-ignore-revs
 node_modules
 vendor
+<<<<<<< HEAD
 >>>>>>> 8fc3049b (first)
+=======
+>>>>>>> 0253339c (first)
 build/
 vendor/
 build/
 node_modules
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> d79d9e57 (first)
 =======
@@ -1052,11 +1065,17 @@ build/
 vendor/
 build/
 node_modules
+=======
+./node_modules/
+node_modules/
+node_modules/*
+>>>>>>> 0253339c (first)
 docs/cache/
 cache/
 .git-blame-ignore-revs
 .php-cs-fixer.cache
 *.exe
+<<<<<<< HEAD
 **/*.Zone.Identifier
 *:Zone.Identifier
 *:Zone.Identifier
@@ -1073,3 +1092,7 @@ cache/
 >>>>>>> d516087e (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+*:Zone.Identifier
+*:Zone.Identifier
+>>>>>>> 0253339c (first)

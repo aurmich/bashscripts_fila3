@@ -10,6 +10,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #	url = https://github.com/laraxot/doc_rating.git
 =======
 #	url = https://github.com/laraxot/doc_ui.git
@@ -46,3 +47,6 @@
 #	url = https://github.com/laraxot/doc_user.git
 #   url = git@github.com:laraxot/doc_user.git
 >>>>>>> bdeae81f (first)
+=======
+#	url = git@github.com:laraxot/doc_tenant.git
+>>>>>>> 0253339c (first)

@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -148,6 +149,9 @@
 >>>>>>> 2df6fbc8 (first)
 =======
 >>>>>>> 8fc3049b (first)
+=======
+{
+>>>>>>> 0253339c (first)
     "private": true,
     "scripts": {
         "development": "mix",
@@ -158,6 +162,7 @@
     },
     "devDependencies": {
         "@tailwindcss/forms": "^0.5.7",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -273,6 +278,8 @@
 =======
 >>>>>>> c986cc10 (first)
 =======
+=======
+>>>>>>> 0253339c (first)
         "@tailwindcss/typography": "^0.5.13",
         "autoprefixer": "^10.4.19",
         "axios": "^1.6.7",
@@ -287,6 +294,7 @@
         "tippy.js": "^6.3.7",
         "vite": "^5.4.3"
     }
+<<<<<<< HEAD
 >>>>>>> 8fc3049b (first)
 =======
 =======
@@ -491,3 +499,6 @@
   }
 }
 >>>>>>> bdeae81f (first)
+=======
+}
+>>>>>>> 0253339c (first)

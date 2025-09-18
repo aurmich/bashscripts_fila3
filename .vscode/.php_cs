@@ -1,12 +1,17 @@
 <?php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 declare(strict_types=1);
 >>>>>>> 8fc3049b (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+
+declare(strict_types=1);
+>>>>>>> 0253339c (first)
 $finder = PhpCsFixer\Finder::create()
     ->notPath('bootstrap/cache')
     ->notPath('storage')
@@ -21,6 +26,7 @@ $finder = PhpCsFixer\Finder::create()
 return PhpCsFixer\Config::create()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     ->setRules(array(
 =======
     ->setRules([
@@ -28,6 +34,9 @@ return PhpCsFixer\Config::create()
 =======
     ->setRules(array(
 >>>>>>> e83070fd (.)
+=======
+    ->setRules([
+>>>>>>> 0253339c (first)
         '@Symfony' => true,
         'array_indentation' => true,
         'function_typehint_space' => true,
@@ -42,6 +51,7 @@ return PhpCsFixer\Config::create()
         'php_unit_construct' => false,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         'braces'=>[
             'position_after_functions_and_oop_constructs'=>'same',
 =======
@@ -52,11 +62,16 @@ return PhpCsFixer\Config::create()
         'braces'=>[
             'position_after_functions_and_oop_constructs'=>'same',
 >>>>>>> e83070fd (.)
+=======
+        'braces' => [
+            'position_after_functions_and_oop_constructs' => 'same',
+>>>>>>> 0253339c (first)
         ],
         'function_declaration' => true,
         'blank_line_after_namespace' => true,
         'class_definition' => true,
         'elseif' => true,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     ))
@@ -66,5 +81,8 @@ return PhpCsFixer\Config::create()
 =======
     ))
 >>>>>>> e83070fd (.)
+=======
+    ])
+>>>>>>> 0253339c (first)
     ->setFinder($finder)
 ;

@@ -18,6 +18,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -107,23 +108,32 @@ return [
         'sort' => 60,
 >>>>>>> c986cc10 (first)
 =======
+=======
+declare(strict_types=1);
+
+return [
+>>>>>>> 0253339c (first)
     'name' => 'Tenant',
     'description' => 'Modulo per la gestione multi-tenant dell\'applicazione',
     'icon' => 'heroicon-o-building-office',
     'navigation' => [
         'enabled' => true,
         'sort' => 80,
+<<<<<<< HEAD
 >>>>>>> 8fc3049b (first)
 =======
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 0253339c (first)
     ],
     'routes' => [
         'enabled' => true,
         'middleware' => ['web', 'auth'],
     ],
     'providers' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -313,4 +323,8 @@ return [
         'Modules\\User\\Providers\\UserServiceProvider',
     ],
 >>>>>>> bdeae81f (first)
+=======
+        'Modules\\Tenant\\Providers\\TenantServiceProvider',
+    ],
+>>>>>>> 0253339c (first)
 ];

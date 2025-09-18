@@ -10,14 +10,18 @@ updates:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 =======
 >>>>>>> 8fc3049b (first)
+=======
+>>>>>>> 0253339c (first)
 
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -34,6 +38,8 @@ updates:
 >>>>>>> 2df6fbc8 (first)
 =======
 >>>>>>> 8fc3049b (first)
+=======
+>>>>>>> 0253339c (first)
       interval: "daily"
     labels:
       - "dependencies"
@@ -45,6 +51,7 @@ updates:
     labels:
       - "npm"
       - "dependencies"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -73,3 +80,5 @@ updates:
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 0253339c (first)

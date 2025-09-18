@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -103,10 +104,16 @@
     "name": "laraxot/module_user_fila3",
     "description": "user module for user management",
 >>>>>>> bdeae81f (first)
+=======
+{
+    "name": "laraxot/module_tenant_fila3",
+    "description": "tenant module for software architecture that allows a single instance of a software application to serve multiple tenants",
+>>>>>>> 0253339c (first)
     "keywords": [
         "laraxot",
         "laravel",
         "filament",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -444,6 +451,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 0253339c (first)
         "module_tenant",
         "Laravel",
         "Tenant module"
@@ -453,20 +462,27 @@
     "authors": [
         {
             "name": "Marco Xot",
+<<<<<<< HEAD
 >>>>>>> 8fc3049b (first)
+=======
+>>>>>>> 0253339c (first)
             "email": "marco.sottana@gmail.com",
             "role": "Developer"
         }
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8fc3049b (first)
+=======
+>>>>>>> 0253339c (first)
     "require": {},
     "require-dev": {},
     "repositories_comment": [
         {
             "type": "path",
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> c088001a (first)
             "url": "../User"
@@ -479,6 +495,8 @@
 =======
             "email": "marco.sottana@gmail.com"
 =======
+=======
+>>>>>>> 0253339c (first)
             "url": "../User"
         },
         {
@@ -488,6 +506,7 @@
         {
             "type": "path",
             "url": "../Xot"
+<<<<<<< HEAD
 >>>>>>> 8fc3049b (first)
 =======
             "email": "marco.sottana@gmail.com"
@@ -495,11 +514,14 @@
 =======
             "email": "marco.sottana@gmail.com"
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 0253339c (first)
         }
     ],
     "extra": {
         "laravel": {
             "providers": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -525,12 +547,17 @@
                 "Modules\\User\\Providers\\UserServiceProvider",
                 "Modules\\User\\Providers\\Filament\\AdminPanelProvider"
 >>>>>>> bdeae81f (first)
+=======
+                "Modules\\Tenant\\Providers\\TenantServiceProvider",
+                "Modules\\Tenant\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> 0253339c (first)
             ],
             "aliases": {}
         }
     },
     "autoload": {
         "psr-4": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -804,6 +831,8 @@
 =======
 >>>>>>> 2df6fbc8 (first)
 =======
+=======
+>>>>>>> 0253339c (first)
             "Modules\\Tenant\\": "app/",
             "Modules\\Tenant\\Database\\Factories\\": "database/factories/",
             "Modules\\Tenant\\Database\\Seeders\\": "database/seeders/"
@@ -811,6 +840,7 @@
     },
     "scripts": {
         "post-autoload-dump1": [
+<<<<<<< HEAD
 >>>>>>> 8fc3049b (first)
 =======
 =======
@@ -833,6 +863,8 @@
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 0253339c (first)
             "@php vendor/bin/testbench package:discover --ansi"
         ],
         "post-update-cmd": [
@@ -842,6 +874,7 @@
         "test": "./vendor/bin/pest --no-coverage",
         "test-coverage": "vendor/bin/pest --coverage-html coverage",
         "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1326,10 +1359,13 @@
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 0253339c (first)
     },
     "config": {
         "sort-packages": true,
         "allow-plugins": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1463,10 +1499,15 @@
 =======
             "pestphp/pest-plugin": true,
 >>>>>>> bdeae81f (first)
+=======
+            "phpstan/extension-installer": true,
+            "pestphp/pest-plugin": true,
+>>>>>>> 0253339c (first)
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "wikimedia/composer-merge-plugin": true
         }
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1934,3 +1975,8 @@
     "prefer-stable": true
 }
 >>>>>>> bdeae81f (first)
+=======
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+>>>>>>> 0253339c (first)

@@ -24,6 +24,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <html lang="en">
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -110,10 +111,14 @@
 =======
 <html lang="en">
 >>>>>>> bdeae81f (first)
+=======
+<html lang="en">
+>>>>>>> 0253339c (first)
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -184,10 +189,13 @@
        {{-- {{ module_vite('build-setting', 'resources/assets/sass/app.scss') }} --}}
 >>>>>>> 9cec72d6 (first)
 =======
+=======
+>>>>>>> 0253339c (first)
         <title>Module Tenant</title>
 
        {{-- Laravel Mix - CSS File --}}
        {{-- <link rel="stylesheet" href="{{ mix('css/tenant.css') }}"> --}}
+<<<<<<< HEAD
 >>>>>>> 8fc3049b (first)
 =======
         <title>Module Badge</title>
@@ -318,11 +326,14 @@
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 0253339c (first)
 
     </head>
     <body>
         @yield('content')
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -430,10 +441,13 @@
 </body>
 >>>>>>> c986cc10 (first)
 =======
+=======
+>>>>>>> 0253339c (first)
         {{-- Laravel Mix - JS File --}}
         {{-- <script src="{{ mix('js/tenant.js') }}"></script> --}}
     </body>
 </html>
+<<<<<<< HEAD
 >>>>>>> 8fc3049b (first)
 =======
         {{-- Laravel Mix - JS File --}}
@@ -571,3 +585,5 @@
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 0253339c (first)

@@ -32,6 +32,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
 =======
@@ -102,12 +103,17 @@
     "name": "Tenant",
     "alias": "tenant",
 >>>>>>> 8fc3049b (first)
+=======
+    "name": "Tenant",
+    "alias": "tenant",
+>>>>>>> 0253339c (first)
     "description": "",
     "keywords": [],
     "priority": 2,
     "active": 1,
     "order": 2,
     "providers": [
+<<<<<<< HEAD
 <<<<<<< HEAD
         "Modules\\Xot\\Providers\\XotServiceProvider",
         "Modules\\Xot\\Providers\\Filament\\AdminPanelProvider"
@@ -160,10 +166,15 @@
         "Modules\\IndennitaResponsabilita\\Providers\\IndennitaResponsabilitaServiceProvider",
         "Modules\\IndennitaResponsabilita\\Providers\\Filament\\AdminPanelProvider"
 >>>>>>> e0005d7d (first)
+=======
+        "Modules\\Tenant\\Providers\\TenantServiceProvider",
+        "Modules\\Tenant\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> 0253339c (first)
     ],
     "aliases": [],
     "files": [],
     "requires": []
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -458,3 +469,6 @@
 =======
 }
 >>>>>>> bdeae81f (first)
+=======
+}
+>>>>>>> 0253339c (first)

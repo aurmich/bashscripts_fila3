@@ -20,6 +20,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d79d9e57 (first)
 =======
@@ -108,11 +109,14 @@ namespace Modules\Media\Providers\Filament;
 use Filament\Panel;
 >>>>>>> c986cc10 (first)
 =======
+=======
+>>>>>>> 0253339c (first)
 declare(strict_types=1);
 
 namespace Modules\Tenant\Providers\Filament;
 
 use Filament\Panel;
+<<<<<<< HEAD
 >>>>>>> 8fc3049b (first)
 =======
 declare(strict_types=1);
@@ -166,10 +170,13 @@ namespace Modules\Progressioni\Providers\Filament;
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 0253339c (first)
 use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 
 class AdminPanelProvider extends XotBasePanelProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -331,12 +338,15 @@ class AdminPanelProvider extends XotBasePanelProvider
     }
 >>>>>>> c986cc10 (first)
 =======
+=======
+>>>>>>> 0253339c (first)
     protected string $module = 'Tenant';
 
     public function panel(Panel $panel): Panel
     {
         return parent::panel($panel);
     }
+<<<<<<< HEAD
 >>>>>>> 8fc3049b (first)
 =======
     protected string $module = 'Incentivi';
@@ -377,4 +387,6 @@ class AdminPanelProvider extends XotBasePanelProvider
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 0253339c (first)
 }

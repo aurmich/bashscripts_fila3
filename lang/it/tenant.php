@@ -2,13 +2,17 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 0253339c (first)
 declare(strict_types=1);
 
 return [
     'navigation' => [
         'name' => 'Tenant',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -66,6 +70,8 @@ return [
         'change_password' => 'Cambio password',
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 0253339c (first)
         'group' => 'Sistema',
         'sort' => 25,
         'icon' => 'tenant-main-animated',
@@ -193,6 +199,7 @@ return [
             'date_range' => 'Periodo',
             'occupation' => 'Occupazione',
         ],
+<<<<<<< HEAD
 >>>>>>> 8fc3049b (first)
     ],
 ];
@@ -278,3 +285,7 @@ return array (
     ],
 ];
 >>>>>>> bdeae81f (first)
+=======
+    ],
+];
+>>>>>>> 0253339c (first)

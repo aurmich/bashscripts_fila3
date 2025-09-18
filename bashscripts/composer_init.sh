@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 59bc4fe7 (first)
 =======
@@ -18,6 +19,8 @@
 >>>>>>> 2df6fbc8 (first)
 =======
 >>>>>>> 8fc3049b (first)
+=======
+>>>>>>> 0253339c (first)
 #!/bin/sh
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php composer-setup.php
@@ -25,6 +28,7 @@ php -r "unlink('composer-setup.php');"
 php -r "unlink('composer.lock');"
 rm composer.lock
 rm package-lock.json
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -128,6 +132,8 @@ rm config/sanctum.php
 >>>>>>> 2df6fbc8 (first)
 =======
 >>>>>>> 8fc3049b (first)
+=======
+>>>>>>> 0253339c (first)
 
 ##############  ####################
 php -d memory_limit=-1 composer.phar require -W illuminate/contracts
@@ -144,6 +150,7 @@ php -d memory_limit=-1 composer.phar require -W --dev phpstan/extension-installe
 php -d memory_limit=-1 composer.phar require -W --dev phpstan/phpstan-deprecation-rules
 php -d memory_limit=-1 composer.phar require -W --dev phpstan/phpstan-phpunit
 php -d memory_limit=-1 composer.phar require -W --dev spatie/laravel-ray
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -260,3 +267,5 @@ rm config/sanctum.php
 >>>>>>> 8fc3049b (first)
 =======
 >>>>>>> 0e032c1f (up)
+=======
+>>>>>>> 0253339c (first)

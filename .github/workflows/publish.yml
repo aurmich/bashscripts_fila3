@@ -16,6 +16,7 @@ on:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 permissions: 
 =======
 permissions:
@@ -50,6 +51,9 @@ permissions:
 =======
 permissions:
 >>>>>>> bdeae81f (first)
+=======
+permissions:
+>>>>>>> 0253339c (first)
   contents: write
 
 jobs:
@@ -69,6 +73,7 @@ jobs:
 
     - name: Node
       run: cd docs && npm install
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -109,11 +114,14 @@ jobs:
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 0253339c (first)
 
     - name: Production
       run: cd docs && npm run prod
 
     - name: CNAME
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -174,15 +182,20 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@latest
 >>>>>>> 2df6fbc8 (first)
 =======
+=======
+>>>>>>> 0253339c (first)
       run: cd docs && echo "laraxot.github.io/module_tenant" > ./build_production/CNAME
 
     - name: gh-pages
       uses: JamesIves/github-pages-deploy-action@latest
+<<<<<<< HEAD
 >>>>>>> 8fc3049b (first)
 =======
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 0253339c (first)
       with:
         branch: gh-pages
         folder: ./docs/build_production

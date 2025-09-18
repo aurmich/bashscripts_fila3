@@ -29,6 +29,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 const dotenvExpand = require('dotenv-expand');
 dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/}));
 
@@ -115,11 +116,17 @@ dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/}));
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+const dotenvExpand = require('dotenv-expand');
+dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/ }));
+
+>>>>>>> 0253339c (first)
 const mix = require('laravel-mix');
 require('laravel-mix-merge-manifest');
 
 mix.setPublicPath('../../public').mergeManifest();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -205,10 +212,15 @@ mix.js(__dirname + '/resources/assets/js/app.js', 'js/blog.js')
 mix.js(__dirname + '/resources/assets/js/app.js', 'js/blog.js')
     .sass(__dirname + '/resources/assets/sass/app.scss', 'css/blog.css');
 >>>>>>> bdeae81f (first)
+=======
+mix.js(__dirname + '/resources/assets/js/app.js', 'js/tenant.js')
+    .sass(__dirname + '/resources/assets/sass/app.scss', 'css/tenant.css');
+>>>>>>> 0253339c (first)
 
 if (mix.inProduction()) {
     mix.version();
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -363,3 +375,5 @@ if (mix.inProduction()) {
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 0253339c (first)

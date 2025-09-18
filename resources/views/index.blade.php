@@ -31,6 +31,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('rating::layouts.master')
 =======
 @extends('xot::layouts.app')
@@ -131,10 +132,14 @@
 =======
 @extends('user::layouts.master')
 >>>>>>> bdeae81f (first)
+=======
+@extends('tenant::layouts.master')
+>>>>>>> 0253339c (first)
 
 @section('content')
     <h1>Hello World</h1>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -217,10 +222,13 @@
 @endsection
 >>>>>>> c986cc10 (first)
 =======
+=======
+>>>>>>> 0253339c (first)
     <p>
         This view is loaded from module: {!! config('tenant.name') !!}
     </p>
 @endsection
+<<<<<<< HEAD
 >>>>>>> 8fc3049b (first)
 =======
     <p>
@@ -358,3 +366,5 @@
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 0253339c (first)

@@ -33,6 +33,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 /**
@@ -227,10 +228,17 @@ namespace Modules\User\Providers;
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Tenant\Providers;
+
+>>>>>>> 0253339c (first)
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -320,10 +328,13 @@ class RouteServiceProvider extends ServiceProvider
     protected string $moduleNamespace = 'Modules\Media\Http\Controllers';
 >>>>>>> c986cc10 (first)
 =======
+=======
+>>>>>>> 0253339c (first)
     /**
      * The module namespace to assume when generating URLs to actions.
      */
     protected string $moduleNamespace = 'Modules\Tenant\Http\Controllers';
+<<<<<<< HEAD
 >>>>>>> 8fc3049b (first)
 =======
     /**
@@ -467,10 +478,13 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider {
 =======
     protected string $moduleNamespace = 'Modules\User\Http\Controllers';
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 0253339c (first)
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -799,4 +813,8 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
     public string $name = 'User';
 >>>>>>> bdeae81f (first)
+=======
+
+    public string $name = 'Tenant';
+>>>>>>> 0253339c (first)
 }

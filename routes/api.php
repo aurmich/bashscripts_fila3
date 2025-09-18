@@ -18,6 +18,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -73,6 +74,11 @@ use Illuminate\Support\Facades\Route;
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+declare(strict_types=1);
+
+/*
+>>>>>>> 0253339c (first)
 |--------------------------------------------------------------------------
 | API Routes
 |--------------------------------------------------------------------------
@@ -82,6 +88,7 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -201,11 +208,14 @@ Route::middleware('auth:api')->get('/setting', fn(Request $request) => $request-
 =======
 >>>>>>> c986cc10 (first)
 =======
+=======
+>>>>>>> 0253339c (first)
 /*
 Route::middleware('auth:api')->get('/tenant', function (Request $request) {
     return $request->user();
 });
 */
+<<<<<<< HEAD
 >>>>>>> 8fc3049b (first)
 =======
 >>>>>>> 7e417e87 (first)
@@ -268,3 +278,5 @@ declare(strict_types=1);
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 0253339c (first)
