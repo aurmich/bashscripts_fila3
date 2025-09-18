@@ -21,6 +21,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -158,6 +159,11 @@ declare(strict_types=1);
 
 namespace Modules\Sigma\Providers;
 >>>>>>> f862c51f (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Sindacati\Providers;
+>>>>>>> 9997d18c (first)
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as BaseEventServiceProvider;
 
@@ -169,6 +175,7 @@ class EventServiceProvider extends BaseEventServiceProvider
      * @var array<string, array<int, string>>
      */
     protected $listen = [];
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -253,6 +260,9 @@ class EventServiceProvider extends BaseEventServiceProvider
 =======
 
 >>>>>>> f862c51f (first)
+=======
+
+>>>>>>> 9997d18c (first)
     /**
      * Indicates if events should be discovered.
      *
@@ -263,6 +273,7 @@ class EventServiceProvider extends BaseEventServiceProvider
     /**
      * Configure the proper event listeners for email verification.
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -407,4 +418,7 @@ class EventServiceProvider extends ServiceProvider
 =======
     protected function configureEmailVerification(): void {}
 >>>>>>> f862c51f (first)
+=======
+    protected function configureEmailVerification(): void {}
+>>>>>>> 9997d18c (first)
 }

@@ -25,6 +25,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('rating::layouts.master')
 =======
 @extends('xot::layouts.app')
@@ -107,10 +108,14 @@
 =======
 @extends('sigma::layouts.master')
 >>>>>>> f862c51f (first)
+=======
+@extends('sindacati::layouts.master')
+>>>>>>> 9997d18c (first)
 
 @section('content')
     <h1>Hello World</h1>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -294,3 +299,9 @@
     </p>
 @stop
 >>>>>>> f862c51f (first)
+=======
+    <p>
+        This view is loaded from module: {!! config('sindacati.name') !!}
+    </p>
+@stop
+>>>>>>> 9997d18c (first)

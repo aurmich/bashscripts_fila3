@@ -27,6 +27,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 /**
@@ -184,10 +185,18 @@ namespace Modules\Sigma\Providers;
 
 // --- bases ---
 >>>>>>> f862c51f (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Sindacati\Providers;
+
+// --- bases ---
+>>>>>>> 9997d18c (first)
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -393,10 +402,16 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider {
      */
     protected string $moduleNamespace = 'Modules\Sigma\Http\Controllers';
 >>>>>>> f862c51f (first)
+=======
+    public string $name = 'Sindacati';
+
+    protected string $moduleNamespace = 'Modules\Sindacati\Http\Controllers';
+>>>>>>> 9997d18c (first)
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -699,4 +714,6 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
     public string $name = 'Sigma';
 >>>>>>> f862c51f (first)
+=======
+>>>>>>> 9997d18c (first)
 }

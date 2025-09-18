@@ -28,6 +28,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "laraxot/bashscripts_fila3",
     "description": "Script di utilità per la gestione dei repository Git, Toolkit di automazione Git per progetti Laravel",
     "type": "library",
@@ -234,12 +235,19 @@
     "license": "MIT",
     "homepage": "https://github.com/laraxot/module_sigma_fila3.git",
 >>>>>>> f862c51f (first)
+=======
+    "name": "laraxot/module_sindacati_fila3",
+    "description": "",
+    "license": "MIT",
+    "homepage": "https://github.com/laraxot/module_sindacati_fila3.git",
+>>>>>>> 9997d18c (first)
     "authors": [
         {
             "name": "Marco Sottana",
             "email": "marco.sottana@gmail.com"
         }
     ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -548,12 +556,17 @@
     "require": {
         "spatie/laravel-sluggable": "*"
 >>>>>>> f862c51f (first)
+=======
+    "require": {
+        "spatie/laravel-sluggable": "*"
+>>>>>>> 9997d18c (first)
     },
     "require-dev": {},
     "repositories": [
         {
             "type": "path",
             "url": "../Xot"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -606,6 +619,8 @@
 >>>>>>> fec698af (first)
 =======
 >>>>>>> f862c51f (first)
+=======
+>>>>>>> 9997d18c (first)
         },
         {
             "type": "path",
@@ -613,6 +628,7 @@
         },
         {
             "type": "path",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -860,11 +876,14 @@
 >>>>>>> fec698af (first)
 =======
 >>>>>>> f862c51f (first)
+=======
+>>>>>>> 9997d18c (first)
             "url": "../UI"
         }
     ],
     "autoload": {
         "psr-4": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -959,11 +978,17 @@
             "Modules\\Sigma\\Database\\Factories\\": "database/factories/",
             "Modules\\Sigma\\Database\\Seeders\\": "database/seeders/"
 >>>>>>> f862c51f (first)
+=======
+            "Modules\\Sindacati\\": "app/",
+            "Modules\\Sindacati\\Database\\Factories\\": "database/factories/",
+            "Modules\\Sindacati\\Database\\Seeders\\": "database/seeders/"
+>>>>>>> 9997d18c (first)
         }
     },
     "scripts": {
         "post-autoload-dump": [],
         "post-update-cmd": [],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1040,10 +1065,13 @@
 >>>>>>> fec698af (first)
 =======
 >>>>>>> f862c51f (first)
+=======
+>>>>>>> 9997d18c (first)
         "analyse": "vendor/bin/phpstan analyse",
         "test": "./vendor/bin/pest --no-coverage",
         "test-coverage": "vendor/bin/pest --coverage-html coverage",
         "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1106,10 +1134,13 @@
 >>>>>>> fec698af (first)
 =======
 >>>>>>> f862c51f (first)
+=======
+>>>>>>> 9997d18c (first)
     },
     "config": {
         "sort-packages": true,
         "allow-plugins": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1171,10 +1202,13 @@
 >>>>>>> fec698af (first)
 =======
 >>>>>>> f862c51f (first)
+=======
+>>>>>>> 9997d18c (first)
             "phpstan/extension-installer": true,
             "pestphp/pest-plugin": true
         }
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1378,10 +1412,18 @@
                 "Modules\\Sigma\\Providers\\SigmaServiceProvider",
                 "Modules\\Sigma\\Providers\\Filament\\AdminPanelProvider"
 >>>>>>> f862c51f (first)
+=======
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Sindacati\\Providers\\SindacatiServiceProvider",
+                "Modules\\Sindacati\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> 9997d18c (first)
             ],
             "aliases": {}
         }
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1578,3 +1620,8 @@
     "prefer-stable": true
 }
 >>>>>>> f862c51f (first)
+=======
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+>>>>>>> 9997d18c (first)

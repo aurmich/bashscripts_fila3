@@ -28,6 +28,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3283,3 +3284,6 @@ Una volta che i dati verranno caricati, il Personale potrà quindi stampare/espo
 =======
 # module_sigma_fila3
 >>>>>>> f862c51f (first)
+=======
+# module_sindacati_fila3
+>>>>>>> 9997d18c (first)

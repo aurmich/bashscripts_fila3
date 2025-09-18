@@ -29,6 +29,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ───────────────────────────────────────────────────────
 # Sistema operativo / File nascosti e metadata
 # ───────────────────────────────────────────────────────
@@ -879,10 +880,13 @@ cache/
 >>>>>>> edbb3aab (first)
 =======
 >>>>>>> fec698af (first)
+=======
+>>>>>>> 9997d18c (first)
 /vendor
 *.lock
 /build
 *:Zone.Identifier
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -943,3 +947,5 @@ cache/
 *.exe
 *:Zone.Identifier
 >>>>>>> f862c51f (first)
+=======
+>>>>>>> 9997d18c (first)

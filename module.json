@@ -26,6 +26,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
 =======
@@ -260,11 +261,16 @@
     "name": "Sigma",
     "alias": "sigma",
 >>>>>>> f862c51f (first)
+=======
+    "name": "Sindacati",
+    "alias": "sindacati",
+>>>>>>> 9997d18c (first)
     "description": "",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -312,11 +318,15 @@
 =======
         "Modules\\Questionari\\Providers\\QuestionariServiceProvider"
 >>>>>>> fec698af (first)
+=======
+        "Modules\\Sindacati\\Providers\\SindacatiServiceProvider"
+>>>>>>> 9997d18c (first)
     ],
     "aliases": {},
     "files": [],
     "requires": []
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -381,3 +391,5 @@
 =======
 }
 >>>>>>> f862c51f (first)
+=======
+>>>>>>> 9997d18c (first)

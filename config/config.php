@@ -12,6 +12,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -252,4 +253,11 @@ return [
     'name' => 'Sigma',
     'icon' => 'fas-tower-observation',
 >>>>>>> f862c51f (first)
+=======
+declare(strict_types=1);
+
+return [
+    'name' => 'Sindacati',
+    'icon' => 'fas-fist-raised',
+>>>>>>> 9997d18c (first)
 ];

@@ -12,6 +12,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @section('page_heading','Bagde')
 =======
 @section('page_heading','cert fisc')
@@ -40,10 +41,14 @@
 =======
 @section('page_heading','quiz')
 >>>>>>> fec698af (first)
+=======
+@section('page_heading','Sindacati')
+>>>>>>> 9997d18c (first)
 @section('content')
 <x-filament::badge> flash-message </x-filament::badge>
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -122,3 +127,12 @@ Benvenuto nel programma mensa
 
 @endsection
 >>>>>>> f862c51f (first)
+=======
+<h1>Benvenuto nel programma Sindacati</h1>
+@userLevel(3)
+	livello >=3
+@else
+	livello <3
+@endif
+@endsection
+>>>>>>> 9997d18c (first)

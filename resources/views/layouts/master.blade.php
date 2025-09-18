@@ -18,6 +18,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <html lang="en">
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -86,10 +87,14 @@
 =======
 <html lang="en">
 >>>>>>> f862c51f (first)
+=======
+<html lang="en">
+>>>>>>> 9997d18c (first)
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -255,11 +260,18 @@
        {{-- Laravel Mix - CSS File --}}
        {{-- <link rel="stylesheet" href="{{ mix('css/sigma.css') }}"> --}}
 >>>>>>> f862c51f (first)
+=======
+        <title>Module Sindacati</title>
+
+       {{-- Laravel Mix - CSS File --}}
+       {{-- <link rel="stylesheet" href="{{ mix('css/sindacati.css') }}"> --}}
+>>>>>>> 9997d18c (first)
 
     </head>
     <body>
         @yield('content')
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -468,3 +480,9 @@
     </body>
 </html>
 >>>>>>> f862c51f (first)
+=======
+        {{-- Laravel Mix - JS File --}}
+        {{-- <script src="{{ mix('js/sindacati.js') }}"></script> --}}
+    </body>
+</html>
+>>>>>>> 9997d18c (first)
