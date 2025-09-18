@@ -7,7 +7,10 @@ namespace Modules\Lang\Actions;
 use Illuminate\Support\Str;
 use Nwidart\Modules\Facades\Module;
 use Spatie\QueueableAction\QueueableAction;
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
+=======
+>>>>>>> 6a0fe737 (.)
 
 class GetTransPathAction
 {
@@ -34,6 +37,7 @@ class GetTransPathAction
         }
         $lang = app()->getLocale();
         $relativePath = config('modules.paths.generator.lang.path');
+<<<<<<< HEAD
         
         // Utilizziamo module_path e verifichiamo che restituisca una stringa
         $lang_path = module_path($ns, $relativePath);
@@ -43,5 +47,10 @@ class GetTransPathAction
         Assert::string($file_name, 'Il nome del file deve essere una stringa');
 
         return $lang_path.'/'.$lang.'/'.$file_name.'.php';
+=======
+        $lang_path = module_path($ns, $relativePath);
+
+        return $lang_path.'/'.$lang.'/'.$piece[0].'.php';
+>>>>>>> 6a0fe737 (.)
     }
 }

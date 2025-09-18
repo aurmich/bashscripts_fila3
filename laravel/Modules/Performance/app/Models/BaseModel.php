@@ -15,11 +15,23 @@ abstract class BaseModel extends Model
     protected $connection = 'performance';
 
     /** @return array<string, string> */
-    public function casts(): array
+    protected function casts(): array
     {
         return [
-            // 'created_at' => 'datetime',
-            // 'updated_at' => 'datetime',
+            'created_at' => 'datetime',
+            'updated_at' => 'datetime',
+            'stabi' => 'integer',
+            'anno' => 'integer',
+            'tot_budget_assegnato' => 'decimal:2',
+            'tot_budget_assegnato_min_punteggio' => 'decimal:2',
+            'tot_quota_effettiva' => 'decimal:2',
+            'tot_quota_effettiva_min_punteggio' => 'decimal:2',
+            'tot_resti' => 'decimal:2',
+            'tot_resti_min_punteggio' => 'decimal:2',
+            'delta' => 'decimal:2',
+            'delta_min_punteggio' => 'decimal:2',
+            'n_diritto' => 'integer',
+            'n_diritto_excellence' => 'float'
         ];
     }
 

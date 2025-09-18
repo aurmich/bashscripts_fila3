@@ -17,7 +17,10 @@ use Illuminate\Support\Str;
 use Illuminate\View\View;
 use Livewire\Component;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
+=======
+>>>>>>> 6a0fe737 (.)
 
 // Route::get('{path}', RedirectToPreferredLanguage::class)
 // ->where('path', '^(?!(en|de)).*');
@@ -40,6 +43,7 @@ class Change extends Component
             // @phpstan-ignore staticMethod.notFound
             $url = LaravelLocalization::getLocalizedURL($key, $this->url, [], true);
             if (false !== $url) {
+<<<<<<< HEAD
                 // Verifichiamo che $url sia una stringa o lo convertiamo in modo sicuro
                 if (!is_string($url)) {
                     // Se non è una stringa, utilizziamo una URL di fallback
@@ -47,6 +51,9 @@ class Change extends Component
                 } else {
                     $url = Str::of($url)->replace(url(''), '')->toString();
                 }
+=======
+                $url = Str::of($url)->replace(url(''), '')->toString();
+>>>>>>> 6a0fe737 (.)
             }
             $item['url'] = $url;
 

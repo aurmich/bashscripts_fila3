@@ -9,6 +9,7 @@ use Illuminate\Support\Collection;
 use Spatie\LaravelData\Data;
 use Spatie\LaravelData\DataCollection;
 
+<<<<<<< HEAD
 /**
  * Classe che rappresenta i dati relativi a una lingua.
  */
@@ -48,6 +49,18 @@ class LangData extends Data
      * @param EloquentCollection<int, mixed>|Collection<int, mixed>|array<int, mixed> $data
      * @return DataCollection<LangData>
      */
+=======
+class LangData extends Data
+{
+    public string $id;
+
+    public string $name;
+
+    public string $flag;
+
+    public string $url;
+
+>>>>>>> 6a0fe737 (.)
     public static function collection(EloquentCollection|Collection|array $data): DataCollection
     {
         return self::collect($data, DataCollection::class);

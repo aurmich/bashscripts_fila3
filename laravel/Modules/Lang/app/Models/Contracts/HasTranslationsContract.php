@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Models\Contracts;
 
+<<<<<<< HEAD
 /**
  * Interfaccia per modelli che supportano traduzioni.
  */
@@ -28,6 +29,14 @@ interface HasTranslationsContract
      * @param int|array<mixed>|string|null $value Il valore da impostare per la traduzione
      * 
      * @return self L'istanza corrente del modello, per supportare method chaining
+=======
+interface HasTranslationsContract
+{
+    public function getTranslation(string $key, string $locale, bool $useFallbackLocale = true): mixed;
+
+    /**
+     * @param int|array|string|null $value
+>>>>>>> 6a0fe737 (.)
      */
     public function setTranslation(string $key, string $locale, $value): self;
 }

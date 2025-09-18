@@ -2,44 +2,41 @@
 
 declare(strict_types=1);
 
-namespace Modules\User\Models;
+namespace Modules\Lang\Models;
 
-use Illuminate\Database\Eloquent\Concerns\HasUuids;
-use Illuminate\Database\Eloquent\Factories\Factory;
 // //use Laravel\Scout\Searchable;
+// ---------- traits
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Modules\Lang\Models\Traits\LinkedTrait;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
-use Modules\Xot\Models\XotBaseUuidModel;
 use Modules\Xot\Traits\Updater;
 
 /**
- * Class BaseUuidModel.
+ * Class BaseModelLang.
+ *
+ * @property string|null $post_type
  */
-abstract class BaseUuidModel extends XotBaseUuidModel
+abstract class BaseModelLang extends Model
 {
-    // use Searchable;
-    // //use Cachable;
     use HasFactory;
-    use HasUuids;
+
+    // use Searchable;
+    use LinkedTrait;
     use Updater;
 
     /**
      * Indicates whether attributes are snake cased on arrays.
      *
-     * @see https://laravel-news.com/6-eloquent-secrets
+     * @see  https://laravel-news.com/6-eloquent-secrets
      *
      * @var bool
      */
     public static $snakeAttributes = true;
 
     /** @var bool */
-    public $incrementing = false;
-
-    /** @var string */
-    protected $keyType = 'string';
-
-    /** @var string */
-    protected $primaryKey = 'id';
+    public $incrementing = true;
 
     /** @var bool */
     public $timestamps = true;
@@ -48,43 +45,44 @@ abstract class BaseUuidModel extends XotBaseUuidModel
     protected $perPage = 30;
 
     /** @var string */
-    protected $connection = 'user';
+    protected $connection = 'lang';
 
     /** @var list<string> */
-    protected $appends = [];
+    protected $fillable = ['id'];
+
+    /** @var string */
+    protected $primaryKey = 'id';
+
+    /** @var string */
+    protected $keyType = 'string';
 
     /** @var list<string> */
     protected $hidden = [
         // 'password'
     ];
 
+    // -----------
+    /*
+    protected $id;
+    protected $post;
+    protected $lang;
+    */
     /**
      * Create a new factory instance for the model.
      *
-     * @return Factory<static>
+     * @return Factory
      */
     protected static function newFactory()
     {
-        // return app(\Modules\Xot\Actions\Factory\GetFactoryAction::class)->execute(static::class);
         return app(GetFactoryAction::class)->execute(static::class);
     }
 
-    /** @return array<string, string> */
+    /**
+     * @return array<string, string> */
     protected function casts(): array
     {
         return [
             'id' => 'string',
-            'published_at' => 'datetime',
-
-            'verified_at' => 'datetime',
-
-            'created_at' => 'datetime',
-            'updated_at' => 'datetime',
-            'deleted_at' => 'datetime',
-
-            'updated_by' => 'string',
-            'created_by' => 'string',
-            'deleted_by' => 'string',
-        ];
+            'uuid' => 'string', 'published_at' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime'];
     }
 }
