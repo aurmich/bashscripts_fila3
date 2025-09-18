@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     // 📄 Sezioni principali
     'pages' => 'Pagine',
     'widgets' => 'Widget',
@@ -117,6 +118,41 @@ return [
             'messages' => [
                 'success' => 'Elemento creato con successo',
                 'error' => 'Errore durante la creazione',
+=======
+    'pages' => 'Pagine',
+    'widgets' => 'Widgets',
+    'navigation' => [
+        'name' => 'Rating pivot',
+        'plural' => 'Rating pivot',
+        'group' => [
+            'name' => '',
+        ],
+        'label' => 'rating morph.navigation',
+    ],
+    'fields' => [
+        'name' => 'Nome',
+        'guard_name' => 'Guard',
+        'permissions' => 'Permessi',
+        'updated_at' => 'Aggiornato il',
+        'first_name' => 'Nome',
+        'last_name' => 'Cognome',
+        'select_all' => [
+            'name' => 'Seleziona Tutti',
+            'message' => '',
+        ],
+    ],
+    'actions' => [
+        'import' => [
+            'fields' => [
+                'import_file' => 'Seleziona un file XLS o CSV da caricare',
+            ],
+        ],
+        'export' => [
+            'filename_prefix' => 'Aree al',
+            'columns' => [
+                'name' => 'Nome area',
+                'parent_name' => 'Nome area livello superiore',
+>>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
             ],
         ],
     ],

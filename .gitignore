@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ───────────────────────────────────────────────────────
 # Sistema operativo / File nascosti e metadata
 # ───────────────────────────────────────────────────────
@@ -372,6 +373,8 @@ public_html/vendor/
 *.old
 >>>>>>> 09d4c7ad (.)
 =======
+=======
+>>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
 *.jar
 *.log
 *.lock
@@ -407,5 +410,8 @@ build/
 node_modules
 docs/cache/
 cache/
+<<<<<<< HEAD
 *:Zone.Identifier
 >>>>>>> 164b8363 (Squashed 'laravel/Modules/Rating/' content from commit e5c84117)
+=======
+>>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')

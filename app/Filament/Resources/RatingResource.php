@@ -29,6 +29,7 @@ class RatingResource extends XotBaseResource
     public static function getFormSchema(): array
     {
         return [
+<<<<<<< HEAD
             'type' => TextInput::make('extra_attributes.type'),
             'anno' => TextInput::make('extra_attributes.anno'),
             'title' => TextInput::make('title')->autofocus()->required(),
@@ -40,6 +41,19 @@ class RatingResource extends XotBaseResource
                     'is_readonly' => Toggle::make('is_readonly'),
                 ]),
             'txt' => RichEditor::make('txt')->columnSpanFull(),
+=======
+            TextInput::make('extra_attributes.type'),
+            TextInput::make('extra_attributes.anno'),
+            TextInput::make('title')->autofocus()->required(),
+            ColorPicker::make('color'),
+            Radio::make('rule')->options(RuleEnum::class),
+            Section::make()
+                ->schema([
+                    Toggle::make('is_disabled'),
+                    Toggle::make('is_readonly'),
+                ]),
+            RichEditor::make('txt')->columnSpanFull(),
+>>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
         ];
     }
 

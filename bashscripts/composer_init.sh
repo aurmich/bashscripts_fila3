@@ -6,6 +6,7 @@ php -r "unlink('composer.lock');"
 rm composer.lock
 rm package-lock.json
 <<<<<<< HEAD
+<<<<<<< HEAD
 #mv composer.json composer_$(date +"%Y-%m-%d").json
 #php composer.phar init
 
@@ -87,6 +88,8 @@ php -d memory_limit=-1 composer.phar require -W --dev --ignore-platform-reqs pes
 php -d memory_limit=-1 composer.phar remove laravel/sanctum
 rm config/sanctum.php 
 =======
+=======
+>>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
 
 ##############  ####################
 php -d memory_limit=-1 composer.phar require -W illuminate/contracts
@@ -103,4 +106,7 @@ php -d memory_limit=-1 composer.phar require -W --dev phpstan/extension-installe
 php -d memory_limit=-1 composer.phar require -W --dev phpstan/phpstan-deprecation-rules
 php -d memory_limit=-1 composer.phar require -W --dev phpstan/phpstan-phpunit
 php -d memory_limit=-1 composer.phar require -W --dev spatie/laravel-ray
+<<<<<<< HEAD
 >>>>>>> 164b8363 (Squashed 'laravel/Modules/Rating/' content from commit e5c84117)
+=======
+>>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')

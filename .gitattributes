@@ -4,7 +4,11 @@
 *.js linguist-vendored
 CHANGELOG.md export-ignore
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 *.psd filter=lfs diff=lfs merge=lfs -text
 >>>>>>> 164b8363 (Squashed 'laravel/Modules/Rating/' content from commit e5c84117)
+=======
+*.psd filter=lfs diff=lfs merge=lfs -text
+>>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')

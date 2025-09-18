@@ -2,7 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Rating\Enums;
+=======
+namespace Modules\Rating\App\Enums;
+>>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
 
 enum SupportedLocale: string
 {
@@ -27,12 +31,17 @@ enum SupportedLocale: string
      */
     public static function toArray(): array
     {
+<<<<<<< HEAD
         /** @var array<string, string> $result */
         $result = array_reduce(
+=======
+        return array_reduce(
+>>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
             self::cases(),
             fn (array $carry, self $locale) => [...$carry, $locale->value => $locale->getLabel()],
             []
         );
+<<<<<<< HEAD
         
         return $result;
     }
@@ -47,5 +56,7 @@ enum SupportedLocale: string
             'en' => self::EN,
             default => self::IT,
         };
+=======
+>>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
     }
 }

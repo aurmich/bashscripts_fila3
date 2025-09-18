@@ -60,7 +60,11 @@ use Modules\Xot\Datas\XotData;
  * @method static \Illuminate\Database\Eloquent\Builder|RatingMorph whereValue($value)
  *
  * @property \Illuminate\Database\Eloquent\Model|\Eloquent $model
+<<<<<<< HEAD
  * @property \Illuminate\Database\Eloquent\Model|null $profile
+=======
+ * @property \Modules\Blog\Models\Profile|null             $profile
+>>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
  * @property \Modules\Xot\Contracts\UserContract|null      $user
  * @property string                                        $reward
  *

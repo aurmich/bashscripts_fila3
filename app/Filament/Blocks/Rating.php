@@ -16,7 +16,10 @@ use Modules\Rating\Datas\RatingData;
 use Modules\Rating\Enums\SupportedLocale;
 use Modules\UI\Filament\Forms\Components\RadioImage;
 use Modules\Xot\Actions\Filament\Block\GetViewBlocksOptionsByTypeAction;
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
+=======
+>>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
 
 class Rating extends Block
 {
@@ -27,8 +30,11 @@ class Rating extends Block
      */
     public static function create(): Block
     {
+<<<<<<< HEAD
         // Ensure we're passing a string to make()
         Assert::stringNotEmpty(static::BLOCK_TYPE, 'Block type must be a non-empty string');
+=======
+>>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
         return parent::make(static::BLOCK_TYPE)
             ->schema([
                 TextInput::make('title')
@@ -46,7 +52,11 @@ class Rating extends Block
                 $locale = App::getLocale();
                 $supportedLocale = SupportedLocale::fromString($locale);
 
+<<<<<<< HEAD
                 return sprintf('Rating (%s)', $supportedLocale->getLabel());
+=======
+                return sprintf('Rating (%s)', $supportedLocale->label());
+>>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
             });
     }
 
@@ -70,15 +80,22 @@ class Rating extends Block
         string $context = 'form',
         ?array $options = null,
     ): Block {
+<<<<<<< HEAD
         // Ensure we're passing a string to execute()
         Assert::stringNotEmpty(static::BLOCK_TYPE, 'Block type must be a non-empty string');
+=======
+>>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
         $blockOptions = $options ?? app(GetViewBlocksOptionsByTypeAction::class)
             ->execute(static::BLOCK_TYPE, true);
 
         return Block::make($name)
             ->schema([
                 RadioImage::make('view')
+<<<<<<< HEAD
                     ->options(is_array($blockOptions) ? array_map(fn($value) => is_scalar($value) ? (string)$value : '', $blockOptions) : []),
+=======
+                    ->options($blockOptions),
+>>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
 
                 Repeater::make('ratings')
                     ->visible(fn (Get $get): bool => $get('locale') === App::getLocale())
