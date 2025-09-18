@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Xot\Datas;
 
 use Spatie\LaravelData\Data;
@@ -60,5 +61,62 @@ class NotificationData extends Data
     public static function make(): static
     {
         return new static();
+=======
+namespace Modules\Notify\Datas;
+
+use Illuminate\Notifications\Notification;
+use Modules\Notify\Models\Notification as NotificationModel;
+use Spatie\LaravelData\Data;
+use Spatie\LaravelData\DataCollection;
+
+class NotificationData extends Data
+{
+    // public string $mobile_phone;
+    // public string $token;
+    // public int $q;
+    public string $from;
+
+    public ?string $from_email = null;
+
+    public string $to;
+
+    public ?string $subject = null;
+
+    public ?string $body_html = null;
+
+    public string $body;
+
+    public array $channels = [];
+
+    /**
+     * @var DataCollection<AttachmentData>
+     */
+    public ?DataCollection $attachments = null;
+    // public ?array $attachment_paths = [];
+
+    /**
+     * Get the notification routing information for the given driver.
+     */
+    public function routeNotificationFor(string $driver, Notification $notification): string|NotificationModel
+    {
+        // dddx(['driver'=>$driver,'a'=>$a]);
+        // return $this->routes[$driver] ?? null;
+        if ($driver === 'database') {
+            return app(NotificationModel::class);
+        }
+
+        return $this->to;
+    }
+
+    public function getSmsData(): SmsData
+    {
+        return SmsData::from(
+            [
+                'from' => $this->from,
+                'to' => $this->to,
+                'body' => $this->body,
+            ]
+        );
+>>>>>>> d79d9e57 (first)
     }
 }

@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('rating::layouts.master')
 =======
 @extends('xot::layouts.app')
@@ -15,11 +16,15 @@
 =======
 @extends('job::layouts.master')
 >>>>>>> c088001a (first)
+=======
+@extends('notify::layouts.master')
+>>>>>>> d79d9e57 (first)
 
 @section('content')
     <h1>Hello World</h1>
 
     <p>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -47,3 +52,8 @@
     </p>
 @endsection
 >>>>>>> c088001a (first)
+=======
+        This view is loaded from module: {!! config('notify.name') !!}
+    </p>
+@endsection
+>>>>>>> d79d9e57 (first)

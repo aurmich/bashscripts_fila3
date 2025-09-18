@@ -3,6 +3,7 @@ providers:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Modules\Rating\Providers\RatingServiceProvider
 =======
   - Modules\Xot\Providers\XotServiceProvider
@@ -20,3 +21,6 @@ providers:
 =======
   - Modules\Job\Providers\JobServiceProvider
 >>>>>>> c088001a (first)
+=======
+  - Modules\Notify\Providers\NotifyServiceProvider
+>>>>>>> d79d9e57 (first)

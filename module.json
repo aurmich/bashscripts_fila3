@@ -3,16 +3,22 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
 =======
     "name": "UI",
     "alias": "ui",
 >>>>>>> a8f30311 (first)
+=======
+    "name": "Notify",
+    "alias": "notify",
+>>>>>>> d79d9e57 (first)
     "description": "",
     "keywords": [],
     "priority": 0,
     "providers": [
+<<<<<<< HEAD
 <<<<<<< HEAD
         "Modules\\Rating\\Providers\\RatingServiceProvider",
         "Modules\\Rating\\Providers\\Filament\\AdminPanelProvider"
@@ -52,10 +58,15 @@
         "Modules\\Job\\Providers\\JobServiceProvider",
         "Modules\\Job\\Providers\\Filament\\AdminPanelProvider"
 >>>>>>> c088001a (first)
+=======
+        "Modules\\Notify\\Providers\\NotifyServiceProvider",
+        "Modules\\Notify\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> d79d9e57 (first)
     ],
     "aliases": [],
     "files": [],
     "requires": []
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -76,3 +87,6 @@
 =======
 }
 >>>>>>> c088001a (first)
+=======
+}
+>>>>>>> d79d9e57 (first)

@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2092,6 +2093,8 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file `LICENSE` per 
 
  b7907077 (.)
 
+=======
+>>>>>>> d79d9e57 (first)
 # 📣 Enhance Your App with the Fila3 Notify Module! 🚀
 
 ![GitHub issues](https://img.shields.io/github/issues/laraxot/module_notify_fila3)
@@ -2099,9 +2102,15 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file `LICENSE` per 
 ![GitHub stars](https://img.shields.io/github/stars/laraxot/module_notify_fila3)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
+<<<<<<< HEAD
 Welcome to the **Fila3 Notify Module**! This powerful notification system is designed to streamline communication within your application. Whether you're sending alerts, reminders, or updates, the Fila3 Notify Module has you covered with its versatile features and easy integration.
 
 ## 📦 What's Inside?
+=======
+Welcome to the **Fila3 Notify Module**! This powerful notification system is designed to streamline communication within your application. Whether you’re sending alerts, reminders, or updates, the Fila3 Notify Module has you covered with its versatile features and easy integration.
+
+## 📦 What’s Inside?
+>>>>>>> d79d9e57 (first)
 
 The Fila3 Notify Module allows you to implement a robust notification system with minimal effort, featuring:
 
@@ -2114,7 +2123,11 @@ The Fila3 Notify Module allows you to implement a robust notification system wit
 
 - **Multi-format Support**: Create notifications with rich content, including text, images, and links.
 - **Notification Queue**: Handle multiple notifications efficiently with a built-in queue system.
+<<<<<<< HEAD
 - **Event Listeners**: Integrate easily with your application's events to trigger notifications automatically.
+=======
+- **Event Listeners**: Integrate easily with your application’s events to trigger notifications automatically.
+>>>>>>> d79d9e57 (first)
 - **Custom Notification Channels**: Organize notifications into different channels to keep users informed about relevant updates.
 - **Configurable Display Options**: Choose how and where notifications appear, from pop-ups to in-page alerts.
 - **User Preferences Management**: Allow users to customize their notification settings for a personalized experience.
@@ -2133,6 +2146,7 @@ Getting started with the Fila3 Notify Module is easy! Follow these steps to inte
 1. Clone the repository:
    ```bash
    git clone https://github.com/laraxot/module_notify_fila3.git
+<<<<<<< HEAD
 =======
 # 🎨 Elevate Your Interface with the Fila3 UI Module! 🚀
 
@@ -2175,20 +2189,29 @@ Getting started with the Fila3 UI Module is straightforward! Follow these steps:
    ```bash
    git clone https://github.com/laraxot/module_ui_fila3.git
 >>>>>>> a8f30311 (first)
+=======
+>>>>>>> d79d9e57 (first)
 
 Navigate to the project directory:
 bash
 Copia codice
 <<<<<<< HEAD
+<<<<<<< HEAD
 cd module_notify_fila3
 =======
 cd module_ui_fila3
 >>>>>>> a8f30311 (first)
+=======
+cd module_notify_fila3
+>>>>>>> d79d9e57 (first)
 Install dependencies:
 bash
 Copia codice
 npm install
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d79d9e57 (first)
 Configure your settings in the config file to customize notification behavior.
 Start your application and unleash the power of notifications!
 📜 Usage Examples
@@ -2210,6 +2233,7 @@ notify.on('notificationReceived', (data) => {
 });
 🤝 Contributing
 We love contributions! If you have ideas, bug fixes, or enhancements, check out the contributing guidelines to get started.
+<<<<<<< HEAD
 =======
 Import the UI components in your application:
 javascript
@@ -2236,6 +2260,8 @@ Copia codice
 🤝 Contributing
 We welcome contributions! If you have ideas, bug fixes, or enhancements, check out the contributing guidelines to get started.
 >>>>>>> a8f30311 (first)
+=======
+>>>>>>> d79d9e57 (first)
 
 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
@@ -2243,6 +2269,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 👤 Author
 Marco Sottana
 Discover more of my work at marco76tv!
+<<<<<<< HEAD
 <<<<<<< HEAD
  9e03a20f (Squashed 'laravel/Modules/Notify/' changes from 404426f9..02d5f061)
 
@@ -2861,3 +2888,5 @@ A special shoutout to the masterminds behind this project:
 ## 🤝 Contributing
 Join the revolution! If you want to contribute to the project, send us a pull request or open an issue to share your ideas.
 >>>>>>> c088001a (first)
+=======
+>>>>>>> d79d9e57 (first)

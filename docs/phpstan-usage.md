@@ -13,7 +13,11 @@ cd /path/to/laravel
 
 Analizzare un singolo modulo:
 ```bash
+<<<<<<< HEAD
 ./vendor/bin/phpstan analyse -l 9 Modules/Rating
+=======
+./vendor/bin/phpstan analyse -l 9 Modules/Notify
+>>>>>>> d79d9e57 (first)
 ```
 
 Analizzare più moduli contemporaneamente:
@@ -42,6 +46,7 @@ Quando si esegue PHPStan in un ambiente di CI/CD, è consigliabile utilizzare:
 ./vendor/bin/phpstan analyse -l 9 --no-progress --error-format=github Modules/*
 ```
 
+<<<<<<< HEAD
 ## Architettura del Modulo Rating
 
 L'efficacia dell'analisi statica tramite PHPStan nel modulo Rating dipende dalla corretta strutturazione sia del codice che delle directory.
@@ -80,6 +85,45 @@ Il modulo Rating è progettato secondo una separazione chiara tra:
    ```
 
 Per dettagli completi, consulta `docs/directory_structure.md`.
+=======
+## Architettura del Modulo Notify
+
+Il modulo Notify implementa un sistema di notifiche multicanale che richiede un'attenta organizzazione strutturale per garantire l'affidabilità dell'analisi statica.
+
+### Organizzazione Concettuale
+
+Il modulo è organizzato seguendo il principio di separazione delle responsabilità, con differenti componenti che si occupano di:
+
+* **Generazione notifiche**: Logica per la creazione e personalizzazione dei messaggi
+* **Invio multicanale**: Adattatori per diversi canali di comunicazione (push, email, SMS)
+* **Monitoraggio e tracking**: Meccanismi per tracciare le notifiche inviate
+
+### Separazione Namespace-Directory
+
+Il modulo segue una chiara distinzione tra organizzazione fisica e logica:
+
+#### 1. Struttura Fisica delle Directory
+
+* **Codice applicativo**: Risiede nella directory `app/` del modulo
+  ```
+  Modules/Notify/app/Models/          <-- Entità dati (Notification, Channel, ecc.)
+  Modules/Notify/app/Actions/         <-- Azioni di notifica
+  Modules/Notify/app/Services/        <-- Servizi di invio (in migrazione verso Actions)
+  ```
+
+* **Traduzioni**: Si trovano direttamente nella directory `lang/` del modulo
+  ```
+  Modules/Notify/lang/it/            <-- Traduzioni italiane delle notifiche
+  Modules/Notify/lang/en/            <-- Traduzioni inglesi delle notifiche
+  ```
+
+* **Configurazione**: A livello root del modulo
+  ```
+  Modules/Notify/config/notification.php   <-- Configurazione canali e opzioni
+  ```
+
+La documentazione completa sulla struttura dei moduli è disponibile in `docs/directory_structure.md`.
+>>>>>>> d79d9e57 (first)
 
 ## Risoluzione dei problemi comuni
 

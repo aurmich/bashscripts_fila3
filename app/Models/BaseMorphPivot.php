@@ -5,6 +5,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Rating\Models;
 =======
 namespace Modules\Xot\Models;
@@ -15,6 +16,9 @@ namespace Modules\Lang\Models;
 =======
 namespace Modules\Job\Models;
 >>>>>>> c088001a (first)
+=======
+namespace Modules\Notify\Models;
+>>>>>>> d79d9e57 (first)
 
 use Illuminate\Database\Eloquent\Relations\MorphPivot;
 use Modules\Xot\Traits\Updater;
@@ -32,6 +36,7 @@ abstract class BaseMorphPivot extends MorphPivot
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @see  https://laravel-news.com/6-eloquent-secrets
 =======
      * @see https://laravel-news.com/6-eloquent-secrets
@@ -42,6 +47,9 @@ abstract class BaseMorphPivot extends MorphPivot
 =======
      * @see https://laravel-news.com/6-eloquent-secrets
 >>>>>>> c088001a (first)
+=======
+     * @see https://laravel-news.com/6-eloquent-secrets
+>>>>>>> d79d9e57 (first)
      *
      * @var bool
      */
@@ -53,6 +61,7 @@ abstract class BaseMorphPivot extends MorphPivot
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /** @var bool */
     public $timestamps = true;
 
@@ -63,10 +72,16 @@ abstract class BaseMorphPivot extends MorphPivot
     public $timestamps = true;
 
 >>>>>>> c088001a (first)
+=======
+    /** @var bool */
+    public $timestamps = true;
+
+>>>>>>> d79d9e57 (first)
     /** @var int */
     protected $perPage = 30;
 
     /** @var string */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     protected $connection = 'rating';
@@ -85,6 +100,9 @@ abstract class BaseMorphPivot extends MorphPivot
 =======
     protected $connection = 'job';
 >>>>>>> c088001a (first)
+=======
+    protected $connection = 'notify';
+>>>>>>> d79d9e57 (first)
 
     /** @var list<string> */
     protected $appends = [];
@@ -107,6 +125,7 @@ abstract class BaseMorphPivot extends MorphPivot
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function casts(): array
 =======
     protected function casts(): array
@@ -126,11 +145,17 @@ abstract class BaseMorphPivot extends MorphPivot
 
 =======
     protected function casts(): array
+=======
+    public function casts(): array
+>>>>>>> d79d9e57 (first)
     {
         return [
             'id' => 'string',
             'uuid' => 'string',
+<<<<<<< HEAD
 >>>>>>> c088001a (first)
+=======
+>>>>>>> d79d9e57 (first)
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
             'deleted_at' => 'datetime',
@@ -140,10 +165,13 @@ abstract class BaseMorphPivot extends MorphPivot
             'deleted_by' => 'string',
         ];
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 59bc4fe7 (first)
 =======
 >>>>>>> bbec4378 (first)
 =======
 >>>>>>> c088001a (first)
+=======
+>>>>>>> d79d9e57 (first)
     }
 }

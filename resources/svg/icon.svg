@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <!-- Cubo base -->
     <path stroke-linecap="round" 
           stroke-linejoin="round" 
@@ -82,4 +83,23 @@
           stroke-linejoin="round" 
           d="M6.5 14.5l1 1 2-2" />
 >>>>>>> c088001a (first)
+=======
+    <!-- Campana -->
+    <path stroke-linecap="round" 
+          stroke-linejoin="round" 
+          d="M12 3c-1.5 0-2.5.5-3.5 1.5-1 1-1.5 2-1.5 3.5v4l-2 3h14l-2-3v-4c0-1.5-.5-2.5-1.5-3.5S13.5 3 12 3z" />
+    
+    <!-- Base della campana -->
+    <path stroke-linecap="round" 
+          stroke-linejoin="round" 
+          d="M9 17v1a3 3 0 006 0v-1" />
+    
+    <!-- Onde di notifica -->
+    <path stroke-linecap="round" 
+          stroke-linejoin="round" 
+          d="M17 7.5c.5-.5 1-1 1-1" />
+    <path stroke-linecap="round" 
+          stroke-linejoin="round" 
+          d="M18.5 5.5c.5-.5 1-1 1-1" />
+>>>>>>> d79d9e57 (first)
 </svg> 

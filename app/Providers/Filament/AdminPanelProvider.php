@@ -4,12 +4,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d79d9e57 (first)
 /**
  * ---.
  */
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Rating\Providers\Filament;
 
 =======
@@ -34,10 +38,20 @@ declare(strict_types=1);
 namespace Modules\Job\Providers\Filament;
 
 >>>>>>> c088001a (first)
+=======
+namespace Modules\Notify\Providers\Filament;
+
+use Filament\Notifications\Livewire\DatabaseNotifications;
+use Filament\Panel;
+use Filament\Support\Facades\FilamentView;
+use Illuminate\Support\Facades\Blade;
+use Modules\Xot\Datas\XotData;
+>>>>>>> d79d9e57 (first)
 use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 
 class AdminPanelProvider extends XotBasePanelProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -73,4 +87,22 @@ class AdminPanelProvider extends XotBasePanelProvider
 =======
     protected string $module = 'Job';
 >>>>>>> c088001a (first)
+=======
+    protected string $module = 'Notify';
+
+    public function panel(Panel $panel): Panel
+    {
+        if (! XotData::make()->disable_database_notifications) {
+            DatabaseNotifications::trigger('notify::livewire.database-notifications-trigger');
+            // DatabaseNotifications::databaseNotificationsPollingInterval('30s');
+            DatabaseNotifications::pollingInterval('60s');
+            FilamentView::registerRenderHook(
+                'panels::user-menu.before',
+                static fn (): string => Blade::render('@livewire(\'database-notifications\')'),
+            );
+        }
+
+        return parent::panel($panel);
+    }
+>>>>>>> d79d9e57 (first)
 }

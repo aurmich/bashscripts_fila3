@@ -3,6 +3,7 @@
 declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /*
 <<<<<<< HEAD
@@ -38,3 +39,16 @@ Route::middleware('auth:api')->get('/xot', function (Request $request) {
 Route::middleware('auth:api')->get('/job', fn(Request $request) => $request->user());
 */
 >>>>>>> c088001a (first)
+=======
+/*--work in progress
+use Modules\Notify\Http\Controllers\TelegramNotificationController;
+
+Route::middleware('guest')->group(function () {
+    Route::post('/telegram/webhook/',
+        [TelegramNotificationController::class, 'store'])->middleware('api');
+
+    Route::get('/telegram/webhook/',
+        [TelegramNotificationController::class, 'view'])->middleware('api');
+});
+*/
+>>>>>>> d79d9e57 (first)

@@ -21,10 +21,14 @@ jobs:
 
       - name: Set Node.js 19.x
 <<<<<<< HEAD
+<<<<<<< HEAD
         uses: actions/setup-node@v3
 =======
         uses: actions/setup-node@latest
 >>>>>>> c088001a (first)
+=======
+        uses: actions/setup-node@latest
+>>>>>>> d79d9e57 (first)
         with:
           node-version: 19.x
 

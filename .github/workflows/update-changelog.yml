@@ -7,6 +7,7 @@ on:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 permissions:
   contents: write
@@ -19,13 +20,22 @@ permissions:
   contents: write
 
 >>>>>>> c088001a (first)
+=======
+permissions:
+  contents: write
+
+>>>>>>> d79d9e57 (first)
 jobs:
   update:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
+<<<<<<< HEAD
         uses: actions/checkout@v3
+=======
+        uses: actions/checkout@v4
+>>>>>>> d79d9e57 (first)
         with:
           ref: main
 
@@ -36,6 +46,7 @@ jobs:
           release-notes: ${{ github.event.release.body }}
 
       - name: Commit updated CHANGELOG
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -53,6 +64,9 @@ jobs:
 =======
         uses: stefanzweifel/git-auto-commit-action@latest
 >>>>>>> c088001a (first)
+=======
+        uses: stefanzweifel/git-auto-commit-action@latest
+>>>>>>> d79d9e57 (first)
         with:
           branch: main
           commit_message: Update CHANGELOG

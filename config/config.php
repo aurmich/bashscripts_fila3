@@ -7,6 +7,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'name' => 'Rating',
     'icon' => 'heroicon-o-star', // icon on dashboard
     'navigation_sort' => 1,
@@ -41,12 +42,21 @@ return [
         'enabled' => true,
         'sort' => 40,
 >>>>>>> c088001a (first)
+=======
+    'name' => 'Notify',
+    'description' => 'Modulo per la gestione delle notifiche e comunicazioni',
+    'icon' => 'heroicon-o-bell',
+    'navigation' => [
+        'enabled' => true,
+        'sort' => 70,
+>>>>>>> d79d9e57 (first)
     ],
     'routes' => [
         'enabled' => true,
         'middleware' => ['web', 'auth'],
     ],
     'providers' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -65,4 +75,8 @@ return [
         'Modules\\Job\\Providers\\JobServiceProvider',
     ],
 >>>>>>> c088001a (first)
+=======
+        'Modules\\Notify\\Providers\\NotifyServiceProvider',
+    ],
+>>>>>>> d79d9e57 (first)
 ];

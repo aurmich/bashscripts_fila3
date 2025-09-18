@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\UI\Filament\Pages;
 
 use Filament\Pages\Page;
@@ -13,11 +14,17 @@ namespace Modules\Job\Filament\Pages;
 
 use Filament\Pages\Page;
 >>>>>>> c088001a (first)
+=======
+namespace Modules\Notify\Filament\Pages;
+
+use Filament\Pages\Page;
+>>>>>>> d79d9e57 (first)
 
 class Dashboard extends Page
 {
     protected static ?string $navigationIcon = 'heroicon-o-home';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     protected static string $view = 'ui::filament.pages.dashboard';
 
@@ -81,4 +88,17 @@ class Dashboard extends Page
     //     }
     // }
 >>>>>>> c088001a (first)
+=======
+    protected static string $view = 'notify::filament.pages.dashboard';
+
+    public function mount(): void
+    {
+        /*
+        $user = auth()->user();
+        if (! $user->hasRole('super-admin')) {
+            redirect('/admin');
+        }
+        */
+    }
+>>>>>>> d79d9e57 (first)
 }

@@ -4,6 +4,7 @@ includes:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 parameters:
     level: 1
@@ -20,6 +21,8 @@ parameters:
 =======
 =======
 >>>>>>> c088001a (first)
+=======
+>>>>>>> d79d9e57 (first)
     - ./vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
     #- ./vendor/symplify/phpstan-rules/config/code-complexity-rules.neon
     #- ./vendor/symplify/phpstan-rules/config/collector-rules.neon
@@ -28,10 +31,13 @@ parameters:
     #- ./vendor/symplify/phpstan-rules/config/static-rules.neon
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bbec4378 (first)
 =======
 >>>>>>> c088001a (first)
+=======
+>>>>>>> d79d9e57 (first)
 
 parameters:
     level: max
@@ -39,8 +45,11 @@ parameters:
         - .
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c088001a (first)
+=======
+>>>>>>> d79d9e57 (first)
 
     ignoreErrors:
     #    - '#Unsafe usage of new static#'
@@ -48,10 +57,13 @@ parameters:
         - '#Static call to instance method Nwidart#'
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bbec4378 (first)
 =======
 >>>>>>> c088001a (first)
+=======
+>>>>>>> d79d9e57 (first)
     excludePaths:
         - ./build/*
         - ./vendor/*
@@ -59,10 +71,14 @@ parameters:
         - ./docs/*
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         # - ./Tests/*
 =======
         - ./Tests/*
 >>>>>>> c088001a (first)
+=======
+        - ./Tests/*
+>>>>>>> d79d9e57 (first)
         - ./_ide_helper.php
 
     bootstrapFiles:
@@ -83,6 +99,7 @@ parameters:
     reportUnmatchedIgnoredErrors: false
     checkOctaneCompatibility: false
     checkModelProperties: false
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> a8f30311 (first)
 =======
@@ -110,3 +127,5 @@ parameters:
 >>>>>>> bbec4378 (first)
 =======
 >>>>>>> c088001a (first)
+=======
+>>>>>>> d79d9e57 (first)

@@ -2,12 +2,16 @@
 <html lang="en">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c088001a (first)
+=======
+>>>>>>> d79d9e57 (first)
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <title>Module Xot</title>
@@ -26,11 +30,18 @@
        {{-- Laravel Mix - CSS File --}}
        {{-- <link rel="stylesheet" href="{{ mix('css/job.css') }}"> --}}
 >>>>>>> c088001a (first)
+=======
+        <title>Module Notify</title>
+
+       {{-- Laravel Mix - CSS File --}}
+       {{-- <link rel="stylesheet" href="{{ mix('css/notify.css') }}"> --}}
+>>>>>>> d79d9e57 (first)
 
     </head>
     <body>
         @yield('content')
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         {{-- Laravel Mix - JS File --}}
@@ -66,4 +77,9 @@
         {{-- <script src="{{ mix('js/job.js') }}"></script> --}}
     </body>
 >>>>>>> c088001a (first)
+=======
+        {{-- Laravel Mix - JS File --}}
+        {{-- <script src="{{ mix('js/notify.js') }}"></script> --}}
+    </body>
+>>>>>>> d79d9e57 (first)
 </html>

@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
  * ---.
  */
@@ -21,11 +22,17 @@ declare(strict_types=1);
 
 namespace Modules\Job\Providers;
 >>>>>>> c088001a (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Notify\Providers;
+>>>>>>> d79d9e57 (first)
 
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     protected string $moduleNamespace = 'Modules\Rating\Http\Controllers';
@@ -65,11 +72,18 @@ class RouteServiceProvider extends ServiceProvider
 =======
     protected string $moduleNamespace = 'Modules\Job\Http\Controllers';
 >>>>>>> c088001a (first)
+=======
+    /**
+     * The module namespace to assume when generating URLs to actions.
+     */
+    protected string $moduleNamespace = 'Modules\Notify\Http\Controllers';
+>>>>>>> d79d9e57 (first)
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -276,4 +290,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 =======
     public string $name = 'Job';
 >>>>>>> c088001a (first)
+=======
+    public string $name = 'Notify';
+>>>>>>> d79d9e57 (first)
 }

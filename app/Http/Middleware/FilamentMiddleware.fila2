@@ -2,13 +2,21 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Job\Http\Middleware;
+=======
+namespace Modules\Notify\Http\Middleware;
+>>>>>>> d79d9e57 (first)
 
 use Modules\Xot\Http\Middleware\XotBaseFilamentMiddleware;
 
 class FilamentMiddleware extends XotBaseFilamentMiddleware
 {
+<<<<<<< HEAD
     public static string $module = 'Job';
+=======
+    public static string $module = 'Notify';
+>>>>>>> d79d9e57 (first)
 
     public static string $context = 'filament';
 }

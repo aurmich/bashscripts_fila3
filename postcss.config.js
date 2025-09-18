@@ -5,6 +5,7 @@ module.exports = {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'postcss-preset-env': {
       stage: 3,
       features: {
@@ -19,5 +20,7 @@ module.exports = {
 >>>>>>> a8f30311 (first)
 =======
 >>>>>>> c088001a (first)
+=======
+>>>>>>> d79d9e57 (first)
   },
 }

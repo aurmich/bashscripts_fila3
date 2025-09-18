@@ -16,7 +16,11 @@ jobs:
       contents: write
 
     steps:
+<<<<<<< HEAD
       - uses: actions/checkout@v3
+=======
+      - uses: actions/checkout@v4
+>>>>>>> d79d9e57 (first)
         with:
           ref: ${{ github.head_ref }}
 
