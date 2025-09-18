@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\IndennitaCondizioniLavoro\Models\Policies;
 
 use Illuminate\Auth\Access\Response;
@@ -14,11 +15,18 @@ use Illuminate\Auth\Access\Response;
 use Modules\IndennitaResponsabilita\Models\IndennitaResponsabilita as Post;
 >>>>>>> e0005d7d (first)
 use Modules\User\Models\User;
+=======
+namespace Modules\Progressioni\Models\Policies;
+
+// //use Modules\Xot\Traits\XotBasePolicyTrait; //DEPRECATED
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> bcab6efe (first)
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Models\Policies\XotBasePolicy;
 
 class StabiDirigentePolicy extends XotBasePolicy
 {
+<<<<<<< HEAD
     /**
      * Determine whether the user can view the model.
      *
@@ -29,10 +37,14 @@ class StabiDirigentePolicy extends XotBasePolicy
 =======
     public function compila(UserContract $user, Post $post): bool
 >>>>>>> e0005d7d (first)
+=======
+    public function syncStabi(UserContract $userContract, Model $model): bool
+>>>>>>> bcab6efe (first)
     {
         return true;
     }
 
+<<<<<<< HEAD
     /**
      * Determine whether the user can view any models.
      *
@@ -122,4 +134,10 @@ class StabiDirigentePolicy extends XotBasePolicy
     {
         return false;
     }
+=======
+    public function populateFromLastYear(UserContract $userContract, Model $model): bool
+    {
+        return true;
+    }
+>>>>>>> bcab6efe (first)
 }

@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
  * ---.
  */
@@ -15,6 +16,12 @@ namespace Modules\IndennitaResponsabilita\Filament\Resources\StabiDirigenteResou
 
 use Modules\IndennitaResponsabilita\Filament\Resources\StabiDirigenteResource;
 >>>>>>> e0005d7d (first)
+=======
+
+namespace Modules\Progressioni\Filament\Resources\StabiDirigenteResource\Pages;
+
+use Modules\Progressioni\Filament\Resources\StabiDirigenteResource;
+>>>>>>> bcab6efe (first)
 use Modules\Ptv\Filament\Resources\StabiDirigenteResource\Pages\CreateStabiDirigente as PtvCreateStabiDirigente;
 
 class CreateStabiDirigente extends PtvCreateStabiDirigente

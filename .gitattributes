@@ -11,6 +11,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7e417e87 (first)
 =======
@@ -35,11 +36,14 @@
 >>>>>>> 4658bb86 (first)
 =======
 >>>>>>> edbb3aab (first)
+=======
+>>>>>>> bcab6efe (first)
 * text=auto
 *.css linguist-vendored
 *.scss linguist-vendored
 *.js linguist-vendored
 CHANGELOG.md export-ignore
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -134,3 +138,5 @@ CHANGELOG.md export-ignore
 >>>>>>> 4658bb86 (first)
 =======
 >>>>>>> edbb3aab (first)
+=======
+>>>>>>> bcab6efe (first)

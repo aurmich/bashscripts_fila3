@@ -1,6 +1,10 @@
 <?php
 
+<<<<<<< HEAD
 namespace Modules\IndennitaResponsabilita\Mail;
+=======
+namespace Modules\Progressioni\Mail;
+>>>>>>> bcab6efe (first)
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
@@ -9,20 +13,34 @@ use Illuminate\Mail\Mailables\Attachment;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
+<<<<<<< HEAD
 use Modules\IndennitaResponsabilita\Actions\MakePdfByRecord;
 use Modules\IndennitaResponsabilita\Models\IndennitaResponsabilita as Scheda;
+=======
+use Modules\Progressioni\Actions\MakePdfByRecord;
+use Modules\Progressioni\Models\Progressioni;
+use Modules\Progressioni\Models\Schede as Scheda;
+>>>>>>> bcab6efe (first)
 
 class SchedaMail extends Mailable
 {
     use Queueable;
     use SerializesModels;
 
+<<<<<<< HEAD
     public Scheda $scheda;
+=======
+    public Scheda|Progressioni $scheda;
+>>>>>>> bcab6efe (first)
 
     /**
      * Create a new message instance.
      */
+<<<<<<< HEAD
     public function __construct(Scheda $scheda)
+=======
+    public function __construct(Scheda|Progressioni $scheda)
+>>>>>>> bcab6efe (first)
     {
         $this->scheda = $scheda;
     }
@@ -47,7 +65,11 @@ class SchedaMail extends Mailable
     public function content(): Content
     {
         return new Content(
+<<<<<<< HEAD
             view: 'indennitaresponsabilita::emails.scheda',
+=======
+            view: 'progressioni::emails.scheda',
+>>>>>>> bcab6efe (first)
             with: [
                 'row' => $this->scheda,
                 'html' => $this->scheda->msg('mail_testo'),

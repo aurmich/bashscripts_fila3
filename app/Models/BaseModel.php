@@ -19,6 +19,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Rating\Models;
 
 use Illuminate\Database\Eloquent\Model;
@@ -56,10 +57,14 @@ namespace Modules\User\Models;
 =======
 namespace Modules\Tenant\Models;
 >>>>>>> 8fc3049b (first)
+=======
+namespace Modules\Progressioni\Models;
+>>>>>>> bcab6efe (first)
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -584,12 +589,15 @@ namespace Modules\IndennitaResponsabilita\Models;
 >>>>>>> e0005d7d (first)
 
 use Illuminate\Database\Eloquent\Model;
+=======
+>>>>>>> bcab6efe (first)
 // use Laravel\Scout\Searchable;
 // ---------- traits
 use Modules\Xot\Traits\Updater;
 
 abstract class BaseModel extends Model
 {
+<<<<<<< HEAD
     use Updater;
 
     // use Searchable;
@@ -814,11 +822,25 @@ abstract class BaseModel extends Model
 >>>>>>> 8e6e7d4c (first)
 =======
 >>>>>>> 4658bb86 (first)
+=======
+    // use Searchable;
+    use HasFactory;
+    use Updater;
+
+    protected $connection = 'progressione';
+
+    // this will use the specified database connection
+    public $timestamps = true;
+
+    protected $casts = ['created_at' => 'datetime', 'updated_at' => 'datetime'];
+
+>>>>>>> bcab6efe (first)
     /**
      * Create a new factory instance for the model.
      *
      * @return Factory
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     protected static function newFactory()
@@ -957,9 +979,14 @@ abstract class BaseModel extends Model
     }
 >>>>>>> 8e6e7d4c (first)
 =======
+=======
+>>>>>>> bcab6efe (first)
     protected static function newFactory()
     {
         return app(\Modules\Xot\Actions\Factory\GetFactoryAction::class)->execute(static::class);
     }
+<<<<<<< HEAD
 >>>>>>> 4658bb86 (first)
+=======
+>>>>>>> bcab6efe (first)
 }

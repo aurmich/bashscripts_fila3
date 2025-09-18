@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php 
 return array (
   'navigation' => 
@@ -116,11 +117,14 @@ return array (
   ),
 );
 =======
+=======
+>>>>>>> bcab6efe (first)
 <?php
 
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     'resource' => [
         'name' => 'Stabi diri',
     ],
@@ -163,11 +167,31 @@ return [
         ],
         'import' => [
             'row_number' => 'Riga :row',
+=======
+    'navigation' => [
+        'name' => 'stabi dirigente',
+        'plural' => 'stabi dirigente',
+        'group' => [
+            'name' => 'Admin ',
+        ],
+    ],
+    'fields' => [
+        'name' => 'Nome',
+        'parent' => 'Padre',
+        'parent.name' => 'Padre',
+        'parent_name' => 'Padre',
+        'assets' => 'assets',
+    ],
+    'actions' => [
+        'import' => [
+            'name' => 'Importa da file',
+>>>>>>> bcab6efe (first)
             'fields' => [
                 'import_file' => 'Seleziona un file XLS o CSV da caricare',
             ],
         ],
         'export' => [
+<<<<<<< HEAD
             'filename_prefix' => 'Lista asset al',
             'columns' => [
                 'brand' => 'Marca',
@@ -192,3 +216,18 @@ return [
     ],
 ];
 >>>>>>> e0005d7d (first)
+=======
+            'name' => 'Esporta dati',
+            'filename_prefix' => 'Aree al',
+            'columns' => [
+                'name' => 'Nome area',
+                'parent_name' => 'Nome area livello superiore',
+            ],
+        ],
+    ],
+    'tab' => [
+        'index' => 'lista',
+        'create' => 'aggiungi',
+    ],
+];
+>>>>>>> bcab6efe (first)

@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\IndennitaCondizioniLavoro\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -15,6 +16,13 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Modules\IndennitaResponsabilita\Models\StabiDirigente;
 >>>>>>> e0005d7d (first)
+=======
+namespace Modules\Progressioni\Database\Factories;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Model;
+use Modules\Progressioni\Models\StabiDirigente;
+>>>>>>> bcab6efe (first)
 
 class StabiDirigenteFactory extends Factory
 {
@@ -31,6 +39,7 @@ class StabiDirigenteFactory extends Factory
     public function definition(): array
     {
         return [
+<<<<<<< HEAD
             'stabi' => $this->faker->randomNumber(),
             'repar' => $this->faker->randomNumber(),
             'nome_stabi' => $this->faker->word,
@@ -41,6 +50,18 @@ class StabiDirigenteFactory extends Factory
             'budget' => $this->faker->randomFloat,
             'valutatore_id' => $this->faker->randomNumber(),
             'anno' => $this->faker->randomNumber(),
+=======
+            'stabi' => $this->faker->randomNumber,
+            'repar' => $this->faker->randomNumber,
+            'nome_stabi' => $this->faker->word,
+            'ente' => $this->faker->randomNumber,
+            'matr' => $this->faker->randomNumber,
+            'nome_diri' => $this->faker->word,
+            'nome_diri_plus' => $this->faker->word,
+            'budget' => $this->faker->randomFloat,
+            'valutatore_id' => $this->faker->integer,
+            'anno' => $this->faker->randomNumber,
+>>>>>>> bcab6efe (first)
         ];
     }
 }

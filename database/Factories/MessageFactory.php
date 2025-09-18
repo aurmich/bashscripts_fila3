@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\IndennitaCondizioniLavoro\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -15,6 +16,13 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Modules\IndennitaResponsabilita\Models\Message;
 >>>>>>> e0005d7d (first)
+=======
+namespace Modules\Progressioni\Database\Factories;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Model;
+use Modules\Progressioni\Models\Message;
+>>>>>>> bcab6efe (first)
 
 class MessageFactory extends Factory
 {
@@ -31,7 +39,11 @@ class MessageFactory extends Factory
     public function definition(): array
     {
         return [
+<<<<<<< HEAD
             'id' => $this->faker->randomNumber(),
+=======
+            'id' => $this->faker->randomNumber,
+>>>>>>> bcab6efe (first)
             'type' => $this->faker->word,
             'title' => $this->faker->sentence,
             'txt' => $this->faker->text,

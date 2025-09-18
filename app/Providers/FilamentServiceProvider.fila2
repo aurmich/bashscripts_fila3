@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -54,6 +55,9 @@ class FilamentServiceProvider extends XotBaseContextServiceProvider
     public function registerConfigs() {
 =======
 namespace Modules\IndennitaResponsabilita\Providers;
+=======
+namespace Modules\Progressioni\Providers;
+>>>>>>> bcab6efe (first)
 
 use Blade;
 use Filament\Facades\Filament;
@@ -63,9 +67,15 @@ use Savannabits\FilamentModules\ContextServiceProvider;
 class FilamentServiceProvider extends ContextServiceProvider
 {
     public $app;
+<<<<<<< HEAD
     public static string $name = 'indennitaresponsabilita-filament';
     
     public static string $module = 'IndennitaResponsabilita';
+=======
+    public static string $name = 'progressioni-filament';
+    
+    public static string $module = 'Progressioni';
+>>>>>>> bcab6efe (first)
 
     public function packageRegistered(): void
     {
@@ -75,13 +85,17 @@ class FilamentServiceProvider extends ContextServiceProvider
     }
 
     public function registerConfigs(): void {
+<<<<<<< HEAD
 >>>>>>> e0005d7d (first)
+=======
+>>>>>>> bcab6efe (first)
         $this->mergeConfigFrom(
             app('modules')->findOrFail(static::$module)->getExtraPath( 'Config/'.static::$name.'.php'),
             static::$name
         );
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     public function boot()
     {
@@ -101,14 +115,23 @@ class FilamentServiceProvider extends XotBaseContextServiceProvider {
     public static string $module = 'IndennitaCondizioniLavoro';
 >>>>>>> b7483fd0 (first)
 =======
+=======
+>>>>>>> bcab6efe (first)
     public function boot(): void
     {
         Filament::serving(static function () : void {
             Filament::forContext('filament', static function () : void {
                 Filament::registerNavigationItems([
+<<<<<<< HEAD
                     NavigationItem::make(static::$module)->label(static::$module.' ')
                         ->url(route(static::$name.'.pages.dashboard'))
                         ->icon('heroicon-o-folder')
+=======
+                    NavigationItem::make(static::$module)
+                        ->label(static::$module.' ')
+                        ->url(route(static::$name.'.pages.dashboard'))
+                        ->icon('heroicon-o-sparkles')
+>>>>>>> bcab6efe (first)
                         ->group('Modules')
                 ]);
             });
@@ -117,5 +140,8 @@ class FilamentServiceProvider extends XotBaseContextServiceProvider {
             });
         });
     }
+<<<<<<< HEAD
 >>>>>>> e0005d7d (first)
+=======
+>>>>>>> bcab6efe (first)
 }

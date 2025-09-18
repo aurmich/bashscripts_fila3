@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\IndennitaCondizioniLavoro\Http\Middleware;
 =======
 namespace Modules\IndennitaResponsabilita\Http\Middleware;
@@ -9,6 +10,9 @@ namespace Modules\IndennitaResponsabilita\Http\Middleware;
 =======
 namespace Modules\Prenotazioni\Http\Middleware;
 >>>>>>> 4658bb86 (first)
+=======
+namespace Modules\Progressioni\Http\Middleware;
+>>>>>>> bcab6efe (first)
 
 use Exception;
 use Filament\Models\Contracts\FilamentUser;
@@ -20,6 +24,7 @@ class FilamentMiddleware extends Middleware
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static string $module = 'IndennitaCondizioniLavoro';
 =======
     public static string $module = 'IndennitaResponsabilita';
@@ -27,6 +32,9 @@ class FilamentMiddleware extends Middleware
 =======
     public static string $module = 'Prenotazioni';
 >>>>>>> 4658bb86 (first)
+=======
+    public static string $module = 'Progressioni';
+>>>>>>> bcab6efe (first)
 
     public static string $context = 'filament';
 

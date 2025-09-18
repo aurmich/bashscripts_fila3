@@ -24,6 +24,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 /**
@@ -160,10 +161,18 @@ namespace Modules\PresenzeAssenze\Providers;
 
 // --- bases ---
 >>>>>>> edbb3aab (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Progressioni\Providers;
+
+// --- bases ---
+>>>>>>> bcab6efe (first)
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -347,10 +356,16 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider {
 
     protected string $moduleNamespace = 'Modules\PresenzeAssenze\Http\Controllers';
 >>>>>>> edbb3aab (first)
+=======
+    public string $name = 'Progressioni';
+
+    protected string $moduleNamespace = 'Modules\Progressioni\Http\Controllers';
+>>>>>>> bcab6efe (first)
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -642,4 +657,6 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 >>>>>>> 4658bb86 (first)
 =======
 >>>>>>> edbb3aab (first)
+=======
+>>>>>>> bcab6efe (first)
 }

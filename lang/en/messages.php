@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
     'title' => 'Laravel Installer',
     'next' => 'Next Step',
     'finish' => 'Install',
@@ -35,4 +36,10 @@ return [
         'delete' => 'Task Deleted Successfully',
 >>>>>>> c088001a (first)
     ],
+=======
+    'import_ced_diff' => 'Importa CED Diff',
+    'choose_xls_file' => 'Scegli il file XLS',
+    'import_completed' => 'Importazione completata con successo.',
+    'confirm_create_table' => 'Vuoi creare una nuova tabella con i dati importati?',
+>>>>>>> bcab6efe (first)
 ];

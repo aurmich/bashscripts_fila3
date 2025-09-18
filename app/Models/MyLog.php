@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\IndennitaCondizioniLavoro\Models;
 =======
 namespace Modules\IndennitaResponsabilita\Models;
@@ -18,6 +19,15 @@ use Modules\Ptv\Models\MyLog as PtvMyLogModel;
 =======
  * Modules\IndennitaResponsabilita\Models\MyLog.
 >>>>>>> e0005d7d (first)
+=======
+namespace Modules\Progressioni\Models;
+
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Carbon;
+
+/**
+ * Modules\Progressioni\Models\MyLog.
+>>>>>>> bcab6efe (first)
  *
  * @property int $id
  * @property int|null $id_tbl
@@ -29,6 +39,7 @@ use Modules\Ptv\Models\MyLog as PtvMyLogModel;
  * @property array|null $data
  * @property string|null $datemod
  * @property string|null $handle
+<<<<<<< HEAD
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $created_by
@@ -38,6 +49,12 @@ use Modules\Ptv\Models\MyLog as PtvMyLogModel;
  * @property string|null $deleted_ip
  * @property string|null $created_ip
  * @property string|null $updated_ip
+=======
+ * @property string|null $created_by
+ * @property string|null $updated_by
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+>>>>>>> bcab6efe (first)
  *
  * @method static \Modules\Ptv\Database\Factories\MyLogFactory factory($count = null, $state = [])
  * @method static Builder|MyLog newModelQuery()
@@ -46,12 +63,17 @@ use Modules\Ptv\Models\MyLog as PtvMyLogModel;
  * @method static Builder|MyLog whereAct($value)
  * @method static Builder|MyLog whereCreatedAt($value)
  * @method static Builder|MyLog whereCreatedBy($value)
+<<<<<<< HEAD
  * @method static Builder|MyLog whereCreatedIp($value)
  * @method static Builder|MyLog whereData($value)
  * @method static Builder|MyLog whereDatemod($value)
  * @method static Builder|MyLog whereDeletedAt($value)
  * @method static Builder|MyLog whereDeletedBy($value)
  * @method static Builder|MyLog whereDeletedIp($value)
+=======
+ * @method static Builder|MyLog whereData($value)
+ * @method static Builder|MyLog whereDatemod($value)
+>>>>>>> bcab6efe (first)
  * @method static Builder|MyLog whereHandle($value)
  * @method static Builder|MyLog whereId($value)
  * @method static Builder|MyLog whereIdApprovaz($value)
@@ -61,6 +83,7 @@ use Modules\Ptv\Models\MyLog as PtvMyLogModel;
  * @method static Builder|MyLog whereTbl($value)
  * @method static Builder|MyLog whereUpdatedAt($value)
  * @method static Builder|MyLog whereUpdatedBy($value)
+<<<<<<< HEAD
  * @method static Builder|MyLog whereUpdatedIp($value)
  *
  * @mixin \Eloquent
@@ -74,4 +97,12 @@ class MyLog extends PtvMyLogModel
 
     // -------------------------------------------------
 >>>>>>> e0005d7d (first)
+=======
+ *
+ * @mixin \Eloquent
+ */
+class MyLog extends \Modules\Ptv\Models\MyLog
+{
+    protected $connection = 'progressione'; // this will use the specified database connection
+>>>>>>> bcab6efe (first)
 }

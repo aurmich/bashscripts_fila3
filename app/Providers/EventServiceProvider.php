@@ -18,6 +18,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -140,6 +141,11 @@ declare(strict_types=1);
 
 namespace Modules\PresenzeAssenze\Providers;
 >>>>>>> edbb3aab (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Progressioni\Providers;
+>>>>>>> bcab6efe (first)
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as BaseEventServiceProvider;
 
@@ -151,6 +157,7 @@ class EventServiceProvider extends BaseEventServiceProvider
      * @var array<string, array<int, string>>
      */
     protected $listen = [];
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -223,6 +230,9 @@ class EventServiceProvider extends BaseEventServiceProvider
 =======
 
 >>>>>>> edbb3aab (first)
+=======
+
+>>>>>>> bcab6efe (first)
     /**
      * Indicates if events should be discovered.
      *
@@ -233,6 +243,7 @@ class EventServiceProvider extends BaseEventServiceProvider
     /**
      * Configure the proper event listeners for email verification.
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -365,4 +376,7 @@ class EventServiceProvider extends ServiceProvider
 =======
     protected function configureEmailVerification(): void {}
 >>>>>>> edbb3aab (first)
+=======
+    protected function configureEmailVerification(): void {}
+>>>>>>> bcab6efe (first)
 }

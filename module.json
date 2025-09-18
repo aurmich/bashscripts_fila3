@@ -23,6 +23,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
 =======
@@ -245,11 +246,16 @@
     "name": "PresenzeAssenze",
     "alias": "presenzeassenze",
 >>>>>>> edbb3aab (first)
+=======
+    "name": "Progressioni",
+    "alias": "progressioni",
+>>>>>>> bcab6efe (first)
     "description": "",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -340,3 +346,12 @@
 >>>>>>> 4658bb86 (first)
 =======
 >>>>>>> edbb3aab (first)
+=======
+        "Modules\\Progressioni\\Providers\\ProgressioniServiceProvider",
+        "Modules\\Progressioni\\Providers\\Filament\\AdminPanelProvider"
+    ],
+    "aliases": [],
+    "files": [],
+    "requires": []
+}
+>>>>>>> bcab6efe (first)

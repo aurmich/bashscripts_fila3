@@ -20,6 +20,7 @@ providers:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Modules\Rating\Providers\RatingServiceProvider
 =======
   - Modules\Xot\Providers\XotServiceProvider
@@ -92,3 +93,6 @@ providers:
 =======
   - Modules\User\Providers\UserServiceProvider
 >>>>>>> edbb3aab (first)
+=======
+  - Modules\User\Providers\UserServiceProvider
+>>>>>>> bcab6efe (first)

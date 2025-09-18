@@ -25,6 +25,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "laraxot/bashscripts_fila3",
     "description": "Script di utilità per la gestione dei repository Git, Toolkit di automazione Git per progetti Laravel",
     "type": "library",
@@ -213,12 +214,19 @@
     "license": "MIT",
     "homepage": "https://github.com/laraxot/module_presenzeassenze_fila3.git",
 >>>>>>> edbb3aab (first)
+=======
+    "name": "laraxot/module_progressioni_fila3",
+    "description": "",
+    "license": "MIT",
+    "homepage": "https://github.com/laraxot/module_progressioni_fila3.git",
+>>>>>>> bcab6efe (first)
     "authors": [
         {
             "name": "Marco Sottana",
             "email": "marco.sottana@gmail.com"
         }
     ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -512,12 +520,17 @@
     "require": {
         "spatie/laravel-sluggable": "*"
 >>>>>>> edbb3aab (first)
+=======
+    "require": {
+        "spatie/laravel-sluggable": "*"
+>>>>>>> bcab6efe (first)
     },
     "require-dev": {},
     "repositories": [
         {
             "type": "path",
             "url": "../Xot"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -561,6 +574,8 @@
 >>>>>>> 4658bb86 (first)
 =======
 >>>>>>> edbb3aab (first)
+=======
+>>>>>>> bcab6efe (first)
         },
         {
             "type": "path",
@@ -568,6 +583,7 @@
         },
         {
             "type": "path",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -806,11 +822,14 @@
 >>>>>>> 4658bb86 (first)
 =======
 >>>>>>> edbb3aab (first)
+=======
+>>>>>>> bcab6efe (first)
             "url": "../UI"
         }
     ],
     "autoload": {
         "psr-4": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -887,11 +906,17 @@
             "Modules\\PresenzeAssenze\\Database\\Factories\\": "database/factories/",
             "Modules\\PresenzeAssenze\\Database\\Seeders\\": "database/seeders/"
 >>>>>>> edbb3aab (first)
+=======
+            "Modules\\Progressioni\\": "app/",
+            "Modules\\Progressioni\\Database\\Factories\\": "database/factories/",
+            "Modules\\Progressioni\\Database\\Seeders\\": "database/seeders/"
+>>>>>>> bcab6efe (first)
         }
     },
     "scripts": {
         "post-autoload-dump": [],
         "post-update-cmd": [],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -959,10 +984,13 @@
 >>>>>>> 4658bb86 (first)
 =======
 >>>>>>> edbb3aab (first)
+=======
+>>>>>>> bcab6efe (first)
         "analyse": "vendor/bin/phpstan analyse",
         "test": "./vendor/bin/pest --no-coverage",
         "test-coverage": "vendor/bin/pest --coverage-html coverage",
         "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1016,10 +1044,13 @@
 >>>>>>> 4658bb86 (first)
 =======
 >>>>>>> edbb3aab (first)
+=======
+>>>>>>> bcab6efe (first)
     },
     "config": {
         "sort-packages": true,
         "allow-plugins": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1072,10 +1103,13 @@
 >>>>>>> 4658bb86 (first)
 =======
 >>>>>>> edbb3aab (first)
+=======
+>>>>>>> bcab6efe (first)
             "phpstan/extension-installer": true,
             "pestphp/pest-plugin": true
         }
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1255,10 +1289,18 @@
                 "Modules\\PresenzeAssenze\\Providers\\PresenzeAssenzeServiceProvider",
                 "Modules\\PresenzeAssenze\\Providers\\Filament\\AdminPanelProvider"
 >>>>>>> edbb3aab (first)
+=======
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Progressioni\\Providers\\ProgressioniServiceProvider",
+                "Modules\\Progressioni\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> bcab6efe (first)
             ],
             "aliases": {}
         }
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1437,3 +1479,8 @@
     "prefer-stable": true
 }
 >>>>>>> edbb3aab (first)
+=======
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+>>>>>>> bcab6efe (first)

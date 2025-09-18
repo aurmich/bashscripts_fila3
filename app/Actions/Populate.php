@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\IndennitaCondizioniLavoro\Actions;
 
 use Carbon\Carbon;
@@ -14,6 +15,11 @@ namespace Modules\IndennitaResponsabilita\Actions;
 use Modules\IndennitaResponsabilita\Models\IndennitaResponsabilita;
 use Modules\IndennitaResponsabilita\Models\StabiDirigente;
 >>>>>>> e0005d7d (first)
+=======
+namespace Modules\Progressioni\Actions;
+
+use Modules\Progressioni\Models\Schede;
+>>>>>>> bcab6efe (first)
 use Modules\Sigma\Models\Rep00f;
 use Spatie\QueueableAction\QueueableAction;
 
@@ -27,6 +33,7 @@ class Populate
     public function execute(array $data): void
     {
         $anno = $data['anno'];
+<<<<<<< HEAD
 <<<<<<< HEAD
         $quadrimestre = $data['quadrimestre'];
         $first_day = Carbon::createFromDate($anno, 1, 1);
@@ -87,21 +94,35 @@ class Populate
 =======
         $rows = Rep00f::ofYear($anno)
 >>>>>>> e0005d7d (first)
+=======
+
+        $rows = Schede::where('anno', $anno)
+            ->get();
+
+        $matrs = $rows->pluck('matr')->toArray();
+
+        $rows = Rep00f::ofYear($anno)
+>>>>>>> bcab6efe (first)
             ->where('ente', 90)->get();
 
         $rows = $rows->filter(static fn ($item): bool => ! in_array($item->matr, $matrs));
 
         foreach ($rows as $row) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             CondizioniLavoro::firstOrCreate(
 =======
             IndennitaResponsabilita::firstOrCreate(
 >>>>>>> e0005d7d (first)
+=======
+            Schede::firstOrCreate(
+>>>>>>> bcab6efe (first)
                 [
                     'ente' => $row->ente,
                     'matr' => $row->matr,
                     'stabi' => $row->repst1,
                     'repar' => $row->repre1,
+<<<<<<< HEAD
 <<<<<<< HEAD
                     'quadrimestre' => $quadrimestre,
                     'anno' => $anno,
@@ -110,12 +131,17 @@ class Populate
                     'dal' => $dal,
                     'al' => $al,
 =======
+=======
+>>>>>>> bcab6efe (first)
                     'anno' => $anno,
                 ],
                 [
                     //    'dal' => $dal,
                     //    'al' => $al,
+<<<<<<< HEAD
 >>>>>>> e0005d7d (first)
+=======
+>>>>>>> bcab6efe (first)
                 ]
             );
         }

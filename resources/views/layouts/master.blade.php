@@ -15,6 +15,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <html lang="en">
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -74,10 +75,14 @@
 =======
 <html lang="en">
 >>>>>>> edbb3aab (first)
+=======
+<html lang="en">
+>>>>>>> bcab6efe (first)
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -222,11 +227,18 @@
        {{-- Laravel Mix - CSS File --}}
        {{-- <link rel="stylesheet" href="{{ mix('css/presenzeassenze.css') }}"> --}}
 >>>>>>> edbb3aab (first)
+=======
+        <title>Module Progressioni</title>
+
+       {{-- Laravel Mix - CSS File --}}
+       {{-- <link rel="stylesheet" href="{{ mix('css/progressioni.css') }}"> --}}
+>>>>>>> bcab6efe (first)
 
     </head>
     <body>
         @yield('content')
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -414,3 +426,9 @@
     </body>
 </html>
 >>>>>>> edbb3aab (first)
+=======
+        {{-- Laravel Mix - JS File --}}
+        {{-- <script src="{{ mix('js/progressioni.js') }}"></script> --}}
+    </body>
+</html>
+>>>>>>> bcab6efe (first)

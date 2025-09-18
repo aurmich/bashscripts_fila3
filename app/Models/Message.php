@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\IndennitaCondizioniLavoro\Models;
 =======
 namespace Modules\IndennitaResponsabilita\Models;
@@ -17,6 +18,15 @@ use Modules\Ptv\Models\Message as PtvMessageModel;
 =======
  * Modules\IndennitaResponsabilita\Models\Message.
 >>>>>>> e0005d7d (first)
+=======
+namespace Modules\Progressioni\Models;
+
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Carbon;
+
+/**
+ * Modules\Progressioni\Models\Message.
+>>>>>>> bcab6efe (first)
  *
  * @property int $id
  * @property string|null $type
@@ -27,6 +37,7 @@ use Modules\Ptv\Models\Message as PtvMessageModel;
  * @property Carbon|null $updated_at
  * @property string|null $created_by
  * @property string|null $updated_by
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
  * @property int|null $parent_id
@@ -76,4 +87,36 @@ class Message extends PtvMessageModel
 =======
     protected $connection = 'indennita_responsabilita'; // this will use the specified database connection
 >>>>>>> e0005d7d (first)
+=======
+ *
+ * @method static \Modules\Progressioni\Database\Factories\MessageFactory factory($count = null, $state = [])
+ * @method static Builder|Message newModelQuery()
+ * @method static Builder|Message newQuery()
+ * @method static Builder|Message query()
+ * @method static Builder|Message whereAnno($value)
+ * @method static Builder|Message whereCreatedAt($value)
+ * @method static Builder|Message whereCreatedBy($value)
+ * @method static Builder|Message whereId($value)
+ * @method static Builder|Message whereTitle($value)
+ * @method static Builder|Message whereTxt($value)
+ * @method static Builder|Message whereType($value)
+ * @method static Builder|Message whereUpdatedAt($value)
+ * @method static Builder|Message whereUpdatedBy($value)
+ *
+ * @mixin \Eloquent
+ */
+class Message extends BaseModel
+{
+    protected $table = 'messages';
+
+    // public $timestamps= false;
+    protected $fillable =
+        [
+            'id',
+            'type',
+            'title',
+            'txt',
+            'anno',
+        ];
+>>>>>>> bcab6efe (first)
 }

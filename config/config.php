@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -228,4 +229,12 @@ return [
     'name' => 'PresenzeAssenze',
     'icon' => 'fas-person-rays',
 >>>>>>> edbb3aab (first)
+=======
+declare(strict_types=1);
+
+return [
+    'name' => 'Progressioni',
+    // 'icon' => 'fas-fire-flame-curved',
+    'icon' => 'fas-signal',
+>>>>>>> bcab6efe (first)
 ];

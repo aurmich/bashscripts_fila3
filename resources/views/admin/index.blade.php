@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @section('page_heading','Bagde')
 =======
 @section('page_heading','cert fisc')
@@ -91,3 +92,8 @@ Benvenuto nel programma mensa
 
 @endsection
 >>>>>>> edbb3aab (first)
+=======
+@section('content')
+    Progressioni Wellcome
+@endsection
+>>>>>>> bcab6efe (first)

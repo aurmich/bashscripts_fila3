@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
     'title' => 'Laravel Installer',
     'next' => 'Passo successivo',
     'finish' => 'Installa',
@@ -34,4 +35,10 @@ return [
     'csv_processed' => 'CSV processato con successo!',
     'error' => 'Errore nel processo!',
 >>>>>>> e0005d7d (first)
+=======
+    'import_ced_diff' => 'Importa CED Diff',
+    'choose_xls_file' => 'Scegli il file XLS',
+    'import_completed' => 'Importazione completata con successo.',
+    'confirm_create_table' => 'Vuoi creare una nuova tabella con i dati importati?',
+>>>>>>> bcab6efe (first)
 ];

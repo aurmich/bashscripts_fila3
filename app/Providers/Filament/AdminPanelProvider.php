@@ -13,6 +13,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d79d9e57 (first)
 =======
@@ -113,10 +114,15 @@ declare(strict_types=1);
 namespace Modules\IndennitaResponsabilita\Providers\Filament;
 
 >>>>>>> e0005d7d (first)
+=======
+namespace Modules\Progressioni\Providers\Filament;
+
+>>>>>>> bcab6efe (first)
 use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 
 class AdminPanelProvider extends XotBasePanelProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -273,4 +279,7 @@ class AdminPanelProvider extends XotBasePanelProvider
 =======
     protected string $module = 'IndennitaResponsabilita';
 >>>>>>> e0005d7d (first)
+=======
+    protected string $module = 'Progressioni';
+>>>>>>> bcab6efe (first)
 }

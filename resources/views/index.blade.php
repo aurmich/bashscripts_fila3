@@ -22,6 +22,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('rating::layouts.master')
 =======
 @extends('xot::layouts.app')
@@ -95,10 +96,14 @@
 =======
 @extends('presenzeassenze::layouts.master')
 >>>>>>> edbb3aab (first)
+=======
+@extends('progressioni::layouts.master')
+>>>>>>> bcab6efe (first)
 
 @section('content')
     <h1>Hello World</h1>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -261,3 +266,9 @@
     </p>
 @stop
 >>>>>>> edbb3aab (first)
+=======
+    <p>
+        This view is loaded from module: {!! config('progressioni.name') !!}
+    </p>
+@stop
+>>>>>>> bcab6efe (first)

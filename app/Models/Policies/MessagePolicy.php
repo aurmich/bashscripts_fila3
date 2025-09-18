@@ -2,16 +2,23 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\IndennitaResponsabilita\Models\Policies;
 
 use Illuminate\Auth\Access\Response;
 use Modules\IndennitaResponsabilita\Models\Message as Post;
 use Modules\User\Models\User;
+=======
+namespace Modules\Progressioni\Models\Policies;
+
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> bcab6efe (first)
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Models\Policies\XotBasePolicy;
 
 class MessagePolicy extends XotBasePolicy
 {
+<<<<<<< HEAD
     /**
      * Determine whether the user can view the model.
      *
@@ -91,4 +98,10 @@ class MessagePolicy extends XotBasePolicy
     {
         return false;
     }
+=======
+    public function populateFromLastYear(UserContract $userContract, Model $model): bool
+    {
+        return true;
+    }
+>>>>>>> bcab6efe (first)
 }

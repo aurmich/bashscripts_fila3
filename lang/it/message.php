@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     'resource' => [
         'name' => 'message',
     ],
@@ -37,11 +38,31 @@ return [
         ],
         'import' => [
             'row_number' => 'Riga :row',
+=======
+    'navigation' => [
+        'name' => 'message',
+        'plural' => 'message',
+        'group' => [
+            'name' => 'Admin ',
+        ],
+    ],
+    'fields' => [
+        'name' => 'Nome',
+        'parent' => 'Padre',
+        'parent.name' => 'Padre',
+        'parent_name' => 'Padre',
+        'assets' => 'assets',
+    ],
+    'actions' => [
+        'import' => [
+            'name' => 'Importa da file',
+>>>>>>> bcab6efe (first)
             'fields' => [
                 'import_file' => 'Seleziona un file XLS o CSV da caricare',
             ],
         ],
         'export' => [
+<<<<<<< HEAD
             'filename_prefix' => 'Lista asset al',
             'columns' => [
                 'brand' => 'Marca',
@@ -63,5 +84,18 @@ return [
     ],
     'exceptions' => [
         'mandatory_data' => '{1} Dato obbligatorio non presente|{2} 2 Dati obbligatori non presenti|{3} 3 Dati obbligatori non presenti|[4,*] Vari dati obbligatori non presenti',
+=======
+            'name' => 'Esporta dati',
+            'filename_prefix' => 'Aree al',
+            'columns' => [
+                'name' => 'Nome area',
+                'parent_name' => 'Nome area livello superiore',
+            ],
+        ],
+    ],
+    'tab' => [
+        'index' => 'lista',
+        'create' => 'aggiungi',
+>>>>>>> bcab6efe (first)
     ],
 ];

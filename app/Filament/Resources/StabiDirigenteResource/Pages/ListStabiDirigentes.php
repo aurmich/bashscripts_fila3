@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\IndennitaCondizioniLavoro\Filament\Resources\StabiDirigenteResource\Pages;
 
 use Illuminate\Support\Str;
@@ -22,10 +23,21 @@ namespace Modules\IndennitaResponsabilita\Filament\Resources\StabiDirigenteResou
 use Modules\IndennitaResponsabilita\Filament\Resources\StabiDirigenteResource;
 use Modules\Ptv\Filament\Resources\StabiDirigenteResource\Pages\ListStabiDirigentes as PtvListStabiDirigentes;
 >>>>>>> e0005d7d (first)
+=======
+namespace Modules\Progressioni\Filament\Resources\StabiDirigenteResource\Pages;
+
+use Filament\Actions;
+use Illuminate\Support\Arr;
+use Modules\Progressioni\Filament\Resources\StabiDirigenteResource;
+use Modules\Progressioni\Models\StabiDirigente;
+use Modules\Ptv\Filament\Resources\StabiDirigenteResource\Pages\ListStabiDirigentes as PtvListStabiDirigentes;
+use Modules\Xot\Actions\Filament\Actions\CopyFromLastYearButton;
+>>>>>>> bcab6efe (first)
 
 class ListStabiDirigentes extends PtvListStabiDirigentes
 {
     protected static string $resource = StabiDirigenteResource::class;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     // protected function getTableFiltersLayout(): ?string {
@@ -185,4 +197,17 @@ class ListStabiDirigentes extends PtvListStabiDirigentes
     }
 =======
 >>>>>>> e0005d7d (first)
+=======
+
+    protected function getHeaderActions(): array
+    {
+        $anno = Arr::get($this->tableFilters, 'anno.value');
+
+        return [
+            Actions\CreateAction::make(),
+            app(CopyFromLastYearButton::class)
+                ->execute(StabiDirigente::class, 'anno', $anno),
+        ];
+    }
+>>>>>>> bcab6efe (first)
 }
