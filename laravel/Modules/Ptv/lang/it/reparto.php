@@ -7,5 +7,9 @@ return array (
     array (
       'label' => 'rep',
     ),
+    'reparto' => 
+    array (
+      'label' => 'reparto',
+    ),
   ),
 );

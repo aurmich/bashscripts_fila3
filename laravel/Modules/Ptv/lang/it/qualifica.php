@@ -7,5 +7,9 @@ return array (
     array (
       'label' => 'qua',
     ),
+    'qualifica' => 
+    array (
+      'label' => 'qualifica',
+    ),
   ),
 );

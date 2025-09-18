@@ -12,7 +12,7 @@ return array (
     ),
     'label' => 'Schede Dipendenti',
     'sort' => 31,
-    'icon' => 'employee-document',
+    'icon' => 'performance-region-document',
   ),
   'fields' => 
   array (
@@ -210,6 +210,14 @@ return array (
     'resetFilters' => 
     array (
       'label' => 'resetFilters',
+    ),
+    'value' => 
+    array (
+      'label' => 'value',
+    ),
+    'fill' => 
+    array (
+      'label' => 'fill',
     ),
   ),
   'actions' => 

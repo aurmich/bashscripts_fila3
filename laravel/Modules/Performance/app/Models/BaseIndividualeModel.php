@@ -243,15 +243,7 @@ abstract class BaseIndividualeModel extends Model
             ->where('anno', $this->anno);
     }
 
-    /**
-     * @return HasMany<IndividualeAssenze, BaseIndividualeModel>
-     */
-    public function codiciAssenze(): HasMany
-    {
-        return $this->hasMany(IndividualeAssenze::class, 'matr', 'matr')
-            ->where('ente', $this->ente)
-            ->where('anno', $this->anno);
-    }
+ 
 
     /**
      * @return HasMany<CriteriEsclusione, BaseIndividualeModel>
@@ -290,13 +282,7 @@ abstract class BaseIndividualeModel extends Model
     }
 
    
-    /**
-     * @return HasMany<Option, BaseIndividualeModel>
-     */
-    public function options(): HasMany
-    {
-        return $this->hasMany(Option::class, 'anno', 'anno');
-    }
+ 
 
     /**
      * @return HasMany<Individuale, BaseIndividualeModel>

@@ -16,7 +16,10 @@ return array (
   ),
   'fields' => 
   array (
-    'name' => 'Nome',
+    'name' => 
+    array (
+      'label' => 'Nome',
+    ),
     'guard_name' => 'Guard',
     'permissions' => 'Permessi',
     'updated_at' => 
@@ -85,6 +88,34 @@ return array (
     'toggleColumns' => 
     array (
       'label' => 'toggleColumns',
+    ),
+    'year' => 
+    array (
+      'label' => 'year',
+    ),
+    'txt1' => 
+    array (
+      'label' => 'txt1',
+    ),
+    'txt' => 
+    array (
+      'label' => 'txt',
+    ),
+    'value' => 
+    array (
+      'label' => 'value',
+    ),
+    'id' => 
+    array (
+      'label' => 'id',
+    ),
+    'parent_id' => 
+    array (
+      'label' => 'parent_id',
+    ),
+    'option_type' => 
+    array (
+      'label' => 'option_type',
     ),
   ),
   'actions' => 

@@ -1,4 +1,6 @@
-<?php return array (
+<?php
+
+return array (
   'fields' => 
   array (
     'lavoratore' => 
@@ -17,5 +19,9 @@
     array (
       'label' => 'periodo',
     ),
+    'info' => 
+    array (
+      'label' => 'info',
+    ),
   ),
-);
+);

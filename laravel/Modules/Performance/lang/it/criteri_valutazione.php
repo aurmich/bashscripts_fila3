@@ -1,4 +1,6 @@
-<?php return array (
+<?php
+
+return array (
   'navigation' => 
   array (
     'name' => 'Criteri di Valutazione',
@@ -86,6 +88,30 @@
     array (
       'label' => 'created_at',
     ),
+    'applyFilters' => 
+    array (
+      'label' => 'applyFilters',
+    ),
+    'toggleColumns' => 
+    array (
+      'label' => 'toggleColumns',
+    ),
+    'reorderRecords' => 
+    array (
+      'label' => 'reorderRecords',
+    ),
+    'resetFilters' => 
+    array (
+      'label' => 'resetFilters',
+    ),
+    'openFilters' => 
+    array (
+      'label' => 'openFilters',
+    ),
+    'value' => 
+    array (
+      'label' => 'value',
+    ),
   ),
   'actions' => 
   array (
@@ -169,4 +195,4 @@
       'error' => 'Errore durante l\'eliminazione',
     ),
   ),
-);
+);

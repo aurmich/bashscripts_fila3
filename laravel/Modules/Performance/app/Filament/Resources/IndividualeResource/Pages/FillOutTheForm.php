@@ -4,17 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\Performance\Filament\Resources\IndividualeResource\Pages;
 
-use Filament\Forms\ComponentContainer;
-use Filament\Notifications\Notification;
-use Filament\Resources\Pages\Concerns\HasRelationManagers;
-use Filament\Resources\Pages\Concerns\InteractsWithRecord;
+use Illuminate\Support\Str;
+use Webmozart\Assert\Assert;
 use Filament\Resources\Pages\Page;
 use Illuminate\Support\Facades\Gate;
-use Modules\Performance\Filament\Resources\IndividualeResource;
-use Modules\Performance\Models\Individuale;
+use Filament\Forms\ComponentContainer;
+use Modules\Xot\Actions\GetViewAction;
+use Filament\Notifications\Notification;
 use Modules\Xot\Actions\GetTransKeyAction;
+use Modules\Performance\Models\Individuale;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
-use Webmozart\Assert\Assert;
+use Filament\Resources\Pages\Concerns\HasRelationManagers;
+use Filament\Resources\Pages\Concerns\InteractsWithRecord;
+use Modules\Performance\Filament\Resources\IndividualeResource;
 
 /**
  * @property ComponentContainer $form
@@ -58,6 +60,7 @@ class FillOutTheForm extends Page
      */
     public function mount($record): void
     {
+        
         Assert::isInstanceOf($model = $this->resolveRecord($record), Individuale::class);
         $this->record = $model;
         $this->authorizeAccess();
@@ -137,10 +140,18 @@ class FillOutTheForm extends Page
 
     public function getView(): string
     {
+       
         $resource = static::getResource();
-        $view = app(GetTransKeyAction::class)->execute();
-
+        $view='performance::'.Str::of(class_basename($resource))
+            ->snake()
+            ->before('_resource')
+            ->append('.pages.fill_out_the_form')
+            ->toString();
+        if(!view()->exists($view)){
+            throw new \Exception('View ['.$view.'] not found');
+        };
         return $view;
+        
     }
 
     public function back(): void

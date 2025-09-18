@@ -12,7 +12,7 @@ return [
         ],
         'label' => 'Schede PO',
         'sort' => 32,
-        'icon' => 'po-document',
+        'icon' => 'performance-region-document',
     ],
     'fields' => [
         'posizione' => [

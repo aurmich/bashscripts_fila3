@@ -7,7 +7,7 @@ return [
         'name' => 'Performance Amministrativa',
         'plural' => 'Performance Amministrative',
         'group' => [
-            'name' => 'Valutazione & KPI',
+            'name' => 'Admin',
             'description' => 'Gestione delle performance amministrative',
         ],
         'label' => 'Performance Amministrativa',

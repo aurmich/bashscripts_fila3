@@ -1,4 +1,6 @@
-<?php return array (
+<?php
+
+return array (
   'navigation' => 
   array (
     'name' => 'Peso Performance',
@@ -108,6 +110,10 @@
         'help' => 'Data dell\'ultima modifica',
       ),
     ),
+    'applyFilters' => 
+    array (
+      'label' => 'applyFilters',
+    ),
   ),
   'actions' => 
   array (
@@ -183,4 +189,4 @@
   array (
     'label' => 'individuale pesi.model',
   ),
-);
+);

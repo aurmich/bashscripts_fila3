@@ -7,7 +7,7 @@ return array (
     'plural' => 'Performance Organizzative',
     'group' => 
     array (
-      'name' => 'Valutazione & KPI',
+      'name' => 'Admin',
       'description' => 'Gestione delle performance organizzative',
     ),
     'label' => 'Performance Organizzativa',
@@ -146,6 +146,106 @@ return array (
     'toggleColumns' => 
     array (
       'label' => 'Attiva/Disattiva Colonne',
+    ),
+    'value' => 
+    array (
+      'label' => 'value',
+    ),
+    'type' => 
+    array (
+      'label' => 'type',
+    ),
+    'perc_parttimepond_dalal' => 
+    array (
+      'label' => 'perc_parttimepond_dalal',
+    ),
+    'gg_presenza_dalal' => 
+    array (
+      'label' => 'gg_presenza_dalal',
+    ),
+    'gg_assenza_dalal' => 
+    array (
+      'label' => 'gg_assenza_dalal',
+    ),
+    'hh_assenza_dalal' => 
+    array (
+      'label' => 'hh_assenza_dalal',
+    ),
+    'quota_teorica' => 
+    array (
+      'label' => 'quota_teorica',
+    ),
+    'budget_assegnato' => 
+    array (
+      'label' => 'budget_assegnato',
+    ),
+    'quota_effettiva' => 
+    array (
+      'label' => 'quota_effettiva',
+    ),
+    'resti' => 
+    array (
+      'label' => 'resti',
+    ),
+    'resti_pond' => 
+    array (
+      'label' => 'resti_pond',
+    ),
+    'importo_totale' => 
+    array (
+      'label' => 'importo_totale',
+    ),
+    'propro' => 
+    array (
+      'label' => 'propro',
+    ),
+    'posfun' => 
+    array (
+      'label' => 'posfun',
+    ),
+    'categoria_eco' => 
+    array (
+      'label' => 'categoria_eco',
+    ),
+    'posiz' => 
+    array (
+      'label' => 'posiz',
+    ),
+    'posiz_txt' => 
+    array (
+      'label' => 'posiz_txt',
+    ),
+    'disci1' => 
+    array (
+      'label' => 'disci1',
+    ),
+    'disci1_txt' => 
+    array (
+      'label' => 'disci1_txt',
+    ),
+    'stabi_txt' => 
+    array (
+      'label' => 'stabi_txt',
+    ),
+    'repar_txt' => 
+    array (
+      'label' => 'repar_txt',
+    ),
+    'dal' => 
+    array (
+      'label' => 'dal',
+    ),
+    'al' => 
+    array (
+      'label' => 'al',
+    ),
+    'posfunval' => 
+    array (
+      'label' => 'posfunval',
+    ),
+    'categoria_ecoval' => 
+    array (
+      'label' => 'categoria_ecoval',
     ),
   ),
   'actions' => 

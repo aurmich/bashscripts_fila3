@@ -445,15 +445,7 @@ class Organizzativa extends BaseModel
             ->where('anno', $this->anno);
     }
 
-    /**
-     * @return HasMany<IndividualeAssenze, Organizzativa>
-     */
-    public function codiciAssenze(): HasMany
-    {
-        return $this->hasMany(IndividualeAssenze::class, 'matr', 'matr')
-            ->where('ente', $this->ente)
-            ->where('anno', $this->anno);
-    }
+   
 
     /**
      * @return HasMany<CriteriEsclusione, Organizzativa>
