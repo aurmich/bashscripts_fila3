@@ -38,17 +38,15 @@ trait HasTenants
     }
 
     /**
-     * Get all of the tenants the user belongs to.
+     * Get all tenants the user belongs to.
      * 
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany<\Illuminate\Database\Eloquent\Model>
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany<\Modules\User\Models\Tenant, static>
      */
     public function tenants(): BelongsToMany
     {
-        /** @var class-string<Tenant> $tenantClass */
-        $tenantClass = XotData::make()->getTenantClass();
-        return $this->belongsToManyX($tenantClass)
-            ->withTimestamps()
-            ->withPivot('role');
+        return $this->belongsToManyX(Tenant::class)
+            ->withPivot('role')
+            ->withTimestamps();
     }
 
     
@@ -118,7 +116,7 @@ trait HasTenants
         }
     }
 
-    public function addTenantMember(Tenant $tenant, string $email, string $role = null): void
+    public function addTenantMember(Tenant $tenant, string $email, ?string $role = null): void
     {
         if ($this->canManageTenant($tenant)) {
             /** @var class-string<\Illuminate\Database\Eloquent\Model&\Modules\Xot\Contracts\UserContract> $userClass */
@@ -139,5 +137,12 @@ trait HasTenants
         if ($this->canManageTenant($tenant)) {
             $tenant->users()->detach($userId);
         }
+    }
+
+    public function getTenantByDomain(string $domain): ?Tenant
+    {
+        return $this->tenants()->get()->first(function ($tenant) use ($domain) {
+            return $tenant->domain === $domain;
+        });
     }
 }

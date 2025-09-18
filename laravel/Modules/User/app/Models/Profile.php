@@ -9,7 +9,7 @@ namespace Modules\User\Models;
  *
  * @property \Spatie\SchemalessAttributes\SchemalessAttributes $extra
  * @property-read string $avatar
- * @property-read \Modules\Broker\Models\Profile|null $creator
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\DeviceUser> $deviceUsers
  * @property-read int|null $device_users_count
  * @property-read \Modules\User\Models\ProfileTeam|\Modules\User\Models\DeviceProfile|null $pivot
@@ -32,8 +32,8 @@ namespace Modules\User\Models;
  * @property-read int|null $roles_count
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Team> $teams
  * @property-read int|null $teams_count
- * @property-read \Modules\Broker\Models\Profile|null $updater
- * @property-read \Modules\Broker\Models\User|null $user
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
+ * @property-read \Modules\Xot\Contracts\UserContract|null $user
  * @property-read string|null $user_name
  * @method static \Modules\User\Database\Factories\ProfileFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile newModelQuery()
@@ -48,25 +48,51 @@ namespace Modules\User\Models;
  */
 class Profile extends BaseProfile
 {
-    /** @var list<string> */
-    public $fillable = [
-        'id',
+    /**
+     * @property int $id
+     * @property int $user_id
+     * @property string $name
+     * @property string $email
+     * @property string|null $phone
+     * @property string|null $address
+     * @property string|null $city
+     * @property string|null $state
+     * @property string|null $zip
+     * @property string|null $country
+     * @property string|null $timezone
+     * @property string|null $locale
+     * @property string|null $avatar
+     * @property string|null $bio
+     * @property string|null $website
+     * @property array|null $social_links
+     * @property array|null $preferences
+     * @property array|null $settings
+     * @property array|null $metadata
+     * @property \Carbon\Carbon|null $created_at
+     * @property \Carbon\Carbon|null $updated_at
+     * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
+     * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
+     * @property-read \Modules\Xot\Contracts\UserContract|null $user
+     */
+    protected $fillable = [
         'user_id',
-        'first_name',
-        'last_name',
-        'full_name',
+        'name',
         'email',
-        'is_active',
-        'extra',
+        'phone',
+        'address',
+        'city',
+        'state',
+        'zip',
+        'country',
+        'timezone',
+        'locale',
         'avatar',
-        'credits',
-        'slug',
-        'oauth_enable',
-        'credentials_enable',
-        'created_at',
-        'updated_at',
-        'updated_by',
-        'created_by'
+        'bio',
+        'website',
+        'social_links',
+        'preferences',
+        'settings',
+        'metadata',
     ];
 
     /**

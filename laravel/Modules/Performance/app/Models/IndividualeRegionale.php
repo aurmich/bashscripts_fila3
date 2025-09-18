@@ -21,10 +21,7 @@ use Modules\Sigma\Models\Tqu00f;
 use Modules\Sigma\Models\Wstr01lx;
 use Parental\HasParent;
 
-// ---------- models -------
-// ----------traits ---
-// ---- services ---
-// passare ad arrayservice
+
 /**
  * Modules\Performance\Models\IndividualeRegionale.
  *

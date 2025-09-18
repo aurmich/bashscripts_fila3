@@ -135,13 +135,18 @@ protected $fillable = ['id', 'name', 'email'];
 protected $hidden = ['password', 'remember_token'];
 
 /**
- * @var array<string, string>
+ * Get the attributes that should be cast.
+ *
+ * @return array<string, string>
  */
-protected $casts = [
-    'published_at' => 'datetime',
-    'created_at' => 'datetime',
-    'updated_at' => 'datetime',
-];
+protected function casts(): array
+{
+    return [
+        'published_at' => 'datetime',
+        'created_at' => 'datetime',
+        'updated_at' => 'datetime',
+    ];
+}
 ```
 
 ### Tipo di Ritorno per newFactory()
@@ -296,3 +301,119 @@ Modules/NomeModulo/
 4. **Forte Tipizzazione**: Riduzione degli errori a runtime
 5. **Manutenibilità**: Facilità di manutenzione e evoluzione del codice
 6. **Testabilità**: Componenti isolati e facilmente testabili 
+
+## Tipizzazione delle Relazioni Eloquent
+
+### Tipi di Ritorno Corretti per le Relazioni
+
+```php
+/**
+ * @return MorphTo<\Illuminate\Database\Eloquent\Model, static>
+ */
+public function authenticatable(): MorphTo
+{
+    return $this->morphTo();
+}
+
+/**
+ * @return BelongsTo<Profile, static>
+ */
+public function profile(): BelongsTo
+{
+    return $this->belongsTo(Profile::class);
+}
+
+/**
+ * @return HasMany<DeviceUser, static>
+ */
+public function deviceUsers(): HasMany
+{
+    return $this->hasMany(DeviceUser::class);
+}
+```
+
+### Gestione dei Tipi di Ritorno per Metodi che Accedono a Proprietà
+
+```php
+/**
+ * @return array<string, mixed>|null
+ */
+public function getLocation(): ?array
+{
+    return $this->location;
+}
+
+/**
+ * @return \Illuminate\Support\Carbon|null
+ */
+public function getLoginAt(): ?Carbon
+{
+    return $this->login_at;
+}
+```
+
+### Tipi Generici nelle Relazioni
+
+Quando si definiscono relazioni in Eloquent, è importante utilizzare i tipi generici corretti:
+
+1. Per `BelongsTo`:
+   ```php
+   /**
+    * @return BelongsTo<RelatedModel, static>
+    */
+   ```
+
+2. Per `HasMany`:
+   ```php
+   /**
+    * @return HasMany<RelatedModel, static>
+    */
+   ```
+
+3. Per `MorphTo`:
+   ```php
+   /**
+    * @return MorphTo<RelatedModel, static>
+    */
+   ```
+
+4. Per `MorphMany`:
+   ```php
+   /**
+    * @return MorphMany<RelatedModel, static>
+    */
+   ```
+
+### Gestione dei Tipi Nullable
+
+Quando si lavora con proprietà che possono essere null:
+
+```php
+/**
+ * @return array<string, mixed>|null
+ */
+public function getSettings(): ?array
+{
+    return $this->settings;
+}
+
+/**
+ * @return \Illuminate\Support\Carbon|null
+ */
+public function getLastLoginAt(): ?Carbon
+{
+    return $this->last_login_at;
+}
+```
+
+### Tipi di Ritorno per Metodi di Factory
+
+```php
+/**
+ * @return \Illuminate\Database\Eloquent\Factories\Factory<static>
+ */
+protected static function newFactory(): Factory
+{
+    return UserFactory::new();
+}
+``` 
