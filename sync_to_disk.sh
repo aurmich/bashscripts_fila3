@@ -4,9 +4,12 @@
 if [ -z "$1" ]; then
     echo "⚠️ Errore: specificare il nome del disco!"
     echo "👉 Uso: $0 <nome_disco>"
+<<<<<<< HEAD
 # Verifica se è stato passato il nome del disco
 if [ -z "$1" ]; then
     echo "Uso: $0 <nome_disco>"
+=======
+>>>>>>> d516087e (.)
     exit 1
 fi
 
@@ -20,13 +23,18 @@ DEST_PATH="/mnt/$DISK_NAME/var/www/html/_bases/$ARCHIVE_NAME"
 
 echo "🚀 Avvio sincronizzazione: $PWD → $DEST_PATH"
 
+<<<<<<< HEAD
 # 🧹 Rimuove i file temporanei (*:Zone.Identifier)
+=======
+# 🗑️ Rimuove i file inutili (*:Zone.Identifier)
+>>>>>>> d516087e (.)
 echo "🧹 Pulizia file temporanei..."
 find . -type f -name "*:Zone.Identifier" -delete
 
 # 📦 Creazione dell'archivio tar.gz con massima compressione
 echo "📝 Creazione dell'archivio: $TEMP_PATH"
 tar -czf "$TEMP_PATH" --exclude='.git' --exclude='build' --exclude='cache' --exclude='storage' \
+<<<<<<< HEAD
     --exclude='venv' --exclude='node_modules' --exclude='*.log' --exclude='*.tmp' \
     --exclude='*.bak' --exclude='*.swp' --exclude='*.DS_Store' --exclude='vendor' \
     --exclude='public_html' --exclude='*.phar' --exclude='img' --exclude='*.cache' \
@@ -53,3 +61,6 @@ find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
 rsync -avz --relative --exclude='.git' --exclude='build' --exclude='cache'  --exclude='storage' --exclude='venv' --exclude='node_modules' --exclude='vendor' --exclude='stubs' ./ "$DEST_PATH"
 sed -i -e 's/\r$//' "$me"
 echo "Sincronizzazione completata!"
+=======
+    --exclude='venv' --exclude='node_modules' --exclude='v
+>>>>>>> d516087e (.)

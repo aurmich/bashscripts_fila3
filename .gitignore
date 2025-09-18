@@ -38,6 +38,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ───────────────────────────────────────────────────────
 # Sistema operativo / File nascosti e metadata
 # ───────────────────────────────────────────────────────
@@ -290,6 +291,8 @@ cache/
 >>>>>>> 58e1cada (.)
 =======
 >>>>>>> d8b9f8a6 (up)
+=======
+>>>>>>> d516087e (.)
 .git-rewrite
 .fuse_hidden*
 .fuse_hidden**.lock
@@ -323,6 +326,7 @@ cache/
 *:Zone.Identifier
 .php-cs-fixer.cache
 **/*.Zone.Identifier
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 .git-rewrite
@@ -1051,3 +1055,5 @@ cache/
 >>>>>>> d8b9f8a6 (up)
 =======
 >>>>>>> f3c337b1 (.)
+=======
+>>>>>>> d516087e (.)

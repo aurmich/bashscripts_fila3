@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9ad809a8 (first)
 =======
@@ -157,6 +158,8 @@ php -d memory_limit=-1 composer.phar require -W --dev spatie/laravel-ray
 =======
 =======
 >>>>>>> d8b9f8a6 (up)
+=======
+>>>>>>> d516087e (.)
 #!/bin/sh
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php composer-setup.php
@@ -245,6 +248,7 @@ php -d memory_limit=-1 composer.phar require -W --dev --ignore-platform-reqs pes
 php -d memory_limit=-1 composer.phar remove laravel/sanctum
 rm config/sanctum.php 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> f2e91737 (.)
 =======
 >>>>>>> 9ad809a8 (first)
@@ -260,3 +264,5 @@ rm config/sanctum.php
 >>>>>>> 402fff2e (first)
 =======
 >>>>>>> d8b9f8a6 (up)
+=======
+>>>>>>> d516087e (.)

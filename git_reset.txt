@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 #!/bin/bash
@@ -48,6 +49,8 @@ log "success" "Reset submoduli completato"
 >>>>>>> 58e1cada (.)
 =======
 >>>>>>> d8b9f8a6 (up)
+=======
+>>>>>>> d516087e (.)
 #!/bin/sh
 set -e
 git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |
@@ -61,6 +64,7 @@ git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |
         git rm --cached -r -f $path || echo $path
         git submodule add -f $url $path 
     done
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -117,3 +121,6 @@ git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |
 =======
     
 >>>>>>> d8b9f8a6 (up)
+=======
+    
+>>>>>>> d516087e (.)

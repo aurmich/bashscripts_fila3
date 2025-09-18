@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 # 🛠️ Soluzioni Comuni per Problemi Git e Bash
@@ -257,6 +258,8 @@ SOLUZIONE: > sudo chmod 777 -R .
 =======
 =======
 >>>>>>> d8b9f8a6 (up)
+=======
+>>>>>>> d516087e (.)
 
 /bin/bash^M: bad interpreter: No such file or directory
 sed -i -e 's/\r$//' nomefile.sh
@@ -302,6 +305,7 @@ find . -type f -name "*:Zone.Identifier" -exec rm -f {} +
 
 sudo update-alternatives --config php
 
+<<<<<<< HEAD
 
 
 
@@ -326,3 +330,5 @@ SOLUZIONE: > sudo chmod 777 -R .
 >>>>>>> f2e91737 (.)
 =======
 >>>>>>> d8b9f8a6 (up)
+=======
+>>>>>>> d516087e (.)

@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # GUIDA ESSENZIALE LARAXOT
 
 ## DOCUMENTAZIONE
@@ -1042,6 +1043,8 @@ esegui phpstan a livello 7 su tutto Modules e aggiorna la cartella docs piu' vic
 =======
 =======
 >>>>>>> d8b9f8a6 (up)
+=======
+>>>>>>> d516087e (.)
 # GUIDA ESSENZIALE LARAXOT
 
 ## DOCUMENTAZIONE
@@ -1067,10 +1070,13 @@ esegui phpstan a livello 7 su tutto Modules e aggiorna la cartella docs piu' vic
 - Esempio: User path: `/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/User/app/Models/User.php`
   namespace: `Modules\User\Models`
 
+<<<<<<< HEAD
 ## TRADUZIONI
 - Formato corretto: `'field' => ['label' => 'Etichetta', 'tooltip' => 'Descrizione']`
 - MAI usare ->label() (gestito da LangServiceProvider)
 
+=======
+>>>>>>> d516087e (.)
 ## ESTENSIONE CLASSI
 - MAI estendere classi Filament direttamente
 - SEMPRE estendere classi XotBase dal modulo Xot
@@ -1091,6 +1097,7 @@ esegui phpstan a livello 7 su tutto Modules e aggiorna la cartella docs piu' vic
 ## TRADUZIONI
 - Formato corretto: `'field' => ['label' => 'Etichetta', 'tooltip' => 'Descrizione']`
 - MAI usare ->label() (gestito da LangServiceProvider)
+<<<<<<< HEAD
 ## NAMESPACE
 - Modello: `Modules\*\Models` (non `Modules\*\app\Models`)
 - Filament: `Modules\*\Filament` (non `Modules\*\app\Filament`)
@@ -1103,6 +1110,8 @@ esegui phpstan a livello 7 su tutto Modules e aggiorna la cartella docs piu' vic
 ## SERVICE PROVIDER
 - Estendere classi base Xot (XotBaseServiceProvider)
 - Chiamare sempre parent::boot()
+=======
+>>>>>>> d516087e (.)
 
 ## MIGRAZIONI
 - Estendere XotBaseMigration
@@ -1114,13 +1123,17 @@ esegui phpstan a livello 7 su tutto Modules e aggiorna la cartella docs piu' vic
 - Utilizzare spatie/queueable-actions
 - Evitare l'uso di "mixed" (solo come ultima risorsa)
 - Analizzare moduli esistenti prima di implementare nuove funzionalità
+<<<<<<< HEAD
 
 ## METODOLOGIA
 - Analizzare moduli esistenti
+=======
+>>>>>>> d516087e (.)
 - Focalizzarsi sullo scopo, non solo sulla correzione
 - Seguire convenzioni del framework
 
 
+<<<<<<< HEAD
 getInfolistSchema restituisec un array cui le chiavi sono  stringhe aggiorna la cartellla "docs" piu' vicina e studiala e aggiorna anche le tue rules e memories
 
 esegui phpstan a livello 7 su tutto Modules e aggiorna la cartella docs piu' vicina all'errore che andrai a correggere , poi studia quella cartella docs, poi implementa soluzione , poi procedi con gli altri errori, non ti fermare finche phpstan non ti dice che non hai piu' errori in tutto Modules 
@@ -1163,3 +1176,6 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 >>>>>>> f2e91737 (.)
 =======
 >>>>>>> d8b9f8a6 (up)
+=======
+getInfolistSchema restituisec un array cui le chiavi sono  stringhe aggiorna la cartellla "docs" piu' vicina e studiala e aggiorna anche le tue rules e memories
+>>>>>>> d516087e (.)

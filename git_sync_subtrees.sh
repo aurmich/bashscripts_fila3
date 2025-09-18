@@ -3,7 +3,10 @@
 
 me=$( readlink -f -- "$0")
 script_dir=$(dirname "$me")
+<<<<<<< HEAD
 CUSTOM_ORG="$1"
+=======
+>>>>>>> d516087e (.)
 
 # Script per sincronizzare git subtree con ottimizzazione della history
 CONFIG_FILE="gitmodules.ini"
@@ -45,6 +48,7 @@ while IFS= read -r line; do
         current_path="${BASH_REMATCH[1]}"
     elif [[ "$line" =~ ^url\ *=\ *(.+)$ && -n "$current_path" ]]; then
         current_url="${BASH_REMATCH[1]}"
+<<<<<<< HEAD
 
          # Modifica l'organizzazione nell'URL se CUSTOM_ORG è fornito
         if [[ -n "$CUSTOM_ORG" && "$current_url" =~ git@github.com:([^/]+)/(.+)$ ]]; then
@@ -59,6 +63,11 @@ while IFS= read -r line; do
         
         # Chiamata esterna allo script di sincronizzazione
         log "🔄 Sincronizzazione modulo: $current_path [$current_url]"
+=======
+        
+        # Chiamata esterna allo script di sincronizzazione
+        log "🔄 Sincronizzazione modulo: $current_path"
+>>>>>>> d516087e (.)
         if ! "$script_dir/git_sync_subtree.sh" "$current_path" "$current_url" ; then
             log "⚠️ Sincronizzazione fallita per $current_path."
         fi
@@ -72,5 +81,10 @@ done < "$CONFIG_FILE"
 # Esegui git gc per mantenere il repository leggero
 log "🧹 Pulizia del repository..."
 git gc --prune=now --aggressive
+<<<<<<< HEAD
 sed -i -e 's/\r$//' "$me"
 log "✅ Sincronizzazione completata con history ottimizzata!"
+=======
+
+log "✅ Sincronizzazione completata con history ottimizzata!"
+>>>>>>> d516087e (.)

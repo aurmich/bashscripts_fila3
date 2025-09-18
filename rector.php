@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
@@ -440,6 +441,8 @@ return static function (RectorConfig $rectorConfig): void {
 =======
 =======
 >>>>>>> d8b9f8a6 (up)
+=======
+>>>>>>> d516087e (.)
 <?php
 
 declare(strict_types=1);
@@ -460,6 +463,9 @@ return RectorConfig::configure()
         // AddVoidReturnTypeWhereNoReturnRector::class,
     ]);
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> f2e91737 (.)
 =======
 >>>>>>> d8b9f8a6 (up)
+=======
+>>>>>>> d516087e (.)
