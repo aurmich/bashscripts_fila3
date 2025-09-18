@@ -2,6 +2,7 @@ includes:
     - phpstan-baseline.neon
     - ./vendor/larastan/larastan/extension.neon
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 parameters:
     level: 1
@@ -23,22 +24,28 @@ parameters:
     #- ./vendor/symplify/phpstan-rules/config/regex-rules.neon
     #- ./vendor/symplify/phpstan-rules/config/static-rules.neon
 
+=======
+>>>>>>> bbec4378 (first)
 
 parameters:
     level: max
     paths:
         - .
+<<<<<<< HEAD
 
     ignoreErrors:
     #    - '#Unsafe usage of new static#'
         - '#PHPDoc tag @mixin contains unknown class #'
         - '#Static call to instance method Nwidart#'
 
+=======
+>>>>>>> bbec4378 (first)
     excludePaths:
         - ./build/*
         - ./vendor/*
         - ./*/vendor/*
         - ./docs/*
+<<<<<<< HEAD
         # - ./Tests/*
         - ./_ide_helper.php
 
@@ -61,3 +68,26 @@ parameters:
     checkOctaneCompatibility: false
     checkModelProperties: false
 >>>>>>> a8f30311 (first)
+=======
+        - ./Tests/*
+        - ./_ide_helper.php
+        - ./Services/Trend.php
+
+    bootstrapFiles:
+        # - ./Services/vendor/autoload.php
+        # - ./phpstan_constants.php
+
+
+    scanFiles:
+        # - ./Helpers/Helper.php
+        # - ./vendor/laraxot/module_xot/Helpers/Helper.php
+
+    tmpDir: build/phpstan
+    reportUnmatchedIgnoredErrors: false
+    checkOctaneCompatibility: false
+    checkModelProperties: false
+    checkMissingIterableValueType: false
+    checkGenericClassInNonGenericObjectType: false
+    checkImplicitMixed: false
+
+>>>>>>> bbec4378 (first)

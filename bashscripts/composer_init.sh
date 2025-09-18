@@ -1,7 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 59bc4fe7 (first)
+=======
+>>>>>>> bbec4378 (first)
 #!/bin/sh
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php composer-setup.php
@@ -9,6 +12,7 @@ php -r "unlink('composer-setup.php');"
 php -r "unlink('composer.lock');"
 rm composer.lock
 rm package-lock.json
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -97,6 +101,8 @@ rm config/sanctum.php
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
 =======
 >>>>>>> 59bc4fe7 (first)
+=======
+>>>>>>> bbec4378 (first)
 
 ##############  ####################
 php -d memory_limit=-1 composer.phar require -W illuminate/contracts
@@ -113,6 +119,7 @@ php -d memory_limit=-1 composer.phar require -W --dev phpstan/extension-installe
 php -d memory_limit=-1 composer.phar require -W --dev phpstan/phpstan-deprecation-rules
 php -d memory_limit=-1 composer.phar require -W --dev phpstan/phpstan-phpunit
 php -d memory_limit=-1 composer.phar require -W --dev spatie/laravel-ray
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 164b8363 (Squashed 'laravel/Modules/Rating/' content from commit e5c84117)
@@ -209,3 +216,5 @@ rm config/sanctum.php
 >>>>>>> 26dea118 (.)
 =======
 >>>>>>> 59bc4fe7 (first)
+=======
+>>>>>>> bbec4378 (first)

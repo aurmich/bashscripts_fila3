@@ -11,11 +11,14 @@ $finder = PhpCsFixer\Finder::create()
     ->ignoreVCS(true)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ;
 =======
 >>>>>>> 59bc4fe7 (first)
 =======
 >>>>>>> a8f30311 (first)
+=======
+>>>>>>> bbec4378 (first)
 
 $config = new PhpCsFixer\Config();
 
@@ -45,10 +48,13 @@ $config
     ->setFinder($finder)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ;
 =======
 >>>>>>> 59bc4fe7 (first)
 =======
 >>>>>>> a8f30311 (first)
+=======
+>>>>>>> bbec4378 (first)
 
 return $config;

@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ───────────────────────────────────────────────────────
 # Sistema operativo / File nascosti e metadata
 # ───────────────────────────────────────────────────────
@@ -453,6 +454,62 @@ node_modules
 >>>>>>> a8f30311 (first)
 node_modules
 vendor
+=======
+/vendor/
+vendor/
+node_modules/
+npm-debug.log
+*.cache
+*.phar
+*.lock
+package-lock.json
+yarn-error.log
+
+# Laravel 4 specific
+bootstrap/compiled.php
+app/storage/
+
+# Laravel 5 & Lumen specific
+public/storage
+public/hot
+
+# Laravel 5 & Lumen specific with changed public path
+public_html/storage
+public_html/hot
+
+storage/*.key
+.env
+Homestead.yaml
+Homestead.json
+/.vagrant
+.phpunit.result.cache
+
+*.stackdump
+*.cache
+*.lock
+package-lock.json
+*.log
+package-lock.json
+
+
+
+/.git-rewrite
+/build
+.git-blame-ignore-revs
+package-lock.json
+.php-cs-fixer.cache
+package-lock.json
+.git-rewrite/
+.php-cs-fixer.cache
+node_modules
+.git-blame-ignore-revs
+vendor/
+node_modules
+vendor
+/vendor
+vendor/
+.php-cs-fixer.cache
+>>>>>>> bbec4378 (first)
 .git-blame-ignore-revs
 build/
 vendor/
@@ -460,6 +517,7 @@ build/
 node_modules
 docs/cache/
 cache/
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -485,3 +543,9 @@ laravel/Modules/Predict/
 *.exe
 *:Zone.Identifier
 >>>>>>> a8f30311 (first)
+=======
+*.exe
+
+*:Zone.Identifier
+.php-cs-fixer.cache
+>>>>>>> bbec4378 (first)

@@ -5,7 +5,11 @@ on:
     branches:
       - master
 
+<<<<<<< HEAD
 permissions:
+=======
+permissions: 
+>>>>>>> bbec4378 (first)
   contents: write
 
 jobs:
@@ -25,10 +29,17 @@ jobs:
 
     - name: Node
       run: npm install
+<<<<<<< HEAD
 
     - name: Production
       run: npm run prod
 
+=======
+      
+    - name: Production
+      run: npm run prod
+      
+>>>>>>> bbec4378 (first)
     - name: CNAME
       run: echo "privacyfed.github.io/doc_extrafield" > ./build_production/CNAME
 

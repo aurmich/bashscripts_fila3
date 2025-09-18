@@ -11,6 +11,7 @@ jobs:
     if: ${{ github.actor == 'dependabot[bot]' }}
     steps:
 <<<<<<< HEAD
+<<<<<<< HEAD
     
       - name: Dependabot metadata
         id: metadata
@@ -31,6 +32,15 @@ jobs:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
 
 >>>>>>> a8f30311 (first)
+=======
+    
+      - name: Dependabot metadata
+        id: metadata
+        uses: dependabot/fetch-metadata@v1.6.0
+        with:
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+          
+>>>>>>> bbec4378 (first)
       - name: Auto-merge Dependabot PRs for semver-minor updates
         if: ${{steps.metadata.outputs.update-type == 'version-update:semver-minor'}}
         run: gh pr merge --auto --merge "$PR_URL"
@@ -38,10 +48,14 @@ jobs:
           PR_URL: ${{github.event.pull_request.html_url}}
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 <<<<<<< HEAD
+<<<<<<< HEAD
           
 =======
 
 >>>>>>> a8f30311 (first)
+=======
+          
+>>>>>>> bbec4378 (first)
       - name: Auto-merge Dependabot PRs for semver-patch updates
         if: ${{steps.metadata.outputs.update-type == 'version-update:semver-patch'}}
         run: gh pr merge --auto --merge "$PR_URL"

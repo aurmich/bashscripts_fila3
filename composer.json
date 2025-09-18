@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "laraxot/bashscripts_fila3",
     "description": "Script di utilità per la gestione dei repository Git, Toolkit di automazione Git per progetti Laravel",
     "type": "library",
@@ -50,12 +51,19 @@
     "description": "",
     "homepage": "https://github.com/laraxot/module_ui_fila3.git",
     "license": "MIT",
+=======
+    "name": "laraxot/module_lang_fila3",
+    "description": "",
+    "license": "MIT",
+    "homepage": "https://github.com/laraxot/module_lang_fila3.git",
+>>>>>>> bbec4378 (first)
     "authors": [
         {
             "name": "Marco Sottana",
             "email": "marco.sottana@gmail.com"
         }
     ],
+<<<<<<< HEAD
     "extra": {
         "laravel": {
             "providers": [
@@ -99,11 +107,17 @@
     },
     "require": {
         "owenvoke/blade-fontawesome": "*"
+=======
+    "require": {
+        "mcamara/laravel-localization": "^2.2",
+        "spatie/laravel-sluggable": "*"
+>>>>>>> bbec4378 (first)
     },
     "require-dev": {},
     "repositories": [
         {
             "type": "path",
+<<<<<<< HEAD
             "url": "../User"
         },
         {
@@ -209,21 +223,30 @@
         
     },
     "repositories": [
+=======
+            "url": "../Xot"
+        },
+>>>>>>> bbec4378 (first)
         {
             "type": "path",
             "url": "../Tenant"
         },
         {
             "type": "path",
+<<<<<<< HEAD
             "url": "./packages/coolsam/panel-modules"
         },
         {
             "type": "composer",
             "url": "https://packagist.org"
+=======
+            "url": "../UI"
+>>>>>>> bbec4378 (first)
         }
     ],
     "autoload": {
         "psr-4": {
+<<<<<<< HEAD
             "Modules\\Xot\\": "app/",
             "Modules\\Xot\\Database\\Factories\\": "database/factories/",
             "Modules\\Xot\\Database\\Seeders\\": "database/seeders/",
@@ -242,16 +265,34 @@
 >>>>>>> 59bc4fe7 (first)
 =======
 >>>>>>> a8f30311 (first)
+=======
+            "Modules\\Lang\\": "app/",
+            "Modules\\Lang\\Database\\Factories\\": "database/factories/",
+            "Modules\\Lang\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [],
+        "post-update-cmd": [],
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "./vendor/bin/pest --no-coverage",
+        "test-coverage": "vendor/bin/pest --coverage-html coverage",
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+>>>>>>> bbec4378 (first)
     },
     "config": {
         "sort-packages": true,
         "allow-plugins": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bbec4378 (first)
             "phpstan/extension-installer": true,
             "pestphp/pest-plugin": true
         }
     },
+<<<<<<< HEAD
     "minimum-stability": "dev",
 <<<<<<< HEAD
 >>>>>>> 164b8363 (Squashed 'laravel/Modules/Rating/' content from commit e5c84117)
@@ -274,11 +315,19 @@
                 "Modules\\Xot\\Providers\\XotServiceProvider",
                 "Modules\\Xot\\Providers\\Filament\\ModulesServiceProvider",
                 "Modules\\Xot\\Providers\\Filament\\AdminPanelProvider"
+=======
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Lang\\Providers\\LangServiceProvider",
+                "Modules\\Lang\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> bbec4378 (first)
             ],
             "aliases": {}
         }
     },
     "minimum-stability": "dev",
+<<<<<<< HEAD
 >>>>>>> 59bc4fe7 (first)
     "prefer-stable": true
 }
@@ -287,3 +336,7 @@
     "prefer-stable": true
 }
 >>>>>>> a8f30311 (first)
+=======
+    "prefer-stable": true
+}
+>>>>>>> bbec4378 (first)

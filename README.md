@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2629,12 +2630,20 @@ Now that you're more familiar with your Bitbucket repository, go ahead and add a
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
 # Module Rating
 Modulo dedicato alla gestione delle valutazioni
+=======
+# Module Lang
+Modulo dedicato alla gestione delle traduzioni
+>>>>>>> bbec4378 (first)
 
 ## Aggiungere Modulo nella base del progetto
 Dentro la cartella laravel/Modules
 
 ```bash
+<<<<<<< HEAD
 git submodule add https://github.com/laraxot/module_rating_fila3.git Rating
+=======
+git submodule add https://github.com/laraxot/module_lang_fila3.git Lang
+>>>>>>> bbec4378 (first)
 ```
 
 ## Verificare che il modulo sia attivo
@@ -2643,11 +2652,16 @@ php artisan module:list
 ```
 in caso abilitarlo
 ```bash
+<<<<<<< HEAD
 php artisan module:enable Rating
+=======
+php artisan module:enable Lang
+>>>>>>> bbec4378 (first)
 ```
 
 ## Eseguire le migrazioni
 ```bash
+<<<<<<< HEAD
 php artisan module:migrate Rating
 ```
 <<<<<<< HEAD
@@ -2790,3 +2804,7 @@ This package is open-sourced under the [MIT license](LICENSE).
 >>>>>>> 59bc4fe7 (first)
 =======
 >>>>>>> a8f30311 (first)
+=======
+php artisan module:migrate Lang
+```
+>>>>>>> bbec4378 (first)

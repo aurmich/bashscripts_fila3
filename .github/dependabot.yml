@@ -9,6 +9,9 @@ updates:
     directory: "/"
     schedule:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bbec4378 (first)
       interval: "daily"
     labels:
       - "dependencies"
@@ -20,8 +23,11 @@ updates:
     labels:
       - "npm"
       - "dependencies"
+<<<<<<< HEAD
 =======
       interval: "weekly"
     labels:
       - "dependencies"
 >>>>>>> a8f30311 (first)
+=======
+>>>>>>> bbec4378 (first)

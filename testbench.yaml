@@ -1,6 +1,7 @@
 providers:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Modules\Rating\Providers\RatingServiceProvider
 =======
   - Modules\Xot\Providers\XotServiceProvider
@@ -12,3 +13,6 @@ providers:
   - Nwidart\Modules\LaravelModulesServiceProvider
 
 >>>>>>> a8f30311 (first)
+=======
+  - Modules\Lang\Providers\LangServiceProvider
+>>>>>>> bbec4378 (first)

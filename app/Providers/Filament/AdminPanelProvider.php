@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
  * ---.
  */
@@ -20,10 +21,17 @@ use Filament\Support\Assets\Css;
 use Filament\Support\Assets\Js;
 use Filament\Support\Facades\FilamentAsset;
 >>>>>>> a8f30311 (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Lang\Providers\Filament;
+
+>>>>>>> bbec4378 (first)
 use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 
 class AdminPanelProvider extends XotBasePanelProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     protected string $module = 'Rating';
 =======
@@ -51,4 +59,7 @@ class AdminPanelProvider extends XotBasePanelProvider
         return parent::panel($panel);
     }
 >>>>>>> a8f30311 (first)
+=======
+    protected string $module = 'Lang';
+>>>>>>> bbec4378 (first)
 }

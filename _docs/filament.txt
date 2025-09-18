@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://github.com/lartisan/filament-rating-tool
 =======
 https://github.com/savannabits/filament-signature-pad
@@ -14,4 +15,11 @@ https://filamentphp.com/plugins/saade-adjacency-list
 https://filamentphp.com/plugins/codewithdennis-select-tree
 https://github.com/beholdr/filament-trilist
 >>>>>>> a8f30311 (first)
+=======
+https://github.com/statikbe/laravel-filament-chained-translation-manager
+
+https://filamentphp.com/plugins/34ml-translatable-field
+
+
+>>>>>>> bbec4378 (first)
 

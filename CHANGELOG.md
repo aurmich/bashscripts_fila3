@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bbec4378 (first)
 # Changelog
 
 All notable changes to `:package_name` will be documented in this file.
@@ -6,6 +9,7 @@ All notable changes to `:package_name` will be documented in this file.
 ## 1.0.0 - 202X-XX-XX
 
 - initial release
+<<<<<<< HEAD
 =======
 # Changelog del Modulo Xot
 
@@ -28,3 +32,5 @@ All notable changes to `:package_name` will be documented in this file.
 
 *Ultimo aggiornamento: 10/2023*
 >>>>>>> 59bc4fe7 (first)
+=======
+>>>>>>> bbec4378 (first)

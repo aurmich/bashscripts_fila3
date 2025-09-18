@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\UI\Filament\Pages;
 
 use Filament\Pages\Page;
@@ -52,4 +53,15 @@ class Dashboard extends Page
             Widgets\TestWidget::make(['widgets' => $widgets]),
         ];
     }
+=======
+namespace Modules\Lang\Filament\Pages;
+
+use Filament\Pages\Page;
+
+class Dashboard extends Page
+{
+    protected static ?string $navigationIcon = 'heroicon-o-document-text';
+
+    protected static string $view = 'lang::filament.pages.dashboard';
+>>>>>>> bbec4378 (first)
 }

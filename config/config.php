@@ -5,6 +5,7 @@ declare(strict_types=1);
 return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'name' => 'Rating',
     'icon' => 'heroicon-o-star', // icon on dashboard
     'navigation_sort' => 1,
@@ -23,12 +24,21 @@ return [
         'enabled' => true,
         'sort' => 90,
 >>>>>>> a8f30311 (first)
+=======
+    'name' => 'Lang',
+    'description' => 'Modulo per la gestione delle traduzioni e localizzazioni',
+    'icon' => 'heroicon-o-language',
+    'navigation' => [
+        'enabled' => true,
+        'sort' => 50,
+>>>>>>> bbec4378 (first)
     ],
     'routes' => [
         'enabled' => true,
         'middleware' => ['web', 'auth'],
     ],
     'providers' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
         'Modules\\Xot\\Providers\\XotServiceProvider',
     ],
@@ -37,4 +47,8 @@ return [
         'Modules\\UI\\Providers\\UIServiceProvider',
     ],
 >>>>>>> a8f30311 (first)
+=======
+        'Modules\\Lang\\Providers\\LangServiceProvider',
+    ],
+>>>>>>> bbec4378 (first)
 ];

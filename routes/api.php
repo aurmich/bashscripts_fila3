@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
 /*
 <<<<<<< HEAD
@@ -22,3 +23,5 @@ Route::middleware('auth:api')->get('/xot', function (Request $request) {
  * --empty
  */
 >>>>>>> a8f30311 (first)
+=======
+>>>>>>> bbec4378 (first)
