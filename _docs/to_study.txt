@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 x esposizione tabelle riordino dati
 https://github.com/updivision/estarter-ecommerce-for-laravel
 
@@ -39,3 +40,9 @@ https://chasingcode.dev/blog/edit-in-place-component-livewire-alpinejs/#update-2
 
 
 
+=======
+
+
+//--- rating senza criterio 
+https://github.com/rennokki/rating
+>>>>>>> 164b8363 (Squashed 'laravel/Modules/Rating/' content from commit e5c84117)

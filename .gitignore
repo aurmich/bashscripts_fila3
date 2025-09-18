@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ───────────────────────────────────────────────────────
 # Sistema operativo / File nascosti e metadata
 # ───────────────────────────────────────────────────────
@@ -370,3 +371,41 @@ public_html/vendor/
 *.zip
 *.old
 >>>>>>> 09d4c7ad (.)
+=======
+*.jar
+*.log
+*.lock
+package-lock.json
+*.phar
+.git-rewrite
+.php-cs-fixer.cache
+package-lock.json
+vendor/
+node_modules/
+.env
+/.vagrant
+.phpunit.result.cache
+.DS_Store
+error_log
+.phpintel
+/.idea
+
+*.stackdump
+*.cache
+*.log
+*.lock
+package-lock.json
+
+node_modules
+.git-blame-ignore-revs
+node_modules
+vendor
+.git-blame-ignore-revs
+build/
+vendor/
+build/
+node_modules
+docs/cache/
+cache/
+*:Zone.Identifier
+>>>>>>> 164b8363 (Squashed 'laravel/Modules/Rating/' content from commit e5c84117)
