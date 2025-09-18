@@ -54,12 +54,11 @@ while IFS= read -r line; do
             
             # Sostituisce l'organizzazione con quella personalizzata
             current_url="git@github.com:${CUSTOM_ORG}/${repo_name}"
-            #log "🔄 URL modificato: $current_url (org originale: $original_org → $CUSTOM_ORG)"
+        #    log "🔄 URL modificato: $current_url (org originale: $original_org → $CUSTOM_ORG)"
         fi
         
         # Chiamata esterna allo script di sincronizzazione
-        log "🔄 Sincronizzazione modulo: $current_path   [$current_url]"
-        
+        log "🔄 Sincronizzazione modulo: $current_path [$current_url]"
         if ! "$script_dir/git_sync_subtree.sh" "$current_path" "$current_url" ; then
             log "⚠️ Sincronizzazione fallita per $current_path."
         fi
