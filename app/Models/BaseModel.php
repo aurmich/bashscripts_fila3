@@ -14,6 +14,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Rating\Models;
 
 use Illuminate\Database\Eloquent\Model;
@@ -455,6 +456,9 @@ abstract class BaseModel extends Model
 >>>>>>> 15ea09e2 (first)
 =======
 namespace Modules\IndennitaCondizioniLavoro\Models;
+=======
+namespace Modules\IndennitaResponsabilita\Models;
+>>>>>>> e0005d7d (first)
 
 use Illuminate\Database\Eloquent\Model;
 // use Laravel\Scout\Searchable;
@@ -466,9 +470,14 @@ abstract class BaseModel extends Model
     use Updater;
 
     // use Searchable;
+<<<<<<< HEAD
     protected $connection = 'indennita_condizioni_lavoro';
 
     // this will use the specified database connection
+=======
+    protected $connection = 'indennita_responsabilita';
+
+>>>>>>> e0005d7d (first)
     protected $fillable = ['id'];
 
     protected $casts = ['published_at' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime'];
@@ -477,11 +486,15 @@ abstract class BaseModel extends Model
 
     public $incrementing = true;
 
+<<<<<<< HEAD
 >>>>>>> b7483fd0 (first)
+=======
+>>>>>>> e0005d7d (first)
     protected $hidden = [
         // 'password'
     ];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -727,4 +740,16 @@ abstract class BaseModel extends Model
     }
     */
 >>>>>>> b7483fd0 (first)
+=======
+    public $timestamps = true;
+
+    protected $dateFormat = 'Y-m-d';
+
+    /*
+    public function images()
+    {
+        return $this->morphMany(Image::class, 'post');
+    }
+    */
+>>>>>>> e0005d7d (first)
 }

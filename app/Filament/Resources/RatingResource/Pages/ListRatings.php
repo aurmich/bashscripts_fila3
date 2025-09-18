@@ -2,16 +2,25 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Rating\Filament\Resources\RatingResource\Pages;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+namespace Modules\IndennitaResponsabilita\Filament\Resources\RatingResource\Pages;
+
+use Filament\Actions\CreateAction;
+use Filament\Forms\Components\Select;
+use Filament\Tables\Actions\Action;
+>>>>>>> e0005d7d (first)
 use Filament\Tables\Actions\DeleteAction;
 use Filament\Tables\Actions\DeleteBulkAction;
 use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Actions\ViewAction;
+<<<<<<< HEAD
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Enums\ActionsPosition;
@@ -49,22 +58,118 @@ class ListRatings extends XotBaseListRecords
         // ToggleColumn::make('is_readonly'),
 
         // TextColumn::make('color'),
+=======
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Enums\ActionsPosition;
+use Filament\Tables\Enums\FiltersLayout;
+use Filament\Tables\Filters\Filter;
+use Filament\Tables\Table;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Arr;
+use Modules\IndennitaResponsabilita\Filament\Resources\RatingResource;
+use Modules\IndennitaResponsabilita\Models\Rating;
+use Modules\Rating\Filament\Resources\RatingResource\Pages\ListRatings as BaseListRatings;
+
+class ListRatings extends BaseListRatings
+{
+    protected static string $resource = RatingResource::class;
+
+    protected function getHeaderActions(): array
+    {
+        return [
+            CreateAction::make(),
+        ];
+    }
+
+    public function getTableHeaderActions(): array
+    {
+        return [
+            ...parent::getTableHeaderActions(),
+            Action::make('aaa')
+                ->action(function () {
+                    $anno = Arr::get($this->tableFilters, 'filter.anno');
+                    $anno_prec = $anno - 1;
+                    $model = $this->getModel();
+                    $rows = $model::withExtraAttributes('anno', $anno_prec)->get();
+                    foreach ($rows as $row) {
+                        $data = $row->toArray();
+                        $data_where = Arr::only($data, ['title']);
+                        unset($data['id']);
+
+                        $row = $model::withExtraAttributes('anno', $anno)->firstOrCreate($data_where, $data);
+
+                        $row->extra_attributes->set('anno', $anno);
+                        $row->save();
+                    }
+                }),
+        ];
+    }
+
+    public function getListTableColumns(): array
+    {
+        $cols = parent::getListTableColumns();
+        $prepend = [
+            TextColumn::make('extra_attributes.type')->label('type'),
+            TextColumn::make('extra_attributes.anno')->label('anno'),
+        ];
+
+        return array_merge($prepend, $cols);
+>>>>>>> e0005d7d (first)
     }
 
     public function getTableFilters(): array
     {
         return [
+<<<<<<< HEAD
+=======
+            Filter::make('filter')
+                ->form([
+                    Select::make('anno')
+                        ->label('Anno')
+                        ->options(self::getYears()),
+                ])
+                ->query(function (Builder $query, array $data): Builder {
+                    if (! isset($data['anno'])) {
+                        return $query;
+                    }
+
+                    return $query->withExtraAttributes('anno', $data['anno']);
+                }),
+        ];
+    }
+
+    protected static function getYears(): array
+    {
+        /*
+        return Rating::selectRaw('YEAR(extra_attributes->year) as year')
+            ->distinct()
+            ->pluck('year', 'year')
+            ->toArray();
+        */
+        return [
+            '2023' => '2023',
+            '2024' => '2024',
+'2025' => '2025',
+>>>>>>> e0005d7d (first)
         ];
     }
 
     public function getTableActions(): array
     {
         return [
+<<<<<<< HEAD
             'view' => ViewAction::make()
                 ->label(''),
             'edit' => EditAction::make()
                 ->label(''),
             'delete' => DeleteAction::make()
+=======
+            ViewAction::make()
+                ->label(''),
+            EditAction::make()
+                ->label(''),
+            DeleteAction::make()
+>>>>>>> e0005d7d (first)
                 ->label('')
                 ->requiresConfirmation(),
         ];
@@ -73,7 +178,11 @@ class ListRatings extends XotBaseListRecords
     public function getTableBulkActions(): array
     {
         return [
+<<<<<<< HEAD
             'delete' => DeleteBulkAction::make(),
+=======
+            DeleteBulkAction::make(),
+>>>>>>> e0005d7d (first)
         ];
     }
 
@@ -95,6 +204,7 @@ class ListRatings extends XotBaseListRecords
                 column: 'created_at',
                 direction: 'DESC',
             );
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 use Filament\Actions\CreateAction;
@@ -148,5 +258,7 @@ class ListRatings extends ListRecords
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> e0005d7d (first)
     }
 }

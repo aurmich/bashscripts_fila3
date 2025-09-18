@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\IndennitaCondizioniLavoro\Filament\Resources\StabiDirigenteResource\Pages;
 
 use Illuminate\Support\Str;
@@ -15,10 +16,17 @@ use Modules\IndennitaCondizioniLavoro\Models\CondizioniLavoro;
 use Modules\IndennitaCondizioniLavoro\Filament\Resources\StabiDirigenteResource;
 use Modules\Ptv\Filament\Resources\StabiDirigenteResource\Pages\ListStabiDirigentes as PtvListStabiDirigentes;
 use Filament\Notifications\Notification;
+=======
+namespace Modules\IndennitaResponsabilita\Filament\Resources\StabiDirigenteResource\Pages;
+
+use Modules\IndennitaResponsabilita\Filament\Resources\StabiDirigenteResource;
+use Modules\Ptv\Filament\Resources\StabiDirigenteResource\Pages\ListStabiDirigentes as PtvListStabiDirigentes;
+>>>>>>> e0005d7d (first)
 
 class ListStabiDirigentes extends PtvListStabiDirigentes
 {
     protected static string $resource = StabiDirigenteResource::class;
+<<<<<<< HEAD
 
     // protected function getTableFiltersLayout(): ?string {
     //    return FiltersLayout::AboveContent;
@@ -175,4 +183,6 @@ class ListStabiDirigentes extends PtvListStabiDirigentes
 
         }
     }
+=======
+>>>>>>> e0005d7d (first)
 }

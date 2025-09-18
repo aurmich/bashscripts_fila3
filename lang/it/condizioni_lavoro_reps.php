@@ -8,6 +8,7 @@ return [
         'indexEdit' => 'lista',
         'create' => 'Aggiungi',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'condizioni lavoro reps',
         'sort' => 31,
@@ -17,4 +18,6 @@ return [
     'model' => [
         'label' => 'condizioni lavoro reps.model',
     ],
+=======
+>>>>>>> e0005d7d (first)
 ];

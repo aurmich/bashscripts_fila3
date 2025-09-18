@@ -2,7 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\IndennitaCondizioniLavoro\Models;
+=======
+namespace Modules\IndennitaResponsabilita\Models;
+>>>>>>> e0005d7d (first)
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
@@ -10,7 +14,11 @@ use Modules\Ptv\Models\StabiDirigente as PtvStabiDirigenteModel;
 use Modules\Sigma\Models\Repart;
 
 /**
+<<<<<<< HEAD
  * Modules\IndennitaCondizioniLavoro\Models\StabiDirigente.
+=======
+ * Modules\IndennitaResponsabilita\Models\StabiDirigente.
+>>>>>>> e0005d7d (first)
  *
  * @property int $id
  * @property int|null $stabi
@@ -34,7 +42,11 @@ use Modules\Sigma\Models\Repart;
  * @property int|null $valutatore_id
  * @property-read Repart|null $repart
  *
+<<<<<<< HEAD
  * @method static \Modules\IndennitaCondizioniLavoro\Database\Factories\StabiDirigenteFactory factory($count = null, $state = [])
+=======
+ * @method static \Modules\IndennitaResponsabilita\Database\Factories\StabiDirigenteFactory factory($count = null, $state = [])
+>>>>>>> e0005d7d (first)
  * @method static Builder|StabiDirigente newModelQuery()
  * @method static Builder|StabiDirigente newQuery()
  * @method static Builder|StabiDirigente query()
@@ -63,5 +75,9 @@ use Modules\Sigma\Models\Repart;
  */
 class StabiDirigente extends PtvStabiDirigenteModel
 {
+<<<<<<< HEAD
     protected $connection = 'indennita_condizioni_lavoro'; // this will use the specified database connection
+=======
+    protected $connection = 'indennita_responsabilita'; // this will use the specified database connection
+>>>>>>> e0005d7d (first)
 }

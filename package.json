@@ -17,6 +17,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 0d55b583 (first)
@@ -243,6 +244,8 @@
 >>>>>>> 51c7727d (first)
 =======
 >>>>>>> b7483fd0 (first)
+=======
+>>>>>>> e0005d7d (first)
     "private": true,
     "scripts": {
         "dev": "npm run development",
@@ -254,6 +257,7 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "devDependencies": {
+<<<<<<< HEAD
 <<<<<<< HEAD
         "cross-env": "^5.1.4",
         "laravel-mix": "^4.0.7",
@@ -273,9 +277,14 @@
 =======
 >>>>>>> 51c7727d (first)
 =======
+=======
+>>>>>>> e0005d7d (first)
         "cross-env": "^7.0",
         "laravel-mix": "^5.0.1",
         "laravel-mix-merge-manifest": "^0.1.2"
     }
+<<<<<<< HEAD
 >>>>>>> b7483fd0 (first)
+=======
+>>>>>>> e0005d7d (first)
 }

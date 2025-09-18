@@ -2,13 +2,21 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\IndennitaCondizioniLavoro\Models;
+=======
+namespace Modules\IndennitaResponsabilita\Models;
+>>>>>>> e0005d7d (first)
 
 use Illuminate\Support\Carbon;
 use Modules\Ptv\Models\Message as PtvMessageModel;
 
 /**
+<<<<<<< HEAD
  * Modules\IndennitaCondizioniLavoro\Models\Message.
+=======
+ * Modules\IndennitaResponsabilita\Models\Message.
+>>>>>>> e0005d7d (first)
  *
  * @property int $id
  * @property string|null $type
@@ -19,6 +27,10 @@ use Modules\Ptv\Models\Message as PtvMessageModel;
  * @property Carbon|null $updated_at
  * @property string|null $created_by
  * @property string|null $updated_by
+<<<<<<< HEAD
+=======
+ * @property int|null $parent_id
+>>>>>>> e0005d7d (first)
  * @property-read \Staudenmeir\LaravelAdjacencyList\Eloquent\Collection<int, Message> $children
  * @property-read int|null $children_count
  * @property-read Message|null $parent
@@ -43,6 +55,10 @@ use Modules\Ptv\Models\Message as PtvMessageModel;
  * @method static \Staudenmeir\LaravelAdjacencyList\Eloquent\Builder|Message whereCreatedBy($value)
  * @method static \Staudenmeir\LaravelAdjacencyList\Eloquent\Builder|Message whereDepth($operator, $value = null)
  * @method static \Staudenmeir\LaravelAdjacencyList\Eloquent\Builder|Message whereId($value)
+<<<<<<< HEAD
+=======
+ * @method static \Staudenmeir\LaravelAdjacencyList\Eloquent\Builder|Message whereParentId($value)
+>>>>>>> e0005d7d (first)
  * @method static \Staudenmeir\LaravelAdjacencyList\Eloquent\Builder|Message whereTitle($value)
  * @method static \Staudenmeir\LaravelAdjacencyList\Eloquent\Builder|Message whereTxt($value)
  * @method static \Staudenmeir\LaravelAdjacencyList\Eloquent\Builder|Message whereType($value)
@@ -55,5 +71,9 @@ use Modules\Ptv\Models\Message as PtvMessageModel;
  */
 class Message extends PtvMessageModel
 {
+<<<<<<< HEAD
     protected $connection = 'indennita_condizioni_lavoro'; // this will use the specified database connection
+=======
+    protected $connection = 'indennita_responsabilita'; // this will use the specified database connection
+>>>>>>> e0005d7d (first)
 }

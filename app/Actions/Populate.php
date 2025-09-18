@@ -2,11 +2,18 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\IndennitaCondizioniLavoro\Actions;
 
 use Carbon\Carbon;
 use Modules\IndennitaCondizioniLavoro\Models\CondizioniLavoro;
 use Modules\IndennitaCondizioniLavoro\Models\StabiDirigente;
+=======
+namespace Modules\IndennitaResponsabilita\Actions;
+
+use Modules\IndennitaResponsabilita\Models\IndennitaResponsabilita;
+use Modules\IndennitaResponsabilita\Models\StabiDirigente;
+>>>>>>> e0005d7d (first)
 use Modules\Sigma\Models\Rep00f;
 use Spatie\QueueableAction\QueueableAction;
 
@@ -20,6 +27,7 @@ class Populate
     public function execute(array $data): void
     {
         $anno = $data['anno'];
+<<<<<<< HEAD
         $quadrimestre = $data['quadrimestre'];
         $first_day = Carbon::createFromDate($anno, 1, 1);
         $dal = $first_day->copy()->addMonths(($quadrimestre - 1) * 4);
@@ -29,6 +37,13 @@ class Populate
             ->where('anno', $anno)
             // ->where('valutatore_id',null)
             ->get();
+=======
+
+        $rows = IndennitaResponsabilita::where('anno', $anno)
+            // ->where('valutatore_id',null)
+            ->get();
+
+>>>>>>> e0005d7d (first)
         /*
         $rows_no_valutatore = $rows->where('valutatore_id', null);
 
@@ -67,24 +82,40 @@ class Populate
         */
         $matrs = $rows->pluck('matr')->toArray();
 
+<<<<<<< HEAD
         $rows = Rep00f::ofRangeDate((int) $dal->format('Ymd'), (int) $al->format('Ymd'))
+=======
+        $rows = Rep00f::ofYear($anno)
+>>>>>>> e0005d7d (first)
             ->where('ente', 90)->get();
 
         $rows = $rows->filter(static fn ($item): bool => ! in_array($item->matr, $matrs));
 
         foreach ($rows as $row) {
+<<<<<<< HEAD
             CondizioniLavoro::firstOrCreate(
+=======
+            IndennitaResponsabilita::firstOrCreate(
+>>>>>>> e0005d7d (first)
                 [
                     'ente' => $row->ente,
                     'matr' => $row->matr,
                     'stabi' => $row->repst1,
                     'repar' => $row->repre1,
+<<<<<<< HEAD
                     'quadrimestre' => $quadrimestre,
                     'anno' => $anno,
                 ],
                 [
                     'dal' => $dal,
                     'al' => $al,
+=======
+                    'anno' => $anno,
+                ],
+                [
+                    //    'dal' => $dal,
+                    //    'al' => $al,
+>>>>>>> e0005d7d (first)
                 ]
             );
         }

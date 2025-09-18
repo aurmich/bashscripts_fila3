@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     'title' => 'Laravel Installer',
     'next' => 'Passo successivo',
     'finish' => 'Installa',
@@ -27,4 +28,10 @@ return [
         'finished' => 'L\'applicazione è stata configurata correttamente.',
         'exit' => 'Clicca qui per uscire',
     ],
+=======
+    'upload_csv' => 'Carica CSV',
+    'process_csv' => 'Processa CSV',
+    'csv_processed' => 'CSV processato con successo!',
+    'error' => 'Errore nel processo!',
+>>>>>>> e0005d7d (first)
 ];

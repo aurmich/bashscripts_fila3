@@ -8,6 +8,7 @@ return [
         'indexEdit' => 'lista',
         'create' => 'Aggiungi',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Servizio Esterno',
         'group' => 'Report',
@@ -17,4 +18,6 @@ return [
     'model' => [
         'label' => 'servizio esterno reps.model',
     ],
+=======
+>>>>>>> e0005d7d (first)
 ];

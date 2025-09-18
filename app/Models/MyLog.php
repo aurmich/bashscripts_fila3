@@ -2,14 +2,22 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\IndennitaCondizioniLavoro\Models;
+=======
+namespace Modules\IndennitaResponsabilita\Models;
+>>>>>>> e0005d7d (first)
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Modules\Ptv\Models\MyLog as PtvMyLogModel;
 
 /**
+<<<<<<< HEAD
  * Modules\IndennitaCondizioniLavoro\Models\MyLog.
+=======
+ * Modules\IndennitaResponsabilita\Models\MyLog.
+>>>>>>> e0005d7d (first)
  *
  * @property int $id
  * @property int|null $id_tbl
@@ -59,5 +67,11 @@ use Modules\Ptv\Models\MyLog as PtvMyLogModel;
  */
 class MyLog extends PtvMyLogModel
 {
+<<<<<<< HEAD
     protected $connection = 'indennita_condizioni_lavoro'; // this will use the specified database connection
+=======
+    protected $connection = 'indennita_responsabilita'; // this will use the specified database connection
+
+    // -------------------------------------------------
+>>>>>>> e0005d7d (first)
 }

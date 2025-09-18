@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -19,12 +20,16 @@ namespace Modules\Setting\Http\Livewire\Auth;
 =======
 namespace Modules\IndennitaCondizioniLavoro\Http\Livewire\Auth;
 >>>>>>> b7483fd0 (first)
+=======
+namespace Modules\IndennitaResponsabilita\Http\Livewire\Auth;
+>>>>>>> e0005d7d (first)
 
 use Savannabits\FilamentModules\Http\Livewire\Auth\BaseLogin;
 
 class FilamentLogin extends BaseLogin
 {
     public static string $context = 'filament';
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -46,4 +51,8 @@ class FilamentLogin extends BaseLogin
     
     public static string $module = 'IndennitaCondizioniLavoro';
 >>>>>>> b7483fd0 (first)
+=======
+    
+    public static string $module = 'IndennitaResponsabilita';
+>>>>>>> e0005d7d (first)
 }

@@ -4,7 +4,11 @@
     @include('ptv::pdf.intestazione')
     --}}
     <img src="{{ base_path('Modules/Ptv/resources/img/Logo-Provincia-orizzontale-neg.png') }}" style="height:50px" />
+<<<<<<< HEAD
     <h3>Indennita Condizioni  {{$rows->first()->quadrimestre }}° Quadrimestre {{$rows->first()->anno }}</h3>
+=======
+    <h3>{{ $title}}</h3>
+>>>>>>> e0005d7d (first)
     <br/><br/>
     <table>
         <colgroup>
@@ -36,6 +40,7 @@
                         <col style="width: 15%">
                         <col style="width: 15%">
                     </colgroup>
+<<<<<<< HEAD
                     @foreach($row->indennitaTipoDettaglio as $ind)
                         <tr>
                             <td> {{$ind->nome}} </td>
@@ -44,6 +49,16 @@
                             <td align="right"><b>@money($ind->euro_giorno * $ind->pivot->gg,'EUR') </b> </td>
                         </tr>
                     @endforeach
+=======
+                    
+                    @foreach($row->ratings as $rating)
+                        <tr>
+                            <td> {{$rating->title}} </td>
+                            <td  align="right"><b>{{ $rating->pivot->value }}</b></td>
+                        </tr>
+                    @endforeach
+                    
+>>>>>>> e0005d7d (first)
 
                 </table>
             </td>
@@ -52,6 +67,12 @@
     @endforeach
     </tbody>
     </table>
+<<<<<<< HEAD
 
     @include('ptv::pdf.firma')
+=======
+    
+    @include('ptv::pdf.firma')
+    
+>>>>>>> e0005d7d (first)
 </page>

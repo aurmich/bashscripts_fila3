@@ -19,6 +19,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3247,3 +3248,6 @@ Una volta che i dati verranno caricati, il Personale potrà quindi stampare/espo
 =======
 # module_indennitacondizionilavoro_fila3
 >>>>>>> b7483fd0 (first)
+=======
+# module_indennitaresponsabilita_fila3
+>>>>>>> e0005d7d (first)

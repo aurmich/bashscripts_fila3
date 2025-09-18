@@ -14,6 +14,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     errorLevel="4"
 =======
     errorLevel="1"
@@ -71,6 +72,9 @@
 =======
     errorLevel="4"
 >>>>>>> b7483fd0 (first)
+=======
+    errorLevel="4"
+>>>>>>> e0005d7d (first)
     resolveFromConfigFile="true"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns="https://getpsalm.org/schema/config"
@@ -79,6 +83,7 @@
     findUnusedCode="true"
 >
     <projectFiles>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -107,6 +112,8 @@
 >>>>>>> c8cd1ec3 (first)
 =======
 >>>>>>> b7483fd0 (first)
+=======
+>>>>>>> e0005d7d (first)
         <file name="Actions/DB/DownloadAction.php"/>
         <file name="Config/config.php"/>
         <file name="Config/setting-filament.php"/>
@@ -141,6 +148,7 @@
         </ignoreFiles>
     </projectFiles>
 <plugins><pluginClass class="Psalm\LaravelPlugin\Plugin"/></plugins></psalm>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -234,3 +242,5 @@
 >>>>>>> c8cd1ec3 (first)
 =======
 >>>>>>> b7483fd0 (first)
+=======
+>>>>>>> e0005d7d (first)

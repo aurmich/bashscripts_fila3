@@ -2,11 +2,19 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\IndennitaCondizioniLavoro\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Modules\IndennitaCondizioniLavoro\Models\MyLog;
+=======
+namespace Modules\IndennitaResponsabilita\Database\Factories;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Model;
+use Modules\IndennitaResponsabilita\Models\MyLog;
+>>>>>>> e0005d7d (first)
 
 class MyLogFactory extends Factory
 {

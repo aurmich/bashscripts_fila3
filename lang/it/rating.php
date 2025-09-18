@@ -6,6 +6,7 @@ return [
     'resource' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
         'name' => ['label' => 'Rating'],
@@ -17,6 +18,8 @@ return [
             'name' => ['label' => 'Admin'],
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> e0005d7d (first)
         'name' => 'Rating',
     ],
     'navigation' => [
@@ -24,6 +27,7 @@ return [
         'plural' => 'Rating',
         'group' => [
             'name' => 'Admin',
+<<<<<<< HEAD
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
 =======
 >>>>>>> 2df6fbc8 (first)
@@ -134,6 +138,27 @@ return [
                 'parent_inventory_number' => ['label' => 'Codice inventario genitore'],
 <<<<<<< HEAD
 =======
+=======
+        ],
+    ],
+    'fields' => [
+        'brand' => 'Marca',
+        'model' => 'Modello',
+        'description' => 'Descrizione',
+        'serial_number' => 'Numero di serie',
+        'inventory_number' => 'Codice inventario',
+        'code' => 'Identificativo',
+        'manufacturing_year' => 'Anno di fabbricazione',
+        'purchase_year' => 'Anno di acquisto',
+        'is_enabled' => 'È attivo?',
+        'asset_type' => 'Tipologia',
+        'area' => 'Area',
+        'parent' => 'Asset genitore',
+        'name' => 'Nome',
+    ],
+    'actions' => [
+        'enable' => [
+>>>>>>> e0005d7d (first)
             'cta' => 'Attiva',
         ],
         'disable' => [
@@ -159,13 +184,17 @@ return [
                 'is_enabled' => 'È attivo?',
                 'asset_type' => 'Tipologia',
                 'parent_inventory_number' => 'Codice inventario genitore',
+<<<<<<< HEAD
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> e0005d7d (first)
             ],
         ],
     ],
     'widgets' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -176,12 +205,17 @@ return [
         'mandatory_data' => ['label' => '{1} Dato obbligatorio non presente|{2} 2 Dati obbligatori non presenti|{3} 3 Dati obbligatori non presenti|[4,*] Vari dati obbligatori non presenti'],
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> e0005d7d (first)
         'child_assets' => 'Asset figli',
     ],
     'exceptions' => [
         'mandatory_data' => '{1} Dato obbligatorio non presente|{2} 2 Dati obbligatori non presenti|{3} 3 Dati obbligatori non presenti|[4,*] Vari dati obbligatori non presenti',
+<<<<<<< HEAD
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> e0005d7d (first)
     ],
 ];

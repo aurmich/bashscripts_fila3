@@ -12,6 +12,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d79d9e57 (first)
 =======
@@ -106,10 +107,17 @@ declare(strict_types=1);
 namespace Modules\IndennitaCondizioniLavoro\Providers\Filament;
 
 >>>>>>> b7483fd0 (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\IndennitaResponsabilita\Providers\Filament;
+
+>>>>>>> e0005d7d (first)
 use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 
 class AdminPanelProvider extends XotBasePanelProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -262,4 +270,7 @@ class AdminPanelProvider extends XotBasePanelProvider
 =======
     protected string $module = 'IndennitaCondizioniLavoro';
 >>>>>>> b7483fd0 (first)
+=======
+    protected string $module = 'IndennitaResponsabilita';
+>>>>>>> e0005d7d (first)
 }

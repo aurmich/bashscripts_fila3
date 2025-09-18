@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -172,4 +173,11 @@ return [
     // 'icon' => 'heroicon-o-bookmark',
     'icon' => 'fas-helmet-safety',
 >>>>>>> b7483fd0 (first)
+=======
+declare(strict_types=1);
+
+return [
+    'name' => 'IndennitaResponsabilita',
+    'icon' => 'fas-money-bill-trend-up',
+>>>>>>> e0005d7d (first)
 ];

@@ -12,6 +12,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -168,3 +169,6 @@ Route::get('projects/{project}/liquidazione', [PdfDownloadController::class, 'li
 =======
 declare(strict_types=1);
 >>>>>>> b7483fd0 (first)
+=======
+declare(strict_types=1);
+>>>>>>> e0005d7d (first)

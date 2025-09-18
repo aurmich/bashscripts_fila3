@@ -14,6 +14,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 []
 =======
 [{"name":"toast","class":"Toast","module":null,"path":null,"ns":"Modules\\UI\\Http\\Livewire\\Toast"}]
@@ -63,3 +64,6 @@
 =======
 []
 >>>>>>> b7483fd0 (first)
+=======
+[{"name":"lett-f.edit","class":"LettF\\Edit","module":null,"path":null,"ns":"Modules\\IndennitaResponsabilita\\Http\\Livewire\\LettF\\Edit"}]
+>>>>>>> e0005d7d (first)

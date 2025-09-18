@@ -1,11 +1,17 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> e0005d7d (first)
 return [
     'tab' => [
         'index' => 'lista',
         'indexEdit' => 'lista',
         'create' => 'Aggiungi',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'sort' => 21,
         'label' => 'condizioni lavoro adm.navigation',
@@ -74,4 +80,6 @@ return [
             'label' => 'anno/valutatore',
         ],
     ],
+=======
+>>>>>>> e0005d7d (first)
 ];

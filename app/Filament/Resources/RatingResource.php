@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Rating\Filament\Resources;
 
 use Filament\Forms\Components\ColorPicker;
@@ -96,6 +97,18 @@ class RatingResource extends XotBaseResource
         ];
     }
 
+=======
+namespace Modules\IndennitaResponsabilita\Filament\Resources;
+
+use Modules\IndennitaResponsabilita\Filament\Resources\RatingResource\Pages;
+use Modules\IndennitaResponsabilita\Models\Rating;
+use Modules\Rating\Filament\Resources\RatingResource as BaseRatingResource;
+
+class RatingResource extends BaseRatingResource
+{
+    protected static ?string $model = Rating::class;
+
+>>>>>>> e0005d7d (first)
     public static function getPages(): array
     {
         return [

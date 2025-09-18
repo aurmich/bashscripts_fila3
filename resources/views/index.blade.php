@@ -15,6 +15,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('rating::layouts.master')
 =======
 @extends('xot::layouts.app')
@@ -67,10 +68,14 @@
 =======
 @extends('indennitacondizionilavoro::layouts.master')
 >>>>>>> b7483fd0 (first)
+=======
+@extends('indennitaresponsabilita::layouts.master')
+>>>>>>> e0005d7d (first)
 
 @section('content')
     <h1>Hello World</h1>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -184,3 +189,9 @@
     </p>
 @endsection
 >>>>>>> b7483fd0 (first)
+=======
+    <p>
+        This view is loaded from module: {!! config('indennitaresponsabilita.name') !!}
+    </p>
+@endsection
+>>>>>>> e0005d7d (first)

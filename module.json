@@ -16,6 +16,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
 =======
@@ -50,10 +51,15 @@
     "name": "IndennitaCondizioniLavoro",
     "alias": "indennitacondizionilavoro",
 >>>>>>> b7483fd0 (first)
+=======
+    "name": "IndennitaResponsabilita",
+    "alias": "indennitaresponsabilita",
+>>>>>>> e0005d7d (first)
     "description": "",
     "keywords": [],
     "priority": 0,
     "providers": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -125,10 +131,15 @@
         "Modules\\IndennitaCondizioniLavoro\\Providers\\IndennitaCondizioniLavoroServiceProvider",
         "Modules\\IndennitaCondizioniLavoro\\Providers\\Filament\\AdminPanelProvider"
 >>>>>>> b7483fd0 (first)
+=======
+        "Modules\\IndennitaResponsabilita\\Providers\\IndennitaResponsabilitaServiceProvider",
+        "Modules\\IndennitaResponsabilita\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> e0005d7d (first)
     ],
     "aliases": [],
     "files": [],
     "requires": []
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -254,3 +265,6 @@
 =======
 }
 >>>>>>> b7483fd0 (first)
+=======
+}
+>>>>>>> e0005d7d (first)
