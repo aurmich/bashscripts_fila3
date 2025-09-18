@@ -8,6 +8,7 @@ git subtree merge --prefix=bashscripts bashscripts-temp --squash
 git subtree merge --prefix=bashscripts bashscripts-temp
 - fatal: refusing to merge unrelated histories
 git subtree merge --prefix=bashscripts bashscripts-temp --rejoin
+<<<<<<< HEAD
 - fatal: refusing to merge unrelated histories
 git merge -s subtree bashscripts-temp --allow-unrelated-histories
 git subtree merge --prefix=bashscripts bashscripts-temp --rejoin
@@ -21,3 +22,6 @@ git subtree merge --prefix=bashscripts bashscripts-temp --squash
 - Can't squash-merge: 'bashscripts' was never added.
 git subtree merge --prefix=bashscripts bashscripts-temp
 >>>>>>> bf472f16 (.)
+=======
+- fatal: refusing to merge unrelated histories
+>>>>>>> b1a401f5 (.)
