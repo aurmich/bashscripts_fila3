@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # 🚀 Toolkit di Automazione Git
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com)
@@ -100,6 +101,8 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file `LICENSE` per 
   <sub>Built with ❤️ by the development team</sub>
 </div> 
 =======
+=======
+>>>>>>> 3e666e8a (.)
 # 🚀 BashScripts Power Tools
 
 [![Bash Version](https://img.shields.io/badge/Bash-5.0%2B-brightgreen.svg)](https://www.gnu.org/software/bash/)
@@ -254,4 +257,7 @@ Questo progetto è sotto licenza MIT - vedi il file [LICENSE](LICENSE) per i det
 <div align="center">
   <sub>Built with ❤️ by the development team</sub>
 </div>
+<<<<<<< HEAD
 >>>>>>> 55edff60 (.)
+=======
+>>>>>>> 3e666e8a (.)
