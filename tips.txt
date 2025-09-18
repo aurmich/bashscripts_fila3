@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -19,6 +20,8 @@ $this->getRelationValue('table')->name;
 
 =======
 >>>>>>> 58e1cada (.)
+=======
+>>>>>>> d8b9f8a6 (up)
 $this->getRelationValue('table')->name
 
 
@@ -27,6 +30,7 @@ $query->when($request->filled('q'), function (Builder $query) use ($request) {
         $query->where('name', 'like', "%{$request->get('q')}%")
             ->orWhere('email', 'like', "%{$request->get('q')}%");
     });
+<<<<<<< HEAD
 <<<<<<< HEAD
 $this->getRelationValue('table')->name
 
@@ -93,3 +97,6 @@ $query->when($request->filled('q'), function (Builder $query) use ($request) {
     });
 })
 >>>>>>> f2e91737 (.)
+=======
+})
+>>>>>>> d8b9f8a6 (up)

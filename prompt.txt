@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # GUIDA ESSENZIALE LARAXOT
 
 ## DOCUMENTAZIONE
@@ -1039,6 +1040,8 @@ getInfolistSchema restituisec un array cui le chiavi sono  stringhe aggiorna la 
 esegui phpstan a livello 7 su tutto Modules e aggiorna la cartella docs piu' vicina all'errore che andrai a correggere , poi studia quella cartella docs, poi implementa soluzione , poi procedi con gli altri errori, non ti fermare finche phpstan non ti dice che non hai piu' errori in tutto Modules 
 >>>>>>> 58e1cada (.)
 =======
+=======
+>>>>>>> d8b9f8a6 (up)
 # GUIDA ESSENZIALE LARAXOT
 
 ## DOCUMENTAZIONE
@@ -1156,4 +1159,7 @@ ragiona e migliora e sistema
 Quando correggi qualsiasi cosa devi focalizzarti sullo scopo non solo sulla correzione
 non voglio  ->label(   le label son gestite tramite langserviceprovider coi file di traduzioni
 
+<<<<<<< HEAD
 >>>>>>> f2e91737 (.)
+=======
+>>>>>>> d8b9f8a6 (up)
