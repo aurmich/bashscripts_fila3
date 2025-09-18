@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <html lang="en">
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -38,10 +39,14 @@
 =======
 <html lang="en">
 >>>>>>> 51c7727d (first)
+=======
+<html lang="en">
+>>>>>>> 15ea09e2 (first)
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -123,11 +128,18 @@
        {{-- Laravel Mix - CSS File --}}
        {{-- <link rel="stylesheet" href="{{ mix('css/inail.css') }}"> --}}
 >>>>>>> 51c7727d (first)
+=======
+        <title>Module Incentivi</title>
+
+       {{-- Laravel Vite - CSS File --}}
+       {{-- {{ module_vite('build-incentivi', 'resources/assets/sass/app.scss') }} --}}
+>>>>>>> 15ea09e2 (first)
 
     </head>
     <body>
         @yield('content')
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -252,3 +264,9 @@
     </body>
 </html>
 >>>>>>> 51c7727d (first)
+=======
+        {{-- Laravel Vite - JS File --}}
+        {{-- {{ module_vite('build-incentivi', 'resources/assets/js/app.js') }} --}}
+    </body>
+</html>
+>>>>>>> 15ea09e2 (first)

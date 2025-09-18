@@ -13,6 +13,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('rating::layouts.master')
 =======
 @extends('xot::layouts.app')
@@ -59,10 +60,14 @@
 =======
 @extends('inail::layouts.master')
 >>>>>>> 51c7727d (first)
+=======
+@extends('incentivi::layouts.master')
+>>>>>>> 15ea09e2 (first)
 
 @section('content')
     <h1>Hello World</h1>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -162,3 +167,9 @@
     </p>
 @stop
 >>>>>>> 51c7727d (first)
+=======
+    <p>
+        This view is loaded from module: {!! config('incentivi.name') !!}
+    </p>
+@endsection
+>>>>>>> 15ea09e2 (first)

@@ -15,6 +15,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 /**
@@ -98,10 +99,17 @@ namespace Modules\Inail\Providers;
 
 // --- bases ---
 >>>>>>> 51c7727d (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Incentivi\Providers;
+
+>>>>>>> 15ea09e2 (first)
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -213,10 +221,14 @@ class RouteServiceProvider extends ServiceProvider
 
     public string $name = 'Inail';
 >>>>>>> 51c7727d (first)
+=======
+    protected string $moduleNamespace = 'Modules\Incentivi\Http\Controllers';
+>>>>>>> 15ea09e2 (first)
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -472,4 +484,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 >>>>>>> c8cd1ec3 (first)
 =======
 >>>>>>> 51c7727d (first)
+=======
+    public string $name = 'Incentivi';
+>>>>>>> 15ea09e2 (first)
 }

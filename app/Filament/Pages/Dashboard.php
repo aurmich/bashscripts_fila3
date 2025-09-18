@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -37,6 +38,14 @@ namespace Modules\Tenant\Filament\Pages;
 
 use Filament\Pages\Page;
 >>>>>>> 8fc3049b (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Incentivi\Filament\Pages;
+
+use Filament\Pages\Page;
+use Modules\Incentivi\Filament\Widgets;
+>>>>>>> 15ea09e2 (first)
 
 class Dashboard extends Page
 {
@@ -46,12 +55,25 @@ class Dashboard extends Page
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected static string $view = 'ui::filament.pages.dashboard';
+=======
+    protected static string $view = 'incentivi::filament.pages.dashboard';
+
+    public function getColumns(): int|string|array
+    {
+        return [
+            'md' => 2,
+            'xl' => 3,
+        ];
+    }
+>>>>>>> 15ea09e2 (first)
 
     protected function getHeaderWidgets(): array
     {
         $widgets = [
             [
+<<<<<<< HEAD
                 'class' => Widgets\TestChartWidget::class,
                 'properties' => [
                     'qid' => 5,
@@ -72,10 +94,20 @@ class Dashboard extends Page
                     'qid' => 9,
                     'type' => 'bar',
                 ],
+=======
+                'class' => Widgets\HomepageActionsWidget::class,
+            ],
+            [
+                'class' => Widgets\InstructionsWidget::class,
+            ],
+            [
+                'class' => Widgets\LatestProjects::class,
+>>>>>>> 15ea09e2 (first)
             ],
         ];
 
         return [
+<<<<<<< HEAD
             // Widgets\TestChartWidget::make(['qid' => 5]),
             // Widgets\TestChartWidget::make(['qid' => 6]),
             // Widgets\StatsOverviewWidget::class,
@@ -216,4 +248,11 @@ class Dashboard extends BaseBashboard
 =======
     protected static string $view = 'tenant::filament.pages.dashboard';
 >>>>>>> 8fc3049b (first)
+=======
+            Widgets\HomepageActionsWidget::make(),
+            Widgets\InstructionsWidget::make(),
+            Widgets\LatestProjects::make(),
+        ];
+    }
+>>>>>>> 15ea09e2 (first)
 }

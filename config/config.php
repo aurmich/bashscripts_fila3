@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -157,4 +158,9 @@ return [
     'name' => 'Inail',
     'icon' => 'heroicon-o-exclamation-triangle',
 >>>>>>> 51c7727d (first)
+=======
+return [
+    'name' => 'Incentivi',
+    'icon' => 'heroicon-o-banknotes',
+>>>>>>> 15ea09e2 (first)
 ];

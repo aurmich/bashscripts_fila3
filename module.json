@@ -14,6 +14,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
 =======
@@ -40,10 +41,15 @@
     "name": "Media",
     "alias": "media",
 >>>>>>> c986cc10 (first)
+=======
+    "name": "Incentivi",
+    "alias": "incentivi",
+>>>>>>> 15ea09e2 (first)
     "description": "",
     "keywords": [],
     "priority": 0,
     "providers": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -227,3 +233,10 @@
 >>>>>>> c8cd1ec3 (first)
 =======
 >>>>>>> 51c7727d (first)
+=======
+        "Modules\\Incentivi\\Providers\\IncentiviServiceProvider",
+        "Modules\\Incentivi\\Providers\\Filament\\AdminPanelProvider"
+    ],
+    "files": []
+}
+>>>>>>> 15ea09e2 (first)

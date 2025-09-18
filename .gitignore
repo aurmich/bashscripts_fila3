@@ -17,6 +17,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ───────────────────────────────────────────────────────
 # Sistema operativo / File nascosti e metadata
 # ───────────────────────────────────────────────────────
@@ -866,3 +867,9 @@ cache/
 =======
 *:Zone.Identifier
 >>>>>>> 51c7727d (first)
+=======
+/vendor
+*.lock
+/build*.exe
+*:Zone.Identifier
+>>>>>>> 15ea09e2 (first)

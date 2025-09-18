@@ -10,6 +10,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -48,6 +49,11 @@ declare(strict_types=1);
 declare(strict_types=1);
 
 >>>>>>> 8fc3049b (first)
+=======
+use Illuminate\Support\Facades\Route;
+use Modules\Incentivi\Http\Controllers\PdfDownloadController;
+
+>>>>>>> 15ea09e2 (first)
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -58,6 +64,7 @@ declare(strict_types=1);
 | contains the "web" middleware group. Now create something great!
 |
 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -149,3 +156,11 @@ declare(strict_types=1);
 =======
 declare(strict_types=1);
 >>>>>>> 51c7727d (first)
+=======
+
+Route::get('projects/{project}/pdf/download', [PdfDownloadController::class, 'download'])
+    ->name('filament.projects.download');
+
+Route::get('projects/{project}/liquidazione', [PdfDownloadController::class, 'liquidazione'])
+    ->name('filament.liquidazione');
+>>>>>>> 15ea09e2 (first)

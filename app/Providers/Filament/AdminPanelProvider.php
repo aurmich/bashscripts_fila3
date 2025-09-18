@@ -10,6 +10,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d79d9e57 (first)
 =======
@@ -92,10 +93,17 @@ namespace Modules\Tenant\Providers\Filament;
 
 use Filament\Panel;
 >>>>>>> 8fc3049b (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Incentivi\Providers\Filament;
+
+>>>>>>> 15ea09e2 (first)
 use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 
 class AdminPanelProvider extends XotBasePanelProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -240,4 +248,7 @@ class AdminPanelProvider extends XotBasePanelProvider
         return parent::panel($panel);
     }
 >>>>>>> 8fc3049b (first)
+=======
+    protected string $module = 'Incentivi';
+>>>>>>> 15ea09e2 (first)
 }

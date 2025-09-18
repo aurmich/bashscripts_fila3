@@ -16,6 +16,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "laraxot/bashscripts_fila3",
     "description": "Script di utilità per la gestione dei repository Git, Toolkit di automazione Git per progetti Laravel",
     "type": "library",
@@ -106,10 +107,26 @@
 >>>>>>> 2df6fbc8 (first)
                 "Modules\\Rating\\Providers\\RatingServiceProvider",
                 "Modules\\Rating\\Providers\\Filament\\AdminPanelProvider"
+=======
+    "name": "provtv/module_incentivi_fila3",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicola Storgato",
+            "email": "storgatonicola@provincia.treviso.it"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Incentivi\\Providers\\IncentiviServiceProvider",
+                "Modules\\Incentivi\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> 15ea09e2 (first)
             ],
             "aliases": {
 
             }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     "name": "laraxot/module_ui_fila3",
@@ -160,10 +177,13 @@
 >>>>>>> a8f30311 (first)
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> 15ea09e2 (first)
         }
     },
     "autoload": {
         "psr-4": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1015,3 +1035,28 @@
     "prefer-stable": true
 }
 >>>>>>> 51c7727d (first)
+=======
+            "Modules\\Incentivi\\": "app/",
+            "Modules\\Incentivi\\Database\\Factories\\": "database/factories/",
+            "Modules\\Incentivi\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "require": {
+        "spatie/laravel-pdf": "^1.5"
+
+    },
+    "require_comment": {
+        "provtv/filament-nested-resources": "*"
+    },
+    "repositories_comment": [
+        {
+            "type": "path",
+            "url": "./packages/sevendays-digital/filament-nested-resources",
+            "canonical": false
+        }
+
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+>>>>>>> 15ea09e2 (first)

@@ -3,10 +3,14 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Notify\Models;
 =======
 namespace Modules\User\Models;
 >>>>>>> 0d55b583 (first)
+=======
+namespace Modules\Incentivi\Models;
+>>>>>>> 15ea09e2 (first)
 
 use Illuminate\Database\Eloquent\Relations\Pivot;
 // //use Laravel\Scout\Searchable;
@@ -35,6 +39,7 @@ abstract class BasePivot extends Pivot
     protected $perPage = 30;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     // use Searchable;
     /** @var string */
     protected $connection = 'notify';
@@ -44,10 +49,17 @@ abstract class BasePivot extends Pivot
     /** @var string */
     protected $connection = 'user';
 >>>>>>> 0d55b583 (first)
+=======
+    // use Searchable;
+
+    /** @var string */
+    protected $connection = 'incentivi';
+>>>>>>> 15ea09e2 (first)
 
     /** @var list<string> */
     protected $appends = [];
 
+<<<<<<< HEAD
     /**
      * Undocumented variable.
      */
@@ -59,10 +71,14 @@ abstract class BasePivot extends Pivot
 
     /** @return array<string, string> */
 <<<<<<< HEAD
+=======
+    /** @return array<string, string> */
+>>>>>>> 15ea09e2 (first)
     public function casts(): array
     {
         return [
             'id' => 'string', // must be string else primary key of related model will be typed as int
+<<<<<<< HEAD
             'uuid' => 'string',
 
 =======
@@ -71,6 +87,8 @@ abstract class BasePivot extends Pivot
         return [
             'id' => 'string', // must be string else primary key of related model will be typed as int
 >>>>>>> 0d55b583 (first)
+=======
+>>>>>>> 15ea09e2 (first)
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
             'deleted_at' => 'datetime',
@@ -80,4 +98,13 @@ abstract class BasePivot extends Pivot
             'deleted_by' => 'string',
         ];
     }
+<<<<<<< HEAD
+=======
+
+    /**
+     * Undocumented variable.
+     */
+    /** @var string */
+    protected $primaryKey = 'id';
+>>>>>>> 15ea09e2 (first)
 }

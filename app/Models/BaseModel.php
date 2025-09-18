@@ -12,6 +12,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Rating\Models;
 
 use Illuminate\Database\Eloquent\Model;
@@ -99,10 +100,21 @@ use Modules\Xot\Traits\Updater;
 >>>>>>> 8fc3049b (first)
 =======
 >>>>>>> 7e417e87 (first)
+=======
+namespace Modules\Incentivi\Models;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+// //use Laravel\Scout\Searchable;
+use Illuminate\Database\Eloquent\Model;
+use Modules\Xot\Models\Traits\RelationX;
+use Modules\Xot\Traits\Updater;
+>>>>>>> 15ea09e2 (first)
 
 /**
  * Class BaseModel.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -173,11 +185,20 @@ abstract class BaseModel extends Model
 {
     use HasFactory;
 >>>>>>> 8fc3049b (first)
+=======
+abstract class BaseModel extends Model
+{
+    // use Searchable;
+    // //use Cachable;
+    use HasFactory;
+    use RelationX;
+>>>>>>> 15ea09e2 (first)
     use Updater;
 
     /**
      * Indicates whether attributes are snake cased on arrays.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -215,11 +236,15 @@ abstract class BaseModel extends Model
 =======
      * @see https://laravel-news.com/6-eloquent-secrets
 >>>>>>> 8fc3049b (first)
+=======
+     * @see https://laravel-news.com/6-eloquent-secrets
+>>>>>>> 15ea09e2 (first)
      *
      * @var bool
      */
     public static $snakeAttributes = true;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -245,6 +270,8 @@ abstract class BaseModel extends Model
 >>>>>>> c986cc10 (first)
 =======
 >>>>>>> 8fc3049b (first)
+=======
+>>>>>>> 15ea09e2 (first)
     /** @var bool */
     public $incrementing = true;
 
@@ -255,6 +282,7 @@ abstract class BaseModel extends Model
     protected $perPage = 30;
 
     /** @var string */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -308,10 +336,31 @@ abstract class BaseModel extends Model
 =======
     protected $connection = 'setting';
 >>>>>>> 8fc3049b (first)
+=======
+    protected $connection = 'incentivi';
+
+    /** @return array<string, string> */
+    public function casts(): array
+    {
+        return [
+            'published_at' => 'datetime',
+            'verified_at' => 'datetime',
+
+            'created_at' => 'datetime',
+            'updated_at' => 'datetime',
+            'deleted_at' => 'datetime',
+
+            'updated_by' => 'string',
+            'created_by' => 'string',
+            'deleted_by' => 'string',
+        ];
+    }
+>>>>>>> 15ea09e2 (first)
 
     /** @var list<string> */
     protected $appends = [];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -397,10 +446,17 @@ abstract class BaseModel extends Model
      * @var list<string>
      */
 >>>>>>> 7e417e87 (first)
+=======
+    /** @var string */
+    protected $primaryKey = 'id';
+
+    /** @var list<string> */
+>>>>>>> 15ea09e2 (first)
     protected $hidden = [
         // 'password'
     ];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -432,17 +488,23 @@ abstract class BaseModel extends Model
      *
      * @return \Illuminate\Database\Eloquent\Factories\Factory<static>
 =======
+=======
+>>>>>>> 15ea09e2 (first)
     /**
      * @see vendor/ laravel / framework / src / Illuminate / Database / Eloquent / Factories / HasFactory.php
      * Create a new factory instance for the model.
      *
      * @return Factory<static>
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
+=======
+>>>>>>> 15ea09e2 (first)
      */
     protected static function newFactory()
     {
         return app(\Modules\Xot\Actions\Factory\GetFactoryAction::class)->execute(static::class);
     }
+<<<<<<< HEAD
 
     /** @return array<string, string> */
 <<<<<<< HEAD
@@ -627,4 +689,6 @@ abstract class BaseModel extends Model
         return app(\Modules\Xot\Actions\Factory\GetFactoryAction::class)->execute(static::class);
     }
 >>>>>>> 7e417e87 (first)
+=======
+>>>>>>> 15ea09e2 (first)
 }
