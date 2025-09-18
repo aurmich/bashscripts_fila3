@@ -21,7 +21,11 @@ die() {
 # Funzione per loggare messaggi
 log() {
     local message="$1"
+<<<<<<< HEAD
     echo "🗓️ $(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$LOG_FILE"
+=======
+    echo "$(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$LOG_FILE"
+>>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
 }
 
 # Funzione per gestire gli errori

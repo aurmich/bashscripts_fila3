@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -35,6 +36,8 @@ aurmich/dev
  43df3e0 (.)
 aurmich/dev
 >>>>>>> e47821df (.)
+=======
+>>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
 # 🌐 Fase 8: Cloud Integration
 
 ## 📋 Panoramica
@@ -160,6 +163,7 @@ Questa fase si concentra sull'integrazione con i principali cloud provider per g
 ### Q4 2028
 - Deployment produzione
 - Monitoraggio continuo
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1090,3 +1094,6 @@ aurmich/dev
 =======
 aurmich/dev
 >>>>>>> e47821df (.)
+=======
+- Aggiornamenti 
+>>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)

@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> e47821df (.)
@@ -7675,6 +7676,8 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 
 
 ##
+=======
+>>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
 # 🚀 Fase 1: Core Git Operations
 
 ## 📋 Panoramica
@@ -7755,7 +7758,10 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 - Tempo medio di sincronizzazione: < 5 minuti
 - Tasso di successo operazioni: 99.9%
 - Tempo di risoluzione conflitti: < 10 minuti
+<<<<<<< HEAD
 >>>>>>> e47821df (.)
+=======
+>>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
 
 ## 🛠️ Strumenti Utilizzati
 
@@ -7764,6 +7770,7 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 - Gestione submodule
 - Risoluzione conflitti
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ---
 
@@ -7814,6 +7821,8 @@ Per ulteriori dettagli, consultare la documentazione degli script specifici e le
 =======
 >>>>>>> e0c964a3 (first)
 =======
+=======
+>>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
 ### Bash
 - Scripting avanzato
 - Gestione errori
@@ -7822,9 +7831,13 @@ Per ulteriori dettagli, consultare la documentazione degli script specifici e le
 ### Altri
 - SSH per connessioni sicure
 - Cron per automazione
+<<<<<<< HEAD
 
 [0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco HEAD (104 linee vs 1)[0m
 - Rsync per backup 
  43df3e0 (.)
 aurmich/dev
 >>>>>>> e47821df (.)
+=======
+- Rsync per backup 
+>>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)

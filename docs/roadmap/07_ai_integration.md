@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -200,6 +201,8 @@ aurmich/dev
 >>>>>>> e0c964a3 (first)
 =======
 >>>>>>> e47821df (.)
+=======
+>>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
 # 🤖 Fase 7: AI Integration
 
 ## 📋 Panoramica
@@ -325,6 +328,7 @@ Questa fase si concentra sull'integrazione di tecnologie di Intelligenza Artific
 ### Q4 2027
 - Deployment produzione
 - Monitoraggio continuo
+<<<<<<< HEAD
 
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
@@ -790,3 +794,6 @@ aurmich/dev
 =======
 aurmich/dev
 >>>>>>> e47821df (.)
+=======
+- Aggiornamenti 
+>>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)

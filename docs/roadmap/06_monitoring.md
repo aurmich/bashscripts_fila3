@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 # 📊 Fase 6: Monitoraggio
@@ -40,6 +41,8 @@ Questa fase si concentra sull'implementazione di un sistema avanzato di monitora
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
 # 📊 Fase 6: Monitoraggio
 
 ## 📋 Panoramica
@@ -165,6 +168,7 @@ Questa fase si concentra sull'implementazione di un sistema avanzato di monitora
 ### Q4 2026
 - Deployment produzione
 - Monitoraggio continuo
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1478,3 +1482,6 @@ aurmich/dev
 =======
 aurmich/dev
 >>>>>>> e47821df (.)
+=======
+- Aggiornamenti 
+>>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)

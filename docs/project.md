@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Project
 
 > **Nota**: Questo documento è correlato a [Progetto](../../docs/project.md). Per una panoramica completa, consulta entrambi i documenti.
@@ -8,6 +9,8 @@
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
 
+=======
+>>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
 # 📚 Documentazione Dettagliata degli Script
 
 ## 🔄 Script di Sincronizzazione Git
@@ -179,6 +182,7 @@
 - Identificazione dei branch obsoleti
 - Rimozione sicura
 - Backup prima dell'operazione
+<<<<<<< HEAD
 **Uso**: `./git_delete_old_branches.sh <days>`
 
 ## 📚 Documentazione Aggiuntiva
@@ -429,3 +433,6 @@ Per ulteriori informazioni sulla gestione dei repository e l'utilizzo degli scri
  43df3e0 (.)
 aurmich/dev
 >>>>>>> e47821df (.)
+=======
+**Uso**: `./git_delete_old_branches.sh <days>` 
+>>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)

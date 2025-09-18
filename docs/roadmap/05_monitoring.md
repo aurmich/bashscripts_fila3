@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 # 📊 Fase 5: Monitoraggio
@@ -89,6 +90,8 @@ Questa fase si concentra sul monitoraggio e l'ottimizzazione del sistema, fornen
 >>>>>>> e0c964a3 (first)
 =======
 >>>>>>> e47821df (.)
+=======
+>>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
 # 📊 Fase 5: Monitoraggio
 
 ## 📋 Panoramica
@@ -98,6 +101,7 @@ Questa fase si concentra sul monitoraggio e l'ottimizzazione del sistema.
 - [Roadmap Principale](../roadmap.md)
 - [Documentazione Script](../project.md)
 - [Fase 4: Deployment](../roadmap/04_deployment.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -406,3 +410,6 @@ aurmich/dev
 =======
 aurmich/dev
 >>>>>>> e47821df (.)
+=======
+- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md) 
+>>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)

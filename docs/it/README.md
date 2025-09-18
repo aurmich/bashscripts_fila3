@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
@@ -139,6 +140,8 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file `LICENSE` per 
 <<<<<<< HEAD
 </div> 
 =======
+=======
+>>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
 # 🚀 Toolkit di Automazione Git
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com)
@@ -238,6 +241,7 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file `LICENSE` per 
 
 <div align="center">
   <sub>Built with ❤️ by the development team</sub>
+<<<<<<< HEAD
 
 
 [0;34mℹ️ [2025-04-22 11:23:10] Scelto blocco incoming (1 linee vs 1)[0m
@@ -562,3 +566,6 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file `LICENSE` per 
  43df3e0 (.)
 aurmich/dev
 >>>>>>> e47821df (.)
+=======
+</div> 
+>>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)

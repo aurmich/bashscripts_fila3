@@ -37,6 +37,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1832,10 +1833,15 @@ Questo progetto è sotto licenza MIT. Vedere il file [LICENSE](LICENSE) per i de
  80ec88ee9 (.)
 >>>>>>> e47821df (.)
 
+=======
+# 🚀 Toolkit di Automazione Git
+
+>>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com)
 [![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
 [![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 > **⚠️ WARNING: This toolkit is designed for experienced developers working with complex Git repositories and monorepo structures.**
 
@@ -2030,6 +2036,8 @@ Questo progetto è sotto licenza MIT - vedi il file [LICENSE](LICENSE) per i det
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
 > **⚠️ ATTENZIONE: Questo toolkit è stato progettato per sviluppatori esperti che lavorano con repository Git complessi e strutture monorepo.**
 
 ## 📋 Panoramica
@@ -2060,6 +2068,7 @@ Questo toolkit è una suite completa di script Bash progettata per automatizzare
 
 ```
 bashscripts/
+<<<<<<< HEAD
 ├── git/              # Script per la gestione Git
 │   ├── subtrees/     # Gestione subtrees
 │   ├── submodules/   # Gestione submodules
@@ -2069,6 +2078,12 @@ bashscripts/
 ├── utils/           # Utility varie
 ├── backup/          # Script di backup
 └── testing/         # Script per i test
+=======
+├── git/                 # Script per la gestione Git
+├── maintenance/         # Script di manutenzione
+├── checks/             # Script di verifica
+└── prompt/             # Template per prompt personalizzati
+>>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
 ```
 
 ## 🚀 Script Principali
@@ -2126,6 +2141,7 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file `LICENSE` per 
 
 ---
 
+<<<<<<< HEAD
 
 <div align="center">
   <sub>Built with ❤️ by the development team</sub>
@@ -3557,3 +3573,8 @@ php artisan module:migrate Activity
 ```
 
 >>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
+=======
+<div align="center">
+  <sub>Built with ❤️ by the development team</sub>
+</div> 
+>>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)

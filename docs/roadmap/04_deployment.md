@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -35,6 +36,8 @@ aurmich/dev
  43df3e0 (.)
 aurmich/dev
 >>>>>>> e47821df (.)
+=======
+>>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
 # 🚀 Fase 4: Deployment
 
 ## 📋 Panoramica
@@ -44,6 +47,7 @@ Questa fase si concentra sul deployment e la distribuzione del sistema.
 - [Roadmap Principale](../roadmap.md)
 - [Documentazione Script](../project.md)
 - [Fase 3: Verifica](../roadmap/03_verification.md)
+<<<<<<< HEAD
 
 
 - [Fase 5: Monitoraggio](../roadmap/05_monitoring.md) 
@@ -210,3 +214,6 @@ aurmich/dev
 =======
 aurmich/dev
 >>>>>>> e47821df (.)
+=======
+- [Fase 5: Monitoraggio](../roadmap/05_monitoring.md) 
+>>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 # 🛡️ Fase 5: Sicurezza
@@ -40,6 +41,8 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
 # 🛡️ Fase 5: Sicurezza
 
 ## 📋 Panoramica
@@ -165,6 +168,7 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 ### Q4 2025
 - Deployment produzione
 - Monitoraggio continuo
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1477,3 +1481,6 @@ aurmich/dev
 =======
 aurmich/dev
 >>>>>>> e47821df (.)
+=======
+- Aggiornamenti 
+>>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)

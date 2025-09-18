@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -199,6 +200,8 @@ aurmich/dev
 >>>>>>> e0c964a3 (first)
 =======
 >>>>>>> e47821df (.)
+=======
+>>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
 # 📱 Fase 9: UI/UX
 
 ## 📋 Panoramica
@@ -323,6 +326,7 @@ Questa fase si concentra sullo sviluppo di interfacce utente moderne e intuitive
 ### Q4 2029
 - Deployment produzione
 - Monitoraggio utilizzo
+<<<<<<< HEAD
 
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
@@ -785,3 +789,6 @@ aurmich/dev
 =======
 aurmich/dev
 >>>>>>> e47821df (.)
+=======
+- Aggiornamenti 
+>>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)

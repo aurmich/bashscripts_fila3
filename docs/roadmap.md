@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:docs/roadmap.md
 <<<<<<< HEAD:docs/roadmap.md
 <<<<<<< HEAD
@@ -12,6 +13,8 @@
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
 
+=======
+>>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
 # 🗺️ Roadmap del Progetto
 
 ## 📋 Indice delle Fasi
@@ -131,6 +134,7 @@
 - [Fase 6: Monitoraggio](./roadmap/06_monitoring.md)
 - [Fase 7: AI Integration](./roadmap/07_ai_integration.md)
 - [Fase 8: Cloud Integration](./roadmap/08_cloud_integration.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -925,3 +929,6 @@ Overall Module Completion: 60%
 4. [ ] Test performance
 5. [ ] Documentazione base 
 >>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
+=======
+- [Fase 9: UI/UX](./roadmap/09_ui_ux.md) 
+>>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)

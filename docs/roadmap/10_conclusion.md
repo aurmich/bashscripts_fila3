@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -35,6 +36,8 @@ aurmich/dev
  43df3e0 (.)
 aurmich/dev
 >>>>>>> e47821df (.)
+=======
+>>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
 # 🎯 Fase 10: Conclusione
 
 ## 📋 Panoramica
@@ -43,6 +46,7 @@ Questa fase rappresenta la conclusione del progetto e la consegna finale.
 ## 🔄 Collegamenti
 - [Roadmap Principale](../roadmap.md)
 - [Documentazione Script](../project.md)
+<<<<<<< HEAD
 
 
 - [Fase 9: Scalabilità](../roadmap/09_scalability.md) 
@@ -205,3 +209,6 @@ aurmich/dev
 =======
 aurmich/dev
 >>>>>>> e47821df (.)
+=======
+- [Fase 9: Scalabilità](../roadmap/09_scalability.md) 
+>>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
