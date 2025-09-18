@@ -9,6 +9,7 @@
             //     'get_class_methods' => get_class_methods($this),
             // ]);
         @endphp
+<<<<<<< HEAD
 <<<<<<< HEAD:resources/views/filament/resources/user-resource/widgets/user-overview.blade.php
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -26,5 +27,8 @@
 =======
         {{ $record->name ?? 'Utente' }}
 >>>>>>> 900f6485 (.):laravel/Modules/User/resources/views/filament/resources/user-resource/widgets/user-overview.blade.php
+=======
+        {{ $record->name ?? 'Utente' }}
+>>>>>>> 2dc3c024 (.)
     </x-filament::card>
 </x-filament::widget>

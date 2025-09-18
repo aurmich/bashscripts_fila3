@@ -19,6 +19,9 @@ return [
         'icon' => 'user-main',
     ],
     'fields' => [
+        'id' => [
+            'label' => 'ID',
+        ],
         'name' => [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il nome',
@@ -83,6 +86,42 @@ return [
         'unverified' => [
             'label' => 'Non Verificato',
         ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+        ],
+        'isActive' => [
+            'label' => 'isActive',
+        ],
+        'deactivate' => [
+            'label' => 'deactivate',
+        ],
+        'delete' => [
+            'label' => 'delete',
+        ],
+        'edit' => [
+            'label' => 'edit',
+        ],
+        'view' => [
+            'label' => 'view',
+        ],
+        'create' => [
+            'label' => 'create',
+        ],
+        'email_verified_at' => [
+            'label' => 'Email Verificata il',
+        ],
     ],
     'actions' => [
         'create' => 'Crea Utente',
@@ -118,6 +157,9 @@ return [
         'delete_users' => 'Elimina utenti',
         'impersonate_users' => 'Impersona utenti',
         'manage_roles' => 'Gestisci ruoli',
+    ],
+    'model' => [
+        'label' => 'Utente',
     ],
 ];
 <<<<<<< HEAD

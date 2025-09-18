@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2dc3c024 (.)
 return array (
   'navigation' => 
   array (
@@ -17,6 +20,19 @@ return array (
   ),
   'fields' => 
   array (
+<<<<<<< HEAD
+=======
+    'id' => 
+    array (
+      'label' => 'ID',
+      'tooltip' => 'Identificativo univoco del ruolo',
+    ),
+    'team_id' => 
+    array (
+      'label' => 'ID Team',
+      'tooltip' => 'Identificativo del team associato al ruolo',
+    ),
+>>>>>>> 2dc3c024 (.)
     'name' => 
     array (
       'label' => 'Nome Ruolo',
@@ -60,6 +76,7 @@ return array (
     ),
     'toggleColumns' => 
     array (
+<<<<<<< HEAD
       'label' => 'toggleColumns',
     ),
     'reorderRecords' => 
@@ -77,6 +94,46 @@ return array (
     'openFilters' => 
     array (
       'label' => 'openFilters',
+=======
+      'label' => 'Mostra/Nascondi Colonne',
+      'tooltip' => 'Gestisci la visibilità delle colonne',
+    ),
+    'reorderRecords' => 
+    array (
+      'label' => 'Riordina Record',
+      'tooltip' => 'Modifica l\'ordine dei record',
+    ),
+    'resetFilters' => 
+    array (
+      'label' => 'Resetta Filtri',
+      'tooltip' => 'Ripristina i filtri predefiniti',
+    ),
+    'applyFilters' => 
+    array (
+      'label' => 'Applica Filtri',
+      'tooltip' => 'Applica i filtri selezionati',
+    ),
+    'openFilters' => 
+    array (
+      'label' => 'Apri Filtri',
+      'tooltip' => 'Apri il pannello dei filtri',
+    ),
+    'detach' => 
+    array (
+      'label' => 'detach',
+    ),
+    'edit' => 
+    array (
+      'label' => 'edit',
+    ),
+    'recordId' => 
+    array (
+      'label' => 'recordId',
+    ),
+    'attach' => 
+    array (
+      'label' => 'attach',
+>>>>>>> 2dc3c024 (.)
     ),
   ),
   'roles' => 
@@ -99,7 +156,11 @@ return array (
     'edit' => 
     array (
       'label' => 'Modifica Ruolo',
+<<<<<<< HEAD
       'tooltip' => 'Clicca per modificare il ruolo selezionato.',
+=======
+      'tooltip' => 'Clicca per modificare questo ruolo.',
+>>>>>>> 2dc3c024 (.)
       'icon' => 'fa fa-edit',
       'color' => 'primary',
     ),
@@ -150,6 +211,7 @@ return array (
     'settings' => 'Impostazioni',
     'reports' => 'Report',
   ),
+<<<<<<< HEAD
 );
 =======
 declare(strict_types=1);
@@ -268,3 +330,23 @@ return [
     ],
 ];
 >>>>>>> bdeae81f (first)
+=======
+  'validation' => 
+  array (
+    'name_required' => 'Il nome del ruolo è obbligatorio',
+    'name_unique' => 'Questo nome ruolo è già in uso',
+    'permissions_required' => 'Seleziona almeno un permesso',
+  ),
+  'model' => 
+  array (
+    'label' => 'Ruolo',
+  ),
+  'plural' => 
+  array (
+    'model' => 
+    array (
+      'label' => 'role.plural.model',
+    ),
+  ),
+);
+>>>>>>> 2dc3c024 (.)

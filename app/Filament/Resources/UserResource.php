@@ -15,6 +15,7 @@ use Filament\Forms\Components\TextInput;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\HtmlString;
 use Modules\User\Filament\Resources\UserResource\Pages;
+<<<<<<< HEAD
 <<<<<<< HEAD:app/Filament/Resources/UserResource.php
 <<<<<<< HEAD
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
@@ -40,6 +41,11 @@ use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 >>>>>>> 900f6485 (.):laravel/Modules/User/app/Filament/Resources/UserResource.php
+=======
+use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
+use Modules\Xot\Filament\Resources\XotBaseResource;
+
+>>>>>>> 2dc3c024 (.)
 class UserResource extends XotBaseResource
 {
     // protected static ?string $model = \Modules\Xot\Datas\XotData::make()->getUserClass();
@@ -88,6 +94,7 @@ class UserResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD:app/Filament/Resources/UserResource.php
 <<<<<<< HEAD
 =======
@@ -105,6 +112,8 @@ class UserResource extends XotBaseResource
 >>>>>>> bdeae81f (first)
 =======
 >>>>>>> 900f6485 (.):laravel/Modules/User/app/Filament/Resources/UserResource.php
+=======
+>>>>>>> 2dc3c024 (.)
     // public static function enablePasswordUpdates(bool|Closure $condition = true): void
     // {
     //     static::$enablePasswordUpdates = $condition;

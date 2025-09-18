@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bdeae81f (first)
 declare(strict_types=1);
@@ -92,6 +93,8 @@ return [
 ];
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 2dc3c024 (.)
 return array (
   'navigation' => 
   array (
@@ -174,10 +177,13 @@ return array (
     array (
       'label' => 'personal_team',
     ),
+<<<<<<< HEAD
     'delete' => 
     array (
       'label' => 'delete',
     ),
+=======
+>>>>>>> 2dc3c024 (.)
   ),
   'actions' => 
   array (
@@ -209,6 +215,7 @@ return array (
       'label' => 'team.plural.model',
     ),
   ),
+<<<<<<< HEAD
   'model' => 
   array (
     'label' => 'team.model',
@@ -217,3 +224,6 @@ return array (
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+);
+>>>>>>> 2dc3c024 (.)
