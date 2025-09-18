@@ -19,5 +19,9 @@ return array (
     array (
       'label' => 'ha_diritto',
     ),
+    'is_admin' => 
+    array (
+      'label' => 'is_admin',
+    ),
   ),
 );
