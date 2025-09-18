@@ -2,6 +2,9 @@ blank_issues_enabled: false
 contact_links:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2df6fbc8 (first)
     - name: Ask a question
       url: https://github.com/laraxot/module_xot/discussions/new?category=q-a
       about: Ask the community for help
@@ -11,6 +14,7 @@ contact_links:
     - name: Report a bug
       url: https://github.com/laraxot/module_xot/issues/new
       about: Report a reproducable bug
+<<<<<<< HEAD
 =======
   - name: Ask a question
     url: https://github.com/:vendor_name/:package_name/discussions/new?category=q-a
@@ -33,3 +37,5 @@ contact_links:
       url: https://github.com/laraxot/module_lang/issues/new
       about: Report a reproducable bug
 >>>>>>> bbec4378 (first)
+=======
+>>>>>>> 2df6fbc8 (first)

@@ -6,6 +6,7 @@ providers:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Modules\Rating\Providers\RatingServiceProvider
 =======
   - Modules\Xot\Providers\XotServiceProvider
@@ -33,3 +34,6 @@ providers:
 =======
   - Modules\Setting\Providers\SettingServiceProvider
 >>>>>>> 9cec72d6 (first)
+=======
+  - Modules\Rating\Providers\RatingServiceProvider
+>>>>>>> 2df6fbc8 (first)

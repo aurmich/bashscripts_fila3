@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "laraxot/bashscripts_fila3",
     "description": "Script di utilità per la gestione dei repository Git, Toolkit di automazione Git per progetti Laravel",
     "type": "library",
@@ -51,6 +52,10 @@
     "homepage": "https://github.com/laraxot/module_setting_fila3.git",
     "license": "MIT",
 >>>>>>> 9cec72d6 (first)
+=======
+    "name": "laraxot/module_rating_fila3",
+    "description": "",
+>>>>>>> 2df6fbc8 (first)
     "authors": [{
         "name": "Marco Sottana",
         "email": "marco.sottana@gmail.com"
@@ -59,12 +64,16 @@
         "laravel": {
             "providers": [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2df6fbc8 (first)
                 "Modules\\Rating\\Providers\\RatingServiceProvider",
                 "Modules\\Rating\\Providers\\Filament\\AdminPanelProvider"
             ],
             "aliases": {
 
             }
+<<<<<<< HEAD
 =======
     "name": "laraxot/module_ui_fila3",
     "description": "",
@@ -91,11 +100,16 @@
             ],
             "aliases": {}
 >>>>>>> a8f30311 (first)
+=======
+>>>>>>> 2df6fbc8 (first)
         }
     },
     "autoload": {
         "psr-4": {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2df6fbc8 (first)
             "Modules\\Rating\\": "app/",
             "Modules\\Rating\\Database\\Factories\\": "database/factories/",
             "Modules\\Rating\\Database\\Seeders\\": "database/seeders/"
@@ -118,6 +132,7 @@
     },
     "scripts": {
         "post-autoload-dump": [
+<<<<<<< HEAD
 =======
             "Modules\\UI\\": "app/",
             "Modules\\UI\\Database\\Factories\\": "database/factories/",
@@ -299,6 +314,8 @@
 >>>>>>> d79d9e57 (first)
 =======
 >>>>>>> 0d55b583 (first)
+=======
+>>>>>>> 2df6fbc8 (first)
             "@php vendor/bin/testbench package:discover --ansi"
         ],
         "post-update-cmd": [
@@ -308,6 +325,7 @@
         "test": "./vendor/bin/pest --no-coverage",
         "test-coverage": "vendor/bin/pest --coverage-html coverage",
         "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -497,6 +515,8 @@
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> 9cec72d6 (first)
+=======
+>>>>>>> 2df6fbc8 (first)
     },
     "config": {
         "sort-packages": true,
@@ -508,12 +528,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bbec4378 (first)
+=======
+>>>>>>> 2df6fbc8 (first)
             "phpstan/extension-installer": true,
             "pestphp/pest-plugin": true
         }
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
     "minimum-stability": "dev",
 <<<<<<< HEAD
@@ -607,3 +631,8 @@
     "prefer-stable": true
 }
 >>>>>>> 9cec72d6 (first)
+=======
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+>>>>>>> 2df6fbc8 (first)

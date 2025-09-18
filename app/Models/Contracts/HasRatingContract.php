@@ -13,6 +13,7 @@ use Modules\Rating\Models\Rating;
 interface HasRatingContract
 {
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD:app/Models/Contracts/HasRatingContract.php
 <<<<<<< HEAD
      * @return MorphToMany<Rating, Rating|\Illuminate\Database\Eloquent\Model>
@@ -22,6 +23,9 @@ interface HasRatingContract
 =======
      * @return MorphToMany<Rating, \Illuminate\Database\Eloquent\Model>
 >>>>>>> 1d35aa92 (.):laravel/Modules/Rating/app/Models/Contracts/HasRatingContract.php
+=======
+     * @return MorphToMany<Rating, Rating|\Illuminate\Database\Eloquent\Model>
+>>>>>>> 2df6fbc8 (first)
      */
     public function ratings(): MorphToMany;
 }

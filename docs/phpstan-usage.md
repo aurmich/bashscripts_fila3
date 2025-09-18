@@ -14,10 +14,14 @@ cd /path/to/laravel
 Analizzare un singolo modulo:
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 ./vendor/bin/phpstan analyse -l 9 Modules/Rating
 =======
 ./vendor/bin/phpstan analyse -l 9 Modules/Notify
 >>>>>>> d79d9e57 (first)
+=======
+./vendor/bin/phpstan analyse -l 9 Modules/Rating
+>>>>>>> 2df6fbc8 (first)
 ```
 
 Analizzare più moduli contemporaneamente:
@@ -47,6 +51,9 @@ Quando si esegue PHPStan in un ambiente di CI/CD, è consigliabile utilizzare:
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2df6fbc8 (first)
 ## Architettura del Modulo Rating
 
 L'efficacia dell'analisi statica tramite PHPStan nel modulo Rating dipende dalla corretta strutturazione sia del codice che delle directory.
@@ -85,6 +92,7 @@ Il modulo Rating è progettato secondo una separazione chiara tra:
    ```
 
 Per dettagli completi, consulta `docs/directory_structure.md`.
+<<<<<<< HEAD
 =======
 ## Architettura del Modulo Notify
 
@@ -124,6 +132,8 @@ Il modulo segue una chiara distinzione tra organizzazione fisica e logica:
 
 La documentazione completa sulla struttura dei moduli è disponibile in `docs/directory_structure.md`.
 >>>>>>> d79d9e57 (first)
+=======
+>>>>>>> 2df6fbc8 (first)
 
 ## Risoluzione dei problemi comuni
 

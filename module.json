@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
 =======
@@ -24,10 +25,15 @@
     "name": "Setting",
     "alias": "setting",
 >>>>>>> 9cec72d6 (first)
+=======
+    "name": "Rating",
+    "alias": "rating",
+>>>>>>> 2df6fbc8 (first)
     "description": "",
     "keywords": [],
     "priority": 0,
     "providers": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -74,10 +80,15 @@
         "Modules\\Notify\\Providers\\NotifyServiceProvider",
         "Modules\\Notify\\Providers\\Filament\\AdminPanelProvider"
 >>>>>>> d79d9e57 (first)
+=======
+        "Modules\\Rating\\Providers\\RatingServiceProvider",
+        "Modules\\Rating\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> 2df6fbc8 (first)
     ],
     "aliases": [],
     "files": [],
     "requires": []
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -121,3 +132,6 @@
     "files": []
 }
 >>>>>>> 9cec72d6 (first)
+=======
+}
+>>>>>>> 2df6fbc8 (first)

@@ -8,7 +8,10 @@ use Eloquent;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Modules\Xot\Datas\XotData;
+<<<<<<< HEAD
 use Modules\Xot\Contracts\ProfileContract;
+=======
+>>>>>>> 2df6fbc8 (first)
 
 /**
  * Modules\Rating\Models\RatingMorph.
@@ -61,6 +64,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static \Illuminate\Database\Eloquent\Builder|RatingMorph whereValue($value)
  *
  * @property \Illuminate\Database\Eloquent\Model|\Eloquent $model
+<<<<<<< HEAD
 <<<<<<< HEAD:app/Models/RatingMorph.php
 <<<<<<< HEAD
  * @property \Illuminate\Database\Eloquent\Model|null $profile
@@ -70,6 +74,9 @@ use Modules\Xot\Contracts\ProfileContract;
 =======
  * @property ProfileContract|null                          $profile
 >>>>>>> 1d35aa92 (.):laravel/Modules/Rating/app/Models/RatingMorph.php
+=======
+ * @property \Illuminate\Database\Eloquent\Model|null $profile
+>>>>>>> 2df6fbc8 (first)
  * @property \Modules\Xot\Contracts\UserContract|null      $user
  * @property string                                        $reward
  *

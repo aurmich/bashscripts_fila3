@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://github.com/lartisan/filament-rating-tool
 =======
 https://github.com/savannabits/filament-signature-pad
@@ -48,3 +49,7 @@ https://github.com/andrewdwallo/filament-companies
 https://github.com/shuvroroy/filament-spatie-laravel-backup
 
 >>>>>>> 9cec72d6 (first)
+=======
+https://github.com/lartisan/filament-rating-tool
+
+>>>>>>> 2df6fbc8 (first)

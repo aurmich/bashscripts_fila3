@@ -3,10 +3,14 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Rating\DataObjects;
 =======
 namespace Modules\Rating\App\DataObjects;
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
+=======
+namespace Modules\Rating\DataObjects;
+>>>>>>> 2df6fbc8 (first)
 
 final readonly class RatingData
 {
@@ -16,6 +20,9 @@ final readonly class RatingData
     public static function fromArray(array $data): self
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2df6fbc8 (first)
         $title = is_string($data['title']) ? $data['title'] : (is_scalar($data['title']) ? (string)$data['title'] : '');
         $score = isset($data['score']) && is_numeric($data['score']) ? (int)$data['score'] : 0;
         $description = isset($data['description']) ? (is_string($data['description']) ? $data['description'] : null) : null;
@@ -26,6 +33,7 @@ final readonly class RatingData
             score: $score,
             description: $description,
             userId: $userId
+<<<<<<< HEAD
 =======
         return new self(
             title: $data['title'],
@@ -33,6 +41,8 @@ final readonly class RatingData
             description: $data['description'] ?? null,
             userId: $data['user_id'] ?? null
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
+=======
+>>>>>>> 2df6fbc8 (first)
         );
     }
 

@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2df6fbc8 (first)
 name: PHPStan
 
 on:
@@ -9,13 +12,17 @@ on:
       - 'phpstan.neon.dist'
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bbec4378 (first)
+=======
+>>>>>>> 2df6fbc8 (first)
   pull_request:
     paths:
       - '**.php'
       - 'phpstan.neon.dist'
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> a8f30311 (first)
@@ -31,6 +38,8 @@ name: Static Analysis
 
 on: [push]
 >>>>>>> 9cec72d6 (first)
+=======
+>>>>>>> 2df6fbc8 (first)
 
 jobs:
   phpstan:
@@ -44,6 +53,7 @@ jobs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         uses: shivammathur/setup-php@v2
 =======
         uses: shivammathur/setup-php@latest
@@ -51,11 +61,15 @@ jobs:
 =======
         uses: shivammathur/setup-php@v2
 >>>>>>> bbec4378 (first)
+=======
+        uses: shivammathur/setup-php@v2
+>>>>>>> 2df6fbc8 (first)
         with:
           php-version: '8.1'
           coverage: none
 
       - name: Install composer dependencies
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -95,3 +109,9 @@ jobs:
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> 9cec72d6 (first)
+=======
+        uses: ramsey/composer-install@v2
+
+      - name: Run PHPStan
+        run: ./vendor/bin/phpstan --error-format=github
+>>>>>>> 2df6fbc8 (first)

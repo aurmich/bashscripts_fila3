@@ -7,16 +7,20 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d79d9e57 (first)
 =======
 >>>>>>> 0d55b583 (first)
+=======
+>>>>>>> 2df6fbc8 (first)
 /**
  * ---.
  */
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 namespace Modules\Rating\Providers\Filament;
@@ -68,10 +72,15 @@ declare(strict_types=1);
 namespace Modules\Setting\Providers\Filament;
 
 >>>>>>> 9cec72d6 (first)
+=======
+namespace Modules\Rating\Providers\Filament;
+
+>>>>>>> 2df6fbc8 (first)
 use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 
 class AdminPanelProvider extends XotBasePanelProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -194,4 +203,7 @@ class AdminPanelProvider extends XotBasePanelProvider
 =======
     protected string $module = 'Setting';
 >>>>>>> 9cec72d6 (first)
+=======
+    protected string $module = 'Rating';
+>>>>>>> 2df6fbc8 (first)
 }

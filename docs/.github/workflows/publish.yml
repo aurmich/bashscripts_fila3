@@ -7,6 +7,7 @@ on:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 permissions:
 =======
 permissions: 
@@ -14,6 +15,9 @@ permissions:
 =======
 permissions:
 >>>>>>> c088001a (first)
+=======
+permissions:
+>>>>>>> 2df6fbc8 (first)
   contents: write
 
 jobs:
@@ -35,12 +39,16 @@ jobs:
       run: npm install
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c088001a (first)
+=======
+>>>>>>> 2df6fbc8 (first)
 
     - name: Production
       run: npm run prod
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
       
@@ -48,11 +56,14 @@ jobs:
       run: npm run prod
       
 >>>>>>> bbec4378 (first)
+=======
+>>>>>>> 2df6fbc8 (first)
     - name: CNAME
       run: echo "privacyfed.github.io/doc_extrafield" > ./build_production/CNAME
 
     - name: gh-pages
       uses: JamesIves/github-pages-deploy-action@v4.4.2
+<<<<<<< HEAD
 =======
     - name: CNAME
       run: echo "laraxot.github.io/doc_extrafield" > ./build_production/CNAME
@@ -60,6 +71,8 @@ jobs:
     - name: gh-pages
       uses: JamesIves/github-pages-deploy-action@latest
 >>>>>>> c088001a (first)
+=======
+>>>>>>> 2df6fbc8 (first)
       with:
         branch: gh-pages
         folder: build_production

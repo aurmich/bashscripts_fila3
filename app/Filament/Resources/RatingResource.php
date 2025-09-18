@@ -30,6 +30,9 @@ class RatingResource extends XotBaseResource
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2df6fbc8 (first)
             'type' => TextInput::make('extra_attributes.type'),
             'anno' => TextInput::make('extra_attributes.anno'),
             'title' => TextInput::make('title')->autofocus()->required(),
@@ -41,6 +44,7 @@ class RatingResource extends XotBaseResource
                     'is_readonly' => Toggle::make('is_readonly'),
                 ]),
             'txt' => RichEditor::make('txt')->columnSpanFull(),
+<<<<<<< HEAD
 =======
             TextInput::make('extra_attributes.type'),
             TextInput::make('extra_attributes.anno'),
@@ -54,6 +58,8 @@ class RatingResource extends XotBaseResource
                 ]),
             RichEditor::make('txt')->columnSpanFull(),
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
+=======
+>>>>>>> 2df6fbc8 (first)
         ];
     }
 

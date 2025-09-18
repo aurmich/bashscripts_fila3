@@ -12,6 +12,7 @@ CHANGELOG.md export-ignore
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 *.psd filter=lfs diff=lfs merge=lfs -text
@@ -36,3 +37,6 @@ CHANGELOG.md export-ignore
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> 9cec72d6 (first)
+=======
+*.psd filter=lfs diff=lfs merge=lfs -text
+>>>>>>> 2df6fbc8 (first)

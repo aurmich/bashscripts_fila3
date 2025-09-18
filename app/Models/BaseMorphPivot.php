@@ -7,6 +7,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Rating\Models;
 =======
 namespace Modules\Xot\Models;
@@ -30,6 +31,11 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\MorphPivot;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
 >>>>>>> 0d55b583 (first)
+=======
+namespace Modules\Rating\Models;
+
+use Illuminate\Database\Eloquent\Relations\MorphPivot;
+>>>>>>> 2df6fbc8 (first)
 use Modules\Xot\Traits\Updater;
 
 /**
@@ -38,11 +44,15 @@ use Modules\Xot\Traits\Updater;
 abstract class BaseMorphPivot extends MorphPivot
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2df6fbc8 (first)
     use Updater;
 
     /**
      * Indicates whether attributes are snake cased on arrays.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -77,11 +87,15 @@ abstract class BaseMorphPivot extends MorphPivot
      *
      * @see https://laravel-news.com/6-eloquent-secrets
 >>>>>>> 0d55b583 (first)
+=======
+     * @see  https://laravel-news.com/6-eloquent-secrets
+>>>>>>> 2df6fbc8 (first)
      *
      * @var bool
      */
     public static $snakeAttributes = true;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     /** @var bool */
     public $incrementing = true;
@@ -105,10 +119,19 @@ abstract class BaseMorphPivot extends MorphPivot
     public $timestamps = true;
 
 >>>>>>> d79d9e57 (first)
+=======
+    /** @var bool */
+    public $incrementing = true;
+
+    /** @var bool */
+    public $timestamps = true;
+
+>>>>>>> 2df6fbc8 (first)
     /** @var int */
     protected $perPage = 30;
 
     /** @var string */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -142,6 +165,9 @@ abstract class BaseMorphPivot extends MorphPivot
     /** @var string */
     protected $connection = 'user';
 >>>>>>> 0d55b583 (first)
+=======
+    protected $connection = 'rating';
+>>>>>>> 2df6fbc8 (first)
 
     /** @var list<string> */
     protected $appends = [];
@@ -166,14 +192,19 @@ abstract class BaseMorphPivot extends MorphPivot
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function casts(): array
 =======
     protected function casts(): array
 >>>>>>> bbec4378 (first)
+=======
+    public function casts(): array
+>>>>>>> 2df6fbc8 (first)
     {
         return [
             'id' => 'string',
             'uuid' => 'string', 'created_at' => 'datetime', 'updated_at' => 'datetime', 'deleted_at' => 'datetime'];
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -232,5 +263,7 @@ abstract class BaseMorphPivot extends MorphPivot
 >>>>>>> d79d9e57 (first)
 =======
 >>>>>>> 0d55b583 (first)
+=======
+>>>>>>> 2df6fbc8 (first)
     }
 }

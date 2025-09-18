@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -38,6 +39,11 @@ declare(strict_types=1);
 
 namespace Modules\Setting\Providers;
 >>>>>>> 9cec72d6 (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Rating\Providers;
+>>>>>>> 2df6fbc8 (first)
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as BaseEventServiceProvider;
 
@@ -50,9 +56,13 @@ class EventServiceProvider extends BaseEventServiceProvider
      */
     protected $listen = [];
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 9cec72d6 (first)
+=======
+
+>>>>>>> 2df6fbc8 (first)
     /**
      * Indicates if events should be discovered.
      *
@@ -63,6 +73,7 @@ class EventServiceProvider extends BaseEventServiceProvider
     /**
      * Configure the proper event listeners for email verification.
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -123,4 +134,9 @@ class EventServiceProvider extends ServiceProvider
         // ...
     }
 >>>>>>> 9cec72d6 (first)
+=======
+    protected function configureEmailVerification(): void
+    {
+    }
+>>>>>>> 2df6fbc8 (first)
 }

@@ -35,12 +35,16 @@ class RatingData extends Data
     {
         return new self(
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2df6fbc8 (first)
             title: is_string($data['title'] ?? '') ? ($data['title'] ?? '') : (is_scalar($data['title'] ?? '') ? (string)($data['title'] ?? '') : ''),
             description: is_string($data['description'] ?? '') ? ($data['description'] ?? '') : (is_scalar($data['description'] ?? '') ? (string)($data['description'] ?? '') : ''),
             disabled: isset($data['disabled']) ? (bool)$data['disabled'] : false,
             position: isset($data['position']) && is_numeric($data['position']) ? (int)$data['position'] : 0,
             locale: SupportedLocale::fromString(is_string($data['locale'] ?? 'it') ? ($data['locale'] ?? 'it') : 'it'),
             image_url: isset($data['image_url']) ? (is_string($data['image_url']) ? $data['image_url'] : null) : null,
+<<<<<<< HEAD
 =======
             title: (string) ($data['title'] ?? ''),
             description: (string) ($data['description'] ?? ''),
@@ -49,6 +53,8 @@ class RatingData extends Data
             locale: SupportedLocale::fromString((string) ($data['locale'] ?? 'it')),
             image_url: $data['image_url'] ?? null,
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
+=======
+>>>>>>> 2df6fbc8 (first)
         );
     }
 }

@@ -5,6 +5,9 @@ declare(strict_types=1);
 namespace Modules\Rating\Filament\Resources\RatingResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2df6fbc8 (first)
 use Filament\Tables\Actions\DeleteAction;
 use Filament\Tables\Actions\DeleteBulkAction;
 use Filament\Tables\Actions\EditAction;
@@ -92,6 +95,7 @@ class ListRatings extends XotBaseListRecords
                 column: 'created_at',
                 direction: 'DESC',
             );
+<<<<<<< HEAD
 =======
 use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords;
@@ -142,5 +146,7 @@ class ListRatings extends ListRecords
             'recordsPerPage' => 25,
         ];
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
+=======
+>>>>>>> 2df6fbc8 (first)
     }
 }

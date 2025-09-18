@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2df6fbc8 (first)
     // 📄 Sezioni principali
     'pages' => 'Pagine',
     'widgets' => 'Widget',
@@ -118,6 +121,7 @@ return [
             'messages' => [
                 'success' => 'Elemento creato con successo',
                 'error' => 'Errore durante la creazione',
+<<<<<<< HEAD
 =======
     'pages' => 'Pagine',
     'widgets' => 'Widgets',
@@ -153,6 +157,8 @@ return [
                 'name' => 'Nome area',
                 'parent_name' => 'Nome area livello superiore',
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
+=======
+>>>>>>> 2df6fbc8 (first)
             ],
         ],
     ],

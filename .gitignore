@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ───────────────────────────────────────────────────────
 # Sistema operativo / File nascosti e metadata
 # ───────────────────────────────────────────────────────
@@ -385,6 +386,8 @@ public_html/vendor/
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
 =======
 >>>>>>> 59bc4fe7 (first)
+=======
+>>>>>>> 2df6fbc8 (first)
 *.jar
 *.log
 *.lock
@@ -404,6 +407,9 @@ error_log
 /.idea
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2df6fbc8 (first)
 *.stackdump
 *.cache
 *.log
@@ -412,6 +418,7 @@ package-lock.json
 
 node_modules
 .git-blame-ignore-revs
+<<<<<<< HEAD
 =======
 *.lock
 package-lock.json
@@ -590,12 +597,18 @@ vendor
 .git-blame-ignore-revs
 =======
 >>>>>>> 9cec72d6 (first)
+=======
+node_modules
+vendor
+.git-blame-ignore-revs
+>>>>>>> 2df6fbc8 (first)
 build/
 vendor/
 build/
 node_modules
 docs/cache/
 cache/
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -701,3 +714,6 @@ build
 node_modules/
 *:Zone.Identifier
 >>>>>>> 9cec72d6 (first)
+=======
+*:Zone.Identifier
+>>>>>>> 2df6fbc8 (first)

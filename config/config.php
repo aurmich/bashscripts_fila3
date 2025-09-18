@@ -10,6 +10,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'name' => 'Rating',
     'icon' => 'heroicon-o-star', // icon on dashboard
     'navigation_sort' => 1,
@@ -99,4 +100,9 @@ return [
     'icon' => 'heroicon-o-cog', // icon on dashboard
     'navigation_sort' => 1,
 >>>>>>> 9cec72d6 (first)
+=======
+    'name' => 'Rating',
+    'icon' => 'heroicon-o-star', // icon on dashboard
+    'navigation_sort' => 1,
+>>>>>>> 2df6fbc8 (first)
 ];

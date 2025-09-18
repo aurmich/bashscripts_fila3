@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2668,11 +2669,16 @@ Modulo dedicato alla gestione delle traduzioni
 # Module Setting
 Modulo dedicato alla gestione di alcune configurazioni
 >>>>>>> 9cec72d6 (first)
+=======
+# Module Rating
+Modulo dedicato alla gestione delle valutazioni
+>>>>>>> 2df6fbc8 (first)
 
 ## Aggiungere Modulo nella base del progetto
 Dentro la cartella laravel/Modules
 
 ```bash
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 git submodule add https://github.com/laraxot/module_rating_fila3.git Rating
@@ -2682,6 +2688,9 @@ git submodule add https://github.com/laraxot/module_lang_fila3.git Lang
 =======
 git submodule add https://github.com/laraxot/module_setting_fila3.git Setting
 >>>>>>> 9cec72d6 (first)
+=======
+git submodule add https://github.com/laraxot/module_rating_fila3.git Rating
+>>>>>>> 2df6fbc8 (first)
 ```
 
 ## Verificare che il modulo sia attivo
@@ -2692,6 +2701,7 @@ in caso abilitarlo
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 php artisan module:enable Rating
 =======
 php artisan module:enable Lang
@@ -2699,10 +2709,14 @@ php artisan module:enable Lang
 =======
 php artisan module:enable Setting
 >>>>>>> 9cec72d6 (first)
+=======
+php artisan module:enable Rating
+>>>>>>> 2df6fbc8 (first)
 ```
 
 ## Eseguire le migrazioni
 ```bash
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 php artisan module:migrate Rating
@@ -3053,3 +3067,7 @@ L'account potrà accedere al modulo assegnato.
 php artisan module:migrate Setting
 ```
 >>>>>>> 9cec72d6 (first)
+=======
+php artisan module:migrate Rating
+```
+>>>>>>> 2df6fbc8 (first)

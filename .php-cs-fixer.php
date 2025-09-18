@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 =======
@@ -29,6 +30,8 @@ declare(strict_types=1);
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> 9cec72d6 (first)
+=======
+>>>>>>> 2df6fbc8 (first)
 $finder = PhpCsFixer\Finder::create()
     ->notPath('bootstrap/cache')
     ->notPath('storage')
@@ -38,6 +41,7 @@ $finder = PhpCsFixer\Finder::create()
     ->notName('*.blade.php')
     ->ignoreDotFiles(true)
     ->ignoreVCS(true)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -61,6 +65,9 @@ $finder = PhpCsFixer\Finder::create()
 =======
 ;
 >>>>>>> 9cec72d6 (first)
+=======
+;
+>>>>>>> 2df6fbc8 (first)
 
 $config = new PhpCsFixer\Config();
 
@@ -68,6 +75,7 @@ $config
     ->setRules([
         '@Symfony' => true,
         'array_indentation' => true,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -96,10 +104,13 @@ $config
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> 9cec72d6 (first)
+=======
+>>>>>>> 2df6fbc8 (first)
         'function_typehint_space' => true,
         'declare_equal_normalize' => true,
         'declare_strict_types' => true,
         'combine_consecutive_unsets' => true,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -137,10 +148,14 @@ $config
 =======
         //'binary_operator_spaces' => ['align_double_arrow' => false],
 >>>>>>> 9cec72d6 (first)
+=======
+        //'binary_operator_spaces' => ['align_double_arrow' => false],
+>>>>>>> 2df6fbc8 (first)
         'array_syntax' => ['syntax' => 'short'],
         'linebreak_after_opening_tag' => true,
         'not_operator_with_successor_space' => true,
         'ordered_imports' => true,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -177,6 +192,9 @@ $config
 =======
         'phpdoc_order' => true,
 >>>>>>> 9cec72d6 (first)
+=======
+        'phpdoc_order' => true,
+>>>>>>> 2df6fbc8 (first)
         'php_unit_construct' => false,
         'braces' => [
             'position_after_functions_and_oop_constructs' => 'same',
@@ -185,6 +203,7 @@ $config
         'blank_line_after_namespace' => true,
         'class_definition' => true,
         'elseif' => true,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -204,10 +223,13 @@ $config
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
 =======
 >>>>>>> 9cec72d6 (first)
+=======
+>>>>>>> 2df6fbc8 (first)
     ])
     ->setFinder($finder)
 ;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -257,3 +279,6 @@ return $config;
 =======
 return $config;
 >>>>>>> 9cec72d6 (first)
+=======
+return $config;
+>>>>>>> 2df6fbc8 (first)

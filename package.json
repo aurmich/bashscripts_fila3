@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 0d55b583 (first)
@@ -82,6 +83,8 @@
 >>>>>>> bbec4378 (first)
 =======
 >>>>>>> c088001a (first)
+=======
+>>>>>>> 2df6fbc8 (first)
     "private": true,
     "scripts": {
         "development": "mix",
@@ -95,17 +98,24 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bbec4378 (first)
+=======
+>>>>>>> 2df6fbc8 (first)
         "@tailwindcss/typography": "^0.5.10",
         "autoprefixer": "^10.4.17",
         "axios": "^1.6.7",
         "cross-env": "^7.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "laravel-mix": "^5.0.1",
 =======
         "laravel-mix": "^6.0.49",
 >>>>>>> bbec4378 (first)
+=======
+        "laravel-mix": "^5.0.1",
+>>>>>>> 2df6fbc8 (first)
         "laravel-mix-merge-manifest": "^0.1.2",
         "laravel-vite-plugin": "^1.0.1",
         "lodash": "^4.17.21",
@@ -115,6 +125,7 @@
         "tippy.js": "^6.3.7",
         "vite": "^5.4.1"
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 164b8363 (Squashed 'laravel/Modules/Rating/' content from commit e5c84117)
@@ -171,4 +182,6 @@
     "vite": "^5.4.1"
   }
 >>>>>>> 9cec72d6 (first)
+=======
+>>>>>>> 2df6fbc8 (first)
 }
