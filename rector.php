@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
@@ -435,3 +436,24 @@ return static function (RectorConfig $rectorConfig): void {
         // AddVoidReturnTypeWhereNoReturnRector::class,
     ]);
 >>>>>>> 58e1cada (.)
+=======
+<?php
+
+declare(strict_types=1);
+
+use Rector\Config\RectorConfig;
+use Rector\TypeDeclaration\Rector\ClassMethod\AddVoidReturnTypeWhereNoReturnRector;
+
+return RectorConfig::configure()
+    ->withPaths([
+        __DIR__.'/',
+    ])
+    ->withSkip([
+        __DIR__.'/vendor',
+    ])
+    // uncomment to reach your current PHP version
+    ->withPhpSets()
+    ->withRules([
+        // AddVoidReturnTypeWhereNoReturnRector::class,
+    ]);
+>>>>>>> f2e91737 (.)

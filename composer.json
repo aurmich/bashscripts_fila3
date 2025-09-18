@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1852,3 +1853,22 @@
     }
 }
 >>>>>>> 58e1cada (.)
+=======
+{
+    "name": "laraxot/bashscripts_fila3",
+    "autoload": {
+        "psr-4": {
+            "Laraxot\\BashscriptsFila3\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "marco76tv",
+            "email": "marco.sottana@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "larastan/larastan": "^3.0"
+    }
+}
+>>>>>>> f2e91737 (.)

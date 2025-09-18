@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 #!/bin/bash
@@ -93,3 +94,19 @@ git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |
 =======
     
 >>>>>>> 58e1cada (.)
+=======
+#!/bin/sh
+set -e
+git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |
+    while read path_key path
+    do
+        url_key=$(echo $path_key | sed 's/\.path/.url/')
+        url=$(git config -f .gitmodules --get "$url_key")
+        echo $path
+        rm -rf $path
+        rm -rf .git/modules/$path
+        git rm --cached -r -f $path || echo $path
+        git submodule add -f $url $path 
+    done
+    
+>>>>>>> f2e91737 (.)
