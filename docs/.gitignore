@@ -10,6 +10,7 @@ npm-debug.log
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *.cache
 *.phar
 *.lock
@@ -26,3 +27,5 @@ package-lock.json
 >>>>>>> b7483fd0 (first)
 =======
 >>>>>>> e0005d7d (first)
+=======
+>>>>>>> 616a71c2 (first)

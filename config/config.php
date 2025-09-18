@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -188,4 +189,11 @@ return [
     'name' => 'Legge104',
     'icon' => 'fas-wheelchair-move',
 >>>>>>> 6907d18e (first)
+=======
+declare(strict_types=1);
+
+return [
+    'name' => 'Legge109',
+    'icon' => 'fas-wheelchair-move',
+>>>>>>> 616a71c2 (first)
 ];

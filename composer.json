@@ -20,6 +20,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "laraxot/bashscripts_fila3",
     "description": "Script di utilità per la gestione dei repository Git, Toolkit di automazione Git per progetti Laravel",
     "type": "library",
@@ -178,12 +179,19 @@
     "license": "MIT",
     "homepage": "https://github.com/laraxot/module_legge104_fila3.git",
 >>>>>>> 6907d18e (first)
+=======
+    "name": "laraxot/module_legge109_fila3",
+    "description": "",
+    "license": "MIT",
+    "homepage": "https://github.com/laraxot/module_legge109_fila3.git",
+>>>>>>> 616a71c2 (first)
     "authors": [
         {
             "name": "Marco Sottana",
             "email": "marco.sottana@gmail.com"
         }
     ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -452,12 +460,17 @@
     "require": {
 
 >>>>>>> 6907d18e (first)
+=======
+    "require": {
+
+>>>>>>> 616a71c2 (first)
     },
     "require-dev": {},
     "repositories": [
         {
             "type": "path",
             "url": "../Xot"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -486,6 +499,8 @@
 >>>>>>> e0005d7d (first)
 =======
 >>>>>>> 6907d18e (first)
+=======
+>>>>>>> 616a71c2 (first)
         },
         {
             "type": "path",
@@ -493,6 +508,7 @@
         },
         {
             "type": "path",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -716,11 +732,14 @@
 >>>>>>> e0005d7d (first)
 =======
 >>>>>>> 6907d18e (first)
+=======
+>>>>>>> 616a71c2 (first)
             "url": "../UI"
         }
     ],
     "autoload": {
         "psr-4": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -767,11 +786,17 @@
             "Modules\\Legge104\\Database\\Factories\\": "database/factories/",
             "Modules\\Legge104\\Database\\Seeders\\": "database/seeders/"
 >>>>>>> 6907d18e (first)
+=======
+            "Modules\\Legge109\\": "app/",
+            "Modules\\Legge109\\Database\\Factories\\": "database/factories/",
+            "Modules\\Legge109\\Database\\Seeders\\": "database/seeders/"
+>>>>>>> 616a71c2 (first)
         }
     },
     "scripts": {
         "post-autoload-dump": [],
         "post-update-cmd": [],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -824,10 +849,13 @@
 >>>>>>> e0005d7d (first)
 =======
 >>>>>>> 6907d18e (first)
+=======
+>>>>>>> 616a71c2 (first)
         "analyse": "vendor/bin/phpstan analyse",
         "test": "./vendor/bin/pest --no-coverage",
         "test-coverage": "vendor/bin/pest --coverage-html coverage",
         "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -866,10 +894,13 @@
 >>>>>>> e0005d7d (first)
 =======
 >>>>>>> 6907d18e (first)
+=======
+>>>>>>> 616a71c2 (first)
     },
     "config": {
         "sort-packages": true,
         "allow-plugins": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -907,10 +938,13 @@
 >>>>>>> e0005d7d (first)
 =======
 >>>>>>> 6907d18e (first)
+=======
+>>>>>>> 616a71c2 (first)
             "phpstan/extension-installer": true,
             "pestphp/pest-plugin": true
         }
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1050,10 +1084,18 @@
                 "Modules\\Legge104\\Providers\\Legge104ServiceProvider",
                 "Modules\\Legge104\\Providers\\Filament\\AdminPanelProvider"
 >>>>>>> 6907d18e (first)
+=======
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Legge109\\Providers\\Legge109ServiceProvider",
+                "Modules\\Legge109\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> 616a71c2 (first)
             ],
             "aliases": {}
         }
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1202,3 +1244,8 @@
     "prefer-stable": true
 }
 >>>>>>> 6907d18e (first)
+=======
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+>>>>>>> 616a71c2 (first)

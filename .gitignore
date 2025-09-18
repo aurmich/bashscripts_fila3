@@ -21,6 +21,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ───────────────────────────────────────────────────────
 # Sistema operativo / File nascosti e metadata
 # ───────────────────────────────────────────────────────
@@ -859,10 +860,13 @@ cache/
 >>>>>>> e0005d7d (first)
 =======
 >>>>>>> 6907d18e (first)
+=======
+>>>>>>> 616a71c2 (first)
 /vendor
 *.lock
 /build
 *:Zone.Identifier
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -891,3 +895,5 @@ cache/
 >>>>>>> e0005d7d (first)
 =======
 >>>>>>> 6907d18e (first)
+=======
+>>>>>>> 616a71c2 (first)

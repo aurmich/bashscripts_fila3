@@ -19,6 +19,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 /**
@@ -127,10 +128,18 @@ namespace Modules\Legge104\Providers;
 
 // --- bases ---
 >>>>>>> 6907d18e (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Legge109\Providers;
+
+// --- bases ---
+>>>>>>> 616a71c2 (first)
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -269,10 +278,17 @@ class RouteServiceProvider extends ServiceProvider
 
     public string $name = 'Legge104';
 >>>>>>> 6907d18e (first)
+=======
+    /**
+     * The module namespace to assume when generating URLs to actions.
+     */
+    protected string $moduleNamespace = 'Modules\Legge109\Http\Controllers';
+>>>>>>> 616a71c2 (first)
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -545,4 +561,8 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 >>>>>>> e0005d7d (first)
 =======
 >>>>>>> 6907d18e (first)
+=======
+
+    public string $name = 'Legge109';
+>>>>>>> 616a71c2 (first)
 }

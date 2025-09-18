@@ -10,6 +10,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <html lang="en">
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -54,10 +55,14 @@
 =======
 <html lang="en">
 >>>>>>> 6907d18e (first)
+=======
+<html lang="en">
+>>>>>>> 616a71c2 (first)
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -167,11 +172,18 @@
        {{-- Laravel Mix - CSS File --}}
        {{-- <link rel="stylesheet" href="{{ mix('css/legge104.css') }}"> --}}
 >>>>>>> 6907d18e (first)
+=======
+        <title>Module Legge109</title>
+
+       {{-- Laravel Mix - CSS File --}}
+       {{-- <link rel="stylesheet" href="{{ mix('css/legge109.css') }}"> --}}
+>>>>>>> 616a71c2 (first)
 
     </head>
     <body>
         @yield('content')
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -324,3 +336,9 @@
     </body>
 </html>
 >>>>>>> 6907d18e (first)
+=======
+        {{-- Laravel Mix - JS File --}}
+        {{-- <script src="{{ mix('js/legge109.js') }}"></script> --}}
+    </body>
+</html>
+>>>>>>> 616a71c2 (first)

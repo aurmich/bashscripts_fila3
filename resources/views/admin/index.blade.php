@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @section('page_heading','Bagde')
 =======
 @section('page_heading','cert fisc')
@@ -20,10 +21,14 @@
 =======
 @section('page_heading','Europa')
 >>>>>>> 6907d18e (first)
+=======
+@section('page_heading','Europa')
+>>>>>>> 616a71c2 (first)
 @section('content')
 <x-filament::badge> flash-message </x-filament::badge>
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -45,5 +50,8 @@
 =======
 <h1>Benvenuto nel programma EUROPA</h1>
 >>>>>>> 6907d18e (first)
+=======
+<h1>Benvenuto nel programma EUROPA</h1>
+>>>>>>> 616a71c2 (first)
 
 @endsection

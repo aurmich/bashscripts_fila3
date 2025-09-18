@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Modulo UI
 
 ## Panoramica
@@ -75,6 +76,8 @@ Il modulo UI fornisce componenti e layout standardizzati per l'interfaccia utent
 >>>>>>> b7483fd0 (first)
 =======
 >>>>>>> e0005d7d (first)
+=======
+>>>>>>> 616a71c2 (first)
 # Jigsaw Docs Starter Template
 
 This is a starter template for creating a beautiful, customizable documentation site for your project with minimal effort. You’ll only have to change a few settings and you’re ready to go.
@@ -177,6 +180,7 @@ npm run dev
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 9cec72d6 (first)
 =======
 >>>>>>> 7e417e87 (first)
@@ -192,3 +196,5 @@ npm run dev
 >>>>>>> b7483fd0 (first)
 =======
 >>>>>>> e0005d7d (first)
+=======
+>>>>>>> 616a71c2 (first)

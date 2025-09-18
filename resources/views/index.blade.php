@@ -17,6 +17,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('rating::layouts.master')
 =======
 @extends('xot::layouts.app')
@@ -75,10 +76,14 @@
 =======
 @extends('legge104::layouts.master')
 >>>>>>> 6907d18e (first)
+=======
+@extends('legge109::layouts.master')
+>>>>>>> 616a71c2 (first)
 
 @section('content')
     <h1>Hello World</h1>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -206,3 +211,9 @@
     </p>
 @stop
 >>>>>>> 6907d18e (first)
+=======
+    <p>
+        This view is loaded from module: {!! config('legge109.name') !!}
+    </p>
+@stop
+>>>>>>> 616a71c2 (first)
