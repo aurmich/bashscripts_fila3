@@ -1,0 +1,19 @@
+<?php
+
+namespace Modules\Performance\Filament\Resources\IndividualePoPesiResource\Pages;
+
+use Modules\Performance\Filament\Resources\IndividualePoPesiResource;
+use Filament\Actions;
+use Filament\Resources\Pages\EditRecord;
+
+class EditIndividualePoPesi extends EditRecord
+{
+    protected static string $resource = IndividualePoPesiResource::class;
+
+    protected function getHeaderActions(): array
+    {
+        return [
+            Actions\DeleteAction::make(),
+        ];
+    }
+}

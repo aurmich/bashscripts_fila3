@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Progressioni\Models\Policies;
 
 use Illuminate\Database\Eloquent\Model;
@@ -15,3 +16,10 @@ class CoeffPolicy extends XotBasePolicy
         return true;
     }
 }
+=======
+namespace Modules\Performance\Models\Policies;
+
+use Modules\Xot\Models\Policies\XotBasePolicy;
+
+class CoeffPolicy extends XotBasePolicy {}
+>>>>>>> 961ad402 (first)

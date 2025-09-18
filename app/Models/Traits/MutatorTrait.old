@@ -1,0 +1,541 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Modules\Performance\Models\Traits;
+
+use Exception;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Modules\Performance\Services\CriteriValutazioneService;
+use Modules\Sigma\Models\Asz00k1;
+use Modules\Xot\Services\ModelService;
+use Webmozart\Assert\Assert;
+
+trait MutatorTrait
+{
+    public function getGgRuoloAttribute(?int $value): ?int
+    {
+        if (null !== $value) {
+            return $value;
+        }
+
+        // $criteri_option = $this->criteriOptions->pluck('value', 'name')->all();
+        $criteri_option = $this->criteriOptionsYear($this->anno)->pluck('value', 'name')->all();
+        $criteri_option['date_max'] = $this->anno * 10000 + 1231;
+        $criteri_option['date_min'] = $this->anno * 10000 + 101;
+        extract($criteri_option);
+        if (! isset($lista_posiz_ruolo)) {
+            return null;
+            // throw new Exception('manca fra i criteri la $lista_posiz_ruolo');
+        }
+
+        if (! isset($date_min)) {
+            throw new \Exception('manca fra i criteri la $date_min');
+        }
+
+        if (! isset($date_max)) {
+            throw new \Exception('manca fra i criteri la $date_max');
+        }
+
+        Assert::integer($value = $this
+            ->qua00f()
+            ->ofPosiz($lista_posiz_ruolo)
+            ->withDays($date_min, $date_max)
+            ->get()
+            ->sum('days'));
+        $value = intval($value);
+        $this->gg_ruolo = $value;
+        $this->save();
+
+        return $value;
+    }
+
+    public function getGgTempoDeterminatoAttribute(?int $value): ?int
+    {
+        if (null !== $value) {
+            return $value;
+        }
+
+        $criteri_option = $this->criteriOptions->pluck('value', 'name')->all();
+        $criteri_option['date_max'] = $this->anno * 10000 + 1231;
+        $criteri_option['date_min'] = $this->anno * 10000 + 101;
+        extract($criteri_option);
+        if (! isset($lista_posiz_tempo_determinato)) {
+            // throw new Exception('manca fra i criteri la $lista_posiz_tempo_determinato');
+            return null;
+        }
+
+        if (! isset($date_min)) {
+            throw new \Exception('manca fra i criteri la $date_min');
+        }
+
+        if (! isset($date_max)) {
+            throw new \Exception('manca fra i criteri la $date_max');
+        }
+
+        Assert::integer($value = $this
+             ->qua00f()
+             ->ofPosiz($lista_posiz_tempo_determinato)
+             ->withDays($date_min, $date_max)
+             ->get()
+             ->sum('days'));
+        $this->gg_tempo_determinato = $value;
+        $this->save();
+
+        return $value;
+    }
+
+    public function getGgPresenzaAnnoAttribute(?int $value): int
+    {
+        if (null !== $value) {
+            return $value;
+        }
+
+        $date_max = $this->anno * 10000 + 1231;
+        $date_min = $this->anno * 10000 + 101;
+        $value = $this
+            ->qua00f()
+            // ->ofPosiz($lista_posiz_ruolo)
+            ->withDays($date_min, $date_max)
+            ->get()
+            ->sum('days');
+        $this->gg_presenza_anno = $value;
+        $this->save();
+
+        return $value;
+    }
+
+    /**
+     * @return HasMany<Asz00k1>
+     */
+    public function getAssenzaAnno()
+    {
+        $lista_tipo_codice_assenze = $this->codiciAssenze->map(static fn ($item): string => $item->tipo.'-'.$item->codice)->implode(',');
+        $date_min = $this->anno * 10000 + 101;
+        $date_max = $this->anno * 10000 + 1231;
+
+        return $this->asz00k1()
+            ->OfListaTipoCodice($lista_tipo_codice_assenze)
+            ->withDays($date_min, $date_max);
+    }
+
+    /**
+     * @return HasMany<Asz00k1>
+     */
+    public function getAssenzaDalal()
+    {
+        $lista_tipo_codice_assenze = $this->codiciAssenze->map(static fn ($item): string => $item->tipo.'-'.$item->codice)->implode(',');
+        // 111    Access to an undefined property Modules\Performance\Models\Performance::$dal.
+        // 112    Access to an undefined property Modules\Performance\Models\Performance::$al.
+
+        $date_min = $this->dal;
+        $date_max = $this->al;
+
+        return $this->asz00k1()
+            ->OfListaTipoCodice($lista_tipo_codice_assenze)
+            ->withDays($date_min, $date_max);
+    }
+
+    public function getGgAssenzaAnnoAttribute(?int $value): int
+    {
+        if (null !== $value && ! request()->input('refresh', false)) {
+            return $value;
+        }
+
+        // *
+        /*
+        $lista_tipo_codice_assenze = $this->codiciAssenze->map(function ($item) {
+        return $item->tipo . '-' . $item->codice;
+        })->implode(',');
+         */
+        $lista_tipo_codice_assenze = $this->listaTipoCodiceAssenze();
+        /*
+
+        $date_max = $this->anno * 10000 + 1231;
+        $date_min = $this->anno * 10000 + 101;
+        $value    = $this->asz00k1()
+        ->OfListaTipoCodice($lista_tipo_codice_assenze)
+        ->withDays($date_min, $date_max)
+        ->where('aszumi', 'G')
+        ->get()
+        ->sum('days')
+        ;
+         */
+        $value = $this->asz00k1()
+            ->OfListaTipoCodice($lista_tipo_codice_assenze)
+            ->selectRaw('COALESCE(sum(aszdur),0) as aszdur_sum')
+            ->ofYear($this->anno)
+            ->where('aszumi', 'G')
+            ->first()
+        // ->sum('aszdur')
+        ;
+        $value = $value->aszdur_sum;
+
+        // */
+        // dddx($value);
+        /*
+        $value=$this->getAssenzaAnno()
+        ->where('aszumi','G')
+        ->get()
+        ->sum('days')
+        ;
+         */
+        $this->gg_assenza_anno = $value;
+        $this->save();
+
+        return (int) $value;
+    }
+
+    public function getHhAssenzaAnnoAttribute(?float $value): ?float
+    {
+        if (null !== $value && ! request()->input('refresh', false)) {
+            return $value;
+        }
+
+        $lista_tipo_codice_assenze = $this->listaTipoCodiceAssenze();
+
+        $aszdur = "(hour(replace(aszdur,'.',':')))+((minute(replace(aszdur,'.',':')))/60)";
+        /*
+        $date_min = $this->anno * 10000 + 101;
+        $date_max = $this->anno * 10000 + 1231;
+
+        $value = $this->asz00k1()
+        ->OfListaTipoCodice($lista_tipo_codice_assenze)
+        ->withDays($date_min, $date_max)
+        ->selectRaw("{$aszdur} as hours")
+        ->where('aszumi', 'O')
+        ->having('days', '>', 0)
+        ->get()
+        ->sum('hours')
+        ;
+         */
+        $value = $this->asz00k1()
+            ->OfListaTipoCodice($lista_tipo_codice_assenze)
+            ->selectRaw('sum('.$aszdur.') as aszdur_sum')
+            ->ofYear($this->anno)
+            ->where('aszumi', 'O')
+            ->first()
+        // ->sum('aszdur')
+        ;
+        $value = $value->aszdur_sum;
+        if ('' === $value) {
+            $value = 0;
+        }
+
+        if (null === $value) {
+            $value = 0;
+        }
+
+        // */
+        // dddx($value);
+        /*
+        $value=$this->getAssenzaAnno()
+        ->where('aszumi','G')
+        ->get()
+        ->sum('days')
+        ;
+         */
+        $this->hh_assenza_anno = $value;
+        $this->save();
+
+        return (float) $value;
+    }
+
+    public function getHhAssenzaDalalAttribute(?float $value): ?float
+    {
+        
+        if (null !== $value ) {
+            return $value;
+        }
+        dddx('a');
+        // */
+        /*
+        $lista_tipo_codice_assenze = $this->codiciAssenze->map(function ($item) {
+        return $item->tipo . '-' . $item->codice;
+        })->implode(',');
+         */
+        $lista_tipo_codice_assenze = $this->listaTipoCodiceAssenze();
+
+        $aszdur = "(hour(replace(aszdur,'.',':')))+((minute(replace(aszdur,'.',':')))/60)";
+
+        $date_min = $this->dal;
+        $date_max = $this->al;
+
+        if ('' === $date_min) {
+            return 0;
+        }
+
+        /*
+        $value = $this->asz00k1()
+        ->OfListaTipoCodice($lista_tipo_codice_assenze)
+
+        ->withDays($date_min, $date_max)
+        ->selectRaw("{$aszdur} as hours")
+        ->where('aszumi', 'O')
+        ->having('days', '>', 0)
+        ->get()
+        ->sum('hours')
+        ;
+         */
+
+        $value = $this->asz00k1()
+            ->OfListaTipoCodice($lista_tipo_codice_assenze)
+            ->selectRaw('sum('.$aszdur.') as aszdur_sum')
+            ->OfRangeDate($date_min, $date_max)
+        // ->withDays($date_min, $date_max)
+            ->where('aszumi', 'O')
+            ->first()
+        // ->sum('aszdur')
+        ;
+        $value = $value->aszdur_sum;
+        if ('' === $value) {
+            $value = 0;
+        }
+
+        if (null === $value) {
+            $value = 0;
+        }
+
+        // */
+        // dddx($value);
+        /*
+        $value=$this->getAssenzaAnno()
+        ->where('aszumi','G')
+        ->get()
+        ->sum('days')
+        ;
+         */
+        $this->hh_assenza_dalal = $value;
+        $this->save();
+
+        return (float) $value;
+    }
+
+    public function getGgAssenzaDalalAttribute(?int $value): ?int
+    {
+        if (null !== $value) {
+            return $value;
+        }
+
+        
+        $lista_tipo_codice_assenze = $this->listaTipoCodiceAssenze();
+
+        $date_min = $this->dal;
+        $date_max = $this->al;
+
+        if ('' === $date_min) {
+            return 0;
+        }
+
+        $value = $this->asz00k1()
+            ->OfListaTipoCodice($lista_tipo_codice_assenze)
+            ->selectRaw('COALESCE(sum(aszdur),0) as aszdur_sum')
+            ->OfRangeDate($date_min, $date_max)
+        // ->withDays($date_min, $date_max)
+            ->where('aszumi', 'G')
+            ->first()
+        // ->sum('aszdur')
+        ;
+        $value = $value->aszdur_sum;
+
+        $this->gg_assenza_dalal = $value;
+        $this->save();
+
+        return (int) $value;
+    }
+
+    /*
+    public function getPercParttimepondAttribute(?float $value): ?float {
+
+        if (null !== $value && ! request()->input('refresh', false)) {
+            return $value;
+        }
+        $value = $this->perc_parttime * (1 - ($this->gg_parttimevert / $this->gg_presenza_anno));
+        //$value = number_format($value, 3);
+        $this->perc_parttimepond = $value;
+        $this->save();
+
+        return (float) $value;
+    }
+    */
+    /*
+    public function getHaDirittoAttribute(?int $value): int
+    {
+        $refresh = (bool) request()->input('refresh', false);
+
+        if (null !== $value && ! $refresh) {
+            return $value;
+        }
+
+        if (isset($this->attributes['ha_diritto']) && ! $refresh) {
+            return (int) $this->attributes['ha_diritto'];
+        }
+
+        [$ha_diritto,$motivo] = $this->getHaDirittoEMotivo();
+        $this->ha_diritto = (int) $ha_diritto;
+        $this->motivo = $motivo;
+        $this->save();
+
+        return (int) $ha_diritto;
+    }
+    */
+
+    public function getPesoRisultatiOttenutiAttribute(?float $value): ?float
+    {
+        return $this->getPesoFunc(__FUNCTION__, $value);
+    }
+
+    public function getPesoQualitaPrestazioneAttribute(?float $value): ?float
+    {
+        return $this->getPesoFunc(__FUNCTION__, $value);
+    }
+
+    public function getPesoArricchimentoProfessionaleAttribute(?float $value): ?float
+    {
+        return $this->getPesoFunc(__FUNCTION__, $value);
+    }
+
+    public function getPesoImpegnoAttribute(?float $value): ?float
+    {
+        return $this->getPesoFunc(__FUNCTION__, $value);
+    }
+
+    public function getPesoEsperienzaAcquisitaAttribute(?float $value): ?float
+    {
+        return $this->getPesoFunc(__FUNCTION__, $value);
+    }
+
+    // -----------------
+    /*
+    public function setRisultatiOttenutiAttribute(?float $value): void
+    {
+        $this->setValutazioneFunc(__FUNCTION__, $value);
+    }
+
+    public function setQualitaPrestazioneAttribute(?float $value): void
+    {
+        $this->setValutazioneFunc(__FUNCTION__, $value);
+    }
+
+    public function setArricchimentoProfessionaleAttribute(?float $value): void
+    {
+        $this->setValutazioneFunc(__FUNCTION__, $value);
+    }
+
+    public function setImpegnoAttribute(?float $value): void
+    {
+        $this->setValutazioneFunc(__FUNCTION__, $value);
+    }
+
+    public function setEsperienzaAcquisitaAttribute(?float $value): void
+    {
+        $this->setValutazioneFunc(__FUNCTION__, $value);
+    }
+    */
+
+    // -------------
+
+    public function getTotalePunteggioAttribute(?float $value): ?float
+    {
+        // dddx($this->attributes);
+
+        if (0 === $this->attributes['ha_diritto'] && $this->attributes['posfun'] < 100 && 203 !== $this->attributes['disci1']) {
+            $value = 0;
+            $this->totale_punteggio = $value;
+            $this->save();
+            // dddx('a');
+
+            return $value;
+        }
+
+        // dddx('b');
+        $value = 0;
+
+        foreach ($this->criteriValutazione as $v) {
+            $value += $this->{$v->nome} * $this->{'peso_'.$v->nome} / 4;
+        }
+
+        // $value = number_format($value, 2);
+        // *
+        if (2030 === $this->anno) {
+            dddx(
+                [
+                    'msg' => 'preso',
+                    'anno' => $this->anno,
+                    'post_type' => $this->post_type,
+                    'criteri_valutazione_get' => $this->criteriValutazione()->get(),
+                    'criteri_valutazione' => $this->criteriValutazione,
+                    // 'criteri_valutazione_service' => CriteriValutazioneService::getFieldsYearPostType((int) $this->anno, $this->post_type),
+                    'value' => $value,
+                ]
+            );
+        }
+
+        // */
+        // dddx($value);
+        /*
+        dddx([
+            'criteri_valutazione' => $this->criteriValutazione,
+            'value' => $value,
+            'post_type' => $this->post_type,
+        ]);
+        */
+
+        if (0.0 === $value) {
+            $tot = 0;
+            $gg = 0;
+
+            foreach ($this->otherWinnerRows as $otherWinnerRow) {
+                // $tot += $v->totale_punteggio * $v->gg_presenza_dalal;
+                // $gg += $v->gg_presenza_dalal;
+                $tot += $otherWinnerRow->attributes['totale_punteggio'] * $otherWinnerRow->attributes['gg_presenza_dalal'];
+                $gg += $otherWinnerRow->attributes['gg_presenza_dalal'];
+            }
+
+            if (0 !== $gg) {
+                $value = $tot / $gg;
+            }
+        }
+
+        $this->totale_punteggio = $value;
+
+        /*
+        if($value!=0){
+            echo '<table>';
+            foreach($this->criteriValutazione as $v){
+                echo '<tr><td>'.$v->nome.'</td><td>'.$this->{$v->nome}.'</td><td>'.$this->{'peso_'.$v->nome}.'</td></tr>';
+            }
+            echo '</table>';
+            dd($this->criteriValutazione);
+        }
+        */
+        $this->save();
+
+        return $value;
+    }
+
+    public function getGgAnnoAttribute(?float $value): float  // giorni effettiva prensenza per escludere i sempre assenti
+    {if (null !== $value && ! request()->input('refresh', false)) {
+        return $value;
+    }
+
+        $value = $this->gg_presenza_anno - $this->gg_assenza_anno;
+        $this->gg_anno = $value;
+        try {
+            $this->save();
+        } catch (\Exception) {
+            /*
+            $fieldname = 'gg_anno';
+            if (! \Schema::connection($this->getConnectionName())->hasColumn($this->getTable(), $fieldname)) {
+                \Schema::connection($this->getConnectionName())->table($this->getTable(), function ($table) use ($fieldname) {
+                    $table->integer($fieldname);
+                });
+            }
+            */
+            // ModelService::make()->setModel($this)->addField('gg_anno', 'integer');
+            throw new \Exception('['.__LINE__.']['.__FILE__.']');
+        }
+
+        return $value;
+    }
+}

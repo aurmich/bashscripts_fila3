@@ -30,6 +30,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ───────────────────────────────────────────────────────
 # Sistema operativo / File nascosti e metadata
 # ───────────────────────────────────────────────────────
@@ -932,11 +933,14 @@ cache/
 =======
 >>>>>>> edbb3aab (first)
 =======
+=======
+>>>>>>> 961ad402 (first)
 /vendor
 *.lock
 /build
 .git-blame-ignore-revs
 *:Zone.Identifier
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
 =======
 >>>>>>> fec698af (first)
@@ -949,3 +953,5 @@ cache/
 >>>>>>> f862c51f (first)
 =======
 >>>>>>> 9997d18c (first)
+=======
+>>>>>>> 961ad402 (first)

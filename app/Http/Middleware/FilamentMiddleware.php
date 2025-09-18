@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\IndennitaCondizioniLavoro\Http\Middleware;
 =======
 namespace Modules\IndennitaResponsabilita\Http\Middleware;
@@ -17,6 +18,9 @@ namespace Modules\Progressioni\Http\Middleware;
 =======
 namespace Modules\Sigma\Http\Middleware;
 >>>>>>> f862c51f (first)
+=======
+namespace Modules\Performance\Http\Middleware;
+>>>>>>> 961ad402 (first)
 
 use Exception;
 use Filament\Models\Contracts\FilamentUser;
@@ -26,6 +30,7 @@ use Str;
 
 class FilamentMiddleware extends Middleware
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -43,6 +48,9 @@ class FilamentMiddleware extends Middleware
 =======
     public static string $module = 'Sigma';
 >>>>>>> f862c51f (first)
+=======
+    public static string $module = 'Performance';
+>>>>>>> 961ad402 (first)
 
     public static string $context = 'filament';
 

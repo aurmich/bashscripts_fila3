@@ -24,6 +24,7 @@ providers:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Modules\Rating\Providers\RatingServiceProvider
 =======
   - Modules\Xot\Providers\XotServiceProvider
@@ -108,3 +109,6 @@ providers:
 =======
   - Modules\User\Providers\UserServiceProvider
 >>>>>>> 9997d18c (first)
+=======
+  - Modules\User\Providers\UserServiceProvider
+>>>>>>> 961ad402 (first)

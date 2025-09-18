@@ -26,6 +26,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('rating::layouts.master')
 =======
 @extends('xot::layouts.app')
@@ -111,10 +112,14 @@
 =======
 @extends('sindacati::layouts.master')
 >>>>>>> 9997d18c (first)
+=======
+@extends('performance::layouts.master')
+>>>>>>> 961ad402 (first)
 
 @section('content')
     <h1>Hello World</h1>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -305,3 +310,9 @@
     </p>
 @stop
 >>>>>>> 9997d18c (first)
+=======
+    <p>
+        This view is loaded from module: {!! config('performance.name') !!}
+    </p>
+@stop
+>>>>>>> 961ad402 (first)

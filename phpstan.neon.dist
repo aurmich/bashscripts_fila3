@@ -25,6 +25,7 @@ includes:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 
@@ -118,6 +119,8 @@ parameters:
 >>>>>>> f862c51f (first)
 =======
 >>>>>>> 9997d18c (first)
+=======
+>>>>>>> 961ad402 (first)
 
 parameters:
 
@@ -125,6 +128,7 @@ parameters:
 
     paths:
         - .
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -178,10 +182,13 @@ parameters:
 >>>>>>> f862c51f (first)
 =======
 >>>>>>> 9997d18c (first)
+=======
+>>>>>>> 961ad402 (first)
 
     ignoreErrors:
     #    - '#Unsafe usage of new static#'
         - '#PHPDoc tag @mixin contains unknown class #'
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -270,11 +277,15 @@ parameters:
 =======
 
 >>>>>>> 9997d18c (first)
+=======
+
+>>>>>>> 961ad402 (first)
     excludePaths:
         - ./build/*
         - ./vendor/*
         - ./*/vendor/*
         - ./docs/*
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -352,12 +363,15 @@ parameters:
 >>>>>>> f862c51f (first)
 =======
 >>>>>>> 9997d18c (first)
+=======
+>>>>>>> 961ad402 (first)
         - ./Tests/*
         - ./_ide_helper.php
 
     bootstrapFiles:
     #    - ./Services/vendor/autoload.php
     #    - ./phpstan_constants.php
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -411,6 +425,8 @@ parameters:
 >>>>>>> f862c51f (first)
 =======
 >>>>>>> 9997d18c (first)
+=======
+>>>>>>> 961ad402 (first)
 
     scanFiles:
     #    - ./Helpers/Helper.php
@@ -437,6 +453,7 @@ parameters:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     tmpDir: build/phpstan
 =======
     tmpDir: ./build/phpstan
@@ -495,6 +512,9 @@ parameters:
 =======
     tmpDir: ./build/phpstan
 >>>>>>> 9997d18c (first)
+=======
+    tmpDir: ./build/phpstan
+>>>>>>> 961ad402 (first)
     checkUnusedViews: false
     checkMissingIterableValueType: false
     checkGenericClassInNonGenericObjectType: false
@@ -502,6 +522,7 @@ parameters:
     reportUnmatchedIgnoredErrors: false
     checkOctaneCompatibility: false
     checkModelProperties: false
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -608,3 +629,6 @@ parameters:
 =======
 
 >>>>>>> 9997d18c (first)
+=======
+
+>>>>>>> 961ad402 (first)

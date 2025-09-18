@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 includes:
     - ./phpstan-baseline.neon
     - ./../../vendor/larastan/larastan/extension.neon
@@ -56,3 +57,20 @@ parameters:
     checkOctaneCompatibility: false
     checkModelProperties: false
 
+=======
+parameters:
+    level: 4
+    paths:
+        - app
+    excludePaths:
+        - app/Console/*
+        - app/Exceptions/*
+        - app/Http/Middleware/*
+        - app/Http/Requests/*
+        - app/Providers/*
+    ignoreErrors:
+        - '#Call to static method make\(\) on an unknown class#'
+        - '#PHPDoc type array<int, string> of property .* \$fillable is not covariant#'
+    bootstrapFiles:
+        - ../../vendor/autoload.php 
+>>>>>>> 961ad402 (first)

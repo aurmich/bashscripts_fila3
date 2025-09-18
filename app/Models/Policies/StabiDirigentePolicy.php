@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\IndennitaCondizioniLavoro\Models\Policies;
 
 use Illuminate\Auth\Access\Response;
@@ -141,3 +142,10 @@ class StabiDirigentePolicy extends XotBasePolicy
     }
 >>>>>>> bcab6efe (first)
 }
+=======
+namespace Modules\Performance\Models\Policies;
+
+use Modules\Xot\Models\Policies\XotBasePolicy;
+
+class StabiDirigentePolicy extends XotBasePolicy {}
+>>>>>>> 961ad402 (first)

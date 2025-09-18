@@ -13,6 +13,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -260,4 +261,14 @@ return [
     'name' => 'Sindacati',
     'icon' => 'fas-fist-raised',
 >>>>>>> 9997d18c (first)
+=======
+declare(strict_types=1);
+
+return [
+    'name' => 'Performance',
+    'icon' => 'heroicon-o-presentation-chart-line',
+    'providers' => [
+        \Modules\Performance\Providers\Html2PdfServiceProvider::class,
+    ],
+>>>>>>> 961ad402 (first)
 ];

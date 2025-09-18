@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -58,6 +59,9 @@ namespace Modules\IndennitaResponsabilita\Providers;
 =======
 namespace Modules\Progressioni\Providers;
 >>>>>>> bcab6efe (first)
+=======
+namespace Modules\Performance\Providers;
+>>>>>>> 961ad402 (first)
 
 use Blade;
 use Filament\Facades\Filament;
@@ -67,6 +71,7 @@ use Savannabits\FilamentModules\ContextServiceProvider;
 class FilamentServiceProvider extends ContextServiceProvider
 {
     public $app;
+<<<<<<< HEAD
 <<<<<<< HEAD
     public static string $name = 'indennitaresponsabilita-filament';
     
@@ -79,6 +84,15 @@ class FilamentServiceProvider extends ContextServiceProvider
 
     public function packageRegistered(): void
     {
+=======
+    public static string $name = 'performance-filament';
+    
+    public static string $module = 'Performance';
+
+    public function packageRegistered(): void
+    {
+        //dddx('e');// 1
+>>>>>>> 961ad402 (first)
         $this->app->booting(function (): void {
             $this->registerConfigs();
         });
@@ -86,15 +100,19 @@ class FilamentServiceProvider extends ContextServiceProvider
 
     public function registerConfigs(): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> e0005d7d (first)
 =======
 >>>>>>> bcab6efe (first)
+=======
+>>>>>>> 961ad402 (first)
         $this->mergeConfigFrom(
             app('modules')->findOrFail(static::$module)->getExtraPath( 'Config/'.static::$name.'.php'),
             static::$name
         );
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function boot()
@@ -117,10 +135,13 @@ class FilamentServiceProvider extends XotBaseContextServiceProvider {
 =======
 =======
 >>>>>>> bcab6efe (first)
+=======
+>>>>>>> 961ad402 (first)
     public function boot(): void
     {
         Filament::serving(static function () : void {
             Filament::forContext('filament', static function () : void {
+<<<<<<< HEAD
                 Filament::registerNavigationItems([
 <<<<<<< HEAD
                     NavigationItem::make(static::$module)->label(static::$module.' ')
@@ -144,4 +165,19 @@ class FilamentServiceProvider extends XotBaseContextServiceProvider {
 >>>>>>> e0005d7d (first)
 =======
 >>>>>>> bcab6efe (first)
+=======
+                $items=[];
+                $items[]=NavigationItem::make(static::$module)
+                        ->label(static::$module.' ')
+                        ->url(route(static::$name.'.pages.dashboard'))
+                        ->icon('heroicon-o-arrow-trending-up')
+                        ->group('Modules');
+                Filament::registerNavigationItems($items);
+            });
+            Filament::forContext(static::$name, static function () : void {
+                Filament::registerRenderHook('sidebar.start',static fn(): string => Blade::render('<div class="p-2 px-6 bg-primary-100 font-black w-full">'.static::$module.' </div>'));
+            });
+        });
+    }
+>>>>>>> 961ad402 (first)
 }

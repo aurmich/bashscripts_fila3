@@ -21,6 +21,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Rating\Models;
 
 use Illuminate\Database\Eloquent\Model;
@@ -1006,4 +1007,29 @@ abstract class BaseModel extends Model
     // this will use the specified database connection
     public $timestamps = false;
 >>>>>>> f862c51f (first)
+=======
+namespace Modules\Performance\Models;
+
+use Illuminate\Database\Eloquent\Model;
+// ---------- traits
+use Modules\Xot\Traits\Updater;
+
+abstract class BaseModel extends Model
+{
+    use Updater;
+
+    protected $connection = 'performance';
+
+    /** @return array<string, string> */
+    public function casts(): array
+    {
+        return [
+            // 'created_at' => 'datetime',
+            // 'updated_at' => 'datetime',
+        ];
+    }
+
+    /** @var bool */
+    public $timestamps = true;
+>>>>>>> 961ad402 (first)
 }

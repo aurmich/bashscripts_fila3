@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -33,10 +34,20 @@ use Modules\Progressioni\Models\StabiDirigente;
 use Modules\Ptv\Filament\Resources\StabiDirigenteResource\Pages\ListStabiDirigentes as PtvListStabiDirigentes;
 use Modules\Xot\Actions\Filament\Actions\CopyFromLastYearButton;
 >>>>>>> bcab6efe (first)
+=======
+namespace Modules\Performance\Filament\Resources\StabiDirigenteResource\Pages;
+
+use Filament\Actions;
+use Filament\Tables\Columns\TextColumn;
+use Modules\Performance\Filament\Resources\StabiDirigenteResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+use Modules\Ptv\Filament\Resources\StabiDirigenteResource\Pages\ListStabiDirigentes as PtvListStabiDirigentes;
+>>>>>>> 961ad402 (first)
 
 class ListStabiDirigentes extends PtvListStabiDirigentes
 {
     protected static string $resource = StabiDirigenteResource::class;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -210,4 +221,8 @@ class ListStabiDirigentes extends PtvListStabiDirigentes
         ];
     }
 >>>>>>> bcab6efe (first)
+=======
+
+   
+>>>>>>> 961ad402 (first)
 }

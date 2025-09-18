@@ -1,0 +1,1 @@
+@include('performance::admin.individuale.rowpdf_'.$anno,$row)

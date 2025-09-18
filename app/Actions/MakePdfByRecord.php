@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\IndennitaResponsabilita\Actions;
 
 use Modules\IndennitaResponsabilita\Models\IndennitaResponsabilita;
@@ -13,6 +14,13 @@ namespace Modules\Progressioni\Actions;
 use Modules\Progressioni\Models\Progressioni;
 use Modules\Progressioni\Models\Schede as Scheda;
 >>>>>>> bcab6efe (first)
+=======
+namespace Modules\Performance\Actions;
+
+use Exception;
+use Modules\Performance\Models\Individuale as Scheda;
+use Modules\Performance\Models\Valutatore;
+>>>>>>> 961ad402 (first)
 use Spatie\QueueableAction\QueueableAction;
 
 class MakePdfByRecord
@@ -20,6 +28,7 @@ class MakePdfByRecord
     use QueueableAction;
 
     /**
+<<<<<<< HEAD
      * Undocumented function.
      */
 <<<<<<< HEAD
@@ -53,6 +62,27 @@ class MakePdfByRecord
 =======
             'title' => 'Progressione anno '.$record->anno,
 >>>>>>> bcab6efe (first)
+=======
+     * Generate PDF for a performance record.
+     *
+     * @param Scheda $record The performance record
+     * @param string $out Output type ('download' or other)
+     * @return mixed The PDF output
+     * @throws Exception If valutatore relation is not loaded
+     */
+    public function execute(Scheda $record, string $out = 'download')
+    {
+        $view = 'performance::actions.make-pdf-by-record';
+
+        $valutatore = $record->valutatore;
+        if (!$valutatore instanceof Valutatore) {
+            throw new Exception('Valutatore relation not loaded or invalid');
+        }
+        $view_params = [
+            'view' => $view,
+            'row' => $record,
+            'title' => 'Progressione anno '.$record->anno,
+>>>>>>> 961ad402 (first)
             'firma' => $valutatore->nome_diri,
         ];
 

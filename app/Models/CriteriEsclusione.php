@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Progressioni\Models;
 
 use Illuminate\Database\Eloquent\Builder;
@@ -12,20 +13,36 @@ use Modules\Ptv\Models\Contracts\CriteriEsclusioneContract;
 
 /**
  * Modules\Progressioni\Models\CriteriEsclusione.
+=======
+namespace Modules\Performance\Models;
+
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Carbon;
+use Modules\Xot\Traits\Updater;
+
+/**
+ * Modules\Performance\Models\CriteriEsclusione.
+>>>>>>> 961ad402 (first)
  *
  * @property int $id
  * @property string|null $name
  * @property string|null $field_name
  * @property string|null $op
  * @property string|null $value
+<<<<<<< HEAD
  * @property string|null $type
+=======
+>>>>>>> 961ad402 (first)
  * @property int|null $anno
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $created_by
  * @property string|null $updated_by
  *
+<<<<<<< HEAD
  * @method static \Modules\Progressioni\Database\Factories\CriteriEsclusioneFactory factory($count = null, $state = [])
+=======
+>>>>>>> 961ad402 (first)
  * @method static Builder|CriteriEsclusione newModelQuery()
  * @method static Builder|CriteriEsclusione newQuery()
  * @method static Builder|CriteriEsclusione query()
@@ -36,13 +53,17 @@ use Modules\Ptv\Models\Contracts\CriteriEsclusioneContract;
  * @method static Builder|CriteriEsclusione whereId($value)
  * @method static Builder|CriteriEsclusione whereName($value)
  * @method static Builder|CriteriEsclusione whereOp($value)
+<<<<<<< HEAD
  * @method static Builder|CriteriEsclusione whereType($value)
+=======
+>>>>>>> 961ad402 (first)
  * @method static Builder|CriteriEsclusione whereUpdatedAt($value)
  * @method static Builder|CriteriEsclusione whereUpdatedBy($value)
  * @method static Builder|CriteriEsclusione whereValue($value)
  *
  * @mixin \Eloquent
  */
+<<<<<<< HEAD
 class CriteriEsclusione extends BaseModel implements CriteriEsclusioneContract
 {
     protected $fillable = ['id', 'name', 'field_name', 'op', 'value', 'type', 'anno'];
@@ -92,4 +113,23 @@ class CriteriEsclusione extends BaseModel implements CriteriEsclusioneContract
 
         return $criteriOption;
     }
+=======
+class CriteriEsclusione extends BaseModel
+{
+    protected $fillable = ['id', 'name', 'field_name', 'op', 'value', 'anno'];
+
+    // use Updater;
+    // protected $connection = 'performance'; // this will use the specified database connection
+    protected $table = 'criteri_esclusione';
+
+    // public $timestamps = true;
+    /*
+    protected $dates = [
+        'created_at',
+        'updated_at',
+    ];
+    */
+    // end search
+    // -------------------------
+>>>>>>> 961ad402 (first)
 } // end class

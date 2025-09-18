@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -25,6 +26,14 @@ use Modules\Progressioni\Filament\Resources\StabiDirigenteResource;
 use Modules\Ptv\Filament\Resources\StabiDirigenteResource\Pages\CreateStabiDirigente as PtvCreateStabiDirigente;
 
 class CreateStabiDirigente extends PtvCreateStabiDirigente
+=======
+namespace Modules\Performance\Filament\Resources\StabiDirigenteResource\Pages;
+
+use Filament\Resources\Pages\CreateRecord;
+use Modules\Performance\Filament\Resources\StabiDirigenteResource;
+
+class CreateStabiDirigente extends CreateRecord
+>>>>>>> 961ad402 (first)
 {
     protected static string $resource = StabiDirigenteResource::class;
 }

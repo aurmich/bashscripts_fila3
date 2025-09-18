@@ -16,6 +16,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 const dotenvExpand = require('dotenv-expand');
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -110,10 +111,15 @@ dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/}));
 const dotenvExpand = require('dotenv-expand');
 dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/}));
 >>>>>>> 9997d18c (first)
+=======
+const dotenvExpand = require('dotenv-expand');
+dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/}));
+>>>>>>> 961ad402 (first)
 
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -173,6 +179,8 @@ import laravel from 'laravel-vite-plugin';
 >>>>>>> f862c51f (first)
 =======
 >>>>>>> 9997d18c (first)
+=======
+>>>>>>> 961ad402 (first)
 export default defineConfig({
     build: {
         outDir: '../../public/build-user',
@@ -191,6 +199,7 @@ export default defineConfig({
         }),
     ],
 });
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -356,3 +365,5 @@ export default defineConfig(
 >>>>>>> f862c51f (first)
 =======
 >>>>>>> 9997d18c (first)
+=======
+>>>>>>> 961ad402 (first)

@@ -27,6 +27,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
 =======
@@ -265,11 +266,16 @@
     "name": "Sindacati",
     "alias": "sindacati",
 >>>>>>> 9997d18c (first)
+=======
+    "name": "Performance",
+    "alias": "performance",
+>>>>>>> 961ad402 (first)
     "description": "",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -321,11 +327,16 @@
 =======
         "Modules\\Sindacati\\Providers\\SindacatiServiceProvider"
 >>>>>>> 9997d18c (first)
+=======
+        "Modules\\Performance\\Providers\\PerformanceServiceProvider",
+        "Modules\\Performance\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> 961ad402 (first)
     ],
     "aliases": {},
     "files": [],
     "requires": []
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -393,3 +404,5 @@
 >>>>>>> f862c51f (first)
 =======
 >>>>>>> 9997d18c (first)
+=======
+>>>>>>> 961ad402 (first)

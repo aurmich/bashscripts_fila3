@@ -28,6 +28,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 /**
@@ -192,10 +193,18 @@ namespace Modules\Sindacati\Providers;
 
 // --- bases ---
 >>>>>>> 9997d18c (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Performance\Providers;
+
+// --- bases ---
+>>>>>>> 961ad402 (first)
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -407,10 +416,17 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider {
 
     protected string $moduleNamespace = 'Modules\Sindacati\Http\Controllers';
 >>>>>>> 9997d18c (first)
+=======
+    /**
+     * The module namespace to assume when generating URLs to actions.
+     */
+    protected string $moduleNamespace = 'Modules\Performance\Http\Controllers';
+>>>>>>> 961ad402 (first)
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -716,4 +732,8 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 >>>>>>> f862c51f (first)
 =======
 >>>>>>> 9997d18c (first)
+=======
+
+    public string $name = 'Performance';
+>>>>>>> 961ad402 (first)
 }
