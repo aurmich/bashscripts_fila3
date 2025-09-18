@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---------------------------------------------------------------------------------------------------
 Laravel URL Redirects with Optional Protected Url Passwords
 https://codebrisk.com/blog/laravel-url-redirects-with-optional-protected-url-passwords
@@ -94,3 +95,33 @@ https://codebrisk.com/blog/easily-add-face-authentication-to-your-laravel-applic
 ----- molti pacchetti interessanti --
 https://codebrisk.com/blog/categories/laravel-packages
 >>>>>>> 0d55b583 (first)
+=======
+https://blog.moonguard.dev/setting-page-with-filament
+
+https://github.com/reworck/filament-settings
+
+
+
+https://github.com/spatie/valuestore
+
+
+https://laraveldaily.com/post/filament-custom-page-example-with-repeater
+
+https://github.com/filamentphp/spatie-laravel-settings-plugin
+
+https://stackoverflow.com/questions/76164468/how-to-restrict-access-to-filament-spatie-laravel-settings-pluginpage-with-polic
+
+
+
+
+//---------------------------------------------------------------------------------------------
+LOG VIEWER
+https://codebrisk.com/blog/a-fast-and-beautiful-laravel-log-viewer-with-search-option
+composer require opcodesio/log-viewer
+//------------------------------------------------------------------------------------------------
+
+Configurable App Query Capturing & Monitoring in Laravel
+https://codebrisk.com/blog/configurable-app-query-capturing-monitoring-in-laravel
+composer require YorCreative/Laravel-Query-Watcher
+------------------------------------------------------------------------------------------------------
+>>>>>>> 9cec72d6 (first)

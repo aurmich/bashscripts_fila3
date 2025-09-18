@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -32,6 +33,10 @@ use Illuminate\Support\Facades\Route;
 use Modules\Xot\Datas\XotData;
 
 >>>>>>> 0d55b583 (first)
+=======
+declare(strict_types=1);
+
+>>>>>>> 9cec72d6 (first)
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -42,6 +47,7 @@ use Modules\Xot\Datas\XotData;
 | contains the "web" middleware group. Now create something great!
 |
 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 // Filament will handle all routes for this module
@@ -100,3 +106,9 @@ if (XotData::make()->register_pub_theme) {
 
 Route::get('/upgrade', 'UpgradeController');
 >>>>>>> 0d55b583 (first)
+=======
+
+// Route::prefix('setting')->group(function() {
+//    Route::get('/', 'SettingController@index');
+// });
+>>>>>>> 9cec72d6 (first)

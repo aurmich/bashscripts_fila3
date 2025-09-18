@@ -5,6 +5,7 @@ includes:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 parameters:
     level: 1
@@ -50,10 +51,20 @@ parameters:
 >>>>>>> c088001a (first)
 =======
 >>>>>>> d79d9e57 (first)
+=======
+
+parameters:
+
+    level: max
+
+    paths:
+        - .
+>>>>>>> 9cec72d6 (first)
 
     ignoreErrors:
     #    - '#Unsafe usage of new static#'
         - '#PHPDoc tag @mixin contains unknown class #'
+<<<<<<< HEAD
         - '#Static call to instance method Nwidart#'
 
 <<<<<<< HEAD
@@ -64,11 +75,15 @@ parameters:
 >>>>>>> c088001a (first)
 =======
 >>>>>>> d79d9e57 (first)
+=======
+
+>>>>>>> 9cec72d6 (first)
     excludePaths:
         - ./build/*
         - ./vendor/*
         - ./*/vendor/*
         - ./docs/*
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -84,6 +99,14 @@ parameters:
     bootstrapFiles:
         #- ./Services/vendor/autoload.php
         - ./phpstan_constants.php
+=======
+        - ./Tests/*
+        - ./_ide_helper.php
+
+    bootstrapFiles:
+    #    - ./Services/vendor/autoload.php
+    #    - ./phpstan_constants.php
+>>>>>>> 9cec72d6 (first)
 
     scanFiles:
     #    - ./Helpers/Helper.php
@@ -91,7 +114,11 @@ parameters:
 
     editorUrl: 'vscode://file/%%file%%:%%line%%'
 
+<<<<<<< HEAD
     tmpDir: build/phpstan
+=======
+    tmpDir: ./build/phpstan
+>>>>>>> 9cec72d6 (first)
     checkUnusedViews: false
     checkMissingIterableValueType: false
     checkGenericClassInNonGenericObjectType: false
@@ -99,6 +126,7 @@ parameters:
     reportUnmatchedIgnoredErrors: false
     checkOctaneCompatibility: false
     checkModelProperties: false
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> a8f30311 (first)
@@ -129,3 +157,6 @@ parameters:
 >>>>>>> c088001a (first)
 =======
 >>>>>>> d79d9e57 (first)
+=======
+
+>>>>>>> 9cec72d6 (first)

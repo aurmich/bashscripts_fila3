@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('rating::layouts.master')
 =======
 @extends('xot::layouts.app')
@@ -23,11 +24,15 @@
 =======
 @extends('user::layouts.master')
 >>>>>>> 0d55b583 (first)
+=======
+@extends('setting::layouts.master')
+>>>>>>> 9cec72d6 (first)
 
 @section('content')
     <h1>Hello World</h1>
 
     <p>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -67,3 +72,8 @@
     </p>
 @endsection
 >>>>>>> 0d55b583 (first)
+=======
+        This view is loaded from module: {!! config('setting.name') !!}
+    </p>
+@endsection
+>>>>>>> 9cec72d6 (first)

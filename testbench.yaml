@@ -5,6 +5,7 @@ providers:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Modules\Rating\Providers\RatingServiceProvider
 =======
   - Modules\Xot\Providers\XotServiceProvider
@@ -29,3 +30,6 @@ providers:
   - Modules\User\Providers\UserServiceProvider
   - Modules\User\Providers\Filament\AdminPanelProvider
 >>>>>>> 0d55b583 (first)
+=======
+  - Modules\Setting\Providers\SettingServiceProvider
+>>>>>>> 9cec72d6 (first)

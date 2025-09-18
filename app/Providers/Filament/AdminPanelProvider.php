@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d79d9e57 (first)
 =======
@@ -61,10 +62,17 @@ use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\View;
 use Modules\User\Filament\Pages\MyProfilePage;
 >>>>>>> 0d55b583 (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Setting\Providers\Filament;
+
+>>>>>>> 9cec72d6 (first)
 use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 
 class AdminPanelProvider extends XotBasePanelProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -183,4 +191,7 @@ class AdminPanelProvider extends XotBasePanelProvider
         return $panel;
     }
 >>>>>>> 0d55b583 (first)
+=======
+    protected string $module = 'Setting';
+>>>>>>> 9cec72d6 (first)
 }

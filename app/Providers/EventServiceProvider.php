@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -24,6 +25,19 @@ namespace Modules\Job\Providers;
 =======
 namespace Modules\Notify\Providers;
 >>>>>>> d79d9e57 (first)
+=======
+/**
+ * Provides event handling configuration for the Setting module.
+ *
+ * This class extends the base event service provider and configures the event
+ * handling for the Setting module. It indicates that events should be
+ * discovered, but does not define any specific event listeners.
+ */
+
+declare(strict_types=1);
+
+namespace Modules\Setting\Providers;
+>>>>>>> 9cec72d6 (first)
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as BaseEventServiceProvider;
 
@@ -35,7 +49,10 @@ class EventServiceProvider extends BaseEventServiceProvider
      * @var array<string, array<int, string>>
      */
     protected $listen = [];
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9cec72d6 (first)
     /**
      * Indicates if events should be discovered.
      *
@@ -46,6 +63,7 @@ class EventServiceProvider extends BaseEventServiceProvider
     /**
      * Configure the proper event listeners for email verification.
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     protected function configureEmailVerification(): void
@@ -99,4 +117,10 @@ class EventServiceProvider extends ServiceProvider
         ],
     ];
 >>>>>>> 0d55b583 (first)
+=======
+    protected function configureEmailVerification(): void
+    {
+        // ...
+    }
+>>>>>>> 9cec72d6 (first)
 }

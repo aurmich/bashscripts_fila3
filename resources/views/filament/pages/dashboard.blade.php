@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <x-filament-panels::page class="fi-dashboard-page">
     {{--
     @if (method_exists($this, 'filtersForm'))
@@ -41,3 +42,8 @@
 
 </x-filament::page>
 >>>>>>> 0d55b583 (first)
+=======
+<x-filament::page>
+    <button wire:click="upgrade">Filament upgrade</button>
+</x-filament::page>
+>>>>>>> 9cec72d6 (first)

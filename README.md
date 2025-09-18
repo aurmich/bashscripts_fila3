@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2663,16 +2664,24 @@ Modulo dedicato alla gestione delle valutazioni
 # Module Lang
 Modulo dedicato alla gestione delle traduzioni
 >>>>>>> bbec4378 (first)
+=======
+# Module Setting
+Modulo dedicato alla gestione di alcune configurazioni
+>>>>>>> 9cec72d6 (first)
 
 ## Aggiungere Modulo nella base del progetto
 Dentro la cartella laravel/Modules
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 git submodule add https://github.com/laraxot/module_rating_fila3.git Rating
 =======
 git submodule add https://github.com/laraxot/module_lang_fila3.git Lang
 >>>>>>> bbec4378 (first)
+=======
+git submodule add https://github.com/laraxot/module_setting_fila3.git Setting
+>>>>>>> 9cec72d6 (first)
 ```
 
 ## Verificare che il modulo sia attivo
@@ -2682,14 +2691,19 @@ php artisan module:list
 in caso abilitarlo
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 php artisan module:enable Rating
 =======
 php artisan module:enable Lang
 >>>>>>> bbec4378 (first)
+=======
+php artisan module:enable Setting
+>>>>>>> 9cec72d6 (first)
 ```
 
 ## Eseguire le migrazioni
 ```bash
+<<<<<<< HEAD
 <<<<<<< HEAD
 php artisan module:migrate Rating
 ```
@@ -3035,3 +3049,7 @@ L'account potrà accedere al modulo assegnato.
 
 ## [Gestione dei Team](docs/teams.md)
 >>>>>>> 0d55b583 (first)
+=======
+php artisan module:migrate Setting
+```
+>>>>>>> 9cec72d6 (first)

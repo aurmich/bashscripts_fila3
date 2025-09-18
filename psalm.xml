@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     errorLevel="4"
 =======
     errorLevel="1"
@@ -35,6 +36,11 @@
      cacheDirectory="build/psalm"
     errorBaseline="psalm-baseline.xml"
 >>>>>>> 0d55b583 (first)
+=======
+    errorLevel="1"
+     cacheDirectory="build/psalm"
+    errorBaseline="psalm-baseline.xml"
+>>>>>>> 9cec72d6 (first)
     resolveFromConfigFile="true"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns="https://getpsalm.org/schema/config"
@@ -43,6 +49,7 @@
     findUnusedCode="true"
 >
     <projectFiles>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -89,10 +96,13 @@
 =======
 =======
 >>>>>>> a8f30311 (first)
+=======
+>>>>>>> 9cec72d6 (first)
         <directory name="."/>
         <ignoreFiles>
             <directory name="build" />
             <directory name="vendor" />
+<<<<<<< HEAD
 <<<<<<< HEAD
             <directory name="Services/vendor" />
 =======
@@ -120,12 +130,17 @@
             <directory name="build"/>
             <directory name="docs"/>
 >>>>>>> 0d55b583 (first)
+=======
+            
+            <directory name="docs" />
+>>>>>>> 9cec72d6 (first)
         </ignoreFiles>
     </projectFiles>
     <plugins>
         <pluginClass class="Psalm\LaravelPlugin\Plugin"/>
     </plugins>
 </psalm>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -141,3 +156,5 @@
 >>>>>>> d79d9e57 (first)
 =======
 >>>>>>> 0d55b583 (first)
+=======
+>>>>>>> 9cec72d6 (first)

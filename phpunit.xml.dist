@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bbec4378 (first)
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.3/phpunit.xsd" backupGlobals="false" bootstrap="vendor/autoload.php" colors="true" processIsolation="false" stopOnFailure="false" executionOrder="random" failOnWarning="true" failOnRisky="true" failOnEmptyTestSuite="true" beStrictAboutOutputDuringTests="true" cacheDirectory=".phpunit.cache" backupStaticProperties="false">
@@ -50,6 +51,8 @@
 >>>>>>> a8f30311 (first)
 =======
 >>>>>>> d79d9e57 (first)
+=======
+>>>>>>> 9cec72d6 (first)
 <phpunit
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
@@ -89,6 +92,7 @@
     </logging>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 59bc4fe7 (first)
 =======
 >>>>>>> a8f30311 (first)
@@ -119,4 +123,6 @@
 >>>>>>> d79d9e57 (first)
 =======
 >>>>>>> 0d55b583 (first)
+=======
+>>>>>>> 9cec72d6 (first)
 </phpunit>

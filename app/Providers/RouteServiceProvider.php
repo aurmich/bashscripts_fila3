@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
  * ---.
  */
@@ -33,11 +34,17 @@ declare(strict_types=1);
 
 namespace Modules\User\Providers;
 >>>>>>> 0d55b583 (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Setting\Providers;
+>>>>>>> 9cec72d6 (first)
 
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -88,10 +95,14 @@ class RouteServiceProvider extends ServiceProvider
 =======
     protected string $moduleNamespace = 'Modules\User\Http\Controllers';
 >>>>>>> 0d55b583 (first)
+=======
+    protected string $moduleNamespace = 'Modules\Setting\Http\Controllers';
+>>>>>>> 9cec72d6 (first)
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -307,4 +318,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 =======
     public string $name = 'User';
 >>>>>>> 0d55b583 (first)
+=======
+    public string $name = 'Setting';
+>>>>>>> 9cec72d6 (first)
 }

@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 =======
@@ -26,6 +27,8 @@ declare(strict_types=1);
 >>>>>>> d79d9e57 (first)
 =======
 >>>>>>> 0d55b583 (first)
+=======
+>>>>>>> 9cec72d6 (first)
 $finder = PhpCsFixer\Finder::create()
     ->notPath('bootstrap/cache')
     ->notPath('storage')
@@ -35,6 +38,7 @@ $finder = PhpCsFixer\Finder::create()
     ->notName('*.blade.php')
     ->ignoreDotFiles(true)
     ->ignoreVCS(true)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -54,6 +58,9 @@ $finder = PhpCsFixer\Finder::create()
 >>>>>>> d79d9e57 (first)
 =======
 >>>>>>> 0d55b583 (first)
+=======
+;
+>>>>>>> 9cec72d6 (first)
 
 $config = new PhpCsFixer\Config();
 
@@ -61,6 +68,7 @@ $config
     ->setRules([
         '@Symfony' => true,
         'array_indentation' => true,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -86,10 +94,13 @@ $config
 >>>>>>> d79d9e57 (first)
 =======
 >>>>>>> 0d55b583 (first)
+=======
+>>>>>>> 9cec72d6 (first)
         'function_typehint_space' => true,
         'declare_equal_normalize' => true,
         'declare_strict_types' => true,
         'combine_consecutive_unsets' => true,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -123,10 +134,14 @@ $config
 =======
         //'binary_operator_spaces' => ['align_double_arrow' => false],
 >>>>>>> 0d55b583 (first)
+=======
+        //'binary_operator_spaces' => ['align_double_arrow' => false],
+>>>>>>> 9cec72d6 (first)
         'array_syntax' => ['syntax' => 'short'],
         'linebreak_after_opening_tag' => true,
         'not_operator_with_successor_space' => true,
         'ordered_imports' => true,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -159,6 +174,9 @@ $config
 =======
         'phpdoc_order' => true,
 >>>>>>> 0d55b583 (first)
+=======
+        'phpdoc_order' => true,
+>>>>>>> 9cec72d6 (first)
         'php_unit_construct' => false,
         'braces' => [
             'position_after_functions_and_oop_constructs' => 'same',
@@ -175,6 +193,7 @@ $config
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         'phpdoc_add_missing_param_annotation' => true,
         'phpdoc_order' => true,
         'phpdoc_trim' => true,
@@ -183,10 +202,13 @@ $config
 >>>>>>> 164b8363 (Squashed 'laravel/Modules/Rating/' content from commit e5c84117)
 =======
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
+=======
+>>>>>>> 9cec72d6 (first)
     ])
     ->setFinder($finder)
 ;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 return $config;
@@ -232,3 +254,6 @@ return $config;
 
 return $config;
 >>>>>>> 0d55b583 (first)
+=======
+return $config;
+>>>>>>> 9cec72d6 (first)

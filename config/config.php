@@ -9,6 +9,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'name' => 'Rating',
     'icon' => 'heroicon-o-star', // icon on dashboard
     'navigation_sort' => 1,
@@ -93,4 +94,9 @@ return [
         'Modules\\User\\Providers\\UserServiceProvider',
     ],
 >>>>>>> 0d55b583 (first)
+=======
+    'name' => 'Setting',
+    'icon' => 'heroicon-o-cog', // icon on dashboard
+    'navigation_sort' => 1,
+>>>>>>> 9cec72d6 (first)
 ];

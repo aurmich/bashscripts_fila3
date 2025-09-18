@@ -3,6 +3,7 @@ const dotenvExpand = require('dotenv-expand');
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/}));
 =======
 dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/ }));
@@ -16,10 +17,14 @@ dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/ }));
 =======
 dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/ }));
 >>>>>>> 0d55b583 (first)
+=======
+dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/}));
+>>>>>>> 9cec72d6 (first)
 
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -61,10 +66,17 @@ export default defineConfig(
 >>>>>>> c088001a (first)
 =======
 >>>>>>> 0d55b583 (first)
+=======
+export default defineConfig(
+    {
+        build: {
+            outDir: '../../public/build-setting',
+>>>>>>> 9cec72d6 (first)
             emptyOutDir: true,
             manifest: true,
         },
         plugins: [
+<<<<<<< HEAD
             laravel(
                 {
                     publicDirectory: '../../public',
@@ -96,3 +108,19 @@ export default defineConfig(
 >>>>>>> c088001a (first)
 =======
 >>>>>>> 0d55b583 (first)
+=======
+        laravel(
+            {
+                publicDirectory: '../../public',
+                buildDirectory: 'build-setting',
+                input: [
+                __dirname + '/resources/assets/sass/app.scss',
+                __dirname + '/resources/assets/js/app.js'
+                ],
+                refresh: true,
+            }
+        ),
+    ],
+    }
+);
+>>>>>>> 9cec72d6 (first)

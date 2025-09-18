@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Job\Providers;
 =======
 namespace Modules\Notify\Providers;
@@ -11,11 +12,15 @@ namespace Modules\Notify\Providers;
 =======
 namespace Modules\User\Providers;
 >>>>>>> 0d55b583 (first)
+=======
+namespace Modules\Setting\Providers;
+>>>>>>> 9cec72d6 (first)
 
 use Modules\Xot\Providers\XotBaseContextServiceProvider;
 
 class FilamentServiceProvider extends XotBaseContextServiceProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     public static string $name = 'job-filament';
@@ -30,4 +35,32 @@ class FilamentServiceProvider extends XotBaseContextServiceProvider
     
     public static string $module = 'User';
 >>>>>>> 0d55b583 (first)
+=======
+    public static string $name = 'setting-filament';
+    
+    public static string $module = 'Setting';
+    
+    /*
+    public function packageRegistered(): void
+    {
+        $this->app->booting(function () {
+            $this->registerConfigs();
+        });
+        parent::packageRegistered();
+    }
+
+    public function registerConfigs() {
+        $this->mergeConfigFrom(
+            app('modules')->findOrFail(static::$module)->getExtraPath( 'Config/'.static::$name.'.php'),
+            static::$name
+        );
+    }
+
+    public function boot()
+    {
+        parent::boot();
+        app(FilamentModules::class)->prepareDefaultNavigation(static::$module, static::$name);
+    }
+    */
+>>>>>>> 9cec72d6 (first)
 }

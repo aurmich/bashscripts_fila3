@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
 =======
@@ -19,10 +20,15 @@
     "name": "User",
     "alias": "user",
 >>>>>>> 0d55b583 (first)
+=======
+    "name": "Setting",
+    "alias": "setting",
+>>>>>>> 9cec72d6 (first)
     "description": "",
     "keywords": [],
     "priority": 0,
     "providers": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -108,3 +114,10 @@
     "files": []
 }
 >>>>>>> 0d55b583 (first)
+=======
+        "Modules\\Setting\\Providers\\SettingServiceProvider",
+        "Modules\\Setting\\Providers\\Filament\\AdminPanelProvider"
+    ],
+    "files": []
+}
+>>>>>>> 9cec72d6 (first)

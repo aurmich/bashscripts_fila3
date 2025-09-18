@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -72,15 +73,39 @@ class Dashboard extends Page
 namespace Modules\Lang\Filament\Pages;
 
 use Filament\Pages\Page;
+=======
+declare(strict_types=1);
+
+namespace Modules\Setting\Filament\Pages;
+
+use Filament\Pages\Page;
+use Illuminate\Support\Facades\Process as LaravelProcess;
+>>>>>>> 9cec72d6 (first)
 
 class Dashboard extends Page
 {
     protected static ?string $navigationIcon = 'heroicon-o-document-text';
 
+<<<<<<< HEAD
     protected static string $view = 'lang::filament.pages.dashboard';
 >>>>>>> bbec4378 (first)
 =======
     protected static string $view = 'job::filament.pages.dashboard';
+=======
+    protected static string $view = 'setting::filament.pages.dashboard';
+
+    public function upgrade(): void
+    {
+        $command = 'php artisan filament:upgrade';
+
+        LaravelProcess::run($command);
+    }
+
+    protected function getViewData(): array
+    {
+        return ['a' => 'b'];
+    }
+>>>>>>> 9cec72d6 (first)
 
     // public function mount(): void {
     //     $user = auth()->user();
@@ -88,6 +113,7 @@ class Dashboard extends Page
     //         redirect('/admin');
     //     }
     // }
+<<<<<<< HEAD
 >>>>>>> c088001a (first)
 =======
     protected static string $view = 'notify::filament.pages.dashboard';
@@ -164,4 +190,6 @@ class Dashboard extends BaseBashboard
             ]);
     }
 >>>>>>> 0d55b583 (first)
+=======
+>>>>>>> 9cec72d6 (first)
 }

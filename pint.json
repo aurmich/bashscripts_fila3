@@ -7,6 +7,7 @@
             "anonymous_class": false,
             "named_class": false
 <<<<<<< HEAD
+<<<<<<< HEAD
         }
 =======
         },
@@ -60,5 +61,8 @@
         "strict_comparison": true,
         "visibility_required": true
 >>>>>>> 0d55b583 (first)
+=======
+        }
+>>>>>>> 9cec72d6 (first)
     }
 }

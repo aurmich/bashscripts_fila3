@@ -4,16 +4,20 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c088001a (first)
 =======
 >>>>>>> d79d9e57 (first)
 =======
 >>>>>>> 0d55b583 (first)
+=======
+>>>>>>> 9cec72d6 (first)
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -46,11 +50,18 @@
        {{-- Laravel Vite - CSS File --}}
        {{-- {{ module_vite('build-user', 'resources/assets/sass/app.scss') }} --}}
 >>>>>>> 0d55b583 (first)
+=======
+        <title>Module Setting</title>
+
+       {{-- Laravel Vite - CSS File --}}
+       {{-- {{ module_vite('build-setting', 'resources/assets/sass/app.scss') }} --}}
+>>>>>>> 9cec72d6 (first)
 
     </head>
     <body>
         @yield('content')
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -98,4 +109,9 @@
         {{-- {{ module_vite('build-user', 'resources/assets/js/app.js') }} --}}
     </body>
 >>>>>>> 0d55b583 (first)
+=======
+        {{-- Laravel Vite - JS File --}}
+        {{-- {{ module_vite('build-setting', 'resources/assets/js/app.js') }} --}}
+    </body>
+>>>>>>> 9cec72d6 (first)
 </html>

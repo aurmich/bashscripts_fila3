@@ -5,6 +5,7 @@ updates:
     schedule:
       interval: "daily"
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   - package-ecosystem: "github-actions"
     directory: "/"
@@ -46,3 +47,5 @@ updates:
 >>>>>>> d79d9e57 (first)
 =======
 >>>>>>> 0d55b583 (first)
+=======
+>>>>>>> 9cec72d6 (first)

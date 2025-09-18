@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Job\Http\Middleware;
 =======
 namespace Modules\Notify\Http\Middleware;
@@ -11,11 +12,15 @@ namespace Modules\Notify\Http\Middleware;
 =======
 namespace Modules\User\Http\Middleware;
 >>>>>>> 0d55b583 (first)
+=======
+namespace Modules\Setting\Http\Middleware;
+>>>>>>> 9cec72d6 (first)
 
 use Modules\Xot\Http\Middleware\XotBaseFilamentMiddleware;
 
 class FilamentMiddleware extends XotBaseFilamentMiddleware
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     public static string $module = 'Job';
@@ -27,4 +32,51 @@ class FilamentMiddleware extends XotBaseFilamentMiddleware
 >>>>>>> 0d55b583 (first)
 
     public static string $context = 'filament';
+=======
+    public static string $module = 'Setting';
+
+    public static string $context = 'setting-filament';
+
+    /*
+    private function getModule(): Module {
+        return app('modules')->findOrFail(static::$module);
+    }
+
+
+    private function getContextName(): string {
+
+        return \Str::of(static::$context)->kebab()->toString();
+    }
+    protected function authenticate($request, array $guards): void
+    {
+        $context = $this->getContextName();
+        $guardName = config("$context.auth.guard");
+        $guard = $this->auth->guard($guardName);
+
+        if (!$guard->check()) {
+            $this->unauthenticated($request, $guards);
+
+            return;
+        }
+
+        $this->auth->shouldUse($guardName);
+
+        $user = $guard->user();
+
+        if ($user instanceof FilamentUser) {
+            abort_if(!$user->canAccessFilament(), 403);
+
+            return;
+        }
+
+        abort_if(config('app.env') !== 'local', 403);
+    }
+
+    protected function redirectTo($request): string
+    {
+        $context = $this->getContextName();
+        return route("$context.auth.login");
+    }
+    */
+>>>>>>> 9cec72d6 (first)
 }
