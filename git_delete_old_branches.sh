@@ -1,16 +1,22 @@
 #!/bin/sh
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 me=$(readlink -f -- "$0";)
 git submodule foreach "$me"
 =======
 me=$( readlink -f -- "$0";)
 git submodule foreach "$me" 
 >>>>>>> d516087e (.)
+=======
+me=$(readlink -f -- "$0";)
+git submodule foreach "$me"
+>>>>>>> 8003fba6 (Squashed 'bashscripts/' changes from 79ba09c61..583e15e4a)
 
 # Branch da mantenere
 branches_to_keep="dev master prod"
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 # Elimina i branch vecchi
 for branch in $(git branch -r | grep -v HEAD | grep -v "$branches_to_keep"); do
@@ -38,3 +44,11 @@ for remote in $(git remote); do
     fi
 done
 >>>>>>> d516087e (.)
+=======
+# Elimina i branch vecchi
+for branch in $(git branch -r | grep -v HEAD | grep -v "$branches_to_keep"); do
+    git branch -d "$branch"
+done
+
+echo "Branch vecchi eliminati con successo."
+>>>>>>> 8003fba6 (Squashed 'bashscripts/' changes from 79ba09c61..583e15e4a)

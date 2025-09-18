@@ -1071,12 +1071,18 @@ esegui phpstan a livello 7 su tutto Modules e aggiorna la cartella docs piu' vic
   namespace: `Modules\User\Models`
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8003fba6 (Squashed 'bashscripts/' changes from 79ba09c61..583e15e4a)
 ## TRADUZIONI
 - Formato corretto: `'field' => ['label' => 'Etichetta', 'tooltip' => 'Descrizione']`
 - MAI usare ->label() (gestito da LangServiceProvider)
 
+<<<<<<< HEAD
 =======
 >>>>>>> d516087e (.)
+=======
+>>>>>>> 8003fba6 (Squashed 'bashscripts/' changes from 79ba09c61..583e15e4a)
 ## ESTENSIONE CLASSI
 - MAI estendere classi Filament direttamente
 - SEMPRE estendere classi XotBase dal modulo Xot
@@ -1098,6 +1104,9 @@ esegui phpstan a livello 7 su tutto Modules e aggiorna la cartella docs piu' vic
 - Formato corretto: `'field' => ['label' => 'Etichetta', 'tooltip' => 'Descrizione']`
 - MAI usare ->label() (gestito da LangServiceProvider)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8003fba6 (Squashed 'bashscripts/' changes from 79ba09c61..583e15e4a)
 ## NAMESPACE
 - Modello: `Modules\*\Models` (non `Modules\*\app\Models`)
 - Filament: `Modules\*\Filament` (non `Modules\*\app\Filament`)
@@ -1110,8 +1119,11 @@ esegui phpstan a livello 7 su tutto Modules e aggiorna la cartella docs piu' vic
 ## SERVICE PROVIDER
 - Estendere classi base Xot (XotBaseServiceProvider)
 - Chiamare sempre parent::boot()
+<<<<<<< HEAD
 =======
 >>>>>>> d516087e (.)
+=======
+>>>>>>> 8003fba6 (Squashed 'bashscripts/' changes from 79ba09c61..583e15e4a)
 
 ## MIGRAZIONI
 - Estendere XotBaseMigration
@@ -1124,16 +1136,25 @@ esegui phpstan a livello 7 su tutto Modules e aggiorna la cartella docs piu' vic
 - Evitare l'uso di "mixed" (solo come ultima risorsa)
 - Analizzare moduli esistenti prima di implementare nuove funzionalità
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ## METODOLOGIA
 - Analizzare moduli esistenti
 =======
 >>>>>>> d516087e (.)
+=======
+
+## METODOLOGIA
+- Analizzare moduli esistenti
+>>>>>>> 8003fba6 (Squashed 'bashscripts/' changes from 79ba09c61..583e15e4a)
 - Focalizzarsi sullo scopo, non solo sulla correzione
 - Seguire convenzioni del framework
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8003fba6 (Squashed 'bashscripts/' changes from 79ba09c61..583e15e4a)
 getInfolistSchema restituisec un array cui le chiavi sono  stringhe aggiorna la cartellla "docs" piu' vicina e studiala e aggiorna anche le tue rules e memories
 
 esegui phpstan a livello 7 su tutto Modules e aggiorna la cartella docs piu' vicina all'errore che andrai a correggere , poi studia quella cartella docs, poi implementa soluzione , poi procedi con gli altri errori, non ti fermare finche phpstan non ti dice che non hai piu' errori in tutto Modules 
@@ -1173,9 +1194,12 @@ Quando correggi qualsiasi cosa devi focalizzarti sullo scopo non solo sulla corr
 non voglio  ->label(   le label son gestite tramite langserviceprovider coi file di traduzioni
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> f2e91737 (.)
 =======
 >>>>>>> d8b9f8a6 (up)
 =======
 getInfolistSchema restituisec un array cui le chiavi sono  stringhe aggiorna la cartellla "docs" piu' vicina e studiala e aggiorna anche le tue rules e memories
 >>>>>>> d516087e (.)
+=======
+>>>>>>> 8003fba6 (Squashed 'bashscripts/' changes from 79ba09c61..583e15e4a)

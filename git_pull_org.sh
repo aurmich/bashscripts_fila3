@@ -2,10 +2,14 @@
 
 # Controllo parametri
 <<<<<<< HEAD
+<<<<<<< HEAD
 if [ "$#" -ne 2 ]; then
 =======
 if [ -z "$1" ] || [ -z "$2" ]; then
 >>>>>>> d516087e (.)
+=======
+if [ "$#" -ne 2 ]; then
+>>>>>>> 8003fba6 (Squashed 'bashscripts/' changes from 79ba09c61..583e15e4a)
     echo "Usage: $0 <organization> <branch>"
     exit 1
 fi
@@ -19,6 +23,7 @@ where=$(pwd)
 echo "-------- START SYNC [$where ($branch) - ORG: $org] ----------"
 
 # 1️⃣ Configurazioni globali per evitare problemi
+<<<<<<< HEAD
 <<<<<<< HEAD
 git config --global core.fileMode false
 git config --global core.autocrlf input
@@ -91,5 +96,13 @@ if ! git rev-parse --abbrev-ref --symbolic-full-name "@{u}" >/dev/null 2>&1; the
     git branch -u origin/$branch || true
 fi
 >>>>>>> d516087e (.)
+=======
+git config --global core.fileMode false
+git config --global core.autocrlf input
+
+# 2️⃣ Fetch e Pull
+git fetch origin
+git pull origin "$branch"
+>>>>>>> 8003fba6 (Squashed 'bashscripts/' changes from 79ba09c61..583e15e4a)
 
 echo "-------- END SYNC [$where ($branch) - ORG: $org] ----------"

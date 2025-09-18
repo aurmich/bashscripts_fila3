@@ -306,6 +306,9 @@ find . -type f -name "*:Zone.Identifier" -exec rm -f {} +
 sudo update-alternatives --config php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8003fba6 (Squashed 'bashscripts/' changes from 79ba09c61..583e15e4a)
 
 
 
@@ -327,8 +330,11 @@ SOLUZIONE: > sudo chmod 777 -R .
 
         
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> f2e91737 (.)
 =======
 >>>>>>> d8b9f8a6 (up)
 =======
 >>>>>>> d516087e (.)
+=======
+>>>>>>> 8003fba6 (Squashed 'bashscripts/' changes from 79ba09c61..583e15e4a)

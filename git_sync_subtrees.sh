@@ -4,9 +4,13 @@
 me=$( readlink -f -- "$0")
 script_dir=$(dirname "$me")
 <<<<<<< HEAD
+<<<<<<< HEAD
 CUSTOM_ORG="$1"
 =======
 >>>>>>> d516087e (.)
+=======
+CUSTOM_ORG="$1"
+>>>>>>> 8003fba6 (Squashed 'bashscripts/' changes from 79ba09c61..583e15e4a)
 
 # Script per sincronizzare git subtree con ottimizzazione della history
 CONFIG_FILE="gitmodules.ini"
@@ -49,6 +53,9 @@ while IFS= read -r line; do
     elif [[ "$line" =~ ^url\ *=\ *(.+)$ && -n "$current_path" ]]; then
         current_url="${BASH_REMATCH[1]}"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8003fba6 (Squashed 'bashscripts/' changes from 79ba09c61..583e15e4a)
 
          # Modifica l'organizzazione nell'URL se CUSTOM_ORG è fornito
         if [[ -n "$CUSTOM_ORG" && "$current_url" =~ git@github.com:([^/]+)/(.+)$ ]]; then
@@ -60,6 +67,7 @@ while IFS= read -r line; do
             current_url="git@github.com:${CUSTOM_ORG}/${repo_name}"
         #    log "🔄 URL modificato: $current_url (org originale: $original_org → $CUSTOM_ORG)"
         fi
+<<<<<<< HEAD
         
         # Chiamata esterna allo script di sincronizzazione
         log "🔄 Sincronizzazione modulo: $current_path [$current_url]"
@@ -68,6 +76,11 @@ while IFS= read -r line; do
         # Chiamata esterna allo script di sincronizzazione
         log "🔄 Sincronizzazione modulo: $current_path"
 >>>>>>> d516087e (.)
+=======
+        
+        # Chiamata esterna allo script di sincronizzazione
+        log "🔄 Sincronizzazione modulo: $current_path [$current_url]"
+>>>>>>> 8003fba6 (Squashed 'bashscripts/' changes from 79ba09c61..583e15e4a)
         if ! "$script_dir/git_sync_subtree.sh" "$current_path" "$current_url" ; then
             log "⚠️ Sincronizzazione fallita per $current_path."
         fi
@@ -82,9 +95,14 @@ done < "$CONFIG_FILE"
 log "🧹 Pulizia del repository..."
 git gc --prune=now --aggressive
 <<<<<<< HEAD
+<<<<<<< HEAD
 sed -i -e 's/\r$//' "$me"
 log "✅ Sincronizzazione completata con history ottimizzata!"
 =======
 
 log "✅ Sincronizzazione completata con history ottimizzata!"
 >>>>>>> d516087e (.)
+=======
+sed -i -e 's/\r$//' "$me"
+log "✅ Sincronizzazione completata con history ottimizzata!"
+>>>>>>> 8003fba6 (Squashed 'bashscripts/' changes from 79ba09c61..583e15e4a)
