@@ -20,6 +20,10 @@ use Modules\Tenant\Services\TenantService;
 use Modules\Xot\Datas\MetatagData;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 use Webmozart\Assert\Assert;
+<<<<<<< HEAD
+=======
+use Filament\Support\Colors\Color;
+>>>>>>> origin/dev
 
 /**
  * @property ComponentContainer $form
@@ -82,6 +86,7 @@ class MetatagPage extends Page implements HasForms
                     Repeater::make('colors')
                         ->schema([
                             Select::make('key')
+<<<<<<< HEAD
 
                                 ->required()
                                 ->options($metatag->getFilamentColors()),
@@ -96,6 +101,23 @@ class MetatagPage extends Page implements HasForms
                                 ->required(), // e.g., '#0071b0'
                         ])
                     // ->keyValueArray(true) // Store as key-value pairs in the 'colors' array
+=======
+                                ->label('Chiave')
+                                ->required()
+                                ->options($metatag->getFilamentColors()),
+                            Select::make('color')
+                                ->label('Colore')
+                                ->options(array_combine(
+                                    array_keys(Color::all()),
+                                    array_keys(Color::all())
+                                ))
+                                ->reactive(),
+                            ColorPicker::make('hex')
+                                ->label('Colore personalizzato')
+                                ->visible(fn (Get $get) => $get('color') === 'custom')
+                                ->required(),
+                        ])
+>>>>>>> origin/dev
                         ->columns(3),
                 ]
             )->columns(2)
@@ -117,7 +139,10 @@ class MetatagPage extends Page implements HasForms
     {
         return [
             Action::make('save')
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/dev
                 ->submit('save'),
         ];
     }

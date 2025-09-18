@@ -26,9 +26,15 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\View;
+<<<<<<< HEAD
 use Modules\Xot\Exceptions\Formatters\WebhookErrorFormatter;
 use Modules\Xot\Exceptions\Handlers\HandlerDecorator;
 use Modules\Xot\Exceptions\Handlers\HandlersRepository;
+=======
+use Modules\Xot\Exceptions\Handlers\HandlerDecorator;
+use Modules\Xot\Exceptions\Handlers\HandlersRepository;
+use Modules\Xot\Exceptions\Formatters\WebhookErrorFormatter;
+>>>>>>> origin/dev
 use Modules\Xot\View\Composers\XotComposer;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Webmozart\Assert\Assert;
@@ -52,7 +58,11 @@ class XotServiceProvider extends XotBaseServiceProvider
         $this->redirectSSL();
         $this->registerViewComposers();
         $this->registerEvents();
+<<<<<<< HEAD
         $this->registerExceptionHandler();
+=======
+        //$this->registerExceptionHandler(); // guardare come fa sentry
+>>>>>>> origin/dev
         $this->registerTimezone();
         $this->registerProviders();
     }
@@ -61,8 +71,13 @@ class XotServiceProvider extends XotBaseServiceProvider
     {
         parent::register();
         $this->registerConfig();
+<<<<<<< HEAD
         $this->registerExceptionHandlersRepository();
         $this->extendExceptionHandler();
+=======
+        //$this->registerExceptionHandlersRepository();
+        //$this->extendExceptionHandler();
+>>>>>>> origin/dev
         $this->registerCommands();
     }
 
@@ -87,6 +102,7 @@ class XotServiceProvider extends XotBaseServiceProvider
         TextColumn::configureUsing(fn (TextColumn $column) => $column->timezone($timezone));
     }
 
+<<<<<<< HEAD
     /**
      * @see https://github.com/cerbero90/exception-handler
      */
@@ -126,6 +142,32 @@ class XotServiceProvider extends XotBaseServiceProvider
         });
         */
     }
+=======
+    /*
+     * @see https://github.com/cerbero90/exception-handler
+     --  guardare come fa sentry 
+    public function registerExceptionHandler(): void
+    {
+        $exceptionHandler = $this->app->make(ExceptionHandler::class);
+        if ($exceptionHandler instanceof HandlerDecorator) {
+            $exceptionHandler->reporter(
+                static function (\Throwable $e): void {
+                    $data = (new WebhookErrorFormatter($e))->format();
+                    if ($e instanceof AuthenticationException || $e instanceof NotFoundHttpException) {
+                        return;
+                    }
+
+                    if (is_string(config('logging.channels.slack_errors.url'))
+                        && mb_strlen(config('logging.channels.slack_errors.url')) > 5) {
+                        Log::channel('slack_errors')
+                            ->error($e->getMessage(), $data);
+                    }
+                }
+            );
+        }
+    }
+        */
+>>>>>>> origin/dev
 
     public function registerConfig(): void
     {
@@ -162,19 +204,34 @@ class XotServiceProvider extends XotBaseServiceProvider
         }
     }
 
+<<<<<<< HEAD
     /**
      * Register the custom exception handlers repository.
      */
+=======
+    /*
+     * Register the custom exception handlers repository.
+     -- guardare come fa sentry
+>>>>>>> origin/dev
     private function registerExceptionHandlersRepository(): void
     {
         $this->app->singleton(HandlersRepository::class, HandlersRepository::class);
     }
+<<<<<<< HEAD
 
     /**
      * Extend the Laravel default exception handler.
      *
      * @see https://github.com/cerbero90/exception-handler/blob/master/src/Providers/ExceptionHandlerServiceProvider.php
      */
+=======
+    */
+    /*
+     * Extend the Laravel default exception handler.
+     *
+     * @see https://github.com/cerbero90/exception-handler/blob/master/src/Providers/ExceptionHandlerServiceProvider.php
+     -- guardare come fa sentry
+>>>>>>> origin/dev
     private function extendExceptionHandler(): void
     {
         $this->app->extend(
@@ -184,7 +241,11 @@ class XotServiceProvider extends XotBaseServiceProvider
             }
         );
     }
+<<<<<<< HEAD
 
+=======
+    */
+>>>>>>> origin/dev
     private function redirectSSL(): void
     {
         // --- meglio ficcare un controllo anche sull'env
