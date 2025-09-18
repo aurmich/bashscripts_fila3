@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 # 🛠️ Soluzioni Comuni per Problemi Git e Bash
 
 ## 🔧 Problemi di Interprete Bash
@@ -109,6 +110,8 @@ sudo update-alternatives --config php
 ```
 
 
+=======
+>>>>>>> 58e1cada (.)
 /bin/bash^M: bad interpreter: No such file or directory
 sed -i -e 's/\r$//' nomefile.sh
 
@@ -154,6 +157,7 @@ find . -type f -name "*:Zone.Identifier" -exec rm -f {} +
 sudo update-alternatives --config php
 
 
+<<<<<<< HEAD
 /bin/bash^M: bad interpreter: No such file or directory
 sed -i -e 's/\r$//' nomefile.sh
 
@@ -215,6 +219,8 @@ git push -u origin dev
 rm -rf .git
 
 
+=======
+>>>>>>> 58e1cada (.)
 
 
 
@@ -234,6 +240,7 @@ SOLUZIONE: > sudo chmod 777 -R .
 
 
         
+<<<<<<< HEAD
 
 [0;34mℹ️ [2025-04-22 11:23:27] Scelto blocco HEAD (22 linee vs 1)[0m
 
@@ -243,3 +250,5 @@ SOLUZIONE: > sudo chmod 777 -R .
 
 
  0440c57 (.)
+=======
+>>>>>>> 58e1cada (.)

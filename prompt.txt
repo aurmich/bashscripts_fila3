@@ -14,10 +14,14 @@
 - PHPStan è installato nella cartella laravel: `./vendor/bin/phpstan`
 - Strategia per errori numerosi: scendi di livello fino a <100 errori, poi sali gradualmente
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Cerca e sistema i file con conflitti git 
 =======
 - Cerca e sistema i file con conflitti git
 >>>>>>> e47821df (.)
+=======
+- Cerca e sistema i file con conflitti git ("<<< HEAD")
+>>>>>>> 58e1cada (.)
 
 ## NAMESPACE E STRUTTURA
 - Modello: `Modules\*\Models` (non `Modules\*\app\Models`)
@@ -27,19 +31,25 @@
 - Esempio: User path: `/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/User/app/Models/User.php`
   namespace: `Modules\User\Models`
 
+<<<<<<< HEAD
 
 
 
 
 
+=======
+>>>>>>> 58e1cada (.)
 ## TRADUZIONI
 - Formato corretto: `'field' => ['label' => 'Etichetta', 'tooltip' => 'Descrizione']`
 - MAI usare ->label() (gestito da LangServiceProvider)
 
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> 58e1cada (.)
 ## ESTENSIONE CLASSI
 - MAI estendere classi Filament direttamente
 - SEMPRE estendere classi XotBase dal modulo Xot
@@ -60,11 +70,14 @@
 ## TRADUZIONI
 - Formato corretto: `'field' => ['label' => 'Etichetta', 'tooltip' => 'Descrizione']`
 - MAI usare ->label() (gestito da LangServiceProvider)
+<<<<<<< HEAD
 
 
 
 
 
+=======
+>>>>>>> 58e1cada (.)
 ## NAMESPACE
 - Modello: `Modules\*\Models` (non `Modules\*\app\Models`)
 - Filament: `Modules\*\Filament` (non `Modules\*\app\Filament`)
@@ -78,10 +91,13 @@
 - Estendere classi base Xot (XotBaseServiceProvider)
 - Chiamare sempre parent::boot()
 
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> 58e1cada (.)
 ## MIGRAZIONI
 - Estendere XotBaseMigration
 - Usare tableCreate() e tableUpdate()
@@ -93,6 +109,7 @@
 - Evitare l'uso di "mixed" (solo come ultima risorsa)
 - Analizzare moduli esistenti prima di implementare nuove funzionalità
 
+<<<<<<< HEAD
 
 ## METODOLOGIA
 - Analizzare moduli esistenti
@@ -872,11 +889,14 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
  cb513be (.)
 
  43df3e0 (.)
+=======
+>>>>>>> 58e1cada (.)
 ## METODOLOGIA
 - Analizzare moduli esistenti
 - Focalizzarsi sullo scopo, non solo sulla correzione
 - Seguire convenzioni del framework
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ## REGOLE IMPORTANTI
 - getInfolistSchema restituisce un array con chiavi stringhe
@@ -1011,3 +1031,9 @@ non voglio  ->label(   le label son gestite tramite langserviceprovider coi file
 =======
  cb513be (.)
 >>>>>>> e47821df (.)
+=======
+
+getInfolistSchema restituisec un array cui le chiavi sono  stringhe aggiorna la cartellla "docs" piu' vicina e studiala e aggiorna anche le tue rules e memories
+
+esegui phpstan a livello 7 su tutto Modules e aggiorna la cartella docs piu' vicina all'errore che andrai a correggere , poi studia quella cartella docs, poi implementa soluzione , poi procedi con gli altri errori, non ti fermare finche phpstan non ti dice che non hai piu' errori in tutto Modules 
+>>>>>>> 58e1cada (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -15,6 +16,8 @@ $this->getRelationValue('table')->name;
 
 
 
+=======
+>>>>>>> 58e1cada (.)
 $this->getRelationValue('table')->name
 
 
@@ -23,6 +26,7 @@ $query->when($request->filled('q'), function (Builder $query) use ($request) {
         $query->where('name', 'like', "%{$request->get('q')}%")
             ->orWhere('email', 'like', "%{$request->get('q')}%");
     });
+<<<<<<< HEAD
 $this->getRelationValue('table')->name
 
 
@@ -74,3 +78,6 @@ $query->when($request->filled('q'), function (Builder $query) use ($request) {
  cb513be (.)
 })
  0440c57 (.)
+=======
+})
+>>>>>>> 58e1cada (.)

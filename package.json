@@ -32,6 +32,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 0d55b583 (first)
@@ -66,10 +67,13 @@
 >>>>>>> 9cec72d6 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> 58e1cada (.)
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.13",
     "autoprefixer": "^10.4.19",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -98,11 +102,16 @@
 >>>>>>> 9cec72d6 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+    "axios": "^1.6.7",
+    "laravel-vite-plugin": "^1.0.1",
+>>>>>>> 58e1cada (.)
     "lodash": "^4.17.21",
     "postcss": "^8.4.38",
     "postcss-nesting": "^12.1.4",
     "tailwindcss": "^3.4.3",
     "tippy.js": "^6.3.7",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -428,4 +437,8 @@
     "vite": "^5.4.1"
   }
 >>>>>>> e83070fd (.)
+=======
+    "vite": "^5.0.12"
+  }
+>>>>>>> 58e1cada (.)
 }

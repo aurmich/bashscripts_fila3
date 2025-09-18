@@ -10,6 +10,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Rector\Config\RectorConfig;
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -27,6 +28,11 @@ use Rector\TypeDeclaration\Rector\ClassMethod\AddVoidReturnTypeWhereNoReturnRect
  * - Le regole di trasformazione da applicare
  * - La compatibilità con la versione di PHP del progetto
  */
+=======
+use Rector\Config\RectorConfig;
+use Rector\TypeDeclaration\Rector\ClassMethod\AddVoidReturnTypeWhereNoReturnRector;
+
+>>>>>>> 58e1cada (.)
 return RectorConfig::configure()
     ->withPaths([
         __DIR__.'/',
@@ -34,6 +40,7 @@ return RectorConfig::configure()
     ->withSkip([
         __DIR__.'/vendor',
     ])
+<<<<<<< HEAD
     // Imposta la compatibilità con la versione PHP corrente
     ->withPhpSets()
     ->withRules([
@@ -421,3 +428,10 @@ return static function (RectorConfig $rectorConfig): void {
 >>>>>>> 7e417e87 (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+    // uncomment to reach your current PHP version
+    ->withPhpSets()
+    ->withRules([
+        // AddVoidReturnTypeWhereNoReturnRector::class,
+    ]);
+>>>>>>> 58e1cada (.)

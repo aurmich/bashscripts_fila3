@@ -2,6 +2,7 @@
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
          xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.3/phpunit.xsd"
          bootstrap="vendor/autoload.php"
          colors="true"
@@ -34,6 +35,8 @@
     </testsuites>
 
 =======
+=======
+>>>>>>> 58e1cada (.)
          xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.3/phpunit.xsd"
          bootstrap="vendor/autoload.php"
          colors="true"
@@ -43,11 +46,15 @@
             <directory suffix="Test.php">./tests</directory>
         </testsuite>
     </testsuites>
+<<<<<<< HEAD
 >>>>>>> c088001a (first)
+=======
+>>>>>>> 58e1cada (.)
     <source>
         <include>
             <directory suffix=".php">./app</directory>
             <directory suffix=".php">./src</directory>
+<<<<<<< HEAD
 <<<<<<< HEAD
             <directory suffix=".php">./modules</directory>
         </include>
@@ -118,3 +125,8 @@
     </source>
 </phpunit>
 >>>>>>> c088001a (first)
+=======
+        </include>
+    </source>
+</phpunit>
+>>>>>>> 58e1cada (.)

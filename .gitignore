@@ -34,6 +34,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ───────────────────────────────────────────────────────
 # Sistema operativo / File nascosti e metadata
 # ───────────────────────────────────────────────────────
@@ -282,6 +283,8 @@ cache/
 **/*.Zone.Identifier
 
 
+=======
+>>>>>>> 58e1cada (.)
 .git-rewrite
 .fuse_hidden*
 .fuse_hidden**.lock
@@ -315,6 +318,7 @@ cache/
 *:Zone.Identifier
 .php-cs-fixer.cache
 **/*.Zone.Identifier
+<<<<<<< HEAD
 .git-rewrite
 .fuse_hidden*
 .fuse_hidden**.lock
@@ -991,3 +995,5 @@ public_html/plugins/
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> 58e1cada (.)
