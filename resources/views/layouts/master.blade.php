@@ -11,6 +11,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <html lang="en">
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -58,10 +59,14 @@
 =======
 <html lang="en">
 >>>>>>> 616a71c2 (first)
+=======
+<html lang="en">
+>>>>>>> c6af2eee (first)
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -178,11 +183,18 @@
        {{-- Laravel Mix - CSS File --}}
        {{-- <link rel="stylesheet" href="{{ mix('css/legge109.css') }}"> --}}
 >>>>>>> 616a71c2 (first)
+=======
+        <title>Module Mensa</title>
+
+       {{-- Laravel Mix - CSS File --}}
+       {{-- <link rel="stylesheet" href="{{ mix('css/mensa.css') }}"> --}}
+>>>>>>> c6af2eee (first)
 
     </head>
     <body>
         @yield('content')
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -342,3 +354,9 @@
     </body>
 </html>
 >>>>>>> 616a71c2 (first)
+=======
+        {{-- Laravel Mix - JS File --}}
+        {{-- <script src="{{ mix('js/mensa.js') }}"></script> --}}
+    </body>
+</html>
+>>>>>>> c6af2eee (first)

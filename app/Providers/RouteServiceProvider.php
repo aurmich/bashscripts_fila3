@@ -20,6 +20,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 /**
@@ -135,10 +136,18 @@ namespace Modules\Legge109\Providers;
 
 // --- bases ---
 >>>>>>> 616a71c2 (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Mensa\Providers;
+
+// --- bases ---
+>>>>>>> c6af2eee (first)
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -284,10 +293,19 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected string $moduleNamespace = 'Modules\Legge109\Http\Controllers';
 >>>>>>> 616a71c2 (first)
+=======
+    /**
+     * The module namespace to assume when generating URLs to actions.
+     */
+    protected string $moduleNamespace = 'Modules\Mensa\Http\Controllers';
+
+    public string $name = 'Mensa';
+>>>>>>> c6af2eee (first)
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -565,4 +583,6 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
     public string $name = 'Legge109';
 >>>>>>> 616a71c2 (first)
+=======
+>>>>>>> c6af2eee (first)
 }

@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @section('page_heading','Bagde')
 =======
 @section('page_heading','cert fisc')
@@ -55,3 +56,9 @@
 >>>>>>> 616a71c2 (first)
 
 @endsection
+=======
+@section('page_heading','Mensa ')
+@section('content')
+Benvenuto nel programma mensa
+@endsection
+>>>>>>> c6af2eee (first)

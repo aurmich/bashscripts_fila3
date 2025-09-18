@@ -17,6 +17,7 @@ includes:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 
@@ -94,6 +95,8 @@ parameters:
 >>>>>>> 6907d18e (first)
 =======
 >>>>>>> 616a71c2 (first)
+=======
+>>>>>>> c6af2eee (first)
 
 parameters:
 
@@ -101,6 +104,7 @@ parameters:
 
     paths:
         - .
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -130,10 +134,13 @@ parameters:
 >>>>>>> 6907d18e (first)
 =======
 >>>>>>> 616a71c2 (first)
+=======
+>>>>>>> c6af2eee (first)
 
     ignoreErrors:
     #    - '#Unsafe usage of new static#'
         - '#PHPDoc tag @mixin contains unknown class #'
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -190,11 +197,15 @@ parameters:
 =======
 
 >>>>>>> 616a71c2 (first)
+=======
+
+>>>>>>> c6af2eee (first)
     excludePaths:
         - ./build/*
         - ./vendor/*
         - ./*/vendor/*
         - ./docs/*
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -248,12 +259,15 @@ parameters:
 >>>>>>> 6907d18e (first)
 =======
 >>>>>>> 616a71c2 (first)
+=======
+>>>>>>> c6af2eee (first)
         - ./Tests/*
         - ./_ide_helper.php
 
     bootstrapFiles:
     #    - ./Services/vendor/autoload.php
     #    - ./phpstan_constants.php
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -283,6 +297,8 @@ parameters:
 >>>>>>> 6907d18e (first)
 =======
 >>>>>>> 616a71c2 (first)
+=======
+>>>>>>> c6af2eee (first)
 
     scanFiles:
     #    - ./Helpers/Helper.php
@@ -301,6 +317,7 @@ parameters:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     tmpDir: build/phpstan
 =======
     tmpDir: ./build/phpstan
@@ -335,6 +352,9 @@ parameters:
 =======
     tmpDir: ./build/phpstan
 >>>>>>> 616a71c2 (first)
+=======
+    tmpDir: ./build/phpstan
+>>>>>>> c6af2eee (first)
     checkUnusedViews: false
     checkMissingIterableValueType: false
     checkGenericClassInNonGenericObjectType: false
@@ -342,6 +362,7 @@ parameters:
     reportUnmatchedIgnoredErrors: false
     checkOctaneCompatibility: false
     checkModelProperties: false
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -416,3 +437,6 @@ parameters:
 =======
 
 >>>>>>> 616a71c2 (first)
+=======
+
+>>>>>>> c6af2eee (first)

@@ -19,6 +19,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
 =======
@@ -225,11 +226,16 @@
     "name": "Legge109",
     "alias": "legge109",
 >>>>>>> 616a71c2 (first)
+=======
+    "name": "Mensa",
+    "alias": "mensa",
+>>>>>>> c6af2eee (first)
     "description": "",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -255,11 +261,15 @@
 =======
         "Modules\\Legge109\\Providers\\Legge109ServiceProvider"
 >>>>>>> 616a71c2 (first)
+=======
+        "Modules\\Mensa\\Providers\\MensaServiceProvider"
+>>>>>>> c6af2eee (first)
     ],
     "aliases": {},
     "files": [],
     "requires": []
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -292,3 +302,5 @@
 >>>>>>> 6907d18e (first)
 =======
 >>>>>>> 616a71c2 (first)
+=======
+>>>>>>> c6af2eee (first)

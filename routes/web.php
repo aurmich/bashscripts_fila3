@@ -15,6 +15,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -180,3 +181,6 @@ declare(strict_types=1);
 =======
 declare(strict_types=1);
 >>>>>>> 616a71c2 (first)
+=======
+declare(strict_types=1);
+>>>>>>> c6af2eee (first)
