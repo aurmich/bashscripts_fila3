@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('rating::layouts.master')
 =======
 @extends('xot::layouts.app')
@@ -43,10 +44,14 @@
 =======
 @extends('badge::layouts.master')
 >>>>>>> 7e417e87 (first)
+=======
+@extends('certfisc::layouts.master')
+>>>>>>> 53542950 (first)
 
 @section('content')
     <h1>Hello World</h1>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -118,3 +123,9 @@
     </p>
 @stop
 >>>>>>> 7e417e87 (first)
+=======
+    <p>
+        This view is loaded from module: {!! config('certfisc.name') !!}
+    </p>
+@stop
+>>>>>>> 53542950 (first)

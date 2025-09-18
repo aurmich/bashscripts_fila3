@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -133,3 +134,6 @@ Route::prefix('tenant')->group(function() {
 =======
 declare(strict_types=1);
 >>>>>>> 7e417e87 (first)
+=======
+declare(strict_types=1);
+>>>>>>> 53542950 (first)

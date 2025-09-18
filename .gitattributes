@@ -1,12 +1,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7e417e87 (first)
+=======
+>>>>>>> 53542950 (first)
 * text=auto
 *.css linguist-vendored
 *.scss linguist-vendored
 *.js linguist-vendored
 CHANGELOG.md export-ignore
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -68,3 +72,5 @@ CHANGELOG.md export-ignore
 >>>>>>> 8fc3049b (first)
 =======
 >>>>>>> 7e417e87 (first)
+=======
+>>>>>>> 53542950 (first)

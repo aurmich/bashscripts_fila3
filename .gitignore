@@ -13,6 +13,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ───────────────────────────────────────────────────────
 # Sistema operativo / File nascosti e metadata
 # ───────────────────────────────────────────────────────
@@ -839,8 +840,13 @@ cache/
 *:Zone.Identifier
 >>>>>>> 8fc3049b (first)
 =======
+=======
+>>>>>>> 53542950 (first)
 /vendor
 *.lock
 /build
 *:Zone.Identifier
+<<<<<<< HEAD
 >>>>>>> 7e417e87 (first)
+=======
+>>>>>>> 53542950 (first)

@@ -4,7 +4,10 @@
 /source/assets/build/
 .env
 npm-debug.log
+<<<<<<< HEAD
 *.cache
 *.phar
 *.lock
 package-lock.json
+=======
+>>>>>>> 53542950 (first)

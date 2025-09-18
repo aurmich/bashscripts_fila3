@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
     'pages' => [
         'artisan-commands-manager' => [
             'navigation_label' => 'Gestione Artisan',
@@ -75,5 +76,25 @@ return [
             'plural_label' => 'Badges',
         ],
 >>>>>>> 7e417e87 (first)
+=======
+    'navigation' => [
+        'group' => [
+            'documenti' => [
+                'label' => 'Documenti',
+                'description' => 'Gestione documenti e certificazioni',
+            ],
+        ],
+        'certfisc' => [
+            'label' => 'Certificazione Fiscale',
+            'plural' => 'Certificazioni Fiscali',
+            'icon' => 'certfisc-document',
+        ],
+    ],
+    'resources' => [
+        'certfisc' => [
+            'label' => 'Certificazione Fiscale',
+            'plural_label' => 'Certificazioni Fiscali',
+        ],
+>>>>>>> 53542950 (first)
     ],
 ];

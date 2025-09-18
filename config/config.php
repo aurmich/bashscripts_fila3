@@ -14,6 +14,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'name' => 'Rating',
     'icon' => 'heroicon-o-star', // icon on dashboard
     'navigation_sort' => 1,
@@ -138,4 +139,8 @@ return [
     'name' => 'Badge',
     'icon' => 'fas-id-badge',
 >>>>>>> 7e417e87 (first)
+=======
+    'name' => 'CertFisc',
+    'icon' => 'heroicon-o-archive-box-arrow-down',
+>>>>>>> 53542950 (first)
 ];

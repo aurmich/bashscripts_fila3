@@ -10,6 +10,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
 =======
@@ -167,15 +168,26 @@
 =======
     "name": "Badge",
     "alias": "badge",
+=======
+    "name": "CertFisc",
+    "alias": "certfisc",
+>>>>>>> 53542950 (first)
     "description": "",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
+<<<<<<< HEAD
         "Modules\\Badge\\Providers\\BadgeServiceProvider"
+=======
+        "Modules\\CertFisc\\Providers\\CertFiscServiceProvider"
+>>>>>>> 53542950 (first)
     ],
     "aliases": {},
     "files": [],
     "requires": []
 }
+<<<<<<< HEAD
 >>>>>>> 7e417e87 (first)
+=======
+>>>>>>> 53542950 (first)

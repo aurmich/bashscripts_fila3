@@ -11,6 +11,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 /**
@@ -66,10 +67,18 @@ namespace Modules\Badge\Providers;
 
 // --- bases ---
 >>>>>>> 7e417e87 (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\CertFisc\Providers;
+
+// --- bases ---
+>>>>>>> 53542950 (first)
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -149,10 +158,17 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected string $moduleNamespace = 'Modules\Badge\Http\Controllers';
 >>>>>>> 7e417e87 (first)
+=======
+    /**
+     * The module namespace to assume when generating URLs to actions.
+     */
+    protected string $moduleNamespace = 'Modules\CertFisc\Http\Controllers';
+>>>>>>> 53542950 (first)
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -392,4 +408,8 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
     public string $name = 'Badge';
 >>>>>>> 7e417e87 (first)
+=======
+
+    public string $name = 'CertFisc';
+>>>>>>> 53542950 (first)
 }
