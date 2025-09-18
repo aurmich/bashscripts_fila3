@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 /*
+<<<<<<< HEAD
 |--------------------------------------------------------------------------
 | API Routes
 |--------------------------------------------------------------------------
@@ -17,3 +18,7 @@ Route::middleware('auth:api')->get('/xot', function (Request $request) {
     return $request->user();
 });
 */
+=======
+ * --empty
+ */
+>>>>>>> a8f30311 (first)

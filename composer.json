@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "laraxot/bashscripts_fila3",
     "description": "Script di utilità per la gestione dei repository Git, Toolkit di automazione Git per progetti Laravel",
     "type": "library",
@@ -44,10 +45,30 @@
             "aliases": {
 
             }
+=======
+    "name": "laraxot/module_ui_fila3",
+    "description": "",
+    "homepage": "https://github.com/laraxot/module_ui_fila3.git",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marco Sottana",
+            "email": "marco.sottana@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\UI\\Providers\\UIServiceProvider",
+                "Modules\\UI\\Providers\\Filament\\AdminPanelProvider"
+            ],
+            "aliases": {}
+>>>>>>> a8f30311 (first)
         }
     },
     "autoload": {
         "psr-4": {
+<<<<<<< HEAD
             "Modules\\Rating\\": "app/",
             "Modules\\Rating\\Database\\Factories\\": "database/factories/",
             "Modules\\Rating\\Database\\Seeders\\": "database/seeders/"
@@ -70,6 +91,33 @@
     },
     "scripts": {
         "post-autoload-dump": [
+=======
+            "Modules\\UI\\": "app/",
+            "Modules\\UI\\Database\\Factories\\": "database/factories/",
+            "Modules\\UI\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "require": {
+        "owenvoke/blade-fontawesome": "*"
+    },
+    "require-dev": {},
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../User"
+        },
+        {
+            "type": "path",
+            "url": "../Tenant"
+        },
+        {
+            "type": "path",
+            "url": "../Xot"
+        }
+    ],
+    "scripts": {
+        "post-autoload-dump1": [
+>>>>>>> a8f30311 (first)
             "@php vendor/bin/testbench package:discover --ansi"
         ],
         "post-update-cmd": [
@@ -79,6 +127,7 @@
         "test": "./vendor/bin/pest --no-coverage",
         "test-coverage": "vendor/bin/pest --coverage-html coverage",
         "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+<<<<<<< HEAD
 =======
     "name": "laraxot/module_xot_fila3",
     "description": "xot module, heart of the laraxot repository",
@@ -191,10 +240,13 @@
         "test-coverage": "vendor/bin/pest --coverage",
         "format": "vendor/bin/pint"
 >>>>>>> 59bc4fe7 (first)
+=======
+>>>>>>> a8f30311 (first)
     },
     "config": {
         "sort-packages": true,
         "allow-plugins": {
+<<<<<<< HEAD
 <<<<<<< HEAD
             "phpstan/extension-installer": true,
             "pestphp/pest-plugin": true
@@ -208,10 +260,14 @@
 =======
             "pestphp/pest-plugin": true,
             "phpstan/extension-installer": true,
+=======
+            "pestphp/pest-plugin": true,
+>>>>>>> a8f30311 (first)
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "wikimedia/composer-merge-plugin": true
         }
     },
+<<<<<<< HEAD
     "extra": {
         "laravel": {
             "providers": [
@@ -226,3 +282,8 @@
 >>>>>>> 59bc4fe7 (first)
     "prefer-stable": true
 }
+=======
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+>>>>>>> a8f30311 (first)

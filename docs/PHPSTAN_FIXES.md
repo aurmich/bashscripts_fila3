@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Correzioni PHPStan Livello 7 - Modulo Xot
 
 Questo documento traccia gli errori PHPStan di livello 7 identificati nel modulo Xot e le relative soluzioni implementate.
@@ -176,10 +177,25 @@ Line 33: Static property Modules\Xot\Filament\Widgets\XotBaseWidget::$view (view
 
 ```
 Line 146: Offset 1 on array{list<string>, list<string>} in isset() always exists and is not nullable.
+=======
+# Correzioni PHPStan Livello 7 - Modulo UI
+
+Questo documento traccia gli errori PHPStan di livello 7 identificati nel modulo UI e le relative soluzioni implementate.
+
+## Errori Identificati
+
+### 1. Errori in TableLayoutToggleTableAction.php
+
+```
+Metodo toggleLayout() ha il parametro $livewire senza type hint specificato.
+Cannot call method dispatch() on class-string|object.
+Cannot call method resetTable() on class-string|object.
+>>>>>>> a8f30311 (first)
 ```
 
 ## Soluzioni Implementate
 
+<<<<<<< HEAD
 ### 1. Correzione in Helpers/Helper.php
 
 Il problema è che PHPStan rileva che la chiamata a `is_array($matches)` sarà sempre vera perché `$matches` è già tipizzato come array. Abbiamo modificato il controllo per verificare se l'array non è vuoto invece di verificare se è un array:
@@ -691,10 +707,40 @@ private function importDataToMySQL(string $mdbFile, string $mysqlUser, string $m
 
     foreach ($tables as $table) {
         // ... codice per importare i dati ...
+=======
+### 1. Correzione in TableLayoutToggleTableAction.php
+
+Per risolvere i problemi di type safety nella classe `TableLayoutToggleTableAction`, sono stati apportati i seguenti cambiamenti:
+
+1. Aggiunto il type hint `mixed` al parametro `$livewire` del metodo `toggleLayout()` invece di forzare un tipo specifico, poiché il parametro potrebbe essere di vari tipi:
+
+```php
+protected function toggleLayout(mixed $livewire = null): void
+```
+
+2. Aggiunti controlli `method_exists` e `property_exists` prima di chiamare metodi o accedere a proprietà sull'oggetto `$livewire`:
+
+```php
+if ($livewire) {
+    // Use property_exists to safely check if the property exists
+    if (property_exists($livewire, 'layoutView')) {
+        $livewire->layoutView = $newLayout;
+    }
+    
+    // These methods should be available on Filament components
+    if (method_exists($livewire, 'dispatch')) {
+        $livewire->dispatch('$refresh');
+        $livewire->dispatch('refreshTable');
+    }
+    
+    if (method_exists($livewire, 'resetTable')) {
+        $livewire->resetTable();
+>>>>>>> a8f30311 (first)
     }
 }
 ```
 
+<<<<<<< HEAD
 Queste modifiche garantiscono che:
 1. Il metodo exportTablesToCSV restituisca effettivamente l'array di tabelle che viene costruito al suo interno
 2. Il metodo importDataToMySQL verifichi che l'array di tabelle non sia vuoto prima di tentare di iterarlo
@@ -818,3 +864,6 @@ protected array $listeners = [
 ```
 
 L'aggiunta dell'annotazione `@phpstan-var` fornisce a PHPStan un'informazione più specifica sul tipo della proprietà, permettendogli di verificare correttamente che tutti gli elementi dell'array siano stringhe. Questo è particolarmente utile quando si lavora con Livewire, dove i listener sono definiti come un array associativo di eventi e metodi da chiamare.
+=======
+Questo approccio è più robusto e previene errori a runtime quando l'oggetto `$livewire` non ha i metodi o le proprietà previste.
+>>>>>>> a8f30311 (first)

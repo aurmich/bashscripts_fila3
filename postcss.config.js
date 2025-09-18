@@ -3,6 +3,7 @@ module.exports = {
     tailwindcss: {},
     autoprefixer: {},
 <<<<<<< HEAD
+<<<<<<< HEAD
     'postcss-preset-env': {
       stage: 3,
       features: {
@@ -13,5 +14,7 @@ module.exports = {
     },
 =======
 >>>>>>> 59bc4fe7 (first)
+=======
+>>>>>>> a8f30311 (first)
   },
 }

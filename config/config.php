@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
     'name' => 'Rating',
     'icon' => 'heroicon-o-star', // icon on dashboard
     'navigation_sort' => 1,
@@ -14,13 +15,26 @@ return [
     'navigation' => [
         'enabled' => true,
         'sort' => 110,
+=======
+    'name' => 'UI',
+    'description' => 'Modulo per la gestione dell\'interfaccia utente e componenti',
+    'icon' => 'heroicon-o-squares-2x2',
+    'navigation' => [
+        'enabled' => true,
+        'sort' => 90,
+>>>>>>> a8f30311 (first)
     ],
     'routes' => [
         'enabled' => true,
         'middleware' => ['web', 'auth'],
     ],
     'providers' => [
+<<<<<<< HEAD
         'Modules\\Xot\\Providers\\XotServiceProvider',
     ],
 >>>>>>> 59bc4fe7 (first)
+=======
+        'Modules\\UI\\Providers\\UIServiceProvider',
+    ],
+>>>>>>> a8f30311 (first)
 ];

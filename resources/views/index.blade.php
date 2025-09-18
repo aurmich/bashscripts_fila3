@@ -1,13 +1,18 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('rating::layouts.master')
 =======
 @extends('xot::layouts.app')
 >>>>>>> 59bc4fe7 (first)
+=======
+@extends('ui::layouts.master')
+>>>>>>> a8f30311 (first)
 
 @section('content')
     <h1>Hello World</h1>
 
     <p>
+<<<<<<< HEAD
 <<<<<<< HEAD
         This view is loaded from module: {!! config('rating.name') !!}
     </p>
@@ -17,3 +22,8 @@
     </p>
 @stop
 >>>>>>> 59bc4fe7 (first)
+=======
+        This view is loaded from module: {!! config('ui.name') !!}
+    </p>
+@endsection
+>>>>>>> a8f30311 (first)

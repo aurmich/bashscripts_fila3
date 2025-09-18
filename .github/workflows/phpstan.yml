@@ -5,11 +5,14 @@ on:
     paths:
       - '**.php'
       - 'phpstan.neon.dist'
+<<<<<<< HEAD
   pull_request:
     paths:
       - '**.php'
       - 'phpstan.neon.dist'
 
+=======
+>>>>>>> a8f30311 (first)
 
 jobs:
   phpstan:
@@ -19,12 +22,17 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Setup PHP
+<<<<<<< HEAD
         uses: shivammathur/setup-php@v2
+=======
+        uses: shivammathur/setup-php@latest
+>>>>>>> a8f30311 (first)
         with:
           php-version: '8.1'
           coverage: none
 
       - name: Install composer dependencies
+<<<<<<< HEAD
 <<<<<<< HEAD
         uses: ramsey/composer-install@v2
 =======
@@ -34,5 +42,9 @@ jobs:
         run: cd Services && composer install --no-progress --no-suggest
 >>>>>>> 59bc4fe7 (first)
 
+=======
+        uses: ramsey/composer-install@latest
+
+>>>>>>> a8f30311 (first)
       - name: Run PHPStan
         run: ./vendor/bin/phpstan --error-format=github

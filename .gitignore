@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ───────────────────────────────────────────────────────
 # Sistema operativo / File nascosti e metadata
 # ───────────────────────────────────────────────────────
@@ -417,11 +418,39 @@ package-lock.json
 .php-cs-fixer.cache
 *.phar
 .git-rewrite/
+=======
+/vendor
+*.lock
+/build
+composer.lock
+composer.lock
+*.lock
+package-lock.json
+.php-cs-fixer.cache
+*.cache
+.git-blame-ignore-revs
+.git-rewrite
+.git-blame-ignore-revs
+*.phar
+.php-cs-fixer.cache
+*.cache
+.git-blame-ignore-revs
+package-lock.json
+.php-cs-fixer.cache
+package-lock.json
+.git-rewrite/
+*.phar
+.git-rewrite/
+.php-cs-fixer.cache
+>>>>>>> a8f30311 (first)
 
 node_modules
 .git-blame-ignore-revs
 .git-blame-ignore-revs
+<<<<<<< HEAD
 >>>>>>> 59bc4fe7 (first)
+=======
+>>>>>>> a8f30311 (first)
 node_modules
 vendor
 .git-blame-ignore-revs
@@ -431,6 +460,7 @@ build/
 node_modules
 docs/cache/
 cache/
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 *:Zone.Identifier
@@ -449,3 +479,9 @@ laravel/Modules/Predict/
 .php-cs-fixer.cache
 *.exe
 >>>>>>> 59bc4fe7 (first)
+=======
+.git-blame-ignore-revs
+.php-cs-fixer.cache
+*.exe
+*:Zone.Identifier
+>>>>>>> a8f30311 (first)

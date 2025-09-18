@@ -6,6 +6,7 @@
      stroke-width="1.5"
      aria-hidden="true" 
      role="img">
+<<<<<<< HEAD
     <!-- Cubo base -->
     <path stroke-linecap="round" 
           stroke-linejoin="round" 
@@ -23,4 +24,23 @@
     <path stroke-linecap="round" 
           stroke-linejoin="round" 
           d="M12 15v4M9 17l3-2M15 17l-3-2" />
+=======
+    <!-- Griglia di componenti -->
+    <rect x="4" y="4" width="7" height="7" rx="1" />
+    <rect x="13" y="4" width="7" height="7" rx="1" />
+    <rect x="4" y="13" width="7" height="7" rx="1" />
+    <rect x="13" y="13" width="7" height="7" rx="1" />
+    
+    <!-- Elementi interni -->
+    <path stroke-linecap="round" 
+          stroke-linejoin="round" 
+          d="M6 7h3M6 8.5h3" />
+    <path stroke-linecap="round" 
+          stroke-linejoin="round" 
+          d="M15 7h3M15 8.5h3" />
+    <circle cx="7.5" cy="16.5" r="1" fill="currentColor" />
+    <path stroke-linecap="round" 
+          stroke-linejoin="round" 
+          d="M15 16h3M15 17.5h3" />
+>>>>>>> a8f30311 (first)
 </svg> 

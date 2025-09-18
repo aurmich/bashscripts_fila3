@@ -3,10 +3,14 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Rating\Providers;
 =======
 namespace Modules\Xot\Providers;
 >>>>>>> 59bc4fe7 (first)
+=======
+namespace Modules\UI\Providers;
+>>>>>>> a8f30311 (first)
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as BaseEventServiceProvider;
 

@@ -1,11 +1,17 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
+=======
+    "name": "UI",
+    "alias": "ui",
+>>>>>>> a8f30311 (first)
     "description": "",
     "keywords": [],
     "priority": 0,
     "providers": [
+<<<<<<< HEAD
         "Modules\\Rating\\Providers\\RatingServiceProvider",
         "Modules\\Rating\\Providers\\Filament\\AdminPanelProvider"
 =======
@@ -29,3 +35,10 @@
 =======
 }
 >>>>>>> 59bc4fe7 (first)
+=======
+        "Modules\\UI\\Providers\\UIServiceProvider",
+        "Modules\\UI\\Providers\\Filament\\AdminPanelProvider"
+    ],
+    "files": []
+}
+>>>>>>> a8f30311 (first)

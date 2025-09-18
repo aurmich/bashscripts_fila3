@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
  * ---.
  */
@@ -8,11 +9,17 @@
 declare(strict_types=1);
 
 namespace Modules\Rating\Providers;
+=======
+declare(strict_types=1);
+
+namespace Modules\UI\Providers;
+>>>>>>> a8f30311 (first)
 
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
+<<<<<<< HEAD
     protected string $moduleNamespace = 'Modules\Rating\Http\Controllers';
 =======
 declare(strict_types=1);
@@ -44,11 +51,15 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected string $moduleNamespace = 'Modules\Xot\Http\Controllers';
 >>>>>>> 59bc4fe7 (first)
+=======
+    protected string $moduleNamespace = 'Modules\UI\Http\Controllers';
+>>>>>>> a8f30311 (first)
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     public string $name = 'Rating';
 =======
@@ -157,4 +168,7 @@ class RouteServiceProvider extends ServiceProvider
 
     // end registerRoutePattern
 >>>>>>> 59bc4fe7 (first)
+=======
+    public string $name = 'UI';
+>>>>>>> a8f30311 (first)
 }
