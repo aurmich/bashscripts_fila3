@@ -1,0 +1,172 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> bc2abf99 (.)
+name: PHPStan
+
+on:
+  push:
+    paths:
+      - '**.php'
+      - 'phpstan.neon.dist'
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bbec4378 (first)
+=======
+>>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> bc2abf99 (.)
+  pull_request:
+    paths:
+      - '**.php'
+      - 'phpstan.neon.dist'
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a8f30311 (first)
+=======
+>>>>>>> bbec4378 (first)
+=======
+name: Static Analysis
+
+on: [push]
+>>>>>>> 0d55b583 (first)
+=======
+name: Static Analysis
+
+on: [push]
+>>>>>>> 9cec72d6 (first)
+=======
+>>>>>>> 2df6fbc8 (first)
+=======
+name: Static Analysis
+
+on: [push]
+>>>>>>> e83070fd (.)
+=======
+name: Static Analysis
+
+on: [push]
+>>>>>>> bdeae81f (first)
+=======
+>>>>>>> bc2abf99 (.)
+=======
+name: Static Analysis
+
+on: [push]
+>>>>>>> 55edff60 (.)
+
+jobs:
+  phpstan:
+    name: phpstan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup PHP
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        uses: shivammathur/setup-php@v2
+=======
+        uses: shivammathur/setup-php@latest
+>>>>>>> a8f30311 (first)
+=======
+        uses: shivammathur/setup-php@v2
+>>>>>>> bbec4378 (first)
+=======
+        uses: shivammathur/setup-php@v2
+>>>>>>> 2df6fbc8 (first)
+=======
+        uses: shivammathur/setup-php@v2
+>>>>>>> bc2abf99 (.)
+        with:
+          php-version: '8.1'
+          coverage: none
+
+      - name: Install composer dependencies
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        uses: ramsey/composer-install@v2
+=======
+        uses: ramsey/composer-install@latest
+
+      - name: Install Services composer dependencies
+        run: cd Services && composer install --no-progress --no-suggest
+>>>>>>> 59bc4fe7 (first)
+
+=======
+        uses: ramsey/composer-install@latest
+
+>>>>>>> a8f30311 (first)
+=======
+        uses: ramsey/composer-install@v2
+
+>>>>>>> bbec4378 (first)
+      - name: Run PHPStan
+        run: ./vendor/bin/phpstan --error-format=github
+=======
+=======
+>>>>>>> 9cec72d6 (first)
+=======
+>>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
+=======
+>>>>>>> 55edff60 (.)
+        uses: shivammathur/setup-php@latest
+        with:
+          php-version: '8.2'
+          coverage: none
+
+      - name: Install composer dependencies
+        run: composer install -n --prefer-dist
+
+      - name: Run Static Analysis
+        run: ./vendor/bin/phpstan --error-format=github
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 0d55b583 (first)
+=======
+>>>>>>> 9cec72d6 (first)
+=======
+=======
+>>>>>>> bc2abf99 (.)
+        uses: ramsey/composer-install@v2
+
+      - name: Run PHPStan
+        run: ./vendor/bin/phpstan --error-format=github
+<<<<<<< HEAD
+>>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
+=======
+>>>>>>> bc2abf99 (.)
+=======
+>>>>>>> 55edff60 (.)

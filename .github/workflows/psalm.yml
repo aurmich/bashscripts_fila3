@@ -1,0 +1,60 @@
+name: psalm
+on: [push]
+
+jobs:
+    phpinsights:
+        runs-on: ubuntu-latest
+        name: PHP Insights checks
+        steps:
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            - uses: actions/checkout@v2
+            - uses: shivammathur/setup-php@v2
+=======
+            - uses: actions/checkout@v4
+            - uses: shivammathur/setup-php@latest
+>>>>>>> d79d9e57 (first)
+=======
+            - uses: actions/checkout@v2
+            - uses: shivammathur/setup-php@latest
+>>>>>>> 0d55b583 (first)
+=======
+            - uses: actions/checkout@v2
+            - uses: shivammathur/setup-php@latest
+>>>>>>> 9cec72d6 (first)
+=======
+            - uses: actions/checkout@v2
+            - uses: shivammathur/setup-php@latest
+>>>>>>> 8fc3049b (first)
+=======
+            - uses: actions/checkout@v2
+            - uses: shivammathur/setup-php@latest
+>>>>>>> e83070fd (.)
+=======
+            - uses: actions/checkout@v2
+            - uses: shivammathur/setup-php@latest
+>>>>>>> bdeae81f (first)
+=======
+            - uses: actions/checkout@v2
+            - uses: shivammathur/setup-php@latest
+>>>>>>> 0253339c (first)
+=======
+            - uses: actions/checkout@v2
+            - uses: shivammathur/setup-php@latest
+>>>>>>> 55edff60 (.)
+              with:
+                  php-version: 8.1
+            - run: composer install --prefer-dist --no-progress
+            - run: composer require --dev psalm/plugin-laravel -W
+            - run: ./vendor/bin/psalm --init
+            - run: ./vendor/bin/psalm-plugin enable psalm/plugin-laravel
+            - run: ./vendor/bin/psalm --alter --issues=all  --dry-run
+            - uses: stefanzweifel/git-auto-commit-action@latest
+              with:
+                commit_message: psalm

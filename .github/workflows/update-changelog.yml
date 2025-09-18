@@ -1,0 +1,123 @@
+name: "Update Changelog"
+
+on:
+  release:
+    types: [released]
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+permissions:
+  contents: write
+
+>>>>>>> a8f30311 (first)
+=======
+>>>>>>> bbec4378 (first)
+=======
+permissions:
+  contents: write
+
+>>>>>>> c088001a (first)
+=======
+permissions:
+  contents: write
+
+>>>>>>> d79d9e57 (first)
+=======
+>>>>>>> 2df6fbc8 (first)
+=======
+permissions:
+  contents: write
+
+>>>>>>> 8fc3049b (first)
+=======
+permissions:
+  contents: write
+
+>>>>>>> 0253339c (first)
+=======
+>>>>>>> bc2abf99 (.)
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        uses: actions/checkout@v3
+=======
+        uses: actions/checkout@v4
+>>>>>>> d79d9e57 (first)
+=======
+        uses: actions/checkout@v3
+>>>>>>> 2df6fbc8 (first)
+=======
+        uses: actions/checkout@v3
+>>>>>>> 8fc3049b (first)
+=======
+        uses: actions/checkout@v3
+>>>>>>> 0253339c (first)
+=======
+        uses: actions/checkout@v3
+>>>>>>> bc2abf99 (.)
+        with:
+          ref: main
+
+      - name: Update Changelog
+        uses: stefanzweifel/changelog-updater-action@v1
+        with:
+          latest-version: ${{ github.event.release.name }}
+          release-notes: ${{ github.event.release.body }}
+
+      - name: Commit updated CHANGELOG
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        uses: stefanzweifel/git-auto-commit-action@v4
+=======
+        uses: stefanzweifel/git-auto-commit-action@latest
+>>>>>>> 59bc4fe7 (first)
+=======
+        uses: stefanzweifel/git-auto-commit-action@latest
+>>>>>>> a8f30311 (first)
+=======
+        uses: stefanzweifel/git-auto-commit-action@v4
+>>>>>>> bbec4378 (first)
+=======
+        uses: stefanzweifel/git-auto-commit-action@latest
+>>>>>>> c088001a (first)
+=======
+        uses: stefanzweifel/git-auto-commit-action@latest
+>>>>>>> d79d9e57 (first)
+=======
+        uses: stefanzweifel/git-auto-commit-action@v4
+>>>>>>> 2df6fbc8 (first)
+=======
+        uses: stefanzweifel/git-auto-commit-action@latest
+>>>>>>> 8fc3049b (first)
+=======
+        uses: stefanzweifel/git-auto-commit-action@latest
+>>>>>>> 0253339c (first)
+=======
+        uses: stefanzweifel/git-auto-commit-action@v4
+>>>>>>> bc2abf99 (.)
+        with:
+          branch: main
+          commit_message: Update CHANGELOG
+          file_pattern: CHANGELOG.md

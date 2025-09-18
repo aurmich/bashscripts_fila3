@@ -1,0 +1,68 @@
+grumphp:
+    tasks: {  
+        phpstan: {
+            level: 9,
+            force_patterns: [
+            #    'Modules'
+            ],
+            use_grumphp_paths: true
+            #configuration: phpstan.neon
+            #"autoload_file", "configuration", "force_patterns", "ignore_patterns", "level", "memory_limit", "triggered_by", "use_grumphp_paths"
+        },
+        #phpcsfixer: {
+        #    allow_risky : true 
+             #The option "allow-risky" does not exist. Defined options are: "allow_risky", "cache_file", "config", "config_contains_finder", "diff", "rules", "triggered_by", "using_cache", "verbose".
+        #}
+    }
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> bbec4378 (first)
+=======
+
+>>>>>>> c088001a (first)
+=======
+
+>>>>>>> d79d9e57 (first)
+=======
+
+>>>>>>> 0d55b583 (first)
+=======
+
+>>>>>>> 9cec72d6 (first)
+=======
+
+>>>>>>> 2df6fbc8 (first)
+=======
+
+>>>>>>> 8fc3049b (first)
+=======
+
+>>>>>>> e83070fd (.)
+=======
+
+>>>>>>> bdeae81f (first)
+=======
+
+>>>>>>> 0253339c (first)
+=======
+
+>>>>>>> bc2abf99 (.)
+=======
+
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
+=======
+
+>>>>>>> 030233b5 (Squashed 'public_html/noconsole/' content from commit dfb975a22)

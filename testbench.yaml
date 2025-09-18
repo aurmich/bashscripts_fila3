@@ -1,0 +1,148 @@
+providers:
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - Modules\Rating\Providers\RatingServiceProvider
+=======
+  - Modules\Xot\Providers\XotServiceProvider
+  - Modules\Xot\Providers\Filament\AdminPanelProvider
+  - Nwidart\Modules\LaravelModulesServiceProvider
+>>>>>>> 59bc4fe7 (first)
+=======
+  - Modules\UI\Providers\UIServiceProvider
+  - Nwidart\Modules\LaravelModulesServiceProvider
+
+>>>>>>> a8f30311 (first)
+=======
+  - Modules\Lang\Providers\LangServiceProvider
+>>>>>>> bbec4378 (first)
+=======
+  - Modules\Job\Providers\JobServiceProvider
+>>>>>>> c088001a (first)
+=======
+  - Modules\Notify\Providers\NotifyServiceProvider
+>>>>>>> d79d9e57 (first)
+=======
+  - Modules\User\Providers\UserServiceProvider
+  - Modules\User\Providers\Filament\AdminPanelProvider
+>>>>>>> 0d55b583 (first)
+=======
+  - Modules\Setting\Providers\SettingServiceProvider
+>>>>>>> 9cec72d6 (first)
+=======
+  - Modules\Rating\Providers\RatingServiceProvider
+>>>>>>> 2df6fbc8 (first)
+=======
+=======
+>>>>>>> 0253339c (first)
+  - Modules\Tenant\Providers\TenantServiceProvider
+  - Modules\Tenant\Providers\Filament\AdminPanelProvider
+  - Nwidart\Modules\LaravelModulesServiceProvider
+
+<<<<<<< HEAD
+>>>>>>> 8fc3049b (first)
+=======
+  - Modules\User\Providers\UserServiceProvider
+>>>>>>> 7e417e87 (first)
+=======
+  - Modules\User\Providers\UserServiceProvider
+>>>>>>> 53542950 (first)
+=======
+  - Modules\User\Providers\UserServiceProvider
+>>>>>>> 26424c5e (first)
+=======
+  - Modules\User\Providers\UserServiceProvider
+>>>>>>> c8cd1ec3 (first)
+=======
+  - Modules\User\Providers\UserServiceProvider
+>>>>>>> b7483fd0 (first)
+=======
+  - Modules\User\Providers\UserServiceProvider
+>>>>>>> e0005d7d (first)
+=======
+  - Modules\User\Providers\UserServiceProvider
+>>>>>>> 6907d18e (first)
+=======
+  - Modules\User\Providers\UserServiceProvider
+>>>>>>> 616a71c2 (first)
+=======
+  - Modules\User\Providers\UserServiceProvider
+>>>>>>> c6af2eee (first)
+=======
+  - Modules\User\Providers\UserServiceProvider
+>>>>>>> 8e6e7d4c (first)
+=======
+  - Modules\User\Providers\UserServiceProvider
+>>>>>>> 4658bb86 (first)
+=======
+  - Modules\User\Providers\UserServiceProvider
+>>>>>>> edbb3aab (first)
+=======
+  - Modules\User\Providers\UserServiceProvider
+>>>>>>> bcab6efe (first)
+=======
+  - Modules\User\Providers\UserServiceProvider
+>>>>>>> fec698af (first)
+=======
+  - Modules\User\Providers\UserServiceProvider
+>>>>>>> f862c51f (first)
+=======
+  - Modules\User\Providers\UserServiceProvider
+>>>>>>> 9997d18c (first)
+=======
+  - Modules\User\Providers\UserServiceProvider
+>>>>>>> 961ad402 (first)
+=======
+  - Modules\User\Providers\UserServiceProvider
+>>>>>>> dc18abbe (first)
+=======
+  - Modules\User\Providers\UserServiceProvider
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+  - Modules\User\Providers\UserServiceProvider
+  - Modules\User\Providers\Filament\AdminPanelProvider
+>>>>>>> e83070fd (.)
+=======
+  - Modules\User\Providers\UserServiceProvider
+  - Modules\User\Providers\Filament\AdminPanelProvider
+>>>>>>> bdeae81f (first)
+=======
+>>>>>>> 0253339c (first)
+=======
+  - Modules\Rating\Providers\RatingServiceProvider
+>>>>>>> bc2abf99 (.)
+=======
+  - Modules\Activity\Providers\ActivityServiceProvider
+  - Nwidart\Modules\LaravelModulesServiceProvider
+
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)

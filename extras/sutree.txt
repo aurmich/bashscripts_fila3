@@ -1,0 +1,44 @@
+git subtree pull -P bashscripts git@github.com:aurmich/bashscripts_fila3.git dev
+git subtree split -P bashscripts -b  bashscripts-temp
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 55edff60 (.)
+git fetch git@github.com:aurmich/bashscripts_fila3.git dev
+git subtree merge --prefix=bashscripts bashscripts-temp --squash
+- Can't squash-merge: 'bashscripts' was never added.
+git subtree merge --prefix=bashscripts bashscripts-temp
+- fatal: refusing to merge unrelated histories
+git subtree merge --prefix=bashscripts bashscripts-temp --rejoin
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+- fatal: refusing to merge unrelated histories
+git merge -s subtree bashscripts-temp --allow-unrelated-histories
+git subtree merge --prefix=bashscripts bashscripts-temp --rejoin
+- Already up to date.
+=======
+git fetch git@github.com:aurmich/bashscripts_fila3.git dev
+>>>>>>> a6cfb97d (.)
+=======
+git fetch git@github.com:aurmich/bashscripts_fila3.git dev
+git subtree merge --prefix=bashscripts bashscripts-temp --squash
+- Can't squash-merge: 'bashscripts' was never added.
+git subtree merge --prefix=bashscripts bashscripts-temp
+>>>>>>> bf472f16 (.)
+=======
+- fatal: refusing to merge unrelated histories
+>>>>>>> b1a401f5 (.)
+=======
+- fatal: refusing to merge unrelated histories
+git merge -s subtree bashscripts-temp --allow-unrelated-histories
+git subtree merge --prefix=bashscripts bashscripts-temp --rejoin
+- Already up to date.
+>>>>>>> a748b0af (.)
+=======
+- fatal: refusing to merge unrelated histories
+git merge -s subtree bashscripts-temp --allow-unrelated-histories
+git subtree merge --prefix=bashscripts bashscripts-temp --rejoin
+- Already up to date.
+>>>>>>> 55edff60 (.)

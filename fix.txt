@@ -1,0 +1,343 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+# 🛠️ Soluzioni Comuni per Problemi Git e Bash
+
+## 🔧 Problemi di Interprete Bash
+```bash
+# Fix per "bad interpreter: No such file or directory"
+sed -i -e 's/\r$//' nomefile.sh
+```
+
+## 🔄 Configurazione Git Remoto
+```bash
+# Aggiungere un secondo punto di push
+git remote set-url --push --add origin https://github.com/.....
+
+# Configurazione automatica tracking branch
+git config --global --add --bool push.autoSetupRemote true
+
+# Ignora cambiamenti di permessi
+git config core.fileMode false
+```
+
+## 🔐 Configurazione SSH
+```bash
+# Setup SSH Agent
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+
+# Verifica chiavi SSH
+ssh-add -L
+```
+
+## 🔍 Ricerca nei File
+```bash
+# Cerca testo ricorsivamente
+grep -Ril "text-to-find-here" .
+
+# Opzioni:
+# -i: ignore case
+# -R: recursive
+# -l: mostra solo nome file
+```
+
+## 🧹 Pulizia File Temporanei
+```bash
+# Rimuovi file Zone.Identifier
+find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
+```
+
+## 🚀 Setup Nuovo Repository
+```bash
+# Inizializza nuovo repository
+git init
+git add .
+git commit -m "Initial commit"
+
+# Configura remote
+git remote add origin <url>
+git push -u origin main
+```
+
+## ⚙️ Configurazione PHP
+```bash
+# Cambia versione PHP
+sudo update-alternatives --config php
+```
+
+## 🔄 Comandi Utili
+```bash
+# Cambia directory
+cd <dir>
+
+# Lista file con dettagli
+ls -la
+
+# Mostra stato git
+git status
+
+# Pull con rebase
+git pull --rebase
+
+# Push forzato
+git push -f origin <branch>
+```
+
+## ⚠️ Problemi Comuni e Soluzioni
+
+### Problema: Accesso Cartelle
+```bash
+# Soluzione: Modifica permessi
+sudo chmod 777 -R .
+```
+
+### Problema: Include Path Errato
+```
+Errore: include(/path/to/file): Failed to open stream
+Soluzione: Rimuovere suffisso _old dalle cartelle del modulo
+```
+
+### Problema: Permission Denied
+```
+Errore: zsh: permission denied: ./script.sh
+Soluzione: sudo chmod 777 -R .
+```
+
+## 🔄 Gestione PHP
+```bash
+# Cambia versione PHP
+sudo update-alternatives --config php
+```
+
+
+=======
+>>>>>>> 58e1cada (.)
+/bin/bash^M: bad interpreter: No such file or directory
+sed -i -e 's/\r$//' nomefile.sh
+
+---------
+Aggiungere un secondo punto di push
+git remote set-url --push --add origin  https://github.com/.....
+
+----------
+prima di entrare in ssh in un server remoto in cui usiamo git collegato via ssh
+eval "$(ssh-agent -s)" && ssh-add
+ssh-add -L
+
+
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+
+-------------
+per cercare un testo dentro i file
+grep -Ril "text-to-find-here" .
+
+i stands for ignore case (optional in your case).
+R stands for recursive.
+l stands for "show the file name, not the result itself".
+/ stands for starting at the root of your machine.
+
+-------------
+Automatically track remote branch with git
+git config --global --add --bool push.autoSetupRemote true
+
+-------------
+ignore file mode chmod change
+git config core.fileMode false
+
+sudo update-alternatives --config php
+
+
+-------------
+find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
+find . -type f -name "*:Zone.Identifier" -exec rm -f {} +
+
+
+
+sudo update-alternatives --config php
+
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+/bin/bash^M: bad interpreter: No such file or directory
+sed -i -e 's/\r$//' nomefile.sh
+
+---------
+Aggiungere un secondo punto di push
+git remote set-url --push --add origin  https://github.com/.....
+
+----------
+prima di entrare in ssh in un server remoto in cui usiamo git collegato via ssh
+eval "$(ssh-agent -s)" && ssh-add
+ssh-add -L
+
+
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+
+-------------
+per cercare un testo dentro i file
+grep -Ril "text-to-find-here" .
+
+i stands for ignore case (optional in your case).
+R stands for recursive.
+l stands for "show the file name, not the result itself".
+/ stands for starting at the root of your machine.
+
+-------------
+Automatically track remote branch with git
+git config --global --add --bool push.autoSetupRemote true
+
+-------------
+ignore file mode chmod change
+git config core.fileMode false
+
+sudo update-alternatives --config php
+
+
+-------------
+find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
+find . -type f -name "*:Zone.Identifier" -exec rm -f {} +
+
+
+
+sudo update-alternatives --config php
+
+
+[0;34mℹ️ [2025-04-22 11:23:27] Scelto blocco incoming (1 linee vs 1)[0m
+----
+cd <dir>
+git init
+git checkout -b dev
+git remote add origin git@github.com:provtv/module_user_fila3.git
+git fetch --all
+git add -A
+git commit -am .
+git merge origin/dev --allow-unrelated-histories
+git add -A
+git commit -am .
+git push -u origin dev
+rm -rf .git
+
+
+=======
+>>>>>>> 58e1cada (.)
+
+
+
+
+PROBLEMA: accesso cartelle file
+SOLUZIONE: sudo chmod 777 -R .
+
+
+
+PROBLEMA: include(/var/www/html/base_ptv_fila3/laravel/vendor/composer/../../Modules/UI/app/Providers/UIServiceProvider.php): Failed to open stream: No such file or directory
+SOLUZIONE: togliere _old dalle varie cartelle all'interno del modulo
+
+
+
+PROBLEMA: zsh: permission denied: ./bashscripts/git_up_noai.sh (dando comando ./bashscripts/git_up_noai.sh dev)
+SOLUZIONE: > sudo chmod 777 -R .     
+
+
+        
+<<<<<<< HEAD
+
+[0;34mℹ️ [2025-04-22 11:23:27] Scelto blocco HEAD (22 linee vs 1)[0m
+
+
+ cb513be (.)
+ 43df3e0 (.)
+
+
+ 0440c57 (.)
+=======
+>>>>>>> 58e1cada (.)
+=======
+=======
+>>>>>>> d8b9f8a6 (up)
+=======
+>>>>>>> d516087e (.)
+
+/bin/bash^M: bad interpreter: No such file or directory
+sed -i -e 's/\r$//' nomefile.sh
+
+---------
+Aggiungere un secondo punto di push
+git remote set-url --push --add origin  https://github.com/.....
+
+----------
+prima di entrare in ssh in un server remoto in cui usiamo git collegato via ssh
+eval "$(ssh-agent -s)" && ssh-add
+ssh-add -L
+
+
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+
+-------------
+per cercare un testo dentro i file
+grep -Ril "text-to-find-here" .
+
+i stands for ignore case (optional in your case).
+R stands for recursive.
+l stands for "show the file name, not the result itself".
+/ stands for starting at the root of your machine.
+
+-------------
+Automatically track remote branch with git
+git config --global --add --bool push.autoSetupRemote true
+
+-------------
+ignore file mode chmod change
+git config core.fileMode false
+
+sudo update-alternatives --config php
+
+
+-------------
+find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
+find . -type f -name "*:Zone.Identifier" -exec rm -f {} +
+
+
+
+sudo update-alternatives --config php
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8003fba6 (Squashed 'bashscripts/' changes from 79ba09c61..583e15e4a)
+
+
+
+
+
+PROBLEMA: accesso cartelle file
+SOLUZIONE: sudo chmod 777 -R .
+
+
+
+PROBLEMA: include(/var/www/html/base_ptv_fila3/laravel/vendor/composer/../../Modules/UI/app/Providers/UIServiceProvider.php): Failed to open stream: No such file or directory
+SOLUZIONE: togliere _old dalle varie cartelle all'interno del modulo
+
+
+
+PROBLEMA: zsh: permission denied: ./bashscripts/git_up_noai.sh (dando comando ./bashscripts/git_up_noai.sh dev)
+SOLUZIONE: > sudo chmod 777 -R .     
+
+
+        
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f2e91737 (.)
+=======
+>>>>>>> d8b9f8a6 (up)
+=======
+>>>>>>> d516087e (.)
+=======
+>>>>>>> 8003fba6 (Squashed 'bashscripts/' changes from 79ba09c61..583e15e4a)
+=======
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)

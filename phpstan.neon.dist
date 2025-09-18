@@ -1,0 +1,747 @@
+includes:
+    - phpstan-baseline.neon
+    - ./vendor/larastan/larastan/extension.neon
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> bc2abf99 (.)
+
+parameters:
+    level: 1
+    paths:
+        - .
+
+    excludePaths:
+        - ./vendor/*
+        - ./docs/*
+        - ./Tests/*
+
+    checkMissingIterableValueType: false
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> c088001a (first)
+=======
+>>>>>>> d79d9e57 (first)
+=======
+>>>>>>> c986cc10 (first)
+=======
+>>>>>>> 8fc3049b (first)
+=======
+>>>>>>> 0253339c (first)
+=======
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
+    - ./vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
+    #- ./vendor/symplify/phpstan-rules/config/code-complexity-rules.neon
+    #- ./vendor/symplify/phpstan-rules/config/collector-rules.neon
+    #- ./vendor/symplify/phpstan-rules/config/naming-rules.neon
+    #- ./vendor/symplify/phpstan-rules/config/regex-rules.neon
+    #- ./vendor/symplify/phpstan-rules/config/static-rules.neon
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bbec4378 (first)
+=======
+>>>>>>> c088001a (first)
+=======
+>>>>>>> d79d9e57 (first)
+=======
+>>>>>>> c986cc10 (first)
+=======
+>>>>>>> 8fc3049b (first)
+=======
+>>>>>>> 0253339c (first)
+=======
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
+
+parameters:
+    level: max
+    paths:
+        - .
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c088001a (first)
+=======
+>>>>>>> d79d9e57 (first)
+=======
+=======
+>>>>>>> 7e417e87 (first)
+=======
+>>>>>>> 53542950 (first)
+=======
+>>>>>>> 26424c5e (first)
+=======
+>>>>>>> c8cd1ec3 (first)
+=======
+>>>>>>> b7483fd0 (first)
+=======
+>>>>>>> e0005d7d (first)
+=======
+>>>>>>> 6907d18e (first)
+=======
+>>>>>>> 616a71c2 (first)
+=======
+>>>>>>> c6af2eee (first)
+=======
+>>>>>>> 8e6e7d4c (first)
+=======
+>>>>>>> 4658bb86 (first)
+=======
+>>>>>>> edbb3aab (first)
+=======
+>>>>>>> bcab6efe (first)
+=======
+>>>>>>> fec698af (first)
+=======
+>>>>>>> f862c51f (first)
+=======
+>>>>>>> 9997d18c (first)
+=======
+>>>>>>> 961ad402 (first)
+=======
+>>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+
+parameters:
+
+    level: max
+
+    paths:
+        - .
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9cec72d6 (first)
+=======
+>>>>>>> c986cc10 (first)
+=======
+>>>>>>> 8fc3049b (first)
+=======
+>>>>>>> 7e417e87 (first)
+=======
+>>>>>>> 53542950 (first)
+=======
+>>>>>>> 26424c5e (first)
+=======
+>>>>>>> c8cd1ec3 (first)
+=======
+>>>>>>> b7483fd0 (first)
+=======
+>>>>>>> e0005d7d (first)
+=======
+>>>>>>> 6907d18e (first)
+=======
+>>>>>>> 616a71c2 (first)
+=======
+>>>>>>> c6af2eee (first)
+=======
+>>>>>>> 8e6e7d4c (first)
+=======
+>>>>>>> 4658bb86 (first)
+=======
+>>>>>>> edbb3aab (first)
+=======
+>>>>>>> bcab6efe (first)
+=======
+>>>>>>> fec698af (first)
+=======
+>>>>>>> f862c51f (first)
+=======
+>>>>>>> 9997d18c (first)
+=======
+>>>>>>> 961ad402 (first)
+=======
+>>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+>>>>>>> 0253339c (first)
+=======
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
+
+    ignoreErrors:
+    #    - '#Unsafe usage of new static#'
+        - '#PHPDoc tag @mixin contains unknown class #'
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        - '#Static call to instance method Nwidart#'
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bbec4378 (first)
+=======
+>>>>>>> c088001a (first)
+=======
+>>>>>>> d79d9e57 (first)
+=======
+
+>>>>>>> 9cec72d6 (first)
+=======
+        - '#Static call to instance method Nwidart#'
+
+>>>>>>> c986cc10 (first)
+=======
+        - '#Static call to instance method Nwidart#'
+
+>>>>>>> 8fc3049b (first)
+=======
+
+>>>>>>> 7e417e87 (first)
+=======
+
+>>>>>>> 53542950 (first)
+=======
+
+>>>>>>> 26424c5e (first)
+=======
+
+>>>>>>> c8cd1ec3 (first)
+=======
+
+>>>>>>> b7483fd0 (first)
+=======
+
+>>>>>>> e0005d7d (first)
+=======
+
+>>>>>>> 6907d18e (first)
+=======
+
+>>>>>>> 616a71c2 (first)
+=======
+
+>>>>>>> c6af2eee (first)
+=======
+
+>>>>>>> 8e6e7d4c (first)
+=======
+
+>>>>>>> 4658bb86 (first)
+=======
+
+>>>>>>> edbb3aab (first)
+=======
+
+>>>>>>> bcab6efe (first)
+=======
+
+>>>>>>> fec698af (first)
+=======
+
+>>>>>>> f862c51f (first)
+=======
+
+>>>>>>> 9997d18c (first)
+=======
+
+>>>>>>> 961ad402 (first)
+=======
+
+>>>>>>> dc18abbe (first)
+=======
+
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+        - '#Static call to instance method Nwidart#'
+
+>>>>>>> 0253339c (first)
+=======
+        - '#Static call to instance method Nwidart#'
+
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
+    excludePaths:
+        - ./build/*
+        - ./vendor/*
+        - ./*/vendor/*
+        - ./docs/*
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        # - ./Tests/*
+=======
+        - ./Tests/*
+>>>>>>> c088001a (first)
+=======
+        - ./Tests/*
+>>>>>>> d79d9e57 (first)
+=======
+        - ./Tests/*
+>>>>>>> c986cc10 (first)
+        - ./_ide_helper.php
+=======
+        - ./Tests/*
+        - ./_ide_helper.php
+        - ./rector.php
+>>>>>>> 8fc3049b (first)
+=======
+        - ./Tests/*
+        - ./_ide_helper.php
+        - ./rector.php
+>>>>>>> 0253339c (first)
+=======
+        - ./Tests/*
+        - ./_ide_helper.php
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
+
+    bootstrapFiles:
+        #- ./Services/vendor/autoload.php
+        - ./phpstan_constants.php
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 7e417e87 (first)
+=======
+>>>>>>> 53542950 (first)
+=======
+>>>>>>> 26424c5e (first)
+=======
+>>>>>>> c8cd1ec3 (first)
+=======
+>>>>>>> b7483fd0 (first)
+=======
+>>>>>>> e0005d7d (first)
+=======
+>>>>>>> 6907d18e (first)
+=======
+>>>>>>> 616a71c2 (first)
+=======
+>>>>>>> c6af2eee (first)
+=======
+>>>>>>> 8e6e7d4c (first)
+=======
+>>>>>>> 4658bb86 (first)
+=======
+>>>>>>> edbb3aab (first)
+=======
+>>>>>>> bcab6efe (first)
+=======
+>>>>>>> fec698af (first)
+=======
+>>>>>>> f862c51f (first)
+=======
+>>>>>>> 9997d18c (first)
+=======
+>>>>>>> 961ad402 (first)
+=======
+>>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+        - ./Tests/*
+        - ./_ide_helper.php
+
+    bootstrapFiles:
+    #    - ./Services/vendor/autoload.php
+    #    - ./phpstan_constants.php
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9cec72d6 (first)
+=======
+>>>>>>> c986cc10 (first)
+=======
+>>>>>>> 8fc3049b (first)
+=======
+>>>>>>> 7e417e87 (first)
+=======
+>>>>>>> 53542950 (first)
+=======
+>>>>>>> 26424c5e (first)
+=======
+>>>>>>> c8cd1ec3 (first)
+=======
+>>>>>>> b7483fd0 (first)
+=======
+>>>>>>> e0005d7d (first)
+=======
+>>>>>>> 6907d18e (first)
+=======
+>>>>>>> 616a71c2 (first)
+=======
+>>>>>>> c6af2eee (first)
+=======
+>>>>>>> 8e6e7d4c (first)
+=======
+>>>>>>> 4658bb86 (first)
+=======
+>>>>>>> edbb3aab (first)
+=======
+>>>>>>> bcab6efe (first)
+=======
+>>>>>>> fec698af (first)
+=======
+>>>>>>> f862c51f (first)
+=======
+>>>>>>> 9997d18c (first)
+=======
+>>>>>>> 961ad402 (first)
+=======
+>>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+>>>>>>> 0253339c (first)
+=======
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
+
+    scanFiles:
+    #    - ./Helpers/Helper.php
+    #   - ./vendor/amenadiel/jpgraph/src/config.inc.php
+
+    editorUrl: 'vscode://file/%%file%%:%%line%%'
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    tmpDir: build/phpstan
+=======
+    tmpDir: ./build/phpstan
+>>>>>>> 9cec72d6 (first)
+=======
+    tmpDir: build/phpstan
+>>>>>>> c986cc10 (first)
+=======
+    tmpDir: build/phpstan
+>>>>>>> 8fc3049b (first)
+=======
+    tmpDir: ./build/phpstan
+>>>>>>> 7e417e87 (first)
+=======
+    tmpDir: ./build/phpstan
+>>>>>>> 53542950 (first)
+=======
+    tmpDir: ./build/phpstan
+>>>>>>> 26424c5e (first)
+=======
+    tmpDir: ./build/phpstan
+>>>>>>> c8cd1ec3 (first)
+=======
+    tmpDir: ./build/phpstan
+>>>>>>> b7483fd0 (first)
+=======
+    tmpDir: ./build/phpstan
+>>>>>>> e0005d7d (first)
+=======
+    tmpDir: ./build/phpstan
+>>>>>>> 6907d18e (first)
+=======
+    tmpDir: ./build/phpstan
+>>>>>>> 616a71c2 (first)
+=======
+    tmpDir: ./build/phpstan
+>>>>>>> c6af2eee (first)
+=======
+    tmpDir: ./build/phpstan
+>>>>>>> 8e6e7d4c (first)
+=======
+    tmpDir: ./build/phpstan
+>>>>>>> 4658bb86 (first)
+=======
+    tmpDir: ./build/phpstan
+>>>>>>> edbb3aab (first)
+=======
+    tmpDir: ./build/phpstan
+>>>>>>> bcab6efe (first)
+=======
+    tmpDir: ./build/phpstan
+>>>>>>> fec698af (first)
+=======
+    tmpDir: ./build/phpstan
+>>>>>>> f862c51f (first)
+=======
+    tmpDir: ./build/phpstan
+>>>>>>> 9997d18c (first)
+=======
+    tmpDir: ./build/phpstan
+>>>>>>> 961ad402 (first)
+=======
+    tmpDir: ./build/phpstan
+>>>>>>> dc18abbe (first)
+=======
+    tmpDir: ./build/phpstan
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+    tmpDir: build/phpstan
+>>>>>>> 0253339c (first)
+=======
+    tmpDir: build/phpstan
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
+    checkUnusedViews: false
+    checkMissingIterableValueType: false
+    checkGenericClassInNonGenericObjectType: false
+    treatPhpDocTypesAsCertain: false
+    reportUnmatchedIgnoredErrors: false
+    checkOctaneCompatibility: false
+    checkModelProperties: false
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> a8f30311 (first)
+=======
+        - ./Tests/*
+        - ./_ide_helper.php
+        - ./Services/Trend.php
+
+    bootstrapFiles:
+        # - ./Services/vendor/autoload.php
+        # - ./phpstan_constants.php
+
+
+    scanFiles:
+        # - ./Helpers/Helper.php
+        # - ./vendor/laraxot/module_xot/Helpers/Helper.php
+
+    tmpDir: build/phpstan
+    reportUnmatchedIgnoredErrors: false
+    checkOctaneCompatibility: false
+    checkModelProperties: false
+    checkMissingIterableValueType: false
+    checkGenericClassInNonGenericObjectType: false
+    checkImplicitMixed: false
+
+>>>>>>> bbec4378 (first)
+=======
+>>>>>>> c088001a (first)
+=======
+>>>>>>> d79d9e57 (first)
+=======
+
+>>>>>>> 9cec72d6 (first)
+=======
+>>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> c986cc10 (first)
+=======
+>>>>>>> 8fc3049b (first)
+=======
+
+>>>>>>> 7e417e87 (first)
+=======
+
+>>>>>>> 53542950 (first)
+=======
+
+>>>>>>> 26424c5e (first)
+=======
+
+>>>>>>> c8cd1ec3 (first)
+=======
+
+>>>>>>> b7483fd0 (first)
+=======
+
+>>>>>>> e0005d7d (first)
+=======
+
+>>>>>>> 6907d18e (first)
+=======
+
+>>>>>>> 616a71c2 (first)
+=======
+
+>>>>>>> c6af2eee (first)
+=======
+
+>>>>>>> 8e6e7d4c (first)
+=======
+
+>>>>>>> 4658bb86 (first)
+=======
+
+>>>>>>> edbb3aab (first)
+=======
+
+>>>>>>> bcab6efe (first)
+=======
+
+>>>>>>> fec698af (first)
+=======
+
+>>>>>>> f862c51f (first)
+=======
+
+>>>>>>> 9997d18c (first)
+=======
+
+>>>>>>> 961ad402 (first)
+=======
+
+>>>>>>> dc18abbe (first)
+=======
+
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+>>>>>>> 0253339c (first)
+=======
+>>>>>>> bc2abf99 (.)
+=======
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)

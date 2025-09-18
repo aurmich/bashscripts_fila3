@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bbec4378 (first)
+=======
+>>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> 8fc3049b (first)
+=======
+>>>>>>> 0253339c (first)
+=======
+>>>>>>> bc2abf99 (.)
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.3/phpunit.xsd" backupGlobals="false" bootstrap="vendor/autoload.php" colors="true" processIsolation="false" stopOnFailure="false" executionOrder="random" failOnWarning="true" failOnRisky="true" failOnEmptyTestSuite="true" beStrictAboutOutputDuringTests="true" cacheDirectory=".phpunit.cache" backupStaticProperties="false">
+  <testsuites>
+    <testsuite name="VendorName Test Suite">
+      <directory>tests</directory>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 0d55b583 (first)
+=======
+>>>>>>> 7e417e87 (first)
+=======
+>>>>>>> 53542950 (first)
+=======
+>>>>>>> 26424c5e (first)
+=======
+>>>>>>> c8cd1ec3 (first)
+=======
+>>>>>>> b7483fd0 (first)
+=======
+>>>>>>> e0005d7d (first)
+=======
+>>>>>>> 6907d18e (first)
+=======
+>>>>>>> 616a71c2 (first)
+=======
+>>>>>>> c6af2eee (first)
+=======
+>>>>>>> 8e6e7d4c (first)
+=======
+>>>>>>> 4658bb86 (first)
+=======
+>>>>>>> edbb3aab (first)
+=======
+>>>>>>> bcab6efe (first)
+=======
+>>>>>>> fec698af (first)
+=======
+>>>>>>> f862c51f (first)
+=======
+>>>>>>> 9997d18c (first)
+=======
+>>>>>>> 961ad402 (first)
+=======
+>>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+>>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.3/phpunit.xsd" backupGlobals="false" bootstrap="vendor/autoload.php" colors="true" processIsolation="false" stopOnFailure="false" executionOrder="random" failOnWarning="true" failOnRisky="true" failOnEmptyTestSuite="true" beStrictAboutOutputDuringTests="true" cacheDirectory=".phpunit.cache" backupStaticProperties="false">
+  <testsuites>
+    <testsuite name="Unit">
+      <directory suffix="Test.php">./Tests/Unit</directory>
+    </testsuite>
+    <testsuite name="Feature">
+      <directory suffix="Test.php">./Tests/Feature</directory>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> c088001a (first)
+=======
+>>>>>>> 0d55b583 (first)
+=======
+>>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> 8fc3049b (first)
+=======
+>>>>>>> 7e417e87 (first)
+=======
+>>>>>>> 53542950 (first)
+=======
+>>>>>>> 26424c5e (first)
+=======
+>>>>>>> c8cd1ec3 (first)
+=======
+>>>>>>> b7483fd0 (first)
+=======
+>>>>>>> e0005d7d (first)
+=======
+>>>>>>> 6907d18e (first)
+=======
+>>>>>>> 616a71c2 (first)
+=======
+>>>>>>> c6af2eee (first)
+=======
+>>>>>>> 8e6e7d4c (first)
+=======
+>>>>>>> 4658bb86 (first)
+=======
+>>>>>>> edbb3aab (first)
+=======
+>>>>>>> bcab6efe (first)
+=======
+>>>>>>> fec698af (first)
+=======
+>>>>>>> f862c51f (first)
+=======
+>>>>>>> 9997d18c (first)
+=======
+>>>>>>> 961ad402 (first)
+=======
+>>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+>>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
+=======
+>>>>>>> 0253339c (first)
+=======
+>>>>>>> bc2abf99 (.)
+    </testsuite>
+  </testsuites>
+  <coverage>
+    <report>
+      <html outputDirectory="build/coverage"/>
+      <text outputFile="build/coverage.txt"/>
+      <clover outputFile="build/logs/clover.xml"/>
+    </report>
+  </coverage>
+  <logging>
+    <junit outputFile="build/report.junit.xml"/>
+  </logging>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> 8fc3049b (first)
+=======
+>>>>>>> 0253339c (first)
+=======
+>>>>>>> bc2abf99 (.)
+  <source>
+    <include>
+      <directory suffix=".php">./src</directory>
+    </include>
+  </source>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> a8f30311 (first)
+=======
+>>>>>>> d79d9e57 (first)
+=======
+>>>>>>> 9cec72d6 (first)
+=======
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
+<phpunit
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+    backupGlobals="false"
+    backupStaticAttributes="false"
+    bootstrap="vendor/autoload.php"
+    colors="true"
+    convertErrorsToExceptions="true"
+    convertNoticesToExceptions="true"
+    convertWarningsToExceptions="true"
+    processIsolation="false"
+    stopOnFailure="false"
+    executionOrder="random"
+    failOnWarning="true"
+    failOnRisky="true"
+    failOnEmptyTestSuite="true"
+    beStrictAboutOutputDuringTests="true"
+    verbose="true"
+>
+    <testsuites>
+        <testsuite name="VendorName Test Suite">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+    <coverage>
+        <include>
+            <directory suffix=".php">./src</directory>
+        </include>
+        <report>
+            <html outputDirectory="build/coverage"/>
+            <text outputFile="build/coverage.txt"/>
+            <clover outputFile="build/logs/clover.xml"/>
+        </report>
+    </coverage>
+    <logging>
+        <junit outputFile="build/report.junit.xml"/>
+    </logging>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 59bc4fe7 (first)
+=======
+>>>>>>> a8f30311 (first)
+=======
+>>>>>>> bbec4378 (first)
+=======
+=======
+>>>>>>> 0d55b583 (first)
+=======
+>>>>>>> 7e417e87 (first)
+=======
+>>>>>>> 53542950 (first)
+=======
+>>>>>>> 26424c5e (first)
+=======
+>>>>>>> c8cd1ec3 (first)
+=======
+>>>>>>> b7483fd0 (first)
+=======
+>>>>>>> e0005d7d (first)
+=======
+>>>>>>> 6907d18e (first)
+=======
+>>>>>>> 616a71c2 (first)
+=======
+>>>>>>> c6af2eee (first)
+=======
+>>>>>>> 8e6e7d4c (first)
+=======
+>>>>>>> 4658bb86 (first)
+=======
+>>>>>>> edbb3aab (first)
+=======
+>>>>>>> bcab6efe (first)
+=======
+>>>>>>> fec698af (first)
+=======
+>>>>>>> f862c51f (first)
+=======
+>>>>>>> 9997d18c (first)
+=======
+>>>>>>> 961ad402 (first)
+=======
+>>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+>>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
+  <php>
+    <server name="APP_ENV" value="testing"/>
+    <server name="BCRYPT_ROUNDS" value="4"/>
+    <server name="CACHE_DRIVER" value="array"/>
+    <server name="DB_CONNECTION" value="sqlite"/>
+    <server name="DB_DATABASE" value=":memory:"/>
+    <server name="MAIL_MAILER" value="array"/>
+    <server name="QUEUE_CONNECTION" value="sync"/>
+    <server name="SESSION_DRIVER" value="array"/>
+    <server name="TELESCOPE_ENABLED" value="false"/>
+  </php>
+  <source>
+    <include>
+      <directory suffix=".php">./</directory>
+    </include>
+  </source>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> c088001a (first)
+=======
+>>>>>>> d79d9e57 (first)
+=======
+>>>>>>> 0d55b583 (first)
+=======
+>>>>>>> 9cec72d6 (first)
+=======
+>>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> 8fc3049b (first)
+=======
+>>>>>>> 7e417e87 (first)
+=======
+>>>>>>> 53542950 (first)
+=======
+>>>>>>> 26424c5e (first)
+=======
+>>>>>>> c8cd1ec3 (first)
+=======
+>>>>>>> b7483fd0 (first)
+=======
+>>>>>>> e0005d7d (first)
+=======
+>>>>>>> 6907d18e (first)
+=======
+>>>>>>> 616a71c2 (first)
+=======
+>>>>>>> c6af2eee (first)
+=======
+>>>>>>> 8e6e7d4c (first)
+=======
+>>>>>>> 4658bb86 (first)
+=======
+>>>>>>> edbb3aab (first)
+=======
+>>>>>>> bcab6efe (first)
+=======
+>>>>>>> fec698af (first)
+=======
+>>>>>>> f862c51f (first)
+=======
+>>>>>>> 9997d18c (first)
+=======
+>>>>>>> 961ad402 (first)
+=======
+>>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+>>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
+=======
+>>>>>>> 0253339c (first)
+=======
+>>>>>>> bc2abf99 (.)
+=======
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
+</phpunit>

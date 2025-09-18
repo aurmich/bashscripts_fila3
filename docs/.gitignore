@@ -1,0 +1,70 @@
+/build_*/
+/node_modules/
+/vendor/
+/source/assets/build/
+.env
+npm-debug.log
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc2abf99 (.)
+*.cache
+*.phar
+*.lock
+package-lock.json
+<<<<<<< HEAD
+=======
+>>>>>>> 53542950 (first)
+=======
+>>>>>>> 26424c5e (first)
+=======
+>>>>>>> c8cd1ec3 (first)
+=======
+>>>>>>> 51c7727d (first)
+=======
+>>>>>>> b7483fd0 (first)
+=======
+>>>>>>> e0005d7d (first)
+=======
+>>>>>>> 616a71c2 (first)
+=======
+>>>>>>> c6af2eee (first)
+=======
+>>>>>>> 8e6e7d4c (first)
+=======
+>>>>>>> 4658bb86 (first)
+=======
+>>>>>>> edbb3aab (first)
+=======
+>>>>>>> bcab6efe (first)
+=======
+>>>>>>> fec698af (first)
+=======
+>>>>>>> f862c51f (first)
+=======
+>>>>>>> 9997d18c (first)
+=======
+>>>>>>> 961ad402 (first)
+=======
+>>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+>>>>>>> bc2abf99 (.)

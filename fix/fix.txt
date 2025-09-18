@@ -2,7 +2,6 @@
 
 ## 🔧 Problemi di Interprete Bash
 <<<<<<< HEAD
-<<<<<<< HEAD
 
 ### Fix "bad interpreter: No such file or directory"
 ```bash
@@ -20,8 +19,6 @@ chmod +x nomefile.sh
 
 ### Setup Repository e Remote
 =======
-=======
->>>>>>> 4f97354 (.)
 ```bash
 # Fix per "bad interpreter: No such file or directory"
 sed -i -e 's/\r$//' nomefile.sh
@@ -67,17 +64,13 @@ find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
 ```
 
 ## 🚀 Setup Nuovo Repository
-<<<<<<< HEAD
 >>>>>>> bd3b585 (.)
-=======
->>>>>>> 4f97354 (.)
 ```bash
 # Inizializza nuovo repository
 git init
 git add .
 git commit -m "Initial commit"
 
-<<<<<<< HEAD
 <<<<<<< HEAD
 # Configura remote principale
 git remote add origin <url>
@@ -389,8 +382,6 @@ git mergetool
 - **Commit frequenti** con messaggi descrittivi
 - **Pull prima** di ogni push su branch condivisi
 =======
-=======
->>>>>>> 4f97354 (.)
 # Configura remote
 git remote add origin <url>
 git push -u origin main
@@ -449,9 +440,6 @@ sudo update-alternatives --config php
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 4f97354 (.)
 =======
 =======
 <<<<<<< HEAD
@@ -464,14 +452,11 @@ sudo update-alternatives --config php
 >>>>>>> f198176d (.)
 =======
 >>>>>>> 42ab2308 (.)
-<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
-=======
->>>>>>> 4f97354 (.)
 
 ## 🔄 Se menù o altri elementi frontend non si aggiornano
 ```bash
@@ -481,9 +466,6 @@ composer go
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 4f97354 (.)
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
@@ -501,12 +483,9 @@ composer go
 >>>>>>> ec52a6b4 (.)
 =======
 >>>>>>> ea169dcc (.)
-<<<<<<< HEAD
 =======
 >>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
 >>>>>>> bd3b585 (.)
-=======
->>>>>>> 4f97354 (.)

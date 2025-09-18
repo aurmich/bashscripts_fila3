@@ -1,0 +1,184 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+name: Check & fix styling
+=======
+name: lint
+>>>>>>> a8f30311 (first)
+=======
+name: Check & fix styling
+>>>>>>> bbec4378 (first)
+=======
+name: Check & fix styling
+>>>>>>> 0d55b583 (first)
+=======
+name: Check & fix styling
+>>>>>>> 9cec72d6 (first)
+=======
+name: Check & fix styling
+>>>>>>> 2df6fbc8 (first)
+=======
+name: Check & fix styling
+>>>>>>> e83070fd (.)
+=======
+name: Check & fix styling
+>>>>>>> bdeae81f (first)
+=======
+name: Check & fix styling
+>>>>>>> bc2abf99 (.)
+=======
+name: Check & fix styling
+>>>>>>> 55edff60 (.)
+
+on: [push]
+
+jobs:
+  php-cs-fixer:
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    name: PHP-CS-Fixer
+>>>>>>> 59bc4fe7 (first)
+=======
+>>>>>>> a8f30311 (first)
+=======
+>>>>>>> bbec4378 (first)
+=======
+>>>>>>> 0d55b583 (first)
+=======
+>>>>>>> 9cec72d6 (first)
+=======
+>>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> e83070fd (.)
+=======
+>>>>>>> bdeae81f (first)
+=======
+>>>>>>> bc2abf99 (.)
+=======
+>>>>>>> 55edff60 (.)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        uses: actions/checkout@v3
+=======
+        uses: actions/checkout@master
+>>>>>>> a8f30311 (first)
+=======
+        uses: actions/checkout@v3
+>>>>>>> bbec4378 (first)
+=======
+        uses: actions/checkout@v3
+>>>>>>> 0d55b583 (first)
+=======
+        uses: actions/checkout@v3
+>>>>>>> 9cec72d6 (first)
+=======
+        uses: actions/checkout@v3
+>>>>>>> 2df6fbc8 (first)
+=======
+        uses: actions/checkout@v3
+>>>>>>> e83070fd (.)
+=======
+        uses: actions/checkout@v3
+>>>>>>> bdeae81f (first)
+=======
+        uses: actions/checkout@v3
+>>>>>>> bc2abf99 (.)
+=======
+        uses: actions/checkout@v3
+>>>>>>> 55edff60 (.)
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Run PHP CS Fixer
+        uses: docker://oskarstark/php-cs-fixer-ga
+        with:
+          args: --config=.php-cs-fixer.dist.php --allow-risky=yes
+
+      - name: Commit changes
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        uses: stefanzweifel/git-auto-commit-action@v4
+=======
+        uses: stefanzweifel/git-auto-commit-action@latest
+>>>>>>> 59bc4fe7 (first)
+        with:
+          commit_message: Check & fix styling
+=======
+        uses: stefanzweifel/git-auto-commit-action@latest
+        with:
+          commit_message: Lint
+>>>>>>> a8f30311 (first)
+=======
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Check & fix styling
+>>>>>>> bbec4378 (first)
+=======
+        uses: stefanzweifel/git-auto-commit-action@latest
+        with:
+          commit_message: Check & fix styling
+>>>>>>> 0d55b583 (first)
+=======
+        uses: stefanzweifel/git-auto-commit-action@latest
+        with:
+          commit_message: Check & fix styling
+>>>>>>> 9cec72d6 (first)
+=======
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Check & fix styling
+>>>>>>> 2df6fbc8 (first)
+=======
+        uses: stefanzweifel/git-auto-commit-action@latest
+        with:
+          commit_message: Check & fix styling
+>>>>>>> e83070fd (.)
+=======
+        uses: stefanzweifel/git-auto-commit-action@latest
+        with:
+          commit_message: Check & fix styling
+>>>>>>> bdeae81f (first)
+=======
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Check & fix styling
+>>>>>>> bc2abf99 (.)
+=======
+        uses: stefanzweifel/git-auto-commit-action@latest
+        with:
+          commit_message: Check & fix styling
+>>>>>>> 55edff60 (.)
