@@ -14,7 +14,7 @@ class MakePdf
 {
     use QueueableAction;
 
-    public function execute(array $data)
+    public function execute(array $data): \Symfony\Component\HttpFoundation\BinaryFileResponse
     {
         $values = $data['anno/valutatore'];
         $rows = CondizioniLavoro::where($values)->whereHas('indennitaTipoDettaglio')->get();

@@ -17,7 +17,7 @@ class CodizioniLavoroPolicy
     /**
      * Determine whether the user can view any models.
      *
-     * @return Response|bool
+     * @return bool
      */
     public function viewAny(UserContract $user): bool
     {
@@ -27,7 +27,7 @@ class CodizioniLavoroPolicy
     /**
      * Determine whether the user can view the model.
      *
-     * @return Response|bool
+     * @return bool
      */
     public function view(UserContract $user, CondizioniLavoro $condizioniLavoro): bool
     {
@@ -37,7 +37,7 @@ class CodizioniLavoroPolicy
     /**
      * Determine whether the user can create models.
      *
-     * @return Response|bool
+     * @return bool
      */
     public function create(UserContract $user): bool
     {
@@ -47,7 +47,7 @@ class CodizioniLavoroPolicy
     /**
      * Determine whether the user can update the model.
      *
-     * @return Response|bool
+     * @return bool
      */
     public function update(UserContract $user, CondizioniLavoro $condizioniLavoro): bool
     {
@@ -57,7 +57,7 @@ class CodizioniLavoroPolicy
     /**
      * Determine whether the user can delete the model.
      *
-     * @return Response|bool
+     * @return bool
      */
     public function delete(UserContract $user, CondizioniLavoro $condizioniLavoro): bool
     {
@@ -67,7 +67,7 @@ class CodizioniLavoroPolicy
     /**
      * Determine whether the user can restore the model.
      *
-     * @return Response|bool
+     * @return bool
      */
     public function restore(UserContract $user, CondizioniLavoro $condizioniLavoro): bool
     {
@@ -77,7 +77,7 @@ class CodizioniLavoroPolicy
     /**
      * Determine whether the user can permanently delete the model.
      *
-     * @return Response|bool
+     * @return bool
      */
     public function forceDelete(UserContract $user, CondizioniLavoro $condizioniLavoro): bool
     {

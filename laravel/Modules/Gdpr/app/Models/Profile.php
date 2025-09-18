@@ -15,29 +15,6 @@ use Modules\User\Models\BaseProfile;
  * @property string|null                                                                                                   $last_name
  * @property string|null                                                                                                   $full_name
  * @property string|null                                                                                                   $email
- * @property int                                                                                                           $id
- * @property string|null                                                                                                   $type
- * @property string|null                                                                                                   $first_name
- * @property string|null                                                                                                   $last_name
- * @property string|null                                                                                                   $full_name
- * @property string|null                                                                                                   $email
- *                                                                                                                                                    =======
- *                                                                                                                                                    >>>>>>> 76348cc6b642ef946f57e308db4e1c6210448bea
- * @property \Illuminate\Support\Carbon|null                                                                               $created_at
- * @property \Illuminate\Support\Carbon|null                                                                               $updated_at
- * @property string|null                                                                                                   $user_id
- * @property string|null                                                                                                   $updated_by
- * @property string|null                                                                                                   $created_by
- * @property \Illuminate\Support\Carbon|null                                                                               $deleted_at
- * @property string|null                                                                                                   $deleted_by
- * @property int                                                                                                           $is_active
- *                                                                                                                                                    =======
- * @property int                                                                                                           $id
- * @property string|null                                                                                                   $type
- * @property string|null                                                                                                   $first_name
- * @property string|null                                                                                                   $last_name
- * @property string|null                                                                                                   $full_name
- * @property string|null                                                                                                   $email
  * @property \Illuminate\Support\Carbon|null                                                                               $created_at
  * @property \Illuminate\Support\Carbon|null                                                                               $updated_at
  * @property string|null                                                                                                   $user_id
@@ -68,6 +45,15 @@ use Modules\User\Models\BaseProfile;
  * @property int|null                                                                                                      $teams_count
  * @property \Modules\Xot\Contracts\UserContract|null                                                                      $user
  * @property string|null                                                                                                   $user_name
+ * @property \Modules\User\Models\DeviceUser                                                                               $pivot
+ * @property \Modules\User\Models\Membership                                                                               $membership
+ * @property string                                                                                                        $credits
+ * @property string|null                                                                                                   $slug
+ * @property \Modules\Xot\Contracts\ProfileContract|null                                                                   $creator
+ * @property \Modules\Xot\Contracts\ProfileContract|null                                                                   $updater
+ * @property int                                                                                                           $oauth_enable
+ * @property int                                                                                                           $credentials_enable
+ * @property string                                                                                                        $uuid
  *
  * @method static \Modules\Gdpr\Database\Factories\ProfileFactory   factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|Profile     newModelQuery()
@@ -92,81 +78,52 @@ use Modules\User\Models\BaseProfile;
  * @method static \Illuminate\Database\Eloquent\Builder|BaseProfile withExtraAttributes()
  * @method static \Illuminate\Database\Eloquent\Builder|BaseProfile withoutPermission($permissions)
  * @method static \Illuminate\Database\Eloquent\Builder|BaseProfile withoutRole($roles, $guard = null)
- *
- * @property string|null $deleted_by
- * @property int         $is_active
- *
- * @method static \Modules\Gdpr\Database\Factories\ProfileFactory   factory($count = null, $state = [])
- * @method static \Illuminate\Database\Eloquent\Builder|Profile     newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Profile     newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|BaseProfile permission($permissions, $without = false)
- * @method static \Illuminate\Database\Eloquent\Builder|Profile     query()
- * @method static \Illuminate\Database\Eloquent\Builder|BaseProfile role($roles, $guard = null, $without = false)
- * @method static \Illuminate\Database\Eloquent\Builder|Profile     whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Profile     whereCreatedBy($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Profile     whereDeletedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Profile     whereDeletedBy($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Profile     whereEmail($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Profile     whereFirstName($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Profile     whereFullName($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Profile     whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Profile     whereIsActive($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Profile     whereLastName($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Profile     whereType($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Profile     whereUpdatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Profile     whereUpdatedBy($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Profile     whereUserId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|BaseProfile withExtraAttributes()
- * @method static \Illuminate\Database\Eloquent\Builder|BaseProfile withoutPermission($permissions)
- * @method static \Illuminate\Database\Eloquent\Builder|BaseProfile withoutRole($roles, $guard = null)
- *
- * @property string|null $deleted_by
- * @property int         $is_active
- *
- * @method static \Modules\Gdpr\Database\Factories\ProfileFactory factory($count = null, $state = [])
- * @method static \Illuminate\Database\Eloquent\Builder|Profile   newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Profile   newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Profile   query()
- * @method static \Illuminate\Database\Eloquent\Builder|Profile   whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Profile   whereCreatedBy($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Profile   whereDeletedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Profile   whereDeletedBy($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Profile   whereEmail($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Profile   whereFirstName($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Profile   whereFullName($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Profile   whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Profile   whereIsActive($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Profile   whereLastName($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Profile   whereType($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Profile   whereUpdatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Profile   whereUpdatedBy($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Profile   whereUserId($value)
- *
- * @property \Modules\User\Models\DeviceUser             $pivot
- * @property \Modules\User\Models\Membership             $membership
- * @property string                                      $credits
- * @property string|null                                 $slug
- * @property \Modules\Xot\Contracts\ProfileContract|null $creator
- * @property \Modules\Xot\Contracts\ProfileContract|null $updater
- *
- * @method static \Illuminate\Database\Eloquent\Builder|Profile whereCredits($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Profile whereExtra($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Profile whereSlug($value)
- *
- * @property int $oauth_enable
- * @property int $credentials_enable
- *
- * @method static \Illuminate\Database\Eloquent\Builder|Profile whereCredentialsEnable($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Profile whereOauthEnable($value)
- *
- * @property string $uuid
- *
- * @method static \Illuminate\Database\Eloquent\Builder|Profile whereUuid($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Profile     whereCredits($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Profile     whereExtra($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Profile     whereSlug($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Profile     whereCredentialsEnable($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Profile     whereOauthEnable($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Profile     whereUuid($value)
  *
  * @mixin \Eloquent
  */
 class Profile extends BaseProfile
 {
-    /** @var string */
-    protected $connection = 'gdpr';
+    /** @var list<string> */
+    public $fillable = [
+        'id',
+        'type',
+        'first_name',
+        'last_name',
+        'full_name',
+        'email',
+        'user_id',
+        'is_active',
+        'extra',
+        'avatar',
+        'credits',
+        'slug',
+        'oauth_enable',
+        'credentials_enable',
+        'uuid'
+    ];
+
+    /**
+     * Get the attributes that should be cast.
+     *
+     * @return array<string, string>
+     */
+    public function casts(): array
+    {
+        return [
+            'id' => 'integer',
+            'is_active' => 'boolean',
+            'extra' => 'array',
+            'oauth_enable' => 'integer',
+            'credentials_enable' => 'integer',
+            'created_at' => 'datetime',
+            'updated_at' => 'datetime',
+            'deleted_at' => 'datetime',
+        ];
+    }
 }

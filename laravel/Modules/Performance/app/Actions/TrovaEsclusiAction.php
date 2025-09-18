@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Performance\Actions;
 
+use Illuminate\Database\Eloquent\Model;
 use Spatie\QueueableAction\QueueableAction;
 
 class TrovaEsclusiAction
@@ -14,6 +15,10 @@ class TrovaEsclusiAction
 
     public function check(string $name, string $value, object $model): string
     {
+        if (! $model instanceof Model) {
+            throw new \InvalidArgumentException('Model must be an instance of Illuminate\Database\Eloquent\Model');
+        }
+
         $action = new GetHaDirittoMotivoAction();
         $action->year = $this->year;
 

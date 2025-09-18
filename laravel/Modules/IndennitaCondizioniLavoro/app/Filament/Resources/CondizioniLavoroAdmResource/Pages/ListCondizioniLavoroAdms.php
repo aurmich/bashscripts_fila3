@@ -5,6 +5,7 @@ namespace Modules\IndennitaCondizioniLavoro\Filament\Resources\CondizioniLavoroA
 use Filament\Actions;
 use Illuminate\Support\Facades\Auth;
 use Filament\Forms\Components\Select;
+use Modules\Xot\Contracts\UserContract;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Resources\Pages\ListRecords;
 use Filament\Tables\Filters\SelectFilter;
@@ -21,13 +22,13 @@ class ListCondizioniLavoroAdms extends XotBaseListRecords
 
     public function getListTableColumns(): array
     {
-        return [
-            TextColumn::make('matr')->searchable(),
-            TextColumn::make('cognome')->searchable(),
-            TextColumn::make('nome')->searchable(),
-            TextColumn::make('stabi')->searchable(),
-            TextColumn::make('repar')->searchable(),
-            TextColumn::make('indennitaTipoDettaglio')
+        $columns = [
+            'matr' => TextColumn::make('matr')->searchable(),
+            'cognome' => TextColumn::make('cognome')->searchable(),
+            'nome' => TextColumn::make('nome')->searchable(),
+            'stabi' => TextColumn::make('stabi')->searchable(),
+            'repar' => TextColumn::make('repar')->searchable(),
+            'indennitaTipoDettaglio' => TextColumn::make('indennitaTipoDettaglio')
                 ->formatStateUsing(function (TextColumn $column) {
                     $state = $column->getState();
 
@@ -39,9 +40,11 @@ class ListCondizioniLavoroAdms extends XotBaseListRecords
 
                     return $state?->map(fn ($item): string => '['.$item->indennitaTipo?->nome.'] '.$item->nome)->implode(' --------------------- ,'.PHP_EOL.PHP_EOL.'');
                 }),
-            TextColumn::make('quadrimestre')->searchable(),
-            TextColumn::make('anno')->searchable(),
+            'quadrimestre' => TextColumn::make('quadrimestre')->searchable(),
+            'anno' => TextColumn::make('anno')->searchable(),
         ];
+
+        return $columns;
     }
 
     public function getTableFilters(): array
@@ -80,7 +83,9 @@ class ListCondizioniLavoroAdms extends XotBaseListRecords
 
                     $query = $query->where($data);
 
-                    if (! Auth::user()?->hasRole('super-admin')) {
+                    /** @var ?UserContract $user */
+                    $user = Auth::user();
+                    if (! $user?->hasRole('super-admin')) {
                         return $query->whereHas('indennitaTipoDettaglio');
                     }
 

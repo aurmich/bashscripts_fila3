@@ -11,6 +11,9 @@ use Illuminate\Support\Str;
 use Modules\Performance\Models\Performance;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * @template TModel of Model
+ */
 class GetHaDirittoMotivoAction
 {
     use QueueableAction;
@@ -50,6 +53,10 @@ class GetHaDirittoMotivoAction
         return [$ha_diritto, $motivo];
     }
 
+    /**
+     * @param array<string,mixed> $parz
+     * @param object{gg_ruolo:int} $scheda
+     */
     public function checkMinGgRuolo(array $parz, object $scheda): string
     {
         extract($parz);
@@ -78,6 +85,10 @@ class GetHaDirittoMotivoAction
         return '';
     }
 
+    /**
+     * @param array<string,mixed> $parz
+     * @param object{gg_presenza_anno:int,gg_assenza_anno:int} $scheda
+     */
     public function checkMinGgAnno(array $parz, object $scheda): string
     {
         extract($parz);
@@ -110,6 +121,10 @@ class GetHaDirittoMotivoAction
         return '';
     }
 
+    /**
+     * @param array<string,mixed> $parz
+     * @param object{posiz:string} $scheda
+     */
     public function checkNoposizList(array $parz, object $scheda): string
     {
         extract($parz);
@@ -125,6 +140,10 @@ class GetHaDirittoMotivoAction
         return '';
     }
 
+    /**
+     * @param array<string,mixed> $parz
+     * @param object{propro:string} $scheda
+     */
     public function checkNoproproList(array $parz, object $scheda): string
     {
         extract($parz);
@@ -140,6 +159,10 @@ class GetHaDirittoMotivoAction
         return '';
     }
 
+    /**
+     * @param array<string,mixed> $parz
+     * @param object{posfun:string} $scheda
+     */
     public function checkNoposfunList(array $parz, object $scheda): string
     {
         extract($parz);
@@ -155,6 +178,10 @@ class GetHaDirittoMotivoAction
         return '';
     }
 
+    /**
+     * @param array<string,mixed> $parz
+     * @param object{disci1:int|string} $scheda
+     */
     public function checkNodisci1List(array $parz, object $scheda): string
     {
         extract($parz);
@@ -174,6 +201,10 @@ class GetHaDirittoMotivoAction
         return '';
     }
 
+    /**
+     * @param array<string,mixed> $parz
+     * @param object{gg_assenza_anno:int} $scheda
+     */
     public function checkMaxGgAssenzeAnno(array $parz, object $scheda): string
     {
         extract($parz);
@@ -189,6 +220,10 @@ class GetHaDirittoMotivoAction
         return '';
     }
 
+    /**
+     * @param array<string,mixed> $parz
+     * @param object{gg_assenza_anno:int} $scheda
+     */
     public function checkMaxGgAssenzaAnno(array $parz, object $scheda): string
     {
         extract($parz);
@@ -203,6 +238,10 @@ class GetHaDirittoMotivoAction
         return '';
     }
 
+    /**
+     * @param array<string,mixed> $parz
+     * @param object{last_data_assunz:string|int|null} $scheda
+     */
     public function checkDateMinAssunz(array $parz, object $scheda): string
     {
         extract($parz);
@@ -221,7 +260,10 @@ class GetHaDirittoMotivoAction
         }
 
         if ($last_data_assunz > $date_min_assunz) {
-            return 'date min assunz ['.$scheda->last_data_assunz.']>['.$date_min_assunz.'][1]';
+            if ($last_data_assunz instanceof Carbon && $date_min_assunz instanceof Carbon) {
+                return sprintf('date min assunz [%s]>[%s][1]', $last_data_assunz->format('Y-m-d'), $date_min_assunz->format('Y-m-d'));
+            }
+            return 'Invalid date format';
         }
 
         return '';

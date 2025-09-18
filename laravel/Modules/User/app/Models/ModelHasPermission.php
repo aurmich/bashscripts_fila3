@@ -38,10 +38,38 @@ use Modules\User\Database\Factories\ModelHasPermissionFactory;
  */
 class ModelHasPermission extends BaseMorphPivot
 {
+    /** @var list<string> */
+    public $fillable = [
+        'id',
+        'permission_id',
+        'model_type',
+        'model_id',
+        'created_at',
+        'updated_at',
+        'updated_by',
+        'created_by',
+        'team_id'
+    ];
+
     /**
-     * @var list<string>
+     * Get the attributes that should be cast.
      *
-     * @psalm-var list{'permission_id', 'model_type', 'model_id'}
+     * @return array<string, string>
      */
-    protected $fillable = ['permission_id', 'model_type', 'model_id'];
+    public function casts(): array
+    {
+        return [
+            'id' => 'string',
+            'permission_id' => 'string',
+            'model_type' => 'string',
+            'model_id' => 'string',
+            'created_at' => 'datetime',
+            'updated_at' => 'datetime',
+            'deleted_at' => 'datetime',
+            'updated_by' => 'string',
+            'created_by' => 'string',
+            'deleted_by' => 'string',
+            'team_id' => 'string'
+        ];
+    }
 }

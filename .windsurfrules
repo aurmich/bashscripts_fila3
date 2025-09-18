@@ -1,0 +1,28 @@
+# Regole per i Trait del Modulo User
+
+## HasTeams
+- Il trait deve essere utilizzato solo in modelli che estendono Authenticatable
+- Richiede il trait HasRoles per la gestione dei ruoli
+- Richiede le tabelle team e team_user con le colonne specificate
+- I metodi devono gestire correttamente i tipi di ritorno e i parametri
+
+## HasTenants
+- Il trait deve essere utilizzato solo in modelli che implementano HasTenants di Filament
+- Richiede il trait HasRoles per la gestione dei ruoli
+- Richiede le tabelle tenants e tenant_user con le colonne specificate
+- I metodi devono gestire correttamente i tipi di ritorno e i parametri
+
+## HasAuthenticationLogTrait
+- Il trait può essere utilizzato in qualsiasi modello che necessita di logging di autenticazione
+- Richiede la tabella authentication_logs con le colonne specificate
+- I metodi devono gestire correttamente i tipi di ritorno e i parametri
+- Le notifiche devono essere configurate correttamente
+
+## Regole Generali
+- Tutti i trait devono avere PHPDoc completi per proprietà e metodi
+- I tipi di ritorno devono essere specificati esplicitamente
+- I parametri dei metodi devono avere tipi specificati
+- Le relazioni devono essere definite con i tipi corretti
+- Le annotazioni PHPDoc devono includere @property-read per le proprietà di sola lettura
+- I metodi devono gestire correttamente i casi null
+- Le relazioni devono essere definite con i tipi generici corretti

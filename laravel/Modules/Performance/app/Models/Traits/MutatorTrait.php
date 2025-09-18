@@ -4,8 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Performance\Models\Traits;
 
+use Illuminate\Database\Eloquent\Model;
 use Modules\Performance\Models\Individuale;
 
+/**
+ * @template TModel of Model
+ */
 trait MutatorTrait
 {
     public function getGgAssenzaDalalAttribute(?int $value): ?int
@@ -24,19 +28,20 @@ trait MutatorTrait
         }
 
         $value = $this->asz00k1()
-            ->OfListaTipoCodice($lista_tipo_codice_assenze)
+            ->whereIn('aszcod', $lista_tipo_codice_assenze)
             ->selectRaw('COALESCE(sum(aszdur),0) as aszdur_sum')
-            ->OfRangeDate($date_min, $date_max)
+            ->whereBetween('aszdat', [$date_min, $date_max])
         // ->withDays($date_min, $date_max)
             ->where('aszumi', 'G')
             ->first();
         // ->sum('aszdur')
-        $value = $value->aszdur_sum;
+        $aszdur_sum = $value->aszdur_sum ?? 0;
+        $int_value = (int) $aszdur_sum;
 
-        $this->gg_assenza_dalal = $value;
+        $this->gg_assenza_dalal = $int_value;
         $this->save();
 
-        return (int) $value;
+        return $int_value;
     }
 
     public function getHhAssenzaDalalAttribute(?float $value): ?float
@@ -57,26 +62,24 @@ trait MutatorTrait
         }
 
         $value = $this->asz00k1()
-            ->OfListaTipoCodice($lista_tipo_codice_assenze)
+            ->whereIn('aszcod', $lista_tipo_codice_assenze)
             ->selectRaw('sum('.$aszdur.') as aszdur_sum')
-            ->OfRangeDate($date_min, $date_max)
+            ->whereBetween('aszdat', [$date_min, $date_max])
         // ->withDays($date_min, $date_max)
             ->where('aszumi', 'O')
             ->first();
         // ->sum('aszdur')
-        $value = $value->aszdur_sum;
-        if ($value === '') {
-            $value = 0;
+        $aszdur_sum = $value->aszdur_sum ?? 0;
+        if (empty($aszdur_sum)) {
+            $float_value = 0.0;
+        } else {
+            $float_value = (float) $aszdur_sum;
         }
 
-        if ($value === null) {
-            $value = 0;
-        }
-
-        $this->hh_assenza_dalal = $value;
+        $this->hh_assenza_dalal = $float_value;
         $this->save();
 
-        return (float) $value;
+        return $float_value;
     }
 
     public function getTotalePunteggioAttribute(?float $value): ?float

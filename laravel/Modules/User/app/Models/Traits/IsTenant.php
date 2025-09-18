@@ -25,12 +25,10 @@ trait IsTenant
     public function users(): BelongsToMany
     {
         $xot = XotData::make();
+        /** @var class-string<\Illuminate\Database\Eloquent\Model&\Modules\Xot\Contracts\UserContract> $userClass */
         $userClass = $xot->getUserClass();
 
-        // $this->setConnection('mysql');
-        /** @var class-string<\Illuminate\Database\Eloquent\Model&\Modules\Xot\Contracts\UserContract> $userClass */
-        return $this->belongsToManyX($userClass, null, 'tenant_id', 'user_id');
-        // ->as('membership')
+        return $this->belongsToMany($userClass, 'tenant_user', 'tenant_id', 'user_id');
     }
 
     /**

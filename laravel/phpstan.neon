@@ -39,11 +39,10 @@ parameters:
         - ./Modules/*/rector.php
         - ./Modules/*/*.blade.php
         - ./config/local/*/database.php
-        #- ./Modules/Ptv/*
         - ./Modules/Incentivi/*
-        # - ./Modules/Xot/*
         - ./Modules/Xot/app/Filament/Traits/HasXotTable.php
-
+        - ./Modules/*/app_old/*
+        - ./Modules/IndennitaCondizioniLavoro/*
 
     bootstrapFiles:
         - ./phpstan_constants.php

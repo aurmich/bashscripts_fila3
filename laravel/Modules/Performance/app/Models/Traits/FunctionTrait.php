@@ -10,18 +10,33 @@ use Modules\Performance\Actions\TrovaEsclusiAction;
 use Modules\Performance\Models\CriteriEsclusione;
 use Modules\Performance\Models\CriteriOption;
 
+/**
+ * @template TModel of \Illuminate\Database\Eloquent\Model
+ */
 trait FunctionTrait
 {
-    public static $criteri_esclusione_anno;
+    /** @var array<string, mixed> */
+    protected array $criteri_esclusione_anno = [];
 
-    public static $criteri_options_anno;
+    /** @var array<string, mixed> */
+    protected array $criteri_options_anno = [];
 
-    public function listaTipoCodiceAssenze()
+    /** @var array<int, array<string, mixed>> */
+    protected static array $cached_criteri_esclusione = [];
+
+    /** @var array<int, array<string, mixed>> */
+    protected static array $cached_criteri_options = [];
+
+    public function listaTipoCodiceAssenze(): array
     {
-        return $this->codiciAssenze->map(static fn ($item): string => $item->tipo.'-'.$item->codice)->implode(',');
+        return $this->codiciAssenze->map(static fn ($item): string => $item->tipo.'-'.$item->codice)->toArray();
     }
 
-    public function check($name, $value): string
+    /**
+     * @param string $name
+     * @param mixed $value
+     */
+    public function check(string $name, mixed $value): string
     {
         $year = $this->anno;
         $trovaEsclusiAction = new TrovaEsclusiAction();
@@ -30,7 +45,10 @@ trait FunctionTrait
         return $trovaEsclusiAction->check($name, $value, $this);
     }
 
-    public function optionsCriteriOrdered()
+    /**
+     * @return array<string, mixed>
+     */
+    public function optionsCriteriOrdered(): array
     {
         $criteri = $this->options->where('name', 'criterio')->where('parent_id', 0)->sortBy('pos');
 
@@ -41,29 +59,39 @@ trait FunctionTrait
             $v->save();
         }
 
-        return $criteri;
+        return $criteri->toArray();
     }
 
-    public function criteriOptionsYear($year)
+    /**
+     * @param int $year
+     * @return array<int, array<string, mixed>>
+     */
+    public function criteriOptionsYear(int $year): array
     {
-        if (isset(static::$criteri_options_anno)) {
-            return static::$criteri_options_anno;
+        if (isset(static::$cached_criteri_options[$year])) {
+            return static::$cached_criteri_options[$year];
         }
 
-        static::$criteri_options_anno = CriteriOption::where('anno', $year)->get();
+        $options = CriteriOption::where('anno', $year)->get();
+        static::$cached_criteri_options[$year] = $options->toArray();
 
-        return static::$criteri_options_anno;
+        return static::$cached_criteri_options[$year];
     }
 
-    public function criteriEsclusioneYear($year)
+    /**
+     * @param int $year
+     * @return array<int, array<string, mixed>>
+     */
+    public function criteriEsclusioneYear(int $year): array
     {
-        if (isset(static::$criteri_esclusione_anno)) {
-            return static::$criteri_esclusione_anno;
+        if (isset(static::$cached_criteri_esclusione[$year])) {
+            return static::$cached_criteri_esclusione[$year];
         }
 
-        static::$criteri_esclusione_anno = CriteriEsclusione::where('anno', $year)->get();
+        $esclusioni = CriteriEsclusione::where('anno', $year)->get();
+        static::$cached_criteri_esclusione[$year] = $esclusioni->toArray();
 
-        return static::$criteri_esclusione_anno;
+        return static::$cached_criteri_esclusione[$year];
     }
 
     public function getHaDirittoEMotivo(): array
@@ -80,7 +108,7 @@ trait FunctionTrait
         $ha_diritto = 1;
         $motivo = '';
         foreach ($criteri_esclusione as $ce) {
-            $msg = $this->check($ce->name, $ce->value);
+            $msg = $this->check($ce['name'], $ce['value']);
             if ($msg !== '') {
                 $motivo .= ', '.$msg;
                 $ha_diritto = 0;
@@ -125,8 +153,8 @@ trait FunctionTrait
             dddx([
                 'this' => $this,
                 'posfun' => $this->posfun,
-                'pesoPo' => rowsToSql($this->pesoPo()),
-                'peso' => rowsToSql($this->peso()),
+                'pesoPo' => $this->pesoPo()->toSql(),
+                'peso' => $this->peso()->toSql(),
             ]);
 
             return null;
@@ -135,17 +163,19 @@ trait FunctionTrait
         $value = $peso->$name;
         $this->$name = $value;
         $this->save();
-
         return (float) $value;
     }
 
-    public function setValutazioneFunc($func, $value)
+    /**
+     * @param string $func
+     * @param mixed $value
+     * @return void
+     */
+    public function setValutazioneFunc(string $func, mixed $value): void
     {
         $name = Str::snake(Str::before(Str::after($func, 'set'), 'Attribute'));
         // $value = number_format((float) $value, 1);
         $this->attributes[$name] = $value;
-
-        return $value;
     }
 
     public function option(string $name): string
@@ -188,7 +218,11 @@ trait FunctionTrait
      * @param  Builder  $query
      * @return Builder
      */
-    public function scopeWithTotPunt($query)
+    /**
+     * @param Builder<TModel> $query
+     * @return Builder<TModel>
+     */
+    public function scopeWithTotPunt(Builder $query): Builder
     {
         return $query;
     }
@@ -203,5 +237,21 @@ trait FunctionTrait
         }
 
         return true;
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Modules\Performance\Models\IndividualePoPesi, static>
+     */
+    protected function pesoPo()
+    {
+        // ... existing code ...
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Modules\Performance\Models\IndividualePesi, static>
+     */
+    protected function peso()
+    {
+        // ... existing code ...
     }
 }
