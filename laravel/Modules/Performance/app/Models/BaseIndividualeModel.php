@@ -8,28 +8,30 @@ declare(strict_types=1);
 
 namespace Modules\Performance\Models;
 
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
-use Modules\Performance\Enums\WorkerType;
-use Modules\Performance\Models\Traits\FunctionTrait;
-use Modules\Performance\Models\Traits\MutatorTrait;
-use Modules\Performance\Models\Traits\RelationshipTrait;
-use Modules\Sigma\Models\Ana10f;
 use Modules\Sigma\Models\Anag;
-use Modules\Sigma\Models\Asz00k1;
+use Modules\Xot\Traits\Updater;
+use Modules\Sigma\Models\Ana10f;
 use Modules\Sigma\Models\Qua00f;
 use Modules\Sigma\Models\Rep00f;
 use Modules\Sigma\Models\Repart;
 use Modules\Sigma\Models\Sto00f;
-// ---------- traits
 use Modules\Sigma\Models\Tqu00f;
+use Modules\Sigma\Models\Asz00k1;
+use Illuminate\Database\Eloquent\Model;
+use Modules\Ptv\Models\Traits\HasMyLogs;
+use Illuminate\Database\Eloquent\Builder;
+use Modules\Performance\Enums\WorkerType;
+use Illuminate\Database\Eloquent\Collection;
 use Modules\Sigma\Models\Traits\SchedaTrait;
 use Modules\Sigma\Models\Traits\SigmaModelTrait;
-use Modules\Xot\Traits\Updater;
+// ---------- traits
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Modules\Performance\Models\Traits\MutatorTrait;
+use Modules\Performance\Models\Traits\FunctionTrait;
+use Modules\Ptv\Models\Traits\HasCriteriValutazione;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Modules\Performance\Models\Traits\RelationshipTrait;
 
 /**
  * @template TEntity as object
@@ -180,7 +182,8 @@ abstract class BaseIndividualeModel extends Model
     use SchedaTrait;
     use SigmaModelTrait;
     use Updater;
-
+    use HasMyLogs;
+    use HasCriteriValutazione;
     public string $from_field = 'dal';
 
     public string $to_field = 'al';
@@ -276,13 +279,6 @@ abstract class BaseIndividualeModel extends Model
         return $this->hasMany(CriteriOption::class, 'anno', 'anno');
     }
 
-    /**
-     * @return HasMany<CriteriValutazione, BaseIndividualeModel>
-     */
-    public function criteriValutazione(): HasMany
-    {
-        return $this->hasMany(CriteriValutazione::class, 'anno', 'anno');
-    }
 
     /**
      * @return HasMany<MyLog, BaseIndividualeModel>
@@ -293,15 +289,7 @@ abstract class BaseIndividualeModel extends Model
             ->where('tbl', $this->getTable());
     }
 
-    /**
-     * @return HasMany<MyLog, BaseIndividualeModel>
-     */
-    public function myLogs(): HasMany
-    {
-        return $this->hasMany(MyLog::class, 'id_tbl', 'id')
-            ->where('tbl', $this->getTable());
-    }
-
+   
     /**
      * @return HasMany<Option, BaseIndividualeModel>
      */

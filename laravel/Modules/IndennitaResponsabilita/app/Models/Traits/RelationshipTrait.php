@@ -52,11 +52,6 @@ trait RelationshipTrait
         return $this->hasMany(Message::class, 'anno', 'anno');
     }
 
-    public function myLogs(): HasMany
-    {
-        return $this->hasMany(MyLog::class, 'id_tbl', 'id')
-            ->where('tbl', $this->getTable());
-    }
 
     public function mailInviate(): HasMany
     {

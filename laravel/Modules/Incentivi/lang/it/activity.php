@@ -81,6 +81,21 @@ return array (
     array (
       'label' => 'delete',
     ),
+<<<<<<< HEAD
+=======
+    'edit' => 
+    array (
+      'label' => 'edit',
+    ),
+    'view' => 
+    array (
+      'label' => 'view',
+    ),
+    'create' => 
+    array (
+      'label' => 'create',
+    ),
+>>>>>>> 2e172569 (.)
   ),
   'navigation' => 
   array (
@@ -89,4 +104,11 @@ return array (
     'icon' => 'incentivi-activity',
     'sort' => 4,
   ),
+<<<<<<< HEAD
+=======
+  'model' => 
+  array (
+    'label' => 'activity.model',
+  ),
+>>>>>>> 2e172569 (.)
 );

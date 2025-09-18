@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Modules\Performance\Filament\Resources\CriteriValutazioneResource\Pages;
 
 use Filament\Actions\CreateAction;
@@ -10,11 +12,15 @@ use Modules\Performance\Enums\WorkerType;
 use Modules\Performance\Filament\Resources\CriteriValutazioneResource;
 use Modules\Ptv\Filament\Actions\Header\CopyFromLastYearAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+use function Safe\date;
 
 class ListCriteriValutaziones extends XotBaseListRecords
 {
     protected static string $resource = CriteriValutazioneResource::class;
 
+    /**
+     * @return array<string, Columns\TextColumn>
+     */
     public function getListTableColumns(): array
     {
         return [
@@ -49,6 +55,9 @@ class ListCriteriValutaziones extends XotBaseListRecords
         ];
     }
 
+    /**
+     * @return array<string, Filters\SelectFilter>
+     */
     public function getTableFilters(): array
     {
         return [
@@ -67,14 +76,9 @@ class ListCriteriValutaziones extends XotBaseListRecords
         ];
     }
 
-    public function getTableActions(): array
-    {
-        return [
-            'edit' => Actions\EditAction::make(),
-            'delete' => Actions\DeleteAction::make(),
-        ];
-    }
-
+    /**
+     * @return array<string, Actions\DeleteBulkAction>
+     */
     public function getTableBulkActions(): array
     {
         return [
@@ -82,19 +86,16 @@ class ListCriteriValutaziones extends XotBaseListRecords
         ];
     }
 
-    public function getTableHeaderActions(): array
-    {
-        return [
-            'create' => CreateAction::make(),
-            'copy' => CopyFromLastYearAction::make(),
-        ];
-    }
-
+    /**
+     * Get the header actions for the list page.
+     *
+     * @return array<int, \Filament\Actions\Action>
+     */
     protected function getHeaderActions(): array
     {
         return [
-            'create' => CreateAction::make(),
-            'copy' => CopyFromLastYearAction::make(),
+            CreateAction::make(),
+            CopyFromLastYearAction::make(),
         ];
     }
 }

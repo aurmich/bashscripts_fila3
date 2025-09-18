@@ -8,6 +8,7 @@ use Filament\Tables\Columns;
 use Filament\Tables\Filters;
 use Modules\Performance\Filament\Resources\IndividualeAssenzeResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+use function Safe\date;
 
 class ListIndividualeAssenzes extends XotBaseListRecords
 {

@@ -22,7 +22,20 @@ class ListIndividualeDecurtazioneAssenzes extends XotBaseListRecords
             'individuale_id' => Tables\Columns\TextColumn::make('individuale.nome')
                 ->sortable()
                 ->searchable(),
-            'decurtazione' => Tables\Columns\TextColumn::make('decurtazione')
+            'min_perc' => Tables\Columns\TextColumn::make('min_perc')
+                ->numeric()
+                ->sortable(),
+            'max_perc' => Tables\Columns\TextColumn::make('max_perc')
+                ->numeric()
+                ->sortable(),
+            'min_gg_365' => Tables\Columns\TextColumn::make('min_gg_365')
+                ->numeric()
+                ->sortable(),
+            'max_gg_365' => Tables\Columns\TextColumn::make('max_gg_365')
+                ->numeric()
+                ->sortable(),
+            'decurtazione_perc' => Tables\Columns\TextColumn::make('decurtazione_perc')
+                ->numeric()
                 ->sortable(),
             'created_at' => Tables\Columns\TextColumn::make('created_at')
                 ->dateTime()

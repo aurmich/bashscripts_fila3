@@ -144,11 +144,11 @@ trait RelationshipTrait
         */
     }
 
-    
+   
+
     public function mailInviate(): HasMany
     {
-        return $this->hasMany(MyLog::class, 'id_tbl', 'id')
-            ->where('tbl', $this->getTable())
+        return $this->myLogs()
             ->where('note', 'sendMail');
     }
 

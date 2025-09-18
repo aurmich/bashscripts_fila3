@@ -1,4 +1,6 @@
-<?php return array (
+<?php
+
+return array (
   'navigation' => 
   array (
     'name' => 'Peso Performance',
@@ -108,6 +110,34 @@
         'help' => 'Data dell\'ultima modifica',
       ),
     ),
+    'toggleColumns' => 
+    array (
+      'label' => 'toggleColumns',
+    ),
+    'reorderRecords' => 
+    array (
+      'label' => 'reorderRecords',
+    ),
+    'resetFilters' => 
+    array (
+      'label' => 'resetFilters',
+    ),
+    'applyFilters' => 
+    array (
+      'label' => 'applyFilters',
+    ),
+    'openFilters' => 
+    array (
+      'label' => 'openFilters',
+    ),
+    'isActive' => 
+    array (
+      'label' => 'isActive',
+    ),
+    'values' => 
+    array (
+      'label' => 'values',
+    ),
   ),
   'actions' => 
   array (
@@ -183,4 +213,4 @@
   array (
     'label' => 'individuale pesi.model',
   ),
-);
+);

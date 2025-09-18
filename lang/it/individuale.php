@@ -1,4 +1,6 @@
-<?php return array (
+<?php
+
+return array (
   'navigation' => 
   array (
     'name' => 'Performance Individuale',
@@ -83,6 +85,138 @@
     array (
       'label' => 'applyFilters',
     ),
+    'resetFilters' => 
+    array (
+      'label' => 'resetFilters',
+    ),
+    'openFilters' => 
+    array (
+      'label' => 'openFilters',
+    ),
+    'toggleColumns' => 
+    array (
+      'label' => 'toggleColumns',
+    ),
+    'reorderRecords' => 
+    array (
+      'label' => 'reorderRecords',
+    ),
+    'value' => 
+    array (
+      'label' => 'value',
+    ),
+    'email' => 
+    array (
+      'label' => 'email',
+    ),
+    'nome' => 
+    array (
+      'label' => 'nome',
+    ),
+    'cognome' => 
+    array (
+      'label' => 'cognome',
+    ),
+    'matr' => 
+    array (
+      'label' => 'matr',
+    ),
+    'edit' => 
+    array (
+      'label' => 'edit',
+    ),
+    'ha_diritto' => 
+    array (
+      'label' => 'ha_diritto',
+    ),
+    'motivo' => 
+    array (
+      'label' => 'motivo',
+    ),
+    'mail_sended_at' => 
+    array (
+      'label' => 'mail_sended_at',
+    ),
+    'totale_punteggio' => 
+    array (
+      'label' => 'totale_punteggio',
+    ),
+    'propro' => 
+    array (
+      'label' => 'propro',
+    ),
+    'posfun' => 
+    array (
+      'label' => 'posfun',
+    ),
+    'categoria_eco' => 
+    array (
+      'label' => 'categoria_eco',
+    ),
+    'categoria_ecoval' => 
+    array (
+      'label' => 'categoria_ecoval',
+    ),
+    'posfunval' => 
+    array (
+      'label' => 'posfunval',
+    ),
+    'posiz' => 
+    array (
+      'label' => 'posiz',
+    ),
+    'posiz_txt' => 
+    array (
+      'label' => 'posiz_txt',
+    ),
+    'disci1' => 
+    array (
+      'label' => 'disci1',
+    ),
+    'disci1_txt' => 
+    array (
+      'label' => 'disci1_txt',
+    ),
+    'stabi' => 
+    array (
+      'label' => 'stabi',
+    ),
+    'stabi_txt' => 
+    array (
+      'label' => 'stabi_txt',
+    ),
+    'repar' => 
+    array (
+      'label' => 'repar',
+    ),
+    'repar_txt' => 
+    array (
+      'label' => 'repar_txt',
+    ),
+    'dal' => 
+    array (
+      'label' => 'dal',
+    ),
+    'al' => 
+    array (
+      'label' => 'al',
+    ),
+    'anno' => 
+    array (
+      'label' => 'anno',
+    ),
+    'type' => 
+    array (
+      'label' => 'type',
+    ),
+    'delete' => 
+    array (
+      'label' => 'delete',
+    ),
+    'created_at' => 
+    array (
+      'label' => 'created_at',
+    ),
   ),
   'actions' => 
   array (
@@ -115,6 +249,22 @@
         ),
       ),
     ),
+    'create' => 
+    array (
+      'label' => 'create',
+    ),
+    'copy_from_organizzativa' => 
+    array (
+      'label' => 'copy_from_organizzativa',
+    ),
+    'delete' => 
+    array (
+      'label' => 'delete',
+    ),
+    'edit' => 
+    array (
+      'label' => 'edit',
+    ),
   ),
   'messages' => 
   array (
@@ -140,4 +290,4 @@
     ),
   ),
   'title' => 'individuale',
-);
+);

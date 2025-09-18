@@ -5,21 +5,23 @@ declare(strict_types=1);
 namespace Modules\Performance\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
 use Modules\Performance\Enums\WorkerType;
+use Modules\Xot\Models\XotBaseModel;
 
 /**
  * Modules\Performance\Models\IndividualePesi.
  *
- * @property int $id
+ * @property int         $id
  * @property string|null $lista_propro
  * @property string|null $descr
- * @property int|null $peso_esperienza_acquisita
- * @property int|null $peso_risultati_ottenuti
- * @property int|null $peso_arricchimento_professionale
- * @property int|null $peso_impegno
- * @property int|null $peso_qualita_prestazione
- * @property int|null $anno
+ * @property int|null    $peso_esperienza_acquisita
+ * @property int|null    $peso_risultati_ottenuti
+ * @property int|null    $peso_arricchimento_professionale
+ * @property int|null    $peso_impegno
+ * @property int|null    $peso_qualita_prestazione
+ * @property int|null    $anno
  * @property Carbon|null $created_at
  * @property string|null $created_by
  * @property Carbon|null $updated_at
@@ -44,11 +46,14 @@ use Modules\Performance\Enums\WorkerType;
  *
  * @mixin \Eloquent
  */
-class IndividualePesi extends BaseModel
+class IndividualePesi extends XotBaseModel
 {
+    protected $connection = 'performance';
+    protected $table = 'peso_performance_individuale';
+
     /** @var array<int, string> */
     protected $fillable = [
-        'id',
+        'type',
         'lista_propro',
         'descr',
         'peso_esperienza_acquisita',
@@ -57,10 +62,7 @@ class IndividualePesi extends BaseModel
         'peso_impegno',
         'peso_qualita_prestazione',
         'anno',
-        'type',
     ];
-
-    protected $table = 'peso_performance_individuale';
 
     /** @return array<string, string>  */
     public function casts(): array
@@ -68,5 +70,105 @@ class IndividualePesi extends BaseModel
         return [
             'type' => WorkerType::class,
         ];
+    }
+
+    // Nuovo approccio per il casting in Laravel 11
+    public function type(): WorkerType
+    {
+        return WorkerType::from($this->getAttribute('type'));
+    }
+
+    public function setTypeAttribute(WorkerType $value): void
+    {
+        $this->setAttribute('type', $value->value);
+    }
+
+    public function getPesoEsperienzaAcquisitaAttribute(): float
+    {
+        return (float) $this->getAttribute('peso_esperienza_acquisita');
+    }
+
+    public function setPesoEsperienzaAcquisitaAttribute(float $value): void
+    {
+        $this->setAttribute('peso_esperienza_acquisita', $value);
+    }
+
+    public function getPesoRisultatiOttenutiAttribute(): float
+    {
+        return (float) $this->getAttribute('peso_risultati_ottenuti');
+    }
+
+    public function setPesoRisultatiOttenutiAttribute(float $value): void
+    {
+        $this->setAttribute('peso_risultati_ottenuti', $value);
+    }
+
+    public function getPesoArricchimentoProfessionaleAttribute(): float
+    {
+        return (float) $this->getAttribute('peso_arricchimento_professionale');
+    }
+
+    public function setPesoArricchimentoProfessionaleAttribute(float $value): void
+    {
+        $this->setAttribute('peso_arricchimento_professionale', $value);
+    }
+
+    public function getPesoImpegnoAttribute(): float
+    {
+        return (float) $this->getAttribute('peso_impegno');
+    }
+
+    public function setPesoImpegnoAttribute(float $value): void
+    {
+        $this->setAttribute('peso_impegno', $value);
+    }
+
+    public function getPesoQualitaPrestazioneAttribute(): float
+    {
+        return (float) $this->getAttribute('peso_qualita_prestazione');
+    }
+
+    public function setPesoQualitaPrestazioneAttribute(float $value): void
+    {
+        $this->setAttribute('peso_qualita_prestazione', $value);
+    }
+
+    public function getAnnoAttribute(): int
+    {
+        return (int) $this->getAttribute('anno');
+    }
+
+    public function setAnnoAttribute(int $value): void
+    {
+        $this->setAttribute('anno', $value);
+    }
+
+    public function getTotalWeightAttribute(): float
+    {
+        return $this->peso_esperienza_acquisita +
+               $this->peso_risultati_ottenuti +
+               $this->peso_arricchimento_professionale +
+               $this->peso_impegno +
+               $this->peso_qualita_prestazione;
+    }
+
+    public function individuale(): HasMany
+    {
+        return $this->hasMany(Individuale::class, 'type', 'type');
+    }
+
+    public function individualePo(): HasMany
+    {
+        return $this->hasMany(IndividualePo::class, 'type', 'type');
+    }
+
+    public function individualeRegionale(): HasMany
+    {
+        return $this->hasMany(IndividualeRegionale::class, 'type', 'type');
+    }
+
+    public function individualeAdm(): HasMany
+    {
+        return $this->hasMany(IndividualeAdm::class, 'type', 'type');
     }
 }// end class Pesi

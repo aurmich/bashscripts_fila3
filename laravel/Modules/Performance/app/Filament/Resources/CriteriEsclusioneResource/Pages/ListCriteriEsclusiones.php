@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Modules\Performance\Filament\Resources\CriteriEsclusioneResource\Pages;
 
 use Filament\Actions\CreateAction;
@@ -9,72 +11,63 @@ use Filament\Tables\Actions;
 use Modules\Performance\Filament\Resources\CriteriEsclusioneResource;
 use Modules\Ptv\Filament\Actions\Header\CopyFromLastYearAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+use function Safe\date;
 
 class ListCriteriEsclusiones extends XotBaseListRecords
 {
     protected static string $resource = CriteriEsclusioneResource::class;
 
+    /**
+     * @return array<string, CreateAction|CopyFromLastYearAction>
+     */
+    /**
+     * Get the header actions for the list page.
+     *
+     * @return array<int, \Filament\Actions\Action>
+     */
     protected function getHeaderActions(): array
     {
         return [
-            'create' => CreateAction::make(),
-            'copy' => CopyFromLastYearAction::make(),
+            CreateAction::make(),
+            CopyFromLastYearAction::make(),
         ];
     }
 
+    /**
+     * @return array<string, Columns\TextColumn>
+     */
     public function getListTableColumns(): array
     {
         return [
             'name' => Columns\TextColumn::make('name')
-                ->label('Nome')
                 ->searchable()
                 ->sortable(),
             'field_name' => Columns\TextColumn::make('field_name')
-                ->label('Campo')
                 ->searchable()
                 ->sortable(),
             'op' => Columns\TextColumn::make('op')
-                ->label('Operatore')
                 ->searchable()
                 ->sortable(),
             'value' => Columns\TextColumn::make('value')
-                ->label('Valore')
                 ->searchable()
                 ->sortable(),
             'anno' => Columns\TextColumn::make('anno')
-                ->label('Anno')
                 ->numeric()
                 ->sortable(),
             'created_at' => Columns\TextColumn::make('created_at')
-                ->label('Data Creazione')
                 ->dateTime()
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true),
             'updated_at' => Columns\TextColumn::make('updated_at')
-                ->label('Ultima Modifica')
                 ->dateTime()
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true),
         ];
     }
 
-    public function getTableFilters(): array
-    {
-        return [
-            'anno' => Filters\SelectFilter::make('anno')
-                ->label('Anno')
-                ->options(function () {
-                    $currentYear = date('Y');
-
-                    return [
-                        $currentYear => $currentYear,
-                        $currentYear - 1 => $currentYear - 1,
-                        $currentYear - 2 => $currentYear - 2,
-                    ];
-                }),
-        ];
-    }
-
+    /**
+     * @return array<string, Actions\EditAction|Actions\DeleteAction>
+     */
     public function getTableActions(): array
     {
         return [
@@ -83,10 +76,32 @@ class ListCriteriEsclusiones extends XotBaseListRecords
         ];
     }
 
+    /**
+     * @return array<string, Actions\DeleteBulkAction>
+     */
     public function getTableBulkActions(): array
     {
         return [
             'delete' => Actions\DeleteBulkAction::make(),
+        ];
+    }
+
+    /**
+     * @return array<string, Filters\SelectFilter>
+     */
+    public function getTableFilters(): array
+    {
+        return [
+            'anno' => Filters\SelectFilter::make('anno')
+                ->options(function () {
+                    $currentYear = (int) date('Y');
+
+                    return [
+                        $currentYear => $currentYear,
+                        $currentYear - 1 => $currentYear - 1,
+                        $currentYear - 2 => $currentYear - 2,
+                    ];
+                }),
         ];
     }
 }
