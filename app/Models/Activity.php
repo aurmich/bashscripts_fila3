@@ -172,7 +172,28 @@ class Activity extends BaseActivity
         'updated_at',
     ];
 
+    /** @var string */
     protected $connection = 'activity';
+
+    /**
+     * Get the properties attribute.
+     *
+     * @return \Illuminate\Support\Collection<array-key, mixed>|null
+     */
+    public function getPropertiesAttribute(): ?\Illuminate\Support\Collection
+    {
+        return $this->properties;
+    }
+
+    /**
+     * Get the changes attribute.
+     *
+     * @return \Illuminate\Support\Collection<array-key, mixed>
+     */
+    public function getChangesAttribute(): \Illuminate\Support\Collection
+    {
+        return collect($this->changes);
+    }
 
     // Additional methods or relationships can be defined here as needed
 >>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)

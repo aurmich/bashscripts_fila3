@@ -41,7 +41,12 @@ Homestead.json
 .git-rewrite/
 .git-rewrite
 
+<<<<<<< HEAD:git/.gitignore-template
 # File temporanei e di sistema
+=======
+
+# Ignored temporary files
+>>>>>>> 05942064 (Added submodule for laravel/Modules/Activity):laravel/Modules/Activity/.gitignore
 *.tmp
 *.swp
 *.swo
