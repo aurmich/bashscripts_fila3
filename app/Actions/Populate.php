@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\IndennitaCondizioniLavoro\Actions;
 
 use Carbon\Carbon;
@@ -20,6 +21,11 @@ namespace Modules\Progressioni\Actions;
 
 use Modules\Progressioni\Models\Schede;
 >>>>>>> bcab6efe (first)
+=======
+namespace Modules\Progressioni\Actions;
+
+use Modules\Progressioni\Models\Schede;
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 use Modules\Sigma\Models\Rep00f;
 use Spatie\QueueableAction\QueueableAction;
 
@@ -33,6 +39,7 @@ class Populate
     public function execute(array $data): void
     {
         $anno = $data['anno'];
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         $quadrimestre = $data['quadrimestre'];
@@ -95,6 +102,8 @@ class Populate
         $rows = Rep00f::ofYear($anno)
 >>>>>>> e0005d7d (first)
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 
         $rows = Schede::where('anno', $anno)
             ->get();
@@ -102,12 +111,16 @@ class Populate
         $matrs = $rows->pluck('matr')->toArray();
 
         $rows = Rep00f::ofYear($anno)
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
             ->where('ente', 90)->get();
 
         $rows = $rows->filter(static fn ($item): bool => ! in_array($item->matr, $matrs));
 
         foreach ($rows as $row) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             CondizioniLavoro::firstOrCreate(
@@ -117,11 +130,15 @@ class Populate
 =======
             Schede::firstOrCreate(
 >>>>>>> bcab6efe (first)
+=======
+            Schede::firstOrCreate(
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
                 [
                     'ente' => $row->ente,
                     'matr' => $row->matr,
                     'stabi' => $row->repst1,
                     'repar' => $row->repre1,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                     'quadrimestre' => $quadrimestre,
@@ -133,15 +150,20 @@ class Populate
 =======
 =======
 >>>>>>> bcab6efe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
                     'anno' => $anno,
                 ],
                 [
                     //    'dal' => $dal,
                     //    'al' => $al,
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> e0005d7d (first)
 =======
 >>>>>>> bcab6efe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
                 ]
             );
         }

@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\IndennitaResponsabilita\Filament\Resources\MessageResource\Pages;
 
 use Filament\Pages\Actions;
@@ -33,6 +34,8 @@ class ListMessages extends XotBaseListRecords
             Actions\CreateAction::make(),
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 namespace Modules\Progressioni\Filament\Resources\MessageResource\Pages;
 
 use Filament\Actions;
@@ -54,8 +57,11 @@ class ListMessages extends XotBaseListRecords
             Actions\CreateAction::make(),
             app(CopyFromLastYearButton::class)
                 ->execute(Message::class, 'anno', $anno),
+<<<<<<< HEAD
 =======
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
         ];
     }
 
@@ -63,6 +69,9 @@ class ListMessages extends XotBaseListRecords
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
             'id' => Tables\Columns\TextColumn::make('id')
                 ->sortable(),
             'type' => Tables\Columns\TextColumn::make('type')
@@ -85,6 +94,7 @@ class ListMessages extends XotBaseListRecords
                 ->dateTime()
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true)
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
 =======
             TextColumn::make('id'),
@@ -106,6 +116,8 @@ class ListMessages extends XotBaseListRecords
 '2025' => '2025',
                 ]),
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
         ];
     }
 }

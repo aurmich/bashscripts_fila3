@@ -30,6 +30,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 0d55b583 (first)
@@ -283,6 +284,8 @@
 >>>>>>> 9997d18c (first)
 =======
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
     "private": true,
     "scripts": {
         "dev": "npm run development",
@@ -294,6 +297,7 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "devDependencies": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -329,10 +333,13 @@
 >>>>>>> 9997d18c (first)
 =======
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
         "cross-env": "^5.1.4",
         "laravel-mix": "^4.0.7",
         "laravel-mix-merge-manifest": "^0.1.2"
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -402,4 +409,6 @@
         "vite": "^5.0"
     }
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 }

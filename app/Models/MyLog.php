@@ -6,6 +6,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\IndennitaCondizioniLavoro\Models;
 =======
 namespace Modules\IndennitaResponsabilita\Models;
@@ -22,6 +23,8 @@ use Modules\Ptv\Models\MyLog as PtvMyLogModel;
  * Modules\IndennitaResponsabilita\Models\MyLog.
 >>>>>>> e0005d7d (first)
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 namespace Modules\Progressioni\Models;
 
 use Illuminate\Database\Eloquent\Builder;
@@ -29,6 +32,7 @@ use Illuminate\Support\Carbon;
 
 /**
  * Modules\Progressioni\Models\MyLog.
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
 =======
 namespace Modules\Performance\Models;
@@ -57,6 +61,8 @@ use Modules\Xot\Traits\Updater;
  * @method static Builder|MyLog newQuery()
  * @method static Builder|MyLog query()
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
  *
  * @property int $id
  * @property int|null $id_tbl
@@ -65,13 +71,17 @@ use Modules\Xot\Traits\Updater;
  * @property string|null $note
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
  * @property string|null $obj
  * @property string|null $act
  * @property array|null $data
  * @property string|null $datemod
  * @property string|null $handle
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -90,11 +100,16 @@ use Modules\Xot\Traits\Updater;
  * @property string|null $created_ip
  * @property string|null $updated_ip
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
  *
  * @method static \Modules\Ptv\Database\Factories\MyLogFactory factory($count = null, $state = [])
  * @method static Builder|MyLog newModelQuery()
@@ -103,6 +118,7 @@ use Modules\Xot\Traits\Updater;
  * @method static Builder|MyLog whereAct($value)
  * @method static Builder|MyLog whereCreatedAt($value)
  * @method static Builder|MyLog whereCreatedBy($value)
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @method static Builder|MyLog whereCreatedIp($value)
  * @method static Builder|MyLog whereData($value)
@@ -138,6 +154,10 @@ use Modules\Xot\Traits\Updater;
  * @method static Builder|MyLog whereData($value)
  * @method static Builder|MyLog whereDatemod($value)
 >>>>>>> dc18abbe (first)
+=======
+ * @method static Builder|MyLog whereData($value)
+ * @method static Builder|MyLog whereDatemod($value)
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
  * @method static Builder|MyLog whereHandle($value)
  * @method static Builder|MyLog whereId($value)
  * @method static Builder|MyLog whereIdApprovaz($value)
@@ -145,10 +165,14 @@ use Modules\Xot\Traits\Updater;
  * @method static Builder|MyLog whereNote($value)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
  * @method static Builder|MyLog whereObj($value)
  * @method static Builder|MyLog whereTbl($value)
  * @method static Builder|MyLog whereUpdatedAt($value)
  * @method static Builder|MyLog whereUpdatedBy($value)
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @method static Builder|MyLog whereUpdatedIp($value)
  *
@@ -164,12 +188,15 @@ class MyLog extends PtvMyLogModel
     // -------------------------------------------------
 >>>>>>> e0005d7d (first)
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
  *
  * @mixin \Eloquent
  */
 class MyLog extends \Modules\Ptv\Models\MyLog
 {
     protected $connection = 'progressione'; // this will use the specified database connection
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
 =======
  * @method static Builder|MyLog whereTbl($value)
@@ -278,4 +305,6 @@ class MyLog extends Model
         return app(\Modules\Xot\Actions\Factory\GetFactoryAction::class)->execute(static::class);
     }
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 }

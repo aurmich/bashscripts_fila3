@@ -32,6 +32,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ───────────────────────────────────────────────────────
 # Sistema operativo / File nascosti e metadata
 # ───────────────────────────────────────────────────────
@@ -937,11 +938,14 @@ cache/
 =======
 =======
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 /vendor
 *.lock
 /build
 .git-blame-ignore-revs
 *:Zone.Identifier
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> bcab6efe (first)
 =======
@@ -969,3 +973,5 @@ cache/
 =======
 public_html/plugins/
 >>>>>>> 5a1e0641 (.)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)

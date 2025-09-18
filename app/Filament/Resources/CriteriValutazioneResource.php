@@ -3,6 +3,9 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 namespace Modules\Progressioni\Filament\Resources;
 
 use Filament\Tables;
@@ -12,6 +15,7 @@ use Filament\Tables\Table;
 use Modules\Progressioni\Filament\Resources\CriteriValutazioneResource\Pages;
 use Modules\Progressioni\Filament\Resources\CriteriValutazioneResource\RelationManagers;
 use Modules\Progressioni\Models\CriteriValutazione;
+<<<<<<< HEAD
 =======
 namespace Modules\Performance\Filament\Resources;
 
@@ -19,6 +23,8 @@ use Filament\Forms;
 use Modules\Performance\Filament\Resources\CriteriValutazioneResource\Pages;
 use Modules\Performance\Models\CriteriValutazione;
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 use function Safe\date;
@@ -33,11 +39,15 @@ class CriteriValutazioneResource extends XotBaseResource
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
             'id' => Forms\Components\TextInput::make('id')
                 ->disabled(),
             'parent_id' => Forms\Components\TextInput::make('parent_id')
                 ->numeric(),
             'name' => Forms\Components\TextInput::make('name')
+<<<<<<< HEAD
 =======
             'id_padre' => Forms\Components\TextInput::make('id_padre')
                 ->required()
@@ -45,11 +55,16 @@ class CriteriValutazioneResource extends XotBaseResource
                 ->default(0),
             'nome' => Forms\Components\TextInput::make('nome')
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
                 ->required()
                 ->maxLength(50),
             'label' => Forms\Components\TextInput::make('label')
                 ->required()
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
                 ->maxLength(50),
             'descr' => Forms\Components\TextInput::make('descr')
                 ->maxLength(255),
@@ -58,6 +73,7 @@ class CriteriValutazioneResource extends XotBaseResource
             'posizione' => Forms\Components\TextInput::make('posizione')
                 ->numeric()
                 ->required(),
+<<<<<<< HEAD
 =======
                 ->maxLength(255),
             'descr' => Forms\Components\TextInput::make('descr')
@@ -70,11 +86,16 @@ class CriteriValutazioneResource extends XotBaseResource
                 ->numeric()
                 ->default(0),
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
             'anno' => Forms\Components\TextInput::make('anno')
                 ->required()
                 ->numeric()
                 ->default(date('Y')),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
         ];
     }
 
@@ -111,6 +132,7 @@ class CriteriValutazioneResource extends XotBaseResource
     public static function getRelations(): array
     {
         return [
+<<<<<<< HEAD
 =======
             'created_by' => Forms\Components\TextInput::make('created_by')
                 ->maxLength(50)
@@ -118,6 +140,8 @@ class CriteriValutazioneResource extends XotBaseResource
                 ->dehydrated(false)
                 ->hiddenOn('create'),
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
         ];
     }
 

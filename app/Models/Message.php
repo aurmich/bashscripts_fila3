@@ -5,6 +5,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\IndennitaCondizioniLavoro\Models;
 =======
 namespace Modules\IndennitaResponsabilita\Models;
@@ -20,6 +21,8 @@ use Modules\Ptv\Models\Message as PtvMessageModel;
  * Modules\IndennitaResponsabilita\Models\Message.
 >>>>>>> e0005d7d (first)
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 namespace Modules\Progressioni\Models;
 
 use Illuminate\Database\Eloquent\Builder;
@@ -27,7 +30,10 @@ use Illuminate\Support\Carbon;
 
 /**
  * Modules\Progressioni\Models\Message.
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
  *
  * @property int $id
  * @property string|null $type
@@ -38,6 +44,7 @@ use Illuminate\Support\Carbon;
  * @property Carbon|null $updated_at
  * @property string|null $created_by
  * @property string|null $updated_by
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -157,6 +164,8 @@ class Message extends PtvMessageModel
     protected $connection = 'indennita_responsabilita'; // this will use the specified database connection
 >>>>>>> e0005d7d (first)
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
  *
  * @method static \Modules\Progressioni\Database\Factories\MessageFactory factory($count = null, $state = [])
  * @method static Builder|Message newModelQuery()
@@ -178,6 +187,7 @@ class Message extends BaseModel
 {
     protected $table = 'messages';
 
+<<<<<<< HEAD
 =======
  * @method static \Staudenmeir\LaravelAdjacencyList\Eloquent\Builder|Message whereUserId($value)
  * @method static \Staudenmeir\LaravelAdjacencyList\Eloquent\Collection<int, static> all($columns = ['*'])
@@ -196,19 +206,25 @@ class Message extends Model
 
     // protected $table = 'messages';
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
     // public $timestamps= false;
     protected $fillable =
         [
             'id',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'parent_id',
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
             'type',
             'title',
             'txt',
             'anno',
         ];
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> bcab6efe (first)
 =======
@@ -247,4 +263,6 @@ class Message extends Model
         return app(\Modules\Xot\Actions\Factory\GetFactoryAction::class)->execute(static::class);
     }
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 }

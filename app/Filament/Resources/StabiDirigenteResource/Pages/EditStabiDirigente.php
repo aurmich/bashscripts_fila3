@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -19,11 +20,19 @@ namespace Modules\Progressioni\Filament\Resources\StabiDirigenteResource\Pages;
 
 use Modules\Progressioni\Filament\Resources\StabiDirigenteResource;
 >>>>>>> bcab6efe (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Progressioni\Filament\Resources\StabiDirigenteResource\Pages;
+
+use Modules\Progressioni\Filament\Resources\StabiDirigenteResource;
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 use Modules\Ptv\Filament\Resources\StabiDirigenteResource\Pages\EditStabiDirigente as PtvEditStabiDirigente;
 
 class EditStabiDirigente extends PtvEditStabiDirigente
 {
     protected static string $resource = StabiDirigenteResource::class;
+<<<<<<< HEAD
 =======
 namespace Modules\Performance\Filament\Resources\StabiDirigenteResource\Pages;
 
@@ -57,4 +66,6 @@ class EditStabiDirigente extends \Modules\Xot\Filament\Resources\Pages\XotBaseEd
         ];
     }
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 }

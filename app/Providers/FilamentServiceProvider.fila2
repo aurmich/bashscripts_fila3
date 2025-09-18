@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -79,6 +80,9 @@ namespace Modules\Progressioni\Providers;
 =======
 namespace Modules\Performance\Providers;
 >>>>>>> 961ad402 (first)
+=======
+namespace Modules\Progressioni\Providers;
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 
 use Blade;
 use Filament\Facades\Filament;
@@ -88,6 +92,7 @@ use Savannabits\FilamentModules\ContextServiceProvider;
 class FilamentServiceProvider extends ContextServiceProvider
 {
     public $app;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     public static string $name = 'indennitaresponsabilita-filament';
@@ -110,12 +115,21 @@ class FilamentServiceProvider extends ContextServiceProvider
     {
         //dddx('e');// 1
 >>>>>>> 961ad402 (first)
+=======
+    public static string $name = 'progressioni-filament';
+    
+    public static string $module = 'Progressioni';
+
+    public function packageRegistered(): void
+    {
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
         $this->app->booting(function (): void {
             $this->registerConfigs();
         });
     }
 
     public function registerConfigs(): void {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> e0005d7d (first)
@@ -125,12 +139,15 @@ class FilamentServiceProvider extends ContextServiceProvider
 >>>>>>> 961ad402 (first)
 =======
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
         $this->mergeConfigFrom(
             app('modules')->findOrFail(static::$module)->getExtraPath( 'Config/'.static::$name.'.php'),
             static::$name
         );
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -157,10 +174,13 @@ class FilamentServiceProvider extends XotBaseContextServiceProvider {
 >>>>>>> bcab6efe (first)
 =======
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
     public function boot(): void
     {
         Filament::serving(static function () : void {
             Filament::forContext('filament', static function () : void {
+<<<<<<< HEAD
 <<<<<<< HEAD
                 Filament::registerNavigationItems([
 <<<<<<< HEAD
@@ -168,11 +188,17 @@ class FilamentServiceProvider extends XotBaseContextServiceProvider {
                         ->url(route(static::$name.'.pages.dashboard'))
                         ->icon('heroicon-o-folder')
 =======
+=======
+                Filament::registerNavigationItems([
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
                     NavigationItem::make(static::$module)
                         ->label(static::$module.' ')
                         ->url(route(static::$name.'.pages.dashboard'))
                         ->icon('heroicon-o-sparkles')
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
                         ->group('Modules')
                 ]);
             });
@@ -181,6 +207,7 @@ class FilamentServiceProvider extends XotBaseContextServiceProvider {
             });
         });
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> e0005d7d (first)
 =======
@@ -217,4 +244,6 @@ class FilamentServiceProvider extends XotBaseContextServiceProvider {
     }
     */
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 }

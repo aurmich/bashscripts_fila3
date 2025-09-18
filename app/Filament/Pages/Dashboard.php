@@ -10,6 +10,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -59,17 +60,23 @@ namespace Modules\IndennitaCondizioniLavoro\Filament\Pages;
 use Filament\Pages\Page;
 >>>>>>> b7483fd0 (first)
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 declare(strict_types=1);
 
 namespace Modules\Progressioni\Filament\Pages;
 
 use Filament\Pages\Page;
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 
 class Dashboard extends Page
 {
     protected static ?string $navigationIcon = 'heroicon-o-home';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -358,4 +365,7 @@ class Dashboard extends BaseDashboard
         ];
     }
 >>>>>>> dc18abbe (first)
+=======
+    protected static string $view = 'progressioni::filament.pages.dashboard';
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 }

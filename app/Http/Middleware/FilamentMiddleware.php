@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\IndennitaCondizioniLavoro\Http\Middleware;
 =======
 namespace Modules\IndennitaResponsabilita\Http\Middleware;
@@ -21,6 +22,9 @@ namespace Modules\Sigma\Http\Middleware;
 =======
 namespace Modules\Performance\Http\Middleware;
 >>>>>>> 961ad402 (first)
+=======
+namespace Modules\Progressioni\Http\Middleware;
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 
 use Exception;
 use Filament\Models\Contracts\FilamentUser;
@@ -30,6 +34,7 @@ use Str;
 
 class FilamentMiddleware extends Middleware
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -51,6 +56,9 @@ class FilamentMiddleware extends Middleware
 =======
     public static string $module = 'Performance';
 >>>>>>> 961ad402 (first)
+=======
+    public static string $module = 'Progressioni';
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 
     public static string $context = 'filament';
 

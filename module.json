@@ -29,6 +29,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
 =======
@@ -275,11 +276,16 @@
     "name": "Ptv",
     "alias": "ptv",
 >>>>>>> dc18abbe (first)
+=======
+    "name": "Progressioni",
+    "alias": "progressioni",
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
     "description": "",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -400,10 +406,15 @@
         "Modules\\Ptv\\Providers\\PtvServiceProvider",
         "Modules\\Ptv\\Providers\\Filament\\AdminPanelProvider"
 >>>>>>> dc18abbe (first)
+=======
+        "Modules\\Progressioni\\Providers\\ProgressioniServiceProvider",
+        "Modules\\Progressioni\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
     ],
     "aliases": [],
     "files": [],
     "requires": []
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 }
@@ -420,3 +431,6 @@
 =======
 }
 >>>>>>> dc18abbe (first)
+=======
+}
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)

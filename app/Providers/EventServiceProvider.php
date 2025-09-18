@@ -24,6 +24,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -176,6 +177,11 @@ declare(strict_types=1);
 
 namespace Modules\Ptv\Providers;
 >>>>>>> dc18abbe (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Progressioni\Providers;
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as BaseEventServiceProvider;
 
@@ -187,6 +193,7 @@ class EventServiceProvider extends BaseEventServiceProvider
      * @var array<string, array<int, string>>
      */
     protected $listen = [];
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -283,6 +290,9 @@ class EventServiceProvider extends BaseEventServiceProvider
 =======
 
 >>>>>>> dc18abbe (first)
+=======
+
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
     /**
      * Indicates if events should be discovered.
      *
@@ -293,6 +303,7 @@ class EventServiceProvider extends BaseEventServiceProvider
     /**
      * Configure the proper event listeners for email verification.
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -449,4 +460,7 @@ class EventServiceProvider extends ServiceProvider
 =======
     protected function configureEmailVerification(): void {}
 >>>>>>> dc18abbe (first)
+=======
+    protected function configureEmailVerification(): void {}
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 }

@@ -10,6 +10,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <x-filament-panels::page class="fi-dashboard-page">
     {{--
     @if (method_exists($this, 'filtersForm'))
@@ -32,6 +33,8 @@
 =======
 =======
 >>>>>>> bcab6efe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 <x-filament::page>
     {{--
     <img src="{{ ui::asset('ewall::img/logo.png') }}" />
@@ -39,6 +42,7 @@
     <img src="{{ $ui->asset('ewall::img/logo.png') }}" />
     --}}
 </x-filament::page>
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> c088001a (first)
 =======
@@ -85,3 +89,5 @@
 
 </x-filament::page>
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)

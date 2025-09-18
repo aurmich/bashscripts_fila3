@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -43,12 +44,16 @@ namespace Modules\Performance\Http\Livewire\Auth;
 =======
 namespace Modules\Ptv\Http\Livewire\Auth;
 >>>>>>> dc18abbe (first)
+=======
+namespace Modules\Progressioni\Http\Livewire\Auth;
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 
 use Savannabits\FilamentModules\Http\Livewire\Auth\BaseLogin;
 
 class FilamentLogin extends BaseLogin
 {
     public static string $context = 'filament';
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -100,4 +105,8 @@ class FilamentLogin extends BaseLogin
     
     public static string $module = 'Ptv';
 >>>>>>> dc18abbe (first)
+=======
+    
+    public static string $module = 'Progressioni';
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 }

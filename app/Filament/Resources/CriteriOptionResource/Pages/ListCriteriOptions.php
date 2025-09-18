@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 namespace Modules\Progressioni\Filament\Resources\CriteriOptionResource\Pages;
 
 use Filament\Actions;
@@ -8,6 +11,7 @@ use Illuminate\Support\Arr;
 use Modules\Progressioni\Filament\Resources\CriteriOptionResource;
 use Modules\Progressioni\Models\CriteriOption;
 use Modules\Xot\Actions\Filament\Actions\CopyFromLastYearButton;
+<<<<<<< HEAD
 =======
 namespace Modules\Performance\Filament\Resources\CriteriOptionResource\Pages;
 
@@ -16,6 +20,8 @@ use Filament\Tables\Columns;
 use Filament\Tables\Filters;
 use Modules\Performance\Filament\Resources\CriteriOptionResource;
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListCriteriOptions extends XotBaseListRecords
@@ -23,6 +29,9 @@ class ListCriteriOptions extends XotBaseListRecords
     protected static string $resource = CriteriOptionResource::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
     protected function getHeaderActions(): array
     {
         $anno = Arr::get($this->tableFilters, 'anno.value');
@@ -60,6 +69,7 @@ class ListCriteriOptions extends XotBaseListRecords
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true),
             'updated_at' => Tables\Columns\TextColumn::make('updated_at')
+<<<<<<< HEAD
 =======
     public function getListTableColumns(): array
     {
@@ -84,11 +94,14 @@ class ListCriteriOptions extends XotBaseListRecords
             'updated_at' => Columns\TextColumn::make('updated_at')
                 ->label('Ultima Modifica')
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
                 ->dateTime()
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true),
         ];
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -117,4 +130,6 @@ class ListCriteriOptions extends XotBaseListRecords
         ];
     }
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 }

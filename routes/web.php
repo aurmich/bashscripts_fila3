@@ -25,6 +25,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -220,3 +221,6 @@ declare(strict_types=1);
 =======
 declare(strict_types=1);
 >>>>>>> dc18abbe (first)
+=======
+declare(strict_types=1);
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)

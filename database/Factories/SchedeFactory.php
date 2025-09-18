@@ -3,18 +3,24 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Legge104\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Legge104\Models\Schede;
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 namespace Modules\Progressioni\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Progressioni\Models\Schede;
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 
 class SchedeFactory extends Factory
 {
@@ -32,8 +38,11 @@ class SchedeFactory extends Factory
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
             'id' => $this->faker->randomNumber(),
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
             'ente' => $this->faker->randomNumber,
             'matr' => $this->faker->randomNumber,
             'stabi' => $this->faker->randomNumber,
@@ -91,7 +100,10 @@ class SchedeFactory extends Factory
             'al' => $this->faker->randomNumber,
             'excellences_count_last_3_years' => $this->faker->randomNumber,
             'valore_differenziale_rapportato_pt' => $this->faker->randomFloat,
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
         ];
     }
 }

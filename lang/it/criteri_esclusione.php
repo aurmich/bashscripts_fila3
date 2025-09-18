@@ -5,6 +5,9 @@ declare(strict_types=1);
 return [
     'navigation' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
         'name' => 'criteri esclusione',
         'plural' => 'criteri esclusione',
         'group' => [
@@ -38,6 +41,7 @@ return [
         'index' => 'lista',
         'create' => 'aggiungi',
         'edit' => 'Modifica',
+<<<<<<< HEAD
 =======
         'name' => 'Criteri di Esclusione',
         'plural' => 'Criteri di Esclusione',
@@ -112,5 +116,7 @@ return [
             'date_before' => 'La data deve essere precedente a :date',
         ],
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
     ],
 ];

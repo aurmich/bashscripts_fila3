@@ -3,6 +3,9 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 namespace Modules\Progressioni\Actions;
 
 // use Illuminate\Support\Arr;
@@ -479,6 +482,7 @@ class TrovaEsclusiAction
         }
 
         return '';
+<<<<<<< HEAD
 =======
 namespace Modules\Performance\Actions;
 
@@ -507,5 +511,7 @@ class TrovaEsclusiAction
     {
         dddx('wip');
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
     }
 }

@@ -3,6 +3,9 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 namespace Modules\Progressioni\Filament\Resources;
 
 use Filament\Tables;
@@ -12,6 +15,7 @@ use Filament\Tables\Table;
 use Modules\Progressioni\Filament\Resources\CriteriOptionResource\Pages;
 use Modules\Progressioni\Filament\Resources\CriteriOptionResource\RelationManagers;
 use Modules\Progressioni\Models\CriteriOption;
+<<<<<<< HEAD
 =======
 namespace Modules\Performance\Filament\Resources;
 
@@ -22,6 +26,8 @@ use Filament\Tables\Actions;
 use Modules\Performance\Filament\Resources\CriteriOptionResource\Pages;
 use Modules\Performance\Models\CriteriOption;
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 use function Safe\date;
@@ -36,6 +42,9 @@ class CriteriOptionResource extends XotBaseResource
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
             'id' => Forms\Components\TextInput::make('id')
                 ->disabled(),
             'name' => Forms\Components\TextInput::make('name')
@@ -86,6 +95,7 @@ class CriteriOptionResource extends XotBaseResource
     public static function getRelations(): array
     {
         return [
+<<<<<<< HEAD
 =======
             'name' => Forms\Components\TextInput::make('name')
                 ->label('Nome')
@@ -107,6 +117,8 @@ class CriteriOptionResource extends XotBaseResource
                 ->dehydrated(false)
                 ->hiddenOn('create'),
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
         ];
     }
 
@@ -118,6 +130,7 @@ class CriteriOptionResource extends XotBaseResource
             'edit' => Pages\EditCriteriOption::route('/{record}/edit'),
         ];
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -169,4 +182,6 @@ class CriteriOptionResource extends XotBaseResource
         ];
     }
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 }

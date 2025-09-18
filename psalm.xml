@@ -27,6 +27,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     errorLevel="4"
 =======
     errorLevel="1"
@@ -123,6 +124,9 @@
 =======
     errorLevel="4"
 >>>>>>> dc18abbe (first)
+=======
+    errorLevel="4"
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
     resolveFromConfigFile="true"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns="https://getpsalm.org/schema/config"
@@ -131,6 +135,7 @@
     findUnusedCode="true"
 >
     <projectFiles>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -198,6 +203,8 @@
 >>>>>>> 961ad402 (first)
 =======
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
         <file name="Actions/DB/DownloadAction.php"/>
         <file name="Config/config.php"/>
         <file name="Config/setting-filament.php"/>
@@ -232,6 +239,7 @@
         </ignoreFiles>
     </projectFiles>
 <plugins><pluginClass class="Psalm\LaravelPlugin\Plugin"/></plugins></psalm>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -364,3 +372,5 @@
 >>>>>>> 961ad402 (first)
 =======
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)

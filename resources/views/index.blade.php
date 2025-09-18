@@ -28,6 +28,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('rating::layouts.master')
 =======
 @extends('xot::layouts.app')
@@ -119,10 +120,14 @@
 =======
 @extends('ptv::layouts.master')
 >>>>>>> dc18abbe (first)
+=======
+@extends('progressioni::layouts.master')
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 
 @section('content')
     <h1>Hello World</h1>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -292,10 +297,13 @@
 @stop
 >>>>>>> edbb3aab (first)
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
     <p>
         This view is loaded from module: {!! config('progressioni.name') !!}
     </p>
 @stop
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
 =======
     <p>
@@ -327,3 +335,5 @@
     </p>
 @stop
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)

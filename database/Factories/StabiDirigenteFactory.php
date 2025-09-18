@@ -5,6 +5,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\IndennitaCondizioniLavoro\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -18,11 +19,14 @@ use Illuminate\Database\Eloquent\Model;
 use Modules\IndennitaResponsabilita\Models\StabiDirigente;
 >>>>>>> e0005d7d (first)
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 namespace Modules\Progressioni\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Progressioni\Models\StabiDirigente;
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
 =======
 namespace Modules\Ptv\Database\Factories;
@@ -31,6 +35,8 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Ptv\Models\StabiDirigente;
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 
 class StabiDirigenteFactory extends Factory
 {
@@ -49,6 +55,7 @@ class StabiDirigenteFactory extends Factory
         return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> dc18abbe (first)
             'stabi' => $this->faker->randomNumber(),
@@ -63,6 +70,8 @@ class StabiDirigenteFactory extends Factory
             'anno' => $this->faker->randomNumber(),
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
             'stabi' => $this->faker->randomNumber,
             'repar' => $this->faker->randomNumber,
             'nome_stabi' => $this->faker->word,
@@ -73,9 +82,12 @@ class StabiDirigenteFactory extends Factory
             'budget' => $this->faker->randomFloat,
             'valutatore_id' => $this->faker->integer,
             'anno' => $this->faker->randomNumber,
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
 =======
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
         ];
     }
 }

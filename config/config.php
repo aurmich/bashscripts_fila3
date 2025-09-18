@@ -15,6 +15,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -235,12 +236,15 @@ return [
     'icon' => 'fas-person-rays',
 >>>>>>> edbb3aab (first)
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 declare(strict_types=1);
 
 return [
     'name' => 'Progressioni',
     // 'icon' => 'fas-fire-flame-curved',
     'icon' => 'fas-signal',
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
 =======
 declare(strict_types=1);
@@ -279,4 +283,6 @@ return [
     'name' => 'Ptv',
     'icon' => 'heroicon-o-bookmark',
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 ];

@@ -3,6 +3,9 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 namespace Modules\Progressioni\Models;
 
 use Illuminate\Database\Eloquent\Builder;
@@ -15,6 +18,7 @@ use Modules\Xot\Traits\Updater;
  * @property int $id
  * @property int $parent_id
  * @property string|null $name
+<<<<<<< HEAD
 =======
 namespace Modules\Performance\Models;
 
@@ -31,6 +35,8 @@ use Spatie\EloquentSortable\SortableTrait;
  * @property int $id_padre
  * @property string|null $nome
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
  * @property string|null $label
  * @property string|null $descr
  * @property string|null $post_type
@@ -42,9 +48,13 @@ use Spatie\EloquentSortable\SortableTrait;
  * @property string|null $updated_by
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @method static \Modules\Progressioni\Database\Factories\CriteriValutazioneFactory factory($count = null, $state = [])
 =======
 >>>>>>> 961ad402 (first)
+=======
+ * @method static \Modules\Progressioni\Database\Factories\CriteriValutazioneFactory factory($count = null, $state = [])
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
  * @method static Builder|CriteriValutazione newModelQuery()
  * @method static Builder|CriteriValutazione newQuery()
  * @method static Builder|CriteriValutazione query()
@@ -54,6 +64,7 @@ use Spatie\EloquentSortable\SortableTrait;
  * @method static Builder|CriteriValutazione whereDescr($value)
  * @method static Builder|CriteriValutazione whereId($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @method static Builder|CriteriValutazione whereLabel($value)
  * @method static Builder|CriteriValutazione whereName($value)
  * @method static Builder|CriteriValutazione whereParentId($value)
@@ -62,6 +73,11 @@ use Spatie\EloquentSortable\SortableTrait;
  * @method static Builder|CriteriValutazione whereLabel($value)
  * @method static Builder|CriteriValutazione whereNome($value)
 >>>>>>> 961ad402 (first)
+=======
+ * @method static Builder|CriteriValutazione whereLabel($value)
+ * @method static Builder|CriteriValutazione whereName($value)
+ * @method static Builder|CriteriValutazione whereParentId($value)
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
  * @method static Builder|CriteriValutazione wherePosizione($value)
  * @method static Builder|CriteriValutazione wherePostType($value)
  * @method static Builder|CriteriValutazione whereUpdatedAt($value)
@@ -71,6 +87,7 @@ use Spatie\EloquentSortable\SortableTrait;
  */
 class CriteriValutazione extends BaseModel
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     protected $fillable = ['id', 'parent_id', 'name', 'label', 'descr', 'post_type', 'posizione', 'anno'];
 =======
@@ -84,6 +101,9 @@ class CriteriValutazione extends BaseModel
 
     protected $fillable = ['id', 'id_padre', 'nome', 'label', 'descr', 'posizione', 'anno'];
 >>>>>>> 961ad402 (first)
+=======
+    protected $fillable = ['id', 'parent_id', 'name', 'label', 'descr', 'post_type', 'posizione', 'anno'];
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 
     protected $table = 'criteri_valutazione';
 
@@ -97,6 +117,7 @@ class CriteriValutazione extends BaseModel
         ];
     */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
     /** @return array<string, string>  */
@@ -107,4 +128,6 @@ class CriteriValutazione extends BaseModel
         ];
     }
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 }

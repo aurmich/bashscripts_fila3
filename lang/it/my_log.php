@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 <?php
 
 declare(strict_types=1);
@@ -39,6 +42,7 @@ return [
         'create' => 'aggiungi',
     ],
 ];
+<<<<<<< HEAD
 =======
 <?php 
 return array (
@@ -96,3 +100,5 @@ return array (
   ),
 );
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)

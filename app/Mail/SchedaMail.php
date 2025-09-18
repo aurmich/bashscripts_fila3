@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\IndennitaResponsabilita\Mail;
 =======
 namespace Modules\Progressioni\Mail;
@@ -17,6 +18,9 @@ declare(strict_types=1);
 
 namespace Modules\Ptv\Mail;
 >>>>>>> dc18abbe (first)
+=======
+namespace Modules\Progressioni\Mail;
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
@@ -25,6 +29,7 @@ use Illuminate\Mail\Mailables\Attachment;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -44,12 +49,18 @@ use Modules\Xot\Actions\Export\PdfByModelAction;
 use Modules\Ptv\Actions\Pdf\MakePdfByRecord;
 use Modules\Ptv\Models\Contracts\SchedaContract;
 >>>>>>> dc18abbe (first)
+=======
+use Modules\Progressioni\Actions\MakePdfByRecord;
+use Modules\Progressioni\Models\Progressioni;
+use Modules\Progressioni\Models\Schede as Scheda;
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 
 class SchedaMail extends Mailable
 {
     use Queueable;
     use SerializesModels;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -60,10 +71,14 @@ class SchedaMail extends Mailable
 =======
     public Scheda $scheda;
 >>>>>>> 961ad402 (first)
+=======
+    public Scheda|Progressioni $scheda;
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 
     /**
      * Create a new message instance.
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function __construct(Scheda $scheda)
@@ -73,6 +88,9 @@ class SchedaMail extends Mailable
 =======
     public function __construct(Scheda $scheda)
 >>>>>>> 961ad402 (first)
+=======
+    public function __construct(Scheda|Progressioni $scheda)
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
     {
         $this->scheda = $scheda;
     }
@@ -88,10 +106,14 @@ class SchedaMail extends Mailable
             //    new Address('taylor@example.com', 'Taylor Otwell'),
             // ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             subject: strip_tags($this->scheda->msg('mail_oggetto')),
 =======
             subject: strip_tags($this->scheda->option('mail_oggetto')),
 >>>>>>> 961ad402 (first)
+=======
+            subject: strip_tags($this->scheda->msg('mail_oggetto')),
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
         );
     }
 
@@ -101,6 +123,7 @@ class SchedaMail extends Mailable
     public function content(): Content
     {
         return new Content(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             view: 'indennitaresponsabilita::emails.scheda',
@@ -116,6 +139,12 @@ class SchedaMail extends Mailable
                 'row' => $this->scheda,
                 'html' => $this->scheda->option('mail_testo'),
 >>>>>>> 961ad402 (first)
+=======
+            view: 'progressioni::emails.scheda',
+            with: [
+                'row' => $this->scheda,
+                'html' => $this->scheda->msg('mail_testo'),
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
             ],
             // html: 'testo email',
             // text: 'testo email 1',
@@ -124,6 +153,7 @@ class SchedaMail extends Mailable
 
     /**
      * Get the attachments for the message.
+<<<<<<< HEAD
 =======
     public SchedaContract $record;
 
@@ -157,6 +187,8 @@ class SchedaMail extends Mailable
     /**
      * Definisce gli allegati del messaggio.
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
      *
      * @return array<int, \Illuminate\Mail\Mailables\Attachment>
      */
@@ -164,11 +196,15 @@ class SchedaMail extends Mailable
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         $path = app(MakePdfByRecord::class)->execute(record: $this->scheda, out: 'path');
 =======
         // $path = app(MakePdfByRecord::class)->execute(record: $this->scheda, out: 'path');
         $path = app(PdfByModelAction::class)->execute(model: $this->scheda, out: 'path');
 >>>>>>> 961ad402 (first)
+=======
+        $path = app(MakePdfByRecord::class)->execute(record: $this->scheda, out: 'path');
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 
         return [
             Attachment::fromPath($path)
@@ -181,6 +217,7 @@ class SchedaMail extends Mailable
                 ->withMime('application/pdf'),
             */
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 961ad402 (first)
@@ -191,6 +228,9 @@ class SchedaMail extends Mailable
             Attachment::fromPath($path)
                 ->withMime('application/pdf'),
 >>>>>>> dc18abbe (first)
+=======
+
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
         ];
     }
 }

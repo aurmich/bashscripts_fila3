@@ -23,6 +23,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Rating\Models;
 
 use Illuminate\Database\Eloquent\Model;
@@ -63,10 +64,14 @@ namespace Modules\Tenant\Models;
 =======
 namespace Modules\Progressioni\Models;
 >>>>>>> bcab6efe (first)
+=======
+namespace Modules\Progressioni\Models;
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -594,12 +599,15 @@ namespace Modules\IndennitaResponsabilita\Models;
 use Illuminate\Database\Eloquent\Model;
 =======
 >>>>>>> bcab6efe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 // use Laravel\Scout\Searchable;
 // ---------- traits
 use Modules\Xot\Traits\Updater;
 
 abstract class BaseModel extends Model
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     use Updater;
 
@@ -857,6 +865,8 @@ abstract class BaseModel extends Model
 =======
 >>>>>>> 4658bb86 (first)
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
     // use Searchable;
     use HasFactory;
     use Updater;
@@ -868,12 +878,16 @@ abstract class BaseModel extends Model
 
     protected $casts = ['created_at' => 'datetime', 'updated_at' => 'datetime'];
 
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
     /**
      * Create a new factory instance for the model.
      *
      * @return Factory
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1025,10 +1039,13 @@ abstract class BaseModel extends Model
      * @return Factory
      */
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
     protected static function newFactory()
     {
         return app(\Modules\Xot\Actions\Factory\GetFactoryAction::class)->execute(static::class);
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 4658bb86 (first)
@@ -1077,4 +1094,6 @@ abstract class BaseModel extends Model
 >>>>>>> 961ad402 (first)
 =======
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 }

@@ -3,6 +3,9 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 namespace Modules\Progressioni\Filament\Resources;
 
 use Filament\Tables;
@@ -11,6 +14,7 @@ use Filament\Tables\Table;
 use Modules\Progressioni\Filament\Resources\MyLogResource\Pages;
 use Modules\Progressioni\Filament\Resources\MyLogResource\RelationManagers;
 use Modules\Progressioni\Models\MyLog;
+<<<<<<< HEAD
 =======
 namespace Modules\Performance\Filament\Resources;
 
@@ -19,6 +23,8 @@ use Filament\Tables;
 use Modules\Performance\Filament\Resources\MyLogResource\Pages;
 use Modules\Performance\Models\MyLog;
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class MyLogResource extends XotBaseResource
@@ -31,6 +37,9 @@ class MyLogResource extends XotBaseResource
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
             'id' => Forms\Components\TextInput::make('id')
                 ->disabled(),
             'id_tbl' => Forms\Components\TextInput::make('id_tbl')
@@ -92,6 +101,7 @@ class MyLogResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
 =======
             'id_tbl' => Forms\Components\TextInput::make('id_tbl')
                 ->numeric(),
@@ -156,6 +166,8 @@ class MyLogResource extends XotBaseResource
     
 
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
     public static function getPages(): array
     {
         return [

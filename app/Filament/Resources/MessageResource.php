@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\IndennitaResponsabilita\Filament\Resources;
 
 use Modules\IndennitaCondizioniLavoro\Models\Message;
@@ -15,6 +16,8 @@ class MessageResource extends PtvMessageResource
     protected static ?string $model = Message::class;
 
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 namespace Modules\Progressioni\Filament\Resources;
 
 use Filament\Tables;
@@ -32,6 +35,7 @@ class MessageResource extends XotBaseResource
 {
     protected static ?string $model = Message::class;
 
+<<<<<<< HEAD
 =======
 namespace Modules\Ptv\Filament\Resources;
 
@@ -47,12 +51,17 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 class MessageResource extends XotBaseResource
 {
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function getFormSchema(): array
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
             'id' => Forms\Components\TextInput::make('id')
                 ->disabled(),
             'type' => Forms\Components\TextInput::make('type')
@@ -98,6 +107,7 @@ class MessageResource extends XotBaseResource
     /**
      * @return array<RelationManagers>
      */
+<<<<<<< HEAD
 =======
             'parent_id' => TextInput::make('parent_id'),
             // ParentSelect::make('parent_id'),
@@ -113,6 +123,8 @@ class MessageResource extends XotBaseResource
     }
 
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
     public static function getRelations(): array
     {
         return [
@@ -120,9 +132,12 @@ class MessageResource extends XotBaseResource
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
 =======
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
     public static function getPages(): array
     {
         return [

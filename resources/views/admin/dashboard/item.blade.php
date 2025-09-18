@@ -20,6 +20,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!-- dashboard item -->
 =======
 notify
@@ -70,6 +71,8 @@ notify
 <!-- dashboard item -->
 >>>>>>> edbb3aab (first)
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 <div class="col-2">
     <div class="card card-header-actions ">
         <div class="card-header">
@@ -128,6 +131,7 @@ notify
             </div>
         </div>
     </div>
+<<<<<<< HEAD
 </div>
 >>>>>>> bcab6efe (first)
 =======
@@ -145,3 +149,6 @@ notify
 =======
 <!-- dashboard item -->
 >>>>>>> dc18abbe (first)
+=======
+</div>
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)

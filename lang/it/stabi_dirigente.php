@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php 
 return array (
   'navigation' => 
@@ -212,11 +213,14 @@ return array (
 >>>>>>> bcab6efe (first)
 =======
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 <?php
 
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     'resource' => [
@@ -286,6 +290,8 @@ return [
         'import' => [
             'row_number' => 'Riga :row',
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
     'navigation' => [
         'name' => 'stabi dirigente',
         'plural' => 'stabi dirigente',
@@ -303,12 +309,16 @@ return [
     'actions' => [
         'import' => [
             'name' => 'Importa da file',
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
             'fields' => [
                 'import_file' => 'Seleziona un file XLS o CSV da caricare',
             ],
         ],
         'export' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
             'filename_prefix' => 'Lista asset al',
             'columns' => [
@@ -335,6 +345,8 @@ return [
 ];
 >>>>>>> e0005d7d (first)
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
             'name' => 'Esporta dati',
             'filename_prefix' => 'Aree al',
             'columns' => [
@@ -348,6 +360,7 @@ return [
         'create' => 'aggiungi',
     ],
 ];
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
 =======
     'navigation' => [
@@ -511,3 +524,5 @@ return [
   ),
 );
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)

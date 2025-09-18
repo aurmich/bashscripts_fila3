@@ -18,6 +18,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 const dotenvExpand = require('dotenv-expand');
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -116,10 +117,15 @@ dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/}));
 const dotenvExpand = require('dotenv-expand');
 dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/}));
 >>>>>>> 961ad402 (first)
+=======
+const dotenvExpand = require('dotenv-expand');
+dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/}));
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -182,6 +188,8 @@ import laravel from 'laravel-vite-plugin';
 >>>>>>> 9997d18c (first)
 =======
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 export default defineConfig({
     build: {
         outDir: '../../public/build-user',
@@ -200,6 +208,7 @@ export default defineConfig({
         }),
     ],
 });
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -456,3 +465,5 @@ viteStaticCopy({
 })
 */
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)

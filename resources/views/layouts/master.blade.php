@@ -21,6 +21,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <html lang="en">
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -98,10 +99,14 @@
 =======
 <html lang="en">
 >>>>>>> dc18abbe (first)
+=======
+<html lang="en">
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -253,10 +258,13 @@
        {{-- <link rel="stylesheet" href="{{ mix('css/presenzeassenze.css') }}"> --}}
 >>>>>>> edbb3aab (first)
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
         <title>Module Progressioni</title>
 
        {{-- Laravel Mix - CSS File --}}
        {{-- <link rel="stylesheet" href="{{ mix('css/progressioni.css') }}"> --}}
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
 =======
         <title>Module Questionari</title>
@@ -288,11 +296,14 @@
        {{-- Laravel Mix - CSS File --}}
        {{-- <link rel="stylesheet" href="{{ mix('css/ptv.css') }}"> --}}
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 
     </head>
     <body>
         @yield('content')
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -487,10 +498,13 @@
 </html>
 >>>>>>> edbb3aab (first)
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
         {{-- Laravel Mix - JS File --}}
         {{-- <script src="{{ mix('js/progressioni.js') }}"></script> --}}
     </body>
 </html>
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
 =======
         {{-- Laravel Mix - JS File --}}
@@ -522,3 +536,5 @@
     </body>
 </html>
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)

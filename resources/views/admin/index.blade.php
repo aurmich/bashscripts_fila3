@@ -13,6 +13,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @section('page_heading','Bagde')
 =======
 @section('page_heading','cert fisc')
@@ -136,3 +137,8 @@ Benvenuto nel programma mensa
 @endif
 @endsection
 >>>>>>> 9997d18c (first)
+=======
+@section('content')
+    Progressioni Wellcome
+@endsection
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)

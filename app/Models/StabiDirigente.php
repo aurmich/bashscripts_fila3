@@ -6,6 +6,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\IndennitaCondizioniLavoro\Models;
 =======
 namespace Modules\IndennitaResponsabilita\Models;
@@ -13,17 +14,23 @@ namespace Modules\IndennitaResponsabilita\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 namespace Modules\Progressioni\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 use Illuminate\Support\Carbon;
 use Modules\Ptv\Models\StabiDirigente as PtvStabiDirigenteModel;
 use Modules\Sigma\Models\Repart;
 
 /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
  * Modules\IndennitaCondizioniLavoro\Models\StabiDirigente.
@@ -69,10 +76,14 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
  * @method static Builder|StabiDirigente newQuery()
  * @method static Builder|StabiDirigente query()
 >>>>>>> dc18abbe (first)
+=======
+ * Modules\Progressioni\Models\StabiDirigente.
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
  *
  * @property int $id
  * @property int|null $stabi
  * @property int|null $repar
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -85,6 +96,8 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
  * @property string|null $nome_diri
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
  * @property string|null $nome_stabi
  * @property string|null $stabi_txt
  * @property string|null $repar_txt
@@ -95,7 +108,10 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
  * @property string|null $nome_diri_plus
  * @property string|null $budget
  * @property int|null $valutatore_id
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
@@ -105,6 +121,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
  * @property string|null $deleted_ip
  * @property string|null $created_ip
  * @property string|null $updated_ip
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property string|null $nome_diri_plus
  * @property string|null $budget
@@ -117,6 +134,8 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
  * @method static \Modules\IndennitaResponsabilita\Database\Factories\StabiDirigenteFactory factory($count = null, $state = [])
 >>>>>>> e0005d7d (first)
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
  * @property-read Collection<int, \Modules\Progressioni\Models\Schede> $benificiariProgressione
  * @property-read int|null $benificiari_progressione_count
  * @property-read Repart|null $repart
@@ -124,6 +143,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
  * @property-read int|null $schede_count
  *
  * @method static \Modules\Progressioni\Database\Factories\StabiDirigenteFactory factory($count = null, $state = [])
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
 =======
  * @property string|null $anno
@@ -134,11 +154,16 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
  * @property int|null $n_diritto_excellence
  *
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
  * @method static Builder|StabiDirigente newModelQuery()
  * @method static Builder|StabiDirigente newQuery()
  * @method static Builder|StabiDirigente query()
  * @method static Builder|StabiDirigente whereAnno($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
  * @method static Builder|StabiDirigente whereBudget($value)
  * @method static Builder|StabiDirigente whereCreatedAt($value)
  * @method static Builder|StabiDirigente whereCreatedBy($value)
@@ -146,6 +171,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
  * @method static Builder|StabiDirigente whereDeletedAt($value)
  * @method static Builder|StabiDirigente whereDeletedBy($value)
  * @method static Builder|StabiDirigente whereDeletedIp($value)
+<<<<<<< HEAD
 =======
  * @property int|null $ente
  * @property int|null $matr
@@ -165,12 +191,15 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
  * @method static Builder|StabiDirigente whereCreatedAt($value)
  * @method static Builder|StabiDirigente whereCreatedBy($value)
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
  * @method static Builder|StabiDirigente whereEnte($value)
  * @method static Builder|StabiDirigente whereId($value)
  * @method static Builder|StabiDirigente whereMatr($value)
  * @method static Builder|StabiDirigente whereNomeDiri($value)
  * @method static Builder|StabiDirigente whereNomeDiriPlus($value)
  * @method static Builder|StabiDirigente whereNomeStabi($value)
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @method static Builder|StabiDirigente whereRepar($value)
 <<<<<<< HEAD
@@ -180,6 +209,12 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
  * @method static Builder|StabiDirigente whereStabi($value)
  * @method static Builder|StabiDirigente whereStabiTxt($value)
 >>>>>>> bcab6efe (first)
+=======
+ * @method static Builder|StabiDirigente whereRepar($value)
+ * @method static Builder|StabiDirigente whereReparTxt($value)
+ * @method static Builder|StabiDirigente whereStabi($value)
+ * @method static Builder|StabiDirigente whereStabiTxt($value)
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
  * @method static Builder|StabiDirigente whereUpdatedAt($value)
  * @method static Builder|StabiDirigente whereUpdatedBy($value)
  * @method static Builder|StabiDirigente whereUpdatedIp($value)
@@ -191,11 +226,14 @@ class StabiDirigente extends PtvStabiDirigenteModel
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected $connection = 'indennita_condizioni_lavoro'; // this will use the specified database connection
 =======
     protected $connection = 'indennita_responsabilita'; // this will use the specified database connection
 >>>>>>> e0005d7d (first)
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
     protected $connection = 'progressione'; // this will use the specified database connection
 
     public function budgetAssegnato(): float
@@ -217,6 +255,7 @@ class StabiDirigente extends PtvStabiDirigenteModel
         return $this->schede()
             ->where('benificiario_progressione', 1);
     }
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
 =======
  * @method static Builder|StabiDirigente whereCreatedAt($value)
@@ -498,4 +537,6 @@ class StabiDirigente extends BaseModel
         return app(\Modules\Xot\Actions\Factory\GetFactoryAction::class)->execute(static::class);
     }
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 }

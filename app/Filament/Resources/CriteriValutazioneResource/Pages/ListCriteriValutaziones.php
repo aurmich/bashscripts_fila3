@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 namespace Modules\Progressioni\Filament\Resources\CriteriValutazioneResource\Pages;
 
 use Filament\Actions;
@@ -8,6 +11,7 @@ use Illuminate\Support\Arr;
 use Modules\Progressioni\Filament\Resources\CriteriValutazioneResource;
 use Modules\Progressioni\Models\CriteriValutazione;
 use Modules\Xot\Actions\Filament\Actions\CopyFromLastYearButton;
+<<<<<<< HEAD
 =======
 namespace Modules\Performance\Filament\Resources\CriteriValutazioneResource\Pages;
 
@@ -19,6 +23,8 @@ use Modules\Performance\Enums\WorkerType;
 use Modules\Performance\Filament\Resources\CriteriValutazioneResource;
 use Modules\Ptv\Filament\Actions\Header\CopyFromLastYearAction;
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListCriteriValutaziones extends XotBaseListRecords
@@ -26,6 +32,9 @@ class ListCriteriValutaziones extends XotBaseListRecords
     protected static string $resource = CriteriValutazioneResource::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
     protected function getHeaderActions(): array
     {
         $anno = Arr::get($this->tableFilters, 'anno.value');
@@ -71,6 +80,7 @@ class ListCriteriValutaziones extends XotBaseListRecords
                 ->dateTime()
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true)
+<<<<<<< HEAD
 =======
     public function getListTableColumns(): array
     {
@@ -153,6 +163,8 @@ class ListCriteriValutaziones extends XotBaseListRecords
             'create' => CreateAction::make(),
             'copy' => CopyFromLastYearAction::make(),
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
         ];
     }
 }

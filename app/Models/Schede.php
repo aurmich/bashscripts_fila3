@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Legge104\Models;
 
 use Illuminate\Database\Eloquent\Builder;
@@ -22,6 +23,8 @@ class Schede extends BaseModel
     protected $fillable = ['id', 'ente', 'matr', 'cognome', 'nome', 'propro', 'posfun', 'clafun', 'stabi', 'stabi_txt', 'repar', 'repar_txt', 'indir', 'giorni_in_sede', 'n_giorni_in_sede', 'giorni_fuori_sede', 'n_giorni_fuori_sede', 'rep003', 'familiari', 'l104', 'disci1'];
 }
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 namespace Modules\Progressioni\Models;
 
 use Carbon\Carbon;
@@ -1096,4 +1099,7 @@ class Schede extends BaseModel implements SchedaContract
         return $tot;
     }
 }// end class schede
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)

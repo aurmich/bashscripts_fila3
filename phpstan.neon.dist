@@ -27,6 +27,7 @@ includes:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 
@@ -124,6 +125,8 @@ parameters:
 >>>>>>> 961ad402 (first)
 =======
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 
 parameters:
 
@@ -131,6 +134,7 @@ parameters:
 
     paths:
         - .
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -190,10 +194,13 @@ parameters:
 >>>>>>> 961ad402 (first)
 =======
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 
     ignoreErrors:
     #    - '#Unsafe usage of new static#'
         - '#PHPDoc tag @mixin contains unknown class #'
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -290,11 +297,15 @@ parameters:
 =======
 
 >>>>>>> dc18abbe (first)
+=======
+
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
     excludePaths:
         - ./build/*
         - ./vendor/*
         - ./*/vendor/*
         - ./docs/*
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -378,12 +389,15 @@ parameters:
 >>>>>>> 961ad402 (first)
 =======
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
         - ./Tests/*
         - ./_ide_helper.php
 
     bootstrapFiles:
     #    - ./Services/vendor/autoload.php
     #    - ./phpstan_constants.php
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -443,6 +457,8 @@ parameters:
 >>>>>>> 961ad402 (first)
 =======
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 
     scanFiles:
     #    - ./Helpers/Helper.php
@@ -471,6 +487,7 @@ parameters:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     tmpDir: build/phpstan
 =======
     tmpDir: ./build/phpstan
@@ -535,6 +552,9 @@ parameters:
 =======
     tmpDir: ./build/phpstan
 >>>>>>> dc18abbe (first)
+=======
+    tmpDir: ./build/phpstan
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
     checkUnusedViews: false
     checkMissingIterableValueType: false
     checkGenericClassInNonGenericObjectType: false
@@ -542,6 +562,7 @@ parameters:
     reportUnmatchedIgnoredErrors: false
     checkOctaneCompatibility: false
     checkModelProperties: false
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -656,3 +677,6 @@ parameters:
 =======
 
 >>>>>>> dc18abbe (first)
+=======
+
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)

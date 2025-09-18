@@ -3,6 +3,9 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 namespace Modules\Progressioni\Models;
 
 use Illuminate\Database\Eloquent\Builder;
@@ -13,6 +16,7 @@ use Modules\Ptv\Models\Contracts\CriteriEsclusioneContract;
 
 /**
  * Modules\Progressioni\Models\CriteriEsclusione.
+<<<<<<< HEAD
 =======
 namespace Modules\Performance\Models;
 
@@ -23,6 +27,8 @@ use Modules\Xot\Traits\Updater;
 /**
  * Modules\Performance\Models\CriteriEsclusione.
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
  *
  * @property int $id
  * @property string|null $name
@@ -30,9 +36,13 @@ use Modules\Xot\Traits\Updater;
  * @property string|null $op
  * @property string|null $value
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property string|null $type
 =======
 >>>>>>> 961ad402 (first)
+=======
+ * @property string|null $type
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
  * @property int|null $anno
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
@@ -40,9 +50,13 @@ use Modules\Xot\Traits\Updater;
  * @property string|null $updated_by
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @method static \Modules\Progressioni\Database\Factories\CriteriEsclusioneFactory factory($count = null, $state = [])
 =======
 >>>>>>> 961ad402 (first)
+=======
+ * @method static \Modules\Progressioni\Database\Factories\CriteriEsclusioneFactory factory($count = null, $state = [])
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
  * @method static Builder|CriteriEsclusione newModelQuery()
  * @method static Builder|CriteriEsclusione newQuery()
  * @method static Builder|CriteriEsclusione query()
@@ -54,9 +68,13 @@ use Modules\Xot\Traits\Updater;
  * @method static Builder|CriteriEsclusione whereName($value)
  * @method static Builder|CriteriEsclusione whereOp($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @method static Builder|CriteriEsclusione whereType($value)
 =======
 >>>>>>> 961ad402 (first)
+=======
+ * @method static Builder|CriteriEsclusione whereType($value)
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
  * @method static Builder|CriteriEsclusione whereUpdatedAt($value)
  * @method static Builder|CriteriEsclusione whereUpdatedBy($value)
  * @method static Builder|CriteriEsclusione whereValue($value)
@@ -64,6 +82,9 @@ use Modules\Xot\Traits\Updater;
  * @mixin \Eloquent
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 class CriteriEsclusione extends BaseModel implements CriteriEsclusioneContract
 {
     protected $fillable = ['id', 'name', 'field_name', 'op', 'value', 'type', 'anno'];
@@ -113,6 +134,7 @@ class CriteriEsclusione extends BaseModel implements CriteriEsclusioneContract
 
         return $criteriOption;
     }
+<<<<<<< HEAD
 =======
 class CriteriEsclusione extends BaseModel
 {
@@ -132,4 +154,6 @@ class CriteriEsclusione extends BaseModel
     // end search
     // -------------------------
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 } // end class

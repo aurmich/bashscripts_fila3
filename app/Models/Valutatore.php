@@ -3,6 +3,9 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 namespace Modules\Progressioni\Models;
 
 use Illuminate\Database\Eloquent\Builder;
@@ -185,6 +188,7 @@ class Valutatore extends Model
 
         return $res;
     }
+<<<<<<< HEAD
 =======
 namespace Modules\Performance\Models;
 
@@ -219,4 +223,6 @@ class Valutatore extends Model
         'updated_at' => 'datetime',
     ];
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 }

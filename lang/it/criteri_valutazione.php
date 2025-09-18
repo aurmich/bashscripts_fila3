@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 <?php
 
 declare(strict_types=1);
@@ -40,6 +43,7 @@ return [
         'edit' => 'Modifica',
     ],
 ];
+<<<<<<< HEAD
 =======
 <?php return array (
   'navigation' => 
@@ -214,3 +218,5 @@ return [
   ),
 );
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)

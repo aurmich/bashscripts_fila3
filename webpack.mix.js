@@ -26,6 +26,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 const dotenvExpand = require('dotenv-expand');
 dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/}));
 
@@ -106,11 +107,14 @@ dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/}));
 >>>>>>> 961ad402 (first)
 =======
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 const mix = require('laravel-mix');
 require('laravel-mix-merge-manifest');
 
 mix.setPublicPath('../../public').mergeManifest();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -284,11 +288,14 @@ if (mix.inProduction()) {
 }
 >>>>>>> edbb3aab (first)
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 mix.js(__dirname + '/resources/assets/js/app.js', 'js/progressioni.js')
     .sass( __dirname + '/resources/assets/sass/app.scss', 'css/progressioni.css');
 
 if (mix.inProduction()) {
     mix.version();
+<<<<<<< HEAD
 }
 >>>>>>> bcab6efe (first)
 =======
@@ -331,3 +338,6 @@ if (mix.inProduction()) {
     mix.version();
 }
 >>>>>>> dc18abbe (first)
+=======
+}
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)

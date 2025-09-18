@@ -3,6 +3,9 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 namespace Modules\Progressioni\Services;
 
 use Illuminate\Support\Str;
@@ -33,6 +36,7 @@ class CriteriEsclusioneService
                 //'rules' => 'required|numeric|min:0|max:4',
             ];
             $data[] = $tmp;
+<<<<<<< HEAD
 =======
 namespace Modules\Performance\Services;
 
@@ -92,11 +96,16 @@ class CriteriEsclusioneService
                 $data[] = $tmp;
             }
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
         }
 
         return $data;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
     */
 
     public static function getFieldsNamesYear(int $year, bool $is_po = false): array
@@ -114,6 +123,9 @@ class CriteriEsclusioneService
             ->pluck('name')
             ->all();
     }
+<<<<<<< HEAD
 =======
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 }

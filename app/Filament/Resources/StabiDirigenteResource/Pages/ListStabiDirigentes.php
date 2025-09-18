@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -26,6 +27,10 @@ use Modules\IndennitaResponsabilita\Filament\Resources\StabiDirigenteResource;
 use Modules\Ptv\Filament\Resources\StabiDirigenteResource\Pages\ListStabiDirigentes as PtvListStabiDirigentes;
 >>>>>>> e0005d7d (first)
 =======
+=======
+declare(strict_types=1);
+
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 namespace Modules\Progressioni\Filament\Resources\StabiDirigenteResource\Pages;
 
 use Filament\Actions;
@@ -34,6 +39,7 @@ use Modules\Progressioni\Filament\Resources\StabiDirigenteResource;
 use Modules\Progressioni\Models\StabiDirigente;
 use Modules\Ptv\Filament\Resources\StabiDirigenteResource\Pages\ListStabiDirigentes as PtvListStabiDirigentes;
 use Modules\Xot\Actions\Filament\Actions\CopyFromLastYearButton;
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
 =======
 namespace Modules\Performance\Filament\Resources\StabiDirigenteResource\Pages;
@@ -44,10 +50,13 @@ use Modules\Performance\Filament\Resources\StabiDirigenteResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Modules\Ptv\Filament\Resources\StabiDirigenteResource\Pages\ListStabiDirigentes as PtvListStabiDirigentes;
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 
 class ListStabiDirigentes extends PtvListStabiDirigentes
 {
     protected static string $resource = StabiDirigenteResource::class;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -275,6 +284,8 @@ class ListStabiDirigentes extends XotBaseListRecords
 =======
 >>>>>>> e0005d7d (first)
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 
     protected function getHeaderActions(): array
     {
@@ -286,6 +297,7 @@ class ListStabiDirigentes extends XotBaseListRecords
                 ->execute(StabiDirigente::class, 'anno', $anno),
         ];
     }
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
 =======
 
@@ -297,4 +309,6 @@ class ListStabiDirigentes extends XotBaseListRecords
     
    
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 }

@@ -5,6 +5,7 @@ declare(strict_types=1);
 return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> dc18abbe (first)
     'resource' => [
@@ -55,6 +56,8 @@ return [
             'row_number' => 'Riga :row',
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
     'navigation' => [
         'name' => 'message',
         'plural' => 'message',
@@ -72,14 +75,18 @@ return [
     'actions' => [
         'import' => [
             'name' => 'Importa da file',
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
 =======
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
             'fields' => [
                 'import_file' => 'Seleziona un file XLS o CSV da caricare',
             ],
         ],
         'export' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -107,6 +114,8 @@ return [
         'mandatory_data' => '{1} Dato obbligatorio non presente|{2} 2 Dati obbligatori non presenti|{3} 3 Dati obbligatori non presenti|[4,*] Vari dati obbligatori non presenti',
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
             'name' => 'Esporta dati',
             'filename_prefix' => 'Aree al',
             'columns' => [
@@ -118,8 +127,11 @@ return [
     'tab' => [
         'index' => 'lista',
         'create' => 'aggiungi',
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
 =======
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
     ],
 ];

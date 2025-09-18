@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @include('ptv::pdf.css01')
 <page>
    
@@ -57,6 +58,8 @@
     
 </page>
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 @include('ptv::pdf.css02')
 <page backtop="20mm">
     <page_header>
@@ -127,7 +130,10 @@
         @include($view.'.foot')
     </page_footer>
 </page>
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
 =======
 WIP WIP
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)

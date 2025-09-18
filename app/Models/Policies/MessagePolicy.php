@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\IndennitaResponsabilita\Models\Policies;
 
 use Illuminate\Auth\Access\Response;
@@ -13,11 +14,17 @@ namespace Modules\Progressioni\Models\Policies;
 
 use Illuminate\Database\Eloquent\Model;
 >>>>>>> bcab6efe (first)
+=======
+namespace Modules\Progressioni\Models\Policies;
+
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Models\Policies\XotBasePolicy;
 
 class MessagePolicy extends XotBasePolicy
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     /**
      * Determine whether the user can view the model.
@@ -99,9 +106,14 @@ class MessagePolicy extends XotBasePolicy
         return false;
     }
 =======
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
     public function populateFromLastYear(UserContract $userContract, Model $model): bool
     {
         return true;
     }
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 }

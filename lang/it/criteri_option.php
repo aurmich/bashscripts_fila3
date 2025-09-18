@@ -5,6 +5,9 @@ declare(strict_types=1);
 return [
     'navigation' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
         'name' => 'criteri option',
         'plural' => 'criteri option',
         'group' => [
@@ -40,6 +43,7 @@ return [
         'edit' => 'Modifica',
     ],
 ];
+<<<<<<< HEAD
 =======
         'name' => 'Opzioni Criteri',
         'plural' => 'Opzioni Criteri',
@@ -122,3 +126,5 @@ return [
     ],
 ];
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)

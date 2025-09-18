@@ -1,10 +1,14 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 namespace Modules\Progressioni\Filament\Resources\MyLogResource\Pages;
 
 use Filament\Actions;
 use Modules\Progressioni\Filament\Resources\MyLogResource;
+<<<<<<< HEAD
 =======
 namespace Modules\Performance\Filament\Resources\MyLogResource\Pages;
 
@@ -14,6 +18,8 @@ use Filament\Tables\Filters;
 use Filament\Tables\Actions;
 use Modules\Performance\Filament\Resources\MyLogResource;
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListMyLogs extends XotBaseListRecords
@@ -24,10 +30,14 @@ class ListMyLogs extends XotBaseListRecords
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
             Actions\CreateAction::make(),
 =======
             'create' => CreateAction::make(),
 >>>>>>> 961ad402 (first)
+=======
+            Actions\CreateAction::make(),
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
         ];
     }
 
@@ -35,6 +45,9 @@ class ListMyLogs extends XotBaseListRecords
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
             'id' => Tables\Columns\TextColumn::make('id')
                 ->sortable(),
             'id_tbl' => Tables\Columns\TextColumn::make('id_tbl')
@@ -68,6 +81,7 @@ class ListMyLogs extends XotBaseListRecords
                 ->dateTime()
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true)
+<<<<<<< HEAD
 =======
             'name' => Columns\TextColumn::make('name')
                 ->label('Nome')
@@ -100,6 +114,8 @@ class ListMyLogs extends XotBaseListRecords
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true),
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
         ];
     }
 }

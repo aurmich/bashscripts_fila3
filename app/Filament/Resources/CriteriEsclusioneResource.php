@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 declare(strict_types=1);
 
 namespace Modules\Progressioni\Filament\Resources;
@@ -9,6 +12,7 @@ use Filament\Forms\Components\TextInput;
 use Modules\Progressioni\Filament\Resources\CriteriEsclusioneResource\Pages;
 use Modules\Progressioni\Filament\Resources\CriteriEsclusioneResource\RelationManagers;
 use Modules\Progressioni\Models\CriteriEsclusione;
+<<<<<<< HEAD
 =======
 namespace Modules\Performance\Filament\Resources;
 
@@ -17,6 +21,8 @@ use Filament\Tables;
 use Modules\Performance\Filament\Resources\CriteriEsclusioneResource\Pages;
 use Modules\Performance\Models\CriteriEsclusione;
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 use function Safe\date;
@@ -31,6 +37,9 @@ class CriteriEsclusioneResource extends XotBaseResource
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
             'id' => TextInput::make('id')
                 ->disabled(),
             'name' => TextInput::make('name')
@@ -63,6 +72,7 @@ class CriteriEsclusioneResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
 =======
             Forms\Components\TextInput::make('name')
                 ->maxLength(50),
@@ -121,6 +131,8 @@ class CriteriEsclusioneResource extends XotBaseResource
     
 
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
     public static function getPages(): array
     {
         return [

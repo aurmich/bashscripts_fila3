@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 declare(strict_types=1);
 
 namespace Modules\Progressioni\Filament\Resources\CriteriEsclusioneResource\Pages;
@@ -20,6 +23,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 use function Safe\date;
 
+<<<<<<< HEAD
 =======
 namespace Modules\Performance\Filament\Resources\CriteriEsclusioneResource\Pages;
 
@@ -32,6 +36,8 @@ use Modules\Ptv\Filament\Actions\Header\CopyFromLastYearAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 class ListCriteriEsclusiones extends XotBaseListRecords
 {
     protected static string $resource = CriteriEsclusioneResource::class;
@@ -39,6 +45,9 @@ class ListCriteriEsclusiones extends XotBaseListRecords
     protected function getHeaderActions(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
         $anno = Arr::get($this->tableFilters, 'anno.value');
 
         return [
@@ -46,11 +55,14 @@ class ListCriteriEsclusiones extends XotBaseListRecords
 
             app(CopyFromLastYearButton::class)
                 ->execute(CriteriEsclusione::class, 'anno', $anno),
+<<<<<<< HEAD
 =======
         return [
             'create' => CreateAction::make(),
             'copy' => CopyFromLastYearAction::make(),
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
         ];
     }
 
@@ -58,6 +70,9 @@ class ListCriteriEsclusiones extends XotBaseListRecords
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
             TextColumn::make('id'),
             TextColumn::make('name'),
             TextColumn::make('field_name'),
@@ -65,6 +80,7 @@ class ListCriteriEsclusiones extends XotBaseListRecords
             TextColumn::make('value'),
             TextColumn::make('type'),
             TextColumn::make('anno'),
+<<<<<<< HEAD
 =======
             'name' => Columns\TextColumn::make('name')
                 ->label('Nome')
@@ -97,12 +113,15 @@ class ListCriteriEsclusiones extends XotBaseListRecords
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true),
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
         ];
     }
 
     public function getTableFilters(): array
     {
         return [
+<<<<<<< HEAD
 <<<<<<< HEAD
             app(\Modules\Xot\Actions\Filament\Filter\GetYearFilter::class)->execute('anno', intval(date('Y')) - 3, intval(date('Y'))),
 =======
@@ -118,6 +137,9 @@ class ListCriteriEsclusiones extends XotBaseListRecords
                     ];
                 }),
 >>>>>>> 961ad402 (first)
+=======
+            app(\Modules\Xot\Actions\Filament\Filter\GetYearFilter::class)->execute('anno', intval(date('Y')) - 3, intval(date('Y'))),
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
         ];
     }
 
@@ -125,6 +147,9 @@ class ListCriteriEsclusiones extends XotBaseListRecords
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
             TableActions\Action::make('check')
                 ->action(function ($record): void {
                     // dddx($record->schede);
@@ -139,10 +164,13 @@ class ListCriteriEsclusiones extends XotBaseListRecords
             TableActions\DeleteAction::make()
                 ->label('')
                 ->requiresConfirmation(),
+<<<<<<< HEAD
 =======
             'edit' => Actions\EditAction::make(),
             'delete' => Actions\DeleteAction::make(),
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
         ];
     }
 
@@ -150,6 +178,9 @@ class ListCriteriEsclusiones extends XotBaseListRecords
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
             DeleteBulkAction::make(),
         ];
     }
@@ -173,9 +204,12 @@ class ListCriteriEsclusiones extends XotBaseListRecords
                 direction: 'DESC',
             );
     }
+<<<<<<< HEAD
 =======
             'delete' => Actions\DeleteBulkAction::make(),
         ];
     }
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 }
