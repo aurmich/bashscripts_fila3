@@ -30,6 +30,7 @@ providers:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Modules\Rating\Providers\RatingServiceProvider
 =======
   - Modules\Xot\Providers\XotServiceProvider
@@ -136,3 +137,6 @@ providers:
 >>>>>>> bdeae81f (first)
 =======
 >>>>>>> 0253339c (first)
+=======
+  - Modules\Rating\Providers\RatingServiceProvider
+>>>>>>> bc2abf99 (.)

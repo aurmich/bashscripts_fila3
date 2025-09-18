@@ -21,6 +21,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d79d9e57 (first)
 =======
@@ -31,12 +32,15 @@
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> bc2abf99 (.)
 /**
  * ---.
  */
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -172,10 +176,15 @@ namespace Modules\Progressioni\Providers\Filament;
 >>>>>>> bdeae81f (first)
 =======
 >>>>>>> 0253339c (first)
+=======
+namespace Modules\Rating\Providers\Filament;
+
+>>>>>>> bc2abf99 (.)
 use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 
 class AdminPanelProvider extends XotBasePanelProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -389,4 +398,7 @@ class AdminPanelProvider extends XotBasePanelProvider
 >>>>>>> bdeae81f (first)
 =======
 >>>>>>> 0253339c (first)
+=======
+    protected string $module = 'Rating';
+>>>>>>> bc2abf99 (.)
 }

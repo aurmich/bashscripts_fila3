@@ -11,6 +11,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Rating\Models;
 =======
 namespace Modules\Xot\Models;
@@ -49,6 +50,11 @@ use Illuminate\Database\Eloquent\Relations\MorphPivot;
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+namespace Modules\Rating\Models;
+
+use Illuminate\Database\Eloquent\Relations\MorphPivot;
+>>>>>>> bc2abf99 (.)
 use Modules\Xot\Traits\Updater;
 
 /**
@@ -60,13 +66,17 @@ abstract class BaseMorphPivot extends MorphPivot
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> bc2abf99 (.)
     use Updater;
 
     /**
      * Indicates whether attributes are snake cased on arrays.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -115,11 +125,15 @@ abstract class BaseMorphPivot extends MorphPivot
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+     * @see  https://laravel-news.com/6-eloquent-secrets
+>>>>>>> bc2abf99 (.)
      *
      * @var bool
      */
     public static $snakeAttributes = true;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -147,17 +161,23 @@ abstract class BaseMorphPivot extends MorphPivot
 
 >>>>>>> d79d9e57 (first)
 =======
+=======
+>>>>>>> bc2abf99 (.)
     /** @var bool */
     public $incrementing = true;
 
     /** @var bool */
     public $timestamps = true;
 
+<<<<<<< HEAD
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> bc2abf99 (.)
     /** @var int */
     protected $perPage = 30;
 
     /** @var string */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -205,6 +225,9 @@ abstract class BaseMorphPivot extends MorphPivot
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+    protected $connection = 'rating';
+>>>>>>> bc2abf99 (.)
 
     /** @var list<string> */
     protected $appends = [];
@@ -216,6 +239,7 @@ abstract class BaseMorphPivot extends MorphPivot
     protected $keyType = 'string';
 
     /** @var list<string> */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -243,6 +267,8 @@ abstract class BaseMorphPivot extends MorphPivot
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> bc2abf99 (.)
     protected $fillable = [
         'id',
         'post_id', 'post_type',
@@ -260,6 +286,7 @@ abstract class BaseMorphPivot extends MorphPivot
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function casts(): array
 =======
     protected function casts(): array
@@ -267,10 +294,14 @@ abstract class BaseMorphPivot extends MorphPivot
 =======
     public function casts(): array
 >>>>>>> 2df6fbc8 (first)
+=======
+    public function casts(): array
+>>>>>>> bc2abf99 (.)
     {
         return [
             'id' => 'string',
             'uuid' => 'string', 'created_at' => 'datetime', 'updated_at' => 'datetime', 'deleted_at' => 'datetime'];
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -361,5 +392,7 @@ abstract class BaseMorphPivot extends MorphPivot
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> bc2abf99 (.)
     }
 }

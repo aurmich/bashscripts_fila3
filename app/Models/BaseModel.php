@@ -27,6 +27,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Rating\Models;
 
 use Illuminate\Database\Eloquent\Model;
@@ -142,10 +143,13 @@ use Modules\Xot\Traits\Updater;
 <<<<<<< HEAD
 >>>>>>> 9cec72d6 (first)
 =======
+=======
+>>>>>>> bc2abf99 (.)
 namespace Modules\Rating\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Traits\Updater;
+<<<<<<< HEAD
 >>>>>>> 2df6fbc8 (first)
 =======
 use Modules\Xot\Traits\Updater;
@@ -194,10 +198,13 @@ use Modules\Xot\Traits\Updater;
 =======
 use Modules\Xot\Traits\Updater;
 >>>>>>> 0253339c (first)
+=======
+>>>>>>> bc2abf99 (.)
 
 /**
  * Class BaseModel.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -314,11 +321,16 @@ abstract class BaseModel extends Model
 {
     use HasFactory;
 >>>>>>> 0253339c (first)
+=======
+abstract class BaseModel extends Model
+{
+>>>>>>> bc2abf99 (.)
     use Updater;
 
     /**
      * Indicates whether attributes are snake cased on arrays.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -372,11 +384,15 @@ abstract class BaseModel extends Model
 =======
      * @see https://laravel-news.com/6-eloquent-secrets
 >>>>>>> 0253339c (first)
+=======
+     * @see  https://laravel-news.com/6-eloquent-secrets
+>>>>>>> bc2abf99 (.)
      *
      * @var bool
      */
     public static $snakeAttributes = true;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -414,6 +430,8 @@ abstract class BaseModel extends Model
 >>>>>>> bdeae81f (first)
 =======
 >>>>>>> 0253339c (first)
+=======
+>>>>>>> bc2abf99 (.)
     /** @var bool */
     public $incrementing = true;
 
@@ -424,6 +442,7 @@ abstract class BaseModel extends Model
     protected $perPage = 30;
 
     /** @var string */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -458,10 +477,14 @@ abstract class BaseModel extends Model
 =======
     protected $connection = 'rating';
 >>>>>>> 2df6fbc8 (first)
+=======
+    protected $connection = 'rating';
+>>>>>>> bc2abf99 (.)
 
     /** @var list<string> */
     protected $fillable = ['id'];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -545,10 +568,13 @@ abstract class BaseModel extends Model
 >>>>>>> bdeae81f (first)
 =======
 >>>>>>> 0253339c (first)
+=======
+>>>>>>> bc2abf99 (.)
     /** @var string */
     protected $primaryKey = 'id';
 
     /** @var string */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -780,10 +806,16 @@ abstract class BaseModel extends Model
 
     /** @var list<string> */
 >>>>>>> 0253339c (first)
+=======
+    protected $keyType = 'string';
+
+    /** @var list<string> */
+>>>>>>> bc2abf99 (.)
     protected $hidden = [
         // 'password'
     ];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -895,6 +927,10 @@ abstract class BaseModel extends Model
     /** @return array<string, string> */
     protected function casts(): array
 >>>>>>> bdeae81f (first)
+=======
+    /** @return array<string, string> */
+    public function casts(): array
+>>>>>>> bc2abf99 (.)
     {
         return [
             'id' => 'string',
@@ -906,12 +942,16 @@ abstract class BaseModel extends Model
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> bc2abf99 (.)
             // 'published_at' => 'datetime:Y-m-d', // da verificare
             'published_at' => 'datetime',
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     /**
@@ -1267,4 +1307,8 @@ abstract class BaseModel extends Model
 =======
     }
 >>>>>>> 0253339c (first)
+=======
+        ];
+    }
+>>>>>>> bc2abf99 (.)
 }

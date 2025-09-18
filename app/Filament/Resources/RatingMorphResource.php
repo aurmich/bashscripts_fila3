@@ -3,6 +3,9 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc2abf99 (.)
 namespace Modules\Rating\Filament\Resources;
 
 use Filament\Forms\Form;
@@ -54,6 +57,7 @@ class RatingMorphResource extends XotBaseResource
             'edit' => Pages\EditRatingMorph::route('/{record}/edit'),
         ];
     }
+<<<<<<< HEAD
 =======
 namespace Modules\IndennitaResponsabilita\Filament\Resources;
 
@@ -64,4 +68,6 @@ class RatingMorphResource extends BaseRatingMorphResource
 {
     protected static ?string $model = RatingMorph::class;
 >>>>>>> e0005d7d (first)
+=======
+>>>>>>> bc2abf99 (.)
 }

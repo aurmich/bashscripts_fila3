@@ -34,8 +34,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> bc2abf99 (.)
 /**
  * ---.
  */
@@ -43,6 +46,7 @@
 declare(strict_types=1);
 
 namespace Modules\Rating\Providers;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 declare(strict_types=1);
@@ -234,10 +238,14 @@ declare(strict_types=1);
 namespace Modules\Tenant\Providers;
 
 >>>>>>> 0253339c (first)
+=======
+
+>>>>>>> bc2abf99 (.)
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -480,10 +488,14 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider {
 >>>>>>> bdeae81f (first)
 =======
 >>>>>>> 0253339c (first)
+=======
+    protected string $moduleNamespace = 'Modules\Rating\Http\Controllers';
+>>>>>>> bc2abf99 (.)
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -817,4 +829,8 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
     public string $name = 'Tenant';
 >>>>>>> 0253339c (first)
+=======
+
+    public string $name = 'Rating';
+>>>>>>> bc2abf99 (.)
 }

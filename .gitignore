@@ -41,6 +41,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ───────────────────────────────────────────────────────
 # Sistema operativo / File nascosti e metadata
 # ───────────────────────────────────────────────────────
@@ -431,6 +432,8 @@ public_html/vendor/
 >>>>>>> 59bc4fe7 (first)
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> bc2abf99 (.)
 *.jar
 *.log
 *.lock
@@ -451,8 +454,11 @@ error_log
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> bc2abf99 (.)
 *.stackdump
 *.cache
 *.log
@@ -461,6 +467,7 @@ package-lock.json
 
 node_modules
 .git-blame-ignore-revs
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 *.lock
@@ -906,6 +913,10 @@ vendor/
 vendor/
 vendor/*
 .php-cs-fixer.cache
+=======
+node_modules
+vendor
+>>>>>>> bc2abf99 (.)
 .git-blame-ignore-revs
 build/
 vendor/
@@ -913,6 +924,7 @@ build/
 node_modules
 docs/cache/
 cache/
+<<<<<<< HEAD
 .git-blame-ignore-revs
 .php-cs-fixer.cache
 .php-cs-fixer.cache
@@ -1096,3 +1108,5 @@ cache/
 *:Zone.Identifier
 *:Zone.Identifier
 >>>>>>> 0253339c (first)
+=======
+>>>>>>> bc2abf99 (.)

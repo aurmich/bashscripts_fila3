@@ -18,12 +18,15 @@ use Modules\UI\Filament\Forms\Components\RadioImage;
 use Modules\Xot\Actions\Filament\Block\GetViewBlocksOptionsByTypeAction;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 =======
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
 =======
 use Webmozart\Assert\Assert;
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> bc2abf99 (.)
 
 class Rating extends Block
 {
@@ -36,6 +39,7 @@ class Rating extends Block
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         // Ensure we're passing a string to make()
         Assert::stringNotEmpty(static::BLOCK_TYPE, 'Block type must be a non-empty string');
 =======
@@ -44,6 +48,8 @@ class Rating extends Block
         // Ensure we're passing a string to make()
         Assert::stringNotEmpty(static::BLOCK_TYPE, 'Block type must be a non-empty string');
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> bc2abf99 (.)
         return parent::make(static::BLOCK_TYPE)
             ->schema([
                 TextInput::make('title')
@@ -63,6 +69,7 @@ class Rating extends Block
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 return sprintf('Rating (%s)', $supportedLocale->getLabel());
 =======
                 return sprintf('Rating (%s)', $supportedLocale->label());
@@ -70,6 +77,9 @@ class Rating extends Block
 =======
                 return sprintf('Rating (%s)', $supportedLocale->getLabel());
 >>>>>>> 2df6fbc8 (first)
+=======
+                return sprintf('Rating (%s)', $supportedLocale->label());
+>>>>>>> bc2abf99 (.)
             });
     }
 
@@ -95,6 +105,7 @@ class Rating extends Block
     ): Block {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         // Ensure we're passing a string to execute()
         Assert::stringNotEmpty(static::BLOCK_TYPE, 'Block type must be a non-empty string');
 =======
@@ -103,12 +114,15 @@ class Rating extends Block
         // Ensure we're passing a string to execute()
         Assert::stringNotEmpty(static::BLOCK_TYPE, 'Block type must be a non-empty string');
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> bc2abf99 (.)
         $blockOptions = $options ?? app(GetViewBlocksOptionsByTypeAction::class)
             ->execute(static::BLOCK_TYPE, true);
 
         return Block::make($name)
             ->schema([
                 RadioImage::make('view')
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                     ->options(is_array($blockOptions) ? array_map(fn($value) => is_scalar($value) ? (string)$value : '', $blockOptions) : []),
@@ -118,6 +132,9 @@ class Rating extends Block
 =======
                     ->options(is_array($blockOptions) ? array_map(fn($value) => is_scalar($value) ? (string)$value : '', $blockOptions) : []),
 >>>>>>> 2df6fbc8 (first)
+=======
+                    ->options($blockOptions),
+>>>>>>> bc2abf99 (.)
 
                 Repeater::make('ratings')
                     ->visible(fn (Get $get): bool => $get('locale') === App::getLocale())

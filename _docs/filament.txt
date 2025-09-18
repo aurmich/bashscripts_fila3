@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://github.com/lartisan/filament-rating-tool
 =======
 https://github.com/savannabits/filament-signature-pad
@@ -65,3 +66,7 @@ https://github.com/lartisan/filament-rating-tool
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+https://github.com/lartisan/filament-rating-tool
+
+>>>>>>> bc2abf99 (.)

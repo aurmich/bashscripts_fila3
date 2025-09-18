@@ -2,10 +2,14 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc2abf99 (.)
 $finder = Symfony\Component\Finder\Finder::create()
     ->in([
         __DIR__ . '/src',
         __DIR__ . '/tests',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 0253339c (first)
@@ -19,6 +23,8 @@ $finder = Symfony\Component\Finder\Finder::create()
 >>>>>>> 8fc3049b (first)
 =======
 >>>>>>> 0253339c (first)
+=======
+>>>>>>> bc2abf99 (.)
     ])
     ->name('*.php')
     ->notName('*.blade.php')

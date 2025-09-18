@@ -19,6 +19,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -327,4 +328,12 @@ return [
         'Modules\\Tenant\\Providers\\TenantServiceProvider',
     ],
 >>>>>>> 0253339c (first)
+=======
+declare(strict_types=1);
+
+return [
+    'name' => 'Rating',
+    'icon' => 'heroicon-o-star', // icon on dashboard
+    'navigation_sort' => 1,
+>>>>>>> bc2abf99 (.)
 ];

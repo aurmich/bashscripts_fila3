@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -152,6 +153,9 @@
 =======
 {
 >>>>>>> 0253339c (first)
+=======
+{
+>>>>>>> bc2abf99 (.)
     "private": true,
     "scripts": {
         "development": "mix",
@@ -168,14 +172,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bbec4378 (first)
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> bc2abf99 (.)
         "@tailwindcss/typography": "^0.5.10",
         "autoprefixer": "^10.4.17",
         "axios": "^1.6.7",
         "cross-env": "^7.0",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         "laravel-mix": "^5.0.1",
@@ -185,6 +193,9 @@
 =======
         "laravel-mix": "^5.0.1",
 >>>>>>> 2df6fbc8 (first)
+=======
+        "laravel-mix": "^5.0.1",
+>>>>>>> bc2abf99 (.)
         "laravel-mix-merge-manifest": "^0.1.2",
         "laravel-vite-plugin": "^1.0.1",
         "lodash": "^4.17.21",
@@ -194,6 +205,7 @@
         "tippy.js": "^6.3.7",
         "vite": "^5.4.1"
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -502,3 +514,6 @@
 =======
 }
 >>>>>>> 0253339c (first)
+=======
+}
+>>>>>>> bc2abf99 (.)

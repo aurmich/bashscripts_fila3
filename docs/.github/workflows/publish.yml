@@ -8,6 +8,7 @@ on:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 permissions:
 =======
 permissions: 
@@ -18,6 +19,9 @@ permissions:
 =======
 permissions:
 >>>>>>> 2df6fbc8 (first)
+=======
+permissions:
+>>>>>>> bc2abf99 (.)
   contents: write
 
 jobs:
@@ -40,14 +44,18 @@ jobs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c088001a (first)
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> bc2abf99 (.)
 
     - name: Production
       run: npm run prod
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -58,11 +66,14 @@ jobs:
 >>>>>>> bbec4378 (first)
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> bc2abf99 (.)
     - name: CNAME
       run: echo "privacyfed.github.io/doc_extrafield" > ./build_production/CNAME
 
     - name: gh-pages
       uses: JamesIves/github-pages-deploy-action@v4.4.2
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     - name: CNAME
@@ -73,6 +84,8 @@ jobs:
 >>>>>>> c088001a (first)
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> bc2abf99 (.)
       with:
         branch: gh-pages
         folder: build_production

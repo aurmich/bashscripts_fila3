@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -124,6 +125,9 @@ return [
                 'error' => 'Errore durante la creazione',
 <<<<<<< HEAD
 =======
+=======
+return [
+>>>>>>> bc2abf99 (.)
     'pages' => 'Pagine',
     'widgets' => 'Widgets',
     'navigation' => [
@@ -148,6 +152,7 @@ return [
     ],
     'actions' => [
         'import' => [
+<<<<<<< HEAD
 =======
     'resource' => [
         'name' => 'Rating Morph',
@@ -184,16 +189,22 @@ return [
         'import' => [
             'row_number' => 'Riga :row',
 >>>>>>> e0005d7d (first)
+=======
+>>>>>>> bc2abf99 (.)
             'fields' => [
                 'import_file' => 'Seleziona un file XLS o CSV da caricare',
             ],
         ],
         'export' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc2abf99 (.)
             'filename_prefix' => 'Aree al',
             'columns' => [
                 'name' => 'Nome area',
                 'parent_name' => 'Nome area livello superiore',
+<<<<<<< HEAD
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
 =======
 >>>>>>> 2df6fbc8 (first)
@@ -224,4 +235,9 @@ return [
         'mandatory_data' => '{1} Dato obbligatorio non presente|{2} 2 Dati obbligatori non presenti|{3} 3 Dati obbligatori non presenti|[4,*] Vari dati obbligatori non presenti',
     ],
 >>>>>>> e0005d7d (first)
+=======
+            ],
+        ],
+    ],
+>>>>>>> bc2abf99 (.)
 ];

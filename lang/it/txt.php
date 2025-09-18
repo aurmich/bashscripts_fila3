@@ -7,6 +7,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'bet' => ['label' => 'Crea una scommessa'],
     'win' => ['label' => 'Determina opzione vincente'],
 =======
@@ -57,4 +58,8 @@ return [
     'bet' => ['label' => 'Crea una scommessa'],
     'win' => ['label' => 'Determina opzione vincente'],
 >>>>>>> 2df6fbc8 (first)
+=======
+    'bet' => 'Crea una scommessa',
+    'win' => 'Determina opzione vincente',
+>>>>>>> bc2abf99 (.)
 ];

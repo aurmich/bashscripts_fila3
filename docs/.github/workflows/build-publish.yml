@@ -23,6 +23,7 @@ jobs:
     - name: Create CNAME File
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       run: echo "privacyfed.github.io/doc_extrafield" >> build_production/CNAME
 =======
       run: echo "laraxot.github.io/doc_extrafield" >> build_production/CNAME
@@ -30,6 +31,9 @@ jobs:
 =======
       run: echo "privacyfed.github.io/doc_extrafield" >> build_production/CNAME
 >>>>>>> 2df6fbc8 (first)
+=======
+      run: echo "privacyfed.github.io/doc_extrafield" >> build_production/CNAME
+>>>>>>> bc2abf99 (.)
     - name: Stage Files
       run: git add -f build_production
     - name: Commit files

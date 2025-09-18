@@ -33,6 +33,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
 =======
@@ -79,10 +80,15 @@
     "name": "User",
     "alias": "user",
 >>>>>>> bdeae81f (first)
+=======
+    "name": "Rating",
+    "alias": "rating",
+>>>>>>> bc2abf99 (.)
     "description": "",
     "keywords": [],
     "priority": 0,
     "providers": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -170,10 +176,15 @@
         "Modules\\Tenant\\Providers\\TenantServiceProvider",
         "Modules\\Tenant\\Providers\\Filament\\AdminPanelProvider"
 >>>>>>> 0253339c (first)
+=======
+        "Modules\\Rating\\Providers\\RatingServiceProvider",
+        "Modules\\Rating\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> bc2abf99 (.)
     ],
     "aliases": [],
     "files": [],
     "requires": []
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -472,3 +483,6 @@
 =======
 }
 >>>>>>> 0253339c (first)
+=======
+}
+>>>>>>> bc2abf99 (.)

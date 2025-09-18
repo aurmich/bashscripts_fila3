@@ -3,6 +3,9 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc2abf99 (.)
 namespace Modules\Rating\Models;
 
 use Eloquent;
@@ -10,9 +13,12 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Modules\Xot\Datas\XotData;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Contracts\ProfileContract;
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> bc2abf99 (.)
 
 /**
  * Modules\Rating\Models\RatingMorph.
@@ -30,6 +36,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property int|null                        $auth_user_id
+<<<<<<< HEAD
 =======
 namespace Modules\IndennitaResponsabilita\Models;
 
@@ -51,11 +58,16 @@ use Modules\Rating\Models\RatingMorph as PtvRatingMorphModel;
  * @property int|null $rating_id
  * @property-read \Modules\Rating\Models\Rating|null $rating
 >>>>>>> e0005d7d (first)
+=======
+>>>>>>> bc2abf99 (.)
  *
  * @method static \Illuminate\Database\Eloquent\Builder|RatingMorph newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|RatingMorph newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|RatingMorph query()
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc2abf99 (.)
  * @method static \Illuminate\Database\Eloquent\Builder|RatingMorph whereAuthUserId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|RatingMorph whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|RatingMorph whereCreatedBy($value)
@@ -79,20 +91,27 @@ use Modules\Rating\Models\RatingMorph as PtvRatingMorphModel;
  *
  * @method static \Illuminate\Database\Eloquent\Builder|RatingMorph whereDeletedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|RatingMorph whereIsWinner($value)
+<<<<<<< HEAD
 =======
  * @method static \Illuminate\Database\Eloquent\Builder|RatingMorph whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|RatingMorph whereCreatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|RatingMorph whereId($value)
 >>>>>>> e0005d7d (first)
+=======
+>>>>>>> bc2abf99 (.)
  * @method static \Illuminate\Database\Eloquent\Builder|RatingMorph whereModelId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|RatingMorph whereModelType($value)
  * @method static \Illuminate\Database\Eloquent\Builder|RatingMorph whereNote($value)
  * @method static \Illuminate\Database\Eloquent\Builder|RatingMorph whereRatingId($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc2abf99 (.)
  * @method static \Illuminate\Database\Eloquent\Builder|RatingMorph whereUserId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|RatingMorph whereValue($value)
  *
  * @property \Illuminate\Database\Eloquent\Model|\Eloquent $model
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD:app/Models/RatingMorph.php
 <<<<<<< HEAD
@@ -106,6 +125,9 @@ use Modules\Rating\Models\RatingMorph as PtvRatingMorphModel;
 =======
  * @property \Illuminate\Database\Eloquent\Model|null $profile
 >>>>>>> 2df6fbc8 (first)
+=======
+ * @property \Modules\Blog\Models\Profile|null             $profile
+>>>>>>> bc2abf99 (.)
  * @property \Modules\Xot\Contracts\UserContract|null      $user
  * @property string                                        $reward
  *
@@ -155,6 +177,7 @@ class RatingMorph extends BaseMorphPivot
     {
         return $this->morphTo('model');
     }
+<<<<<<< HEAD
 =======
  * @method static \Illuminate\Database\Eloquent\Builder|RatingMorph whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|RatingMorph whereUpdatedBy($value)
@@ -169,4 +192,6 @@ class RatingMorph extends PtvRatingMorphModel
 
     // -------------------------------------------------
 >>>>>>> e0005d7d (first)
+=======
+>>>>>>> bc2abf99 (.)
 }

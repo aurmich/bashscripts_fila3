@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -128,6 +129,11 @@
     "name": "laraxot/module_rating_fila3",
     "description": "",
 >>>>>>> 2df6fbc8 (first)
+=======
+{
+    "name": "laraxot/module_rating_fila3",
+    "description": "",
+>>>>>>> bc2abf99 (.)
     "authors": [{
         "name": "Marco Sottana",
         "email": "marco.sottana@gmail.com"
@@ -135,6 +141,7 @@
     "extra": {
         "laravel": {
             "providers": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -156,10 +163,15 @@
                 "Modules\\Incentivi\\Providers\\IncentiviServiceProvider",
                 "Modules\\Incentivi\\Providers\\Filament\\AdminPanelProvider"
 >>>>>>> 15ea09e2 (first)
+=======
+                "Modules\\Rating\\Providers\\RatingServiceProvider",
+                "Modules\\Rating\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> bc2abf99 (.)
             ],
             "aliases": {
 
             }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -310,6 +322,8 @@
 >>>>>>> 2df6fbc8 (first)
 =======
 >>>>>>> 15ea09e2 (first)
+=======
+>>>>>>> bc2abf99 (.)
         }
     },
     "autoload": {
@@ -317,8 +331,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> bc2abf99 (.)
             "Modules\\Rating\\": "app/",
             "Modules\\Rating\\Database\\Factories\\": "database/factories/",
             "Modules\\Rating\\Database\\Seeders\\": "database/seeders/"
@@ -341,6 +358,7 @@
     },
     "scripts": {
         "post-autoload-dump": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             "Modules\\UI\\": "app/",
@@ -865,6 +883,8 @@
 >>>>>>> bdeae81f (first)
 =======
 >>>>>>> 0253339c (first)
+=======
+>>>>>>> bc2abf99 (.)
             "@php vendor/bin/testbench package:discover --ansi"
         ],
         "post-update-cmd": [
@@ -874,6 +894,7 @@
         "test": "./vendor/bin/pest --no-coverage",
         "test-coverage": "vendor/bin/pest --coverage-html coverage",
         "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1361,10 +1382,13 @@
 >>>>>>> bdeae81f (first)
 =======
 >>>>>>> 0253339c (first)
+=======
+>>>>>>> bc2abf99 (.)
     },
     "config": {
         "sort-packages": true,
         "allow-plugins": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1439,10 +1463,13 @@
 >>>>>>> 961ad402 (first)
 =======
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+>>>>>>> bc2abf99 (.)
             "phpstan/extension-installer": true,
             "pestphp/pest-plugin": true
         }
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1980,3 +2007,8 @@
     "prefer-stable": true
 }
 >>>>>>> 0253339c (first)
+=======
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+>>>>>>> bc2abf99 (.)

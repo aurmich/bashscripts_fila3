@@ -3,6 +3,9 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc2abf99 (.)
 namespace Modules\Rating\Models;
 
 use Eloquent;
@@ -18,6 +21,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  *
  * @property \Spatie\SchemalessAttributes\SchemalessAttributes $extra_attributes
  * @property RuleEnum                                          $rule
+<<<<<<< HEAD
 =======
 namespace Modules\IndennitaResponsabilita\Models;
 
@@ -41,11 +45,16 @@ use Modules\Rating\Models\Rating as BaseRatingModel;
  * @property bool|null $is_readonly
  * @property int|null $order_column
 >>>>>>> e0005d7d (first)
+=======
+>>>>>>> bc2abf99 (.)
  *
  * @method static \Illuminate\Database\Eloquent\Builder|Rating newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Rating newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Rating query()
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc2abf99 (.)
  * @method static \Illuminate\Database\Eloquent\Builder|Rating withExtraAttributes()
  *
  * @property int                                           $id
@@ -71,28 +80,39 @@ use Modules\Rating\Models\Rating as BaseRatingModel;
  * @method static \Illuminate\Database\Eloquent\Builder|Rating whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Rating whereCreatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Rating whereDeletedBy($value)
+<<<<<<< HEAD
 =======
  * @method static \Illuminate\Database\Eloquent\Builder|Rating whereColor($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Rating whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Rating whereCreatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Rating whereExtraAttributes($value)
 >>>>>>> e0005d7d (first)
+=======
+>>>>>>> bc2abf99 (.)
  * @method static \Illuminate\Database\Eloquent\Builder|Rating whereIcon($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Rating whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Rating whereIsDisabled($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Rating whereIsReadonly($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Rating whereOrderColumn($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @method static \Illuminate\Database\Eloquent\Builder|Rating wherePostId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Rating whereRelatedType($value)
 =======
 >>>>>>> e0005d7d (first)
+=======
+ * @method static \Illuminate\Database\Eloquent\Builder|Rating wherePostId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Rating whereRelatedType($value)
+>>>>>>> bc2abf99 (.)
  * @method static \Illuminate\Database\Eloquent\Builder|Rating whereRule($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Rating whereTitle($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Rating whereTxt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Rating whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Rating whereUpdatedBy($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc2abf99 (.)
  *
  * @property \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property int|null                                                                                                   $media_count
@@ -134,6 +154,7 @@ class Rating extends BaseModel implements HasMedia
     {
         return $this->morphTo('model');
     }
+<<<<<<< HEAD
 =======
  * @method static Builder|Rating withExtraAttributes()
  *
@@ -145,4 +166,6 @@ class Rating extends BaseRatingModel
 
     // -------------------------------------------------
 >>>>>>> e0005d7d (first)
+=======
+>>>>>>> bc2abf99 (.)
 }

@@ -29,8 +29,11 @@ includes:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> bc2abf99 (.)
 
 parameters:
     level: 1
@@ -44,6 +47,7 @@ parameters:
 
     checkMissingIterableValueType: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -710,3 +714,5 @@ parameters:
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 =======
 >>>>>>> 0253339c (first)
+=======
+>>>>>>> bc2abf99 (.)

@@ -3,6 +3,9 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc2abf99 (.)
 namespace Modules\Rating\Filament\Resources;
 
 use Filament\Forms\Components\ColorPicker;
@@ -32,6 +35,7 @@ class RatingResource extends XotBaseResource
         return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
             'type' => TextInput::make('extra_attributes.type'),
@@ -47,6 +51,8 @@ class RatingResource extends XotBaseResource
             'txt' => RichEditor::make('txt')->columnSpanFull(),
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> bc2abf99 (.)
             TextInput::make('extra_attributes.type'),
             TextInput::make('extra_attributes.anno'),
             TextInput::make('title')->autofocus()->required(),
@@ -58,9 +64,12 @@ class RatingResource extends XotBaseResource
                     Toggle::make('is_readonly'),
                 ]),
             RichEditor::make('txt')->columnSpanFull(),
+<<<<<<< HEAD
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> bc2abf99 (.)
         ];
     }
 
@@ -97,6 +106,7 @@ class RatingResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
 =======
 namespace Modules\IndennitaResponsabilita\Filament\Resources;
 
@@ -109,6 +119,8 @@ class RatingResource extends BaseRatingResource
     protected static ?string $model = Rating::class;
 
 >>>>>>> e0005d7d (first)
+=======
+>>>>>>> bc2abf99 (.)
     public static function getPages(): array
     {
         return [

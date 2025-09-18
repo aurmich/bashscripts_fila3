@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Rating\DataObjects;
 =======
 namespace Modules\Rating\App\DataObjects;
@@ -11,6 +12,9 @@ namespace Modules\Rating\App\DataObjects;
 =======
 namespace Modules\Rating\DataObjects;
 >>>>>>> 2df6fbc8 (first)
+=======
+namespace Modules\Rating\App\DataObjects;
+>>>>>>> bc2abf99 (.)
 
 final readonly class RatingData
 {
@@ -19,6 +23,7 @@ final readonly class RatingData
      */
     public static function fromArray(array $data): self
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -35,14 +40,19 @@ final readonly class RatingData
             userId: $userId
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> bc2abf99 (.)
         return new self(
             title: $data['title'],
             score: (int) $data['score'],
             description: $data['description'] ?? null,
             userId: $data['user_id'] ?? null
+<<<<<<< HEAD
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> bc2abf99 (.)
         );
     }
 

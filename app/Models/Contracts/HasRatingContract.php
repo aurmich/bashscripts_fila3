@@ -14,6 +14,7 @@ interface HasRatingContract
 {
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:app/Models/Contracts/HasRatingContract.php
 <<<<<<< HEAD
      * @return MorphToMany<Rating, Rating|\Illuminate\Database\Eloquent\Model>
@@ -26,6 +27,9 @@ interface HasRatingContract
 =======
      * @return MorphToMany<Rating, Rating|\Illuminate\Database\Eloquent\Model>
 >>>>>>> 2df6fbc8 (first)
+=======
+     * @return MorphToMany<Rating>
+>>>>>>> bc2abf99 (.)
      */
     public function ratings(): MorphToMany;
 }

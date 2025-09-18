@@ -22,10 +22,14 @@ npm-debug.log
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc2abf99 (.)
 *.cache
 *.phar
 *.lock
 package-lock.json
+<<<<<<< HEAD
 =======
 >>>>>>> 53542950 (first)
 =======
@@ -62,3 +66,5 @@ package-lock.json
 >>>>>>> dc18abbe (first)
 =======
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+>>>>>>> bc2abf99 (.)

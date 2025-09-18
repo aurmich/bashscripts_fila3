@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 x esposizione tabelle riordino dati
 https://github.com/updivision/estarter-ecommerce-for-laravel
 
@@ -60,3 +61,9 @@ https://github.com/rennokki/rating
 //--- rating senza criterio 
 https://github.com/rennokki/rating
 >>>>>>> 2df6fbc8 (first)
+=======
+
+
+//--- rating senza criterio 
+https://github.com/rennokki/rating
+>>>>>>> bc2abf99 (.)

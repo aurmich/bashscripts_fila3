@@ -35,6 +35,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2866,11 +2867,16 @@ Modulo dedicato alla gestione di alcune configurazioni
 # Module Rating
 Modulo dedicato alla gestione delle valutazioni
 >>>>>>> 2df6fbc8 (first)
+=======
+# Module Rating
+Modulo dedicato alla gestione delle valutazioni
+>>>>>>> bc2abf99 (.)
 
 ## Aggiungere Modulo nella base del progetto
 Dentro la cartella laravel/Modules
 
 ```bash
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2884,6 +2890,9 @@ git submodule add https://github.com/laraxot/module_setting_fila3.git Setting
 =======
 git submodule add https://github.com/laraxot/module_rating_fila3.git Rating
 >>>>>>> 2df6fbc8 (first)
+=======
+git submodule add https://github.com/laraxot/module_rating_fila3.git Rating
+>>>>>>> bc2abf99 (.)
 ```
 
 ## Verificare che il modulo sia attivo
@@ -2892,6 +2901,7 @@ php artisan module:list
 ```
 in caso abilitarlo
 ```bash
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2905,10 +2915,14 @@ php artisan module:enable Setting
 =======
 php artisan module:enable Rating
 >>>>>>> 2df6fbc8 (first)
+=======
+php artisan module:enable Rating
+>>>>>>> bc2abf99 (.)
 ```
 
 ## Eseguire le migrazioni
 ```bash
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3423,3 +3437,7 @@ Una volta che i dati verranno caricati, il Personale potrà quindi stampare/espo
 =======
 Discover more of my work at marco76tv!
 >>>>>>> 0253339c (first)
+=======
+php artisan module:migrate Rating
+```
+>>>>>>> bc2abf99 (.)

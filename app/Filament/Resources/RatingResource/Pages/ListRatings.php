@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Rating\Filament\Resources\RatingResource\Pages;
 
 <<<<<<< HEAD
@@ -16,11 +17,18 @@ use Filament\Actions\CreateAction;
 use Filament\Forms\Components\Select;
 use Filament\Tables\Actions\Action;
 >>>>>>> e0005d7d (first)
+=======
+namespace Modules\Rating\Filament\Resources\RatingResource\Pages;
+
+>>>>>>> bc2abf99 (.)
 use Filament\Tables\Actions\DeleteAction;
 use Filament\Tables\Actions\DeleteBulkAction;
 use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Actions\ViewAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc2abf99 (.)
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Enums\ActionsPosition;
@@ -36,6 +44,7 @@ class ListRatings extends XotBaseListRecords
     public function getListTableColumns(): array
     {
         return [
+<<<<<<< HEAD
             'id' => TextColumn::make('id')
                 ->sortable()
                 ->searchable(),
@@ -47,6 +56,22 @@ class ListRatings extends XotBaseListRecords
             'is_disabled' => IconColumn::make('is_disabled')
                 ->boolean(),
             'is_readonly' => IconColumn::make('is_readonly')
+=======
+            TextColumn::make('id')
+
+                ->sortable()
+                ->searchable(),
+            TextColumn::make('title')
+
+                ->sortable()
+                ->searchable(),
+            TextColumn::make('rule')
+
+                ->badge(),
+            IconColumn::make('is_disabled')
+                ->boolean(),
+            IconColumn::make('is_readonly')
+>>>>>>> bc2abf99 (.)
                 ->boolean(),
         ];
 
@@ -58,6 +83,7 @@ class ListRatings extends XotBaseListRecords
         // ToggleColumn::make('is_readonly'),
 
         // TextColumn::make('color'),
+<<<<<<< HEAD
 =======
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Enums\ActionsPosition;
@@ -115,11 +141,14 @@ class ListRatings extends BaseListRatings
 
         return array_merge($prepend, $cols);
 >>>>>>> e0005d7d (first)
+=======
+>>>>>>> bc2abf99 (.)
     }
 
     public function getTableFilters(): array
     {
         return [
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             Filter::make('filter')
@@ -151,6 +180,8 @@ class ListRatings extends BaseListRatings
             '2024' => '2024',
 '2025' => '2025',
 >>>>>>> e0005d7d (first)
+=======
+>>>>>>> bc2abf99 (.)
         ];
     }
 
@@ -158,18 +189,24 @@ class ListRatings extends BaseListRatings
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
             'view' => ViewAction::make()
                 ->label(''),
             'edit' => EditAction::make()
                 ->label(''),
             'delete' => DeleteAction::make()
 =======
+=======
+>>>>>>> bc2abf99 (.)
             ViewAction::make()
                 ->label(''),
             EditAction::make()
                 ->label(''),
             DeleteAction::make()
+<<<<<<< HEAD
 >>>>>>> e0005d7d (first)
+=======
+>>>>>>> bc2abf99 (.)
                 ->label('')
                 ->requiresConfirmation(),
         ];
@@ -179,10 +216,14 @@ class ListRatings extends BaseListRatings
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
             'delete' => DeleteBulkAction::make(),
 =======
             DeleteBulkAction::make(),
 >>>>>>> e0005d7d (first)
+=======
+            DeleteBulkAction::make(),
+>>>>>>> bc2abf99 (.)
         ];
     }
 
@@ -204,6 +245,7 @@ class ListRatings extends BaseListRatings
                 column: 'created_at',
                 direction: 'DESC',
             );
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -260,5 +302,7 @@ class ListRatings extends ListRecords
 >>>>>>> 2df6fbc8 (first)
 =======
 >>>>>>> e0005d7d (first)
+=======
+>>>>>>> bc2abf99 (.)
     }
 }

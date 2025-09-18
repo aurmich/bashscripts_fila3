@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Rating\View\Components\Dashboard;
 
 =======
@@ -15,6 +16,10 @@ use Illuminate\Contracts\Support\Renderable;
 namespace Modules\Rating\View\Components\Dashboard;
 
 >>>>>>> 2df6fbc8 (first)
+=======
+namespace Modules\Rating\View\Components\Dashboard;
+
+>>>>>>> bc2abf99 (.)
 use Illuminate\View\Component;
 
 // use Modules\Xot\View\Components\XotBaseComponent;
@@ -24,6 +29,7 @@ use Illuminate\View\Component;
  */
 class Item extends Component
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function render()
@@ -47,5 +53,10 @@ class Item extends Component
     {
         return '';
 >>>>>>> 2df6fbc8 (first)
+=======
+    public function render()
+    {
+        return '';
+>>>>>>> bc2abf99 (.)
     }
 }

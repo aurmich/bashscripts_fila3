@@ -8,6 +8,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
         'name' => ['label' => 'Rating'],
@@ -23,6 +24,8 @@ return [
 >>>>>>> e0005d7d (first)
 =======
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> bc2abf99 (.)
         'name' => 'Rating',
     ],
     'navigation' => [
@@ -32,9 +35,12 @@ return [
             'name' => 'Admin',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> bc2abf99 (.)
         ],
     ],
     'fields' => [
@@ -107,6 +113,7 @@ return [
     ],
     'actions' => [
         'enable' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -184,6 +191,8 @@ return [
     'actions' => [
         'enable' => [
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> bc2abf99 (.)
             'cta' => 'Attiva',
         ],
         'disable' => [
@@ -211,6 +220,7 @@ return [
                 'parent_inventory_number' => 'Codice inventario genitore',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
 =======
 >>>>>>> 2df6fbc8 (first)
@@ -218,10 +228,13 @@ return [
 >>>>>>> e0005d7d (first)
 =======
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> bc2abf99 (.)
             ],
         ],
     ],
     'widgets' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -238,10 +251,13 @@ return [
 >>>>>>> e0005d7d (first)
 =======
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> bc2abf99 (.)
         'child_assets' => 'Asset figli',
     ],
     'exceptions' => [
         'mandatory_data' => '{1} Dato obbligatorio non presente|{2} 2 Dati obbligatori non presenti|{3} 3 Dati obbligatori non presenti|[4,*] Vari dati obbligatori non presenti',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
@@ -251,5 +267,7 @@ return [
 >>>>>>> e0005d7d (first)
 =======
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> bc2abf99 (.)
     ],
 ];

@@ -1,6 +1,7 @@
 ---
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 title: About Rating
 description: About Rating
 =======
@@ -11,10 +12,15 @@ description: Modulo Xot
 title: About Rating
 description: About Rating
 >>>>>>> 2df6fbc8 (first)
+=======
+title: About Rating
+description: About Rating
+>>>>>>> bc2abf99 (.)
 extends: _layouts.documentation
 section: content
 ---
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 # module_rating
@@ -33,3 +39,8 @@ E' la libreria di estensione di tutte le altre librerie.
 
 Il modulo Rating è il modulo che si occupa di gestire le valutazioni delle altri modelli utilizzati nel progetto.
 >>>>>>> 2df6fbc8 (first)
+=======
+# module_rating
+
+Il modulo Rating è il modulo che si occupa di gestire le valutazioni delle altri modelli utilizzati nel progetto.
+>>>>>>> bc2abf99 (.)

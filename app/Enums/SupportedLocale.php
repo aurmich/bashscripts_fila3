@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Rating\Enums;
 =======
 namespace Modules\Rating\App\Enums;
@@ -11,6 +12,9 @@ namespace Modules\Rating\App\Enums;
 =======
 namespace Modules\Rating\Enums;
 >>>>>>> 2df6fbc8 (first)
+=======
+namespace Modules\Rating\App\Enums;
+>>>>>>> bc2abf99 (.)
 
 enum SupportedLocale: string
 {
@@ -37,6 +41,7 @@ enum SupportedLocale: string
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @var array<string, string> $result */
         $result = array_reduce(
 =======
@@ -46,10 +51,14 @@ enum SupportedLocale: string
         /** @var array<string, string> $result */
         $result = array_reduce(
 >>>>>>> 2df6fbc8 (first)
+=======
+        return array_reduce(
+>>>>>>> bc2abf99 (.)
             self::cases(),
             fn (array $carry, self $locale) => [...$carry, $locale->value => $locale->getLabel()],
             []
         );
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -73,5 +82,7 @@ enum SupportedLocale: string
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> bc2abf99 (.)
     }
 }

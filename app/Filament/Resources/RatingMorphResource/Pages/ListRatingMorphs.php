@@ -3,11 +3,15 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc2abf99 (.)
 namespace Modules\Rating\Filament\Resources\RatingMorphResource\Pages;
 
 use Filament\Pages\Actions;
 use Filament\Tables\Columns;
 use Modules\Rating\Filament\Resources\RatingMorphResource;
+<<<<<<< HEAD
 =======
 namespace Modules\IndennitaResponsabilita\Filament\Resources\RatingMorphResource\Pages;
 
@@ -19,6 +23,8 @@ use Filament\Tables\Columns;
 use Filament\Tables\Filters\SelectFilter;
 use Modules\IndennitaResponsabilita\Filament\Resources\RatingMorphResource;
 >>>>>>> e0005d7d (first)
+=======
+>>>>>>> bc2abf99 (.)
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListRatingMorphs extends XotBaseListRecords
@@ -26,6 +32,9 @@ class ListRatingMorphs extends XotBaseListRecords
     protected static string $resource = RatingMorphResource::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc2abf99 (.)
     protected function getActions(): array
     {
         return [
@@ -33,8 +42,11 @@ class ListRatingMorphs extends XotBaseListRecords
         ];
     }
 
+<<<<<<< HEAD
 =======
 >>>>>>> e0005d7d (first)
+=======
+>>>>>>> bc2abf99 (.)
     public function getListTableColumns(): array
     {
         return [
@@ -58,6 +70,7 @@ class ListRatingMorphs extends XotBaseListRecords
                 ->sortable(),
         ];
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -96,4 +109,6 @@ class ListRatingMorphs extends XotBaseListRecords
         ];
     }
 >>>>>>> e0005d7d (first)
+=======
+>>>>>>> bc2abf99 (.)
 }
