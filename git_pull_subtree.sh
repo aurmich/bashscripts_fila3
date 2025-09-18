@@ -37,6 +37,7 @@ pull_subtree() {
     git commit -am "."
     git push -u origin "$REMOTE_BRANCH"
     
+    git fetch "$REMOTE_REPO" "$REMOTE_BRANCH" --depth=1
     if(! git subtree pull -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH"  --squash)
     then
         if(! git subtree pull -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH")    

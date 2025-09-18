@@ -32,10 +32,13 @@ handle_error() {
 
 # Sync subtree
 push_subtree() {
-<<<<<<< HEAD
     find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
+<<<<<<< HEAD
 =======
 >>>>>>> 7ef44a81 (first)
+=======
+
+>>>>>>> aef2e184 (.)
     git add -A
     git commit -am "."
     git push -u origin "$REMOTE_BRANCH"
@@ -44,6 +47,10 @@ push_subtree() {
     find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> aef2e184 (.)
     if(! git subtree push -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH")
     then
         if(! git push  "$REMOTE_REPO" $(git subtree split --prefix="$LOCAL_PATH"):"$REMOTE_BRANCH")
@@ -61,6 +68,7 @@ push_subtree() {
         fi
     fi
 
+<<<<<<< HEAD
 =======
     git subtree push -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH"
 
@@ -77,6 +85,9 @@ push_subtree() {
     git subtree push -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH"
     
 >>>>>>> 7ef44a81 (first)
+=======
+
+>>>>>>> aef2e184 (.)
     git rebase --rebase-merges --strategy subtree "$REMOTE_BRANCH"
     #git rebase --preserve-merges "$REMOTE_BRANCH" 
 }
