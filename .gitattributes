@@ -2,17 +2,21 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7e417e87 (first)
 =======
 >>>>>>> 53542950 (first)
 =======
 >>>>>>> 26424c5e (first)
+=======
+>>>>>>> c8cd1ec3 (first)
 * text=auto
 *.css linguist-vendored
 *.scss linguist-vendored
 *.js linguist-vendored
 CHANGELOG.md export-ignore
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -80,3 +84,5 @@ CHANGELOG.md export-ignore
 >>>>>>> 53542950 (first)
 =======
 >>>>>>> 26424c5e (first)
+=======
+>>>>>>> c8cd1ec3 (first)

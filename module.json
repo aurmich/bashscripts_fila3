@@ -12,6 +12,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
 =======
@@ -177,11 +178,16 @@
     "name": "ContoAnnuale",
     "alias": "contoannuale",
 >>>>>>> 26424c5e (first)
+=======
+    "name": "Europa",
+    "alias": "europa",
+>>>>>>> c8cd1ec3 (first)
     "description": "",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         "Modules\\Badge\\Providers\\BadgeServiceProvider"
@@ -191,6 +197,9 @@
 =======
         "Modules\\ContoAnnuale\\Providers\\ContoAnnualeServiceProvider"
 >>>>>>> 26424c5e (first)
+=======
+        "Modules\\Europa\\Providers\\EuropaServiceProvider"
+>>>>>>> c8cd1ec3 (first)
     ],
     "aliases": {},
     "files": [],
@@ -198,8 +207,11 @@
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7e417e87 (first)
 =======
 >>>>>>> 53542950 (first)
 =======
 >>>>>>> 26424c5e (first)
+=======
+>>>>>>> c8cd1ec3 (first)

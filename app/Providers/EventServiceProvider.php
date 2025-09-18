@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -74,6 +75,11 @@ declare(strict_types=1);
 
 namespace Modules\ContoAnnuale\Providers;
 >>>>>>> 26424c5e (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Europa\Providers;
+>>>>>>> c8cd1ec3 (first)
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as BaseEventServiceProvider;
 
@@ -85,6 +91,7 @@ class EventServiceProvider extends BaseEventServiceProvider
      * @var array<string, array<int, string>>
      */
     protected $listen = [];
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -113,6 +120,9 @@ class EventServiceProvider extends BaseEventServiceProvider
 =======
 
 >>>>>>> 26424c5e (first)
+=======
+
+>>>>>>> c8cd1ec3 (first)
     /**
      * Indicates if events should be discovered.
      *
@@ -123,6 +133,7 @@ class EventServiceProvider extends BaseEventServiceProvider
     /**
      * Configure the proper event listeners for email verification.
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -209,4 +220,7 @@ class EventServiceProvider extends ServiceProvider
 =======
     protected function configureEmailVerification(): void {}
 >>>>>>> 26424c5e (first)
+=======
+    protected function configureEmailVerification(): void {}
+>>>>>>> c8cd1ec3 (first)
 }

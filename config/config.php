@@ -16,6 +16,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'name' => 'Rating',
     'icon' => 'heroicon-o-star', // icon on dashboard
     'navigation_sort' => 1,
@@ -148,4 +149,7 @@ return [
     'name' => 'ContoAnnuale',
     'icon' => 'heroicon-o-calendar',
 >>>>>>> 26424c5e (first)
+=======
+    'name' => 'Europa',
+>>>>>>> c8cd1ec3 (first)
 ];

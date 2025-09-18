@@ -14,6 +14,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 0d55b583 (first)
@@ -234,6 +235,8 @@
 >>>>>>> 53542950 (first)
 =======
 >>>>>>> 26424c5e (first)
+=======
+>>>>>>> c8cd1ec3 (first)
     "private": true,
     "scripts": {
         "dev": "npm run development",
@@ -251,9 +254,12 @@
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7e417e87 (first)
 =======
 >>>>>>> 53542950 (first)
 =======
 >>>>>>> 26424c5e (first)
+=======
+>>>>>>> c8cd1ec3 (first)
 }

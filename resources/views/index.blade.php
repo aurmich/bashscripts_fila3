@@ -11,6 +11,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('rating::layouts.master')
 =======
 @extends('xot::layouts.app')
@@ -51,10 +52,14 @@
 =======
 @extends('contoannuale::layouts.master')
 >>>>>>> 26424c5e (first)
+=======
+@extends('europa::layouts.master')
+>>>>>>> c8cd1ec3 (first)
 
 @section('content')
     <h1>Hello World</h1>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -140,3 +145,9 @@
     </p>
 @stop
 >>>>>>> 26424c5e (first)
+=======
+    <p>
+        This view is loaded from module: {!! config('europa.name') !!}
+    </p>
+@stop
+>>>>>>> c8cd1ec3 (first)

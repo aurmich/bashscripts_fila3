@@ -13,6 +13,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 /**
@@ -82,10 +83,18 @@ namespace Modules\ContoAnnuale\Providers;
 
 // --- bases ---
 >>>>>>> 26424c5e (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Europa\Providers;
+
+// --- bases ---
+>>>>>>> c8cd1ec3 (first)
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -179,10 +188,19 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected string $moduleNamespace = 'Modules\ContoAnnuale\Http\Controllers';
 >>>>>>> 26424c5e (first)
+=======
+    /**
+     * The module namespace to assume when generating URLs to actions.
+     */
+    protected string $moduleNamespace = 'Modules\Europa\Http\Controllers';
+
+    public string $name = 'Europa';
+>>>>>>> c8cd1ec3 (first)
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -432,4 +450,6 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
     public string $name = 'ContoAnnuale';
 >>>>>>> 26424c5e (first)
+=======
+>>>>>>> c8cd1ec3 (first)
 }

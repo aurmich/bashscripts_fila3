@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -141,3 +142,6 @@ declare(strict_types=1);
 =======
 declare(strict_types=1);
 >>>>>>> 26424c5e (first)
+=======
+declare(strict_types=1);
+>>>>>>> c8cd1ec3 (first)

@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <html lang="en">
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -30,10 +31,14 @@
 =======
 <html lang="en">
 >>>>>>> 26424c5e (first)
+=======
+<html lang="en">
+>>>>>>> c8cd1ec3 (first)
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -101,11 +106,18 @@
        {{-- Laravel Mix - CSS File --}}
        {{-- <link rel="stylesheet" href="{{ mix('css/contoannuale.css') }}"> --}}
 >>>>>>> 26424c5e (first)
+=======
+        <title>Module Europa</title>
+
+       {{-- Laravel Mix - CSS File --}}
+       {{-- <link rel="stylesheet" href="{{ mix('css/europa.css') }}"> --}}
+>>>>>>> c8cd1ec3 (first)
 
     </head>
     <body>
         @yield('content')
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -216,3 +228,9 @@
     </body>
 </html>
 >>>>>>> 26424c5e (first)
+=======
+        {{-- Laravel Mix - JS File --}}
+        {{-- <script src="{{ mix('js/europa.js') }}"></script> --}}
+    </body>
+</html>
+>>>>>>> c8cd1ec3 (first)
