@@ -226,6 +226,7 @@ class Post extends Model
 
         if (! empty($this->attributes['post_type'])) {
             // Assicuriamoci che i valori siano stringhe prima della concatenazione
+<<<<<<< HEAD
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type']) 
                 ? $this->attributes['post_type'] : '';
             $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id']) 
@@ -252,6 +253,18 @@ class Post extends Model
             $postId = is_scalar($this->post_id) ? (string)$this->post_id : '';
 >>>>>>> 55edff60 (.)
             $value = $postType . ' ' . $postId;
+=======
+            $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
+                ? $this->attributes['post_type'] : '';
+            $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id'])
+                ? (string) $this->attributes['post_id'] : '';
+            $value = $postType.' '.$postId;
+        } else {
+            // Assicuriamoci che post_type e post_id siano stringhe
+            $postType = is_string($this->post_type) ? $this->post_type : '';
+            $postId = is_scalar($this->post_id) ? (string) $this->post_id : '';
+            $value = $postType.' '.$postId;
+>>>>>>> origin/dev
         }
 
         $this->title = $value;
@@ -272,6 +285,7 @@ class Post extends Model
         $value = $this->title;
         if ('' === $value) {
             // Assicuriamoci che i valori siano stringhe prima della concatenazione
+<<<<<<< HEAD
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type']) 
                 ? $this->attributes['post_type'] : '';
             $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id']) 
@@ -285,6 +299,13 @@ class Post extends Model
                 ? (string)$this->attributes['post_id'] : '';
 >>>>>>> 55edff60 (.)
             $value = $postType . ' ' . $postId;
+=======
+            $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
+                ? $this->attributes['post_type'] : '';
+            $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id'])
+                ? (string) $this->attributes['post_id'] : '';
+            $value = $postType.' '.$postId;
+>>>>>>> origin/dev
         }
         if (null === $value) {
             $value = 'u-'.random_int(1, 1000);
