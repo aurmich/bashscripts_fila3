@@ -2,7 +2,11 @@
 
 ## Introduzione
 
+<<<<<<< HEAD
 Questo documento descrive la standardizzazione dei file `.gitignore` all'interno dei moduli Laravel di il progetto.
+=======
+Questo documento descrive la standardizzazione dei file `.gitignore` all'interno dei moduli Laravel di SaluteOra.
+>>>>>>> e47821df (.)
 
 ## File Template Standardizzato
 
@@ -30,6 +34,7 @@ Lo script `update-gitignore.sh` permette di applicare il template standardizzato
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -49,6 +54,8 @@ Lo script `update-gitignore.sh` permette di applicare il template standardizzato
 =======
 
 >>>>>>> ea169dcc (.)
+=======
+>>>>>>> e47821df (.)
 # Dalla directory del progetto
 cd laravel/Modules
 ./update-gitignore.sh

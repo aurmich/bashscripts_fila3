@@ -9,7 +9,13 @@ git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |
         rm -rf $path
         rm -rf .git/modules/$path
         git rm --cached -r -f $path || echo $path
+<<<<<<< HEAD
         git submodule add -f $url $path
     done
     
 
+=======
+        git submodule add -f $url $path 
+    done
+    
+>>>>>>> e47821df (.)

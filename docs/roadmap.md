@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Roadmap
 
 > **Nota**: Questo documento è correlato a [Roadmap](../../docs/roadmap.md). Per una panoramica completa, consulta entrambi i documenti.
@@ -158,6 +159,8 @@
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e47821df (.)
 # 🗺️ Roadmap del Progetto
 
 ## 📋 Indice delle Fasi
@@ -284,6 +287,7 @@
  43df3e0 (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -341,3 +345,6 @@ aurmich/dev
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (243 linee vs 1)[0m
 
 
+=======
+aurmich/dev
+>>>>>>> e47821df (.)

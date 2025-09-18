@@ -2,6 +2,7 @@
 
 
 
+<<<<<<< HEAD
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
  43df3e0 (.)
@@ -29,6 +30,11 @@ aurmich/dev
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+[0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
+ 43df3e0 (.)
+aurmich/dev
+>>>>>>> e47821df (.)
 # 📈 Fase 9: Scalabilità
 
 ## 📋 Panoramica
@@ -38,6 +44,7 @@ Questa fase si concentra sulla scalabilità e l'espansione del sistema.
 - [Roadmap Principale](../roadmap.md)
 - [Documentazione Script](../project.md)
 - [Fase 8: Manutenzione](../roadmap/08_maintenance.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -70,6 +77,8 @@ Questa fase si concentra sulla scalabilità e l'espansione del sistema.
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e47821df (.)
 # 📈 Fase 9: Scalabilità
 
 ## 📋 Panoramica
@@ -90,6 +99,7 @@ Questa fase si concentra sulla scalabilità e l'espansione del sistema.
 aurmich/dev
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -120,6 +130,8 @@ aurmich/dev
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e47821df (.)
 # 📈 Fase 9: Scalabilità
 
 ## 📋 Panoramica
@@ -131,6 +143,7 @@ Questa fase si concentra sulla scalabilità e l'espansione del sistema.
 - [Fase 8: Manutenzione](../roadmap/08_maintenance.md)
 
  43df3e0 (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -163,6 +176,8 @@ Questa fase si concentra sulla scalabilità e l'espansione del sistema.
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e47821df (.)
 aurmich/dev
 
 
@@ -222,6 +237,7 @@ Questa fase si concentra sulla scalabilità e l'espansione del sistema.
  43df3e0 (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -259,3 +275,6 @@ aurmich/dev
 * [09_scalability.md](docs/roadmap/09_scalability.md)
 
 
+=======
+aurmich/dev
+>>>>>>> e47821df (.)

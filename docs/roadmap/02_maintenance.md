@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -21,6 +22,11 @@
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+
+
+
+>>>>>>> e47821df (.)
 # 🛠️ Fase 2: Manutenzione
 
 ## 📋 Panoramica
@@ -65,6 +71,7 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema, garant
    - Report automatizzati
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -84,6 +91,9 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema, garant
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+
+>>>>>>> e47821df (.)
 2. **Sicurezza**:
    - Verifica integrità dati
    - Backup crittografati
@@ -91,6 +101,7 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema, garant
    - Audit log
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -110,6 +121,9 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema, garant
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+
+>>>>>>> e47821df (.)
 3. **Performance**:
    - Ottimizzazione risorse
    - Caching intelligente
@@ -161,6 +175,7 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema, garant
 - Ansible
 - Cron
 - Systemd
+<<<<<<< HEAD
 - Bash
 
 ---
@@ -182,6 +197,8 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema, garant
 Per ulteriori dettagli, consultare la documentazione degli script specifici e le sezioni successive della roadmap.
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> e47821df (.)
 - Bash 
 
 
@@ -191,6 +208,7 @@ Per ulteriori dettagli, consultare la documentazione degli script specifici e le
 
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
+<<<<<<< HEAD
 # 🛠️ Fase 2: Manutenzione
 
 ## 📋 Panoramica
@@ -220,6 +238,8 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema.
 - [Fase 1: Core Git Operations](../roadmap/01_core_git_operations.md)
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
+=======
+>>>>>>> e47821df (.)
  43df3e0 (.)
 aurmich/dev
 # 🛠️ Fase 2: Manutenzione
@@ -287,6 +307,7 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema.
 - [Fase 3: Verifica](../roadmap/03_verification.md) 
  43df3e0 (.)
 aurmich/dev
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di 02_maintenance.md
 * [02_maintenance.md](bashscripts/docs/roadmap/02_maintenance.md)
@@ -311,3 +332,5 @@ aurmich/dev
 >>>>>>> e0c964a3 (first)
 
 
+=======
+>>>>>>> e47821df (.)

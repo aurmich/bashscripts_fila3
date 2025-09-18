@@ -115,6 +115,7 @@ bashscripts/
 - [Maintenance Scripts](maintenance/README.md)
 - [Testing Tools](testing/README.md)
 - [Documentation Tools](docs/README.md) 
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/docs/structure.md)
@@ -134,3 +135,5 @@ bashscripts/
 * [structure.md](laravel/Modules/Cms/docs/themes/structure.md)
 * [structure.md](laravel/Modules/Cms/docs/components/structure.md)
 
+=======
+>>>>>>> e47821df (.)

@@ -15,6 +15,7 @@ Questa fase si concentra sull'implementazione di funzionalità di automazione av
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -496,6 +497,10 @@ aurmich/dev
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+ 43df3e0 (.)
+aurmich/dev
+>>>>>>> e47821df (.)
 # 🔄 Fase 4: Automazione Avanzata
 
 ## 📋 Panoramica
@@ -618,6 +623,7 @@ Questa fase si concentra sull'implementazione di funzionalità di automazione av
 - Monitoraggio
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -648,6 +654,8 @@ Questa fase si concentra sull'implementazione di funzionalità di automazione av
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e47821df (.)
 # 🔄 Fase 4: Automazione Avanzata
 
 ## 📋 Panoramica
@@ -773,6 +781,7 @@ Questa fase si concentra sull'implementazione di funzionalità di automazione av
 
 
  43df3e0 (.)
+<<<<<<< HEAD
 
 aurmich/dev
 
@@ -797,6 +806,9 @@ aurmich/dev
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+aurmich/dev
+>>>>>>> e47821df (.)
 # 🔄 Fase 4: Automazione Avanzata
 
 ## 📋 Panoramica
@@ -1336,6 +1348,7 @@ Questa fase si concentra sull'implementazione di funzionalità di automazione av
  43df3e0 (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -1373,3 +1386,6 @@ aurmich/dev
 * [04_advanced_automation.md](docs/roadmap/04_advanced_automation.md)
 
 
+=======
+aurmich/dev
+>>>>>>> e47821df (.)

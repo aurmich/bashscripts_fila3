@@ -6,11 +6,15 @@ Lo script `analyze_modules.sh` esegue l'analisi PHPStan su tutti i moduli Larave
 ## Posizione
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e47821df (.)
 `/var/www/html/ptvx/bashscripts/analyze_modules.sh`
 
 ## Utilizzo
 ```bash
 cd /var/www/html/ptvx
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -86,6 +90,8 @@ cd /var/www/html/_bases/base_ptvx_fila3_mono
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e47821df (.)
 ./bashscripts/analyze_modules.sh
 ```
 
@@ -119,6 +125,7 @@ Modules/<NomeModulo>/docs/phpstan/
 ## Variabili di Ambiente
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `BASE_DIR`: Directory base del progetto (`/var/www/html/ptvx/laravel`)
 =======
 <<<<<<< HEAD
@@ -165,6 +172,9 @@ Modules/<NomeModulo>/docs/phpstan/
 =======
 - `BASE_DIR`: Directory base del progetto (`/var/www/html/_bases/base_ptvx_fila3_mono/laravel`)
 >>>>>>> e0c964a3 (first)
+=======
+- `BASE_DIR`: Directory base del progetto (`/var/www/html/ptvx/laravel`)
+>>>>>>> e47821df (.)
 - `MODULES_DIR`: Directory dei moduli (`$BASE_DIR/Modules`)
 - `LEVELS`: Array dei livelli PHPStan da analizzare
 
@@ -203,6 +213,7 @@ Modules/<NomeModulo>/docs/phpstan/
    - Directory non trovata
    - Permessi insufficienti
    - PHPStan non installato
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -682,3 +693,6 @@ jobs:
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+   - Configurazione PHPStan errata 
+>>>>>>> e47821df (.)

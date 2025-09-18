@@ -2,6 +2,7 @@
 
 
 
+<<<<<<< HEAD
 
 [0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
  43df3e0 (.)
@@ -113,11 +114,17 @@ aurmich/dev
 >>>>>>> 3c18aa7e (.)
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+[0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
+ 43df3e0 (.)
+aurmich/dev
+>>>>>>> e47821df (.)
 # ⚡ Fase 6: Ottimizzazione
 
 ## 📋 Panoramica
 Questa fase si concentra sull'ottimizzazione e il miglioramento continuo del sistema.
 
+<<<<<<< HEAD
 ## 🎯 Funzionalità Future
 
 ### 1. Ottimizzazione Performance
@@ -210,11 +217,27 @@ Questa fase si concentra sull'ottimizzazione e il miglioramento continuo del sis
 - Version control
 - CI/CD pipeline
 - Documentation tools
+=======
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 5: Monitoraggio](../roadmap/05_monitoring.md)
+
+
+- [Fase 7: Documentazione](../roadmap/07_documentation.md) 
+
+aurmich/dev
+# ⚡ Fase 6: Ottimizzazione
+
+## 📋 Panoramica
+Questa fase si concentra sull'ottimizzazione e il miglioramento continuo del sistema.
+>>>>>>> e47821df (.)
 
 ## 🔄 Collegamenti
 - [Roadmap Principale](../roadmap.md)
 - [Documentazione Script](../project.md)
 - [Fase 5: Monitoraggio](../roadmap/05_monitoring.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -339,6 +362,8 @@ Questa fase si concentra sull'ottimizzazione e il miglioramento continuo del sis
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e47821df (.)
 
 
 [0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
@@ -378,6 +403,7 @@ Questa fase si concentra sull'ottimizzazione e il miglioramento continuo del sis
 
 [0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco HEAD (23 linee vs 1)[0m
  43df3e0 (.)
+<<<<<<< HEAD
 
 aurmich/dev
 
@@ -575,3 +601,6 @@ aurmich/dev
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+aurmich/dev
+>>>>>>> e47821df (.)

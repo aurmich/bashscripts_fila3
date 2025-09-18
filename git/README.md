@@ -40,7 +40,10 @@ git/
 
 ### Comandi Comuni
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 # Sincronizzare subtrees
 ./subtrees/sync.sh
 

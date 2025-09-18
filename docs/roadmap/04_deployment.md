@@ -2,6 +2,7 @@
 
 
 
+<<<<<<< HEAD
 
 [0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
  43df3e0 (.)
@@ -29,6 +30,11 @@ aurmich/dev
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+[0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
+ 43df3e0 (.)
+aurmich/dev
+>>>>>>> e47821df (.)
 # 🚀 Fase 4: Deployment
 
 ## 📋 Panoramica
@@ -45,6 +51,7 @@ Questa fase si concentra sul deployment e la distribuzione del sistema.
 aurmich/dev
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -75,6 +82,8 @@ aurmich/dev
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e47821df (.)
 # 🚀 Fase 4: Deployment
 
 ## 📋 Panoramica
@@ -90,6 +99,7 @@ Questa fase si concentra sul deployment e la distribuzione del sistema.
 aurmich/dev
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -120,6 +130,8 @@ aurmich/dev
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e47821df (.)
 # 🚀 Fase 4: Deployment
 
 ## 📋 Panoramica
@@ -155,6 +167,7 @@ Questa fase si concentra sul deployment e la distribuzione del sistema.
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (23 linee vs 1)[0m
  43df3e0 (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -194,3 +207,6 @@ aurmich/dev
 * [04_deployment.md](docs/roadmap/04_deployment.md)
 
 
+=======
+aurmich/dev
+>>>>>>> e47821df (.)

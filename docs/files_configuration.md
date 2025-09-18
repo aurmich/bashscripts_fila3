@@ -79,6 +79,7 @@ Per aggiungere nuovi pattern di esclusione, si consiglia di:
 - [Gestione dei Repository Git](/docs/bashscripts/gestione_git.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -820,3 +821,6 @@ Per aggiungere nuovi pattern di esclusione, si consiglia di:
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+- [Conflitti di Merge](/bashscripts/docs/CONFLICT_RESOLUTION_BASH.md) 
+>>>>>>> e47821df (.)

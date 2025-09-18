@@ -1,17 +1,27 @@
 #!/bin/bash
 
 source ./bashscripts/lib/custom.sh
+<<<<<<< HEAD
 
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     log "error" "Parametri errati"
     log "info" "Uso: $0 <path> <remote_repo> [branch]"
+=======
+# Validate input
+if [ $# -ne 2 ]; then
+    echo "Usage: $0 <path> <remote_repo>"
+>>>>>>> e47821df (.)
     exit 1
 fi
 
 LOCAL_PATH="$1"
 REMOTE_REPO="$2"
+<<<<<<< HEAD
 BRANCH="${3:-main}"  # Usa il terzo parametro se fornito, altrimenti "main"
+=======
+BRANCH="main"  # Default branch
+>>>>>>> e47821df (.)
 
 curr_dir=$(pwd)
 
@@ -23,6 +33,7 @@ cd "$LOCAL_PATH" || handle_error "Impossibile accedere a $LOCAL_PATH"
 log "info" "Inizializzazione repository locale"
 git init || handle_git_error "git init" "Impossibile inizializzare il repository"
 
+<<<<<<< HEAD
 # Configurazione git
 log "info" "Configurazione git"
 git_config_setup
@@ -30,6 +41,12 @@ git_config_setup
 # Creazione branch
 log "info" "Creazione branch $BRANCH"
 git checkout -b "$BRANCH" || handle_git_error "git checkout" "Impossibile creare il branch $BRANCH"
+=======
+# Creazione branch
+log "info" "Creazione branch $BRANCH"
+git checkout -b "$BRANCH" || handle_git_error "git checkout" "Impossibile creare il branch $BRANCH"
+git_config_setup
+>>>>>>> e47821df (.)
 
 # Configurazione remote
 log "info" "Configurazione remote origin"
@@ -46,6 +63,7 @@ git commit -m "Inizializzazione repository" || true  # Non fallire se non ci son
 
 # Merge con remote
 log "info" "Merge con remote"
+<<<<<<< HEAD
 git pull origin "$BRANCH" --autostash --rebase --allow-unrelated-histories --depth=1 || true
 
 # Gestione conflitti
@@ -73,6 +91,25 @@ while true; do
             git pull origin "$BRANCH" --autostash --rebase --allow-unrelated-histories --depth=1
         fi
     fi
+=======
+git merge origin/"$BRANCH" --allow-unrelated-histories || handle_git_error "git merge" "Impossibile eseguire merge con origin/$BRANCH"
+git pull origin "$BRANCH" --autostash --rebase --allow-unrelated-histories --depth=1
+
+while true; do
+  # Fai l'add, commit e push
+  git add -A
+  git commit -am "."
+  git push -f origin HEAD:"$BRANCH"
+  git rebase --continue
+   if [ $? -eq 0 ]; then
+    # Se il rebase è completato senza errori (no conflitti)
+    echo "Rebase completato con successo!"
+    break
+  else
+    # Se ci sono conflitti, continua a tentare
+    echo "Ci sono conflitti, continua il rebase..."
+  fi
+>>>>>>> e47821df (.)
 done
 
 # Pulizia

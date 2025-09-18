@@ -2,6 +2,7 @@
 
 
 
+<<<<<<< HEAD
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
  43df3e0 (.)
@@ -29,6 +30,11 @@ aurmich/dev
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+[0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
+ 43df3e0 (.)
+aurmich/dev
+>>>>>>> e47821df (.)
 # 🌐 Fase 8: Cloud Integration
 
 ## 📋 Panoramica
@@ -156,6 +162,7 @@ Questa fase si concentra sull'integrazione con i principali cloud provider per g
 - Monitoraggio continuo
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -186,6 +193,8 @@ Questa fase si concentra sull'integrazione con i principali cloud provider per g
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e47821df (.)
 # 🌐 Fase 8: Cloud Integration
 
 ## 📋 Panoramica
@@ -322,6 +331,7 @@ Questa fase si concentra sull'integrazione con i principali cloud provider per g
 aurmich/dev
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -352,6 +362,8 @@ aurmich/dev
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e47821df (.)
 # 🌐 Fase 8: Cloud Integration
 
 ## 📋 Panoramica
@@ -479,6 +491,7 @@ Questa fase si concentra sull'integrazione con i principali cloud provider per g
 - Monitoraggio continuo
 
  43df3e0 (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -511,6 +524,8 @@ Questa fase si concentra sull'integrazione con i principali cloud provider per g
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e47821df (.)
 aurmich/dev
 
 
@@ -1034,6 +1049,7 @@ Questa fase si concentra sull'integrazione con i principali cloud provider per g
  43df3e0 (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -1071,3 +1087,6 @@ aurmich/dev
 * [08_cloud_integration.md](docs/roadmap/08_cloud_integration.md)
 
 
+=======
+aurmich/dev
+>>>>>>> e47821df (.)

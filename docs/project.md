@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Project
 
 > **Nota**: Questo documento è correlato a [Progetto](../../docs/project.md). Per una panoramica completa, consulta entrambi i documenti.
@@ -189,6 +190,8 @@ Per ulteriori informazioni sulla gestione dei repository e l'utilizzo degli scri
 
 ## ⚠️ Note Importanti
 
+=======
+>>>>>>> e47821df (.)
 # 📚 Documentazione Dettagliata degli Script
 
 ## 🔄 Script di Sincronizzazione Git
@@ -238,6 +241,7 @@ Per ulteriori informazioni sulla gestione dei repository e l'utilizzo degli scri
 - Conservata la logica avanzata di identificazione e correzione dei file
 - Migliorata la compatibilità con la struttura Laravel standard
 aurmich/dev
+<<<<<<< HEAD
 **Descrizione**: Corregge e standardizza la struttura delle directory
 **Funzionalità**:
 - Verifica della struttura delle directory
@@ -245,6 +249,8 @@ aurmich/dev
 - Backup prima delle modifiche
 **Uso**: `./fix_directory_structure.sh <root_directory>`
 
+=======
+>>>>>>> e47821df (.)
 
 ### `resolve_git_conflict.sh`
 **Descrizione**: Risolve automaticamente i conflitti Git
@@ -390,7 +396,11 @@ aurmich/dev
 Per ulteriori informazioni sulla gestione dei repository e l'utilizzo degli script, consultare:
 - [Roadmap del Progetto](roadmap.md)
 - [Documentazione in Italiano](it/README.md)
+<<<<<<< HEAD
 - [Risoluzione dei Conflitti](conflict-resolution-bash.md)
+=======
+- [Risoluzione dei Conflitti](CONFLICT_RESOLUTION_BASH.md)
+>>>>>>> e47821df (.)
 
 ## ⚠️ Note Importanti
 
@@ -399,6 +409,7 @@ Per ulteriori informazioni sulla gestione dei repository e l'utilizzo degli scri
 - Verificare sempre le modifiche in ambiente di test
 - Mantenere aggiornata la documentazione
 
+<<<<<<< HEAD
 # Documentazione Progetto
 
 > **Nota**: Per informazioni aggiuntive sul progetto, consulta anche [Project Documentation in Docs](../../docs/project.md)
@@ -414,3 +425,7 @@ Per ulteriori informazioni sulla gestione dei repository e l'utilizzo degli scri
 - Verificare sempre le modifiche in ambiente di test
 - Mantenere aggiornata la documentazione
 
+=======
+ 43df3e0 (.)
+aurmich/dev
+>>>>>>> e47821df (.)

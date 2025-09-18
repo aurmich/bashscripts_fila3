@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 # 📄 Refactoring Regex Laravel Filament
 
@@ -82,17 +83,25 @@ public static function table\(Table \$table\): Table\s*\{[\s\S]*?\n\s*\}
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+
+>>>>>>> e47821df (.)
 
 
 public static function form\(Form \$form\): Form\s*\{\s*return \$form\s*->schema\(\[\s*([\s\S]*?)\s*\]\);\s*\}
 
 
 
+<<<<<<< HEAD
+=======
+aurmich/dev
+>>>>>>> e47821df (.)
 public static function form\(Form \$form\): Form\s*\{\s*return \$form\s*->schema\(\[\s*([\s\S]*?)\s*\]\);\s*\}
 
 
 
 public static function getFormSchema(): array
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -112,6 +121,8 @@ public static function getFormSchema(): array
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e47821df (.)
     {
         return [
             $1
@@ -122,11 +133,16 @@ public static function getFormSchema(): array
 
 
 public static function table\(Table \$table\): Table\s*\{[\s\S]*?\n\s*\}
+<<<<<<< HEAD
 ### Versione HEAD
 
 
 ### Versione Incoming
 
+=======
+
+
+>>>>>>> e47821df (.)
  0440c57 (.)
 
 public static function form\(Form \$form\): Form\s*\{\s*return \$form\s*->schema\(\[\s*([\s\S]*?)\s*\]\);\s*\}
@@ -149,6 +165,10 @@ public static function table\(Table \$table\): Table\s*\{[\s\S]*?\n\s*\}
 
 public static function table\(Table \$table\): Table\s*\{[\s\S]*?\n\s*\}
 
+<<<<<<< HEAD
+=======
+aurmich/dev
+>>>>>>> e47821df (.)
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco HEAD (16 linee vs 1)[0m
 
  cb513be (.)
@@ -171,6 +191,7 @@ public static function table\(Table \$table\): Table\s*\{[\s\S]*?\n\s*\}
 
 [0;34mℹ️ [2025-04-22 11:23:28] Scelto blocco incoming (1 linee vs 1)[0m
 
+<<<<<<< HEAD
 ---
 
 <<<<<<< HEAD
@@ -192,6 +213,9 @@ public static function table\(Table \$table\): Table\s*\{[\s\S]*?\n\s*\}
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+
+>>>>>>> e47821df (.)
 
  cb513be (.)
  43df3e0 (.)
@@ -199,6 +223,7 @@ public static function table\(Table \$table\): Table\s*\{[\s\S]*?\n\s*\}
 
  cb513be (.)
  0440c57 (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -218,3 +243,6 @@ public static function table\(Table \$table\): Table\s*\{[\s\S]*?\n\s*\}
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+aurmich/dev
+>>>>>>> e47821df (.)

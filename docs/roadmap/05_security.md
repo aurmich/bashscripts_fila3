@@ -9,6 +9,7 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -512,6 +513,8 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e47821df (.)
 # 🛡️ Fase 5: Sicurezza
 
 ## 📋 Panoramica
@@ -520,6 +523,7 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -550,6 +554,8 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e47821df (.)
 ## 🎯 Funzionalità Future
 
 ### 1. Verifica Dipendenze
@@ -675,6 +681,7 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 aurmich/dev
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -705,6 +712,8 @@ aurmich/dev
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e47821df (.)
 # 🛡️ Fase 5: Sicurezza
 
 ## 📋 Panoramica
@@ -832,6 +841,7 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 - Monitoraggio continuo
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -862,6 +872,8 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e47821df (.)
 # 🛡️ Fase 5: Sicurezza
 
 ## 📋 Panoramica
@@ -989,6 +1001,7 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 - Monitoraggio continuo
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -1019,6 +1032,8 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e47821df (.)
 # 🛡️ Fase 5: Sicurezza
 
 ## 📋 Panoramica
@@ -1028,10 +1043,13 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (130 linee vs 1)[0m
 
 aurmich/dev
+<<<<<<< HEAD
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (130 linee vs 1)[0m
 
 
+=======
+>>>>>>> e47821df (.)
 ## 🎯 Funzionalità Future
 
 ### 1. Verifica Dipendenze
@@ -1041,12 +1059,18 @@ aurmich/dev
 - Aggiornamento sicuro
 - Notifiche tempestive
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 - Analisi impatto
 - Gestione patch
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (3 linee vs 1)[0m
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 aurmich/dev
 
 ### 2. Scansione Vulnerabilità
@@ -1056,12 +1080,18 @@ aurmich/dev
 - Identificazione rischi
 - Report dettagliati
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 - Prioritizzazione
 - Monitoraggio continuo
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (3 linee vs 1)[0m
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 aurmich/dev
 
 ### 3. Gestione Chiavi SSH
@@ -1071,12 +1101,18 @@ aurmich/dev
 - Monitoraggio utilizzo
 - Revoca sicura
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 - Audit accessi
 - Backup chiavi
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (3 linee vs 1)[0m
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 aurmich/dev
 
 ### 4. Audit Permessi
@@ -1086,12 +1122,18 @@ aurmich/dev
 - Gestione ruoli
 - Log dettagliato
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 - Analisi comportamenti
 - Alerting anomalie
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (3 linee vs 1)[0m
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 aurmich/dev
 
 ## 📝 Piano di Implementazione
@@ -1102,12 +1144,18 @@ aurmich/dev
    - Definizione policy
    - Progettazione architettura
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
    - Valutazione rischi
    - Pianificazione mitigazione
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (3 linee vs 1)[0m
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 aurmich/dev
 
 2. **Sviluppo**
@@ -1115,12 +1163,18 @@ aurmich/dev
    - Integrazione con sistemi esistenti
    - Test di sicurezza
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
    - Documentazione
    - Training team
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (3 linee vs 1)[0m
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 aurmich/dev
 
 3. **Validazione**
@@ -1128,12 +1182,18 @@ aurmich/dev
    - Security audit
    - Ottimizzazione
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
    - Report dettagliati
    - Piano miglioramento
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (3 linee vs 1)[0m
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 aurmich/dev
 
 ### Fase 5.2: Monitoraggio Avanzato
@@ -1142,12 +1202,18 @@ aurmich/dev
    - Definizione metriche
    - Setup alert
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
    - Integrazione sistemi
    - Test configurazione
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (3 linee vs 1)[0m
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 aurmich/dev
 
 2. **Implementazione**
@@ -1155,12 +1221,18 @@ aurmich/dev
    - Integrazione log
    - Test sistema
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
    - Ottimizzazione
    - Documentazione
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (3 linee vs 1)[0m
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 aurmich/dev
 
 3. **Deployment**
@@ -1168,12 +1240,18 @@ aurmich/dev
    - Training team
    - Documentazione
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
    - Supporto
    - Monitoraggio
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (3 linee vs 1)[0m
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 aurmich/dev
 
 ## 📈 Metriche di Successo
@@ -1183,12 +1261,18 @@ aurmich/dev
 - [ ] 100% compliance standard
 - [ ] Tempo di risposta < 1h
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 - [ ] 99.9% uptime sicurezza
 - [ ] 0 incidenti gravi
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (3 linee vs 1)[0m
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 aurmich/dev
 
 ### KPI
@@ -1196,12 +1280,18 @@ aurmich/dev
 - Tempo medio di risposta
 - Tasso di successo patch
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 - Tempo di ripristino
 - Tasso di falsi positivi
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (3 linee vs 1)[0m
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 aurmich/dev
 
 ## 🛠️ Strumenti Necessari
@@ -1211,12 +1301,18 @@ aurmich/dev
 - Tool di analisi
 - Sistema di monitoraggio
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 - Penetration testing
 - Security audit
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (3 linee vs 1)[0m
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 aurmich/dev
 
 ### Monitoraggio
@@ -1224,12 +1320,18 @@ aurmich/dev
 - IDS/IPS
 - Log management
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 - Alert system
 - Dashboard real-time
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (3 linee vs 1)[0m
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 aurmich/dev
 
 ### Altri
@@ -1237,12 +1339,18 @@ aurmich/dev
 - Tool di audit
 - Piattaforma di training
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 - Documentazione
 - Supporto tecnico
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (3 linee vs 1)[0m
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 aurmich/dev
 
 ## 🔄 Collegamenti
@@ -1259,12 +1367,18 @@ aurmich/dev
 - Analisi requisiti
 - Progettazione
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 - Setup ambiente
 - Training iniziale
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (3 linee vs 1)[0m
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 aurmich/dev
 
 ### Q2 2025
@@ -1272,12 +1386,18 @@ aurmich/dev
 - Test iniziali
 - Documentazione
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 - Integrazione
 - Validazione
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (3 linee vs 1)[0m
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 aurmich/dev
 
 ### Q3 2025
@@ -1285,19 +1405,28 @@ aurmich/dev
 - Training team
 - Ottimizzazione
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 - Monitoraggio
 - Feedback
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (3 linee vs 1)[0m
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 aurmich/dev
 
 ### Q4 2025
 - Deployment produzione
 - Monitoraggio continuo
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 - Supporto
 - Manutenzione
 - Scalabilità 
@@ -1305,6 +1434,7 @@ aurmich/dev
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (4 linee vs 1)[0m
 - Aggiornamenti 
  43df3e0 (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1344,3 +1474,6 @@ aurmich/dev
 * [05_security.md](docs/roadmap/05_security.md)
 
 
+=======
+aurmich/dev
+>>>>>>> e47821df (.)

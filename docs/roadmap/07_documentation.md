@@ -2,6 +2,7 @@
 
 
 
+<<<<<<< HEAD
 
 [0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
  43df3e0 (.)
@@ -210,11 +211,21 @@ Questa fase si concentra sulla documentazione completa del sistema, garantendo u
 - Image editor
 - Diagram tools
 - Translation tools
+=======
+[0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
+ 43df3e0 (.)
+aurmich/dev
+# 📚 Fase 7: Documentazione
+
+## 📋 Panoramica
+Questa fase si concentra sulla documentazione completa del sistema.
+>>>>>>> e47821df (.)
 
 ## 🔄 Collegamenti
 - [Roadmap Principale](../roadmap.md)
 - [Documentazione Script](../project.md)
 - [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -339,6 +350,8 @@ Questa fase si concentra sulla documentazione completa del sistema, garantendo u
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e47821df (.)
 
 
 - [Fase 8: Manutenzione](../roadmap/08_maintenance.md) 
@@ -392,6 +405,7 @@ Questa fase si concentra sulla documentazione completa del sistema.
 
 [0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco HEAD (23 linee vs 1)[0m
  43df3e0 (.)
+<<<<<<< HEAD
 
 aurmich/dev
 
@@ -619,3 +633,6 @@ aurmich/dev
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+aurmich/dev
+>>>>>>> e47821df (.)

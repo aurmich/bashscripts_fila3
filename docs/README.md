@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### Versione HEAD
 
 ### Versione HEAD
@@ -305,6 +306,167 @@ Questo progetto è sotto licenza MIT. Vedere il file [LICENSE](LICENSE) per i de
 ---
 
 
+=======
+# 🚀 Toolkit di Automazione Git per Laraxot PTVX
+
+[![PHPStan](https://img.shields.io/badge/PHPStan-Level%209-brightgreen.svg?style=for-the-badge&logo=php&logoColor=white)](../docs/phpstan/ANALISI_MODULI_PHPSTAN.md)
+[![Bash Version](https://img.shields.io/badge/Bash-5.0%2B-brightgreen.svg)](https://www.gnu.org/software/bash/)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/aurmich/bashscripts_fila3)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/odb/official-bash-logo/master/assets/Logos/Icons/PNG/512x512.png" width="200" alt="Bash Logo"/>
+  <br/>
+  <strong>Potenti script Bash per la gestione avanzata dei subtree Git 🌳</strong>
+</div>
+
+## 🌟 Caratteristiche Principali
+
+- 🔄 **Sincronizzazione Automatica** dei subtree Git
+- 🛡️ **Gestione Robusta degli Errori**
+- 🔍 **Logging Dettagliato**
+- 🚦 **Controlli di Sicurezza** integrati
+- 🔧 **Manutenzione Semplificata**
+
+## 📚 Indice
+
+- [Installazione](#-installazione)
+- [Utilizzo](#-utilizzo)
+- [Script Disponibili](#-script-disponibili)
+- [Esempi](#-esempi)
+- [Risoluzione Problemi](#-risoluzione-problemi)
+- [Contribuire](#-contribuire)
+
+## 💻 Installazione
+
+```bash
+# Clona il repository
+git clone git@github.com:aurmich/bashscripts_fila3.git
+
+# Rendi gli script eseguibili
+chmod +x *.sh
+```
+
+## 🚀 Utilizzo
+
+### Sincronizzazione Subtree
+```bash
+./git_sync_subtree.sh <path> <remote_repo>
+```
+
+Esempio:
+```bash
+./git_sync_subtree.sh modules/auth git@github.com:user/auth-module.git
+```
+
+## 📜 Script Disponibili
+
+### 1. git_sync_subtree.sh
+> 🎯 Script principale per la sincronizzazione dei subtree
+
+**Caratteristiche:**
+- Gestione automatica di push e pull
+- Rimozione caratteri CR (^M)
+- Gestione permessi automatica
+
+### 2. git_push_subtree.sh
+> 🔼 Gestisce le operazioni di push
+
+**Funzionalità:**
+- Push intelligente con fallback
+- Gestione branch temporanei
+- Rebase automatico
+
+### 3. git_pull_subtree.sh
+> 🔽 Gestisce le operazioni di pull
+
+**Caratteristiche:**
+- Pull con squash opzionale
+- Gestione conflitti automatica
+- Merge strategy personalizzabile
+
+## 🎯 Esempi
+
+### Sincronizzazione Modulo
+```bash
+# Sincronizza un modulo specifico
+./git_sync_subtree.sh modules/users git@github.com:org/users.git
+
+# Sincronizza con branch specifico
+REMOTE_BRANCH=develop ./git_sync_subtree.sh modules/auth git@github.com:org/auth.git
+```
+
+## ⚠️ Risoluzione Problemi
+
+### Errori Comuni
+
+1. **Prefix Option Mancante**
+   ```bash
+   fatal: you must provide the --prefix option
+   ```
+   ✅ **Soluzione:** Verifica il path del subtree
+
+2. **Push Rejected**
+   ```bash
+   ! [rejected] dev -> dev (non-fast-forward)
+   ```
+   ✅ **Soluzione:** Esegui prima un pull
+
+## 🛠️ Best Practices
+
+1. **Prima dell'Esecuzione**
+   - ✔️ Commit/stash delle modifiche pendenti
+   - ✔️ Verifica branch corrente
+   - ✔️ Controllo stato repository
+
+2. **Durante l'Esecuzione**
+   - 👀 Monitora l'output
+   - ⏳ Non interrompere gli script
+   - 📝 Controlla i log
+
+## 🤝 Contribuire
+
+Le contribuzioni sono sempre benvenute! Ecco come puoi aiutare:
+
+1. 🍴 Forka il repository
+2. 🔧 Crea un branch per le tue modifiche
+3. 💻 Committa le tue migliorie
+4. 📤 Pusha al branch
+5. 🔄 Apri una Pull Request
+
+## 📝 Note sulla Manutenzione
+
+- 🔄 Aggiornamenti regolari
+- 🐛 Fix bug tempestivi
+- 📚 Documentazione sempre aggiornata
+
+## 📜 Licenza
+
+Questo progetto è sotto licenza MIT - vedi il file [LICENSE](LICENSE) per i dettagli.
+
+## 👥 Autori
+
+- **Marco Sottana** - *Lavoro Iniziale* - [aurmich](https://github.com/aurmich)
+
+## 🙏 Ringraziamenti
+
+- 🌟 Tutti i contributori
+- 📚 La comunità Git
+- 🔧 Gli utenti che segnalano bug
+
+---
+
+> **Nota**: Questo README è in continuo aggiornamento. Se trovi errori o hai suggerimenti, apri pure una issue!
+
+<div align="center">
+  <sub>Built with ❤️ by the development team</sub>
+</div>
+
+aurmich/dev
+# 🚀 Git Automation Toolkit
+
+>>>>>>> e47821df (.)
 [![PHPStan](https://img.shields.io/badge/PHPStan-Level%209-brightgreen.svg?style=for-the-badge&logo=php&logoColor=white)](docs/phpstan/ANALISI_MODULI_PHPSTAN.md)
 
 ## System Requirements
@@ -358,6 +520,7 @@ php artisan migrate
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -388,6 +551,8 @@ php artisan migrate
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e47821df (.)
 # Install Laravel Modules
 composer require nwidart/laravel-modules
 
@@ -465,6 +630,7 @@ Complete documentation is available in the `docs/` directory:
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -495,6 +661,8 @@ Complete documentation is available in the `docs/` directory:
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e47821df (.)
 # Create a new module
 php artisan module:make ModuleName
 
@@ -527,6 +695,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 > **⚠️ WARNING: This toolkit is designed for experienced developers working with complex Git repositories and monorepo structures.**
 
+<<<<<<< HEAD
 ## 📋 Overview
 
 This toolkit is a comprehensive suite of Bash scripts designed to automate and simplify the management of complex Git repositories, with a focus on monorepo structures and synchronization between organizations. It was developed to optimize the workflow of developers and reduce human errors in complex Git operations.
@@ -825,13 +994,38 @@ Per dettagli e policy aggiornate consulta anche [docs/scripts.md](../docs/script
 
 ## Struttura
 La documentazione completa della struttura è disponibile in [docs/structure.md](docs/structure.md).
+=======
+## 🤔 Why this toolkit?
+
+Developing a complex modular project presents unique challenges:
+
+- **Managing dozens of interdependent modules** that need to stay synchronized
+- **Collaboration needs** between teams distributed across different repositories
+- **Maintaining code consistency** across multiple branches and organizations
+- **Reducing the risk of manual errors** in complex Git operations
+- **Automating repetitive processes** to increase productivity
+- **Support for static analysis** with PHPStan Level 9
+
+This toolkit addresses these challenges by providing automated tools that simplify workflow and ensure consistency and quality.
+
+## Translations
+- [Italiano](docs/README.it.md)
+- [Español](docs/README.es.md)
+
+# Script Bash di SaluteOra
+
+## Struttura degli Script
+>>>>>>> e47821df (.)
 
 ```
 bashscripts/
 ├── git/              # Script per la gestione Git
+<<<<<<< HEAD
 │   ├── subtrees/     # Gestione subtrees
 │   ├── submodules/   # Gestione submodules
 │   └── maintenance/  # Manutenzione repository
+=======
+>>>>>>> e47821df (.)
 ├── setup/           # Script di configurazione e setup
 ├── maintenance/     # Script di manutenzione
 ├── utils/           # Utility varie
@@ -839,7 +1033,11 @@ bashscripts/
 └── testing/         # Script per i test
 ```
 
+<<<<<<< HEAD
 ## Categorie
+=======
+## Categorie degli Script
+>>>>>>> e47821df (.)
 
 ### 1. Git (`git/`)
 Script per la gestione di Git, inclusi:
@@ -886,6 +1084,7 @@ Script per i test:
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -916,6 +1115,8 @@ Script per i test:
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e47821df (.)
 # Rendere lo script eseguibile
 chmod +x script.sh
 
@@ -951,6 +1152,7 @@ chmod +x script.sh
 - Gestire gli errori
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Documentazione <nome progetto>](/docs/README.md)
 - [Mappa Documentazione](/docs/collegamenti-documentazione.md)
 - [Script Git](/docs/git.md)
@@ -983,3 +1185,12 @@ This toolkit addresses these challenges by providing automated tools that simpli
 
 
 ```
+=======
+
+- [Documentazione Git](git/README.md)
+- [Documentazione Setup](setup/README.md)
+- [Documentazione Maintenance](maintenance/README.md)
+- [Documentazione Utils](utils/README.md)
+- [Documentazione Backup](backup/README.md)
+- [Documentazione Testing](testing/README.md)
+>>>>>>> e47821df (.)

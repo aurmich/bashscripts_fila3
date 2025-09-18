@@ -5,11 +5,18 @@ source ./bashscripts/lib/custom.sh
 source ./bashscripts/lib/parse_gitmodules_ini.sh
 
 # Validate input
+<<<<<<< HEAD
 #if [ $# -ne 1 ]; then
 #    echo "Usage: $0 <org>"
     #echo "Esempio: $0 laraxot"
     #exit 1
 #fi
+=======
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 <org>"
+    exit 1
+fi
+>>>>>>> e47821df (.)
 
 # Chiama la funzione
 parse_gitmodules gitmodules.ini
@@ -29,25 +36,37 @@ total=${submodules_array["total"]}
 for ((i=0; i<total; i++)); do
     path=${submodules_array["path_${i}"]}
     url=${submodules_array["url_${i}"]}
+<<<<<<< HEAD
     origin="origin"
     if [ -n "$ORG" ]; then
         url=$(rewrite_url "$url" "$ORG")
         origin="$ORG"
     fi
+=======
+    url=$(rewrite_url "$url" "$ORG")
+>>>>>>> e47821df (.)
     # Verifica se l'URL è già presente come remote
     #if ! git remote -v | grep -q "$url"; then
     #    echo "Aggiungendo remote per $path..."
     #    git remote add "$ORG" "$url"
     #fi
+<<<<<<< HEAD
     echo "Submodule $i: 📂 path: $path 🌐 URL: $url 🔑 ORG: $origin"
     cd "$path"
     
+=======
+    echo "Submodule $i: 📂 path: $path 🌐 URL: $url 🔑 ORG: $ORG"
+    cd "$path"
+>>>>>>> e47821df (.)
     # Controllo se .git è un file e non una directory
     if [ -f ".git" ]; then
         echo "Trovato .git come file in $path, lo elimino..."
         rm -f .git
     fi
+<<<<<<< HEAD
     
+=======
+>>>>>>> e47821df (.)
     # Verifica se .git esiste prima di inizializzare
     if [ ! -d ".git" ]; then
         echo "Inizializzazione repository Git in $path..."
@@ -55,6 +74,7 @@ for ((i=0; i<total; i++)); do
     else
         echo "Repository Git già inizializzato in $path"
     fi
+<<<<<<< HEAD
     echo "🌐 URL: $url"
     git config --global --add safe.directory "$curr_dir/$path"
     git checkout "$BRANCH" -- || git checkout -b "$BRANCH"
@@ -69,6 +89,20 @@ for ((i=0; i<total; i++)); do
     git merge "$origin/$BRANCH" --allow-unrelated-histories
 
     # Loop per gestire eventuali conflitti
+=======
+
+    git config --global --add safe.directory "$curr_dir/$path"
+    git checkout "$BRANCH" -- || git checkout -b "$BRANCH"
+    git remote add "$ORG" "$url"
+    git_config_setup
+    dummy_push "$ORG" "$BRANCH" "."
+
+    git fetch "$ORG" "$BRANCH" --depth=1
+    git pull "$ORG" "$BRANCH" --autostash  --depth=1
+    git merge "$ORG/$BRANCH" --allow-unrelated-histories
+
+     # Loop per gestire eventuali conflitti
+>>>>>>> e47821df (.)
     while ! git rebase --continue 2>/dev/null; do
         if git diff --name-only --diff-filter=U | grep .; then
             echo "⚠️  Conflitti trovati. Li sistemiamo in automatico (accettando i tuoi cambiamenti)..."
@@ -76,11 +110,19 @@ for ((i=0; i<total; i++)); do
             echo "✅ Nessun conflitto o già risolto"
             break
         fi
+<<<<<<< HEAD
         dummy_push "$origin" "$BRANCH" "."
     done
     #git stash apply || echo "🔄 Non ci sono modifiche da ripristinare"
     # Push finale
     dummy_push "$origin" "$BRANCH" "."
+=======
+        dummy_push "$ORG" "$BRANCH" "."
+    done
+
+    # Push finale
+    dummy_push "$ORG" "$BRANCH" "."
+>>>>>>> e47821df (.)
 
     cd "$curr_dir"
 done

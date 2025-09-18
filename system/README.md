@@ -48,7 +48,10 @@ system/
 
 ### Comandi Comuni
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 # Monitoraggio sistema
 ./monitoring/check_resources.sh
 

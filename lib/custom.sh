@@ -7,7 +7,11 @@ YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
 NC='\033[0m'
 
+<<<<<<< HEAD
 # LOG_FILE="subtree_sync.log"  # Rimosso: non si scrive più su file
+=======
+LOG_FILE="subtree_sync.log"
+>>>>>>> e47821df (.)
 BRANCH=$(git symbolic-ref --short HEAD 2>/dev/null || echo "main")
 
 # Funzione avanzata per loggare messaggi
@@ -18,18 +22,32 @@ log() {
         local level="$1"
         local message="$2"
         local timestamp=$(date '+%Y-%m-%d %H:%M:%S')
+<<<<<<< HEAD
         case "$level" in
             "error") echo -e "${RED}❌ [$timestamp] $message${NC}" ;;
             "success") echo -e "${GREEN}✅ [$timestamp] $message${NC}" ;;
             "warning") echo -e "${YELLOW}⚠️ [$timestamp] $message${NC}" ;;
             "info") echo -e "${BLUE}ℹ️ [$timestamp] $message${NC}" ;;
             *) echo -e "[$timestamp] $message" ;;
+=======
+
+        case "$level" in
+            "error") echo -e "${RED}❌ [$timestamp] $message${NC}" | tee -a "$LOG_FILE" ;;
+            "success") echo -e "${GREEN}✅ [$timestamp] $message${NC}" | tee -a "$LOG_FILE" ;;
+            "warning") echo -e "${YELLOW}⚠️ [$timestamp] $message${NC}" | tee -a "$LOG_FILE" ;;
+            "info") echo -e "${BLUE}ℹ️ [$timestamp] $message${NC}" | tee -a "$LOG_FILE" ;;
+            *) echo -e "[$timestamp] $message" | tee -a "$LOG_FILE" ;;
+>>>>>>> e47821df (.)
         esac
     else
         # Formato semplice: log "message"
         local message="$1"
         local timestamp=$(date '+%Y-%m-%d %H:%M:%S')
+<<<<<<< HEAD
         echo "📆 $timestamp - $message"
+=======
+        echo "📆 $timestamp - $message" | tee -a "$LOG_FILE"
+>>>>>>> e47821df (.)
     fi
 }
 
@@ -148,6 +166,7 @@ backup_disk() {
     echo "  💾 Backup Disk: $DISK_LETTER"
 }
 
+<<<<<<< HEAD
 restore_disk() {
     # Richiesta interattiva della lettera del disco
     read -p "📀 Inserisci la lettera del disco da cui ripristinare [d]: " DISK_LETTER
@@ -202,6 +221,19 @@ restore_disk() {
     fi
 
     log "success" "Ripristino completato con successo"
+=======
+
+# Funzione per configurare le impostazioni git
+git_config_setup() {
+    log "🔧 Configurazione git di base..."
+    git config core.ignorecase false        # Gestione case-sensitive dei file
+    git config core.fileMode false          # Ignora i permessi dei file
+    git config core.autocrlf false          # Non convertire automaticamente i line endings
+    git config core.eol lf                  # Usa LF come line ending di default
+    git config core.symlinks false          # Gestione symlinks disabilitata per Windows
+    git config core.longpaths true          # Supporto per path lunghi su Windows
+    log "✅ Configurazione git completata"
+>>>>>>> e47821df (.)
 }
 
 git_delete_history() {

@@ -2,6 +2,7 @@
 
 
 
+<<<<<<< HEAD
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
  43df3e0 (.)
@@ -29,6 +30,11 @@ aurmich/dev
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+[0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
+ 43df3e0 (.)
+aurmich/dev
+>>>>>>> e47821df (.)
 # 📱 Fase 9: UI/UX
 
 ## 📋 Panoramica
@@ -160,6 +166,7 @@ aurmich/dev
 - Monitoraggio utilizzo
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -190,6 +197,8 @@ aurmich/dev
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e47821df (.)
 # 📱 Fase 9: UI/UX
 
 ## 📋 Panoramica
@@ -320,6 +329,7 @@ Questa fase si concentra sullo sviluppo di interfacce utente moderne e intuitive
 aurmich/dev
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -350,6 +360,8 @@ aurmich/dev
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e47821df (.)
 # 📱 Fase 9: UI/UX
 
 ## 📋 Panoramica
@@ -732,6 +744,7 @@ Questa fase si concentra sullo sviluppo di interfacce utente moderne e intuitive
  43df3e0 (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -769,3 +782,6 @@ aurmich/dev
 * [09_ui_ux.md](docs/roadmap/09_ui_ux.md)
 
 
+=======
+aurmich/dev
+>>>>>>> e47821df (.)

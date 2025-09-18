@@ -29,7 +29,10 @@ Assiste nello sviluppo con:
 ## Utilizzo
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 # Verifica sistema
 ./check_system.sh
 

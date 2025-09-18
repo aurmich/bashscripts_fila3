@@ -20,6 +20,40 @@ Il sistema di gestione dei subtree è composto da tre componenti principali:
   2. Pull subtree
 
 ### 2. Push Script (`git_push_subtree.sh`)
+<<<<<<< HEAD
+=======
+
+
+```bash
+# 1. Inizializzazione
+git init
+git checkout -b "$BRANCH"
+
+# 2. Configurazione remoto
+git remote add origin "$REMOTE_REPO"
+git fetch --all
+
+# 3. Commit e push
+git add -A
+git commit -am "🔧 Aggiornamento subtree"
+git merge origin/"$BRANCH" --allow-unrelated-histories
+git push -u origin "$BRANCH"
+```
+
+### 3. Pull Script (`git_pull_subtree.sh`)
+```bash
+# 1. Pull standard
+git subtree pull -P "$LOCAL_PATH" "$REMOTE_REPO" "$BRANCH" --squash
+
+# 2. Fallback 1
+git subtree pull -P "$LOCAL_PATH" "$REMOTE_REPO" "$BRANCH"
+
+# 3. Fallback 2
+git fetch "$REMOTE_REPO" "$BRANCH" --depth=1
+git merge -s subtree FETCH_HEAD --allow-unrelated-histories
+
+aurmich/dev
+>>>>>>> e47821df (.)
 Esegue una sequenza complessa di operazioni:
 ```bash
 1. git add -A && git commit -am "."
@@ -42,6 +76,12 @@ Esegue una sequenza con fallback:
    - git fetch $REMOTE_REPO $REMOTE_BRANCH --depth=1
    - git merge -s subtree FETCH_HEAD --allow-unrelated-histories
 4. git rebase --rebase-merges --strategy subtree $REMOTE_BRANCH
+<<<<<<< HEAD
+=======
+
+ 43df3e0 (.)
+aurmich/dev
+>>>>>>> e47821df (.)
 ```
 
 ## 🚨 Analisi Errori Comuni
@@ -55,6 +95,7 @@ fatal: you must provide the --prefix option
 
 **Soluzione**:
 ```bash
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -87,6 +128,8 @@ fatal: you must provide the --prefix option
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e47821df (.)
 # Verifica variabili
 if [ -z "$LOCAL_PATH" ] || [ -z "$REMOTE_REPO" ]; then
     echo "❌ Error: Missing required variables"
@@ -99,6 +142,87 @@ fi
 ! [rejected] dev -> dev (non-fast-forward)
 ```
 
+<<<<<<< HEAD
+=======
+
+
+**Causa**: Divergenze tra repository locale e remoto
+
+**Soluzione**:
+```bash
+# Aggiorna repository locale
+git fetch origin "$BRANCH"
+git merge origin/"$BRANCH" --allow-unrelated-histories
+
+# Riprova push
+if ! git push -u origin "$BRANCH"; then
+    git pull --rebase origin "$BRANCH"
+    git push -u origin "$BRANCH"
+fi
+```
+
+## 🛠️ Best Practices
+
+### 1. Prima dell'Esecuzione
+- ✔️ Commit/stash delle modifiche pendenti
+- ✔️ Verifica branch corrente
+- ✔️ Controllo stato repository
+
+### 2. Durante l'Esecuzione
+- 👀 Monitora l'output
+- ⏳ Non interrompere gli script
+- 📝 Controlla i log
+
+### 3. Dopo l'Esecuzione
+- 🔍 Verifica stato subtree
+- 📊 Controlla storia commit
+- 🔄 Verifica sincronizzazione
+
+## 📝 Note sulla Manutenzione
+
+1. **Strategia Push**:
+   - Utilizzo di `--force` push in casi specifici
+   - Rebase per storia pulita
+   - Meccanismi di fallback per pull
+
+2. **Gestione Errori**:
+   - Logging dettagliato
+   - Verifica permessi
+   - Controlli pre-esecuzione
+
+## 🔍 Suggerimenti per il Debugging
+
+1. **Debug Verbose**:
+   ```bash
+   set -x  # Attiva debug verbose
+   ```
+
+2. **Logging Dettagliato**:
+   ```bash
+   log() {
+       echo "[$(date +'%Y-%m-%d %H:%M:%S')] $1"
+   }
+   ```
+
+3. **Verifica Permessi**:
+   ```bash
+   chmod +x *.sh
+   ```
+
+## 📚 Documentazione Aggiuntiva
+
+- [Git Subtree Documentation](https://git-scm.com/book/en/v2/Git-Tools-Advanced-Merging)
+- [Git Subtree Tutorial](https://www.atlassian.com/git/tutorials/git-subtree)
+- [Git Subtree vs Submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+
+---
+
+<div align="center">
+  <sub>Built with ❤️ by the development team</sub>
+</div>
+
+aurmich/dev
+>>>>>>> e47821df (.)
 **Causa**: Questo errore si verifica nella sequenza di push quando ci sono divergenze tra il repository locale e remoto.
 
 **Soluzione**:
@@ -144,3 +268,9 @@ fi
 1. Aggiungere `set -x` all'inizio degli script per debug verbose
 2. Implementare logging più dettagliato
 3. Verificare i permessi degli script
+<<<<<<< HEAD
+=======
+
+ 43df3e0 (.)
+aurmich/dev
+>>>>>>> e47821df (.)

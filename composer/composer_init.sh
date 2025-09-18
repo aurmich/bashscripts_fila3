@@ -12,6 +12,7 @@ rm package-lock.json
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
 =======
@@ -77,12 +78,18 @@ php -d memory_limit=-1 composer.phar require -W illuminate/contracts
 >>>>>>> 4f97354 (.)
 =======
 >>>>>>> 829c80f (.)
+=======
+#mv composer.json composer_$(date +"%Y-%m-%d").json
+#php composer.phar init
+
+>>>>>>> e47821df (.)
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs filament/filament
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs coolsam/modules
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs nwidart/laravel-modules
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs doctrine/dbal
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs livewire/livewire
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs livewire/volt
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -131,6 +138,9 @@ php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs livewire/
 ### SPATIE
 >>>>>>> e0c964a3 (first)
 >>>>>>> 829c80f (.)
+=======
+### SPATIE
+>>>>>>> e47821df (.)
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs filament/spatie-laravel-tags-plugin
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs filament/spatie-laravel-media-library-plugin
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs filament/spatie-laravel-translatable-plugin
@@ -157,6 +167,7 @@ php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs spatie/co
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
 =======
@@ -199,6 +210,9 @@ php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs spatie/co
 ### USER 
 >>>>>>> e0c964a3 (first)
 >>>>>>> 829c80f (.)
+=======
+### USER 
+>>>>>>> e47821df (.)
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs jenssegers/agent
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs laravel/passport
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs socialiteproviders/auth0
@@ -210,6 +224,7 @@ php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs tightenco
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 829c80f (.)
 =======
@@ -223,6 +238,8 @@ php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs tightenco
 >>>>>>> 4f97354 (.)
 =======
 >>>>>>> 829c80f (.)
+=======
+>>>>>>> e47821df (.)
 ### NOTIFY
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs kreait/firebase-php
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs laravel-notification-channels/telegram
@@ -233,6 +250,7 @@ php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs intervent
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs spatie/image
 ### PROFILE 
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs tightenco/parental
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -327,6 +345,9 @@ php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs tightenco
 ### UI
 >>>>>>> e0c964a3 (first)
 >>>>>>> 829c80f (.)
+=======
+### UI
+>>>>>>> e47821df (.)
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs mhmiton/laravel-modules-livewire
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs laravel/breeze
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs owenvoke/blade-fontawesome
@@ -342,6 +363,7 @@ php artisan volt:install
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 829c80f (.)
 =======
@@ -355,12 +377,15 @@ php artisan volt:install
 >>>>>>> 4f97354 (.)
 =======
 >>>>>>> 829c80f (.)
+=======
+>>>>>>> e47821df (.)
 #php -d memory_limit=-1 composer.phar require -W guava/filament-icon-picker
 ## IMPORT/EXPORT
 #php -d memory_limit=-1 composer.phar require -W konnco/filament-import
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs spipu/html2pdf
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs maatwebsite/excel
 ####
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -430,6 +455,8 @@ php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs maatwebsi
 =======
 >>>>>>> e0c964a3 (first)
 >>>>>>> 829c80f (.)
+=======
+>>>>>>> e47821df (.)
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs thecodingmachine/safe
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs symfony/dom-crawler
 php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs flowframe/laravel-trend
@@ -444,6 +471,7 @@ php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs predis/pr
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f97354 (.)
 =======
@@ -484,6 +512,9 @@ php -d memory_limit=-1 composer.phar require -W --ignore-platform-reqs predis/pr
 ### DEV
 >>>>>>> e0c964a3 (first)
 >>>>>>> 829c80f (.)
+=======
+### DEV
+>>>>>>> e47821df (.)
 php -d memory_limit=-1 composer.phar require -W --dev --ignore-platform-reqs barryvdh/laravel-debugbar
 php -d memory_limit=-1 composer.phar require -W --dev --ignore-platform-reqs barryvdh/laravel-ide-helper
 php -d memory_limit=-1 composer.phar require -W --dev --ignore-platform-reqs thecodingmachine/phpstan-safe-rule
@@ -498,6 +529,7 @@ php -d memory_limit=-1 composer.phar require -W --dev --ignore-platform-reqs pes
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 829c80f (.)
 =======
@@ -511,10 +543,13 @@ php -d memory_limit=-1 composer.phar require -W --dev --ignore-platform-reqs pes
 >>>>>>> 4f97354 (.)
 =======
 >>>>>>> 829c80f (.)
+=======
+>>>>>>> e47821df (.)
 
 ### REMOVE
 php -d memory_limit=-1 composer.phar remove laravel/sanctum
 rm config/sanctum.php 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -596,3 +631,5 @@ rm config/sanctum.php
 =======
 >>>>>>> e0c964a3 (first)
 >>>>>>> 829c80f (.)
+=======
+>>>>>>> e47821df (.)

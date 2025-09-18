@@ -25,6 +25,7 @@ php bashscripts/check_form_schema.php
 ```
 
 ### Output
+<<<<<<< HEAD
 Esempio di output:
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -472,6 +473,8 @@ php bashscripts/check_form_schema.php
 ```
 
 ### Output
+=======
+>>>>>>> e47821df (.)
 Il comando genererà un output simile a:
 ```
 XotBaseResource Classes Form Schema Check
@@ -502,6 +505,7 @@ XotBaseResource Classes Form Schema Check
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 
+<<<<<<< HEAD
 =======
 # Script di Verifica della Qualità del Codice
 
@@ -1272,3 +1276,6 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+### phpstan_docs_generator.sh 
+>>>>>>> e47821df (.)

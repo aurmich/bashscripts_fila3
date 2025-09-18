@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 # 📝 Documentazione Script Git
 
@@ -153,6 +154,16 @@ Script per il push dei subtree. Funzionalità:
 >>>>>>> ea169dcc (.)
 
 Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
+=======
+
+# Script Git per la Gestione dei Subtree
+
+# Script Git
+
+Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
+ 43df3e0 (.)
+aurmich/dev
+>>>>>>> e47821df (.)
 
 ## Panoramica
 Questa documentazione descrive gli script bash utilizzati per la gestione dei subtree git nel progetto Laraxot.
@@ -167,6 +178,7 @@ Funzione centralizzata per la configurazione git, definita in `custom.sh`. Gesti
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 04d882f8f6 (.)
 =======
 >>>>>>> f52d0712 (.)
@@ -175,6 +187,8 @@ Funzione centralizzata per la configurazione git, definita in `custom.sh`. Gesti
 >>>>>>> 71ff9e32 (.)
 =======
 >>>>>>> ea169dcc (.)
+=======
+>>>>>>> e47821df (.)
 - `core.eol`: lf (line ending di default)
 - `core.symlinks`: false (no symlinks per Windows)
 - `core.longpaths`: true (supporto path lunghi Windows)
@@ -191,8 +205,11 @@ Script per il pull di un singolo subtree. Caratteristiche:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> e47821df (.)
 
 1. Sistema avanzato di logging con timestamp, colori ed emoji
 2. Gestione errori robusta con fallback automatici
@@ -219,6 +236,7 @@ Script per il pull di un singolo subtree. Caratteristiche:
 **Parametri**:
 - `<path>`: Il percorso del subtree locale
 - `<remote_repo>`: L'URL del repository remoto
+<<<<<<< HEAD
 =======
 1. Gestione errori robusta
 2. Logging delle operazioni
@@ -237,6 +255,9 @@ Script per il pull di un singolo subtree. Caratteristiche:
 2. Logging delle operazioni
 3. Supporto per branch personalizzati
 >>>>>>> ea169dcc (.)
+=======
+aurmich/dev
+>>>>>>> e47821df (.)
 
 ### git_push_subtrees.sh
 Script per il push dei subtree. Funzionalità:
@@ -247,8 +268,12 @@ Script per il push dei subtree. Funzionalità:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 71ff9e32 (.)
+=======
+
+>>>>>>> e47821df (.)
 ### git_sync_subtree.sh
 Script ottimizzato per la sincronizzazione di un singolo subtree. Caratteristiche principali:
 1. Sistema avanzato di logging con timestamp e codici colore
@@ -298,6 +323,7 @@ Script completo per la sincronizzazione di tutti i subtree definiti in `gitmodul
 **Parametri:**
 - `[org_personalizzata]`: (Opzionale) Permette di specificare un'organizzazione GitHub alternativa per tutti i repository
 
+<<<<<<< HEAD
 Per una documentazione più generale sugli script di gestione Git, consultare la [documentazione centrale](../../docs/bashscripts/gestione_git.md).
 
 =======
@@ -309,6 +335,11 @@ Per una documentazione più generale sugli script di gestione Git, consultare la
 >>>>>>> 71ff9e32 (.)
 =======
 >>>>>>> ea169dcc (.)
+=======
+Per una documentazione più generale sugli script di gestione Git, consultare la [documentazione centrale](/docs/bashscripts/gestione_git.md).
+
+aurmich/dev
+>>>>>>> e47821df (.)
 ## Best Practices
 1. Utilizzare sempre `git_config_setup` per la configurazione
 2. Gestire i backup prima delle operazioni critiche
@@ -320,6 +351,7 @@ Per una documentazione più generale sugli script di gestione Git, consultare la
 2. Errori di path: verificare la configurazione Windows
 3. Problemi di permessi: controllare fileMode e symlinks
 
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1182,3 +1214,46 @@ Script per il push dei subtree. Funzionalità:
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+
+## Script di sincronizzazione repository remoti
+
+### sync_remote_repo.sh
+
+Questo script sincronizza i repository remoti con i sottoprogetti locali definiti in un file `gitmodules.ini`.
+
+**Percorso**: `bashscripts/subtrees/sync_remote_repo.sh`
+
+**Utilizzo**:
+```bash
+./bashscripts/subtrees/sync_remote_repo.sh <org>
+```
+
+**Parametri**:
+- `<org>`: L'organizzazione da usare per i remote repository
+
+**Funzionalità**:
+1. Carica librerie di supporto per operazioni personalizzate e parsing del file INI
+2. Verifica che sia stato fornito il parametro dell'organizzazione
+3. Per ogni sottoprogetto nel file gitmodules.ini:
+   - Inizializza il repository Git se necessario
+   - Configura il repository come directory sicura
+   - Passa al branch specificato
+   - Aggiunge il repository remoto dell'organizzazione specificata
+   - Applica configurazioni Git
+   - Fa commit delle modifiche locali
+   - Esegue un `git pull` con autostash e rebase
+   - Gestisce automaticamente i conflitti (accettando i cambiamenti locali)
+   - Fa push dei cambiamenti al repository remoto
+
+**Note sulla strategia di sincronizzazione**:
+- Lo script utilizza `git pull --autostash --rebase` che:
+  - Salva temporaneamente le modifiche non commitdate (--autostash)
+  - Applica i commit remoti prima dei commit locali (--rebase)
+  - Riscrive la storia locale in modo più lineare
+
+Questa strategia è generalmente migliore per ridurre i conflitti rispetto all'uso di `git merge`, specialmente quando si lavora con sottoprogetti che vengono aggiornati frequentemente. Il rebase mantiene una storia più pulita e lineare.
+
+aurmich/dev
+[Torna alla documentazione principale](/docs/maintenance.md#git-management) 
+>>>>>>> e47821df (.)

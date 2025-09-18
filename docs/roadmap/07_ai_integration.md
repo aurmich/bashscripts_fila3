@@ -2,6 +2,7 @@
 
 
 
+<<<<<<< HEAD
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
  43df3e0 (.)
@@ -29,6 +30,11 @@ aurmich/dev
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+[0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
+ 43df3e0 (.)
+aurmich/dev
+>>>>>>> e47821df (.)
 # 🤖 Fase 7: AI Integration
 
 ## 📋 Panoramica
@@ -161,6 +167,7 @@ aurmich/dev
 - Monitoraggio continuo
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -191,6 +198,8 @@ aurmich/dev
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e47821df (.)
 # 🤖 Fase 7: AI Integration
 
 ## 📋 Panoramica
@@ -322,6 +331,7 @@ Questa fase si concentra sull'integrazione di tecnologie di Intelligenza Artific
 aurmich/dev
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -352,6 +362,8 @@ aurmich/dev
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e47821df (.)
 # 🤖 Fase 7: AI Integration
 
 ## 📋 Panoramica
@@ -737,6 +749,7 @@ Questa fase si concentra sull'integrazione di tecnologie di Intelligenza Artific
  43df3e0 (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -774,3 +787,6 @@ aurmich/dev
 * [07_ai_integration.md](docs/roadmap/07_ai_integration.md)
 
 
+=======
+aurmich/dev
+>>>>>>> e47821df (.)

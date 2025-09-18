@@ -48,7 +48,10 @@ docker/
 
 ### Comandi Comuni
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 # Deploy stack
 ./deployment/deploy_stack.sh
 

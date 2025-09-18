@@ -1,6 +1,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47821df (.)
 
 
 
@@ -15,6 +18,7 @@
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
  43df3e0 (.)
 aurmich/dev
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -33,6 +37,8 @@ aurmich/dev
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e47821df (.)
 # 🚀 Fase 1: Core Git Operations
 
 ## 📋 Panoramica
@@ -50,6 +56,7 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 - Gestione errori
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -65,6 +72,11 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 =======
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
+=======
+
+
+
+>>>>>>> e47821df (.)
 - Backup automatico pre-operazioni
 
 
@@ -75,6 +87,7 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
  43df3e0 (.)
 aurmich/dev
 
+<<<<<<< HEAD
 =======
 - Backup automatico pre-operazioni
 
@@ -95,6 +108,8 @@ aurmich/dev
 - Backup automatico pre-operazioni
 
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e47821df (.)
 ### 2. Gestione dei Submodule
 **Script**: `sync_submodules.sh`
 **Stato**: ✅ Completato
@@ -106,8 +121,11 @@ aurmich/dev
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> e47821df (.)
 
 
 
@@ -121,6 +139,7 @@ aurmich/dev
  43df3e0 (.)
 aurmich/dev
 
+<<<<<<< HEAD
 =======
 - Verifica integrità post-operazioni
 
@@ -132,6 +151,8 @@ aurmich/dev
 >>>>>>> f52d0712 (.)
 =======
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> e47821df (.)
 ### 3. Backup Automatico
 **Script**: `backup.sh`
 **Stato**: ✅ Completato
@@ -141,8 +162,11 @@ aurmich/dev
 - Verifica integrità
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> e47821df (.)
 
 
 
@@ -158,6 +182,7 @@ aurmich/dev
  43df3e0 (.)
 aurmich/dev
 
+<<<<<<< HEAD
 =======
 - Gestione spazio disco
 - Rotazione backup
@@ -171,6 +196,8 @@ aurmich/dev
 >>>>>>> f52d0712 (.)
 =======
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> e47821df (.)
 ### 4. Risoluzione Conflitti Base
 **Script**: `resolve_git_conflict.sh`
 **Stato**: ✅ Completato
@@ -180,8 +207,11 @@ aurmich/dev
 - Logging dettagliato
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> e47821df (.)
 
 
 
@@ -197,6 +227,7 @@ aurmich/dev
  43df3e0 (.)
 aurmich/dev
 
+<<<<<<< HEAD
 =======
 - Backup pre-risoluzione
 - Rollback automatico in caso di errori
@@ -210,6 +241,8 @@ aurmich/dev
 >>>>>>> f52d0712 (.)
 =======
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> e47821df (.)
 ## 📝 Note di Implementazione
 
 ### Best Practices Implementate
@@ -219,8 +252,11 @@ aurmich/dev
    - Backup prima delle operazioni critiche
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> e47821df (.)
 
 
 
@@ -236,6 +272,7 @@ aurmich/dev
  43df3e0 (.)
 aurmich/dev
 
+<<<<<<< HEAD
 =======
    - Validazione input
    - Sanitizzazione output
@@ -247,14 +284,19 @@ aurmich/dev
 >>>>>>> f52d0712 (.)
 =======
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> e47821df (.)
 2. **Performance**:
    - Ottimizzazione delle operazioni Git
    - Gestione efficiente della memoria
    - Caching dove possibile
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> e47821df (.)
 
 
 
@@ -270,6 +312,7 @@ aurmich/dev
  43df3e0 (.)
 aurmich/dev
 
+<<<<<<< HEAD
 =======
    - Parallelizzazione operazioni
    - Gestione risorse
@@ -281,14 +324,19 @@ aurmich/dev
 >>>>>>> f52d0712 (.)
 =======
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> e47821df (.)
 3. **Manutenibilità**:
    - Codice modulare
    - Documentazione dettagliata
    - Logging strutturato
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> e47821df (.)
 
 
 
@@ -304,6 +352,7 @@ aurmich/dev
  43df3e0 (.)
 aurmich/dev
 
+<<<<<<< HEAD
 =======
    - Test automatici
    - Versionamento semantico
@@ -317,14 +366,19 @@ aurmich/dev
 >>>>>>> f52d0712 (.)
 =======
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> e47821df (.)
 ### Lezioni Apprese
 1. Importanza del backup prima delle operazioni critiche
 2. Necessità di logging dettagliato per il debug
 3. Valore della gestione automatica dei conflitti
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> e47821df (.)
 
 
 
@@ -340,6 +394,7 @@ aurmich/dev
  43df3e0 (.)
 aurmich/dev
 
+<<<<<<< HEAD
 =======
 4. Importanza della validazione input
 5. Necessità di rollback automatico
@@ -353,6 +408,8 @@ aurmich/dev
 >>>>>>> f52d0712 (.)
 =======
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> e47821df (.)
 ## 🔄 Collegamenti
 
 - [Roadmap Principale](../roadmap.md)
@@ -360,8 +417,11 @@ aurmich/dev
 - [Fase 2: Manutenzione](../roadmap/02_maintenance.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> e47821df (.)
 
 
 
@@ -375,6 +435,7 @@ aurmich/dev
  43df3e0 (.)
 aurmich/dev
 
+<<<<<<< HEAD
 =======
 - [Fase 3: Verifica](../roadmap/03_verification.md)
 
@@ -386,6 +447,8 @@ aurmich/dev
 >>>>>>> f52d0712 (.)
 =======
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> e47821df (.)
 ## 📈 Metriche di Successo
 
 ### Obiettivi Raggiunti
@@ -394,8 +457,11 @@ aurmich/dev
 - ✅ Tempo di sincronizzazione ridotto del 70%
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> e47821df (.)
 
 
 
@@ -411,6 +477,7 @@ aurmich/dev
  43df3e0 (.)
 aurmich/dev
 
+<<<<<<< HEAD
 =======
 - ✅ 100% backup automatici
 - ✅ 99.9% risoluzione automatica conflitti
@@ -424,6 +491,8 @@ aurmich/dev
 >>>>>>> f52d0712 (.)
 =======
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> e47821df (.)
 ### Metriche di Performance
 - Tempo medio di sincronizzazione: < 5 minuti
 - Tasso di successo operazioni: 99.9%
@@ -431,8 +500,11 @@ aurmich/dev
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> e47821df (.)
 
 
 - Tempo di backup: < 2 minuti
@@ -516,7 +588,10 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 - Logging dettagliato
 - Gestione errori
 
+<<<<<<< HEAD
 >>>>>>> ec52a6b4 (.)
+=======
+>>>>>>> e47821df (.)
 ### 2. Gestione dei Submodule
 **Script**: `sync_submodules.sh`
 **Stato**: ✅ Completato
@@ -525,11 +600,14 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 - Gestione dei conflitti
 - Backup prima delle operazioni
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
 - Verifica integrità post-operazioni
+=======
+>>>>>>> e47821df (.)
 
 ### 3. Backup Automatico
 **Script**: `backup.sh`
@@ -538,6 +616,7 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 - Backup incrementale
 - Compressione automatica
 - Verifica integrità
+<<<<<<< HEAD
 - Gestione spazio disco
 - Rotazione backup
 
@@ -615,6 +694,8 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 - Backup incrementale
 - Compressione automatica
 - Verifica integrità
+=======
+>>>>>>> e47821df (.)
 
 ### 4. Risoluzione Conflitti Base
 **Script**: `resolve_git_conflict.sh`
@@ -665,6 +746,7 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 - Tasso di successo operazioni: 99.9%
 - Tempo di risoluzione conflitti: < 10 minuti
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -728,6 +810,8 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 
 >>>>>>> develop
 >>>>>>> ec52a6b4 (.)
+=======
+>>>>>>> e47821df (.)
 ## 🛠️ Strumenti Utilizzati
 
 ### Git
@@ -7549,6 +7633,7 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 - Tasso di successo operazioni: 99.9%
 - Tempo di risoluzione conflitti: < 10 minuti
 
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -7568,6 +7653,109 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 >>>>>>> e0c964a3 (first)
 - Tempo di backup: < 2 minuti
 - Tempo di rollback: < 5 minuti
+=======
+## 🛠️ Strumenti Utilizzati
+
+### Git
+- Comandi base (pull, push, merge)
+- Gestione submodule
+- Risoluzione conflitti
+
+### Bash
+- Scripting avanzato
+- Gestione errori
+- Logging
+
+### Altri
+- SSH per connessioni sicure
+- Cron per automazione
+
+
+- Rsync per backup 
+
+
+##
+# 🚀 Fase 1: Core Git Operations
+
+## 📋 Panoramica
+Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la gestione efficiente dei repository.
+
+## ✅ Funzionalità Completate
+
+### 1. Sincronizzazione Base tra Organizzazioni
+**Script**: `git_sync_org.sh`
+**Stato**: ✅ Completato
+**Dettagli**:
+- Sincronizzazione automatica tra organizzazioni GitHub
+- Gestione dei submodule
+- Logging dettagliato
+- Gestione errori
+
+### 2. Gestione dei Submodule
+**Script**: `sync_submodules.sh`
+**Stato**: ✅ Completato
+**Dettagli**:
+- Aggiornamento automatico dei submodule
+- Gestione dei conflitti
+- Backup prima delle operazioni
+
+### 3. Backup Automatico
+**Script**: `backup.sh`
+**Stato**: ✅ Completato
+**Dettagli**:
+- Backup incrementale
+- Compressione automatica
+- Verifica integrità
+
+### 4. Risoluzione Conflitti Base
+**Script**: `resolve_git_conflict.sh`
+**Stato**: ✅ Completato
+**Dettagli**:
+- Analisi automatica dei conflitti
+- Risoluzione quando possibile
+- Logging dettagliato
+
+## 📝 Note di Implementazione
+
+### Best Practices Implementate
+1. **Sicurezza**:
+   - Verifica delle chiavi SSH
+   - Controllo dei permessi
+   - Backup prima delle operazioni critiche
+
+2. **Performance**:
+   - Ottimizzazione delle operazioni Git
+   - Gestione efficiente della memoria
+   - Caching dove possibile
+
+3. **Manutenibilità**:
+   - Codice modulare
+   - Documentazione dettagliata
+   - Logging strutturato
+
+### Lezioni Apprese
+1. Importanza del backup prima delle operazioni critiche
+2. Necessità di logging dettagliato per il debug
+3. Valore della gestione automatica dei conflitti
+
+## 🔄 Collegamenti
+
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 2: Manutenzione](../roadmap/02_maintenance.md)
+
+## 📈 Metriche di Successo
+
+### Obiettivi Raggiunti
+- ✅ 100% automazione operazioni base
+- ✅ 0 errori in produzione
+- ✅ Tempo di sincronizzazione ridotto del 70%
+
+### Metriche di Performance
+- Tempo medio di sincronizzazione: < 5 minuti
+- Tasso di successo operazioni: 99.9%
+- Tempo di risoluzione conflitti: < 10 minuti
+>>>>>>> e47821df (.)
 
 ## 🛠️ Strumenti Utilizzati
 
@@ -7576,6 +7764,7 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 - Gestione submodule
 - Risoluzione conflitti
 
+<<<<<<< HEAD
 ---
 
 **Esempio pratico di sincronizzazione tra organizzazioni:**
@@ -7624,3 +7813,18 @@ Per ulteriori dettagli, consultare la documentazione degli script specifici e le
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+### Bash
+- Scripting avanzato
+- Gestione errori
+- Logging
+
+### Altri
+- SSH per connessioni sicure
+- Cron per automazione
+
+[0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco HEAD (104 linee vs 1)[0m
+- Rsync per backup 
+ 43df3e0 (.)
+aurmich/dev
+>>>>>>> e47821df (.)
