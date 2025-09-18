@@ -5,6 +5,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Job\Providers;
 =======
 namespace Modules\Notify\Providers;
@@ -63,4 +64,14 @@ class FilamentServiceProvider extends XotBaseContextServiceProvider
     }
     */
 >>>>>>> 9cec72d6 (first)
+=======
+namespace Modules\IndennitaCondizioniLavoro\Providers;
+
+use Modules\Xot\Providers\XotBaseContextServiceProvider;
+
+class FilamentServiceProvider extends XotBaseContextServiceProvider {
+    public static string $name = 'indennitacondizionilavoro-filament';
+    
+    public static string $module = 'IndennitaCondizioniLavoro';
+>>>>>>> b7483fd0 (first)
 }

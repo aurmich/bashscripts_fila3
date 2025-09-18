@@ -11,6 +11,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -164,3 +165,6 @@ Route::get('projects/{project}/pdf/download', [PdfDownloadController::class, 'do
 Route::get('projects/{project}/liquidazione', [PdfDownloadController::class, 'liquidazione'])
     ->name('filament.liquidazione');
 >>>>>>> 15ea09e2 (first)
+=======
+declare(strict_types=1);
+>>>>>>> b7483fd0 (first)

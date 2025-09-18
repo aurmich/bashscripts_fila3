@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -163,4 +164,12 @@ return [
     'name' => 'Incentivi',
     'icon' => 'heroicon-o-banknotes',
 >>>>>>> 15ea09e2 (first)
+=======
+declare(strict_types=1);
+
+return [
+    'name' => 'IndennitaCondizioniLavoro',
+    // 'icon' => 'heroicon-o-bookmark',
+    'icon' => 'fas-helmet-safety',
+>>>>>>> b7483fd0 (first)
 ];

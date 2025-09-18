@@ -14,6 +14,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('rating::layouts.master')
 =======
 @extends('xot::layouts.app')
@@ -63,10 +64,14 @@
 =======
 @extends('incentivi::layouts.master')
 >>>>>>> 15ea09e2 (first)
+=======
+@extends('indennitacondizionilavoro::layouts.master')
+>>>>>>> b7483fd0 (first)
 
 @section('content')
     <h1>Hello World</h1>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -173,3 +178,9 @@
     </p>
 @endsection
 >>>>>>> 15ea09e2 (first)
+=======
+    <p>
+        This view is loaded from module: {!! config('indennitacondizionilavoro.name') !!}
+    </p>
+@endsection
+>>>>>>> b7483fd0 (first)

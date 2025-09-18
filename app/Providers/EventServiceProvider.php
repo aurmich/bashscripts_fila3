@@ -10,6 +10,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -92,6 +93,11 @@ declare(strict_types=1);
 
 namespace Modules\Incentivi\Providers;
 >>>>>>> 15ea09e2 (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\IndennitaCondizioniLavoro\Providers;
+>>>>>>> b7483fd0 (first)
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as BaseEventServiceProvider;
 
@@ -103,6 +109,7 @@ class EventServiceProvider extends BaseEventServiceProvider
      * @var array<string, array<int, string>>
      */
     protected $listen = [];
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -143,6 +150,9 @@ class EventServiceProvider extends BaseEventServiceProvider
 =======
 
 >>>>>>> 15ea09e2 (first)
+=======
+
+>>>>>>> b7483fd0 (first)
     /**
      * Indicates if events should be discovered.
      *
@@ -153,6 +163,7 @@ class EventServiceProvider extends BaseEventServiceProvider
     /**
      * Configure the proper event listeners for email verification.
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -251,4 +262,7 @@ class EventServiceProvider extends ServiceProvider
 =======
     protected function configureEmailVerification(): void {}
 >>>>>>> 15ea09e2 (first)
+=======
+    protected function configureEmailVerification(): void {}
+>>>>>>> b7483fd0 (first)
 }

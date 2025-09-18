@@ -15,6 +15,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
 =======
@@ -45,10 +46,15 @@
     "name": "Incentivi",
     "alias": "incentivi",
 >>>>>>> 15ea09e2 (first)
+=======
+    "name": "IndennitaCondizioniLavoro",
+    "alias": "indennitacondizionilavoro",
+>>>>>>> b7483fd0 (first)
     "description": "",
     "keywords": [],
     "priority": 0,
     "providers": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -115,10 +121,15 @@
         "Modules\\Tenant\\Providers\\TenantServiceProvider",
         "Modules\\Tenant\\Providers\\Filament\\AdminPanelProvider"
 >>>>>>> 8fc3049b (first)
+=======
+        "Modules\\IndennitaCondizioniLavoro\\Providers\\IndennitaCondizioniLavoroServiceProvider",
+        "Modules\\IndennitaCondizioniLavoro\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> b7483fd0 (first)
     ],
     "aliases": [],
     "files": [],
     "requires": []
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -240,3 +251,6 @@
     "files": []
 }
 >>>>>>> 15ea09e2 (first)
+=======
+}
+>>>>>>> b7483fd0 (first)

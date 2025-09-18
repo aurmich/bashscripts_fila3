@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Notify\Models;
 =======
 namespace Modules\User\Models;
@@ -107,4 +108,18 @@ abstract class BasePivot extends Pivot
     /** @var string */
     protected $primaryKey = 'id';
 >>>>>>> 15ea09e2 (first)
+=======
+namespace Modules\IndennitaCondizioniLavoro\Models;
+
+// use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\Pivot;
+
+// use Laravel\Scout\Searchable;
+// ---------- traits
+// use Modules\Xot\Traits\Updater;
+
+abstract class BasePivot extends Pivot
+{
+    protected $connection = 'indennita_condizioni_lavoro'; // this will use the specified database connection
+>>>>>>> b7483fd0 (first)
 }

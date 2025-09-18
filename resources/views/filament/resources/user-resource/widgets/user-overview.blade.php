@@ -10,6 +10,10 @@
             ]);
             */
         @endphp
+<<<<<<< HEAD
         {{ $record-> }}
+=======
+        {{ $record?->id }}
+>>>>>>> b7483fd0 (first)
     </x-filament::card>
 </x-filament::widget>

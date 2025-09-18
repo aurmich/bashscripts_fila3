@@ -12,6 +12,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 const dotenvExpand = require('dotenv-expand');
 dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/}));
 
@@ -58,11 +59,17 @@ dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/ }));
 >>>>>>> c8cd1ec3 (first)
 =======
 >>>>>>> 51c7727d (first)
+=======
+const dotenvExpand = require('dotenv-expand');
+dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/}));
+
+>>>>>>> b7483fd0 (first)
 const mix = require('laravel-mix');
 require('laravel-mix-merge-manifest');
 
 mix.setPublicPath('../../public').mergeManifest();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -115,10 +122,15 @@ mix.js(__dirname + '/resources/assets/js/app.js', 'js/rating.js')
 mix.js(__dirname + '/resources/assets/js/app.js', 'js/tenant.js')
     .sass(__dirname + '/resources/assets/sass/app.scss', 'css/tenant.css');
 >>>>>>> 8fc3049b (first)
+=======
+mix.js(__dirname + '/resources/assets/js/app.js', 'js/indennitacondizionilavoro.js')
+    .sass( __dirname + '/resources/assets/sass/app.scss', 'css/indennitacondizionilavoro.css');
+>>>>>>> b7483fd0 (first)
 
 if (mix.inProduction()) {
     mix.version();
 }
+<<<<<<< HEAD
 =======
 mix.js(__dirname + '/resources/assets/js/app.js', 'js/badge.js')
     .sass( __dirname + '/resources/assets/sass/app.scss', 'css/badge.css');
@@ -159,3 +171,5 @@ if (mix.inProduction()) {
     mix.version();
 }
 >>>>>>> 51c7727d (first)
+=======
+>>>>>>> b7483fd0 (first)

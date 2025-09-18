@@ -11,6 +11,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d79d9e57 (first)
 =======
@@ -99,10 +100,17 @@ declare(strict_types=1);
 namespace Modules\Incentivi\Providers\Filament;
 
 >>>>>>> 15ea09e2 (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\IndennitaCondizioniLavoro\Providers\Filament;
+
+>>>>>>> b7483fd0 (first)
 use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 
 class AdminPanelProvider extends XotBasePanelProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -251,4 +259,7 @@ class AdminPanelProvider extends XotBasePanelProvider
 =======
     protected string $module = 'Incentivi';
 >>>>>>> 15ea09e2 (first)
+=======
+    protected string $module = 'IndennitaCondizioniLavoro';
+>>>>>>> b7483fd0 (first)
 }

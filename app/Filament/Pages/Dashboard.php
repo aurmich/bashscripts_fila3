@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -46,11 +47,19 @@ namespace Modules\Incentivi\Filament\Pages;
 use Filament\Pages\Page;
 use Modules\Incentivi\Filament\Widgets;
 >>>>>>> 15ea09e2 (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\IndennitaCondizioniLavoro\Filament\Pages;
+
+use Filament\Pages\Page;
+>>>>>>> b7483fd0 (first)
 
 class Dashboard extends Page
 {
     protected static ?string $navigationIcon = 'heroicon-o-home';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -255,4 +264,7 @@ class Dashboard extends BaseBashboard
         ];
     }
 >>>>>>> 15ea09e2 (first)
+=======
+    protected static string $view = 'indennitacondizionilavoro::filament.pages.dashboard';
+>>>>>>> b7483fd0 (first)
 }

@@ -17,6 +17,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "laraxot/bashscripts_fila3",
     "description": "Script di utilità per la gestione dei repository Git, Toolkit di automazione Git per progetti Laravel",
     "type": "library",
@@ -157,12 +158,19 @@
     "license": "MIT",
     "homepage": "https://github.com/laraxot/module_inail_fila3.git",
 >>>>>>> 51c7727d (first)
+=======
+    "name": "laraxot/module_indennitacondizionilavoro_fila3",
+    "description": "",
+    "license": "MIT",
+    "homepage": "https://github.com/laraxot/module_indennitacondizionilavoro_fila3.git",
+>>>>>>> b7483fd0 (first)
     "authors": [
         {
             "name": "Marco Sottana",
             "email": "marco.sottana@gmail.com"
         }
     ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -415,12 +423,18 @@
     "require": {
 
 >>>>>>> 51c7727d (first)
+=======
+    "require": {
+        "cknow/laravel-money": "^8.1",
+        "spatie/laravel-sluggable": "*"
+>>>>>>> b7483fd0 (first)
     },
     "require-dev": {},
     "repositories": [
         {
             "type": "path",
             "url": "../Xot"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -440,6 +454,8 @@
 >>>>>>> c8cd1ec3 (first)
 =======
 >>>>>>> 51c7727d (first)
+=======
+>>>>>>> b7483fd0 (first)
         },
         {
             "type": "path",
@@ -447,6 +463,7 @@
         },
         {
             "type": "path",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -661,11 +678,14 @@
 >>>>>>> c8cd1ec3 (first)
 =======
 >>>>>>> 51c7727d (first)
+=======
+>>>>>>> b7483fd0 (first)
             "url": "../UI"
         }
     ],
     "autoload": {
         "psr-4": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -694,11 +714,17 @@
             "Modules\\Inail\\Database\\Factories\\": "database/factories/",
             "Modules\\Inail\\Database\\Seeders\\": "database/seeders/"
 >>>>>>> 51c7727d (first)
+=======
+            "Modules\\IndennitaCondizioniLavoro\\": "app/",
+            "Modules\\IndennitaCondizioniLavoro\\Database\\Factories\\": "database/factories/",
+            "Modules\\IndennitaCondizioniLavoro\\Database\\Seeders\\": "database/seeders/"
+>>>>>>> b7483fd0 (first)
         }
     },
     "scripts": {
         "post-autoload-dump": [],
         "post-update-cmd": [],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -742,10 +768,13 @@
 >>>>>>> c8cd1ec3 (first)
 =======
 >>>>>>> 51c7727d (first)
+=======
+>>>>>>> b7483fd0 (first)
         "analyse": "vendor/bin/phpstan analyse",
         "test": "./vendor/bin/pest --no-coverage",
         "test-coverage": "vendor/bin/pest --coverage-html coverage",
         "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -775,10 +804,13 @@
 >>>>>>> c8cd1ec3 (first)
 =======
 >>>>>>> 51c7727d (first)
+=======
+>>>>>>> b7483fd0 (first)
     },
     "config": {
         "sort-packages": true,
         "allow-plugins": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -807,10 +839,13 @@
 >>>>>>> c8cd1ec3 (first)
 =======
 >>>>>>> 51c7727d (first)
+=======
+>>>>>>> b7483fd0 (first)
             "phpstan/extension-installer": true,
             "pestphp/pest-plugin": true
         }
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -926,10 +961,18 @@
                 "Modules\\Inail\\Providers\\InailServiceProvider",
                 "Modules\\Inail\\Providers\\Filament\\AdminPanelProvider"
 >>>>>>> 51c7727d (first)
+=======
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\IndennitaCondizioniLavoro\\Providers\\IndennitaCondizioniLavoroServiceProvider",
+                "Modules\\IndennitaCondizioniLavoro\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> b7483fd0 (first)
             ],
             "aliases": {}
         }
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1060,3 +1103,8 @@
     "prefer-stable": true
 }
 >>>>>>> 15ea09e2 (first)
+=======
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+>>>>>>> b7483fd0 (first)

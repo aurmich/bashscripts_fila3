@@ -18,6 +18,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3243,3 +3244,6 @@ evitare errori manuali, facendo in modo che l'utente si limiti a inserire solo i
 rendere più rapido il processo di raccolta di questi dati.
 Una volta che i dati verranno caricati, il Personale potrà quindi stampare/esportare il resoconto del Progetto e procedere con la fase di liquidazione.
 >>>>>>> 15ea09e2 (first)
+=======
+# module_indennitacondizionilavoro_fila3
+>>>>>>> b7483fd0 (first)

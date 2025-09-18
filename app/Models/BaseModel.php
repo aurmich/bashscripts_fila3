@@ -13,6 +13,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Rating\Models;
 
 use Illuminate\Database\Eloquent\Model;
@@ -452,10 +453,36 @@ abstract class BaseModel extends Model
 
     /** @var list<string> */
 >>>>>>> 15ea09e2 (first)
+=======
+namespace Modules\IndennitaCondizioniLavoro\Models;
+
+use Illuminate\Database\Eloquent\Model;
+// use Laravel\Scout\Searchable;
+// ---------- traits
+use Modules\Xot\Traits\Updater;
+
+abstract class BaseModel extends Model
+{
+    use Updater;
+
+    // use Searchable;
+    protected $connection = 'indennita_condizioni_lavoro';
+
+    // this will use the specified database connection
+    protected $fillable = ['id'];
+
+    protected $casts = ['published_at' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime'];
+
+    protected $primaryKey = 'id';
+
+    public $incrementing = true;
+
+>>>>>>> b7483fd0 (first)
     protected $hidden = [
         // 'password'
     ];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -691,4 +718,13 @@ abstract class BaseModel extends Model
 >>>>>>> 7e417e87 (first)
 =======
 >>>>>>> 15ea09e2 (first)
+=======
+    public $timestamps = true;
+
+    /*
+    public function images() {
+        return $this->morphMany(Image::class, 'post');
+    }
+    */
+>>>>>>> b7483fd0 (first)
 }

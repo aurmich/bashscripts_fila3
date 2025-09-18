@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -180,3 +181,6 @@ Route::middleware('auth:api')->get('/tenant', function (Request $request) {
 >>>>>>> 51c7727d (first)
 =======
 >>>>>>> 15ea09e2 (first)
+=======
+declare(strict_types=1);
+>>>>>>> b7483fd0 (first)

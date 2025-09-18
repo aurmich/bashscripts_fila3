@@ -16,6 +16,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 /**
@@ -105,10 +106,17 @@ declare(strict_types=1);
 namespace Modules\Incentivi\Providers;
 
 >>>>>>> 15ea09e2 (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\IndennitaCondizioniLavoro\Providers;
+
+>>>>>>> b7483fd0 (first)
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -224,10 +232,17 @@ class RouteServiceProvider extends ServiceProvider
 =======
     protected string $moduleNamespace = 'Modules\Incentivi\Http\Controllers';
 >>>>>>> 15ea09e2 (first)
+=======
+    /**
+     * The module namespace to assume when generating URLs to actions.
+     */
+    protected string $moduleNamespace = 'Modules\IndennitaCondizioniLavoro\Http\Controllers';
+>>>>>>> b7483fd0 (first)
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -487,4 +502,8 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 =======
     public string $name = 'Incentivi';
 >>>>>>> 15ea09e2 (first)
+=======
+
+    public string $name = 'IndennitaCondizioniLavoro';
+>>>>>>> b7483fd0 (first)
 }
