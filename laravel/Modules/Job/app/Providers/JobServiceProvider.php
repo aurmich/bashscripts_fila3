@@ -35,6 +35,7 @@ class JobServiceProvider extends XotBaseServiceProvider
     public function boot(): void
     {
         parent::boot();
+<<<<<<< HEAD
         /*
             $this->app->resolving(Schedule::class, function ($schedule) {
                 dddx($schedule);
@@ -49,6 +50,8 @@ class JobServiceProvider extends XotBaseServiceProvider
         //    echo $e->getMessage();
         // }
         // });
+=======
+>>>>>>> origin/dev
         Import::polymorphicUserRelationship();
         Export::polymorphicUserRelationship();
         $this->registerQueue();
@@ -56,6 +59,7 @@ class JobServiceProvider extends XotBaseServiceProvider
 
     public function registerQueue(): void
     {
+<<<<<<< HEAD
         /*
         Queue::before(static function (JobProcessing $event) {
            self::jobStarted($event->job);
@@ -77,6 +81,47 @@ class JobServiceProvider extends XotBaseServiceProvider
 
     /*
     public function registerSchedule(Schedule $schedule): void {
+=======
+        Queue::before(function (JobProcessing $event) {
+            $this->jobStarted($event->job);
+        });
+
+        Queue::after(function (JobProcessed $event) {
+            $this->jobFinished($event->job);
+        });
+
+        Queue::failing(function (JobFailed $event) {
+            $this->jobFinished($event->job, true, $event->exception);
+        });
+
+        Queue::exceptionOccurred(function (JobExceptionOccurred $event) {
+            $this->jobFinished($event->job, true, $event->exception);
+        });
+    }
+
+    /**
+     * @param \Illuminate\Contracts\Queue\Job $job
+     */
+    protected function jobStarted($job): void
+    {
+        // Implementazione del metodo jobStarted
+        // Per ora lo lasciamo vuoto in attesa di implementazione specifica
+    }
+
+    /**
+     * @param \Illuminate\Contracts\Queue\Job $job
+     * @param bool $failed
+     * @param \Throwable|null $exception
+     */
+    protected function jobFinished($job, bool $failed = false, ?\Throwable $exception = null): void
+    {
+        // Implementazione del metodo jobFinished
+        // Per ora lo lasciamo vuoto in attesa di implementazione specifica
+    }
+
+    public function registerSchedule(Schedule $schedule): void 
+    {
+>>>>>>> origin/dev
         if (Schema::hasTable('tasks')) {
             $tasks = app(Task::class)
                 ->query()
@@ -84,6 +129,7 @@ class JobServiceProvider extends XotBaseServiceProvider
                 ->where('is_active', true)
                 ->get();
 
+<<<<<<< HEAD
             $tasks->each(
                 function ($task) use ($schedule) {
                     if (! $task instanceof Task) {
@@ -121,4 +167,43 @@ class JobServiceProvider extends XotBaseServiceProvider
         }
     }
     */
+=======
+            $tasks->each(function ($task) use ($schedule) {
+                if (! $task instanceof Task) {
+                    throw new \Exception('['.__LINE__.']['.class_basename($this).']');
+                }
+
+                $parameters = $task->compileParameters(true);
+                if (!is_array($parameters)) {
+                    $parameters = [];
+                }
+
+                $event = $schedule->command($task->command, $parameters);
+                
+                $event->{$task->expression}()
+                    ->name($task->description)
+                    ->timezone($task->timezone)
+                    ->before(function () use ($task) {
+                        Executing::dispatch($task);
+                    })
+                    ->thenWithOutput(function ($output) use ($event, $task) {
+                        Executed::dispatch($task, $event->start ?? microtime(true), $output);
+                    });
+
+                if ($task->dont_overlap) {
+                    $event->withoutOverlapping();
+                }
+                if ($task->run_in_maintenance) {
+                    $event->evenInMaintenanceMode();
+                }
+                if ($task->run_on_one_server && in_array(config('cache.default'), ['memcached', 'redis', 'database', 'dynamodb'])) {
+                    $event->onOneServer();
+                }
+                if ($task->run_in_background) {
+                    $event->runInBackground();
+                }
+            });
+        }
+    }
+>>>>>>> origin/dev
 }
