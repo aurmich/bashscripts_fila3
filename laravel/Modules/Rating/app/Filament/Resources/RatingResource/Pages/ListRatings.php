@@ -72,6 +72,7 @@ class ListRatings extends XotBaseListRecords
     public function getListTableColumns(): array
     {
         return [
+<<<<<<< HEAD
             'id' => TextColumn::make('id')
                 ->sortable()
                 ->searchable(),
@@ -83,6 +84,22 @@ class ListRatings extends XotBaseListRecords
             'is_disabled' => IconColumn::make('is_disabled')
                 ->boolean(),
             'is_readonly' => IconColumn::make('is_readonly')
+=======
+            TextColumn::make('id')
+
+                ->sortable()
+                ->searchable(),
+            TextColumn::make('title')
+
+                ->sortable()
+                ->searchable(),
+            TextColumn::make('rule')
+
+                ->badge(),
+            IconColumn::make('is_disabled')
+                ->boolean(),
+            IconColumn::make('is_readonly')
+>>>>>>> origin/dev
                 ->boolean(),
         ];
 
@@ -105,11 +122,19 @@ class ListRatings extends XotBaseListRecords
     public function getTableActions(): array
     {
         return [
+<<<<<<< HEAD
             'view' => ViewAction::make()
                 ->label(''),
             'edit' => EditAction::make()
                 ->label(''),
             'delete' => DeleteAction::make()
+=======
+            ViewAction::make()
+                ->label(''),
+            EditAction::make()
+                ->label(''),
+            DeleteAction::make()
+>>>>>>> origin/dev
                 ->label('')
                 ->requiresConfirmation(),
         ];
@@ -118,7 +143,11 @@ class ListRatings extends XotBaseListRecords
     public function getTableBulkActions(): array
     {
         return [
+<<<<<<< HEAD
             'delete' => DeleteBulkAction::make(),
+=======
+            DeleteBulkAction::make(),
+>>>>>>> origin/dev
         ];
     }
 
