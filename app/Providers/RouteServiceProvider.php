@@ -25,6 +25,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 /**
@@ -168,10 +169,18 @@ namespace Modules\Progressioni\Providers;
 
 // --- bases ---
 >>>>>>> bcab6efe (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Questionari\Providers;
+
+// --- bases ---
+>>>>>>> fec698af (first)
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -361,10 +370,19 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider {
 
     protected string $moduleNamespace = 'Modules\Progressioni\Http\Controllers';
 >>>>>>> bcab6efe (first)
+=======
+    /**
+     * The module namespace to assume when generating URLs to actions.
+     */
+    protected string $moduleNamespace = 'Modules\Questionari\Http\Controllers';
+
+    public string $name = 'Questionari';
+>>>>>>> fec698af (first)
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -659,4 +677,6 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 >>>>>>> edbb3aab (first)
 =======
 >>>>>>> bcab6efe (first)
+=======
+>>>>>>> fec698af (first)
 }

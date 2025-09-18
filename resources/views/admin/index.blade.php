@@ -10,6 +10,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @section('page_heading','Bagde')
 =======
 @section('page_heading','cert fisc')
@@ -35,10 +36,14 @@
 =======
 @section('page_heading','Presenze Assenze')
 >>>>>>> edbb3aab (first)
+=======
+@section('page_heading','quiz')
+>>>>>>> fec698af (first)
 @section('content')
 <x-filament::badge> flash-message </x-filament::badge>
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -97,3 +102,8 @@ Benvenuto nel programma mensa
     Progressioni Wellcome
 @endsection
 >>>>>>> bcab6efe (first)
+=======
+<h1>Benvenuto nel programma quiz</h1>
+
+@endsection
+>>>>>>> fec698af (first)

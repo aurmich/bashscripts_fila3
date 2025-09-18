@@ -10,6 +10,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -237,4 +238,10 @@ return [
     // 'icon' => 'fas-fire-flame-curved',
     'icon' => 'fas-signal',
 >>>>>>> bcab6efe (first)
+=======
+declare(strict_types=1);
+
+return [
+    'name' => 'Questionari',
+>>>>>>> fec698af (first)
 ];

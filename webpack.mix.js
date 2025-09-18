@@ -21,6 +21,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 const dotenvExpand = require('dotenv-expand');
 dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/}));
 
@@ -91,11 +92,14 @@ dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/}));
 >>>>>>> edbb3aab (first)
 =======
 >>>>>>> bcab6efe (first)
+=======
+>>>>>>> fec698af (first)
 const mix = require('laravel-mix');
 require('laravel-mix-merge-manifest');
 
 mix.setPublicPath('../../public').mergeManifest();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -271,3 +275,11 @@ if (mix.inProduction()) {
     mix.version();
 }
 >>>>>>> bcab6efe (first)
+=======
+mix.js(__dirname + '/resources/assets/js/app.js', 'js/questionari.js')
+    .sass( __dirname + '/resources/assets/sass/app.scss', 'css/questionari.css');
+
+if (mix.inProduction()) {
+    mix.version();
+}
+>>>>>>> fec698af (first)

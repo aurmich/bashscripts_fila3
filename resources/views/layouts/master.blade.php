@@ -16,6 +16,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <html lang="en">
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -78,10 +79,14 @@
 =======
 <html lang="en">
 >>>>>>> bcab6efe (first)
+=======
+<html lang="en">
+>>>>>>> fec698af (first)
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -233,11 +238,18 @@
        {{-- Laravel Mix - CSS File --}}
        {{-- <link rel="stylesheet" href="{{ mix('css/progressioni.css') }}"> --}}
 >>>>>>> bcab6efe (first)
+=======
+        <title>Module Questionari</title>
+
+       {{-- Laravel Mix - CSS File --}}
+       {{-- <link rel="stylesheet" href="{{ mix('css/questionari.css') }}"> --}}
+>>>>>>> fec698af (first)
 
     </head>
     <body>
         @yield('content')
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -432,3 +444,9 @@
     </body>
 </html>
 >>>>>>> bcab6efe (first)
+=======
+        {{-- Laravel Mix - JS File --}}
+        {{-- <script src="{{ mix('js/questionari.js') }}"></script> --}}
+    </body>
+</html>
+>>>>>>> fec698af (first)

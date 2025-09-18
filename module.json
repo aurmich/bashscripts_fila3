@@ -24,6 +24,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
 =======
@@ -250,11 +251,16 @@
     "name": "Progressioni",
     "alias": "progressioni",
 >>>>>>> bcab6efe (first)
+=======
+    "name": "Questionari",
+    "alias": "questionari",
+>>>>>>> fec698af (first)
     "description": "",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -297,11 +303,15 @@
 =======
         "Modules\\PresenzeAssenze\\Providers\\PresenzeAssenzeServiceProvider"
 >>>>>>> edbb3aab (first)
+=======
+        "Modules\\Questionari\\Providers\\QuestionariServiceProvider"
+>>>>>>> fec698af (first)
     ],
     "aliases": {},
     "files": [],
     "requires": []
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -355,3 +365,5 @@
     "requires": []
 }
 >>>>>>> bcab6efe (first)
+=======
+>>>>>>> fec698af (first)

@@ -23,6 +23,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('rating::layouts.master')
 =======
 @extends('xot::layouts.app')
@@ -99,10 +100,14 @@
 =======
 @extends('progressioni::layouts.master')
 >>>>>>> bcab6efe (first)
+=======
+@extends('questionari::layouts.master')
+>>>>>>> fec698af (first)
 
 @section('content')
     <h1>Hello World</h1>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -272,3 +277,9 @@
     </p>
 @stop
 >>>>>>> bcab6efe (first)
+=======
+    <p>
+        This view is loaded from module: {!! config('questionari.name') !!}
+    </p>
+@stop
+>>>>>>> fec698af (first)
