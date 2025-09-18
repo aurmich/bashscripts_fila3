@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
 =======
@@ -39,10 +40,23 @@
         "Modules\\Lang\\Providers\\LangServiceProvider",
         "Modules\\Lang\\Providers\\Filament\\AdminPanelProvider"
 >>>>>>> bbec4378 (first)
+=======
+    "name": "Job",
+    "alias": "job",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "priority": 20,
+    "order": 20,
+    "providers": [
+        "Modules\\Job\\Providers\\JobServiceProvider",
+        "Modules\\Job\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> c088001a (first)
     ],
     "aliases": [],
     "files": [],
     "requires": []
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 }
@@ -59,3 +73,6 @@
 =======
 }
 >>>>>>> bbec4378 (first)
+=======
+}
+>>>>>>> c088001a (first)

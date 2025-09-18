@@ -5,6 +5,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Rating\Providers;
 =======
 namespace Modules\Xot\Providers;
@@ -15,6 +16,9 @@ namespace Modules\UI\Providers;
 =======
 namespace Modules\Lang\Providers;
 >>>>>>> bbec4378 (first)
+=======
+namespace Modules\Job\Providers;
+>>>>>>> c088001a (first)
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as BaseEventServiceProvider;
 
@@ -37,7 +41,11 @@ class EventServiceProvider extends BaseEventServiceProvider
     /**
      * Configure the proper event listeners for email verification.
      */
+<<<<<<< HEAD
     protected function configureEmailVerification(): void
     {
     }
+=======
+    protected function configureEmailVerification(): void {}
+>>>>>>> c088001a (first)
 }

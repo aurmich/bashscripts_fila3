@@ -2,6 +2,7 @@ providers:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Modules\Rating\Providers\RatingServiceProvider
 =======
   - Modules\Xot\Providers\XotServiceProvider
@@ -16,3 +17,6 @@ providers:
 =======
   - Modules\Lang\Providers\LangServiceProvider
 >>>>>>> bbec4378 (first)
+=======
+  - Modules\Job\Providers\JobServiceProvider
+>>>>>>> c088001a (first)

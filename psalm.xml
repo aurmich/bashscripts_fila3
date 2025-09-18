@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     errorLevel="4"
 =======
     errorLevel="1"
@@ -17,6 +18,11 @@
 =======
     errorLevel="4"
 >>>>>>> bbec4378 (first)
+=======
+    errorLevel="1"
+     cacheDirectory="build/psalm"
+    errorBaseline="psalm-baseline.xml"
+>>>>>>> c088001a (first)
     resolveFromConfigFile="true"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns="https://getpsalm.org/schema/config"
@@ -25,6 +31,7 @@
     findUnusedCode="true"
 >
     <projectFiles>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -77,6 +84,14 @@
 =======
 >>>>>>> a8f30311 (first)
             <directory name="docs" />
+=======
+        <directory name="." />
+
+        <ignoreFiles>
+             <directory name="build"/>
+            <directory name="vendor"/>
+            <directory name="docs"/>
+>>>>>>> c088001a (first)
         </ignoreFiles>
     </projectFiles>
     <plugins>
@@ -84,8 +99,11 @@
     </plugins>
 </psalm>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 59bc4fe7 (first)
 =======
 >>>>>>> a8f30311 (first)
 =======
 >>>>>>> bbec4378 (first)
+=======
+>>>>>>> c088001a (first)

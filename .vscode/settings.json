@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	"editor.formatOnSave": false,
 		"editor.formatOnType": true,
 		"php-cs-fixer.onsave": true,
@@ -48,6 +49,8 @@
 >>>>>>> a8f30311 (first)
 =======
 >>>>>>> bbec4378 (first)
+=======
+>>>>>>> c088001a (first)
 	"editor.formatOnType": true,
 	"php-cs-fixer.onsave": true,
 	"php-cs-fixer.formatHtml": true,
@@ -91,6 +94,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 164b8363 (Squashed 'laravel/Modules/Rating/' content from commit e5c84117)
 =======
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
@@ -100,4 +104,6 @@
 >>>>>>> a8f30311 (first)
 =======
 >>>>>>> bbec4378 (first)
+=======
+>>>>>>> c088001a (first)
 }

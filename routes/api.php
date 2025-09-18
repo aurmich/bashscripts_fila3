@@ -2,9 +2,17 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /*
 <<<<<<< HEAD
+=======
+
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
+
+/*
+>>>>>>> c088001a (first)
 |--------------------------------------------------------------------------
 | API Routes
 |--------------------------------------------------------------------------
@@ -15,6 +23,7 @@ declare(strict_types=1);
 |
 */
 /*
+<<<<<<< HEAD
 Route::middleware('auth:api')->get('/xot', function (Request $request) {
     return $request->user();
 });
@@ -25,3 +34,7 @@ Route::middleware('auth:api')->get('/xot', function (Request $request) {
 >>>>>>> a8f30311 (first)
 =======
 >>>>>>> bbec4378 (first)
+=======
+Route::middleware('auth:api')->get('/job', fn(Request $request) => $request->user());
+*/
+>>>>>>> c088001a (first)

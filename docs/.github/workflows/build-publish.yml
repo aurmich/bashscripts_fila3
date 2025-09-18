@@ -21,7 +21,11 @@ jobs:
     - name: Build Jigsaw site
       run: ./vendor/bin/jigsaw build production
     - name: Create CNAME File
+<<<<<<< HEAD
       run: echo "privacyfed.github.io/doc_extrafield" >> build_production/CNAME
+=======
+      run: echo "laraxot.github.io/doc_extrafield" >> build_production/CNAME
+>>>>>>> c088001a (first)
     - name: Stage Files
       run: git add -f build_production
     - name: Commit files

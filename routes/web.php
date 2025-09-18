@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 // @include 'web_working.php';
@@ -15,3 +16,5 @@ declare(strict_types=1);
 >>>>>>> a8f30311 (first)
 =======
 >>>>>>> bbec4378 (first)
+=======
+>>>>>>> c088001a (first)

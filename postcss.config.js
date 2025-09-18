@@ -4,6 +4,7 @@ module.exports = {
     autoprefixer: {},
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'postcss-preset-env': {
       stage: 3,
       features: {
@@ -16,5 +17,7 @@ module.exports = {
 >>>>>>> 59bc4fe7 (first)
 =======
 >>>>>>> a8f30311 (first)
+=======
+>>>>>>> c088001a (first)
   },
 }

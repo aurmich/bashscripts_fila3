@@ -10,8 +10,11 @@ updates:
     schedule:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bbec4378 (first)
+=======
+>>>>>>> c088001a (first)
       interval: "daily"
     labels:
       - "dependencies"
@@ -24,6 +27,7 @@ updates:
       - "npm"
       - "dependencies"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       interval: "weekly"
     labels:
@@ -31,3 +35,5 @@ updates:
 >>>>>>> a8f30311 (first)
 =======
 >>>>>>> bbec4378 (first)
+=======
+>>>>>>> c088001a (first)

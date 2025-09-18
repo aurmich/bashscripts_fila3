@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Dettagliata dei Colli di Bottiglia - Modulo Xot
 
 ## Panoramica
@@ -7,11 +8,23 @@ Il modulo Xot è un modulo core che fornisce funzionalità base per l'intera app
 **Problema**: Creazione inefficiente delle istanze dei modelli
 - Impatto: Overhead nella creazione di oggetti model
 - Causa: Reflection e lookup ripetitivi
+=======
+# Analisi Dettagliata dei Colli di Bottiglia - Modulo Job
+
+## Panoramica
+Il modulo Job gestisce le code e i processi asincroni dell'applicazione. L'analisi ha identificato diverse aree critiche che impattano le performance.
+
+## 1. Gestione Code
+**Problema**: Gestione inefficiente delle code di lavoro
+- Impatto: Latenza nell'elaborazione dei job
+- Causa: Mancanza di prioritizzazione e code sovraccariche
+>>>>>>> c088001a (first)
 
 **Soluzione Proposta**:
 ```php
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Xot\Services;
 
 use Illuminate\Support\Facades\Cache;
@@ -93,19 +106,71 @@ final class QueryBuilderService
                 $relation => fn($query) => $query->select(['id', 'name'])
             ])
             ->all();
+=======
+namespace Modules\Job\Services;
+
+use Illuminate\Support\Facades\Queue;
+use Spatie\QueueableAction\QueueableAction;
+
+final class QueueManagerService
+{
+    use QueueableAction;
+
+    private const QUEUE_PRIORITIES = [
+        'high' => 100,
+        'default' => 50,
+        'low' => 10
+    ];
+
+    public function dispatch($job, string $priority = 'default'): void
+    {
+        $queue = $this->determineQueue($priority);
+        
+        Queue::pushOn(
+            $queue,
+            $job->onQueue($queue)
+                ->delay($this->calculateDelay($priority))
+        );
+    }
+
+    private function determineQueue(string $priority): string
+    {
+        return match ($priority) {
+            'high' => 'jobs-high',
+            'low' => 'jobs-low',
+            default => 'jobs-default'
+        };
+    }
+
+    private function calculateDelay(string $priority): int
+    {
+        return match ($priority) {
+            'high' => 0,
+            'low' => 300, // 5 minuti
+            default => 60 // 1 minuto
+        };
+>>>>>>> c088001a (first)
     }
 }
 ```
 
+<<<<<<< HEAD
 ## 3. Gestione Cache
 **Problema**: Strategia di caching non ottimale
 - Impatto: Hit rate basso e overhead di memoria
 - Causa: Mancanza di politiche di caching intelligenti
+=======
+## 2. Monitoraggio Job
+**Problema**: Monitoraggio insufficiente dei job
+- Impatto: Difficoltà nel debugging e ottimizzazione
+- Causa: Mancanza di metriche e logging dettagliato
+>>>>>>> c088001a (first)
 
 **Soluzione Proposta**:
 ```php
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Xot\Services;
 
 use Illuminate\Support\Facades\Cache;
@@ -152,6 +217,103 @@ final class XotCacheService
         }
         
         return $tags;
+=======
+namespace Modules\Job\Services;
+
+use Illuminate\Support\Facades\Log;
+use Spatie\QueueableAction\QueueableAction;
+
+final class JobMonitoringService
+{
+    use QueueableAction;
+
+    public function trackJob($job, string $status): void
+    {
+        $metrics = $this->collectMetrics($job);
+        
+        // Logging dettagliato
+        Log::channel('jobs')
+            ->info("Job {$status}", [
+                'job_id' => $job->job_id,
+                'type' => get_class($job),
+                'queue' => $job->queue,
+                'attempt' => $job->attempts(),
+                'metrics' => $metrics
+            ]);
+            
+        // Metriche per monitoring
+        $this->updateMetrics($metrics);
+    }
+
+    private function collectMetrics($job): array
+    {
+        return [
+            'memory_usage' => memory_get_usage(true),
+            'peak_memory' => memory_get_peak_usage(true),
+            'processing_time' => microtime(true) - $job->start_time,
+            'queue_wait_time' => $job->start_time - $job->created_at->timestamp
+        ];
+    }
+
+    private function updateMetrics(array $metrics): void
+    {
+        foreach ($metrics as $key => $value) {
+            app('prometheus')->getOrRegisterGauge('jobs', $key)
+                ->set($value);
+        }
+    }
+}
+```
+
+## 3. Gestione Fallimenti
+**Problema**: Gestione non ottimale dei job falliti
+- Impatto: Job persi e retry inefficienti
+- Causa: Strategia di retry non ottimizzata
+
+**Soluzione Proposta**:
+```php
+declare(strict_types=1);
+
+namespace Modules\Job\Services;
+
+use Illuminate\Support\Facades\Redis;
+use Spatie\QueueableAction\QueueableAction;
+
+final class JobRetryService
+{
+    use QueueableAction;
+
+    public function handleFailedJob($job, \Throwable $e): void
+    {
+        $retryStrategy = $this->determineRetryStrategy($job, $e);
+        
+        if ($retryStrategy->shouldRetry()) {
+            $this->scheduleRetry($job, $retryStrategy->getNextAttempt());
+        } else {
+            $this->handleFinalFailure($job, $e);
+        }
+    }
+
+    private function determineRetryStrategy($job, \Throwable $e): RetryStrategy
+    {
+        return match (true) {
+            $e instanceof TemporaryException => new ExponentialBackoffStrategy(),
+            $e instanceof NetworkException => new IncrementalBackoffStrategy(),
+            default => new NoRetryStrategy()
+        };
+    }
+
+    private function scheduleRetry($job, int $delay): void
+    {
+        Redis::zadd(
+            'jobs:retry',
+            now()->addSeconds($delay)->timestamp,
+            serialize([
+                'job' => $job,
+                'attempts' => $job->attempts() + 1
+            ])
+        );
+>>>>>>> c088001a (first)
     }
 }
 ```
@@ -159,6 +321,7 @@ final class XotCacheService
 ## Metriche di Performance
 
 ### Obiettivi
+<<<<<<< HEAD
 - Tempo creazione model: < 50ms
 - Tempo costruzione query: < 100ms
 - Cache hit rate: > 95%
@@ -177,10 +340,32 @@ private function setupPerformanceMonitoring(): void
                     'sql' => $query->sql,
                     'time' => $query->time,
                     'bindings' => $query->bindings
+=======
+- Tempo in coda: < 30s per job prioritari
+- Memoria per job: < 64MB
+- Tasso di successo: > 99%
+- Retry efficaci: > 80%
+
+### Monitoraggio
+```php
+// In: Providers/JobServiceProvider.php
+private function setupPerformanceMonitoring(): void
+{
+    // Monitoring code
+    Queue::looping(function () {
+        $stats = Queue::getRedis()->info();
+        
+        if ($stats['used_memory'] > 1024 * 1024 * 512) { // 512MB
+            Log::channel('job_performance')
+                ->warning('Alto utilizzo memoria Redis', [
+                    'memory' => $stats['used_memory'],
+                    'peak' => $stats['used_memory_peak']
+>>>>>>> c088001a (first)
                 ]);
         }
     });
 
+<<<<<<< HEAD
     // Monitoring memoria
     $this->app->terminating(function () {
         $memoryUsage = memory_get_peak_usage(true) / 1024 / 1024;
@@ -189,6 +374,21 @@ private function setupPerformanceMonitoring(): void
             Log::channel('xot_performance')
                 ->warning('Alto utilizzo memoria', [
                     'memory_mb' => $memoryUsage
+=======
+    // Monitoring job
+    Queue::before(function ($job) {
+        $job->start_time = microtime(true);
+    });
+
+    Queue::after(function ($job) {
+        $duration = microtime(true) - $job->start_time;
+        
+        if ($duration > 30) { // 30 secondi
+            Log::channel('job_performance')
+                ->warning('Job lento rilevato', [
+                    'job' => get_class($job),
+                    'duration' => $duration
+>>>>>>> c088001a (first)
                 ]);
         }
     });
@@ -198,6 +398,7 @@ private function setupPerformanceMonitoring(): void
 ## Piano di Implementazione
 
 ### Fase 1 (Immediata)
+<<<<<<< HEAD
 - Ottimizzare model factory
 - Migliorare query builder
 - Implementare caching strategico
@@ -210,10 +411,25 @@ private function setupPerformanceMonitoring(): void
 ### Fase 3 (Lungo Termine)
 - Implementare sharding
 - Ottimizzare scalabilità
+=======
+- Implementare code prioritarie
+- Migliorare monitoraggio
+- Ottimizzare gestione errori
+
+### Fase 2 (Medio Termine)
+- Implementare retry intelligente
+- Ottimizzare uso memoria
+- Migliorare logging
+
+### Fase 3 (Lungo Termine)
+- Implementare scaling automatico
+- Ottimizzare distribuzione job
+>>>>>>> c088001a (first)
 - Migliorare resilienza
 
 ## Note Tecniche Aggiuntive
 
+<<<<<<< HEAD
 ### 1. Configurazione Performance
 ```php
 // In: config/xot.php
@@ -226,10 +442,39 @@ return [
     'monitoring' => [
         'slow_query_threshold' => env('XOT_SLOW_QUERY_MS', 100),
         'memory_threshold_mb' => env('XOT_MEMORY_THRESHOLD', 100)
+=======
+### 1. Configurazione Code
+```php
+// In: config/queue.php
+return [
+    'default' => env('QUEUE_CONNECTION', 'redis'),
+    'connections' => [
+        'redis' => [
+            'driver' => 'redis',
+            'connection' => 'queue',
+            'queue' => [
+                'jobs-high',
+                'jobs-default',
+                'jobs-low'
+            ],
+            'retry_after' => 90,
+            'block_for' => 5
+        ]
+    ],
+    'batching' => [
+        'database' => env('DB_CONNECTION', 'mysql'),
+        'table' => 'job_batches'
+    ],
+    'failed' => [
+        'driver' => env('QUEUE_FAILED_DRIVER', 'database-uuids'),
+        'database' => env('DB_CONNECTION', 'mysql'),
+        'table' => 'failed_jobs'
+>>>>>>> c088001a (first)
     ]
 ];
 ```
 
+<<<<<<< HEAD
 ### 2. Ottimizzazione Autoloading
 ```php
 // In: composer.json
@@ -277,6 +522,60 @@ trait HasXotOptimizations
             'creator:id,name',
             'updater:id,name'
         ];
+=======
+### 2. Ottimizzazione Redis
+```php
+// In: config/database.php
+'redis' => [
+    'queue' => [
+        'url' => env('REDIS_URL'),
+        'host' => env('REDIS_HOST', '127.0.0.1'),
+        'password' => env('REDIS_PASSWORD'),
+        'port' => env('REDIS_PORT', '6379'),
+        'database' => env('REDIS_QUEUE_DB', '1'),
+        'read_write_timeout' => 60,
+        'persistent' => true,
+        'options' => [
+            'serializer' => Redis::SERIALIZER_IGBINARY,
+            'compression' => Redis::COMPRESSION_LZ4
+        ]
+    ]
+]
+```
+
+### 3. Gestione Memoria
+```php
+// In: Jobs/BaseJob.php
+declare(strict_types=1);
+
+namespace Modules\Job\Jobs;
+
+use Illuminate\Bus\Queueable;
+use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Queue\SerializesModels;
+
+abstract class BaseJob
+{
+    use InteractsWithQueue, Queueable, SerializesModels;
+
+    protected function optimizeMemory(): void
+    {
+        // Impostare limite memoria per job
+        ini_set('memory_limit', '64M');
+        
+        // Garbage collection
+        if (gc_enabled()) {
+            gc_collect_cycles();
+        }
+        
+        // Clear static properties
+        $reflection = new \ReflectionClass(static::class);
+        foreach ($reflection->getProperties() as $property) {
+            if ($property->isStatic()) {
+                $property->setValue(null);
+            }
+        }
+>>>>>>> c088001a (first)
     }
 }
 ``` 

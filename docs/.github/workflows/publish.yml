@@ -6,10 +6,14 @@ on:
       - master
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 permissions:
 =======
 permissions: 
 >>>>>>> bbec4378 (first)
+=======
+permissions:
+>>>>>>> c088001a (first)
   contents: write
 
 jobs:
@@ -30,10 +34,14 @@ jobs:
     - name: Node
       run: npm install
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c088001a (first)
 
     - name: Production
       run: npm run prod
 
+<<<<<<< HEAD
 =======
       
     - name: Production
@@ -45,6 +53,13 @@ jobs:
 
     - name: gh-pages
       uses: JamesIves/github-pages-deploy-action@v4.4.2
+=======
+    - name: CNAME
+      run: echo "laraxot.github.io/doc_extrafield" > ./build_production/CNAME
+
+    - name: gh-pages
+      uses: JamesIves/github-pages-deploy-action@latest
+>>>>>>> c088001a (first)
       with:
         branch: gh-pages
         folder: build_production

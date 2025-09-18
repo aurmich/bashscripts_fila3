@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Rector\Config\RectorConfig;
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -43,11 +44,20 @@ use Rector\Set\ValueObject\LevelSetList;
 use Rector\TypeDeclaration\Rector\ClassMethod\ReturnTypeFromStrictNativeCallRector;
 use Rector\TypeDeclaration\Rector\ClassMethod\ReturnTypeFromStrictScalarReturnExprRector;
 >>>>>>> a8f30311 (first)
+=======
+use Rector\CodeQuality\Rector\Class_\InlineConstructorDefaultToPropertyRector;
+use Rector\Config\RectorConfig;
+use Rector\PHPUnit\Set\PHPUnitLevelSetList;
+use Rector\Set\ValueObject\LevelSetList;
+use Rector\Set\ValueObject\SetList;
+use RectorLaravel\Rector\MethodCall\RedirectRouteToToRouteHelperRector;
+>>>>>>> c088001a (first)
 use RectorLaravel\Set\LaravelSetList;
 
 return static function (RectorConfig $rectorConfig): void {
     $rectorConfig->paths(
         [
+<<<<<<< HEAD
 <<<<<<< HEAD
             __DIR__.'/Modules',
             __DIR__.'/app',
@@ -60,11 +70,15 @@ return static function (RectorConfig $rectorConfig): void {
 =======
             __DIR__,
 >>>>>>> a8f30311 (first)
+=======
+            __DIR__,
+>>>>>>> c088001a (first)
         ]
     );
 
     $rectorConfig->skip(
         [
+<<<<<<< HEAD
 <<<<<<< HEAD
             __DIR__.'/Modules/*/docs',
             __DIR__.'/Modules/*/vendor',
@@ -73,11 +87,17 @@ return static function (RectorConfig $rectorConfig): void {
             '*/docs',
             '*/vendor',
             './vendor/',
+=======
+            './vendor/',
+            '*/docs',
+            '*/vendor',
+>>>>>>> c088001a (first)
         ]
     );
 
     // register a single rule
     // $rectorConfig->rule(InlineConstructorDefaultToPropertyRector::class);
+<<<<<<< HEAD
     // $rectorConfig->rule(RedirectRouteToToRouteHelperRector::class);
 <<<<<<< HEAD
 =======
@@ -88,6 +108,9 @@ return static function (RectorConfig $rectorConfig): void {
         ]
     );
 >>>>>>> a8f30311 (first)
+=======
+    $rectorConfig->rule(RedirectRouteToToRouteHelperRector::class);
+>>>>>>> c088001a (first)
 
     // define sets of rules
     $rectorConfig->sets(
@@ -100,10 +123,14 @@ return static function (RectorConfig $rectorConfig): void {
 
             // SetList::NAMING, //problemi con injuction
 <<<<<<< HEAD
+<<<<<<< HEAD
             SetList::TYPE_DECLARATION,
 =======
             // SetList::TYPE_DECLARATION,
 >>>>>>> a8f30311 (first)
+=======
+            SetList::TYPE_DECLARATION,
+>>>>>>> c088001a (first)
             // SetList::CODING_STYLE,
             // SetList::PRIVATIZATION,//problemi con final
             // SetList::EARLY_RETURN,
@@ -113,6 +140,7 @@ return static function (RectorConfig $rectorConfig): void {
 
     $rectorConfig->importNames();
 };
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 59bc4fe7 (first)
 =======
@@ -168,3 +196,5 @@ return static function (RectorConfig $rectorConfig): void {
     $rectorConfig->importNames();
 };
 >>>>>>> bbec4378 (first)
+=======
+>>>>>>> c088001a (first)

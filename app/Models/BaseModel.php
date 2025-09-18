@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Rating\Models;
 
 use Illuminate\Database\Eloquent\Model;
@@ -25,6 +26,13 @@ use Modules\Xot\Actions\Factory\GetFactoryAction;
 >>>>>>> 59bc4fe7 (first)
 =======
 >>>>>>> bbec4378 (first)
+=======
+namespace Modules\Job\Models;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> c088001a (first)
 use Modules\Xot\Traits\Updater;
 
 /**
@@ -34,11 +42,15 @@ abstract class BaseModel extends Model
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> c088001a (first)
     use HasFactory;
 
     // use Searchable;
     // //use Cachable;
+<<<<<<< HEAD
 >>>>>>> 59bc4fe7 (first)
 =======
     use HasFactory;
@@ -46,11 +58,14 @@ abstract class BaseModel extends Model
     // use Searchable;
     // use Cachable;
 >>>>>>> bbec4378 (first)
+=======
+>>>>>>> c088001a (first)
     use Updater;
 
     /**
      * Indicates whether attributes are snake cased on arrays.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @see  https://laravel-news.com/6-eloquent-secrets
@@ -60,6 +75,9 @@ abstract class BaseModel extends Model
 =======
      * @see  https://laravel-news.com/6-eloquent-secrets
 >>>>>>> bbec4378 (first)
+=======
+     * @see https://laravel-news.com/6-eloquent-secrets
+>>>>>>> c088001a (first)
      *
      * @var bool
      */
@@ -67,8 +85,11 @@ abstract class BaseModel extends Model
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bbec4378 (first)
+=======
+>>>>>>> c088001a (first)
     /** @var bool */
     public $incrementing = true;
 
@@ -79,6 +100,7 @@ abstract class BaseModel extends Model
     protected $perPage = 30;
 
     /** @var string */
+<<<<<<< HEAD
 <<<<<<< HEAD
     protected $connection = 'rating';
 =======
@@ -93,18 +115,28 @@ abstract class BaseModel extends Model
 =======
     protected $connection = 'lang';
 >>>>>>> bbec4378 (first)
+=======
+    protected $connection = 'job';
+
+    /** @var string|null */
+    protected $prefix;
+>>>>>>> c088001a (first)
 
     /** @var list<string> */
     protected $fillable = ['id'];
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bbec4378 (first)
+=======
+>>>>>>> c088001a (first)
     /** @var string */
     protected $primaryKey = 'id';
 
     /** @var string */
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     protected $primaryKey = 'id';
@@ -112,6 +144,8 @@ abstract class BaseModel extends Model
 >>>>>>> 59bc4fe7 (first)
 =======
 >>>>>>> bbec4378 (first)
+=======
+>>>>>>> c088001a (first)
     protected $keyType = 'string';
 
     /** @var list<string> */
@@ -121,12 +155,38 @@ abstract class BaseModel extends Model
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /** @return array<string, string> */
     public function casts(): array
+=======
+    public function __construct(array $attributes = [])
+    {
+        if (isset($this->prefix)) {
+            $this->table = $this->prefix.$this->table;
+        }
+
+        parent::__construct($attributes);
+    }
+
+    /**
+     * ----
+     * Create a new factory instance for the model.
+     *
+     * @return \Illuminate\Database\Eloquent\Factories\Factory<static>
+     */
+    protected static function newFactory()
+    {
+        return app(\Modules\Xot\Actions\Factory\GetFactoryAction::class)->execute(static::class);
+    }
+
+    /** @return array<string, string> */
+    protected function casts(): array
+>>>>>>> c088001a (first)
     {
         return [
             'id' => 'string',
             'uuid' => 'string',
+<<<<<<< HEAD
             // 'published_at' => 'datetime:Y-m-d', // da verificare
             'published_at' => 'datetime',
             'created_at' => 'datetime',
@@ -147,6 +207,8 @@ abstract class BaseModel extends Model
     protected function casts(): array
     {
         return [
+=======
+>>>>>>> c088001a (first)
             'published_at' => 'datetime',
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
@@ -155,6 +217,7 @@ abstract class BaseModel extends Model
             'updated_by' => 'string',
             'created_by' => 'string',
             'deleted_by' => 'string',
+<<<<<<< HEAD
 >>>>>>> 59bc4fe7 (first)
         ];
 =======
@@ -176,5 +239,8 @@ abstract class BaseModel extends Model
             'id' => 'string',
             'uuid' => 'string', 'published_at' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime'];
 >>>>>>> bbec4378 (first)
+=======
+        ];
+>>>>>>> c088001a (first)
     }
 }

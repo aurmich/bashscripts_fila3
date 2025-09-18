@@ -6,6 +6,7 @@ on:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 permissions:
   contents: write
@@ -13,6 +14,11 @@ permissions:
 >>>>>>> a8f30311 (first)
 =======
 >>>>>>> bbec4378 (first)
+=======
+permissions:
+  contents: write
+
+>>>>>>> c088001a (first)
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -33,6 +39,7 @@ jobs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         uses: stefanzweifel/git-auto-commit-action@v4
 =======
         uses: stefanzweifel/git-auto-commit-action@latest
@@ -43,6 +50,9 @@ jobs:
 =======
         uses: stefanzweifel/git-auto-commit-action@v4
 >>>>>>> bbec4378 (first)
+=======
+        uses: stefanzweifel/git-auto-commit-action@latest
+>>>>>>> c088001a (first)
         with:
           branch: main
           commit_message: Update CHANGELOG

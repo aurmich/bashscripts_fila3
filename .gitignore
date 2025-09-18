@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ───────────────────────────────────────────────────────
 # Sistema operativo / File nascosti e metadata
 # ───────────────────────────────────────────────────────
@@ -426,11 +427,27 @@ package-lock.json
 composer.lock
 composer.lock
 *.lock
+=======
+*.lock
+package-lock.json
+.git-rewrite
+/docs/cache
+/build
+/vendor
+*.cache
+.git-blame-ignore-revs
+.git-rewrite
+.git-blame-ignore-revs
+/vendor
+*.lock
+composer.lock
+>>>>>>> c088001a (first)
 package-lock.json
 .php-cs-fixer.cache
 *.cache
 .git-blame-ignore-revs
 .git-rewrite
+<<<<<<< HEAD
 .git-blame-ignore-revs
 *.phar
 .php-cs-fixer.cache
@@ -549,3 +566,26 @@ laravel/Modules/Predict/
 *:Zone.Identifier
 .php-cs-fixer.cache
 >>>>>>> bbec4378 (first)
+=======
+
+.git-blame-ignore-revs
+*.phar
+.php-cs-fixer.cache
+.git-blame-ignore-revs
+package-lock.json
+.php-cs-fixer.cache
+package-lock.json
+.git-rewrite/
+node_modules
+vendor
+.php-cs-fixer.cache
+.git-blame-ignore-revs
+vendor/
+build/
+docs/cache/
+cache/
+.git-blame-ignore-revs
+.php-cs-fixer.cache
+*:Zone.Identifier
+
+>>>>>>> c088001a (first)

@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 =======
@@ -17,6 +18,8 @@ declare(strict_types=1);
 >>>>>>> a8f30311 (first)
 =======
 >>>>>>> bbec4378 (first)
+=======
+>>>>>>> c088001a (first)
 $finder = PhpCsFixer\Finder::create()
     ->notPath('bootstrap/cache')
     ->notPath('storage')
@@ -29,6 +32,7 @@ $finder = PhpCsFixer\Finder::create()
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ;
 =======
 >>>>>>> 59bc4fe7 (first)
@@ -36,6 +40,8 @@ $finder = PhpCsFixer\Finder::create()
 >>>>>>> a8f30311 (first)
 =======
 >>>>>>> bbec4378 (first)
+=======
+>>>>>>> c088001a (first)
 
 $config = new PhpCsFixer\Config();
 
@@ -43,6 +49,7 @@ $config
     ->setRules([
         '@Symfony' => true,
         'array_indentation' => true,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -59,10 +66,13 @@ $config
 >>>>>>> a8f30311 (first)
 =======
 >>>>>>> bbec4378 (first)
+=======
+>>>>>>> c088001a (first)
         'function_typehint_space' => true,
         'declare_equal_normalize' => true,
         'declare_strict_types' => true,
         'combine_consecutive_unsets' => true,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -84,10 +94,14 @@ $config
 =======
         //'binary_operator_spaces' => ['align_double_arrow' => false],
 >>>>>>> bbec4378 (first)
+=======
+        //'binary_operator_spaces' => ['align_double_arrow' => false],
+>>>>>>> c088001a (first)
         'array_syntax' => ['syntax' => 'short'],
         'linebreak_after_opening_tag' => true,
         'not_operator_with_successor_space' => true,
         'ordered_imports' => true,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -108,6 +122,9 @@ $config
 =======
         'phpdoc_order' => true,
 >>>>>>> bbec4378 (first)
+=======
+        'phpdoc_order' => true,
+>>>>>>> c088001a (first)
         'php_unit_construct' => false,
         'braces' => [
             'position_after_functions_and_oop_constructs' => 'same',
@@ -116,6 +133,7 @@ $config
         'blank_line_after_namespace' => true,
         'class_definition' => true,
         'elseif' => true,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -160,3 +178,9 @@ return $config;
 
 return $config;
 >>>>>>> bbec4378 (first)
+=======
+    ])
+    ->setFinder($finder)
+
+return $config;
+>>>>>>> c088001a (first)

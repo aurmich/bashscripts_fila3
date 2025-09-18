@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
  * Configurazione Tailwind CSS per il progetto Laraxot PTVX
 /**
@@ -50,6 +51,8 @@ module.exports = {
 >>>>>>> 59bc4fe7 (first)
 =======
 >>>>>>> a8f30311 (first)
+=======
+>>>>>>> c088001a (first)
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [],
@@ -57,6 +60,7 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   }
@@ -67,4 +71,7 @@ module.exports = {
 =======
 }
 >>>>>>> a8f30311 (first)
+=======
+}
+>>>>>>> c088001a (first)
 

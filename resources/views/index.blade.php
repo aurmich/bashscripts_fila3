@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('rating::layouts.master')
 =======
 @extends('xot::layouts.app')
@@ -11,11 +12,15 @@
 =======
 @extends('lang::layouts.master')
 >>>>>>> bbec4378 (first)
+=======
+@extends('job::layouts.master')
+>>>>>>> c088001a (first)
 
 @section('content')
     <h1>Hello World</h1>
 
     <p>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -37,3 +42,8 @@
     </p>
 @endsection
 >>>>>>> bbec4378 (first)
+=======
+        This view is loaded from module: {!! config('job.name') !!}
+    </p>
+@endsection
+>>>>>>> c088001a (first)

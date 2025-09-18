@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <x-filament-panels::page class="fi-dashboard-page">
     {{--
     @if (method_exists($this, 'filtersForm'))
@@ -19,3 +20,12 @@
 
 </x-filament::page>
 >>>>>>> bbec4378 (first)
+=======
+<x-filament::page>
+    {{--
+    <img src="{{ ui::asset('ewall::img/logo.png') }}" />
+
+    <img src="{{ $ui->asset('ewall::img/logo.png') }}" />
+    --}}
+</x-filament::page>
+>>>>>>> c088001a (first)

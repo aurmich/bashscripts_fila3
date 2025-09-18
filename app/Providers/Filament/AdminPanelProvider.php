@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
  * ---.
  */
@@ -27,10 +28,17 @@ declare(strict_types=1);
 namespace Modules\Lang\Providers\Filament;
 
 >>>>>>> bbec4378 (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Job\Providers\Filament;
+
+>>>>>>> c088001a (first)
 use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 
 class AdminPanelProvider extends XotBasePanelProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     protected string $module = 'Rating';
@@ -62,4 +70,7 @@ class AdminPanelProvider extends XotBasePanelProvider
 =======
     protected string $module = 'Lang';
 >>>>>>> bbec4378 (first)
+=======
+    protected string $module = 'Job';
+>>>>>>> c088001a (first)
 }

@@ -20,7 +20,11 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
 
       - name: Set Node.js 19.x
+<<<<<<< HEAD
         uses: actions/setup-node@v3
+=======
+        uses: actions/setup-node@latest
+>>>>>>> c088001a (first)
         with:
           node-version: 19.x
 

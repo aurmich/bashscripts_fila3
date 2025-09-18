@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "laraxot/bashscripts_fila3",
     "description": "Script di utilità per la gestione dei repository Git, Toolkit di automazione Git per progetti Laravel",
     "type": "library",
@@ -118,6 +119,37 @@
         {
             "type": "path",
 <<<<<<< HEAD
+=======
+    "name": "laraxot/module_job_fila3",
+    "description": "job module enables efficient background task execution. It lets you offload resource-heavy processes, like sending emails or data processing, improving app performance. Through simple job definition and dispatching, you can enhance user experience while tasks run seamlessly in the background.",
+    "keywords": [
+        "laraxot",
+        "laravel",
+        "filament",
+        "module_job",
+        "Laravel",
+        "Job module",
+        "background tasks",
+        "app performance",
+        "email sending",
+        "data processing",
+        "user experience"
+    ],
+    "homepage": "https://github.com/laraxot/module_job_fila3.git",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marco Sottana",
+            "email": "marco.sottana@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {},
+    "require-dev": {},
+    "repositories_comment": [
+        {
+            "type": "path",
+>>>>>>> c088001a (first)
             "url": "../User"
         },
         {
@@ -129,6 +161,7 @@
             "url": "../Xot"
         }
     ],
+<<<<<<< HEAD
     "scripts": {
         "post-autoload-dump1": [
 >>>>>>> a8f30311 (first)
@@ -258,10 +291,22 @@
         ]
     },
     "scripts": {
+=======
+    "autoload": {
+        "psr-4": {
+            "Modules\\Job\\": "app/",
+            "Modules\\Job\\Database\\Factories\\": "database/factories/",
+            "Modules\\Job\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump1": "@php ./vendor/bin/testbench package:discover --ansi",
+>>>>>>> c088001a (first)
         "analyse": "vendor/bin/phpstan analyse",
         "test": "vendor/bin/pest",
         "test-coverage": "vendor/bin/pest --coverage",
         "format": "vendor/bin/pint"
+<<<<<<< HEAD
 >>>>>>> 59bc4fe7 (first)
 =======
 >>>>>>> a8f30311 (first)
@@ -279,10 +324,13 @@
         "test-coverage": "vendor/bin/pest --coverage-html coverage",
         "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
 >>>>>>> bbec4378 (first)
+=======
+>>>>>>> c088001a (first)
     },
     "config": {
         "sort-packages": true,
         "allow-plugins": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -304,10 +352,15 @@
 =======
             "pestphp/pest-plugin": true,
 >>>>>>> a8f30311 (first)
+=======
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true,
+>>>>>>> c088001a (first)
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "wikimedia/composer-merge-plugin": true
         }
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
     "extra": {
         "laravel": {
@@ -322,11 +375,19 @@
                 "Modules\\Lang\\Providers\\LangServiceProvider",
                 "Modules\\Lang\\Providers\\Filament\\AdminPanelProvider"
 >>>>>>> bbec4378 (first)
+=======
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Job\\Providers\\JobServiceProvider",
+                "Modules\\Job\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> c088001a (first)
             ],
             "aliases": {}
         }
     },
     "minimum-stability": "dev",
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 59bc4fe7 (first)
     "prefer-stable": true
@@ -340,3 +401,7 @@
     "prefer-stable": true
 }
 >>>>>>> bbec4378 (first)
+=======
+    "prefer-stable": true
+}
+>>>>>>> c088001a (first)

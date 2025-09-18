@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Rating\Models;
 =======
 namespace Modules\Xot\Models;
@@ -11,6 +12,9 @@ namespace Modules\Xot\Models;
 =======
 namespace Modules\Lang\Models;
 >>>>>>> bbec4378 (first)
+=======
+namespace Modules\Job\Models;
+>>>>>>> c088001a (first)
 
 use Illuminate\Database\Eloquent\Relations\MorphPivot;
 use Modules\Xot\Traits\Updater;
@@ -27,6 +31,7 @@ abstract class BaseMorphPivot extends MorphPivot
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @see  https://laravel-news.com/6-eloquent-secrets
 =======
      * @see https://laravel-news.com/6-eloquent-secrets
@@ -34,6 +39,9 @@ abstract class BaseMorphPivot extends MorphPivot
 =======
      * @see  https://laravel-news.com/6-eloquent-secrets
 >>>>>>> bbec4378 (first)
+=======
+     * @see https://laravel-news.com/6-eloquent-secrets
+>>>>>>> c088001a (first)
      *
      * @var bool
      */
@@ -44,15 +52,22 @@ abstract class BaseMorphPivot extends MorphPivot
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /** @var bool */
     public $timestamps = true;
 
 =======
 >>>>>>> 59bc4fe7 (first)
+=======
+    /** @var bool */
+    public $timestamps = true;
+
+>>>>>>> c088001a (first)
     /** @var int */
     protected $perPage = 30;
 
     /** @var string */
+<<<<<<< HEAD
 <<<<<<< HEAD
     protected $connection = 'rating';
 =======
@@ -67,6 +82,9 @@ abstract class BaseMorphPivot extends MorphPivot
 
     protected $connection = 'lang';
 >>>>>>> bbec4378 (first)
+=======
+    protected $connection = 'job';
+>>>>>>> c088001a (first)
 
     /** @var list<string> */
     protected $appends = [];
@@ -88,6 +106,7 @@ abstract class BaseMorphPivot extends MorphPivot
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function casts(): array
 =======
     protected function casts(): array
@@ -105,6 +124,13 @@ abstract class BaseMorphPivot extends MorphPivot
             'id' => 'string', // must be string else primary key of related model will be typed as int
             'uuid' => 'string',
 
+=======
+    protected function casts(): array
+    {
+        return [
+            'id' => 'string',
+            'uuid' => 'string',
+>>>>>>> c088001a (first)
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
             'deleted_at' => 'datetime',
@@ -113,8 +139,11 @@ abstract class BaseMorphPivot extends MorphPivot
             'created_by' => 'string',
             'deleted_by' => 'string',
         ];
+<<<<<<< HEAD
 >>>>>>> 59bc4fe7 (first)
 =======
 >>>>>>> bbec4378 (first)
+=======
+>>>>>>> c088001a (first)
     }
 }

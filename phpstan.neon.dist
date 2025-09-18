@@ -3,6 +3,7 @@ includes:
     - ./vendor/larastan/larastan/extension.neon
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 parameters:
     level: 1
@@ -17,6 +18,8 @@ parameters:
     checkMissingIterableValueType: false
 
 =======
+=======
+>>>>>>> c088001a (first)
     - ./vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
     #- ./vendor/symplify/phpstan-rules/config/code-complexity-rules.neon
     #- ./vendor/symplify/phpstan-rules/config/collector-rules.neon
@@ -24,29 +27,42 @@ parameters:
     #- ./vendor/symplify/phpstan-rules/config/regex-rules.neon
     #- ./vendor/symplify/phpstan-rules/config/static-rules.neon
 
+<<<<<<< HEAD
 =======
 >>>>>>> bbec4378 (first)
+=======
+>>>>>>> c088001a (first)
 
 parameters:
     level: max
     paths:
         - .
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c088001a (first)
 
     ignoreErrors:
     #    - '#Unsafe usage of new static#'
         - '#PHPDoc tag @mixin contains unknown class #'
         - '#Static call to instance method Nwidart#'
 
+<<<<<<< HEAD
 =======
 >>>>>>> bbec4378 (first)
+=======
+>>>>>>> c088001a (first)
     excludePaths:
         - ./build/*
         - ./vendor/*
         - ./*/vendor/*
         - ./docs/*
 <<<<<<< HEAD
+<<<<<<< HEAD
         # - ./Tests/*
+=======
+        - ./Tests/*
+>>>>>>> c088001a (first)
         - ./_ide_helper.php
 
     bootstrapFiles:
@@ -67,6 +83,7 @@ parameters:
     reportUnmatchedIgnoredErrors: false
     checkOctaneCompatibility: false
     checkModelProperties: false
+<<<<<<< HEAD
 >>>>>>> a8f30311 (first)
 =======
         - ./Tests/*
@@ -91,3 +108,5 @@ parameters:
     checkImplicitMixed: false
 
 >>>>>>> bbec4378 (first)
+=======
+>>>>>>> c088001a (first)

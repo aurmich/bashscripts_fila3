@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     'title' => 'Laravel Installer',
     'next' => 'Next Step',
     'finish' => 'Install',
@@ -27,5 +28,11 @@ return [
         'title' => 'Finished',
         'finished' => 'Application has been successfully installed.',
         'exit' => 'Click here to exit',
+=======
+    'success' => [
+        'create' => 'Task Created Successfully.',
+        'update' => 'Task Updated Successfully',
+        'delete' => 'Task Deleted Successfully',
+>>>>>>> c088001a (first)
     ],
 ];

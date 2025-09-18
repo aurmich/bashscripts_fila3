@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
  * ---.
  */
@@ -15,11 +16,17 @@ declare(strict_types=1);
 
 namespace Modules\UI\Providers;
 >>>>>>> a8f30311 (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Job\Providers;
+>>>>>>> c088001a (first)
 
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     protected string $moduleNamespace = 'Modules\Rating\Http\Controllers';
 =======
@@ -55,11 +62,15 @@ class RouteServiceProvider extends ServiceProvider
 =======
     protected string $moduleNamespace = 'Modules\UI\Http\Controllers';
 >>>>>>> a8f30311 (first)
+=======
+    protected string $moduleNamespace = 'Modules\Job\Http\Controllers';
+>>>>>>> c088001a (first)
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     public string $name = 'Rating';
@@ -262,4 +273,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 =======
     }
 >>>>>>> bbec4378 (first)
+=======
+    public string $name = 'Job';
+>>>>>>> c088001a (first)
 }

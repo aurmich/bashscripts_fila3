@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 []
 =======
 [{"name":"toast","class":"Toast","module":null,"path":null,"ns":"Modules\\UI\\Http\\Livewire\\Toast"}]
@@ -7,3 +8,6 @@
 =======
 [{"name":"lang.change","class":"Lang\\Change","module":null,"path":null,"ns":"Modules\\Lang\\Http\\Livewire\\Lang\\Change"},{"name":"lang.switcher","class":"Lang\\Switcher","module":null,"path":null,"ns":"Modules\\Lang\\Http\\Livewire\\Lang\\Switcher"}]
 >>>>>>> bbec4378 (first)
+=======
+[{"name":"broad","class":"Broad","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Broad"},{"name":"job.status","class":"Job\\Status","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Job\\Status"},{"name":"schedule.crud","class":"Schedule\\Crud","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Schedule\\Crud"},{"name":"schedule.status","class":"Schedule\\Status","module":null,"path":null,"ns":"Modules\\Job\\Http\\Livewire\\Schedule\\Status"}]
+>>>>>>> c088001a (first)

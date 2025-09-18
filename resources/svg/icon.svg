@@ -8,6 +8,7 @@
      role="img">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <!-- Cubo base -->
     <path stroke-linecap="round" 
           stroke-linejoin="round" 
@@ -64,4 +65,21 @@
           stroke-linejoin="round" 
           d="M16 8l1.5 1.5L16 11" />
 >>>>>>> bbec4378 (first)
+=======
+    <!-- Lista principale -->
+    <path stroke-linecap="round" 
+          stroke-linejoin="round" 
+          d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+    
+    <!-- Indicatore di processo -->
+    <circle cx="7" cy="6" r="1" fill="currentColor" />
+    <path stroke-linecap="round" 
+          stroke-linejoin="round" 
+          d="M9 6h8" />
+          
+    <!-- Indicatore di completamento -->
+    <path stroke-linecap="round" 
+          stroke-linejoin="round" 
+          d="M6.5 14.5l1 1 2-2" />
+>>>>>>> c088001a (first)
 </svg> 

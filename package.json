@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   "private": true,
   "scripts": {
@@ -39,6 +40,8 @@
 >>>>>>> 59bc4fe7 (first)
 =======
 >>>>>>> bbec4378 (first)
+=======
+>>>>>>> c088001a (first)
     "private": true,
     "scripts": {
         "development": "mix",
@@ -49,6 +52,7 @@
     },
     "devDependencies": {
         "@tailwindcss/forms": "^0.5.7",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -81,6 +85,12 @@
         "autoprefixer": "^10.4.19",
         "axios": "^1.6.7",
         "cross-env": "^5.1.4",
+=======
+        "@tailwindcss/typography": "^0.5.13",
+        "autoprefixer": "^10.4.19",
+        "axios": "^1.6.7",
+        "cross-env": "^7.0",
+>>>>>>> c088001a (first)
         "laravel-mix": "^6.0.49",
         "laravel-mix-merge-manifest": "^0.1.2",
         "laravel-vite-plugin": "^1.0.1",
@@ -91,6 +101,7 @@
         "tippy.js": "^6.3.7",
         "vite": "^5.4.1"
     }
+<<<<<<< HEAD
 >>>>>>> 59bc4fe7 (first)
 =======
     "vite": "^5.4.1"
@@ -98,4 +109,6 @@
 >>>>>>> a8f30311 (first)
 =======
 >>>>>>> bbec4378 (first)
+=======
+>>>>>>> c088001a (first)
 }

@@ -8,6 +8,7 @@ CHANGELOG.md export-ignore
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 *.psd filter=lfs diff=lfs merge=lfs -text
@@ -23,3 +24,5 @@ CHANGELOG.md export-ignore
 =======
 *.psd filter=lfs diff=lfs merge=lfs -text
 >>>>>>> bbec4378 (first)
+=======
+>>>>>>> c088001a (first)
