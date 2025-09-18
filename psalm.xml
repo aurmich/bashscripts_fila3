@@ -1,6 +1,12 @@
 <?xml version="1.0"?>
 <psalm
+<<<<<<< HEAD
     errorLevel="4"
+=======
+    errorLevel="1"
+     cacheDirectory="build/psalm"
+    errorBaseline="psalm-baseline.xml"
+>>>>>>> 59bc4fe7 (first)
     resolveFromConfigFile="true"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns="https://getpsalm.org/schema/config"
@@ -9,6 +15,7 @@
     findUnusedCode="true"
 >
     <projectFiles>
+<<<<<<< HEAD
         <file name="Actions/DB/DownloadAction.php"/>
         <file name="Config/config.php"/>
         <file name="Config/setting-filament.php"/>
@@ -43,3 +50,17 @@
         </ignoreFiles>
     </projectFiles>
 <plugins><pluginClass class="Psalm\LaravelPlugin\Plugin"/></plugins></psalm>
+=======
+        <directory name="."/>
+        <ignoreFiles>
+            <directory name="build" />
+            <directory name="vendor" />
+            <directory name="Services/vendor" />
+            <directory name="docs" />
+        </ignoreFiles>
+    </projectFiles>
+    <plugins>
+        <pluginClass class="Psalm\LaravelPlugin\Plugin"/>
+    </plugins>
+</psalm>
+>>>>>>> 59bc4fe7 (first)

@@ -5,7 +5,11 @@ on:
     branches:
       - master
 
+<<<<<<< HEAD
 permissions: 
+=======
+permissions:
+>>>>>>> 59bc4fe7 (first)
   contents: write
 
 jobs:
@@ -25,12 +29,21 @@ jobs:
 
     - name: Node
       run: cd docs && npm install
+<<<<<<< HEAD
       
     - name: Production
       run: cd docs && npm run prod
       
     - name: CNAME
       run: cd docs && echo "laraxot.github.io/module_rating" > ./build_production/CNAME
+=======
+
+    - name: Production
+      run: cd docs && npm run prod
+
+    - name: CNAME
+      run: cd docs && echo "laraxot.github.io/module_xot_fila3" > ./build_production/CNAME
+>>>>>>> 59bc4fe7 (first)
 
     - name: gh-pages
       uses: JamesIves/github-pages-deploy-action@latest

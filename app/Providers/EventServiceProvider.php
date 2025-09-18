@@ -2,7 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Rating\Providers;
+=======
+namespace Modules\Xot\Providers;
+>>>>>>> 59bc4fe7 (first)
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as BaseEventServiceProvider;
 

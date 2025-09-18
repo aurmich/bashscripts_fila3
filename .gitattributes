@@ -5,6 +5,7 @@
 CHANGELOG.md export-ignore
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 *.psd filter=lfs diff=lfs merge=lfs -text
@@ -12,3 +13,5 @@ CHANGELOG.md export-ignore
 =======
 *.psd filter=lfs diff=lfs merge=lfs -text
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
+=======
+>>>>>>> 59bc4fe7 (first)

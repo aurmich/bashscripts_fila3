@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
     "description": "",
@@ -7,8 +8,24 @@
     "providers": [
         "Modules\\Rating\\Providers\\RatingServiceProvider",
         "Modules\\Rating\\Providers\\Filament\\AdminPanelProvider"
+=======
+    "name": "Xot",
+    "alias": "xot",
+    "description": "",
+    "keywords": [],
+    "priority": 2,
+    "active": 1,
+    "order": 2,
+    "providers": [
+        "Modules\\Xot\\Providers\\XotServiceProvider",
+        "Modules\\Xot\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> 59bc4fe7 (first)
     ],
     "aliases": [],
     "files": [],
     "requires": []
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 59bc4fe7 (first)

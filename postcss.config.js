@@ -2,6 +2,7 @@ module.exports = {
   plugins: {
     tailwindcss: {},
     autoprefixer: {},
+<<<<<<< HEAD
     'postcss-preset-env': {
       stage: 3,
       features: {
@@ -10,5 +11,7 @@ module.exports = {
         'media-query-ranges': true,
       },
     },
+=======
+>>>>>>> 59bc4fe7 (first)
   },
 }

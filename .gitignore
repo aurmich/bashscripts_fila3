@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ───────────────────────────────────────────────────────
 # Sistema operativo / File nascosti e metadata
 # ───────────────────────────────────────────────────────
@@ -376,6 +377,8 @@ public_html/vendor/
 =======
 =======
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
+=======
+>>>>>>> 59bc4fe7 (first)
 *.jar
 *.log
 *.lock
@@ -394,6 +397,7 @@ error_log
 .phpintel
 /.idea
 
+<<<<<<< HEAD
 *.stackdump
 *.cache
 *.log
@@ -402,6 +406,22 @@ package-lock.json
 
 node_modules
 .git-blame-ignore-revs
+=======
+*.lock
+package-lock.json
+*.stackdump
+*.cache
+/build
+.git-blame-ignore-revs
+.git-rewrite
+.php-cs-fixer.cache
+*.phar
+.git-rewrite/
+
+node_modules
+.git-blame-ignore-revs
+.git-blame-ignore-revs
+>>>>>>> 59bc4fe7 (first)
 node_modules
 vendor
 .git-blame-ignore-revs
@@ -411,6 +431,7 @@ build/
 node_modules
 docs/cache/
 cache/
+<<<<<<< HEAD
 <<<<<<< HEAD
 *:Zone.Identifier
 >>>>>>> 164b8363 (Squashed 'laravel/Modules/Rating/' content from commit e5c84117)
@@ -423,3 +444,8 @@ laravel/Modules/Predict/
 =======
 *.old
 >>>>>>> eb769019 (.)
+=======
+.git-blame-ignore-revs
+.php-cs-fixer.cache
+*.exe
+>>>>>>> 59bc4fe7 (first)

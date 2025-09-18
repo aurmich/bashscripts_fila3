@@ -21,7 +21,11 @@ jobs:
           release-notes: ${{ github.event.release.body }}
 
       - name: Commit updated CHANGELOG
+<<<<<<< HEAD
         uses: stefanzweifel/git-auto-commit-action@v4
+=======
+        uses: stefanzweifel/git-auto-commit-action@latest
+>>>>>>> 59bc4fe7 (first)
         with:
           branch: main
           commit_message: Update CHANGELOG

@@ -2,12 +2,15 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 =======
 >>>>>>> 164b8363 (Squashed 'laravel/Modules/Rating/' content from commit e5c84117)
 =======
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
+=======
+>>>>>>> 59bc4fe7 (first)
 $finder = PhpCsFixer\Finder::create()
     ->notPath('bootstrap/cache')
     ->notPath('storage')
@@ -17,7 +20,10 @@ $finder = PhpCsFixer\Finder::create()
     ->notName('*.blade.php')
     ->ignoreDotFiles(true)
     ->ignoreVCS(true)
+<<<<<<< HEAD
 ;
+=======
+>>>>>>> 59bc4fe7 (first)
 
 $config = new PhpCsFixer\Config();
 
@@ -27,15 +33,19 @@ $config
         'array_indentation' => true,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         '@PhpCsFixer:risky' => true,
 =======
 >>>>>>> 164b8363 (Squashed 'laravel/Modules/Rating/' content from commit e5c84117)
 =======
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
+=======
+>>>>>>> 59bc4fe7 (first)
         'function_typehint_space' => true,
         'declare_equal_normalize' => true,
         'declare_strict_types' => true,
         'combine_consecutive_unsets' => true,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         // 'binary_operator_spaces' => ['align_double_arrow' => false],
@@ -45,10 +55,14 @@ $config
 =======
         //'binary_operator_spaces' => ['align_double_arrow' => false],
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
+=======
+        //'binary_operator_spaces' => ['align_double_arrow' => false],
+>>>>>>> 59bc4fe7 (first)
         'array_syntax' => ['syntax' => 'short'],
         'linebreak_after_opening_tag' => true,
         'not_operator_with_successor_space' => true,
         'ordered_imports' => true,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -57,6 +71,9 @@ $config
 =======
         'phpdoc_order' => true,
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
+=======
+        'phpdoc_order' => true,
+>>>>>>> 59bc4fe7 (first)
         'php_unit_construct' => false,
         'braces' => [
             'position_after_functions_and_oop_constructs' => 'same',
@@ -65,6 +82,7 @@ $config
         'blank_line_after_namespace' => true,
         'class_definition' => true,
         'elseif' => true,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         'phpdoc_add_missing_param_annotation' => true,
@@ -88,3 +106,9 @@ return $config;
 =======
 return $config;
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
+=======
+    ])
+    ->setFinder($finder)
+
+return $config;
+>>>>>>> 59bc4fe7 (first)
