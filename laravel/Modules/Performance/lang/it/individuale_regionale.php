@@ -156,12 +156,18 @@ return array (
       'label' => 'view',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 83a191e6 (.)
     'create' => 
     array (
       'label' => 'create',
     ),
+<<<<<<< HEAD
 =======
 >>>>>>> 6d38d2cc (.)
+=======
+>>>>>>> 83a191e6 (.)
   ),
   'actions' => 
   array (
