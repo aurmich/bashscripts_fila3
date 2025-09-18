@@ -23,6 +23,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "laraxot/bashscripts_fila3",
     "description": "Script di utilità per la gestione dei repository Git, Toolkit di automazione Git per progetti Laravel",
     "type": "library",
@@ -199,12 +200,19 @@
     "license": "MIT",
     "homepage": "https://github.com/laraxot/module_mobilitavolontaria_fila3.git",
 >>>>>>> 8e6e7d4c (first)
+=======
+    "name": "laraxot/module_prenotazioni_fila3",
+    "description": "",
+    "license": "MIT",
+    "homepage": "https://github.com/laraxot/module_prenotazioni_fila3.git",
+>>>>>>> 4658bb86 (first)
     "authors": [
         {
             "name": "Marco Sottana",
             "email": "marco.sottana@gmail.com"
         }
     ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -488,12 +496,17 @@
     "require": {
         "spatie/laravel-sluggable": "*"
 >>>>>>> 8e6e7d4c (first)
+=======
+    "require": {
+        "spatie/laravel-sluggable": "*"
+>>>>>>> 4658bb86 (first)
     },
     "require-dev": {},
     "repositories": [
         {
             "type": "path",
             "url": "../Xot"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -531,6 +544,8 @@
 >>>>>>> c6af2eee (first)
 =======
 >>>>>>> 8e6e7d4c (first)
+=======
+>>>>>>> 4658bb86 (first)
         },
         {
             "type": "path",
@@ -538,6 +553,7 @@
         },
         {
             "type": "path",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -770,11 +786,14 @@
 >>>>>>> c6af2eee (first)
 =======
 >>>>>>> 8e6e7d4c (first)
+=======
+>>>>>>> 4658bb86 (first)
             "url": "../UI"
         }
     ],
     "autoload": {
         "psr-4": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -839,11 +858,17 @@
             "Modules\\MobilitaVolontaria\\Database\\Factories\\": "database/factories/",
             "Modules\\MobilitaVolontaria\\Database\\Seeders\\": "database/seeders/"
 >>>>>>> 8e6e7d4c (first)
+=======
+            "Modules\\Prenotazioni\\": "app/",
+            "Modules\\Prenotazioni\\Database\\Factories\\": "database/factories/",
+            "Modules\\Prenotazioni\\Database\\Seeders\\": "database/seeders/"
+>>>>>>> 4658bb86 (first)
         }
     },
     "scripts": {
         "post-autoload-dump": [],
         "post-update-cmd": [],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -905,10 +930,13 @@
 >>>>>>> c6af2eee (first)
 =======
 >>>>>>> 8e6e7d4c (first)
+=======
+>>>>>>> 4658bb86 (first)
         "analyse": "vendor/bin/phpstan analyse",
         "test": "./vendor/bin/pest --no-coverage",
         "test-coverage": "vendor/bin/pest --coverage-html coverage",
         "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -956,10 +984,13 @@
 >>>>>>> c6af2eee (first)
 =======
 >>>>>>> 8e6e7d4c (first)
+=======
+>>>>>>> 4658bb86 (first)
     },
     "config": {
         "sort-packages": true,
         "allow-plugins": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1006,10 +1037,13 @@
 >>>>>>> c6af2eee (first)
 =======
 >>>>>>> 8e6e7d4c (first)
+=======
+>>>>>>> 4658bb86 (first)
             "phpstan/extension-installer": true,
             "pestphp/pest-plugin": true
         }
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1173,10 +1207,18 @@
                 "Modules\\MobilitaVolontaria\\Providers\\MobilitaVolontariaServiceProvider",
                 "Modules\\MobilitaVolontaria\\Providers\\Filament\\AdminPanelProvider"
 >>>>>>> 8e6e7d4c (first)
+=======
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Prenotazioni\\Providers\\PrenotazioniServiceProvider",
+                "Modules\\Prenotazioni\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> 4658bb86 (first)
             ],
             "aliases": {}
         }
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1343,3 +1385,8 @@
     "prefer-stable": true
 }
 >>>>>>> 8e6e7d4c (first)
+=======
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+>>>>>>> 4658bb86 (first)

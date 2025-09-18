@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -212,4 +213,11 @@ return [
     'name' => 'MobilitaVolontaria',
     'icon' => 'fas-person-walking-luggage',
 >>>>>>> 8e6e7d4c (first)
+=======
+declare(strict_types=1);
+
+return [
+    'name' => 'Prenotazioni',
+    'icon' => 'heroicon-o-calendar-days',
+>>>>>>> 4658bb86 (first)
 ];

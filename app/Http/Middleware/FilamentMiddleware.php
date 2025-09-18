@@ -1,10 +1,14 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\IndennitaCondizioniLavoro\Http\Middleware;
 =======
 namespace Modules\IndennitaResponsabilita\Http\Middleware;
 >>>>>>> e0005d7d (first)
+=======
+namespace Modules\Prenotazioni\Http\Middleware;
+>>>>>>> 4658bb86 (first)
 
 use Exception;
 use Filament\Models\Contracts\FilamentUser;
@@ -15,10 +19,14 @@ use Str;
 class FilamentMiddleware extends Middleware
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static string $module = 'IndennitaCondizioniLavoro';
 =======
     public static string $module = 'IndennitaResponsabilita';
 >>>>>>> e0005d7d (first)
+=======
+    public static string $module = 'Prenotazioni';
+>>>>>>> 4658bb86 (first)
 
     public static string $context = 'filament';
 

@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @section('page_heading','Bagde')
 =======
 @section('page_heading','cert fisc')
@@ -72,3 +73,11 @@ Benvenuto nel programma mensa
 
 @endsection
 >>>>>>> 8e6e7d4c (first)
+=======
+@section('page_heading','Prenotazioni ')
+@section('section')
+
+<h1>benvenuti nel programma prenotazioni</h1>
+
+@endsection
+>>>>>>> 4658bb86 (first)

@@ -20,6 +20,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('rating::layouts.master')
 =======
 @extends('xot::layouts.app')
@@ -87,10 +88,14 @@
 =======
 @extends('mobilitavolontaria::layouts.master')
 >>>>>>> 8e6e7d4c (first)
+=======
+@extends('prenotazioni::layouts.master')
+>>>>>>> 4658bb86 (first)
 
 @section('content')
     <h1>Hello World</h1>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -239,3 +244,9 @@
     </p>
 @stop
 >>>>>>> 8e6e7d4c (first)
+=======
+    <p>
+        This view is loaded from module: {!! config('prenotazioni.name') !!}
+    </p>
+@stop
+>>>>>>> 4658bb86 (first)

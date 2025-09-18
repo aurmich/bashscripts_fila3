@@ -22,6 +22,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 /**
@@ -144,10 +145,18 @@ namespace Modules\Mensa\Providers;
 
 // --- bases ---
 >>>>>>> c6af2eee (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Prenotazioni\Providers;
+
+// --- bases ---
+>>>>>>> 4658bb86 (first)
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -316,10 +325,19 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider {
      */
     protected string $moduleNamespace = 'Modules\MobilitaVolontaria\Http\Controllers';
 >>>>>>> 8e6e7d4c (first)
+=======
+    /**
+     * The module namespace to assume when generating URLs to actions.
+     */
+    protected string $moduleNamespace = 'Modules\Prenotazioni\Http\Controllers';
+
+    public string $name = 'Prenotazioni';
+>>>>>>> 4658bb86 (first)
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -605,4 +623,6 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
     public string $name = 'MobilitaVolontaria';
 >>>>>>> 8e6e7d4c (first)
+=======
+>>>>>>> 4658bb86 (first)
 }

@@ -16,6 +16,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -128,6 +129,11 @@ declare(strict_types=1);
 
 namespace Modules\MobilitaVolontaria\Providers;
 >>>>>>> 8e6e7d4c (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Prenotazioni\Providers;
+>>>>>>> 4658bb86 (first)
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as BaseEventServiceProvider;
 
@@ -139,6 +145,7 @@ class EventServiceProvider extends BaseEventServiceProvider
      * @var array<string, array<int, string>>
      */
     protected $listen = [];
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -203,6 +210,9 @@ class EventServiceProvider extends BaseEventServiceProvider
 =======
 
 >>>>>>> 8e6e7d4c (first)
+=======
+
+>>>>>>> 4658bb86 (first)
     /**
      * Indicates if events should be discovered.
      *
@@ -213,6 +223,7 @@ class EventServiceProvider extends BaseEventServiceProvider
     /**
      * Configure the proper event listeners for email verification.
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -337,4 +348,7 @@ class EventServiceProvider extends ServiceProvider
     {
     }
 >>>>>>> 8e6e7d4c (first)
+=======
+    protected function configureEmailVerification(): void {}
+>>>>>>> 4658bb86 (first)
 }

@@ -22,6 +22,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 0d55b583 (first)
@@ -258,6 +259,8 @@
 >>>>>>> c6af2eee (first)
 =======
 >>>>>>> 8e6e7d4c (first)
+=======
+>>>>>>> 4658bb86 (first)
     "private": true,
     "scripts": {
         "dev": "npm run development",
@@ -275,6 +278,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6907d18e (first)
 =======
@@ -283,10 +287,13 @@
 >>>>>>> c6af2eee (first)
 =======
 >>>>>>> 8e6e7d4c (first)
+=======
+>>>>>>> 4658bb86 (first)
         "cross-env": "^5.1.4",
         "laravel-mix": "^4.0.7",
         "laravel-mix-merge-manifest": "^0.1.2"
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -323,4 +330,6 @@
 >>>>>>> c6af2eee (first)
 =======
 >>>>>>> 8e6e7d4c (first)
+=======
+>>>>>>> 4658bb86 (first)
 }
