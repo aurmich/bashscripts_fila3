@@ -10,6 +10,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ───────────────────────────────────────────────────────
 # Sistema operativo / File nascosti e metadata
 # ───────────────────────────────────────────────────────
@@ -504,6 +505,12 @@ package-lock.json
 node_modules/
 npm-debug.log
 >>>>>>> 9cec72d6 (first)
+=======
+vendor
+/vendor/
+node_modules/
+npm-debug.log
+>>>>>>> c986cc10 (first)
 yarn-error.log
 
 # Laravel 4 specific
@@ -524,6 +531,7 @@ Homestead.yaml
 Homestead.json
 /.vagrant
 .phpunit.result.cache
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 <<<<<<< HEAD
@@ -661,10 +669,13 @@ package-lock.json
 /docs/package-lock.json
 .git-rewrite
 .git-blame-ignore-revs
+=======
+>>>>>>> c986cc10 (first)
 .git-rewrite
 .git-blame-ignore-revs
 /vendor
 *.lock
+<<<<<<< HEAD
 .php-cs-fixer.cache
 *.cache
 /build
@@ -717,3 +728,76 @@ node_modules/
 =======
 *:Zone.Identifier
 >>>>>>> 2df6fbc8 (first)
+=======
+composer.lock
+package-lock.json
+.php-cs-fixer.cache
+*.cache
+build/
+/build
+*.cache
+docs/vendor
+/docs/vendor
+node_modules
+.git-blame-ignore-revs
+vendor
+build
+node_modules
+vendor
+/vendor/
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Laravel 4 specific
+bootstrap/compiled.php
+app/storage/
+
+# Laravel 5 & Lumen specific
+public/storage
+public/hot
+
+# Laravel 5 & Lumen specific with changed public path
+public_html/storage
+public_html/hot
+
+storage/*.key
+.env
+Homestead.yaml
+Homestead.json
+/.vagrant
+.phpunit.result.cache
+.git-rewrite
+.git-blame-ignore-revs
+/vendor
+*.lock
+composer.lock
+package-lock.json
+.php-cs-fixer.cache
+*.cache
+build/
+/build
+*.cache
+docs/vendor
+/docs/vendor
+node_modules
+.git-blame-ignore-revs
+.git-blame-ignore-revs
+vendor
+build
+vendor/
+/vendor
+vendor/
+vendor/*
+.php-cs-fixer.cache
+.git-blame-ignore-revs
+build/
+vendor/
+build/
+node_modules
+docs/cache/
+cache/
+.git-blame-ignore-revs
+.php-cs-fixer.cache
+.php-cs-fixer.cache
+>>>>>>> c986cc10 (first)

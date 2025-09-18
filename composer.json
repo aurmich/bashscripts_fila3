@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "laraxot/bashscripts_fila3",
     "description": "Script di utilità per la gestione dei repository Git, Toolkit di automazione Git per progetti Laravel",
     "type": "library",
@@ -41,10 +42,15 @@
 =======
     "name": "laraxot/module_setting_fila3",
     "description": "module setting to manage useful functions",
+=======
+    "name": "laraxot/module_media_fila3",
+    "description": "media module dedicated to image and video management",
+>>>>>>> c986cc10 (first)
     "keywords": [
         "laraxot",
         "laravel",
         "filament",
+<<<<<<< HEAD
         "module_setting",
         "Laravel",
         "Setting module"
@@ -200,10 +206,21 @@
     ],
     "homepage": "https://github.com/laraxot/module_user_fila3",
 >>>>>>> 0d55b583 (first)
+=======
+        "module_media",
+        "Laravel",
+        "Media module",
+        "Media",
+        "Images",
+        "Videos"
+    ],
+    "homepage": "https://github.com/laraxot/module_media_fila3.git",
+>>>>>>> c986cc10 (first)
     "license": "MIT",
     "authors": [
         {
             "name": "Marco Sottana",
+<<<<<<< HEAD
 <<<<<<< HEAD
             "email": "marco.sottana@gmail.com",
             "role": "Developer"
@@ -345,12 +362,15 @@
     "authors": [
         {
             "name": "marco sottana",
+=======
+>>>>>>> c986cc10 (first)
             "email": "marco.sottana@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.2",
+<<<<<<< HEAD
         "calebporzio/sushi": "^2.5",
         "coolsam/panel-modules": "*",
         "doctrine/dbal": "*",
@@ -414,12 +434,24 @@
             "url": "../Xot"
         },
 >>>>>>> bbec4378 (first)
+=======
+        "pbmedia/laravel-ffmpeg": "^8.5",
+        "intervention/image": "*"
+    },
+    "require-dev": {},
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../User"
+        },
+>>>>>>> c986cc10 (first)
         {
             "type": "path",
             "url": "../Tenant"
         },
         {
             "type": "path",
+<<<<<<< HEAD
 <<<<<<< HEAD
             "url": "./packages/coolsam/panel-modules"
         },
@@ -593,10 +625,25 @@
                 "Modules\\Job\\Providers\\JobServiceProvider",
                 "Modules\\Job\\Providers\\Filament\\AdminPanelProvider"
 >>>>>>> c088001a (first)
+=======
+            "url": "../UI"
+        },
+        {
+            "type": "path",
+            "url": "../Xot"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Media\\Providers\\MediaServiceProvider",
+                "Modules\\Media\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> c986cc10 (first)
             ],
             "aliases": {}
         }
     },
+<<<<<<< HEAD
     "minimum-stability": "dev",
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -636,3 +683,33 @@
     "prefer-stable": true
 }
 >>>>>>> 2df6fbc8 (first)
+=======
+    "autoload": {
+        "psr-4": {
+            "Modules\\Media\\": "app/",
+            "Modules\\Media\\Database\\Factories\\": "database/factories/",
+            "Modules\\Media\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Media\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump1": "@php ./vendor/bin/testbench package:discover --ansi",
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "wikimedia/composer-merge-plugin": true
+        }
+    }
+}
+>>>>>>> c986cc10 (first)

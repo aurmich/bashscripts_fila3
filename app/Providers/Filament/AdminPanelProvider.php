@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d79d9e57 (first)
 =======
@@ -76,10 +77,18 @@ namespace Modules\Setting\Providers\Filament;
 namespace Modules\Rating\Providers\Filament;
 
 >>>>>>> 2df6fbc8 (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Media\Providers\Filament;
+
+use Filament\Panel;
+>>>>>>> c986cc10 (first)
 use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 
 class AdminPanelProvider extends XotBasePanelProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -139,11 +148,15 @@ class AdminPanelProvider extends XotBasePanelProvider
 >>>>>>> d79d9e57 (first)
 =======
     protected string $module = 'User';
+=======
+    protected string $module = 'Media';
+>>>>>>> c986cc10 (first)
 
     public function panel(Panel $panel): Panel
     {
         $panel = parent::panel($panel);
 
+<<<<<<< HEAD
         FilamentView::registerRenderHook(
             'panels::auth.login.form.after',
             static fn (): string => Blade::render("@livewire('socialite.buttons')"),
@@ -206,4 +219,8 @@ class AdminPanelProvider extends XotBasePanelProvider
 =======
     protected string $module = 'Rating';
 >>>>>>> 2df6fbc8 (first)
+=======
+        return $panel;
+    }
+>>>>>>> c986cc10 (first)
 }

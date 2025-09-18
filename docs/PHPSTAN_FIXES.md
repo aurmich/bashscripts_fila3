@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Correzioni PHPStan Livello 7 - Modulo Xot
 
 Questo documento traccia gli errori PHPStan di livello 7 identificati nel modulo Xot e le relative soluzioni implementate.
@@ -208,10 +209,23 @@ Line 49: PHPDoc tag @method for method Modules\User\Models\Profile::withExtraAtt
 Line 49: PHPDoc tag @method for method Modules\User\Models\Profile::withoutPermission() return type contains unknown class Modules\User\Models\Builder.
 Line 49: PHPDoc tag @method for method Modules\User\Models\Profile::withoutRole() return type contains unknown class Modules\User\Models\Builder.
 >>>>>>> 0d55b583 (first)
+=======
+# Correzioni PHPStan Livello 7 - Modulo Media
+
+Questo documento traccia gli errori PHPStan di livello 7 identificati nel modulo Media e le relative soluzioni implementate.
+
+## Errori Identificati
+
+### 1. Errore in VideoStream.php
+
+```
+Line 141: Parameter #2 $length of function Safe\fread expects int<1, max>, int given.
+>>>>>>> c986cc10 (first)
 ```
 
 ## Soluzioni Implementate
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 ### 1. Correzione in Helpers/Helper.php
@@ -754,10 +768,28 @@ if ($livewire) {
     if (method_exists($livewire, 'resetTable')) {
         $livewire->resetTable();
 >>>>>>> a8f30311 (first)
+=======
+### 1. Correzione in VideoStream.php
+
+Il problema è che PHPStan si aspetta che il parametro `$length` della funzione `fread` sia un intero positivo (int<1, max>), ma non può garantire che `$bytesToRead` sia sempre positivo. Abbiamo aggiunto un controllo per assicurarci che sia sempre maggiore di zero:
+
+```php
+fseek($this->stream, $this->start);
+while (! feof($this->stream) && $this->start <= $this->end) {
+    $bytesToRead = min($this->bufferSize, $this->end - $this->start + 1);
+    if ($bytesToRead > 0) {
+        $data = fread($this->stream, $bytesToRead);
+        echo $data;
+        flush();
+        $this->start += $bytesToRead;
+    } else {
+        break; // Evita loop infiniti se $bytesToRead <= 0
+>>>>>>> c986cc10 (first)
     }
 }
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 Queste modifiche garantiscono che:
 1. Il metodo exportTablesToCSV restituisca effettivamente l'array di tabelle che viene costruito al suo interno
@@ -905,3 +937,6 @@ Il problema è che i tag PHPDoc facevano riferimento a una classe `Builder` nel 
 
 Questo garantisce che PHPStan possa risolvere correttamente il tipo `Builder` utilizzando il namespace completo `\Illuminate\Database\Eloquent\Builder`. 
 >>>>>>> 0d55b583 (first)
+=======
+Questo controllo garantisce che `fread()` venga chiamato solo con un valore positivo per il parametro `$length`, evitando anche potenziali loop infiniti nel caso in cui `$bytesToRead` fosse zero o negativo. 
+>>>>>>> c986cc10 (first)

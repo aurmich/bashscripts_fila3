@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 []
 =======
 [{"name":"toast","class":"Toast","module":null,"path":null,"ns":"Modules\\UI\\Http\\Livewire\\Toast"}]
@@ -27,3 +28,6 @@
 =======
 []
 >>>>>>> 2df6fbc8 (first)
+=======
+[{"name":"card.video.clip","class":"Card\\Video\\Clip","module":null,"path":null,"ns":"Modules\\Media\\Http\\Livewire\\Card\\Video\\Clip"}]
+>>>>>>> c986cc10 (first)

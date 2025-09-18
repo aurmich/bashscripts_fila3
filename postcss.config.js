@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 module.exports = {
   plugins: {
     tailwindcss: {},
@@ -28,5 +29,11 @@ module.exports = {
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> 9cec72d6 (first)
+=======
+export default {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+>>>>>>> c986cc10 (first)
   },
 }

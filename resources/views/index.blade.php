@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('rating::layouts.master')
 =======
 @extends('xot::layouts.app')
@@ -31,10 +32,14 @@
 =======
 @extends('rating::layouts.master')
 >>>>>>> 2df6fbc8 (first)
+=======
+@extends('media::layouts.master')
+>>>>>>> c986cc10 (first)
 
 @section('content')
     <h1>Hello World</h1>
 
+<<<<<<< HEAD
     <p>
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -87,3 +92,7 @@
     </p>
 @endsection
 >>>>>>> 2df6fbc8 (first)
+=======
+    <p>Module: {!! config('media.name') !!}</p>
+@endsection
+>>>>>>> c986cc10 (first)

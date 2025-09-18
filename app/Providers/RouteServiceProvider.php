@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 /**
@@ -45,11 +46,17 @@ namespace Modules\Setting\Providers;
 >>>>>>> 9cec72d6 (first)
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Media\Providers;
+>>>>>>> c986cc10 (first)
 
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -108,10 +115,17 @@ class RouteServiceProvider extends ServiceProvider
 =======
     protected string $moduleNamespace = 'Modules\Rating\Http\Controllers';
 >>>>>>> 2df6fbc8 (first)
+=======
+    /**
+     * The module namespace to assume when generating URLs to actions.
+     */
+    protected string $moduleNamespace = 'Modules\Media\Http\Controllers';
+>>>>>>> c986cc10 (first)
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -336,4 +350,8 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
     public string $name = 'Rating';
 >>>>>>> 2df6fbc8 (first)
+=======
+
+    public string $name = 'Media';
+>>>>>>> c986cc10 (first)
 }

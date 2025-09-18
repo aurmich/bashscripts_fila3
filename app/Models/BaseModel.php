@@ -9,6 +9,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Rating\Models;
 
 use Illuminate\Database\Eloquent\Model;
@@ -22,10 +23,15 @@ namespace Modules\Lang\Models;
 >>>>>>> bbec4378 (first)
 // use Laravel\Scout\Searchable;
 // ---------- traits
+=======
+namespace Modules\Media\Models;
+
+>>>>>>> c986cc10 (first)
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 59bc4fe7 (first)
 =======
@@ -71,10 +77,14 @@ namespace Modules\Rating\Models;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Traits\Updater;
 >>>>>>> 2df6fbc8 (first)
+=======
+use Modules\Xot\Traits\Updater;
+>>>>>>> c986cc10 (first)
 
 /**
  * Class BaseModel.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -87,10 +97,15 @@ abstract class BaseModel extends Model
 =======
 =======
 >>>>>>> c088001a (first)
+=======
+abstract class BaseModel extends Model
+{
+>>>>>>> c986cc10 (first)
     use HasFactory;
 
     // use Searchable;
     // //use Cachable;
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 59bc4fe7 (first)
 =======
@@ -125,11 +140,14 @@ abstract class BaseModel extends Model
 abstract class BaseModel extends Model
 {
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> c986cc10 (first)
     use Updater;
 
     /**
      * Indicates whether attributes are snake cased on arrays.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -159,11 +177,15 @@ abstract class BaseModel extends Model
 =======
      * @see  https://laravel-news.com/6-eloquent-secrets
 >>>>>>> 2df6fbc8 (first)
+=======
+     * @see https://laravel-news.com/6-eloquent-secrets
+>>>>>>> c986cc10 (first)
      *
      * @var bool
      */
     public static $snakeAttributes = true;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -183,6 +205,8 @@ abstract class BaseModel extends Model
 >>>>>>> 9cec72d6 (first)
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> c986cc10 (first)
     /** @var bool */
     public $incrementing = true;
 
@@ -193,6 +217,7 @@ abstract class BaseModel extends Model
     protected $perPage = 30;
 
     /** @var string */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -254,10 +279,20 @@ abstract class BaseModel extends Model
 >>>>>>> 9cec72d6 (first)
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+    protected $connection = 'media';
+
+    /** @var list<string> */
+    protected $fillable = [
+        'id',
+    ];
+
+>>>>>>> c986cc10 (first)
     /** @var string */
     protected $primaryKey = 'id';
 
     /** @var string */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -280,6 +315,8 @@ abstract class BaseModel extends Model
 >>>>>>> 9cec72d6 (first)
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> c986cc10 (first)
     protected $keyType = 'string';
 
     /** @var list<string> */
@@ -287,6 +324,7 @@ abstract class BaseModel extends Model
         // 'password'
     ];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -342,10 +380,26 @@ abstract class BaseModel extends Model
     /** @return array<string, string> */
     public function casts(): array
 >>>>>>> 2df6fbc8 (first)
+=======
+    /**
+     * ----
+     * Create a new factory instance for the model.
+     *
+     * @return \Illuminate\Database\Eloquent\Factories\Factory<static>
+     */
+    protected static function newFactory()
+    {
+        return app(GetFactoryAction::class)->execute(static::class);
+    }
+
+    /** @return array<string, string> */
+    protected function casts(): array
+>>>>>>> c986cc10 (first)
     {
         return [
             'id' => 'string',
             'uuid' => 'string',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -445,15 +499,23 @@ abstract class BaseModel extends Model
 
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
+=======
+            'published_at' => 'datetime',
+            'created_at' => 'datetime',
+            'updated_at' => 'datetime',
+>>>>>>> c986cc10 (first)
             'deleted_at' => 'datetime',
 
             'updated_by' => 'string',
             'created_by' => 'string',
             'deleted_by' => 'string',
         ];
+<<<<<<< HEAD
 >>>>>>> 9cec72d6 (first)
 =======
         ];
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> c986cc10 (first)
     }
 }

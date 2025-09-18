@@ -6,6 +6,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /*
 <<<<<<< HEAD
@@ -142,3 +143,5 @@ Route::middleware('auth:api')
 Route::middleware('auth:api')->get('/setting', fn(Request $request) => $request->user());
 */
 >>>>>>> 9cec72d6 (first)
+=======
+>>>>>>> c986cc10 (first)

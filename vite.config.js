@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const dotenvExpand = require('dotenv-expand');
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -80,10 +81,20 @@ export default defineConfig(
         build: {
             outDir: '../../public/build-setting',
 >>>>>>> 9cec72d6 (first)
+=======
+import { defineConfig } from 'vite';
+import laravel from 'laravel-vite-plugin';
+
+export default defineConfig(
+    {
+        build: {
+            outDir: '../../public/build-media',
+>>>>>>> c986cc10 (first)
             emptyOutDir: true,
             manifest: true,
         },
         plugins: [
+<<<<<<< HEAD
 <<<<<<< HEAD
             laravel(
                 {
@@ -97,6 +108,12 @@ export default defineConfig(
 =======
                     buildDirectory: 'build-user',
 >>>>>>> 0d55b583 (first)
+=======
+            laravel(
+                {
+                    publicDirectory: '../../public',
+                    buildDirectory: 'build-media',
+>>>>>>> c986cc10 (first)
                     input: [
                         __dirname + '/resources/assets/sass/app.scss',
                         __dirname + '/resources/assets/js/app.js'
@@ -107,6 +124,7 @@ export default defineConfig(
         ],
     }
 );
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> a8f30311 (first)
@@ -134,3 +152,10 @@ export default defineConfig(
 >>>>>>> 9cec72d6 (first)
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+
+//export const paths = [
+//    'Modules/$STUDLY_NAME$/resources/assets/sass/app.scss',
+//    'Modules/$STUDLY_NAME$/resources/assets/js/app.js',
+//];
+>>>>>>> c986cc10 (first)

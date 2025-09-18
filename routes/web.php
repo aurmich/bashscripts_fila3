@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -112,3 +113,6 @@ Route::get('/upgrade', 'UpgradeController');
 //    Route::get('/', 'SettingController@index');
 // });
 >>>>>>> 9cec72d6 (first)
+=======
+declare(strict_types=1);
+>>>>>>> c986cc10 (first)

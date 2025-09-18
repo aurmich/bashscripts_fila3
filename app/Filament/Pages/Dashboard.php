@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -21,11 +22,19 @@ namespace Modules\Notify\Filament\Pages;
 
 use Filament\Pages\Page;
 >>>>>>> d79d9e57 (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Media\Filament\Pages;
+
+use Filament\Pages\Page;
+>>>>>>> c986cc10 (first)
 
 class Dashboard extends Page
 {
     protected static ?string $navigationIcon = 'heroicon-o-home';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     protected static string $view = 'ui::filament.pages.dashboard';
@@ -192,4 +201,7 @@ class Dashboard extends BaseBashboard
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> 9cec72d6 (first)
+=======
+    protected static string $view = 'media::filament.pages.dashboard';
+>>>>>>> c986cc10 (first)
 }

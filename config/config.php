@@ -11,6 +11,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'name' => 'Rating',
     'icon' => 'heroicon-o-star', // icon on dashboard
     'navigation_sort' => 1,
@@ -61,12 +62,21 @@ return [
         'enabled' => true,
         'sort' => 100,
 >>>>>>> 0d55b583 (first)
+=======
+    'name' => 'Media',
+    'description' => 'Modulo per la gestione dei file multimediali e documenti',
+    'icon' => 'heroicon-o-photo',
+    'navigation' => [
+        'enabled' => true,
+        'sort' => 60,
+>>>>>>> c986cc10 (first)
     ],
     'routes' => [
         'enabled' => true,
         'middleware' => ['web', 'auth'],
     ],
     'providers' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -105,4 +115,8 @@ return [
     'icon' => 'heroicon-o-star', // icon on dashboard
     'navigation_sort' => 1,
 >>>>>>> 2df6fbc8 (first)
+=======
+        'Modules\\Media\\Providers\\MediaServiceProvider',
+    ],
+>>>>>>> c986cc10 (first)
 ];

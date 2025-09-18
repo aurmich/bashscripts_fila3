@@ -7,6 +7,7 @@ includes:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 
@@ -28,6 +29,8 @@ parameters:
 >>>>>>> c088001a (first)
 =======
 >>>>>>> d79d9e57 (first)
+=======
+>>>>>>> c986cc10 (first)
     - ./vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
     #- ./vendor/symplify/phpstan-rules/config/code-complexity-rules.neon
     #- ./vendor/symplify/phpstan-rules/config/collector-rules.neon
@@ -37,17 +40,21 @@ parameters:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bbec4378 (first)
 =======
 >>>>>>> c088001a (first)
 =======
 >>>>>>> d79d9e57 (first)
+=======
+>>>>>>> c986cc10 (first)
 
 parameters:
     level: max
     paths:
         - .
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -64,10 +71,13 @@ parameters:
     paths:
         - .
 >>>>>>> 9cec72d6 (first)
+=======
+>>>>>>> c986cc10 (first)
 
     ignoreErrors:
     #    - '#Unsafe usage of new static#'
         - '#PHPDoc tag @mixin contains unknown class #'
+<<<<<<< HEAD
 <<<<<<< HEAD
         - '#Static call to instance method Nwidart#'
 
@@ -82,11 +92,16 @@ parameters:
 =======
 
 >>>>>>> 9cec72d6 (first)
+=======
+        - '#Static call to instance method Nwidart#'
+
+>>>>>>> c986cc10 (first)
     excludePaths:
         - ./build/*
         - ./vendor/*
         - ./*/vendor/*
         - ./docs/*
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -98,11 +113,15 @@ parameters:
 =======
         - ./Tests/*
 >>>>>>> d79d9e57 (first)
+=======
+        - ./Tests/*
+>>>>>>> c986cc10 (first)
         - ./_ide_helper.php
 
     bootstrapFiles:
         #- ./Services/vendor/autoload.php
         - ./phpstan_constants.php
+<<<<<<< HEAD
 =======
         - ./Tests/*
         - ./_ide_helper.php
@@ -111,6 +130,8 @@ parameters:
     #    - ./Services/vendor/autoload.php
     #    - ./phpstan_constants.php
 >>>>>>> 9cec72d6 (first)
+=======
+>>>>>>> c986cc10 (first)
 
     scanFiles:
     #    - ./Helpers/Helper.php
@@ -119,10 +140,14 @@ parameters:
     editorUrl: 'vscode://file/%%file%%:%%line%%'
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     tmpDir: build/phpstan
 =======
     tmpDir: ./build/phpstan
 >>>>>>> 9cec72d6 (first)
+=======
+    tmpDir: build/phpstan
+>>>>>>> c986cc10 (first)
     checkUnusedViews: false
     checkMissingIterableValueType: false
     checkGenericClassInNonGenericObjectType: false
@@ -130,6 +155,7 @@ parameters:
     reportUnmatchedIgnoredErrors: false
     checkOctaneCompatibility: false
     checkModelProperties: false
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -166,3 +192,5 @@ parameters:
 >>>>>>> 9cec72d6 (first)
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> c986cc10 (first)

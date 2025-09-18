@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
     'export_xls' => 'Esporta Dati',
 =======
     'attach_user' => 'Collega Utente',
@@ -22,4 +23,12 @@ return [
     'success_detached' => 'Utente scollegato con successo',
     'success_deleted' => 'Utenti eliminati con successo',
 >>>>>>> 0d55b583 (first)
+=======
+    'add_attachment' => [
+        'title' => 'Allegati',
+        'label' => 'Carica allegato',
+        'fields' => [
+        ],
+    ],
+>>>>>>> c986cc10 (first)
 ];
