@@ -24,6 +24,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -216,3 +217,6 @@ declare(strict_types=1);
 =======
 declare(strict_types=1);
 >>>>>>> 961ad402 (first)
+=======
+declare(strict_types=1);
+>>>>>>> dc18abbe (first)

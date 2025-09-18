@@ -27,6 +27,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('rating::layouts.master')
 =======
 @extends('xot::layouts.app')
@@ -115,10 +116,14 @@
 =======
 @extends('performance::layouts.master')
 >>>>>>> 961ad402 (first)
+=======
+@extends('ptv::layouts.master')
+>>>>>>> dc18abbe (first)
 
 @section('content')
     <h1>Hello World</h1>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -316,3 +321,9 @@
     </p>
 @stop
 >>>>>>> 961ad402 (first)
+=======
+    <p>
+        This view is loaded from module: {!! config('ptv.name') !!}
+    </p>
+@stop
+>>>>>>> dc18abbe (first)

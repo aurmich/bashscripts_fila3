@@ -26,6 +26,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 []
 =======
 [{"name":"toast","class":"Toast","module":null,"path":null,"ns":"Modules\\UI\\Http\\Livewire\\Toast"}]
@@ -111,3 +112,6 @@
 =======
 []
 >>>>>>> 961ad402 (first)
+=======
+[{"name":"edit-firma","class":"EditFirma","module":null,"path":null,"ns":"Modules\\Ptv\\Http\\Livewire\\EditFirma"},{"name":"nav.stabi-repar-anno","class":"Nav\\StabiReparAnno","module":null,"path":null,"ns":"Modules\\Ptv\\Http\\Livewire\\Nav\\StabiReparAnno"}]
+>>>>>>> dc18abbe (first)

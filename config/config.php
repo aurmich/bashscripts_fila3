@@ -14,6 +14,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -271,4 +272,11 @@ return [
         \Modules\Performance\Providers\Html2PdfServiceProvider::class,
     ],
 >>>>>>> 961ad402 (first)
+=======
+declare(strict_types=1);
+
+return [
+    'name' => 'Ptv',
+    'icon' => 'heroicon-o-bookmark',
+>>>>>>> dc18abbe (first)
 ];

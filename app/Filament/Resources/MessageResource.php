@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\IndennitaResponsabilita\Filament\Resources;
 
 use Modules\IndennitaCondizioniLavoro\Models\Message;
@@ -31,11 +32,27 @@ class MessageResource extends XotBaseResource
 {
     protected static ?string $model = Message::class;
 
+=======
+namespace Modules\Ptv\Filament\Resources;
+
+use Filament\Forms\Components\RichEditor;
+use Filament\Forms\Components\Textarea;
+use Filament\Forms\Components\TextInput;
+use FilamentTiptapEditor\Enums\TiptapOutput;
+use FilamentTiptapEditor\TiptapEditor;
+use Modules\Ptv\Filament\Resources\MessageResource\Pages;
+use Modules\UI\Filament\Forms\Components\ParentSelect;
+use Modules\Xot\Filament\Resources\XotBaseResource;
+
+class MessageResource extends XotBaseResource
+{
+>>>>>>> dc18abbe (first)
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function getFormSchema(): array
     {
         return [
+<<<<<<< HEAD
             'id' => Forms\Components\TextInput::make('id')
                 ->disabled(),
             'type' => Forms\Components\TextInput::make('type')
@@ -81,13 +98,31 @@ class MessageResource extends XotBaseResource
     /**
      * @return array<RelationManagers>
      */
+=======
+            'parent_id' => TextInput::make('parent_id'),
+            // ParentSelect::make('parent_id'),
+            'type' => TextInput::make('type'),
+            'title' => TextInput::make('title'),
+            'anno' => TextInput::make('anno'), // ->default(fn($livewire)=>dddx($livewire->getTableFilters())),
+            // RichEditor::make('txt')->columnspan('full'),
+            // Textarea::make('txt')->columnspan('full'),
+            'txt' => TiptapEditor::make('txt')
+                ->columnSpan('full')
+                ->output(TiptapOutput::Html),
+        ];
+    }
+
+>>>>>>> dc18abbe (first)
     public static function getRelations(): array
     {
         return [
         ];
     }
 
+<<<<<<< HEAD
 >>>>>>> bcab6efe (first)
+=======
+>>>>>>> dc18abbe (first)
     public static function getPages(): array
     {
         return [

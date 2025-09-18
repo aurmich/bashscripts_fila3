@@ -26,6 +26,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     errorLevel="4"
 =======
     errorLevel="1"
@@ -119,6 +120,9 @@
 =======
     errorLevel="4"
 >>>>>>> 961ad402 (first)
+=======
+    errorLevel="4"
+>>>>>>> dc18abbe (first)
     resolveFromConfigFile="true"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns="https://getpsalm.org/schema/config"
@@ -127,6 +131,7 @@
     findUnusedCode="true"
 >
     <projectFiles>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -191,6 +196,8 @@
 >>>>>>> 9997d18c (first)
 =======
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> dc18abbe (first)
         <file name="Actions/DB/DownloadAction.php"/>
         <file name="Config/config.php"/>
         <file name="Config/setting-filament.php"/>
@@ -225,6 +232,7 @@
         </ignoreFiles>
     </projectFiles>
 <plugins><pluginClass class="Psalm\LaravelPlugin\Plugin"/></plugins></psalm>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -354,3 +362,5 @@
 >>>>>>> 9997d18c (first)
 =======
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> dc18abbe (first)

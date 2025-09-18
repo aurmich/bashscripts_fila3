@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <x-filament-panels::page class="fi-dashboard-page">
     {{--
     @if (method_exists($this, 'filtersForm'))
@@ -79,3 +80,8 @@
 >>>>>>> b7483fd0 (first)
 =======
 >>>>>>> bcab6efe (first)
+=======
+<x-filament::page>
+
+</x-filament::page>
+>>>>>>> dc18abbe (first)

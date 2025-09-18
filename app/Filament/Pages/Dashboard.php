@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -295,12 +296,34 @@ class Dashboard extends BaseDashboard
 
     public function getSubheading(): string|Htmlable|null
     {
+=======
+declare(strict_types=1);
+
+namespace Modules\Ptv\Filament\Pages;
+
+use Filament\Pages\Dashboard as BasePage;
+use Illuminate\Contracts\Support\Htmlable;
+use Modules\Ptv\Filament\Widgets\AdminWidgets;
+
+class Dashboard extends BasePage
+{
+    protected static ?string $navigationIcon = 'heroicon-o-document-text';
+
+    // protected static string $view = 'ptv::filament.pages.dashboard';
+    public function getSubheading(): string|Htmlable|null
+    {
+        // if (auth()->user()->is_admin) {
+        //    return '--';
+        // }
+
+>>>>>>> dc18abbe (first)
         return 'Here you will see an overview of your tasks.';
     }
 
     public function getWidgets(): array
     {
         return [
+<<<<<<< HEAD
             // ...
         ];
     }
@@ -330,4 +353,9 @@ class Dashboard extends BaseDashboard
     }
     */
 >>>>>>> 961ad402 (first)
+=======
+            AdminWidgets::class,
+        ];
+    }
+>>>>>>> dc18abbe (first)
 }

@@ -8,6 +8,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Rating\Models;
 =======
 namespace Modules\Xot\Models;
@@ -179,6 +180,27 @@ abstract class BaseMorphPivot extends MorphPivot
     protected $keyType = 'string';
 
     /** @var list<string> */
+=======
+namespace Modules\Ptv\Models;
+
+use Illuminate\Database\Eloquent\Relations\MorphPivot;
+use Modules\Xot\Traits\Updater;
+
+abstract class BaseMorphPivot extends MorphPivot
+{
+    use Updater;
+
+    protected $connection = 'ptv'; // this will use the specified database connection
+
+    protected $appends = [];
+
+    protected $primaryKey = 'id';
+
+    public $incrementing = true;
+
+    public $timestamps = true;
+
+>>>>>>> dc18abbe (first)
     protected $fillable = [
         'id',
         'post_id', 'post_type',
@@ -187,6 +209,7 @@ abstract class BaseMorphPivot extends MorphPivot
         'note',
     ];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -265,5 +288,12 @@ abstract class BaseMorphPivot extends MorphPivot
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+    public function casts(): array
+    {
+        return [
+            'created_at' => 'datetime', 'updated_at' => 'datetime', 'deleted_at' => 'datetime',
+        ];
+>>>>>>> dc18abbe (first)
     }
 }

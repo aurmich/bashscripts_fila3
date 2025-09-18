@@ -29,6 +29,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 /**
@@ -200,10 +201,18 @@ namespace Modules\Performance\Providers;
 
 // --- bases ---
 >>>>>>> 961ad402 (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Ptv\Providers;
+
+// --- bases ---
+>>>>>>> dc18abbe (first)
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -422,10 +431,14 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider {
      */
     protected string $moduleNamespace = 'Modules\Performance\Http\Controllers';
 >>>>>>> 961ad402 (first)
+=======
+    protected string $moduleNamespace = 'Modules\Ptv\Http\Controllers';
+>>>>>>> dc18abbe (first)
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -736,4 +749,8 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
     public string $name = 'Performance';
 >>>>>>> 961ad402 (first)
+=======
+
+    public string $name = 'Ptv';
+>>>>>>> dc18abbe (first)
 }

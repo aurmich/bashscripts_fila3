@@ -30,6 +30,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "laraxot/bashscripts_fila3",
     "description": "Script di utilità per la gestione dei repository Git, Toolkit di automazione Git per progetti Laravel",
     "type": "library",
@@ -345,10 +346,15 @@
     "name": "laraxot/module_user_fila3",
     "description": "user module for user management",
 >>>>>>> 0d55b583 (first)
+=======
+    "name": "provtv/module_ptv_fila3",
+    "description": "notify module dedicated to managing notifications",
+>>>>>>> dc18abbe (first)
     "keywords": [
         "laraxot",
         "laravel",
         "filament",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         "module_job",
@@ -362,6 +368,8 @@
     ],
     "homepage": "https://github.com/laraxot/module_job_fila3.git",
 =======
+=======
+>>>>>>> dc18abbe (first)
         "module_notify",
         "Laravel",
         "Notify module",
@@ -370,6 +378,7 @@
         "Smss",
         "Whatsapp"
     ],
+<<<<<<< HEAD
     "homepage": "https://github.com/laraxot/module_notify_fila3.git",
 >>>>>>> d79d9e57 (first)
 =======
@@ -572,12 +581,31 @@
     "require": {
         "php": "^8.2"
 >>>>>>> 961ad402 (first)
+=======
+    "homepage": "https://github.com/provtv/module_ptv_fila3.git",
+    "license": "MIT",
+    "authors": [{
+        "name": "Marco Sottana",
+        "email": "marco.sottana@gmail.com",
+        "role": "Developer"
+    },
+    {
+        "name": "Nicola Storgato",
+        "email": "storgatonicola@provincia.treviso.it",
+        "role": "Developer"
+    }],
+    "require": {
+        "awcodes/filament-tiptap-editor": "^3.4",
+        "filament/filament": "^3.3",
+        "spatie/laravel-sluggable": "*"
+>>>>>>> dc18abbe (first)
     },
     "require-dev": {},
     "repositories": [
         {
             "type": "path",
             "url": "../Xot"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -636,6 +664,8 @@
 >>>>>>> 9997d18c (first)
 =======
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> dc18abbe (first)
         },
         {
             "type": "path",
@@ -643,6 +673,7 @@
         },
         {
             "type": "path",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -693,6 +724,20 @@
     "scripts": {
         "post-autoload-dump1": [
 >>>>>>> 8fc3049b (first)
+=======
+            "url": "../UI"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Modules\\Ptv\\": "app/",
+            "Modules\\Ptv\\Database\\Factories\\": "database/factories/",
+            "Modules\\Ptv\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump_comment": [
+>>>>>>> dc18abbe (first)
             "@php vendor/bin/testbench package:discover --ansi"
         ],
         "post-update-cmd": [
@@ -702,6 +747,7 @@
         "test": "./vendor/bin/pest --no-coverage",
         "test-coverage": "vendor/bin/pest --coverage-html coverage",
         "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1166,10 +1212,13 @@
 >>>>>>> 9997d18c (first)
 =======
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> dc18abbe (first)
     },
     "config": {
         "sort-packages": true,
         "allow-plugins": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1460,10 +1509,24 @@
                 "Modules\\Performance\\Providers\\PerformanceServiceProvider",
                 "Modules\\Performance\\Providers\\Filament\\AdminPanelProvider"
 >>>>>>> 961ad402 (first)
+=======
+            "pestphp/pest-plugin": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "wikimedia/composer-merge-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Ptv\\Providers\\PtvServiceProvider",
+                "Modules\\Ptv\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> dc18abbe (first)
             ],
             "aliases": {}
         }
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1672,3 +1735,8 @@
     "prefer-stable": true
 }
 >>>>>>> 961ad402 (first)
+=======
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+>>>>>>> dc18abbe (first)

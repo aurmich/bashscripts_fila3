@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8fc3049b (first)
 module.exports = {
@@ -42,4 +43,12 @@ export default {
 =======
 >>>>>>> 8fc3049b (first)
   },
+=======
+export default {
+    plugins: {
+        'tailwindcss/nesting': 'postcss-nesting',
+        tailwindcss: {},
+        autoprefixer: {},
+    },
+>>>>>>> dc18abbe (first)
 }

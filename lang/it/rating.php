@@ -7,6 +7,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
         'name' => ['label' => 'Rating'],
@@ -20,6 +21,8 @@ return [
 =======
 =======
 >>>>>>> e0005d7d (first)
+=======
+>>>>>>> dc18abbe (first)
         'name' => 'Rating',
     ],
     'navigation' => [
@@ -27,6 +30,7 @@ return [
         'plural' => 'Rating',
         'group' => [
             'name' => 'Admin',
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
 =======
@@ -159,6 +163,27 @@ return [
     'actions' => [
         'enable' => [
 >>>>>>> e0005d7d (first)
+=======
+        ],
+    ],
+    'fields' => [
+        'brand' => ['label' => 'Marca'],
+        'model' => ['label' => 'Modello'],
+        'description' => ['label' => 'Descrizione'],
+        'serial_number' => ['label' => 'Numero di serie'],
+        'inventory_number' => ['label' => 'Codice inventario'],
+        'code' => ['label' => 'Identificativo'],
+        'manufacturing_year' => ['label' => 'Anno di fabbricazione'],
+        'purchase_year' => ['label' => 'Anno di acquisto'],
+        'is_enabled' => ['label' => 'È attivo?'],
+        'asset_type' => ['label' => 'Tipologia'],
+        'area' => ['label' => 'Area'],
+        'parent' => ['label' => 'Asset genitore'],
+        'name' => ['label' => 'Nome'],
+    ],
+    'actions' => [
+        'enable' => [
+>>>>>>> dc18abbe (first)
             'cta' => 'Attiva',
         ],
         'disable' => [
@@ -185,15 +210,19 @@ return [
                 'asset_type' => 'Tipologia',
                 'parent_inventory_number' => 'Codice inventario genitore',
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
 =======
 >>>>>>> 2df6fbc8 (first)
 =======
 >>>>>>> e0005d7d (first)
+=======
+>>>>>>> dc18abbe (first)
             ],
         ],
     ],
     'widgets' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -207,15 +236,20 @@ return [
 =======
 =======
 >>>>>>> e0005d7d (first)
+=======
+>>>>>>> dc18abbe (first)
         'child_assets' => 'Asset figli',
     ],
     'exceptions' => [
         'mandatory_data' => '{1} Dato obbligatorio non presente|{2} 2 Dati obbligatori non presenti|{3} 3 Dati obbligatori non presenti|[4,*] Vari dati obbligatori non presenti',
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
 =======
 >>>>>>> 2df6fbc8 (first)
 =======
 >>>>>>> e0005d7d (first)
+=======
+>>>>>>> dc18abbe (first)
     ],
 ];

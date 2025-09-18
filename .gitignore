@@ -31,6 +31,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ───────────────────────────────────────────────────────
 # Sistema operativo / File nascosti e metadata
 # ───────────────────────────────────────────────────────
@@ -955,3 +956,12 @@ cache/
 >>>>>>> 9997d18c (first)
 =======
 >>>>>>> 961ad402 (first)
+=======
+/vendor
+*.lock
+/build
+.git-blame-ignore-revs
+/node_modules
+*.exe
+*:Zone.Identifier
+>>>>>>> dc18abbe (first)

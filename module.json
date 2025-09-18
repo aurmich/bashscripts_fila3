@@ -28,6 +28,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
 =======
@@ -270,11 +271,16 @@
     "name": "Performance",
     "alias": "performance",
 >>>>>>> 961ad402 (first)
+=======
+    "name": "Ptv",
+    "alias": "ptv",
+>>>>>>> dc18abbe (first)
     "description": "",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -390,10 +396,15 @@
         "Modules\\Sigma\\Providers\\SigmaServiceProvider",
         "Modules\\Sigma\\Providers\\Filament\\AdminPanelProvider"
 >>>>>>> f862c51f (first)
+=======
+        "Modules\\Ptv\\Providers\\PtvServiceProvider",
+        "Modules\\Ptv\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> dc18abbe (first)
     ],
     "aliases": [],
     "files": [],
     "requires": []
+<<<<<<< HEAD
 <<<<<<< HEAD
 }
 >>>>>>> bcab6efe (first)
@@ -406,3 +417,6 @@
 >>>>>>> 9997d18c (first)
 =======
 >>>>>>> 961ad402 (first)
+=======
+}
+>>>>>>> dc18abbe (first)

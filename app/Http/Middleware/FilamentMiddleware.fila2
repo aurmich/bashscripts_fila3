@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -38,10 +39,27 @@ class FilamentMiddleware extends XotBaseFilamentMiddleware
     public static string $context = 'setting-filament';
 
     /*
+=======
+namespace Modules\Ptv\Http\Middleware;
+
+use Exception;
+use Str;
+use Filament\Models\Contracts\FilamentUser;
+use Illuminate\Auth\Middleware\Authenticate as Middleware;
+use Nwidart\Modules\Laravel\Module;
+
+class FilamentMiddleware extends Middleware
+{
+    public static string $module = 'Ptv';
+    
+    public static string $context = 'filament';
+
+>>>>>>> dc18abbe (first)
     private function getModule(): Module {
         return app('modules')->findOrFail(static::$module);
     }
 
+<<<<<<< HEAD
 
     private function getContextName(): string {
 
@@ -51,6 +69,24 @@ class FilamentMiddleware extends XotBaseFilamentMiddleware
     {
         $context = $this->getContextName();
         $guardName = config("$context.auth.guard");
+=======
+    /**
+     * @throws Exception
+     */
+    private function getContextName(): string {
+        $module = $this->getModule();
+        if (static::$context === '' || static::$context === '0') {
+            throw new Exception("Context has to be defined in your class");
+        }
+        
+        return Str::of($module->getLowerName())->append('-')->append(Str::slug(static::$context))->kebab()->toString();
+    }
+    
+    protected function authenticate($request, array $guards): void
+    {
+        $contextName = $this->getContextName();
+        $guardName = config($contextName . '.auth.guard');
+>>>>>>> dc18abbe (first)
         $guard = $this->auth->guard($guardName);
 
         if (!$guard->check()) {
@@ -74,9 +110,15 @@ class FilamentMiddleware extends XotBaseFilamentMiddleware
 
     protected function redirectTo($request): string
     {
+<<<<<<< HEAD
         $context = $this->getContextName();
         return route("$context.auth.login");
     }
     */
 >>>>>>> 9cec72d6 (first)
+=======
+        $contextName = $this->getContextName();
+        return route($contextName . '.auth.login');
+    }
+>>>>>>> dc18abbe (first)
 }

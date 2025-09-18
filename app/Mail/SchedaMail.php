@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\IndennitaResponsabilita\Mail;
 =======
 namespace Modules\Progressioni\Mail;
@@ -11,6 +12,11 @@ declare(strict_types=1);
 
 namespace Modules\Performance\Mail;
 >>>>>>> 961ad402 (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Ptv\Mail;
+>>>>>>> dc18abbe (first)
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
@@ -19,6 +25,7 @@ use Illuminate\Mail\Mailables\Attachment;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Modules\IndennitaResponsabilita\Actions\MakePdfByRecord;
@@ -33,12 +40,17 @@ use Modules\Performance\Actions\MakePdfByRecord;
 use Modules\Performance\Models\Individuale as Scheda;
 use Modules\Xot\Actions\Export\PdfByModelAction;
 >>>>>>> 961ad402 (first)
+=======
+use Modules\Ptv\Actions\Pdf\MakePdfByRecord;
+use Modules\Ptv\Models\Contracts\SchedaContract;
+>>>>>>> dc18abbe (first)
 
 class SchedaMail extends Mailable
 {
     use Queueable;
     use SerializesModels;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     public Scheda $scheda;
@@ -112,11 +124,45 @@ class SchedaMail extends Mailable
 
     /**
      * Get the attachments for the message.
+=======
+    public SchedaContract $record;
+
+    /**
+     * Crea una nuova istanza del messaggio.
+     */
+    public function __construct(SchedaContract $record)
+    {
+        $this->record = $record;
+    }
+
+    /**
+     * Definisce l'envelope del messaggio.
+     */
+    public function envelope(): Envelope
+    {
+        return new Envelope(from: new Address('personale@provincia.treviso.it', 'Ufficio Personale Provincia di Treviso'), subject: strip_tags($this->record->msg('mail_oggetto')));
+    }
+
+    /**
+     * Definisce il contenuto del messaggio.
+     */
+    public function content(): Content
+    {
+        return new Content(view: 'ptv::emails.scheda', with: [
+            'row' => $this->record,
+            'html' => $this->record->msg('mail_testo'),
+        ]);
+    }
+
+    /**
+     * Definisce gli allegati del messaggio.
+>>>>>>> dc18abbe (first)
      *
      * @return array<int, \Illuminate\Mail\Mailables\Attachment>
      */
     public function attachments(): array
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         $path = app(MakePdfByRecord::class)->execute(record: $this->scheda, out: 'path');
 =======
@@ -138,6 +184,13 @@ class SchedaMail extends Mailable
 
 =======
 >>>>>>> 961ad402 (first)
+=======
+        $path = app(MakePdfByRecord::class)->execute(record: $this->record, out: 'path');
+
+        return [
+            Attachment::fromPath($path)
+                ->withMime('application/pdf'),
+>>>>>>> dc18abbe (first)
         ];
     }
 }

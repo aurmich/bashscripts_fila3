@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -44,6 +45,21 @@ class FilamentServiceProvider extends XotBaseContextServiceProvider
     
     public static string $module = 'Setting';
     
+=======
+declare(strict_types=1);
+
+namespace Modules\Ptv\Providers;
+
+use Filament\Facades\Filament;
+use Filament\Navigation\NavigationItem;
+use Modules\Xot\Providers\XotBaseContextServiceProvider;
+
+class FilamentServiceProvider extends XotBaseContextServiceProvider {
+    public static string $name = 'ptv-filament';
+    
+    public static string $module = 'Ptv';
+
+>>>>>>> dc18abbe (first)
     /*
     public function packageRegistered(): void
     {
@@ -54,6 +70,7 @@ class FilamentServiceProvider extends XotBaseContextServiceProvider
     }
 
     public function registerConfigs() {
+<<<<<<< HEAD
 =======
 namespace Modules\IndennitaResponsabilita\Providers;
 =======
@@ -106,12 +123,15 @@ class FilamentServiceProvider extends ContextServiceProvider
 >>>>>>> bcab6efe (first)
 =======
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> dc18abbe (first)
         $this->mergeConfigFrom(
             app('modules')->findOrFail(static::$module)->getExtraPath( 'Config/'.static::$name.'.php'),
             static::$name
         );
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -180,4 +200,21 @@ class FilamentServiceProvider extends XotBaseContextServiceProvider {
         });
     }
 >>>>>>> 961ad402 (first)
+=======
+    public function boot()
+    {
+        parent::boot();
+        Filament::serving(function () {
+            Filament::forContext('filament', function (){
+                Filament::registerNavigationItems([
+                    NavigationItem::make(static::$module)->label(static::$module.' Module')->url(route(static::$name.'.pages.dashboard'))->icon('heroicon-o-bookmark')->group('Modules')
+                ]);
+            });
+            Filament::forContext(static::$name, function (){
+                Filament::registerRenderHook('sidebar.start',fn():string => \Blade::render('<div class="p-2 px-6 bg-primary-100 font-black w-full">'.static::$module.' Module</div>'));
+            });
+        });
+    }
+    */
+>>>>>>> dc18abbe (first)
 }

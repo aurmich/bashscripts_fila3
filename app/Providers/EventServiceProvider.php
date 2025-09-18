@@ -23,6 +23,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -170,6 +171,11 @@ declare(strict_types=1);
 
 namespace Modules\Performance\Providers;
 >>>>>>> 961ad402 (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Ptv\Providers;
+>>>>>>> dc18abbe (first)
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as BaseEventServiceProvider;
 
@@ -181,6 +187,7 @@ class EventServiceProvider extends BaseEventServiceProvider
      * @var array<string, array<int, string>>
      */
     protected $listen = [];
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -273,6 +280,9 @@ class EventServiceProvider extends BaseEventServiceProvider
 =======
 
 >>>>>>> 961ad402 (first)
+=======
+
+>>>>>>> dc18abbe (first)
     /**
      * Indicates if events should be discovered.
      *
@@ -283,6 +293,7 @@ class EventServiceProvider extends BaseEventServiceProvider
     /**
      * Configure the proper event listeners for email verification.
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -435,4 +446,7 @@ class EventServiceProvider extends ServiceProvider
 =======
     protected function configureEmailVerification(): void {}
 >>>>>>> 961ad402 (first)
+=======
+    protected function configureEmailVerification(): void {}
+>>>>>>> dc18abbe (first)
 }

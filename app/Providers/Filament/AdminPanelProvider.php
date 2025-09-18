@@ -16,6 +16,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d79d9e57 (first)
 =======
@@ -132,10 +133,21 @@ declare(strict_types=1);
 namespace Modules\Performance\Providers\Filament;
 
 >>>>>>> 961ad402 (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Ptv\Providers\Filament;
+
+use Filament\Panel;
+use Filament\Support\Facades\FilamentView;
+use Filament\View\PanelsRenderHook;
+use Illuminate\Support\Facades\Blade;
+>>>>>>> dc18abbe (first)
 use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 
 class AdminPanelProvider extends XotBasePanelProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -304,4 +316,18 @@ class AdminPanelProvider extends XotBasePanelProvider
 =======
     protected string $module = 'Performance';
 >>>>>>> 961ad402 (first)
+=======
+    protected string $module = 'Ptv';
+
+    public function panel(Panel $panel): Panel
+    {
+        FilamentView::registerRenderHook(
+            PanelsRenderHook::BODY_END,
+            static fn (): string => Blade::render("@component('xot::x-debug')"),
+            // static fn (): string => 'qui',
+        );
+
+        return parent::panel($panel);
+    }
+>>>>>>> dc18abbe (first)
 }

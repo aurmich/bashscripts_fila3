@@ -1,13 +1,18 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+declare(strict_types=1);
+>>>>>>> dc18abbe (first)
 /**
  * ---.
  */
 
+<<<<<<< HEAD
 namespace Modules\IndennitaCondizioniLavoro\Filament\Resources\StabiDirigenteResource\Pages;
 
 use Modules\IndennitaCondizioniLavoro\Filament\Resources\StabiDirigenteResource;
@@ -34,6 +39,14 @@ use Modules\Performance\Filament\Resources\StabiDirigenteResource;
 
 class CreateStabiDirigente extends CreateRecord
 >>>>>>> 961ad402 (first)
+=======
+namespace Modules\Ptv\Filament\Resources\StabiDirigenteResource\Pages;
+
+use Filament\Resources\Pages\CreateRecord;
+use Modules\Ptv\Filament\Resources\StabiDirigenteResource;
+
+class CreateStabiDirigente extends CreateRecord
+>>>>>>> dc18abbe (first)
 {
     protected static string $resource = StabiDirigenteResource::class;
 }

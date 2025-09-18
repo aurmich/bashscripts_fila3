@@ -22,6 +22,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Rating\Models;
 
 use Illuminate\Database\Eloquent\Model;
@@ -614,11 +615,39 @@ abstract class BaseModel extends Model
     protected $fillable = ['id'];
 
     protected $casts = ['published_at' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime'];
+=======
+namespace Modules\Ptv\Models;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+// use Laravel\Scout\Searchable;
+use Illuminate\Database\Eloquent\Model;
+use Modules\Xot\Traits\Updater;
+
+abstract class BaseModel extends Model
+{
+    use HasFactory;
+
+    // use Searchable;
+    use Updater;
+
+    protected $connection = 'ptv'; // this will use the specified database connection
+
+    protected $fillable = ['id'];
+
+    public function casts(): array
+    {
+        return [
+            'published_at' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime',
+        ];
+    }
+>>>>>>> dc18abbe (first)
 
     protected $primaryKey = 'id';
 
     public $incrementing = true;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> b7483fd0 (first)
 =======
@@ -637,10 +666,13 @@ abstract class BaseModel extends Model
      * @var array<int, string>
      */
 >>>>>>> 4658bb86 (first)
+=======
+>>>>>>> dc18abbe (first)
     protected $hidden = [
         // 'password'
     ];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -928,6 +960,8 @@ abstract class BaseModel extends Model
 =======
 >>>>>>> 15ea09e2 (first)
 =======
+=======
+>>>>>>> dc18abbe (first)
     public $timestamps = true;
 
     /*
@@ -935,6 +969,7 @@ abstract class BaseModel extends Model
         return $this->morphMany(Image::class, 'post');
     }
     */
+<<<<<<< HEAD
 >>>>>>> b7483fd0 (first)
 =======
     public $timestamps = true;
@@ -983,10 +1018,18 @@ abstract class BaseModel extends Model
 =======
 =======
 >>>>>>> bcab6efe (first)
+=======
+    /**
+     * Create a new factory instance for the model.
+     *
+     * @return Factory
+     */
+>>>>>>> dc18abbe (first)
     protected static function newFactory()
     {
         return app(\Modules\Xot\Actions\Factory\GetFactoryAction::class)->execute(static::class);
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 4658bb86 (first)
 =======
@@ -1032,4 +1075,6 @@ abstract class BaseModel extends Model
     /** @var bool */
     public $timestamps = true;
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> dc18abbe (first)
 }

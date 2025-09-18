@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc18abbe (first)
     'resource' => [
         'name' => 'message',
     ],
@@ -28,6 +31,18 @@ return [
         'area' => 'Area',
         'parent' => 'Asset genitore',
         'name' => 'Nome',
+<<<<<<< HEAD
+=======
+        'id' => ['label' => 'ID'],
+        'parent_id' => ['label' => 'Padre ID'],
+        'type' => ['label' => 'Type'],
+        'title' => ['label' => 'Titolo'],
+        'valutatore_id' => ['label' => 'Valutatore Id'],
+        'stabi' => ['label' => 'Stabi'],
+        'repar' => ['label' => 'Repar'],
+        'anno' => ['label' => 'Anno'],
+        'matr' => ['label' => 'Matr'],
+>>>>>>> dc18abbe (first)
     ],
     'actions' => [
         'enable' => [
@@ -38,6 +53,7 @@ return [
         ],
         'import' => [
             'row_number' => 'Riga :row',
+<<<<<<< HEAD
 =======
     'navigation' => [
         'name' => 'message',
@@ -57,12 +73,17 @@ return [
         'import' => [
             'name' => 'Importa da file',
 >>>>>>> bcab6efe (first)
+=======
+>>>>>>> dc18abbe (first)
             'fields' => [
                 'import_file' => 'Seleziona un file XLS o CSV da caricare',
             ],
         ],
         'export' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc18abbe (first)
             'filename_prefix' => 'Lista asset al',
             'columns' => [
                 'brand' => 'Marca',
@@ -84,6 +105,7 @@ return [
     ],
     'exceptions' => [
         'mandatory_data' => '{1} Dato obbligatorio non presente|{2} 2 Dati obbligatori non presenti|{3} 3 Dati obbligatori non presenti|[4,*] Vari dati obbligatori non presenti',
+<<<<<<< HEAD
 =======
             'name' => 'Esporta dati',
             'filename_prefix' => 'Aree al',
@@ -97,5 +119,7 @@ return [
         'index' => 'lista',
         'create' => 'aggiungi',
 >>>>>>> bcab6efe (first)
+=======
+>>>>>>> dc18abbe (first)
     ],
 ];

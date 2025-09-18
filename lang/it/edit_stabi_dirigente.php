@@ -1,4 +1,5 @@
 <?php return array (
+<<<<<<< HEAD
   'fields' => 
   array (
     'id' => 
@@ -42,12 +43,15 @@
       'label' => 'anno',
     ),
   ),
+=======
+>>>>>>> dc18abbe (first)
   'actions' => 
   array (
     'delete' => 
     array (
       'label' => 'delete',
     ),
+<<<<<<< HEAD
     'save' => 
     array (
       'label' => 'save',
@@ -56,5 +60,7 @@
     array (
       'label' => 'cancel',
     ),
+=======
+>>>>>>> dc18abbe (first)
   ),
 );

@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\IndennitaResponsabilita\Filament\Resources\MessageResource\Pages;
 
 use Filament\Pages\Actions;
@@ -9,12 +10,28 @@ use Modules\Ptv\Filament\Resources\MessageResource\Pages\ListMessages as PtvList
 
 class ListMessages extends PtvListMessages
 {
+=======
+namespace Modules\Ptv\Filament\Resources\MessageResource\Pages;
+
+use Filament\Actions;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Filters\SelectFilter;
+use Modules\Ptv\Filament\Resources\MessageResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+use Modules\Xot\Filament\Traits\HasXotTable;
+
+class ListMessages extends XotBaseListRecords
+{
+    use HasXotTable;
+
+>>>>>>> dc18abbe (first)
     protected static string $resource = MessageResource::class;
 
     protected function getActions(): array
     {
         return [
             Actions\CreateAction::make(),
+<<<<<<< HEAD
 =======
 namespace Modules\Progressioni\Filament\Resources\MessageResource\Pages;
 
@@ -37,12 +54,15 @@ class ListMessages extends XotBaseListRecords
             Actions\CreateAction::make(),
             app(CopyFromLastYearButton::class)
                 ->execute(Message::class, 'anno', $anno),
+=======
+>>>>>>> dc18abbe (first)
         ];
     }
 
     public function getListTableColumns(): array
     {
         return [
+<<<<<<< HEAD
             'id' => Tables\Columns\TextColumn::make('id')
                 ->sortable(),
             'type' => Tables\Columns\TextColumn::make('type')
@@ -66,6 +86,26 @@ class ListMessages extends XotBaseListRecords
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true)
 >>>>>>> bcab6efe (first)
+=======
+            TextColumn::make('id'),
+            TextColumn::make('parent_id'),
+            TextColumn::make('type'),
+            TextColumn::make('title'),
+            // TextColumn::make('txt'),
+            TextColumn::make('anno'),
+        ];
+    }
+
+    public function getTableFilters(): array
+    {
+        return [
+            SelectFilter::make('anno')
+                ->options([
+                    '2023' => '2023',
+                    '2024' => '2024',
+'2025' => '2025',
+                ]),
+>>>>>>> dc18abbe (first)
         ];
     }
 }
