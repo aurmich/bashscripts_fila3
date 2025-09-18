@@ -15,6 +15,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'name' => 'Rating',
     'icon' => 'heroicon-o-star', // icon on dashboard
     'navigation_sort' => 1,
@@ -143,4 +144,8 @@ return [
     'name' => 'CertFisc',
     'icon' => 'heroicon-o-archive-box-arrow-down',
 >>>>>>> 53542950 (first)
+=======
+    'name' => 'ContoAnnuale',
+    'icon' => 'heroicon-o-calendar',
+>>>>>>> 26424c5e (first)
 ];

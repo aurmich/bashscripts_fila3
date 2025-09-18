@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -68,6 +69,11 @@ declare(strict_types=1);
 
 namespace Modules\CertFisc\Providers;
 >>>>>>> 53542950 (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\ContoAnnuale\Providers;
+>>>>>>> 26424c5e (first)
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as BaseEventServiceProvider;
 
@@ -79,6 +85,7 @@ class EventServiceProvider extends BaseEventServiceProvider
      * @var array<string, array<int, string>>
      */
     protected $listen = [];
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -103,6 +110,9 @@ class EventServiceProvider extends BaseEventServiceProvider
 =======
 
 >>>>>>> 53542950 (first)
+=======
+
+>>>>>>> 26424c5e (first)
     /**
      * Indicates if events should be discovered.
      *
@@ -113,6 +123,7 @@ class EventServiceProvider extends BaseEventServiceProvider
     /**
      * Configure the proper event listeners for email verification.
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -195,4 +206,7 @@ class EventServiceProvider extends ServiceProvider
 =======
     protected function configureEmailVerification(): void {}
 >>>>>>> 53542950 (first)
+=======
+    protected function configureEmailVerification(): void {}
+>>>>>>> 26424c5e (first)
 }

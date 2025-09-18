@@ -13,6 +13,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "laraxot/bashscripts_fila3",
     "description": "Script di utilità per la gestione dei repository Git, Toolkit di automazione Git per progetti Laravel",
     "type": "library",
@@ -119,12 +120,19 @@
     "license": "MIT",
     "homepage": "https://github.com/laraxot/module_lang_fila3.git",
 >>>>>>> bbec4378 (first)
+=======
+    "name": "laraxot/module_contoannuale_fila3",
+    "description": "",
+    "license": "MIT",
+    "homepage": "https://github.com/laraxot/module_contoannuale_fila3.git",
+>>>>>>> 26424c5e (first)
     "authors": [
         {
             "name": "Marco Sottana",
             "email": "marco.sottana@gmail.com"
         }
     ],
+<<<<<<< HEAD
 <<<<<<< HEAD
     "extra": {
         "laravel": {
@@ -359,12 +367,17 @@
 =======
 
 >>>>>>> 53542950 (first)
+=======
+    "require": {
+
+>>>>>>> 26424c5e (first)
     },
     "require-dev": {},
     "repositories": [
         {
             "type": "path",
             "url": "../Xot"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -375,6 +388,8 @@
 >>>>>>> 7e417e87 (first)
 =======
 >>>>>>> 53542950 (first)
+=======
+>>>>>>> 26424c5e (first)
         },
         {
             "type": "path",
@@ -382,6 +397,7 @@
         },
         {
             "type": "path",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -587,11 +603,14 @@
 =======
 =======
 >>>>>>> 53542950 (first)
+=======
+>>>>>>> 26424c5e (first)
             "url": "../UI"
         }
     ],
     "autoload": {
         "psr-4": {
+<<<<<<< HEAD
 <<<<<<< HEAD
             "Modules\\Badge\\": "app/",
             "Modules\\Badge\\Database\\Factories\\": "database/factories/",
@@ -602,11 +621,17 @@
             "Modules\\CertFisc\\Database\\Factories\\": "database/factories/",
             "Modules\\CertFisc\\Database\\Seeders\\": "database/seeders/"
 >>>>>>> 53542950 (first)
+=======
+            "Modules\\ContoAnnuale\\": "app/",
+            "Modules\\ContoAnnuale\\Database\\Factories\\": "database/factories/",
+            "Modules\\ContoAnnuale\\Database\\Seeders\\": "database/seeders/"
+>>>>>>> 26424c5e (first)
         }
     },
     "scripts": {
         "post-autoload-dump": [],
         "post-update-cmd": [],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -641,10 +666,13 @@
 >>>>>>> 7e417e87 (first)
 =======
 >>>>>>> 53542950 (first)
+=======
+>>>>>>> 26424c5e (first)
         "analyse": "vendor/bin/phpstan analyse",
         "test": "./vendor/bin/pest --no-coverage",
         "test-coverage": "vendor/bin/pest --coverage-html coverage",
         "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -665,10 +693,13 @@
 >>>>>>> 7e417e87 (first)
 =======
 >>>>>>> 53542950 (first)
+=======
+>>>>>>> 26424c5e (first)
     },
     "config": {
         "sort-packages": true,
         "allow-plugins": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -688,10 +719,13 @@
 >>>>>>> 7e417e87 (first)
 =======
 >>>>>>> 53542950 (first)
+=======
+>>>>>>> 26424c5e (first)
             "phpstan/extension-installer": true,
             "pestphp/pest-plugin": true
         }
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -783,10 +817,18 @@
                 "Modules\\CertFisc\\Providers\\CertFiscServiceProvider",
                 "Modules\\CertFisc\\Providers\\Filament\\AdminPanelProvider"
 >>>>>>> 53542950 (first)
+=======
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\ContoAnnuale\\Providers\\ContoAnnualeServiceProvider",
+                "Modules\\ContoAnnuale\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> 26424c5e (first)
             ],
             "aliases": {}
         }
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -874,3 +916,8 @@
     "prefer-stable": true
 }
 >>>>>>> 53542950 (first)
+=======
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+>>>>>>> 26424c5e (first)

@@ -13,6 +13,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 0d55b583 (first)
@@ -231,6 +232,8 @@
 =======
 =======
 >>>>>>> 53542950 (first)
+=======
+>>>>>>> 26424c5e (first)
     "private": true,
     "scripts": {
         "dev": "npm run development",
@@ -247,7 +250,10 @@
         "laravel-mix-merge-manifest": "^0.1.2"
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7e417e87 (first)
 =======
 >>>>>>> 53542950 (first)
+=======
+>>>>>>> 26424c5e (first)
 }

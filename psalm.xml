@@ -11,6 +11,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     errorLevel="4"
 =======
     errorLevel="1"
@@ -59,6 +60,9 @@
 =======
     errorLevel="4"
 >>>>>>> 53542950 (first)
+=======
+    errorLevel="4"
+>>>>>>> 26424c5e (first)
     resolveFromConfigFile="true"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns="https://getpsalm.org/schema/config"
@@ -78,6 +82,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bbec4378 (first)
 =======
@@ -86,6 +91,8 @@
 >>>>>>> 7e417e87 (first)
 =======
 >>>>>>> 53542950 (first)
+=======
+>>>>>>> 26424c5e (first)
         <file name="Actions/DB/DownloadAction.php"/>
         <file name="Config/config.php"/>
         <file name="Config/setting-filament.php"/>
@@ -120,6 +127,7 @@
         </ignoreFiles>
     </projectFiles>
 <plugins><pluginClass class="Psalm\LaravelPlugin\Plugin"/></plugins></psalm>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -204,3 +212,5 @@
 >>>>>>> 7e417e87 (first)
 =======
 >>>>>>> 53542950 (first)
+=======
+>>>>>>> 26424c5e (first)

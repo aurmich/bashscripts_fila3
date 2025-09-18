@@ -10,6 +10,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /*
 <<<<<<< HEAD
@@ -164,3 +165,5 @@ Route::middleware('auth:api')->get('/tenant', function (Request $request) {
 >>>>>>> 7e417e87 (first)
 =======
 >>>>>>> 53542950 (first)
+=======
+>>>>>>> 26424c5e (first)

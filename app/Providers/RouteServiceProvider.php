@@ -12,6 +12,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 /**
@@ -74,10 +75,18 @@ namespace Modules\CertFisc\Providers;
 
 // --- bases ---
 >>>>>>> 53542950 (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\ContoAnnuale\Providers;
+
+// --- bases ---
+>>>>>>> 26424c5e (first)
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -164,10 +173,17 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected string $moduleNamespace = 'Modules\CertFisc\Http\Controllers';
 >>>>>>> 53542950 (first)
+=======
+    /**
+     * The module namespace to assume when generating URLs to actions.
+     */
+    protected string $moduleNamespace = 'Modules\ContoAnnuale\Http\Controllers';
+>>>>>>> 26424c5e (first)
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -412,4 +428,8 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
     public string $name = 'CertFisc';
 >>>>>>> 53542950 (first)
+=======
+
+    public string $name = 'ContoAnnuale';
+>>>>>>> 26424c5e (first)
 }

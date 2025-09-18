@@ -5,9 +5,12 @@
 .env
 npm-debug.log
 <<<<<<< HEAD
+<<<<<<< HEAD
 *.cache
 *.phar
 *.lock
 package-lock.json
 =======
 >>>>>>> 53542950 (first)
+=======
+>>>>>>> 26424c5e (first)

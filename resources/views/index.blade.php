@@ -10,6 +10,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('rating::layouts.master')
 =======
 @extends('xot::layouts.app')
@@ -47,10 +48,14 @@
 =======
 @extends('certfisc::layouts.master')
 >>>>>>> 53542950 (first)
+=======
+@extends('contoannuale::layouts.master')
+>>>>>>> 26424c5e (first)
 
 @section('content')
     <h1>Hello World</h1>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -129,3 +134,9 @@
     </p>
 @stop
 >>>>>>> 53542950 (first)
+=======
+    <p>
+        This view is loaded from module: {!! config('contoannuale.name') !!}
+    </p>
+@stop
+>>>>>>> 26424c5e (first)

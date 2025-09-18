@@ -11,6 +11,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
 =======
@@ -172,22 +173,33 @@
     "name": "CertFisc",
     "alias": "certfisc",
 >>>>>>> 53542950 (first)
+=======
+    "name": "ContoAnnuale",
+    "alias": "contoannuale",
+>>>>>>> 26424c5e (first)
     "description": "",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
 <<<<<<< HEAD
+<<<<<<< HEAD
         "Modules\\Badge\\Providers\\BadgeServiceProvider"
 =======
         "Modules\\CertFisc\\Providers\\CertFiscServiceProvider"
 >>>>>>> 53542950 (first)
+=======
+        "Modules\\ContoAnnuale\\Providers\\ContoAnnualeServiceProvider"
+>>>>>>> 26424c5e (first)
     ],
     "aliases": {},
     "files": [],
     "requires": []
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7e417e87 (first)
 =======
 >>>>>>> 53542950 (first)
+=======
+>>>>>>> 26424c5e (first)
