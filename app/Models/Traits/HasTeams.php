@@ -16,14 +16,15 @@ use Modules\User\Models\Role;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
+use Modules\User\Models\Team;
 
 /**
  * Trait HasTeams.
  *
- * @property TeamContract $currentTeam
+ * @property Team|null $currentTeam
  * @property int|null $current_team_id
- * @property Collection $teams
- * @property Collection $ownedTeams
+ * @property-read Collection<int, Team> $teams
+ * @property-read Collection<int, Team> $ownedTeams
  */
 trait HasTeams
 {
@@ -46,32 +47,25 @@ trait HasTeams
      */
     public function currentTeam(): BelongsTo
     {
-        $xot = XotData::make();
-        if ($this->current_team_id === null && $this->id) {
-            $this->switchTeam($this->personalTeam());
-        }
-
-        if ($this->allTeams()->isEmpty() && $this->getKey() !== null) {
-            $this->current_team_id = null;
-            $this->save();
-        }
-
-        $teamClass = $xot->getTeamClass();
-
+        /** @var class-string<Team> $teamClass */
+        $teamClass = XotData::make()->getTeamClass();
         return $this->belongsTo($teamClass, 'current_team_id');
     }
 
     /**
      * Switch the user's context to the given team.
      */
-    public function switchTeam(?TeamContract $teamContract): bool
+    public function switchTeam(Team $team): bool
     {
-        if (! $teamContract instanceof TeamContract || ! $this->belongsToTeam($teamContract)) {
+        if (! $this->belongsToTeam($team)) {
             return false;
         }
 
-        $this->forceFill(['current_team_id' => $teamContract->getKey()])->save();
-        $this->setRelation('currentTeam', $teamContract);
+        $this->forceFill([
+            'current_team_id' => $team->id,
+        ])->save();
+
+        $this->setRelation('currentTeam', $team);
 
         return true;
     }
@@ -83,7 +77,7 @@ trait HasTeams
      */
     public function allTeams(): Collection
     {
-        return $this->ownedTeams->merge($this->teams)->sortBy('name');
+        return $this->teams()->get();
     }
 
     /**
@@ -93,10 +87,9 @@ trait HasTeams
      */
     public function ownedTeams(): HasMany
     {
-        $xot = XotData::make();
-        $teamClass = $xot->getTeamClass();
-
-        return $this->hasMany($teamClass);
+        /** @var class-string<Team> $teamClass */
+        $teamClass = XotData::make()->getTeamClass();
+        return $this->hasMany($teamClass, 'user_id');
     }
 
     /**
@@ -106,11 +99,12 @@ trait HasTeams
      */
     public function teams(): BelongsToMany
     {
-        $xot = XotData::make();
-        $teamClass = $xot->getTeamClass();
-
-        return $this->belongsToManyX($teamClass, null, null, 'team_id');
-        // ->as('membership')
+        /** @var class-string<Team> $teamClass */
+        $teamClass = XotData::make()->getTeamClass();
+        return $this->belongsToMany($teamClass)
+            ->withPivot('role')
+            ->withTimestamps()
+            ->as('membership');
     }
 
     /**
@@ -131,97 +125,47 @@ trait HasTeams
     /**
      * Determine if the user owns the given team.
      */
-    public function ownsTeam(?TeamContract $teamContract): bool
+    public function ownsTeam(Team $team): bool
     {
-        return $teamContract instanceof TeamContract && $this->id === $teamContract->{$this->getForeignKey()};
+        return $this->ownedTeams()->where('id', $team->id)->exists();
     }
 
     /**
      * Determine if the user belongs to the given team.
      */
-    public function belongsToTeam(?TeamContract $teamContract): bool
+    public function belongsToTeam(Team $team): bool
     {
-        return $teamContract instanceof TeamContract
-            && ($this->ownsTeam($teamContract) || $this->teams->contains(fn ($team) => $team->getKey() === $teamContract->getKey()));
+        return $this->teams()->where('team_id', $team->id)->exists();
     }
 
     /**
      * Get the role that the user has on the team.
      */
-    public function teamRole(TeamContract $teamContract): ?Role
+    public function teamRole(Team $team): ?Role
     {
-        if (! $this->belongsToTeam($teamContract)) {
+        if (! $this->belongsToTeam($team)) {
             return null;
         }
 
-        // Troviamo l'utente all'interno del team
-        $user = $teamContract->users()->where('id', $this->id)->first();
-
-        // Verifica che l'utente esista e sia del tipo corretto
-        Assert::notNull($user, 'User not found in team.');
-        Assert::isInstanceOf($user, XotData::make()->getUserClass(), 'Invalid user type.');
-
-        /**
-         * @var Model&UserContract $user
-         */
-        $membership = $user->getRelationValue('membership');
-
-        // Verifica che il membership esista e sia del tipo corretto
-        Assert::notNull($membership, 'Membership not found.');
-        Assert::isInstanceOf($membership, Membership::class, 'Invalid membership type.');
-
-        // Ora che sappiamo che $membership è un'istanza di Membership, possiamo accedere a $membership->role
-        return Role::firstOrCreate(
-            ['name' => $membership->role],
-            []
-        );
-    }
-
-    /**
-     * Determine if the user has the given role on the given team.
-     */
-    public function hasTeamRole(TeamContract $teamContract, string $role): bool
-    {
-        if ($this->ownsTeam($teamContract)) {
-            return true;
-        }
-
-        /*
-        return $this->belongsToTeam($teamContract) && optional(FilamentJet::findRole($teamContract->users->where(
-            'id',
-            $this->id
-        )->first()?->membership->role))->key === $role;
-        */
-        return $this->belongsToTeam($teamContract) && $this->teamRole($teamContract) !== null;
+        $pivot = $this->teams()->where('team_id', $team->id)->first()?->pivot;
+        return $pivot ? Role::findByName($pivot->role) : null;
     }
 
     /**
      * Get the user's permissions for the given team.
      */
-    public function teamPermissions(TeamContract $teamContract): array
+    public function teamPermissions(Team $team): array
     {
-        if ($this->ownsTeam($teamContract)) {
-            return ['*'];
-        }
-
-        return (array) $this->teamRole($teamContract)->permissions;
+        $role = $this->teamRole($team);
+        return $role ? $role->permissions->pluck('name')->toArray() : [];
     }
 
     /**
      * Determine if the user has the given permission on the given team.
      */
-    public function hasTeamPermission(TeamContract $teamContract, string $permission): bool
+    public function hasTeamPermission(Team $team, string $permission): bool
     {
-        if ($this->ownsTeam($teamContract)) {
-            return true;
-        }
-
-        $permissions = $this->teamPermissions($teamContract);
-
-        return in_array($permission, $permissions, true)
-            || in_array('*', $permissions, true)
-            || (Str::endsWith($permission, ':create') && in_array('*:create', $permissions, true))
-            || (Str::endsWith($permission, ':update') && in_array('*:update', $permissions, true));
+        return $this->belongsToTeam($team) && in_array($permission, $this->teamPermissions($team), true);
     }
 
     /**
@@ -302,5 +246,85 @@ trait HasTeams
     public function getTeamMembers(TeamContract $team): Collection
     {
         return $team->members()->wherePivot('role', 'member')->get();
+    }
+
+    public function canManageTeam(Team $team): bool
+    {
+        return $this->ownsTeam($team) || $this->hasTeamPermission($team, 'manage');
+    }
+
+    public function canAddTeamMembers(Team $team): bool
+    {
+        return $this->ownsTeam($team) || $this->hasTeamPermission($team, 'add_team_members');
+    }
+
+    public function canDeleteTeam(Team $team): bool
+    {
+        return $this->ownsTeam($team);
+    }
+
+    public function canRemoveTeamMembers(Team $team): bool
+    {
+        return $this->ownsTeam($team) || $this->hasTeamPermission($team, 'remove_team_members');
+    }
+
+    public function canUpdateTeam(Team $team): bool
+    {
+        return $this->ownsTeam($team) || $this->hasTeamPermission($team, 'update_team');
+    }
+
+    public function createTeam(array $input): Team
+    {
+        /** @var class-string<Team> $teamClass */
+        $teamClass = XotData::make()->getTeamClass();
+
+        /** @var Team $team */
+        $team = $this->ownedTeams()->create([
+            'name' => $input['name'],
+            'personal_team' => $input['personal_team'] ?? false,
+        ]);
+
+        $this->switchTeam($team);
+
+        return $team;
+    }
+
+    public function updateTeamName(Team $team, string $name): void
+    {
+        if ($this->canUpdateTeam($team)) {
+            $team->forceFill([
+                'name' => $name,
+            ])->save();
+        }
+    }
+
+    public function addTeamMember(Team $team, string $email, string $role = null): void
+    {
+        if ($this->canAddTeamMembers($team)) {
+            /** @var class-string<Model&UserContract> $userClass */
+            $userClass = XotData::make()->getUserClass();
+
+            /** @var Model&UserContract $newTeamMember */
+            $newTeamMember = $userClass::where('email', $email)->firstOrFail();
+
+            $team->users()->attach(
+                $newTeamMember,
+                ['role' => $role]
+            );
+        }
+    }
+
+    public function removeTeamMember(Team $team, int $userId): void
+    {
+        if ($this->canRemoveTeamMembers($team)) {
+            $team->users()->detach($userId);
+        }
+    }
+
+    public function deleteTeam(Team $team): void
+    {
+        if ($this->canDeleteTeam($team)) {
+            $team->delete();
+        }
     }
 }

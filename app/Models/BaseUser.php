@@ -30,50 +30,27 @@ use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Traits\RelationX;
 use Spatie\Permission\Traits\HasRoles;
+use Modules\User\Models\Team;
+use Modules\User\Models\Role;
+use Modules\User\Models\AuthenticationLog;
+use Modules\User\Models\Device;
+use Modules\User\Models\SocialiteUser;
 
 /**
- * Modules\User\Models\User.
+ * Modules\User\Models\BaseUser
  *
- * @template TModel of \Illuminate\Database\Eloquent\Model
- * @template TRelatedModel of \Illuminate\Database\Eloquent\Model
- *
- * @property Collection<int, OauthClient> $clients
- * @property int|null $clients_count
- * @property Team|null $currentTeam
- * @property Collection<int, Device> $devices
- * @property int|null $devices_count
- * @property string|null $full_name
- * @property DatabaseNotificationCollection<int, DatabaseNotification> $notifications
- * @property int|null $notifications_count
- * @property Collection<int, Team> $ownedTeams
- * @property int|null $owned_teams_count
- * @property Collection<int, Permission> $permissions
- * @property int|null $permissions_count
- * @property \Modules\Xot\Contracts\ProfileContract|null $profile
- * @property Collection<int, Role> $roles
- * @property int|null $roles_count
- * @property Collection<int, Team> $teams
- * @property int|null $teams_count
- * @property Collection<int, Tenant> $tenants
- * @property int|null $tenants_count
- * @property Collection<int, OauthAccessToken> $tokens
- * @property int|null $tokens_count
- * @property string $surname
- * @property string|null $facebook_id
- * @property Collection<int, SocialiteUser> $socialiteUsers
- * @property int|null $socialite_users_count
+ * @property string $id
  * @property string|null $name
  * @property string|null $first_name
  * @property string|null $last_name
  * @property string|null $email
  * @property string|null $password
- * @property string|null $lang
+ * @property string|null $remember_token
  * @property string|null $current_team_id
  * @property bool|null $is_active
  * @property bool|null $is_otp
  * @property \DateTime|null $password_expires_at
  * @property \DateTime|null $email_verified_at
- * @property string|null $remember_token
  * @property \DateTime|null $created_at
  * @property \DateTime|null $updated_at
  * @property \DateTime|null $deleted_at
@@ -82,39 +59,13 @@ use Spatie\Permission\Traits\HasRoles;
  * @property string|null $deleted_by
  * @property string|null $profile_photo_path
  * @property \Illuminate\Database\Eloquent\Relations\Pivot|null $pivot
- *
- * @method static \Modules\User\Database\Factories\UserFactory factory($count = null, $state = [])
- * @method static \Illuminate\Database\Eloquent\Builder|User newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|User newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|User permission($permissions, $without = false)
- * @method static \Illuminate\Database\Eloquent\Builder|User query()
- * @method static \Illuminate\Database\Eloquent\Builder|User role($roles, $guard = null, $without = false)
- * @method static \Illuminate\Database\Eloquent\Builder|User whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|User whereCreatedBy($value)
- * @method static \Illuminate\Database\Eloquent\Builder|User whereCurrentTeamId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|User whereDeletedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|User whereDeletedBy($value)
- * @method static \Illuminate\Database\Eloquent\Builder|User whereEmail($value)
- * @method static \Illuminate\Database\Eloquent\Builder|User whereEmailVerifiedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|User whereFirstName($value)
- * @method static \Illuminate\Database\Eloquent\Builder|User whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|User whereIsActive($value)
- * @method static \Illuminate\Database\Eloquent\Builder|User whereLang($value)
- * @method static \Illuminate\Database\Eloquent\Builder|User whereLastName($value)
- * @method static \Illuminate\Database\Eloquent\Builder|User whereName($value)
- * @method static \Illuminate\Database\Eloquent\Builder|User wherePassword($value)
- * @method static \Illuminate\Database\Eloquent\Builder|User whereProfilePhotoPath($value)
- * @method static \Illuminate\Database\Eloquent\Builder|User whereRememberToken($value)
- * @method static \Illuminate\Database\Eloquent\Builder|User whereUpdatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|User whereUpdatedBy($value)
- * @method static \Illuminate\Database\Eloquent\Builder|User withoutPermission($permissions)
- * @method static \Illuminate\Database\Eloquent\Builder|User withoutRole($roles, $guard = null)
- * @method static \Illuminate\Database\Eloquent\Builder|User whereFacebookId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|User whereIsOtp($value)
- * @method static \Illuminate\Database\Eloquent\Builder|User wherePasswordExpiresAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|User whereSurname($value)
- *
- * @mixin \Eloquent
+ * @property-read Collection<int, Role> $roles
+ * @property-read Collection<int, Team> $teams
+ * @property-read Collection<int, Team> $ownedTeams
+ * @property-read Team|null $currentTeam
+ * @property-read Collection<int, Device> $devices
+ * @property-read Collection<int, SocialiteUser> $socialiteUsers
+ * @property-read Collection<int, AuthenticationLog> $authentications
  */
 abstract class BaseUser extends Authenticatable implements HasName, HasTenants, UserContract
 {
@@ -539,5 +490,10 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
     public function authentications(): MorphMany
     {
         return $this->morphMany(\Modules\User\Models\Authentication::class, 'authenticatable');
+    }
+
+    public function getEmailForVerification(): string
+    {
+        return strval($this->email);
     }
 }

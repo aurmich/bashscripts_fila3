@@ -50,6 +50,7 @@ namespace Modules\User\Models;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile withoutRole($roles, $guard = null)
  * @mixin \Eloquent
  */
+<<<<<<< HEAD
 class Profile extends BaseProfile {}
 <<<<<<< HEAD
 =======
@@ -229,3 +230,58 @@ class Profile extends UserBaseProfile
 >>>>>>> dc18abbe (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+class Profile extends BaseProfile
+{
+    /** @var list<string> */
+    public $fillable = [
+        'id',
+        'user_id',
+        'first_name',
+        'last_name',
+        'full_name',
+        'email',
+        'is_active',
+        'extra',
+        'avatar',
+        'credits',
+        'slug',
+        'oauth_enable',
+        'credentials_enable',
+        'created_at',
+        'updated_at',
+        'updated_by',
+        'created_by'
+    ];
+
+    /**
+     * Get the attributes that should be cast.
+     *
+     * @return array<string, string>
+     */
+    public function casts(): array
+    {
+        return [
+            'id' => 'string',
+            'user_id' => 'string',
+            'first_name' => 'string',
+            'last_name' => 'string',
+            'full_name' => 'string',
+            'email' => 'string',
+            'is_active' => 'bool',
+            'extra' => 'array',
+            'avatar' => 'string',
+            'credits' => 'int',
+            'slug' => 'string',
+            'oauth_enable' => 'bool',
+            'credentials_enable' => 'bool',
+            'created_at' => 'datetime',
+            'updated_at' => 'datetime',
+            'deleted_at' => 'datetime',
+            'updated_by' => 'string',
+            'created_by' => 'string',
+            'deleted_by' => 'string'
+        ];
+    }
+}
+>>>>>>> 9de29306 (.)
