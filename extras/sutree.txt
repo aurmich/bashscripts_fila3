@@ -1,6 +1,7 @@
 git subtree pull -P bashscripts git@github.com:aurmich/bashscripts_fila3.git dev
 git subtree split -P bashscripts -b  bashscripts-temp
 <<<<<<< HEAD
+<<<<<<< HEAD
 git fetch git@github.com:aurmich/bashscripts_fila3.git dev
 git subtree merge --prefix=bashscripts bashscripts-temp --squash
 - Can't squash-merge: 'bashscripts' was never added.
@@ -14,3 +15,9 @@ git subtree merge --prefix=bashscripts bashscripts-temp --rejoin
 =======
 git fetch git@github.com:aurmich/bashscripts_fila3.git dev
 >>>>>>> a6cfb97d (.)
+=======
+git fetch git@github.com:aurmich/bashscripts_fila3.git dev
+git subtree merge --prefix=bashscripts bashscripts-temp --squash
+- Can't squash-merge: 'bashscripts' was never added.
+git subtree merge --prefix=bashscripts bashscripts-temp
+>>>>>>> bf472f16 (.)

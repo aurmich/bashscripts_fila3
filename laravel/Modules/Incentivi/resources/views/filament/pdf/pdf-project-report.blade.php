@@ -6,9 +6,12 @@
     {{-- <link rel="stylesheet" href="{{ $_theme->asset('ptv::dist/assets/app.css') }}"> --}}
     <link rel="stylesheet" href="{{ asset('ptv::dist/assets/app.css') }}">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     
 >>>>>>> a6cfb97d (.)
+=======
+>>>>>>> bf472f16 (.)
 </head>
 
 <body>
