@@ -27,6 +27,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3279,3 +3280,6 @@ Una volta che i dati verranno caricati, il Personale potrà quindi stampare/espo
 =======
 # module_questionari_fila3
 >>>>>>> fec698af (first)
+=======
+# module_sigma_fila3
+>>>>>>> f862c51f (first)

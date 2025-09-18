@@ -24,6 +24,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('rating::layouts.master')
 =======
 @extends('xot::layouts.app')
@@ -103,10 +104,14 @@
 =======
 @extends('questionari::layouts.master')
 >>>>>>> fec698af (first)
+=======
+@extends('sigma::layouts.master')
+>>>>>>> f862c51f (first)
 
 @section('content')
     <h1>Hello World</h1>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -283,3 +288,9 @@
     </p>
 @stop
 >>>>>>> fec698af (first)
+=======
+    <p>
+        This view is loaded from module: {!! config('sigma.name') !!}
+    </p>
+@stop
+>>>>>>> f862c51f (first)

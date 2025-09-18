@@ -25,6 +25,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
 =======
@@ -255,11 +256,16 @@
     "name": "Questionari",
     "alias": "questionari",
 >>>>>>> fec698af (first)
+=======
+    "name": "Sigma",
+    "alias": "sigma",
+>>>>>>> f862c51f (first)
     "description": "",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -359,11 +365,19 @@
 =======
         "Modules\\Progressioni\\Providers\\ProgressioniServiceProvider",
         "Modules\\Progressioni\\Providers\\Filament\\AdminPanelProvider"
+=======
+        "Modules\\Sigma\\Providers\\SigmaServiceProvider",
+        "Modules\\Sigma\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> f862c51f (first)
     ],
     "aliases": [],
     "files": [],
     "requires": []
+<<<<<<< HEAD
 }
 >>>>>>> bcab6efe (first)
 =======
 >>>>>>> fec698af (first)
+=======
+}
+>>>>>>> f862c51f (first)

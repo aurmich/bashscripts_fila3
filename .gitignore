@@ -28,6 +28,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ───────────────────────────────────────────────────────
 # Sistema operativo / File nascosti e metadata
 # ───────────────────────────────────────────────────────
@@ -935,3 +936,10 @@ cache/
 >>>>>>> bcab6efe (first)
 =======
 >>>>>>> fec698af (first)
+=======
+/vendor
+*.lock
+/build
+*.exe
+*:Zone.Identifier
+>>>>>>> f862c51f (first)

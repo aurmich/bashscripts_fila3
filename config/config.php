@@ -11,6 +11,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -244,4 +245,11 @@ declare(strict_types=1);
 return [
     'name' => 'Questionari',
 >>>>>>> fec698af (first)
+=======
+declare(strict_types=1);
+
+return [
+    'name' => 'Sigma',
+    'icon' => 'fas-tower-observation',
+>>>>>>> f862c51f (first)
 ];

@@ -1,0 +1,54 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Modules\Sigma\Models;
+
+use Illuminate\Support\Carbon;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
+// ----------traits ---
+
+use Modules\Xot\Traits\Updater;
+
+/**
+ * Modules\Sigma\Models\_ListaTbl.
+ *
+ * @property int $id
+ * @property string|null $db
+ * @property string|null $tbl
+ * @property string|null $descr
+ * @property int|null $n_rows
+ * @property string|null $datemod
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @method static Builder|_ListaTbl newModelQuery()
+ * @method static Builder|_ListaTbl newQuery()
+ * @method static Builder|_ListaTbl query()
+ * @method static Builder|_ListaTbl whereCreatedAt($value)
+ * @method static Builder|_ListaTbl whereDatemod($value)
+ * @method static Builder|_ListaTbl whereDb($value)
+ * @method static Builder|_ListaTbl whereDescr($value)
+ * @method static Builder|_ListaTbl whereId($value)
+ * @method static Builder|_ListaTbl whereNRows($value)
+ * @method static Builder|_ListaTbl whereTbl($value)
+ * @method static Builder|_ListaTbl whereUpdatedAt($value)
+ * @method static Builder|_ListaTbl whereUpdatedBy($value)
+ * @mixin \Eloquent
+ */
+class _ListaTbl extends Model {
+    use Updater;
+    protected $fillable = ['id', 'db', 'tbl', 'descr', 'n_rows'];
+    protected $connection = 'menu';
+     // this will use the specified database connection
+    protected $table = 'lista_tbl';
+
+    public $timestamps = true;
+    public function casts(): array
+    {
+        return [
+                  'created_at' => 'datetime', 'updated_at' => 'datetime'
+       ];
+    }
+}

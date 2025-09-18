@@ -26,6 +26,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 /**
@@ -176,10 +177,18 @@ namespace Modules\Questionari\Providers;
 
 // --- bases ---
 >>>>>>> fec698af (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Sigma\Providers;
+
+// --- bases ---
+>>>>>>> f862c51f (first)
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -378,10 +387,17 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider {
 
     public string $name = 'Questionari';
 >>>>>>> fec698af (first)
+=======
+    /**
+     * The module namespace to assume when generating URLs to actions.
+     */
+    protected string $moduleNamespace = 'Modules\Sigma\Http\Controllers';
+>>>>>>> f862c51f (first)
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -679,4 +695,8 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 >>>>>>> bcab6efe (first)
 =======
 >>>>>>> fec698af (first)
+=======
+
+    public string $name = 'Sigma';
+>>>>>>> f862c51f (first)
 }

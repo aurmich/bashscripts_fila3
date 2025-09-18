@@ -20,6 +20,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Rating\Models;
 
 use Illuminate\Database\Eloquent\Model;
@@ -989,4 +990,20 @@ abstract class BaseModel extends Model
 >>>>>>> 4658bb86 (first)
 =======
 >>>>>>> bcab6efe (first)
+=======
+namespace Modules\Sigma\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+abstract class BaseModel extends Model
+{
+    // use Traits\Scopes\CommonScope;
+    // use Traits\Relationships\CommonRelationship;
+    // use Traits\Mutators\CommonMutator;
+
+    protected $connection = 'generale';
+
+    // this will use the specified database connection
+    public $timestamps = false;
+>>>>>>> f862c51f (first)
 }
