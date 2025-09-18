@@ -2024,6 +2024,7 @@ Questo progetto è sotto licenza MIT - vedi il file [LICENSE](LICENSE) per i det
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 > **⚠️ ATTENZIONE: Questo toolkit è stato progettato per sviluppatori esperti che lavorano con repository Git complessi e strutture monorepo.**
 
@@ -3360,6 +3361,9 @@ Una volta che i dati verranno caricati, il Personale potrà quindi stampare/espo
 <div align="center">
   <sub>Built with ❤️ by the OrisBroker Team</sub>
 </div>
+=======
+
+>>>>>>> dd48c213 (.)
 
 > **Nota**: Questo README è in continuo aggiornamento. Se trovi errori o hai suggerimenti, apri pure una issue! 
 >>>>>>> 0c492c4f (.)
