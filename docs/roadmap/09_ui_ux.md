@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -202,6 +203,8 @@ aurmich/dev
 >>>>>>> e47821df (.)
 =======
 >>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
+=======
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
 # 📱 Fase 9: UI/UX
 
 ## 📋 Panoramica
@@ -326,6 +329,7 @@ Questa fase si concentra sullo sviluppo di interfacce utente moderne e intuitive
 ### Q4 2029
 - Deployment produzione
 - Monitoraggio utilizzo
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -792,3 +796,6 @@ aurmich/dev
 =======
 - Aggiornamenti 
 >>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
+=======
+- Aggiornamenti 
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)

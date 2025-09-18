@@ -3,6 +3,7 @@
 # Controllo parametri
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 if [ "$#" -ne 2 ]; then
 =======
 if [ -z "$1" ] || [ -z "$2" ]; then
@@ -10,6 +11,9 @@ if [ -z "$1" ] || [ -z "$2" ]; then
 =======
 if [ "$#" -ne 2 ]; then
 >>>>>>> 8003fba6 (Squashed 'bashscripts/' changes from 79ba09c61..583e15e4a)
+=======
+if [ -z "$1" ] || [ -z "$2" ]; then
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
     echo "Usage: $0 <organization> <branch>"
     exit 1
 fi
@@ -25,6 +29,7 @@ echo "-------- START SYNC [$where ($branch) - ORG: $org] ----------"
 # 1️⃣ Configurazioni globali per evitare problemi
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 git config --global core.fileMode false
 git config --global core.autocrlf input
 
@@ -36,6 +41,12 @@ git config core.fileMode false
 git config core.ignorecase false
 git config advice.skippedCherryPicks false
 
+=======
+git config core.fileMode false
+git config core.ignorecase false
+git config advice.skippedCherryPicks false
+
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
 # 2️⃣ Sincronizziamo i submoduli PRIMA di lavorare sul repository principale
 git submodule sync --recursive
 git submodule update --progress --init --recursive --force --merge --rebase --remote
@@ -95,6 +106,7 @@ if ! git rev-parse --abbrev-ref --symbolic-full-name "@{u}" >/dev/null 2>&1; the
     git branch --set-upstream-to=origin/$branch "$branch" || true
     git branch -u origin/$branch || true
 fi
+<<<<<<< HEAD
 >>>>>>> d516087e (.)
 =======
 git config --global core.fileMode false
@@ -104,5 +116,7 @@ git config --global core.autocrlf input
 git fetch origin
 git pull origin "$branch"
 >>>>>>> 8003fba6 (Squashed 'bashscripts/' changes from 79ba09c61..583e15e4a)
+=======
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
 
 echo "-------- END SYNC [$where ($branch) - ORG: $org] ----------"

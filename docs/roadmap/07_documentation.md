@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -360,6 +361,8 @@ Questa fase si concentra sulla documentazione completa del sistema.
 aurmich/dev
 =======
 >>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
+=======
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
 # 📚 Fase 7: Documentazione
 
 ## 📋 Panoramica
@@ -369,6 +372,7 @@ Questa fase si concentra sulla documentazione completa del sistema.
 - [Roadmap Principale](../roadmap.md)
 - [Documentazione Script](../project.md)
 - [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -643,3 +647,6 @@ aurmich/dev
 =======
 - [Fase 8: Manutenzione](../roadmap/08_maintenance.md) 
 >>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
+=======
+- [Fase 8: Manutenzione](../roadmap/08_maintenance.md) 
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)

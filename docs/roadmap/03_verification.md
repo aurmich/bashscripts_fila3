@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -42,6 +43,8 @@ aurmich/dev
 >>>>>>> e47821df (.)
 =======
 >>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
+=======
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -138,6 +141,7 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 ### Altri
 - Logging strutturato
 - Monitoraggio performance
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1138,3 +1142,6 @@ aurmich/dev
 =======
 - Alert automatici 
 >>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
+=======
+- Alert automatici 
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)

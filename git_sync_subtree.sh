@@ -10,11 +10,15 @@ fi
 me=$( readlink -f -- "$0")
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 script_dir=$(dirname "$me")
 >>>>>>> d516087e (.)
 =======
 >>>>>>> 8003fba6 (Squashed 'bashscripts/' changes from 79ba09c61..583e15e4a)
+=======
+script_dir=$(dirname "$me")
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
 LOCAL_PATH="$1"
 REMOTE_REPO="$2"
 REMOTE_BRANCH=$(git symbolic-ref --short HEAD 2>/dev/null || echo "main")
@@ -25,6 +29,7 @@ die() {
     exit 1
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 # Sync subtree
@@ -57,11 +62,14 @@ sync_subtree() {
 
     git subtree push -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH"
 =======
+=======
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
 # Funzione per loggare messaggi
 log() {
     local message="$1"
     echo "$(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$LOG_FILE"
 }
+<<<<<<< HEAD
 
 # Funzione per gestire gli errori
 handle_error() {
@@ -84,6 +92,8 @@ sync_subtree() {
     fi
 >>>>>>> d516087e (.)
 =======
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
+=======
 # Sync subtree
 sync_subtree() {
     git add .
@@ -105,16 +115,37 @@ sync_subtree() {
 
     # Then force push that branch
     git push -f "$REMOTE_REPO" "$TEMP_BRANCH":"$REMOTE_BRANCH"
+>>>>>>> origin/dev
 
-    # Optionally, clean up the temporary branch
-    git branch -D "$TEMP_BRANCH"
+# Funzione per gestire gli errori
+handle_error() {
+    local error_message="$1"
+    log "❌ Errore: $error_message"
+    exit 1
+}
 
+<<<<<<< HEAD
     git subtree push -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH"
 >>>>>>> 8003fba6 (Squashed 'bashscripts/' changes from 79ba09c61..583e15e4a)
+=======
+# Sync subtree
+sync_subtree() {
+    sed -i -e 's/\r$//' "$script_dir/git_push_subtree.sh"
+    sed -i -e 's/\r$//' "$script_dir/git_pull_subtree.sh"
+    chmod +x "$script_dir/git_push_subtree.sh"
+    chmod +x "$script_dir/git_pull_subtree.sh"
+    if ! "$script_dir/git_push_subtree.sh" "$LOCAL_PATH" "$REMOTE_REPO" ; then
+        log "⚠️ Push fallita per $current_path."
+    fi
+    if ! "$script_dir/git_pull_subtree.sh" "$LOCAL_PATH" "$REMOTE_REPO" ; then
+        log "⚠️ Pull fallita per $current_path."
+    fi
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
 }
 
 # Run sync
 sync_subtree
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 sed -i -e 's/\r$//' "$me"
@@ -124,4 +155,7 @@ sed -i -e 's/\r$//' "$me"
 =======
 sed -i -e 's/\r$//' "$me"
 >>>>>>> 8003fba6 (Squashed 'bashscripts/' changes from 79ba09c61..583e15e4a)
+=======
+
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
 echo "Subtree $LOCAL_PATH synchronized successfully with $REMOTE_REPO"

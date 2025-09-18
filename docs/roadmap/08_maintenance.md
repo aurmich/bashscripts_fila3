@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -38,6 +39,8 @@ aurmich/dev
 >>>>>>> e47821df (.)
 =======
 >>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
+=======
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
 # 🔧 Fase 8: Manutenzione
 
 ## 📋 Panoramica
@@ -47,6 +50,7 @@ Questa fase si concentra sulla manutenzione e il supporto continuo del sistema.
 - [Roadmap Principale](../roadmap.md)
 - [Documentazione Script](../project.md)
 - [Fase 7: Documentazione](../roadmap/07_documentation.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -285,3 +289,6 @@ aurmich/dev
 =======
 - [Fase 9: Scalabilità](../roadmap/09_scalability.md) 
 >>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
+=======
+- [Fase 9: Scalabilità](../roadmap/09_scalability.md) 
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)

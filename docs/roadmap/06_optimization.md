@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -371,6 +372,8 @@ Questa fase si concentra sull'ottimizzazione e il miglioramento continuo del sis
 aurmich/dev
 =======
 >>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
+=======
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
 # ⚡ Fase 6: Ottimizzazione
 
 ## 📋 Panoramica
@@ -380,6 +383,7 @@ Questa fase si concentra sull'ottimizzazione e il miglioramento continuo del sis
 - [Roadmap Principale](../roadmap.md)
 - [Documentazione Script](../project.md)
 - [Fase 5: Monitoraggio](../roadmap/05_monitoring.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -611,3 +615,6 @@ aurmich/dev
 =======
 - [Fase 7: Documentazione](../roadmap/07_documentation.md) 
 >>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
+=======
+- [Fase 7: Documentazione](../roadmap/07_documentation.md) 
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)

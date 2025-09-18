@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Project
 
 > **Nota**: Questo documento è correlato a [Progetto](../../docs/project.md). Per una panoramica completa, consulta entrambi i documenti.
@@ -11,6 +12,8 @@
 
 =======
 >>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
+=======
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
 # 📚 Documentazione Dettagliata degli Script
 
 ## 🔄 Script di Sincronizzazione Git
@@ -182,6 +185,7 @@
 - Identificazione dei branch obsoleti
 - Rimozione sicura
 - Backup prima dell'operazione
+<<<<<<< HEAD
 <<<<<<< HEAD
 **Uso**: `./git_delete_old_branches.sh <days>`
 
@@ -436,3 +440,6 @@ aurmich/dev
 =======
 **Uso**: `./git_delete_old_branches.sh <days>` 
 >>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
+=======
+**Uso**: `./git_delete_old_branches.sh <days>` 
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)

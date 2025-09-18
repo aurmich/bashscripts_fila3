@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -212,6 +213,8 @@ Per ulteriori dettagli, consultare la documentazione degli script specifici e le
 <<<<<<< HEAD
 =======
 >>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
+=======
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
 # 🛠️ Fase 2: Manutenzione
 
 ## 📋 Panoramica
@@ -221,6 +224,7 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema.
 - [Roadmap Principale](../roadmap.md)
 - [Documentazione Script](../project.md)
 - [Fase 1: Core Git Operations](../roadmap/01_core_git_operations.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 # 🛠️ Fase 2: Manutenzione
 
@@ -341,3 +345,6 @@ aurmich/dev
 =======
 - [Fase 3: Verifica](../roadmap/03_verification.md) 
 >>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
+=======
+- [Fase 3: Verifica](../roadmap/03_verification.md) 
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)

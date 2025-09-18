@@ -5,12 +5,15 @@ me=$( readlink -f -- "$0")
 script_dir=$(dirname "$me")
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CUSTOM_ORG="$1"
 =======
 >>>>>>> d516087e (.)
 =======
 CUSTOM_ORG="$1"
 >>>>>>> 8003fba6 (Squashed 'bashscripts/' changes from 79ba09c61..583e15e4a)
+=======
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
 
 # Script per sincronizzare git subtree con ottimizzazione della history
 CONFIG_FILE="gitmodules.ini"
@@ -54,6 +57,7 @@ while IFS= read -r line; do
         current_url="${BASH_REMATCH[1]}"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8003fba6 (Squashed 'bashscripts/' changes from 79ba09c61..583e15e4a)
 
@@ -81,6 +85,11 @@ while IFS= read -r line; do
         # Chiamata esterna allo script di sincronizzazione
         log "🔄 Sincronizzazione modulo: $current_path [$current_url]"
 >>>>>>> 8003fba6 (Squashed 'bashscripts/' changes from 79ba09c61..583e15e4a)
+=======
+        
+        # Chiamata esterna allo script di sincronizzazione
+        log "🔄 Sincronizzazione modulo: $current_path"
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
         if ! "$script_dir/git_sync_subtree.sh" "$current_path" "$current_url" ; then
             log "⚠️ Sincronizzazione fallita per $current_path."
         fi
@@ -96,6 +105,7 @@ log "🧹 Pulizia del repository..."
 git gc --prune=now --aggressive
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 sed -i -e 's/\r$//' "$me"
 log "✅ Sincronizzazione completata con history ottimizzata!"
 =======
@@ -106,3 +116,7 @@ log "✅ Sincronizzazione completata con history ottimizzata!"
 sed -i -e 's/\r$//' "$me"
 log "✅ Sincronizzazione completata con history ottimizzata!"
 >>>>>>> 8003fba6 (Squashed 'bashscripts/' changes from 79ba09c61..583e15e4a)
+=======
+
+log "✅ Sincronizzazione completata con history ottimizzata!"
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)

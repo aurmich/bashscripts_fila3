@@ -39,6 +39,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -251,6 +252,10 @@ php artisan tinker
 # 🚀 Toolkit di Automazione Git per Laraxot PTVX
 
 [![PHPStan](https://img.shields.io/badge/PHPStan-Level%209-brightgreen.svg?style=for-the-badge&logo=php&logoColor=white)](../docs/phpstan/ANALISI_MODULI_PHPSTAN.md)
+=======
+# 🚀 BashScripts Power Tools
+
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
 [![Bash Version](https://img.shields.io/badge/Bash-5.0%2B-brightgreen.svg)](https://www.gnu.org/software/bash/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/aurmich/bashscripts_fila3)
@@ -274,7 +279,10 @@ php artisan tinker
 
 - [Installazione](#-installazione)
 - [Utilizzo](#-utilizzo)
+<<<<<<< HEAD
 - [Organizzazione Script](#-organizzazione-script)
+=======
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
 - [Script Disponibili](#-script-disponibili)
 - [Esempi](#-esempi)
 - [Risoluzione Problemi](#-risoluzione-problemi)
@@ -287,6 +295,7 @@ php artisan tinker
 git clone git@github.com:aurmich/bashscripts_fila3.git
 
 # Rendi gli script eseguibili
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -306,12 +315,16 @@ chmod +x *.sh
 =======
 >>>>>>> 829c80f (.)
 chmod +x scripts/**/*.sh
+=======
+chmod +x *.sh
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
 ```
 
 ## 🚀 Utilizzo
 
 ### Sincronizzazione Subtree
 ```bash
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -331,10 +344,14 @@ chmod +x scripts/**/*.sh
 =======
 >>>>>>> 829c80f (.)
 ./scripts/git/git_sync_subtree.sh <path> <remote_repo>
+=======
+./git_sync_subtree.sh <path> <remote_repo>
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
 ```
 
 Esempio:
 ```bash
+<<<<<<< HEAD
 ./scripts/git/git_sync_subtree.sh modules/auth git@github.com:user/auth-module.git
 ```
 
@@ -400,6 +417,8 @@ Tutti gli script sono organizzati in sottocartelle per categoria:
 
 ### 1. Git Management (scripts/git/)
 > 🎯 Script per la gestione Git e subtree
+=======
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
 ./git_sync_subtree.sh modules/auth git@github.com:user/auth-module.git
 ```
 
@@ -413,6 +432,7 @@ Tutti gli script sono organizzati in sottocartelle per categoria:
 - Rimozione caratteri CR (^M)
 - Gestione permessi automatica
 
+<<<<<<< HEAD
 ### 2. Documentation Management (scripts/docs/)
 > 📝 Script per la gestione della documentazione
 
@@ -445,6 +465,8 @@ Tutti gli script sono organizzati in sottocartelle per categoria:
 - Riparazione struttura
 - Correzione violazioni PSR-4
 
+=======
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
 ### 2. git_push_subtree.sh
 > 🔼 Gestisce le operazioni di push
 
@@ -465,6 +487,7 @@ Tutti gli script sono organizzati in sottocartelle per categoria:
 
 ### Sincronizzazione Modulo
 ```bash
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -804,11 +827,14 @@ php artisan tinker
 =======
 >>>>>>> 829c80f (.)
 
+=======
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
 # Sincronizza un modulo specifico
 ./git_sync_subtree.sh modules/users git@github.com:org/users.git
 
 # Sincronizza con branch specifico
 REMOTE_BRANCH=develop ./git_sync_subtree.sh modules/auth git@github.com:org/auth.git
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1364,6 +1390,8 @@ REMOTE_BRANCH=develop ./scripts/phpstan/check_before_phpstan.sh
 
 # Genera riassunto PHPStan
 ./scripts/phpstan/generate_phpstan_summary.sh
+=======
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
 ```
 
 ## ⚠️ Risoluzione Problemi
@@ -1381,6 +1409,7 @@ REMOTE_BRANCH=develop ./scripts/phpstan/check_before_phpstan.sh
    ! [rejected] dev -> dev (non-fast-forward)
    ```
    ✅ **Soluzione:** Esegui prima un pull
+<<<<<<< HEAD
    **Soluzione**: Verifica che il path del subtree sia corretto
 
 2. **Permessi Script**
@@ -1481,6 +1510,8 @@ Questo progetto è rilasciato sotto licenza MIT. Vedi il file [LICENSE](LICENSE)
 <div align="center">
   <strong>🚀 Potenzia il tuo workflow Git con questi script!</strong>
 </div>
+=======
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
 
 ## 🛠️ Best Practices
 
@@ -1526,6 +1557,7 @@ Questo progetto è sotto licenza MIT - vedi il file [LICENSE](LICENSE) per i det
 
 ---
 
+<<<<<<< HEAD
 > **Nota**: Questo README è in continuo aggiornamento. Se trovi errori o hai suggerimenti, apri pure una issue!
 
 <div align="center">
@@ -1838,10 +1870,21 @@ Questo progetto è sotto licenza MIT. Vedere il file [LICENSE](LICENSE) per i de
 # 🚀 Toolkit di Automazione Git
 
 >>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
+=======
+
+
+> **Nota**: Questo README è in continuo aggiornamento. Se trovi errori o hai suggerimenti, apri pure una issue! 
+=======
+=======
+>>>>>>> 3067e30a78cf264a5c241c6d051c32d744047740
+# 🚀 Toolkit di Automazione Git
+
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com)
 [![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
 [![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 > **⚠️ WARNING: This toolkit is designed for experienced developers working with complex Git repositories and monorepo structures.**
@@ -2039,6 +2082,8 @@ Questo progetto è sotto licenza MIT - vedi il file [LICENSE](LICENSE) per i det
 =======
 =======
 >>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
+=======
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
 > **⚠️ ATTENZIONE: Questo toolkit è stato progettato per sviluppatori esperti che lavorano con repository Git complessi e strutture monorepo.**
 
 ## 📋 Panoramica
@@ -2070,6 +2115,7 @@ Questo toolkit è una suite completa di script Bash progettata per automatizzare
 ```
 bashscripts/
 <<<<<<< HEAD
+<<<<<<< HEAD
 ├── git/              # Script per la gestione Git
 │   ├── subtrees/     # Gestione subtrees
 │   ├── submodules/   # Gestione submodules
@@ -2080,11 +2126,16 @@ bashscripts/
 ├── backup/          # Script di backup
 └── testing/         # Script per i test
 =======
+=======
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
 ├── git/                 # Script per la gestione Git
 ├── maintenance/         # Script di manutenzione
 ├── checks/             # Script di verifica
 └── prompt/             # Template per prompt personalizzati
+<<<<<<< HEAD
 >>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
+=======
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
 ```
 
 ## 🚀 Script Principali
@@ -2142,6 +2193,7 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file `LICENSE` per 
 
 ---
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 <div align="center">
@@ -3617,3 +3669,13 @@ php artisan module:migrate Activity
 >>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
 =======
 >>>>>>> 55edff60 (.)
+=======
+<div align="center">
+  <sub>Built with ❤️ by the development team</sub>
+<<<<<<< HEAD
+</div> 
+>>>>>>> origin/dev
+=======
+</div> 
+>>>>>>> 3067e30a78cf264a5c241c6d051c32d744047740
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)

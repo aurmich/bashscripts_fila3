@@ -40,6 +40,7 @@ push_subtree() {
     find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7ef44a81 (first)
 =======
@@ -48,6 +49,9 @@ push_subtree() {
 =======
 
 >>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
+=======
+
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
     git add -A
     git commit -am "."
     git push -u origin "$REMOTE_BRANCH"
@@ -58,12 +62,16 @@ push_subtree() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> aef2e184 (.)
 =======
 
 >>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
+=======
+
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
     if(! git subtree push -P "$LOCAL_PATH" "$REMOTE_REPO" "$REMOTE_BRANCH")
     then
         handle_error "Failed to push subtree $LOCAL_PATH to $REMOTE_REPO"
@@ -82,6 +90,7 @@ push_subtree() {
     #    fi
     fi
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -106,6 +115,9 @@ push_subtree() {
 =======
 
 >>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
+=======
+
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
     git rebase --rebase-merges --strategy subtree "$REMOTE_BRANCH"
     #git rebase --preserve-merges "$REMOTE_BRANCH" 
 }

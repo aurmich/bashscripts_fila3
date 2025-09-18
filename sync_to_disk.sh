@@ -6,6 +6,7 @@ if [ -z "$1" ]; then
     echo "👉 Uso: $0 <nome_disco>"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Verifica se è stato passato il nome del disco
 if [ -z "$1" ]; then
     echo "Uso: $0 <nome_disco>"
@@ -16,6 +17,8 @@ if [ -z "$1" ]; then
 if [ -z "$1" ]; then
     echo "Uso: $0 <nome_disco>"
 >>>>>>> 8003fba6 (Squashed 'bashscripts/' changes from 79ba09c61..583e15e4a)
+=======
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
     exit 1
 fi
 
@@ -31,6 +34,7 @@ echo "🚀 Avvio sincronizzazione: $PWD → $DEST_PATH"
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # 🧹 Rimuove i file temporanei (*:Zone.Identifier)
 =======
 # 🗑️ Rimuove i file inutili (*:Zone.Identifier)
@@ -38,12 +42,16 @@ echo "🚀 Avvio sincronizzazione: $PWD → $DEST_PATH"
 =======
 # 🧹 Rimuove i file temporanei (*:Zone.Identifier)
 >>>>>>> 8003fba6 (Squashed 'bashscripts/' changes from 79ba09c61..583e15e4a)
+=======
+# 🗑️ Rimuove i file inutili (*:Zone.Identifier)
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
 echo "🧹 Pulizia file temporanei..."
 find . -type f -name "*:Zone.Identifier" -delete
 
 # 📦 Creazione dell'archivio tar.gz con massima compressione
 echo "📝 Creazione dell'archivio: $TEMP_PATH"
 tar -czf "$TEMP_PATH" --exclude='.git' --exclude='build' --exclude='cache' --exclude='storage' \
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -80,3 +88,6 @@ echo "Sincronizzazione completata!"
 >>>>>>> d516087e (.)
 =======
 >>>>>>> 8003fba6 (Squashed 'bashscripts/' changes from 79ba09c61..583e15e4a)
+=======
+    --exclude='venv' --exclude='node_modules' --exclude='v
+>>>>>>> fcc45bbf (Squashed 'bashscripts/' changes from 583e15e4a..97029dbe6)
