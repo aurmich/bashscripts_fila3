@@ -28,6 +28,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Rating\Models;
 
 use Illuminate\Database\Eloquent\Model;
@@ -200,10 +201,22 @@ use Modules\Xot\Traits\Updater;
 >>>>>>> 0253339c (first)
 =======
 >>>>>>> bc2abf99 (.)
+=======
+namespace Modules\Activity\Models;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+// ---------- traits
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+// //use Laravel\Scout\Searchable;
+use Illuminate\Database\Eloquent\Model;
+use Modules\Xot\Actions\Factory\GetFactoryAction;
+use Modules\Xot\Traits\Updater;
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
 
 /**
  * Class BaseModel.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -256,10 +269,15 @@ abstract class BaseModel extends Model
 abstract class BaseModel extends Model
 {
 >>>>>>> 4658bb86 (first)
+=======
+abstract class BaseModel extends Model
+{
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
     use HasFactory;
 
     // use Searchable;
     // use Cachable;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -325,11 +343,14 @@ abstract class BaseModel extends Model
 abstract class BaseModel extends Model
 {
 >>>>>>> bc2abf99 (.)
+=======
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
     use Updater;
 
     /**
      * Indicates whether attributes are snake cased on arrays.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -387,11 +408,15 @@ abstract class BaseModel extends Model
 =======
      * @see  https://laravel-news.com/6-eloquent-secrets
 >>>>>>> bc2abf99 (.)
+=======
+     * @see https://laravel-news.com/6-eloquent-secrets
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
      *
      * @var bool
      */
     public static $snakeAttributes = true;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -457,12 +482,15 @@ abstract class BaseModel extends Model
 <<<<<<< HEAD
     protected $connection = 'rating';
 =======
+=======
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
     public $incrementing = true;
 
     public $timestamps = true;
 
     protected $perPage = 30;
 
+<<<<<<< HEAD
     protected $connection = 'xot';
 >>>>>>> 59bc4fe7 (first)
 =======
@@ -811,10 +839,20 @@ abstract class BaseModel extends Model
 
     /** @var list<string> */
 >>>>>>> bc2abf99 (.)
+=======
+    protected $connection = 'activity';
+
+    protected $primaryKey = 'id';
+
+    protected $keyType = 'string';
+
+    /** @var list<string> */
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
     protected $hidden = [
         // 'password'
     ];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -931,10 +969,18 @@ abstract class BaseModel extends Model
     /** @return array<string, string> */
     public function casts(): array
 >>>>>>> bc2abf99 (.)
+=======
+    /** @var list<string> */
+    protected $fillable = [];
+
+    /** @return array<string, string> */
+    protected function casts(): array
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
     {
         return [
             'id' => 'string',
             'uuid' => 'string',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -993,6 +1039,9 @@ abstract class BaseModel extends Model
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
             'deleted_at' => 'datetime',
@@ -1000,6 +1049,7 @@ abstract class BaseModel extends Model
             'updated_by' => 'string',
             'created_by' => 'string',
             'deleted_by' => 'string',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1311,4 +1361,20 @@ abstract class BaseModel extends Model
         ];
     }
 >>>>>>> bc2abf99 (.)
+=======
+
+            'published_at' => 'datetime',
+        ];
+    }
+
+    /**
+     * Create a new factory instance for the model.
+     *
+     * @return \Illuminate\Database\Eloquent\Factories\Factory<static>
+     */
+    protected static function newFactory(): Factory
+    {
+        return app(GetFactoryAction::class)->execute(static::class);
+    }
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
 }

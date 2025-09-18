@@ -14,6 +14,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -79,11 +80,19 @@ use Filament\Pages\Page;
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 =======
 >>>>>>> 0253339c (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Activity\Filament\Pages;
+
+use Filament\Pages\Page;
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
 
 class Dashboard extends Page
 {
     protected static ?string $navigationIcon = 'heroicon-o-home';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -390,4 +399,16 @@ class Dashboard extends BaseDashboard
 =======
     protected static string $view = 'tenant::filament.pages.dashboard';
 >>>>>>> 0253339c (first)
+=======
+    protected static string $view = 'activity::filament.pages.dashboard';
+
+    // public function mount(): void
+    // {
+    //     // $user = auth()->user();
+    //     // if(!$user->hasRole('super-admin')){
+    //     //     redirect('/admin');
+    //     // }
+    //     ActivityEvent::dispatch();
+    // }
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
 }

@@ -8,12 +8,21 @@
         svg:hover .dashboard {
             transform: scale(1.1);
         }
+<<<<<<< HEAD
         .stat {
             transform-origin: bottom;
             transition: all 0.3s ease;
         }
         svg:hover .stat {
             animation: grow 1s infinite;
+=======
+        .chart {
+            transform-origin: bottom;
+            transition: all 0.3s ease;
+        }
+        svg:hover .chart {
+            animation: grow 1s ease-in-out infinite;
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
         }
         @keyframes grow {
             0%, 100% { transform: scaleY(1); }
@@ -21,8 +30,14 @@
         }
     </style>
     <rect class="dashboard" x="3" y="3" width="18" height="18" rx="2"/>
+<<<<<<< HEAD
     <path class="stat" d="M8 13v4"/>
     <path class="stat" d="M12 9v8"/>
     <path class="stat" d="M16 13v4"/>
     <path class="dashboard" d="M3 9h18"/>
+=======
+    <line class="dashboard" x1="3" y1="9" x2="21" y2="9"/>
+    <path class="chart" d="M7 14l4-4 4 4 4-4"/>
+    <circle class="dashboard" cx="12" cy="12" r="7"/>
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
 </svg>

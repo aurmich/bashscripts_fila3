@@ -16,6 +16,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <!-- Cubo base -->
     <path stroke-linecap="round" 
           stroke-linejoin="round" 
@@ -184,4 +185,21 @@
 >>>>>>> bdeae81f (first)
 =======
 >>>>>>> 0253339c (first)
+=======
+    <!-- Cerchio esterno dell'orologio -->
+    <circle cx="12" cy="12" r="9" />
+    
+    <!-- Lancetta delle ore -->
+    <path stroke-linecap="round" 
+          stroke-linejoin="round" 
+          d="M12 7v5l3 3" />
+    
+    <!-- Freccia circolare -->
+    <path stroke-linecap="round" 
+          stroke-linejoin="round" 
+          d="M17 12a5 5 0 1 0-5 5" />
+    <path stroke-linecap="round" 
+          stroke-linejoin="round" 
+          d="M17 12l2-2m-2 2l-2-2" />
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
 </svg> 

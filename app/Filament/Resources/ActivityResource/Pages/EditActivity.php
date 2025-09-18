@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Incentivi\Filament\Resources\ActivityResource\Pages;
 
 use Filament\Actions;
@@ -14,6 +15,13 @@ use Modules\Incentivi\Models\Activity;
  *
  * @property Activity $record
  */
+=======
+namespace Modules\Activity\Filament\Resources\ActivityResource\Pages;
+
+use Filament\Actions\DeleteAction;
+use Modules\Activity\Filament\Resources\ActivityResource;
+
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
 class EditActivity extends \Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord
 {
     protected static string $resource = ActivityResource::class;
@@ -21,6 +29,7 @@ class EditActivity extends \Modules\Xot\Filament\Resources\Pages\XotBaseEditReco
     protected function getHeaderActions(): array
     {
         return [
+<<<<<<< HEAD
             Actions\DeleteAction::make(),
             // Actions\ViewProjectAction::make(),
         ];
@@ -54,6 +63,9 @@ class EditActivity extends \Modules\Xot\Filament\Resources\Pages\XotBaseEditReco
             url('incentivi/admin/projects/'.$this->record->project_id.'/activities') => 'Attività',
             url('incentivi/admin/activities/'.$this->record->id.'/edit') => $activity_name,
             url('incentivi/admin/activities/'.$this->record->id.'/edit#') => 'Modifica',
+=======
+            DeleteAction::make(),
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
         ];
     }
 }

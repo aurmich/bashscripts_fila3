@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 /**
  * @see https://github.com/rappasoft/laravel-authentication-log/blob/main/src/Listeners/LogoutListener.php
  */
@@ -29,11 +30,20 @@ class LogoutListener
         $this->request = $request;
     }
 
+=======
+namespace Modules\Activity\Listeners;
+
+use Illuminate\Auth\Events\Logout;
+
+class LogoutListener
+{
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
     /**
      * Handle the event.
      */
     public function handle(Logout $event): void
     {
+<<<<<<< HEAD
         if (! config('authentication-log.logout_log', true)) {
             return;
         }
@@ -89,5 +99,9 @@ class LogoutListener
                 'remember_token' => null,
             ]);
         }
+=======
+        // ...
+        // dddx('aa');
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
     }
 }

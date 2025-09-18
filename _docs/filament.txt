@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://github.com/lartisan/filament-rating-tool
 =======
 https://github.com/savannabits/filament-signature-pad
@@ -70,3 +71,7 @@ https://github.com/lartisan/filament-rating-tool
 https://github.com/lartisan/filament-rating-tool
 
 >>>>>>> bc2abf99 (.)
+=======
+https://laraveldaily.com/post/filament-activity-logs-three-packages-comparison-review
+
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)

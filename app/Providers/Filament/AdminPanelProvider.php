@@ -22,6 +22,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d79d9e57 (first)
 =======
@@ -180,10 +181,18 @@ namespace Modules\Progressioni\Providers\Filament;
 namespace Modules\Rating\Providers\Filament;
 
 >>>>>>> bc2abf99 (.)
+=======
+declare(strict_types=1);
+
+namespace Modules\Activity\Providers\Filament;
+
+use Filament\Panel;
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
 use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 
 class AdminPanelProvider extends XotBasePanelProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -401,4 +410,15 @@ class AdminPanelProvider extends XotBasePanelProvider
 =======
     protected string $module = 'Rating';
 >>>>>>> bc2abf99 (.)
+=======
+    protected string $module = 'Activity';
+
+    public function panel(Panel $panel): Panel
+    {
+
+        $panel = parent::panel($panel);
+
+        return $panel;
+    }
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
 }

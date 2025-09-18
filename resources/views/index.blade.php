@@ -33,6 +33,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('rating::layouts.master')
 =======
 @extends('xot::layouts.app')
@@ -139,10 +140,14 @@
 =======
 @extends('rating::layouts.master')
 >>>>>>> bc2abf99 (.)
+=======
+@extends('activity::layouts.master')
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
 
 @section('content')
     <h1>Hello World</h1>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -379,3 +384,9 @@
     </p>
 @endsection
 >>>>>>> bc2abf99 (.)
+=======
+    <p>
+        This view is loaded from module: {!! config('activity.name') !!}
+    </p>
+@endsection
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)

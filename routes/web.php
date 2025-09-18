@@ -29,6 +29,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -86,6 +87,10 @@ use Modules\Incentivi\Http\Controllers\PdfDownloadController;
 declare(strict_types=1);
 
 >>>>>>> 0253339c (first)
+=======
+declare(strict_types=1);
+
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -96,6 +101,7 @@ declare(strict_types=1);
 | contains the "web" middleware group. Now create something great!
 |
 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -259,3 +265,10 @@ declare(strict_types=1);
 >>>>>>> bdeae81f (first)
 =======
 >>>>>>> 0253339c (first)
+=======
+
+/*Route::prefix('activity')->group(function () {
+    Route::get('/', 'ActivityController@index');
+});
+*/
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)

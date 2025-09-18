@@ -12,6 +12,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #	url = https://github.com/laraxot/doc_rating.git
 =======
 #	url = https://github.com/laraxot/doc_ui.git
@@ -54,3 +55,6 @@
 =======
 #	url = https://github.com/laraxot/doc_rating.git
 >>>>>>> bc2abf99 (.)
+=======
+#	url = git@github.com:laraxot/doc_activity.git
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)

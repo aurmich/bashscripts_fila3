@@ -34,6 +34,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
 =======
@@ -84,10 +85,15 @@
     "name": "Rating",
     "alias": "rating",
 >>>>>>> bc2abf99 (.)
+=======
+    "name": "Activity",
+    "alias": "activity",
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
     "description": "",
     "keywords": [],
     "priority": 0,
     "providers": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -486,3 +492,10 @@
 =======
 }
 >>>>>>> bc2abf99 (.)
+=======
+        "Modules\\Activity\\Providers\\ActivityServiceProvider",
+        "Modules\\Activity\\Providers\\Filament\\AdminPanelProvider"
+    ],
+    "files": []
+}
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)

@@ -20,6 +20,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -128,12 +129,25 @@ return [
 >>>>>>> bdeae81f (first)
 =======
 >>>>>>> 0253339c (first)
+=======
+declare(strict_types=1);
+
+return [
+    'name' => 'Activity',
+    'description' => 'Modulo per il tracciamento delle attività degli utenti',
+    // 'icon' => 'heroicon-o-clock',
+    'icon' => 'activity-icon',
+    'navigation' => [
+        'enabled' => true,
+        'sort' => 20,
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
     ],
     'routes' => [
         'enabled' => true,
         'middleware' => ['web', 'auth'],
     ],
     'providers' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -336,4 +350,8 @@ return [
     'icon' => 'heroicon-o-star', // icon on dashboard
     'navigation_sort' => 1,
 >>>>>>> bc2abf99 (.)
+=======
+        'Modules\\Activity\\Providers\\ActivityServiceProvider',
+    ],
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
 ];

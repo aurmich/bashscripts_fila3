@@ -35,6 +35,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 =======
@@ -241,10 +242,17 @@ namespace Modules\Tenant\Providers;
 =======
 
 >>>>>>> bc2abf99 (.)
+=======
+declare(strict_types=1);
+
+namespace Modules\Activity\Providers;
+
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -491,10 +499,14 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider {
 =======
     protected string $moduleNamespace = 'Modules\Rating\Http\Controllers';
 >>>>>>> bc2abf99 (.)
+=======
+    protected string $moduleNamespace = 'Modules\Activity\Http\Controllers';
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -833,4 +845,8 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
     public string $name = 'Rating';
 >>>>>>> bc2abf99 (.)
+=======
+
+    public string $name = 'Activity';
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
 }

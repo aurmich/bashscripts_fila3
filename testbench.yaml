@@ -31,6 +31,7 @@ providers:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Modules\Rating\Providers\RatingServiceProvider
 =======
   - Modules\Xot\Providers\XotServiceProvider
@@ -140,3 +141,8 @@ providers:
 =======
   - Modules\Rating\Providers\RatingServiceProvider
 >>>>>>> bc2abf99 (.)
+=======
+  - Modules\Activity\Providers\ActivityServiceProvider
+  - Nwidart\Modules\LaravelModulesServiceProvider
+
+>>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
