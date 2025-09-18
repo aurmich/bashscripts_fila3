@@ -41,11 +41,44 @@ return array (
         'annuale' => 'Annuale',
       ),
     ),
+<<<<<<< HEAD
     'risultati_ottenuti' => 'Conseguimento degli obiettivi',
     'qualita_prestazione' => 'Monitoraggio delle attività afferenti i processi',
     'arricchimento_professionale' => 'Attuazione di strategie di miglioramento del "clima lavorativo"',
     'impegno' => 'Organizzazione della programmazione delle attività',
     'esperienza_acquisita' => 'Focalizzazione dei processi di comunicazione sulla condivisione dei risultati',
+=======
+    'risultati_ottenuti' => 
+    array (
+      'label' => 'Conseguimento Obiettivi',
+      'placeholder' => 'Valuta il conseguimento',
+      'help' => 'Valutazione del conseguimento degli obiettivi',
+    ),
+    'qualita_prestazione' => 
+    array (
+      'label' => 'Monitoraggio Processi',
+      'placeholder' => 'Valuta il monitoraggio',
+      'help' => 'Valutazione del monitoraggio delle attività',
+    ),
+    'arricchimento_professionale' => 
+    array (
+      'label' => 'Clima Lavorativo',
+      'placeholder' => 'Valuta il clima',
+      'help' => 'Valutazione delle strategie di miglioramento del clima',
+    ),
+    'impegno' => 
+    array (
+      'label' => 'Programmazione Attività',
+      'placeholder' => 'Valuta la programmazione',
+      'help' => 'Valutazione dell\'organizzazione delle attività',
+    ),
+    'esperienza_acquisita' => 
+    array (
+      'label' => 'Comunicazione Risultati',
+      'placeholder' => 'Valuta la comunicazione',
+      'help' => 'Valutazione della condivisione dei risultati',
+    ),
+>>>>>>> 55edff60 (.)
     'punteggio_totale' => 
     array (
       'label' => 'Punteggio Totale',
@@ -179,10 +212,13 @@ return array (
     array (
       'label' => 'toggleColumns',
     ),
+<<<<<<< HEAD
     'valutatore_id' => 
     array (
       'label' => 'valutatore_id',
     ),
+=======
+>>>>>>> 55edff60 (.)
   ),
   'actions' => 
   array (

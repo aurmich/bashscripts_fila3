@@ -194,9 +194,13 @@ class Post extends Model
                     ->orderBy($table.'.updated_at', 'desc')
                     ->with('post')
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                     ;
 >>>>>>> 6a0fe737 (.)
+=======
+                    ;
+>>>>>>> 55edff60 (.)
 
         return $rows;
     }
@@ -226,19 +230,27 @@ class Post extends Model
                 ? $this->attributes['post_type'] : '';
             $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id']) 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 ? is_string($this) ? $this : (string) $this->attributes['post_id'] : '';
 =======
                 ? (string)$this->attributes['post_id'] : '';
 >>>>>>> 6a0fe737 (.)
+=======
+                ? (string)$this->attributes['post_id'] : '';
+>>>>>>> 55edff60 (.)
             $value = $postType . ' ' . $postId;
         } else {
             // Assicuriamoci che post_type e post_id siano stringhe
             $postType = is_string($this->post_type) ? $this->post_type : '';
 <<<<<<< HEAD
+<<<<<<< HEAD
             $postId = is_scalar($this->post_id) ? is_string($this) ? $this : (string) $this->post_id : '';
 =======
             $postId = is_scalar($this->post_id) ? (string)$this->post_id : '';
 >>>>>>> 6a0fe737 (.)
+=======
+            $postId = is_scalar($this->post_id) ? (string)$this->post_id : '';
+>>>>>>> 55edff60 (.)
             $value = $postType . ' ' . $postId;
         }
 
@@ -264,10 +276,14 @@ class Post extends Model
                 ? $this->attributes['post_type'] : '';
             $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id']) 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 ? is_string($this) ? $this : (string) $this->attributes['post_id'] : '';
 =======
                 ? (string)$this->attributes['post_id'] : '';
 >>>>>>> 6a0fe737 (.)
+=======
+                ? (string)$this->attributes['post_id'] : '';
+>>>>>>> 55edff60 (.)
             $value = $postType . ' ' . $postId;
         }
         if (null === $value) {

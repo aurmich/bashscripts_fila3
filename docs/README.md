@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Versione HEAD
 
 ### Versione HEAD
@@ -1313,6 +1314,8 @@ Il modulo è configurabile tramite:
 - [Linee Guida per getInfolistSchema](./filament/INFOLIST_SCHEMA_GUIDELINES.md) - Guida completa per l'implementazione corretta del metodo getInfolistSchema, con focus sull'uso delle chiavi stringa negli array 
 >>>>>>> 59bc4fe7 (first)
 =======
+=======
+>>>>>>> 55edff60 (.)
 # Documentazione PTVX
 
 ## Indice
@@ -1390,5 +1393,9 @@ Per problemi o domande:
 1. Consultare la documentazione
 2. Controllare i problemi comuni
 3. Aprire una issue su GitLab
+<<<<<<< HEAD
 4. Contattare il team di sviluppo 
 >>>>>>> dd7da22a (.)
+=======
+4. Contattare il team di sviluppo 
+>>>>>>> 55edff60 (.)

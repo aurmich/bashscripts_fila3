@@ -24,7 +24,11 @@ class ManageProjectEmployees extends XotBaseManageRelatedRecords
     public function getHeaderActions(): array
     {
         return [
+<<<<<<< HEAD
             // GeneratePDFProjectReportActionSpatie::make(),
+=======
+            GeneratePDFProjectReportActionSpatie::make(),
+>>>>>>> 55edff60 (.)
         ];
     }
 

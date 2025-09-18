@@ -1,8 +1,15 @@
 {
+<<<<<<< HEAD
     "name": "laraxot/module_legge104_fila3",
     "description": "",
     "license": "MIT",
     "homepage": "https://github.com/laraxot/module_legge104_fila3.git",
+=======
+    "name": "laraxot/module_sindacati_fila3",
+    "description": "",
+    "license": "MIT",
+    "homepage": "https://github.com/laraxot/module_sindacati_fila3.git",
+>>>>>>> 55edff60 (.)
     "authors": [
         {
             "name": "Marco Sottana",
@@ -10,7 +17,11 @@
         }
     ],
     "require": {
+<<<<<<< HEAD
 
+=======
+        "spatie/laravel-sluggable": "*"
+>>>>>>> 55edff60 (.)
     },
     "require-dev": {},
     "repositories": [
@@ -29,9 +40,15 @@
     ],
     "autoload": {
         "psr-4": {
+<<<<<<< HEAD
             "Modules\\Legge104\\": "app/",
             "Modules\\Legge104\\Database\\Factories\\": "database/factories/",
             "Modules\\Legge104\\Database\\Seeders\\": "database/seeders/"
+=======
+            "Modules\\Sindacati\\": "app/",
+            "Modules\\Sindacati\\Database\\Factories\\": "database/factories/",
+            "Modules\\Sindacati\\Database\\Seeders\\": "database/seeders/"
+>>>>>>> 55edff60 (.)
         }
     },
     "scripts": {
@@ -52,8 +69,13 @@
     "extra": {
         "laravel": {
             "providers": [
+<<<<<<< HEAD
                 "Modules\\Legge104\\Providers\\Legge104ServiceProvider",
                 "Modules\\Legge104\\Providers\\Filament\\AdminPanelProvider"
+=======
+                "Modules\\Sindacati\\Providers\\SindacatiServiceProvider",
+                "Modules\\Sindacati\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> 55edff60 (.)
             ],
             "aliases": {}
         }

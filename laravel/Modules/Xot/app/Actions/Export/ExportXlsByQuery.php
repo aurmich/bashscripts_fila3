@@ -33,7 +33,11 @@ class ExportXlsByQuery
     ): BinaryFileResponse {
         // Assicuriamo che $fields sia un array di stringhe
         $stringFields = array_map(function ($field) {
+<<<<<<< HEAD
             return $field;
+=======
+            return is_string($field) ? $field : (string) $field;
+>>>>>>> 55edff60 (.)
         }, array_values($fields));
 
         $export = new QueryExport(

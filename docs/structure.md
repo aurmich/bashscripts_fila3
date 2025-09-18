@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Struttura degli Script Bash
 
 ## Organizzazione delle Cartelle
@@ -139,6 +140,8 @@ bashscripts/
 =======
 >>>>>>> e47821df (.)
 =======
+=======
+>>>>>>> 55edff60 (.)
 # Struttura della Documentazione
 
 ## Overview
@@ -360,4 +363,7 @@ ModuleName/
 - Verificare i link e i riferimenti
 - Mantenere la documentazione allineata con il codice
 - Aggiungere esempi per nuove funzionalità
+<<<<<<< HEAD
 >>>>>>> 09d4c7ad (.)
+=======
+>>>>>>> 55edff60 (.)

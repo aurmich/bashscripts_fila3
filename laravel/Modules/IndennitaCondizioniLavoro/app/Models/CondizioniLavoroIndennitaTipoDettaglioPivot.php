@@ -6,7 +6,10 @@ namespace Modules\IndennitaCondizioniLavoro\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\HasOne;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Relations\Pivot;
+=======
+>>>>>>> 55edff60 (.)
 
 // ---- traits --
 /**
@@ -33,7 +36,11 @@ use Illuminate\Database\Eloquent\Relations\Pivot;
  *
  * @mixin \Eloquent
  */
+<<<<<<< HEAD
 class CondizioniLavoroIndennitaTipoDettaglioPivot extends Pivot
+=======
+class CondizioniLavoroIndennitaTipoDettaglioPivot extends BasePivot
+>>>>>>> 55edff60 (.)
 {
     protected $table = 'condizioni_lavoro_x_indennita_tipo_dettaglio';
 

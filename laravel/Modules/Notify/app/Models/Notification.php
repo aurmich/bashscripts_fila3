@@ -41,6 +41,7 @@ use Modules\Xot\Models\BaseModel;
  */
 class Notification extends BaseModel
 {
+<<<<<<< HEAD
     /** @var list<string> */
     public $fillable = [
         'id',
@@ -72,4 +73,15 @@ class Notification extends BaseModel
             'deleted_at' => 'datetime',
         ];
     }
+=======
+    protected $fillable = [
+        'message',
+        'type',
+        'read_at',
+    ];
+
+    protected $casts = [
+        'read_at' => 'datetime',
+    ];
+>>>>>>> 55edff60 (.)
 }

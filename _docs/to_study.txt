@@ -2,6 +2,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 55edff60 (.)
 x esposizione tabelle riordino dati
 https://github.com/updivision/estarter-ecommerce-for-laravel
 
@@ -43,6 +46,7 @@ https://chasingcode.dev/blog/edit-in-place-component-livewire-alpinejs/#update-2
 
 
 
+<<<<<<< HEAD
 =======
 
 
@@ -67,3 +71,5 @@ https://github.com/rennokki/rating
 //--- rating senza criterio 
 https://github.com/rennokki/rating
 >>>>>>> bc2abf99 (.)
+=======
+>>>>>>> 55edff60 (.)

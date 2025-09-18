@@ -43,6 +43,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ───────────────────────────────────────────────────────
 # Sistema operativo / File nascosti e metadata
 # ───────────────────────────────────────────────────────
@@ -371,6 +372,8 @@ cache/
 =======
 =======
 >>>>>>> f3c337b1 (.)
+=======
+>>>>>>> 55edff60 (.)
 # 🛠️ Compiled files and binaries
 *.jar
 *.phar
@@ -423,6 +426,7 @@ public_html/vendor/
 /cache/
 *.zip
 *.old
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 09d4c7ad (.)
@@ -637,6 +641,11 @@ public_html/plugins/
 >>>>>>> f3c337b1 (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+laravel/Modules/Predict/
+*.old
+public_html/plugins/
+>>>>>>> 55edff60 (.)
 /vendor
 *.lock
 /build
@@ -649,6 +658,7 @@ public_html/plugins/
 *.cache
 package-lock.json
 .git-rewrite/
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -672,11 +682,14 @@ package-lock.json
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 55edff60 (.)
 node_modules
 .git-blame-ignore-revs
 .git-blame-ignore-revs
 node_modules
 vendor
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -695,12 +708,16 @@ vendor
 =======
 .git-blame-ignore-revs
 >>>>>>> bdeae81f (first)
+=======
+.git-blame-ignore-revs
+>>>>>>> 55edff60 (.)
 build/
 vendor/
 build/
 node_modules
 docs/cache/
 cache/
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -835,11 +852,14 @@ cache/
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 55edff60 (.)
 .git-blame-ignore-revs
 .php-cs-fixer.cache
 build
 *.exe
 *:Zone.Identifier
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
@@ -1169,3 +1189,5 @@ Homestead.json
 *.swo
 .php-cs-fixer.cache
 >>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
+=======
+>>>>>>> 55edff60 (.)

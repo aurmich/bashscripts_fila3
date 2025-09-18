@@ -30,7 +30,11 @@ class StabiDirigenteFactory extends Factory
             'matr' => $this->faker->randomNumber(),
             'nome_diri' => $this->faker->word,
             'nome_diri_plus' => $this->faker->word,
+<<<<<<< HEAD
             'budget' => $this->faker->randomFloat(2, 0, 1000000),
+=======
+            'budget' => $this->faker->randomFloat,
+>>>>>>> 55edff60 (.)
             'valutatore_id' => $this->faker->randomNumber(),
             'anno' => $this->faker->randomNumber(),
         ];

@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://github.com/visualbuilder/email-templates
 
 https://github.com/codedor/filament-mail-templates/
@@ -12,6 +13,8 @@ https://www.mailcoach.app/resources/blog/using-the-mailcoach-markdown-editor-in-
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 55edff60 (.)
 
 Tracker gathers a lot of information from your requests to identify and store:
 - Sessions
@@ -36,8 +39,11 @@ https://github.com/antonioribeiro/tracker
 ---
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 55edff60 (.)

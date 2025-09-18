@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Roadmap Modulo UI
 
 ## Overview
@@ -194,6 +195,8 @@ Sistema completo di interfaccia utente con componenti riutilizzabili, temi e lay
 - [Icons](./icons.md) → Sistema di icone
 - [Navigation](./navigation.md) → Sistema di navigazione 
 =======
+=======
+>>>>>>> 55edff60 (.)
 # UI Module Roadmap
 
 ## Module Progress Overview
@@ -271,4 +274,7 @@ Overall Module Completion: 60%
    - Query optimization
    - Cache implementation
    - Priority: High
+<<<<<<< HEAD
 >>>>>>> 86b1e4c1 (.)
+=======
+>>>>>>> 55edff60 (.)

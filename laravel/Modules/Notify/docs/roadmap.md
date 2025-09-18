@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Roadmap Modulo Notify
 
 ## Overview
@@ -194,6 +195,8 @@ Sistema per la gestione delle notifiche, con focus su invio, gestione e monitora
 - [Monitoraggio](./features/monitoraggio.md) → Sistema monitoraggio
 - [Template](./features/template.md) → Sistema template 
 =======
+=======
+>>>>>>> 55edff60 (.)
 # Notify Module Roadmap
 
 ## Module Progress Overview
@@ -271,4 +274,7 @@ Overall Module Completion: 60%
    - Query optimization
    - Cache implementation
    - Priority: High
+<<<<<<< HEAD
 >>>>>>> 86b1e4c1 (.)
+=======
+>>>>>>> 55edff60 (.)

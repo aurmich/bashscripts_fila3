@@ -38,6 +38,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2820,6 +2821,8 @@ chmod +x script.sh
 =======
 =======
 >>>>>>> f3c337b1 (.)
+=======
+>>>>>>> 55edff60 (.)
 **Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
 
 When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
@@ -2865,6 +2868,7 @@ Use these steps to clone from SourceTree, our client for using the repository co
 4. Open the directory you just created to see your repository’s files.
 
 Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 09d4c7ad (.)
 =======
@@ -2972,6 +2976,8 @@ Power your Laravel application with **Module Xot Fila3**, a comprehensive multi-
 >>>>>>> f3c337b1 (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 55edff60 (.)
 # Module User Fila3 🔥 Ultimate User, Roles & Permissions Manager for FilamentPHP 🚀
 
 [![Latest Release](https://img.shields.io/github/v/release/laraxot/module_user_fila3)](https://github.com/laraxot/module_user_fila3/releases)
@@ -2986,6 +2992,7 @@ Manage users, roles, and permissions with lightning speed ⚡ through this Larav
 - **Dynamic Module Assignment**: Control user access to specific modules through `php artisan user:assign-module`. 🎯
 - **Complete Team Management**: Manage teams with simple commands like `php artisan team:create` and `php artisan team:assign-user`. 👥
 - **Permissions that Fit**: Set flexible roles and permissions to fit your app’s unique needs! 🔑
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
@@ -3015,11 +3022,14 @@ Elevate your productivity to the next level! **Module Activity Fila3** is design
 - **Smart Notifications**: Never miss a task with reminders and overdue notifications.
 - **Performance Statistics**: Visualize your activity completion statistics and boost your productivity.
 >>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
+=======
+>>>>>>> 55edff60 (.)
 
 ---
 
 ### Installation Guide 💻
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3047,10 +3057,16 @@ Elevate your productivity to the next level! **Module Activity Fila3** is design
     ```bash
     git submodule add https://github.com/laraxot/module_activity_fila3.git Activity
 >>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
+=======
+1. **Install the package via Composer:**
+    ```bash
+    composer require laraxot/module_user_fila3
+>>>>>>> 55edff60 (.)
     ```
 
 2. **Run Migrations:**
     ```bash
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3066,6 +3082,8 @@ Elevate your productivity to the next level! **Module Activity Fila3** is design
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 55edff60 (.)
     php artisan module:migrate User
     ```
 
@@ -3077,6 +3095,7 @@ Elevate your productivity to the next level! **Module Activity Fila3** is design
 4. **Create First User:**
     ```bash
     php artisan make:filament-user
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
@@ -3096,12 +3115,15 @@ Elevate your productivity to the next level! **Module Activity Fila3** is design
     ```bash
     php artisan module:enable Activity
 >>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
+=======
+>>>>>>> 55edff60 (.)
     ```
 
 ---
 
 ### Supercharged Console Commands 🚀
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3130,6 +3152,8 @@ Take full control with powerful artisan commands:
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 55edff60 (.)
 Leverage powerful artisan commands to boost your app’s user management capabilities:
 
 - **Create Super Admin:**
@@ -3161,6 +3185,7 @@ Leverage powerful artisan commands to boost your app’s user management capabil
     _See all available modules and activate/deactivate them at will._
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> e83070fd (.)
@@ -3185,11 +3210,14 @@ Leverage powerful artisan commands to boost your app’s user management capabil
     ```
     _Track the progress of a specific task._
 >>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
+=======
+>>>>>>> 55edff60 (.)
 
 ---
 
 ### Configuration 🔧
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3255,6 +3283,8 @@ Tweak the behavior of this module through its config file, ensuring it fits perf
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 55edff60 (.)
 Easily configure the module in the `module_user_fila3.php` config file to suit your app's specific needs.
 
 ### FAQ ❓
@@ -3270,6 +3300,7 @@ Easily configure the module in the `module_user_fila3.php` config file to suit y
 We 💖 open source! Want to improve this package? Fork the repo and submit a pull request.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> e83070fd (.)
@@ -3282,6 +3313,8 @@ We 💖 open source! Want to improve this package? Fork the repo and submit a pu
 - **Q: Can I track long-term goals?**
   A: Absolutely! The module allows for tracking over different time frames, including daily, weekly, and monthly views.
 >>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
+=======
+>>>>>>> 55edff60 (.)
 
 ---
 
@@ -3298,6 +3331,7 @@ This package is open-sourced under the [MIT license](LICENSE).
 
 ---
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3369,6 +3403,8 @@ Join the revolution! If you want to contribute to the project, send us a pull re
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 55edff60 (.)
 Give your Laravel app the **edge** it deserves with **Module User Fila3**. Try it now! 💥
 
 
@@ -3426,6 +3462,7 @@ php artisan user:assign-module
 L'account potrà accedere al modulo assegnato.
 
 ## [Gestione dei Team](docs/teams.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3578,3 +3615,5 @@ php artisan module:migrate Activity
   <sub>Built with ❤️ by the development team</sub>
 </div> 
 >>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
+=======
+>>>>>>> 55edff60 (.)

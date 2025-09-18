@@ -7,9 +7,12 @@ namespace Modules\Lang\Datas;
 use Illuminate\Support\Facades\File;
 use Spatie\LaravelData\Data;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 =======
 >>>>>>> 6a0fe737 (.)
+=======
+>>>>>>> 55edff60 (.)
 
 class TranslationData extends Data
 {
@@ -33,6 +36,7 @@ class TranslationData extends Data
             throw new \Exception('['.__LINE__.']['.class_basename($this).']');
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         
         // Verifichiamo che $path sia una stringa
         Assert::string($path, 'Il percorso del namespace deve essere una stringa');
@@ -40,6 +44,9 @@ class TranslationData extends Data
 =======
 
 >>>>>>> 6a0fe737 (.)
+=======
+
+>>>>>>> 55edff60 (.)
         return app(\Modules\Xot\Actions\File\FixPathAction::class)->execute($path.'/'.$this->lang.'/'.$this->group.'.php');
     }
 

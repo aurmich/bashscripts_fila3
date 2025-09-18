@@ -17,6 +17,7 @@ class SendMailByRecordAction
     /**
      * Invia una mail utilizzando un record come dati.
      *
+<<<<<<< HEAD
      * @param Model  $record    Il record da utilizzare come dati per la mail
      * @param string $mailClass La classe Mailable da utilizzare
      */
@@ -26,14 +27,28 @@ class SendMailByRecordAction
         Assert::classExists($mailClass);
         // Expected an implementation of "Illuminate\Mail\Mailable". Got: "Modules\Performance\Mail\SchedaMail"
         // Assert::implementsInterface($mailClass, Mailable::class);
+=======
+     * @param Model $record Il record da utilizzare come dati per la mail
+     * @param string $mailClass La classe Mailable da utilizzare
+     * @return void
+     */
+    public function execute(Model $record, string $mailClass): void
+    {
+        Assert::classExists($mailClass);
+        Assert::implementsInterface($mailClass, Mailable::class);
+>>>>>>> 55edff60 (.)
 
         // Utilizziamo il container per istanziare la classe Mailable
         // in modo che possa ricevere le dipendenze necessarie
         /** @var Mailable $mail */
         $mail = app($mailClass, ['record' => $record]);
+<<<<<<< HEAD
         //Mail::send($mail);
         //dddx(Mail::to($record)->send(new $mailClass($record)));
         $res=Mail::to('marco.sottana@gmail.com')->send($mail);
         //dddx($res);
+=======
+        Mail::send($mail);
+>>>>>>> 55edff60 (.)
     }
 }

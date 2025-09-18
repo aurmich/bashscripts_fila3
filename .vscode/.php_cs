@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 declare(strict_types=1);
@@ -18,6 +19,8 @@ declare(strict_types=1);
 >>>>>>> bc2abf99 (.)
 =======
 >>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
+=======
+>>>>>>> 55edff60 (.)
 $finder = PhpCsFixer\Finder::create()
     ->notPath('bootstrap/cache')
     ->notPath('storage')
@@ -35,6 +38,7 @@ return PhpCsFixer\Config::create()
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     ->setRules(array(
 =======
     ->setRules([
@@ -51,6 +55,9 @@ return PhpCsFixer\Config::create()
 =======
     ->setRules(array(
 >>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
+=======
+    ->setRules(array(
+>>>>>>> 55edff60 (.)
         '@Symfony' => true,
         'array_indentation' => true,
         'function_typehint_space' => true,
@@ -68,6 +75,7 @@ return PhpCsFixer\Config::create()
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         'braces'=>[
             'position_after_functions_and_oop_constructs'=>'same',
 =======
@@ -90,6 +98,10 @@ return PhpCsFixer\Config::create()
         'braces'=>[
             'position_after_functions_and_oop_constructs'=>'same',
 >>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
+=======
+        'braces'=>[
+            'position_after_functions_and_oop_constructs'=>'same',
+>>>>>>> 55edff60 (.)
         ],
         'function_declaration' => true,
         'blank_line_after_namespace' => true,
@@ -100,6 +112,7 @@ return PhpCsFixer\Config::create()
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     ))
 =======
     ])
@@ -116,5 +129,8 @@ return PhpCsFixer\Config::create()
 =======
     ))
 >>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
+=======
+    ))
+>>>>>>> 55edff60 (.)
     ->setFinder($finder)
 ;

@@ -9,7 +9,10 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Relations\HasOne;
+=======
+>>>>>>> 55edff60 (.)
 use Modules\IndennitaCondizioniLavoro\Models\Traits\MutatorTrait;
 use Modules\IndennitaCondizioniLavoro\Models\Traits\RelationshipTrait;
 use Modules\Sigma\Models\Ana02f;
@@ -22,7 +25,10 @@ use Modules\Sigma\Models\Qua03f;
 use Modules\Sigma\Models\Rep00f;
 use Modules\Sigma\Models\Repart;
 use Modules\Sigma\Models\Sto00f;
+<<<<<<< HEAD
 use Modules\IndennitaCondizioniLavoro\Models\StabiDirigente;
+=======
+>>>>>>> 55edff60 (.)
 use Modules\Sigma\Models\Traits\Mutators\EnteMatrAnnoMutator;
 use Modules\Sigma\Models\Traits\Mutators\EnteMatrDateRangeMutator;
 use Modules\Sigma\Models\Traits\Mutators\EnteMatrMutator;
@@ -33,9 +39,13 @@ use Modules\Sigma\Models\Traits\SigmaModelTrait;
 use Modules\Sigma\Models\Wstr01lx;
 
 /**
+<<<<<<< HEAD
  * Class CondizioniLavoro
  *
  * @package Modules\IndennitaCondizioniLavoro\Models
+=======
+ * Modules\IndennitaCondizioniLavoro\Models\CondizioniLavoro.
+>>>>>>> 55edff60 (.)
  *
  * @property int                                                                               $id
  * @property int|null                                                                          $ente
@@ -182,11 +192,16 @@ use Modules\Sigma\Models\Wstr01lx;
  *
  * @mixin \Eloquent
  */
+<<<<<<< HEAD
 final class CondizioniLavoro extends BaseModel
+=======
+class CondizioniLavoro extends BaseModel
+>>>>>>> 55edff60 (.)
 {
     use MutatorTrait;
     use RelationshipTrait;
     use SigmaModelTrait;
+<<<<<<< HEAD
     use EnteMatrMutator;
 
     protected $table = 'condizioni_lavoro';
@@ -215,6 +230,39 @@ final class CondizioniLavoro extends BaseModel
     {
         return $this->hasManyThrough(IndennitaTipo::class, CondizioniLavoroIndennitaTipoDettaglioPivot::class);
     }
+=======
+
+    use EnteMatrMutator;
+    // use EnteMatrRelationship;
+    // use EnteMatrDateRangeRelationship;
+    // use EnteMatrDateRangeMutator;
+    // use EnteMatrAnnoRelationship;
+    // use EnteMatrAnnoMutator;
+
+    protected $table = 'condizioni_lavoro';
+
+    protected $fillable =
+        [
+            'ente', 'matr', 'cognome', 'nome', 'email',
+            'stabi', 'stabi_txt', 'repar', 'repar_txt',
+            'propro', 'posfun', 'categoria_eco',
+            'gg_presenza_anno', 'gg_assenza_anno', 'gg_trasferte_anno',
+            'anno', 'trimestre', 'quadrimestre', 'dal', 'al',
+            'rep2kd', 'rep2ka', 'qua2kd', 'qua2ka',
+            'gg_presenza_periodo',
+            'tot_presenza_periodo_plus_no_timbr',
+            'valutatore_id',
+        ];
+
+    protected $casts = ['dal' => 'datetime', 'al' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime'];
+
+    // ------ relationship ----------
+    /* WIP
+    public function indennitaTipo() {
+    return $this->hasManyThrough(IndennitaTipo::class, CondizioniLavoroIndennitaTipoDettaglioPivot::class);
+    }
+    */
+>>>>>>> 55edff60 (.)
 
     public function tipoDettaglio(): BelongsToMany
     {
@@ -276,11 +324,18 @@ final class CondizioniLavoro extends BaseModel
         return $tot * $ptime;
     }
 
+<<<<<<< HEAD
     public function reparts(): HasOne
     {
         return $this->hasOne(Repart::class, 'stabi', 'stabi')
             ->where('ente', $this->ente)
             ->where('repar', $this->repar);
+=======
+    public function reparts(): HasMany
+    {
+        return $this->hasMany(Repart::class, 'stabi', 'stabi')
+            ->where('ente', $this->ente);
+>>>>>>> 55edff60 (.)
     }
 
     public function getReparTxtAttribute(?string $value): ?string
@@ -460,7 +515,11 @@ final class CondizioniLavoro extends BaseModel
 
     // --------- function -----------
 
+<<<<<<< HEAD
     public static function populate(array $params): bool
+=======
+    public static function populate(array $params): void
+>>>>>>> 55edff60 (.)
     {
         // $params=array_merge(getRouteParameters(),$params);
         $anno = 0;
@@ -475,7 +534,11 @@ final class CondizioniLavoro extends BaseModel
     	)';
         $rows0 = Rep00f::where('repst1', $stabi)->where('repre1', $repar)->whereRaw($sql)->whereRaw('repann=""');
         foreach ($rows0->get() as $row) {
+<<<<<<< HEAD
             $rep2kd = \is_object($row->rep2kd) ? $row->rep2kd->format('Ymd') : $row->rep2kd;
+=======
+            $rep2kd = $row->rep2kd->format('Ymd');
+>>>>>>> 55edff60 (.)
             $rep2ka = (\is_object($row->rep2ka)) ? $row->rep2ka->format('Ymd') : $row->rep2ka;
             $parz = ['ente' => $row->ente,
                 'matr' => $row->matr,
@@ -517,12 +580,18 @@ final class CondizioniLavoro extends BaseModel
                 $qua00f = $obj->anag->qua00f()->select('propro', 'posfun', 'posiz')->distinct()->whereRaw($sql);
                 // echo '<br/>'.$qua00f->count().' - '.$qua00f->first()->propro.'  - '.$qua00f->first()->posfun;
                 if (1 === $qua00f->get()->count()) {
+<<<<<<< HEAD
                     $first = $qua00f->first();
                     if ($first) {
                         $obj->propro = $first->propro;
                         $obj->posfun = $first->posfun;
                         $obj->posiz = $first->posiz;
                     }
+=======
+                    $obj->propro = $qua00f->first()->propro;
+                    $obj->posfun = $qua00f->first()->posfun;
+                    $obj->posiz = $qua00f->first()->posiz;
+>>>>>>> 55edff60 (.)
                 } else {
                     echo '<br/>$qua00f->count() : '.$qua00f->count();
                     echo '<br/>ente :'.$obj->ente;
@@ -536,6 +605,7 @@ final class CondizioniLavoro extends BaseModel
                     // foreach($qua00f as $v_qua00f){
                     // dd(Carbon::parse($qua00f[0]->qua2kd));
                     $al_old = $obj->al;
+<<<<<<< HEAD
                     if (isset($qua00f[0])) {
                         $obj->al = Carbon::parse($qua00f[0]->qua2kd);
                         $obj->save();
@@ -549,10 +619,21 @@ final class CondizioniLavoro extends BaseModel
                             $obj1->save();
                         }
                     }
+=======
+                    $obj->al = Carbon::parse($qua00f[0]->qua2kd);
+                    $obj->save();
+
+                    $obj1 = $obj->replicate();
+                    $obj1->dal = Carbon::parse($qua00f[1]->qua2kd);
+                    $obj1->al = 0 !== $qua00f[1]->qua2ka ? Carbon::parse($qua00f[1]->qua2ka) : $al_old;
+                    $obj1->id = null;
+                    $obj1->save();
+>>>>>>> 55edff60 (.)
                 }
             }
 
             $obj->save();
+<<<<<<< HEAD
             return true;
         }
 
@@ -564,10 +645,32 @@ final class CondizioniLavoro extends BaseModel
      *
      * @param int|null $value
      * @return int|null
+=======
+            // dd($obj);
+            // echo '<br/><pre>['.$obj->id.']</pre>';
+        }
+
+        // dd('['.__LINE__.']['.__FILE__.']');
+        $obj = new self();
+        $table = $obj->getTable();
+        $conn = $obj->getConnection();
+        $where = $table.'.anno="'.$anno.'" ';
+        // Anag::massUpdateCognomeNome(['conn' => $conn, 'table' => $table, 'where' => $where]);
+        // Anag::massUpdateCategoriaEco(['conn' => $conn, 'table' => $table, 'where' => $where]);
+        // Anag::massUpdatePosizTxt(['conn' => $conn, 'table' => $table, 'where' => $where]);
+        // Anag::massUpdateStabiTxtReparTxt(['conn' => $conn, 'table' => $table, 'where' => $where]);
+    }
+
+    // end function
+
+    /**
+     * Undocumented function.
+>>>>>>> 55edff60 (.)
      */
     public function getValutatoreIdAttribute(?int $value): ?int
     {
         if ($value > 100) {
+<<<<<<< HEAD
             return $value;
         }
 
@@ -589,6 +692,35 @@ final class CondizioniLavoro extends BaseModel
             'repar' => 0,
         ]);
 
+=======
+            // dddx($value);
+
+            return $value;
+        }
+
+        // dddx($this->attributes['valutatore_id']);
+
+        $stabi_diri = $this->stabiDirigente;
+        if (! \is_object($stabi_diri)) {
+            return $value;
+        }
+
+        $valutatore_id = $stabi_diri->valutatore_id;
+        if (null !== $valutatore_id) {
+            $this->valutatore_id = $valutatore_id;
+            $this->save();
+
+            return (int) $valutatore_id;
+        }
+
+        $stabi = StabiDirigente::firstOrCreate(
+            [
+                'anno' => $this->anno,
+                'stabi' => $this->stabi,
+                'repar' => 0,
+            ]
+        );
+>>>>>>> 55edff60 (.)
         if (null === $stabi->valutatore_id) {
             $stabi->valutatore_id = $stabi->id;
             $stabi->save();
@@ -597,6 +729,7 @@ final class CondizioniLavoro extends BaseModel
         $this->valutatore_id = $stabi->valutatore_id;
         $this->save();
 
+<<<<<<< HEAD
         return (int) $stabi->valutatore_id;
     }
 
@@ -608,11 +741,27 @@ final class CondizioniLavoro extends BaseModel
     public function getNextQuadrimestre(): ?self
     {
         return static::firstWhere([
+=======
+        return (int) $valutatore_id;
+    }
+
+    public function getNextQuadrimestre(): ?CondizioniLavoro
+    {
+        $where = [
+>>>>>>> 55edff60 (.)
             'quadrimestre' => $this->quadrimestre + 1,
             'anno' => $this->anno,
             'ente' => $this->ente,
             'matr' => $this->matr,
             'valutatore_id' => $this->valutatore_id,
+<<<<<<< HEAD
         ]);
     }
 }
+=======
+        ];
+
+        return CondizioniLavoro::firstWhere($where);
+    }
+}// end class
+>>>>>>> 55edff60 (.)

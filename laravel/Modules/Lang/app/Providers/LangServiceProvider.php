@@ -38,10 +38,15 @@ class LangServiceProvider extends XotBaseServiceProvider
     {
         parent::boot();
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         // BladeService::registerComponents($this->module_dir.'/../View/Components', 'Modules\\Lang');
         // $this->registerTranslator();
 >>>>>>> 6a0fe737 (.)
+=======
+        // BladeService::registerComponents($this->module_dir.'/../View/Components', 'Modules\\Lang');
+        // $this->registerTranslator();
+>>>>>>> 55edff60 (.)
         $this->translatableComponents();
         $this->registerFilamentLabel();
     }
@@ -50,10 +55,15 @@ class LangServiceProvider extends XotBaseServiceProvider
     {
         parent::register();
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         // --dalla doc in register ... ma non funziona, funziona in boot
         // $this->registerTranslator();
 >>>>>>> 6a0fe737 (.)
+=======
+        // --dalla doc in register ... ma non funziona, funziona in boot
+        // $this->registerTranslator();
+>>>>>>> 55edff60 (.)
     }
 
     protected function translatableComponents(): void
@@ -76,6 +86,7 @@ class LangServiceProvider extends XotBaseServiceProvider
             $validationMessages = __('user::validation');
             if (is_array($validationMessages)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $typedMessages = [];
                 foreach ($validationMessages as $key => $value) {
                     if (is_string($key) && (is_string($value) || $value instanceof \Closure)) {
@@ -86,6 +97,9 @@ class LangServiceProvider extends XotBaseServiceProvider
 =======
                 $component->validationMessages($validationMessages);
 >>>>>>> 6a0fe737 (.)
+=======
+                $component->validationMessages($validationMessages);
+>>>>>>> 55edff60 (.)
             }
 
             return $component;
@@ -94,9 +108,13 @@ class LangServiceProvider extends XotBaseServiceProvider
         BaseFilter::configureUsing(function (BaseFilter $component) {
             $component = app(AutoLabelAction::class)->execute($component);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 6a0fe737 (.)
+=======
+
+>>>>>>> 55edff60 (.)
             return $component;
         });
 
@@ -107,6 +125,7 @@ class LangServiceProvider extends XotBaseServiceProvider
                 ->wrapHeader()
                 ->verticallyAlignStart()
                 ->grow();
+<<<<<<< HEAD
 <<<<<<< HEAD
 
             return $component;
@@ -123,6 +142,8 @@ class LangServiceProvider extends XotBaseServiceProvider
         });
 
 =======
+=======
+>>>>>>> 55edff60 (.)
             // ->wrap()
 
             return $component;
@@ -141,7 +162,10 @@ class LangServiceProvider extends XotBaseServiceProvider
             // ->translateLabel()
             return $component;
         });
+<<<<<<< HEAD
 >>>>>>> 6a0fe737 (.)
+=======
+>>>>>>> 55edff60 (.)
         TableAction::configureUsing(function (TableAction $component) {
             $component = app(AutoLabelAction::class)->execute($component);
             if (method_exists($component, 'iconButton')) {
@@ -152,9 +176,12 @@ class LangServiceProvider extends XotBaseServiceProvider
             }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             return $component;
         });
 =======
+=======
+>>>>>>> 55edff60 (.)
             // ->translateLabel()
             return $component;
         });
@@ -167,7 +194,10 @@ class LangServiceProvider extends XotBaseServiceProvider
             return $component;
         });
         */
+<<<<<<< HEAD
 >>>>>>> 6a0fe737 (.)
+=======
+>>>>>>> 55edff60 (.)
     }
 
     public function registerTranslator(): void
@@ -176,19 +206,28 @@ class LangServiceProvider extends XotBaseServiceProvider
             $loader = $app['translation.loader'];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             // When registering the translator component, we'll need to set the default
             // locale as well as the fallback locale. So, we'll grab the application
             // configuration so we can easily get both of these values from there.
 >>>>>>> 6a0fe737 (.)
+=======
+            // When registering the translator component, we'll need to set the default
+            // locale as well as the fallback locale. So, we'll grab the application
+            // configuration so we can easily get both of these values from there.
+>>>>>>> 55edff60 (.)
             Assert::string($locale = $app['config']['app.locale']);
             Assert::string($fallback_locale = $app['config']['app.fallback_locale']);
 
             $translatorService = new TranslatorService($loader, $locale);
 <<<<<<< HEAD
+<<<<<<< HEAD
             $translatorService->setFallback($fallback_locale);
 
 =======
+=======
+>>>>>>> 55edff60 (.)
 
             $translatorService->setFallback($fallback_locale);
 
@@ -197,7 +236,10 @@ class LangServiceProvider extends XotBaseServiceProvider
                 $trans->setTranslationManager($app['translation-manager']);
             }
             */
+<<<<<<< HEAD
 >>>>>>> 6a0fe737 (.)
+=======
+>>>>>>> 55edff60 (.)
             return $translatorService;
         });
     }

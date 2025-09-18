@@ -2,10 +2,14 @@
 
 ## Overview
 <<<<<<< HEAD
+<<<<<<< HEAD
 The Badge module manages badge-related functionality in the application.
 =======
 The Badge module provides specialized functionality within the Laravel application.
 >>>>>>> 86b1e4c1 (.)
+=======
+The Badge module provides specialized functionality within the Laravel application.
+>>>>>>> 55edff60 (.)
 
 ## Directory Structure
 ```
@@ -29,6 +33,7 @@ Modules/Badge/
 
 ### Features
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. Badge Management
 2. Badge Assignment
 3. Badge Tracking
@@ -37,10 +42,16 @@ Modules/Badge/
 2. Integration with Related Modules
 3. Data Processing and Validation
 >>>>>>> 86b1e4c1 (.)
+=======
+1. Core Badge Management
+2. Integration with Related Modules
+3. Data Processing and Validation
+>>>>>>> 55edff60 (.)
 
 ## Dependencies
 - Laravel Framework
 - Xot Module: Core functionality
+<<<<<<< HEAD
 <<<<<<< HEAD
 - User Module: User management integration
 
@@ -64,6 +75,8 @@ Modules/Badge/
 - Feature tests for badge operations
 - Integration tests with other modules
 =======
+=======
+>>>>>>> 55edff60 (.)
 - User Module: Authentication and authorization
 
 ## Integration Points
@@ -91,4 +104,7 @@ Modules/Badge/
 - Integration tests with dependent modules
 - Security testing
 - Performance testing
+<<<<<<< HEAD
 >>>>>>> 86b1e4c1 (.)
+=======
+>>>>>>> 55edff60 (.)

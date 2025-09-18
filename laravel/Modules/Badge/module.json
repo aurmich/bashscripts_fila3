@@ -1,12 +1,21 @@
 {
+<<<<<<< HEAD
     "name": "Badge",
     "alias": "badge",
+=======
+    "name": "Inail",
+    "alias": "inail",
+>>>>>>> 55edff60 (.)
     "description": "",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
+<<<<<<< HEAD
         "Modules\\Badge\\Providers\\BadgeServiceProvider"
+=======
+        "Modules\\Inail\\Providers\\InailServiceProvider"
+>>>>>>> 55edff60 (.)
     ],
     "aliases": {},
     "files": [],

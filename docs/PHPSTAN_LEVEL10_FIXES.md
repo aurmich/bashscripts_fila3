@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Correzioni PHPStan Livello 10 - Modulo Lang
 
 Questo documento traccia gli errori PHPStan di livello 10 identificati nel modulo Lang e le relative soluzioni implementate.
@@ -423,6 +424,8 @@ Fino ad ora, abbiamo risolto la maggior parte degli errori di livello 10 in entr
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 55edff60 (.)
 # Correzioni PHPStan Livello 10 - Modulo User
 
 Questo documento traccia gli errori PHPStan di livello 10 identificati nel modulo User e le relative soluzioni implementate.
@@ -681,6 +684,7 @@ public function handle(Failed $event): void
 3. Mantieni aggiornata la documentazione quando vengono modificati metodi o proprietà.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 4. Utilizza strumenti di analisi automatica come PHPStan regolarmente per verificare che il codice rimanga conforme. 
 >>>>>>> 0d55b583 (first)
 =======
@@ -755,3 +759,6 @@ Il modello `Media.php` contiene diverse proprietà documentate con tipo `mixed`:
 =======
 4. Utilizza strumenti di analisi automatica come PHPStan regolarmente per verificare che il codice rimanga conforme. 
 >>>>>>> bdeae81f (first)
+=======
+4. Utilizza strumenti di analisi automatica come PHPStan regolarmente per verificare che il codice rimanga conforme. 
+>>>>>>> 55edff60 (.)

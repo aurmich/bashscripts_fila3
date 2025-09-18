@@ -35,6 +35,7 @@
 2. Document any new patterns or issues found
 3. Keep monitoring for new type-related issues
 4. Ensure all new code follows these standards
+<<<<<<< HEAD
 
 # Correzione Errori PHPStan nel Modulo Performance
 
@@ -90,3 +91,5 @@ protected $casts = [
 - Assicurarsi che tutte le migrazioni del database utilizzino il tipo corretto per la colonna `excellence`
 - Aggiornare eventuali query che fanno riferimento a questa proprietà
 - Verificare che i form e le validazioni gestiscano correttamente il tipo integer
+=======
+>>>>>>> 55edff60 (.)

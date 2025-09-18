@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 return array (
@@ -191,3 +192,6 @@ return array (
     'icon' => 'job-failed-job',
   ),
 );
+=======
+null
+>>>>>>> 55edff60 (.)

@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Route;
 use Modules\Lang\Datas\LangData;
 use Spatie\LaravelData\DataCollection;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 
 /**
@@ -17,6 +18,9 @@ use Webmozart\Assert\Assert;
 =======
 
 >>>>>>> 6a0fe737 (.)
+=======
+
+>>>>>>> 55edff60 (.)
 class ThemeComposer
 {
     /**
@@ -36,6 +40,7 @@ class ThemeComposer
 
         $languages = collect($langs)->map(function (mixed $item, string $locale): array {
 <<<<<<< HEAD
+<<<<<<< HEAD
             // Ensure $item is an array
             if (! is_array($item)) {
                 throw new \InvalidArgumentException(sprintf('Expected array at locale %s, got %s', $locale, gettype($item)));
@@ -47,10 +52,15 @@ class ThemeComposer
             // Ensure $item is an array as expected, otherwise handle error.
             if (! is_array($item) || ! isset($item['regional'], $item['name'])) {
 >>>>>>> 6a0fe737 (.)
+=======
+            // Ensure $item is an array as expected, otherwise handle error.
+            if (! is_array($item) || ! isset($item['regional'], $item['name'])) {
+>>>>>>> 55edff60 (.)
                 throw new \InvalidArgumentException(sprintf('Expected array with "regional" and "name" keys at locale %s', $locale));
             }
 
             // Extract regional code and handle 'en' to 'gb' mapping.
+<<<<<<< HEAD
 <<<<<<< HEAD
             // Verifichiamo che regional sia una stringa o lo convertiamo in modo sicuro
             $regional = $item['regional'];
@@ -63,6 +73,9 @@ class ThemeComposer
 =======
             $regionalCode = explode('_', (string) $item['regional'])[0] ?? 'en';
 >>>>>>> 6a0fe737 (.)
+=======
+            $regionalCode = explode('_', (string) $item['regional'])[0] ?? 'en';
+>>>>>>> 55edff60 (.)
             if ('en' === $regionalCode) {
                 $regionalCode = 'gb';
             }
@@ -72,6 +85,7 @@ class ThemeComposer
                 $url = $this->buildAdminLanguageUrl($locale);
             }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
             // Verifichiamo che name sia una stringa o lo convertiamo in modo sicuro
             $name = $item['name'];
@@ -87,11 +101,17 @@ class ThemeComposer
                 'id' => $locale,
                 'name' => $item['name'],
 >>>>>>> 6a0fe737 (.)
+=======
+            return [
+                'id' => $locale,
+                'name' => $item['name'],
+>>>>>>> 55edff60 (.)
                 'flag' => $this->buildFlagHtml($regionalCode),
                 'url' => $url,
             ];
         });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         // Convertiamo esplicitamente a array<int, mixed> per soddisfare il tipo richiesto
         $languagesArray = $languages->values()->all();
@@ -100,6 +120,9 @@ class ThemeComposer
 =======
         return LangData::collection($languages->all());
 >>>>>>> 6a0fe737 (.)
+=======
+        return LangData::collection($languages->all());
+>>>>>>> 55edff60 (.)
     }
 
     /**
@@ -116,15 +139,21 @@ class ThemeComposer
                 // Ensure the item is an instance of LangData
                 if (! $item instanceof LangData) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     throw new \Exception(sprintf('Expected instance of LangData, got %s', is_object($item) ? get_class($item) : gettype($item)));
                 }
 
 =======
+=======
+>>>>>>> 55edff60 (.)
                     throw new \Exception(sprintf('Expected instance of LangData, got %s on line %d in %s', is_object($item) ? get_class($item) : gettype($item), __LINE__, class_basename($this)));
                 }
 
                 // Filter out the current locale
+<<<<<<< HEAD
 >>>>>>> 6a0fe737 (.)
+=======
+>>>>>>> 55edff60 (.)
                 return $item->id !== $currentLocale;
             });
     }
@@ -134,10 +163,13 @@ class ThemeComposer
      *
      * @throws \Exception if the current language is not found
 <<<<<<< HEAD
+<<<<<<< HEAD
      * 
      * @return string
 =======
 >>>>>>> 6a0fe737 (.)
+=======
+>>>>>>> 55edff60 (.)
      */
     public function currentLang(string $field): string
     {
@@ -153,6 +185,7 @@ class ThemeComposer
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         // Verifichiamo che il valore del campo sia una stringa o lo convertiamo in modo sicuro
         $value = $lang->{$field};
         if (!is_string($value)) {
@@ -163,16 +196,22 @@ class ThemeComposer
 =======
         return (string) $lang->{$field};
 >>>>>>> 6a0fe737 (.)
+=======
+        return (string) $lang->{$field};
+>>>>>>> 55edff60 (.)
     }
 
     /**
      * Build the URL for the admin panel based on the current route and parameters.
+<<<<<<< HEAD
 <<<<<<< HEAD
      * 
      * @param string $locale The locale code to build URL for
      * @return string The generated URL
 =======
 >>>>>>> 6a0fe737 (.)
+=======
+>>>>>>> 55edff60 (.)
      */
     private function buildAdminLanguageUrl(string $locale): string
     {
@@ -191,11 +230,14 @@ class ThemeComposer
     /**
      * Build the HTML for the language flag.
 <<<<<<< HEAD
+<<<<<<< HEAD
      * 
      * @param string $regionalCode The regional code for the flag
      * @return string The HTML for the flag
 =======
 >>>>>>> 6a0fe737 (.)
+=======
+>>>>>>> 55edff60 (.)
      */
     private function buildFlagHtml(string $regionalCode): string
     {

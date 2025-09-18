@@ -82,7 +82,10 @@ return array (
       'label' => 'delete',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 55edff60 (.)
     'edit' => 
     array (
       'label' => 'edit',
@@ -95,7 +98,10 @@ return array (
     array (
       'label' => 'create',
     ),
+<<<<<<< HEAD
 >>>>>>> 2e172569 (.)
+=======
+>>>>>>> 55edff60 (.)
   ),
   'navigation' => 
   array (
@@ -105,10 +111,16 @@ return array (
     'sort' => 4,
   ),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 55edff60 (.)
   'model' => 
   array (
     'label' => 'activity.model',
   ),
+<<<<<<< HEAD
 >>>>>>> 2e172569 (.)
+=======
+>>>>>>> 55edff60 (.)
 );

@@ -23,12 +23,20 @@ trait SushiToCsv
     {
         // return CSV::fromFile(__DIR__.'/roles.csv')->toArray();
         // load the CSV document from a file path
+<<<<<<< HEAD
         $csv_path = $this->getCsvPath();
         $csv=Reader::createFromPath($csv_path, 'r');
         //$csv->setHeaderOffset(0);
         $records = $csv->getRecords();
         $rows = iterator_to_array($records);
         $rows = array_values($rows);
+=======
+        $csv = $this->getCsvPath();
+        $records = $csv->getRecords();
+        $rows = iterator_to_array($records);
+        $rows = array_values($rows);
+
+>>>>>>> 55edff60 (.)
         return $rows;
     }
 

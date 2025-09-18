@@ -82,10 +82,13 @@ return array (
     array (
       'label' => 'personal_team',
     ),
+<<<<<<< HEAD
     'role' => 
     array (
       'label' => 'role',
     ),
+=======
+>>>>>>> 55edff60 (.)
   ),
   'actions' => 
   array (

@@ -11,6 +11,7 @@ use Illuminate\Mail\Mailables\Attachment;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
+<<<<<<< HEAD
 use Modules\Performance\Models\Individuale as Scheda;
 use Modules\Xot\Actions\Export\PdfByModelAction;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -19,6 +20,13 @@ use Illuminate\Contracts\Queue\ShouldQueue;
  * implements ShouldQueue
  */
 class SchedaMail extends Mailable 
+=======
+use Modules\Performance\Actions\MakePdfByRecord;
+use Modules\Performance\Models\Individuale as Scheda;
+use Modules\Xot\Actions\Export\PdfByModelAction;
+
+class SchedaMail extends Mailable
+>>>>>>> 55edff60 (.)
 {
     use Queueable;
     use SerializesModels;
@@ -28,10 +36,16 @@ class SchedaMail extends Mailable
     /**
      * Create a new message instance.
      */
+<<<<<<< HEAD
     public function __construct(Scheda $record)
     {
         
         $this->scheda = $record;
+=======
+    public function __construct(Scheda $scheda)
+    {
+        $this->scheda = $scheda;
+>>>>>>> 55edff60 (.)
     }
 
     /**

@@ -18,9 +18,12 @@ use Illuminate\View\View;
 use Livewire\Component;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 =======
 >>>>>>> 6a0fe737 (.)
+=======
+>>>>>>> 55edff60 (.)
 
 // Route::get('{path}', RedirectToPreferredLanguage::class)
 // ->where('path', '^(?!(en|de)).*');
@@ -44,6 +47,7 @@ class Switcher extends Component
             $url = LaravelLocalization::getLocalizedURL($key, $this->url, [], true);
             if (false !== $url) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 // Verifichiamo che $url sia una stringa o lo convertiamo in modo sicuro
                 if (!is_string($url)) {
                     // Se non è una stringa, utilizziamo una URL di fallback
@@ -54,6 +58,9 @@ class Switcher extends Component
 =======
                 $url = Str::of($url)->replace(url(''), '')->toString();
 >>>>>>> 6a0fe737 (.)
+=======
+                $url = Str::of($url)->replace(url(''), '')->toString();
+>>>>>>> 55edff60 (.)
             }
             $item['url'] = $url;
 

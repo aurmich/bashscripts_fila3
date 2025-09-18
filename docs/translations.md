@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 55edff60 (.)
 # Traduzioni
 
 ## Sintassi Array
@@ -140,6 +143,7 @@ Tutte le schede condividono le seguenti azioni:
 ### Messaggi
 Tutte le schede condividono i seguenti messaggi di sistema:
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 - Successo:
   - `created`: Scheda creata con successo
@@ -417,6 +421,8 @@ Action::make('delete')
 ```
 >>>>>>> c658c7a3 (.)
 =======
+=======
+>>>>>>> 55edff60 (.)
 ```php
 'messages' => [
     'success' => [
@@ -432,8 +438,11 @@ Action::make('delete')
 ]
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7c8293d8 (.)
 =======
+=======
+>>>>>>> 55edff60 (.)
 
 ## Modulo User
 
@@ -526,5 +535,9 @@ I permessi principali includono:
 - Modifica utenti
 - Eliminazione utenti
 - Impersonificazione utenti
+<<<<<<< HEAD
 - Gestione ruoli
 >>>>>>> 900f6485 (.)
+=======
+- Gestione ruoli
+>>>>>>> 55edff60 (.)

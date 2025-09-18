@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Roadmap Modulo Xot
 
 ## Overview
@@ -197,6 +198,8 @@ Modulo core del framework Laraxot che fornisce funzionalità base e convenzioni 
 - [Service Provider](./SERVICE-PROVIDER-BEST-PRACTICES.md) → Gestione servizi
 - [Documentation Guidelines](./DOCUMENTATION-GUIDELINES.md) → Documentazione e guide 
 =======
+=======
+>>>>>>> 55edff60 (.)
 # Xot Module Roadmap
 
 ## Module Progress Overview
@@ -274,4 +277,7 @@ Overall Module Completion: 60%
    - Query optimization
    - Cache implementation
    - Priority: High
+<<<<<<< HEAD
 >>>>>>> 86b1e4c1 (.)
+=======
+>>>>>>> 55edff60 (.)

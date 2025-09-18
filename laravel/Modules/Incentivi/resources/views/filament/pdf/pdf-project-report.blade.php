@@ -4,6 +4,7 @@
     <title>Resoconto Progetto</title>
     {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
 <<<<<<< HEAD
+<<<<<<< HEAD
     {{-- <link rel="stylesheet" href="{{ $_theme->asset('ptv::dist/assets/app.css') }}"> --}}
     <link rel="stylesheet" href="{{ asset('ptv::dist/assets/app.css') }}">
 <<<<<<< HEAD
@@ -17,6 +18,10 @@
     <link rel="stylesheet" href="{{ $_theme->path('ptv::dist/assets/app.css') }}">
     {{-- <link rel="stylesheet" href="{{ asset('ptv::dist/assets/app.css') }}"> --}}
 >>>>>>> 900f6485 (.)
+=======
+    <link rel="stylesheet" href="{{ $_theme->path('ptv::dist/assets/app.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('ptv::dist/assets/app.css') }}"> --}}
+>>>>>>> 55edff60 (.)
 </head>
 
 <body>

@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Builder;
 /**
  * Modules\Badge\Models\StoriaBadge.
  *
+<<<<<<< HEAD
  * @property int $id
  * @property string $ente
  * @property string $matricola
@@ -23,10 +24,13 @@ use Illuminate\Database\Eloquent\Builder;
  * @property-read \Illuminate\Support\Carbon|null $created_at
  * @property-read \Illuminate\Support\Carbon|null $updated_at
  *
+=======
+>>>>>>> 55edff60 (.)
  * @method static \Modules\Badge\Database\Factories\StoriaBadgeFactory factory($count = null, $state = [])
  * @method static Builder|StoriaBadge newModelQuery()
  * @method static Builder|StoriaBadge newQuery()
  * @method static Builder|StoriaBadge query()
+<<<<<<< HEAD
  * @method static Builder|StoriaBadge whereId($value)
  * @method static Builder|StoriaBadge whereEnte($value)
  * @method static Builder|StoriaBadge whereMatricola($value)
@@ -38,11 +42,14 @@ use Illuminate\Database\Eloquent\Builder;
  * @method static Builder|StoriaBadge whereLastStato($value)
  * @method static Builder|StoriaBadge whereHandle($value)
  * @method static Builder|StoriaBadge whereDatemod($value)
+=======
+>>>>>>> 55edff60 (.)
  *
  * @mixin \Eloquent
  */
 class StoriaBadge extends BaseModel
 {
+<<<<<<< HEAD
     /** @var list<string> */
     public $fillable = [
         'id',
@@ -73,4 +80,7 @@ class StoriaBadge extends BaseModel
             'updated_at' => 'datetime',
         ];
     }
+=======
+    protected $fillable = ['id', 'ente', 'matricola', 'cognome', 'nome', 'badge', 'data', 'note', 'last_stato', 'handle', 'datemod'];
+>>>>>>> 55edff60 (.)
 }

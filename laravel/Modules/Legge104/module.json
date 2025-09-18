@@ -1,12 +1,21 @@
 {
+<<<<<<< HEAD
     "name": "Legge104",
     "alias": "legge104",
+=======
+    "name": "Sindacati",
+    "alias": "sindacati",
+>>>>>>> 55edff60 (.)
     "description": "",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
+<<<<<<< HEAD
         "Modules\\Legge104\\Providers\\Legge104ServiceProvider"
+=======
+        "Modules\\Sindacati\\Providers\\SindacatiServiceProvider"
+>>>>>>> 55edff60 (.)
     ],
     "aliases": {},
     "files": [],

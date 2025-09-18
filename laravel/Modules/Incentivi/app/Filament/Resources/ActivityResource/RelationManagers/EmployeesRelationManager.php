@@ -80,12 +80,21 @@ class EmployeesRelationManager extends RelationManager
                     ->recordSelectOptionsQuery(
                         function (Builder $query) {
                             $ownerRecord = $this->getOwnerRecord();
+<<<<<<< HEAD
                             $project = $ownerRecord->project;
                             $workgroup_id = null;
 
                             if (isset($project->workgroup_id)) {
                                 $workgroup_id = $project->workgroup_id;
                                 
+=======
+                            $workgroup_id = null;
+
+                            // Avoid strict comparison with null since $ownerRecord is always an Eloquent model
+                            if (property_exists($ownerRecord, 'workgroup_id')) {
+                                $workgroup_id = $ownerRecord->workgroup_id;
+
+>>>>>>> 55edff60 (.)
                                 // return $query->ofWorkgroupId($workgroup_id);
                                 return $query->whereHas('workgroups', function (Builder $query1) use ($workgroup_id) {
                                     $query1->where('workgroups.id', $workgroup_id);

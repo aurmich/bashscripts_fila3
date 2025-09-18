@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Rating Module Analysis
 
 ## Overview
@@ -8,6 +9,8 @@ The Rating module provides specialized functionality within the Laravel applicat
 ```
 Modules/Rating/
 =======
+=======
+>>>>>>> 55edff60 (.)
 # User Module Analysis
 
 ## Overview
@@ -16,7 +19,10 @@ The User module provides specialized functionality within the Laravel applicatio
 ## Directory Structure
 ```
 Modules/User/
+<<<<<<< HEAD
 >>>>>>> 2cfe3b0d (.)
+=======
+>>>>>>> 55edff60 (.)
 ├── app/
 │   ├── Models/
 │   ├── Http/
@@ -32,11 +38,15 @@ Modules/User/
 ### Models
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 55edff60 (.)
 - Must extend BaseModel from the module's namespace
 - Follow Laravel Model Array Properties Rules
 - PHPStan Level 7 compliance required
 
 ### Features
+<<<<<<< HEAD
 1. Core Rating Management
 2. Integration with Related Modules
 3. Data Processing and Validation
@@ -82,6 +92,8 @@ Modules/User/
 >>>>>>> 3de76d6e (.)
 
 ### Features
+=======
+>>>>>>> 55edff60 (.)
 1. Core User Management
 2. Integration with Related Modules
 3. Data Processing and Validation
@@ -112,14 +124,20 @@ Modules/User/
 
 ## Testing Strategy
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Unit tests for models
 - Feature tests for authentication
 - Integration tests for user flows
 >>>>>>> 2cfe3b0d (.)
 =======
+=======
+>>>>>>> 55edff60 (.)
 - Unit tests for models and services
 - Feature tests for controllers
 - Integration tests with dependent modules
 - Security testing
 - Performance testing
+<<<<<<< HEAD
 >>>>>>> 3de76d6e (.)
+=======
+>>>>>>> 55edff60 (.)

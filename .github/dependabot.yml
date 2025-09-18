@@ -13,6 +13,7 @@ updates:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 =======
@@ -100,3 +101,5 @@ updates:
     labels:
       - "dependencies"
 >>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
+=======
+>>>>>>> 55edff60 (.)

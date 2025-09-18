@@ -93,9 +93,13 @@ class PdfData extends Data
     {
         switch ($this->engine) {
             case PdfEngineEnum::SPIPU:
+<<<<<<< HEAD
                 $html2pdf = new Html2Pdf($this->orientation, $this->format, $this->lang);
                 $html2pdf->writeHTML($html);
                 $html2pdf->output($this->getPath(), $this->dest);
+=======
+                dddx('spipu');
+>>>>>>> 55edff60 (.)
                 break;
             case PdfEngineEnum::SPATIE:
                 Pdf::html($this->html)
@@ -107,7 +111,13 @@ class PdfData extends Data
                 ;
                 break;
         }
+<<<<<<< HEAD
 
+=======
+        // $html2pdf = new Html2Pdf($this->orientation, $this->format, $this->lang);
+        // $html2pdf->writeHTML($html);
+        // $html2pdf->output($this->getPath(), $this->dest);
+>>>>>>> 55edff60 (.)
 
         $this->html = $html;
         // $this->engine->build($this);

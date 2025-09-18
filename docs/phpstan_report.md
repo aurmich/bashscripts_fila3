@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Report PHPStan - Modulo Rating
 
 ## Stato Attuale
@@ -62,6 +63,8 @@ L'analisi PHPStan di livello 1 non ha rilevato errori nel modulo Rating. Questo 
    - Analizzare pattern di utilizzo
    - Identificare anomalie 
 =======
+=======
+>>>>>>> 55edff60 (.)
 # Report PHPStan - Modulo User
 
 ## Stato Attuale
@@ -115,5 +118,9 @@ protected $signature = 'user:set-current-team {team_id : The ID of the team}';
 1. Implementare la logica del comando `SetCurrentTeamCommand`
 2. Aggiornare la documentazione PHPDoc
 3. Implementare i test mancanti
+<<<<<<< HEAD
 4. Eseguire nuovamente PHPStan dopo le correzioni 
 >>>>>>> c47751cd (.)
+=======
+4. Eseguire nuovamente PHPStan dopo le correzioni 
+>>>>>>> 55edff60 (.)

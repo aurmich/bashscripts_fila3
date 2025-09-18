@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 55edff60 (.)
 --------- creare comando per "migrazioni da tabelle esistenti nei Modelli"
 //---
 https://github.com/Xethron/migrations-generator
@@ -41,6 +44,9 @@ https://orchid.software/
 https://www.getcraftable.com/
 
 
+<<<<<<< HEAD
 =======
 eliminare pesoPo .. tutto quello diretto PO, mettere post_type
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> 55edff60 (.)

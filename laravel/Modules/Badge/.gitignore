@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 /vendor
 *.lock
 /build
+=======
+>>>>>>> 55edff60 (.)
 *:Zone.Identifier

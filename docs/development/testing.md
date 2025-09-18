@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 55edff60 (.)
 # Testing
 
 ## Struttura dei Test
@@ -268,6 +271,7 @@ public function test_external_service_integration(): void
 - Aggiornare i test con il codice
 - Rimuovere test obsoleti
 - Refactoring quando necessario
+<<<<<<< HEAD
 =======
 # Testing in Xot Module
 
@@ -296,3 +300,5 @@ ${cat /mnt/f/var/www/quaeris/laravel/Modules/Xot/_docs/phpstan.txt}
 ${cat /mnt/f/var/www/quaeris/laravel/Modules/Xot/_docs/phpstan_error.txt}
 ```
 >>>>>>> 59bc4fe7 (first)
+=======
+>>>>>>> 55edff60 (.)

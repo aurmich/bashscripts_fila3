@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 55edff60 (.)
 declare(strict_types=1);
 
 return [
@@ -40,6 +43,7 @@ return [
         'edit' => 'Modifica',
     ],
 ];
+<<<<<<< HEAD
 =======
 return array (
   'navigation' => 
@@ -286,3 +290,5 @@ return array (
   ),
 );
 >>>>>>> 2e172569 (.)
+=======
+>>>>>>> 55edff60 (.)

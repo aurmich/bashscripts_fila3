@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Roadmap Modulo Media
 
 ## Overview
@@ -195,6 +196,8 @@ Sistema per la gestione dei media, con focus su upload, manipolazione e ottimizz
 - [Ottimizzazione](./features/ottimizzazione.md) → Sistema ottimizzazione
 - [Storage](./features/storage.md) → Sistema storage 
 =======
+=======
+>>>>>>> 55edff60 (.)
 # Media Module Roadmap
 
 ## Module Progress Overview
@@ -272,4 +275,7 @@ Overall Module Completion: 60%
    - Query optimization
    - Cache implementation
    - Priority: High
+<<<<<<< HEAD
 >>>>>>> 86b1e4c1 (.)
+=======
+>>>>>>> 55edff60 (.)

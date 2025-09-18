@@ -14,6 +14,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 55edff60 (.)
 	"editor.formatOnSave": false,
 		"editor.formatOnType": true,
 		"php-cs-fixer.onsave": true,
@@ -48,6 +51,7 @@
     		"**/.git/objects/**": true,
     		"**/.git/subtree-cache/**": true,
     		"**/node_modules/*/**": true
+<<<<<<< HEAD
   		}
 =======
 =======
@@ -78,6 +82,9 @@
 >>>>>>> bc2abf99 (.)
 =======
 >>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
+=======
+  		},
+>>>>>>> 55edff60 (.)
 	"editor.formatOnType": true,
 	"php-cs-fixer.onsave": true,
 	"php-cs-fixer.formatHtml": true,
@@ -131,6 +138,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 164b8363 (Squashed 'laravel/Modules/Rating/' content from commit e5c84117)
 =======
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
@@ -160,4 +168,6 @@
 >>>>>>> bc2abf99 (.)
 =======
 >>>>>>> 793bd7f9 (Squashed 'laravel/Modules/Activity/' content from commit 40cd7abb1)
+=======
+>>>>>>> 55edff60 (.)
 }

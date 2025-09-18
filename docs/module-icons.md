@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 55edff60 (.)
 # Icone dei Moduli Laravel
 
 ## Struttura e Convenzioni
@@ -94,6 +97,7 @@ Esempio SVG corretto:
 - Mantenere la consistenza tra nome file e riferimento
 - Registrare tutte le icone nel service provider
 - Testare le icone in modalità light e dark
+<<<<<<< HEAD
 =======
 # Documentazione Icone Modulo Incentivi
 
@@ -217,3 +221,5 @@ Esempio SVG corretto:
 - Assicurarsi che le animazioni non interferiscano con il layout
 - Mantenere le dimensioni dei file SVG ottimizzate
 >>>>>>> 15ea09e2 (first)
+=======
+>>>>>>> 55edff60 (.)

@@ -5,7 +5,10 @@ namespace Modules\IndennitaCondizioniLavoro\Filament\Resources\CondizioniLavoroA
 use Filament\Actions;
 use Illuminate\Support\Facades\Auth;
 use Filament\Forms\Components\Select;
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
+=======
+>>>>>>> 55edff60 (.)
 use Filament\Tables\Columns\TextColumn;
 use Filament\Resources\Pages\ListRecords;
 use Filament\Tables\Filters\SelectFilter;
@@ -22,6 +25,7 @@ class ListCondizioniLavoroAdms extends XotBaseListRecords
 
     public function getListTableColumns(): array
     {
+<<<<<<< HEAD
         $columns = [
             'matr' => TextColumn::make('matr')->searchable(),
             'cognome' => TextColumn::make('cognome')->searchable(),
@@ -29,6 +33,15 @@ class ListCondizioniLavoroAdms extends XotBaseListRecords
             'stabi' => TextColumn::make('stabi')->searchable(),
             'repar' => TextColumn::make('repar')->searchable(),
             'indennitaTipoDettaglio' => TextColumn::make('indennitaTipoDettaglio')
+=======
+        return [
+            TextColumn::make('matr')->searchable(),
+            TextColumn::make('cognome')->searchable(),
+            TextColumn::make('nome')->searchable(),
+            TextColumn::make('stabi')->searchable(),
+            TextColumn::make('repar')->searchable(),
+            TextColumn::make('indennitaTipoDettaglio')
+>>>>>>> 55edff60 (.)
                 ->formatStateUsing(function (TextColumn $column) {
                     $state = $column->getState();
 
@@ -40,11 +53,17 @@ class ListCondizioniLavoroAdms extends XotBaseListRecords
 
                     return $state?->map(fn ($item): string => '['.$item->indennitaTipo?->nome.'] '.$item->nome)->implode(' --------------------- ,'.PHP_EOL.PHP_EOL.'');
                 }),
+<<<<<<< HEAD
             'quadrimestre' => TextColumn::make('quadrimestre')->searchable(),
             'anno' => TextColumn::make('anno')->searchable(),
         ];
 
         return $columns;
+=======
+            TextColumn::make('quadrimestre')->searchable(),
+            TextColumn::make('anno')->searchable(),
+        ];
+>>>>>>> 55edff60 (.)
     }
 
     public function getTableFilters(): array
@@ -83,9 +102,13 @@ class ListCondizioniLavoroAdms extends XotBaseListRecords
 
                     $query = $query->where($data);
 
+<<<<<<< HEAD
                     /** @var ?UserContract $user */
                     $user = Auth::user();
                     if (! $user?->hasRole('super-admin')) {
+=======
+                    if (! Auth::user()?->hasRole('super-admin')) {
+>>>>>>> 55edff60 (.)
                         return $query->whereHas('indennitaTipoDettaglio');
                     }
 

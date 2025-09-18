@@ -157,12 +157,16 @@ return array (
     ),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 83a191e6 (.)
+=======
+>>>>>>> 55edff60 (.)
     'create' => 
     array (
       'label' => 'create',
     ),
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -170,6 +174,8 @@ return array (
 =======
 >>>>>>> 83a191e6 (.)
 =======
+=======
+>>>>>>> 55edff60 (.)
     'anno' => 
     array (
       'label' => 'anno',
@@ -264,13 +270,19 @@ return array (
     'impegno' => 'Organizzazione della programmazione delle attività',
     'esperienza_acquisita' => 'Focalizzazione dei processi di comunicazione sulla condivisione dei risultati',
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 900f6485 (.)
 =======
+=======
+>>>>>>> 55edff60 (.)
     'valutatore_id' => 
     array (
       'label' => 'valutatore_id',
     ),
+<<<<<<< HEAD
 >>>>>>> ca06c855 (.)
+=======
+>>>>>>> 55edff60 (.)
   ),
   'actions' => 
   array (

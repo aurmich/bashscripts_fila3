@@ -6,13 +6,17 @@ namespace Modules\Lang\Providers;
 
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
+<<<<<<< HEAD
 /**
  * Provider per la registrazione delle rotte del modulo Lang.
  */
+=======
+>>>>>>> 55edff60 (.)
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
     /**
      * The module namespace to assume when generating URLs to actions.
+<<<<<<< HEAD
 <<<<<<< HEAD
      *
      * @var string
@@ -52,12 +56,24 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
     public string $name = 'Lang';
 
 >>>>>>> 6a0fe737 (.)
+=======
+     */
+    protected string $moduleNamespace = 'Modules\Lang\Http\Controllers';
+
+    protected string $module_dir = __DIR__;
+
+    protected string $module_ns = __NAMESPACE__;
+
+    public string $name = 'Lang';
+
+>>>>>>> 55edff60 (.)
     public function boot(): void
     {
         parent::boot();
         $this->registerLang();
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     /**
      * Register the module services.
@@ -87,6 +103,8 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
         $langs = array_keys($locales);
 
 =======
+=======
+>>>>>>> 55edff60 (.)
     public function register(): void
     {
         parent::register();
@@ -107,12 +125,16 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
         }
         \getRouteParameters();
         */
+<<<<<<< HEAD
 >>>>>>> 6a0fe737 (.)
+=======
+>>>>>>> 55edff60 (.)
         $n = 1;
         if (inAdmin()) {
             $n = 3;
         }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         if (in_array(request()->segment($n), $langs, false)) {
             /** @var string|null $lang */
@@ -123,6 +145,11 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
             $lang = request()->segment($n);
             if (null !== $lang) {
 >>>>>>> 6a0fe737 (.)
+=======
+        if (\in_array(request()->segment($n), $langs, false)) {
+            $lang = request()->segment($n);
+            if (null !== $lang) {
+>>>>>>> 55edff60 (.)
                 app()->setLocale($lang);
             }
         }

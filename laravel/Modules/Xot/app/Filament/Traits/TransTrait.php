@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Traits;
 
+<<<<<<< HEAD
+=======
+use TypeError;
+>>>>>>> 55edff60 (.)
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Modules\Lang\Actions\SaveTransAction;
@@ -50,7 +54,10 @@ trait TransTrait
 
         $key = $transKey.'.'.$key;
         $key = Str::of($key)->replace('.cluster.pages.', '.')->toString();
+<<<<<<< HEAD
 
+=======
+>>>>>>> 55edff60 (.)
         return $key;
     }
 
@@ -69,7 +76,10 @@ trait TransTrait
 
         $key = $transKey.'.'.$key;
         $key = Str::of($key)->replace('.cluster.pages.', '.')->toString();
+<<<<<<< HEAD
 
+=======
+>>>>>>> 55edff60 (.)
         return $key;
     }
 
@@ -79,6 +89,7 @@ trait TransTrait
     public static function transFunc(string $func, bool $exceptionIfNotExist = false): string
     {
         $key = static::getKeyTransFunc($func);
+<<<<<<< HEAD
 
         /** @var string|array<int|string,mixed>|null */
         $trans = null;
@@ -92,6 +103,20 @@ trait TransTrait
         }
 
         if ($key === $trans) {
+=======
+        
+        /** @var string|array<int|string,mixed>|null $trans */
+        try{
+            $trans = trans($key);
+        }catch(TypeError $e){
+            dddx([
+                'e'=>$e,
+                'key'=>$key
+            ]);
+        }
+
+        if ($key == $trans) {
+>>>>>>> 55edff60 (.)
             $group = Str::of($key)->before('.')->toString();
             $item = Str::of($key)->after($group.'.')->toString();
             $group_arr = trans($group);

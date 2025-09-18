@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Roadmap Modulo Incentivi
 
 ## Stato Generale del Modulo
@@ -308,6 +309,8 @@ Metriche:
 - ✓ Logging completo per audit
 - ✓ Tracciabilità operazioni
 =======
+=======
+>>>>>>> 55edff60 (.)
 # Incentivi Module Roadmap
 
 ## Module Progress Overview
@@ -385,4 +388,7 @@ Overall Module Completion: 60%
    - Query optimization
    - Cache implementation
    - Priority: High
+<<<<<<< HEAD
 >>>>>>> 86b1e4c1 (.)
+=======
+>>>>>>> 55edff60 (.)

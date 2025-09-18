@@ -24,11 +24,14 @@ use Modules\IndennitaCondizioniLavoro\Filament\Resources\CondizioniLavoroResourc
 use Modules\IndennitaCondizioniLavoro\Filament\Resources\CondizioniLavoroResource\Pages\CompilaCondizioniLavoro;
 use Modules\IndennitaCondizioniLavoro\Filament\Resources\CondizioniLavoroResource\Widgets\CondizioniLavoroOverview;
 
+<<<<<<< HEAD
 /**
  * @property-read \Modules\IndennitaCondizioniLavoro\Models\CondizioniLavoro $record
  *
  * @method \Modules\IndennitaCondizioniLavoro\Models\CondizioniLavoro getRecord()
  */
+=======
+>>>>>>> 55edff60 (.)
 class CondizioniLavoroResource extends XotBaseResource
 {
     protected static ?string $model = CondizioniLavoro::class;

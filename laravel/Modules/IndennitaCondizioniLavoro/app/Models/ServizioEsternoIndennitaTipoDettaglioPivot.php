@@ -25,7 +25,10 @@ use Illuminate\Support\Carbon;
  * @property-read float|null $tot_x_ptime
  * @property-read \Modules\IndennitaCondizioniLavoro\Models\IndennitaTipoDettaglio|null $indennitaTipoDettaglio
  * @property-read \Modules\IndennitaCondizioniLavoro\Models\ServizioEsterno|null $servizioEsterno
+<<<<<<< HEAD
  * @property-read \Modules\IndennitaCondizioniLavoro\Models\CondizioniLavoro|null $condizioniLavoro
+=======
+>>>>>>> 55edff60 (.)
  *
  * @method static Builder|ServizioEsternoIndennitaTipoDettaglioPivot newModelQuery()
  * @method static Builder|ServizioEsternoIndennitaTipoDettaglioPivot newQuery()
@@ -77,12 +80,17 @@ class ServizioEsternoIndennitaTipoDettaglioPivot extends BasePivot
             return null;
         }
 
+<<<<<<< HEAD
         return (float)($this->gg * $this->indennitaTipoDettaglio->euro_giorno);
+=======
+        return $this->gg * $this->indennitaTipoDettaglio->euro_giorno;
+>>>>>>> 55edff60 (.)
     }
 
     public function getTotXPtimeAttribute(?float $value): ?float
     {
         $tot = $this->tot;
+<<<<<<< HEAD
         if ($tot === null) {
             return null;
         }
@@ -102,5 +110,11 @@ class ServizioEsternoIndennitaTipoDettaglioPivot extends BasePivot
     public function condizioniLavoro(): HasOne
     {
         return $this->hasOne(CondizioniLavoro::class, 'id', 'condizioni_lavoro_id');
+=======
+        // 75     Access to an undefined property Modules\IndennitaCondizioniLavoro\Models\ServizioEsternoIndennitaTipoDettaglioPivot::$condizioniLavoro
+        $ptime = $this->condizioniLavoro->perc_p_time_daterange;
+
+        return $tot * $ptime;
+>>>>>>> 55edff60 (.)
     }
 }

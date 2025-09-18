@@ -54,10 +54,14 @@ In alcuni casi, è possibile utilizzare `@return static` per evitare problemi di
 public function mobileDevices(): BelongsToMany
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return $this->belongsToManyX(Device::class, 'mobile_device_users', 'profile_id', 'device_id')
 =======
     return $this->belongsToMany(Device::class, 'mobile_device_users', 'profile_id', 'device_id')
 >>>>>>> bdeae81f (first)
+=======
+    return $this->belongsToManyX(Device::class, 'mobile_device_users', 'profile_id', 'device_id')
+>>>>>>> 55edff60 (.)
         ->withPivot('token')
         ->withTimestamps();
 }
@@ -80,10 +84,14 @@ Una soluzione di compromesso potrebbe essere:
 public function devices(): BelongsToMany
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return $this->belongsToManyX(DeviceContract::class, ...);
 =======
     return $this->belongsToMany(DeviceContract::class, ...);
 >>>>>>> bdeae81f (first)
+=======
+    return $this->belongsToManyX(DeviceContract::class, ...);
+>>>>>>> 55edff60 (.)
 }
 ```
 

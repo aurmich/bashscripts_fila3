@@ -1,6 +1,7 @@
 # IndennitaResponsabilita Module Roadmap
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Panoramica del Progresso
 Completamento Complessivo del Modulo: 82%
 - Funzionalità Core: 92% completato
@@ -193,6 +194,8 @@ Completamento Complessivo del Modulo: 82%
 - Prioritizzare validazione dati
 - Pianificare refactoring incrementale
 =======
+=======
+>>>>>>> 55edff60 (.)
 ## Module Progress Overview
 Overall Module Completion: 60%
 - Core Features: 75% complete
@@ -268,4 +271,7 @@ Overall Module Completion: 60%
    - Query optimization
    - Cache implementation
    - Priority: High
+<<<<<<< HEAD
 >>>>>>> 86b1e4c1 (.)
+=======
+>>>>>>> 55edff60 (.)

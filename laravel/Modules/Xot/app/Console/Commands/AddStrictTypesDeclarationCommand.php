@@ -32,10 +32,16 @@ class AddStrictTypesDeclarationCommand extends Command
         $dryRun = $this->option('dry-run');
 
         if ($moduleOption) {
+<<<<<<< HEAD
             $modulePath .= '/'.$moduleOption;
             if (! File::isDirectory($modulePath)) {
                 $this->error("Il modulo {$moduleOption} non esiste");
 
+=======
+            $modulePath .= '/' . $moduleOption;
+            if (!File::isDirectory($modulePath)) {
+                $this->error("Il modulo {$moduleOption} non esiste");
+>>>>>>> 55edff60 (.)
                 return 1;
             }
         }
@@ -47,12 +53,17 @@ class AddStrictTypesDeclarationCommand extends Command
             if ($this->shouldProcessFile($file)) {
                 if ($dryRun) {
                     $this->info("Verrebbe processato: {$file}");
+<<<<<<< HEAD
                     ++$count;
+=======
+                    $count++;
+>>>>>>> 55edff60 (.)
                     continue;
                 }
 
                 try {
                     $path = $file->getRealPath();
+<<<<<<< HEAD
                     if (false === $path) {
                         continue;
                     }
@@ -63,6 +74,17 @@ class AddStrictTypesDeclarationCommand extends Command
                 } catch (\Exception $e) {
                     $filePath = $file->getRealPath() ?: $file->getPathname();
                     $this->error("Errore nel processare {$filePath}: ".$e->getMessage());
+=======
+                    if ($path === false) {
+                        continue;
+                    }
+                    
+                    $action->execute($path);
+                    $this->info("Aggiunta dichiarazione strict_types a: {$path}");
+                    $count++;
+                } catch (\Exception $e) {
+                    $this->error("Errore nel processare {$path}: " . $e->getMessage());
+>>>>>>> 55edff60 (.)
                 }
             }
         }
@@ -81,12 +103,20 @@ class AddStrictTypesDeclarationCommand extends Command
     private function shouldProcessFile(\SplFileInfo $file): bool
     {
         // Verifica l'estensione
+<<<<<<< HEAD
         if (! str_ends_with($file->getFilename(), '.php')) {
+=======
+        if (!str_ends_with($file->getFilename(), '.php')) {
+>>>>>>> 55edff60 (.)
             return false;
         }
 
         $path = $file->getRealPath();
+<<<<<<< HEAD
         if (false === $path) {
+=======
+        if ($path === false) {
+>>>>>>> 55edff60 (.)
             return false;
         }
 
@@ -99,7 +129,11 @@ class AddStrictTypesDeclarationCommand extends Command
 
         // Verifica se il file ha già la dichiarazione strict_types
         $content = File::get($path);
+<<<<<<< HEAD
 
         return ! str_contains($content, 'declare(strict_types=1)');
+=======
+        return !str_contains($content, 'declare(strict_types=1)');
+>>>>>>> 55edff60 (.)
     }
 }

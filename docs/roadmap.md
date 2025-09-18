@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:docs/roadmap.md
 <<<<<<< HEAD:docs/roadmap.md
 <<<<<<< HEAD
@@ -575,21 +576,32 @@ Overall Module Completion: 82%
 - Technical Debt: 45% complete
 >>>>>>> 64a8cd3b (.)
 =======
+=======
+# User Module Roadmap
+
+## Module Progress Overview
+>>>>>>> 55edff60 (.)
 Overall Module Completion: 60%
 - Core Features: 75% complete
 - High Priority Features: 70% complete
 - Medium Priority Features: 50% complete
 - Low Priority Features: 30% complete
 - Technical Debt: 60% complete
+<<<<<<< HEAD
 >>>>>>> 3de76d6e (.)
+=======
+>>>>>>> 55edff60 (.)
 
 ## Technical Metrics Overview
 
 ### Code Quality
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3de76d6e (.)
+=======
+>>>>>>> 55edff60 (.)
 * Maintainability Index: 85/100
 * Cyclomatic Complexity: Avg 2.5
 * Technical Debt Ratio: 15%
@@ -598,6 +610,9 @@ Overall Module Completion: 60%
 * Clean Code Score: 85/100
 * Type Safety: 80%
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 55edff60 (.)
 
 ### Performance
 * Average Response Time: 200ms
@@ -655,6 +670,7 @@ Overall Module Completion: 60%
    - Query optimization
    - Cache implementation
    - Priority: High
+<<<<<<< HEAD
 >>>>>>> 86b1e4c1 (.):laravel/Modules/Rating/docs/roadmap.md
 =======
 * Maintainability Index: 88/100
@@ -932,3 +948,5 @@ Overall Module Completion: 60%
 =======
 - [Fase 9: UI/UX](./roadmap/09_ui_ux.md) 
 >>>>>>> 3067e30a (Squashed 'bashscripts/' changes from 583e15e4..26a66518)
+=======
+>>>>>>> 55edff60 (.)

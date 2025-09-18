@@ -2,7 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Legge104\Providers;
+=======
+namespace Modules\Sindacati\Providers;
+>>>>>>> 55edff60 (.)
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as BaseEventServiceProvider;
 

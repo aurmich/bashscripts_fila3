@@ -27,13 +27,28 @@ enum SupportedLocale: string
      */
     public static function toArray(): array
     {
+<<<<<<< HEAD
         return array_reduce(
+=======
+        /** @var array<string, string> $result */
+        $result = array_reduce(
+>>>>>>> 55edff60 (.)
             self::cases(),
             fn (array $carry, self $locale) => [...$carry, $locale->value => $locale->getLabel()],
             []
         );
+<<<<<<< HEAD
     }
 
+=======
+        
+        return $result;
+    }
+    
+    /**
+     * Create from string value.
+     */
+>>>>>>> 55edff60 (.)
     public static function fromString(string $value): self
     {
         return match ($value) {
@@ -42,6 +57,7 @@ enum SupportedLocale: string
             default => self::IT,
         };
     }
+<<<<<<< HEAD
 
     public function label(): string
     {
@@ -50,4 +66,6 @@ enum SupportedLocale: string
             self::EN => 'English',
         };
     }
+=======
+>>>>>>> 55edff60 (.)
 }

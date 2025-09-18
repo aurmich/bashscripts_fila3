@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---------------------------------------------------------------------------------------------------
 Laravel URL Redirects with Optional Protected Url Passwords
 https://codebrisk.com/blog/laravel-url-redirects-with-optional-protected-url-passwords
@@ -81,6 +82,8 @@ composer require creagia/laravel-web-mailer
 >>>>>>> e83070fd (.)
 =======
 >>>>>>> bdeae81f (first)
+=======
+>>>>>>> 55edff60 (.)
 https://packagist.org/packages/althinect/filament-spatie-roles-permissions
 
 
@@ -102,6 +105,7 @@ https://codebrisk.com/blog/easily-add-face-authentication-to-your-laravel-applic
 
 ----- molti pacchetti interessanti --
 https://codebrisk.com/blog/categories/laravel-packages
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
@@ -152,3 +156,5 @@ https://blog.devgenius.io/laravel-multi-tenant-systems-with-ecotone-e3e5a4751a55
 >>>>>>> bdeae81f (first)
 =======
 >>>>>>> 0253339c (first)
+=======
+>>>>>>> 55edff60 (.)
