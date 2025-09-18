@@ -12,6 +12,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <html lang="en">
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -62,10 +63,14 @@
 =======
 <html lang="en">
 >>>>>>> c6af2eee (first)
+=======
+<html lang="en">
+>>>>>>> 8e6e7d4c (first)
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -189,11 +194,18 @@
        {{-- Laravel Mix - CSS File --}}
        {{-- <link rel="stylesheet" href="{{ mix('css/mensa.css') }}"> --}}
 >>>>>>> c6af2eee (first)
+=======
+        <title>Module MobilitaVolontaria</title>
+
+       {{-- Laravel Mix - CSS File --}}
+       {{-- <link rel="stylesheet" href="{{ mix('css/mobilitavolontaria.css') }}"> --}}
+>>>>>>> 8e6e7d4c (first)
 
     </head>
     <body>
         @yield('content')
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -360,3 +372,9 @@
     </body>
 </html>
 >>>>>>> c6af2eee (first)
+=======
+        {{-- Laravel Mix - JS File --}}
+        {{-- <script src="{{ mix('js/mobilitavolontaria.js') }}"></script> --}}
+    </body>
+</html>
+>>>>>>> 8e6e7d4c (first)

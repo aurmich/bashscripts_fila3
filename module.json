@@ -20,6 +20,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
 =======
@@ -230,11 +231,16 @@
     "name": "Mensa",
     "alias": "mensa",
 >>>>>>> c6af2eee (first)
+=======
+    "name": "MobilitaVolontaria",
+    "alias": "mobilitavolontaria",
+>>>>>>> 8e6e7d4c (first)
     "description": "",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -264,11 +270,15 @@
 =======
         "Modules\\Mensa\\Providers\\MensaServiceProvider"
 >>>>>>> c6af2eee (first)
+=======
+        "Modules\\MobilitaVolontaria\\Providers\\MobilitaVolontariaServiceProvider"
+>>>>>>> 8e6e7d4c (first)
     ],
     "aliases": {},
     "files": [],
     "requires": []
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -304,3 +314,5 @@
 >>>>>>> 616a71c2 (first)
 =======
 >>>>>>> c6af2eee (first)
+=======
+>>>>>>> 8e6e7d4c (first)

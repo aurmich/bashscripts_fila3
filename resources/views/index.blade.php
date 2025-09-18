@@ -19,6 +19,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('rating::layouts.master')
 =======
 @extends('xot::layouts.app')
@@ -83,10 +84,14 @@
 =======
 @extends('mensa::layouts.master')
 >>>>>>> c6af2eee (first)
+=======
+@extends('mobilitavolontaria::layouts.master')
+>>>>>>> 8e6e7d4c (first)
 
 @section('content')
     <h1>Hello World</h1>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -228,3 +233,9 @@
     </p>
 @stop
 >>>>>>> c6af2eee (first)
+=======
+    <p>
+        This view is loaded from module: {!! config('mobilitavolontaria.name') !!}
+    </p>
+@stop
+>>>>>>> 8e6e7d4c (first)

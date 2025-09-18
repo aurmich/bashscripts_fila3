@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -204,4 +205,11 @@ return [
     'name' => 'Mensa',
     'icon' => 'fas-bowl-food',
 >>>>>>> c6af2eee (first)
+=======
+declare(strict_types=1);
+
+return [
+    'name' => 'MobilitaVolontaria',
+    'icon' => 'fas-person-walking-luggage',
+>>>>>>> 8e6e7d4c (first)
 ];

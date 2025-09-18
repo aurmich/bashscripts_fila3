@@ -21,6 +21,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 /**
@@ -301,10 +302,25 @@ class RouteServiceProvider extends ServiceProvider
 
     public string $name = 'Mensa';
 >>>>>>> c6af2eee (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\MobilitaVolontaria\Providers;
+
+// --- bases ---
+use Modules\Xot\Providers\XotBaseRouteServiceProvider;
+
+class RouteServiceProvider extends XotBaseRouteServiceProvider {
+    /**
+     * The module namespace to assume when generating URLs to actions.
+     */
+    protected string $moduleNamespace = 'Modules\MobilitaVolontaria\Http\Controllers';
+>>>>>>> 8e6e7d4c (first)
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -585,4 +601,8 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 >>>>>>> 616a71c2 (first)
 =======
 >>>>>>> c6af2eee (first)
+=======
+
+    public string $name = 'MobilitaVolontaria';
+>>>>>>> 8e6e7d4c (first)
 }
