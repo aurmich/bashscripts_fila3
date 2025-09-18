@@ -37,6 +37,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ───────────────────────────────────────────────────────
 # Sistema operativo / File nascosti e metadata
 # ───────────────────────────────────────────────────────
@@ -360,6 +361,8 @@ cache/
 
 >>>>>>> e47821df (.)
 =======
+=======
+>>>>>>> f3c337b1 (.)
 # 🛠️ Compiled files and binaries
 *.jar
 *.phar
@@ -412,6 +415,7 @@ public_html/vendor/
 /cache/
 *.zip
 *.old
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 09d4c7ad (.)
 =======
@@ -606,6 +610,11 @@ vendor/
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+laravel/Modules/Predict/
+*.old
+public_html/plugins/
+>>>>>>> f3c337b1 (.)
 /vendor
 *.lock
 /build
@@ -880,6 +889,7 @@ cache/
 =======
 *.exe
 *:Zone.Identifier
+<<<<<<< HEAD
 *:Zone.Identifier
 >>>>>>> 8fc3049b (first)
 =======
@@ -1039,3 +1049,5 @@ cache/
 >>>>>>> f2e91737 (.)
 =======
 >>>>>>> d8b9f8a6 (up)
+=======
+>>>>>>> f3c337b1 (.)

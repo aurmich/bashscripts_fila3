@@ -94,6 +94,7 @@ CHANGELOG.md export-ignore
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 *.psd filter=lfs diff=lfs merge=lfs -text
@@ -182,3 +183,6 @@ CHANGELOG.md export-ignore
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
 =======
 >>>>>>> e83070fd (.)
+=======
+
+>>>>>>> f3c337b1 (.)

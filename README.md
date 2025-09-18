@@ -31,6 +31,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2760,6 +2761,8 @@ chmod +x script.sh
 - [Documentazione Testing](testing/README.md)
 >>>>>>> e47821df (.)
 =======
+=======
+>>>>>>> f3c337b1 (.)
 **Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
 
 When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
@@ -2805,6 +2808,7 @@ Use these steps to clone from SourceTree, our client for using the repository co
 4. Open the directory you just created to see your repository’s files.
 
 Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+<<<<<<< HEAD
 >>>>>>> 09d4c7ad (.)
 =======
 =======
@@ -2894,6 +2898,8 @@ Power your Laravel application with **Module Xot Fila3**, a comprehensive multi-
 =======
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> f3c337b1 (.)
 # Module User Fila3 🔥 Ultimate User, Roles & Permissions Manager for FilamentPHP 🚀
 
 [![Latest Release](https://img.shields.io/github/v/release/laraxot/module_user_fila3)](https://github.com/laraxot/module_user_fila3/releases)
@@ -3245,6 +3251,7 @@ L'account potrà accedere al modulo assegnato.
 
 ## [Gestione dei Team](docs/teams.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
 php artisan module:migrate Setting
@@ -3327,3 +3334,5 @@ Una volta che i dati verranno caricati, il Personale potrà quindi stampare/espo
 >>>>>>> dc18abbe (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> f3c337b1 (.)

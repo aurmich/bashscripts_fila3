@@ -27,6 +27,7 @@ $finder = PhpCsFixer\Finder::create()
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ;
 =======
 >>>>>>> 59bc4fe7 (first)
@@ -50,6 +51,9 @@ $finder = PhpCsFixer\Finder::create()
 >>>>>>> 8fc3049b (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+;
+>>>>>>> f3c337b1 (.)
 
 $config = new PhpCsFixer\Config();
 
@@ -95,6 +99,7 @@ $config
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ;
 =======
 >>>>>>> 59bc4fe7 (first)
@@ -114,6 +119,9 @@ $config
 =======
 ;
 >>>>>>> 2df6fbc8 (first)
+=======
+;
+>>>>>>> f3c337b1 (.)
 
 return $config;
 =======

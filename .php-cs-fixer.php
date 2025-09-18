@@ -12,6 +12,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 =======
@@ -40,6 +41,10 @@ declare(strict_types=1);
 >>>>>>> 8fc3049b (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+declare(strict_types=1);
+
+>>>>>>> f3c337b1 (.)
 $finder = PhpCsFixer\Finder::create()
     ->notPath('bootstrap/cache')
     ->notPath('storage')
@@ -49,6 +54,7 @@ $finder = PhpCsFixer\Finder::create()
     ->notName('*.blade.php')
     ->ignoreDotFiles(true)
     ->ignoreVCS(true)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -82,6 +88,9 @@ $finder = PhpCsFixer\Finder::create()
 >>>>>>> 8fc3049b (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+;
+>>>>>>> f3c337b1 (.)
 
 $config = new PhpCsFixer\Config();
 
@@ -89,6 +98,7 @@ $config
     ->setRules([
         '@Symfony' => true,
         'array_indentation' => true,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -126,6 +136,9 @@ $config
 >>>>>>> 8fc3049b (first)
 =======
 >>>>>>> e83070fd (.)
+=======
+        '@PhpCsFixer:risky' => true,
+>>>>>>> f3c337b1 (.)
         'function_typehint_space' => true,
         'declare_equal_normalize' => true,
         'declare_strict_types' => true,
@@ -142,6 +155,7 @@ $config
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         // 'binary_operator_spaces' => ['align_double_arrow' => false],
 =======
         //'binary_operator_spaces' => ['align_double_arrow' => false],
@@ -179,6 +193,9 @@ $config
 =======
         //'binary_operator_spaces' => ['align_double_arrow' => false],
 >>>>>>> e83070fd (.)
+=======
+        // 'binary_operator_spaces' => ['align_double_arrow' => false],
+>>>>>>> f3c337b1 (.)
         'array_syntax' => ['syntax' => 'short'],
         'linebreak_after_opening_tag' => true,
         'not_operator_with_successor_space' => true,
@@ -195,6 +212,7 @@ $config
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         'phpdoc_order' => true,
 >>>>>>> 164b8363 (Squashed 'laravel/Modules/Rating/' content from commit e5c84117)
@@ -231,6 +249,8 @@ $config
 =======
         'phpdoc_order' => true,
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> f3c337b1 (.)
         'php_unit_construct' => false,
         'braces' => [
             'position_after_functions_and_oop_constructs' => 'same',
@@ -251,6 +271,9 @@ $config
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3c337b1 (.)
         'phpdoc_add_missing_param_annotation' => true,
         'phpdoc_order' => true,
         'phpdoc_trim' => true,
@@ -272,6 +295,7 @@ $config
 <<<<<<< HEAD
 <<<<<<< HEAD
 return $config;
+<<<<<<< HEAD
 =======
 return $config;
 >>>>>>> 164b8363 (Squashed 'laravel/Modules/Rating/' content from commit e5c84117)
@@ -331,3 +355,5 @@ return $config;
 
 return $config;
 >>>>>>> e83070fd (.)
+=======
+>>>>>>> f3c337b1 (.)
