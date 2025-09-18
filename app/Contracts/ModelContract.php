@@ -2,14 +2,19 @@
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @see https://github.com/buyersclub/laravel-eloquent-model-interface/blob/master/src/EloquentModelInterface.php
 =======
  * Definizione dell'interfaccia per i modelli dell'applicazione.
 >>>>>>> 0d55b583 (first)
+=======
+ * Definizione dell'interfaccia per i modelli dell'applicazione.
+>>>>>>> e83070fd (.)
  */
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 namespace Modules\Xot\Contracts;
 
@@ -52,13 +57,18 @@ use Illuminate\Support\Carbon;
  * @method BelongsTo user()
  * @method mixed     getAttributeValue(string $key)
 =======
+=======
+>>>>>>> e83070fd (.)
 namespace Modules\User\Contracts;
 
 use Illuminate\Database\Eloquent\Model;
 
 /**
  * Interfaccia ModelContract che deve essere implementata dai modelli.
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
+=======
+>>>>>>> e83070fd (.)
  *
  * @phpstan-require-extends Model
  *
@@ -70,10 +80,14 @@ interface ModelContract
      * Duplicate the instance and unset all the loaded relations.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return $this
 =======
      * @return static The model instance without relations
 >>>>>>> 0d55b583 (first)
+=======
+     * @return static The model instance without relations
+>>>>>>> e83070fd (.)
      */
     public function withoutRelations();
 
@@ -81,17 +95,23 @@ interface ModelContract
      * Fill the model with an array of attributes. Force mass assignment.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return $this
 =======
      * @param array<string, mixed> $attributes Gli attributi da assegnare al modello
      * @return static Il modello stesso
 >>>>>>> 0d55b583 (first)
+=======
+     * @param array<string, mixed> $attributes Gli attributi da assegnare al modello
+     * @return static Il modello stesso
+>>>>>>> e83070fd (.)
      */
     public function forceFill(array $attributes);
 
     /**
      * Save the model to the database.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @return bool
      */
@@ -101,6 +121,8 @@ interface ModelContract
          *
          * @return \Illuminate\Database\Eloquent\Model|$this
 =======
+=======
+>>>>>>> e83070fd (.)
      * @param array<string, mixed> $options Opzioni per il salvataggio
      * @return bool True se il salvataggio è avvenuto con successo, false altrimenti
      */
@@ -111,7 +133,10 @@ interface ModelContract
          *
          * @param array<string, mixed> $attributes Gli attributi da assegnare al modello
          * @return static Il nuovo modello creato
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
+=======
+>>>>>>> e83070fd (.)
 
         public function forceCreate(array $attributes);
         */
@@ -120,10 +145,14 @@ interface ModelContract
      * Convert the model instance to an array.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array
 =======
      * @return array<string, mixed> Il modello convertito in array
 >>>>>>> 0d55b583 (first)
+=======
+     * @return array<string, mixed> Il modello convertito in array
+>>>>>>> e83070fd (.)
      */
     public function toArray();
 
@@ -131,10 +160,14 @@ interface ModelContract
      * Get the value of the model's primary key.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return mixed|int|string
 =======
      * @return string|int|null Il valore della chiave primaria
 >>>>>>> 0d55b583 (first)
+=======
+     * @return string|int|null Il valore della chiave primaria
+>>>>>>> e83070fd (.)
      */
     public function getKey();
 
@@ -146,10 +179,14 @@ interface ModelContract
      * @param  mixed  $value
      * @param  string $boolean
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return $this
 =======
      * @return static
 >>>>>>> 0d55b583 (first)
+=======
+     * @return static
+>>>>>>> e83070fd (.)
 
     public function where($column, $operator = null, $value = null, $boolean = 'and');
     */

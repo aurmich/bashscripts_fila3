@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -16,11 +17,17 @@ namespace Modules\User\Http\Middleware;
 =======
 namespace Modules\Setting\Http\Middleware;
 >>>>>>> 9cec72d6 (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\User\Http\Middleware;
+>>>>>>> e83070fd (.)
 
 use Modules\Xot\Http\Middleware\XotBaseFilamentMiddleware;
 
 class FilamentMiddleware extends XotBaseFilamentMiddleware
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -121,4 +128,9 @@ class FilamentMiddleware extends Middleware
         return route($contextName . '.auth.login');
     }
 >>>>>>> dc18abbe (first)
+=======
+    public static string $module = 'User';
+
+    public static string $context = 'filament';
+>>>>>>> e83070fd (.)
 }

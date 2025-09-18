@@ -30,6 +30,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2891,6 +2892,8 @@ Power your Laravel application with **Module Xot Fila3**, a comprehensive multi-
 - **Dynamic Routing**: Seamlessly manage routing for different modules with ease.
 - **Filament 3 Compatible**: Fully compatible with Filament 3 admin panel interface.
 =======
+=======
+>>>>>>> e83070fd (.)
 # Module User Fila3 🔥 Ultimate User, Roles & Permissions Manager for FilamentPHP 🚀
 
 [![Latest Release](https://img.shields.io/github/v/release/laraxot/module_user_fila3)](https://github.com/laraxot/module_user_fila3/releases)
@@ -2905,12 +2908,16 @@ Manage users, roles, and permissions with lightning speed ⚡ through this Larav
 - **Dynamic Module Assignment**: Control user access to specific modules through `php artisan user:assign-module`. 🎯
 - **Complete Team Management**: Manage teams with simple commands like `php artisan team:create` and `php artisan team:assign-user`. 👥
 - **Permissions that Fit**: Set flexible roles and permissions to fit your app’s unique needs! 🔑
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
+=======
+>>>>>>> e83070fd (.)
 
 ---
 
 ### Installation Guide 💻
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 1. **Install via Composer:**
     ```bash
@@ -2920,10 +2927,16 @@ Manage users, roles, and permissions with lightning speed ⚡ through this Larav
     ```bash
     composer require laraxot/module_user_fila3
 >>>>>>> 0d55b583 (first)
+=======
+1. **Install the package via Composer:**
+    ```bash
+    composer require laraxot/module_user_fila3
+>>>>>>> e83070fd (.)
     ```
 
 2. **Run Migrations:**
     ```bash
+<<<<<<< HEAD
 <<<<<<< HEAD
     php artisan module:migrate Xot
     ```
@@ -2932,6 +2945,8 @@ Manage users, roles, and permissions with lightning speed ⚡ through this Larav
     ```bash
     php artisan vendor:publish --tag="module_xot_fila3-config"
 =======
+=======
+>>>>>>> e83070fd (.)
     php artisan module:migrate User
     ```
 
@@ -2943,13 +2958,17 @@ Manage users, roles, and permissions with lightning speed ⚡ through this Larav
 4. **Create First User:**
     ```bash
     php artisan make:filament-user
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
+=======
+>>>>>>> e83070fd (.)
     ```
 
 ---
 
 ### Supercharged Console Commands 🚀
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 Take full control with powerful artisan commands:
 
@@ -2971,6 +2990,8 @@ Take full control with powerful artisan commands:
     ```
     _Run migrations for a specific module without touching the others._
 =======
+=======
+>>>>>>> e83070fd (.)
 Leverage powerful artisan commands to boost your app’s user management capabilities:
 
 - **Create Super Admin:**
@@ -3000,12 +3021,16 @@ Leverage powerful artisan commands to boost your app’s user management capabil
     php artisan module:list
     ```
     _See all available modules and activate/deactivate them at will._
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
+=======
+>>>>>>> e83070fd (.)
 
 ---
 
 ### Configuration 🔧
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 Customize the behavior of your modules via the `module_xot_fila3.php` config file. Take control of routes, permissions, and much more!
 
@@ -3060,6 +3085,8 @@ Per aggiungere nuovi test:
 - **Q: Is this compatible with Filament 3?**
   A: Yes! Version 10.0.x and above are fully compatible with Filament 3, with all known issues resolved.
 =======
+=======
+>>>>>>> e83070fd (.)
 Easily configure the module in the `module_user_fila3.php` config file to suit your app's specific needs.
 
 ### FAQ ❓
@@ -3073,7 +3100,10 @@ Easily configure the module in the `module_user_fila3.php` config file to suit y
 ### Contribute 💪
 
 We 💖 open source! Want to improve this package? Fork the repo and submit a pull request.
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
+=======
+>>>>>>> e83070fd (.)
 
 ---
 
@@ -3090,6 +3120,7 @@ This package is open-sourced under the [MIT license](LICENSE).
 
 ---
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 **Boost your Laravel app with powerful modular capabilities using Module Xot Fila3!** 💥
 >>>>>>> 59bc4fe7 (first)
@@ -3154,6 +3185,8 @@ Join the revolution! If you want to contribute to the project, send us a pull re
 =======
 >>>>>>> d79d9e57 (first)
 =======
+=======
+>>>>>>> e83070fd (.)
 Give your Laravel app the **edge** it deserves with **Module User Fila3**. Try it now! 💥
 
 
@@ -3211,6 +3244,7 @@ php artisan user:assign-module
 L'account potrà accedere al modulo assegnato.
 
 ## [Gestione dei Team](docs/teams.md)
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
 php artisan module:migrate Setting
@@ -3291,3 +3325,5 @@ Una volta che i dati verranno caricati, il Personale potrà quindi stampare/espo
 =======
 # module_ptv_fila3
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> e83070fd (.)

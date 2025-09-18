@@ -3,6 +3,9 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e83070fd (.)
 namespace Modules\User\Models;
 
 /**
@@ -48,6 +51,7 @@ namespace Modules\User\Models;
  * @mixin \Eloquent
  */
 class Profile extends BaseProfile {}
+<<<<<<< HEAD
 =======
 namespace Modules\Ptv\Models;
 
@@ -223,3 +227,5 @@ class Profile extends UserBaseProfile
     }
 }
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> e83070fd (.)

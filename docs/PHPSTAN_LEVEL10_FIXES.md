@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Correzioni PHPStan Livello 10 - Modulo Lang
 
 Questo documento traccia gli errori PHPStan di livello 10 identificati nel modulo Lang e le relative soluzioni implementate.
@@ -417,6 +418,8 @@ Fino ad ora, abbiamo risolto la maggior parte degli errori di livello 10 in entr
 5. Aggiornare le linee guida di sviluppo per prevenire errori simili in futuro 
 >>>>>>> d79d9e57 (first)
 =======
+=======
+>>>>>>> e83070fd (.)
 # Correzioni PHPStan Livello 10 - Modulo User
 
 Questo documento traccia gli errori PHPStan di livello 10 identificati nel modulo User e le relative soluzioni implementate.
@@ -673,6 +676,7 @@ public function handle(Failed $event): void
 1. Continua l'utilizzo di queste pratiche in tutto il modulo User e in altri moduli.
 2. Considera l'uso di generics (come `@template`) per migliorare ulteriormente la tipizzazione delle classi che gestiscono diverse tipologie di dati.
 3. Mantieni aggiornata la documentazione quando vengono modificati metodi o proprietà.
+<<<<<<< HEAD
 4. Utilizza strumenti di analisi automatica come PHPStan regolarmente per verificare che il codice rimanga conforme. 
 >>>>>>> 0d55b583 (first)
 =======
@@ -741,3 +745,6 @@ Il modello `Media.php` contiene diverse proprietà documentate con tipo `mixed`:
 3. Eseguire l'analisi PHPStan a livello 10 per verificare che le correzioni risolvano effettivamente gli errori.
 4. Documentare pattern e soluzioni standard per gestire risorse di file e altri tipi speciali nel progetto. 
 >>>>>>> c986cc10 (first)
+=======
+4. Utilizza strumenti di analisi automatica come PHPStan regolarmente per verificare che il codice rimanga conforme. 
+>>>>>>> e83070fd (.)

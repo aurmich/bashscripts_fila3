@@ -6,8 +6,11 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'export_xls' => 'Esporta Dati',
 =======
+=======
+>>>>>>> e83070fd (.)
     'attach_user' => 'Collega Utente',
     'associate_user' => 'Associa Utente',
     'user_actions' => 'Azioni Utente',
@@ -23,6 +26,7 @@ return [
     'success_attached' => 'Utente collegato con successo',
     'success_detached' => 'Utente scollegato con successo',
     'success_deleted' => 'Utenti eliminati con successo',
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
     'add_attachment' => [
@@ -96,4 +100,6 @@ return [
         'mandatory_data' => '{1} Dato obbligatorio non presente|{2} 2 Dati obbligatori non presenti|{3} 3 Dati obbligatori non presenti|[4,*] Vari dati obbligatori non presenti',
     ],
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> e83070fd (.)
 ];

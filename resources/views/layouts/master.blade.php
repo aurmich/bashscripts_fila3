@@ -22,6 +22,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <html lang="en">
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -102,10 +103,14 @@
 =======
 <html lang="en">
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+<html lang="en">
+>>>>>>> e83070fd (.)
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -156,10 +161,13 @@
        {{-- <link rel="stylesheet" href="{{ mix('css/notify.css') }}"> --}}
 >>>>>>> d79d9e57 (first)
 =======
+=======
+>>>>>>> e83070fd (.)
         <title>Module User</title>
 
        {{-- Laravel Vite - CSS File --}}
        {{-- {{ module_vite('build-user', 'resources/assets/sass/app.scss') }} --}}
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
         <title>Module Setting</title>
@@ -298,11 +306,14 @@
 >>>>>>> dc18abbe (first)
 =======
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+>>>>>>> e83070fd (.)
 
     </head>
     <body>
         @yield('content')
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -538,3 +549,9 @@
 >>>>>>> dc18abbe (first)
 =======
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+        {{-- Laravel Vite - JS File --}}
+        {{-- {{ module_vite('build-user', 'resources/assets/js/app.js') }} --}}
+    </body>
+</html>
+>>>>>>> e83070fd (.)

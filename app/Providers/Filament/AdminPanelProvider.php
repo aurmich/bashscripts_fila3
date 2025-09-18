@@ -18,18 +18,22 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d79d9e57 (first)
 =======
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> e83070fd (.)
 /**
  * ---.
  */
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -67,6 +71,8 @@ use Illuminate\Support\Facades\Blade;
 use Modules\Xot\Datas\XotData;
 >>>>>>> d79d9e57 (first)
 =======
+=======
+>>>>>>> e83070fd (.)
 namespace Modules\User\Providers\Filament;
 
 use Filament\Navigation\MenuItem;
@@ -75,6 +81,7 @@ use Filament\Support\Facades\FilamentView;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\View;
 use Modules\User\Filament\Pages\MyProfilePage;
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
 declare(strict_types=1);
@@ -148,10 +155,13 @@ use Illuminate\Support\Facades\Blade;
 namespace Modules\Progressioni\Providers\Filament;
 
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+>>>>>>> e83070fd (.)
 use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 
 class AdminPanelProvider extends XotBasePanelProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -224,12 +234,18 @@ class AdminPanelProvider extends XotBasePanelProvider
 =======
     protected string $module = 'Media';
 >>>>>>> c986cc10 (first)
+=======
+    protected string $module = 'User';
+>>>>>>> e83070fd (.)
 
     public function panel(Panel $panel): Panel
     {
         $panel = parent::panel($panel);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e83070fd (.)
         FilamentView::registerRenderHook(
             'panels::auth.login.form.after',
             static fn (): string => Blade::render("@livewire('socialite.buttons')"),
@@ -285,6 +301,7 @@ class AdminPanelProvider extends XotBasePanelProvider
 
         return $panel;
     }
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
     protected string $module = 'Setting';
@@ -339,4 +356,6 @@ class AdminPanelProvider extends XotBasePanelProvider
 =======
     protected string $module = 'Progressioni';
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+>>>>>>> e83070fd (.)
 }

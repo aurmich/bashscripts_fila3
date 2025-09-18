@@ -33,6 +33,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ───────────────────────────────────────────────────────
 # Sistema operativo / File nascosti e metadata
 # ───────────────────────────────────────────────────────
@@ -594,6 +595,8 @@ vendor/
 .php-cs-fixer.cache
 >>>>>>> bbec4378 (first)
 =======
+=======
+>>>>>>> e83070fd (.)
 /vendor
 *.lock
 /build
@@ -606,6 +609,7 @@ vendor/
 *.cache
 package-lock.json
 .git-rewrite/
+<<<<<<< HEAD
 =======
 *.cache
 .git-blame-ignore-revs
@@ -623,11 +627,14 @@ package-lock.json
 .git-rewrite/
 .php-cs-fixer.cache
 >>>>>>> 9cec72d6 (first)
+=======
+>>>>>>> e83070fd (.)
 node_modules
 .git-blame-ignore-revs
 .git-blame-ignore-revs
 node_modules
 vendor
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 .git-blame-ignore-revs
@@ -638,12 +645,16 @@ node_modules
 vendor
 .git-blame-ignore-revs
 >>>>>>> 2df6fbc8 (first)
+=======
+.git-blame-ignore-revs
+>>>>>>> e83070fd (.)
 build/
 vendor/
 build/
 node_modules
 docs/cache/
 cache/
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -766,11 +777,14 @@ cache/
 *:Zone.Identifier
 >>>>>>> d79d9e57 (first)
 =======
+=======
+>>>>>>> e83070fd (.)
 .git-blame-ignore-revs
 .php-cs-fixer.cache
 build
 *.exe
 *:Zone.Identifier
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
 .git-blame-ignore-revs
@@ -975,3 +989,5 @@ public_html/plugins/
 >>>>>>> 5a1e0641 (.)
 =======
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+>>>>>>> e83070fd (.)

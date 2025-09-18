@@ -29,6 +29,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('rating::layouts.master')
 =======
 @extends('xot::layouts.app')
@@ -123,10 +124,14 @@
 =======
 @extends('progressioni::layouts.master')
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+@extends('user::layouts.master')
+>>>>>>> e83070fd (.)
 
 @section('content')
     <h1>Hello World</h1>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -337,3 +342,9 @@
 >>>>>>> dc18abbe (first)
 =======
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+    <p>
+        This view is loaded from module: {!! config('user.name') !!}
+    </p>
+@endsection
+>>>>>>> e83070fd (.)

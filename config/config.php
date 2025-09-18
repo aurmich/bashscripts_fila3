@@ -16,6 +16,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -77,12 +78,18 @@ return [
         'sort' => 70,
 >>>>>>> d79d9e57 (first)
 =======
+=======
+declare(strict_types=1);
+
+return [
+>>>>>>> e83070fd (.)
     'name' => 'User',
     'description' => 'Modulo per la gestione degli utenti e autorizzazioni',
     'icon' => 'heroicon-o-users',
     'navigation' => [
         'enabled' => true,
         'sort' => 100,
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
     'name' => 'Media',
@@ -100,12 +107,15 @@ return [
         'enabled' => true,
         'sort' => 80,
 >>>>>>> 8fc3049b (first)
+=======
+>>>>>>> e83070fd (.)
     ],
     'routes' => [
         'enabled' => true,
         'middleware' => ['web', 'auth'],
     ],
     'providers' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -285,4 +295,8 @@ return [
 >>>>>>> dc18abbe (first)
 =======
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+        'Modules\\User\\Providers\\UserServiceProvider',
+    ],
+>>>>>>> e83070fd (.)
 ];

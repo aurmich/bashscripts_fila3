@@ -1,10 +1,13 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 
 >>>>>>> 8fc3049b (first)
+=======
+>>>>>>> e83070fd (.)
 $finder = PhpCsFixer\Finder::create()
     ->notPath('bootstrap/cache')
     ->notPath('storage')
@@ -14,6 +17,7 @@ $finder = PhpCsFixer\Finder::create()
     ->notName('*.blade.php')
     ->ignoreDotFiles(true)
     ->ignoreVCS(true)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -44,6 +48,8 @@ $finder = PhpCsFixer\Finder::create()
 >>>>>>> 2df6fbc8 (first)
 =======
 >>>>>>> 8fc3049b (first)
+=======
+>>>>>>> e83070fd (.)
 
 $config = new PhpCsFixer\Config();
 
@@ -56,10 +62,14 @@ $config
         'declare_strict_types' => true,
         'combine_consecutive_unsets' => true,
 <<<<<<< HEAD
+<<<<<<< HEAD
         //'binary_operator_spaces' => ['align_double_arrow' => false],
 =======
         // 'binary_operator_spaces' => ['align_double_arrow' => false],
 >>>>>>> 8fc3049b (first)
+=======
+        //'binary_operator_spaces' => ['align_double_arrow' => false],
+>>>>>>> e83070fd (.)
         'array_syntax' => ['syntax' => 'short'],
         'linebreak_after_opening_tag' => true,
         'not_operator_with_successor_space' => true,
@@ -84,6 +94,7 @@ $config
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ;
 =======
 >>>>>>> 59bc4fe7 (first)
@@ -109,3 +120,7 @@ return $config;
 
 return $config;
 >>>>>>> 8fc3049b (first)
+=======
+
+return $config;
+>>>>>>> e83070fd (.)

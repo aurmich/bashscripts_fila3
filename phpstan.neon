@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e83070fd (.)
 includes:
     - ./phpstan-baseline.neon
     - ./../../vendor/larastan/larastan/extension.neon
@@ -57,6 +60,7 @@ parameters:
     checkOctaneCompatibility: false
     checkModelProperties: false
 
+<<<<<<< HEAD
 =======
 parameters:
     level: 4
@@ -74,3 +78,5 @@ parameters:
     bootstrapFiles:
         - ../../vendor/autoload.php 
 >>>>>>> 961ad402 (first)
+=======
+>>>>>>> e83070fd (.)

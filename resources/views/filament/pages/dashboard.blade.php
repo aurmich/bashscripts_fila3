@@ -11,6 +11,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <x-filament-panels::page class="fi-dashboard-page">
     {{--
     @if (method_exists($this, 'filtersForm'))
@@ -91,3 +92,8 @@
 >>>>>>> dc18abbe (first)
 =======
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+<x-filament::page>
+
+</x-filament::page>
+>>>>>>> e83070fd (.)

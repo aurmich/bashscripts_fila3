@@ -11,9 +11,13 @@
             */
         @endphp
 <<<<<<< HEAD
+<<<<<<< HEAD
         {{ $record-> }}
 =======
         {{ $record?->id }}
 >>>>>>> b7483fd0 (first)
+=======
+        {{ $record-> }}
+>>>>>>> e83070fd (.)
     </x-filament::card>
 </x-filament::widget>

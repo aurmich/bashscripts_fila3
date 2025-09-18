@@ -9,6 +9,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Rector\Config\RectorConfig;
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -47,10 +48,14 @@ use Rector\Set\ValueObject\SetList;
 =======
 use Rector\Config\RectorConfig;
 >>>>>>> 0d55b583 (first)
+=======
+use Rector\Config\RectorConfig;
+>>>>>>> e83070fd (.)
 use Rector\PHPUnit\Set\PHPUnitLevelSetList;
 use Rector\Set\ValueObject\LevelSetList;
 use Rector\TypeDeclaration\Rector\ClassMethod\ReturnTypeFromStrictNativeCallRector;
 use Rector\TypeDeclaration\Rector\ClassMethod\ReturnTypeFromStrictScalarReturnExprRector;
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> a8f30311 (first)
 =======
@@ -74,11 +79,14 @@ use RectorLaravel\Rector\MethodCall\RedirectRouteToToRouteHelperRector;
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> 9cec72d6 (first)
+=======
+>>>>>>> e83070fd (.)
 use RectorLaravel\Set\LaravelSetList;
 
 return static function (RectorConfig $rectorConfig): void {
     $rectorConfig->paths(
         [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -137,6 +145,9 @@ return static function (RectorConfig $rectorConfig): void {
             __DIR__.'/vendor',
             __DIR__.'/docs',
 >>>>>>> 9cec72d6 (first)
+=======
+            __DIR__,
+>>>>>>> e83070fd (.)
         ]
     );
 
@@ -146,22 +157,29 @@ return static function (RectorConfig $rectorConfig): void {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     // $rectorConfig->rule(RedirectRouteToToRouteHelperRector::class);
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> e83070fd (.)
     // $rectorConfig->rule(RedirectRouteToToRouteHelperRector::class);
     // $rectorConfig->rules([
     //    ReturnTypeFromStrictNativeCallRector::class,
     //    ReturnTypeFromStrictScalarReturnExprRector::class,
     // ]);
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
+=======
+>>>>>>> e83070fd (.)
     $rectorConfig->rules(
         [
             ReturnTypeFromStrictNativeCallRector::class,
             ReturnTypeFromStrictScalarReturnExprRector::class,
         ]
     );
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> a8f30311 (first)
 =======
@@ -175,11 +193,14 @@ return static function (RectorConfig $rectorConfig): void {
 =======
     $rectorConfig->rule(RedirectRouteToToRouteHelperRector::class);
 >>>>>>> 9cec72d6 (first)
+=======
+>>>>>>> e83070fd (.)
 
     // define sets of rules
     $rectorConfig->sets(
         [
             PHPUnitLevelSetList::UP_TO_PHPUNIT_100,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -214,6 +235,8 @@ return static function (RectorConfig $rectorConfig): void {
             // SetList::CODING_STYLE,
             // SetList::PRIVATIZATION,//problemi con final
 =======
+=======
+>>>>>>> e83070fd (.)
             // SetList::DEAD_CODE,
             // SetList::CODE_QUALITY,
             LevelSetList::UP_TO_PHP_81,
@@ -223,17 +246,21 @@ return static function (RectorConfig $rectorConfig): void {
             // SetList::TYPE_DECLARATION,  //------------------------ vedere cosa fa
             // SetList::CODING_STYLE,
             // SetList::PRIVATIZATION, //error "final class"
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
             // SetList::TYPE_DECLARATION,
             // SetList::CODING_STYLE,
             // SetList::PRIVATIZATION,//problemi con final
 >>>>>>> 9cec72d6 (first)
+=======
+>>>>>>> e83070fd (.)
             // SetList::EARLY_RETURN,
             // SetList::INSTANCEOF,
         ]
     );
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     $rectorConfig->importNames();
@@ -303,6 +330,8 @@ return static function (RectorConfig $rectorConfig): void {
 =======
 >>>>>>> d79d9e57 (first)
 =======
+=======
+>>>>>>> e83070fd (.)
     $rectorConfig->skip(
         [
             // testdummy files
@@ -316,6 +345,7 @@ return static function (RectorConfig $rectorConfig): void {
 
     $rectorConfig->importNames();
 };
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
     $rectorConfig->importNames();
@@ -389,3 +419,5 @@ return static function (RectorConfig $rectorConfig): void {
 >>>>>>> 8fc3049b (first)
 =======
 >>>>>>> 7e417e87 (first)
+=======
+>>>>>>> e83070fd (.)

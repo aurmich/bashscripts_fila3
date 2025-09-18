@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Correzioni PHPStan Livello 7 - Modulo Xot
 
 Questo documento traccia gli errori PHPStan di livello 7 identificati nel modulo Xot e le relative soluzioni implementate.
@@ -194,6 +195,8 @@ Cannot call method dispatch() on class-string|object.
 Cannot call method resetTable() on class-string|object.
 >>>>>>> a8f30311 (first)
 =======
+=======
+>>>>>>> e83070fd (.)
 # Correzioni PHPStan Livello 7 - Modulo User
 
 Questo documento traccia gli errori PHPStan di livello 7 identificati nel modulo User e le relative soluzioni implementate.
@@ -208,6 +211,7 @@ Line 49: PHPDoc tag @method for method Modules\User\Models\Profile::role() retur
 Line 49: PHPDoc tag @method for method Modules\User\Models\Profile::withExtraAttributes() return type contains unknown class Modules\User\Models\Builder.
 Line 49: PHPDoc tag @method for method Modules\User\Models\Profile::withoutPermission() return type contains unknown class Modules\User\Models\Builder.
 Line 49: PHPDoc tag @method for method Modules\User\Models\Profile::withoutRole() return type contains unknown class Modules\User\Models\Builder.
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
 # Correzioni PHPStan Livello 7 - Modulo Media
@@ -221,10 +225,13 @@ Questo documento traccia gli errori PHPStan di livello 7 identificati nel modulo
 ```
 Line 141: Parameter #2 $length of function Safe\fread expects int<1, max>, int given.
 >>>>>>> c986cc10 (first)
+=======
+>>>>>>> e83070fd (.)
 ```
 
 ## Soluzioni Implementate
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -918,6 +925,8 @@ L'aggiunta dell'annotazione `@phpstan-var` fornisce a PHPStan un'informazione pi
 Questo approccio è più robusto e previene errori a runtime quando l'oggetto `$livewire` non ha i metodi o le proprietà previste.
 >>>>>>> a8f30311 (first)
 =======
+=======
+>>>>>>> e83070fd (.)
 ### 1. Correzione in Profile.php
 
 Il problema è che i tag PHPDoc facevano riferimento a una classe `Builder` nel namespace `Modules\User\Models` che non esiste. Abbiamo corretto i riferimenti utilizzando il namespace completo per la classe Builder:
@@ -935,8 +944,12 @@ Il problema è che i tag PHPDoc facevano riferimento a una classe `Builder` nel 
  */
 ```
 
+<<<<<<< HEAD
 Questo garantisce che PHPStan possa risolvere correttamente il tipo `Builder` utilizzando il namespace completo `\Illuminate\Database\Eloquent\Builder`. 
 >>>>>>> 0d55b583 (first)
 =======
 Questo controllo garantisce che `fread()` venga chiamato solo con un valore positivo per il parametro `$length`, evitando anche potenziali loop infiniti nel caso in cui `$bytesToRead` fosse zero o negativo. 
 >>>>>>> c986cc10 (first)
+=======
+Questo garantisce che PHPStan possa risolvere correttamente il tipo `Builder` utilizzando il namespace completo `\Illuminate\Database\Eloquent\Builder`. 
+>>>>>>> e83070fd (.)

@@ -24,6 +24,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Rating\Models;
 
 use Illuminate\Database\Eloquent\Model;
@@ -67,10 +68,14 @@ namespace Modules\Progressioni\Models;
 =======
 namespace Modules\Progressioni\Models;
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+namespace Modules\User\Models;
+>>>>>>> e83070fd (.)
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -168,10 +173,15 @@ use Modules\Xot\Traits\Updater;
 >>>>>>> 8e6e7d4c (first)
 =======
 >>>>>>> 4658bb86 (first)
+=======
+use Modules\Xot\Models\Traits\RelationX;
+use Modules\Xot\Traits\Updater;
+>>>>>>> e83070fd (.)
 
 /**
  * Class BaseModel.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -239,10 +249,13 @@ abstract class BaseModel extends Model implements HasMedia
     use InteractsWithMedia;
 >>>>>>> d79d9e57 (first)
 =======
+=======
+>>>>>>> e83070fd (.)
 abstract class BaseModel extends Model
 {
     use HasFactory;
     use RelationX;
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
 abstract class BaseModel extends Model
@@ -270,11 +283,14 @@ abstract class BaseModel extends Model
     use HasFactory;
     use RelationX;
 >>>>>>> 15ea09e2 (first)
+=======
+>>>>>>> e83070fd (.)
     use Updater;
 
     /**
      * Indicates whether attributes are snake cased on arrays.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -316,11 +332,15 @@ abstract class BaseModel extends Model
 =======
      * @see https://laravel-news.com/6-eloquent-secrets
 >>>>>>> 15ea09e2 (first)
+=======
+     * @see https://laravel-news.com/6-eloquent-secrets
+>>>>>>> e83070fd (.)
      *
      * @var bool
      */
     public static $snakeAttributes = true;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -349,6 +369,8 @@ abstract class BaseModel extends Model
 >>>>>>> 8fc3049b (first)
 =======
 >>>>>>> 15ea09e2 (first)
+=======
+>>>>>>> e83070fd (.)
     /** @var bool */
     public $incrementing = true;
 
@@ -359,6 +381,7 @@ abstract class BaseModel extends Model
     protected $perPage = 30;
 
     /** @var string */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -433,10 +456,14 @@ abstract class BaseModel extends Model
         ];
     }
 >>>>>>> 15ea09e2 (first)
+=======
+    protected $connection = 'user';
+>>>>>>> e83070fd (.)
 
     /** @var list<string> */
     protected $appends = [];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -459,10 +486,13 @@ abstract class BaseModel extends Model
 >>>>>>> c986cc10 (first)
 =======
 >>>>>>> 8fc3049b (first)
+=======
+>>>>>>> e83070fd (.)
     /** @var string */
     protected $primaryKey = 'id';
 
     /** @var string */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -676,10 +706,16 @@ abstract class BaseModel extends Model
 >>>>>>> 4658bb86 (first)
 =======
 >>>>>>> dc18abbe (first)
+=======
+    protected $keyType = 'string';
+
+    /** @var list<string> */
+>>>>>>> e83070fd (.)
     protected $hidden = [
         // 'password'
     ];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -720,20 +756,26 @@ abstract class BaseModel extends Model
 =======
 =======
 >>>>>>> 15ea09e2 (first)
+=======
+>>>>>>> e83070fd (.)
     /**
      * @see vendor/ laravel / framework / src / Illuminate / Database / Eloquent / Factories / HasFactory.php
      * Create a new factory instance for the model.
      *
      * @return Factory<static>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> 15ea09e2 (first)
+=======
+>>>>>>> e83070fd (.)
      */
     protected static function newFactory()
     {
         return app(\Modules\Xot\Actions\Factory\GetFactoryAction::class)->execute(static::class);
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     /** @return array<string, string> */
@@ -766,10 +808,16 @@ abstract class BaseModel extends Model
     /** @return array<string, string> */
     protected function casts(): array
 >>>>>>> c986cc10 (first)
+=======
+
+    /** @return array<string, string> */
+    protected function casts(): array
+>>>>>>> e83070fd (.)
     {
         return [
             'id' => 'string',
             'uuid' => 'string',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -807,11 +855,16 @@ abstract class BaseModel extends Model
             'verified_at' => 'datetime',
 >>>>>>> d79d9e57 (first)
 =======
+=======
+>>>>>>> e83070fd (.)
 
             'published_at' => 'datetime',
             'verified_at' => 'datetime',
 
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
+=======
+>>>>>>> e83070fd (.)
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
             'deleted_at' => 'datetime',
@@ -819,6 +872,7 @@ abstract class BaseModel extends Model
             'updated_by' => 'string',
             'created_by' => 'string',
             'deleted_by' => 'string',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1096,4 +1150,8 @@ abstract class BaseModel extends Model
 >>>>>>> dc18abbe (first)
 =======
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+        ];
+    }
+>>>>>>> e83070fd (.)
 }

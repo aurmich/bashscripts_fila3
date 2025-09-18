@@ -13,6 +13,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <!-- Cubo base -->
     <path stroke-linecap="round" 
           stroke-linejoin="round" 
@@ -106,6 +107,8 @@
           d="M18.5 5.5c.5-.5 1-1 1-1" />
 >>>>>>> d79d9e57 (first)
 =======
+=======
+>>>>>>> e83070fd (.)
     <!-- Utente principale -->
     <circle cx="12" cy="8" r="3" />
     <path stroke-linecap="round" 
@@ -123,6 +126,7 @@
     <path stroke-linecap="round" 
           stroke-linejoin="round" 
           d="M20 14c.5-1.5 1-2 2-2" />
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
     <!-- Cornice foto principale -->
@@ -166,4 +170,6 @@
           stroke-linejoin="round" 
           d="M6 10h-2M20 10h2M3 10h22" />
 >>>>>>> 8fc3049b (first)
+=======
+>>>>>>> e83070fd (.)
 </svg> 

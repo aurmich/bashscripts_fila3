@@ -11,6 +11,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 =======
@@ -37,6 +38,8 @@ declare(strict_types=1);
 declare(strict_types=1);
 
 >>>>>>> 8fc3049b (first)
+=======
+>>>>>>> e83070fd (.)
 $finder = PhpCsFixer\Finder::create()
     ->notPath('bootstrap/cache')
     ->notPath('storage')
@@ -46,6 +49,7 @@ $finder = PhpCsFixer\Finder::create()
     ->notName('*.blade.php')
     ->ignoreDotFiles(true)
     ->ignoreVCS(true)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -76,6 +80,8 @@ $finder = PhpCsFixer\Finder::create()
 >>>>>>> 2df6fbc8 (first)
 =======
 >>>>>>> 8fc3049b (first)
+=======
+>>>>>>> e83070fd (.)
 
 $config = new PhpCsFixer\Config();
 
@@ -83,6 +89,7 @@ $config
     ->setRules([
         '@Symfony' => true,
         'array_indentation' => true,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -117,6 +124,8 @@ $config
 >>>>>>> 2df6fbc8 (first)
 =======
 >>>>>>> 8fc3049b (first)
+=======
+>>>>>>> e83070fd (.)
         'function_typehint_space' => true,
         'declare_equal_normalize' => true,
         'declare_strict_types' => true,
@@ -132,6 +141,7 @@ $config
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         // 'binary_operator_spaces' => ['align_double_arrow' => false],
 =======
         //'binary_operator_spaces' => ['align_double_arrow' => false],
@@ -166,6 +176,9 @@ $config
 =======
         // 'binary_operator_spaces' => ['align_double_arrow' => false],
 >>>>>>> 8fc3049b (first)
+=======
+        //'binary_operator_spaces' => ['align_double_arrow' => false],
+>>>>>>> e83070fd (.)
         'array_syntax' => ['syntax' => 'short'],
         'linebreak_after_opening_tag' => true,
         'not_operator_with_successor_space' => true,
@@ -181,6 +194,7 @@ $config
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         'phpdoc_order' => true,
 >>>>>>> 164b8363 (Squashed 'laravel/Modules/Rating/' content from commit e5c84117)
@@ -214,6 +228,9 @@ $config
 =======
         'phpdoc_order' => true,
 >>>>>>> 8fc3049b (first)
+=======
+        'phpdoc_order' => true,
+>>>>>>> e83070fd (.)
         'php_unit_construct' => false,
         'braces' => [
             'position_after_functions_and_oop_constructs' => 'same',
@@ -222,6 +239,7 @@ $config
         'blank_line_after_namespace' => true,
         'class_definition' => true,
         'elseif' => true,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -307,3 +325,9 @@ return $config;
 >>>>>>> 2df6fbc8 (first)
 =======
 >>>>>>> 8fc3049b (first)
+=======
+    ])
+    ->setFinder($finder)
+
+return $config;
+>>>>>>> e83070fd (.)

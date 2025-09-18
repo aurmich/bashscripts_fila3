@@ -25,6 +25,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -342,6 +343,10 @@ class EventServiceProvider extends BaseEventServiceProvider
     }
 >>>>>>> d79d9e57 (first)
 =======
+=======
+declare(strict_types=1);
+
+>>>>>>> e83070fd (.)
 namespace Modules\User\Providers;
 
 use Illuminate\Auth\Events\Failed;
@@ -380,6 +385,7 @@ class EventServiceProvider extends ServiceProvider
             OtherDeviceLogoutListener::class,
         ],
     ];
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
     protected function configureEmailVerification(): void
@@ -463,4 +469,6 @@ class EventServiceProvider extends ServiceProvider
 =======
     protected function configureEmailVerification(): void {}
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+>>>>>>> e83070fd (.)
 }

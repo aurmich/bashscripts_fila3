@@ -4,8 +4,11 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
     'failed' => 'Le credenziali non corrispondono a quelle registrate!',
 =======
+=======
+>>>>>>> e83070fd (.)
     'login-via' => 'Accedi con',
 
     'login-failed' => 'Login fallito, riprova.',
@@ -82,7 +85,10 @@ return [
         ],
     ],
     'failed' => 'Le credenziali non corrispondono a quelle registrate.',
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
+=======
+>>>>>>> e83070fd (.)
     'general_error' => 'Non hai diritti sufficienti per questa operazione.',
     'socialite' => [
         'unacceptable' => ':provider non è supportato.',
@@ -90,7 +96,10 @@ return [
     'throttle' => 'Troppi tentativi di login. Si prega di riprovare tra :seconds secondi.',
     'unknown' => 'Si è verificato un errore sconosciuto',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> e83070fd (.)
     'Reset password' => 'Reimposta la password',
     'Send password reset link' => 'Invia link per reimpostare la password',
     'Confirm Password' => 'Conferma Password',
@@ -98,5 +107,8 @@ return [
     'Resend Verification Email' => 'Rinvia Email di Verifica',
     'Verify Your Email Address' => 'Verifica la tua email',
     'A fresh verification link has been sent to your email address.' => 'Un nuovo link di verifica è stato inviato al tuo indirizzo email.',
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
+=======
+>>>>>>> e83070fd (.)
 ];

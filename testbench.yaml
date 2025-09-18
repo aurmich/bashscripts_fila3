@@ -27,6 +27,7 @@ providers:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Modules\Rating\Providers\RatingServiceProvider
 =======
   - Modules\Xot\Providers\XotServiceProvider
@@ -120,3 +121,7 @@ providers:
 =======
   - Modules\User\Providers\UserServiceProvider
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+  - Modules\User\Providers\UserServiceProvider
+  - Modules\User\Providers\Filament\AdminPanelProvider
+>>>>>>> e83070fd (.)

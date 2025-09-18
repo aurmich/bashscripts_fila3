@@ -5,6 +5,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Notify\Models;
 =======
 namespace Modules\User\Models;
@@ -12,6 +13,9 @@ namespace Modules\User\Models;
 =======
 namespace Modules\Incentivi\Models;
 >>>>>>> 15ea09e2 (first)
+=======
+namespace Modules\User\Models;
+>>>>>>> e83070fd (.)
 
 use Illuminate\Database\Eloquent\Relations\Pivot;
 // //use Laravel\Scout\Searchable;
@@ -41,6 +45,7 @@ abstract class BasePivot extends Pivot
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     // use Searchable;
     /** @var string */
     protected $connection = 'notify';
@@ -56,11 +61,18 @@ abstract class BasePivot extends Pivot
     /** @var string */
     protected $connection = 'incentivi';
 >>>>>>> 15ea09e2 (first)
+=======
+    /** @var string */
+    protected $connection = 'user';
+>>>>>>> e83070fd (.)
 
     /** @var list<string> */
     protected $appends = [];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e83070fd (.)
     /**
      * Undocumented variable.
      */
@@ -71,6 +83,7 @@ abstract class BasePivot extends Pivot
     protected $keyType = 'string';
 
     /** @return array<string, string> */
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     /** @return array<string, string> */
@@ -83,13 +96,18 @@ abstract class BasePivot extends Pivot
             'uuid' => 'string',
 
 =======
+=======
+>>>>>>> e83070fd (.)
     protected function casts(): array
     {
         return [
             'id' => 'string', // must be string else primary key of related model will be typed as int
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> 15ea09e2 (first)
+=======
+>>>>>>> e83070fd (.)
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
             'deleted_at' => 'datetime',
@@ -99,6 +117,7 @@ abstract class BasePivot extends Pivot
             'deleted_by' => 'string',
         ];
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -122,4 +141,6 @@ abstract class BasePivot extends Pivot
 {
     protected $connection = 'indennita_condizioni_lavoro'; // this will use the specified database connection
 >>>>>>> b7483fd0 (first)
+=======
+>>>>>>> e83070fd (.)
 }

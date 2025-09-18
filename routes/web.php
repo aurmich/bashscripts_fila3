@@ -26,6 +26,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -46,6 +47,8 @@ declare(strict_types=1);
 >>>>>>> c088001a (first)
 =======
 =======
+=======
+>>>>>>> e83070fd (.)
 /**
  * @see https://github.com/DutchCodingCompany/filament-socialite/blob/main/routes/web.php
  */
@@ -55,6 +58,7 @@ declare(strict_types=1);
 use Illuminate\Support\Facades\Route;
 use Modules\Xot\Datas\XotData;
 
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
 declare(strict_types=1);
@@ -69,6 +73,8 @@ use Illuminate\Support\Facades\Route;
 use Modules\Incentivi\Http\Controllers\PdfDownloadController;
 
 >>>>>>> 15ea09e2 (first)
+=======
+>>>>>>> e83070fd (.)
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -83,10 +89,13 @@ use Modules\Incentivi\Http\Controllers\PdfDownloadController;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 // Filament will handle all routes for this module
 >>>>>>> d79d9e57 (first)
 =======
+=======
+>>>>>>> e83070fd (.)
 /*
 Route::prefix('user')->group(function() {
     Route::get('/', 'UserController@index');
@@ -139,6 +148,7 @@ if (XotData::make()->register_pub_theme) {
 }
 
 Route::get('/upgrade', 'UpgradeController');
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
 
@@ -224,3 +234,5 @@ declare(strict_types=1);
 =======
 declare(strict_types=1);
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+>>>>>>> e83070fd (.)

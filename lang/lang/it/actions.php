@@ -4,8 +4,11 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
     'export_xls' => 'Esporta Dati',
 =======
+=======
+>>>>>>> e83070fd (.)
     'attach_user' => 'Collega Utente',
     'associate_user' => 'Associa Utente',
     'user_actions' => 'Azioni Utente',
@@ -21,5 +24,8 @@ return [
     'success_attached' => 'Utente collegato con successo',
     'success_detached' => 'Utente scollegato con successo',
     'success_deleted' => 'Utenti eliminati con successo',
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
+=======
+>>>>>>> e83070fd (.)
 ];

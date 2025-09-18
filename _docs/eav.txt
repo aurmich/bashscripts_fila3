@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://github.com/yemenpoint/filament-custom-fields
 
 =======
+=======
+>>>>>>> e83070fd (.)
 https://laraveldaily.com/post/laravel-custom-fields-json-eav-model-same-table 
 
 
@@ -27,4 +30,7 @@ https://learn.userfrosting.com/recipes/extending-the-user-model
 
 
 
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
+=======
+>>>>>>> e83070fd (.)

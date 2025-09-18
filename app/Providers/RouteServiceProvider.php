@@ -31,6 +31,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 /**
@@ -214,10 +215,17 @@ namespace Modules\Ptv\Providers;
 >>>>>>> dc18abbe (first)
 =======
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+declare(strict_types=1);
+
+namespace Modules\User\Providers;
+
+>>>>>>> e83070fd (.)
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -446,10 +454,14 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider {
 
     protected string $moduleNamespace = 'Modules\Progressioni\Http\Controllers';
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+    protected string $moduleNamespace = 'Modules\User\Http\Controllers';
+>>>>>>> e83070fd (.)
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -768,4 +780,8 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 >>>>>>> dc18abbe (first)
 =======
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+
+    public string $name = 'User';
+>>>>>>> e83070fd (.)
 }

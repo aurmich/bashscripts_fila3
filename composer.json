@@ -32,6 +32,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "laraxot/bashscripts_fila3",
     "description": "Script di utilità per la gestione dei repository Git, Toolkit di automazione Git per progetti Laravel",
     "type": "library",
@@ -357,10 +358,15 @@
     "name": "provtv/module_ptv_fila3",
     "description": "notify module dedicated to managing notifications",
 >>>>>>> dc18abbe (first)
+=======
+    "name": "laraxot/module_user_fila3",
+    "description": "user module for user management",
+>>>>>>> e83070fd (.)
     "keywords": [
         "laraxot",
         "laravel",
         "filament",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -389,6 +395,8 @@
     "homepage": "https://github.com/laraxot/module_notify_fila3.git",
 >>>>>>> d79d9e57 (first)
 =======
+=======
+>>>>>>> e83070fd (.)
         "module_user",
         "Laravel",
         "User module",
@@ -397,6 +405,7 @@
         "Xot"
     ],
     "homepage": "https://github.com/laraxot/module_user_fila3",
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
         "module_media",
@@ -408,10 +417,13 @@
     ],
     "homepage": "https://github.com/laraxot/module_media_fila3.git",
 >>>>>>> c986cc10 (first)
+=======
+>>>>>>> e83070fd (.)
     "license": "MIT",
     "authors": [
         {
             "name": "Marco Sottana",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -460,11 +472,15 @@
             "type": "path",
             "url": "../Xot"
 >>>>>>> 8fc3049b (first)
+=======
+            "email": "marco.sottana@gmail.com"
+>>>>>>> e83070fd (.)
         }
     ],
     "extra": {
         "laravel": {
             "providers": [
+<<<<<<< HEAD
 <<<<<<< HEAD
                 "Livewire\\LivewireServiceProvider",
                 "Modules\\User\\Providers\\UserServiceProvider",
@@ -478,12 +494,18 @@
                 "Modules\\Tenant\\Providers\\TenantServiceProvider",
                 "Modules\\Tenant\\Providers\\Filament\\AdminPanelProvider"
 >>>>>>> 8fc3049b (first)
+=======
+                "Livewire\\LivewireServiceProvider",
+                "Modules\\User\\Providers\\UserServiceProvider",
+                "Modules\\User\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> e83070fd (.)
             ],
             "aliases": {}
         }
     },
     "autoload": {
         "psr-4": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -505,6 +527,8 @@
         "symfony/http-client": "*",
         "symfony/postmark-mailer": "*"
 =======
+=======
+>>>>>>> e83070fd (.)
             "Modules\\User\\": "app/",
             "Modules\\User\\Database\\Factories\\": "database/factories/",
             "Modules\\User\\Database\\Seeders\\": "database/seeders/"
@@ -516,6 +540,7 @@
         "laravel/passport": "*",
         "socialiteproviders/auth0": "*",
         "spatie/laravel-personal-data-export": "*"
+<<<<<<< HEAD
 >>>>>>> 0d55b583 (first)
 =======
 
@@ -610,12 +635,15 @@
     "require": {
         "spatie/laravel-sluggable": "*"
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+>>>>>>> e83070fd (.)
     },
     "require-dev": {},
     "repositories": [
         {
             "type": "path",
             "url": "../Xot"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -680,6 +708,8 @@
 >>>>>>> dc18abbe (first)
 =======
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+>>>>>>> e83070fd (.)
         },
         {
             "type": "path",
@@ -687,6 +717,7 @@
         },
         {
             "type": "path",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -719,11 +750,14 @@
 =======
 =======
 >>>>>>> 0d55b583 (first)
+=======
+>>>>>>> e83070fd (.)
             "url": "../UI"
         }
     ],
     "scripts": {
         "post-autoload-dump1": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> d79d9e57 (first)
 =======
@@ -756,6 +790,8 @@
     "scripts": {
         "post-autoload-dump_comment": [
 >>>>>>> dc18abbe (first)
+=======
+>>>>>>> e83070fd (.)
             "@php vendor/bin/testbench package:discover --ansi"
         ],
         "post-update-cmd": [
@@ -765,6 +801,7 @@
         "test": "./vendor/bin/pest --no-coverage",
         "test-coverage": "vendor/bin/pest --coverage-html coverage",
         "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1243,10 +1280,13 @@
 >>>>>>> dc18abbe (first)
 =======
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+>>>>>>> e83070fd (.)
     },
     "config": {
         "sort-packages": true,
         "allow-plugins": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1372,10 +1412,14 @@
             "phpstan/extension-installer": true,
             "pestphp/pest-plugin": true,
 >>>>>>> 8fc3049b (first)
+=======
+            "pestphp/pest-plugin": true,
+>>>>>>> e83070fd (.)
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "wikimedia/composer-merge-plugin": true
         }
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1784,3 +1828,8 @@
     "prefer-stable": true
 }
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+>>>>>>> e83070fd (.)

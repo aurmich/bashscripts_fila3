@@ -19,6 +19,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 const dotenvExpand = require('dotenv-expand');
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -121,10 +122,15 @@ dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/}));
 const dotenvExpand = require('dotenv-expand');
 dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/}));
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+const dotenvExpand = require('dotenv-expand');
+dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/ }));
+>>>>>>> e83070fd (.)
 
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -238,10 +244,13 @@ export default defineConfig(
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> 8fc3049b (first)
+=======
+>>>>>>> e83070fd (.)
 export default defineConfig(
     {
         build: {
             outDir: '../../public/build-user',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> c088001a (first)
@@ -264,10 +273,13 @@ export default defineConfig(
 >>>>>>> c986cc10 (first)
 =======
 >>>>>>> 8fc3049b (first)
+=======
+>>>>>>> e83070fd (.)
             emptyOutDir: true,
             manifest: true,
         },
         plugins: [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -290,11 +302,16 @@ export default defineConfig(
                     buildDirectory: 'build-media',
 >>>>>>> c986cc10 (first)
 =======
+=======
+>>>>>>> e83070fd (.)
             laravel(
                 {
                     publicDirectory: '../../public',
                     buildDirectory: 'build-user',
+<<<<<<< HEAD
 >>>>>>> 8fc3049b (first)
+=======
+>>>>>>> e83070fd (.)
                     input: [
                         __dirname + '/resources/assets/sass/app.scss',
                         __dirname + '/resources/assets/js/app.js'
@@ -305,6 +322,7 @@ export default defineConfig(
         ],
     }
 );
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -467,3 +485,5 @@ viteStaticCopy({
 >>>>>>> dc18abbe (first)
 =======
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+>>>>>>> e83070fd (.)

@@ -30,6 +30,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
 =======
@@ -68,10 +69,15 @@
     "name": "IndennitaResponsabilita",
     "alias": "indennitaresponsabilita",
 >>>>>>> e0005d7d (first)
+=======
+    "name": "User",
+    "alias": "user",
+>>>>>>> e83070fd (.)
     "description": "",
     "keywords": [],
     "priority": 0,
     "providers": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -182,6 +188,8 @@
 }
 >>>>>>> d79d9e57 (first)
 =======
+=======
+>>>>>>> e83070fd (.)
         "Modules\\User\\Providers\\UserServiceProvider",
         "Modules\\User\\Providers\\Filament\\AdminPanelProvider"
     ],
@@ -191,6 +199,7 @@
         ]
     },
     "files": []
+<<<<<<< HEAD
 }
 >>>>>>> 0d55b583 (first)
 =======
@@ -434,3 +443,6 @@
 =======
 }
 >>>>>>> f3d4311a (Squashed 'laravel/Modules/Progressioni/' content from commit 72d99eef1)
+=======
+}
+>>>>>>> e83070fd (.)
