@@ -418,4 +418,8 @@ cache/
 >>>>>>> 6a338e09 (Merge commit 'e1d791bbad6512f4a9dade9d330c2e1ce0a99418' as 'laravel/Modules/Rating')
 =======
 laravel/Modules/Predict/
+<<<<<<< HEAD
 >>>>>>> b46d7627 (.)
+=======
+*.old
+>>>>>>> eb769019 (.)
