@@ -2006,10 +2006,14 @@ Questo progetto è sotto licenza MIT - vedi il file [LICENSE](LICENSE) per i det
 ## 👥 Autori
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Marco Sottana** - *Lavoro Iniziale* - [aurmich](https://github.com/aurmich)
 =======
 - **Michele Aurilio** - *Lavoro Iniziale* - [aurmich](https://github.com/aurmich)
 >>>>>>> 0c492c4f (.)
+=======
+- **Marco Sottana** - *Lavoro Iniziale* - [aurmich](https://github.com/aurmich)
+>>>>>>> cb077ebc (.)
 
 ## 🙏 Ringraziamenti
 
