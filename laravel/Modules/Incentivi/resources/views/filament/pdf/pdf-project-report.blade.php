@@ -144,9 +144,9 @@
         <div class="pt-4">
             @foreach ($project->activities as $activity)
                 <table class="w-full table-auto text-sm border-separate border border-slate-400">
-                    <caption class="caption-top">
+                    <h1 class="caption-top">
                         <strong>{{ $activity->nome }}</strong>
-                    </caption>
+                    </h1>
 
                     <thead class="border-b-2">
                         <tr class="h-10 text-left">
@@ -175,7 +175,7 @@
 
         @pageBreak
 
-        <p class="text-2xl font-medium"> <strong> TOTALI DA LIQUIDARE - Fase di aggiudicazione </strong> </p>
+        {{-- <p class="text-2xl font-medium"> <strong> TOTALI DA LIQUIDARE - Fase di aggiudicazione </strong> </p>
         <div class="pt-4">
             @foreach ($liquidazione as $employee => $content)
                 <table class="w-full table-auto text-sm border-separate border border-slate-400">
@@ -205,7 +205,7 @@
                 </table>
                 <br>
             @endforeach
-        </div>
+        </div> --}}
 
 
 

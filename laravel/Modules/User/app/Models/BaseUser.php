@@ -361,7 +361,9 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 
     public function hasRole($role, ?string $guard = null): bool
     {
-        return $this->roles()->where('name', $role)->exists();
+        return once(function () use ($role) {
+            return $this->roles()->where('name', $role)->exists();
+        });
     }
 
     

@@ -324,7 +324,7 @@ class Individuale extends BaseIndividualeModel
         'gg_parttimevert_dalal', 'perc_parttimepond_anno',
         'perc_parttimepond_dalal', 'gg_presenza_dalal', 'gg_assenza_dalal',
         'hh_assenza_anno', 'hh_assenza_dalal', 'lang', 'excellence', 'codqua',
-        'cont', 'tipco', 'posizione_eco', 'gg_anno',
+        'cont', 'tipco', 'posizione_eco', 'gg_anno','valutatore_id',
     ];
 
     /**
@@ -387,103 +387,10 @@ class Individuale extends BaseIndividualeModel
         'po' => IndividualePo::class,
         'dip' => IndividualeDip::class,
         'regionale' => IndividualeRegionale::class,
+        'dirigente' => IndividualeDirigente::class,
     ];
 
-    /**
-     * @return HasMany<Individuale>
-     */
-    public function cards(): HasMany
-    {
-        return $this->hasMany(self::class, 'individuale_id');
-    }
-
-   
-
-    /**
-     * @return HasMany<CriteriEsclusione>
-     */
-    public function criteriEsclusione(): HasMany
-    {
-        return $this->hasMany(CriteriEsclusione::class, 'individuale_id');
-    }
-
-    /**
-     * @return BelongsTo<CriteriMaggiorazione, self>
-     */
-    public function criteriMaggiorazione(): BelongsTo
-    {
-        return $this->belongsTo(CriteriMaggiorazione::class, 'individuale_id');
-    }
-
-    /**
-     * @return HasMany<CriteriOption>
-     */
-    public function criteriOptions(): HasMany
-    {
-        return $this->hasMany(CriteriOption::class, 'individuale_id');
-    }
-
     
-
-    /**
-     * @return HasMany<MyLog>
-     */
-    public function mailInviate(): HasMany
-    {
-        return $this->hasMany(MyLog::class, 'individuale_id');
-    }
-
-  
-   
-    /**
-     * @return HasMany<Individuale>
-     */
-    public function otherWinnerRows(): HasMany
-    {
-        return $this->hasMany(self::class, 'individuale_id');
-    }
-
-    /**
-     * @return BelongsTo<IndividualePesi, self>
-     */
-    public function peso(): BelongsTo
-    {
-        return $this->belongsTo(IndividualePesi::class, 'individuale_id');
-    }
-
-    /**
-     * @return BelongsTo<IndividualePoPesi, self>
-     */
-    public function pesoPo(): BelongsTo
-    {
-        return $this->belongsTo(IndividualePoPesi::class, 'individuale_id');
-    }
-
-    /**
-     * @return BelongsTo<StabiDirigente, self>
-     */
-    public function stabiDirigente(): BelongsTo
-    {
-        return $this->belongsTo(StabiDirigente::class, 'individuale_id');
-    }
-
-    /**
-     * @return BelongsTo<IndividualeTotStabi, self>
-     */
-    public function totStabi(): BelongsTo
-    {
-        return $this->belongsTo(IndividualeTotStabi::class, 'individuale_id');
-    }
-
-    /**
-     * Get the valutatore (evaluator) associated with this record.
-     *
-     * @return BelongsTo<Valutatore, self>
-     */
-    public function valutatore(): BelongsTo
-    {
-        return $this->belongsTo(Valutatore::class, ['ente', 'matr'], ['ente', 'matr']);
-    }
 
     /*
      * @return Builder<self>

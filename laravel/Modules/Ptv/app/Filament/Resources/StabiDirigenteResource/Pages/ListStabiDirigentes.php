@@ -4,23 +4,35 @@ declare(strict_types=1);
 
 namespace Modules\Ptv\Filament\Resources\StabiDirigenteResource\Pages;
 
-use Filament\Tables\Actions\DeleteAction;
-use Filament\Tables\Actions\DeleteBulkAction;
+use Filament\Tables\Table;
+use Illuminate\Support\Str;
+use Filament\Actions\Action;
+use Modules\Sigma\Models\Ana02f;
 use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Actions\ViewAction;
 use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Enums\ActionsPosition;
+use PhpOffice\PhpSpreadsheet\IOFactory;
+use Filament\Notifications\Notification;
+use Filament\Pages\Actions\CreateAction;
 use Filament\Tables\Enums\FiltersLayout;
+use Filament\Tables\Actions\DeleteAction;
 use Filament\Tables\Filters\SelectFilter;
-use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
+use Filament\Tables\Enums\ActionsPosition;
+use Filament\Tables\Actions\DeleteBulkAction;
 use Modules\Ptv\Filament\Resources\StabiDirigenteResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+use Modules\Ptv\Filament\Actions\Header\ImportValutatoriAction;
+
+
+
+
+
+
 
 class ListStabiDirigentes extends XotBaseListRecords
 {
     protected static string $resource = StabiDirigenteResource::class;
-
    
 
     public function getListTableColumns(): array
@@ -67,7 +79,14 @@ class ListStabiDirigentes extends XotBaseListRecords
     }
 
    
-
-    
+    protected function getHeaderActions(): array
+    {
+        return [
+            ...parent::getHeaderActions(),
+            ImportValutatoriAction::make('import_valutatori_'),
+            
+        ];
+    }
+ 
    
 }

@@ -114,6 +114,102 @@ return array (
     array (
       'label' => 'applyFilters',
     ),
+    'toggleColumns' => 
+    array (
+      'label' => 'toggleColumns',
+    ),
+    'type' => 
+    array (
+      'label' => 'type',
+    ),
+    'lista_propro' => 
+    array (
+      'label' => 'lista_propro',
+    ),
+    'descr' => 
+    array (
+      'label' => 'descr',
+    ),
+    'peso_esperienza_acquisita' => 
+    array (
+      'label' => 'peso_esperienza_acquisita',
+    ),
+    'peso_risultati_ottenuti' => 
+    array (
+      'label' => 'peso_risultati_ottenuti',
+    ),
+    'peso_arricchimento_professionale' => 
+    array (
+      'label' => 'peso_arricchimento_professionale',
+    ),
+    'peso_impegno' => 
+    array (
+      'label' => 'peso_impegno',
+    ),
+    'peso_qualita_prestazione' => 
+    array (
+      'label' => 'peso_qualita_prestazione',
+    ),
+    'anno' => 
+    array (
+      'label' => 'anno',
+    ),
+    'created_at' => 
+    array (
+      'label' => 'created_at',
+    ),
+    'updated_at' => 
+    array (
+      'label' => 'updated_at',
+    ),
+    'created_by' => 
+    array (
+      'label' => 'created_by',
+    ),
+    'updated_by' => 
+    array (
+      'label' => 'updated_by',
+    ),
+    'pesi_non_zero' => 
+    array (
+      'label' => 'pesi_non_zero',
+    ),
+    'value' => 
+    array (
+      'label' => 'value',
+    ),
+    'create' => 
+    array (
+      'label' => 'create',
+    ),
+    'view' => 
+    array (
+      'label' => 'view',
+    ),
+    'edit' => 
+    array (
+      'label' => 'edit',
+    ),
+    'delete' => 
+    array (
+      'label' => 'delete',
+    ),
+    'isActive' => 
+    array (
+      'label' => 'isActive',
+    ),
+    'openFilters' => 
+    array (
+      'label' => 'openFilters',
+    ),
+    'resetFilters' => 
+    array (
+      'label' => 'resetFilters',
+    ),
+    'reorderRecords' => 
+    array (
+      'label' => 'reorderRecords',
+    ),
   ),
   'actions' => 
   array (

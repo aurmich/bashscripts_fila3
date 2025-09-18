@@ -45,5 +45,6 @@ class PopulateYearAction extends Action
                     ->success()
                     ->send();
             });
+        $this->visible(fn ($livewire): bool => $livewire->getResource()::can('create'));
     }
 }

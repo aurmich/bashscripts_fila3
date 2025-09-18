@@ -15,7 +15,7 @@ use function Safe\date;
 
 class IndividualePoResource extends IndividualeResource
 {
-    protected static ?string $model = IndividualePo::class;
+    protected static ?string $model = \Modules\Performance\Models\IndividualePo::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 

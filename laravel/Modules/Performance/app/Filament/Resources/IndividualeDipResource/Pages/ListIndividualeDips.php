@@ -24,7 +24,7 @@ class ListIndividualeDips extends ListIndividuales
 {
     protected static string $resource = IndividualeDipResource::class;
 
-  
+    
 
     
 }

@@ -5,15 +5,11 @@ namespace Modules\Performance\Filament\Resources\IndividualeRegionaleResource\Pa
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 use Modules\Performance\Filament\Resources\IndividualeRegionaleResource;
+use Modules\Performance\Filament\Resources\IndividualeResource\Pages\EditIndividuale;
 
-class EditIndividualeRegionale extends \Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord
-{
+class EditIndividualeRegionale extends EditIndividuale{
+
     protected static string $resource = IndividualeRegionaleResource::class;
 
-    protected function getHeaderActions(): array
-    {
-        return [
-            Actions\DeleteAction::make(),
-        ];
-    }
+   
 }

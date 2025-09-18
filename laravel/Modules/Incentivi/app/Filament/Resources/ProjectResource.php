@@ -115,6 +115,8 @@ class ProjectResource extends XotBaseResource
                                 // ->currencyMask(thousandSeparator: ',',decimalSeparator: '.',precision: 2)
                                 // ->gte(20000)
                                 ->required()
+                                ->numeric()
+                                // ->inputMode('decimal')
                                 ->suffix('€')
                                 ->live(onBlur: true)
                                 ->afterStateUpdated(function (Get $get, Set $set, ?string $state) {

@@ -66,7 +66,8 @@ class GeneratePDFProjectReportAction extends Action
 
                 return $response;
             })
-            ->visible(fn (Model $record): bool => $record->getAttribute('stato')->value === 'concluso');
+            // ->visible(fn (Model $record): bool => $record->getAttribute('stato')->value === 'concluso')
+            ;
     }
 
     public static function getDefaultName(): ?string

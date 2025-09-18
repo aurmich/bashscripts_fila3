@@ -1,19 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Modules\Performance\Filament\Resources\IndividualePoResource\Pages;
 
-use Filament\Actions;
-use Filament\Resources\Pages\EditRecord;
 use Modules\Performance\Filament\Resources\IndividualePoResource;
+use Modules\Performance\Filament\Resources\IndividualeResource\Pages\EditIndividuale;
 
-class EditIndividualePo extends \Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord
+class EditIndividualePo extends EditIndividuale
 {
     protected static string $resource = IndividualePoResource::class;
-
-    protected function getHeaderActions(): array
-    {
-        return [
-            Actions\DeleteAction::make(),
-        ];
-    }
 }

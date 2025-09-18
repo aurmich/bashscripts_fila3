@@ -242,4 +242,48 @@ class StabiDirigente extends BaseModel
     {
         return app(\Modules\Xot\Actions\Factory\GetFactoryAction::class)->execute(static::class);
     }
+
+     /*
+    public function getNomeDiriAttribute($value) {
+        if (null !== $value) {
+            return $value;
+        }
+        $row = StabiDirigente::where('stabi', $this->stabi)
+            ->where('repar', $this->repar)
+            ->first();
+
+        if (is_object($row)) {
+            $value = $row->nome_diri;
+            $this->nome_diri = $value;
+            $this->save();
+        }
+
+        return $value;
+    }
+    */
+    /*
+    public function getNomeStabiAttribute($value)
+    {
+        if ($value !== null) {
+            return $value;
+        }
+
+        $stabi = Repart::where('stabi', $this->stabi)
+            ->where('repar', 0)
+            ->where('ente', 90)
+            ->first();
+
+        $repart = Repart::where('stabi', $this->stabi)
+            ->where('repar', $this->repar)
+            ->where('ente', 90)
+            ->first();
+        if (\is_object($stabi) && \is_object($repart)) {
+            $value = $stabi->dest1.' '.$stabi->dest2.' - '.$repart->dest1.' '.$repart->dest2;
+            $this->nome_stabi = $value;
+            $this->save();
+        }
+
+        return $value;
+    }
+        */
 }

@@ -5,15 +5,11 @@ namespace Modules\Performance\Filament\Resources\IndividualeDipResource\Pages;
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 use Modules\Performance\Filament\Resources\IndividualeDipResource;
+use Modules\Performance\Filament\Resources\IndividualeResource\Pages\EditIndividuale;
 
-class EditIndividualeDip extends \Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord
+class EditIndividualeDip extends EditIndividuale
 {
     protected static string $resource = IndividualeDipResource::class;
 
-    protected function getHeaderActions(): array
-    {
-        return [
-            Actions\DeleteAction::make(),
-        ];
-    }
+    
 }

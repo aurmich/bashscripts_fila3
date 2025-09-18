@@ -20,7 +20,7 @@ class EditProject extends \Modules\Xot\Filament\Resources\Pages\XotBaseEditRecor
         return [
             Actions\DeleteAction::make(),
             // GeneratePDFProjectReportActionSpatie::make(),
-            // GeneratePDFProjectReportAction::make(),
+            GeneratePDFProjectReportAction::make(),
             // TestLiquidazioneAction::make(),
         ];
     }

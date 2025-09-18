@@ -10,22 +10,25 @@ use function Safe\date;
 use Filament\Tables\Table;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
+use Modules\Ptv\Enums\WorkerType;
+use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Notifications\Notification;
 use Filament\Tables\Enums\FiltersLayout;
 use Filament\Tables\Columns\ToggleColumn;
 use Filament\Tables\Filters\SelectFilter;
-use Modules\Ptv\Enums\WorkerType;
+use Illuminate\Database\Eloquent\Builder;
 use Filament\Tables\Enums\ActionsPosition;
 use Modules\Performance\Models\Individuale;
 use Modules\Performance\Models\Organizzativa;
 use Modules\Ptv\Filament\Columns\PeriodoColumn;
 use Modules\Ptv\Filament\Columns\RepartoColumn;
 use Modules\Performance\Actions\ShowMailSendedAt;
+
 use Modules\Ptv\Filament\Columns\QualificaColumn;
 use Modules\Ptv\Filament\Columns\LavoratoreColumn;
-
 use Modules\UI\Filament\Tables\Columns\GroupColumn;
+use Modules\Ptv\Filament\Filters\AnnoValutatoreFilter;
 use Modules\Xot\Filament\Actions\Header\ExportXlsAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Modules\Performance\Filament\Resources\IndividualeResource;
@@ -43,17 +46,6 @@ class ListIndividuales extends XotBaseListRecords
     /** @var array<string, mixed> */
     protected array $data = [];
 
-    public function getModelLabel(): string
-    {
-        return static::trans('navigation.name');
-    }
-
-    public function getPluralModelLabel(): string
-    {
-        return static::trans('navigation.plural');
-    }
-
-   
    
 
     public  function getTableActions(): array
@@ -68,7 +60,9 @@ class ListIndividuales extends XotBaseListRecords
             ...parent::getTableActions(),
             'fill' => Tables\Actions\Action::make('fill')
                 ->label('Compila')
-                ->url(fn ($record) => $fill_class::getUrl(['record' => $record])),
+                ->icon('heroicon-o-pencil-square')
+                ->url(fn ($record) => $fill_class::getUrl(['record' => $record]))
+                ->visible(fn ($record) => $record->ha_diritto == 1),
         ];
     }
 
@@ -78,10 +72,10 @@ class ListIndividuales extends XotBaseListRecords
     protected function getHeaderActions(): array
     {
         return [
-            Actions\CreateAction::make(),
+            ...parent::getHeaderActions(),
             \Modules\Ptv\Filament\Actions\Header\CopyFromLastYearAction::make(),
             \Modules\Ptv\Filament\Actions\Header\PopulateYearAction::make(),
-            ExportXlsAction::make(),
+            //ExportXlsAction::make(),
             Actions\Action::make('copy_from_organizzativa')->action(
                 function () {
                     $tableFilters = [];
@@ -97,17 +91,22 @@ class ListIndividuales extends XotBaseListRecords
                         $data = $row->toArray();
                         $where = Arr::only($data, ['ente', 'matr', 'dal', 'al']);
                         $up = Individuale::where($where)->get();
-                        if ($up->count() != 1) {
+                        if ($up->count() > 1) {
                             dddx('noo');
                         }
-                        $up->first()?->update($data);
+                        if ($up->count() == 0) {
+                            $up = Individuale::create($data);
+                        }
+                        if ($up->count() == 1) {
+                            $up->first()?->update($data);
+                        }
                     }
                     Notification::make()
                         ->title('Saved successfully')
                         ->success()
                         ->send();
                 }
-            ),
+            )->visible(fn ($livewire): bool => $livewire->getResource()::can('create')),
         ];
     }
 
@@ -117,7 +116,8 @@ class ListIndividuales extends XotBaseListRecords
     public function getListTableColumns(): array
     {
         return [
-            ToggleColumn::make('ha_diritto')->searchable(),
+            //ToggleColumn::make('ha_diritto')->searchable(),
+            IconColumn::make('ha_diritto')->boolean(),
             TextColumn::make('motivo')->searchable(),
             TextColumn::make('mail_sended_at')
                 ->html()
@@ -126,8 +126,8 @@ class ListIndividuales extends XotBaseListRecords
                 'totale_punteggio' => TextColumn::make('totale_punteggio'),
                 'propro' => TextColumn::make('propro'),
             ]),
-            QualificaColumn::make('qua'),
-            RepartoColumn::make('rep'),
+            QualificaColumn::make('qualifica'),
+            RepartoColumn::make('reparto'),
             PeriodoColumn::make('periodo'),
         ];
     }
@@ -138,25 +138,30 @@ class ListIndividuales extends XotBaseListRecords
     public function getTableFilters(): array
     {
         return [
-            'anno' => app(\Modules\Xot\Actions\Filament\Filter\GetYearFilter::class)
-                ->execute('anno', intval(date('Y')) - 3, intval(date('Y'))),
+            'anno_valutatore' => AnnoValutatoreFilter::make('anno_valutatore'),
             /*
-            'anno' => SelectFilter::make('anno')
-                ->options(Arr::pluck(Individuale::select('anno')->distinct()->get(), 'anno', 'anno')),
-            'stabi' => SelectFilter::make('stabi')
-                ->options(Arr::pluck(Organizzativa::select('stabi')->distinct()->get(), 'stabi', 'stabi')),
-            'repar' => SelectFilter::make('repar')
-                ->options(Arr::pluck(Organizzativa::select('repar')->distinct()->get(), 'repar', 'repar')),
-            'ha_diritto' => SelectFilter::make('ha_diritto')
-                ->options([
-                    '1' => 'Sì',
-                    '0' => 'No',
-                ]),
-                */
+            'anno' => app(\Modules\Xot\Actions\Filament\Filter\GetYearFilter::class)
+                ->execute('anno', intval(date('Y')) - 3, intval(date('Y')))
+                ->default(intval(date('Y'))-1),
+            */
         ];
     }
 
-   
+    /*
+    protected function getTableQuery(): Builder
+    {
+        $query = parent::getTableQuery();
+        
+        $tableFilters = $this->tableFilters ?? [];
+        $anno = Arr::get($tableFilters, 'anno.value');
+        
+        if (empty($anno)) {
+            return $query->whereRaw('1 = 0'); // Non mostra nessun record se non è selezionato l'anno
+        }
+        
+        return $query->where('anno', $anno);
+    }
+    */
 
     /**
      * @return array<string, SendMailBulkAction>
@@ -176,7 +181,7 @@ class ListIndividuales extends XotBaseListRecords
         $filters = Arr::get($this->tableFilters ?? [], 'stabi_repar_anno');
 
         return [
-            FirmaStabiReparWidget::make(['resource' => static::$resource, 'filters' => $filters]),
+        //    FirmaStabiReparWidget::make(['resource' => static::$resource, 'filters' => $filters]),
         ];
     }
 }

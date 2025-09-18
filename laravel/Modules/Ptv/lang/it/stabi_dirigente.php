@@ -1,4 +1,6 @@
-<?php return array (
+<?php
+
+return array (
   'resource' => 
   array (
     'name' => 'Stabi diri',
@@ -11,6 +13,7 @@
     array (
       'name' => 'Admin',
     ),
+    'label' => 'stabi dirigente.navigation',
   ),
   'fields' => 
   array (
@@ -87,6 +90,34 @@
     array (
       'label' => 'email',
     ),
+    'create' => 
+    array (
+      'label' => 'create',
+    ),
+    'value' => 
+    array (
+      'label' => 'value',
+    ),
+    'openFilters' => 
+    array (
+      'label' => 'openFilters',
+    ),
+    'applyFilters' => 
+    array (
+      'label' => 'applyFilters',
+    ),
+    'resetFilters' => 
+    array (
+      'label' => 'resetFilters',
+    ),
+    'reorderRecords' => 
+    array (
+      'label' => 'reorderRecords',
+    ),
+    'toggleColumns' => 
+    array (
+      'label' => 'toggleColumns',
+    ),
   ),
   'actions' => 
   array (
@@ -137,4 +168,8 @@
   array (
     'mandatory_data' => '{1} Dato obbligatorio non presente|{2} 2 Dati obbligatori non presenti|{3} 3 Dati obbligatori non presenti|[4,*] Vari dati obbligatori non presenti',
   ),
-);
+  'model' => 
+  array (
+    'label' => 'stabi dirigente.model',
+  ),
+);

@@ -46,9 +46,9 @@ use Modules\Xot\Models\XotBaseModel;
  *
  * @mixin \Eloquent
  */
-class IndividualePesi extends XotBaseModel
+class IndividualePesi extends BaseModel
 {
-    protected $connection = 'performance';
+    
     protected $table = 'peso_performance_individuale';
 
     /** @var array<int, string> */
@@ -72,12 +72,12 @@ class IndividualePesi extends XotBaseModel
         ];
     }
 
-    // Nuovo approccio per il casting in Laravel 11
+   /*
     public function type(): WorkerType
     {
         return WorkerType::from($this->getAttribute('type'));
     }
-
+    
     public function setTypeAttribute(WorkerType $value): void
     {
         $this->setAttribute('type', $value->value);
@@ -142,7 +142,7 @@ class IndividualePesi extends XotBaseModel
     {
         $this->setAttribute('anno', $value);
     }
-
+*/
     public function getTotalWeightAttribute(): float
     {
         return $this->peso_esperienza_acquisita +
@@ -151,7 +151,7 @@ class IndividualePesi extends XotBaseModel
                $this->peso_impegno +
                $this->peso_qualita_prestazione;
     }
-
+    
     public function individuale(): HasMany
     {
         return $this->hasMany(Individuale::class, 'type', 'type');
@@ -171,4 +171,5 @@ class IndividualePesi extends XotBaseModel
     {
         return $this->hasMany(IndividualeAdm::class, 'type', 'type');
     }
+    /**/
 }// end class Pesi

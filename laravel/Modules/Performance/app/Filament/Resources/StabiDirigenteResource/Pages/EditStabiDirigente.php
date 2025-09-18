@@ -6,14 +6,11 @@ use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 use Modules\Performance\Filament\Resources\StabiDirigenteResource;
 
-class EditStabiDirigente extends \Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord
+use Modules\Ptv\Filament\Resources\StabiDirigenteResource\Pages\EditStabiDirigente as PtvcEditStabiDirigente;
+
+class EditStabiDirigente extends PtvcEditStabiDirigente
 {
     protected static string $resource = StabiDirigenteResource::class;
 
-    protected function getHeaderActions(): array
-    {
-        return [
-            Actions\DeleteAction::make(),
-        ];
-    }
+   
 }
