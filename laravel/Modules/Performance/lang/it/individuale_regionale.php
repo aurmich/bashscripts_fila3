@@ -155,10 +155,13 @@ return array (
     array (
       'label' => 'view',
     ),
+<<<<<<< HEAD
     'create' => 
     array (
       'label' => 'create',
     ),
+=======
+>>>>>>> 6d38d2cc (.)
   ),
   'actions' => 
   array (
