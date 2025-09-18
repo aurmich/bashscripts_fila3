@@ -1,0 +1,1 @@
+eliminare pesoPo .. tutto quello diretto PO, mettere post_type

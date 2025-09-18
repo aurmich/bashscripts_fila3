@@ -1,0 +1,1 @@
+@include('progressioni::admin.stipendiotabellare.create')

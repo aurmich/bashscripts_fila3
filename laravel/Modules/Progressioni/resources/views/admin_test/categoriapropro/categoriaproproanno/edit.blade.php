@@ -1,0 +1,1 @@
+@include('progressioni::admin.categoriapropro.edit')

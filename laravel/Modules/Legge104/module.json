@@ -1,0 +1,14 @@
+{
+    "name": "Legge104",
+    "alias": "legge104",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Legge104\\Providers\\Legge104ServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
