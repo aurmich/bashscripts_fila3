@@ -17,6 +17,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
 =======
@@ -215,11 +216,16 @@
     "name": "Inail",
     "alias": "inail",
 >>>>>>> 51c7727d (first)
+=======
+    "name": "Legge104",
+    "alias": "legge104",
+>>>>>>> 6907d18e (first)
     "description": "",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -237,11 +243,15 @@
 =======
         "Modules\\Inail\\Providers\\InailServiceProvider"
 >>>>>>> 51c7727d (first)
+=======
+        "Modules\\Legge104\\Providers\\Legge104ServiceProvider"
+>>>>>>> 6907d18e (first)
     ],
     "aliases": {},
     "files": [],
     "requires": []
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -268,3 +278,5 @@
 =======
 }
 >>>>>>> e0005d7d (first)
+=======
+>>>>>>> 6907d18e (first)

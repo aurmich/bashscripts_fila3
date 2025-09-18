@@ -14,6 +14,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 const dotenvExpand = require('dotenv-expand');
 dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/}));
 
@@ -70,11 +71,14 @@ const dotenvExpand = require('dotenv-expand');
 dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/}));
 
 >>>>>>> e0005d7d (first)
+=======
+>>>>>>> 6907d18e (first)
 const mix = require('laravel-mix');
 require('laravel-mix-merge-manifest');
 
 mix.setPublicPath('../../public').mergeManifest();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -187,3 +191,11 @@ if (mix.inProduction()) {
 >>>>>>> b7483fd0 (first)
 =======
 >>>>>>> e0005d7d (first)
+=======
+mix.js(__dirname + '/resources/assets/js/app.js', 'js/legge104.js')
+    .sass( __dirname + '/resources/assets/sass/app.scss', 'css/legge104.css');
+
+if (mix.inProduction()) {
+    mix.version();
+}
+>>>>>>> 6907d18e (first)

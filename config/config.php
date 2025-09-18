@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -180,4 +181,11 @@ return [
     'name' => 'IndennitaResponsabilita',
     'icon' => 'fas-money-bill-trend-up',
 >>>>>>> e0005d7d (first)
+=======
+declare(strict_types=1);
+
+return [
+    'name' => 'Legge104',
+    'icon' => 'fas-wheelchair-move',
+>>>>>>> 6907d18e (first)
 ];

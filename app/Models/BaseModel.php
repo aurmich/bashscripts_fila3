@@ -15,6 +15,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Rating\Models;
 
 use Illuminate\Database\Eloquent\Model;
@@ -77,15 +78,22 @@ namespace Modules\Setting\Models;
 use Illuminate\Database\Eloquent\Factories\Factory;
 =======
 namespace Modules\Badge\Models;
+=======
+namespace Modules\Legge104\Models;
+>>>>>>> 6907d18e (first)
 
 use GeneaLabs\LaravelModelCaching\Traits\Cachable;
 use Illuminate\Database\Eloquent\Factories\Factory;
 // ---------- traits
+<<<<<<< HEAD
 >>>>>>> 7e417e87 (first)
+=======
+>>>>>>> 6907d18e (first)
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 // //use Laravel\Scout\Searchable;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Traits\Updater;
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 9cec72d6 (first)
 =======
@@ -112,10 +120,13 @@ use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Models\Traits\RelationX;
 use Modules\Xot\Traits\Updater;
 >>>>>>> 15ea09e2 (first)
+=======
+>>>>>>> 6907d18e (first)
 
 /**
  * Class BaseModel.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -148,10 +159,15 @@ abstract class BaseModel extends Model
 abstract class BaseModel extends Model
 {
 >>>>>>> 7e417e87 (first)
+=======
+abstract class BaseModel extends Model
+{
+>>>>>>> 6907d18e (first)
     use HasFactory;
 
     // use Searchable;
     // use Cachable;
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> bbec4378 (first)
 =======
@@ -426,6 +442,14 @@ abstract class BaseModel extends Model
 
     /**
      * @var list<string>
+=======
+    use Updater;
+
+    protected $connection = 'legge_104'; // this will use the specified database connection
+
+    /**
+     * @var string[]
+>>>>>>> 6907d18e (first)
      */
     protected $fillable = ['id'];
 
@@ -445,6 +469,7 @@ abstract class BaseModel extends Model
     public $incrementing = true;
 
     /**
+<<<<<<< HEAD
      * @var list<string>
      */
 >>>>>>> 7e417e87 (first)
@@ -490,10 +515,15 @@ abstract class BaseModel extends Model
 >>>>>>> b7483fd0 (first)
 =======
 >>>>>>> e0005d7d (first)
+=======
+     * @var array<int, string>
+     */
+>>>>>>> 6907d18e (first)
     protected $hidden = [
         // 'password'
     ];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -640,12 +670,17 @@ abstract class BaseModel extends Model
 =======
 >>>>>>> 8fc3049b (first)
 =======
+=======
+>>>>>>> 6907d18e (first)
     /**
      * @var bool
      */
     public $timestamps = true;
 
+<<<<<<< HEAD
 >>>>>>> 7e417e87 (first)
+=======
+>>>>>>> 6907d18e (first)
     /**
      * Create a new factory instance for the model.
      *
@@ -653,6 +688,7 @@ abstract class BaseModel extends Model
      */
     protected static function newFactory()
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -752,4 +788,8 @@ abstract class BaseModel extends Model
     }
     */
 >>>>>>> e0005d7d (first)
+=======
+        return app(\Modules\Xot\Actions\Factory\GetFactoryAction::class)->execute(static::class);
+    }
+>>>>>>> 6907d18e (first)
 }
