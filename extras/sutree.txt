@@ -9,6 +9,7 @@ git subtree merge --prefix=bashscripts bashscripts-temp
 - fatal: refusing to merge unrelated histories
 git subtree merge --prefix=bashscripts bashscripts-temp --rejoin
 <<<<<<< HEAD
+<<<<<<< HEAD
 - fatal: refusing to merge unrelated histories
 git merge -s subtree bashscripts-temp --allow-unrelated-histories
 git subtree merge --prefix=bashscripts bashscripts-temp --rejoin
@@ -25,3 +26,9 @@ git subtree merge --prefix=bashscripts bashscripts-temp
 =======
 - fatal: refusing to merge unrelated histories
 >>>>>>> b1a401f5 (.)
+=======
+- fatal: refusing to merge unrelated histories
+git merge -s subtree bashscripts-temp --allow-unrelated-histories
+git subtree merge --prefix=bashscripts bashscripts-temp --rejoin
+- Already up to date.
+>>>>>>> a748b0af (.)
