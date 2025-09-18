@@ -10,6 +10,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "laraxot/bashscripts_fila3",
     "description": "Script di utilità per la gestione dei repository Git, Toolkit di automazione Git per progetti Laravel",
     "type": "library",
@@ -46,10 +47,15 @@
     "name": "laraxot/module_media_fila3",
     "description": "media module dedicated to image and video management",
 >>>>>>> c986cc10 (first)
+=======
+    "name": "laraxot/module_tenant_fila3",
+    "description": "tenant module for software architecture that allows a single instance of a software application to serve multiple tenants",
+>>>>>>> 8fc3049b (first)
     "keywords": [
         "laraxot",
         "laravel",
         "filament",
+<<<<<<< HEAD
 <<<<<<< HEAD
         "module_setting",
         "Laravel",
@@ -222,16 +228,31 @@
             "name": "Marco Sottana",
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+        "module_tenant",
+        "Laravel",
+        "Tenant module"
+    ],
+    "homepage": "https://github.com/laraxot/module_tenant_fila3",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marco Xot",
+>>>>>>> 8fc3049b (first)
             "email": "marco.sottana@gmail.com",
             "role": "Developer"
         }
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8fc3049b (first)
     "require": {},
     "require-dev": {},
     "repositories_comment": [
         {
             "type": "path",
+<<<<<<< HEAD
 >>>>>>> c088001a (first)
             "url": "../User"
 =======
@@ -242,11 +263,23 @@
                 "Modules\\Notify\\Providers\\Filament\\AdminPanelProvider"
 =======
             "email": "marco.sottana@gmail.com"
+=======
+            "url": "../User"
+        },
+        {
+            "type": "path",
+            "url": "../Media"
+        },
+        {
+            "type": "path",
+            "url": "../Xot"
+>>>>>>> 8fc3049b (first)
         }
     ],
     "extra": {
         "laravel": {
             "providers": [
+<<<<<<< HEAD
                 "Livewire\\LivewireServiceProvider",
                 "Modules\\User\\Providers\\UserServiceProvider",
                 "Modules\\User\\Providers\\Filament\\AdminPanelProvider"
@@ -255,12 +288,17 @@
                 "Modules\\Setting\\Providers\\SettingServiceProvider",
                 "Modules\\Setting\\Providers\\Filament\\AdminPanelProvider"
 >>>>>>> 9cec72d6 (first)
+=======
+                "Modules\\Tenant\\Providers\\TenantServiceProvider",
+                "Modules\\Tenant\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> 8fc3049b (first)
             ],
             "aliases": {}
         }
     },
     "autoload": {
         "psr-4": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             "Modules\\Notify\\": "app/",
@@ -333,6 +371,15 @@
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+            "Modules\\Tenant\\": "app/",
+            "Modules\\Tenant\\Database\\Factories\\": "database/factories/",
+            "Modules\\Tenant\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump1": [
+>>>>>>> 8fc3049b (first)
             "@php vendor/bin/testbench package:discover --ansi"
         ],
         "post-update-cmd": [
@@ -342,6 +389,7 @@
         "test": "./vendor/bin/pest --no-coverage",
         "test-coverage": "vendor/bin/pest --coverage-html coverage",
         "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -549,10 +597,13 @@
 >>>>>>> 9cec72d6 (first)
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> 8fc3049b (first)
     },
     "config": {
         "sort-packages": true,
         "allow-plugins": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -596,10 +647,15 @@
             "phpstan/extension-installer": true,
             "pestphp/pest-plugin": true,
 >>>>>>> 9cec72d6 (first)
+=======
+            "phpstan/extension-installer": true,
+            "pestphp/pest-plugin": true,
+>>>>>>> 8fc3049b (first)
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "wikimedia/composer-merge-plugin": true
         }
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -713,3 +769,8 @@
     }
 }
 >>>>>>> c986cc10 (first)
+=======
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+>>>>>>> 8fc3049b (first)

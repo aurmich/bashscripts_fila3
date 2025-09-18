@@ -1,10 +1,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bbec4378 (first)
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> 8fc3049b (first)
 # Changelog
 
 All notable changes to `:package_name` will be documented in this file.
@@ -12,6 +15,7 @@ All notable changes to `:package_name` will be documented in this file.
 ## 1.0.0 - 202X-XX-XX
 
 - initial release
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -40,3 +44,5 @@ All notable changes to `:package_name` will be documented in this file.
 >>>>>>> bbec4378 (first)
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> 8fc3049b (first)

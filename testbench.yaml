@@ -7,6 +7,7 @@ providers:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Modules\Rating\Providers\RatingServiceProvider
 =======
   - Modules\Xot\Providers\XotServiceProvider
@@ -37,3 +38,9 @@ providers:
 =======
   - Modules\Rating\Providers\RatingServiceProvider
 >>>>>>> 2df6fbc8 (first)
+=======
+  - Modules\Tenant\Providers\TenantServiceProvider
+  - Modules\Tenant\Providers\Filament\AdminPanelProvider
+  - Nwidart\Modules\LaravelModulesServiceProvider
+
+>>>>>>> 8fc3049b (first)

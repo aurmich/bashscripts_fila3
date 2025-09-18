@@ -12,6 +12,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'name' => 'Rating',
     'icon' => 'heroicon-o-star', // icon on dashboard
     'navigation_sort' => 1,
@@ -70,12 +71,21 @@ return [
         'enabled' => true,
         'sort' => 60,
 >>>>>>> c986cc10 (first)
+=======
+    'name' => 'Tenant',
+    'description' => 'Modulo per la gestione multi-tenant dell\'applicazione',
+    'icon' => 'heroicon-o-building-office',
+    'navigation' => [
+        'enabled' => true,
+        'sort' => 80,
+>>>>>>> 8fc3049b (first)
     ],
     'routes' => [
         'enabled' => true,
         'middleware' => ['web', 'auth'],
     ],
     'providers' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -119,4 +129,8 @@ return [
         'Modules\\Media\\Providers\\MediaServiceProvider',
     ],
 >>>>>>> c986cc10 (first)
+=======
+        'Modules\\Tenant\\Providers\\TenantServiceProvider',
+    ],
+>>>>>>> 8fc3049b (first)
 ];

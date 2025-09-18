@@ -8,6 +8,7 @@ includes:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 
@@ -31,6 +32,8 @@ parameters:
 >>>>>>> d79d9e57 (first)
 =======
 >>>>>>> c986cc10 (first)
+=======
+>>>>>>> 8fc3049b (first)
     - ./vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
     #- ./vendor/symplify/phpstan-rules/config/code-complexity-rules.neon
     #- ./vendor/symplify/phpstan-rules/config/collector-rules.neon
@@ -41,6 +44,7 @@ parameters:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bbec4378 (first)
 =======
@@ -49,11 +53,14 @@ parameters:
 >>>>>>> d79d9e57 (first)
 =======
 >>>>>>> c986cc10 (first)
+=======
+>>>>>>> 8fc3049b (first)
 
 parameters:
     level: max
     paths:
         - .
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -73,12 +80,15 @@ parameters:
 >>>>>>> 9cec72d6 (first)
 =======
 >>>>>>> c986cc10 (first)
+=======
+>>>>>>> 8fc3049b (first)
 
     ignoreErrors:
     #    - '#Unsafe usage of new static#'
         - '#PHPDoc tag @mixin contains unknown class #'
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         - '#Static call to instance method Nwidart#'
 
 <<<<<<< HEAD
@@ -96,11 +106,16 @@ parameters:
         - '#Static call to instance method Nwidart#'
 
 >>>>>>> c986cc10 (first)
+=======
+        - '#Static call to instance method Nwidart#'
+
+>>>>>>> 8fc3049b (first)
     excludePaths:
         - ./build/*
         - ./vendor/*
         - ./*/vendor/*
         - ./docs/*
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -117,10 +132,16 @@ parameters:
         - ./Tests/*
 >>>>>>> c986cc10 (first)
         - ./_ide_helper.php
+=======
+        - ./Tests/*
+        - ./_ide_helper.php
+        - ./rector.php
+>>>>>>> 8fc3049b (first)
 
     bootstrapFiles:
         #- ./Services/vendor/autoload.php
         - ./phpstan_constants.php
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
         - ./Tests/*
@@ -132,6 +153,8 @@ parameters:
 >>>>>>> 9cec72d6 (first)
 =======
 >>>>>>> c986cc10 (first)
+=======
+>>>>>>> 8fc3049b (first)
 
     scanFiles:
     #    - ./Helpers/Helper.php
@@ -141,6 +164,7 @@ parameters:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     tmpDir: build/phpstan
 =======
     tmpDir: ./build/phpstan
@@ -148,6 +172,9 @@ parameters:
 =======
     tmpDir: build/phpstan
 >>>>>>> c986cc10 (first)
+=======
+    tmpDir: build/phpstan
+>>>>>>> 8fc3049b (first)
     checkUnusedViews: false
     checkMissingIterableValueType: false
     checkGenericClassInNonGenericObjectType: false
@@ -155,6 +182,7 @@ parameters:
     reportUnmatchedIgnoredErrors: false
     checkOctaneCompatibility: false
     checkModelProperties: false
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -194,3 +222,5 @@ parameters:
 >>>>>>> 2df6fbc8 (first)
 =======
 >>>>>>> c986cc10 (first)
+=======
+>>>>>>> 8fc3049b (first)

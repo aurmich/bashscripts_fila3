@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('rating::layouts.master')
 =======
 @extends('xot::layouts.app')
@@ -35,10 +36,14 @@
 =======
 @extends('media::layouts.master')
 >>>>>>> c986cc10 (first)
+=======
+@extends('tenant::layouts.master')
+>>>>>>> 8fc3049b (first)
 
 @section('content')
     <h1>Hello World</h1>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     <p>
 <<<<<<< HEAD
@@ -96,3 +101,9 @@
     <p>Module: {!! config('media.name') !!}</p>
 @endsection
 >>>>>>> c986cc10 (first)
+=======
+    <p>
+        This view is loaded from module: {!! config('tenant.name') !!}
+    </p>
+@endsection
+>>>>>>> 8fc3049b (first)

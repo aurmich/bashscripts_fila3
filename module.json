@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Rating",
     "alias": "rating",
 =======
@@ -49,12 +50,17 @@
 =======
     "name": "Xot",
     "alias": "xot",
+=======
+    "name": "Tenant",
+    "alias": "tenant",
+>>>>>>> 8fc3049b (first)
     "description": "",
     "keywords": [],
     "priority": 2,
     "active": 1,
     "order": 2,
     "providers": [
+<<<<<<< HEAD
         "Modules\\Xot\\Providers\\XotServiceProvider",
         "Modules\\Xot\\Providers\\Filament\\AdminPanelProvider"
 >>>>>>> 59bc4fe7 (first)
@@ -94,10 +100,15 @@
         "Modules\\Media\\Providers\\MediaServiceProvider",
         "Modules\\Media\\Providers\\Filament\\AdminPanelProvider"
 >>>>>>> c986cc10 (first)
+=======
+        "Modules\\Tenant\\Providers\\TenantServiceProvider",
+        "Modules\\Tenant\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> 8fc3049b (first)
     ],
     "aliases": [],
     "files": [],
     "requires": []
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -149,3 +160,6 @@
 =======
 }
 >>>>>>> c986cc10 (first)
+=======
+}
+>>>>>>> 8fc3049b (first)

@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -29,11 +30,19 @@ namespace Modules\Media\Filament\Pages;
 
 use Filament\Pages\Page;
 >>>>>>> c986cc10 (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Tenant\Filament\Pages;
+
+use Filament\Pages\Page;
+>>>>>>> 8fc3049b (first)
 
 class Dashboard extends Page
 {
     protected static ?string $navigationIcon = 'heroicon-o-home';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -204,4 +213,7 @@ class Dashboard extends BaseBashboard
 =======
     protected static string $view = 'media::filament.pages.dashboard';
 >>>>>>> c986cc10 (first)
+=======
+    protected static string $view = 'tenant::filament.pages.dashboard';
+>>>>>>> 8fc3049b (first)
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <html lang="en">
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -14,10 +15,14 @@
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> 9cec72d6 (first)
+=======
+<html lang="en">
+>>>>>>> 8fc3049b (first)
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -57,11 +62,18 @@
        {{-- Laravel Vite - CSS File --}}
        {{-- {{ module_vite('build-setting', 'resources/assets/sass/app.scss') }} --}}
 >>>>>>> 9cec72d6 (first)
+=======
+        <title>Module Tenant</title>
+
+       {{-- Laravel Mix - CSS File --}}
+       {{-- <link rel="stylesheet" href="{{ mix('css/tenant.css') }}"> --}}
+>>>>>>> 8fc3049b (first)
 
     </head>
     <body>
         @yield('content')
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -144,3 +156,9 @@
     {{-- {{ module_vite('build-media', 'resources/assets/js/app.js') }} --}}
 </body>
 >>>>>>> c986cc10 (first)
+=======
+        {{-- Laravel Mix - JS File --}}
+        {{-- <script src="{{ mix('js/tenant.js') }}"></script> --}}
+    </body>
+</html>
+>>>>>>> 8fc3049b (first)

@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <x-filament-panels::page class="fi-dashboard-page">
     {{--
     @if (method_exists($this, 'filtersForm'))
@@ -55,3 +56,8 @@
     --}}
 </x-filament::page>
 >>>>>>> c986cc10 (first)
+=======
+<x-filament::page>
+
+</x-filament::page>
+>>>>>>> 8fc3049b (first)

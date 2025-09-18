@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -38,6 +39,10 @@ use Modules\Xot\Datas\XotData;
 declare(strict_types=1);
 
 >>>>>>> 9cec72d6 (first)
+=======
+declare(strict_types=1);
+
+>>>>>>> 8fc3049b (first)
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -48,6 +53,7 @@ declare(strict_types=1);
 | contains the "web" middleware group. Now create something great!
 |
 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -116,3 +122,10 @@ Route::get('/upgrade', 'UpgradeController');
 =======
 declare(strict_types=1);
 >>>>>>> c986cc10 (first)
+=======
+/*
+Route::prefix('tenant')->group(function() {
+    Route::get('/', 'TenantController@index');
+});
+*/
+>>>>>>> 8fc3049b (first)

@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
 /**
@@ -51,11 +52,17 @@ declare(strict_types=1);
 
 namespace Modules\Media\Providers;
 >>>>>>> c986cc10 (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Tenant\Providers;
+>>>>>>> 8fc3049b (first)
 
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -121,10 +128,17 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected string $moduleNamespace = 'Modules\Media\Http\Controllers';
 >>>>>>> c986cc10 (first)
+=======
+    /**
+     * The module namespace to assume when generating URLs to actions.
+     */
+    protected string $moduleNamespace = 'Modules\Tenant\Http\Controllers';
+>>>>>>> 8fc3049b (first)
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -354,4 +368,8 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
     public string $name = 'Media';
 >>>>>>> c986cc10 (first)
+=======
+
+    public string $name = 'Tenant';
+>>>>>>> 8fc3049b (first)
 }

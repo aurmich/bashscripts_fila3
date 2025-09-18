@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8fc3049b (first)
 module.exports = {
   plugins: {
     tailwindcss: {},
     autoprefixer: {},
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -35,5 +39,7 @@ export default {
     tailwindcss: {},
     autoprefixer: {},
 >>>>>>> c986cc10 (first)
+=======
+>>>>>>> 8fc3049b (first)
   },
 }

@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     errorLevel="4"
 =======
     errorLevel="1"
@@ -45,6 +46,11 @@
 =======
     errorLevel="4"
 >>>>>>> 2df6fbc8 (first)
+=======
+    errorLevel="1"
+     cacheDirectory="build/psalm"
+    errorBaseline="psalm-baseline.xml"
+>>>>>>> 8fc3049b (first)
     resolveFromConfigFile="true"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns="https://getpsalm.org/schema/config"
@@ -53,6 +59,7 @@
     findUnusedCode="true"
 >
     <projectFiles>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -106,10 +113,13 @@
 >>>>>>> a8f30311 (first)
 =======
 >>>>>>> 9cec72d6 (first)
+=======
+>>>>>>> 8fc3049b (first)
         <directory name="."/>
         <ignoreFiles>
             <directory name="build" />
             <directory name="vendor" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             <directory name="Services/vendor" />
@@ -142,12 +152,16 @@
             
             <directory name="docs" />
 >>>>>>> 9cec72d6 (first)
+=======
+            <directory name="docs" />
+>>>>>>> 8fc3049b (first)
         </ignoreFiles>
     </projectFiles>
     <plugins>
         <pluginClass class="Psalm\LaravelPlugin\Plugin"/>
     </plugins>
 </psalm>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -168,3 +182,5 @@
 >>>>>>> 9cec72d6 (first)
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> 8fc3049b (first)

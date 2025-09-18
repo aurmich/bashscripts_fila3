@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d79d9e57 (first)
 =======
@@ -84,10 +85,18 @@ namespace Modules\Media\Providers\Filament;
 
 use Filament\Panel;
 >>>>>>> c986cc10 (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Tenant\Providers\Filament;
+
+use Filament\Panel;
+>>>>>>> 8fc3049b (first)
 use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 
 class AdminPanelProvider extends XotBasePanelProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -223,4 +232,12 @@ class AdminPanelProvider extends XotBasePanelProvider
         return $panel;
     }
 >>>>>>> c986cc10 (first)
+=======
+    protected string $module = 'Tenant';
+
+    public function panel(Panel $panel): Panel
+    {
+        return parent::panel($panel);
+    }
+>>>>>>> 8fc3049b (first)
 }

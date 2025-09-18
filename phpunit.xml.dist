@@ -7,14 +7,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bbec4378 (first)
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> 8fc3049b (first)
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.3/phpunit.xsd" backupGlobals="false" bootstrap="vendor/autoload.php" colors="true" processIsolation="false" stopOnFailure="false" executionOrder="random" failOnWarning="true" failOnRisky="true" failOnEmptyTestSuite="true" beStrictAboutOutputDuringTests="true" cacheDirectory=".phpunit.cache" backupStaticProperties="false">
   <testsuites>
     <testsuite name="VendorName Test Suite">
       <directory>tests</directory>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -32,6 +36,8 @@
 >>>>>>> 0d55b583 (first)
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> 8fc3049b (first)
     </testsuite>
   </testsuites>
   <coverage>
@@ -47,13 +53,17 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> 8fc3049b (first)
   <source>
     <include>
       <directory suffix=".php">./src</directory>
     </include>
   </source>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -137,4 +147,6 @@
 >>>>>>> 9cec72d6 (first)
 =======
 >>>>>>> 2df6fbc8 (first)
+=======
+>>>>>>> 8fc3049b (first)
 </phpunit>

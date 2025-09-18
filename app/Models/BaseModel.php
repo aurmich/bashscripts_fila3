@@ -10,6 +10,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Rating\Models;
 
 use Illuminate\Database\Eloquent\Model;
@@ -44,10 +45,14 @@ namespace Modules\Notify\Models;
 =======
 namespace Modules\User\Models;
 >>>>>>> 0d55b583 (first)
+=======
+namespace Modules\Tenant\Models;
+>>>>>>> 8fc3049b (first)
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> c088001a (first)
@@ -80,10 +85,14 @@ use Modules\Xot\Traits\Updater;
 =======
 use Modules\Xot\Traits\Updater;
 >>>>>>> c986cc10 (first)
+=======
+use Modules\Xot\Traits\Updater;
+>>>>>>> 8fc3049b (first)
 
 /**
  * Class BaseModel.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -142,11 +151,17 @@ abstract class BaseModel extends Model
 >>>>>>> 2df6fbc8 (first)
 =======
 >>>>>>> c986cc10 (first)
+=======
+abstract class BaseModel extends Model
+{
+    use HasFactory;
+>>>>>>> 8fc3049b (first)
     use Updater;
 
     /**
      * Indicates whether attributes are snake cased on arrays.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -180,11 +195,15 @@ abstract class BaseModel extends Model
 =======
      * @see https://laravel-news.com/6-eloquent-secrets
 >>>>>>> c986cc10 (first)
+=======
+     * @see https://laravel-news.com/6-eloquent-secrets
+>>>>>>> 8fc3049b (first)
      *
      * @var bool
      */
     public static $snakeAttributes = true;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -207,6 +226,8 @@ abstract class BaseModel extends Model
 >>>>>>> 2df6fbc8 (first)
 =======
 >>>>>>> c986cc10 (first)
+=======
+>>>>>>> 8fc3049b (first)
     /** @var bool */
     public $incrementing = true;
 
@@ -217,6 +238,7 @@ abstract class BaseModel extends Model
     protected $perPage = 30;
 
     /** @var string */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -266,10 +288,14 @@ abstract class BaseModel extends Model
 =======
     protected $connection = 'setting';
 >>>>>>> 9cec72d6 (first)
+=======
+    protected $connection = 'setting';
+>>>>>>> 8fc3049b (first)
 
     /** @var list<string> */
     protected $appends = [];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> d79d9e57 (first)
@@ -288,10 +314,13 @@ abstract class BaseModel extends Model
     ];
 
 >>>>>>> c986cc10 (first)
+=======
+>>>>>>> 8fc3049b (first)
     /** @var string */
     protected $primaryKey = 'id';
 
     /** @var string */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -317,6 +346,8 @@ abstract class BaseModel extends Model
 >>>>>>> 2df6fbc8 (first)
 =======
 >>>>>>> c986cc10 (first)
+=======
+>>>>>>> 8fc3049b (first)
     protected $keyType = 'string';
 
     /** @var list<string> */
@@ -324,6 +355,7 @@ abstract class BaseModel extends Model
         // 'password'
     ];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -456,6 +488,8 @@ abstract class BaseModel extends Model
 =======
 =======
 >>>>>>> 9cec72d6 (first)
+=======
+>>>>>>> 8fc3049b (first)
     /**
      * Create a new factory instance for the model.
      *
@@ -464,16 +498,20 @@ abstract class BaseModel extends Model
     protected static function newFactory()
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return app(GetFactoryAction::class)->execute(static::class);
     }
 
     /**
      * @return array<string, string> */
 =======
+=======
+>>>>>>> 8fc3049b (first)
         return app(\Modules\Xot\Actions\Factory\GetFactoryAction::class)->execute(static::class);
     }
 
     /** @return array<string, string> */
+<<<<<<< HEAD
 >>>>>>> 9cec72d6 (first)
     protected function casts(): array
     {
@@ -492,6 +530,12 @@ abstract class BaseModel extends Model
         ];
 >>>>>>> 0d55b583 (first)
 =======
+=======
+    public function casts(): array
+    {
+        return [
+            'id' => 'string',
+>>>>>>> 8fc3049b (first)
             'uuid' => 'string',
             'published_at' => 'datetime',
 
@@ -499,11 +543,14 @@ abstract class BaseModel extends Model
 
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
+<<<<<<< HEAD
 =======
             'published_at' => 'datetime',
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
 >>>>>>> c986cc10 (first)
+=======
+>>>>>>> 8fc3049b (first)
             'deleted_at' => 'datetime',
 
             'updated_by' => 'string',
@@ -511,11 +558,14 @@ abstract class BaseModel extends Model
             'deleted_by' => 'string',
         ];
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 9cec72d6 (first)
 =======
         ];
 >>>>>>> 2df6fbc8 (first)
 =======
 >>>>>>> c986cc10 (first)
+=======
+>>>>>>> 8fc3049b (first)
     }
 }

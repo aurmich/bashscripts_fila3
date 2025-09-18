@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -50,6 +51,11 @@ declare(strict_types=1);
 
 namespace Modules\Media\Providers;
 >>>>>>> c986cc10 (first)
+=======
+declare(strict_types=1);
+
+namespace Modules\Tenant\Providers;
+>>>>>>> 8fc3049b (first)
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as BaseEventServiceProvider;
 
@@ -64,6 +70,7 @@ class EventServiceProvider extends BaseEventServiceProvider
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 9cec72d6 (first)
@@ -73,6 +80,9 @@ class EventServiceProvider extends BaseEventServiceProvider
 =======
 
 >>>>>>> c986cc10 (first)
+=======
+
+>>>>>>> 8fc3049b (first)
     /**
      * Indicates if events should be discovered.
      *
@@ -83,6 +93,7 @@ class EventServiceProvider extends BaseEventServiceProvider
     /**
      * Configure the proper event listeners for email verification.
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -153,4 +164,7 @@ class EventServiceProvider extends ServiceProvider
 =======
     protected function configureEmailVerification(): void {}
 >>>>>>> c986cc10 (first)
+=======
+    protected function configureEmailVerification(): void {}
+>>>>>>> 8fc3049b (first)
 }
