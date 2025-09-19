@@ -77,11 +77,38 @@ Per aggiungere nuovi pattern di esclusione, si consiglia di:
 
 ## Documentazione Correlata
 - [Gestione dei Repository Git](/docs/bashscripts/gestione_git.md)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 
+=======
+
+=======
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+>>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
+=======
+<<<<<<< HEAD
+=======
+
+=======
+>>>>>>> develop
 
 >>>>>>> f71d08e230 (.)
 >>>>>>> 71ff9e32 (.)
 >>>>>>> ec52a6b4 (.)
+=======
+
+>>>>>>> ea169dcc (.)
+=======
+
+>>>>>>> e0c964a3 (first)
 # File di Configurazione
 
 Questa documentazione descrive i file di configurazione utilizzati nel progetto.
@@ -240,8 +267,34 @@ Per aggiungere nuovi pattern di esclusione, si consiglia di:
 ## Documentazione Correlata
 - [Gestione dei Repository Git](/docs/bashscripts/gestione_git.md)
 5338a990 (.)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+
+=======
+<<<<<<< HEAD
+>>>>>>> 1831d11e78 (.)
+=======
+>>>>>>> f1e7ef1046 (.)
+=======
+=======
+=======
+
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
 >>>>>>> 71ff9e32 (.)
 >>>>>>> ec52a6b4 (.)
+=======
+
+>>>>>>> ea169dcc (.)
+=======
+
+>>>>>>> e0c964a3 (first)
 # File di Configurazione
 
 Questa documentazione descrive i file di configurazione utilizzati nel progetto.
@@ -401,10 +454,39 @@ Per aggiungere nuovi pattern di esclusione, si consiglia di:
 
 ## Documentazione Correlata
 - [Gestione dei Repository Git](/docs/bashscripts/gestione_git.md)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+
+=======
+
+=======
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+>>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
+=======
+<<<<<<< HEAD
+=======
+
+=======
+>>>>>>> develop
 
 >>>>>>> f71d08e230 (.)
 >>>>>>> 71ff9e32 (.)
 >>>>>>> ec52a6b4 (.)
+=======
+
+>>>>>>> ea169dcc (.)
+=======
+
+>>>>>>> e0c964a3 (first)
 # File di Configurazione
 
 Questa documentazione descrive i file di configurazione utilizzati nel progetto.
@@ -484,7 +566,22 @@ Per aggiungere nuovi pattern di esclusione, si consiglia di:
 
 ## Documentazione Correlata
 - [Gestione dei Repository Git](/docs/bashscripts/gestione_git.md)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 # File di Configurazione
+=======
+f000df5 (.)
+
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 1831d11e78 (.)
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
 >>>>>>> 71ff9e32 (.)
 >>>>>>> ec52a6b4 (.)
 
@@ -492,6 +589,16 @@ Questa documentazione descrive i file di configurazione utilizzati nel progetto.
 
 ## .gitignore
 
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f1e7ef1046 (.)
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
 >>>>>>> 71ff9e32 (.)
 >>>>>>> ec52a6b4 (.)
 ### Descrizione
@@ -567,6 +674,23 @@ Per aggiungere nuovi pattern di esclusione, si consiglia di:
 
 ## Documentazione Correlata
 - [Gestione dei Repository Git](/docs/bashscripts/gestione_git.md)
+=======
+<<<<<<< HEAD
+=======
+
+=======
+<<<<<<< HEAD
+>>>>>>> f1e7ef1046 (.)
+=======
+
+>>>>>>> f71d08e230 (.)
+=======
+=======
+
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
 >>>>>>> 71ff9e32 (.)
 >>>>>>> ec52a6b4 (.)
 # File di Configurazione
@@ -648,8 +772,51 @@ Per aggiungere nuovi pattern di esclusione, si consiglia di:
 
 ## Documentazione Correlata
 - [Gestione dei Repository Git](/docs/bashscripts/gestione_git.md)
+=======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d83fe8da (.)
+- [Conflitti di Merge](/bashscripts/docs/CONFLICT_RESOLUTION_BASH.md) 
+>>>>>>> 1831d11e78 (.)
+=======
+- [Conflitti di Merge](/bashscripts/docs/CONFLICT_RESOLUTION_BASH.md) 
+>>>>>>> 0c55086029 (.)
+=======
+- [Conflitti di Merge](conflict-resolution-bash.md) 
+>>>>>>> 04d882f8f6 (.)
+=======
+=======
+>>>>>>> 4d4d6cb7 (.)
+=======
+>>>>>>> d83fe8da (.)
 - [Conflitti di Merge](/bashscripts/docs/CONFLICT_RESOLUTION_BASH.md) 
 >>>>>>> f1e7ef1046 (.)
+=======
+>>>>>>> f71d08e230 (.)
+=======
+>>>>>>> ec52a6b4 (.)
 - [Conflitti di Merge](/bashscripts/docs/CONFLICT_RESOLUTION_BASH.md) 
+=======
+- [Conflitti di Merge](/bashscripts/docs/CONFLICT_RESOLUTION_BASH.md) 
+=======
+- [Conflitti di Merge](conflict-resolution-bash.md) 
+=======
+=======
+=======
+- [Conflitti di Merge](/bashscripts/docs/CONFLICT_RESOLUTION_BASH.md) 
+=======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
 >>>>>>> 71ff9e32 (.)
 >>>>>>> ec52a6b4 (.)
+=======
+>>>>>>> ea169dcc (.)
+=======
+>>>>>>> e0c964a3 (first)

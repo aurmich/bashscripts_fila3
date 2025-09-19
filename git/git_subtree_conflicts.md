@@ -56,12 +56,60 @@ La soluzione ottimale è mantenere la versione che accetta 3 parametri, ma con g
 #!/bin/bash
 
 source ./bashscripts/lib/custom.sh
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
+
+=======
 >>>>>>> 3c18aa7e (.)
->>>>>>> ec52a6b4 (.)
+=======
+>>>>>>> 574afe9e (.)
+<<<<<<< HEAD
+>>>>>>> 7de7063d (.)
+=======
+=======
+
+=======
 >>>>>>> 71ff9e32 (.)
 >>>>>>> ec52a6b4 (.)
+=======
+=======
+
+=======
+
+=======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
+=======
+
+>>>>>>> ea169dcc (.)
+=======
+<<<<<<< HEAD
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
@@ -183,12 +231,60 @@ La soluzione ottimale è mantenere la versione che accetta 3 parametri, ma con g
 #!/bin/bash
 
 source ./bashscripts/lib/custom.sh
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
+
+=======
 >>>>>>> 3c18aa7e (.)
->>>>>>> ec52a6b4 (.)
+=======
+>>>>>>> 574afe9e (.)
+<<<<<<< HEAD
+>>>>>>> 7de7063d (.)
+=======
+=======
+
+=======
 >>>>>>> 71ff9e32 (.)
 >>>>>>> ec52a6b4 (.)
+=======
+=======
+
+=======
+
+=======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
+=======
+
+>>>>>>> ea169dcc (.)
+=======
+<<<<<<< HEAD
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
@@ -320,12 +416,60 @@ La soluzione ottimale è mantenere la versione che accetta 3 parametri, ma con g
 #!/bin/bash
 
 source ./bashscripts/lib/custom.sh
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
+
+=======
 >>>>>>> 3c18aa7e (.)
->>>>>>> ec52a6b4 (.)
+=======
+>>>>>>> 574afe9e (.)
+<<<<<<< HEAD
+>>>>>>> 7de7063d (.)
+=======
+=======
+
+=======
 >>>>>>> 71ff9e32 (.)
 >>>>>>> ec52a6b4 (.)
+=======
+=======
+
+=======
+
+=======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
+=======
+
+>>>>>>> ea169dcc (.)
+=======
+<<<<<<< HEAD
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
@@ -401,12 +545,50 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione degli Script Git](git_scripts.md)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
 5338a990 (.)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+=======
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
 >>>>>>> 9c02579 (.)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 9c02579 (.)
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 71ff9e32 (.)
+=======
+=======
+=======
+=======
+>>>>>>> f52d0712 (.)
 >>>>>>> ec52a6b4 (.)
+=======
+>>>>>>> e0c964a3 (first)
 # Risoluzione dei Conflitti negli Script Git Subtree
 
 ## Problema
@@ -802,10 +984,42 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione degli Script Git](git_scripts.md)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
 - [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md) 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 9c02579 (.)
+=======
+<<<<<<< HEAD
+=======
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
+>>>>>>> 7de7063d (.)
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
 >>>>>>> 71ff9e32 (.)
 >>>>>>> ec52a6b4 (.)
+=======
+>>>>>>> ea169dcc (.)
+=======
+<<<<<<< HEAD
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)

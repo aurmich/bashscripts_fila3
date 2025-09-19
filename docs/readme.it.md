@@ -51,11 +51,38 @@ php artisan migrate
 
 ### 7. Installare i Moduli
 ```bash
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 
+=======
+
+=======
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+>>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
+=======
+<<<<<<< HEAD
+=======
+
+=======
+>>>>>>> develop
 
 >>>>>>> f71d08e230 (.)
 >>>>>>> 71ff9e32 (.)
 >>>>>>> ec52a6b4 (.)
+=======
+
+>>>>>>> ea169dcc (.)
+=======
+
+>>>>>>> e0c964a3 (first)
 # Installare Laravel Modules
 composer require nwidart/laravel-modules
 
@@ -131,11 +158,38 @@ La documentazione completa è disponibile nella directory `docs/`:
 
 ### Comandi Utili
 ```bash
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 
+=======
+
+=======
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+>>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
+=======
+<<<<<<< HEAD
+=======
+
+=======
+>>>>>>> develop
 
 >>>>>>> f71d08e230 (.)
 >>>>>>> 71ff9e32 (.)
 >>>>>>> ec52a6b4 (.)
+=======
+
+>>>>>>> ea169dcc (.)
+=======
+
+>>>>>>> e0c964a3 (first)
 # Creare un nuovo modulo
 php artisan module:make NomeModulo
 
@@ -183,11 +237,38 @@ Questo toolkit affronta queste sfide fornendo strumenti automatizzati che sempli
 
 ## Traduzioni
 - [English](../../README.md)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 
+=======
+
+=======
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+>>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
+=======
+<<<<<<< HEAD
+=======
+
+=======
+>>>>>>> develop
 
 >>>>>>> f71d08e230 (.)
 >>>>>>> 71ff9e32 (.)
 >>>>>>> ec52a6b4 (.)
+=======
+
+>>>>>>> ea169dcc (.)
+=======
+
+>>>>>>> e0c964a3 (first)
 # 🚀 Toolkit di Automazione Git
 
 [![PHPStan](https://img.shields.io/badge/PHPStan-Level%209-brightgreen.svg?style=for-the-badge&logo=php&logoColor=white)](phpstan/ANALISI_MODULI_PHPSTAN.md)
@@ -241,11 +322,38 @@ php artisan migrate
 
 ### 7. Installare i Moduli
 ```bash
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 
+=======
+
+=======
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+>>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
+=======
+<<<<<<< HEAD
+=======
+
+=======
+>>>>>>> develop
 
 >>>>>>> f71d08e230 (.)
 >>>>>>> 71ff9e32 (.)
 >>>>>>> ec52a6b4 (.)
+=======
+
+>>>>>>> ea169dcc (.)
+=======
+
+>>>>>>> e0c964a3 (first)
 # Installare Laravel Modules
 composer require nwidart/laravel-modules
 
@@ -321,11 +429,38 @@ La documentazione completa è disponibile nella directory `docs/`:
 
 ### Comandi Utili
 ```bash
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 
+=======
+
+=======
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+>>>>>>> f71d08e230 (.)
+=======
+=======
+
+>>>>>>> f52d0712 (.)
+=======
+<<<<<<< HEAD
+=======
+
+=======
+>>>>>>> develop
 
 >>>>>>> f71d08e230 (.)
 >>>>>>> 71ff9e32 (.)
 >>>>>>> ec52a6b4 (.)
+=======
+
+>>>>>>> ea169dcc (.)
+=======
+
+>>>>>>> e0c964a3 (first)
 # Creare un nuovo modulo
 php artisan module:make NomeModulo
 
@@ -374,5 +509,24 @@ Questo toolkit affronta queste sfide fornendo strumenti automatizzati che sempli
 ## Traduzioni
 - [English](../../README.md)
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Español](README.es.md) 
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> f71d08e230 (.)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
 >>>>>>> 71ff9e32 (.)
 >>>>>>> ec52a6b4 (.)
+=======
+>>>>>>> ea169dcc (.)
+=======
+>>>>>>> e0c964a3 (first)

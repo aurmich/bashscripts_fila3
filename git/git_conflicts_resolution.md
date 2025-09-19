@@ -39,30 +39,115 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 - I namespace sono stati mantenuti corretti secondo la struttura del modulo
 - Sono stati rimossi solo i marcatori di conflitto, mantenendo il codice funzionale
 - I file di backup sono stati creati con il timestamp per sicurezza
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> ec52a6b4 (.)
+=======
 
 ### Fase 1: Identificazione
 ```bash
+<<<<<<< HEAD
+=======
 ### Fase 1: Identificazione
 ```bash
+=======
+
+=======
+>>>>>>> 71ff9e32 (.)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 7de7063d (.)
+=======
+=======
+>>>>>>> f52d0712 (.)
+=======
+
 ### Fase 1: Identificazione
 ```bash
+
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> f198176d (.)
+<<<<<<< HEAD
 >>>>>>> e0c964a3 (first)
 
+### Fase 1: Identificazione
+```bash
+=======
+### Fase 1: Identificazione
+```bash
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 574afe9e (.)
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
 >>>>>>> ec52a6b4 (.)
+=======
+>>>>>>> ea169dcc (.)
 
 ### Fase 1: Identificazione
 ```bash
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 >>>>>>> f52d0712 (.)
 >>>>>>> ec52a6b4 (.)
+=======
+>>>>>>> e0c964a3 (first)
 ### Fase 1: Identificazione
 ```bash
+=======
+=======
+### Fase 1: Identificazione
+```bash
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> e0c964a3 (first)
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
+<<<<<<< HEAD
+=======
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
+>>>>>>> 7de7063d (.)
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
 >>>>>>> 71ff9e32 (.)
 >>>>>>> ec52a6b4 (.)
+=======
+>>>>>>> ea169dcc (.)
+=======
+<<<<<<< HEAD
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
 # Visualizzare tutti i file con conflitti
 git status
@@ -94,12 +179,60 @@ Per ogni file in conflitto:
 - `Modules\Predict\Providers` per i service provider
 - `Modules\Predict\Database\Factories` per le factory
 - `Modules\Predict\lang\it` per i file di traduzione
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
+
+=======
 >>>>>>> 3c18aa7e (.)
->>>>>>> ec52a6b4 (.)
+=======
+>>>>>>> 574afe9e (.)
+<<<<<<< HEAD
+>>>>>>> 7de7063d (.)
+=======
+=======
+
+=======
 >>>>>>> 71ff9e32 (.)
 >>>>>>> ec52a6b4 (.)
+=======
+=======
+
+=======
+
+=======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
+=======
+
+>>>>>>> ea169dcc (.)
+=======
+<<<<<<< HEAD
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
 ### Fase 3: Risoluzione
 Scegliere una delle seguenti strategie:
@@ -157,14 +290,71 @@ namespace Modules\NomeModulo\App\Filament;
 2. Eseguire `php artisan config:clear` per pulire la cache
 3. Verificare che tutte le risorse Filament siano registrate correttamente
 4. Testare il modulo in ambiente di sviluppo 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+<<<<<<< HEAD
+
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 574afe9e (.)
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
+<<<<<<< HEAD
+=======
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
->>>>>>> ec52a6b4 (.)
+<<<<<<< HEAD
+>>>>>>> 7de7063d (.)
+=======
+=======
+
+=======
 >>>>>>> 71ff9e32 (.)
 >>>>>>> ec52a6b4 (.)
+=======
+
+=======
+=======
+=======
+=======
+
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f52d0712 (.)
+=======
+>>>>>>> develop
+>>>>>>> 71ff9e32 (.)
+>>>>>>> ec52a6b4 (.)
+=======
+
+>>>>>>> ea169dcc (.)
+=======
+<<<<<<< HEAD
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
 ## Risoluzione di Casi Specifici
 

@@ -1,8 +1,15 @@
 # 📚 Analisi Completa del Documento
 
 ## 📋 Informazioni Generali
+<<<<<<< HEAD
+<<<<<<< HEAD
+- **File analizzato**: `/var/www/html/_bases/base_techplanner_fila3_mono/bashscripts/pdf/test.pdf`
+=======
 - **File analizzato**: `/var/www/html/saluteora/bashscripts/pdf/test.pdf`
 >>>>>>> ea169dcc (.)
+=======
+- **File analizzato**: `/var/www/html/saluteora/bashscripts/pdf/test.pdf`
+>>>>>>> e0c964a3 (first)
 - **Data analisi**: 2025-05-19 15:04:13
 - **Pagine totali**: 215
 - **Protetto da password**: No

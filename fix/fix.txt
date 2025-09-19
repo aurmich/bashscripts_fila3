@@ -1,6 +1,7 @@
 # 🛠️ Soluzioni Comuni per Problemi Git e Bash
 
 ## 🔧 Problemi di Interprete Bash
+<<<<<<< HEAD
 
 ### Fix "bad interpreter: No such file or directory"
 ```bash
@@ -17,6 +18,7 @@ chmod +x nomefile.sh
 ## 🔄 Configurazione Git Avanzata
 
 ### Setup Repository e Remote
+=======
 ```bash
 # Fix per "bad interpreter: No such file or directory"
 sed -i -e 's/\r$//' nomefile.sh
@@ -62,6 +64,7 @@ find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
 ```
 
 ## 🚀 Setup Nuovo Repository
+>>>>>>> bd3b585 (.)
 ```bash
 # Inizializza nuovo repository
 git init
