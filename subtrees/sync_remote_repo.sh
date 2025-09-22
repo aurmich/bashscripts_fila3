@@ -67,8 +67,10 @@ for ((i=0; i<total; i++)); do
     if [ ! -d ".git" ]; then
         echo "Inizializzazione repository Git in $path..."
         git init
+        git remote add "$ORG" "$url"
     else
         echo "Repository Git già inizializzato in $path"
+        git remote set-url "$ORG" "$url"
     fi
 <<<<<<< HEAD
     echo "🌐 URL: $url"
@@ -87,7 +89,7 @@ for ((i=0; i<total; i++)); do
 
     git config --global --add safe.directory "$curr_dir/$path"
     git checkout "$BRANCH" -- || git checkout -b "$BRANCH"
-    git remote add "$ORG" "$url"
+    
     git_config_setup
     #git stash || echo "🔄 Non ci sono modifiche da salvare"
     dummy_push "$ORG" "$BRANCH" "."
