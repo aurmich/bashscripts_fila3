@@ -28,6 +28,7 @@ php bashscripts/check_form_schema.php
 Esempio di output:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 Esempio di output:
@@ -47,6 +48,11 @@ Esempio di output:
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+=======
+=======
+Esempio di output:
+>>>>>>> e9356a3a (.)
 ```
 XotBaseResource Classes Form Schema Check
 ====
@@ -160,6 +166,7 @@ php bashscripts/check_form_schema.php
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 Il comando genererà un output simile a:
 =======
@@ -177,6 +184,11 @@ Il comando genererà un output simile a:
 =======
 Il comando genererà un output simile a:
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> f1e7ef1046 (.)
+Il comando genererà un output simile a:
+>>>>>>> 04d882f8f6 (.)
+>>>>>>> e9356a3a (.)
 ```
 XotBaseResource Classes Form Schema Check
 ====
@@ -208,6 +220,7 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
@@ -218,6 +231,8 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 =======
 =======
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> e9356a3a (.)
 =======
 =======
 =======
@@ -243,7 +258,10 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+<<<<<<< HEAD
 >>>>>>> ec52a6b4 (.)
+=======
+>>>>>>> e9356a3a (.)
 # Script di Verifica della Qualità del Codice
 
 Questa documentazione descrive gli script utilizzati per verificare e migliorare la qualità del codice nel progetto.
@@ -265,6 +283,7 @@ bashscripts/check_form_schema.php
 - Genera un report delle classi che non implementano il metodo
 - Crea un log di documentazione con i risultati
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 1831d11e78 (.)
@@ -366,6 +385,9 @@ bashscripts/check_form_schema.php
 =======
 >>>>>>> f52d0712 (.)
 >>>>>>> ec52a6b4 (.)
+=======
+>>>>>>> 1831d11e78 (.)
+>>>>>>> e9356a3a (.)
 Il comando genererà un output simile a:
 ```
 XotBaseResource Classes Form Schema Check
@@ -395,6 +417,7 @@ XotBaseResource Classes Form Schema Check
 
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -445,6 +468,9 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 =======
 >>>>>>> f52d0712 (.)
 >>>>>>> ec52a6b4 (.)
+=======
+
+>>>>>>> e9356a3a (.)
 # Script di Verifica della Qualità del Codice
 
 Questa documentazione descrive gli script utilizzati per verificare e migliorare la qualità del codice nel progetto.
@@ -618,6 +644,7 @@ XotBaseResource Classes Form Schema Check
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -809,6 +836,8 @@ XotBaseResource Classes Form Schema Check
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> f000df5 (.)
 =======
 
@@ -870,13 +899,17 @@ XotBaseResource Classes Form Schema Check
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 
+<<<<<<< HEAD
 =======
 >>>>>>> develop
 >>>>>>> ec52a6b4 (.)
+=======
+>>>>>>> e9356a3a (.)
 ### phpstan_docs_generator.sh 
 =======
 =======
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -888,20 +921,27 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
 >>>>>>> ec52a6b4 (.)
+=======
+>>>>>>> 0c55086029 (.)
+>>>>>>> e9356a3a (.)
 ## Risorse Utili
 - [PHPStan](https://phpstan.org/)
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data/v4/introduction)
 - [CI/CD Best Practices](https://docs.github.com/en/actions/guides/building-and-testing-php) 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> 1831d11e78 (.)
 =======
 
 >>>>>>> 0c55086029 (.)
 =======
+<<<<<<< HEAD
 =======
 
 <<<<<<< HEAD
@@ -1012,6 +1052,13 @@ bashscripts/check_form_schema.php
 - Verifica la presenza del metodo `getFormSchema()`
 - Genera un report delle classi che non implementano il metodo
 - Crea un log di documentazione con i risultati
+=======
+## PHPStan
+
+Per mantenere alta la qualità del codice, utilizziamo PHPStan per l'analisi statica. 
+>>>>>>> 04d882f8f6 (.)
+=======
+>>>>>>> e9356a3a (.)
 
 ### Uso
 ```bash
@@ -1050,6 +1097,7 @@ XotBaseResource Classes Form Schema Check
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> e0c964a3 (first)
@@ -1161,6 +1209,8 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 >>>>>>> 337c5266 (.)
 >>>>>>> ea169dcc (.)
 =======
+>>>>>>> e9356a3a (.)
+=======
 =======
 
 >>>>>>> 59901687 (.)
@@ -1169,6 +1219,9 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 
 >>>>>>> 9de04485 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 =======
 =======
 
@@ -1182,12 +1235,15 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+<<<<<<< HEAD
 >>>>>>> 71ff9e32 (.)
 >>>>>>> ec52a6b4 (.)
 =======
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)
 # Script di Verifica della Qualità del Codice
 
 Questa documentazione descrive gli script utilizzati per verificare e migliorare la qualità del codice nel progetto.
@@ -1252,6 +1308,7 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
@@ -1272,3 +1329,8 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> f1e7ef1046 (.)
+=======
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)

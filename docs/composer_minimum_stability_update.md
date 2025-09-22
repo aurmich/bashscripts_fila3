@@ -131,13 +131,17 @@ I seguenti file avevano già `"minimum-stability": "dev"`:
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 =======
 =======
 
 =======
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -145,6 +149,8 @@ I seguenti file avevano già `"minimum-stability": "dev"`:
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9c02579 (.)
@@ -168,6 +174,7 @@ I seguenti file avevano già `"minimum-stability": "dev"`:
 =======
 >>>>>>> e1b46df35 (.)
 >>>>>>> f71d08e230 (.)
+<<<<<<< HEAD
 =======
 >>>>>>> 71ff9e32 (.)
 =======
@@ -259,6 +266,8 @@ I seguenti file avevano già `"minimum-stability": "dev"`:
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)
 # Verifica configurazione
 composer config --list | grep minimum-stability
 
@@ -316,13 +325,17 @@ composer check-platform-reqs
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 =======
 =======
 
 =======
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -330,6 +343,8 @@ composer check-platform-reqs
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9c02579 (.)
@@ -353,6 +368,7 @@ composer check-platform-reqs
 =======
 >>>>>>> e1b46df35 (.)
 >>>>>>> f71d08e230 (.)
+<<<<<<< HEAD
 =======
 >>>>>>> 71ff9e32 (.)
 =======
@@ -444,6 +460,8 @@ composer check-platform-reqs
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)
 # Abilita debug composer
 composer update -vvv
 
@@ -469,10 +487,14 @@ La configurazione mantiene `"prefer-stable": true` per garantire stabilità quan
 *File già configurati: 18*
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 *Totale file verificati: 22* 
 =======
 *Totale file verificati: 22* 
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -497,6 +519,8 @@ La configurazione mantiene `"prefer-stable": true` per garantire stabilità quan
 >>>>>>> 337c5266 (.)
 =======
 >>>>>>> ea169dcc (.)
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
 =======
@@ -504,12 +528,16 @@ La configurazione mantiene `"prefer-stable": true` per garantire stabilità quan
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 9de04485 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 =======
 =======
 *Totale file verificati: 22* 
 >>>>>>> 59901687 (.)
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
 >>>>>>> e0c964a3 (first)
 =======
@@ -517,11 +545,17 @@ La configurazione mantiene `"prefer-stable": true` per garantire stabilità quan
 >>>>>>> 3c18aa7e (.)
 >>>>>>> f198176d (.)
 <<<<<<< HEAD
+=======
+*Totale file verificati: 22* 
+>>>>>>> 3c18aa7e (.)
+>>>>>>> f198176d (.)
+>>>>>>> e9356a3a (.)
 >>>>>>> d20d0523 (.)
 =======
 *Totale file verificati: 22* 
 >>>>>>> e1b46df35 (.)
 >>>>>>> f71d08e230 (.)
+<<<<<<< HEAD
 =======
 >>>>>>> ec52a6b4 (.)
 *Totale file verificati: 22* 
@@ -553,3 +587,5 @@ La configurazione mantiene `"prefer-stable": true` per garantire stabilità quan
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)

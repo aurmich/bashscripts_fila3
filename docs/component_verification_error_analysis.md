@@ -123,9 +123,12 @@ name('login');
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 =======
 
 =======
@@ -135,6 +138,7 @@ name('login');
 =======
 >>>>>>> 3c18aa7e (.)
 =======
+<<<<<<< HEAD
 >>>>>>> 71ff9e32 (.)
 <<<<<<< HEAD
 >>>>>>> ec52a6b4 (.)
@@ -187,6 +191,8 @@ name('login');
 >>>>>>> develop
 >>>>>>> ec52a6b4 (.)
 =======
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> 9de04485 (.)
 =======
 >>>>>>> 59901687 (.)
@@ -199,6 +205,7 @@ name('login');
 =======
 >>>>>>> e1b46df35 (.)
 >>>>>>> f71d08e230 (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -226,6 +233,8 @@ name('login');
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)
 # Verifica componenti nel progetto
 find resources/views/components -name "*.blade.php" | head -20
 
@@ -244,9 +253,12 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 =======
 
 =======
@@ -256,6 +268,7 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 =======
 >>>>>>> 3c18aa7e (.)
 =======
+<<<<<<< HEAD
 >>>>>>> 71ff9e32 (.)
 <<<<<<< HEAD
 >>>>>>> ec52a6b4 (.)
@@ -308,6 +321,8 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 >>>>>>> develop
 >>>>>>> ec52a6b4 (.)
 =======
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> 9de04485 (.)
 =======
 >>>>>>> 59901687 (.)
@@ -320,6 +335,7 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 =======
 >>>>>>> e1b46df35 (.)
 >>>>>>> f71d08e230 (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -347,6 +363,8 @@ find vendor/filament -name "*.blade.php" | grep -E "(card|button|input)" | head 
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)
 # Test componente
 php artisan view:clear
 php artisan config:clear
@@ -409,6 +427,7 @@ L'errore è stato causato da:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 *Priorità: CRITICA* 
@@ -459,6 +478,8 @@ L'errore è stato causato da:
 =======
 >>>>>>> f52d0712 (.)
 >>>>>>> ec52a6b4 (.)
+=======
+>>>>>>> e9356a3a (.)
 *Priorità: CRITICA* 
 =======
 *Priorità: CRITICA* 
@@ -469,9 +490,12 @@ L'errore è stato causato da:
 *Priorità: CRITICA* 
 >>>>>>> 3c18aa7e (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> develop
 >>>>>>> ec52a6b4 (.)
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> 9de04485 (.)
 =======
 =======
@@ -487,6 +511,7 @@ L'errore è stato causato da:
 *Priorità: CRITICA* 
 >>>>>>> e1b46df35 (.)
 >>>>>>> f71d08e230 (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -511,3 +536,5 @@ L'errore è stato causato da:
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)

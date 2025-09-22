@@ -53,6 +53,7 @@ php artisan migrate
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -83,6 +84,11 @@ php artisan migrate
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # Instalar Laravel Modules
 composer require nwidart/laravel-modules
 
@@ -160,6 +166,7 @@ La documentación completa está disponible en el directorio `docs/`:
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -190,6 +197,11 @@ La documentación completa está disponible en el directorio `docs/`:
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # Crear un nuevo módulo
 php artisan module:make NombreModulo
 
@@ -239,6 +251,7 @@ Este kit de herramientas aborda estos desafíos proporcionando herramientas auto
 - [English](../../README.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -269,6 +282,11 @@ Este kit de herramientas aborda estos desafíos proporcionando herramientas auto
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # 🚀 Kit de Herramientas de Automatización Git
 
 [![PHPStan](https://img.shields.io/badge/PHPStan-Level%209-brightgreen.svg?style=for-the-badge&logo=php&logoColor=white)](phpstan/ANALISI_MODULI_PHPSTAN.md)
@@ -324,6 +342,7 @@ php artisan migrate
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -354,6 +373,11 @@ php artisan migrate
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # Instalar Laravel Modules
 composer require nwidart/laravel-modules
 
@@ -431,6 +455,7 @@ La documentación completa está disponible en el directorio `docs/`:
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -461,6 +486,11 @@ La documentación completa está disponible en el directorio `docs/`:
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # Crear un nuevo módulo
 php artisan module:make NombreModulo
 
@@ -511,6 +541,7 @@ Este kit de herramientas aborda estos desafíos proporcionando herramientas auto
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Italiano](README.it.md) 
 =======
 <<<<<<< HEAD
@@ -530,3 +561,8 @@ Este kit de herramientas aborda estos desafíos proporcionando herramientas auto
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+- [Italiano](README.it.md) 
+=======
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)

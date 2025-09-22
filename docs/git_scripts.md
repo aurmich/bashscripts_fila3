@@ -48,6 +48,7 @@ Funzione centralizzata (in `custom.sh`) per impostare:
 > Ogni modifica agli script va testata manualmente e tracciata nella documentazione.- `core.autocrlf`: false (no conversione automatica line endings)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Script Git per la Gestione dei Subtree
 =======
 <<<<<<< HEAD
@@ -66,6 +67,10 @@ Funzione centralizzata (in `custom.sh`) per impostare:
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+# Script Git per la Gestione dei Subtree
+=======
+>>>>>>> e9356a3a (.)
 - `core.eol`: lf (line ending di default)
 - `core.symlinks`: false (no symlinks per Windows)
 - `core.longpaths`: true (supporto path lunghi Windows)
@@ -103,6 +108,7 @@ Script per il push dei subtree. Funzionalità:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -127,6 +133,8 @@ Script per il push dei subtree. Funzionalità:
 =======
 >>>>>>> develop
 =======
+>>>>>>> e9356a3a (.)
+=======
 =======
 =======
 =======
@@ -134,6 +142,7 @@ Script per il push dei subtree. Funzionalità:
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
 # Script Git
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> f52d0712 (.)
 =======
@@ -151,6 +160,9 @@ Script per il push dei subtree. Funzionalità:
 >>>>>>> 9de04485 (.)
 # Script Git
 >>>>>>> ea169dcc (.)
+=======
+>>>>>>> f1e7ef1046 (.)
+>>>>>>> e9356a3a (.)
 
 Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
 
@@ -167,6 +179,7 @@ Funzione centralizzata per la configurazione git, definita in `custom.sh`. Gesti
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 04d882f8f6 (.)
 =======
 >>>>>>> f52d0712 (.)
@@ -175,6 +188,9 @@ Funzione centralizzata per la configurazione git, definita in `custom.sh`. Gesti
 >>>>>>> 71ff9e32 (.)
 =======
 >>>>>>> ea169dcc (.)
+=======
+>>>>>>> 04d882f8f6 (.)
+>>>>>>> e9356a3a (.)
 - `core.eol`: lf (line ending di default)
 - `core.symlinks`: false (no symlinks per Windows)
 - `core.longpaths`: true (supporto path lunghi Windows)
@@ -191,8 +207,11 @@ Script per il pull di un singolo subtree. Caratteristiche:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> e9356a3a (.)
 
 1. Sistema avanzato di logging con timestamp, colori ed emoji
 2. Gestione errori robusta con fallback automatici
@@ -225,6 +244,7 @@ Script per il pull di un singolo subtree. Caratteristiche:
 3. Supporto per branch personalizzati
 >>>>>>> f1e7ef1046 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 1. Gestione errori robusta
 2. Logging delle operazioni
@@ -237,6 +257,8 @@ Script per il pull di un singolo subtree. Caratteristiche:
 2. Logging delle operazioni
 3. Supporto per branch personalizzati
 >>>>>>> ea169dcc (.)
+=======
+>>>>>>> e9356a3a (.)
 
 ### git_push_subtrees.sh
 Script per il push dei subtree. Funzionalità:
@@ -247,8 +269,11 @@ Script per il push dei subtree. Funzionalità:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 71ff9e32 (.)
+=======
+>>>>>>> e9356a3a (.)
 ### git_sync_subtree.sh
 Script ottimizzato per la sincronizzazione di un singolo subtree. Caratteristiche principali:
 1. Sistema avanzato di logging con timestamp e codici colore
@@ -303,12 +328,15 @@ Per una documentazione più generale sugli script di gestione Git, consultare la
 =======
 >>>>>>> f1e7ef1046 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f52d0712 (.)
 =======
 >>>>>>> 71ff9e32 (.)
 =======
 >>>>>>> ea169dcc (.)
+=======
+>>>>>>> e9356a3a (.)
 ## Best Practices
 1. Utilizzare sempre `git_config_setup` per la configurazione
 2. Gestire i backup prima delle operazioni critiche
@@ -323,6 +351,9 @@ Per una documentazione più generale sugli script di gestione Git, consultare la
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 =======
 >>>>>>> 1831d11e78 (.)
 # Script Git
@@ -332,6 +363,7 @@ Per una documentazione più generale sugli script di gestione Git, consultare la
 =======
 =======
 >>>>>>> 3c18aa7e (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 # Script Git
 >>>>>>> f1e7ef1046 (.)
@@ -345,6 +377,10 @@ Per una documentazione più generale sugli script di gestione Git, consultare la
 >>>>>>> f1e7ef1046 (.)
 >>>>>>> 71ff9e32 (.)
 >>>>>>> ec52a6b4 (.)
+=======
+# Script Git
+>>>>>>> f1e7ef1046 (.)
+>>>>>>> e9356a3a (.)
 
 Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
 
@@ -392,6 +428,7 @@ Script per il push dei subtree. Funzionalità:
 2. Errori di path: verificare la configurazione Windows
 3. Problemi di permessi: controllare fileMode e symlinks
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -462,6 +499,9 @@ Script per il push dei subtree. Funzionalità:
 <<<<<<< HEAD
 =======
 >>>>>>> 71ff9e32 (.)
+=======
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> 1831d11e78 (.)
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
@@ -470,6 +510,7 @@ Script per il push dei subtree. Funzionalità:
 >>>>>>> f000df5 (.)
 >>>>>>> 3c18aa7e (.)
 >>>>>>> f71d08e230 (.)
+<<<<<<< HEAD
 >>>>>>> ec52a6b4 (.)
 =======
 =======
@@ -489,6 +530,8 @@ Script per il push dei subtree. Funzionalità:
 =======
 =======
 >>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> e9356a3a (.)
 # Script Git
 
 Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
@@ -536,6 +579,7 @@ Script per il push dei subtree. Funzionalità:
 1. Conflitti di merge: utilizzare gli script di backup prima di risolvere
 2. Errori di path: verificare la configurazione Windows
 3. Problemi di permessi: controllare fileMode e symlinks
+<<<<<<< HEAD
 
 >>>>>>> e0c964a3 (first)
 <<<<<<< HEAD
@@ -608,11 +652,17 @@ Script per il push dei subtree. Funzionalità:
 >>>>>>> 337c5266 (.)
 =======
 >>>>>>> ea169dcc (.)
+=======
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 =======
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
@@ -621,6 +671,7 @@ Script per il push dei subtree. Funzionalità:
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+<<<<<<< HEAD
 =======
 >>>>>>> ec52a6b4 (.)
 =======
@@ -645,6 +696,8 @@ Script per il push dei subtree. Funzionalità:
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)
 # Script Git
 
 Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
@@ -741,11 +794,16 @@ Script per il push dei subtree. Funzionalità:
 2. Errori di path: verificare la configurazione Windows
 3. Problemi di permessi: controllare fileMode e symlinks
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> 9de04485 (.)
 =======
 =======
@@ -755,6 +813,7 @@ Script per il push dei subtree. Funzionalità:
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+<<<<<<< HEAD
 >>>>>>> ec52a6b4 (.)
 =======
 =======
@@ -885,6 +944,8 @@ Script per il push dei subtree. Funzionalità:
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)
 
 # Script Git
 
@@ -940,10 +1001,13 @@ Script per il push dei subtree. Funzionalità:
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> ec52a6b4 (.)
+=======
+>>>>>>> e9356a3a (.)
 
 [Torna alla documentazione principale](/docs/maintenance.md#git-management) 
 3. Problemi di permessi: controllare fileMode e symlinks
@@ -951,13 +1015,17 @@ Script per il push dei subtree. Funzionalità:
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> 0c55086029 (.)
 =======
 >>>>>>> f000df5 (.)
 >>>>>>> f1e7ef1046 (.)
+<<<<<<< HEAD
 =======
 =======
 =======
@@ -998,6 +1066,8 @@ Script per il push dei subtree. Funzionalità:
 >>>>>>> develop
 >>>>>>> 71ff9e32 (.)
 >>>>>>> ec52a6b4 (.)
+=======
+>>>>>>> e9356a3a (.)
 # Script Git
 
 Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
@@ -1047,6 +1117,7 @@ Script per il push dei subtree. Funzionalità:
 3. Problemi di permessi: controllare fileMode e symlinks
 
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 [Torna alla documentazione principale](/docs/maintenance.md#git-management) 
@@ -1058,6 +1129,9 @@ Script per il push dei subtree. Funzionalità:
 >>>>>>> 1831d11e78 (.)
 =======
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> d83fe8da (.)
 [Torna alla documentazione principale](/docs/maintenance.md#git-management) 
 >>>>>>> 1831d11e78 (.)
@@ -1069,6 +1143,7 @@ Script per il push dei subtree. Funzionalità:
 >>>>>>> 04d882f8f6 (.)
 =======
 =======
+<<<<<<< HEAD
 =======
 =======
 
@@ -1083,16 +1158,22 @@ Script per il push dei subtree. Funzionalità:
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> 4d4d6cb7 (.)
 =======
 >>>>>>> d83fe8da (.)
 [Torna alla documentazione principale](/docs/maintenance.md#git-management) 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 =======
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
 =======
+<<<<<<< HEAD
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
 <<<<<<< HEAD
@@ -1133,6 +1214,8 @@ Script per il push dei subtree. Funzionalità:
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
 =======
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
 =======
@@ -1146,6 +1229,7 @@ Script per il push dei subtree. Funzionalità:
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
 >>>>>>> f71d08e230 (.)
+<<<<<<< HEAD
 >>>>>>> ec52a6b4 (.)
 =======
 [Torna alla documentazione principale](/docs/maintenance.md#git-management) 
@@ -1182,3 +1266,5 @@ Script per il push dei subtree. Funzionalità:
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)

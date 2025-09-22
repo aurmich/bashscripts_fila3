@@ -6,6 +6,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Script Git
 
 <<<<<<< HEAD
@@ -13,11 +14,16 @@
 <<<<<<< HEAD
 =======
 >>>>>>> ec52a6b4 (.)
+=======
+# Script Git
+
+>>>>>>> e9356a3a (.)
 Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
  43df3e0 (.)
 aurmich/dev
 =======
 Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
@@ -42,10 +48,13 @@ Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
 aurmich/dev
 =======
 Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> 1831d11e78 (.)
 =======
 Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
 >>>>>>> f1e7ef1046 (.)
+<<<<<<< HEAD
 >>>>>>> 71ff9e32 (.)
 >>>>>>> ec52a6b4 (.)
 =======
@@ -54,6 +63,8 @@ Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
 =======
 Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)
 
 ## Panoramica
 Questa documentazione descrive gli script bash utilizzati per la gestione dei subtree git nel progetto Laraxot.
@@ -106,6 +117,7 @@ Script per il pull di un singolo subtree. Caratteristiche:
 - `<remote_repo>`: L'URL del repository remoto
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 aurmich/dev
 =======
 <<<<<<< HEAD
@@ -129,6 +141,13 @@ aurmich/dev
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+aurmich/dev
+=======
+>>>>>>> 1831d11e78 (.)
+=======
+>>>>>>> f1e7ef1046 (.)
+>>>>>>> e9356a3a (.)
 
 ### git_push_subtrees.sh
 Script per il push dei subtree. Funzionalità:
@@ -136,6 +155,7 @@ Script per il push dei subtree. Funzionalità:
 2. Supporto per organizzazioni multiple
 3. Gestione errori e logging
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -161,6 +181,13 @@ Script per il push dei subtree. Funzionalità:
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+
+=======
+>>>>>>> 1831d11e78 (.)
+=======
+>>>>>>> f1e7ef1046 (.)
+>>>>>>> e9356a3a (.)
 ### git_sync_subtree.sh
 Script ottimizzato per la sincronizzazione di un singolo subtree. Caratteristiche principali:
 1. Sistema avanzato di logging con timestamp e codici colore
@@ -214,6 +241,7 @@ Per una documentazione più generale sugli script di gestione Git, consultare la
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 aurmich/dev
 =======
 <<<<<<< HEAD
@@ -237,6 +265,13 @@ aurmich/dev
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+aurmich/dev
+=======
+>>>>>>> 1831d11e78 (.)
+=======
+>>>>>>> f1e7ef1046 (.)
+>>>>>>> e9356a3a (.)
 ## Best Practices
 1. Utilizzare sempre `git_config_setup` per la configurazione
 2. Gestire i backup prima delle operazioni critiche
@@ -248,6 +283,7 @@ aurmich/dev
 2. Errori di path: verificare la configurazione Windows
 3. Problemi di permessi: controllare fileMode e symlinks
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -273,6 +309,13 @@ aurmich/dev
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+
+=======
+>>>>>>> 1831d11e78 (.)
+=======
+>>>>>>> f1e7ef1046 (.)
+>>>>>>> e9356a3a (.)
 ## Script di sincronizzazione repository remoti
 
 ### sync_remote_repo.sh
@@ -313,6 +356,7 @@ Questa strategia è generalmente migliore per ridurre i conflitti rispetto all'u
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 aurmich/dev
 =======
 <<<<<<< HEAD
@@ -336,4 +380,11 @@ aurmich/dev
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+aurmich/dev
+=======
+>>>>>>> 1831d11e78 (.)
+=======
+>>>>>>> f1e7ef1046 (.)
+>>>>>>> e9356a3a (.)
 [Torna alla documentazione principale](../../docs/maintenance.md#git-management) 

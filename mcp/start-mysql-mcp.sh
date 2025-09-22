@@ -10,6 +10,7 @@ LOGS_DIR="$PROJECT_DIR/storage/logs/mcp"
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 CONNECTOR_SCRIPT="$PROJECT_DIR/bashscripts/mcp/mysql-db-connector.js"
 =======
@@ -47,6 +48,9 @@ CONNECTOR_SCRIPT="$PROJECT_DIR/bashscripts/mcp/mysql-db-connector.js"
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+CONNECTOR_SCRIPT="$PROJECT_DIR/bashscripts/mcp/mysql-db-connector.js"
+>>>>>>> e9356a3a (.)
 
 # Crea la directory dei log se non esiste
 mkdir -p "$LOGS_DIR"
@@ -75,6 +79,7 @@ echo "🚀 Avvio del server MCP MySQL personalizzato..."
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -96,11 +101,14 @@ echo "🚀 Avvio del server MCP MySQL personalizzato..."
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)
 # Imposta una dimensione di schermo standard per evitare errori
 export COLUMNS=80
 export LINES=24
 
 # Avvia il connector senza utilizzare screen
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -133,6 +141,8 @@ export LINES=24
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)
 cd "$PROJECT_DIR" && node "$CONNECTOR_SCRIPT" > "$LOGS_DIR/mysql.log" 2>&1 &
 
 # Attendi che il server si avvii

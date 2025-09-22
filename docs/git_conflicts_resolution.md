@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Risoluzione Conflitti Git - Modulo Predict
 =======
 <<<<<<< HEAD
@@ -18,6 +19,10 @@
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+# Risoluzione Conflitti Git - Modulo Predict
+=======
+>>>>>>> e9356a3a (.)
 # Risoluzione Conflitti Git
 
 ## Panoramica
@@ -51,10 +56,14 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 
 <<<<<<< HEAD
 <<<<<<< HEAD
-=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> e9356a3a (.)
 =======
 =======
 >>>>>>> 9de04485 (.)
@@ -62,12 +71,16 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> ea169dcc (.)
 =======
+=======
+>>>>>>> e9356a3a (.)
 =======
 >>>>>>> 85c5198c (.)
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> e0c964a3 (first)
 <<<<<<< HEAD
 =======
@@ -120,6 +133,15 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 ## Note Importanti
 - Tutti i file sono stati mantenuti nella versione<!-- REVISIONE MANUALE: File aggiornato per chiarezza e tracciabilità. Vedi anche [README globale](/docs/README.md) e gli altri file di risoluzione conflitti. -->
 >>>>>>> e0c964a3 (first)
+=======
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
+>>>>>>> f71d08e230 (.)
+## Note Importanti
+- Tutti i file sono stati mantenuti nella versione<!-- REVISIONE MANUALE: File aggiornato per chiarezza e tracciabilità. Vedi anche [README globale](/docs/README.md) e gli altri file di risoluzione conflitti. -->
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+>>>>>>> e9356a3a (.)
 
 [Backlink: Documentazione Globale](/docs/README.md)
 [Backlink: scripts_conflict_resolution.md](scripts_conflict_resolution.md)
@@ -128,6 +150,7 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 - I namespace sono stati mantenuti corretti secondo la struttura del modulo
 - Sono stati rimossi solo i marcatori di conflitto, mantenendo il codice funzionale
 - I file di backup sono stati creati con il timestamp per sicurezza
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -141,11 +164,17 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 >>>>>>> 337c5266 (.)
 =======
 >>>>>>> ea169dcc (.)
+=======
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 =======
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
@@ -154,6 +183,7 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+<<<<<<< HEAD
 >>>>>>> ec52a6b4 (.)
 =======
 =======
@@ -177,6 +207,8 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)
 ### Fase 1: Identificazione
 ```bash
 # Visualizzare tutti i file con conflitti
@@ -199,6 +231,9 @@ git status
 # Trovare i marker di conflitto
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 =======
 ## Struttura del Modulo
 Il modulo Predict mantiene la seguente struttura di namespace:
@@ -207,15 +242,19 @@ Il modulo Predict mantiene la seguente struttura di namespace:
 - `Modules\Predict\Database\Factories` per le factory
 - `Modules\Predict\lang\it` per i file di traduzione
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Trovare i marker di conflitto
 =======
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 # Trovare i marker di conflitto
 >>>>>>> 1831d11e78 (.)
+<<<<<<< HEAD
 =======
 =======
 # Trovare i marker di conflitto
@@ -230,6 +269,8 @@ Il modulo Predict mantiene la seguente struttura di namespace:
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)
 
 ## Verifica Post-Risoluzione
 Si consiglia di:
@@ -242,11 +283,15 @@ Si consiglia di:
 7. Testare il modulo in ambiente di sviluppo
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 
 ## Backup
 Tutti i file modificati hanno un backup con timestamp nel formato:
 `.backup-YYYYMMDD-HHMMSS`
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -263,6 +308,8 @@ Tutti i file modificati hanno un backup con timestamp nel formato:
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)
 ```
 
 ### Fase 2: Analisi
@@ -270,6 +317,7 @@ Per ogni file in conflitto:
 1. Comprendere il contesto delle modifiche
 2. Determinare quali modifiche devono essere mantenute
 3. Considerare le dipendenze e gli impatti delle modifiche
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -289,6 +337,9 @@ Per ogni file in conflitto:
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 1831d11e78 (.)
+>>>>>>> e9356a3a (.)
 
 ## Prossimi Passi
 1. Eseguire `composer dump-autoload` per aggiornare l'autoloader
@@ -298,6 +349,7 @@ Per ogni file in conflitto:
 - `Modules\Predict\Providers` per i service provider
 - `Modules\Predict\Database\Factories` per le factory
 - `Modules\Predict\lang\it` per i file di traduzione
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -317,10 +369,13 @@ Per ogni file in conflitto:
 =======
 >>>>>>> develop
 >>>>>>> ec52a6b4 (.)
+=======
+>>>>>>> e9356a3a (.)
 
 =======
 
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
@@ -331,6 +386,10 @@ Per ogni file in conflitto:
 
 =======
 >>>>>>> 71ff9e32 (.)
+=======
+
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> 3c18aa7e (.)
 =======
 >>>>>>> 9de04485 (.)
@@ -342,6 +401,7 @@ Per ogni file in conflitto:
 >>>>>>> 3c18aa7e (.)
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+<<<<<<< HEAD
 =======
 >>>>>>> ec52a6b4 (.)
 =======
@@ -391,6 +451,8 @@ Per ogni file in conflitto:
 >>>>>>> 3c18aa7e (.)
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)
 ### Fase 3: Risoluzione
 Scegliere una delle seguenti strategie:
 
@@ -400,6 +462,9 @@ Scegliere una delle seguenti strategie:
 4. **Approccio per i file .md**: Per i file di documentazione, mantenere entrambe le versioni
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 ## Verifica Post-Risoluzione
 Si consiglia di:
 1. Eseguire i test del modulo
@@ -413,6 +478,7 @@ Si consiglia di:
 Tutti i file modificati hanno un backup con timestamp nel formato:
 `.backup-YYYYMMDD-HHMMSS`
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -429,6 +495,8 @@ Tutti i file modificati hanno un backup con timestamp nel formato:
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)
 
 Per i file di codice PHP, verificare sempre la compatibilità con PHPStan livello 9 dopo la risoluzione.
 
@@ -475,6 +543,7 @@ namespace Modules\NomeModulo\App\Filament;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -491,11 +560,15 @@ namespace Modules\NomeModulo\App\Filament;
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 1831d11e78 (.)
+>>>>>>> e9356a3a (.)
 
 ## Prossimi Passi
 1. Eseguire `composer dump-autoload` per aggiornare l'autoloader
 2. Eseguire `php artisan config:clear` per pulire la cache
 3. Verificare che tutte le risorse Filament siano registrate correttamente
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -519,6 +592,12 @@ namespace Modules\NomeModulo\App\Filament;
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+=======
+4. Testare il modulo in ambiente di sviluppo 
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+>>>>>>> e9356a3a (.)
 4. Testare il modulo in ambiente di sviluppo 
 
 ## Risoluzione di Casi Specifici
@@ -558,8 +637,11 @@ Il progetto include alcuni script per facilitare la gestione dei conflitti:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> 1831d11e78 (.)
 =======
 >>>>>>> 0c55086029 (.)
@@ -568,6 +650,7 @@ Il progetto include alcuni script per facilitare la gestione dei conflitti:
 >>>>>>> f1e7ef1046 (.)
 =======
 >>>>>>> f71d08e230 (.)
+<<<<<<< HEAD
 >>>>>>> ec52a6b4 (.)
 =======
 =======
@@ -586,3 +669,5 @@ Il progetto include alcuni script per facilitare la gestione dei conflitti:
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)

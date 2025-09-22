@@ -118,13 +118,17 @@ test('successful login regenerates session', function (): void {
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 =======
 =======
 
 =======
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -132,6 +136,8 @@ test('successful login regenerates session', function (): void {
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9c02579 (.)
@@ -155,6 +161,7 @@ test('successful login regenerates session', function (): void {
 =======
 >>>>>>> e1b46df35 (.)
 >>>>>>> f71d08e230 (.)
+<<<<<<< HEAD
 =======
 >>>>>>> 71ff9e32 (.)
 =======
@@ -246,6 +253,8 @@ test('successful login regenerates session', function (): void {
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)
 # Complete test suite
 ./vendor/bin/pest Modules/Cms/tests/Feature/Auth/LoginTest.php
 
@@ -340,10 +349,14 @@ Questa implementazione fornisce una **base solida** per tutti i futuri test di a
 *Project: Laraxot SaluteOra*  
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 *Module: Cms Testing Suite* 
 =======
 *Module: Cms Testing Suite* 
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -368,6 +381,8 @@ Questa implementazione fornisce una **base solida** per tutti i futuri test di a
 >>>>>>> 337c5266 (.)
 =======
 >>>>>>> ea169dcc (.)
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
 =======
@@ -375,12 +390,16 @@ Questa implementazione fornisce una **base solida** per tutti i futuri test di a
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 9de04485 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 =======
 =======
 *Module: Cms Testing Suite* 
 >>>>>>> 59901687 (.)
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> 59901687 (.)
 >>>>>>> e0c964a3 (first)
 =======
@@ -388,11 +407,17 @@ Questa implementazione fornisce una **base solida** per tutti i futuri test di a
 >>>>>>> 3c18aa7e (.)
 >>>>>>> f198176d (.)
 <<<<<<< HEAD
+=======
+*Module: Cms Testing Suite* 
+>>>>>>> 3c18aa7e (.)
+>>>>>>> f198176d (.)
+>>>>>>> e9356a3a (.)
 >>>>>>> d20d0523 (.)
 =======
 *Module: Cms Testing Suite* 
 >>>>>>> e1b46df35 (.)
 >>>>>>> f71d08e230 (.)
+<<<<<<< HEAD
 =======
 >>>>>>> ec52a6b4 (.)
 *Module: Cms Testing Suite* 
@@ -424,3 +449,5 @@ Questa implementazione fornisce una **base solida** per tutti i futuri test di a
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)

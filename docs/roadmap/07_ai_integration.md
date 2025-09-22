@@ -10,6 +10,7 @@ aurmich/dev
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 aurmich/dev
 =======
 <<<<<<< HEAD
@@ -29,6 +30,11 @@ aurmich/dev
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+aurmich/dev
+=======
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # 🤖 Fase 7: AI Integration
 
 ## 📋 Panoramica
@@ -161,6 +167,7 @@ aurmich/dev
 - Monitoraggio continuo
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -191,6 +198,11 @@ aurmich/dev
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # 🤖 Fase 7: AI Integration
 
 ## 📋 Panoramica
@@ -322,6 +334,7 @@ Questa fase si concentra sull'integrazione di tecnologie di Intelligenza Artific
 aurmich/dev
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -352,6 +365,11 @@ aurmich/dev
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # 🤖 Fase 7: AI Integration
 
 ## 📋 Panoramica
@@ -737,6 +755,7 @@ Questa fase si concentra sull'integrazione di tecnologie di Intelligenza Artific
  43df3e0 (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -767,6 +786,11 @@ Questa fase si concentra sull'integrazione di tecnologie di Intelligenza Artific
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> 1831d11e78 (.)
+>>>>>>> e9356a3a (.)
 aurmich/dev
 
 ## Collegamenti tra versioni di 07_ai_integration.md

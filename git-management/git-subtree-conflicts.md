@@ -65,6 +65,7 @@ source ./bashscripts/lib/custom.sh
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -117,6 +118,9 @@ source ./bashscripts/lib/custom.sh
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+
+>>>>>>> e9356a3a (.)
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     log "error" "Parametri errati"

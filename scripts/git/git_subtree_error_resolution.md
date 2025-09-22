@@ -35,6 +35,7 @@ git add -A
 git commit -am "🔧 Aggiornamento subtree"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 git merge origin/"$BRANCH" --allow-unrelated-histories"
 =======
 git merge origin/"$BRANCH" --allow-unrelated-histories
@@ -42,6 +43,9 @@ git merge origin/"$BRANCH" --allow-unrelated-histories
 =======
 git merge origin/"$BRANCH" --allow-unrelated-histories
 >>>>>>> e0c964a3 (first)
+=======
+git merge origin/"$BRANCH" --allow-unrelated-histories"
+>>>>>>> e9356a3a (.)
 git push -u origin "$BRANCH"
 ```
 
@@ -58,11 +62,15 @@ git fetch "$REMOTE_REPO" "$BRANCH" --depth=1
 git merge -s subtree FETCH_HEAD --allow-unrelated-histories
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ```
 =======
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+```
+>>>>>>> e9356a3a (.)
 
 Esegue una sequenza complessa di operazioni:
 ```bash
@@ -79,12 +87,15 @@ Esegue una sequenza complessa di operazioni:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ### 3. Pull Script (`git_pull_subtree.sh`)
 >>>>>>> ea169dcc (.)
 =======
 ### 3. Pull Script (`git_pull_subtree.sh`)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)
 Esegue una sequenza con fallback:
 ```bash
 1. git subtree pull -P $LOCAL_PATH $REMOTE_REPO $REMOTE_BRANCH --squash
@@ -95,12 +106,15 @@ Esegue una sequenza con fallback:
 4. git rebase --rebase-merges --strategy subtree $REMOTE_BRANCH
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  43df3e0 (.)
 >>>>>>> ea169dcc (.)
 =======
  43df3e0 (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)
 ```
 
 ## 🚨 Analisi Errori Comuni
@@ -128,18 +142,22 @@ fi
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> ea169dcc (.)
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)
 **Causa**: Divergenze tra repository locale e remoto
 
 **Soluzione**:
 ```bash
 # Aggiorna repository locale
 git fetch origin "$BRANCH"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 git merge origin/"$BRANCH" --allow-unrelated-histories"
@@ -149,6 +167,9 @@ git merge origin/"$BRANCH" --allow-unrelated-histories
 =======
 git merge origin/"$BRANCH" --allow-unrelated-histories
 >>>>>>> e0c964a3 (first)
+=======
+git merge origin/"$BRANCH" --allow-unrelated-histories"
+>>>>>>> e9356a3a (.)
 
 # Riprova push
 if ! git push -u origin "$BRANCH"; then
@@ -218,6 +239,7 @@ fi
 </div>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> e0c964a3 (first)
@@ -272,3 +294,5 @@ fi
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)

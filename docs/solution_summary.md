@@ -158,9 +158,12 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 =======
 
 =======
@@ -170,6 +173,7 @@ return [
 =======
 >>>>>>> 3c18aa7e (.)
 =======
+<<<<<<< HEAD
 >>>>>>> 71ff9e32 (.)
 <<<<<<< HEAD
 >>>>>>> ec52a6b4 (.)
@@ -222,6 +226,8 @@ return [
 >>>>>>> develop
 >>>>>>> ec52a6b4 (.)
 =======
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> 9de04485 (.)
 =======
 >>>>>>> 59901687 (.)
@@ -234,6 +240,7 @@ return [
 =======
 >>>>>>> e1b46df35 (.)
 >>>>>>> f71d08e230 (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -261,6 +268,8 @@ return [
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)
 # Pubblicazione delle configurazioni
 php artisan vendor:publish --tag=zeus-bolt-config
 
@@ -395,8 +404,11 @@ La soluzione implementata risolve completamente l'errore originale e fornisce un
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 *Autore: AI Assistant* 
 =======
 =======
@@ -410,6 +422,7 @@ La soluzione implementata risolve completamente l'errore originale e fornisce un
 *Autore: AI Assistant* 
 >>>>>>> 9c02579 (.)
 =======
+<<<<<<< HEAD
 >>>>>>> 71ff9e32 (.)
 =======
 <<<<<<< HEAD
@@ -487,11 +500,16 @@ La soluzione implementata risolve completamente l'errore originale e fornisce un
 >>>>>>> 337c5266 (.)
 >>>>>>> ea169dcc (.)
 =======
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 =======
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
@@ -504,6 +522,7 @@ La soluzione implementata risolve completamente l'errore originale e fornisce un
 *Autore: AI Assistant* 
 >>>>>>> e1b46df35 (.)
 >>>>>>> f71d08e230 (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> e9356a3a (.)
 =======
@@ -527,3 +546,5 @@ La soluzione implementata risolve completamente l'errore originale e fornisce un
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)

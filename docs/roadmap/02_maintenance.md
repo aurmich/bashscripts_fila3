@@ -1,9 +1,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 
 
 
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -21,6 +25,9 @@
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 1831d11e78 (.)
+>>>>>>> e9356a3a (.)
 # 🛠️ Fase 2: Manutenzione
 
 ## 📋 Panoramica
@@ -65,6 +72,7 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema, garant
    - Report automatizzati
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -84,6 +92,11 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema, garant
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+
+=======
+>>>>>>> 1831d11e78 (.)
+>>>>>>> e9356a3a (.)
 2. **Sicurezza**:
    - Verifica integrità dati
    - Backup crittografati
@@ -91,6 +104,7 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema, garant
    - Audit log
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -110,6 +124,11 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema, garant
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+
+=======
+>>>>>>> 1831d11e78 (.)
+>>>>>>> e9356a3a (.)
 3. **Performance**:
    - Ottimizzazione risorse
    - Caching intelligente
@@ -182,6 +201,9 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema, garant
 Per ulteriori dettagli, consultare la documentazione degli script specifici e le sezioni successive della roadmap.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 - Bash 
 
 
@@ -293,6 +315,7 @@ aurmich/dev
 * [02_maintenance.md](docs/roadmap/02_maintenance.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -309,5 +332,8 @@ aurmich/dev
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 1831d11e78 (.)
+>>>>>>> e9356a3a (.)
 
 

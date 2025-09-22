@@ -60,6 +60,7 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -112,11 +113,15 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+
+>>>>>>> e9356a3a (.)
 ## Casi d'Uso Avanzati
 
 ### 1. Risoluzione Selettiva
 È possibile modificare lo script per risolvere selettivamente solo determinati tipi di file:
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -147,10 +152,14 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+
+>>>>>>> e9356a3a (.)
 ### 2. Integrazione con Git Hooks
 Lo script può essere integrato con Git hooks per verificare automaticamente la presenza di conflitti prima del commit:
 
 ```bash
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -216,6 +225,9 @@ Lo script può essere integrato con Git hooks per verificare automaticamente la 
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+
+>>>>>>> e9356a3a (.)
 # .git/hooks/pre-commit
 #!/bin/bash
 ```

@@ -61,6 +61,7 @@ php artisan migrate
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -91,6 +92,11 @@ php artisan migrate
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # Installare Laravel Modules
 composer require nwidart/laravel-modules
 
@@ -168,6 +174,7 @@ La documentazione completa è disponibile nella directory `docs/`:
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -198,6 +205,11 @@ La documentazione completa è disponibile nella directory `docs/`:
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # Creare un nuovo modulo
 php artisan module:make NomeModulo
 
@@ -231,6 +243,7 @@ Questo progetto è sotto licenza MIT. Vedere il file [LICENSE](LICENSE) per i de
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -248,11 +261,15 @@ Questo progetto è sotto licenza MIT. Vedere il file [LICENSE](LICENSE) per i de
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+=======
+>>>>>>> e9356a3a (.)
 
  b7907077 (.)
 
 
  b1ca4c93 (Squashed 'bashscripts/' changes from c21599d..019cc70)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -280,6 +297,11 @@ Questo progetto è sotto licenza MIT. Vedere il file [LICENSE](LICENSE) per i de
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # 🚀 BashScripts Power Tools
  80ec88ee9 (.
 
@@ -358,6 +380,7 @@ php artisan migrate
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -388,6 +411,11 @@ php artisan migrate
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # Install Laravel Modules
 composer require nwidart/laravel-modules
 
@@ -465,6 +493,7 @@ Complete documentation is available in the `docs/` directory:
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -495,6 +524,11 @@ Complete documentation is available in the `docs/` directory:
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # Create a new module
 php artisan module:make ModuleName
 
@@ -630,6 +664,7 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file `LICENSE` per 
  4bd5ca8f (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -647,6 +682,9 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file `LICENSE` per 
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+=======
+>>>>>>> e9356a3a (.)
 
  b0f37c83 (.)
 
@@ -655,6 +693,7 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file `LICENSE` per 
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -685,6 +724,11 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file `LICENSE` per 
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> 1831d11e78 (.)
+>>>>>>> e9356a3a (.)
 # 📣 Enhance Your App with the Fila3 Notify Module! 🚀
 
 ![GitHub issues](https://img.shields.io/github/issues/laraxot/module_notify_fila3)
@@ -775,6 +819,7 @@ Discover more of my work at marco76tv!
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -805,6 +850,11 @@ Discover more of my work at marco76tv!
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> 1831d11e78 (.)
+>>>>>>> e9356a3a (.)
 # Bash Scripts
 
 **Policy di organizzazione:** Nessuno script `.sh` deve essere presente direttamente nella root di questa cartella. Tutti gli script devono essere categorizzati e inseriti in sottocartelle dedicate in base alla loro funzione (es. `utils/`, `git/`, `docs_update/`).
@@ -886,6 +936,7 @@ Script per i test:
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -916,6 +967,11 @@ Script per i test:
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # Rendere lo script eseguibile
 chmod +x script.sh
 

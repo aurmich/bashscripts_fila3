@@ -61,6 +61,7 @@ chmod +x bashscripts/utils/script.sh
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Regole create il: $(date)*
 =======
 <<<<<<< HEAD
@@ -80,3 +81,8 @@ chmod +x bashscripts/utils/script.sh
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+*Regole create il: $(date)*
+=======
+>>>>>>> 04d882f8f6 (.)
+>>>>>>> e9356a3a (.)

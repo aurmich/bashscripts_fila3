@@ -10,6 +10,7 @@ aurmich/dev
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 aurmich/dev
 =======
 <<<<<<< HEAD
@@ -29,6 +30,11 @@ aurmich/dev
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+aurmich/dev
+=======
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # 🌐 Fase 8: Cloud Integration
 
 ## 📋 Panoramica
@@ -156,6 +162,7 @@ Questa fase si concentra sull'integrazione con i principali cloud provider per g
 - Monitoraggio continuo
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -186,6 +193,11 @@ Questa fase si concentra sull'integrazione con i principali cloud provider per g
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # 🌐 Fase 8: Cloud Integration
 
 ## 📋 Panoramica
@@ -322,6 +334,7 @@ Questa fase si concentra sull'integrazione con i principali cloud provider per g
 aurmich/dev
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -352,6 +365,11 @@ aurmich/dev
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # 🌐 Fase 8: Cloud Integration
 
 ## 📋 Panoramica
@@ -481,6 +499,7 @@ Questa fase si concentra sull'integrazione con i principali cloud provider per g
  43df3e0 (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -511,6 +530,11 @@ Questa fase si concentra sull'integrazione con i principali cloud provider per g
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> 1831d11e78 (.)
+>>>>>>> e9356a3a (.)
 aurmich/dev
 
 
@@ -1034,6 +1058,7 @@ Questa fase si concentra sull'integrazione con i principali cloud provider per g
  43df3e0 (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -1064,6 +1089,11 @@ Questa fase si concentra sull'integrazione con i principali cloud provider per g
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> 1831d11e78 (.)
+>>>>>>> e9356a3a (.)
 aurmich/dev
 
 ## Collegamenti tra versioni di 08_cloud_integration.md

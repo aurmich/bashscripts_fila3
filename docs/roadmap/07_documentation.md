@@ -9,6 +9,7 @@
 aurmich/dev
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -27,10 +28,16 @@ aurmich/dev
 >>>>>>> 71ff9e32 (.)
 =======
 >>>>>>> ec52a6b4 (.)
+=======
+=======
+>>>>>>> 1831d11e78 (.)
+=======
+>>>>>>> e9356a3a (.)
 
 =======
 
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
@@ -65,6 +72,10 @@ aurmich/dev
 
 =======
 <<<<<<< HEAD
+=======
+
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> 3c18aa7e (.)
 =======
 >>>>>>> 9de04485 (.)
@@ -77,6 +88,7 @@ aurmich/dev
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
 >>>>>>> f71d08e230 (.)
+<<<<<<< HEAD
 =======
 >>>>>>> ec52a6b4 (.)
 =======
@@ -113,6 +125,8 @@ aurmich/dev
 >>>>>>> 3c18aa7e (.)
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)
 # 📚 Fase 7: Documentazione
 
 ## 📋 Panoramica
@@ -217,6 +231,7 @@ Questa fase si concentra sulla documentazione completa del sistema, garantendo u
 - [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
@@ -231,9 +246,17 @@ Questa fase si concentra sulla documentazione completa del sistema, garantendo u
 >>>>>>> ea169dcc (.)
 =======
 =======
+=======
+=======
+=======
+>>>>>>> 9de04485 (.)
+=======
+>>>>>>> e9356a3a (.)
+=======
 >>>>>>> 85c5198c (.)
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> e0c964a3 (first)
 <<<<<<< HEAD
 =======
@@ -265,6 +288,12 @@ Questa fase si concentra sulla documentazione completa del sistema, garantendo u
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 - [Fase 8: Manutenzione](../roadmap/08_maintenance.md)
 
 ## 📅 Timeline
@@ -290,6 +319,7 @@ Questa fase si concentra sulla documentazione completa del sistema, garantendo u
 - Manutenzione
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -302,11 +332,18 @@ Questa fase si concentra sulla documentazione completa del sistema, garantendo u
 >>>>>>> 337c5266 (.)
 =======
 >>>>>>> ea169dcc (.)
+=======
+=======
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 =======
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
@@ -316,6 +353,7 @@ Questa fase si concentra sulla documentazione completa del sistema, garantendo u
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
 >>>>>>> f71d08e230 (.)
+<<<<<<< HEAD
 >>>>>>> ec52a6b4 (.)
 =======
 =======
@@ -339,6 +377,8 @@ Questa fase si concentra sulla documentazione completa del sistema, garantendo u
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)
 
 
 - [Fase 8: Manutenzione](../roadmap/08_maintenance.md) 
@@ -461,6 +501,7 @@ aurmich/dev
 * [07_documentation.md](docs/roadmap/07_documentation.md)
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -476,9 +517,16 @@ aurmich/dev
 >>>>>>> ea169dcc (.)
 =======
 =======
+=======
+=======
+>>>>>>> 9de04485 (.)
+=======
+>>>>>>> e9356a3a (.)
+=======
 >>>>>>> 85c5198c (.)
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> e0c964a3 (first)
 <<<<<<< HEAD
 =======
@@ -509,6 +557,11 @@ aurmich/dev
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
+>>>>>>> e9356a3a (.)
 - [Fase 8: Manutenzione](../roadmap/08_maintenance.md) 
 
 aurmich/dev
@@ -570,6 +623,7 @@ aurmich/dev
 * [07_documentation.md](docs/roadmap/07_documentation.md)
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -583,11 +637,17 @@ aurmich/dev
 >>>>>>> 337c5266 (.)
 =======
 >>>>>>> ea169dcc (.)
+=======
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 =======
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
@@ -596,6 +656,7 @@ aurmich/dev
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
+<<<<<<< HEAD
 >>>>>>> ec52a6b4 (.)
 =======
 =======
@@ -619,3 +680,5 @@ aurmich/dev
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)

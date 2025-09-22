@@ -65,6 +65,7 @@ public static function table\(Table \$table\): Table\s*\{[\s\S]*?\n\s*\}
 > Ogni modifica va sempre verificata manualmente e testata con PHPStan livello 10. Segnalare eventuali casi limite in [git_conflicts_resolution.md](./git_conflicts_resolution.md).
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -82,6 +83,9 @@ public static function table\(Table \$table\): Table\s*\{[\s\S]*?\n\s*\}
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+=======
+>>>>>>> e9356a3a (.)
 
 
 public static function form\(Form \$form\): Form\s*\{\s*return \$form\s*->schema\(\[\s*([\s\S]*?)\s*\]\);\s*\}
@@ -93,6 +97,7 @@ public static function form\(Form \$form\): Form\s*\{\s*return \$form\s*->schema
 
 
 public static function getFormSchema(): array
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -112,6 +117,9 @@ public static function getFormSchema(): array
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
     {
         return [
             $1
@@ -175,6 +183,7 @@ public static function table\(Table \$table\): Table\s*\{[\s\S]*?\n\s*\}
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -192,6 +201,9 @@ public static function table\(Table \$table\): Table\s*\{[\s\S]*?\n\s*\}
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+=======
+>>>>>>> e9356a3a (.)
 
  cb513be (.)
  43df3e0 (.)
@@ -199,6 +211,7 @@ public static function table\(Table \$table\): Table\s*\{[\s\S]*?\n\s*\}
 
  cb513be (.)
  0440c57 (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -218,3 +231,6 @@ public static function table\(Table \$table\): Table\s*\{[\s\S]*?\n\s*\}
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)

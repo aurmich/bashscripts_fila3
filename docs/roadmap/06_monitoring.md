@@ -9,6 +9,7 @@ Questa fase si concentra sull'implementazione di un sistema avanzato di monitora
 [0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -39,6 +40,11 @@ Questa fase si concentra sull'implementazione di un sistema avanzato di monitora
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # 📊 Fase 6: Monitoraggio
 
 ## 📋 Panoramica
@@ -166,6 +172,7 @@ Questa fase si concentra sull'implementazione di un sistema avanzato di monitora
 - Monitoraggio continuo
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -196,6 +203,11 @@ Questa fase si concentra sull'implementazione di un sistema avanzato di monitora
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # 📊 Fase 6: Monitoraggio
 
 ## 📋 Panoramica
@@ -323,6 +335,7 @@ Questa fase si concentra sull'implementazione di un sistema avanzato di monitora
 - Monitoraggio continuo
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -353,6 +366,11 @@ Questa fase si concentra sull'implementazione di un sistema avanzato di monitora
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # 📊 Fase 6: Monitoraggio
 
 ## 📋 Panoramica
@@ -482,6 +500,7 @@ Questa fase si concentra sull'implementazione di un sistema avanzato di monitora
 [0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -512,6 +531,11 @@ Questa fase si concentra sull'implementazione di un sistema avanzato di monitora
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # 📊 Fase 6: Monitoraggio
 
 ## 📋 Panoramica
@@ -520,6 +544,7 @@ Questa fase si concentra sull'implementazione di un sistema avanzato di monitora
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -550,6 +575,11 @@ Questa fase si concentra sull'implementazione di un sistema avanzato di monitora
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> 1831d11e78 (.)
+>>>>>>> e9356a3a (.)
 ## 🎯 Funzionalità Future
 
 ### 1. Dashboard Operazioni
@@ -676,6 +706,7 @@ Questa fase si concentra sull'implementazione di un sistema avanzato di monitora
 aurmich/dev
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -706,6 +737,11 @@ aurmich/dev
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # 📊 Fase 6: Monitoraggio
 
 ## 📋 Panoramica
@@ -833,6 +869,7 @@ Questa fase si concentra sull'implementazione di un sistema avanzato di monitora
 - Monitoraggio continuo
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -863,6 +900,11 @@ Questa fase si concentra sull'implementazione di un sistema avanzato di monitora
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # 📊 Fase 6: Monitoraggio
 
 ## 📋 Panoramica
@@ -990,6 +1032,7 @@ Questa fase si concentra sull'implementazione di un sistema avanzato di monitora
 - Monitoraggio continuo
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -1020,6 +1063,11 @@ Questa fase si concentra sull'implementazione di un sistema avanzato di monitora
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # 📊 Fase 6: Monitoraggio
 
 ## 📋 Panoramica
@@ -1308,6 +1356,7 @@ aurmich/dev
  43df3e0 (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -1338,6 +1387,11 @@ aurmich/dev
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> 1831d11e78 (.)
+>>>>>>> e9356a3a (.)
 aurmich/dev
 
 ## Collegamenti tra versioni di 06_monitoring.md

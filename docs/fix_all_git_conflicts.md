@@ -59,6 +59,7 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 [Backlink: git_conflicts_resolution.md](git_conflicts_resolution.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -81,6 +82,10 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 ## Casi d'Uso Avanzati
 
 ### 1. Risoluzione Selettiva
@@ -93,6 +98,7 @@ Lo script può essere integrato con Git hooks per verificare automaticamente la 
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -123,6 +129,11 @@ Lo script può essere integrato con Git hooks per verificare automaticamente la 
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # .git/hooks/pre-commit
 #!/bin/bash
 ```
@@ -150,6 +161,7 @@ Dopo l'esecuzione dello script, è consigliabile verificare che tutti i conflitt
 - [Risoluzione Conflitti nei Moduli](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/conflitti_merge_risolti.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Backlink: git_conflicts_resolution.md](git_conflicts_resolution.md)
 =======
 <<<<<<< HEAD
@@ -169,3 +181,8 @@ Dopo l'esecuzione dello script, è consigliabile verificare che tutti i conflitt
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+[Backlink: git_conflicts_resolution.md](git_conflicts_resolution.md)
+=======
+>>>>>>> 1831d11e78 (.)
+>>>>>>> e9356a3a (.)

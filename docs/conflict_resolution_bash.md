@@ -45,6 +45,9 @@ La risoluzione manuale dei conflitti negli script bash è particolarmente delica
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 # Versione avanzata con livelli di log
 log() {
     local level="$1"
@@ -60,10 +63,13 @@ log() {
     esac
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> ec52a6b4 (.)
+=======
+>>>>>>> e9356a3a (.)
 
 # Versione semplice
 log() {
@@ -81,6 +87,7 @@ log() {
 =======
 # Funzione di log avanzata: accetta sia log "message" che log "level" "message"
 log() {
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -119,11 +126,14 @@ log() {
 =======
 # Funzione di log avanzata: accetta sia log "message" che log "level" "message"
 log() {
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> 04d882f8f6 (.)
 =======
 =======
 
 >>>>>>> f71d08e230 (.)
+<<<<<<< HEAD
 >>>>>>> 71ff9e32 (.)
 >>>>>>> ec52a6b4 (.)
 =======
@@ -132,6 +142,8 @@ log() {
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)
 # Versione avanzata con livelli di log
 log() {
     local level="$1"
@@ -161,6 +173,7 @@ log() {
 # Funzione avanzata per loggare messaggi che supporta entrambi i formati
 log() {
     # Supporta sia il formato avanzato con livelli che il formato semplice
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -180,6 +193,9 @@ log() {
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> f1e7ef1046 (.)
+>>>>>>> e9356a3a (.)
     if [ $# -eq 2 ]; then
         # Formato avanzato: log "level" "message"
         local level="$1"
@@ -207,6 +223,7 @@ log() {
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -240,6 +257,13 @@ log() {
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+>>>>>>> f1e7ef1046 (.)
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # Versione che richiede 2 parametri
 if [ $# -ne 2 ]; then
     echo "Usage: $0 <path> <remote_repo>"
@@ -265,6 +289,7 @@ BRANCH="$3"
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -273,6 +298,9 @@ BRANCH="$3"
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> e9356a3a (.)
 
 >>>>>>> f71d08e230 (.)
 # Versione che supporta 2 o 3 parametri
@@ -282,6 +310,7 @@ BRANCH="$3"
 =======
 # Versione che supporta 2 o 3 parametri
 >>>>>>> f1e7ef1046 (.)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 71ff9e32 (.)
@@ -320,6 +349,8 @@ BRANCH="$3"
 
 # Versione che supporta 2 o 3 parametri
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     echo "Usage: $0 <path> <remote_repo> [branch]"
     exit 1

@@ -42,6 +42,7 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -67,10 +68,13 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 =======
 >>>>>>> f52d0712 (.)
 =======
+=======
+>>>>>>> e9356a3a (.)
 
 ### Fase 1: Identificazione
 ```bash
 
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -149,6 +153,8 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)
 # Visualizzare tutti i file con conflitti
 git status
 
@@ -179,6 +185,7 @@ Per ogni file in conflitto:
 - `Modules\Predict\Providers` per i service provider
 - `Modules\Predict\Database\Factories` per le factory
 - `Modules\Predict\lang\it` per i file di traduzione
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -234,6 +241,9 @@ Per ogni file in conflitto:
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+
+>>>>>>> e9356a3a (.)
 ### Fase 3: Risoluzione
 Scegliere una delle seguenti strategie:
 
@@ -292,6 +302,7 @@ namespace Modules\NomeModulo\App\Filament;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -359,6 +370,9 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+4. Testare il modulo in ambiente di sviluppo 
+>>>>>>> e9356a3a (.)
 
 ## Risoluzione di Casi Specifici
 
@@ -366,6 +380,7 @@ namespace Modules\NomeModulo\App\Filament;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -428,6 +443,9 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+
+>>>>>>> e9356a3a (.)
 1. Verificare la compatibilità con PHPStan
 2. Mantenere le annotazioni PHPDoc complete
 3. Seguire le convenzioni di namespace
@@ -437,6 +455,7 @@ namespace Modules\NomeModulo\App\Filament;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -499,6 +518,9 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+
+>>>>>>> e9356a3a (.)
 1. In genere, mantenere entrambe le versioni
 2. Organizzare il contenuto in modo logico
 3. Aggiornare tutti i collegamenti
@@ -507,6 +529,7 @@ namespace Modules\NomeModulo\App\Filament;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -569,6 +592,9 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+
+>>>>>>> e9356a3a (.)
 1. Confrontare attentamente le configurazioni
 2. Verificare l'impatto delle modifiche
 3. Documentare le decisioni prese
@@ -588,6 +614,7 @@ Il progetto include alcuni script per facilitare la gestione dei conflitti:
 - [Convenzioni Namespace](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/NAMESPACE-CONVENTIONS.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -628,3 +655,5 @@ Il progetto include alcuni script per facilitare la gestione dei conflitti:
 >>>>>>> 574afe9e (.)
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)

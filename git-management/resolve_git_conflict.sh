@@ -54,6 +54,7 @@ You are an expert PHP developer tasked with fixing and optimizing the following 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 2. Remove git conflict markers if present
 =======
@@ -152,6 +153,9 @@ You are an expert PHP developer tasked with fixing and optimizing the following 
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+2. Remove git conflict markers if present
+>>>>>>> e9356a3a (.)
 3. Optimize the code structure and readability without changing functionality
 4. Ensure consistency in formatting and naming conventions
 5. Apply PHP best practices and modern syntax where appropriate

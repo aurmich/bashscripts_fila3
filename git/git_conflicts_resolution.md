@@ -42,6 +42,7 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -67,10 +68,13 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 =======
 >>>>>>> f52d0712 (.)
 =======
+=======
+>>>>>>> e9356a3a (.)
 
 ### Fase 1: Identificazione
 ```bash
 
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -149,6 +153,8 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)
 # Visualizzare tutti i file con conflitti
 git status
 
@@ -179,6 +185,7 @@ Per ogni file in conflitto:
 - `Modules\Predict\Providers` per i service provider
 - `Modules\Predict\Database\Factories` per le factory
 - `Modules\Predict\lang\it` per i file di traduzione
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -234,6 +241,9 @@ Per ogni file in conflitto:
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+
+>>>>>>> e9356a3a (.)
 ### Fase 3: Risoluzione
 Scegliere una delle seguenti strategie:
 
@@ -293,6 +303,7 @@ namespace Modules\NomeModulo\App\Filament;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -356,6 +367,9 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+
+>>>>>>> e9356a3a (.)
 ## Risoluzione di Casi Specifici
 
 ### Conflitti in File PHP

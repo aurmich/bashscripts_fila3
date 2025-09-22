@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Risoluzione Conflitti negli Script Bash
 =======
 <<<<<<< HEAD
@@ -31,6 +32,12 @@
 =======
 # Script di Risoluzione dei Conflitti
 >>>>>>> e0c964a3 (first)
+=======
+# Risoluzione Conflitti negli Script Bash
+=======
+# Script di Risoluzione dei Conflitti
+>>>>>>> f1e7ef1046 (.)
+>>>>>>> e9356a3a (.)
 
 ## Panoramica
 
@@ -118,6 +125,9 @@ Verifica e corregge i problemi comuni di namespace nei file PHP, che sono spesso
 Analizza i conflitti e fornisce statistiche e suggerimenti per la risoluzione.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 # Risoluzione Conflitti negli Script Bash
 =======
 # Script di Risoluzione dei Conflitti
@@ -208,8 +218,11 @@ Verifica e corregge i problemi comuni di namespace nei file PHP, che sono spesso
 #### Descrizione
 Analizza i conflitti e fornisce statistiche e suggerimenti per la risoluzione.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> 1831d11e78 (.)
 =======
 1. **Struttura principale**: Duplicazione dell'intero script, con marker di conflitto nidificati
@@ -217,6 +230,7 @@ Analizza i conflitti e fornisce statistiche e suggerimenti per la risoluzione.
 >>>>>>> 04d882f8f6 (.)
 =======
 >>>>>>> f1e7ef1046 (.)
+<<<<<<< HEAD
 =======
 >>>>>>> ec52a6b4 (.)
 =======
@@ -236,6 +250,8 @@ Analizza i conflitti e fornisce statistiche e suggerimenti per la risoluzione.
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)
 
 ### sync_to_disk.sh
 
@@ -342,6 +358,7 @@ I seguenti file sono stati recentemente risolti:
 [Backlink: git_conflicts_resolution.md](git_conflicts_resolution.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -375,6 +392,13 @@ I seguenti file sono stati recentemente risolti:
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+>>>>>>> f1e7ef1046 (.)
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 ### fix_structure.sh
 
 Mantenere la versione più avanzata con funzioni di logging colorate, migliorando:
@@ -443,6 +467,7 @@ I seguenti file sono stati recentemente risolti:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 Questa documentazione è collegata bidirezionalmente con la [documentazione principale sulla risoluzione dei conflitti](../../docs/bashscripts_conflict_resolution.md) nella root del progetto. 
 <<<<<<< HEAD
@@ -451,10 +476,15 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 =======
 =======
 <<<<<<< HEAD
+=======
+=======
+Questa documentazione è collegata bidirezionalmente con la [documentazione principale sulla risoluzione dei conflitti](../../docs/bashscripts_conflict_resolution.md) nella root del progetto. 
+>>>>>>> e9356a3a (.)
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 =======
 >>>>>>> f1e7ef1046 (.)
+<<<<<<< HEAD
 =======
 =======
 =======
@@ -469,6 +499,8 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)
 Questa documentazione è collegata bidirezionalmente con la [documentazione principale sulla risoluzione dei conflitti](../../docs/bashscripts_conflict_resolution.md) nella root del progetto. 
 
 #### Utilizzo
@@ -617,8 +649,11 @@ Per pulire un repository con molti conflitti non risolti:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> 1831d11e78 (.)
 =======
 >>>>>>> 0c55086029 (.)
@@ -630,6 +665,7 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 >>>>>>> f1e7ef1046 (.)
 =======
 >>>>>>> f71d08e230 (.)
+<<<<<<< HEAD
 =======
 >>>>>>> ec52a6b4 (.)
 =======
@@ -650,3 +686,5 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)

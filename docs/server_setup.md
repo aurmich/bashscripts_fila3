@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -33,6 +34,12 @@
 
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # Setup del Progetto Laravel
 
 Questo documento contiene la documentazione dettagliata dei comandi utilizzati per il setup di un progetto Laravel, insieme a spiegazioni, consigli e note per migliorare il processo.
@@ -57,6 +64,7 @@ Questo documento contiene la documentazione dettagliata dei comandi utilizzati p
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -87,6 +95,11 @@ Questo documento contiene la documentazione dettagliata dei comandi utilizzati p
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # Verifica versione PHP
 php -v
 
@@ -150,6 +163,7 @@ sudo add-apt-repository ppa:ondrej/php
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -180,6 +194,11 @@ sudo add-apt-repository ppa:ondrej/php
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # Naviga nella directory del progetto
 cd laravel
 
@@ -210,6 +229,7 @@ php artisan key:generate
   APP_NAME=<nome progetto>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   APP_NAME=<nome progetto>
  80ec88ee9 (.)
 =======
@@ -232,11 +252,19 @@ php artisan key:generate
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+  APP_NAME=<nome progetto>
+ 80ec88ee9 (.)
+=======
+>>>>>>> 1831d11e78 (.)
+=======
+>>>>>>> e9356a3a (.)
 
   APP_NAME=<nome progetto>
 
   APP_NAME=SaluteOra
  80ec88ee9 (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -256,6 +284,9 @@ php artisan key:generate
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
   APP_ENV=local
   APP_DEBUG=true
   APP_URL=http://localhost
@@ -516,6 +547,7 @@ git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerl
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -546,6 +578,11 @@ git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerl
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # Modifica il file ~/.zshrc
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ```
@@ -684,6 +721,7 @@ sudo apt-get install --install-recommends webmin usermin
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -714,6 +752,11 @@ sudo apt-get install --install-recommends webmin usermin
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # Naviga nella directory del progetto
 cd laravel
 
@@ -1015,6 +1058,9 @@ sudo pecl install redis
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 # Crea il file database.sqlite nella directory database
 touch laravel/database/database.sqlite
 ```
@@ -2282,6 +2328,7 @@ FLUSH PRIVILEGES;
 # Esci
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -2297,6 +2344,8 @@ FLUSH PRIVILEGES;
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)
 mysql -u root -p
 CREATE DATABASE nome_database CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 CREATE USER 'nome_utente'@'localhost' IDENTIFIED BY 'password_sicura';
@@ -2304,6 +2353,7 @@ GRANT ALL PRIVILEGES ON nome_database.* TO 'nome_utente'@'localhost';
 FLUSH PRIVILEGES;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -2321,6 +2371,9 @@ FLUSH PRIVILEGES;
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+=======
+>>>>>>> e9356a3a (.)
 ### Creazione Database SQLite
 ```bash
 
@@ -3714,6 +3767,7 @@ FLUSH PRIVILEGES;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -3730,6 +3784,9 @@ FLUSH PRIVILEGES;
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 EXIT;
 ```
 
@@ -3740,6 +3797,9 @@ EXIT;
 **Note:**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e9356a3a (.)
 ### Creazione Database SQLite
 ```bash
 # Crea il file database.sqlite nella directory database
@@ -3889,6 +3949,7 @@ php artisan migrate
 - Controllare la configurazione di PHP
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -3904,6 +3965,8 @@ php artisan migrate
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)
 - Sostituire `nome_database`, `nome_utente` e `password_sicura` con valori reali
 - Conservare le credenziali in modo sicuro
 
@@ -3916,6 +3979,7 @@ php artisan migrate
 - Aggiornare regolarmente sistema e dipendenze
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -3933,6 +3997,9 @@ php artisan migrate
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+=======
+>>>>>>> e9356a3a (.)
 - Crea un nuovo database per il progetto Laravel
 - Configura un utente dedicato con i permessi necessari
 - Imposta il charset e la collation corretti
@@ -4139,6 +4206,7 @@ php artisan migrate
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -4155,6 +4223,9 @@ php artisan migrate
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 
 ## Conclusioni
 
@@ -4197,6 +4268,7 @@ sudo systemctl start redis-server
 ```ini
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -4227,6 +4299,11 @@ sudo systemctl start redis-server
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # /etc/redis/redis.conf
 maxmemory 256mb
 maxmemory-policy allkeys-lru
@@ -4254,6 +4331,7 @@ maxmemory-policy allkeys-lru
 ```apache
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -4284,6 +4362,11 @@ maxmemory-policy allkeys-lru
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # /etc/apache2/mods-available/mpm_prefork.conf
 <IfModule mpm_prefork_module>
     StartServers 5
@@ -4298,6 +4381,7 @@ maxmemory-policy allkeys-lru
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -4328,6 +4412,11 @@ maxmemory-policy allkeys-lru
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # Disabilita il modulo PHP 8.2
 sudo a2dismod php8.2
 
@@ -4563,12 +4652,16 @@ php artisan user:assign-module
   ```
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> ec52a6b4 (.)
+=======
+
+>>>>>>> e9356a3a (.)
  43df3e0 (.)
 aurmich/dev
 
@@ -4579,6 +4672,7 @@ aurmich/dev
 
   ```
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
  43df3e0 (.)
@@ -4608,10 +4702,13 @@ aurmich/dev
 
   ```
 =======
+=======
+>>>>>>> e9356a3a (.)
 >>>>>>> 1831d11e78 (.)
 =======
  43df3e0 (.)
 >>>>>>> f71d08e230 (.)
+<<<<<<< HEAD
 >>>>>>> 71ff9e32 (.)
 >>>>>>> ec52a6b4 (.)
 =======
@@ -4620,3 +4717,5 @@ aurmich/dev
 =======
  43df3e0 (.)
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> e9356a3a (.)

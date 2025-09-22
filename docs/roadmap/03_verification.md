@@ -6,6 +6,7 @@
 aurmich/dev
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -36,6 +37,11 @@ aurmich/dev
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -134,6 +140,7 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 - Monitoraggio performance
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -164,6 +171,11 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -269,6 +281,7 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
 =======
 <<<<<<< HEAD
@@ -288,6 +301,11 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 >>>>>>> ea169dcc (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+[0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
+=======
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -386,6 +404,7 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 - Monitoraggio performance
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -416,6 +435,11 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -516,6 +540,7 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -546,6 +571,11 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -847,6 +877,7 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 aurmich/dev
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -877,6 +908,11 @@ aurmich/dev
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> f71d08e230 (.)
+>>>>>>> e9356a3a (.)
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -1077,6 +1113,7 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
  43df3e0 (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -1107,6 +1144,11 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 =======
 
 >>>>>>> e0c964a3 (first)
+=======
+=======
+
+>>>>>>> 1831d11e78 (.)
+>>>>>>> e9356a3a (.)
 aurmich/dev
 
 ## Collegamenti tra versioni di 03_verification.md
