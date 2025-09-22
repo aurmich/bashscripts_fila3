@@ -55,9 +55,13 @@ You are an expert PHP developer tasked with fixing and optimizing the following 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 55692d0b (.)
 2. Remove git conflict markers if present
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 2. Remove git conflict markers if present
@@ -97,11 +101,14 @@ You are an expert PHP developer tasked with fixing and optimizing the following 
 >>>>>>> ec52a6b4 (.)
 =======
 =======
+>>>>>>> 55692d0b (.)
+=======
 2. Remove git conflict markers (<<<<<<<, =======, >>>>>>>) if present
 =======
 <<<<<<< HEAD
 >>>>>>> 574afe9e (.)
 2. Remove git conflict markers if present
+<<<<<<< HEAD
 >>>>>>> 42ab2308 (.)
 <<<<<<< HEAD
 =======
@@ -110,6 +117,9 @@ You are an expert PHP developer tasked with fixing and optimizing the following 
 <<<<<<< HEAD
 =======
 >>>>>>> e0c964a3 (first)
+=======
+<<<<<<< HEAD
+>>>>>>> 55692d0b (.)
 2. Remove git conflict markers (<<<<<<<, =======, >>>>>>>) if present
 =======
 =======
@@ -120,6 +130,7 @@ You are an expert PHP developer tasked with fixing and optimizing the following 
 =======
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -156,6 +167,9 @@ You are an expert PHP developer tasked with fixing and optimizing the following 
 =======
 2. Remove git conflict markers if present
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 7de7063d (.)
+>>>>>>> 55692d0b (.)
 3. Optimize the code structure and readability without changing functionality
 4. Ensure consistency in formatting and naming conventions
 5. Apply PHP best practices and modern syntax where appropriate

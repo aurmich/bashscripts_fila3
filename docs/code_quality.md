@@ -419,10 +419,14 @@ XotBaseResource Classes Form Schema Check
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 55692d0b (.)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -445,6 +449,17 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3c18aa7e (.)
+=======
+>>>>>>> 9c02579 (.)
+=======
+>>>>>>> 574afe9e (.)
+>>>>>>> 7de7063d (.)
+>>>>>>> 55692d0b (.)
 
 >>>>>>> 3c18aa7e (.)
 =======

@@ -51,6 +51,7 @@ Spesso i conflitti riguardano funzioni duplicate o con logiche diverse. Ecco una
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -65,12 +66,18 @@ Spesso i conflitti riguardano funzioni duplicate o con logiche diverse. Ecco una
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+
+=======
+<<<<<<< HEAD
+>>>>>>> 55692d0b (.)
 <<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
 =======
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7de7063d (.)
 =======
@@ -106,6 +113,9 @@ Spesso i conflitti riguardano funzioni duplicate o con logiche diverse. Ecco una
 =======
 
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 7de7063d (.)
+>>>>>>> 55692d0b (.)
 # Funzione di log avanzata: accetta sia log "message" che log "level" "message"
 log() {
     if [ $# -eq 2 ]; then
@@ -142,6 +152,7 @@ Quando si risolvono conflitti tra versioni che richiedono un numero diverso di p
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -156,12 +167,18 @@ Quando si risolvono conflitti tra versioni che richiedono un numero diverso di p
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+
+=======
+<<<<<<< HEAD
+>>>>>>> 55692d0b (.)
 <<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
 =======
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7de7063d (.)
 =======
@@ -197,6 +214,9 @@ Quando si risolvono conflitti tra versioni che richiedono un numero diverso di p
 =======
 
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 7de7063d (.)
+>>>>>>> 55692d0b (.)
 # Gestione robusta dei parametri: supporta 2 o 3 parametri, con branch opzionale
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     echo "Usage: $0 <path> <remote_repo> [branch]"

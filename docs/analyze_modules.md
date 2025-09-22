@@ -235,6 +235,7 @@ Modules/<NomeModulo>/docs/phpstan/
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -244,6 +245,8 @@ Modules/<NomeModulo>/docs/phpstan/
 >>>>>>> ec52a6b4 (.)
 =======
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 55692d0b (.)
 =======
 =======
 =======
@@ -308,7 +311,17 @@ Modules/<NomeModulo>/docs/phpstan/
 >>>>>>> d20d0523 (.)
 =======
 >>>>>>> f71d08e230 (.)
+<<<<<<< HEAD
 >>>>>>> e9356a3a (.)
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 574afe9e (.)
+>>>>>>> 7de7063d (.)
+>>>>>>> 55692d0b (.)
 
 ## Gestione dei Conflitti
 In caso di conflitti durante l'analisi dei moduli:
@@ -441,6 +454,7 @@ Durante l'analisi PHPStan potrebbero emergere errori ricorrenti. Ecco le soluzio
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 
@@ -450,17 +464,24 @@ Durante l'analisi PHPStan potrebbero emergere errori ricorrenti. Ecco le soluzio
 <<<<<<< HEAD
 =======
 =======
+=======
+=======
+=======
+>>>>>>> 55692d0b (.)
 <<<<<<< HEAD
 >>>>>>> 9c02579 (.)
 =======
 >>>>>>> 574afe9e (.)
 >>>>>>> 7de7063d (.)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 71ff9e32 (.)
 =======
 =======
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 55692d0b (.)
 
 =======
 >>>>>>> 85c5198c (.)

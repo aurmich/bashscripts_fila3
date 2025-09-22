@@ -43,6 +43,7 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -61,21 +62,33 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 =======
 >>>>>>> 71ff9e32 (.)
 =======
+>>>>>>> 55692d0b (.)
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7de7063d (.)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> f52d0712 (.)
 =======
 =======
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 55692d0b (.)
 
 ### Fase 1: Identificazione
 ```bash
+=======
+### Fase 1: Identificazione
+```bash
+<<<<<<< HEAD
+=======
+>>>>>>> 574afe9e (.)
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> f198176d (.)
@@ -114,12 +127,15 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 >>>>>>> ec52a6b4 (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 55692d0b (.)
 ### Fase 1: Identificazione
 ```bash
 =======
 =======
 ### Fase 1: Identificazione
 ```bash
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -128,12 +144,15 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 <<<<<<< HEAD
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 55692d0b (.)
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
 <<<<<<< HEAD
 =======
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7de7063d (.)
 =======
@@ -155,6 +174,9 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 >>>>>>> e0c964a3 (first)
 =======
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 7de7063d (.)
+>>>>>>> 55692d0b (.)
 # Visualizzare tutti i file con conflitti
 git status
 
@@ -189,6 +211,7 @@ Per ogni file in conflitto:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -203,12 +226,18 @@ Per ogni file in conflitto:
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+
+=======
+<<<<<<< HEAD
+>>>>>>> 55692d0b (.)
 <<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
 =======
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7de7063d (.)
 =======
@@ -244,6 +273,9 @@ Per ogni file in conflitto:
 =======
 
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 7de7063d (.)
+>>>>>>> 55692d0b (.)
 ### Fase 3: Risoluzione
 Scegliere una delle seguenti strategie:
 
@@ -304,6 +336,7 @@ namespace Modules\NomeModulo\App\Filament;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -318,6 +351,11 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+
+=======
+<<<<<<< HEAD
+>>>>>>> 55692d0b (.)
 <<<<<<< HEAD
 
 =======
@@ -334,6 +372,7 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7de7063d (.)
 =======
@@ -370,6 +409,9 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 7de7063d (.)
+>>>>>>> 55692d0b (.)
 ## Risoluzione di Casi Specifici
 
 ### Conflitti in File PHP

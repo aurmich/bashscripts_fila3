@@ -61,6 +61,7 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -75,12 +76,18 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+
+=======
+<<<<<<< HEAD
+>>>>>>> 55692d0b (.)
 <<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
 =======
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7de7063d (.)
 =======
@@ -116,6 +123,9 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 =======
 
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 7de7063d (.)
+>>>>>>> 55692d0b (.)
 ## Casi d'Uso Avanzati
 
 ### 1. Risoluzione Selettiva
@@ -163,22 +173,28 @@ Lo script può essere integrato con Git hooks per verificare automaticamente la 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 55692d0b (.)
 
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> f198176d (.)
 =======
 >>>>>>> e0c964a3 (first)
 <<<<<<< HEAD
+=======
+>>>>>>> 55692d0b (.)
 <<<<<<< HEAD
 =======
 =======
@@ -192,6 +208,7 @@ Lo script può essere integrato con Git hooks per verificare automaticamente la 
 =======
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7de7063d (.)
 =======
@@ -228,6 +245,9 @@ Lo script può essere integrato con Git hooks per verificare automaticamente la 
 =======
 
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 7de7063d (.)
+>>>>>>> 55692d0b (.)
 # .git/hooks/pre-commit
 #!/bin/bash
 ```

@@ -139,6 +139,7 @@ Lo script può essere integrato in pipeline CI/CD per automatizzare l'analisi de
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -153,6 +154,11 @@ Lo script può essere integrato in pipeline CI/CD per automatizzare l'analisi de
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+
+=======
+<<<<<<< HEAD
+>>>>>>> 55692d0b (.)
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -162,6 +168,7 @@ Lo script può essere integrato in pipeline CI/CD per automatizzare l'analisi de
 >>>>>>> 9c02579 (.)
 =======
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7de7063d (.)
 =======
@@ -196,6 +203,9 @@ Lo script può essere integrato in pipeline CI/CD per automatizzare l'analisi de
 =======
 
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 7de7063d (.)
+>>>>>>> 55692d0b (.)
 # Esempio di configurazione GitHub Actions
 name: PHPStan Analysis
 on: [push, pull_request]

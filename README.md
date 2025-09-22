@@ -74,16 +74,26 @@
 # Dalla root del progetto
 cd /var/www/html/_bases/base_saluteora
 
+<<<<<<< HEAD
 # Script per 20 studi con dottori (RACCOMANDATO per iniziare)
 php bashscripts/database/seeding/saluteora-20-studios-66010.php
 
 # Script per 1000 record per modello
 php bashscripts/database/seeding/saluteora-1000-records.php
+=======
+# Rendi gli script eseguibili
+<<<<<<< HEAD
+=======
+chmod +x *.sh
+>>>>>>> 574afe9e (.)
+chmod +x scripts/**/*.sh
+>>>>>>> 7de7063d (.)
 ```
 
 ### Esecuzione via Tinker
 
 ```bash
+<<<<<<< HEAD
 # Dalla directory Laravel
 cd laravel
 
@@ -92,6 +102,13 @@ php artisan tinker
 
 # Incolla il contenuto dello script desiderato
 # Lo script si eseguirà automaticamente
+=======
+<<<<<<< HEAD
+=======
+./git_sync_subtree.sh <path> <remote_repo>
+>>>>>>> 574afe9e (.)
+./scripts/git/git_sync_subtree.sh <path> <remote_repo>
+>>>>>>> 7de7063d (.)
 ```
 
 ## Caratteristiche degli Script
@@ -131,12 +148,32 @@ php artisan tinker
 ### Script 1000 Record
 
 ```bash
+<<<<<<< HEAD
 🚀 Inizializzazione seeding massivo SaluteOra - 1000 record per modello...
 📊 RISULTATO FINALE:
   - Studi creati: 1000
   - Dottori totali: 1000
   - Pazienti totali: 1000
   - Appuntamenti totali: 500
+=======
+<<<<<<< HEAD
+=======
+
+# Sincronizza un modulo specifico
+./git_sync_subtree.sh modules/users git@github.com:org/users.git
+
+# Sincronizza con branch specifico
+REMOTE_BRANCH=develop ./git_sync_subtree.sh modules/auth git@github.com:org/auth.git
+>>>>>>> 574afe9e (.)
+# Sincronizza un modulo specifico
+./scripts/git/git_sync_subtree.sh modules/users git@github.com:org/users.git
+
+# Sincronizza con branch specifico
+REMOTE_BRANCH=develop ./scripts/phpstan/check_before_phpstan.sh
+
+# Genera riassunto PHPStan
+./scripts/phpstan/generate_phpstan_summary.sh
+>>>>>>> 7de7063d (.)
 ```
 
 ## Documentazione Correlata
@@ -173,11 +210,29 @@ php artisan tinker
 3. **Errore database**: Verificare migrazioni e configurazione
 4. **Memoria insufficiente**: Utilizzare script in batch più piccoli
 
+<<<<<<< HEAD
 ### Soluzioni
 1. **Eseguire migrazioni**: `php artisan migrate`
 2. **Verificare autoload**: `composer dump-autoload`
 3. **Controllare namespace**: Verificare struttura moduli
 4. **Testare connessione**: Verificare configurazione database
+=======
+1. **Prefix Option Mancante**
+   ```bash
+   fatal: you must provide the --prefix option
+   ```
+<<<<<<< HEAD
+=======
+   ✅ **Soluzione:** Verifica il path del subtree
+
+2. **Push Rejected**
+   ```bash
+   ! [rejected] dev -> dev (non-fast-forward)
+   ```
+   ✅ **Soluzione:** Esegui prima un pull
+>>>>>>> 574afe9e (.)
+   **Soluzione**: Verifica che il path del subtree sia corretto
+>>>>>>> 7de7063d (.)
 
 ## Note Importanti
 

@@ -43,6 +43,7 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -61,21 +62,33 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 =======
 >>>>>>> 71ff9e32 (.)
 =======
+>>>>>>> 55692d0b (.)
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7de7063d (.)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> f52d0712 (.)
 =======
 =======
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 55692d0b (.)
 
 ### Fase 1: Identificazione
 ```bash
+=======
+### Fase 1: Identificazione
+```bash
+<<<<<<< HEAD
+=======
+>>>>>>> 574afe9e (.)
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> f198176d (.)
@@ -114,12 +127,15 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 >>>>>>> ec52a6b4 (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 55692d0b (.)
 ### Fase 1: Identificazione
 ```bash
 =======
 =======
 ### Fase 1: Identificazione
 ```bash
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -128,12 +144,15 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 <<<<<<< HEAD
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 55692d0b (.)
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
 <<<<<<< HEAD
 =======
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7de7063d (.)
 =======
@@ -155,6 +174,9 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 >>>>>>> e0c964a3 (first)
 =======
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 7de7063d (.)
+>>>>>>> 55692d0b (.)
 # Visualizzare tutti i file con conflitti
 git status
 
@@ -189,6 +211,7 @@ Per ogni file in conflitto:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -203,12 +226,18 @@ Per ogni file in conflitto:
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+
+=======
+<<<<<<< HEAD
+>>>>>>> 55692d0b (.)
 <<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
 =======
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7de7063d (.)
 =======
@@ -244,6 +273,9 @@ Per ogni file in conflitto:
 =======
 
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 7de7063d (.)
+>>>>>>> 55692d0b (.)
 ### Fase 3: Risoluzione
 Scegliere una delle seguenti strategie:
 
@@ -303,6 +335,7 @@ namespace Modules\NomeModulo\App\Filament;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -317,6 +350,11 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+4. Testare il modulo in ambiente di sviluppo 
+=======
+<<<<<<< HEAD
+>>>>>>> 55692d0b (.)
 <<<<<<< HEAD
 =======
 4. Testare il modulo in ambiente di sviluppo
@@ -335,6 +373,7 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7de7063d (.)
 =======
@@ -373,6 +412,9 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 4. Testare il modulo in ambiente di sviluppo 
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 7de7063d (.)
+>>>>>>> 55692d0b (.)
 
 ## Risoluzione di Casi Specifici
 
@@ -381,6 +423,7 @@ namespace Modules\NomeModulo\App\Filament;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -395,6 +438,11 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+
+=======
+<<<<<<< HEAD
+>>>>>>> 55692d0b (.)
 <<<<<<< HEAD
 =======
 =======
@@ -411,6 +459,7 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7de7063d (.)
 =======
@@ -446,6 +495,9 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 7de7063d (.)
+>>>>>>> 55692d0b (.)
 1. Verificare la compatibilità con PHPStan
 2. Mantenere le annotazioni PHPDoc complete
 3. Seguire le convenzioni di namespace
@@ -456,6 +508,7 @@ namespace Modules\NomeModulo\App\Filament;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -470,6 +523,11 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+
+=======
+<<<<<<< HEAD
+>>>>>>> 55692d0b (.)
 <<<<<<< HEAD
 =======
 =======
@@ -486,6 +544,7 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7de7063d (.)
 =======
@@ -521,6 +580,9 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 7de7063d (.)
+>>>>>>> 55692d0b (.)
 1. In genere, mantenere entrambe le versioni
 2. Organizzare il contenuto in modo logico
 3. Aggiornare tutti i collegamenti
@@ -530,6 +592,7 @@ namespace Modules\NomeModulo\App\Filament;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -544,6 +607,11 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+
+=======
+<<<<<<< HEAD
+>>>>>>> 55692d0b (.)
 <<<<<<< HEAD
 =======
 =======
@@ -560,6 +628,7 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7de7063d (.)
 =======
@@ -595,6 +664,9 @@ namespace Modules\NomeModulo\App\Filament;
 =======
 
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 7de7063d (.)
+>>>>>>> 55692d0b (.)
 1. Confrontare attentamente le configurazioni
 2. Verificare l'impatto delle modifiche
 3. Documentare le decisioni prese
@@ -615,6 +687,7 @@ Il progetto include alcuni script per facilitare la gestione dei conflitti:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -657,3 +730,8 @@ Il progetto include alcuni script per facilitare la gestione dei conflitti:
 >>>>>>> e0c964a3 (first)
 =======
 >>>>>>> e9356a3a (.)
+=======
+
+=======
+>>>>>>> 574afe9e (.)
+>>>>>>> 55692d0b (.)

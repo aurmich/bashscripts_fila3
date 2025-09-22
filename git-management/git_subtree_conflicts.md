@@ -60,6 +60,7 @@ source ./bashscripts/lib/custom.sh
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -74,12 +75,18 @@ source ./bashscripts/lib/custom.sh
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+
+=======
+<<<<<<< HEAD
+>>>>>>> 55692d0b (.)
 <<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
 =======
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7de7063d (.)
 =======
@@ -115,6 +122,9 @@ source ./bashscripts/lib/custom.sh
 =======
 
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 7de7063d (.)
+>>>>>>> 55692d0b (.)
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     log "error" "Parametri errati"
@@ -239,6 +249,7 @@ source ./bashscripts/lib/custom.sh
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -253,12 +264,18 @@ source ./bashscripts/lib/custom.sh
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+
+=======
+<<<<<<< HEAD
+>>>>>>> 55692d0b (.)
 <<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
 =======
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7de7063d (.)
 =======
@@ -294,6 +311,9 @@ source ./bashscripts/lib/custom.sh
 =======
 
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 7de7063d (.)
+>>>>>>> 55692d0b (.)
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     log "error" "Parametri errati"
@@ -428,6 +448,7 @@ source ./bashscripts/lib/custom.sh
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -442,12 +463,18 @@ source ./bashscripts/lib/custom.sh
 =======
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
+=======
+
+=======
+<<<<<<< HEAD
+>>>>>>> 55692d0b (.)
 <<<<<<< HEAD
 
 =======
 >>>>>>> 3c18aa7e (.)
 =======
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7de7063d (.)
 =======
@@ -483,6 +510,9 @@ source ./bashscripts/lib/custom.sh
 =======
 
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 7de7063d (.)
+>>>>>>> 55692d0b (.)
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     log "error" "Parametri errati"
@@ -560,18 +590,22 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 55692d0b (.)
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
 >>>>>>> 71ff9e32 (.)
 =======
 <<<<<<< HEAD
@@ -581,6 +615,8 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 >>>>>>> e0c964a3 (first)
 =======
 =======
+=======
+>>>>>>> 55692d0b (.)
 <<<<<<< HEAD
 >>>>>>> 574afe9e (.)
 - **Documentazione concisa**: Istruzioni chiare e dirette 
@@ -594,6 +630,7 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
@@ -601,6 +638,8 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 >>>>>>> ec52a6b4 (.)
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 55692d0b (.)
 # Risoluzione dei Conflitti negli Script Git Subtree
 
 ## Problema
@@ -879,6 +918,7 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - **Documentazione concisa**: Istruzioni chiare e dirette 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
@@ -886,6 +926,8 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 <<<<<<< HEAD
 =======
 >>>>>>> e0c964a3 (first)
+=======
+>>>>>>> 55692d0b (.)
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
 =======
@@ -895,6 +937,7 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 >>>>>>> 9c02579 (.)
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7de7063d (.)
 =======
@@ -916,3 +959,6 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 >>>>>>> e0c964a3 (first)
 =======
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> 7de7063d (.)
+>>>>>>> 55692d0b (.)
