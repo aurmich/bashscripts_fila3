@@ -3,6 +3,9 @@
 ## 🔧 Problemi di Interprete Bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a175af646 (.)
 
 ### Fix "bad interpreter: No such file or directory"
 ```bash
@@ -20,8 +23,11 @@ chmod +x nomefile.sh
 
 ### Setup Repository e Remote
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> a175af646 (.)
 ```bash
 # Fix per "bad interpreter: No such file or directory"
 sed -i -e 's/\r$//' nomefile.sh
@@ -68,9 +74,13 @@ find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
 
 ## 🚀 Setup Nuovo Repository
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> bd3b585 (.)
 =======
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> bd3b585 (.)
+>>>>>>> a175af646 (.)
 ```bash
 # Inizializza nuovo repository
 git init
@@ -79,6 +89,9 @@ git commit -m "Initial commit"
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a175af646 (.)
 # Configura remote principale
 git remote add origin <url>
 git push -u origin main
@@ -389,8 +402,11 @@ git mergetool
 - **Commit frequenti** con messaggi descrittivi
 - **Pull prima** di ogni push su branch condivisi
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> a175af646 (.)
 # Configura remote
 git remote add origin <url>
 git push -u origin main
@@ -499,5 +515,8 @@ composer go
 >>>>>>> f198176d (.)
 >>>>>>> e0c964a3 (first)
 >>>>>>> bd3b585 (.)
+<<<<<<< HEAD
 =======
 >>>>>>> e9356a3a (.)
+=======
+>>>>>>> a175af646 (.)
